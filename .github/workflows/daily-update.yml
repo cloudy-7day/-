@@ -2,6 +2,12 @@ name: Daily article update
 
 on:
   workflow_dispatch:
+  push:
+    branches:
+      - main
+    paths:
+      - ".github/workflows/daily-update.yml"
+      - "scripts/update-daily.ps1"
   schedule:
     - cron: "0 15,16 * * *"
 
