@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>个人信息收集库</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">Daily Intelligence</p>
+        <h1>个人信息收集库</h1>
+      </div>
+      <div class="date-block">
+        <span id="issue-date">加载中</span>
+        <small>每日 7 篇</small>
+      </div>
+    </header>
+
+    <main>
+      <section class="summary-band">
+        <div>
+          <p class="section-label">今日筛选原则</p>
+          <h2>每天只读 7 篇，重点不是多，而是学会判断</h2>
+        </div>
+        <p>
+          系统会在每天洛杉矶时间 8 点更新内容。新闻先用公开排序当作热度参考；AI 应用优先看技术社区的讨论热度；
+          论文优先看权威来源，并聚焦脑机、AI、芯片、能源、心理和文化方向的突破性发现。所有分析只接 DeepSeek API，不依赖 GPT。
+        </p>
+      </section>
+
+      <nav class="tabs" aria-label="文章分类">
+        <button class="tab active" data-filter="all">全部</button>
+        <button class="tab" data-filter="international">国际新闻</button>
+        <button class="tab" data-filter="ai">AI 应用</button>
+        <button class="tab" data-filter="paper">应用论文</button>
+      </nav>
+
+      <section class="archive-panel" aria-label="历史归档">
+        <label for="archive-select">查看历史日期</label>
+        <select id="archive-select">
+          <option value="data/articles.json">今天</option>
+        </select>
+      </section>
+
+      <section id="article-list" class="article-list" aria-live="polite"></section>
+
+    </main>
+
+    <template id="article-template">
+      <article class="article-card">
+        <div class="card-head">
+          <span class="badge"></span>
+          <span class="score"></span>
+        </div>
+        <h2></h2>
+        <p class="meta"></p>
+        <p class="summary"></p>
+        <div class="analysis">
+          <h3>为什么它可能不能成功</h3>
+          <p></p>
+        </div>
+        <a class="read-link" target="_blank" rel="noopener noreferrer">阅读原文</a>
+      </article>
+    </template>
+
+    <script src="app.js"></script>
+  </body>
+</html>

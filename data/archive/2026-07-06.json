@@ -1,0 +1,96 @@
+﻿{
+    "issueDate":  "2026-07-06",
+    "notes":  [
+                  "Real news view counts are usually not public; this version uses RSS order as a heat proxy.",
+                  "HN provides points and comments; Reddit needs OAuth credentials for stable access.",
+                  "First-read and failure analysis use DeepSeek only, not GPT; local rules are used only as fallback."
+              ],
+    "articles":  [
+                     {
+                         "id":  "news-9a75aea99cd74a92a37b20cb6de1fbec",
+                         "category":  "international",
+                         "title":  "Iran Live Updates: Hundreds of Thousands Attend Ayatollah’s Funeral Procession",
+                         "source":  "New York Times World RSS",
+                         "url":  "https://www.nytimes.com/live/2026/07/06/world/iran-funeral-khamenei",
+                         "publishedAt":  "2026-07-06T14:55:28.0000000Z",
+                         "scoreLabel":  "RSS order",
+                         "selectionReason":  "High in world-news RSS, used as public heat proxy",
+                         "summary":  "本文报道了伊朗最高领袖哈梅内伊葬礼期间，数十万人参加送葬队伍的事件。该事件反映了伊朗国内的政治动员能力及民众情绪，值得关注其对中东局势和伊朗权力过渡的潜在影响。",
+                         "failureAnalysis":  "该报道依赖RSS标题和URL，缺乏实际阅读量验证，可能高估事件热度。若后续无具体数据支撑，读者难以判断事件真实规模及长期政治影响，存在信息失真风险。"
+                     },
+                     {
+                         "id":  "news-b6f33db4a5d9450e9f995f0094c80b86",
+                         "category":  "international",
+                         "title":  "Deadly Russian Strikes Rock Kyiv on Eve of NATO Summit",
+                         "source":  "New York Times World RSS",
+                         "url":  "https://www.nytimes.com/2026/07/05/world/europe/kyiv-ukraine-russia-attack-nato.html",
+                         "publishedAt":  "2026-07-06T13:18:04.0000000Z",
+                         "scoreLabel":  "RSS order",
+                         "selectionReason":  "High in world-news RSS, used as public heat proxy",
+                         "summary":  "文章报道了北约峰会前夕俄罗斯对基辅发动致命袭击的事件，凸显了俄乌冲突的持续升级及其对国际安全格局的直接影响。该新闻值得关注，因为它揭示了北约与俄罗斯之间的紧张关系，以及峰会可能面临的安保与外交挑战。",
+                         "failureAnalysis":  "该报道可能因缺乏对袭击具体细节（如伤亡人数、目标类型）的深入分析而显得表面化。此外，作为单一事件报道，它未能提供冲突长期趋势或各方战略意图的量化数据，可能难以支撑读者对局势演变的全面判断。"
+                     },
+                     {
+                         "id":  "news-fe128a9c5ff3439e8dab5f6e8cd9b851",
+                         "category":  "international",
+                         "title":  "Erdogan-Trump Friendship Can Help NATO, Turkey’s Foreign Minister Says",
+                         "source":  "New York Times World RSS",
+                         "url":  "https://www.nytimes.com/2026/07/06/world/europe/nato-turkey-erdogan-trump-hakan-fidan.html",
+                         "publishedAt":  "2026-07-06T09:01:27.0000000Z",
+                         "scoreLabel":  "RSS order",
+                         "selectionReason":  "High in world-news RSS, used as public heat proxy",
+                         "summary":  "土耳其外长表示，埃尔多安与特朗普的友谊有助于北约内部团结，并强调土耳其与美国的关系对地区安全至关重要。该文章值得阅读，因为它揭示了土耳其在外交政策上的新动向及其对北约未来合作的影响。",
+                         "failureAnalysis":  "该观点可能因特朗普外交政策的不确定性而失效，例如其过往对北约的批评态度可能削弱合作基础。此外，土耳其与北约其他成员国（如希腊）的长期矛盾可能限制友谊的实际效果。文章缺乏具体政策细节，仅依赖个人关系可能无法解决结构性分歧。"
+                     },
+                     {
+                         "id":  "ai-44567857",
+                         "category":  "ai",
+                         "title":  "LLM Inevitabilism",
+                         "source":  "Hacker News",
+                         "url":  "https://tomrenner.com/posts/llm-inevitabilism/",
+                         "publishedAt":  "2025-07-15T04:35:35.0000000Z",
+                         "scoreLabel":  "1773 points / 1628 comments",
+                         "selectionReason":  "Older than 15 days, high HN interaction, application-oriented",
+                         "summary":  "本文探讨了大型语言模型（LLM）发展的必然性观点，认为其进步不可阻挡并会深刻改变社会。文章值得一读，因为它引发了关于技术趋势和潜在影响的广泛讨论，有助于理解当前AI领域的核心争议。",
+                         "failureAnalysis":  "该观点可能失败，因为它忽略了LLM在实际部署中的高成本、能源消耗和可靠性问题。用户价值可能被高估，许多应用场景缺乏明确的付费意愿和验证。此外，监管和数据隐私限制可能阻碍大规模采用，工程上模型的可控性和偏见问题也未完全解决。"
+                     },
+                     {
+                         "id":  "ai-41523070",
+                         "category":  "ai",
+                         "title":  "Learning to Reason with LLMs",
+                         "source":  "Hacker News",
+                         "url":  "https://openai.com/index/learning-to-reason-with-llms/",
+                         "publishedAt":  "2024-09-12T17:08:46.0000000Z",
+                         "scoreLabel":  "1654 points / 1261 comments",
+                         "selectionReason":  "Older than 15 days, high HN interaction, application-oriented",
+                         "summary":  "本文介绍了OpenAI在提升大语言模型推理能力方面的最新进展，重点展示了如何通过强化学习等方法让模型在数学、编程等复杂任务上表现更优。这篇文章值得关注，因为它揭示了AI从简单对话向深度推理演进的关键技术路径。",
+                         "failureAnalysis":  "该技术可能因训练和推理成本过高而难以大规模部署，尤其是在需要实时响应的场景中。此外，推理能力的提升可能依赖大量高质量标注数据，数据获取和隐私合规会成为瓶颈。如果模型在开放域中产生错误推理，可能引发信任和监管风险。"
+                     },
+                     {
+                         "id":  "paper-2607.00794",
+                         "category":  "paper",
+                         "title":  "Which Metric Reflects the Spelling Rate Accuracy in Event-Related Potential-Based Brain-Computer Interfaces?",
+                         "source":  "arXiv",
+                         "url":  "http://arxiv.org/abs/2607.00794v1",
+                         "publishedAt":  "2026-07-01T11:23:54.0000000Z",
+                         "scoreLabel":  "Authority 25/70 + type fit 30/30",
+                         "recommendationScore":  55,
+                         "selectionReason":  "Paper score: authority source is weighted 70%, topic fit is weighted 30%",
+                         "summary":  "该论文研究了在ERP脑机接口中，哪些指标能最好地反映拼写准确率，发现Brier分数、MCC和ROC AUC等指标优于传统准确率。它强调了在类别不平衡的ERP系统中，选择合适指标对评估拼写性能至关重要，对实际应用有指导价值。",
+                         "failureAnalysis":  "论文依赖两个特定数据集（LARESI和OpenBMI），结果可能不适用于其他ERP范式或真实场景。从论文到产品，需考虑实时系统对计算开销和延迟的容忍度，以及指标在动态环境中的稳定性。此外，拼写率受用户训练和系统噪声影响，指标相关性可能随条件变化，需更多跨场景验证。"
+                     },
+                     {
+                         "id":  "paper-2607.02036",
+                         "category":  "paper",
+                         "title":  "Antenna System for Simultaneous Wireless Power and Information Transfer to Brain Implants",
+                         "source":  "arXiv",
+                         "url":  "http://arxiv.org/abs/2607.02036v1",
+                         "publishedAt":  "2026-07-02T11:02:37.0000000Z",
+                         "scoreLabel":  "Authority 25/70 + type fit 30/30",
+                         "recommendationScore":  55,
+                         "selectionReason":  "Paper score: authority source is weighted 70%, topic fit is weighted 30%",
+                         "summary":  "本文提出一种无电池无线脑机接口系统，通过双功能天线实现感应式无线供电和高达32 Mbps的反向散射数据传输，旨在消除传统植入式BCI的导线限制并提升安全性。该研究对无线神经接口的实用化具有重要参考价值。",
+                         "failureAnalysis":  "实验条件可能未充分模拟人体组织对无线传输的衰减效应，实际植入深度和功耗需求可能影响供电稳定性。从论文到产品需解决长期生物相容性、植入手术风险以及医疗设备监管审批等工程与法规挑战。"
+                     }
+                 ]
+}

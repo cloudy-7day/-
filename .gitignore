@@ -1,0 +1,4 @@
+.env.local
+server.out.log
+server.err.log
+public/
