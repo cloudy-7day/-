@@ -105,6 +105,85 @@ function New-LocalAnalysis {
   }
 }
 
+function ConvertFrom-HtmlText {
+  param([string]$Value)
+
+  if (-not $Value) {
+    return ""
+  }
+
+  $text = $Value -replace "<[^>]+>", " "
+  $text = [System.Net.WebUtility]::HtmlDecode($text)
+  return (($text -replace "\s+", " ").Trim())
+}
+
+function Get-FeedText {
+  param($Value)
+
+  if (-not $Value) {
+    return ""
+  }
+
+  if ($Value -is [array]) {
+    $Value = $Value[0]
+  }
+
+  if ($Value.InnerText) {
+    return [string]$Value.InnerText
+  }
+
+  if ($Value.'#text') {
+    return [string]$Value.'#text'
+  }
+
+  return [string]$Value
+}
+
+function Get-FeedItems {
+  param($Feed)
+
+  if ($Feed -is [array]) {
+    return @($Feed)
+  }
+
+  if ($Feed.rss -and $Feed.rss.channel -and $Feed.rss.channel.item) {
+    return @($Feed.rss.channel.item)
+  }
+
+  if ($Feed.channel -and $Feed.channel.item) {
+    return @($Feed.channel.item)
+  }
+
+  if ($Feed.feed -and $Feed.feed.entry) {
+    return @($Feed.feed.entry)
+  }
+
+  if ($Feed.entry) {
+    return @($Feed.entry)
+  }
+
+  return @($Feed)
+}
+
+function Get-OpenNewsFeeds {
+  $feeds = @(
+    @{ source = "BBC World"; url = "https://feeds.bbci.co.uk/news/world/rss.xml" },
+    @{ source = "NPR World"; url = "https://feeds.npr.org/1004/rss.xml" },
+    @{ source = "The Guardian World"; url = "https://www.theguardian.com/world/rss" }
+  )
+
+  if ($env:NEWS_FEED_URLS) {
+    $env:NEWS_FEED_URLS.Split(",") |
+      ForEach-Object { $_.Trim() } |
+      Where-Object { $_ } |
+      ForEach-Object {
+        $feeds += @{ source = "Custom open feed"; url = $_ }
+      }
+  }
+
+  return $feeds
+}
+
 function New-ArticleAnalysis {
   param(
     [string]$Category,
@@ -268,28 +347,70 @@ function New-PaperItem {
   }
 }
 
-function Get-NytWorldItems {
-  $feed = Invoke-RestMethod -Uri "https://rss.nytimes.com/services/xml/rss/nyt/World.xml"
-  $feed | Select-Object -First 3 | ForEach-Object {
-    $link = if ($_.link -is [array]) { $_.link[0] } else { $_.link }
-    $scoreLabel = "RSS order"
+function Get-OpenWorldNewsItems {
+  $candidates = @()
+  foreach ($feedInfo in Get-OpenNewsFeeds) {
+    try {
+      $feed = Invoke-RestMethod -Uri $feedInfo.url -Headers @{ "User-Agent" = "personal-info-library/0.1" }
+      $feedItems = Get-FeedItems -Feed $feed
+      $rank = 0
+      foreach ($feedItem in @($feedItems | Select-Object -First 6)) {
+        $rank += 1
+        $title = Get-FeedText -Value $feedItem.title
+        $link = Get-FeedText -Value $feedItem.link
+        $description = ConvertFrom-HtmlText -Value (Get-FeedText -Value $feedItem.description)
+        $publishedAt = try {
+          ([datetime](Get-FeedText -Value $feedItem.pubDate)).ToUniversalTime().ToString("o")
+        } catch {
+          (Get-Date).ToUniversalTime().ToString("o")
+        }
+
+        if (-not $title -or -not $link) {
+          continue
+        }
+
+        $sourceText = if ($description) { $description } else { "Open RSS item with title and URL. Full text may depend on the publisher page." }
+        $candidates += [pscustomobject][ordered]@{
+          id = "news-" + ([guid]::NewGuid().ToString("N"))
+          title = $title
+          source = [string]$feedInfo.source
+          url = [string]$link
+          publishedAt = $publishedAt
+          sourceText = $sourceText
+          feedRank = $rank
+        }
+      }
+    } catch {
+      Write-Warning "Skipping feed $($feedInfo.source): $($_.Exception.Message)"
+      continue
+    }
+  }
+
+  $candidates |
+    Group-Object -Property title |
+    ForEach-Object { $_.Group[0] } |
+    Sort-Object -Property publishedAt -Descending |
+    Select-Object -First 3 |
+    ForEach-Object {
+      $scoreLabel = "Open RSS source"
+      $sourceText = $_.sourceText
     $analysis = New-ArticleAnalysis `
       -Category "international" `
-      -Title ([string]$_.title) `
-      -Source "New York Times World RSS" `
-      -Url ([string]$link) `
-      -SourceText "RSS provides title and URL, but no verifiable real view count." `
+        -Title ([string]$_.title) `
+        -Source ([string]$_.source) `
+        -Url ([string]$_.url) `
+        -SourceText $sourceText `
       -ScoreLabel $scoreLabel
 
     [ordered]@{
-      id = "news-" + ([guid]::NewGuid().ToString("N"))
+        id = [string]$_.id
       category = "international"
       title = [string]$_.title
-      source = "New York Times World RSS"
-      url = [string]$link
-      publishedAt = ([datetime]$_.pubDate).ToUniversalTime().ToString("o")
+        source = [string]$_.source
+        url = [string]$_.url
+        publishedAt = [string]$_.publishedAt
       scoreLabel = $scoreLabel
-      selectionReason = "High in world-news RSS, used as public heat proxy"
+        selectionReason = "Open, non-paywalled RSS candidate; recent item across configured news feeds"
       summary = $analysis.summary
       failureAnalysis = $analysis.failureAnalysis
     }
@@ -412,7 +533,7 @@ function Get-ArxivAppliedPapers {
 }
 
 $articles = @()
-$articles += Get-NytWorldItems
+$articles += Get-OpenWorldNewsItems
 $articles += Get-HnAiItems
 $paperItems = @(Get-CrossrefAuthorityPapers)
 if ($paperItems.Count -lt 2) {
@@ -425,7 +546,8 @@ $articles += $paperItems |
 $payload = [ordered]@{
   issueDate = (Get-Date).ToString("yyyy-MM-dd")
   notes = @(
-    "Real news view counts are usually not public; this version uses RSS order as a heat proxy.",
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
     "HN provides points and comments; Reddit needs OAuth credentials for stable access.",
     "First-read and failure analysis use DeepSeek only, not GPT; local rules are used only as fallback."
   )
