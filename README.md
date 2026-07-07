@@ -77,3 +77,22 @@ setx DEEPSEEK_API_KEY "你的 DeepSeek API Key"
 1. 你给我 DeepSeek API key 后，我帮你接上真实初读和反方分析。
 2. 下一步接 Reddit OAuth，让 Reddit 数据稳定进入筛选。
 3. 再加收藏、评分、你的读后判断。这样系统会从“信息列表”变成“训练技术审美力的复盘库”。
+
+## GitHub 稳定访问
+
+GitHub Pages 用来提供固定网页地址。GitHub Actions 用来每天洛杉矶时间 08:00 自动更新文章。
+
+需要在 GitHub 仓库里手动设置一次 Secret：
+
+1. 打开仓库 Settings
+2. 进入 Secrets and variables > Actions
+3. 新增 Repository secret
+4. Name 填 `DEEPSEEK_API_KEY`
+5. Secret 填 DeepSeek API key
+
+然后在 Settings > Pages 中启用 GitHub Pages：
+
+1. Source 选择 Deploy from a branch
+2. Branch 选择 `main`
+3. Folder 选择 `/root`
+4. 保存后等待 GitHub 生成 Pages 地址

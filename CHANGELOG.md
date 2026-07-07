@@ -8,6 +8,17 @@
 
 ## 2026-07-06
 
+### 增加 GitHub 自动更新任务
+
+改了什么：
+新增 `.github/workflows/daily-update.yml`。它会在 GitHub 上定时运行 `scripts/update-daily.ps1`，生成当天文章数据和日期归档，并把更新后的 `data/articles.json` 与 `data/archive` 提交回仓库。
+
+为什么这么改：
+你希望网站更稳定，不依赖电脑 IP 和电脑开机状态。GitHub Pages 可以提供固定访问地址，GitHub Actions 可以在云端每天自动更新内容。
+
+对你使用的影响：
+后续只要在 GitHub 仓库里设置 `DEEPSEEK_API_KEY` Secret，并开启 GitHub Pages，手机就可以访问固定 GitHub Pages 地址。电脑关机不会影响网页访问。
+
 ### 清理文档中的待确认事项
 
 改了什么：
