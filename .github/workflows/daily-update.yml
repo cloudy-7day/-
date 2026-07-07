@@ -26,7 +26,7 @@ jobs:
         id: timecheck
         shell: pwsh
         run: |
-          if ("${{ github.event_name }}" -eq "workflow_dispatch") {
+          if ("${{ github.event_name }}" -eq "workflow_dispatch" -or "${{ github.event_name }}" -eq "push") {
             "should_run=true" >> $env:GITHUB_OUTPUT
             exit 0
           }
