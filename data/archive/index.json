@@ -1,13 +1,13 @@
-﻿{
-    "updatedAt":  "2026-07-07T06:18:57.2941984Z",
-    "archives":  [
-                     {
-                         "date":  "2026-07-07",
-                         "path":  "data/archive/2026-07-07.json"
-                     },
-                     {
-                         "date":  "2026-07-06",
-                         "path":  "data/archive/2026-07-06.json"
-                     }
-                 ]
+{
+  "updatedAt": "2026-07-07T06:46:17.5616761Z",
+  "archives": [
+    {
+      "date": "2026-07-07",
+      "path": "data/archive/2026-07-07.json"
+    },
+    {
+      "date": "2026-07-06",
+      "path": "data/archive/2026-07-06.json"
+    }
+  ]
 }
