@@ -34,8 +34,38 @@ function renderArticles(filter = "all") {
       ? `推荐分 ${article.recommendationScore}/100`
       : article.scoreLabel || "热度待补";
     node.querySelector("h2").textContent = article.title;
-    node.querySelector(".meta").textContent = `${article.source} | ${formatDate(article.publishedAt)} | ${article.selectionReason}`;
+    const metaParts = [article.source, formatDate(article.publishedAt), article.selectionReason];
+    if (article.evidenceLabel) {
+      metaParts.push(`证据链：${article.evidenceLabel}`);
+    }
+    node.querySelector(".meta").textContent = metaParts.join(" | ");
     node.querySelector(".summary").textContent = article.summary;
+    const paperDetails = node.querySelector(".paper-details");
+    if (article.paperCard) {
+      const fields = [
+        article.paperCard.problem,
+        article.paperCard.method,
+        article.paperCard.difference,
+        article.paperCard.innovation,
+        article.paperCard.implementation,
+        article.paperCard.applications,
+        ...(article.paperCard.technicalTerms || [])
+      ].filter(Boolean);
+
+      paperDetails.innerHTML = "";
+      fields.forEach((value) => {
+        const item = document.createElement("li");
+        item.textContent = value;
+        paperDetails.appendChild(item);
+      });
+      paperDetails.hidden = false;
+    } else {
+      paperDetails.hidden = true;
+      paperDetails.innerHTML = "";
+    }
+    node.querySelector(".analysis h3").textContent = article.requiresRiskAnalysis
+      ? "为什么它可能不能成功"
+      : "关键看点";
     node.querySelector(".analysis p").textContent = article.failureAnalysis;
     node.querySelector(".read-link").href = article.url;
     list.appendChild(node);

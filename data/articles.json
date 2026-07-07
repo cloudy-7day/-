@@ -1,97 +1,153 @@
-{
-  "issueDate": "2026-07-07",
-  "notes": [
-    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
-    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
-    "HN provides points and comments; Reddit needs OAuth credentials for stable access.",
-    "First-read and failure analysis use DeepSeek only, not GPT; local rules are used only as fallback."
-  ],
-  "articles": [
-    {
-      "id": "news-050f2a403dcf4a0a9a4cf8666448ac5d",
-      "category": "international",
-      "title": "Five charged in Liberia after more than 200kg of cocaine seized in drug bust",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/jul/07/charged-liberia-200kg-cocaine-seized-drug-bust",
-      "publishedAt": "2026-07-07T06:30:31.0000000Z",
-      "scoreLabel": "Open RSS source",
-      "selectionReason": "Open, non-paywalled RSS candidate; recent item across configured news feeds",
-      "summary": "Local fallback: news candidate collected automatically. Read the source and judge event, stakeholders, and next variables.",
-      "failureAnalysis": "Local fallback: one news item can amplify short-term emotion. Watch institutions, incentives, and execution before judging."
-    },
-    {
-      "id": "news-fe0c4733c13b49aaaba0c4a0a56b513e",
-      "category": "international",
-      "title": "India's landmark Ram temple overhauls board after alleged theft of donations",
-      "source": "BBC World",
-      "url": "https://www.bbc.co.uk/news/articles/c872ngz405xo?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-07-07T06:23:04.0000000Z",
-      "scoreLabel": "Open RSS source",
-      "selectionReason": "Open, non-paywalled RSS candidate; recent item across configured news feeds",
-      "summary": "Local fallback: news candidate collected automatically. Read the source and judge event, stakeholders, and next variables.",
-      "failureAnalysis": "Local fallback: one news item can amplify short-term emotion. Watch institutions, incentives, and execution before judging."
-    },
-    {
-      "id": "news-25a3afa62d0949539d371cd8ee0cf928",
-      "category": "international",
-      "title": "China test-launches a ballistic missile in the South Pacific and raises regional concerns",
-      "source": "NPR World",
-      "url": "https://www.npr.org/2026/07/07/nx-s1-5884537/china-ballistic-missile-south-pacific",
-      "publishedAt": "2026-07-07T05:29:03.0000000Z",
-      "scoreLabel": "Open RSS source",
-      "selectionReason": "Open, non-paywalled RSS candidate; recent item across configured news feeds",
-      "summary": "Local fallback: news candidate collected automatically. Read the source and judge event, stakeholders, and next variables.",
-      "failureAnalysis": "Local fallback: one news item can amplify short-term emotion. Watch institutions, incentives, and execution before judging."
-    },
-    {
-      "id": "ai-44567857",
-      "category": "ai",
-      "title": "LLM Inevitabilism",
-      "source": "Hacker News",
-      "url": "https://tomrenner.com/posts/llm-inevitabilism/",
-      "publishedAt": "2025-07-15T04:35:35.0000000Z",
-      "scoreLabel": "1773 points / 1628 comments",
-      "selectionReason": "Older than 15 days, high HN interaction, application-oriented",
-      "summary": "Local fallback: AI application candidate collected automatically. Judge the friction it removes, why now, and whether users return.",
-      "failureAnalysis": "Local fallback: the project must prove user value, data access, cost, stability, and integration depth."
-    },
-    {
-      "id": "ai-41523070",
-      "category": "ai",
-      "title": "Learning to Reason with LLMs",
-      "source": "Hacker News",
-      "url": "https://openai.com/index/learning-to-reason-with-llms/",
-      "publishedAt": "2024-09-12T17:08:46.0000000Z",
-      "scoreLabel": "1654 points / 1261 comments",
-      "selectionReason": "Older than 15 days, high HN interaction, application-oriented",
-      "summary": "Local fallback: AI application candidate collected automatically. Judge the friction it removes, why now, and whether users return.",
-      "failureAnalysis": "Local fallback: the project must prove user value, data access, cost, stability, and integration depth."
-    },
-    {
-      "id": "paper-crossref-10-1038-s41551-025-01502-9",
-      "category": "paper",
-      "title": "High-resolution brain–computer interface with electrode scalability and minimally invasive surgery",
-      "source": "Nature Biomedical Engineering",
-      "url": "https://doi.org/10.1038/s41551-025-01502-9",
-      "publishedAt": "2025-10-02T00:00:00.2443676Z",
-      "scoreLabel": "Authority 64/70 + type fit 30/30",
-      "recommendationScore": 94,
-      "selectionReason": "Paper score: authority source is weighted 70%, topic fit is weighted 30%",
-      "summary": "Crossref record with DOI 10.1038/s41551-025-01502-9. Abstract not available in the index.",
-      "failureAnalysis": "Local fallback: the paper must prove experimental conditions, sample size, hardware cost, regulatory path, and reproducibility."
-    },
-    {
-      "id": "paper-2607.03844",
-      "category": "paper",
-      "title": "EEG-Based Imagined Speech Decoding Using a Hybrid CNN-SNN Architecture",
-      "source": "arXiv",
-      "url": "http://arxiv.org/abs/2607.03844v1",
-      "publishedAt": "2026-07-04T12:23:46.0000000Z",
-      "scoreLabel": "Authority 25/70 + type fit 30/30",
-      "recommendationScore": 55,
-      "selectionReason": "Paper score: authority source is weighted 70%, topic fit is weighted 30%",
-      "summary": "Imagined speech decoding using EEG signals has emerged as a promising frontier in brain-computer interface (BCI) research, particularly to restore communication for individuals with severe speech impairments. However, decoding imagined speech remains a complex task due to the non-stationary, low-amplitude, and highly variable nature of EEG signals. Existing methods often rely on classical machine learning or deep learning models that fail to exploit spike-based temporal dynamics or event-driven firing mechanisms of biological neurons, which are naturally modeled by spiking neural networks (SNNs). In this study, we propose a hybrid decoding pipeline that extracts temporal representations using convolutional neural networks (CNNs) followed by biologically inspired temporal classification via SNNs. To our knowledge, this is the first study to integrate SNNs into EEG-based imagined speech decoding. Experimental results show that the proposed CNN-SNN architecture achieves an accuracy of 80.13% on the 2020 BCI Competition III benchmark, surpassing existing methods reported in the literature (up to 70.19%) under comparable evaluation settings. These findings demonstrate the effectiveness of spike-based temporal decoding for imagined speech, highlighting the promise of biologically grounded pipelines for next generation neuromorphic BCI applications.",
-      "failureAnalysis": "Local fallback: the paper must prove experimental conditions, sample size, hardware cost, regulatory path, and reproducibility."
-    }
-  ]
+﻿{
+    "issueDate":  "2026-07-07",
+    "notes":  [
+                  "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+                  "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+                  "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+                  "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; local rules are used only as fallback."
+              ],
+    "articles":  [
+                     {
+                         "id":  "news-7babf29a1bf54d9ab6478cb7abdeca89",
+                         "category":  "international",
+                         "title":  "Woman suspected of Monaco bomb attack found dead in Ukraine",
+                         "source":  "BBC World",
+                         "url":  "https://www.bbc.co.uk/news/articles/c5yz3770yg8o?at_medium=RSS\u0026at_campaign=rss",
+                         "publishedAt":  "2026-07-07T11:25:38.0000000Z",
+                         "scoreLabel":  "Open RSS source",
+                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+                         "summary":  "Local fallback: news candidate collected automatically. Read the source and judge event, stakeholders, and next variables.",
+                         "failureAnalysis":  "Key takeaway fallback: watch institutions, incentives, and next variables before judging the event."
+                     },
+                     {
+                         "id":  "news-055a1fec9b194bdba9edeac414281894",
+                         "category":  "international",
+                         "title":  "Explosions injure 18 in Damascus during Macron\u0027s visit",
+                         "source":  "BBC World",
+                         "url":  "https://www.bbc.co.uk/news/articles/c2eylx1jj9ko?at_medium=RSS\u0026at_campaign=rss",
+                         "publishedAt":  "2026-07-07T11:16:30.0000000Z",
+                         "scoreLabel":  "Open RSS source",
+                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+                         "summary":  "Local fallback: news candidate collected automatically. Read the source and judge event, stakeholders, and next variables.",
+                         "failureAnalysis":  "Key takeaway fallback: watch institutions, incentives, and next variables before judging the event."
+                     },
+                     {
+                         "id":  "news-69fd3594657e4adca4235537ba65975f",
+                         "category":  "international",
+                         "title":  "What will define Elon Musk’s legacy? Doge cuts to USAID Ebola programs",
+                         "source":  "The Guardian World",
+                         "url":  "https://www.theguardian.com/technology/2026/jul/07/elon-musk-doge-cuts-usaid-ebola",
+                         "publishedAt":  "2026-07-07T11:00:06.0000000Z",
+                         "scoreLabel":  "Open RSS source",
+                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+                         "summary":  "Local fallback: news candidate collected automatically. Read the source and judge event, stakeholders, and next variables.",
+                         "failureAnalysis":  "Key takeaway fallback: watch institutions, incentives, and next variables before judging the event."
+                     },
+                     {
+                         "id":  "ai-github-1266797999",
+                         "category":  "ai",
+                         "title":  "DietrichGebert/ponytail",
+                         "source":  "GitHub Search",
+                         "url":  "https://github.com/DietrichGebert/ponytail",
+                         "publishedAt":  "2026-06-12T00:52:37.0000000Z",
+                         "scoreLabel":  "GitHub 76428 stars",
+                         "aiArticleType":  "application_innovation",
+                         "evidenceAnchors":  [
+                                                 {
+                                                     "label":  "GitHub",
+                                                     "kind":  "primary"
+                                                 },
+                                                 {
+                                                     "label":  "Community signal",
+                                                     "kind":  "secondary"
+                                                 }
+                                             ],
+                         "evidenceLabel":  "GitHub + Community signal",
+                         "hasPrimaryAnchor":  true,
+                         "requiresRiskAnalysis":  true,
+                         "selectionReason":  "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+                         "summary":  "Local fallback: AI application candidate collected automatically. Judge the friction it removes, why now, and whether users return.",
+                         "failureAnalysis":  "Local fallback: the project must prove user value, data access, cost, stability, and integration depth.",
+                         "aiSelectionScore":  76428
+                     },
+                     {
+                         "id":  "ai-feed-ac8c56db7ef4424bbfdf482d5970a95b",
+                         "category":  "ai",
+                         "title":  "[AINews] The Field Guide to Fable",
+                         "source":  "Latent Space",
+                         "url":  "https://www.latent.space/p/ainews-the-field-guide-to-fable",
+                         "publishedAt":  "2026-07-07T04:44:53.0000000Z",
+                         "scoreLabel":  "Curated engineering feed",
+                         "aiArticleType":  "concept_explanation",
+                         "evidenceAnchors":  [
+                                                 {
+                                                     "label":  "Expert analysis",
+                                                     "kind":  "secondary"
+                                                 }
+                                             ],
+                         "evidenceLabel":  "Expert analysis",
+                         "hasPrimaryAnchor":  false,
+                         "requiresRiskAnalysis":  false,
+                         "selectionReason":  "AI source passed freshness and evidence-chain gate: Expert analysis",
+                         "summary":  "Local fallback: AI application candidate collected automatically. Judge the friction it removes, why now, and whether users return.",
+                         "failureAnalysis":  "Local fallback: the project must prove user value, data access, cost, stability, and integration depth.",
+                         "aiSelectionScore":  100
+                     },
+                     {
+                         "id":  "paper-2607.02036",
+                         "category":  "paper",
+                         "title":  "Antenna System for Simultaneous Wireless Power and Information Transfer to Brain Implants",
+                         "source":  "arXiv",
+                         "url":  "https://arxiv.org/pdf/2607.02036v1.pdf",
+                         "publishedAt":  "2026-07-02T11:02:37.0000000Z",
+                         "scoreLabel":  "Quality 28/100 + topic fit 30/30",
+                         "recommendationScore":  83,
+                         "selectionReason":  "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+                         "paperTopic":  "brain_computer_interface",
+                         "qualityScore":  28,
+                         "paperCard":  {
+                                           "problem":  "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+                                           "method":  "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+                                           "difference":  "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+                                           "innovation":  "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+                                           "implementation":  "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+                                           "applications":  "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+                                           "technicalTerms":  [
+                                                                  "EEG：把大脑电信号当作输入数据。"
+                                                              ],
+                                           "whySelected":  "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+                                       },
+                         "summary":  "本地规则只确认这篇论文有公开全文入口；智能总结需要 DeepSeek key 和完整内容输入后生成。",
+                         "failureAnalysis":  "Key takeaway fallback: check experiment conditions, sample size, cost, regulatory path, and reproducibility."
+                     },
+                     {
+                         "id":  "paper-2607.03094",
+                         "category":  "paper",
+                         "title":  "Stacked LoRA for Subject-Adaptive EEG Foundation Models in Motor Imagery Decoding",
+                         "source":  "arXiv",
+                         "url":  "https://arxiv.org/pdf/2607.03094v1.pdf",
+                         "publishedAt":  "2026-07-03T08:31:57.0000000Z",
+                         "scoreLabel":  "Quality 28/100 + topic fit 30/30",
+                         "recommendationScore":  83,
+                         "selectionReason":  "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+                         "paperTopic":  "brain_computer_interface",
+                         "qualityScore":  28,
+                         "paperCard":  {
+                                           "problem":  "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+                                           "method":  "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+                                           "difference":  "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+                                           "innovation":  "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+                                           "implementation":  "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+                                           "applications":  "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+                                           "technicalTerms":  [
+                                                                  "EEG：把大脑电信号当作输入数据。",
+                                                                  "CNN：擅长从信号或图像里提取局部特征的神经网络。",
+                                                                  "LoRA：用较小参数改造大模型的轻量适配方法。"
+                                                              ],
+                                           "whySelected":  "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+                                       },
+                         "summary":  "本地规则只确认这篇论文有公开全文入口；智能总结需要 DeepSeek key 和完整内容输入后生成。",
+                         "failureAnalysis":  "Key takeaway fallback: check experiment conditions, sample size, cost, regulatory path, and reproducibility."
+                     }
+                 ]
 }

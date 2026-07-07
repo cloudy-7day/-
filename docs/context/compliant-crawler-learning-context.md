@@ -9,8 +9,9 @@
 - 国际新闻不使用真实浏览量，因为多数媒体不公开真实浏览量。
 - 新闻优先使用公开 RSS、公开 API、可直接访问的来源。
 - AI 应用文章关注落地价值、HN 讨论、产品形态、GitHub/demo、用户价值。
-- 论文使用“权威来源 70 分 + 类型匹配 30 分”的评分规则。
-- DeepSeek 只基于已获得的标题、摘要、来源、链接等信息做初读，不假装读过全文。
+- AI 应用文章优先英文工程圈一手来源，中文高质量解读作为补充；应用创新类必须有至少两个证据锚点，且至少一个是一手锚点。
+- 论文必须有公开全文入口；只有摘要、订阅墙或登录页时不进入每日推荐。
+- DeepSeek 只基于已获得且允许使用的内容做初读，不假装读过不可访问的全文。
 - 不绕过订阅墙、登录限制、验证码或反爬限制。
 
 ## 合规红线
@@ -94,7 +95,8 @@ TLDR 适合作为“选题线索层”，不适合直接当全文转载来源。
 
 - 国际新闻：BBC、NPR、The Guardian、AP、Reuters 官方公开入口。
 - AI 应用：Hacker News、GitHub Trending、Product Hunt、公司技术博客。
-- 论文：Crossref、arXiv、Semantic Scholar、期刊官网公开摘要。
+- AI 工程策展：Simon Willison、Latent Space、Chip Huyen、Interconnects 等公开 feed；中文解读必须能追溯到原始案例。
+- 论文：优先 arXiv 等公开全文来源；Semantic Scholar 只可作为发现或质量信号，不把摘要页当作可读论文。
 - Newsletter 参考：TLDR、Import AI、Ben's Bites、The Batch。
 
 ## 与当前项目的后续衔接
@@ -103,9 +105,10 @@ TLDR 适合作为“选题线索层”，不适合直接当全文转载来源。
 
 1. 先保留当前已定规则，不推翻评分体系。
 2. 增加“候选来源池”概念，让 TLDR 类来源只影响候选发现。
-3. 对候选文章增加可读性状态：open、summary_only、paywalled、unknown。
-4. 公开网页只展示可公开展示的摘要、链接和分析。
-5. 最后修复发布链路，让本地的新来源数据真正同步到线上网页。
+3. 对论文候选增加可读性状态：open、summary_only、paywalled、unknown；每日论文只展示 open。
+4. 对 AI 候选增加 evidenceAnchors、evidenceLabel、aiArticleType、requiresRiskAnalysis 等字段。
+5. 公开网页只展示可公开展示的摘要、链接、证据链和分析。
+6. 最后修复发布链路，让本地的新来源数据真正同步到线上网页。
 
 ## 学习时的验收标准
 

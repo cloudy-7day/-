@@ -1,6 +1,6 @@
 # 个人信息收集库
 
-这是第一版可手机访问的信息收集网页：每天目标 7 篇文章，分为 3 篇国际新闻、2 篇 AI 应用、2 篇应用型论文。
+这是第一版可手机访问的信息收集网页：每天目标 7 篇文章，分为 3 篇国际新闻、2 篇 AI 应用、2 篇应用型论文。线上固定地址是 https://cloudy-7day.github.io/-/ 。
 
 每次修改后的说明记录在 `CHANGELOG.md`，包括改了什么、为什么改、对使用有什么影响。
 
@@ -80,7 +80,7 @@ setx DEEPSEEK_API_KEY "你的 DeepSeek API Key"
 
 ## GitHub 稳定访问
 
-GitHub Pages 用来提供固定网页地址。GitHub Actions 用来每天洛杉矶时间 08:00 自动更新文章。
+GitHub Pages 用来提供固定网页地址：https://cloudy-7day.github.io/-/ 。GitHub Actions 用来每天洛杉矶时间 08:00 自动更新文章。
 
 需要在 GitHub 仓库里手动设置一次 Secret：
 

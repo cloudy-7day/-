@@ -196,6 +196,23 @@ main {
   margin: 0 0 14px;
 }
 
+.paper-details {
+  display: grid;
+  gap: 7px;
+  margin: 0 0 14px;
+  padding-left: 18px;
+  color: var(--muted);
+  font-size: 14px;
+}
+
+.paper-details[hidden] {
+  display: none;
+}
+
+.paper-details li {
+  padding-left: 2px;
+}
+
 .analysis {
   margin-top: auto;
   border-top: 1px solid var(--line);

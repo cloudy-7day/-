@@ -1,8 +1,10 @@
-param(
+﻿param(
   [string]$OutputPath = "data/articles.json"
 )
 
 $ErrorActionPreference = "Stop"
+
+. (Join-Path $PSScriptRoot "article-selection.ps1")
 
 function Import-LocalEnv {
   $envPath = Join-Path (Get-Location) ".env.local"
@@ -81,7 +83,7 @@ function New-LocalAnalysis {
     "international" {
       return [ordered]@{
         summary = "Local fallback: news candidate collected automatically. Read the source and judge event, stakeholders, and next variables."
-        failureAnalysis = "Local fallback: one news item can amplify short-term emotion. Watch institutions, incentives, and execution before judging."
+        failureAnalysis = "Key takeaway fallback: watch institutions, incentives, and next variables before judging the event."
       }
     }
     "ai" {
@@ -92,14 +94,14 @@ function New-LocalAnalysis {
     }
     "paper" {
       return [ordered]@{
-        summary = $SourceText
-        failureAnalysis = "Local fallback: the paper must prove experimental conditions, sample size, hardware cost, regulatory path, and reproducibility."
+        summary = "本地规则只确认这篇论文有公开全文入口；智能总结需要 DeepSeek key 和完整内容输入后生成。"
+        failureAnalysis = "Key takeaway fallback: check experiment conditions, sample size, cost, regulatory path, and reproducibility."
       }
     }
     default {
       return [ordered]@{
         summary = $SourceText
-        failureAnalysis = "Local fallback: verify demand, evidence quality, cost structure, and deployment path."
+        failureAnalysis = "Key takeaway fallback: verify evidence quality and real-world relevance."
       }
     }
   }
@@ -115,6 +117,47 @@ function ConvertFrom-HtmlText {
   $text = $Value -replace "<[^>]+>", " "
   $text = [System.Net.WebUtility]::HtmlDecode($text)
   return (($text -replace "\s+", " ").Trim())
+}
+
+function Get-PdfTextFromUrl {
+  param(
+    [string]$Url,
+    [int]$MaxCharacters = 18000
+  )
+
+  if (-not $Url) { return "" }
+
+  $tempPdf = Join-Path ([System.IO.Path]::GetTempPath()) ("paper-" + [guid]::NewGuid().ToString("N") + ".pdf")
+  $tempText = [System.IO.Path]::ChangeExtension($tempPdf, ".txt")
+
+  try {
+    Invoke-WebRequest -Uri $Url -OutFile $tempPdf -Headers @{ "User-Agent" = "personal-info-library/0.1" } -TimeoutSec 30
+
+    $pdftotext = Get-Command "pdftotext" -ErrorAction SilentlyContinue
+    if ($pdftotext) {
+      & $pdftotext.Source -layout $tempPdf $tempText | Out-Null
+      if (Test-Path $tempText) {
+        return ((Get-Content -Encoding UTF8 -LiteralPath $tempText -Raw) -replace "\s+", " ").Trim().Substring(0, [Math]::Min($MaxCharacters, (Get-Content -Encoding UTF8 -LiteralPath $tempText -Raw).Length))
+      }
+    }
+
+    $python = Get-Command "python" -ErrorAction SilentlyContinue
+    $extractor = Join-Path $PSScriptRoot "extract-pdf-text.py"
+    if ($python -and (Test-Path $extractor)) {
+      $text = & $python.Source $extractor $tempPdf
+      $text = (($text -join "`n") -replace "\s+", " ").Trim()
+      if ($text) {
+        return $text.Substring(0, [Math]::Min($MaxCharacters, $text.Length))
+      }
+    }
+  } catch {
+    Write-Warning "Could not extract PDF text from ${Url}: $($_.Exception.Message)"
+  } finally {
+    if (Test-Path $tempPdf) { Remove-Item -LiteralPath $tempPdf -Force }
+    if (Test-Path $tempText) { Remove-Item -LiteralPath $tempText -Force }
+  }
+
+  return ""
 }
 
 function Get-FeedText {
@@ -137,6 +180,26 @@ function Get-FeedText {
   }
 
   return [string]$Value
+}
+
+function Get-FeedLink {
+  param($Item)
+
+  if (-not $Item -or -not $Item.link) {
+    return ""
+  }
+
+  $link = $Item.link
+  if ($link -is [array]) {
+    $link = @($link | Where-Object { $_.rel -eq "alternate" })[0]
+    if (-not $link) { $link = $Item.link[0] }
+  }
+
+  if ($link.href) {
+    return [string]$link.href
+  }
+
+  return Get-FeedText -Value $link
 }
 
 function Get-FeedItems {
@@ -184,6 +247,26 @@ function Get-OpenNewsFeeds {
   return $feeds
 }
 
+function Get-AiSourceFeeds {
+  $feeds = @(
+    @{ source = "Simon Willison"; url = "https://simonwillison.net/atom/everything/" },
+    @{ source = "Latent Space"; url = "https://www.latent.space/feed" },
+    @{ source = "Chip Huyen"; url = "https://huyenchip.com/feed.xml" },
+    @{ source = "Interconnects"; url = "https://www.interconnects.ai/feed" }
+  )
+
+  if ($env:AI_FEED_URLS) {
+    $env:AI_FEED_URLS.Split(",") |
+      ForEach-Object { $_.Trim() } |
+      Where-Object { $_ } |
+      ForEach-Object {
+        $feeds += @{ source = "Custom AI feed"; url = $_ }
+      }
+  }
+
+  return $feeds
+}
+
 function New-ArticleAnalysis {
   param(
     [string]$Category,
@@ -191,7 +274,8 @@ function New-ArticleAnalysis {
     [string]$Source,
     [string]$Url,
     [string]$SourceText,
-    [string]$ScoreLabel
+    [string]$ScoreLabel,
+    [bool]$RequiresRiskAnalysis = $false
   )
 
   if (-not $env:DEEPSEEK_API_KEY) {
@@ -199,10 +283,35 @@ function New-ArticleAnalysis {
   }
 
   $categoryGuide = switch ($Category) {
-    "international" { "This is international news. Help the reader understand the event, stakeholders, and next variables. Avoid emotional commentary." }
-    "ai" { "This is an AI application/project. Focus on the real problem, deployment path, user value, and business/engineering constraints." }
-    "paper" { "This is an applied research paper. Focus on practical value, experiment conditions, reproducibility, and the distance from paper to product." }
+    "international" { "This is international news. Give a concise key takeaway. Do not force a failure analysis." }
+    "ai" {
+      if ($RequiresRiskAnalysis) {
+        "This is an AI application/project. Focus on the real problem, deployment path, user value, and business/engineering constraints."
+      } else {
+        "This is an AI concept explanation. Give a concise concept summary and why it matters. Do not force a failure analysis."
+      }
+    }
+    "paper" { "This is an applied research paper with a public full-text link. Explain it in plain Chinese for a beginner. Focus on problem, method, difference from older methods, innovation, implementation path, and applications." }
     default { "Give a rigorous, restrained, verifiable first read." }
+  }
+
+  $analysisGuide = if ($Category -eq "paper") {
+    @(
+      '"failureAnalysis": "1-2 Chinese sentences with the most important evidence limit or practical constraint.",'
+      '  "paperCard": {'
+      '    "problem": "用通俗中文说明它解决什么问题。",'
+      '    "method": "用通俗中文说明它用什么方式解决。",'
+      '    "difference": "说明它和之前方法有什么不同。",'
+      '    "innovation": "说明创新点在哪里。",'
+      '    "implementation": "说明具体怎么实现，保留少量关键技术词并解释。",'
+      '    "applications": "说明可以应用到哪些场景。",'
+      '    "technicalTerms": ["术语：白话解释"]'
+      '  }'
+    ) -join "`n"
+  } elseif ($RequiresRiskAnalysis) {
+    '"failureAnalysis": "2-4 Chinese sentences explaining why this AI project or idea may fail. Focus on demand, cost, validation, distribution, regulation, data, or engineering constraints."'
+  } else {
+    '"failureAnalysis": "1-2 Chinese sentences with a concise key takeaway. Do not frame it as failure unless the item is an AI application project."'
   }
 
   $prompt = @"
@@ -223,7 +332,7 @@ $categoryGuide
 Return strict JSON only. Do not use Markdown or code fences:
 {
   "summary": "2-3 Chinese sentences explaining what this article/paper says and why it is worth reading.",
-  "failureAnalysis": "2-4 Chinese sentences explaining why it may fail. Be scientific and focus on demand, cost, validation, distribution, regulation, data, or engineering constraints."
+  $analysisGuide
 }
 "@
 
@@ -246,15 +355,24 @@ Return strict JSON only. Do not use Markdown or code fences:
     $content = $content.Trim() -replace "^```json\s*", "" -replace "^```\s*", "" -replace "\s*```$", ""
     $parsed = $content | ConvertFrom-Json
 
-    return [ordered]@{
+    $result = [ordered]@{
       summary = [string]$parsed.summary
       failureAnalysis = [string]$parsed.failureAnalysis
     }
-  } catch {
-    return [ordered]@{
-      summary = if ($SourceText) { $SourceText } else { "DeepSeek failed, so only title/source metadata is kept for now." }
-      failureAnalysis = "DeepSeek API failed. This system does not call GPT. Check DEEPSEEK_API_KEY, network, or DeepSeek quota."
+    if ($Category -eq "paper" -and $parsed.paperCard) {
+      $result.paperCard = [ordered]@{
+        problem = [string]$parsed.paperCard.problem
+        method = [string]$parsed.paperCard.method
+        difference = [string]$parsed.paperCard.difference
+        innovation = [string]$parsed.paperCard.innovation
+        implementation = [string]$parsed.paperCard.implementation
+        applications = [string]$parsed.paperCard.applications
+        technicalTerms = @($parsed.paperCard.technicalTerms | ForEach-Object { [string]$_ })
+      }
     }
+    return $result
+  } catch {
+    return New-LocalAnalysis -Category $Category -SourceText $SourceText
   }
 }
 
@@ -291,22 +409,8 @@ function Get-PaperTypeFitScore {
     [string]$Text
   )
 
-  $haystack = "$Title $Text".ToLowerInvariant()
-  $patterns = @(
-    "brain.?computer|bci|neural implant|neuroprosthetic|eeg|brain signal",
-    "artificial intelligence|machine learning|large language model|foundation model|ai ",
-    "chip|semiconductor|neuromorphic|integrated circuit|transistor|photonic",
-    "battery|energy storage|solar cell|hydrogen|fusion|electrolyte",
-    "psychology|cognitive|mental health|behavior|behaviour|culture|cultural|social"
-  )
-
-  foreach ($pattern in $patterns) {
-    if ($haystack -match $pattern) {
-      return 30
-    }
-  }
-
-  return 0
+  if ((Get-PaperTopic -Title $Title -Text $Text) -eq "out_of_scope") { return 0 }
+  return 30
 }
 
 function New-PaperItem {
@@ -316,13 +420,31 @@ function New-PaperItem {
     [string]$Source,
     [string]$Url,
     [string]$PublishedAt,
-    [string]$SourceText
+    [string]$SourceText,
+    [int]$CitationCount = 0,
+    [int]$InfluentialCitationCount = 0,
+    [int]$AuthorCount = 0,
+    [bool]$HasOpenAccessFullText = $false
   )
 
   $authorityScore = Get-PaperAuthorityScore -Source $Source
   $typeFitScore = Get-PaperTypeFitScore -Title $Title -Text $SourceText
-  $totalScore = $authorityScore + $typeFitScore
-  $scoreLabel = "Authority $authorityScore/70 + type fit $typeFitScore/30"
+  $profile = Get-PaperCandidateProfile `
+    -Title $Title `
+    -Source $Source `
+    -SourceText $SourceText `
+    -CitationCount $CitationCount `
+    -InfluentialCitationCount $InfluentialCitationCount `
+    -AuthorCount $AuthorCount `
+    -HasOpenAccessFullText $HasOpenAccessFullText
+
+  if (-not $profile.isEligibleForDailyPaper) {
+    return $null
+  }
+
+  $totalScore = $authorityScore + $typeFitScore + [int]$profile.qualityScore
+  $scoreLabel = "Quality $($profile.qualityScore)/100 + topic fit $typeFitScore/30"
+  $selectionReason = "Open full-text paper; topic $($profile.paperTopic); quality signal passed; application scenario is clear."
 
   $analysis = New-ArticleAnalysis `
     -Category "paper" `
@@ -331,6 +453,15 @@ function New-PaperItem {
     -Url $Url `
     -SourceText $SourceText `
     -ScoreLabel $scoreLabel
+  $paperCard = if ($analysis.paperCard) {
+    $analysis.paperCard
+  } else {
+    New-PaperReadingCard `
+      -Title $Title `
+      -Topic $profile.paperTopic `
+      -SourceText $SourceText `
+      -SelectionReason $selectionReason
+  }
 
   [ordered]@{
     id = $Id
@@ -341,7 +472,10 @@ function New-PaperItem {
     publishedAt = $PublishedAt
     scoreLabel = $scoreLabel
     recommendationScore = $totalScore
-    selectionReason = "Paper score: authority source is weighted 70%, topic fit is weighted 30%"
+    selectionReason = $selectionReason
+    paperTopic = $profile.paperTopic
+    qualityScore = $profile.qualityScore
+    paperCard = $paperCard
     summary = $analysis.summary
     failureAnalysis = $analysis.failureAnalysis
   }
@@ -417,36 +551,253 @@ function Get-OpenWorldNewsItems {
   }
 }
 
-function Get-HnAiItems {
-  $cutoff = [int][double]::Parse((Get-Date).AddDays(-15).ToUniversalTime().Subtract([datetime]"1970-01-01").TotalSeconds)
-  $url = "https://hn.algolia.com/api/v1/search?tags=story&query=LLM&numericFilters=created_at_i%3C$cutoff&hitsPerPage=20"
-  $items = (Invoke-RestMethod -Uri $url).hits |
-    Where-Object { $_.url -and $_.points -gt 300 -and $_.title -match "Show HN|local|run|tool|agent|visual|deploy|single file|LLM" } |
-    Select-Object -First 2
+function New-AiArticleItem {
+  param(
+    [string]$Id,
+    [string]$Title,
+    [string]$Source,
+    [string]$Url,
+    [string]$PublishedAt,
+    [string]$SourceText,
+    [string]$ScoreLabel,
+    [int]$Points = 0,
+    [int]$Comments = 0,
+    [switch]$PreferConceptExplanation
+  )
 
-  $items | ForEach-Object {
-    $scoreLabel = "$($_.points) points / $($_.num_comments) comments"
-    $analysis = New-ArticleAnalysis `
-      -Category "ai" `
-      -Title ([string]$_.title) `
-      -Source "Hacker News" `
-      -Url ([string]$_.url) `
-      -SourceText "HN candidate. Public metrics include points and comments; full article fetching is not enabled yet." `
-      -ScoreLabel $scoreLabel
+  $profile = Get-AiCandidateProfile `
+    -Title $Title `
+    -Url $Url `
+    -Source $Source `
+    -SourceText $SourceText `
+    -PublishedAt $PublishedAt `
+    -Points $Points `
+    -Comments $Comments `
+    -PreferConceptExplanation:$PreferConceptExplanation
 
-    [ordered]@{
-      id = "ai-" + $_.objectID
-      category = "ai"
-      title = [string]$_.title
-      source = "Hacker News"
-      url = [string]$_.url
-      publishedAt = ([datetime]$_.created_at).ToUniversalTime().ToString("o")
-      scoreLabel = $scoreLabel
-      selectionReason = "Older than 15 days, high HN interaction, application-oriented"
-      summary = $analysis.summary
-      failureAnalysis = $analysis.failureAnalysis
+  if (-not $profile.isEligibleForAiMainSlot) {
+    return $null
+  }
+
+  [ordered]@{
+    id = $Id
+    category = "ai"
+    title = $Title
+    source = $Source
+    url = $Url
+    publishedAt = $PublishedAt
+    scoreLabel = $ScoreLabel
+    aiArticleType = $profile.aiArticleType
+    evidenceAnchors = $profile.evidenceAnchors
+    evidenceLabel = $profile.evidenceLabel
+    hasPrimaryAnchor = $profile.hasPrimaryAnchor
+    requiresRiskAnalysis = $profile.requiresRiskAnalysis
+    selectionReason = "AI source passed freshness and evidence-chain gate: $($profile.evidenceLabel)"
+    sourceText = $SourceText
+    summary = ""
+    failureAnalysis = ""
+  }
+}
+
+function Add-AiArticleAnalysis {
+  param($Item)
+
+  $analysis = New-ArticleAnalysis `
+    -Category "ai" `
+    -Title ([string]$Item.title) `
+    -Source ([string]$Item.source) `
+    -Url ([string]$Item.url) `
+    -SourceText ([string]$Item.sourceText) `
+    -ScoreLabel ([string]$Item.scoreLabel) `
+    -RequiresRiskAnalysis ([bool]$Item.requiresRiskAnalysis)
+
+  $Item.summary = $analysis.summary
+  $Item.failureAnalysis = $analysis.failureAnalysis
+  $Item.Remove("sourceText")
+  return $Item
+}
+
+function Get-HnAiCandidates {
+  $cutoff = [int][double]::Parse((Get-Date).AddDays(-90).ToUniversalTime().Subtract([datetime]"1970-01-01").TotalSeconds)
+  $queries = @("AI agent", "LLM tool", "MCP", "Claude Code", "prompt engineering", "RAG", "evals")
+  $candidates = @()
+
+  foreach ($query in $queries) {
+    $encodedQuery = [uri]::EscapeDataString($query)
+    $url = "https://hn.algolia.com/api/v1/search?tags=story&query=$encodedQuery&numericFilters=created_at_i%3E$cutoff&hitsPerPage=25"
+
+    try {
+      $hits = (Invoke-RestMethod -Uri $url).hits
+      foreach ($hit in $hits) {
+        if (-not $hit.url -or $hit.points -lt 40) { continue }
+        if ($hit.title -notmatch "Show HN|agent|tool|LLM|AI|Claude|ChatGPT|MCP|workflow|prompt|eval|RAG|automation|deploy|local") { continue }
+
+        $sourceText = "HN candidate with public discussion metrics. Points: $($hit.points). Comments: $($hit.num_comments)."
+        $item = New-AiArticleItem `
+          -Id ("ai-hn-" + $hit.objectID) `
+          -Title ([string]$hit.title) `
+          -Source "Hacker News" `
+          -Url ([string]$hit.url) `
+          -PublishedAt (([datetime]$hit.created_at).ToUniversalTime().ToString("o")) `
+          -SourceText $sourceText `
+          -ScoreLabel ("$($hit.points) points / $($hit.num_comments) comments") `
+          -Points ([int]$hit.points) `
+          -Comments ([int]$hit.num_comments)
+
+        if ($item) {
+          $item.aiSelectionScore = [int]$hit.points + ([int]$hit.num_comments * 2)
+          $candidates += $item
+        }
+      }
+    } catch {
+      Write-Warning "Skipping HN AI query $query`: $($_.Exception.Message)"
     }
   }
+
+  $candidates
+}
+
+function Get-FeedAiCandidates {
+  $candidates = @()
+  foreach ($feedInfo in Get-AiSourceFeeds) {
+    try {
+      $feed = Invoke-RestMethod -Uri $feedInfo.url -Headers @{ "User-Agent" = "personal-info-library/0.1" }
+      $feedItems = Get-FeedItems -Feed $feed
+
+      foreach ($feedItem in @($feedItems | Select-Object -First 8)) {
+        $title = Get-FeedText -Value $feedItem.title
+        $link = Get-FeedLink -Item $feedItem
+        $description = ConvertFrom-HtmlText -Value (Get-FeedText -Value $feedItem.summary)
+        if (-not $description) {
+          $description = ConvertFrom-HtmlText -Value (Get-FeedText -Value $feedItem.description)
+        }
+
+        $publishedText = Get-FeedText -Value $feedItem.published
+        if (-not $publishedText) { $publishedText = Get-FeedText -Value $feedItem.pubDate }
+        $publishedAt = try {
+          ([datetime]$publishedText).ToUniversalTime().ToString("o")
+        } catch {
+          (Get-Date).ToUniversalTime().ToString("o")
+        }
+
+        if (-not $title -or -not $link) { continue }
+        if ("$title $description" -notmatch "AI|LLM|agent|model|prompt|eval|MCP|RAG|Claude|ChatGPT|automation|workflow") { continue }
+
+        $sourceText = if ($description) { $description } else { "Public AI feed item with title and URL." }
+        $item = New-AiArticleItem `
+          -Id ("ai-feed-" + ([guid]::NewGuid().ToString("N"))) `
+          -Title $title `
+          -Source ([string]$feedInfo.source) `
+          -Url $link `
+          -PublishedAt $publishedAt `
+          -SourceText $sourceText `
+          -ScoreLabel "Curated engineering feed" `
+          -PreferConceptExplanation
+
+        if ($item) {
+          $item.aiSelectionScore = if ($item.aiArticleType -eq "application_innovation") { 140 } else { 100 }
+          $candidates += $item
+        }
+      }
+    } catch {
+      Write-Warning "Skipping AI feed $($feedInfo.source): $($_.Exception.Message)"
+    }
+  }
+
+  $candidates
+}
+
+function Get-GitHubAiCandidates {
+  $createdAfter = (Get-Date).AddDays(-90).ToString("yyyy-MM-dd")
+  $queries = @(
+    "llm agent created:>$createdAfter",
+    "mcp ai created:>$createdAfter",
+    "prompt engineering created:>$createdAfter",
+    "ai workflow created:>$createdAfter"
+  )
+  $candidates = @()
+
+  foreach ($query in $queries) {
+    $encodedQuery = [uri]::EscapeDataString($query)
+    $url = "https://api.github.com/search/repositories?q=$encodedQuery&sort=stars&order=desc&per_page=10"
+
+    try {
+      $response = Invoke-RestMethod -Uri $url -Headers @{
+        "User-Agent" = "personal-info-library/0.1"
+        "Accept" = "application/vnd.github+json"
+      }
+
+      foreach ($repo in $response.items) {
+        if (-not $repo.html_url -or $repo.stargazers_count -lt 50) { continue }
+
+        $sourceText = "GitHub repository with $($repo.stargazers_count) stars and recent public activity. Description: $($repo.description)"
+        $item = New-AiArticleItem `
+          -Id ("ai-github-" + $repo.id) `
+          -Title ([string]$repo.full_name) `
+          -Source "GitHub Search" `
+          -Url ([string]$repo.html_url) `
+          -PublishedAt (([datetime]$repo.created_at).ToUniversalTime().ToString("o")) `
+          -SourceText $sourceText `
+          -ScoreLabel ("GitHub $($repo.stargazers_count) stars")
+
+        if ($item) {
+          $item.aiSelectionScore = [int]$repo.stargazers_count
+          $candidates += $item
+        }
+      }
+    } catch {
+      Write-Warning "Skipping GitHub AI query $query`: $($_.Exception.Message)"
+    }
+  }
+
+  $candidates
+}
+
+function Get-AiItems {
+  param([int]$TargetCount = 2)
+
+  $hnCandidates = @(Get-HnAiCandidates)
+  $feedCandidates = @(Get-FeedAiCandidates)
+  $githubCandidates = @(Get-GitHubAiCandidates)
+
+  $candidates = @()
+  $candidates += $hnCandidates
+  $candidates += $feedCandidates
+  $candidates += $githubCandidates
+
+  $deduped = $candidates |
+    Group-Object -Property { $_["url"] } |
+    ForEach-Object { $_.Group[0] }
+
+  $application = $deduped |
+    Where-Object { $_["aiArticleType"] -eq "application_innovation" } |
+    Sort-Object -Property { [int]$_["aiSelectionScore"] }, { [datetime]$_["publishedAt"] } -Descending |
+    Select-Object -First 1
+
+  $applicationUrl = if ($application) { $application["url"] } else { "" }
+  $conceptOrSignal = $deduped |
+    Where-Object { $_["url"] -ne $applicationUrl -and $_["aiArticleType"] -eq "concept_explanation" } |
+    Sort-Object -Property { [int]$_["aiSelectionScore"] }, { [datetime]$_["publishedAt"] } -Descending |
+    Select-Object -First 1
+
+  if (-not $conceptOrSignal) {
+    $conceptOrSignal = $deduped |
+    Where-Object { $_["url"] -ne $applicationUrl } |
+    Sort-Object -Property { [int]$_["aiSelectionScore"] }, { [datetime]$_["publishedAt"] } -Descending |
+    Select-Object -First 1
+  }
+
+  $pickedUrls = @($applicationUrl)
+  if ($conceptOrSignal) { $pickedUrls += $conceptOrSignal["url"] }
+
+  $remaining = $deduped |
+    Where-Object { $pickedUrls -notcontains $_["url"] } |
+    Sort-Object -Property { [int]$_["aiSelectionScore"] }, { [datetime]$_["publishedAt"] } -Descending
+
+  @($application, $conceptOrSignal) + @($remaining) |
+    Where-Object { $_ } |
+    Select-Object -First $TargetCount |
+    ForEach-Object { Add-AiArticleAnalysis -Item $_ }
 }
 
 function Get-CrossrefAuthorityPapers {
@@ -516,40 +867,62 @@ function Get-CrossrefAuthorityPapers {
 }
 
 function Get-ArxivAppliedPapers {
-  $query = "https://export.arxiv.org/api/query?search_query=all:%22brain-computer%20interface%22%20OR%20all:%22neuromorphic%20chip%22%20OR%20all:%22solid-state%20battery%22&start=0&max_results=12&sortBy=submittedDate&sortOrder=descending"
-  $items = Invoke-RestMethod -Uri $query
-  $items | Where-Object {
-    $_.title -notmatch "cosmological|Poincare|wave equation|mathematics|theory"
-  } | Select-Object -First 2 | ForEach-Object {
-    $sourceText = ([string]$_.summary).Trim()
-    New-PaperItem `
-      -Id ("paper-" + ([uri]$_.id).Segments[-1].Replace("v1", "")) `
-      -Title ([string]$_.title) `
-      -Source "arXiv" `
-      -Url ([string]$_.id) `
-      -PublishedAt (([datetime]$_.published).ToUniversalTime().ToString("o")) `
-      -SourceText $sourceText
+  $query = "https://export.arxiv.org/api/query?search_query=all:%22applied%20artificial%20intelligence%22%20OR%20all:%22brain-computer%20interface%22%20OR%20all:%22neuromorphic%20chip%22%20OR%20all:%22solid-state%20battery%22&start=0&max_results=12&sortBy=submittedDate&sortOrder=descending"
+  try {
+    $items = Invoke-RestMethod -Uri $query
+    $items | Where-Object {
+      $_.title -notmatch "cosmological|Poincare|wave equation|mathematics|theory"
+    } | Select-Object -First 4 | ForEach-Object {
+      $sourceText = ([string]$_.summary).Trim()
+      $arxivId = ([uri]$_.id).Segments[-1]
+      $pdfUrl = "https://arxiv.org/pdf/$arxivId.pdf"
+      $pdfText = Get-PdfTextFromUrl -Url $pdfUrl
+      $analysisText = Get-PaperAnalysisText -FullText $pdfText -Abstract $sourceText
+      if (-not $analysisText) { continue }
+
+      New-PaperItem `
+        -Id ("paper-" + $arxivId.Replace("v1", "")) `
+        -Title ([string]$_.title) `
+        -Source "arXiv" `
+        -Url $pdfUrl `
+        -PublishedAt (([datetime]$_.published).ToUniversalTime().ToString("o")) `
+        -SourceText $analysisText `
+        -AuthorCount (@($_.author).Count) `
+        -HasOpenAccessFullText $true
+    }
+  } catch {
+    Write-Warning "Skipping arXiv applied papers: $($_.Exception.Message)"
+    return @()
   }
 }
 
 $articles = @()
 $articles += Get-OpenWorldNewsItems
-$articles += Get-HnAiItems
-$paperItems = @(Get-CrossrefAuthorityPapers)
-if ($paperItems.Count -lt 2) {
-  $paperItems += Get-ArxivAppliedPapers
-}
-$articles += $paperItems |
+$aiItems = @(Get-AiItems -TargetCount 4)
+$articles += $aiItems | Select-Object -First 2
+$paperItems = @(Get-ArxivAppliedPapers)
+$selectedPapers = @($paperItems |
+  Where-Object { $_ } |
   Sort-Object -Property recommendationScore,publishedAt -Descending |
-  Select-Object -First 2
+  Select-Object -First 2)
+$articles += $selectedPapers
+
+$paperShortfall = 2 - $selectedPapers.Count
+if ($paperShortfall -gt 0) {
+  $articles += $aiItems | Select-Object -Skip 2 -First $paperShortfall
+}
+
+if ($articles.Count -eq 0) {
+  throw "No articles were collected; keeping the existing data file unchanged."
+}
 
 $payload = [ordered]@{
   issueDate = (Get-Date).ToString("yyyy-MM-dd")
   notes = @(
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
-    "HN provides points and comments; Reddit needs OAuth credentials for stable access.",
-    "First-read and failure analysis use DeepSeek only, not GPT; local rules are used only as fallback."
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; local rules are used only as fallback."
   )
   articles = $articles
 }
@@ -588,3 +961,4 @@ $archiveIndex = [ordered]@{
 $archiveIndex | ConvertTo-Json -Depth 5 | Set-Content -Path (Join-Path $archiveFolder "index.json") -Encoding UTF8
 & (Join-Path (Get-Location) "scripts/sync-public.ps1")
 Write-Host "Updated $OutputPath with $($articles.Count) articles."
+
