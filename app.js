@@ -1,17 +1,26 @@
 const labels = {
-  international: "国际新闻",
-  ai: "AI 应用",
-  paper: "应用论文"
+  zh: {
+    international: "国际新闻",
+    ai: "AI 应用",
+    paper: "应用论文"
+  },
+  en: {
+    international: "World News",
+    ai: "AI Application",
+    paper: "Applied Paper"
+  }
 };
 
 let allArticles = [];
 let currentDataPath = "data/articles.json";
+let currentFilter = "all";
+let currentLanguage = "zh";
 
 function formatDate(value) {
   if (!value) return "日期未知";
   const date = new Date(value);
   if (Number.isNaN(date.getTime())) return value;
-  return date.toLocaleDateString("zh-CN", {
+  return date.toLocaleDateString(currentLanguage === "en" ? "en-US" : "zh-CN", {
     year: "numeric",
     month: "short",
     day: "numeric"
@@ -19,6 +28,7 @@ function formatDate(value) {
 }
 
 function renderArticles(filter = "all") {
+  currentFilter = filter;
   const list = document.querySelector("#article-list");
   const template = document.querySelector("#article-template");
   list.innerHTML = "";
@@ -28,28 +38,29 @@ function renderArticles(filter = "all") {
     : allArticles.filter((article) => article.category === filter);
 
   articles.forEach((article) => {
+    const localized = getLocalizedArticle(article);
     const node = template.content.cloneNode(true);
-    node.querySelector(".badge").textContent = labels[article.category] || article.category;
+    node.querySelector(".badge").textContent = labels[currentLanguage][article.category] || article.category;
     node.querySelector(".score").textContent = article.recommendationScore
-      ? `推荐分 ${article.recommendationScore}/100`
-      : article.scoreLabel || "热度待补";
-    node.querySelector("h2").textContent = article.title;
+      ? `${getText("scorePrefix")} ${article.recommendationScore}/100`
+      : article.scoreLabel || getText("signalPending");
+    node.querySelector("h2").textContent = localized.title;
     const metaParts = [article.source, formatDate(article.publishedAt), article.selectionReason];
     if (article.evidenceLabel) {
-      metaParts.push(`证据链：${article.evidenceLabel}`);
+      metaParts.push(`${getText("evidencePrefix")}: ${article.evidenceLabel}`);
     }
     node.querySelector(".meta").textContent = metaParts.join(" | ");
-    node.querySelector(".summary").textContent = article.summary;
+    node.querySelector(".summary").textContent = localized.summary;
     const paperDetails = node.querySelector(".paper-details");
-    if (article.paperCard) {
+    if (localized.paperCard) {
       const fields = [
-        article.paperCard.problem,
-        article.paperCard.method,
-        article.paperCard.difference,
-        article.paperCard.innovation,
-        article.paperCard.implementation,
-        article.paperCard.applications,
-        ...(article.paperCard.technicalTerms || [])
+        localized.paperCard.problem,
+        localized.paperCard.method,
+        localized.paperCard.difference,
+        localized.paperCard.innovation,
+        localized.paperCard.implementation,
+        localized.paperCard.applications,
+        ...(localized.paperCard.technicalTerms || [])
       ].filter(Boolean);
 
       paperDetails.innerHTML = "";
@@ -64,12 +75,63 @@ function renderArticles(filter = "all") {
       paperDetails.innerHTML = "";
     }
     node.querySelector(".analysis h3").textContent = article.requiresRiskAnalysis
-      ? "为什么它可能不能成功"
-      : "关键看点";
-    node.querySelector(".analysis p").textContent = article.failureAnalysis;
-    node.querySelector(".read-link").href = article.url;
+      ? getText("riskHeading")
+      : getText("takeawayHeading");
+    node.querySelector(".analysis p").textContent = localized.failureAnalysis;
+    node.querySelector(".read-link").href = getSafeArticleUrl(article.url);
+    node.querySelector(".read-link").textContent = getText("readOriginal");
     list.appendChild(node);
   });
+}
+
+function getSafeArticleUrl(value) {
+  try {
+    const base = globalThis.location?.href || "https://example.invalid/";
+    const url = new URL(value, base);
+    if (url.protocol === "http:" || url.protocol === "https:") {
+      return url.href;
+    }
+  } catch {
+    // Invalid or unsafe URLs fall back to a harmless in-page target.
+  }
+  return "#";
+}
+
+function getText(key) {
+  const copy = {
+    zh: {
+      riskHeading: "为什么它可能不能成功",
+      takeawayHeading: "关键看点",
+      readOriginal: "阅读原文",
+      scorePrefix: "推荐分",
+      signalPending: "热度待补",
+      evidencePrefix: "证据链"
+    },
+    en: {
+      riskHeading: "Why it may fail",
+      takeawayHeading: "Key takeaway",
+      readOriginal: "Read source",
+      scorePrefix: "Score",
+      signalPending: "Signal pending",
+      evidencePrefix: "Evidence"
+    }
+  };
+  return copy[currentLanguage][key];
+}
+
+function getLocalizedArticle(article) {
+  const translation = article.translations?.[currentLanguage];
+  if (!translation) {
+    return article;
+  }
+
+  return {
+    ...article,
+    title: translation.title || article.title,
+    summary: translation.summary || article.summary,
+    failureAnalysis: translation.failureAnalysis || article.failureAnalysis,
+    paperCard: translation.paperCard || article.paperCard
+  };
 }
 
 async function loadArticles(path = currentDataPath) {
@@ -78,7 +140,7 @@ async function loadArticles(path = currentDataPath) {
   const payload = await response.json();
   allArticles = payload.articles;
   document.querySelector("#issue-date").textContent = formatDate(payload.issueDate);
-  renderArticles();
+  renderArticles(currentFilter);
 }
 
 async function loadArchiveIndex() {
@@ -104,6 +166,15 @@ document.querySelectorAll(".tab").forEach((button) => {
     document.querySelectorAll(".tab").forEach((tab) => tab.classList.remove("active"));
     button.classList.add("active");
     renderArticles(button.dataset.filter);
+  });
+});
+
+document.querySelectorAll(".language-button").forEach((button) => {
+  button.addEventListener("click", () => {
+    currentLanguage = button.dataset.language;
+    document.querySelectorAll(".language-button").forEach((item) => item.classList.remove("active"));
+    button.classList.add("active");
+    renderArticles(currentFilter);
   });
 });
 

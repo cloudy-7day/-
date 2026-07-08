@@ -230,9 +230,9 @@ function Get-FeedItems {
 
 function Get-OpenNewsFeeds {
   $feeds = @(
-    @{ source = "BBC World"; url = "https://feeds.bbci.co.uk/news/world/rss.xml" },
     @{ source = "NPR World"; url = "https://feeds.npr.org/1004/rss.xml" },
-    @{ source = "The Guardian World"; url = "https://www.theguardian.com/world/rss" }
+    @{ source = "The Guardian World"; url = "https://www.theguardian.com/world/rss" },
+    @{ source = "Reuters World"; url = "https://feeds.reuters.com/Reuters/worldNews" }
   )
 
   if ($env:NEWS_FEED_URLS) {
@@ -295,6 +295,37 @@ function New-ArticleAnalysis {
     default { "Give a rigorous, restrained, verifiable first read." }
   }
 
+  $translationGuide = if ($Category -eq "paper") {
+    @(
+      '  "translations": {'
+      '    "en": {'
+      '      "title": "A concise English title for this paper.",'
+      '      "summary": "2-3 English sentences explaining what the paper says and why it is worth reading.",'
+      '      "failureAnalysis": "1-2 English sentences with the most important evidence limit or practical constraint.",'
+      '      "paperCard": {'
+      '        "problem": "Plain English explanation of the problem.",'
+      '        "method": "Plain English explanation of the method.",'
+      '        "difference": "How it differs from older methods.",'
+      '        "innovation": "Where the innovation is.",'
+      '        "implementation": "How it is implemented.",'
+      '        "applications": "Where it can be applied.",'
+      '        "technicalTerms": ["term: plain English explanation"]'
+      '      }'
+      '    }'
+      '  }'
+    ) -join "`n"
+  } else {
+    @(
+      '  "translations": {'
+      '    "en": {'
+      '      "title": "A concise English title for this item.",'
+      '      "summary": "2-3 English sentences explaining the item and why it is worth reading.",'
+      '      "failureAnalysis": "1-2 English sentences with the key takeaway or practical constraint."'
+      '    }'
+      '  }'
+    ) -join "`n"
+  }
+
   $analysisGuide = if ($Category -eq "paper") {
     @(
       '"failureAnalysis": "1-2 Chinese sentences with the most important evidence limit or practical constraint.",'
@@ -332,7 +363,8 @@ $categoryGuide
 Return strict JSON only. Do not use Markdown or code fences:
 {
   "summary": "2-3 Chinese sentences explaining what this article/paper says and why it is worth reading.",
-  $analysisGuide
+  $analysisGuide,
+$translationGuide
 }
 "@
 
@@ -369,6 +401,27 @@ Return strict JSON only. Do not use Markdown or code fences:
         applications = [string]$parsed.paperCard.applications
         technicalTerms = @($parsed.paperCard.technicalTerms | ForEach-Object { [string]$_ })
       }
+    }
+    if ($parsed.translations -and $parsed.translations.en) {
+      $english = [ordered]@{
+        summary = [string]$parsed.translations.en.summary
+        failureAnalysis = [string]$parsed.translations.en.failureAnalysis
+      }
+      if ($parsed.translations.en.title) {
+        $english.title = [string]$parsed.translations.en.title
+      }
+      if ($Category -eq "paper" -and $parsed.translations.en.paperCard) {
+        $english.paperCard = [ordered]@{
+          problem = [string]$parsed.translations.en.paperCard.problem
+          method = [string]$parsed.translations.en.paperCard.method
+          difference = [string]$parsed.translations.en.paperCard.difference
+          innovation = [string]$parsed.translations.en.paperCard.innovation
+          implementation = [string]$parsed.translations.en.paperCard.implementation
+          applications = [string]$parsed.translations.en.paperCard.applications
+          technicalTerms = @($parsed.translations.en.paperCard.technicalTerms | ForEach-Object { [string]$_ })
+        }
+      }
+      $result.translations = [ordered]@{ en = $english }
     }
     return $result
   } catch {
@@ -475,9 +528,17 @@ function New-PaperItem {
     selectionReason = $selectionReason
     paperTopic = $profile.paperTopic
     qualityScore = $profile.qualityScore
+    readabilityStatus = $profile.readabilityStatus
     paperCard = $paperCard
     summary = $analysis.summary
     failureAnalysis = $analysis.failureAnalysis
+    translations = [ordered]@{
+      en = Get-EnglishTranslationForAnalysis `
+        -Category "paper" `
+        -Title $Title `
+        -Analysis $analysis `
+        -PaperCard $paperCard
+    }
   }
 }
 
@@ -520,11 +581,24 @@ function Get-OpenWorldNewsItems {
     }
   }
 
-  $candidates |
+    $deduped = $candidates |
     Group-Object -Property title |
-    ForEach-Object { $_.Group[0] } |
-    Sort-Object -Property publishedAt -Descending |
-    Select-Object -First 3 |
+    ForEach-Object { $_.Group[0] }
+
+  # 每个来源最多选 1 篇，保证来源多样性
+  $perSource = $deduped |
+    Group-Object -Property source |
+    ForEach-Object { $_.Group | Sort-Object -Property publishedAt -Descending | Select-Object -First 1 }
+
+  $finalNews = @($perSource | Sort-Object -Property publishedAt -Descending)
+  if ($finalNews.Count -lt 3) {
+        $usedUrls = @{}
+    foreach ($item in $finalNews) { $usedUrls[$item.url] = $true }
+    $remaining = $deduped | Where-Object { -not $usedUrls.ContainsKey($_.url) }
+    $finalNews += $remaining | Sort-Object -Property publishedAt -Descending | Select-Object -First (3 - $finalNews.Count)
+  }
+
+  $finalNews | Select-Object -First 3 |
     ForEach-Object {
       $scoreLabel = "Open RSS source"
       $sourceText = $_.sourceText
@@ -547,6 +621,12 @@ function Get-OpenWorldNewsItems {
         selectionReason = "Open, non-paywalled RSS candidate; recent item across configured news feeds"
       summary = $analysis.summary
       failureAnalysis = $analysis.failureAnalysis
+      translations = [ordered]@{
+        en = Get-EnglishTranslationForAnalysis `
+          -Category "international" `
+          -Title ([string]$_.title) `
+          -Analysis $analysis
+      }
     }
   }
 }
@@ -613,6 +693,12 @@ function Add-AiArticleAnalysis {
 
   $Item.summary = $analysis.summary
   $Item.failureAnalysis = $analysis.failureAnalysis
+  $Item.translations = [ordered]@{
+      en = Get-EnglishTranslationForAnalysis `
+        -Category "ai" `
+        -Title ([string]$Item.title) `
+        -Analysis $analysis
+  }
   $Item.Remove("sourceText")
   return $Item
 }

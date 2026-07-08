@@ -150,6 +150,25 @@ function Test-PaperApplicationSignal {
   return ($haystack -match "application|applied|clinical|device|system|benchmark|accuracy|deployment|users?|control|decoding|diagnosis|manufacturing|storage|assistive|communication|prototype|experiment|method")
 }
 
+function Test-PaperExtractedTextUsable {
+  param([string]$Text)
+
+  if (-not $Text) {
+    return $false
+  }
+
+  $normalized = (($Text -replace "\s+", " ").Trim())
+  if ($normalized.Length -lt 700) {
+    return $false
+  }
+
+  $haystack = $normalized.ToLowerInvariant()
+  $hasMethodSignal = $haystack -match "method|experiment|implementation|results?|dataset|benchmark|accuracy|evaluation|prototype|system"
+  $hasApplicationSignal = Test-PaperApplicationSignal -Title "" -Text $normalized
+
+  return ($hasMethodSignal -and $hasApplicationSignal)
+}
+
 function Get-PaperQualityScore {
   param(
     [string]$Source,
@@ -188,13 +207,23 @@ function Get-PaperCandidateProfile {
     -InfluentialCitationCount $InfluentialCitationCount `
     -AuthorCount $AuthorCount
   $hasApplicationSignal = Test-PaperApplicationSignal -Title $Title -Text $SourceText
+  $hasUsableFullText = ($HasOpenAccessFullText -and (Test-PaperExtractedTextUsable -Text $SourceText))
+  $readabilityStatus = if ($hasUsableFullText) {
+    "open"
+  } elseif ($HasOpenAccessFullText) {
+    "thin"
+  } else {
+    "unavailable"
+  }
 
   [ordered]@{
     paperTopic = $topic
     qualityScore = $qualityScore
     hasApplicationSignal = $hasApplicationSignal
     hasOpenAccessFullText = $HasOpenAccessFullText
-    isEligibleForDailyPaper = ($HasOpenAccessFullText -and $topic -ne "out_of_scope" -and $qualityScore -ge 25 -and $hasApplicationSignal)
+    hasUsableFullText = $hasUsableFullText
+    readabilityStatus = $readabilityStatus
+    isEligibleForDailyPaper = ($hasUsableFullText -and $topic -ne "out_of_scope" -and $qualityScore -ge 25 -and $hasApplicationSignal)
   }
 }
 
@@ -232,12 +261,91 @@ function Get-PaperAnalysisText {
     [string]$Abstract
   )
 
-  if ($FullText -and $FullText.Trim()) {
+  if (Test-PaperExtractedTextUsable -Text $FullText) {
     return $FullText.Trim()
   }
 
   return ""
 }
 
+function ConvertTo-EnglishPaperCardFallback {
+  param($PaperCard)
 
+  if (-not $PaperCard) {
+    return $null
+  }
 
+  [ordered]@{
+    problem = "Problem: use the paper card to identify the practical problem before judging the technique."
+    method = "Method: read the model, material, device, or system workflow as the proposed solution."
+    difference = "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods."
+    innovation = "Innovation: focus on the link between the technical change and a real application goal."
+    implementation = "Implementation: check the input data, core model or device, and validation results."
+    applications = "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices."
+    technicalTerms = @($PaperCard.technicalTerms | ForEach-Object { [string]$_ })
+    whySelected = if ($PaperCard.whySelected) { [string]$PaperCard.whySelected } else { "Open full text and usable extracted content." }
+  }
+}
+
+function New-ArticleEnglishTranslation {
+  param(
+    [string]$Category,
+    [string]$Title,
+    [string]$Summary,
+    [string]$FailureAnalysis,
+    $PaperCard = $null
+  )
+
+  $summary = switch ($Category) {
+    "international" { "Local English fallback: read the source and identify the event, stakeholders, incentives, and next variables." }
+    "ai" { "Local English fallback: evaluate the AI item by the friction it removes, why now, and whether users return." }
+    "paper" { "Local English fallback: this paper has usable extracted full text; judge the problem, method, implementation path, evidence limits, and application value." }
+    default { if ($Summary) { [string]$Summary } else { "Local English fallback: verify evidence quality and real-world relevance." } }
+  }
+
+  $takeaway = switch ($Category) {
+    "ai" { "Check user value, data access, cost, stability, integration depth, and distribution risk." }
+    "paper" { "Check experiment conditions, sample size, reproducibility, cost, and deployment constraints." }
+    default { if ($FailureAnalysis) { [string]$FailureAnalysis } else { "Check the evidence chain before trusting the conclusion." } }
+  }
+
+  $result = [ordered]@{
+    summary = $summary
+    failureAnalysis = $takeaway
+  }
+
+  if ($PSBoundParameters.ContainsKey('Title') -and $Title) {
+    $result.title = [string]$Title
+  }
+
+  $englishPaperCard = ConvertTo-EnglishPaperCardFallback -PaperCard $PaperCard
+  if ($englishPaperCard) {
+    $result.paperCard = $englishPaperCard
+  }
+
+  return $result
+}
+
+function Get-EnglishTranslationForAnalysis {
+  param(
+    [string]$Category,
+    [string]$Title,
+    $Analysis,
+    $PaperCard = $null
+  )
+
+  if ($Analysis.translations -and $Analysis.translations.en) {
+    $english = $Analysis.translations.en
+    if ($Title -and -not $english.title) {
+      $english | Add-Member -NotePropertyName title -NotePropertyValue $Title
+    }
+    return $english
+  }
+
+  return New-ArticleEnglishTranslation `
+    -Category $Category `
+    -Title $Title `
+    -Summary ([string]$Analysis.summary) `
+    -FailureAnalysis ([string]$Analysis.failureAnalysis) `
+    -PaperCard $PaperCard
+}

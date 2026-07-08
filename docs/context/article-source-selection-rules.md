@@ -32,10 +32,8 @@
 
 默认来源池：
 
-- BBC World
 - NPR World
 - The Guardian World
-- AP News
 - Reuters 公开入口
 - 其他公开 RSS 或公开 API
 

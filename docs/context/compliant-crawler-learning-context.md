@@ -93,7 +93,7 @@ TLDR 适合作为“选题线索层”，不适合直接当全文转载来源。
 
 来源多样性建议：
 
-- 国际新闻：BBC、NPR、The Guardian、AP、Reuters 官方公开入口。
+- 国际新闻：NPR、The Guardian、AP、Reuters 官方公开入口。
 - AI 应用：Hacker News、GitHub Trending、Product Hunt、公司技术博客。
 - AI 工程策展：Simon Willison、Latent Space、Chip Huyen、Interconnects 等公开 feed；中文解读必须能追溯到原始案例。
 - 论文：优先 arXiv 等公开全文来源；Semantic Scholar 只可作为发现或质量信号，不把摘要页当作可读论文。
