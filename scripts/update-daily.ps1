@@ -472,6 +472,7 @@ function New-PaperItem {
     [string]$Title,
     [string]$Source,
     [string]$Url,
+    [string]$AbstractUrl = '',
     [string]$PublishedAt,
     [string]$SourceText,
     [int]$CitationCount = 0,
@@ -522,6 +523,7 @@ function New-PaperItem {
     title = $Title
     source = $Source
     url = $Url
+    abstractUrl = $AbstractUrl
     publishedAt = $PublishedAt
     scoreLabel = $scoreLabel
     recommendationScore = $totalScore
@@ -665,6 +667,7 @@ function New-AiArticleItem {
     title = $Title
     source = $Source
     url = $Url
+    abstractUrl = $AbstractUrl
     publishedAt = $PublishedAt
     scoreLabel = $ScoreLabel
     aiArticleType = $profile.aiArticleType
@@ -966,11 +969,14 @@ function Get-ArxivAppliedPapers {
       $analysisText = Get-PaperAnalysisText -FullText $pdfText -Abstract $sourceText
       if (-not $analysisText) { continue }
 
+      $arxivBase = $arxivId -replace "v\d+$", ""
+      $abstractUrl = "https://arxiv.org/abs/$arxivBase"
       New-PaperItem `
         -Id ("paper-" + $arxivId.Replace("v1", "")) `
         -Title ([string]$_.title) `
         -Source "arXiv" `
         -Url $pdfUrl `
+        -AbstractUrl $abstractUrl `
         -PublishedAt (([datetime]$_.published).ToUniversalTime().ToString("o")) `
         -SourceText $analysisText `
         -AuthorCount (@($_.author).Count) `

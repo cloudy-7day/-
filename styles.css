@@ -1,4 +1,4 @@
-:root {
+﻿:root {
   color-scheme: light;
   --bg: #f6f5ef;
   --ink: #1c2421;
@@ -242,6 +242,12 @@ main {
   display: none;
 }
 
+.paper-details {
+  max-height: 200px;
+  overflow-y: auto;
+  border-left: 3px solid var(--line);
+}
+
 .paper-details li {
   padding-left: 2px;
 }
@@ -264,17 +270,29 @@ main {
   font-size: 14px;
 }
 
-.read-link {
-  display: inline-flex;
-  align-self: flex-start;
+.card-links {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
   margin-top: 14px;
+}
+
+.read-link,
+.abstract-link {
+  display: inline-flex;
   color: var(--accent-3);
   font-weight: 700;
   text-decoration: none;
 }
 
-.read-link:hover {
+.read-link:hover,
+.abstract-link:hover {
   text-decoration: underline;
+}
+
+.abstract-link {
+  color: var(--accent);
+  font-size: 13px;
 }
 
 .decision-log {

@@ -1,4 +1,4 @@
-const labels = {
+﻿const labels = {
   zh: {
     international: "国际新闻",
     ai: "AI 应用",
@@ -80,6 +80,14 @@ function renderArticles(filter = "all") {
     node.querySelector(".analysis p").textContent = localized.failureAnalysis;
     node.querySelector(".read-link").href = getSafeArticleUrl(article.url);
     node.querySelector(".read-link").textContent = getText("readOriginal");
+    const abstractLink = node.querySelector(".abstract-link");
+    if (article.abstractUrl) {
+      abstractLink.href = getSafeArticleUrl(article.abstractUrl);
+      abstractLink.textContent = getText("readAbstract");
+      abstractLink.hidden = false;
+    } else {
+      abstractLink.hidden = true;
+    }
     list.appendChild(node);
   });
 }
@@ -103,6 +111,7 @@ function getText(key) {
       riskHeading: "为什么它可能不能成功",
       takeawayHeading: "关键看点",
       readOriginal: "阅读原文",
+      readAbstract: "阅读简介",
       scorePrefix: "推荐分",
       signalPending: "热度待补",
       evidencePrefix: "证据链"
@@ -111,6 +120,7 @@ function getText(key) {
       riskHeading: "Why it may fail",
       takeawayHeading: "Key takeaway",
       readOriginal: "Read source",
+      readAbstract: "Read abstract",
       scorePrefix: "Score",
       signalPending: "Signal pending",
       evidencePrefix: "Evidence"

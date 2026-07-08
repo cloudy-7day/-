@@ -1,233 +1,233 @@
-﻿{
-    "issueDate":  "2026-07-07",
-    "notes":  [
-                  "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
-                  "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
-                  "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
-                  "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; local rules are used only as fallback."
-              ],
-    "articles":  [
-                     {
-                         "id":  "news-65e3165af33c4585b5853ba1672d2725",
-                         "category":  "international",
-                         "title":  "What happened in the opening day of the NATO summit in Ankara, Turkey",
-                         "source":  "NPR World",
-                         "url":  "https://www.npr.org/2026/07/07/nx-s1-5884718/what-happened-in-the-opening-day-of-the-nato-summit-in-ankara-turkey",
-                         "publishedAt":  "2026-07-07T22:45:44.0000000Z",
-                         "scoreLabel":  "Open RSS source",
-                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
-                         "summary":  "文章报道了在土耳其安卡拉举行的北约峰会开幕日情况，尽管北约试图传递团结信息，但特朗普总统对欧洲盟友的新一轮攻击再次暴露了联盟内部紧张关系。这篇文章值得一读，因为它揭示了当前国际安全联盟面临的现实挑战。",
-                         "failureAnalysis":  "关键要点：北约内部团结因美国领导人的言论而受到考验，这凸显了跨大西洋关系中的持续裂痕。",
-                         "translations":  {
-                                              "en":  {
-                                                         "summary":  "The article reports on the opening day of the NATO summit in Ankara, Turkey, where a message of unity was overshadowed by President Trump\u0027s renewed attacks on European allies, exposing internal tensions. It is worth reading for its insight into the challenges facing the transatlantic alliance.",
-                                                         "failureAnalysis":  "Key takeaway: NATO\u0027s internal unity is tested by U.S. leadership rhetoric, highlighting persistent rifts in transatlantic relations.",
-                                                         "title":  "NATO Summit Opening Day in Ankara: Unity Message Undermined by Trump\u0027s Attacks"
-                                                     }
-                                          }
-                     },
-                     {
-                         "id":  "news-1026c960d90848f0891687a1349ec734",
-                         "category":  "international",
-                         "title":  "What\u0027s at stake at the NATO summit in Turkey",
-                         "source":  "NPR World",
-                         "url":  "https://www.npr.org/2026/07/07/nx-s1-5883812/whats-at-stake-at-the-nato-summit-in-turkey",
-                         "publishedAt":  "2026-07-07T20:58:28.0000000Z",
-                         "scoreLabel":  "Open RSS source",
-                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
-                         "summary":  "本文报道了在土耳其举行的北约峰会，重点在于北约领导人希望特朗普总统对联盟的批评是为了促使欧洲增加国防开支，但一些分析人士担心特朗普可能有其他动机。这篇文章值得阅读，因为它揭示了北约内部对特朗普意图的复杂看法，以及这对跨大西洋安全关系的影响。",
-                         "failureAnalysis":  "关键要点：特朗普对北约的批评可能并非单纯为了增加欧洲防务开支，而是隐藏着更深层的战略意图，这需要密切关注。",
-                         "translations":  {
-                                              "en":  {
-                                                         "summary":  "This article reports on the NATO summit in Turkey, focusing on how NATO leaders hope President Trump\u0027s criticism of the alliance is aimed at increasing European defense spending, but some analysts fear Trump may have ulterior motives. It is worth reading because it reveals the complex perceptions within NATO regarding Trump\u0027s intentions and the implications for transatlantic security relations.",
-                                                         "failureAnalysis":  "Key takeaway: Trump\u0027s criticism of NATO may not simply be about pushing Europe to spend more on defense, but could conceal deeper strategic motives that warrant close attention.",
-                                                         "title":  "What\u0027s at Stake at the NATO Summit in Turkey"
-                                                     }
-                                          }
-                     },
-                     {
-                         "id":  "news-e2a6674425544a0589df8a3d352b329a",
-                         "category":  "international",
-                         "title":  "IOC moves to allow more Russian athletes back into the Olympic games",
-                         "source":  "NPR World",
-                         "url":  "https://www.npr.org/2026/07/07/nx-s1-5884882/ioc-moves-to-allow-more-russian-athletes-back-into-the-olympic-games",
-                         "publishedAt":  "2026-07-07T20:07:51.0000000Z",
-                         "scoreLabel":  "Open RSS source",
-                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
-                         "summary":  "国际奥委会正在放宽对俄罗斯运动员的参赛限制，允许更多俄罗斯选手重返奥运赛场。这一决定发生在俄罗斯持续对乌克兰发动导弹和无人机袭击、造成平民伤亡的背景下。文章揭示了体育与地缘政治之间的复杂关系，值得关注。",
-                         "failureAnalysis":  "核心要点：国际奥委会在战争持续期间调整制裁，表明体育组织在政治压力与奥林匹克精神之间寻求平衡。",
-                         "translations":  {
-                                              "en":  {
-                                                         "summary":  "The IOC is easing sanctions to allow more Russian athletes to compete in Olympic events, despite ongoing Russian missile and drone strikes killing civilians in Ukraine. This article highlights the tension between sports and geopolitics, making it a significant read.",
-                                                         "failureAnalysis":  "Key takeaway: The IOC\u0027s decision to adjust sanctions during an active war shows the delicate balance between political pressure and Olympic ideals.",
-                                                         "title":  "IOC Moves to Allow More Russian Athletes Back into Olympic Games"
-                                                     }
-                                          }
-                     },
-                     {
-                         "id":  "ai-github-1266797999",
-                         "category":  "ai",
-                         "title":  "DietrichGebert/ponytail",
-                         "source":  "GitHub Search",
-                         "url":  "https://github.com/DietrichGebert/ponytail",
-                         "publishedAt":  "2026-06-12T00:52:37.0000000Z",
-                         "scoreLabel":  "GitHub 77047 stars",
-                         "aiArticleType":  "application_innovation",
-                         "evidenceAnchors":  [
-                                                 {
-                                                     "label":  "GitHub",
-                                                     "kind":  "primary"
-                                                 },
-                                                 {
-                                                     "label":  "Community signal",
-                                                     "kind":  "secondary"
-                                                 }
-                                             ],
-                         "evidenceLabel":  "GitHub + Community signal",
-                         "hasPrimaryAnchor":  true,
-                         "requiresRiskAnalysis":  true,
-                         "selectionReason":  "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-                         "summary":  "该项目提出让AI代理模仿最懒的高级开发者的思维方式，强调不写代码才是最佳实践。它因77047颗星的高热度而值得关注，反映了开发者对减少无用代码和提升效率的强烈需求。",
-                         "failureAnalysis":  "核心风险在于“懒惰”可能被误解为低质量或偷懒，而非高效优化，导致用户信任缺失。部署路径依赖AI代理的准确性和上下文理解，若模型无法精准判断何时不写代码，反而增加调试成本。此外，项目缺乏明确的验证指标和商业案例，难以说服企业采用。",
-                         "aiSelectionScore":  77047,
-                         "translations":  {
-                                              "en":  {
-                                                         "summary":  "This project proposes an AI agent that mimics the mindset of the laziest senior developer, emphasizing that the best code is the one never written. With 77,047 stars, it highlights a strong demand for reducing unnecessary code and improving efficiency.",
-                                                         "failureAnalysis":  "The main risk is that \u0027laziness\u0027 may be misinterpreted as low quality rather than efficient optimization, eroding user trust. Deployment relies on the AI\u0027s accuracy in context understanding; if it fails to judge when to skip code, it increases debugging costs.",
-                                                         "title":  "DietrichGebert/ponytail: AI Agent That Thinks Like the Laziest Senior Dev"
-                                                     }
-                                          }
-                     },
-                     {
-                         "id":  "ai-feed-4b7d2871493c41e58c163c69340cd878",
-                         "category":  "ai",
-                         "title":  "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
-                         "source":  "Latent Space",
-                         "url":  "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
-                         "publishedAt":  "2026-07-08T02:20:25.0000000Z",
-                         "scoreLabel":  "Curated engineering feed",
-                         "aiArticleType":  "concept_explanation",
-                         "evidenceAnchors":  [
-
-                                             ],
-                         "evidenceLabel":  "No clear evidence",
-                         "hasPrimaryAnchor":  false,
-                         "requiresRiskAnalysis":  false,
-                         "selectionReason":  "AI source passed freshness and evidence-chain gate: No clear evidence",
-                         "summary":  "这篇文章汇总了Lilian Weng对35篇关于“Harness Engineering for RSI”（即通过工程手段提升强化学习与模仿学习效率）的论文解读，提供了浓缩的技术洞察。它值得阅读，因为这是来自权威人士的精选工程实践总结，能帮助非技术决策者快速理解该领域的关键进展。",
-                         "failureAnalysis":  "核心启示：即使是非技术背景，也能通过这类精炼的工程综述，把握AI系统优化中的实际瓶颈与解决思路。",
-                         "aiSelectionScore":  100,
-                         "translations":  {
-                                              "en":  {
-                                                         "summary":  "This article condenses Lilian Weng\u0027s insights from 35 papers on engineering techniques to improve reinforcement learning and imitation learning efficiency. It is worth reading as a curated, authoritative overview that helps non-technical leaders grasp key advances in AI system optimization.",
-                                                         "failureAnalysis":  "Key takeaway: Even without a technical background, such condensed engineering reviews can illuminate practical bottlenecks and solutions in AI system improvement.",
-                                                         "title":  "Lilian Weng\u0027s 35-Paper Summary on Harness Engineering for RSI"
-                                                     }
-                                          }
-                     },
-                     {
-                         "id":  "paper-2607.03844",
-                         "category":  "paper",
-                         "title":  "EEG-Based Imagined Speech Decoding Using a Hybrid CNN-SNN Architecture",
-                         "source":  "arXiv",
-                         "url":  "https://arxiv.org/pdf/2607.03844v1.pdf",
-                         "publishedAt":  "2026-07-04T12:23:46.0000000Z",
-                         "scoreLabel":  "Quality 28/100 + topic fit 30/30",
-                         "recommendationScore":  83,
-                         "selectionReason":  "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
-                         "paperTopic":  "brain_computer_interface",
-                         "qualityScore":  28,
-                         "readabilityStatus":  "open",
-                         "paperCard":  {
-                                           "problem":  "帮助严重语言障碍患者通过大脑信号恢复交流。想象语音（心里默念词语）的脑电信号非常微弱、不稳定，现有方法准确率低。",
-                                           "method":  "先用卷积神经网络从脑电信号中提取时间特征，再用脉冲神经网络进行基于脉冲的时间分类。脉冲神经网络模拟生物神经元，通过离散脉冲处理信息。",
-                                           "difference":  "之前的方法主要用传统机器学习或普通深度学习，没有利用脉冲神经网络的生物时间动态特性。这篇是第一个将脉冲神经网络用于想象语音解码的。",
-                                           "innovation":  "创新在于混合架构：卷积神经网络负责特征提取，脉冲神经网络负责时间分类，更贴近大脑实际工作方式，提升了准确率。",
-                                           "implementation":  "使用2020年BCI竞赛III数据集，包含15人想象5个词语的64通道脑电数据。预处理包括50Hz陷波滤波、共平均参考和标准化。卷积神经网络用3个一维卷积层提取特征，脉冲神经网络用漏积分点火神经元进行时间步分类，最后根据脉冲率预测词语。",
-                                           "applications":  "可用于脑机接口辅助交流设备，帮助中风、渐冻症等患者；也可用于神经科学研究；未来可部署在低功耗神经形态芯片上。",
-                                           "technicalTerms":  [
-                                                                  "脑电图：从头皮记录大脑电活动的非侵入式方法",
-                                                                  "卷积神经网络：一种擅长提取空间或时间特征的深度学习模型",
-                                                                  "脉冲神经网络：模拟生物神经元通过脉冲传递信息的计算模型，更节能且适合时间序列",
-                                                                  "漏积分点火神经元：一种脉冲神经元模型，模拟电荷积累和放电过程",
-                                                                  "共平均参考：一种空间滤波方法，减去所有通道的平均值以降低噪声"
-                                                              ]
-                                       },
-                         "summary":  "这篇论文提出了一种结合卷积神经网络和脉冲神经网络的混合模型，用于从脑电图信号中解码想象语音。它首次将脉冲神经网络应用于这个领域，在公开数据集上取得了80.13%的准确率，远超之前的方法。值得阅读是因为它展示了生物启发式计算在脑机接口中的潜力。",
-                         "failureAnalysis":  "论文仅使用了单一公开数据集，且测试集标签不可用，可能限制了结果的泛化性。此外，脉冲神经网络硬件尚未广泛普及，实际部署有难度。",
-                         "translations":  {
-                                              "en":  {
-                                                         "summary":  "This paper proposes a hybrid CNN-SNN model for decoding imagined speech from EEG signals. It is the first to apply spiking neural networks to this task, achieving 80.13% accuracy on a public benchmark, outperforming prior methods. It is worth reading for its biologically inspired approach to brain-computer interfaces.",
-                                                         "failureAnalysis":  "The study uses only one public dataset with unavailable test labels, limiting generalizability. SNN hardware is not yet widely available, posing deployment challenges.",
-                                                         "title":  "EEG-Based Imagined Speech Decoding Using a Hybrid CNN-SNN Architecture",
-                                                         "paperCard":  {
-                                                                           "problem":  "Help people with severe speech impairments communicate by decoding imagined speech from brain signals. EEG signals for imagined speech are weak and noisy, and existing methods have low accuracy.",
-                                                                           "method":  "Use a CNN to extract temporal features from EEG, then an SNN for spike-based temporal classification. SNNs mimic biological neurons using discrete spikes.",
-                                                                           "difference":  "Prior methods used classical ML or standard deep learning without spike-based temporal dynamics. This is the first to integrate SNNs for imagined speech decoding.",
-                                                                           "innovation":  "The hybrid architecture: CNN for feature extraction and SNN for temporal classification, more closely mimicking brain processing and improving accuracy.",
-                                                                           "implementation":  "Uses the 2020 BCI Competition III dataset with 64-channel EEG from 15 subjects imagining 5 words. Preprocessing includes 50Hz notch filter, common average reference, and z-score normalization. The CNN has three 1D convolutional layers; the SNN uses leaky integrate-and-fire neurons for time-step classification, predicting words based on spike rates.",
-                                                                           "applications":  "BCI-based assistive communication for stroke or ALS patients; neuroscience research; future deployment on low-power neuromorphic chips.",
-                                                                           "technicalTerms":  [
-                                                                                                  "EEG: non-invasive recording of brain electrical activity from the scalp",
-                                                                                                  "CNN: deep learning model good at extracting spatial or temporal features",
-                                                                                                  "SNN: computational model mimicking biological neurons with spike-based information processing, more energy-efficient",
-                                                                                                  "leaky integrate-and-fire neuron: a spiking neuron model that accumulates charge and fires when threshold is reached",
-                                                                                                  "common average reference: spatial filter subtracting the mean of all channels to reduce noise"
-                                                                                              ]
-                                                                       }
-                                                     }
-                                          }
-                     },
-                     {
-                         "id":  "paper-2607.03094",
-                         "category":  "paper",
-                         "title":  "Stacked LoRA for Subject-Adaptive EEG Foundation Models in Motor Imagery Decoding",
-                         "source":  "arXiv",
-                         "url":  "https://arxiv.org/pdf/2607.03094v1.pdf",
-                         "publishedAt":  "2026-07-03T08:31:57.0000000Z",
-                         "scoreLabel":  "Quality 28/100 + topic fit 30/30",
-                         "recommendationScore":  83,
-                         "selectionReason":  "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
-                         "paperTopic":  "brain_computer_interface",
-                         "qualityScore":  28,
-                         "readabilityStatus":  "open",
-                         "paperCard":  {
-                                           "problem":  "脑电图信号在不同人之间差异很大，导致一个模型很难直接用在所有人身上。传统方法需要为每个用户从头训练模型，费时费力。",
-                                           "method":  "提出Stacked LoRA，在预训练的大模型上添加两种小型适配器：一个全局适配器学习所有人共有的模式，多个个体适配器分别学习每个人的独特模式。训练时两者同时工作，但个体适配器只对对应人的数据生效。",
-                                           "difference":  "之前的方法要么只用一个共享适配器（忽略个体差异），要么为每个人单独训练适配器（浪费共有信息）。Stacked LoRA同时保留两者，让它们各司其职。",
-                                           "innovation":  "创新点在于将低秩适配分解为全局共享和个体专属两条路径，并通过硬路由机制让每条路径只处理自己擅长的部分，从而减少相互干扰。",
-                                           "implementation":  "在冻结的预训练模型（如REVE、LaBraM、LUNA）的Transformer层中，对查询、键、值等权重矩阵插入低秩适配器。全局适配器用秩32，个体适配器用秩8。训练时，每个样本只激活对应个体的适配器，全局适配器始终激活。",
-                                           "applications":  "可用于任何需要跨用户泛化的脑机接口系统，如运动想象解码、癫痫检测、注意力监测等，尤其适合临床场景中患者数据少、个体差异大的情况。",
-                                           "technicalTerms":  [
-                                                                  "LoRA: 低秩适配，一种高效微调方法，通过插入小矩阵来调整大模型，只更新少量参数。",
-                                                                  "脑电图: 从头皮记录的大脑电信号，用于监测脑活动。",
-                                                                  "运动想象: 想象肢体运动而不实际执行，用于脑机接口控制。",
-                                                                  "基础模型: 在大规模数据上预训练的通用模型，可迁移到多种下游任务。"
-                                                              ]
-                                       },
-                         "summary":  "这篇论文提出了一种名为Stacked LoRA的新方法，用于改进脑机接口中运动想象解码的跨个体泛化能力。它通过将低秩适配器分解为全局共享和个体专属两部分，有效分离了任务共有知识和个体差异，在多个数据集上取得了更好的分类准确率。",
-                         "failureAnalysis":  "主要局限在于个体专属适配器需要为每个新用户单独训练，增加了部署成本；且最优的全局与个体适配器平衡依赖于目标人群特性，缺乏通用配置。",
-                         "translations":  {
-                                              "en":  {
-                                                         "summary":  "This paper proposes Stacked LoRA, a method to improve cross-subject generalization in motor imagery decoding for brain-computer interfaces. By decomposing low-rank adapters into shared global and subject-specific components, it effectively separates common knowledge from individual variability, achieving better accuracy on multiple datasets.",
-                                                         "failureAnalysis":  "The main limitation is that subject-specific adapters require separate training for each new user, increasing deployment cost; also the optimal balance between global and subject-specific adapters depends on the target population, lacking a universal configuration.",
-                                                         "title":  "Stacked LoRA for Subject-Adaptive EEG Foundation Models in Motor Imagery Decoding",
-                                                         "paperCard":  {
-                                                                           "problem":  "EEG signals vary greatly across individuals, making it hard for one model to work for everyone. Traditional methods require training a model from scratch for each user, which is time-consuming and costly.",
-                                                                           "method":  "Proposes Stacked LoRA, which adds two types of small adapters to a pretrained large model: a global adapter learns patterns common to all subjects, and multiple subject-specific adapters learn each person\u0027s unique patterns. Both are trained together, but subject-specific adapters only activate for their corresponding subject\u0027s data.",
-                                                                           "difference":  "Previous methods either use a single shared adapter (ignoring individual differences) or train separate adapters for each person (wasting shared information). Stacked LoRA keeps both, letting each handle its own specialty.",
-                                                                           "innovation":  "The innovation lies in decomposing low-rank adaptation into shared global and subject-specific paths, with a hard routing mechanism that lets each path focus on its own part, reducing interference.",
-                                                                           "implementation":  "Insert low-rank adapters into the query, key, value, and feed-forward weight matrices of Transformer layers in frozen pretrained models (e.g., REVE, LaBraM, LUNA). Global adapter uses rank 32, subject-specific adapters use rank 8. During training, each sample activates only its corresponding subject\u0027s adapter, while the global adapter is always active.",
-                                                                           "applications":  "Can be applied to any brain-computer interface system requiring cross-user generalization, such as motor imagery decoding, epilepsy detection, attention monitoring, especially in clinical settings with limited patient data and high individual variability.",
-                                                                           "technicalTerms":  [
-                                                                                                  "LoRA: Low-Rank Adaptation, an efficient fine-tuning method that adjusts large models by inserting small matrices, updating only a few parameters.",
-                                                                                                  "EEG: Electroencephalography, brain electrical signals recorded from the scalp, used to monitor brain activity.",
-                                                                                                  "Motor imagery: Imagining limb movement without actual execution, used for brain-computer interface control.",
-                                                                                                  "Foundation model: A general-purpose model pretrained on large-scale data, transferable to various downstream tasks."
-                                                                                              ]
-                                                                       }
-                                                     }
-                                          }
-                     }
-                 ]
+{
+  "issueDate": "2026-07-07",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; local rules are used only as fallback."
+  ],
+  "articles": [
+    {
+      "id": "news-65e3165af33c4585b5853ba1672d2725",
+      "category": "international",
+      "title": "What happened in the opening day of the NATO summit in Ankara, Turkey",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/07/07/nx-s1-5884718/what-happened-in-the-opening-day-of-the-nato-summit-in-ankara-turkey",
+      "publishedAt": "2026-07-07T22:45:44.0000000Z",
+      "scoreLabel": "Open RSS source",
+      "selectionReason": "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+      "summary": "文章报道了在土耳其安卡拉举行的北约峰会开幕日情况，尽管北约试图传递团结信息，但特朗普总统对欧洲盟友的新一轮攻击再次暴露了联盟内部紧张关系。这篇文章值得一读，因为它揭示了当前国际安全联盟面临的现实挑战。",
+      "failureAnalysis": "关键要点：北约内部团结因美国领导人的言论而受到考验，这凸显了跨大西洋关系中的持续裂痕。",
+      "translations": {
+        "en": {
+          "summary": "The article reports on the opening day of the NATO summit in Ankara, Turkey, where a message of unity was overshadowed by President Trump's renewed attacks on European allies, exposing internal tensions. It is worth reading for its insight into the challenges facing the transatlantic alliance.",
+          "failureAnalysis": "Key takeaway: NATO's internal unity is tested by U.S. leadership rhetoric, highlighting persistent rifts in transatlantic relations.",
+          "title": "NATO Summit Opening Day in Ankara: Unity Message Undermined by Trump's Attacks"
+        }
+      }
+    },
+    {
+      "id": "news-1026c960d90848f0891687a1349ec734",
+      "category": "international",
+      "title": "What's at stake at the NATO summit in Turkey",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/07/07/nx-s1-5883812/whats-at-stake-at-the-nato-summit-in-turkey",
+      "publishedAt": "2026-07-07T20:58:28.0000000Z",
+      "scoreLabel": "Open RSS source",
+      "selectionReason": "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+      "summary": "本文报道了在土耳其举行的北约峰会，重点在于北约领导人希望特朗普总统对联盟的批评是为了促使欧洲增加国防开支，但一些分析人士担心特朗普可能有其他动机。这篇文章值得阅读，因为它揭示了北约内部对特朗普意图的复杂看法，以及这对跨大西洋安全关系的影响。",
+      "failureAnalysis": "关键要点：特朗普对北约的批评可能并非单纯为了增加欧洲防务开支，而是隐藏着更深层的战略意图，这需要密切关注。",
+      "translations": {
+        "en": {
+          "summary": "This article reports on the NATO summit in Turkey, focusing on how NATO leaders hope President Trump's criticism of the alliance is aimed at increasing European defense spending, but some analysts fear Trump may have ulterior motives. It is worth reading because it reveals the complex perceptions within NATO regarding Trump's intentions and the implications for transatlantic security relations.",
+          "failureAnalysis": "Key takeaway: Trump's criticism of NATO may not simply be about pushing Europe to spend more on defense, but could conceal deeper strategic motives that warrant close attention.",
+          "title": "What's at Stake at the NATO Summit in Turkey"
+        }
+      }
+    },
+    {
+      "id": "news-e2a6674425544a0589df8a3d352b329a",
+      "category": "international",
+      "title": "IOC moves to allow more Russian athletes back into the Olympic games",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/07/07/nx-s1-5884882/ioc-moves-to-allow-more-russian-athletes-back-into-the-olympic-games",
+      "publishedAt": "2026-07-07T20:07:51.0000000Z",
+      "scoreLabel": "Open RSS source",
+      "selectionReason": "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+      "summary": "国际奥委会正在放宽对俄罗斯运动员的参赛限制，允许更多俄罗斯选手重返奥运赛场。这一决定发生在俄罗斯持续对乌克兰发动导弹和无人机袭击、造成平民伤亡的背景下。文章揭示了体育与地缘政治之间的复杂关系，值得关注。",
+      "failureAnalysis": "核心要点：国际奥委会在战争持续期间调整制裁，表明体育组织在政治压力与奥林匹克精神之间寻求平衡。",
+      "translations": {
+        "en": {
+          "summary": "The IOC is easing sanctions to allow more Russian athletes to compete in Olympic events, despite ongoing Russian missile and drone strikes killing civilians in Ukraine. This article highlights the tension between sports and geopolitics, making it a significant read.",
+          "failureAnalysis": "Key takeaway: The IOC's decision to adjust sanctions during an active war shows the delicate balance between political pressure and Olympic ideals.",
+          "title": "IOC Moves to Allow More Russian Athletes Back into Olympic Games"
+        }
+      }
+    },
+    {
+      "id": "ai-github-1266797999",
+      "category": "ai",
+      "title": "DietrichGebert/ponytail",
+      "source": "GitHub Search",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "publishedAt": "2026-06-12T00:52:37.0000000Z",
+      "scoreLabel": "GitHub 77047 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该项目提出让AI代理模仿最懒的高级开发者的思维方式，强调不写代码才是最佳实践。它因77047颗星的高热度而值得关注，反映了开发者对减少无用代码和提升效率的强烈需求。",
+      "failureAnalysis": "核心风险在于“懒惰”可能被误解为低质量或偷懒，而非高效优化，导致用户信任缺失。部署路径依赖AI代理的准确性和上下文理解，若模型无法精准判断何时不写代码，反而增加调试成本。此外，项目缺乏明确的验证指标和商业案例，难以说服企业采用。",
+      "aiSelectionScore": 77047,
+      "translations": {
+        "en": {
+          "summary": "This project proposes an AI agent that mimics the mindset of the laziest senior developer, emphasizing that the best code is the one never written. With 77,047 stars, it highlights a strong demand for reducing unnecessary code and improving efficiency.",
+          "failureAnalysis": "The main risk is that 'laziness' may be misinterpreted as low quality rather than efficient optimization, eroding user trust. Deployment relies on the AI's accuracy in context understanding; if it fails to judge when to skip code, it increases debugging costs.",
+          "title": "DietrichGebert/ponytail: AI Agent That Thinks Like the Laziest Senior Dev"
+        }
+      }
+    },
+    {
+      "id": "ai-feed-4b7d2871493c41e58c163c69340cd878",
+      "category": "ai",
+      "title": "[AINews] Lilian Weng summarizes 35 papers on Harness Engineering for RSI",
+      "source": "Latent Space",
+      "url": "https://www.latent.space/p/ainews-lilian-weng-summarizes-35",
+      "publishedAt": "2026-07-08T02:20:25.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [],
+      "evidenceLabel": "No clear evidence",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
+      "summary": "这篇文章汇总了Lilian Weng对35篇关于“Harness Engineering for RSI”（即通过工程手段提升强化学习与模仿学习效率）的论文解读，提供了浓缩的技术洞察。它值得阅读，因为这是来自权威人士的精选工程实践总结，能帮助非技术决策者快速理解该领域的关键进展。",
+      "failureAnalysis": "核心启示：即使是非技术背景，也能通过这类精炼的工程综述，把握AI系统优化中的实际瓶颈与解决思路。",
+      "aiSelectionScore": 100,
+      "translations": {
+        "en": {
+          "summary": "This article condenses Lilian Weng's insights from 35 papers on engineering techniques to improve reinforcement learning and imitation learning efficiency. It is worth reading as a curated, authoritative overview that helps non-technical leaders grasp key advances in AI system optimization.",
+          "failureAnalysis": "Key takeaway: Even without a technical background, such condensed engineering reviews can illuminate practical bottlenecks and solutions in AI system improvement.",
+          "title": "Lilian Weng's 35-Paper Summary on Harness Engineering for RSI"
+        }
+      }
+    },
+    {
+      "id": "paper-2607.03844",
+      "category": "paper",
+      "title": "EEG-Based Imagined Speech Decoding Using a Hybrid CNN-SNN Architecture",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2607.03844v1.pdf",
+      "publishedAt": "2026-07-04T12:23:46.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "帮助严重语言障碍患者通过大脑信号恢复交流。想象语音（心里默念词语）的脑电信号非常微弱、不稳定，现有方法准确率低。",
+        "method": "先用卷积神经网络从脑电信号中提取时间特征，再用脉冲神经网络进行基于脉冲的时间分类。脉冲神经网络模拟生物神经元，通过离散脉冲处理信息。",
+        "difference": "之前的方法主要用传统机器学习或普通深度学习，没有利用脉冲神经网络的生物时间动态特性。这篇是第一个将脉冲神经网络用于想象语音解码的。",
+        "innovation": "创新在于混合架构：卷积神经网络负责特征提取，脉冲神经网络负责时间分类，更贴近大脑实际工作方式，提升了准确率。",
+        "implementation": "使用2020年BCI竞赛III数据集，包含15人想象5个词语的64通道脑电数据。预处理包括50Hz陷波滤波、共平均参考和标准化。卷积神经网络用3个一维卷积层提取特征，脉冲神经网络用漏积分点火神经元进行时间步分类，最后根据脉冲率预测词语。",
+        "applications": "可用于脑机接口辅助交流设备，帮助中风、渐冻症等患者；也可用于神经科学研究；未来可部署在低功耗神经形态芯片上。",
+        "technicalTerms": [
+          "脑电图：从头皮记录大脑电活动的非侵入式方法",
+          "卷积神经网络：一种擅长提取空间或时间特征的深度学习模型",
+          "脉冲神经网络：模拟生物神经元通过脉冲传递信息的计算模型，更节能且适合时间序列",
+          "漏积分点火神经元：一种脉冲神经元模型，模拟电荷积累和放电过程",
+          "共平均参考：一种空间滤波方法，减去所有通道的平均值以降低噪声"
+        ]
+      },
+      "summary": "这篇论文提出了一种结合卷积神经网络和脉冲神经网络的混合模型，用于从脑电图信号中解码想象语音。它首次将脉冲神经网络应用于这个领域，在公开数据集上取得了80.13%的准确率，远超之前的方法。值得阅读是因为它展示了生物启发式计算在脑机接口中的潜力。",
+      "failureAnalysis": "论文仅使用了单一公开数据集，且测试集标签不可用，可能限制了结果的泛化性。此外，脉冲神经网络硬件尚未广泛普及，实际部署有难度。",
+      "translations": {
+        "en": {
+          "summary": "This paper proposes a hybrid CNN-SNN model for decoding imagined speech from EEG signals. It is the first to apply spiking neural networks to this task, achieving 80.13% accuracy on a public benchmark, outperforming prior methods. It is worth reading for its biologically inspired approach to brain-computer interfaces.",
+          "failureAnalysis": "The study uses only one public dataset with unavailable test labels, limiting generalizability. SNN hardware is not yet widely available, posing deployment challenges.",
+          "title": "EEG-Based Imagined Speech Decoding Using a Hybrid CNN-SNN Architecture",
+          "paperCard": {
+            "problem": "Help people with severe speech impairments communicate by decoding imagined speech from brain signals. EEG signals for imagined speech are weak and noisy, and existing methods have low accuracy.",
+            "method": "Use a CNN to extract temporal features from EEG, then an SNN for spike-based temporal classification. SNNs mimic biological neurons using discrete spikes.",
+            "difference": "Prior methods used classical ML or standard deep learning without spike-based temporal dynamics. This is the first to integrate SNNs for imagined speech decoding.",
+            "innovation": "The hybrid architecture: CNN for feature extraction and SNN for temporal classification, more closely mimicking brain processing and improving accuracy.",
+            "implementation": "Uses the 2020 BCI Competition III dataset with 64-channel EEG from 15 subjects imagining 5 words. Preprocessing includes 50Hz notch filter, common average reference, and z-score normalization. The CNN has three 1D convolutional layers; the SNN uses leaky integrate-and-fire neurons for time-step classification, predicting words based on spike rates.",
+            "applications": "BCI-based assistive communication for stroke or ALS patients; neuroscience research; future deployment on low-power neuromorphic chips.",
+            "technicalTerms": [
+              "EEG: non-invasive recording of brain electrical activity from the scalp",
+              "CNN: deep learning model good at extracting spatial or temporal features",
+              "SNN: computational model mimicking biological neurons with spike-based information processing, more energy-efficient",
+              "leaky integrate-and-fire neuron: a spiking neuron model that accumulates charge and fires when threshold is reached",
+              "common average reference: spatial filter subtracting the mean of all channels to reduce noise"
+            ]
+          }
+        }
+      },
+      "abstractUrl": "https://arxiv.org/abs/2607.03844"
+    },
+    {
+      "id": "paper-2607.03094",
+      "category": "paper",
+      "title": "Stacked LoRA for Subject-Adaptive EEG Foundation Models in Motor Imagery Decoding",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2607.03094v1.pdf",
+      "publishedAt": "2026-07-03T08:31:57.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "脑电图信号在不同人之间差异很大，导致一个模型很难直接用在所有人身上。传统方法需要为每个用户从头训练模型，费时费力。",
+        "method": "提出Stacked LoRA，在预训练的大模型上添加两种小型适配器：一个全局适配器学习所有人共有的模式，多个个体适配器分别学习每个人的独特模式。训练时两者同时工作，但个体适配器只对对应人的数据生效。",
+        "difference": "之前的方法要么只用一个共享适配器（忽略个体差异），要么为每个人单独训练适配器（浪费共有信息）。Stacked LoRA同时保留两者，让它们各司其职。",
+        "innovation": "创新点在于将低秩适配分解为全局共享和个体专属两条路径，并通过硬路由机制让每条路径只处理自己擅长的部分，从而减少相互干扰。",
+        "implementation": "在冻结的预训练模型（如REVE、LaBraM、LUNA）的Transformer层中，对查询、键、值等权重矩阵插入低秩适配器。全局适配器用秩32，个体适配器用秩8。训练时，每个样本只激活对应个体的适配器，全局适配器始终激活。",
+        "applications": "可用于任何需要跨用户泛化的脑机接口系统，如运动想象解码、癫痫检测、注意力监测等，尤其适合临床场景中患者数据少、个体差异大的情况。",
+        "technicalTerms": [
+          "LoRA: 低秩适配，一种高效微调方法，通过插入小矩阵来调整大模型，只更新少量参数。",
+          "脑电图: 从头皮记录的大脑电信号，用于监测脑活动。",
+          "运动想象: 想象肢体运动而不实际执行，用于脑机接口控制。",
+          "基础模型: 在大规模数据上预训练的通用模型，可迁移到多种下游任务。"
+        ]
+      },
+      "summary": "这篇论文提出了一种名为Stacked LoRA的新方法，用于改进脑机接口中运动想象解码的跨个体泛化能力。它通过将低秩适配器分解为全局共享和个体专属两部分，有效分离了任务共有知识和个体差异，在多个数据集上取得了更好的分类准确率。",
+      "failureAnalysis": "主要局限在于个体专属适配器需要为每个新用户单独训练，增加了部署成本；且最优的全局与个体适配器平衡依赖于目标人群特性，缺乏通用配置。",
+      "translations": {
+        "en": {
+          "summary": "This paper proposes Stacked LoRA, a method to improve cross-subject generalization in motor imagery decoding for brain-computer interfaces. By decomposing low-rank adapters into shared global and subject-specific components, it effectively separates common knowledge from individual variability, achieving better accuracy on multiple datasets.",
+          "failureAnalysis": "The main limitation is that subject-specific adapters require separate training for each new user, increasing deployment cost; also the optimal balance between global and subject-specific adapters depends on the target population, lacking a universal configuration.",
+          "title": "Stacked LoRA for Subject-Adaptive EEG Foundation Models in Motor Imagery Decoding",
+          "paperCard": {
+            "problem": "EEG signals vary greatly across individuals, making it hard for one model to work for everyone. Traditional methods require training a model from scratch for each user, which is time-consuming and costly.",
+            "method": "Proposes Stacked LoRA, which adds two types of small adapters to a pretrained large model: a global adapter learns patterns common to all subjects, and multiple subject-specific adapters learn each person's unique patterns. Both are trained together, but subject-specific adapters only activate for their corresponding subject's data.",
+            "difference": "Previous methods either use a single shared adapter (ignoring individual differences) or train separate adapters for each person (wasting shared information). Stacked LoRA keeps both, letting each handle its own specialty.",
+            "innovation": "The innovation lies in decomposing low-rank adaptation into shared global and subject-specific paths, with a hard routing mechanism that lets each path focus on its own part, reducing interference.",
+            "implementation": "Insert low-rank adapters into the query, key, value, and feed-forward weight matrices of Transformer layers in frozen pretrained models (e.g., REVE, LaBraM, LUNA). Global adapter uses rank 32, subject-specific adapters use rank 8. During training, each sample activates only its corresponding subject's adapter, while the global adapter is always active.",
+            "applications": "Can be applied to any brain-computer interface system requiring cross-user generalization, such as motor imagery decoding, epilepsy detection, attention monitoring, especially in clinical settings with limited patient data and high individual variability.",
+            "technicalTerms": [
+              "LoRA: Low-Rank Adaptation, an efficient fine-tuning method that adjusts large models by inserting small matrices, updating only a few parameters.",
+              "EEG: Electroencephalography, brain electrical signals recorded from the scalp, used to monitor brain activity.",
+              "Motor imagery: Imagining limb movement without actual execution, used for brain-computer interface control.",
+              "Foundation model: A general-purpose model pretrained on large-scale data, transferable to various downstream tasks."
+            ]
+          }
+        }
+      },
+      "abstractUrl": "https://arxiv.org/abs/2607.03094"
+    }
+  ]
 }
