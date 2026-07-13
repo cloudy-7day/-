@@ -1,5 +1,9 @@
 import sys
 
+# Force UTF-8 output so non-ASCII characters (e.g. †, →, μ) in PDFs
+# don't crash on Windows where the default console encoding is gbk.
+sys.stdout.reconfigure(encoding="utf-8")
+
 path = sys.argv[1]
 
 try:

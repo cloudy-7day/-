@@ -1,0 +1,201 @@
+﻿{
+    "issueDate":  "2026-07-09",
+    "notes":  [
+                  "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+                  "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+                  "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+                  "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; local rules are used only as fallback."
+              ],
+    "articles":  [
+                     {
+                         "id":  "news-1c3822a6e8f2452cbe63d3d683f904e9",
+                         "category":  "international",
+                         "title":  "Former U.S. envoy reacts to Iran strikes and NATO summit",
+                         "source":  "NPR World",
+                         "url":  "https://www.npr.org/2026/07/09/nx-s1-5886129/former-u-s-envoy-reacts-to-iran-strikes-and-nato-summit",
+                         "publishedAt":  "2026-07-09T20:02:31.0000000Z",
+                         "scoreLabel":  "Open RSS source",
+                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+                         "summary":  "本文报道了前美国驻北约大使尼古拉斯·伯恩斯对本周美伊冲突进展及北约峰会的评论。值得阅读是因为它提供了资深外交官对当前国际热点事件的直接分析，有助于理解美国与伊朗关系及北约内部动态。",
+                         "failureAnalysis":  "关键要点：资深外交官视角有助于把握美伊冲突和北约峰会的核心议题，但需注意其观点可能代表特定立场。",
+                         "translations":  {
+                                              "en":  {
+                                                         "summary":  "This article features former U.S. Ambassador to NATO Nicholas Burns commenting on the latest U.S.-Iran conflict developments and the NATO summit. It is worth reading for its direct analysis from a seasoned diplomat, offering insights into U.S.-Iran tensions and NATO\u0027s internal dynamics.",
+                                                         "failureAnalysis":  "Key takeaway: The diplomat\u0027s perspective helps clarify core issues in the U.S.-Iran conflict and NATO summit, but note potential bias in the viewpoint.",
+                                                         "title":  "Former U.S. Envoy Reacts to Iran Strikes and NATO Summit"
+                                                     }
+                                          }
+                     },
+                     {
+                         "id":  "news-15f5dc52f42c4d949a97e1f53cdc1b45",
+                         "category":  "international",
+                         "title":  "Where are Iran and Ukraine wars headed after NATO summit?",
+                         "source":  "NPR World",
+                         "url":  "https://www.npr.org/2026/07/09/nx-s1-5886200/where-are-iran-and-ukraine-wars-headed-after-nato-summit",
+                         "publishedAt":  "2026-07-09T20:01:45.0000000Z",
+                         "scoreLabel":  "Open RSS source",
+                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+                         "summary":  "文章报道了北约峰会后伊朗与乌克兰战争的走向，指出美伊之间出现新的冲突，脆弱的停火协议被撕毁，暗示与伊朗的战争可能重新开始。值得关注是因为这直接影响中东和东欧的地缘政治格局。",
+                         "failureAnalysis":  "关键点是：北约峰会未能有效遏制冲突升级，伊朗与乌克兰局势可能进一步恶化，需警惕战争扩大化风险。",
+                         "translations":  {
+                                              "en":  {
+                                                         "summary":  "The article reports on the direction of the Iran and Ukraine wars after the NATO summit, noting fresh strikes between Iran and the US and a scrapped ceasefire, suggesting the war with Iran may resume. It is worth reading because it directly impacts geopolitical stability in the Middle East and Eastern Europe.",
+                                                         "failureAnalysis":  "Key takeaway: The NATO summit failed to effectively de-escalate conflicts, and the Iran and Ukraine situations may worsen, raising risks of broader war.",
+                                                         "title":  "Where Are Iran and Ukraine Wars Headed After NATO Summit?"
+                                                     }
+                                          }
+                     },
+                     {
+                         "id":  "news-fc844bdf230b465e8b0003b15f878336",
+                         "category":  "international",
+                         "title":  "Graham Platner ends Senate bid. And, why Nolan Wells\u0027 death captured national attention",
+                         "source":  "NPR World",
+                         "url":  "https://www.npr.org/2026/07/09/g-s1-132694/up-first-newsletter-graham-platner-trump-iran-israel-nolan-wells",
+                         "publishedAt":  "2026-07-09T11:22:04.0000000Z",
+                         "scoreLabel":  "Open RSS source",
+                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+                         "summary":  "本文报道了民主党人Graham Platner退出美国参议院竞选，以及民权律师Ben Crump介入调查Nolan Wells在七月四日周末死亡事件。这些事件反映了美国国内政治动态和社会正义议题，值得关注。",
+                         "failureAnalysis":  "关键要点：美国政治竞选变化和民权案件引发全国关注，体现了社会热点与法律行动的交叉影响。",
+                         "translations":  {
+                                              "en":  {
+                                                         "summary":  "This article covers Democrat Graham Platner\u0027s withdrawal from the U.S. Senate race and civil rights attorney Ben Crump\u0027s involvement in investigating Nolan Wells\u0027 death over the July Fourth weekend. These events highlight U.S. political shifts and social justice issues, making it worth reading.",
+                                                         "failureAnalysis":  "Key takeaway: U.S. political campaign changes and civil rights cases capture national attention, reflecting the intersection of social hotspots and legal action.",
+                                                         "title":  "Graham Platner Ends Senate Bid; Nolan Wells Death Draws National Attention"
+                                                     }
+                                          }
+                     },
+                     {
+                         "id":  "ai-github-1266797999",
+                         "category":  "ai",
+                         "title":  "DietrichGebert/ponytail",
+                         "source":  "GitHub Search",
+                         "url":  "https://github.com/DietrichGebert/ponytail",
+                         "abstractUrl":  null,
+                         "publishedAt":  "2026-06-12T00:52:37.0000000Z",
+                         "scoreLabel":  "GitHub 79247 stars",
+                         "aiArticleType":  "application_innovation",
+                         "evidenceAnchors":  [
+                                                 {
+                                                     "label":  "GitHub",
+                                                     "kind":  "primary"
+                                                 },
+                                                 {
+                                                     "label":  "Community signal",
+                                                     "kind":  "secondary"
+                                                 }
+                                             ],
+                         "evidenceLabel":  "GitHub + Community signal",
+                         "hasPrimaryAnchor":  true,
+                         "requiresRiskAnalysis":  true,
+                         "selectionReason":  "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+                         "summary":  "该项目提出让AI代理模仿最懒的资深开发者的思维方式，强调“最好的代码是没写的代码”，旨在减少不必要的代码生成。它因高星标和独特理念值得关注，可能启发更高效的AI编码实践。",
+                         "failureAnalysis":  "该理念可能失败，因为“懒惰”在工程中常被误解为低效，实际资深开发者的“懒惰”基于深厚经验，AI难以复制这种判断。缺乏具体实现细节和验证，可能沦为噱头，难以在真实开发中落地。部署路径不明确，用户价值取决于能否显著减少调试和重构成本，但缺乏数据支持。",
+                         "aiSelectionScore":  79247,
+                         "translations":  {
+                                              "en":  {
+                                                         "summary":  "This project proposes making AI agents emulate the mindset of the laziest senior developer, arguing that the best code is the code never written. It is worth reading for its provocative take on reducing unnecessary code generation, backed by high GitHub stars.",
+                                                         "failureAnalysis":  "The idea may fail because true senior laziness relies on deep experience, which AI cannot easily replicate, and the lack of concrete validation or deployment path risks it being a gimmick.",
+                                                         "title":  "Ponytail: AI Agent That Thinks Like the Laziest Senior Dev"
+                                                     }
+                                          }
+                     },
+                     {
+                         "id":  "ai-feed-d3bb396f65d14b488550f565983da7b6",
+                         "category":  "ai",
+                         "title":  "Quoting OpenAI",
+                         "source":  "Simon Willison",
+                         "url":  "https://simonwillison.net/2026/Jul/10/openai/#atom-everything",
+                         "abstractUrl":  null,
+                         "publishedAt":  "2026-07-10T01:05:57.0000000Z",
+                         "scoreLabel":  "Curated engineering feed",
+                         "aiArticleType":  "concept_explanation",
+                         "evidenceAnchors":  [
+
+                                             ],
+                         "evidenceLabel":  "No clear evidence",
+                         "hasPrimaryAnchor":  false,
+                         "requiresRiskAnalysis":  false,
+                         "selectionReason":  "AI source passed freshness and evidence-chain gate: No clear evidence",
+                         "summary":  "本文引用OpenAI对ChatGPT Work功能的说明，指出云端工作与桌面端工作之间存在数据隔离：云端对话不会出现在桌面端，桌面端线程和本地文件仅保留在本地。这揭示了AI工具在跨平台数据同步上的实际限制，值得关注。",
+                         "failureAnalysis":  "关键启示：AI产品的功能边界和隐私设计直接影响用户体验，非技术决策者需理解这些限制以避免误判产品能力。",
+                         "aiSelectionScore":  100,
+                         "translations":  {
+                                              "en":  {
+                                                         "summary":  "This article quotes OpenAI\u0027s clarification on ChatGPT Work, highlighting that cloud-based work conversations do not appear in the desktop app, and desktop threads and local files remain on that computer. It reveals practical data synchronization limitations in AI tools, making it worth reading.",
+                                                         "failureAnalysis":  "Key takeaway: Understanding feature boundaries and privacy design in AI products is crucial for non-technical decision-makers to avoid misjudging product capabilities.",
+                                                         "title":  "Quoting OpenAI on ChatGPT Work"
+                                                     }
+                                          }
+                     },
+                     {
+                         "id":  "ai-github-1216785679",
+                         "category":  "ai",
+                         "title":  "esengine/DeepSeek-Reasonix",
+                         "source":  "GitHub Search",
+                         "url":  "https://github.com/esengine/DeepSeek-Reasonix",
+                         "abstractUrl":  null,
+                         "publishedAt":  "2026-04-21T08:27:02.0000000Z",
+                         "scoreLabel":  "GitHub 26544 stars",
+                         "aiArticleType":  "application_innovation",
+                         "evidenceAnchors":  [
+                                                 {
+                                                     "label":  "GitHub",
+                                                     "kind":  "primary"
+                                                 },
+                                                 {
+                                                     "label":  "Community signal",
+                                                     "kind":  "secondary"
+                                                 }
+                                             ],
+                         "evidenceLabel":  "GitHub + Community signal",
+                         "hasPrimaryAnchor":  true,
+                         "requiresRiskAnalysis":  true,
+                         "selectionReason":  "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+                         "summary":  "该项目是一个基于DeepSeek的AI编码代理终端工具，强调前缀缓存稳定性以支持长时间运行。它拥有26544颗星，说明社区关注度高，但实际价值取决于能否真正提升开发效率。值得阅读是因为它展示了AI在本地开发环境中的实用化尝试。",
+                         "failureAnalysis":  "可能失败的原因包括：终端AI代理的实用场景有限，多数开发者更依赖IDE集成而非独立终端工具；前缀缓存稳定性虽好，但DeepSeek模型本身可能面临成本或性能瓶颈；项目依赖社区维护，若缺乏持续更新和文档支持，用户粘性会下降。",
+                         "aiSelectionScore":  26544,
+                         "translations":  {
+                                              "en":  {
+                                                         "summary":  "This project is a DeepSeek-native AI coding agent for the terminal, engineered for prefix-cache stability to run continuously. With 26,544 stars, it shows strong community interest, but its real value depends on improving developer productivity. Worth reading as it explores practical AI integration in local development.",
+                                                         "failureAnalysis":  "Key constraints include limited terminal use cases compared to IDE integration, potential cost/performance issues with DeepSeek models, and reliance on community maintenance for long-term viability.",
+                                                         "title":  "DeepSeek-Reasonix: AI Coding Agent for Terminal"
+                                                     }
+                                          }
+                     },
+                     {
+                         "id":  "ai-github-1232669890",
+                         "category":  "ai",
+                         "title":  "microsoft/SkillOpt",
+                         "source":  "GitHub Search",
+                         "url":  "https://github.com/microsoft/SkillOpt",
+                         "abstractUrl":  null,
+                         "publishedAt":  "2026-05-08T06:41:01.0000000Z",
+                         "scoreLabel":  "GitHub 11963 stars",
+                         "aiArticleType":  "application_innovation",
+                         "evidenceAnchors":  [
+                                                 {
+                                                     "label":  "GitHub",
+                                                     "kind":  "primary"
+                                                 },
+                                                 {
+                                                     "label":  "Community signal",
+                                                     "kind":  "secondary"
+                                                 }
+                                             ],
+                         "evidenceLabel":  "GitHub + Community signal",
+                         "hasPrimaryAnchor":  true,
+                         "requiresRiskAnalysis":  true,
+                         "selectionReason":  "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+                         "summary":  "SkillOpt 是一个文本空间优化器，通过轨迹驱动的编辑和验证门控更新，为冻结的大语言模型代理训练可复用的自然语言技能，并生成可部署的 best_skill.md 文件。该项目在 GitHub 上获得 11963 星，表明其解决了如何在不微调模型的情况下提升代理性能的关键问题，值得关注其实际应用效果。",
+                         "failureAnalysis":  "该项目依赖高质量的轨迹数据和验证门控机制，如果数据稀疏或验证标准不明确，技能优化可能不稳定。此外，生成的最佳技能文件需要人工审核和部署，增加了运维成本，且在大规模场景下，技能的可迁移性和长期维护可能成为瓶颈。",
+                         "aiSelectionScore":  11963,
+                         "translations":  {
+                                              "en":  {
+                                                         "summary":  "SkillOpt is a text-space optimizer that trains reusable natural-language skills for frozen LLM agents via trajectory-driven edits and validation-gated updates, producing deployable best_skill.md artifacts. With 11963 GitHub stars, it addresses the real problem of improving agent performance without model fine-tuning, making it worth reading for its practical approach.",
+                                                         "failureAnalysis":  "The project\u0027s success hinges on high-quality trajectory data and robust validation; without them, skill optimization may be unreliable. Deployment of best_skill.md artifacts also adds operational overhead, and skill reusability across diverse tasks remains a challenge.",
+                                                         "title":  "Microsoft SkillOpt: Optimizing Reusable Skills for Frozen LLM Agents"
+                                                     }
+                                          }
+                     }
+                 ]
+}

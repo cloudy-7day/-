@@ -1,0 +1,242 @@
+﻿{
+    "issueDate":  "2026-07-12",
+    "notes":  [
+                  "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+                  "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+                  "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+                  "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; local rules are used only as fallback."
+              ],
+    "articles":  [
+                     {
+                         "id":  "news-ac8574b116024c199b8d10eb64636ffa",
+                         "category":  "international",
+                         "title":  "What would it mean for Ukraine if it actually starts producing Patriot missiles?",
+                         "source":  "NPR World",
+                         "url":  "https://www.npr.org/2026/07/12/nx-s1-5887435/what-would-it-mean-for-ukraine-if-it-actually-starts-producing-patriot-missiles",
+                         "publishedAt":  "2026-07-12T21:08:18.0000000Z",
+                         "scoreLabel":  "Open RSS source",
+                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+                         "summary":  "本文探讨了特朗普总统允许乌克兰生产爱国者导弹的意义，分析了这一决定对乌克兰防御能力和地缘政治格局的潜在影响。值得阅读，因为它揭示了美国政策转变如何可能改变俄乌冲突的军事平衡。",
+                         "failureAnalysis":  "关键要点：乌克兰获得爱国者导弹生产能力将显著提升其防空自主性，但实际效果取决于技术转让速度和西方持续支持。",
+                         "translations":  {
+                                              "en":  {
+                                                         "summary":  "This article examines the implications of President Trump granting Ukraine permission to produce Patriot missiles, analyzing how this decision could affect Ukraine\u0027s defense capabilities and the geopolitical landscape. It is worth reading because it reveals how a U.S. policy shift might alter the military balance in the Russia-Ukraine war.",
+                                                         "failureAnalysis":  "Key takeaway: Ukraine\u0027s ability to produce Patriot missiles would significantly enhance its air defense autonomy, but actual impact depends on technology transfer speed and sustained Western support.",
+                                                         "title":  "What Ukraine\u0027s Patriot Missile Production Means"
+                                                     }
+                                          }
+                     },
+                     {
+                         "id":  "news-975e710d417c4d2aa5b091f3c6c181cf",
+                         "category":  "international",
+                         "title":  "First patients enrolled in record-breaking Ebola treatment trial in DRC",
+                         "source":  "The Guardian World",
+                         "url":  "https://www.theguardian.com/global-development/2026/jul/12/record-breaking-ebola-treatment-trial-drc",
+                         "publishedAt":  "2026-07-12T08:00:12.0000000Z",
+                         "scoreLabel":  "Open RSS source",
+                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+                         "summary":  "刚果民主共和国伊图里地区启动了埃博拉治疗试验，创纪录地在疫情被宣布为国际公共卫生紧急事件仅六周后就开始招募患者。两种药物正在试验中，有望在数月内降低死亡率，这对当前缺乏获批药物的疫情应对至关重要。",
+                         "failureAnalysis":  "关键要点：快速启动临床试验是应对突发疫情的核心能力，但需持续关注试验结果和实际疗效。",
+                         "translations":  {
+                                              "en":  {
+                                                         "summary":  "The Democratic Republic of the Congo has launched an Ebola treatment trial in the Ituri region, enrolling patients just six weeks after the outbreak was declared a public health emergency. Two drugs are being tested with hopes of reducing mortality rates, addressing the current lack of approved treatments.",
+                                                         "failureAnalysis":  "Key takeaway: Rapid trial setup is critical for outbreak response, but the focus should remain on trial outcomes and real-world effectiveness.",
+                                                         "title":  "Record-Breaking Ebola Treatment Trial Launches in DRC"
+                                                     }
+                                          }
+                     },
+                     {
+                         "id":  "news-5217e9a50d6442e29957c05c95af0aa1",
+                         "category":  "international",
+                         "title":  "Fire breaks out at a pub in Bangkok, killing at least 27 people, officials say",
+                         "source":  "NPR World",
+                         "url":  "https://www.npr.org/2026/07/12/g-s1-133238/fire-breaks-out-at-a-pub-in-bangkok-killing-at-least-27-people-officials-say",
+                         "publishedAt":  "2026-07-12T19:53:24.0000000Z",
+                         "scoreLabel":  "Open RSS source",
+                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+                         "summary":  "曼谷一家酒吧发生火灾，造成至少27人死亡。现场视频显示火势猛烈，浓烟从酒吧正门涌出。这起事件凸显了公共场所消防安全的重要性。",
+                         "failureAnalysis":  "关键要点：火灾事故警示公共场所需加强消防措施和应急管理。",
+                         "translations":  {
+                                              "en":  {
+                                                         "summary":  "A fire broke out at a pub in Bangkok, killing at least 27 people. Footage shows a huge blaze and smoke pouring from the entrance. This incident underscores the critical need for fire safety in public venues.",
+                                                         "failureAnalysis":  "Key takeaway: The tragedy highlights the importance of robust fire safety protocols and emergency preparedness in public spaces.",
+                                                         "title":  "Fire at Bangkok Pub Kills at Least 27"
+                                                     }
+                                          }
+                     },
+                     {
+                         "id":  "ai-github-1266797999",
+                         "category":  "ai",
+                         "title":  "DietrichGebert/ponytail",
+                         "source":  "GitHub Search",
+                         "url":  "https://github.com/DietrichGebert/ponytail",
+                         "abstractUrl":  null,
+                         "publishedAt":  "2026-06-12T00:52:37.0000000Z",
+                         "scoreLabel":  "GitHub 81513 stars",
+                         "aiArticleType":  "application_innovation",
+                         "evidenceAnchors":  [
+                                                 {
+                                                     "label":  "GitHub",
+                                                     "kind":  "primary"
+                                                 },
+                                                 {
+                                                     "label":  "Community signal",
+                                                     "kind":  "secondary"
+                                                 }
+                                             ],
+                         "evidenceLabel":  "GitHub + Community signal",
+                         "hasPrimaryAnchor":  true,
+                         "requiresRiskAnalysis":  true,
+                         "selectionReason":  "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+                         "summary":  "该项目提出让AI代理模仿最懒资深开发者的思维方式，强调“最好的代码是没写的代码”，旨在减少不必要的代码生成。它通过GitHub高星数（81513）获得关注，但实际价值取决于能否在真实开发中平衡效率与质量。",
+                         "failureAnalysis":  "核心风险在于“懒惰”可能被误解为低质量或遗漏关键逻辑，导致代码缺陷或维护成本上升。项目缺乏明确的部署路径和用户验证，仅靠概念吸引眼球，难以在工程实践中落地。此外，AI代理的“懒惰”策略需要大量定制化训练数据，否则可能产生不可靠的输出。",
+                         "aiSelectionScore":  81513,
+                         "translations":  {
+                                              "en":  {
+                                                         "summary":  "This project proposes an AI agent that mimics the mindset of the laziest senior developer, emphasizing that the best code is the code never written. It gained attention with 81,513 GitHub stars, but its real value depends on balancing efficiency and quality in actual development.",
+                                                         "failureAnalysis":  "The main risk is that \u0027laziness\u0027 may be misinterpreted as low quality or missing critical logic, leading to defects or maintenance issues. Without a clear deployment path or user validation, the concept may struggle to translate into practical engineering value.",
+                                                         "title":  "Ponytail: AI Agent That Thinks Like the Laziest Senior Dev"
+                                                     }
+                                          }
+                     },
+                     {
+                         "id":  "ai-feed-28c1bcc6ce064a18ae69ef8749c635df",
+                         "category":  "ai",
+                         "title":  "Directly Responsible Individuals (DRI)",
+                         "source":  "Simon Willison",
+                         "url":  "https://simonwillison.net/2026/Jul/12/directly-responsible-individuals/#atom-everything",
+                         "abstractUrl":  null,
+                         "publishedAt":  "2026-07-12T23:57:14.0000000Z",
+                         "scoreLabel":  "Curated engineering feed",
+                         "aiArticleType":  "concept_explanation",
+                         "evidenceAnchors":  [
+
+                                             ],
+                         "evidenceLabel":  "No clear evidence",
+                         "hasPrimaryAnchor":  false,
+                         "requiresRiskAnalysis":  false,
+                         "selectionReason":  "AI source passed freshness and evidence-chain gate: No clear evidence",
+                         "summary":  "本文介绍了“直接负责人”（DRI）的概念，即对项目成败最终负责的个人，源自苹果公司。作者强调，在AI代理日益普及的背景下，只有人类才能担任DRI，因为机器无法承担真正的责任。文章引用IBM 1979年的培训幻灯片，指出计算机绝不能做管理决策，这为AI在组织中的角色提供了重要边界。",
+                         "failureAnalysis":  "关键启示：AI代理可以辅助决策，但绝不能成为项目的最终负责人。人类必须保留对关键结果的问责权，这是组织管理中不可让渡的原则。",
+                         "aiSelectionScore":  100,
+                         "translations":  {
+                                              "en":  {
+                                                         "summary":  "This article defines \u0027Directly Responsible Individuals\u0027 (DRI) as the person ultimately accountable for a project\u0027s success or failure, originating from Apple. The author argues that only humans can be DRIs, as machines cannot take accountability, citing IBM\u0027s 1979 training slide that \u0027a computer can never be held accountable.\u0027 It\u0027s worth reading for its clear boundary on AI\u0027s role in management.",
+                                                         "failureAnalysis":  "Key takeaway: AI agents should never be designated as DRIs. Human accountability remains essential for critical decisions, ensuring ethical and responsible organizational governance.",
+                                                         "title":  "Directly Responsible Individuals (DRI) and AI Agents"
+                                                     }
+                                          }
+                     },
+                     {
+                         "id":  "paper-2607.07185v3",
+                         "category":  "paper",
+                         "title":  "Clinical Translation of Brain-Computer Interface in China: A Landscape Analysis of Investigator-Initiated Trials, Registered Clinical Trials, and Regulatory Approval",
+                         "source":  "arXiv",
+                         "url":  "https://arxiv.org/pdf/2607.07185v3.pdf",
+                         "abstractUrl":  "https://arxiv.org/abs/2607.07185",
+                         "publishedAt":  "2026-07-08T09:18:50.0000000Z",
+                         "scoreLabel":  "Quality 28/100 + topic fit 30/30",
+                         "recommendationScore":  83,
+                         "selectionReason":  "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+                         "paperTopic":  "brain_computer_interface",
+                         "qualityScore":  28,
+                         "readabilityStatus":  "open",
+                         "paperCard":  {
+                                           "problem":  "脑损伤（如中风、脊髓损伤）导致运动或交流功能丧失，现有疗法很难恢复。脑机接口（BCI）能绕过受损神经通路，但如何从实验室研究真正变成医院里能用的产品，在中国缺乏系统梳理。",
+                                           "method":  "作者从三个层面收集数据：中国临床试验注册中心的134项试验、26项研究者发起的试验（IITs）、以及国家药监局（NMPA）批准的5个BCI产品。然后按技术类型（非侵入式、半侵入式、侵入式等）、疾病领域、时间趋势和地理分布进行统计分析。",
+                                           "difference":  "之前的研究只关注单一技术或某个应用，数据也较旧。这篇论文把中国BCI从早期试验到产品获批的整个链条放在一起分析，覆盖了2023-2026年的最新进展，比如全球首个获批的半侵入式BCI。",
+                                           "innovation":  "创新在于首次用统一框架量化了中国BCI临床转化的三个层级（IITs、注册试验、获批产品），并给出了技术分类、疾病分布和地理聚集的详细数据，还引用了2026年NMPA新发布的BCI医疗器械分类指南。",
+                                           "implementation":  "具体做法是：用关键词在ChiCTR数据库搜到134项注册试验，从PubMed等渠道找到26项IITs，从NMPA数据库拿到5个获批产品信息。然后按信号采集方式（如EEG、ECoG、微电极阵列）分类，用ICD-11疾病编码标注适应症，最后用描述性统计画趋势图。关键技术词如“非侵入式”指不用开颅，用头皮电极测脑电；“半侵入式”指把电极放在大脑表面硬膜下，信号更好但创伤稍大。",
+                                           "applications":  "主要应用场景包括：中风后康复训练（用BCI控制外骨骼或机器人）、脊髓损伤患者控制轮椅或机械臂、语言障碍患者通过BCI打字或合成语音、癫痫的闭环神经调控（实时监测脑电并自动刺激）。",
+                                           "technicalTerms":  [
+                                                                  "脑机接口（BCI）：直接读取大脑信号并转换成命令，控制外部设备的技术。",
+                                                                  "非侵入式：不用手术，在头皮上贴电极测脑电（EEG），安全但信号弱。",
+                                                                  "半侵入式：把电极放在大脑表面（硬膜下），信号比EEG好，创伤比开颅小。",
+                                                                  "侵入式：把微电极阵列植入大脑皮层，信号最精确，但手术风险高。",
+                                                                  "闭环神经调控：系统实时监测脑信号，自动调整电刺激参数，比如用于帕金森或癫痫。",
+                                                                  "研究者发起的试验（IIT）：由医生或研究机构自己组织的早期小规模试验，通常只有1-5人，验证安全性和初步效果。",
+                                                                  "国家药监局（NMPA）：中国的药品和医疗器械监管机构，负责审批产品上市。"
+                                                              ]
+                                       },
+                         "summary":  "这篇论文首次系统分析了中国脑机接口（BCI）从早期临床试验到产品获批的全链条现状，包括134项注册试验、26项研究者发起的试验和5个获批产品。它揭示了非侵入式BCI占主导、中风康复是主要应用方向，以及中国在2020年后临床试验快速增长的态势。值得阅读是因为它提供了中国BCI临床转化的第一份定量全景图，对理解行业进展和监管趋势很有帮助。",
+                         "failureAnalysis":  "论文指出长期植入稳定性、临床基础设施标准化和解码算法泛化能力是主要障碍，但未深入分析这些问题的具体技术瓶颈或成本限制。",
+                         "translations":  {
+                                              "en":  {
+                                                         "summary":  "This paper provides the first quantitative analysis of China\u0027s BCI translational ecosystem, covering 134 registered trials, 26 investigator-initiated trials, and 5 approved products. It reveals that non-invasive systems dominate (79.1%), stroke rehabilitation is the leading indication (65.0%), and clinical trial registration has surged since 2020. Worth reading because it offers a comprehensive, up-to-date snapshot of how BCI moves from lab to clinic in China.",
+                                                         "failureAnalysis":  "The paper identifies long-term implant stability, standardization of clinical infrastructure, and generalizability of decoding algorithms as key barriers, but does not delve into specific technical bottlenecks or cost constraints.",
+                                                         "title":  "Clinical Translation of Brain-Computer Interface in China: A Landscape Analysis of Investigator-Initiated Trials, Registered Clinical Trials, and Regulatory Approval",
+                                                         "paperCard":  {
+                                                                           "problem":  "Neurological injuries like stroke and spinal cord injury cause irreversible loss of motor or communication functions. Brain-computer interfaces (BCIs) can bypass damaged neural pathways, but how they transition from research to clinical products in China has not been systematically mapped.",
+                                                                           "method":  "The authors collected data from three sources: 134 registered clinical trials from the Chinese Clinical Trial Registry, 26 investigator-initiated trials from PubMed and other sources, and 5 NMPA-approved BCI products. They then analyzed these by technology type (non-invasive, semi-invasive, invasive, etc.), disease area, temporal trends, and geographic distribution.",
+                                                                           "difference":  "Previous reviews focused on single technologies or specific applications with older data. This paper integrates the entire BCI translation pipeline in China—from early trials to regulatory approval—and covers the latest advances from 2023-2026, including the world\u0027s first approved semi-invasive implantable BCI.",
+                                                                           "innovation":  "The innovation is the first unified quantitative framework that maps China\u0027s three-tier BCI clinical translation (IITs, registered trials, approved products), with detailed breakdowns by technology, indication, and geography, and references the 2026 NMPA classification guidance for BCI medical devices.",
+                                                                           "implementation":  "Specifically, the authors searched the ChiCTR database with keywords to find 134 registered trials, compiled 26 IITs from PubMed and institutional websites, and retrieved 5 approved products from the NMPA database. They classified technologies by signal acquisition method (e.g., EEG, ECoG, microelectrode arrays), assigned indications using ICD-11 codes, and used descriptive statistics to plot trends. Key terms: \u0027non-invasive\u0027 means using scalp electrodes without surgery; \u0027semi-invasive\u0027 means placing electrodes on the brain surface under the dura, offering better signal with slightly more risk.",
+                                                                           "applications":  "Main applications include: stroke rehabilitation (BCI-controlled exoskeletons or robots), spinal cord injury patients controlling wheelchairs or robotic arms, speech-impaired patients typing or synthesizing speech via BCI, and closed-loop neuromodulation for epilepsy (real-time monitoring and automatic stimulation).",
+                                                                           "technicalTerms":  [
+                                                                                                  "Brain-computer interface (BCI): Technology that reads brain signals and converts them into commands to control external devices.",
+                                                                                                  "Non-invasive: No surgery; electrodes on the scalp measure EEG; safe but signal is weak.",
+                                                                                                  "Semi-invasive: Electrodes placed on the brain surface under the dura; better signal than EEG, less trauma than open surgery.",
+                                                                                                  "Invasive: Microelectrode arrays implanted into the brain cortex; most precise signal but highest surgical risk.",
+                                                                                                  "Closed-loop neuromodulation: System that monitors brain signals in real time and automatically adjusts electrical stimulation parameters, e.g., for Parkinson\u0027s or epilepsy.",
+                                                                                                  "Investigator-initiated trial (IIT): Early small-scale trial organized by doctors or research institutions, typically with 1-5 participants, to test safety and initial efficacy.",
+                                                                                                  "National Medical Products Administration (NMPA): China\u0027s regulatory agency for drugs and medical devices, responsible for approving products for market."
+                                                                                              ]
+                                                                       }
+                                                     }
+                                          }
+                     },
+                     {
+                         "id":  "paper-2607.07773",
+                         "category":  "paper",
+                         "title":  "Graph-Regularized Deep Learning for EEG-Based Emotion Recognition with Psychologically-Grounded Label Structure",
+                         "source":  "arXiv",
+                         "url":  "https://arxiv.org/pdf/2607.07773v1.pdf",
+                         "abstractUrl":  "https://arxiv.org/abs/2607.07773",
+                         "publishedAt":  "2026-07-08T16:41:51.0000000Z",
+                         "scoreLabel":  "Quality 28/100 + topic fit 30/30",
+                         "recommendationScore":  83,
+                         "selectionReason":  "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+                         "paperTopic":  "brain_computer_interface",
+                         "qualityScore":  28,
+                         "readabilityStatus":  "open",
+                         "paperCard":  {
+                                           "problem":  "现有深度学习做脑电情绪识别时，把不同情绪当成完全独立的类别，比如把“害怕”错认成“快乐”和错认成“悲伤”扣同样的分，但心理学上“害怕”和“悲伤”更接近，这种错误应该更可接受。论文要解决的就是让模型学会尊重情绪之间的心理距离。",
+                                           "method":  "论文构建了一个情绪图，把每种情绪看作一个节点，节点之间的边表示心理上的接近程度（比如“快乐”只连“中性”，不连“悲伤”）。然后设计了三种正则化方法（图标签平滑、图拉普拉斯损失、切片Wasserstein损失），在训练时额外惩罚那些把情绪错认到心理距离远的类别的预测。",
+                                           "difference":  "以前的方法要么用标准交叉熵损失（所有错误一视同仁），要么用标签平滑（均匀分配给其他类别）。这篇论文首次系统性地把情绪拓扑结构（即情绪之间的心理距离图）直接嵌入到训练目标中，让模型学会区分“可接受的错误”和“不可接受的错误”。",
+                                           "innovation":  "创新点有三个：一是提出了基于情绪图的三种正则化策略，覆盖了局部、全局和分布变换三种视角；二是验证了这些策略对多种主流模型（Transformer、CNN-Transformer混合、图神经网络）都有效，即架构无关；三是引入了“邻近违规率”指标，专门衡量模型是否犯了心理学上不合理的错误。",
+                                           "implementation":  "具体实现分三步：1）根据Russell环状模型（二维情绪空间：愉悦度-唤醒度）为每个数据集构建情绪图，比如SEED-IV的四个情绪（中性、悲伤、害怕、快乐）中，“快乐”只连“中性”；2）在标准分类损失（交叉熵）基础上，加上三种正则化损失之一：图标签平滑（把标签概率按图邻接关系分配给相邻情绪）、图拉普拉斯损失（用图拉普拉斯矩阵的伪逆计算预测与真实标签之间的“通勤距离”）、切片Wasserstein损失（用随机投影计算预测分布与真实分布之间的最优传输距离）；3）通过固定权重或自适应权重（基于不确定性学习）平衡分类损失和正则化损失。",
+                                           "applications":  "可用于心理健康监测（如追踪情绪轨迹辅助治疗）、情感脑机接口（如游戏或教育中的情绪反馈）、消费级脑电设备（如Muse、Emotiv）上的日常情绪计算应用。",
+                                           "technicalTerms":  [
+                                                                  "图正则化：在训练模型时，额外加入一个惩罚项，这个惩罚项基于情绪之间的图结构（即谁和谁心理上更接近），让模型学会尊重这种结构。",
+                                                                  "通勤距离：在情绪图上，从一个节点出发随机游走，到达另一个节点并返回所需的平均步数，用来衡量两个情绪在全局结构上的距离。",
+                                                                  "切片Wasserstein距离：一种计算两个概率分布之间差异的方法，通过随机投影把高维分布降到一维再比较，比传统最优传输方法计算更快。",
+                                                                  "邻近违规率：模型预测错误中，那些把情绪错认到心理距离远的类别（如“快乐”错认成“悲伤”）的比例，越低说明模型越符合心理学规律。"
+                                                              ]
+                                       },
+                         "summary":  "这篇论文提出了一种图正则化深度学习框架，用于基于脑电信号的情绪识别。它通过将情绪类别之间的心理关联性（如“快乐”和“悲伤”在心理上距离较远）建模成图结构，并加入训练损失中，从而让模型学会更符合心理学规律的预测，显著提升了准确率并减少了不合理错误。值得一读是因为它提供了一种架构无关、可即插即用的改进思路，且实验验证了在多个模型和数据集上的有效性。",
+                         "failureAnalysis":  "主要局限是计算复杂度随情绪类别数增加而上升，尤其是切片Wasserstein距离方法需要多次随机投影和排序。此外，情绪图的构建依赖心理学理论（如Russell环状模型），若标签集不满足该理论假设，效果可能打折扣。",
+                         "translations":  {
+                                              "en":  {
+                                                         "summary":  "This paper proposes a graph-regularized deep learning framework for EEG-based emotion recognition. It models psychological relationships between emotions as a graph and incorporates this structure into training, leading to improved accuracy and fewer psychologically implausible errors. It is worth reading because it offers an architecture-agnostic plug-in improvement validated across multiple models and datasets.",
+                                                         "failureAnalysis":  "The main limitation is increased computational complexity with more emotion classes, especially for the Sliced Wasserstein method. Additionally, the emotion graph relies on psychological theory assumptions; if the label set does not fit those assumptions, performance may degrade.",
+                                                         "title":  "Graph-Regularized Deep Learning for EEG-Based Emotion Recognition with Psychologically-Grounded Label Structure",
+                                                         "paperCard":  {
+                                                                           "problem":  "Existing deep learning methods for EEG emotion recognition treat all emotion classes as independent and equally distant, penalizing misclassifications like \u0027Fear\u0027 to \u0027Happy\u0027 the same as \u0027Fear\u0027 to \u0027Sad\u0027, even though the latter is psychologically closer. The problem is to make models respect psychological distances between emotions.",
+                                                                           "method":  "The paper constructs an emotion graph where each emotion is a node and edges represent psychological proximity. It then adds three regularization methods (Graph Label Smoothing, Graph Laplacian loss, Sliced Wasserstein loss) to the training loss to penalize predictions that confuse psychologically distant emotions more heavily.",
+                                                                           "difference":  "Previous methods either used standard cross-entropy loss (treating all errors equally) or uniform label smoothing. This paper systematically integrates emotion topology (the graph of psychological distances) into the training objective for the first time, teaching the model to distinguish \u0027acceptable\u0027 from \u0027unacceptable\u0027 errors.",
+                                                                           "innovation":  "Three innovations: 1) Three complementary graph-based regularization strategies covering local, global, and distributional perspectives; 2) Architecture-agnostic validation across Transformer, CNN-Transformer hybrid, and GNN backbones; 3) Introduction of a \u0027Proximity Violation\u0027 metric to specifically measure psychologically implausible errors.",
+                                                                           "implementation":  "Implementation steps: 1) Build an emotion graph based on Russell\u0027s circumplex model (valence-arousal space) for each dataset; 2) Add one of three regularization losses to the standard cross-entropy loss: Graph Label Smoothing (distributes label probability to adjacent emotions), Graph Laplacian loss (uses pseudo-inverse of Laplacian to compute commuting distance), or Sliced Wasserstein loss (uses random projections to compute optimal transport distance); 3) Balance classification and regularization via fixed weight or adaptive weighting based on uncertainty learning.",
+                                                                           "applications":  "Mental health monitoring (tracking emotional trajectories for treatment), affective brain-computer interfaces (e.g., in gaming or education), and everyday emotion computing with consumer EEG devices (e.g., Muse, Emotiv).",
+                                                                           "technicalTerms":  [
+                                                                                                  "graph regularization: adding a penalty term during training that is based on the graph structure of emotions (who is psychologically close to whom), so the model learns to respect that structure.",
+                                                                                                  "commuting distance: the average number of steps a random walk takes to go from one node to another and back on the emotion graph, measuring global structural distance.",
+                                                                                                  "Sliced Wasserstein distance: a method to compute the difference between two probability distributions by projecting them onto random lines and comparing the 1D projections, faster than full optimal transport.",
+                                                                                                  "Proximity Violation ratio: the percentage of misclassifications that confuse psychologically distant emotions (e.g., \u0027Happy\u0027 to \u0027Sad\u0027), lower is better for psychological plausibility."
+                                                                                              ]
+                                                                       }
+                                                     }
+                                          }
+                     }
+                 ]
+}
+

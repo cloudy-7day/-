@@ -9,7 +9,9 @@ on:
       - ".github/workflows/daily-update.yml"
       - "scripts/update-daily.ps1"
   schedule:
-    - cron: "0 15,16 * * *"
+    # 15:07 UTC = 8:07 AM PDT; 16:07 UTC = 8:07 AM PST
+    # Off-peak minute (7) to reduce queue-delay skips
+    - cron: "7 15,16 * * *"
 
 permissions:
   contents: write
@@ -22,33 +24,46 @@ jobs:
       - name: Check out repository
         uses: actions/checkout@v4
 
-      - name: Check Los Angeles time
-        id: timecheck
+      - name: Determine if update is needed
+        id: gate
         shell: pwsh
         run: |
+          # Manual dispatch and push triggers always run — no time gate.
           if ("${{ github.event_name }}" -eq "workflow_dispatch" -or "${{ github.event_name }}" -eq "push") {
             "should_run=true" >> $env:GITHUB_OUTPUT
+            "reason=Manual or push trigger — always run." >> $env:GITHUB_OUTPUT
+            Write-Host "Trigger: ${{ github.event_name }} — running update unconditionally."
             exit 0
           }
 
+          # Scheduled run: check whether today's archive (by LA date) already exists.
           $tz = [System.TimeZoneInfo]::FindSystemTimeZoneById("America/Los_Angeles")
           $laNow = [System.TimeZoneInfo]::ConvertTimeFromUtc([DateTime]::UtcNow, $tz)
-          if ($laNow.Hour -eq 8) {
-            "should_run=true" >> $env:GITHUB_OUTPUT
-          } else {
+          $laDate = $laNow.ToString("yyyy-MM-dd")
+          $archiveFile = "data/archive/$laDate.json"
+
+          Write-Host "Los Angeles time: $($laNow.ToString('yyyy-MM-dd HH:mm:ss'))"
+          Write-Host "Checking for archive file: $archiveFile"
+
+          if (Test-Path $archiveFile) {
             "should_run=false" >> $env:GITHUB_OUTPUT
-            Write-Host "Skipping because Los Angeles time is $($laNow.ToString('yyyy-MM-dd HH:mm:ss'))."
+            "reason=Archive for $laDate already exists — idempotent skip." >> $env:GITHUB_OUTPUT
+            Write-Host "::notice::Archive for $laDate already exists. Update skipped (already ran today)."
+          } else {
+            "should_run=true" >> $env:GITHUB_OUTPUT
+            "reason=No archive for $laDate — running daily update." >> $env:GITHUB_OUTPUT
+            Write-Host "No archive for $laDate. Proceeding with daily update."
           }
 
       - name: Update articles
-        if: steps.timecheck.outputs.should_run == 'true'
+        if: steps.gate.outputs.should_run == 'true'
         shell: pwsh
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
         run: ./scripts/update-daily.ps1
 
       - name: Commit updated data
-        if: steps.timecheck.outputs.should_run == 'true'
+        if: steps.gate.outputs.should_run == 'true'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"

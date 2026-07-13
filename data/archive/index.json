@@ -1,6 +1,26 @@
 ﻿{
-    "updatedAt":  "2026-07-08T03:34:15.5605628Z",
+    "updatedAt":  "2026-07-13T05:12:51.2669258Z",
     "archives":  [
+                     {
+                         "date":  "2026-07-12",
+                         "path":  "data/archive/2026-07-12.json"
+                     },
+                     {
+                         "date":  "2026-07-11",
+                         "path":  "data/archive/2026-07-11.json"
+                     },
+                     {
+                         "date":  "2026-07-10",
+                         "path":  "data/archive/2026-07-10.json"
+                     },
+                     {
+                         "date":  "2026-07-09",
+                         "path":  "data/archive/2026-07-09.json"
+                     },
+                     {
+                         "date":  "2026-07-08",
+                         "path":  "data/archive/2026-07-08.json"
+                     },
                      {
                          "date":  "2026-07-07",
                          "path":  "data/archive/2026-07-07.json"
