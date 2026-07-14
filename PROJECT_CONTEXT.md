@@ -91,7 +91,7 @@ D:\111 codex                    # GitHub Pages 主发布目录
 - 论文不足 2 篇时用 AI 应用文章补位
 - 数据结构支持 `translations.en` 英文翻译字段
 - 论文数据新增 `abstractUrl` 字段，指向 arXiv 摘要页
-- 新闻来源保证多样性：每个来源最多选 1 篇（当前来源池：NPR World、The Guardian World、Reuters World）
+- 新闻来源优先每个来源选 1 篇；可用来源少于 3 个时，从可用来源补足到 3 篇（当前来源池：NPR World、The Guardian World、Reuters World）
 
 ### 测试
 - `scripts/test-paper-selection.ps1` — 论文筛选规则回归验证
@@ -101,7 +101,11 @@ D:\111 codex                    # GitHub Pages 主发布目录
 - `scripts/test-local-preview.ps1` — 本地预览语言切换验证
 
 ### 自动化
-- GitHub Actions 配置洛杉矶时间 08:00 自动更新
+- GitHub Actions 每天在覆盖洛杉矶 08:00 的两个 UTC 时段触发，并按洛杉矶当天归档做幂等判断
+- 定时任务显式准备 Python 3.12 和固定版本 `pypdf==6.10.2`，GitHub 搜索使用受限 `GITHUB_TOKEN`
+- 外部请求各自最多尝试 2 次；同一时间只允许一个更新任务，单次最多 30 分钟，整个任务失败后再重试一次
+- 排队任务执行时检出最新 `main`，避免两个延迟 cron 基于旧提交重复更新
+- 发布前验证 7 篇总数、分类组合、唯一链接、发布时间、中英文摘要和论文卡片，失败时不覆盖上一份可用数据
 - 工作流推送触发验证
 
 ### 近期新增（2026-07-08）
@@ -111,20 +115,21 @@ D:\111 codex                    # GitHub Pages 主发布目录
 - 论文详情区域 max-height: 200px + 滚动，控制卡片高度统一
 - 数据结构：论文新增 `abstractUrl` 字段
 
-## 6. 当前状态（2026-07-08）
+## 6. 当前状态（2026-07-13）
 
-- 所有代码修改已完成，已推送到 GitHub（commit `7cbeaba`）。
-- `data/articles.json` 日期为 2026-07-07，含 7 篇完整内容、英文翻译、abstractUrl。
+- 精确 8 点时间门禁已在 commit `9642c9a` 改为按洛杉矶日期和归档文件判断，GitHub 延迟启动不再直接跳过当天更新。
+- 当前 `data/articles.json` 日期为 2026-07-13，含 7 篇内容（3 新闻、2 AI、2 论文），并与当天归档一起纳入本次线上更新。
+- 云端工作流已补充 Python/PDF 依赖、GitHub API 认证、超时、一次重试和发布前数据验证。
 - AI 和论文筛选规则均已通过测试脚本验证。
 - 英文模式标题翻译兜底链路已通过测试验证。
-- `https://cloudy-7day.github.io/-/` 已部署最新版本。
+- 最终发布地址仍为 `https://cloudy-7day.github.io/-/`，本轮代码推送后需观察 push 触发和下一次自然定时运行。
 
 ## 7. 待完成
 
 ### 短期
-1. 替换有效 DeepSeek API key，让 AI 智能总结和英文翻译走 DeepSeek 而非本地兜底。
-2. 确认 GitHub Actions Secret 中 `DEEPSEEK_API_KEY` 有效，手动触发一次验证。
-3. 观察 GitHub Actions 在云端环境能否稳定提取 PDF 文本。
+1. 通过本轮 push 触发确认 GitHub Actions Secret 中 `DEEPSEEK_API_KEY` 可用，但不读取或记录密钥值。
+2. 观察下一次自然定时运行是否生成当天归档并自动提交。
+3. 记录各公开 RSS 和 arXiv 的失败摘要，继续降低单一来源补位频率。
 
 ### 中期
 1. 增加用户收藏、评分、读后判断功能。
@@ -140,9 +145,9 @@ D:\111 codex                    # GitHub Pages 主发布目录
 
 ## 8. 已知问题
 
-- DeepSeek API key 当前无效（`401 invalid api key`），论文智能总结和英文翻译走本地兜底。
-- GitHub Actions 需在推送后验证 PDF 文本提取是否在云端环境正常工作。
-- 文档中 BBC World 引用已全部删除，统一为 NPR World / The Guardian World / Reuters World。
+- `DEEPSEEK_API_KEY` 的云端有效性只能通过 Actions 运行结果验证；文档不保存密钥值。
+- The Guardian、Reuters、arXiv 等外部来源可能临时不可用；新闻会从可用来源补足，论文不足时会用合格 AI 文章补位。
+- GitHub Actions 的定时启动时间仍由 GitHub 调度，可能晚于 08:00；日期幂等规则保证延迟后仍会尝试当天更新。
 - 论文卡片高度虽已通过 max-height 控制，但长内容需要滚动查看，不是最理想的阅读体验。
 - 长期考虑从 JSON 文件迁移到结构化数据层。
 

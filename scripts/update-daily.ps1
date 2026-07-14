@@ -33,6 +33,130 @@ function Import-LocalEnv {
 
 Import-LocalEnv
 
+function Get-LosAngelesDate {
+  try {
+    $tz = [System.TimeZoneInfo]::FindSystemTimeZoneById("America/Los_Angeles")
+  } catch [System.TimeZoneNotFoundException] {
+    $tz = [System.TimeZoneInfo]::FindSystemTimeZoneById("Pacific Standard Time")
+  }
+  $laNow = [System.TimeZoneInfo]::ConvertTimeFromUtc([DateTime]::UtcNow, $tz)
+  return $laNow.ToString("yyyy-MM-dd")
+}
+
+function Get-GitHubRequestHeaders {
+  $headers = @{
+    "User-Agent" = "personal-info-library/0.1"
+    "Accept" = "application/vnd.github+json"
+    "X-GitHub-Api-Version" = "2022-11-28"
+  }
+
+  if ($env:GITHUB_TOKEN) {
+    $headers.Authorization = "Bearer $env:GITHUB_TOKEN"
+  }
+
+  return $headers
+}
+
+function Invoke-WithRetry {
+  param(
+    [scriptblock]$Operation,
+    [int]$MaxAttempts = 2,
+    [int]$DelaySeconds = 2
+  )
+
+  for ($attempt = 1; $attempt -le $MaxAttempts; $attempt++) {
+    try {
+      return & $Operation
+    } catch {
+      if ($attempt -eq $MaxAttempts) {
+        throw
+      }
+
+      Write-Warning "Request attempt $attempt failed: $($_.Exception.Message)"
+      if ($DelaySeconds -gt 0) {
+        Start-Sleep -Seconds $DelaySeconds
+      }
+    }
+  }
+}
+
+function Assert-DailyPayload {
+  param($Payload)
+
+  $items = @($Payload.articles)
+  $expectedDate = Get-LosAngelesDate
+  if ($Payload.issueDate -ne $expectedDate) {
+    throw "Daily payload issueDate must be $expectedDate; received $($Payload.issueDate)."
+  }
+
+  if ($items.Count -ne 7) {
+    throw "Daily payload must contain exactly 7 articles; collected $($items.Count). Existing published data was not replaced."
+  }
+
+  $newsCount = @($items | Where-Object { $_.category -eq "international" }).Count
+  if ($newsCount -ne 3) {
+    throw "Daily payload must contain exactly 3 international news items; collected $newsCount. Existing published data was not replaced."
+  }
+
+  $aiCount = @($items | Where-Object { $_.category -eq "ai" }).Count
+  $paperCount = @($items | Where-Object { $_.category -eq "paper" }).Count
+  if ($aiCount -lt 2 -or $aiCount -gt 4 -or $paperCount -lt 0 -or $paperCount -gt 2 -or ($aiCount + $paperCount) -ne 4) {
+    throw "Daily payload must contain 2 AI items plus 0-2 papers, with AI filling any paper shortfall. Collected $aiCount AI and $paperCount papers."
+  }
+
+  $allowedCategories = @("international", "ai", "paper")
+  $seenIds = @{}
+  $seenUrls = @{}
+  $paperFields = @("problem", "method", "difference", "innovation", "implementation", "applications")
+
+  foreach ($item in $items) {
+    if (-not $item.id -or -not $item.title -or -not $item.category -or -not $item.url -or -not $item.publishedAt -or -not $item.summary -or -not $item.failureAnalysis) {
+      throw "Every article must include id, title, category, URL, publication date, summary, and analysis. Existing published data was not replaced."
+    }
+
+    if ($item.category -notin $allowedCategories) {
+      throw "Unsupported article category: $($item.category)"
+    }
+
+    if ($seenIds.ContainsKey([string]$item.id) -or $seenUrls.ContainsKey([string]$item.url)) {
+      throw "Article IDs and URLs must be unique: $($item.id)"
+    }
+    $seenIds[[string]$item.id] = $true
+    $seenUrls[[string]$item.url] = $true
+
+    $uri = $null
+    if (-not [uri]::TryCreate([string]$item.url, [System.UriKind]::Absolute, [ref]$uri) -or $uri.Scheme -notin @("http", "https")) {
+      throw "Article URL must use HTTP or HTTPS: $($item.url)"
+    }
+
+    $publishedAt = [datetime]::MinValue
+    if (-not [datetime]::TryParse([string]$item.publishedAt, [ref]$publishedAt)) {
+      throw "Article publication date is invalid: $($item.id)"
+    }
+
+    $english = $item.translations.en
+    if (-not $english -or -not $english.title -or -not $english.summary -or -not $english.failureAnalysis) {
+      throw "Every article must include a complete English translation: $($item.id)"
+    }
+
+    if ($item.category -eq "paper") {
+      if ($item.readabilityStatus -ne "open" -or -not $item.abstractUrl -or -not $item.paperCard -or -not $english.paperCard) {
+        throw "Every paper must be openly readable and include abstract and bilingual paper cards: $($item.id)"
+      }
+
+      foreach ($field in $paperFields) {
+        if (-not $item.paperCard.$field -or -not $english.paperCard.$field) {
+          throw "Paper card field '$field' is incomplete: $($item.id)"
+        }
+      }
+
+      if (@($item.paperCard.technicalTerms).Count -eq 0 -or @($english.paperCard.technicalTerms).Count -eq 0) {
+        throw "Paper technical terms are incomplete: $($item.id)"
+      }
+    }
+  }
+}
+
 function Invoke-JsonPostUtf8 {
   param(
     [string]$Uri,
@@ -43,6 +167,8 @@ function Invoke-JsonPostUtf8 {
   $request = [System.Net.HttpWebRequest]::Create($Uri)
   $request.Method = "POST"
   $request.ContentType = "application/json; charset=utf-8"
+  $request.Timeout = 60000
+  $request.ReadWriteTimeout = 60000
   foreach ($key in $Headers.Keys) {
     $request.Headers[$key] = $Headers[$key]
   }
@@ -131,7 +257,9 @@ function Get-PdfTextFromUrl {
   $tempText = [System.IO.Path]::ChangeExtension($tempPdf, ".txt")
 
   try {
-    Invoke-WebRequest -Uri $Url -OutFile $tempPdf -Headers @{ "User-Agent" = "personal-info-library/0.1" } -TimeoutSec 30
+    Invoke-WithRetry -Operation {
+      Invoke-WebRequest -Uri $Url -OutFile $tempPdf -Headers @{ "User-Agent" = "personal-info-library/0.1" } -TimeoutSec 30
+    } | Out-Null
 
     $pdftotext = Get-Command "pdftotext" -ErrorAction SilentlyContinue
     if ($pdftotext) {
@@ -378,10 +506,12 @@ $translationGuide
   } | ConvertTo-Json -Depth 8
 
   try {
-    $response = Invoke-JsonPostUtf8 `
-      -Uri "https://api.deepseek.com/chat/completions" `
-      -JsonBody $body `
-      -Headers @{ Authorization = "Bearer $env:DEEPSEEK_API_KEY" }
+    $response = Invoke-WithRetry -Operation {
+      Invoke-JsonPostUtf8 `
+        -Uri "https://api.deepseek.com/chat/completions" `
+        -JsonBody $body `
+        -Headers @{ Authorization = "Bearer $env:DEEPSEEK_API_KEY" }
+    }
 
     $content = [string]$response.choices[0].message.content
     $content = $content.Trim() -replace "^```json\s*", "" -replace "^```\s*", "" -replace "\s*```$", ""
@@ -548,7 +678,9 @@ function Get-OpenWorldNewsItems {
   $candidates = @()
   foreach ($feedInfo in Get-OpenNewsFeeds) {
     try {
-      $feed = Invoke-RestMethod -Uri $feedInfo.url -Headers @{ "User-Agent" = "personal-info-library/0.1" }
+      $feed = Invoke-WithRetry -Operation {
+        Invoke-RestMethod -Uri $feedInfo.url -Headers @{ "User-Agent" = "personal-info-library/0.1" } -TimeoutSec 30
+      }
       $feedItems = Get-FeedItems -Feed $feed
       $rank = 0
       foreach ($feedItem in @($feedItems | Select-Object -First 6)) {
@@ -716,7 +848,7 @@ function Get-HnAiCandidates {
     $url = "https://hn.algolia.com/api/v1/search?tags=story&query=$encodedQuery&numericFilters=created_at_i%3E$cutoff&hitsPerPage=25"
 
     try {
-      $hits = (Invoke-RestMethod -Uri $url).hits
+      $hits = (Invoke-WithRetry -Operation { Invoke-RestMethod -Uri $url -TimeoutSec 30 }).hits
       foreach ($hit in $hits) {
         if (-not $hit.url -or $hit.points -lt 40) { continue }
         if ($hit.title -notmatch "Show HN|agent|tool|LLM|AI|Claude|ChatGPT|MCP|workflow|prompt|eval|RAG|automation|deploy|local") { continue }
@@ -750,7 +882,9 @@ function Get-FeedAiCandidates {
   $candidates = @()
   foreach ($feedInfo in Get-AiSourceFeeds) {
     try {
-      $feed = Invoke-RestMethod -Uri $feedInfo.url -Headers @{ "User-Agent" = "personal-info-library/0.1" }
+      $feed = Invoke-WithRetry -Operation {
+        Invoke-RestMethod -Uri $feedInfo.url -Headers @{ "User-Agent" = "personal-info-library/0.1" } -TimeoutSec 30
+      }
       $feedItems = Get-FeedItems -Feed $feed
 
       foreach ($feedItem in @($feedItems | Select-Object -First 8)) {
@@ -797,7 +931,7 @@ function Get-FeedAiCandidates {
 }
 
 function Get-GitHubAiCandidates {
-  $createdAfter = (Get-Date).AddDays(-90).ToString("yyyy-MM-dd")
+  $createdAfter = ([datetime](Get-LosAngelesDate)).AddDays(-90).ToString("yyyy-MM-dd")
   $queries = @(
     "llm agent created:>$createdAfter",
     "mcp ai created:>$createdAfter",
@@ -811,9 +945,8 @@ function Get-GitHubAiCandidates {
     $url = "https://api.github.com/search/repositories?q=$encodedQuery&sort=stars&order=desc&per_page=10"
 
     try {
-      $response = Invoke-RestMethod -Uri $url -Headers @{
-        "User-Agent" = "personal-info-library/0.1"
-        "Accept" = "application/vnd.github+json"
+      $response = Invoke-WithRetry -Operation {
+        Invoke-RestMethod -Uri $url -Headers (Get-GitHubRequestHeaders) -TimeoutSec 30
       }
 
       foreach ($repo in $response.items) {
@@ -909,7 +1042,9 @@ function Get-CrossrefAuthorityPapers {
 
     try {
       Start-Sleep -Milliseconds 1200
-      $response = Invoke-RestMethod -Uri $url -Headers @{ "User-Agent" = "personal-info-library/0.1" }
+      $response = Invoke-WithRetry -Operation {
+        Invoke-RestMethod -Uri $url -Headers @{ "User-Agent" = "personal-info-library/0.1" } -TimeoutSec 30
+      }
       foreach ($work in $response.message.items) {
         $title = if ($work.title -is [array]) { [string]$work.title[0] } else { [string]$work.title }
         $source = if ($work.'container-title' -is [array]) { [string]$work.'container-title'[0] } else { [string]$work.'container-title' }
@@ -958,7 +1093,7 @@ function Get-CrossrefAuthorityPapers {
 function Get-ArxivAppliedPapers {
   $query = "https://export.arxiv.org/api/query?search_query=all:%22applied%20artificial%20intelligence%22%20OR%20all:%22brain-computer%20interface%22%20OR%20all:%22neuromorphic%20chip%22%20OR%20all:%22solid-state%20battery%22&start=0&max_results=12&sortBy=submittedDate&sortOrder=descending"
   try {
-    $items = Invoke-RestMethod -Uri $query
+    $items = Invoke-WithRetry -Operation { Invoke-RestMethod -Uri $query -TimeoutSec 30 }
     $items | Where-Object {
       $_.title -notmatch "cosmological|Poincare|wave equation|mathematics|theory"
     } | Select-Object -First 4 | ForEach-Object {
@@ -1009,7 +1144,7 @@ if ($articles.Count -eq 0) {
 }
 
 $payload = [ordered]@{
-  issueDate = (Get-Date).ToString("yyyy-MM-dd")
+  issueDate = Get-LosAngelesDate
   notes = @(
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -1018,6 +1153,8 @@ $payload = [ordered]@{
   )
   articles = $articles
 }
+
+Assert-DailyPayload -Payload $payload
 
 $target = Join-Path (Get-Location) $OutputPath
 $folder = Split-Path $target
