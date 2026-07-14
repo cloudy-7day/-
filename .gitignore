@@ -4,3 +4,4 @@ server.err.log
 public/
 work-summary-*/
 个人信息收集库/
+.worktrees/
