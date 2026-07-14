@@ -1,5 +1,5 @@
 ﻿{
-    "updatedAt":  "2026-07-14T15:02:24.6484665Z",
+    "updatedAt":  "2026-07-14T15:04:23.2266460Z",
     "archives":  [
                      {
                          "date":  "2026-07-14",
@@ -14,20 +14,8 @@
                          "path":  "data/archive/2026-07-12.json"
                      },
                      {
-                         "date":  "2026-07-11",
-                         "path":  "data/archive/2026-07-11.json"
-                     },
-                     {
-                         "date":  "2026-07-10",
-                         "path":  "data/archive/2026-07-10.json"
-                     },
-                     {
                          "date":  "2026-07-09",
                          "path":  "data/archive/2026-07-09.json"
-                     },
-                     {
-                         "date":  "2026-07-08",
-                         "path":  "data/archive/2026-07-08.json"
                      },
                      {
                          "date":  "2026-07-07",
