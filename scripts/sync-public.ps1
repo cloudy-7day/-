@@ -18,7 +18,14 @@ if (-not (Test-Path $publicArchive)) {
 Copy-Item -Path (Join-Path $root "index.html") -Destination (Join-Path $public "index.html") -Force
 Copy-Item -Path (Join-Path $root "styles.css") -Destination (Join-Path $public "styles.css") -Force
 Copy-Item -Path (Join-Path $root "app.js") -Destination (Join-Path $public "app.js") -Force
+Copy-Item -Path (Join-Path $root "site-core.js") -Destination (Join-Path $public "site-core.js") -Force
 Copy-Item -Path (Join-Path $root "data/articles.json") -Destination (Join-Path $publicData "articles.json") -Force
+
+$publicAssets = Join-Path $public "assets"
+if (-not (Test-Path $publicAssets)) {
+  New-Item -ItemType Directory -Path $publicAssets | Out-Null
+}
+Copy-Item -Path (Join-Path $root "assets\*") -Destination $publicAssets -Recurse -Force
 
 if (Test-Path (Join-Path $root "data/archive")) {
   Copy-Item -Path (Join-Path $root "data/archive/*.json") -Destination $publicArchive -Force

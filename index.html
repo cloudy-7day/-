@@ -1,79 +1,34 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="zh-CN">
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>个人信息收集库</title>
+    <meta name="theme-color" content="#eae7e1">
+    <meta name="description" content="山海经的漏网之鱼：每日七篇异闻、机巧与格物手稿。">
+    <title>山海经的漏网之鱼</title>
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-    <header class="topbar">
-      <div>
-        <p class="eyebrow">Daily Intelligence</p>
-        <h1>个人信息收集库</h1>
-      </div>
-      <div class="date-block">
-        <span id="issue-date">加载中</span>
-        <small>每日 7 篇</small>
+    <header id="site-header" class="site-header">
+      <a class="site-mark" href="#/home" aria-label="返回首页">山海经的漏网之鱼</a>
+      <span class="site-motto">闻一之间的空间</span>
+      <div class="site-tools">
+        <span id="clock" aria-label="洛杉矶时间"></span>
+        <span class="language-toggle" aria-label="语言切换">
+          <button type="button" data-language="zh" aria-pressed="true">中文</button>
+          <span aria-hidden="true">/</span>
+          <button type="button" data-language="en" aria-pressed="false">EN</button>
+        </span>
+        <button class="theme-toggle" type="button" data-theme-toggle aria-label="切换明暗主题">◐</button>
       </div>
     </header>
 
-    <main>
-      <section class="summary-band">
-        <div>
-          <p class="section-label">今日筛选原则</p>
-          <h2>每天只读 7 篇，重点不是多，而是学会判断</h2>
-        </div>
-        <p>
-          系统会在每天洛杉矶时间 8 点更新内容。新闻先用公开排序当作热度参考；AI 应用优先看技术社区的讨论热度；
-          论文只保留公开全文可读的 AI、脑机、芯片、能源方向内容；AI 应用严格保留 3 个月内的新内容。所有分析只接 DeepSeek API，不依赖 GPT。
-        </p>
-      </section>
-
-      <nav class="tabs" aria-label="文章分类">
-        <button class="tab active" data-filter="all">全部</button>
-        <button class="tab" data-filter="international">国际新闻</button>
-        <button class="tab" data-filter="ai">AI 应用</button>
-        <button class="tab" data-filter="paper">应用论文</button>
-      </nav>
-
-      <section class="archive-panel" aria-label="历史归档">
-        <label for="archive-select">查看历史日期</label>
-        <select id="archive-select">
-          <option value="data/articles.json">今天</option>
-        </select>
-        <div class="language-toggle" aria-label="语言切换">
-          <button class="language-button active" type="button" data-language="zh">中文</button>
-          <button class="language-button" type="button" data-language="en">English</button>
-        </div>
-      </section>
-
-      <section id="article-list" class="article-list" aria-live="polite"></section>
-
+    <main id="app" tabindex="-1">
+      <noscript>请启用 JavaScript 查看每日策展内容。</noscript>
     </main>
+    <p id="route-status" class="sr-only" aria-live="polite"></p>
 
-    <template id="article-template">
-      <article class="article-card">
-        <div class="card-head">
-          <span class="badge"></span>
-          <span class="score"></span>
-        </div>
-        <h2></h2>
-        <p class="meta"></p>
-        <p class="summary"></p>
-        <ul class="paper-details" hidden></ul>
-        <div class="analysis">
-          <h3>为什么它可能不能成功</h3>
-          <p></p>
-        </div>
-        <a class="read-link" target="_blank" rel="noopener noreferrer">阅读原文</a>
-        <div class="card-links">
-          <a class="read-link" target="_blank" rel="noopener noreferrer">阅读原文</a>
-          <a class="abstract-link" target="_blank" rel="noopener noreferrer" hidden></a>
-        </div>
-      </article>
-    </template>
-
+    <script src="site-core.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

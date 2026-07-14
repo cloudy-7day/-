@@ -1,0 +1,118 @@
+(function (root, factory) {
+  const api = factory();
+  if (typeof module === "object" && module.exports) module.exports = api;
+  root.SiteCore = api;
+})(typeof globalThis !== "undefined" ? globalThis : this, function () {
+  const CATEGORY_CONFIG = {
+    international: {
+      zh: "天下异闻",
+      en: "World Curiosities",
+      kickerZh: "观世间变局",
+      kickerEn: "Signals across the world",
+      creature: "feifei",
+    },
+    ai: {
+      zh: "机巧新术",
+      en: "New Mechanisms",
+      kickerZh: "察器物新生",
+      kickerEn: "Tools, agents and inventions",
+      creature: "tiangou",
+    },
+    paper: {
+      zh: "格物手稿",
+      en: "Research Manuscripts",
+      kickerZh: "究万物之理",
+      kickerEn: "Ideas beneath the evidence",
+      creature: "nine-tailed-fox",
+    },
+  };
+
+  function parseRoute(hash = "#/home") {
+    const parts = hash.replace(/^#\/?/, "").split("/").filter(Boolean);
+    if (!parts.length || parts[0] === "home") return { name: "home" };
+    if (parts[0] === "category" && CATEGORY_CONFIG[parts[1]]) {
+      return { name: "category", category: parts[1] };
+    }
+    if (
+      parts[0] === "article" &&
+      /^\d{4}-\d{2}-\d{2}$/.test(parts[1]) &&
+      /^\d+$/.test(parts[2])
+    ) {
+      return { name: "article", issueDate: parts[1], index: Number(parts[2]) };
+    }
+    return { name: "not-found" };
+  }
+
+  function groupArticles(articles = []) {
+    return Object.fromEntries(
+      Object.keys(CATEGORY_CONFIG).map((key) => [
+        key,
+        articles.filter((article) => article.category === key),
+      ]),
+    );
+  }
+
+  function getLocalizedArticle(article, language) {
+    const translation = article?.translations?.[language];
+    return translation
+      ? { ...article, ...translation, paperCard: translation.paperCard || article.paperCard }
+      : article;
+  }
+
+  function getSafeArticleUrl(value, base = "https://example.invalid/") {
+    try {
+      const url = new URL(value, base);
+      return url.protocol === "http:" || url.protocol === "https:" ? url.href : "#";
+    } catch {
+      return "#";
+    }
+  }
+
+  const getArticleRoute = (issueDate, index) => `#/article/${issueDate}/${index}`;
+
+  function getArticleByRoute(articles, route) {
+    return route.name === "article" ? articles[route.index] || null : null;
+  }
+
+  function buildAssociations(article, language) {
+    const localized = getLocalizedArticle(article, language);
+    const rows = [];
+    if (localized?.paperCard?.applications) {
+      rows.push({ label: language === "en" ? "Applications" : "应用", text: localized.paperCard.applications });
+    }
+    if (localized?.paperCard?.innovation) {
+      rows.push({ label: language === "en" ? "Innovation" : "新意", text: localized.paperCard.innovation });
+    }
+    if (localized?.failureAnalysis) {
+      rows.push({ label: language === "en" ? "Judgement" : "判断", text: localized.failureAnalysis });
+    }
+    if (!rows.length && localized?.summary) {
+      rows.push({ label: language === "en" ? "Outlook" : "展望", text: localized.summary });
+    }
+    return rows.slice(0, 3);
+  }
+
+  function estimateReadingMinutes(article, language) {
+    const text = [
+      article?.summary,
+      article?.failureAnalysis,
+      ...buildAssociations(article, language).map((row) => row.text),
+    ].filter(Boolean).join(" ");
+    const amount = language === "en"
+      ? text.trim().split(/\s+/).filter(Boolean).length / 200
+      : text.replace(/\s/g, "").length / 400;
+    return Math.max(1, Math.ceil(amount));
+  }
+
+  return {
+    CATEGORY_CONFIG,
+    parseRoute,
+    groupArticles,
+    getLocalizedArticle,
+    getSafeArticleUrl,
+    getArticleRoute,
+    getArticleByRoute,
+    buildAssociations,
+    estimateReadingMinutes,
+  };
+});
