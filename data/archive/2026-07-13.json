@@ -1,231 +1,227 @@
-﻿{
-    "issueDate":  "2026-07-13",
-    "notes":  [
-                  "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
-                  "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
-                  "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
-                  "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; local rules are used only as fallback."
-              ],
-    "articles":  [
-                     {
-                         "id":  "news-3df06eafe9424c69b6bab9909f15cbd3",
-                         "category":  "international",
-                         "title":  "Mexico to file criminal complaints over migrants killed by ICE in US",
-                         "source":  "The Guardian World",
-                         "url":  "https://www.theguardian.com/world/2026/jul/13/mexico-criminal-complaint-migrant-ice-deaths",
-                         "publishedAt":  "2026-07-13T22:06:01.0000000Z",
-                         "scoreLabel":  "Open RSS source",
-                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
-                         "summary":  "墨西哥总统克劳迪娅·辛鲍姆宣布，墨西哥将就十多名墨西哥移民在美国移民拘留和反移民行动中死亡的事件，向美国提起刑事诉讼。此举源于上周休斯顿一名墨西哥移民被美国移民和海关执法局（ICE）特工杀害，辛鲍姆称其“几乎是被谋杀”。该事件引发墨西哥民众愤怒，凸显美墨移民问题的紧张局势。",
-                         "failureAnalysis":  "本文揭示了墨西哥政府首次就美国执法导致移民死亡采取正式法律行动，值得关注其对外交关系和移民政策的影响。",
-                         "translations":  {
-                                              "en":  {
-                                                         "summary":  "Mexico\u0027s President Claudia Sheinbaum announced criminal complaints in the US over the deaths of more than a dozen Mexican migrants in immigration detention and anti-migrant operations, including the killing of Lorenzo Salgado Araujo in Houston. This marks a significant escalation in Mexico\u0027s response to US immigration enforcement, highlighting growing tensions.",
-                                                         "failureAnalysis":  "This article is worth reading as it shows Mexico taking unprecedented legal action against US immigration authorities, which could reshape bilateral relations and immigration policies.",
-                                                         "title":  "Mexico to file criminal complaints over migrants killed by ICE in US"
-                                                     }
-                                          }
-                     },
-                     {
-                         "id":  "news-f56311d853a64b33af70ce6766a1befb",
-                         "category":  "international",
-                         "title":  "Pakistan urges restraint as its Mideast deal unravels",
-                         "source":  "NPR World",
-                         "url":  "https://www.npr.org/2026/07/13/nx-s1-5891718/pakistan-urges-restraint-as-its-mideast-deal-unravels",
-                         "publishedAt":  "2026-07-13T20:55:21.0000000Z",
-                         "scoreLabel":  "Open RSS source",
-                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
-                         "summary":  "巴基斯坦呼吁克制，因为伊朗与美国之间的冲突导致一项中东谅解备忘录破裂。这篇文章解释了地缘政治紧张如何影响区域协议，值得关注以理解中东局势的连锁反应。",
-                         "failureAnalysis":  "关键要点：国际协议脆弱，易受大国冲突影响，需关注巴基斯坦在调解中的角色。",
-                         "translations":  {
-                                              "en":  {
-                                                         "summary":  "Pakistan calls for restraint as a clash between Iran and the U.S. causes a memorandum of understanding to fall apart. This article is worth reading to understand how geopolitical tensions can disrupt regional agreements.",
-                                                         "failureAnalysis":  "Key takeaway: International agreements are fragile and susceptible to major power conflicts, highlighting Pakistan\u0027s mediating role.",
-                                                         "title":  "Pakistan Urges Restraint as Its Mideast Deal Unravels"
-                                                     }
-                                          }
-                     },
-                     {
-                         "id":  "news-57b8363c19b44d44a03f94cf816c3d44",
-                         "category":  "international",
-                         "title":  "People watching the World Cup during work hours is leading to a drop in productivity",
-                         "source":  "NPR World",
-                         "url":  "https://www.npr.org/2026/07/13/nx-s1-5884861/people-watching-the-world-cup-during-work-hours-is-leading-to-a-drop-in-productivity",
-                         "publishedAt":  "2026-07-13T20:02:44.0000000Z",
-                         "scoreLabel":  "Open RSS source",
-                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
-                         "summary":  "这篇文章指出，世界杯期间员工在工作时间观看比赛导致全球生产力下降。一项调查显示，许多员工甚至小企业主都沉迷于比赛，影响了工作效率。值得阅读是因为它揭示了大型体育赛事对经济的实际影响。",
-                         "failureAnalysis":  "关键启示：大型娱乐活动会显著影响工作生产力，企业需提前规划应对措施。",
-                         "translations":  {
-                                              "en":  {
-                                                         "summary":  "This article reports that World Cup fever is causing a global drop in productivity as employees watch matches during work hours. A survey shows even small business owners are distracted. It\u0027s worth reading for its insight into how major sports events impact the economy.",
-                                                         "failureAnalysis":  "Key takeaway: Major entertainment events can significantly disrupt workplace productivity, requiring proactive planning from businesses.",
-                                                         "title":  "World Cup Viewing During Work Hours Hurts Productivity"
-                                                     }
-                                          }
-                     },
-                     {
-                         "id":  "ai-github-1266797999",
-                         "category":  "ai",
-                         "title":  "DietrichGebert/ponytail",
-                         "source":  "GitHub Search",
-                         "url":  "https://github.com/DietrichGebert/ponytail",
-                         "abstractUrl":  null,
-                         "publishedAt":  "2026-06-12T00:52:37.0000000Z",
-                         "scoreLabel":  "GitHub 82503 stars",
-                         "aiArticleType":  "application_innovation",
-                         "evidenceAnchors":  [
-                                                 {
-                                                     "label":  "GitHub",
-                                                     "kind":  "primary"
-                                                 },
-                                                 {
-                                                     "label":  "Community signal",
-                                                     "kind":  "secondary"
-                                                 }
-                                             ],
-                         "evidenceLabel":  "GitHub + Community signal",
-                         "hasPrimaryAnchor":  true,
-                         "requiresRiskAnalysis":  true,
-                         "selectionReason":  "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-                         "summary":  "该项目提出让AI代理模仿“最懒资深开发者”的思维模式，核心原则是“最好的代码是没写的代码”，旨在减少不必要的代码生成。值得关注是因为它挑战了AI编程领域“生成越多越好”的默认假设，可能带来更高效、更简洁的代码产出。",
-                         "failureAnalysis":  "核心风险在于“懒惰”与“正确性”的平衡难以量化，过度追求少写代码可能导致关键逻辑遗漏。项目缺乏明确的部署路径和用户价值验证，仅靠GitHub星数无法证明实际工程可行性。此外，不同团队对“懒惰资深开发者”的理解差异巨大，难以形成通用标准，可能沦为噱头。",
-                         "aiSelectionScore":  82503,
-                         "translations":  {
-                                              "en":  {
-                                                         "summary":  "This project proposes an AI agent that mimics the mindset of the laziest senior developer, operating on the principle that the best code is the code never written. It is worth reading because it challenges the default assumption in AI coding that more generation is always better, potentially leading to more efficient and concise code output.",
-                                                         "failureAnalysis":  "The core risk is the difficulty in quantifying the balance between \u0027laziness\u0027 and correctness, as over-pursuing minimal code could lead to missing critical logic. The project lacks a clear deployment path and user value validation, and GitHub stars alone do not prove real-world engineering feasibility.",
-                                                         "title":  "Ponytail: AI That Thinks Like the Laziest Senior Dev"
-                                                     }
-                                          }
-                     },
-                     {
-                         "id":  "ai-feed-b3332f91b3b54d80a956e40a39f117d5",
-                         "category":  "ai",
-                         "title":  "[AINews] Codex usage up \u003e10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
-                         "source":  "Latent Space",
-                         "url":  "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
-                         "abstractUrl":  null,
-                         "publishedAt":  "2026-07-14T01:22:27.0000000Z",
-                         "scoreLabel":  "Curated engineering feed",
-                         "aiArticleType":  "concept_explanation",
-                         "evidenceAnchors":  [
-
-                                             ],
-                         "evidenceLabel":  "No clear evidence",
-                         "hasPrimaryAnchor":  false,
-                         "requiresRiskAnalysis":  false,
-                         "selectionReason":  "AI source passed freshness and evidence-chain gate: No clear evidence",
-                         "summary":  "这篇文章报道了OpenAI的Codex在6个月内用户量增长超过10倍，达到700万，最近一天内新增100万用户，并暗示其可能已超越Claude Code。值得阅读是因为它提供了AI编程工具市场的最新竞争态势和增长数据。",
-                         "failureAnalysis":  "关键启示：用户增长数据表明Codex在开发者中快速普及，但需注意文章未提供具体功能对比或长期稳定性分析。",
-                         "aiSelectionScore":  100,
-                         "translations":  {
-                                              "en":  {
-                                                         "summary":  "This article reports that OpenAI\u0027s Codex has grown over 10x in users in 6 months to 7 million, adding 1 million in the past day, and hints it may have overtaken Claude Code. It\u0027s worth reading for the latest competitive dynamics and growth data in AI coding tools.",
-                                                         "failureAnalysis":  "Key takeaway: The user growth data shows rapid adoption among developers, but note the article lacks detailed feature comparisons or long-term stability analysis.",
-                                                         "title":  "Codex Usage Surges 10x in 6 Months to 7M Users, Overtaking Claude Code?"
-                                                     }
-                                          }
-                     },
-                     {
-                         "id":  "paper-2607.07708",
-                         "category":  "paper",
-                         "title":  "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
-                         "source":  "arXiv",
-                         "url":  "https://arxiv.org/pdf/2607.07708v1.pdf",
-                         "abstractUrl":  "https://arxiv.org/abs/2607.07708",
-                         "publishedAt":  "2026-07-08T17:59:59.0000000Z",
-                         "scoreLabel":  "Quality 28/100 + topic fit 30/30",
-                         "recommendationScore":  83,
-                         "selectionReason":  "Open full-text paper; topic ai; quality signal passed; application scenario is clear.",
-                         "paperTopic":  "ai",
-                         "qualityScore":  28,
-                         "readabilityStatus":  "open",
-                         "paperCard":  {
-                                           "problem":  "科学家需要理解物质的结构如何决定其性质（例如蛋白质结构如何影响功能），但现有AI要么只给出预测结果而不解释原因，要么把结构信息压缩成文字导致推理不准确。",
-                                           "method":  "SciReasoner将蛋白质、分子和晶体的三维结构（如原子坐标、化学键、对称性）转化为一种“结构感知词汇”，让模型在生成答案时能像引用证据一样引用这些结构片段，并逐步推理。",
-                                           "difference":  "之前的方法要么用文字描述结构（丢失细节），要么只做预测不解释。SciReasoner既保留了结构的完整信息，又能生成可检查的推理链条，把结构当作推理的“证据单元”。",
-                                           "innovation":  "创新在于“原生结构推理”：结构信息不是辅助输入，而是推理过程中可被引用和检查的核心证据，并且通过统一词汇表跨领域（生物、化学、材料）工作。",
-                                           "implementation":  "首先将结构（如分子构象、蛋白质折叠模式）用专用编码器转为结构化文本（如ConfSeq、Foldseek），然后训练大语言模型（基于Qwen）理解这些结构词汇，最后通过强化学习让模型学会在推理中引用结构证据。",
-                                           "applications":  "可用于蛋白质功能预测（如基因本体注释）、逆合成分析（设计化学反应路线）、晶体材料性质预测（如带隙计算），以及科学问答和分子设计。",
-                                           "technicalTerms":  [
-                                                                  "原生结构推理：模型把结构信息当作推理中的直接证据，而不是辅助描述。",
-                                                                  "结构感知词汇：一种专门为科学结构设计的编码方式，保留原子、键、对称性等关键信息。",
-                                                                  "自举式推理训练：通过强化学习让模型自己学会如何用结构证据进行多步推理。"
-                                                              ]
-                                       },
-                         "summary":  "这篇论文提出了一个名为SciReasoner的多模态科学基础模型，能够对蛋白质、小分子和晶体等科学结构进行“原生结构推理”，在预测性质的同时生成可检查的推理过程。它值得阅读，因为它在86个基准测试中67个达到最优，并且专家评估认为其推理质量优于或媲美前沿大语言模型。",
-                         "failureAnalysis":  "论文未提及模型在极大规模数据上的训练成本，以及推理轨迹的完全可解释性可能仍受限于模型内部注意力机制的透明度。",
-                         "translations":  {
-                                              "en":  {
-                                                         "summary":  "This paper introduces SciReasoner, a multimodal scientific foundation model that performs \u0027native structural reasoning\u0027 on proteins, small molecules, and crystals, predicting properties while generating inspectable reasoning traces. It is worth reading because it achieves state-of-the-art on 67 out of 86 benchmarks, and expert evaluation finds its reasoning quality preferred or comparable to frontier LLMs.",
-                                                         "failureAnalysis":  "The paper does not discuss the training cost at very large scales, and the full interpretability of reasoning traces may still be limited by the transparency of internal attention mechanisms.",
-                                                         "title":  "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
-                                                         "paperCard":  {
-                                                                           "problem":  "Scientists need to understand how structure determines properties (e.g., protein structure to function), but existing AI either only predicts without explanation or compresses structure into text, losing accuracy.",
-                                                                           "method":  "SciReasoner converts 3D structures (coordinates, bonds, symmetry) into a \u0027structure-aware vocabulary\u0027, allowing the model to cite these structural fragments as evidence during step-by-step reasoning.",
-                                                                           "difference":  "Previous methods either describe structures in text (losing detail) or only predict without explanation. SciReasoner preserves full structural information and generates inspectable reasoning chains, treating structure as \u0027evidence units\u0027.",
-                                                                           "innovation":  "The innovation is \u0027native structural reasoning\u0027: structural information is not auxiliary input but core evidence that can be cited and inspected during reasoning, working across biology, chemistry, and materials via a unified vocabulary.",
-                                                                           "implementation":  "First, structures (e.g., molecular conformations, protein folds) are encoded into structured text (e.g., ConfSeq, Foldseek) by domain-specific encoders. Then, a large language model (based on Qwen) is trained to understand these structural tokens. Finally, reinforcement learning teaches the model to cite structural evidence in its reasoning.",
-                                                                           "applications":  "Protein function prediction (e.g., Gene Ontology), retrosynthesis (designing chemical reaction routes), crystal property prediction (e.g., band gap), scientific question answering, and molecular design.",
-                                                                           "technicalTerms":  [
-                                                                                                  "native structural reasoning: the model uses structural information as direct evidence in reasoning, not as auxiliary description.",
-                                                                                                  "structure-aware vocabulary: a coding method for scientific structures that preserves key information like atoms, bonds, and symmetry.",
-                                                                                                  "self-bootstrapped reasoning training: reinforcement learning that teaches the model to use structural evidence for multi-step reasoning."
-                                                                                              ]
-                                                                       }
-                                                     }
-                                          }
-                     },
-                     {
-                         "id":  "paper-2607.07773",
-                         "category":  "paper",
-                         "title":  "Graph-Regularized Deep Learning for EEG-Based Emotion Recognition with Psychologically-Grounded Label Structure",
-                         "source":  "arXiv",
-                         "url":  "https://arxiv.org/pdf/2607.07773v1.pdf",
-                         "abstractUrl":  "https://arxiv.org/abs/2607.07773",
-                         "publishedAt":  "2026-07-08T16:41:51.0000000Z",
-                         "scoreLabel":  "Quality 28/100 + topic fit 30/30",
-                         "recommendationScore":  83,
-                         "selectionReason":  "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
-                         "paperTopic":  "brain_computer_interface",
-                         "qualityScore":  28,
-                         "readabilityStatus":  "open",
-                         "paperCard":  {
-                                           "problem":  "传统深度学习模型在识别脑电图（EEG）信号中的情绪时，把不同情绪当成完全独立的类别，比如把“开心”错认成“悲伤”和错认成“害怕”的惩罚是一样的。但心理学告诉我们，有些情绪更相似（比如“悲伤”和“害怕”都是负面情绪），模型应该更容忍这些“合理”的错误。这篇论文就是要解决这个问题，让模型学会尊重情绪之间的心理关系。",
-                                           "method":  "作者构建了一个“情绪图”，把每种情绪看作一个节点，如果两种情绪在心理学上相似（比如都是负面情绪），就在它们之间连一条边。然后，他们设计了三种正则化方法（图标签平滑、图拉普拉斯损失、切片Wasserstein距离），在训练时惩罚那些把情绪错认到“心理上很远”的类别的预测。这样模型就会更倾向于犯“合理”的错误，比如把“害怕”错认成“悲伤”，而不是把“害怕”错认成“开心”。",
-                                           "difference":  "以前的方法要么把情绪当成独立标签（用标准交叉熵损失），要么只做简单的标签平滑（把概率均匀分给其他类别）。这篇论文的创新在于，它利用心理学理论（如Russell的环形模型）明确地定义了情绪之间的“距离”，并把这个距离信息直接融入到训练损失函数中，让模型学习到情绪之间的拓扑结构。",
-                                           "innovation":  "创新点有三个：1）提出了一个通用的“情绪图”框架，可以灵活地融入不同的心理学理论；2）设计了三种从简单到复杂的正则化方法，分别从局部、全局和最优传输的角度惩罚不合理误分类；3）通过实验证明该方法与模型架构无关，在Transformer、CNN-Transformer混合模型和图神经网络上都能稳定提升性能。",
-                                           "implementation":  "具体实现分三步：1）根据心理学理论（如Russell的效价-唤醒度模型）构建情绪图，确定哪些情绪是相邻的（如“悲伤”和“害怕”相邻，“开心”和“中性”相邻）；2）在训练时，除了标准的分类损失（交叉熵），还加入一个正则化损失，这个损失会根据情绪图计算预测错误“有多离谱”——把“开心”错认成“悲伤”的惩罚远大于错认成“中性”；3）使用自适应权重（基于不确定性）自动平衡分类损失和正则化损失，避免手动调参。关键技术词包括：图拉普拉斯（一种描述图结构的数学工具，用于计算节点间的“通勤距离”）、切片Wasserstein距离（一种高效的最优传输方法，用于衡量两个概率分布之间的差异）。",
-                                           "applications":  "1）心理健康监测：更准确地识别患者的情绪状态，辅助诊断抑郁症、焦虑症等；2）情感脑机接口：让脑机接口设备（如Muse、Emotiv头环）能更自然地理解用户的情绪，用于游戏、教育、娱乐等场景；3）临床治疗：跟踪情绪变化轨迹，帮助医生评估治疗效果或预警复发风险。",
-                                           "technicalTerms":  [
-                                                                  "图正则化：在训练模型时，额外加入一个惩罚项，这个惩罚项基于一个图（这里指情绪关系图），让模型的预测结果更符合图的结构。",
-                                                                  "图拉普拉斯：一种数学矩阵，用来描述图中节点之间的连接关系。它的伪逆矩阵可以计算节点之间的“通勤距离”，即从一个节点随机游走到另一个节点再返回的期望步数。",
-                                                                  "切片Wasserstein距离：一种衡量两个概率分布差异的方法，通过将高维分布投影到多个随机方向上，再计算一维的Wasserstein距离，从而高效地近似最优传输距离。"
-                                                              ]
-                                       },
-                         "summary":  "这篇论文提出了一种基于图正则化的深度学习框架，用于脑电图（EEG）情绪识别。它通过将情绪之间的心理相似性建模成图结构，并引入三种正则化策略，显著提升了模型在SEED-IV和SEED-V数据集上的准确率，最高提升5.42%，同时减少了39%的不合理误分类。值得一读是因为它提供了一种架构无关、可即插即用的方法，能有效提升现有模型的性能上限。",
-                         "failureAnalysis":  "主要局限在于实验仅在两个公开数据集（SEED-IV和SEED-V）上进行，且情绪类别较少（4-5类），在更复杂或更多类别的情绪识别任务中的泛化能力尚未验证。此外，图结构的构建依赖于心理学理论（如Russell的环形模型），对于不同理论或自定义情绪空间可能需要重新设计。",
-                         "translations":  {
-                                              "en":  {
-                                                         "summary":  "This paper proposes a graph-regularized deep learning framework for EEG-based emotion recognition. It models psychological proximity between emotions as a graph and introduces three regularization strategies, achieving up to +5.42% accuracy and a 39% reduction in psychologically implausible misclassifications on SEED-IV and SEED-V datasets. It is worth reading because it offers an architecture-agnostic, plug-and-play method that consistently improves the upper bound of existing models.",
-                                                         "failureAnalysis":  "The main limitation is that experiments were only conducted on two public datasets (SEED-IV and SEED-V) with a small number of emotion classes (4-5). Generalization to more complex or larger emotion taxonomies remains unverified. Additionally, the graph construction relies on specific psychological theories (e.g., Russell\u0027s circumplex model), which may require redesign for different theoretical frameworks or custom emotion spaces.",
-                                                         "title":  "Graph-Regularized Deep Learning for EEG-Based Emotion Recognition with Psychologically-Grounded Label Structure",
-                                                         "paperCard":  {
-                                                                           "problem":  "Traditional deep learning models for EEG-based emotion recognition treat all emotion classes as independent and equidistant, penalizing misclassifications like confusing \u0027Happy\u0027 with \u0027Sad\u0027 the same as confusing \u0027Happy\u0027 with \u0027Neutral\u0027. However, psychological theories show that some emotions are more similar (e.g., \u0027Sad\u0027 and \u0027Fear\u0027 are both negative-valence). This paper aims to make models respect these psychological relationships.",
-                                                                           "method":  "The authors construct an \u0027emotion graph\u0027 where each emotion is a node, and edges connect psychologically similar emotions (e.g., both negative-valence). They then design three regularization methods (Graph Label Smoothing, Graph Laplacian Loss, and Sliced Wasserstein Distance) that penalize predictions that deviate from this emotion topology. This encourages the model to make \u0027reasonable\u0027 mistakes, like confusing \u0027Fear\u0027 with \u0027Sad\u0027, rather than \u0027unreasonable\u0027 ones like confusing \u0027Fear\u0027 with \u0027Happy\u0027.",
-                                                                           "difference":  "Previous methods either treat emotions as independent labels (using standard cross-entropy loss) or use simple label smoothing (distributing probability uniformly to all other classes). This paper\u0027s innovation is to explicitly define \u0027distances\u0027 between emotions based on psychological theory and incorporate this distance information directly into the training loss function, allowing the model to learn the topological structure of emotions.",
-                                                                           "innovation":  "Three innovations: 1) A general \u0027emotion graph\u0027 framework that can flexibly incorporate different psychological theories; 2) Three complementary regularization strategies (from simple to complex) that penalize implausible misclassifications from local, global, and optimal transport perspectives; 3) Experimental validation showing the method is architecture-agnostic, consistently improving performance across Transformer, CNN-Transformer hybrid, and Graph Neural Network backbones.",
-                                                                           "implementation":  "Implementation in three steps: 1) Construct an emotion graph based on a psychological theory (e.g., Russell\u0027s circumplex model of valence-arousal), defining which emotions are adjacent (e.g., \u0027Sad\u0027 and \u0027Fear\u0027 are adjacent, \u0027Happy\u0027 and \u0027Neutral\u0027 are adjacent); 2) During training, add a regularization loss to the standard classification loss (cross-entropy). This regularization loss computes how \u0027unreasonable\u0027 a misclassification is based on the graph distance (e.g., confusing \u0027Happy\u0027 with \u0027Sad\u0027 is penalized much more than confusing \u0027Happy\u0027 with \u0027Neutral\u0027); 3) Use adaptive weighting (based on uncertainty) to automatically balance the classification and regularization losses, avoiding manual hyperparameter tuning. Key technical terms include: Graph Laplacian (a mathematical tool describing graph structure, used to compute \u0027commuting distances\u0027 between nodes), and Sliced Wasserstein Distance (an efficient optimal transport method for measuring the difference between two probability distributions).",
-                                                                           "applications":  "1) Mental health monitoring: more accurately identify patients\u0027 emotional states to assist in diagnosing depression, anxiety, etc.; 2) Affective brain-computer interfaces: enable consumer-grade EEG devices (e.g., Muse, Emotiv) to more naturally understand user emotions for applications in gaming, education, and entertainment; 3) Clinical treatment: track emotional trajectories over time to help doctors evaluate treatment efficacy or detect early signs of relapse.",
-                                                                           "technicalTerms":  [
-                                                                                                  "Graph regularization: Adding an extra penalty term during model training that is based on a graph (here, the emotion relationship graph), encouraging the model\u0027s predictions to conform to the graph\u0027s structure.",
-                                                                                                  "Graph Laplacian: A mathematical matrix that describes the connections between nodes in a graph. Its pseudo-inverse can compute \u0027commuting distances\u0027 between nodes, i.e., the expected number of steps for a random walk to travel from one node to another and back.",
-                                                                                                  "Sliced Wasserstein Distance: A method for measuring the difference between two probability distributions. It projects high-dimensional distributions onto multiple random directions and then computes the one-dimensional Wasserstein distance, efficiently approximating the optimal transport distance."
-                                                                                              ]
-                                                                       }
-                                                     }
-                                          }
-                     }
-                 ]
+{
+  "issueDate": "2026-07-13",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; local rules are used only as fallback."
+  ],
+  "articles": [
+    {
+      "id": "news-99f116fc74094f9c887c7ccb571e16da",
+      "category": "international",
+      "title": "Death toll from a Bangkok music bar fire rises to 30, dozens remain in hospital",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/07/14/g-s1-133425/death-toll-bangkok-fire",
+      "publishedAt": "2026-07-14T06:43:57.0000000Z",
+      "scoreLabel": "Open RSS source",
+      "selectionReason": "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+      "summary": "Local fallback: news candidate collected automatically. Read the source and judge event, stakeholders, and next variables.",
+      "failureAnalysis": "Key takeaway fallback: watch institutions, incentives, and next variables before judging the event.",
+      "translations": {
+        "en": {
+          "summary": "Local English fallback: read the source and identify the event, stakeholders, incentives, and next variables.",
+          "failureAnalysis": "Key takeaway fallback: watch institutions, incentives, and next variables before judging the event.",
+          "title": "Death toll from a Bangkok music bar fire rises to 30, dozens remain in hospital"
+        }
+      }
+    },
+    {
+      "id": "news-65ae5d089ad14348bf9468b61e8b96e6",
+      "category": "international",
+      "title": "Mexico to file criminal complaints over migrants killed by ICE in US",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/jul/13/mexico-criminal-complaint-migrant-ice-deaths",
+      "publishedAt": "2026-07-13T22:06:01.0000000Z",
+      "scoreLabel": "Open RSS source",
+      "selectionReason": "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+      "summary": "Local fallback: news candidate collected automatically. Read the source and judge event, stakeholders, and next variables.",
+      "failureAnalysis": "Key takeaway fallback: watch institutions, incentives, and next variables before judging the event.",
+      "translations": {
+        "en": {
+          "summary": "Local English fallback: read the source and identify the event, stakeholders, incentives, and next variables.",
+          "failureAnalysis": "Key takeaway fallback: watch institutions, incentives, and next variables before judging the event.",
+          "title": "Mexico to file criminal complaints over migrants killed by ICE in US"
+        }
+      }
+    },
+    {
+      "id": "news-515bb97571da49e8935fa596ab45ae12",
+      "category": "international",
+      "title": "Pakistan urges restraint as its Mideast deal unravels",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/07/13/nx-s1-5891718/pakistan-urges-restraint-as-its-mideast-deal-unravels",
+      "publishedAt": "2026-07-13T20:55:21.0000000Z",
+      "scoreLabel": "Open RSS source",
+      "selectionReason": "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+      "summary": "Local fallback: news candidate collected automatically. Read the source and judge event, stakeholders, and next variables.",
+      "failureAnalysis": "Key takeaway fallback: watch institutions, incentives, and next variables before judging the event.",
+      "translations": {
+        "en": {
+          "summary": "Local English fallback: read the source and identify the event, stakeholders, incentives, and next variables.",
+          "failureAnalysis": "Key takeaway fallback: watch institutions, incentives, and next variables before judging the event.",
+          "title": "Pakistan urges restraint as its Mideast deal unravels"
+        }
+      }
+    },
+    {
+      "id": "ai-github-1266797999",
+      "category": "ai",
+      "title": "DietrichGebert/ponytail",
+      "source": "GitHub Search",
+      "url": "https://github.com/DietrichGebert/ponytail",
+      "abstractUrl": null,
+      "publishedAt": "2026-06-12T00:52:37.0000000Z",
+      "scoreLabel": "GitHub 82558 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "Local fallback: AI application candidate collected automatically. Judge the friction it removes, why now, and whether users return.",
+      "failureAnalysis": "Local fallback: the project must prove user value, data access, cost, stability, and integration depth.",
+      "aiSelectionScore": 82558,
+      "translations": {
+        "en": {
+          "summary": "Local English fallback: evaluate the AI item by the friction it removes, why now, and whether users return.",
+          "failureAnalysis": "Check user value, data access, cost, stability, integration depth, and distribution risk.",
+          "title": "DietrichGebert/ponytail"
+        }
+      }
+    },
+    {
+      "id": "ai-feed-5f2344dadb1f4743a1574b7c89e6a92f",
+      "category": "ai",
+      "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
+      "source": "Latent Space",
+      "url": "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
+      "abstractUrl": null,
+      "publishedAt": "2026-07-14T01:22:27.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [],
+      "evidenceLabel": "No clear evidence",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
+      "summary": "Local fallback: AI application candidate collected automatically. Judge the friction it removes, why now, and whether users return.",
+      "failureAnalysis": "Local fallback: the project must prove user value, data access, cost, stability, and integration depth.",
+      "aiSelectionScore": 100,
+      "translations": {
+        "en": {
+          "summary": "Local English fallback: evaluate the AI item by the friction it removes, why now, and whether users return.",
+          "failureAnalysis": "Check user value, data access, cost, stability, integration depth, and distribution risk.",
+          "title": "[AINews] Codex usage up >10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??"
+        }
+      }
+    },
+    {
+      "id": "paper-2607.11530",
+      "category": "paper",
+      "title": "Learning Residual Kinematic Corrections for Continuous Neural Decoding via Reinforcement Learning",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2607.11530v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2607.11530",
+      "publishedAt": "2026-07-13T13:15:18.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。",
+          "CNN：擅长从信号或图像里提取局部特征的神经网络。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "summary": "本地规则只确认这篇论文有公开全文入口；智能总结需要 DeepSeek key 和完整内容输入后生成。",
+      "failureAnalysis": "Key takeaway fallback: check experiment conditions, sample size, cost, regulatory path, and reproducibility.",
+      "translations": {
+        "en": {
+          "summary": "Local English fallback: this paper has usable extracted full text; judge the problem, method, implementation path, evidence limits, and application value.",
+          "failureAnalysis": "Check experiment conditions, sample size, reproducibility, cost, and deployment constraints.",
+          "title": "Learning Residual Kinematic Corrections for Continuous Neural Decoding via Reinforcement Learning",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。",
+              "CNN：擅长从信号或图像里提取局部特征的神经网络。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "paper-2607.10451",
+      "category": "paper",
+      "title": "Threat Vectors and the State of the Art in Defense Methods for Security in Neurotechnology",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2607.10451v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2607.10451",
+      "publishedAt": "2026-07-11T19:28:34.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "summary": "本地规则只确认这篇论文有公开全文入口；智能总结需要 DeepSeek key 和完整内容输入后生成。",
+      "failureAnalysis": "Key takeaway fallback: check experiment conditions, sample size, cost, regulatory path, and reproducibility.",
+      "translations": {
+        "en": {
+          "summary": "Local English fallback: this paper has usable extracted full text; judge the problem, method, implementation path, evidence limits, and application value.",
+          "failureAnalysis": "Check experiment conditions, sample size, reproducibility, cost, and deployment constraints.",
+          "title": "Threat Vectors and the State of the Art in Defense Methods for Security in Neurotechnology",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    }
+  ]
 }
