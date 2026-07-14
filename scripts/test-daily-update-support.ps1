@@ -45,6 +45,72 @@ $c = @(
 Assert-Equal (Get-ContentFingerprint $a) (Get-ContentFingerprint $b) "URL normalization must make equivalent batches stable."
 Assert-True ((Get-ContentFingerprint $a) -ne (Get-ContentFingerprint $c)) "A changed URL batch must change the fingerprint."
 
+function New-Payload {
+  param([string]$Date, [string]$Status, [string]$UrlBase)
+
+  $articles = @(0..6 | ForEach-Object {
+    [pscustomobject]@{
+      url = "$UrlBase-$_"
+      category = if ($_ -lt 3) { "international" } else { "ai" }
+    }
+  })
+  return [pscustomobject]@{
+    issueDate = $Date
+    updateStatus = $Status
+    contentFingerprint = Get-ContentFingerprint $articles
+    articles = $articles
+  }
+}
+
+$today = "2026-07-14"
+$current = New-Payload -Date $today -Status complete -UrlBase "https://example.com/today"
+$previous = New-Payload -Date "2026-07-13" -Status complete -UrlBase "https://example.com/yesterday"
+$degraded = New-Payload -Date $today -Status degraded -UrlBase "https://example.com/today"
+$stale = New-Payload -Date $today -Status complete -UrlBase "https://example.com/yesterday"
+
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T07:30:00") -CurrentPayload $null -TodayArchive $null -PreviousArchive $previous) "before_window" "Runs before 08:00 must skip."
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T08:07:00") -CurrentPayload $null -TodayArchive $null -PreviousArchive $previous) "fresh_generation" "Missing today data must generate."
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $degraded -TodayArchive $degraded -PreviousArchive $previous) "summary_upgrade" "Degraded data must upgrade summaries."
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $previous -TodayArchive $current -PreviousArchive $previous) "repair_publish" "A valid archive with stale current data must republish."
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $stale -TodayArchive $stale -PreviousArchive $previous) "fresh_generation" "An unchanged whole-day URL fingerprint must regenerate."
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $current -TodayArchive $current -PreviousArchive $previous) "already_complete" "Valid complete data must skip."
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $current -TodayArchive $current -PreviousArchive $previous -ForceRefresh $true) "fresh_generation" "Explicit force must regenerate."
+$invalidShape = $current | ConvertTo-Json -Depth 20 | ConvertFrom-Json
+$invalidShape.articles = @($invalidShape.articles | Select-Object -First 6)
+$invalidShape.contentFingerprint = Get-ContentFingerprint $invalidShape.articles
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $invalidShape -TodayArchive $invalidShape -PreviousArchive $previous) "fresh_generation" "An invalid seven-item shape must regenerate."
+
+$upgradePayload = [pscustomobject]@{
+  issueDate = $today
+  updateStatus = "degraded"
+  contentFingerprint = Get-ContentFingerprint @([pscustomobject]@{ url = "https://example.com/paper" })
+  articles = @([pscustomobject]@{
+    id = "paper-1"
+    category = "paper"
+    title = "Paper"
+    url = "https://example.com/paper"
+    summarySource = "source_extract"
+    summary = "extract"
+    failureAnalysis = "pending"
+    sourceExcerpt = "source"
+    translations = [pscustomobject]@{ en = [pscustomobject]@{} }
+  })
+}
+$beforeFingerprint = $upgradePayload.contentFingerprint
+$upgraded = Update-DegradedPayload -Payload $upgradePayload -AnalyzeItem {
+  param($item)
+  [pscustomobject]@{
+    summarySource = "deepseek"
+    sourceExcerpt = $item.sourceExcerpt
+    summary = "analysis"
+    failureAnalysis = "judgement"
+    translations = [pscustomobject]@{
+      en = [pscustomobject]@{ title = "Paper"; summary = "Analysis"; failureAnalysis = "Judgement" }
+    }
+  }
+}
+Assert-Equal $upgraded.updateStatus "complete" "A successful upgrade must become complete."
+Assert-Equal $upgraded.contentFingerprint $beforeFingerprint "Summary upgrades must preserve the URL fingerprint."
+Assert-Equal $upgraded.articles[0].id "paper-1" "Summary upgrades must preserve article identity."
+
 Write-Host "Daily update support tests passed."
-
-

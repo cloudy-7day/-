@@ -78,3 +78,85 @@ function Get-ContentFingerprint {
   return (($hash | ForEach-Object { $_.ToString('x2') }) -join '')
 }
 
+function Get-DailyUpdateAction {
+  param(
+    [datetime]$LocalNow,
+    $CurrentPayload,
+    $TodayArchive,
+    $PreviousArchive,
+    [bool]$ForceRefresh = $false
+  )
+
+  if ($LocalNow.Hour -lt 8) {
+    return "before_window"
+  }
+  if ($ForceRefresh) {
+    return "fresh_generation"
+  }
+
+  $today = $LocalNow.ToString("yyyy-MM-dd")
+  if (-not $TodayArchive -or $TodayArchive.issueDate -ne $today) {
+    return "fresh_generation"
+  }
+
+  $items = @($TodayArchive.articles)
+  $newsCount = @($items | Where-Object { $_.category -eq "international" }).Count
+  $readingCount = @($items | Where-Object { $_.category -in @("ai", "paper") }).Count
+  if ($items.Count -ne 7 -or $newsCount -ne 3 -or $readingCount -ne 4) {
+    return "fresh_generation"
+  }
+
+  if (-not $TodayArchive.contentFingerprint -or $TodayArchive.contentFingerprint -ne (Get-ContentFingerprint $items)) {
+    return "fresh_generation"
+  }
+  if ($PreviousArchive -and $TodayArchive.contentFingerprint -eq $PreviousArchive.contentFingerprint) {
+    return "fresh_generation"
+  }
+
+  $currentJson = if ($CurrentPayload) { $CurrentPayload | ConvertTo-Json -Compress -Depth 20 } else { "" }
+  $archiveJson = $TodayArchive | ConvertTo-Json -Compress -Depth 20
+  if (-not $CurrentPayload -or $currentJson -ne $archiveJson) {
+    return "repair_publish"
+  }
+  if ($TodayArchive.updateStatus -eq "degraded") {
+    return "summary_upgrade"
+  }
+  if ($TodayArchive.updateStatus -eq "complete") {
+    return "already_complete"
+  }
+  return "fresh_generation"
+}
+
+function Update-DegradedPayload {
+  param(
+    $Payload,
+    [scriptblock]$AnalyzeItem
+  )
+
+  $before = [string]$Payload.contentFingerprint
+  foreach ($item in @($Payload.articles | Where-Object { $_.summarySource -eq "source_extract" })) {
+    $analysis = & $AnalyzeItem $item
+    $item.summary = $analysis.summary
+    $item.failureAnalysis = $analysis.failureAnalysis
+    $item.summarySource = $analysis.summarySource
+    $item.sourceExcerpt = $analysis.sourceExcerpt
+    if ($analysis.translations.en) {
+      $item.translations.en = $analysis.translations.en
+    }
+    if ($item.category -eq "paper" -and $analysis.paperCard) {
+      $item.paperCard = $analysis.paperCard
+      $item.translations.en.paperCard = $analysis.translations.en.paperCard
+    }
+  }
+
+  $Payload.contentFingerprint = Get-ContentFingerprint $Payload.articles
+  if ($Payload.contentFingerprint -ne $before) {
+    throw "Summary upgrade changed article selection."
+  }
+  $Payload.updateStatus = if (@($Payload.articles | Where-Object { $_.summarySource -eq "source_extract" }).Count -gt 0) {
+    "degraded"
+  } else {
+    "complete"
+  }
+  return $Payload
+}
