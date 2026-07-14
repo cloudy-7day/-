@@ -1190,12 +1190,23 @@ function Update-ArchiveIndex {
 
   $archiveEntries = @()
   Get-ChildItem -LiteralPath $ArchiveFolder -Filter "*.json" |
-    Where-Object { $_.Name -ne "index.json" } |
+    Where-Object { $_.BaseName -match '^\d{4}-\d{2}-\d{2}$' } |
     Sort-Object -Property BaseName -Descending |
     ForEach-Object {
-      $archiveEntries += [ordered]@{
-        date = $_.BaseName
-        path = "data/archive/$($_.Name)"
+      $archivePayload = $null
+      try {
+        $archivePayload = Get-Content -Raw -Encoding UTF8 -LiteralPath $_.FullName | ConvertFrom-Json
+      } catch {
+        Write-Warning "Skipping unreadable archive '$($_.Name)': $($_.Exception.Message)"
+      }
+
+      if ($archivePayload -and [string]$archivePayload.issueDate -eq $_.BaseName) {
+        $archiveEntries += [ordered]@{
+          date = $_.BaseName
+          path = "data/archive/$($_.Name)"
+        }
+      } elseif ($archivePayload) {
+        Write-Warning "Skipping archive '$($_.Name)' because issueDate '$($archivePayload.issueDate)' does not match its filename."
       }
     }
 

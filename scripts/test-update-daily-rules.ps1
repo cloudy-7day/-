@@ -265,4 +265,24 @@ if (-not $rejected) {
   throw "Payload validation must reject articles without a valid publication date."
 }
 
+. (Import-ScriptFunction -Name "Update-ArchiveIndex")
+$archiveProbe = Join-Path ([System.IO.Path]::GetTempPath()) "daily-update-archive-$([guid]::NewGuid().ToString('N'))"
+New-Item -ItemType Directory -Path $archiveProbe | Out-Null
+try {
+  [ordered]@{ issueDate = "2026-07-14"; articles = @() } |
+    ConvertTo-Json -Depth 3 |
+    Set-Content -LiteralPath (Join-Path $archiveProbe "2026-07-14.json") -Encoding UTF8
+  [ordered]@{ issueDate = "2026-07-12"; articles = @() } |
+    ConvertTo-Json -Depth 3 |
+    Set-Content -LiteralPath (Join-Path $archiveProbe "2026-07-13.json") -Encoding UTF8
+
+  Update-ArchiveIndex -ArchiveFolder $archiveProbe
+  $archiveIndex = Get-Content -Raw -Encoding UTF8 (Join-Path $archiveProbe "index.json") | ConvertFrom-Json
+  if ($archiveIndex.archives.Count -ne 1 -or $archiveIndex.archives[0].date -ne "2026-07-14") {
+    throw "Archive index must exclude payloads whose issue date does not match the archive filename."
+  }
+} finally {
+  Remove-Item -LiteralPath $archiveProbe -Recurse -Force
+}
+
 Write-Host "Daily update rule tests passed."
