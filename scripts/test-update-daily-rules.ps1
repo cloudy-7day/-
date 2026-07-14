@@ -74,6 +74,10 @@ if ($source -notmatch 'Get-DailyUpdateAction' -or $source -notmatch 'Update-Degr
   throw "The update script must route stale, degraded, and complete daily states."
 }
 
+if ($source -notmatch '"summary_upgrade"\s*\{[\s\S]*Get-PaperAnalysisText\s+-FullText') {
+  throw "Summary upgrades must reapply the usable full-text gate to downloaded papers."
+}
+
 $tokens = $null
 $parseErrors = $null
 $ast = [System.Management.Automation.Language.Parser]::ParseFile($scriptPath, [ref]$tokens, [ref]$parseErrors)
@@ -111,6 +115,35 @@ $retryResult = Invoke-WithRetry -DelaySeconds 0 -Operation {
 }
 if ($retryResult -ne "ok" -or $attempts -ne 2) {
   throw "Invoke-WithRetry must retry a transient failure exactly once."
+}
+
+. (Import-ScriptFunction -Name "New-ArticleAnalysis")
+function Invoke-WithRetry {
+  param([scriptblock]$Operation)
+  return & $Operation
+}
+function Invoke-JsonPostUtf8 {
+  return [pscustomobject]@{
+    choices = @([pscustomobject]@{
+      message = [pscustomobject]@{ content = '{"summary":"","failureAnalysis":""}' }
+    })
+  }
+}
+$savedDeepSeekKey = $env:DEEPSEEK_API_KEY
+$env:DEEPSEEK_API_KEY = "test-key"
+try {
+  $incompleteAnalysis = New-ArticleAnalysis `
+    -Category "international" `
+    -Title "Specific source title" `
+    -Source "Test source" `
+    -Url "https://example.com/source" `
+    -SourceText "Specific source material explains the event and the people involved." `
+    -ScoreLabel "Test"
+  if ($incompleteAnalysis.summarySource -ne "source_extract") {
+    throw "Incomplete DeepSeek JSON must fall back per item instead of failing the batch later."
+  }
+} finally {
+  $env:DEEPSEEK_API_KEY = $savedDeepSeekKey
 }
 
 . (Import-ScriptFunction -Name "Assert-DailyPayload")

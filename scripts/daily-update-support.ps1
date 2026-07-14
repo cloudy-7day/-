@@ -87,11 +87,11 @@ function Get-DailyUpdateAction {
     [bool]$ForceRefresh = $false
   )
 
-  if ($LocalNow.Hour -lt 8) {
-    return "before_window"
-  }
   if ($ForceRefresh) {
     return "fresh_generation"
+  }
+  if ($LocalNow.Hour -lt 8) {
+    return "before_window"
   }
 
   $today = $LocalNow.ToString("yyyy-MM-dd")

@@ -70,6 +70,7 @@ $degraded = New-Payload -Date $today -Status degraded -UrlBase "https://example.
 $stale = New-Payload -Date $today -Status complete -UrlBase "https://example.com/yesterday"
 
 Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T07:30:00") -CurrentPayload $null -TodayArchive $null -PreviousArchive $previous) "before_window" "Runs before 08:00 must skip."
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T07:30:00") -CurrentPayload $current -TodayArchive $current -PreviousArchive $previous -ForceRefresh $true) "fresh_generation" "Explicit force must override the time window."
 Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T08:07:00") -CurrentPayload $null -TodayArchive $null -PreviousArchive $previous) "fresh_generation" "Missing today data must generate."
 Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $degraded -TodayArchive $degraded -PreviousArchive $previous) "summary_upgrade" "Degraded data must upgrade summaries."
 Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $previous -TodayArchive $current -PreviousArchive $previous) "repair_publish" "A valid archive with stale current data must republish."

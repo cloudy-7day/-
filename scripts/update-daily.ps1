@@ -517,6 +517,20 @@ $translationGuide
     $content = [string]$response.choices[0].message.content
     $content = $content.Trim() -replace "^```json\s*", "" -replace "^```\s*", "" -replace "\s*```$", ""
     $parsed = $content | ConvertFrom-Json
+    if (-not $parsed.summary -or -not $parsed.failureAnalysis -or -not $parsed.translations.en.summary -or -not $parsed.translations.en.failureAnalysis) {
+      throw "DeepSeek returned incomplete summary JSON."
+    }
+    if ($Category -eq "paper") {
+      $paperFields = @("problem", "method", "difference", "innovation", "implementation", "applications")
+      foreach ($field in $paperFields) {
+        if (-not $parsed.paperCard.$field -or -not $parsed.translations.en.paperCard.$field) {
+          throw "DeepSeek returned an incomplete paper card: $field"
+        }
+      }
+      if (@($parsed.paperCard.technicalTerms).Count -eq 0 -or @($parsed.translations.en.paperCard.technicalTerms).Count -eq 0) {
+        throw "DeepSeek returned incomplete paper technical terms."
+      }
+    }
 
     $result = [ordered]@{
       summary = [string]$parsed.summary
@@ -1310,7 +1324,8 @@ switch ($action) {
       param($item)
 
       $sourceText = if ($item.category -eq "paper") {
-        Get-PdfTextFromUrl -Url ([string]$item.url)
+        $pdfText = Get-PdfTextFromUrl -Url ([string]$item.url)
+        Get-PaperAnalysisText -FullText $pdfText -Abstract ""
       } else {
         [string]$item.sourceExcerpt
       }
