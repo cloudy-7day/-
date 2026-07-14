@@ -5,6 +5,7 @@
 $ErrorActionPreference = "Stop"
 
 . (Join-Path $PSScriptRoot "article-selection.ps1")
+. (Join-Path $PSScriptRoot "daily-update-support.ps1")
 
 function Import-LocalEnv {
   $envPath = Join-Path (Get-Location) ".env.local"
@@ -109,6 +110,10 @@ function Assert-DailyPayload {
   $seenUrls = @{}
   $paperFields = @("problem", "method", "difference", "innovation", "implementation", "applications")
 
+  if ($Payload.updateStatus -notin @("complete", "degraded")) {
+    throw "Daily payload updateStatus must be complete or degraded."
+  }
+
   foreach ($item in $items) {
     if (-not $item.id -or -not $item.title -or -not $item.category -or -not $item.url -or -not $item.publishedAt -or -not $item.summary -or -not $item.failureAnalysis) {
       throw "Every article must include id, title, category, URL, publication date, summary, and analysis. Existing published data was not replaced."
@@ -116,6 +121,18 @@ function Assert-DailyPayload {
 
     if ($item.category -notin $allowedCategories) {
       throw "Unsupported article category: $($item.category)"
+    }
+
+    if ($item.summarySource -notin @("deepseek", "source_extract")) {
+      throw "Every article must declare summarySource: $($item.id)"
+    }
+
+    if (Test-ForbiddenFallbackText -Text "$($item.summary) $($item.failureAnalysis)") {
+      throw "Forbidden fallback text cannot be published: $($item.id)"
+    }
+
+    if ($item.summarySource -eq "source_extract" -and -not $item.sourceExcerpt) {
+      throw "Source extracts must include sourceExcerpt: $($item.id)"
     }
 
     if ($seenIds.ContainsKey([string]$item.id) -or $seenUrls.ContainsKey([string]$item.url)) {
@@ -154,6 +171,16 @@ function Assert-DailyPayload {
         throw "Paper technical terms are incomplete: $($item.id)"
       }
     }
+  }
+
+  $expectedFingerprint = Get-ContentFingerprint -Articles $items
+  if ($Payload.contentFingerprint -ne $expectedFingerprint) {
+    throw "Daily payload fingerprint does not match its article URLs."
+  }
+
+  $hasExtract = @($items | Where-Object { $_.summarySource -eq "source_extract" }).Count -gt 0
+  if (($hasExtract -and $Payload.updateStatus -ne "degraded") -or (-not $hasExtract -and $Payload.updateStatus -ne "complete")) {
+    throw "updateStatus must agree with article summarySource values."
   }
 }
 
@@ -196,40 +223,6 @@ function Invoke-JsonPostUtf8 {
       throw $message
     }
     throw
-  }
-}
-
-function New-LocalAnalysis {
-  param(
-    [string]$Category,
-    [string]$SourceText
-  )
-
-  switch ($Category) {
-    "international" {
-      return [ordered]@{
-        summary = "Local fallback: news candidate collected automatically. Read the source and judge event, stakeholders, and next variables."
-        failureAnalysis = "Key takeaway fallback: watch institutions, incentives, and next variables before judging the event."
-      }
-    }
-    "ai" {
-      return [ordered]@{
-        summary = "Local fallback: AI application candidate collected automatically. Judge the friction it removes, why now, and whether users return."
-        failureAnalysis = "Local fallback: the project must prove user value, data access, cost, stability, and integration depth."
-      }
-    }
-    "paper" {
-      return [ordered]@{
-        summary = "本地规则只确认这篇论文有公开全文入口；智能总结需要 DeepSeek key 和完整内容输入后生成。"
-        failureAnalysis = "Key takeaway fallback: check experiment conditions, sample size, cost, regulatory path, and reproducibility."
-      }
-    }
-    default {
-      return [ordered]@{
-        summary = $SourceText
-        failureAnalysis = "Key takeaway fallback: verify evidence quality and real-world relevance."
-      }
-    }
   }
 }
 
@@ -407,7 +400,11 @@ function New-ArticleAnalysis {
   )
 
   if (-not $env:DEEPSEEK_API_KEY) {
-    return New-LocalAnalysis -Category $Category -SourceText $SourceText
+    return New-SourceExtractAnalysis `
+      -Category $Category `
+      -Title $Title `
+      -SourceText $SourceText `
+      -RequiresRiskAnalysis $RequiresRiskAnalysis
   }
 
   $categoryGuide = switch ($Category) {
@@ -520,6 +517,8 @@ $translationGuide
     $result = [ordered]@{
       summary = [string]$parsed.summary
       failureAnalysis = [string]$parsed.failureAnalysis
+      summarySource = "deepseek"
+      sourceExcerpt = Get-SourceExcerpt -Text $SourceText
     }
     if ($Category -eq "paper" -and $parsed.paperCard) {
       $result.paperCard = [ordered]@{
@@ -555,7 +554,12 @@ $translationGuide
     }
     return $result
   } catch {
-    return New-LocalAnalysis -Category $Category -SourceText $SourceText
+    Write-Warning "DeepSeek analysis failed for '$Title': $($_.Exception.Message)"
+    return New-SourceExtractAnalysis `
+      -Category $Category `
+      -Title $Title `
+      -SourceText $SourceText `
+      -RequiresRiskAnalysis $RequiresRiskAnalysis
   }
 }
 
@@ -646,6 +650,14 @@ function New-PaperItem {
       -SourceText $SourceText `
       -SelectionReason $selectionReason
   }
+  $englishTranslation = Get-EnglishTranslationForAnalysis `
+    -Category "paper" `
+    -Title $Title `
+    -Analysis $analysis `
+    -PaperCard $paperCard
+  if (-not $englishTranslation.paperCard) {
+    $englishTranslation.paperCard = ConvertTo-EnglishPaperCardFallback -PaperCard $paperCard
+  }
 
   [ordered]@{
     id = $Id
@@ -664,12 +676,10 @@ function New-PaperItem {
     paperCard = $paperCard
     summary = $analysis.summary
     failureAnalysis = $analysis.failureAnalysis
+    summarySource = $analysis.summarySource
+    sourceExcerpt = $analysis.sourceExcerpt
     translations = [ordered]@{
-      en = Get-EnglishTranslationForAnalysis `
-        -Category "paper" `
-        -Title $Title `
-        -Analysis $analysis `
-        -PaperCard $paperCard
+      en = $englishTranslation
     }
   }
 }
@@ -755,6 +765,8 @@ function Get-OpenWorldNewsItems {
         selectionReason = "Open, non-paywalled RSS candidate; recent item across configured news feeds"
       summary = $analysis.summary
       failureAnalysis = $analysis.failureAnalysis
+      summarySource = $analysis.summarySource
+      sourceExcerpt = $analysis.sourceExcerpt
       translations = [ordered]@{
         en = Get-EnglishTranslationForAnalysis `
           -Category "international" `
@@ -828,6 +840,8 @@ function Add-AiArticleAnalysis {
 
   $Item.summary = $analysis.summary
   $Item.failureAnalysis = $analysis.failureAnalysis
+  $Item.summarySource = $analysis.summarySource
+  $Item.sourceExcerpt = $analysis.sourceExcerpt
   $Item.translations = [ordered]@{
       en = Get-EnglishTranslationForAnalysis `
         -Category "ai" `
@@ -1143,13 +1157,20 @@ if ($articles.Count -eq 0) {
   throw "No articles were collected; keeping the existing data file unchanged."
 }
 
+$updateStatus = if (@($articles | Where-Object { $_.summarySource -eq "source_extract" }).Count -gt 0) {
+  "degraded"
+} else {
+  "complete"
+}
 $payload = [ordered]@{
   issueDate = Get-LosAngelesDate
+  updateStatus = $updateStatus
+  contentFingerprint = Get-ContentFingerprint -Articles $articles
   notes = @(
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
     "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
-    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; local rules are used only as fallback."
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
   )
   articles = $articles
 }
@@ -1190,4 +1211,5 @@ $archiveIndex = [ordered]@{
 $archiveIndex | ConvertTo-Json -Depth 5 | Set-Content -Path (Join-Path $archiveFolder "index.json") -Encoding UTF8
 & (Join-Path (Get-Location) "scripts/sync-public.ps1")
 Write-Host "Updated $OutputPath with $($articles.Count) articles."
+
 

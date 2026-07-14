@@ -1,9 +1,10 @@
-$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Stop"
 
 $scriptPath = Join-Path $PSScriptRoot "update-daily.ps1"
 $source = Get-Content -Raw -Encoding UTF8 $scriptPath
 $workflowPath = Join-Path (Split-Path -Parent $PSScriptRoot) ".github/workflows/daily-update.yml"
 $workflow = Get-Content -Raw -Encoding UTF8 $workflowPath
+. (Join-Path $PSScriptRoot "daily-update-support.ps1")
 
 if ($source -match "news-api\.ap\.org|apikey=demo") {
   throw "Default news feeds should not include API-gated AP demo endpoints."
@@ -99,6 +100,8 @@ function New-TestArticle {
     publishedAt = "2026-07-13T12:00:00Z"
     summary = "Summary $Id"
     failureAnalysis = "Analysis $Id"
+    summarySource = "deepseek"
+    sourceExcerpt = "Source-specific material for $Id."
     translations = [ordered]@{
       en = [ordered]@{
         title = "English $Id"
@@ -135,7 +138,37 @@ $validArticles = @(
   New-TestArticle -Id "paper-1" -Category "paper"
   New-TestArticle -Id "paper-2" -Category "paper"
 )
-Assert-DailyPayload -Payload ([ordered]@{ issueDate = $laDate; articles = $validArticles })
+$validPayload = [ordered]@{
+  issueDate = $laDate
+  updateStatus = "complete"
+  contentFingerprint = Get-ContentFingerprint -Articles $validArticles
+  articles = $validArticles
+}
+Assert-DailyPayload -Payload $validPayload
+
+$placeholderPayload = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$placeholderPayload.articles[5].summary = "智能总结需要 DeepSeek key 和完整内容输入后生成。"
+$rejected = $false
+try {
+  Assert-DailyPayload -Payload $placeholderPayload
+} catch {
+  $rejected = $true
+}
+if (-not $rejected) {
+  throw "Published payloads must reject legacy fallback text."
+}
+
+$wrongFingerprint = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$wrongFingerprint.contentFingerprint = "deadbeef"
+$rejected = $false
+try {
+  Assert-DailyPayload -Payload $wrongFingerprint
+} catch {
+  $rejected = $true
+}
+if (-not $rejected) {
+  throw "Published payloads must reject an incorrect fingerprint."
+}
 
 $invalidArticles = @(($validArticles | ConvertTo-Json -Depth 8 | ConvertFrom-Json))
 $invalidArticles[0].summary = ""
@@ -162,3 +195,5 @@ if (-not $rejected) {
 }
 
 Write-Host "Daily update rule tests passed."
+
+
