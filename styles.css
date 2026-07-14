@@ -513,6 +513,14 @@ img {
   -webkit-line-clamp: 2;
 }
 
+.summary-source-label {
+  display: block;
+  margin-bottom: 0.45rem;
+  color: var(--muted);
+  font-size: 0.75rem;
+  letter-spacing: 0.04em;
+}
+
 .index-card b {
   justify-self: end;
   font-size: 11px;

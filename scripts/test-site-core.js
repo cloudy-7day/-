@@ -25,4 +25,14 @@ assert.equal(
   articles[1],
 );
 assert.ok(core.estimateReadingMinutes({ summary: "测试内容" }, "zh") >= 1);
+assert.equal(core.getSummarySourceLabel({ summarySource: "deepseek" }, "zh"), "");
+assert.equal(
+  core.getSummarySourceLabel({ summarySource: "source_extract" }, "zh"),
+  "DeepSeek 暂不可用，当前为公开原文自动摘录",
+);
+assert.equal(
+  core.getSummarySourceLabel({ summarySource: "source_extract" }, "en"),
+  "DeepSeek is temporarily unavailable; showing an automatic extract from the public source",
+);
+assert.equal(core.getSummarySourceLabel({}, "zh"), "");
 console.log("Site core tests passed.");

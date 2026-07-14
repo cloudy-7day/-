@@ -126,12 +126,17 @@ function renderHome() {
 
 function renderIndexCard(article, index, position) {
   const localized = SiteCore.getLocalizedArticle(article, state.language);
+  const summarySourceLabel = SiteCore.getSummarySourceLabel(article, state.language);
+  const summarySourceMarkup = summarySourceLabel
+    ? `<small class="summary-source-label">${escapeHtml(summarySourceLabel)}</small>`
+    : "";
   return `
     <a class="index-card" href="${SiteCore.getArticleRoute(state.issueDate, index)}">
       <span class="index-number">${String(position + 1).padStart(2, "0")}</span>
       <span class="index-copy">
         <small>${escapeHtml(article.source)} · ${escapeHtml(formatDate(article.publishedAt?.slice(0, 10)))}</small>
         <strong>${escapeHtml(localized.title)}</strong>
+        ${summarySourceMarkup}
         <span>${escapeHtml(localized.summary)}</span>
       </span>
       <b>启封细读&nbsp;↗</b>
@@ -180,6 +185,10 @@ function renderArticle(route) {
   const originalUrl = SiteCore.getSafeArticleUrl(article.url, location.href);
   const abstractUrl = article.abstractUrl ? SiteCore.getSafeArticleUrl(article.abstractUrl, location.href) : "#";
   const readingTime = SiteCore.estimateReadingMinutes(localized, state.language);
+  const summarySourceLabel = SiteCore.getSummarySourceLabel(article, state.language);
+  const summarySourceMarkup = summarySourceLabel
+    ? `<small class="summary-source-label">${escapeHtml(summarySourceLabel)}</small>`
+    : "";
 
   document.body.classList.remove("is-home");
   app.innerHTML = `
@@ -204,6 +213,7 @@ function renderArticle(route) {
           <div class="detail-copy">
             <p class="section-kicker">BRIEF / ${t("brief")}</p>
             <h2>这件事在说什么</h2>
+            ${summarySourceMarkup}
             <p class="detail-summary">${escapeHtml(localized.summary)}</p>
           </div>
           <figure class="detail-illustration">

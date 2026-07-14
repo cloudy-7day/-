@@ -45,7 +45,7 @@ function New-SourceExtractAnalysis {
   return [ordered]@{
     summarySource = 'source_extract'
     sourceExcerpt = $excerpt
-    summary = "DeepSeek 暂不可用，当前为公开原文自动摘录：$excerpt"
+    summary = $excerpt
     failureAnalysis = "当前条目仅提供可追溯原文摘录；待 DeepSeek 恢复后自动补充分析。"
     translations = [ordered]@{
       en = [ordered]@{

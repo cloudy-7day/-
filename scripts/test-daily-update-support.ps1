@@ -24,7 +24,8 @@ Assert-True ($excerpt.Length -le 260) "The excerpt must respect MaxCharacters."
 
 $analysis = New-SourceExtractAnalysis -Category paper -Title "Residual decoding" -SourceText $paperText
 Assert-Equal $analysis.summarySource "source_extract" "Fallback provenance must be explicit."
-Assert-True ($analysis.summary -match "公开原文自动摘录") "Chinese fallback must disclose source extraction."
+Assert-Equal $analysis.summary $analysis.sourceExcerpt "The summary field must contain only the source extract."
+Assert-True ($analysis.summary -notmatch "公开原文自动摘录") "The frontend label must own the fallback disclosure."
 Assert-True ($analysis.translations.en.summary -match "neural decoder") "English fallback must preserve the source excerpt."
 Assert-True (-not (Test-ForbiddenFallbackText -Text $analysis.summary)) "A real source extract must not match forbidden placeholders."
 Assert-True (Test-ForbiddenFallbackText -Text "Local fallback: article collected automatically") "Legacy local fallback must be forbidden."

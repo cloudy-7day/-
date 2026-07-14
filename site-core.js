@@ -104,6 +104,13 @@
     return Math.max(1, Math.ceil(amount));
   }
 
+  function getSummarySourceLabel(article, language) {
+    if (article?.summarySource !== "source_extract") return "";
+    return language === "en"
+      ? "DeepSeek is temporarily unavailable; showing an automatic extract from the public source"
+      : "DeepSeek 暂不可用，当前为公开原文自动摘录";
+  }
+
   return {
     CATEGORY_CONFIG,
     parseRoute,
@@ -114,5 +121,6 @@
     getArticleByRoute,
     buildAssociations,
     estimateReadingMinutes,
+    getSummarySourceLabel,
   };
 });
