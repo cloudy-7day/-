@@ -1,5 +1,6 @@
 ﻿param(
-  [string]$OutputPath = "data/articles.json"
+  [string]$OutputPath = "data/articles.json",
+  [bool]$ForceRefresh = $false
 )
 
 $ErrorActionPreference = "Stop"
@@ -34,14 +35,17 @@ function Import-LocalEnv {
 
 Import-LocalEnv
 
-function Get-LosAngelesDate {
+function Get-LosAngelesNow {
   try {
     $tz = [System.TimeZoneInfo]::FindSystemTimeZoneById("America/Los_Angeles")
   } catch [System.TimeZoneNotFoundException] {
     $tz = [System.TimeZoneInfo]::FindSystemTimeZoneById("Pacific Standard Time")
   }
-  $laNow = [System.TimeZoneInfo]::ConvertTimeFromUtc([DateTime]::UtcNow, $tz)
-  return $laNow.ToString("yyyy-MM-dd")
+  return [System.TimeZoneInfo]::ConvertTimeFromUtc([DateTime]::UtcNow, $tz)
+}
+
+function Get-LosAngelesDate {
+  return (Get-LosAngelesNow).ToString("yyyy-MM-dd")
 }
 
 function Get-GitHubRequestHeaders {
@@ -1137,6 +1141,204 @@ function Get-ArxivAppliedPapers {
   }
 }
 
+function Read-JsonPayload {
+  param([string]$Path)
+
+  if (-not (Test-Path -LiteralPath $Path)) {
+    return $null
+  }
+  try {
+    return Get-Content -Raw -Encoding UTF8 -LiteralPath $Path | ConvertFrom-Json
+  } catch {
+    Write-Warning "Could not read JSON payload '$Path': $($_.Exception.Message)"
+    return $null
+  }
+}
+
+function Get-PreviousArchivePayload {
+  param(
+    [string]$ArchiveFolder,
+    [string]$Today
+  )
+
+  $file = Get-ChildItem -LiteralPath $ArchiveFolder -Filter "*.json" -ErrorAction SilentlyContinue |
+    Where-Object { $_.BaseName -match '^\d{4}-\d{2}-\d{2}$' -and $_.BaseName -lt $Today } |
+    Sort-Object -Property BaseName -Descending |
+    Select-Object -First 1
+  if (-not $file) {
+    return $null
+  }
+  return Read-JsonPayload -Path $file.FullName
+}
+
+function Update-ArchiveIndex {
+  param([string]$ArchiveFolder)
+
+  $archiveEntries = @()
+  Get-ChildItem -LiteralPath $ArchiveFolder -Filter "*.json" |
+    Where-Object { $_.Name -ne "index.json" } |
+    Sort-Object -Property BaseName -Descending |
+    ForEach-Object {
+      $archiveEntries += [ordered]@{
+        date = $_.BaseName
+        path = "data/archive/$($_.Name)"
+      }
+    }
+
+  $archiveIndex = [ordered]@{
+    updatedAt = (Get-Date).ToUniversalTime().ToString("o")
+    archives = $archiveEntries
+  }
+  $indexPath = Join-Path $ArchiveFolder "index.json"
+  $indexTemp = "$indexPath.$([guid]::NewGuid().ToString('N')).tmp"
+  try {
+    $archiveIndex | ConvertTo-Json -Depth 5 | Set-Content -LiteralPath $indexTemp -Encoding UTF8
+    Move-Item -LiteralPath $indexTemp -Destination $indexPath -Force
+  } finally {
+    if (Test-Path -LiteralPath $indexTemp) {
+      Remove-Item -LiteralPath $indexTemp -Force
+    }
+  }
+}
+
+function Publish-DailyPayload {
+  param(
+    $Payload,
+    [string]$OutputPath = "data/articles.json"
+  )
+
+  Assert-DailyPayload -Payload $Payload
+  $target = Join-Path (Get-Location) $OutputPath
+  $targetFolder = Split-Path $target
+  $archiveFolder = Join-Path (Get-Location) "data/archive"
+  if (-not (Test-Path -LiteralPath $targetFolder)) {
+    New-Item -ItemType Directory -Path $targetFolder | Out-Null
+  }
+  if (-not (Test-Path -LiteralPath $archiveFolder)) {
+    New-Item -ItemType Directory -Path $archiveFolder | Out-Null
+  }
+
+  $archiveFile = Join-Path $archiveFolder "$($Payload.issueDate).json"
+  $indexFile = Join-Path $archiveFolder "index.json"
+  $json = $Payload | ConvertTo-Json -Depth 10
+  $suffix = [guid]::NewGuid().ToString('N')
+  $targetTemp = "$target.$suffix.tmp"
+  $archiveTemp = "$archiveFile.$suffix.tmp"
+  $targetBackup = "$target.$suffix.bak"
+  $archiveBackup = "$archiveFile.$suffix.bak"
+  $indexBackup = "$indexFile.$suffix.bak"
+  $targetExisted = Test-Path -LiteralPath $target
+  $archiveExisted = Test-Path -LiteralPath $archiveFile
+  $indexExisted = Test-Path -LiteralPath $indexFile
+
+  try {
+    $json | Set-Content -LiteralPath $targetTemp -Encoding UTF8
+    $json | Set-Content -LiteralPath $archiveTemp -Encoding UTF8
+    if ($targetExisted) { Copy-Item -LiteralPath $target -Destination $targetBackup -Force }
+    if ($archiveExisted) { Copy-Item -LiteralPath $archiveFile -Destination $archiveBackup -Force }
+    if ($indexExisted) { Copy-Item -LiteralPath $indexFile -Destination $indexBackup -Force }
+    Move-Item -LiteralPath $archiveTemp -Destination $archiveFile -Force
+    Move-Item -LiteralPath $targetTemp -Destination $target -Force
+    Update-ArchiveIndex -ArchiveFolder $archiveFolder
+    & (Join-Path (Get-Location) "scripts/sync-public.ps1")
+  } catch {
+    if (Test-Path -LiteralPath $archiveBackup) { Copy-Item -LiteralPath $archiveBackup -Destination $archiveFile -Force }
+    elseif (-not $archiveExisted -and (Test-Path -LiteralPath $archiveFile)) { Remove-Item -LiteralPath $archiveFile -Force }
+    if (Test-Path -LiteralPath $targetBackup) { Copy-Item -LiteralPath $targetBackup -Destination $target -Force }
+    elseif (-not $targetExisted -and (Test-Path -LiteralPath $target)) { Remove-Item -LiteralPath $target -Force }
+    if (Test-Path -LiteralPath $indexBackup) { Copy-Item -LiteralPath $indexBackup -Destination $indexFile -Force }
+    elseif (-not $indexExisted -and (Test-Path -LiteralPath $indexFile)) { Remove-Item -LiteralPath $indexFile -Force }
+    try {
+      & (Join-Path (Get-Location) "scripts/sync-public.ps1")
+    } catch {
+      Write-Warning "Could not resynchronize public files after rollback: $($_.Exception.Message)"
+    }
+    throw
+  } finally {
+    @($targetTemp, $archiveTemp, $targetBackup, $archiveBackup, $indexBackup) |
+      Where-Object { Test-Path -LiteralPath $_ } |
+      ForEach-Object { Remove-Item -LiteralPath $_ -Force }
+  }
+}
+
+function Write-DailyUpdateSummary {
+  param(
+    [string]$Action,
+    $Payload
+  )
+
+  $deepSeekCount = @($Payload.articles | Where-Object { $_.summarySource -eq "deepseek" }).Count
+  $extractCount = @($Payload.articles | Where-Object { $_.summarySource -eq "source_extract" }).Count
+  Write-Host "Update result: date=$($Payload.issueDate) action=$Action articles=$(@($Payload.articles).Count) fingerprint=$($Payload.contentFingerprint) deepseek=$deepSeekCount source_extract=$extractCount status=$($Payload.updateStatus)"
+}
+
+$localNow = Get-LosAngelesNow
+$today = $localNow.ToString("yyyy-MM-dd")
+$targetPath = Join-Path (Get-Location) $OutputPath
+$archiveFolder = Join-Path (Get-Location) "data/archive"
+$todayArchivePath = Join-Path $archiveFolder "$today.json"
+$currentPayload = Read-JsonPayload -Path $targetPath
+$todayArchive = Read-JsonPayload -Path $todayArchivePath
+$previousArchive = Get-PreviousArchivePayload -ArchiveFolder $archiveFolder -Today $today
+$action = Get-DailyUpdateAction `
+  -LocalNow $localNow `
+  -CurrentPayload $currentPayload `
+  -TodayArchive $todayArchive `
+  -PreviousArchive $previousArchive `
+  -ForceRefresh $ForceRefresh
+
+Write-Host "Los Angeles time: $($localNow.ToString('yyyy-MM-dd HH:mm:ss'))"
+Write-Host "DeepSeek API key present: $([bool]$env:DEEPSEEK_API_KEY)"
+Write-Host "Daily update action: $action"
+
+switch ($action) {
+  "before_window" {
+    Write-Host "Before local 08:00; no update attempted."
+    exit 0
+  }
+  "already_complete" {
+    Write-DailyUpdateSummary -Action $action -Payload $todayArchive
+    exit 0
+  }
+  "repair_publish" {
+    Publish-DailyPayload -Payload $todayArchive -OutputPath $OutputPath
+    Write-DailyUpdateSummary -Action $action -Payload $todayArchive
+    exit 0
+  }
+  "summary_upgrade" {
+    $payload = Update-DegradedPayload -Payload $todayArchive -AnalyzeItem {
+      param($item)
+
+      $sourceText = if ($item.category -eq "paper") {
+        Get-PdfTextFromUrl -Url ([string]$item.url)
+      } else {
+        [string]$item.sourceExcerpt
+      }
+      if (-not $sourceText) {
+        return $item
+      }
+      $analysis = New-ArticleAnalysis `
+        -Category ([string]$item.category) `
+        -Title ([string]$item.title) `
+        -Source ([string]$item.source) `
+        -Url ([string]$item.url) `
+        -SourceText $sourceText `
+        -ScoreLabel ([string]$item.scoreLabel) `
+        -RequiresRiskAnalysis ($item.category -eq "ai")
+      if ($analysis.summarySource -eq "source_extract") {
+        return $item
+      }
+      return $analysis
+    }
+    Assert-DailyPayload -Payload $payload
+    Publish-DailyPayload -Payload $payload -OutputPath $OutputPath
+    Write-DailyUpdateSummary -Action $action -Payload $payload
+    exit 0
+  }
+  "fresh_generation" { }
+  default { throw "Unsupported daily update action: $action" }
+}
+
 $articles = @()
 $articles += Get-OpenWorldNewsItems
 $aiItems = @(Get-AiItems -TargetCount 4)
@@ -1176,40 +1378,5 @@ $payload = [ordered]@{
 }
 
 Assert-DailyPayload -Payload $payload
-
-$target = Join-Path (Get-Location) $OutputPath
-$folder = Split-Path $target
-if (-not (Test-Path $folder)) {
-  New-Item -ItemType Directory -Path $folder | Out-Null
-}
-
-$payload | ConvertTo-Json -Depth 8 | Set-Content -Path $target -Encoding UTF8
-$archiveFolder = Join-Path (Get-Location) "data/archive"
-if (-not (Test-Path $archiveFolder)) {
-  New-Item -ItemType Directory -Path $archiveFolder | Out-Null
-}
-
-$archiveDate = $payload.issueDate
-$archiveFile = Join-Path $archiveFolder "$archiveDate.json"
-$payload | ConvertTo-Json -Depth 8 | Set-Content -Path $archiveFile -Encoding UTF8
-
-$archiveEntries = @()
-Get-ChildItem -Path $archiveFolder -Filter "*.json" |
-  Where-Object { $_.Name -ne "index.json" } |
-  Sort-Object -Property BaseName -Descending |
-  ForEach-Object {
-    $archiveEntries += [ordered]@{
-      date = $_.BaseName
-      path = "data/archive/$($_.Name)"
-    }
-  }
-
-$archiveIndex = [ordered]@{
-  updatedAt = (Get-Date).ToUniversalTime().ToString("o")
-  archives = $archiveEntries
-}
-$archiveIndex | ConvertTo-Json -Depth 5 | Set-Content -Path (Join-Path $archiveFolder "index.json") -Encoding UTF8
-& (Join-Path (Get-Location) "scripts/sync-public.ps1")
-Write-Host "Updated $OutputPath with $($articles.Count) articles."
-
-
+Publish-DailyPayload -Payload $payload -OutputPath $OutputPath
+Write-DailyUpdateSummary -Action $action -Payload $payload

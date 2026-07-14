@@ -2,16 +2,22 @@ name: Daily article update
 
 on:
   workflow_dispatch:
+    inputs:
+      force:
+        description: Force a full regeneration even when today is complete
+        required: false
+        default: false
+        type: boolean
   push:
     branches:
       - main
     paths:
       - ".github/workflows/daily-update.yml"
       - "scripts/update-daily.ps1"
+      - "scripts/daily-update-support.ps1"
   schedule:
-    # 15:07 UTC = 8:07 AM PDT; 16:07 UTC = 8:07 AM PST
-    # Off-peak minute (7) to reduce queue-delay skips
-    - cron: "7 15,16 * * *"
+    # PDT: 08:07, 09:07, 10:07; PST: 07:07 (script skips), 08:07, 09:07.
+    - cron: "7 15,16,17 * * *"
 
 permissions:
   contents: write
@@ -32,59 +38,26 @@ jobs:
           ref: main
           fetch-depth: 0
 
-      - name: Determine if update is needed
-        id: gate
-        shell: pwsh
-        run: |
-          # Manual dispatch and push triggers always run — no time gate.
-          if ("${{ github.event_name }}" -eq "workflow_dispatch" -or "${{ github.event_name }}" -eq "push") {
-            "should_run=true" >> $env:GITHUB_OUTPUT
-            "reason=Manual or push trigger — always run." >> $env:GITHUB_OUTPUT
-            Write-Host "Trigger: ${{ github.event_name }} — running update unconditionally."
-            exit 0
-          }
-
-          # Scheduled run: check whether today's archive (by LA date) already exists.
-          $tz = [System.TimeZoneInfo]::FindSystemTimeZoneById("America/Los_Angeles")
-          $laNow = [System.TimeZoneInfo]::ConvertTimeFromUtc([DateTime]::UtcNow, $tz)
-          $laDate = $laNow.ToString("yyyy-MM-dd")
-          $archiveFile = "data/archive/$laDate.json"
-
-          Write-Host "Los Angeles time: $($laNow.ToString('yyyy-MM-dd HH:mm:ss'))"
-          Write-Host "Checking for archive file: $archiveFile"
-
-          if (Test-Path $archiveFile) {
-            "should_run=false" >> $env:GITHUB_OUTPUT
-            "reason=Archive for $laDate already exists — idempotent skip." >> $env:GITHUB_OUTPUT
-            Write-Host "::notice::Archive for $laDate already exists. Update skipped (already ran today)."
-          } else {
-            "should_run=true" >> $env:GITHUB_OUTPUT
-            "reason=No archive for $laDate — running daily update." >> $env:GITHUB_OUTPUT
-            Write-Host "No archive for $laDate. Proceeding with daily update."
-          }
-
       - name: Set up Python
-        if: steps.gate.outputs.should_run == 'true'
         uses: actions/setup-python@v5
         with:
           python-version: "3.12"
 
       - name: Install PDF extraction dependency
-        if: steps.gate.outputs.should_run == 'true'
         shell: bash
         run: python -m pip install pypdf==6.10.2
 
       - name: Update articles
-        if: steps.gate.outputs.should_run == 'true'
         shell: pwsh
         env:
           DEEPSEEK_API_KEY: ${{ secrets.DEEPSEEK_API_KEY }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
+          $force = "${{ github.event_name }}" -eq "workflow_dispatch" -and "${{ inputs.force }}" -eq "true"
           $maxAttempts = 2
           for ($attempt = 1; $attempt -le $maxAttempts; $attempt++) {
             try {
-              ./scripts/update-daily.ps1
+              ./scripts/update-daily.ps1 -ForceRefresh $force
               exit 0
             } catch {
               if ($attempt -eq $maxAttempts) {
@@ -97,7 +70,6 @@ jobs:
           }
 
       - name: Commit updated data
-        if: steps.gate.outputs.should_run == 'true'
         shell: bash
         run: |
           git config user.name "github-actions[bot]"

@@ -30,6 +30,18 @@ if ($workflow -notmatch '\$maxAttempts\s*=\s*2') {
   throw "The cloud update must retry once after a transient collection failure."
 }
 
+if ($workflow -notmatch 'cron:\s*"7 15,16,17 \* \* \*"') {
+  throw "Workflow must cover 08:07 and 09:07 in both PDT and PST."
+}
+
+if ($workflow -notmatch 'force:\s+description:') {
+  throw "Manual runs must expose an explicit force input."
+}
+
+if ($workflow -match 'Archive for \$laDate already exists') {
+  throw "Workflow must not treat file existence as update success."
+}
+
 if ($workflow -notmatch 'uses:\s*actions/checkout@v4\s+with:\s+ref:\s*main') {
   throw "Queued runs must check out the latest main branch before evaluating the daily archive gate."
 }
@@ -48,6 +60,18 @@ if ($source -notmatch 'function Get-LosAngelesDate') {
 
 if ($source -notmatch 'Assert-DailyPayload') {
   throw "Generated data must be validated before replacing the published JSON files."
+}
+
+if ($source -notmatch 'function Publish-DailyPayload') {
+  throw "Publishing must be centralized behind validation."
+}
+
+if ($source -match '\$payload\s*\|\s*ConvertTo-Json\s+-Depth\s+8\s*\|\s*Set-Content\s+-Path\s+\$target') {
+  throw "The main flow must not write the live target directly."
+}
+
+if ($source -notmatch 'Get-DailyUpdateAction' -or $source -notmatch 'Update-DegradedPayload') {
+  throw "The update script must route stale, degraded, and complete daily states."
 }
 
 $tokens = $null
@@ -70,6 +94,7 @@ function Import-ScriptFunction {
   return [scriptblock]::Create($definition.Extent.Text)
 }
 
+. (Import-ScriptFunction -Name "Get-LosAngelesNow")
 . (Import-ScriptFunction -Name "Get-LosAngelesDate")
 
 $laDate = Get-LosAngelesDate
@@ -170,6 +195,19 @@ if (-not $rejected) {
   throw "Published payloads must reject an incorrect fingerprint."
 }
 
+. (Import-ScriptFunction -Name "Publish-DailyPayload")
+$invalidOutput = "data/invalid-publish-probe.json"
+if (Test-Path $invalidOutput) { Remove-Item -LiteralPath $invalidOutput -Force }
+$rejected = $false
+try {
+  Publish-DailyPayload -Payload $wrongFingerprint -OutputPath $invalidOutput
+} catch {
+  $rejected = $true
+}
+if (-not $rejected -or (Test-Path $invalidOutput)) {
+  throw "Invalid payloads must fail before the live target is written."
+}
+
 $invalidArticles = @(($validArticles | ConvertTo-Json -Depth 8 | ConvertFrom-Json))
 $invalidArticles[0].summary = ""
 $rejected = $false
@@ -195,5 +233,3 @@ if (-not $rejected) {
 }
 
 Write-Host "Daily update rule tests passed."
-
-
