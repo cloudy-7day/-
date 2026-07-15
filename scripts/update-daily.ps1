@@ -554,7 +554,7 @@ $translationGuide
     $content = [string]$response.choices[0].message.content
     $content = $content.Trim() -replace "^```json\s*", "" -replace "^```\s*", "" -replace "\s*```$", ""
     $parsed = $content | ConvertFrom-Json
-    if (-not $parsed.title -or $parsed.title -notmatch '[\u3400-\u9fff]' -or -not $parsed.highlight -or -not $parsed.summary -or -not $parsed.failureAnalysis -or -not $parsed.translations.en.title -or -not $parsed.translations.en.highlight -or -not $parsed.translations.en.summary -or -not $parsed.translations.en.failureAnalysis) {
+    if (-not (Test-ChineseDisplayTitle -Title ([string]$parsed.title)) -or -not $parsed.highlight -or -not $parsed.summary -or -not $parsed.failureAnalysis -or -not $parsed.translations.en.title -or -not $parsed.translations.en.highlight -or -not $parsed.translations.en.summary -or -not $parsed.translations.en.failureAnalysis) {
       throw "DeepSeek returned incomplete summary JSON."
     }
     if ($Category -eq "paper") {
@@ -705,7 +705,7 @@ Return exactly:
 
   foreach ($article in $recoveryArticles) {
     $analysis = $byId[[string]$article.id]
-    if (-not $analysis -or -not $analysis.title -or $analysis.title -notmatch '[\u3400-\u9fff]' -or
+    if (-not $analysis -or -not (Test-ChineseDisplayTitle -Title ([string]$analysis.title)) -or
       -not $analysis.highlight -or -not $analysis.summary -or -not $analysis.failureAnalysis -or
       -not $analysis.englishTitle -or -not $analysis.englishHighlight -or -not $analysis.englishSummary -or -not $analysis.englishFailureAnalysis) {
       throw "GitHub Models batch returned incomplete bilingual analysis: $($article.id)"

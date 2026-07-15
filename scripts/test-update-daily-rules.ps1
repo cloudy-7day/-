@@ -182,6 +182,24 @@ try {
   }
   function Invoke-JsonPostUtf8 {
     param([string]$Uri, [string]$JsonBody, [hashtable]$Headers)
+    return [pscustomobject]@{
+      choices = @([pscustomobject]@{
+        message = [pscustomobject]@{ content = '{"title":"DietrichGebert/ponytail 中文版","highlight":"这是忠于来源且信息具体的一句中文摘录。","summary":"这是中文摘要，用于复现中文比例不足的标题。","failureAnalysis":"这是关键判断。","translations":{"en":{"title":"DietrichGebert/ponytail","highlight":"A concrete source-grounded sentence for this repository.","summary":"This summary reproduces a mixed-language title.","failureAnalysis":"This is the key takeaway."}}}' }
+      })
+    }
+  }
+  $mixedTitleAnalysis = New-ArticleAnalysis `
+    -Category "ai" `
+    -Title "DietrichGebert/ponytail" `
+    -Source "GitHub Search" `
+    -Url "https://github.com/DietrichGebert/ponytail" `
+    -SourceText "GitHub repository with recent public activity and a concrete description." `
+    -ScoreLabel "GitHub stars"
+  if ($mixedTitleAnalysis.summarySource -ne "source_extract") {
+    throw "A mixed title with only token Chinese must be degraded before final payload validation."
+  }
+  function Invoke-JsonPostUtf8 {
+    param([string]$Uri, [string]$JsonBody, [hashtable]$Headers)
     $script:capturedAnalysisUri = $Uri
     $script:capturedAnalysisBody = $JsonBody
     return [pscustomobject]@{
