@@ -1,265 +1,333 @@
-﻿{
+{
     "issueDate":  "2026-07-14",
     "updateStatus":  "complete",
-    "contentFingerprint":  "e407c5951c984b052fa97ab3049e2c1073088f9103221797c90fabeb4429d2a8",
+    "contentFingerprint":  "ee6054ae839de0481b3c46be99a752314207cb95ae2f7c00e2dea2af3ba6420e",
     "notes":  [
-                  "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
-                  "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
-                  "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
-                  "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+                  "The visible library was rebuilt after removing legacy duplicates and incomplete translations.",
+                  "Every article includes source-grounded highlights and complete Simplified Chinese and English display fields.",
+                  "Historical URL and title identities remain in data/seen-articles.json to prevent removed items from returning."
               ],
     "articles":  [
                      {
-                         "id":  "news-3cd0a11c6c5c4b819215a34b72fe7803",
+                         "id":  "news-ro-khanna-west-bank",
                          "category":  "international",
-                         "title":  "New US Ebola patient arrives in Germany for treatment",
-                         "source":  "The Guardian World",
-                         "url":  "https://www.theguardian.com/world/2026/jul/14/american-ebola-patient-arrives-germany",
-                         "publishedAt":  "2026-07-14T12:27:06.0000000Z",
-                         "scoreLabel":  "Open RSS source",
-                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
-                         "highlight":  "一名在刚果（金）感染埃博拉的美国援助人员已抵达德国接受治疗。",
-                         "summary":  "一名在刚果民主共和国感染埃博拉病毒的美国援助工作者已抵达德国柏林接受治疗，而特朗普政府同时禁止美国公民从该国乘坐商业航班返回美国。该事件凸显了国际公共卫生应对机制与政治决策之间的紧张关系，值得关注全球疫情下的跨境医疗与旅行限制。",
-                         "failureAnalysis":  "关键启示：国际疫情应对中，医疗救治与政治管控可能产生冲突，需平衡公共卫生安全与个人权利。",
+                         "title":  "Rep. Ro Khanna on being detained by Israeli settlers in the West Bank",
+                         "source":  "NPR / WXXI News",
+                         "url":  "https://www.wxxinews.org/npr-news/2026-07-14/rep-ro-khanna-on-being-detained-by-israeli-settlers-in-the-west-bank",
+                         "publishedAt":  "2026-07-14T22:23:00Z",
+                         "scoreLabel":  "Open primary or publisher source",
+                         "selectionReason":  "Fresh, openly readable, source-grounded, and not present in the historical identity ledger.",
+                         "highlight":  "罗·卡纳称，以色列定居者和士兵在约旦河西岸暂时扣留了他的访问团。",
+                         "summary":  "美国众议员罗·卡纳接受 NPR 采访，讲述其团队在约旦河西岸访问时被定居者拦截、随后又被士兵暂时限制离开的经历。事件把定居者暴力、军方执法与美国对以政策同时推到台前。",
+                         "failureAnalysis":  "卡纳与以色列军方对士兵是否参与阻拦的说法存在分歧；判断后续影响要看独立影像、正式调查以及是否有人被追责。",
                          "summarySource":  "deepseek",
-                         "sourceExcerpt":  "Aid worker flown to Berlin as Trump administration bars Americans from traveling to US on commercial flights A US national who contracted Ebola in the Democratic Republic of the Congo has arrived in Germany for treatment, the health ministry in Berlin said on Monday, weeks after another American infected with Ebola in the DRC was treated in Berlin. Meanwhile, the Trump administration on Monday said it was blocking American citizens in ⁠the DRC from traveling to the US on commercial flights, Reuters reported, citing a White House official.",
+                         "sourceExcerpt":  "NPR\u0027s Ailsa Chang speaks with Rep. Ro Khanna about his recent trip to the occupied West Bank and temporary detention by Israeli settlers and soldiers.",
                          "translations":  {
+                                              "zh":  {
+                                                         "title":  "美国议员罗·卡纳讲述约旦河西岸被扣经历",
+                                                         "highlight":  "罗·卡纳称，以色列定居者和士兵在约旦河西岸暂时扣留了他的访问团。",
+                                                         "summary":  "美国众议员罗·卡纳接受 NPR 采访，讲述其团队在约旦河西岸访问时被定居者拦截、随后又被士兵暂时限制离开的经历。事件把定居者暴力、军方执法与美国对以政策同时推到台前。",
+                                                         "failureAnalysis":  "卡纳与以色列军方对士兵是否参与阻拦的说法存在分歧；判断后续影响要看独立影像、正式调查以及是否有人被追责。"
+                                                     },
                                               "en":  {
-                                                         "highlight":  "A US national who contracted Ebola in the Democratic Republic of the Congo has arrived in Germany for treatment.",
-                                                         "summary":  "An American aid worker infected with Ebola in the DRC has arrived in Berlin for treatment, while the Trump administration bars US citizens from traveling to the US on commercial flights from the region. This highlights the tension between international health response and political travel restrictions, making it relevant for understanding global pandemic management.",
-                                                         "failureAnalysis":  "Key takeaway: In global health crises, medical treatment and political controls may conflict, requiring a balance between public health safety and individual rights.",
-                                                         "title":  "US Ebola Patient Arrives in Germany for Treatment Amid Travel Ban"
+                                                         "title":  "Ro Khanna recounts detention during a West Bank visit",
+                                                         "highlight":  "Ro Khanna described how settlers and soldiers temporarily detained his delegation in the occupied West Bank.",
+                                                         "summary":  "Representative Ro Khanna told NPR that settlers blocked his delegation during a West Bank visit and soldiers then delayed their departure. The incident raises questions about settler violence, military conduct, and U.S. policy toward Israel.",
+                                                         "failureAnalysis":  "Khanna and the Israeli military dispute the soldiers\u0027 role. Independent footage, an official investigation, and accountability will determine the broader significance."
                                                      }
                                           }
                      },
                      {
-                         "id":  "news-d56aab44a6624e62b5c982ad2de2f001",
+                         "id":  "news-chipotle-mexico",
                          "category":  "international",
-                         "title":  "U.S. to reinstate Hormuz blockade. And, states sue over Paramount-Warner deal",
-                         "source":  "NPR World",
-                         "url":  "https://www.npr.org/2026/07/14/g-s1-133443/up-first-newsletter-iran-strait-hormuz-maine-ice-shooting-paramount-warner-bros-merger",
-                         "publishedAt":  "2026-07-14T12:18:58.0000000Z",
-                         "scoreLabel":  "Open RSS source",
-                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
-                         "highlight":  "美国计划今日恢复霍尔木兹海峡封锁，多个州同时起诉阻止派拉蒙与华纳合并。",
-                         "summary":  "美国计划今日恢复对霍尔木兹海峡的封锁，同时多个州提起诉讼以阻止派拉蒙与华纳兄弟的合并。这篇文章值得阅读，因为它涉及地缘政治紧张局势和媒体行业重大交易，对理解国际动态和商业格局有参考价值。",
-                         "failureAnalysis":  "关键要点：美国恢复霍尔木兹海峡封锁可能加剧中东紧张局势，而派拉蒙-华纳合并诉讼则凸显反垄断监管对媒体整合的制约。",
+                         "title":  "Derision at US chain Chipotle’s plan to sell its Mexican food in Mexico",
+                         "source":  "The Guardian",
+                         "url":  "https://www.theguardian.com/world/2026/jul/14/derision-at-us-chain-chipotles-plan-to-sell-its-mexican-food-in-mexico",
+                         "publishedAt":  "2026-07-14T18:23:00Z",
+                         "scoreLabel":  "Open primary or publisher source",
+                         "selectionReason":  "Fresh, openly readable, source-grounded, and not present in the historical identity ledger.",
+                         "highlight":  "大胆啊——把企业版的墨西哥菜卖回墨西哥。",
+                         "summary":  "Chipotle 将在蒙特雷开出墨西哥首店，却因把美式墨西哥餐卖回原产文化市场而遭遇嘲讽与质疑。它既是一次跨境扩张，也是品牌能否把标准化体验与本地饮食认同重新对齐的压力测试。",
+                         "failureAnalysis":  "Taco Bell 等美国连锁在墨西哥的失败先例说明，熟悉的品类不等于可接受的品牌。首店客流之外，更应观察复购率、本地供应链和墨西哥城扩张是否兑现。",
                          "summarySource":  "deepseek",
-                         "sourceExcerpt":  "The United States plans to reinstate a blockade over the Strait of Hormuz today. And, several states are suing to stop the massive Paramount-Warner Bros.",
+                         "sourceExcerpt":  "A US chain’s plan to sell its version of Mexican food to Mexicans has prompted bemusement, skepticism and anger among local people.",
                          "translations":  {
+                                              "zh":  {
+                                                         "title":  "Chipotle 首进墨西哥，当地人先泼冷水",
+                                                         "highlight":  "大胆啊——把企业版的墨西哥菜卖回墨西哥。",
+                                                         "summary":  "Chipotle 将在蒙特雷开出墨西哥首店，却因把美式墨西哥餐卖回原产文化市场而遭遇嘲讽与质疑。它既是一次跨境扩张，也是品牌能否把标准化体验与本地饮食认同重新对齐的压力测试。",
+                                                         "failureAnalysis":  "Taco Bell 等美国连锁在墨西哥的失败先例说明，熟悉的品类不等于可接受的品牌。首店客流之外，更应观察复购率、本地供应链和墨西哥城扩张是否兑现。"
+                                                     },
                                               "en":  {
-                                                         "highlight":  "The United States plans to reinstate the Hormuz blockade as several states sue to stop the Paramount-Warner deal.",
-                                                         "summary":  "The U.S. plans to reinstate a blockade over the Strait of Hormuz today, while several states sue to block the Paramount-Warner Bros. merger. This article is worth reading for its coverage of geopolitical tensions and a major media industry deal, offering insights into international dynamics and business regulation.",
-                                                         "failureAnalysis":  "Key takeaway: The reinstated Hormuz blockade could escalate Middle East tensions, while the lawsuit over the Paramount-Warner merger highlights antitrust scrutiny on media consolidation.",
-                                                         "title":  "U.S. to Reinstate Hormuz Blockade; States Sue Over Paramount-Warner Merger"
+                                                         "title":  "Chipotle enters Mexico and meets immediate skepticism",
+                                                         "highlight":  "Bold move selling Mexico a corporate version of Mexico.",
+                                                         "summary":  "Chipotle is opening its first Mexican location in Monterrey, prompting both curiosity and ridicule over selling an Americanized version of Mexican food in Mexico. The launch tests whether a standardized global brand can earn local cultural acceptance.",
+                                                         "failureAnalysis":  "Past failures by U.S. chains show that category familiarity does not guarantee brand fit. Repeat visits, local sourcing, and expansion beyond the first store matter more than launch attention."
                                                      }
                                           }
                      },
                      {
-                         "id":  "news-8a975e21705a4642bb5ea4d9d5e10ef8",
+                         "id":  "news-world-cup-productivity",
                          "category":  "international",
-                         "title":  "The U.S. is set to reinstate a blockade over the Strait of Hormuz",
-                         "source":  "NPR World",
-                         "url":  "https://www.npr.org/2026/07/14/nx-s1-5893257/us-iran-updates",
-                         "publishedAt":  "2026-07-14T09:56:45.0000000Z",
-                         "scoreLabel":  "Open RSS source",
-                         "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
-                         "highlight":  "美国军方将于周二封锁霍尔木兹海峡的伊朗船只，伊朗则誓言维护自身控制权。",
-                         "summary":  "美国军方宣布将于周二开始对霍尔木兹海峡的伊朗船只实施封锁，伊朗则誓言要维护自身对该关键国际水道的控制。这篇文章值得阅读，因为它揭示了美伊紧张局势的最新升级，可能影响全球石油运输和地缘政治稳定。",
-                         "failureAnalysis":  "关键要点：美国重启霍尔木兹海峡封锁，伊朗强硬回应，凸显中东地缘政治风险加剧。",
+                         "title":  "People watching the World Cup during work hours is leading to a drop in productivity",
+                         "source":  "NPR / WUNC News",
+                         "url":  "https://www.wunc.org/2026-07-13/people-watching-the-world-cup-during-work-hours-is-leading-to-a-drop-in-productivity",
+                         "publishedAt":  "2026-07-13T20:02:00Z",
+                         "scoreLabel":  "Open primary or publisher source",
+                         "selectionReason":  "Fresh, openly readable, source-grounded, and not present in the historical identity ledger.",
+                         "highlight":  "一项调查称，世界杯热潮正让全球经济承受工作效率下降的代价。",
+                         "summary":  "NPR 以调查和小企业主的经历观察世界杯比赛落在工作时段时造成的注意力转移。它提醒管理者，全球同步的大型文化事件会在短期内改变出勤、排班与实际产出。",
+                         "failureAnalysis":  "生产力损失来自调查估算和个案，难以精确归因；更有价值的比较是弹性排班、集体观赛与强行禁看分别带来的成本。",
                          "summarySource":  "deepseek",
-                         "sourceExcerpt":  "military announced it will begin its blockade of Iranian ships over the Strait of Hormuz on Tuesday, as Iran vowed to assert its own control over the critical international waterway.",
+                         "sourceExcerpt":  "The global economy may be suffering from lost productivity as people get swept by World Cup fever, a survey shows.",
                          "translations":  {
+                                              "zh":  {
+                                                         "title":  "世界杯撞上工作时间，全球生产力正在掉线",
+                                                         "highlight":  "一项调查称，世界杯热潮正让全球经济承受工作效率下降的代价。",
+                                                         "summary":  "NPR 以调查和小企业主的经历观察世界杯比赛落在工作时段时造成的注意力转移。它提醒管理者，全球同步的大型文化事件会在短期内改变出勤、排班与实际产出。",
+                                                         "failureAnalysis":  "生产力损失来自调查估算和个案，难以精确归因；更有价值的比较是弹性排班、集体观赛与强行禁看分别带来的成本。"
+                                                     },
                                               "en":  {
-                                                         "highlight":  "The U.S. military will blockade Iranian ships in the Strait of Hormuz on Tuesday as Iran vows to assert control.",
-                                                         "summary":  "The U.S. military announced it will begin a blockade of Iranian ships in the Strait of Hormuz on Tuesday, while Iran vows to assert its own control over the critical waterway. This article is worth reading as it highlights the latest escalation in U.S.-Iran tensions, which could impact global oil shipments and geopolitical stability.",
-                                                         "failureAnalysis":  "Key takeaway: The U.S. reinstates a blockade over the Strait of Hormuz, with Iran vowing to respond, underscoring heightened geopolitical risks in the Middle East.",
-                                                         "title":  "U.S. to Reinstate Blockade Over Strait of Hormuz"
+                                                         "title":  "World Cup viewing during work hours dents productivity",
+                                                         "highlight":  "A survey suggests World Cup fever is reducing productivity across the global economy.",
+                                                         "summary":  "NPR uses survey findings and a small-business example to examine how daytime World Cup matches divert attention from work. The story shows how synchronized cultural events can alter attendance, scheduling, and output.",
+                                                         "failureAnalysis":  "The loss is based on survey estimates and anecdotes rather than clean causal measurement. Flexible scheduling and coordinated viewing should be compared with outright restrictions."
                                                      }
                                           }
                      },
                      {
-                         "id":  "ai-github-1266797999",
+                         "id":  "ai-alibaba-open-code-review",
                          "category":  "ai",
-                         "title":  "DietrichGebert/ponytail",
-                         "source":  "GitHub Search",
-                         "url":  "https://github.com/DietrichGebert/ponytail",
-                         "abstractUrl":  null,
-                         "publishedAt":  "2026-06-12T00:52:37.0000000Z",
-                         "scoreLabel":  "GitHub 82882 stars",
+                         "title":  "alibaba/open-code-review",
+                         "source":  "GitHub",
+                         "url":  "https://github.com/alibaba/open-code-review",
+                         "publishedAt":  "2026-06-01T00:00:00Z",
+                         "scoreLabel":  "Open primary or publisher source",
+                         "selectionReason":  "Fresh, openly readable, source-grounded, and not present in the historical identity ledger.",
+                         "highlight":  "它把文件筛选、代码分组和评论定位交给确定性流程，把动态判断留给智能体。",
+                         "summary":  "Open Code Review 源自阿里内部工具，把确定性的文件覆盖、规则匹配和评论定位，与可检索上下文的 LLM 智能体组合起来。它关注的不是",
+                         "failureAnalysis":  "真正门槛仍是模型成本、私有代码合规和团队规则维护。项目宣称的大规模内部效果需要公开基准、误报率和跨语言数据进一步验证。",
+                         "summarySource":  "deepseek",
+                         "sourceExcerpt":  "The tool combines deterministic engineering with an agent: hard constraints cover file selection, bundling, rule matching and positioning, while the agent handles dynamic decisions.",
+                         "translations":  {
+                                              "zh":  {
+                                                         "title":  "阿里开源 AI 代码审查：把流程确定性还给工程",
+                                                         "highlight":  "它把文件筛选、代码分组和评论定位交给确定性流程，把动态判断留给智能体。",
+                                                         "summary":  "Open Code Review 源自阿里内部工具，把确定性的文件覆盖、规则匹配和评论定位，与可检索上下文的 LLM 智能体组合起来。它关注的不是",
+                                                         "failureAnalysis":  "真正门槛仍是模型成本、私有代码合规和团队规则维护。项目宣称的大规模内部效果需要公开基准、误报率和跨语言数据进一步验证。"
+                                                     },
+                                              "en":  {
+                                                         "title":  "Alibaba open-sources a deterministic-plus-agent code reviewer",
+                                                         "highlight":  "Deterministic pipelines handle coverage and positioning while an agent performs dynamic reasoning and context retrieval.",
+                                                         "summary":  "Open Code Review combines deterministic file selection, rule matching, and comment positioning with an LLM agent that can retrieve repository context. Its goal is stable coverage and accurate line-level feedback on large changesets.",
+                                                         "failureAnalysis":  "Adoption still depends on model cost, private-code compliance, and rule maintenance. Public benchmarks for false positives, language coverage, and the claimed internal scale remain important."
+                                                     }
+                                          },
                          "aiArticleType":  "application_innovation",
                          "evidenceAnchors":  [
                                                  {
-                                                     "label":  "GitHub",
+                                                     "label":  "GitHub repository",
                                                      "kind":  "primary"
                                                  },
                                                  {
-                                                     "label":  "Community signal",
+                                                     "label":  "Alibaba production claim",
                                                      "kind":  "secondary"
                                                  }
                                              ],
-                         "evidenceLabel":  "GitHub + Community signal",
+                         "evidenceLabel":  "Open source implementation + production claim",
                          "hasPrimaryAnchor":  true,
                          "requiresRiskAnalysis":  true,
-                         "selectionReason":  "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-                         "highlight":  "让AI代理像房间里最懒的资深开发者一样思考：最好的代码，是从未写下的代码。",
-                         "summary":  "该项目提出一种让AI代理模仿“最懒资深开发者”思维的方法，核心是减少不必要的代码编写。它通过GitHub上8.2万星标获得关注，暗示开发者对“少写代码、多思考”理念的强烈共鸣。值得阅读是因为它挑战了AI辅助编程中“生成越多越好”的默认假设，可能改变AI代码生成工具的设计方向。",
-                         "failureAnalysis":  "核心风险在于“懒惰”与“正确性”的平衡难以量化——资深开发者的“懒”基于深厚经验，而AI可能错误简化关键逻辑。项目缺乏具体实现细节和验证案例，仅靠理念难以说服企业采用。部署路径不明确，用户价值依赖对“代码质量”的主观判断，而非可测量的效率指标。工程上，让AI自主决定“不写代码”可能引入隐蔽的缺陷，增加调试成本。",
-                         "aiSelectionScore":  82882,
-                         "summarySource":  "deepseek",
-                         "sourceExcerpt":  "GitHub repository with 82882 stars and recent public activity. Description: Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
-                         "translations":  {
-                                              "en":  {
-                                                         "highlight":  "Make your AI agent think like the laziest senior dev in the room—the best code is the code you never wrote.",
-                                                         "summary":  "This project proposes a method to make AI agents emulate the \u0027laziest senior developer\u0027 mindset, focusing on reducing unnecessary code. Its 82k GitHub stars indicate strong resonance with the \u0027write less, think more\u0027 philosophy. Worth reading as it challenges the default assumption that more code generation is always better, potentially reshaping AI coding tool design.",
-                                                         "failureAnalysis":  "The key risk is the unquantifiable balance between \u0027laziness\u0027 and correctness—senior devs\u0027 laziness stems from deep experience, while AI may oversimplify critical logic. Without concrete implementation or validation, the idea struggles to convince enterprises for adoption.",
-                                                         "title":  "Ponytail: Making AI Think Like the Laziest Senior Dev"
-                                                     }
-                                          }
+                         "aiSelectionScore":  827
                      },
                      {
-                         "id":  "ai-feed-4e3cd04bcfe043238754a3b09c222697",
+                         "id":  "ai-omnigent",
                          "category":  "ai",
-                         "title":  "[AINews] Codex usage up \u003e10x in 6 months to 7M users, +1M in the past ~day; did Codex overtake Claude Code??",
-                         "source":  "Latent Space",
-                         "url":  "https://www.latent.space/p/ainews-codex-usage-up-10x-in-6-months",
-                         "abstractUrl":  null,
-                         "publishedAt":  "2026-07-14T01:22:27.0000000Z",
-                         "scoreLabel":  "Curated engineering feed",
-                         "aiArticleType":  "concept_explanation",
+                         "title":  "omnigent-ai/omnigent",
+                         "source":  "GitHub / Omnigent",
+                         "url":  "https://github.com/omnigent-ai/omnigent",
+                         "publishedAt":  "2026-06-09T00:00:00Z",
+                         "scoreLabel":  "Open primary or publisher source",
+                         "selectionReason":  "Fresh, openly readable, source-grounded, and not present in the historical identity ledger.",
+                         "highlight":  "同一层可组合 Claude Code、Codex 与自定义智能体，并用策略、沙箱和共享会话约束它们。",
+                         "summary":  "Omnigent 试图成为编程智能体之上的通用运行层：不同工具可以互换或组合，会话能够跨终端和网页共享，权限与成本则由状态化策略控制。它回应的是团队同时使用多种智能体后出现的治理和协作碎片化。",
+                         "failureAnalysis":  "项目仍处于 alpha，统一抽象可能跟不上各家智能体快速变化的能力边界。沙箱安全、凭据代理和跨工具会话一致性需要独立安全审计与长期稳定性数据。",
+                         "summarySource":  "deepseek",
+                         "sourceExcerpt":  "A common layer over Claude Code, Codex, Pi, and custom agents lets users swap or combine harnesses, enforce policies and sandboxing, and collaborate in the same live session.",
+                         "translations":  {
+                                              "zh":  {
+                                                         "title":  "Omnigent：给不同编程智能体加一层统一控制台",
+                                                         "highlight":  "同一层可组合 Claude Code、Codex 与自定义智能体，并用策略、沙箱和共享会话约束它们。",
+                                                         "summary":  "Omnigent 试图成为编程智能体之上的通用运行层：不同工具可以互换或组合，会话能够跨终端和网页共享，权限与成本则由状态化策略控制。它回应的是团队同时使用多种智能体后出现的治理和协作碎片化。",
+                                                         "failureAnalysis":  "项目仍处于 alpha，统一抽象可能跟不上各家智能体快速变化的能力边界。沙箱安全、凭据代理和跨工具会话一致性需要独立安全审计与长期稳定性数据。"
+                                                     },
+                                              "en":  {
+                                                         "title":  "Omnigent adds a shared control layer above coding agents",
+                                                         "highlight":  "One layer composes Claude Code, Codex, and custom agents while enforcing policies, sandboxing, and shared sessions.",
+                                                         "summary":  "Omnigent positions itself as a common runtime above multiple coding-agent harnesses, with interchangeable tools, shared live sessions, and stateful controls for permissions and spending. It targets the governance fragmentation created by multi-agent teams.",
+                                                         "failureAnalysis":  "The project is still alpha, and a common abstraction may lag rapidly changing agent capabilities. Sandbox security, credential brokering, and cross-tool session consistency need independent audits and operational evidence."
+                                                     }
+                                          },
+                         "aiArticleType":  "application_innovation",
                          "evidenceAnchors":  [
-
+                                                 {
+                                                     "label":  "Open-source repository",
+                                                     "kind":  "primary"
+                                                 },
+                                                 {
+                                                     "label":  "Product documentation",
+                                                     "kind":  "primary"
+                                                 }
                                              ],
-                         "evidenceLabel":  "No clear evidence",
-                         "hasPrimaryAnchor":  false,
-                         "requiresRiskAnalysis":  false,
-                         "selectionReason":  "AI source passed freshness and evidence-chain gate: No clear evidence",
-                         "highlight":  "Codex用户量半年增长超过十倍至七百万，仅一天又新增约一百万。",
-                         "summary":  "文章指出，OpenAI的Codex在6个月内用户量增长超过10倍，达到700万，最近一天内新增100万，可能已超越Claude Code。这反映了AI编程工具市场的快速扩张和竞争格局变化，值得关注其背后的技术趋势和用户偏好。",
-                         "failureAnalysis":  "关键启示：AI编程助手用户增长迅猛，但需注意不同工具间的功能差异和实际使用场景，避免盲目跟风。",
-                         "aiSelectionScore":  100,
-                         "summarySource":  "deepseek",
-                         "sourceExcerpt":  "a quiet day lets us fact check some numbers against the sound of silence of Claude Code reporting...",
-                         "translations":  {
-                                              "en":  {
-                                                         "highlight":  "Codex usage rose more than tenfold in six months to seven million users, adding roughly one million in a day.",
-                                                         "summary":  "The article reports that OpenAI\u0027s Codex has grown over 10x in users in 6 months, reaching 7 million, with 1 million added in the past day, potentially surpassing Claude Code. This highlights rapid expansion and competition in AI coding tools, making it worth reading for understanding market dynamics.",
-                                                         "failureAnalysis":  "Key takeaway: AI coding assistants are growing fast, but consider functional differences and real-world usage before making decisions.",
-                                                         "title":  "Codex Usage Surges 10x in 6 Months to 7M Users, Overtaking Claude Code?"
-                                                     }
-                                          }
+                         "evidenceLabel":  "Repository + product documentation",
+                         "hasPrimaryAnchor":  true,
+                         "requiresRiskAnalysis":  true,
+                         "aiSelectionScore":  100
                      },
                      {
-                         "id":  "paper-2607.07708",
+                         "id":  "paper-2607-05590",
                          "category":  "paper",
-                         "title":  "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
+                         "title":  "DBNN: Neural Spike Classification Using a Deep Binarized Neural Network",
                          "source":  "arXiv",
-                         "url":  "https://arxiv.org/pdf/2607.07708v1.pdf",
-                         "abstractUrl":  "https://arxiv.org/abs/2607.07708",
-                         "publishedAt":  "2026-07-08T17:59:59.0000000Z",
-                         "scoreLabel":  "Quality 28/100 + topic fit 30/30",
-                         "recommendationScore":  83,
-                         "selectionReason":  "Open full-text paper; topic ai; quality signal passed; application scenario is clear.",
-                         "paperTopic":  "ai",
-                         "qualityScore":  28,
-                         "readabilityStatus":  "open",
-                         "paperCard":  {
-                                           "problem":  "现有AI模型要么把结构变成文本（丢失物理信息），要么只输出预测结果而不解释原因。科学家需要既能准确预测又能展示推理过程的工具。",
-                                           "method":  "SciReasoner将蛋白质、分子和晶体的三维结构离散化为一种“结构感知词汇”，然后把这些词汇和语言指令一起输入大语言模型，让模型在生成答案时能引用具体的结构证据。",
-                                           "difference":  "以前的方法要么用文本描述结构（导致推理依赖语言关联），要么用专门的预测模型（不展示中间证据）。SciReasoner把结构本身当作可引用的证据单元，在推理过程中明确展示。",
-                                           "innovation":  "创新在于“原生结构推理”：结构词汇不是辅助描述，而是推理轨迹中可寻址、可检查的证据单元，实现了结构-推理的深度融合。",
-                                           "implementation":  "首先用领域专用编码器（如ConfSeq、Foldseek、SLICES）将结构转为保留物理信息的文本表示；然后通过多阶段训练（预热、全参数、退火）对齐结构词汇和语言；最后用强化学习训练模型在推理中引用结构证据。",
-                                           "applications":  "蛋白质功能预测（尤其是低同源蛋白）、化学反应路线设计（逆合成分析）、晶体材料性质预测（如带隙）、科学问答等。",
-                                           "technicalTerms":  [
-                                                                  "原生结构推理：模型在推理时直接引用结构中的原子、键或对称性等具体证据，而不是仅靠文本联想。",
-                                                                  "结构感知词汇：将三维结构拆解成保留物理意义的“单词”，比如把分子中的苯环作为一个整体token，避免被拆散。",
-                                                                  "自举原生结构推理：用强化学习让模型自己学会在推理中正确使用结构证据，而不需要人工标注推理过程。"
-                                                              ]
-                                       },
-                         "highlight":  "SciReasoner在86项基准中的67项达到最先进水平，并生成可检查的结构推理过程。",
-                         "summary":  "这篇论文提出了一个名为SciReasoner的多模态科学基础模型，能够对蛋白质、小分子和晶体等结构进行“原生结构推理”，在预测性质的同时生成可检查的推理过程。它值得阅读，因为它在86个基准测试中的67个上达到了最先进性能，并且专家评估认为其推理质量优于或媲美前沿大语言模型。",
-                         "failureAnalysis":  "论文未提及模型在极低数据或全新结构域上的泛化能力，且其依赖的离散化结构词汇可能丢失部分连续几何细节。",
+                         "url":  "https://arxiv.org/pdf/2607.05590v1.pdf",
+                         "publishedAt":  "2026-07-06T19:41:50Z",
+                         "scoreLabel":  "Open primary or publisher source",
+                         "selectionReason":  "Fresh, openly readable, source-grounded, and not present in the historical identity ledger.",
+                         "highlight":  "DBNN 在合成与活体数据上达到 98.7% 中位准确率，ASIC 估算功耗仅 122 纳瓦。",
+                         "summary":  "论文为植入式脑机接口设计了硬件导向的深度二值神经网络，在设备端完成神经脉冲分类。它用很小的输入和无乘法器计算换取 98.7% 的中位准确率，并给出 FPGA 与 ASIC 的完整实现数据。",
+                         "failureAnalysis":  "结果来自合成和活体数据集及综合估算，尚不等于长期植入人体后的稳定功耗与准确率。电极漂移、组织变化和芯片制造后的实测仍是关键验证。",
                          "summarySource":  "deepseek",
-                         "sourceExcerpt":  "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning Chen Tang1,2鈥? Shixiang Tang 2,1, Pengze Li 1,4, Encheng Su 1,8, Jun Yao 1,8, Jiabei Xiao 1,2, Yuqi Shi 9,10, Jielan Li 1, Hongxia Hao 1, Zhangyang Gao 1, Fang Wu 11, Ben Fei 1,2, Xiangyu Yue 2, Pan Tan 1, Bozitao Zhong3, Jinouwen Zhang 1, Aoran Wang 1, Yan Lu 2,1, Jiaheng Liu 6,1, Xinzhu Ma 1, Liang Hong 3, Mingyue Zheng 9,10, Phil Torr 7, Bowen Zhou 1, Wanli Ouyang 1,2, Lei Bai 1 1Shanghai Artificial Intelligence Laboratory, China. 2The Chinese University of Hong Kong, Hong Kong.",
+                         "sourceExcerpt":  "The classifier achieves 98.7% median accuracy; ASIC synthesis estimates 0.014 mm2 and 122 nW at 20 kHz with multiplier-free operation.",
                          "translations":  {
-                                              "en":  {
-                                                         "highlight":  "SciReasoner achieved state-of-the-art performance on 67 of 86 benchmarks while producing inspectable structural reasoning traces.",
-                                                         "summary":  "This paper introduces SciReasoner, a multimodal scientific foundation model that performs \u0027native structural reasoning\u0027 on proteins, small molecules, and crystals, generating inspectable reasoning traces alongside predictions. It is worth reading because it achieves state-of-the-art performance on 67 out of 86 benchmarks, and expert evaluation rates its reasoning quality as preferred or comparable to frontier LLMs.",
-                                                         "failureAnalysis":  "The paper does not discuss generalization to extremely low-data or novel structural domains, and its discretized structural vocabulary may lose some continuous geometric details.",
-                                                         "title":  "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
+                                              "zh":  {
+                                                         "title":  "无乘法器神经网络把植入式脑机接口降到 122 纳瓦",
+                                                         "highlight":  "DBNN 在合成与活体数据上达到 98.7% 中位准确率，ASIC 估算功耗仅 122 纳瓦。",
+                                                         "summary":  "论文为植入式脑机接口设计了硬件导向的深度二值神经网络，在设备端完成神经脉冲分类。它用很小的输入和无乘法器计算换取 98.7% 的中位准确率，并给出 FPGA 与 ASIC 的完整实现数据。",
+                                                         "failureAnalysis":  "结果来自合成和活体数据集及综合估算，尚不等于长期植入人体后的稳定功耗与准确率。电极漂移、组织变化和芯片制造后的实测仍是关键验证。",
                                                          "paperCard":  {
-                                                                           "problem":  "Existing AI models either convert structures into text (losing physical information) or output predictions without explanation. Scientists need tools that are both accurate and can show their reasoning.",
-                                                                           "method":  "SciReasoner discretizes 3D structures of proteins, molecules, and crystals into a \u0027structure-aware vocabulary\u0027, then feeds these tokens with language instructions into a large language model, allowing it to cite specific structural evidence when generating answers.",
-                                                                           "difference":  "Previous methods either describe structures in text (making reasoning rely on linguistic associations) or use specialized prediction models (without showing intermediate evidence). SciReasoner treats structures as citable evidence units within the reasoning trajectory.",
-                                                                           "innovation":  "The innovation is \u0027native structural reasoning\u0027: structural tokens are not auxiliary descriptors but addressable evidence units in the reasoning trajectory, enabling deep integration of structure and reasoning.",
-                                                                           "implementation":  "First, domain-specific encoders (e.g., ConfSeq, Foldseek, SLICES) convert structures into text representations preserving physical meaning; then, multi-stage training (warm-up, full-parameter, annealing) aligns structural tokens with language; finally, reinforcement learning trains the model to cite structural evidence during reasoning.",
-                                                                           "applications":  "Protein function prediction (especially for low-homology proteins), retrosynthesis (chemical reaction planning), crystal property prediction (e.g., band gap), scientific question answering.",
+                                                                           "problem":  "植入式脑机接口需要在设备端完成神经脉冲分类，否则原始数据传输会消耗大量带宽和电能。",
+                                                                           "method":  "使用两个 256 神经元的二值隐藏层和定点输出层，在 16 个采样点的短波形上完成无乘法器分类。",
+                                                                           "difference":  "相较依赖浮点乘法和更长波形的网络，它把核心计算压缩成符号控制累加与位逻辑。",
+                                                                           "innovation":  "把深度二值神经网络真正落到 FPGA 与 45 纳米 ASIC 流程，并同时报告准确率、面积、延迟和功耗。",
+                                                                           "implementation":  "FPGA 原型以 50 MHz 运行，每个脉冲 528 个周期；ASIC 综合估算面积 0.014 平方毫米，在 20 kHz、1.1 V 下功耗 122 纳瓦。",
+                                                                           "applications":  "低功耗植入式脑机接口、闭环神经刺激和长期神经记录设备。",
                                                                            "technicalTerms":  [
-                                                                                                  "native structural reasoning: the model directly cites specific structural evidence (atoms, bonds, symmetry) during reasoning, not just text associations.",
-                                                                                                  "structure-aware vocabulary: 3D structures are broken into physically meaningful \u0027words\u0027, e.g., treating a benzene ring as a single token to avoid fragmentation.",
-                                                                                                  "self-bootstrapped native structural reasoning: reinforcement learning teaches the model to correctly use structural evidence in reasoning without requiring human-annotated reasoning traces."
+                                                                                                  "脉冲分类：把不同神经元产生的电信号波形分开",
+                                                                                                  "二值神经网络：权重或激活主要使用一位表示",
+                                                                                                  "ASIC：为固定任务定制的集成电路"
+                                                                                              ]
+                                                                       }
+                                                     },
+                                              "en":  {
+                                                         "title":  "A multiplier-free spike sorter reaches 122 nW for implantable BCIs",
+                                                         "highlight":  "DBNN reaches 98.7% median accuracy and an estimated 122 nW ASIC power budget.",
+                                                         "summary":  "The paper presents a hardware-oriented deep binarized neural network for on-device spike sorting in implantable BCIs. Compact inputs and multiplier-free inference deliver 98.7% median accuracy with FPGA and ASIC implementation results.",
+                                                         "failureAnalysis":  "Synthetic and in-vivo datasets plus synthesis estimates do not establish long-term implanted performance. Electrode drift, tissue changes, and fabricated-chip measurements remain essential.",
+                                                         "paperCard":  {
+                                                                           "problem":  "Implantable BCIs need on-device neural spike classification to avoid costly raw-data telemetry.",
+                                                                           "method":  "Two 256-neuron binarized hidden layers and a fixed-point output layer classify compact 16-sample waveforms without multipliers.",
+                                                                           "difference":  "Unlike floating-point networks using longer inputs, computation is reduced to sign-controlled accumulation and bit logic.",
+                                                                           "innovation":  "The design is implemented in both FPGA and 45 nm ASIC flows with accuracy, area, latency, and power reported together.",
+                                                                           "implementation":  "The 50 MHz FPGA takes 528 cycles per spike; ASIC synthesis estimates 0.014 mm2 and 122 nW at 20 kHz and 1.1 V.",
+                                                                           "applications":  "Low-power implantable BCIs, closed-loop neural stimulation, and long-term neural recording.",
+                                                                           "technicalTerms":  [
+                                                                                                  "Spike sorting: separating waveforms produced by different neurons",
+                                                                                                  "BNN: a neural network using mostly one-bit weights or activations",
+                                                                                                  "ASIC: a chip customized for a fixed task"
                                                                                               ]
                                                                        }
                                                      }
-                                          }
-                     },
-                     {
-                         "id":  "paper-2607.07773",
-                         "category":  "paper",
-                         "title":  "Graph-Regularized Deep Learning for EEG-Based Emotion Recognition with Psychologically-Grounded Label Structure",
-                         "source":  "arXiv",
-                         "url":  "https://arxiv.org/pdf/2607.07773v1.pdf",
-                         "abstractUrl":  "https://arxiv.org/abs/2607.07773",
-                         "publishedAt":  "2026-07-08T16:41:51.0000000Z",
-                         "scoreLabel":  "Quality 28/100 + topic fit 30/30",
-                         "recommendationScore":  83,
-                         "selectionReason":  "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+                                          },
+                         "abstractUrl":  "https://arxiv.org/abs/2607.05590",
+                         "recommendationScore":  88,
                          "paperTopic":  "brain_computer_interface",
-                         "qualityScore":  28,
+                         "qualityScore":  33,
                          "readabilityStatus":  "open",
                          "paperCard":  {
-                                           "problem":  "传统脑电情绪识别方法把不同情绪当成独立、等距离的类别，比如把“开心”错分成“悲伤”和错分成“害怕”的惩罚一样。但心理学上，情绪之间有亲疏关系（比如“悲伤”和“害怕”都是负面情绪，更相似），所以传统方法不合理，导致模型学到的特征不够好。",
-                                           "method":  "作者构建了一个“情绪图”，把每种情绪看作图上的一个节点，用边连接心理上相近的情绪（比如“悲伤”和“害怕”相连，“开心”只连“中性”）。然后，在训练深度学习模型时，加入三种正则化惩罚，让模型更倾向于把情绪错分到图上相邻的类别，而不是跨越大距离。",
-                                           "difference":  "之前的方法要么用标准交叉熵损失（平等对待所有错误），要么用简单的标签平滑（均匀分配概率）。这篇论文首次系统地将情绪的心理拓扑结构（基于Russell的环形模型）融入训练目标，并且提供了三种不同复杂度的正则化方法，适用于不同场景。",
-                                           "innovation":  "创新点在于：1）把情绪的心理结构（环形模型）转化为图，并定义了三种基于图的正则化损失（图标签平滑、图拉普拉斯损失、切片Wasserstein距离），从不同数学角度惩罚不合理错误；2）提出“邻近违规率”指标，专门衡量模型是否做出心理上合理的错误预测；3）验证了该方法对多种深度学习架构（Transformer、CNN-Transformer混合、图神经网络）都有效。",
-                                           "implementation":  "具体实现分三步：1）根据Russell的环形模型，在二维“愉悦度-唤醒度”空间上定位每种情绪，连接距离近的情绪形成图；2）在训练时，除了标准分类损失，还加上三种正则化损失之一：图标签平滑（简单，把概率分配给相邻情绪）、图拉普拉斯损失（中等，用图拉普拉斯矩阵的伪逆计算全局距离）、切片Wasserstein距离（复杂，用最优传输衡量分布差异）；3）通过固定权重或自适应权重（自动学习每个任务的权重）平衡分类和正则化。",
-                                           "applications":  "1）心理健康监测：更准确地识别患者的情绪状态，辅助诊断和治疗；2）情感脑机接口：让设备更自然地理解用户情绪，比如调整音乐或游戏体验；3）消费级脑电设备（如Muse、Emotiv）：提升日常情绪追踪的可靠性；4）任何需要理解情绪关系的场景，如人机交互、教育、娱乐。",
+                                           "problem":  "植入式脑机接口需要在设备端完成神经脉冲分类，否则原始数据传输会消耗大量带宽和电能。",
+                                           "method":  "使用两个 256 神经元的二值隐藏层和定点输出层，在 16 个采样点的短波形上完成无乘法器分类。",
+                                           "difference":  "相较依赖浮点乘法和更长波形的网络，它把核心计算压缩成符号控制累加与位逻辑。",
+                                           "innovation":  "把深度二值神经网络真正落到 FPGA 与 45 纳米 ASIC 流程，并同时报告准确率、面积、延迟和功耗。",
+                                           "implementation":  "FPGA 原型以 50 MHz 运行，每个脉冲 528 个周期；ASIC 综合估算面积 0.014 平方毫米，在 20 kHz、1.1 V 下功耗 122 纳瓦。",
+                                           "applications":  "低功耗植入式脑机接口、闭环神经刺激和长期神经记录设备。",
                                            "technicalTerms":  [
-                                                                  "图正则化：在训练模型时，加入一个基于图结构的惩罚项，让模型学会尊重情绪之间的亲疏关系。",
-                                                                  "环形模型：一种心理学理论，把情绪放在一个二维圆环上，横轴是愉悦度（正面/负面），纵轴是唤醒度（兴奋/平静）。",
-                                                                  "图拉普拉斯矩阵：一种数学工具，用来描述图上节点之间的连接关系，可以计算节点间的“通勤距离”。",
-                                                                  "切片Wasserstein距离：一种衡量两个概率分布差异的方法，通过随机投影降低计算复杂度，这里用来衡量预测分布和真实分布之间的“运输成本”。",
-                                                                  "邻近违规率：一个评价指标，计算模型错误预测中，那些跨越大距离（心理上不合理）的错误所占的比例。"
+                                                                  "脉冲分类：把不同神经元产生的电信号波形分开",
+                                                                  "二值神经网络：权重或激活主要使用一位表示",
+                                                                  "ASIC：为固定任务定制的集成电路"
                                                               ]
-                                       },
-                         "highlight":  "现有脑电情绪识别常把情绪视作孤立标签，忽略了它们之间的心理关联。",
-                         "summary":  "这篇论文提出了一种图正则化深度学习框架，用于基于脑电信号的情绪识别。它通过将情绪之间的心理相似性建模成图结构，并引入三种正则化策略，显著提升了情绪分类的准确性和心理合理性。值得一读是因为它解决了传统方法忽略情绪内在关联的问题，且方法通用，适用于多种深度学习模型。",
-                         "failureAnalysis":  "主要局限在于实验仅在两个公开数据集（SEED-IV和SEED-V）上进行，且情绪类别较少（4-5类），在更多类别或真实临床场景下的效果有待验证。此外，计算复杂度随情绪类别增加而上升，可能影响大规模应用。",
+                                       }
+                     },
+                     {
+                         "id":  "paper-2606-30319",
+                         "category":  "paper",
+                         "title":  "BrainJanus: A Unified Model for Understanding and Generation across Brain, Vision, and Language",
+                         "source":  "arXiv",
+                         "url":  "https://arxiv.org/pdf/2606.30319v1.pdf",
+                         "publishedAt":  "2026-06-29T14:02:15Z",
+                         "scoreLabel":  "Open primary or publisher source",
+                         "selectionReason":  "Fresh, openly readable, source-grounded, and not present in the historical identity ledger.",
+                         "highlight":  "统一脑信号分词器把连续神经活动映射到共享空间，支持脑信号与图像、文本之间的任意方向生成。",
+                         "summary":  "BrainJanus 把脑信号、视觉和语言放入同一个离散表示空间，用一个自回归架构同时完成刺激到脑活动的编码和脑活动到图像、文本的解码。它试图把以往割裂的脑科学任务变成可共享表示的通用模型。",
+                         "failureAnalysis":  "统一模型的优势来自多项基准，仍需检查跨受试者、跨设备和真实临床环境的稳定性。脑信号隐私、训练数据规模与生成结果被过度解读也是部署风险。",
                          "summarySource":  "deepseek",
-                         "sourceExcerpt":  "Graph-Regularized Deep Learning for EEG-Based Emotion Recognition with Psychologically-Grounded Label Structure Dongyang Kuang, Zizheng Ma, Yushan Zhang, and Xiaocong Zeng School of Mathematics (Zhuhai), Sun Yat-sen University, Guangzhou, China Abstract.EEG-based emotion recognition is critical for mental health monitoring and affective brain-computer interfaces, yet existing deep learning approaches often treat emotion classes as isolated labels, ignor- ingtheirpsychologicalinterdependencies.Weproposeagraph-regularized learning framework that conceptualizes emotions as nodes in a graph where edges encode proximity based on dimensional emotion theories. We adapt three complementary regularization strategies鈥擥raph Label Smoothing (intuitive soft labeling), Commuting distance on graph via Graph Laplacian (spectral graph theory), and Sliced Wasserstein Dis- tance (optimal transport on graph)鈥攐rdered by increasing computa- tional complexity. These strategies penalize model predictions that devi- ate from the established emotion topology.",
+                         "sourceExcerpt":  "BrainJanus introduces a Unified Brain Tokenizer and an all-in-one autoregressive architecture for image-to-brain, text-to-brain, brain-to-image, and brain-to-text generation.",
                          "translations":  {
-                                              "en":  {
-                                                         "highlight":  "Existing EEG emotion models often treat emotion classes as isolated labels, ignoring their psychological interdependencies.",
-                                                         "summary":  "This paper proposes a graph-regularized deep learning framework for EEG-based emotion recognition. It models psychological relationships between emotions as a graph and introduces three regularization strategies to penalize psychologically implausible misclassifications, improving accuracy and clinical relevance. It is worth reading because it addresses a key limitation of standard methods and is architecture-agnostic.",
-                                                         "failureAnalysis":  "The main limitation is that experiments are conducted on only two datasets with few emotion classes (4-5), and the effectiveness in real clinical settings with more categories remains to be validated. Computational complexity also increases with the number of emotion classes.",
-                                                         "title":  "Graph-Regularized Deep Learning for EEG-Based Emotion Recognition with Psychologically-Grounded Label Structure",
+                                              "zh":  {
+                                                         "title":  "BrainJanus 让大脑、视觉与语言在一个模型里双向转换",
+                                                         "highlight":  "统一脑信号分词器把连续神经活动映射到共享空间，支持脑信号与图像、文本之间的任意方向生成。",
+                                                         "summary":  "BrainJanus 把脑信号、视觉和语言放入同一个离散表示空间，用一个自回归架构同时完成刺激到脑活动的编码和脑活动到图像、文本的解码。它试图把以往割裂的脑科学任务变成可共享表示的通用模型。",
+                                                         "failureAnalysis":  "统一模型的优势来自多项基准，仍需检查跨受试者、跨设备和真实临床环境的稳定性。脑信号隐私、训练数据规模与生成结果被过度解读也是部署风险。",
                                                          "paperCard":  {
-                                                                           "problem":  "Traditional EEG emotion recognition treats all emotion classes as independent and equally distant, ignoring psychological relationships (e.g., confusing \u0027sad\u0027 with \u0027fear\u0027 is more plausible than confusing \u0027happy\u0027 with \u0027sad\u0027). This leads to suboptimal models.",
-                                                                           "method":  "The authors construct an \u0027emotion graph\u0027 where nodes are emotions and edges connect psychologically similar ones (based on Russell\u0027s circumplex model). They then add three graph-based regularization losses during training to penalize misclassifications that cross distant nodes in the graph.",
-                                                                           "difference":  "Previous methods either use standard cross-entropy loss (treating all errors equally) or simple label smoothing. This paper is the first to systematically integrate the psychological topology of emotions into the training objective, offering three regularization strategies with different complexity.",
-                                                                           "innovation":  "Innovations include: 1) Converting the psychological circumplex model into a graph and defining three graph-based losses (Graph Label Smoothing, Graph Laplacian, Sliced Wasserstein) from different mathematical perspectives; 2) Proposing a \u0027Proximity Violation\u0027 metric to measure psychologically plausible errors; 3) Demonstrating architecture-agnostic benefits across transformers, CNN-transformer hybrids, and GNNs.",
-                                                                           "implementation":  "Implementation steps: 1) Build an emotion graph based on valence-arousal coordinates from Russell\u0027s model; 2) During training, add one of three regularization losses: Graph Label Smoothing (simple, distributes probability to adjacent emotions), Graph Laplacian loss (medium, uses pseudo-inverse of Laplacian for global distances), or Sliced Wasserstein loss (complex, uses optimal transport); 3) Balance classification and regularization via fixed weight or adaptive weighting.",
-                                                                           "applications":  "1) Mental health monitoring; 2) Affective brain-computer interfaces; 3) Consumer EEG devices (e.g., Muse, Emotiv); 4) Any application needing emotion understanding, such as human-computer interaction, education, and entertainment.",
+                                                                           "problem":  "过去的大脑编码和解码通常分开训练，也很少在同一空间里联合处理脑信号、图像与语言。",
+                                                                           "method":  "先用统一脑信号分词器把连续神经活动离散化，再用自回归模型通过下一个 token 预测完成任意方向生成。",
+                                                                           "difference":  "它不再分别维护图像到脑、脑到文本等单任务模型，而是在共享 Omni 空间里统一训练。",
+                                                                           "innovation":  "首次把大脑、视觉和语言的编码与生成整合为一个任意到任意框架，并报告零样本泛化与可解释脑区拓扑。",
+                                                                           "implementation":  "把神经动态量化为与视觉、语言对齐的离散 token，再用统一自回归架构处理图像到脑、文本到脑、脑到图像和脑到文本。",
+                                                                           "applications":  "脑信号解释、视觉刺激重建、辅助交流和跨模态神经科学研究。",
                                                                            "technicalTerms":  [
-                                                                                                  "Graph regularization: Adding a penalty term based on graph structure during training to encourage the model to respect relationships between emotions.",
-                                                                                                  "Circumplex model: A psychological theory placing emotions on a 2D circle with valence (positive/negative) and arousal (excited/calm) axes.",
-                                                                                                  "Graph Laplacian: A mathematical matrix describing node connections in a graph, used to compute \u0027commuting distances\u0027 between nodes.",
-                                                                                                  "Sliced Wasserstein distance: A method to measure difference between two probability distributions by random projections, reducing computational cost.",
-                                                                                                  "Proximity Violation: A metric measuring the proportion of misclassifications that cross psychologically distant emotion nodes."
+                                                                                                  "脑信号分词器：把连续神经活动转换为离散符号",
+                                                                                                  "自回归：根据已有 token 逐步预测下一个 token",
+                                                                                                  "零样本泛化：不针对新任务再训练也能完成推断"
+                                                                                              ]
+                                                                       }
+                                                     },
+                                              "en":  {
+                                                         "title":  "BrainJanus unifies brain, vision, and language generation",
+                                                         "highlight":  "A unified brain tokenizer supports generation between neural activity, images, and text in every direction.",
+                                                         "summary":  "BrainJanus places brain signals, vision, and language in one discrete representation space and uses a single autoregressive architecture for both neural encoding and decoding. It reframes isolated neuroscience tasks as a shared generative model.",
+                                                         "failureAnalysis":  "Benchmark gains still need validation across subjects, devices, and clinical conditions. Neural privacy, dataset scale, and overinterpretation of generated outputs are major deployment risks.",
+                                                         "paperCard":  {
+                                                                           "problem":  "Brain encoding and decoding are usually trained separately and rarely align neural activity, images, and language in one space.",
+                                                                           "method":  "A unified tokenizer discretizes neural dynamics, then an autoregressive model performs any-to-any generation by next-token prediction.",
+                                                                           "difference":  "Instead of separate image-to-brain or brain-to-text models, all directions share one Omni representation and architecture.",
+                                                                           "innovation":  "The work unifies brain, vision, and language generation while reporting zero-shot generalization and interpretable neural topography.",
+                                                                           "implementation":  "Neural dynamics become discrete tokens aligned with visual and language tokens, supporting image-to-brain, text-to-brain, brain-to-image, and brain-to-text tasks.",
+                                                                           "applications":  "Brain-signal interpretation, visual reconstruction, assistive communication, and multimodal neuroscience.",
+                                                                           "technicalTerms":  [
+                                                                                                  "Brain tokenizer: converts continuous neural activity into discrete symbols",
+                                                                                                  "Autoregressive model: predicts the next token from prior tokens",
+                                                                                                  "Zero-shot generalization: performs a new task without task-specific retraining"
                                                                                               ]
                                                                        }
                                                      }
-                                          }
+                                          },
+                         "abstractUrl":  "https://arxiv.org/abs/2606.30319",
+                         "recommendationScore":  86,
+                         "paperTopic":  "brain_computer_interface",
+                         "qualityScore":  31,
+                         "readabilityStatus":  "open",
+                         "paperCard":  {
+                                           "problem":  "过去的大脑编码和解码通常分开训练，也很少在同一空间里联合处理脑信号、图像与语言。",
+                                           "method":  "先用统一脑信号分词器把连续神经活动离散化，再用自回归模型通过下一个 token 预测完成任意方向生成。",
+                                           "difference":  "它不再分别维护图像到脑、脑到文本等单任务模型，而是在共享 Omni 空间里统一训练。",
+                                           "innovation":  "首次把大脑、视觉和语言的编码与生成整合为一个任意到任意框架，并报告零样本泛化与可解释脑区拓扑。",
+                                           "implementation":  "把神经动态量化为与视觉、语言对齐的离散 token，再用统一自回归架构处理图像到脑、文本到脑、脑到图像和脑到文本。",
+                                           "applications":  "脑信号解释、视觉刺激重建、辅助交流和跨模态神经科学研究。",
+                                           "technicalTerms":  [
+                                                                  "脑信号分词器：把连续神经活动转换为离散符号",
+                                                                  "自回归：根据已有 token 逐步预测下一个 token",
+                                                                  "零样本泛化：不针对新任务再训练也能完成推断"
+                                                              ]
+                                       }
                      }
                  ]
 }

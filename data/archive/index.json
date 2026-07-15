@@ -1,29 +1,9 @@
-﻿{
-    "updatedAt":  "2026-07-14T15:04:23.2266460Z",
+{
+    "updatedAt":  "2026-07-15T04:12:03.0201425Z",
     "archives":  [
                      {
                          "date":  "2026-07-14",
                          "path":  "data/archive/2026-07-14.json"
-                     },
-                     {
-                         "date":  "2026-07-13",
-                         "path":  "data/archive/2026-07-13.json"
-                     },
-                     {
-                         "date":  "2026-07-12",
-                         "path":  "data/archive/2026-07-12.json"
-                     },
-                     {
-                         "date":  "2026-07-09",
-                         "path":  "data/archive/2026-07-09.json"
-                     },
-                     {
-                         "date":  "2026-07-07",
-                         "path":  "data/archive/2026-07-07.json"
-                     },
-                     {
-                         "date":  "2026-07-06",
-                         "path":  "data/archive/2026-07-06.json"
                      }
                  ]
 }

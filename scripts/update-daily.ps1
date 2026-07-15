@@ -166,8 +166,8 @@ function Assert-DailyPayload {
     if (-not $chinese -or -not $chinese.title -or -not $chinese.highlight -or -not $chinese.summary -or -not $chinese.failureAnalysis) {
       throw "Every article must include a complete Simplified Chinese translation: $($item.id)"
     }
-    if ($chinese.title -notmatch '[\u3400-\u9fff]') {
-      throw "Simplified Chinese article titles must contain Chinese characters: $($item.id)"
+    if (-not (Test-ChineseDisplayTitle -Title ([string]$chinese.title))) {
+      throw "Simplified Chinese article titles must be predominantly Chinese: $($item.id)"
     }
     if ($chinese.highlight.Length -gt 260 -or (Test-ForbiddenHighlightOpening -Text ([string]$chinese.highlight))) {
       throw "Simplified Chinese article highlight is invalid or template-styled: $($item.id)"
@@ -1533,6 +1533,17 @@ switch ($action) {
   "fresh_generation" { }
   default { throw "Unsupported daily update action: $action" }
 }
+
+$publishedArticles = @($currentPayload.articles)
+Get-ChildItem -LiteralPath $archiveFolder -Filter "*.json" -ErrorAction SilentlyContinue |
+  Where-Object { $_.BaseName -match '^\d{4}-\d{2}-\d{2}$' } |
+  ForEach-Object {
+    $archivePayload = Read-JsonPayload -Path $_.FullName
+    if ($archivePayload -and [string]$archivePayload.issueDate -eq $_.BaseName) {
+      $publishedArticles += @($archivePayload.articles)
+    }
+  }
+$script:ArticleLedger = Add-ArticlesToLedger -Ledger $script:ArticleLedger -Articles $publishedArticles
 
 $articles = @()
 $articles += Get-OpenWorldNewsItems

@@ -67,6 +67,17 @@ function Test-ForbiddenHighlightOpening {
   return [bool]($Text -match '^\s*(本文介绍|文章指出|值得阅读|这篇论文提出)')
 }
 
+function Test-ChineseDisplayTitle {
+  param([string]$Title)
+
+  if ([string]::IsNullOrWhiteSpace($Title)) {
+    return $false
+  }
+  $hanCount = [regex]::Matches($Title, '[\u3400-\u9fff]').Count
+  $latinCount = [regex]::Matches($Title, '[A-Za-z]').Count
+  return $hanCount -ge 4 -and $hanCount -ge $latinCount
+}
+
 function Get-CanonicalArticleUrl {
   param([string]$Url)
 
@@ -120,6 +131,28 @@ function Read-ArticleLedger {
     version = if ($ledger.version) { [int]$ledger.version } else { 1 }
     urls = @($ledger.urls | Where-Object { $_ } | Sort-Object -Unique)
     titles = @($ledger.titles | Where-Object { $_ } | Sort-Object -Unique)
+  }
+}
+
+function Add-ArticlesToLedger {
+  param(
+    $Ledger,
+    [object[]]$Articles
+  )
+
+  $urls = @($Ledger.urls)
+  $titles = @($Ledger.titles)
+  foreach ($article in @($Articles)) {
+    $url = Get-CanonicalArticleUrl -Url ([string]$article.url)
+    $title = Get-NormalizedArticleTitle -Title ([string]$article.title)
+    if ($url) { $urls += $url }
+    if ($title) { $titles += $title }
+  }
+
+  return [pscustomobject][ordered]@{
+    version = if ($Ledger.version) { [int]$Ledger.version } else { 1 }
+    urls = @($urls | Where-Object { $_ } | Sort-Object -Unique)
+    titles = @($titles | Where-Object { $_ } | Sort-Object -Unique)
   }
 }
 

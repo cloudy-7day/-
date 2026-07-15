@@ -34,6 +34,8 @@ Assert-True ($analysis.translations.en.summary -match "neural decoder") "English
 Assert-True (-not (Test-ForbiddenFallbackText -Text $analysis.summary)) "A real source extract must not match forbidden placeholders."
 Assert-True (Test-ForbiddenFallbackText -Text "Local fallback: article collected automatically") "Legacy local fallback must be forbidden."
 Assert-True (Test-ForbiddenFallbackText -Text "智能总结需要 DeepSeek key 和完整内容输入后生成。") "Legacy paper placeholder must be forbidden."
+Assert-True (Test-ChineseDisplayTitle -Title "Chipotle 首进墨西哥，当地人先泼冷水") "Chinese titles may preserve a proper noun when the display title is predominantly Chinese."
+Assert-True (-not (Test-ChineseDisplayTitle -Title "English title only 中文")) "A token amount of Chinese must not make an English title valid in Chinese mode."
 
 $canonical = Get-CanonicalArticleUrl -Url "HTTPS://EXAMPLE.COM/a/?utm_source=newsletter&b=2&a=1#section"
 Assert-Equal $canonical "https://example.com/a?a=1&b=2" "Canonical URLs must strip tracking data, fragments, and normalize query order."
@@ -45,6 +47,12 @@ $ledger = [pscustomobject]@{
 Assert-True (Test-ArticleSeen -Article ([pscustomobject]@{ url = "https://example.com/a/?b=2&utm_medium=email&a=1"; title = "Fresh wording" }) -Ledger $ledger) "A canonical ledger URL must reject a candidate."
 Assert-True (Test-ArticleSeen -Article ([pscustomobject]@{ url = "https://example.com/new"; title = "Already Used" }) -Ledger $ledger) "A normalized ledger title must reject a candidate."
 Assert-True (-not (Test-ArticleSeen -Article ([pscustomobject]@{ url = "https://example.com/fresh"; title = "Fresh title" }) -Ledger $ledger)) "A new identity must remain eligible."
+
+$published = [pscustomobject]@{ url = "https://example.com/published/?utm_source=rss"; title = "Already in the archive" }
+$candidateLedger = Add-ArticlesToLedger -Ledger $ledger -Articles @($published)
+Assert-True (Test-ArticleSeen -Article ([pscustomobject]@{ url = "https://example.com/published"; title = "Different title" }) -Ledger $candidateLedger) "Published archive URLs must join the generation ledger."
+Assert-True (Test-ArticleSeen -Article ([pscustomobject]@{ url = "https://example.com/other"; title = "Already in the archive" }) -Ledger $candidateLedger) "Published archive titles must join the generation ledger."
+Assert-Equal @($candidateLedger.urls).Count 2 "The merged generation ledger must retain tombstones and published URLs."
 
 $natoA = [pscustomobject]@{ url = "https://source-a.example/nato"; title = "What happened on the opening day of the NATO summit in Ankara" }
 $natoB = [pscustomobject]@{ url = "https://source-b.example/stakes"; title = "What's at stake at the NATO summit in Ankara" }

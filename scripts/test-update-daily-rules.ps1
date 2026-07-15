@@ -236,7 +236,7 @@ function New-TestArticle {
     sourceExcerpt = "Source-specific material for $Id."
     translations = [ordered]@{
       zh = [ordered]@{
-        title = "中文标题 $Id"
+        title = "这是一条完整的中文测试标题"
         highlight = "来源信息揭示了具体事件与可验证事实。"
         summary = "中文摘要 $Id"
         failureAnalysis = "中文判断 $Id"
@@ -307,7 +307,19 @@ try {
   $rejected = $true
 }
 if (-not $rejected) {
-  throw "Chinese-mode titles must contain Chinese characters."
+  throw "Chinese-mode titles must reject fully English titles."
+}
+
+$mostlyEnglishChineseTitle = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$mostlyEnglishChineseTitle.articles[0].translations.zh.title = "English title only 中文"
+$rejected = $false
+try {
+  Assert-DailyPayload -Payload $mostlyEnglishChineseTitle
+} catch {
+  $rejected = $true
+}
+if (-not $rejected) {
+  throw "Chinese-mode titles must be predominantly Chinese, not merely contain one Chinese token."
 }
 
 $missingHighlight = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
