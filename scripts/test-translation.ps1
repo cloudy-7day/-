@@ -1,4 +1,4 @@
-$ErrorActionPreference = "Stop"
+﻿$ErrorActionPreference = "Stop"
 
 . (Join-Path $PSScriptRoot "article-selection.ps1")
 
@@ -67,5 +67,30 @@ $apiFallback = Get-EnglishTranslationForAnalysis `
   -Analysis $analysisWithTranslationWithoutTitle
 
 Assert-Equal $apiFallback.title "API Missing Title" "Existing English analysis should receive a title fallback when API omits title."
+
+$bilingualAnalysis = [ordered]@{
+  title = "六个月增长十倍，Codex 用户数升至七百万"
+  highlight = "六个月内使用量增长超过十倍，最近一天新增约一百万用户。"
+  summary = "中文摘要。"
+  failureAnalysis = "中文判断。"
+  translations = [ordered]@{
+    en = [ordered]@{
+      title = "Codex usage grows tenfold in six months"
+      highlight = "Usage grew more than tenfold in six months."
+      summary = "English summary."
+      failureAnalysis = "English takeaway."
+    }
+  }
+}
+$chinese = Get-ChineseTranslationForAnalysis -Category "ai" -Analysis $bilingualAnalysis
+Assert-Equal $chinese.title $bilingualAnalysis.title "Chinese translation must use the generated Chinese display title."
+Assert-Equal $chinese.highlight $bilingualAnalysis.highlight "Chinese translation must preserve the source-grounded Chinese highlight."
+
+$missingChineseTitle = Get-ChineseTranslationForAnalysis -Category "ai" -Analysis ([ordered]@{
+  highlight = "中文原文摘录。"
+  summary = "中文摘要。"
+  failureAnalysis = "中文判断。"
+})
+Assert-Equal $missingChineseTitle.title "" "A missing Chinese title must stay empty so validation can fail closed."
 
 Write-Host "Translation tests passed."

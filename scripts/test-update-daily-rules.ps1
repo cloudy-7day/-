@@ -79,6 +79,10 @@ if ($source -notmatch '"summary_upgrade"\s*\{[\s\S]*Get-PaperAnalysisText\s+-Ful
   throw "Summary upgrades must reapply the usable full-text gate to downloaded papers."
 }
 
+if ($source -notmatch '"title":\s*"A concise, faithful Simplified Chinese display title') {
+  throw "DeepSeek analysis must request a Simplified Chinese display title."
+}
+
 if ($source -notmatch '"highlight":\s*"One faithful Chinese rendering' -or $source -notmatch '"highlight":\s*"One source-grounded English sentence') {
   throw "DeepSeek analysis must request bilingual source-grounded highlights."
 }
@@ -171,6 +175,12 @@ function New-TestArticle {
     summarySource = "deepseek"
     sourceExcerpt = "Source-specific material for $Id."
     translations = [ordered]@{
+      zh = [ordered]@{
+        title = "中文标题 $Id"
+        highlight = "来源信息揭示了具体事件与可验证事实。"
+        summary = "中文摘要 $Id"
+        failureAnalysis = "中文判断 $Id"
+      }
       en = [ordered]@{
         title = "English $Id"
         highlight = "A source-grounded sentence captures the verifiable event clearly."
@@ -193,6 +203,7 @@ function New-TestArticle {
       technicalTerms = @("Term")
     }
     $article.translations.en.paperCard = $article.paperCard
+    $article.translations.zh.paperCard = $article.paperCard
   }
 
   return $article
@@ -214,6 +225,30 @@ $validPayload = [ordered]@{
   articles = $validArticles
 }
 Assert-DailyPayload -Payload $validPayload
+
+$missingChinese = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$missingChinese.articles[0].translations.PSObject.Properties.Remove("zh")
+$rejected = $false
+try {
+  Assert-DailyPayload -Payload $missingChinese
+} catch {
+  $rejected = $true
+}
+if (-not $rejected) {
+  throw "Published payloads must reject missing Simplified Chinese translations."
+}
+
+$englishChineseTitle = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$englishChineseTitle.articles[0].translations.zh.title = "English title only"
+$rejected = $false
+try {
+  Assert-DailyPayload -Payload $englishChineseTitle
+} catch {
+  $rejected = $true
+}
+if (-not $rejected) {
+  throw "Chinese-mode titles must contain Chinese characters."
+}
 
 $missingHighlight = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
 $missingHighlight.articles[0].highlight = ""

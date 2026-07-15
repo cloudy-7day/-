@@ -156,6 +156,12 @@ function New-SourceExtractAnalysis {
     summary = $excerpt
     failureAnalysis = "当前条目仅提供可追溯原文摘录；待 DeepSeek 恢复后自动补充分析。"
     translations = [ordered]@{
+      zh = [ordered]@{
+        title = ""
+        highlight = $highlight
+        summary = $excerpt
+        failureAnalysis = "当前条目仅提供可追溯原文摘录；待 DeepSeek 恢复后自动补充分析。"
+      }
       en = [ordered]@{
         title = $Title
         highlight = $highlight
@@ -245,6 +251,9 @@ function Update-DegradedPayload {
     $item.sourceExcerpt = $analysis.sourceExcerpt
     if ($analysis.translations.en) {
       $item.translations.en = $analysis.translations.en
+    }
+    if ($analysis.translations.zh) {
+      $item.translations.zh = $analysis.translations.zh
     }
     if ($item.category -eq "paper" -and $analysis.paperCard) {
       $item.paperCard = $analysis.paperCard

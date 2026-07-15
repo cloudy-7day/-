@@ -352,3 +352,31 @@ function Get-EnglishTranslationForAnalysis {
     -FailureAnalysis ([string]$Analysis.failureAnalysis) `
     -PaperCard $PaperCard
 }
+
+function Get-ChineseTranslationForAnalysis {
+  param(
+    [string]$Category,
+    $Analysis,
+    $PaperCard = $null
+  )
+
+  $existing = if ($Analysis.translations -and $Analysis.translations.zh) { $Analysis.translations.zh } else { $null }
+  $result = [ordered]@{
+    title = if ($existing -and $existing.title) { [string]$existing.title } else { [string]$Analysis.title }
+    highlight = if ($existing -and $existing.highlight) { [string]$existing.highlight } else { [string]$Analysis.highlight }
+    summary = if ($existing -and $existing.summary) { [string]$existing.summary } else { [string]$Analysis.summary }
+    failureAnalysis = if ($existing -and $existing.failureAnalysis) { [string]$existing.failureAnalysis } else { [string]$Analysis.failureAnalysis }
+  }
+
+  $localizedPaperCard = if ($existing -and $existing.paperCard) {
+    $existing.paperCard
+  } elseif ($Analysis.paperCard) {
+    $Analysis.paperCard
+  } else {
+    $PaperCard
+  }
+  if ($Category -eq "paper" -and $localizedPaperCard) {
+    $result.paperCard = $localizedPaperCard
+  }
+  return $result
+}

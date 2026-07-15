@@ -159,6 +159,17 @@ function Assert-DailyPayload {
       throw "Article publication date is invalid: $($item.id)"
     }
 
+    $chinese = $item.translations.zh
+    if (-not $chinese -or -not $chinese.title -or -not $chinese.highlight -or -not $chinese.summary -or -not $chinese.failureAnalysis) {
+      throw "Every article must include a complete Simplified Chinese translation: $($item.id)"
+    }
+    if ($chinese.title -notmatch '[\u3400-\u9fff]') {
+      throw "Simplified Chinese article titles must contain Chinese characters: $($item.id)"
+    }
+    if ($chinese.highlight.Length -gt 260 -or (Test-ForbiddenHighlightOpening -Text ([string]$chinese.highlight))) {
+      throw "Simplified Chinese article highlight is invalid or template-styled: $($item.id)"
+    }
+
     $english = $item.translations.en
     if (-not $english -or -not $english.title -or -not $english.highlight -or -not $english.summary -or -not $english.failureAnalysis) {
       throw "Every article must include a complete English translation: $($item.id)"
@@ -169,17 +180,17 @@ function Assert-DailyPayload {
     }
 
     if ($item.category -eq "paper") {
-      if ($item.readabilityStatus -ne "open" -or -not $item.abstractUrl -or -not $item.paperCard -or -not $english.paperCard) {
+      if ($item.readabilityStatus -ne "open" -or -not $item.abstractUrl -or -not $item.paperCard -or -not $chinese.paperCard -or -not $english.paperCard) {
         throw "Every paper must be openly readable and include abstract and bilingual paper cards: $($item.id)"
       }
 
       foreach ($field in $paperFields) {
-        if (-not $item.paperCard.$field -or -not $english.paperCard.$field) {
+        if (-not $item.paperCard.$field -or -not $chinese.paperCard.$field -or -not $english.paperCard.$field) {
           throw "Paper card field '$field' is incomplete: $($item.id)"
         }
       }
 
-      if (@($item.paperCard.technicalTerms).Count -eq 0 -or @($english.paperCard.technicalTerms).Count -eq 0) {
+      if (@($item.paperCard.technicalTerms).Count -eq 0 -or @($chinese.paperCard.technicalTerms).Count -eq 0 -or @($english.paperCard.technicalTerms).Count -eq 0) {
         throw "Paper technical terms are incomplete: $($item.id)"
       }
     }
@@ -499,8 +510,9 @@ Known content: $SourceText
 
 $categoryGuide
 
-Return strict JSON only. Do not use Markdown or code fences:
+  Return strict JSON only. Do not use Markdown or code fences:
 {
+  "title": "A concise, faithful Simplified Chinese display title that preserves the source meaning and contains Chinese characters.",
   "highlight": "One faithful Chinese rendering of the strongest source sentence, about 25-55 Chinese characters, without template openings such as 本文介绍、文章指出、值得阅读、这篇论文提出.",
   "summary": "2-3 Chinese sentences explaining what this article/paper says and why it is worth reading.",
   $analysisGuide,
@@ -528,7 +540,7 @@ $translationGuide
     $content = [string]$response.choices[0].message.content
     $content = $content.Trim() -replace "^```json\s*", "" -replace "^```\s*", "" -replace "\s*```$", ""
     $parsed = $content | ConvertFrom-Json
-    if (-not $parsed.highlight -or -not $parsed.summary -or -not $parsed.failureAnalysis -or -not $parsed.translations.en.highlight -or -not $parsed.translations.en.summary -or -not $parsed.translations.en.failureAnalysis) {
+    if (-not $parsed.title -or $parsed.title -notmatch '[\u3400-\u9fff]' -or -not $parsed.highlight -or -not $parsed.summary -or -not $parsed.failureAnalysis -or -not $parsed.translations.en.title -or -not $parsed.translations.en.highlight -or -not $parsed.translations.en.summary -or -not $parsed.translations.en.failureAnalysis) {
       throw "DeepSeek returned incomplete summary JSON."
     }
     if ($Category -eq "paper") {
@@ -544,6 +556,7 @@ $translationGuide
     }
 
     $result = [ordered]@{
+      title = [string]$parsed.title
       highlight = [string]$parsed.highlight
       summary = [string]$parsed.summary
       failureAnalysis = [string]$parsed.failureAnalysis
@@ -581,7 +594,16 @@ $translationGuide
           technicalTerms = @($parsed.translations.en.paperCard.technicalTerms | ForEach-Object { [string]$_ })
         }
       }
-      $result.translations = [ordered]@{ en = $english }
+      $chinese = [ordered]@{
+        title = [string]$parsed.title
+        highlight = [string]$parsed.highlight
+        summary = [string]$parsed.summary
+        failureAnalysis = [string]$parsed.failureAnalysis
+      }
+      if ($Category -eq "paper" -and $result.paperCard) {
+        $chinese.paperCard = $result.paperCard
+      }
+      $result.translations = [ordered]@{ zh = $chinese; en = $english }
     }
     return $result
   } catch {
@@ -689,6 +711,10 @@ function New-PaperItem {
   if (-not $englishTranslation.paperCard) {
     $englishTranslation.paperCard = ConvertTo-EnglishPaperCardFallback -PaperCard $paperCard
   }
+  $chineseTranslation = Get-ChineseTranslationForAnalysis `
+    -Category "paper" `
+    -Analysis $analysis `
+    -PaperCard $paperCard
 
   [ordered]@{
     id = $Id
@@ -711,6 +737,7 @@ function New-PaperItem {
     summarySource = $analysis.summarySource
     sourceExcerpt = $analysis.sourceExcerpt
     translations = [ordered]@{
+      zh = $chineseTranslation
       en = $englishTranslation
     }
   }
@@ -801,6 +828,9 @@ function Get-OpenWorldNewsItems {
       summarySource = $analysis.summarySource
       sourceExcerpt = $analysis.sourceExcerpt
       translations = [ordered]@{
+        zh = Get-ChineseTranslationForAnalysis `
+          -Category "international" `
+          -Analysis $analysis
         en = Get-EnglishTranslationForAnalysis `
           -Category "international" `
           -Title ([string]$_.title) `
@@ -877,6 +907,9 @@ function Add-AiArticleAnalysis {
   $Item.summarySource = $analysis.summarySource
   $Item.sourceExcerpt = $analysis.sourceExcerpt
   $Item.translations = [ordered]@{
+      zh = Get-ChineseTranslationForAnalysis `
+        -Category "ai" `
+        -Analysis $analysis
       en = Get-EnglishTranslationForAnalysis `
         -Category "ai" `
         -Title ([string]$Item.title) `
