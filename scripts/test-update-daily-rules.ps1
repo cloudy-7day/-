@@ -75,6 +75,10 @@ if ($source -notmatch 'https://models\.github\.ai/inference/chat/completions' -o
   throw "Missing DeepSeek keys must fall back to DeepSeek V3 through GitHub Models."
 }
 
+if ($source -match '"deepseek-chat"') {
+  throw "The deprecated DeepSeek API model name must not remain in the active update script."
+}
+
 if ($source -notmatch 'function Invoke-DegradedArticleRecovery' -or $source -notmatch '\$batchSourceLimit\s*=\s*500' -or $source -notmatch 'response_format\s*=\s*@\{\s*type\s*=\s*"json_object"') {
   throw "GitHub Models fallback must batch all items into one token-bounded strict-JSON request."
 }
@@ -180,6 +184,9 @@ try {
   if ($incompleteAnalysis.summarySource -ne "source_extract") {
     throw "Incomplete DeepSeek JSON must fall back per item instead of failing the batch later."
   }
+  if ($capturedAnalysisBody -notmatch 'deepseek-v4-flash') {
+    throw "Primary DeepSeek analysis must use deepseek-v4-flash."
+  }
   function Invoke-JsonPostUtf8 {
     param([string]$Uri, [string]$JsonBody, [hashtable]$Headers)
     return [pscustomobject]@{
@@ -280,7 +287,7 @@ try {
   if ($recoveredBatch[1].translations.zh.title -ne "备用通道补齐的中文标题" -or $recoveredBatch[1].summarySource -ne "deepseek") {
     throw "A per-item DeepSeek degradation must be recovered through a bounded backup batch."
   }
-  if ($capturedAnalysisUri -ne "https://api.deepseek.com/chat/completions" -or $capturedAnalysisBody -notmatch 'deepseek-chat') {
+  if ($capturedAnalysisUri -ne "https://api.deepseek.com/chat/completions" -or $capturedAnalysisBody -notmatch 'deepseek-v4-flash') {
     throw "Configured DeepSeek credentials must route degraded recovery through DeepSeek instead of rate-limited GitHub Models."
   }
   if ($recoveredBatch[0].translations.zh.title -ne "已经完成的中文标题" -or $capturedAnalysisBody -match 'already-complete') {

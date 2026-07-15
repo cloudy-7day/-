@@ -432,7 +432,7 @@ function New-ArticleAnalysis {
   $analysisHeaders = @{}
   if ($env:DEEPSEEK_API_KEY) {
     $analysisUri = "https://api.deepseek.com/chat/completions"
-    $analysisModel = "deepseek-chat"
+    $analysisModel = "deepseek-v4-flash"
     $analysisHeaders.Authorization = "Bearer $env:DEEPSEEK_API_KEY"
   } else {
     return New-SourceExtractAnalysis `
@@ -640,7 +640,7 @@ function Invoke-DegradedArticleRecovery {
   if ($env:DEEPSEEK_API_KEY) {
     $recoveryProvider = "DeepSeek"
     $recoveryUri = "https://api.deepseek.com/chat/completions"
-    $recoveryModel = "deepseek-chat"
+    $recoveryModel = "deepseek-v4-flash"
     $recoveryHeaders = @{ Authorization = "Bearer $env:DEEPSEEK_API_KEY" }
     $recoveryAttempts = 2
     $recoveryDelaySeconds = 2
