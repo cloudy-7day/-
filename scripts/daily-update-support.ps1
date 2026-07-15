@@ -67,6 +67,74 @@ function Test-ForbiddenHighlightOpening {
   return [bool]($Text -match '^\s*(本文介绍|文章指出|值得阅读|这篇论文提出)')
 }
 
+function Get-CanonicalArticleUrl {
+  param([string]$Url)
+
+  $uri = $null
+  if (-not [uri]::TryCreate($Url, [System.UriKind]::Absolute, [ref]$uri) -or $uri.Scheme -notin @("http", "https")) {
+    return ""
+  }
+
+  $trackingNames = @(
+    "fbclid", "gclid", "mc_cid", "mc_eid", "ref", "ref_src", "source"
+  )
+  $queryPairs = @(
+    $uri.Query.TrimStart("?").Split("&", [System.StringSplitOptions]::RemoveEmptyEntries) |
+      Where-Object {
+        $name = [uri]::UnescapeDataString(([string]$_).Split("=", 2)[0]).ToLowerInvariant()
+        -not ($name.StartsWith("utm_") -or $trackingNames -contains $name)
+      } |
+      Sort-Object
+  )
+
+  $normalizedHost = $uri.Host.ToLowerInvariant()
+  if ($uri.HostNameType -eq [System.UriHostNameType]::IPv6) {
+    $normalizedHost = "[$normalizedHost]"
+  }
+  $authority = "$($uri.Scheme.ToLowerInvariant())://$normalizedHost"
+  if (-not $uri.IsDefaultPort) {
+    $authority += ":$($uri.Port)"
+  }
+  $path = $uri.AbsolutePath.TrimEnd("/")
+  $query = if ($queryPairs.Count -gt 0) { "?" + ($queryPairs -join "&") } else { "" }
+  return "$authority$path$query"
+}
+
+function Get-NormalizedArticleTitle {
+  param([string]$Title)
+
+  if ([string]::IsNullOrWhiteSpace($Title)) {
+    return ""
+  }
+  return (($Title.Normalize([Text.NormalizationForm]::FormKC).ToLowerInvariant()) -replace '[^\p{L}\p{N}]', '')
+}
+
+function Read-ArticleLedger {
+  param([string]$Path)
+
+  if (-not (Test-Path -LiteralPath $Path)) {
+    return [pscustomobject][ordered]@{ version = 1; urls = @(); titles = @() }
+  }
+  $ledger = Get-Content -Raw -Encoding UTF8 -LiteralPath $Path | ConvertFrom-Json
+  return [pscustomobject][ordered]@{
+    version = if ($ledger.version) { [int]$ledger.version } else { 1 }
+    urls = @($ledger.urls | Where-Object { $_ } | Sort-Object -Unique)
+    titles = @($ledger.titles | Where-Object { $_ } | Sort-Object -Unique)
+  }
+}
+
+function Test-ArticleSeen {
+  param(
+    $Article,
+    $Ledger
+  )
+
+  $canonicalUrl = Get-CanonicalArticleUrl -Url ([string]$Article.url)
+  $normalizedTitle = Get-NormalizedArticleTitle -Title ([string]$Article.title)
+  return ($canonicalUrl -and @($Ledger.urls) -contains $canonicalUrl) -or
+    ($normalizedTitle -and @($Ledger.titles) -contains $normalizedTitle)
+}
+
 function New-SourceExtractAnalysis {
   param(
     [string]$Category,
@@ -101,14 +169,7 @@ function New-SourceExtractAnalysis {
 function Get-ContentFingerprint {
   param([object[]]$Articles)
 
-  $urls = @($Articles | ForEach-Object {
-    $uri = [uri]([string]$_.url)
-    $builder = [System.UriBuilder]::new($uri)
-    $builder.Host = $builder.Host.ToLowerInvariant()
-    $builder.Scheme = $builder.Scheme.ToLowerInvariant()
-    $builder.Path = $builder.Path.TrimEnd('/')
-    $builder.Uri.AbsoluteUri
-  })
+  $urls = @($Articles | ForEach-Object { Get-CanonicalArticleUrl -Url ([string]$_.url) })
   $bytes = [System.Text.Encoding]::UTF8.GetBytes(($urls -join "`n"))
   $sha = [System.Security.Cryptography.SHA256]::Create()
   try {

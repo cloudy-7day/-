@@ -35,6 +35,17 @@ Assert-True (-not (Test-ForbiddenFallbackText -Text $analysis.summary)) "A real 
 Assert-True (Test-ForbiddenFallbackText -Text "Local fallback: article collected automatically") "Legacy local fallback must be forbidden."
 Assert-True (Test-ForbiddenFallbackText -Text "智能总结需要 DeepSeek key 和完整内容输入后生成。") "Legacy paper placeholder must be forbidden."
 
+$canonical = Get-CanonicalArticleUrl -Url "HTTPS://EXAMPLE.COM/a/?utm_source=newsletter&b=2&a=1#section"
+Assert-Equal $canonical "https://example.com/a?a=1&b=2" "Canonical URLs must strip tracking data, fragments, and normalize query order."
+Assert-Equal (Get-NormalizedArticleTitle -Title " Codex: Usage UP! ") "codexusageup" "Title identity must ignore punctuation and case."
+$ledger = [pscustomobject]@{
+  urls = @("https://example.com/a?a=1&b=2")
+  titles = @("alreadyused")
+}
+Assert-True (Test-ArticleSeen -Article ([pscustomobject]@{ url = "https://example.com/a/?b=2&utm_medium=email&a=1"; title = "Fresh wording" }) -Ledger $ledger) "A canonical ledger URL must reject a candidate."
+Assert-True (Test-ArticleSeen -Article ([pscustomobject]@{ url = "https://example.com/new"; title = "Already Used" }) -Ledger $ledger) "A normalized ledger title must reject a candidate."
+Assert-True (-not (Test-ArticleSeen -Article ([pscustomobject]@{ url = "https://example.com/fresh"; title = "Fresh title" }) -Ledger $ledger)) "A new identity must remain eligible."
+
 $a = @(
   [pscustomobject]@{ url = "HTTPS://EXAMPLE.COM/a/" },
   [pscustomobject]@{ url = "https://example.com/b?x=1" }
