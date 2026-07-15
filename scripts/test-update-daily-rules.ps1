@@ -214,6 +214,55 @@ try {
   if ($batchResult[0].translations.zh.title -ne "批量生成的中文标题" -or $batchResult[0].summarySource -ne "deepseek") {
     throw "Batch fallback must merge complete Chinese analysis into each article."
   }
+
+  function Invoke-JsonPostUtf8 {
+    param([string]$Uri, [string]$JsonBody, [hashtable]$Headers)
+    $script:capturedAnalysisBody = $JsonBody
+    return [pscustomobject]@{
+      choices = @([pscustomobject]@{
+        message = [pscustomobject]@{ content = '{"items":[{"id":"needs-recovery","title":"备用通道补齐的中文标题","highlight":"备用通道补齐了一句忠于来源的中文摘录。","summary":"备用通道补齐了中文摘要。","failureAnalysis":"备用通道补齐了关键判断。","englishTitle":"Recovered English title","englishHighlight":"The backup channel recovered this source-grounded sentence.","englishSummary":"The backup channel recovered the English summary.","englishFailureAnalysis":"The backup channel recovered the key takeaway."}]}' }
+      })
+    }
+  }
+  $env:DEEPSEEK_API_KEY = "configured-primary-key"
+  $script:capturedAnalysisBody = ""
+  $alreadyComplete = [ordered]@{
+    id = "already-complete"
+    category = "ai"
+    title = "Already complete"
+    source = "Test source"
+    sourceExcerpt = "Already complete source text."
+    highlight = "原有高亮"
+    summary = "原有摘要"
+    failureAnalysis = "原有判断"
+    summarySource = "deepseek"
+    translations = [ordered]@{
+      zh = [ordered]@{ title = "已经完成的中文标题"; highlight = "原有高亮"; summary = "原有摘要"; failureAnalysis = "原有判断" }
+      en = [ordered]@{ title = "Already complete"; highlight = "Existing highlight."; summary = "Existing summary."; failureAnalysis = "Existing takeaway." }
+    }
+  }
+  $needsRecovery = [ordered]@{
+    id = "needs-recovery"
+    category = "ai"
+    title = "Source title requiring recovery"
+    source = "Test source"
+    sourceExcerpt = "Specific source text for the degraded item."
+    highlight = "Specific source text for the degraded item."
+    summary = "Specific source text for the degraded item."
+    failureAnalysis = "Pending backup analysis."
+    summarySource = "source_extract"
+    translations = [ordered]@{
+      zh = [ordered]@{ title = ""; highlight = ""; summary = ""; failureAnalysis = "" }
+      en = [ordered]@{ title = "Source title requiring recovery"; highlight = "Source highlight."; summary = "Source summary."; failureAnalysis = "Pending." }
+    }
+  }
+  $recoveredBatch = @(Invoke-GitHubModelsBatchAnalysis -Articles @($alreadyComplete, $needsRecovery))
+  if ($recoveredBatch[1].translations.zh.title -ne "备用通道补齐的中文标题" -or $recoveredBatch[1].summarySource -ne "deepseek") {
+    throw "A per-item DeepSeek degradation must be recovered through GitHub Models even when the primary key is configured."
+  }
+  if ($recoveredBatch[0].translations.zh.title -ne "已经完成的中文标题" -or $capturedAnalysisBody -match 'already-complete') {
+    throw "Backup recovery must leave already-complete articles unchanged and out of the recovery prompt."
+  }
 } finally {
   $env:DEEPSEEK_API_KEY = $savedDeepSeekKey
   $env:GITHUB_TOKEN = $savedGitHubToken

@@ -633,12 +633,17 @@ $translationGuide
 function Invoke-GitHubModelsBatchAnalysis {
   param([object[]]$Articles)
 
-  if (-not $env:GITHUB_TOKEN -or $env:DEEPSEEK_API_KEY) {
+  if (-not $env:GITHUB_TOKEN) {
+    return $Articles
+  }
+
+  $recoveryArticles = @($Articles | Where-Object { $_.summarySource -eq "source_extract" })
+  if ($recoveryArticles.Count -eq 0) {
     return $Articles
   }
 
   $batchSourceLimit = 500
-  $inputs = @($Articles | ForEach-Object {
+  $inputs = @($recoveryArticles | ForEach-Object {
     $sourceText = [string]$_.sourceExcerpt
     if (-not $sourceText) { $sourceText = [string]$_.summary }
     if ($sourceText.Length -gt $batchSourceLimit) {
@@ -692,13 +697,13 @@ Return exactly:
   $content = ([string]$response.choices[0].message.content).Trim() -replace "^```json\s*", "" -replace "^```\s*", "" -replace "\s*```$", ""
   $parsed = $content | ConvertFrom-Json
   $outputs = @($parsed.items)
-  if ($outputs.Count -ne @($Articles).Count) {
-    throw "GitHub Models batch returned $($outputs.Count) items for $(@($Articles).Count) articles."
+  if ($outputs.Count -ne $recoveryArticles.Count) {
+    throw "GitHub Models batch returned $($outputs.Count) items for $($recoveryArticles.Count) degraded articles."
   }
   $byId = @{}
   foreach ($output in $outputs) { $byId[[string]$output.id] = $output }
 
-  foreach ($article in @($Articles)) {
+  foreach ($article in $recoveryArticles) {
     $analysis = $byId[[string]$article.id]
     if (-not $analysis -or -not $analysis.title -or $analysis.title -notmatch '[\u3400-\u9fff]' -or
       -not $analysis.highlight -or -not $analysis.summary -or -not $analysis.failureAnalysis -or
@@ -1561,7 +1566,7 @@ if ($paperShortfall -gt 0) {
   $articles += $aiItems | Select-Object -Skip 2 -First $paperShortfall
 }
 
-if (-not $env:DEEPSEEK_API_KEY -and $env:GITHUB_TOKEN) {
+if ($env:GITHUB_TOKEN -and @($articles | Where-Object { $_.summarySource -eq "source_extract" }).Count -gt 0) {
   $articles = @(Invoke-GitHubModelsBatchAnalysis -Articles $articles)
 }
 
