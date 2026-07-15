@@ -1,333 +1,296 @@
 {
-    "issueDate":  "2026-07-14",
-    "updateStatus":  "complete",
-    "contentFingerprint":  "ee6054ae839de0481b3c46be99a752314207cb95ae2f7c00e2dea2af3ba6420e",
-    "notes":  [
-                  "The visible library was rebuilt after removing legacy duplicates and incomplete translations.",
-                  "Every article includes source-grounded highlights and complete Simplified Chinese and English display fields.",
-                  "Historical URL and title identities remain in data/seen-articles.json to prevent removed items from returning."
-              ],
-    "articles":  [
-                     {
-                         "id":  "news-ro-khanna-west-bank",
-                         "category":  "international",
-                         "title":  "Rep. Ro Khanna on being detained by Israeli settlers in the West Bank",
-                         "source":  "NPR / WXXI News",
-                         "url":  "https://www.wxxinews.org/npr-news/2026-07-14/rep-ro-khanna-on-being-detained-by-israeli-settlers-in-the-west-bank",
-                         "publishedAt":  "2026-07-14T22:23:00Z",
-                         "scoreLabel":  "Open primary or publisher source",
-                         "selectionReason":  "Fresh, openly readable, source-grounded, and not present in the historical identity ledger.",
-                         "highlight":  "罗·卡纳称，以色列定居者和士兵在约旦河西岸暂时扣留了他的访问团。",
-                         "summary":  "美国众议员罗·卡纳接受 NPR 采访，讲述其团队在约旦河西岸访问时被定居者拦截、随后又被士兵暂时限制离开的经历。事件把定居者暴力、军方执法与美国对以政策同时推到台前。",
-                         "failureAnalysis":  "卡纳与以色列军方对士兵是否参与阻拦的说法存在分歧；判断后续影响要看独立影像、正式调查以及是否有人被追责。",
-                         "summarySource":  "deepseek",
-                         "sourceExcerpt":  "NPR\u0027s Ailsa Chang speaks with Rep. Ro Khanna about his recent trip to the occupied West Bank and temporary detention by Israeli settlers and soldiers.",
-                         "translations":  {
-                                              "zh":  {
-                                                         "title":  "美国议员罗·卡纳讲述约旦河西岸被扣经历",
-                                                         "highlight":  "罗·卡纳称，以色列定居者和士兵在约旦河西岸暂时扣留了他的访问团。",
-                                                         "summary":  "美国众议员罗·卡纳接受 NPR 采访，讲述其团队在约旦河西岸访问时被定居者拦截、随后又被士兵暂时限制离开的经历。事件把定居者暴力、军方执法与美国对以政策同时推到台前。",
-                                                         "failureAnalysis":  "卡纳与以色列军方对士兵是否参与阻拦的说法存在分歧；判断后续影响要看独立影像、正式调查以及是否有人被追责。"
-                                                     },
-                                              "en":  {
-                                                         "title":  "Ro Khanna recounts detention during a West Bank visit",
-                                                         "highlight":  "Ro Khanna described how settlers and soldiers temporarily detained his delegation in the occupied West Bank.",
-                                                         "summary":  "Representative Ro Khanna told NPR that settlers blocked his delegation during a West Bank visit and soldiers then delayed their departure. The incident raises questions about settler violence, military conduct, and U.S. policy toward Israel.",
-                                                         "failureAnalysis":  "Khanna and the Israeli military dispute the soldiers\u0027 role. Independent footage, an official investigation, and accountability will determine the broader significance."
-                                                     }
-                                          }
-                     },
-                     {
-                         "id":  "news-chipotle-mexico",
-                         "category":  "international",
-                         "title":  "Derision at US chain Chipotle’s plan to sell its Mexican food in Mexico",
-                         "source":  "The Guardian",
-                         "url":  "https://www.theguardian.com/world/2026/jul/14/derision-at-us-chain-chipotles-plan-to-sell-its-mexican-food-in-mexico",
-                         "publishedAt":  "2026-07-14T18:23:00Z",
-                         "scoreLabel":  "Open primary or publisher source",
-                         "selectionReason":  "Fresh, openly readable, source-grounded, and not present in the historical identity ledger.",
-                         "highlight":  "大胆啊——把企业版的墨西哥菜卖回墨西哥。",
-                         "summary":  "Chipotle 将在蒙特雷开出墨西哥首店，却因把美式墨西哥餐卖回原产文化市场而遭遇嘲讽与质疑。它既是一次跨境扩张，也是品牌能否把标准化体验与本地饮食认同重新对齐的压力测试。",
-                         "failureAnalysis":  "Taco Bell 等美国连锁在墨西哥的失败先例说明，熟悉的品类不等于可接受的品牌。首店客流之外，更应观察复购率、本地供应链和墨西哥城扩张是否兑现。",
-                         "summarySource":  "deepseek",
-                         "sourceExcerpt":  "A US chain’s plan to sell its version of Mexican food to Mexicans has prompted bemusement, skepticism and anger among local people.",
-                         "translations":  {
-                                              "zh":  {
-                                                         "title":  "Chipotle 首进墨西哥，当地人先泼冷水",
-                                                         "highlight":  "大胆啊——把企业版的墨西哥菜卖回墨西哥。",
-                                                         "summary":  "Chipotle 将在蒙特雷开出墨西哥首店，却因把美式墨西哥餐卖回原产文化市场而遭遇嘲讽与质疑。它既是一次跨境扩张，也是品牌能否把标准化体验与本地饮食认同重新对齐的压力测试。",
-                                                         "failureAnalysis":  "Taco Bell 等美国连锁在墨西哥的失败先例说明，熟悉的品类不等于可接受的品牌。首店客流之外，更应观察复购率、本地供应链和墨西哥城扩张是否兑现。"
-                                                     },
-                                              "en":  {
-                                                         "title":  "Chipotle enters Mexico and meets immediate skepticism",
-                                                         "highlight":  "Bold move selling Mexico a corporate version of Mexico.",
-                                                         "summary":  "Chipotle is opening its first Mexican location in Monterrey, prompting both curiosity and ridicule over selling an Americanized version of Mexican food in Mexico. The launch tests whether a standardized global brand can earn local cultural acceptance.",
-                                                         "failureAnalysis":  "Past failures by U.S. chains show that category familiarity does not guarantee brand fit. Repeat visits, local sourcing, and expansion beyond the first store matter more than launch attention."
-                                                     }
-                                          }
-                     },
-                     {
-                         "id":  "news-world-cup-productivity",
-                         "category":  "international",
-                         "title":  "People watching the World Cup during work hours is leading to a drop in productivity",
-                         "source":  "NPR / WUNC News",
-                         "url":  "https://www.wunc.org/2026-07-13/people-watching-the-world-cup-during-work-hours-is-leading-to-a-drop-in-productivity",
-                         "publishedAt":  "2026-07-13T20:02:00Z",
-                         "scoreLabel":  "Open primary or publisher source",
-                         "selectionReason":  "Fresh, openly readable, source-grounded, and not present in the historical identity ledger.",
-                         "highlight":  "一项调查称，世界杯热潮正让全球经济承受工作效率下降的代价。",
-                         "summary":  "NPR 以调查和小企业主的经历观察世界杯比赛落在工作时段时造成的注意力转移。它提醒管理者，全球同步的大型文化事件会在短期内改变出勤、排班与实际产出。",
-                         "failureAnalysis":  "生产力损失来自调查估算和个案，难以精确归因；更有价值的比较是弹性排班、集体观赛与强行禁看分别带来的成本。",
-                         "summarySource":  "deepseek",
-                         "sourceExcerpt":  "The global economy may be suffering from lost productivity as people get swept by World Cup fever, a survey shows.",
-                         "translations":  {
-                                              "zh":  {
-                                                         "title":  "世界杯撞上工作时间，全球生产力正在掉线",
-                                                         "highlight":  "一项调查称，世界杯热潮正让全球经济承受工作效率下降的代价。",
-                                                         "summary":  "NPR 以调查和小企业主的经历观察世界杯比赛落在工作时段时造成的注意力转移。它提醒管理者，全球同步的大型文化事件会在短期内改变出勤、排班与实际产出。",
-                                                         "failureAnalysis":  "生产力损失来自调查估算和个案，难以精确归因；更有价值的比较是弹性排班、集体观赛与强行禁看分别带来的成本。"
-                                                     },
-                                              "en":  {
-                                                         "title":  "World Cup viewing during work hours dents productivity",
-                                                         "highlight":  "A survey suggests World Cup fever is reducing productivity across the global economy.",
-                                                         "summary":  "NPR uses survey findings and a small-business example to examine how daytime World Cup matches divert attention from work. The story shows how synchronized cultural events can alter attendance, scheduling, and output.",
-                                                         "failureAnalysis":  "The loss is based on survey estimates and anecdotes rather than clean causal measurement. Flexible scheduling and coordinated viewing should be compared with outright restrictions."
-                                                     }
-                                          }
-                     },
-                     {
-                         "id":  "ai-alibaba-open-code-review",
-                         "category":  "ai",
-                         "title":  "alibaba/open-code-review",
-                         "source":  "GitHub",
-                         "url":  "https://github.com/alibaba/open-code-review",
-                         "publishedAt":  "2026-06-01T00:00:00Z",
-                         "scoreLabel":  "Open primary or publisher source",
-                         "selectionReason":  "Fresh, openly readable, source-grounded, and not present in the historical identity ledger.",
-                         "highlight":  "它把文件筛选、代码分组和评论定位交给确定性流程，把动态判断留给智能体。",
-                         "summary":  "Open Code Review 源自阿里内部工具，把确定性的文件覆盖、规则匹配和评论定位，与可检索上下文的 LLM 智能体组合起来。它关注的不是",
-                         "failureAnalysis":  "真正门槛仍是模型成本、私有代码合规和团队规则维护。项目宣称的大规模内部效果需要公开基准、误报率和跨语言数据进一步验证。",
-                         "summarySource":  "deepseek",
-                         "sourceExcerpt":  "The tool combines deterministic engineering with an agent: hard constraints cover file selection, bundling, rule matching and positioning, while the agent handles dynamic decisions.",
-                         "translations":  {
-                                              "zh":  {
-                                                         "title":  "阿里开源 AI 代码审查：把流程确定性还给工程",
-                                                         "highlight":  "它把文件筛选、代码分组和评论定位交给确定性流程，把动态判断留给智能体。",
-                                                         "summary":  "Open Code Review 源自阿里内部工具，把确定性的文件覆盖、规则匹配和评论定位，与可检索上下文的 LLM 智能体组合起来。它关注的不是",
-                                                         "failureAnalysis":  "真正门槛仍是模型成本、私有代码合规和团队规则维护。项目宣称的大规模内部效果需要公开基准、误报率和跨语言数据进一步验证。"
-                                                     },
-                                              "en":  {
-                                                         "title":  "Alibaba open-sources a deterministic-plus-agent code reviewer",
-                                                         "highlight":  "Deterministic pipelines handle coverage and positioning while an agent performs dynamic reasoning and context retrieval.",
-                                                         "summary":  "Open Code Review combines deterministic file selection, rule matching, and comment positioning with an LLM agent that can retrieve repository context. Its goal is stable coverage and accurate line-level feedback on large changesets.",
-                                                         "failureAnalysis":  "Adoption still depends on model cost, private-code compliance, and rule maintenance. Public benchmarks for false positives, language coverage, and the claimed internal scale remain important."
-                                                     }
-                                          },
-                         "aiArticleType":  "application_innovation",
-                         "evidenceAnchors":  [
-                                                 {
-                                                     "label":  "GitHub repository",
-                                                     "kind":  "primary"
-                                                 },
-                                                 {
-                                                     "label":  "Alibaba production claim",
-                                                     "kind":  "secondary"
-                                                 }
-                                             ],
-                         "evidenceLabel":  "Open source implementation + production claim",
-                         "hasPrimaryAnchor":  true,
-                         "requiresRiskAnalysis":  true,
-                         "aiSelectionScore":  827
-                     },
-                     {
-                         "id":  "ai-omnigent",
-                         "category":  "ai",
-                         "title":  "omnigent-ai/omnigent",
-                         "source":  "GitHub / Omnigent",
-                         "url":  "https://github.com/omnigent-ai/omnigent",
-                         "publishedAt":  "2026-06-09T00:00:00Z",
-                         "scoreLabel":  "Open primary or publisher source",
-                         "selectionReason":  "Fresh, openly readable, source-grounded, and not present in the historical identity ledger.",
-                         "highlight":  "同一层可组合 Claude Code、Codex 与自定义智能体，并用策略、沙箱和共享会话约束它们。",
-                         "summary":  "Omnigent 试图成为编程智能体之上的通用运行层：不同工具可以互换或组合，会话能够跨终端和网页共享，权限与成本则由状态化策略控制。它回应的是团队同时使用多种智能体后出现的治理和协作碎片化。",
-                         "failureAnalysis":  "项目仍处于 alpha，统一抽象可能跟不上各家智能体快速变化的能力边界。沙箱安全、凭据代理和跨工具会话一致性需要独立安全审计与长期稳定性数据。",
-                         "summarySource":  "deepseek",
-                         "sourceExcerpt":  "A common layer over Claude Code, Codex, Pi, and custom agents lets users swap or combine harnesses, enforce policies and sandboxing, and collaborate in the same live session.",
-                         "translations":  {
-                                              "zh":  {
-                                                         "title":  "Omnigent：给不同编程智能体加一层统一控制台",
-                                                         "highlight":  "同一层可组合 Claude Code、Codex 与自定义智能体，并用策略、沙箱和共享会话约束它们。",
-                                                         "summary":  "Omnigent 试图成为编程智能体之上的通用运行层：不同工具可以互换或组合，会话能够跨终端和网页共享，权限与成本则由状态化策略控制。它回应的是团队同时使用多种智能体后出现的治理和协作碎片化。",
-                                                         "failureAnalysis":  "项目仍处于 alpha，统一抽象可能跟不上各家智能体快速变化的能力边界。沙箱安全、凭据代理和跨工具会话一致性需要独立安全审计与长期稳定性数据。"
-                                                     },
-                                              "en":  {
-                                                         "title":  "Omnigent adds a shared control layer above coding agents",
-                                                         "highlight":  "One layer composes Claude Code, Codex, and custom agents while enforcing policies, sandboxing, and shared sessions.",
-                                                         "summary":  "Omnigent positions itself as a common runtime above multiple coding-agent harnesses, with interchangeable tools, shared live sessions, and stateful controls for permissions and spending. It targets the governance fragmentation created by multi-agent teams.",
-                                                         "failureAnalysis":  "The project is still alpha, and a common abstraction may lag rapidly changing agent capabilities. Sandbox security, credential brokering, and cross-tool session consistency need independent audits and operational evidence."
-                                                     }
-                                          },
-                         "aiArticleType":  "application_innovation",
-                         "evidenceAnchors":  [
-                                                 {
-                                                     "label":  "Open-source repository",
-                                                     "kind":  "primary"
-                                                 },
-                                                 {
-                                                     "label":  "Product documentation",
-                                                     "kind":  "primary"
-                                                 }
-                                             ],
-                         "evidenceLabel":  "Repository + product documentation",
-                         "hasPrimaryAnchor":  true,
-                         "requiresRiskAnalysis":  true,
-                         "aiSelectionScore":  100
-                     },
-                     {
-                         "id":  "paper-2607-05590",
-                         "category":  "paper",
-                         "title":  "DBNN: Neural Spike Classification Using a Deep Binarized Neural Network",
-                         "source":  "arXiv",
-                         "url":  "https://arxiv.org/pdf/2607.05590v1.pdf",
-                         "publishedAt":  "2026-07-06T19:41:50Z",
-                         "scoreLabel":  "Open primary or publisher source",
-                         "selectionReason":  "Fresh, openly readable, source-grounded, and not present in the historical identity ledger.",
-                         "highlight":  "DBNN 在合成与活体数据上达到 98.7% 中位准确率，ASIC 估算功耗仅 122 纳瓦。",
-                         "summary":  "论文为植入式脑机接口设计了硬件导向的深度二值神经网络，在设备端完成神经脉冲分类。它用很小的输入和无乘法器计算换取 98.7% 的中位准确率，并给出 FPGA 与 ASIC 的完整实现数据。",
-                         "failureAnalysis":  "结果来自合成和活体数据集及综合估算，尚不等于长期植入人体后的稳定功耗与准确率。电极漂移、组织变化和芯片制造后的实测仍是关键验证。",
-                         "summarySource":  "deepseek",
-                         "sourceExcerpt":  "The classifier achieves 98.7% median accuracy; ASIC synthesis estimates 0.014 mm2 and 122 nW at 20 kHz with multiplier-free operation.",
-                         "translations":  {
-                                              "zh":  {
-                                                         "title":  "无乘法器神经网络把植入式脑机接口降到 122 纳瓦",
-                                                         "highlight":  "DBNN 在合成与活体数据上达到 98.7% 中位准确率，ASIC 估算功耗仅 122 纳瓦。",
-                                                         "summary":  "论文为植入式脑机接口设计了硬件导向的深度二值神经网络，在设备端完成神经脉冲分类。它用很小的输入和无乘法器计算换取 98.7% 的中位准确率，并给出 FPGA 与 ASIC 的完整实现数据。",
-                                                         "failureAnalysis":  "结果来自合成和活体数据集及综合估算，尚不等于长期植入人体后的稳定功耗与准确率。电极漂移、组织变化和芯片制造后的实测仍是关键验证。",
-                                                         "paperCard":  {
-                                                                           "problem":  "植入式脑机接口需要在设备端完成神经脉冲分类，否则原始数据传输会消耗大量带宽和电能。",
-                                                                           "method":  "使用两个 256 神经元的二值隐藏层和定点输出层，在 16 个采样点的短波形上完成无乘法器分类。",
-                                                                           "difference":  "相较依赖浮点乘法和更长波形的网络，它把核心计算压缩成符号控制累加与位逻辑。",
-                                                                           "innovation":  "把深度二值神经网络真正落到 FPGA 与 45 纳米 ASIC 流程，并同时报告准确率、面积、延迟和功耗。",
-                                                                           "implementation":  "FPGA 原型以 50 MHz 运行，每个脉冲 528 个周期；ASIC 综合估算面积 0.014 平方毫米，在 20 kHz、1.1 V 下功耗 122 纳瓦。",
-                                                                           "applications":  "低功耗植入式脑机接口、闭环神经刺激和长期神经记录设备。",
-                                                                           "technicalTerms":  [
-                                                                                                  "脉冲分类：把不同神经元产生的电信号波形分开",
-                                                                                                  "二值神经网络：权重或激活主要使用一位表示",
-                                                                                                  "ASIC：为固定任务定制的集成电路"
-                                                                                              ]
-                                                                       }
-                                                     },
-                                              "en":  {
-                                                         "title":  "A multiplier-free spike sorter reaches 122 nW for implantable BCIs",
-                                                         "highlight":  "DBNN reaches 98.7% median accuracy and an estimated 122 nW ASIC power budget.",
-                                                         "summary":  "The paper presents a hardware-oriented deep binarized neural network for on-device spike sorting in implantable BCIs. Compact inputs and multiplier-free inference deliver 98.7% median accuracy with FPGA and ASIC implementation results.",
-                                                         "failureAnalysis":  "Synthetic and in-vivo datasets plus synthesis estimates do not establish long-term implanted performance. Electrode drift, tissue changes, and fabricated-chip measurements remain essential.",
-                                                         "paperCard":  {
-                                                                           "problem":  "Implantable BCIs need on-device neural spike classification to avoid costly raw-data telemetry.",
-                                                                           "method":  "Two 256-neuron binarized hidden layers and a fixed-point output layer classify compact 16-sample waveforms without multipliers.",
-                                                                           "difference":  "Unlike floating-point networks using longer inputs, computation is reduced to sign-controlled accumulation and bit logic.",
-                                                                           "innovation":  "The design is implemented in both FPGA and 45 nm ASIC flows with accuracy, area, latency, and power reported together.",
-                                                                           "implementation":  "The 50 MHz FPGA takes 528 cycles per spike; ASIC synthesis estimates 0.014 mm2 and 122 nW at 20 kHz and 1.1 V.",
-                                                                           "applications":  "Low-power implantable BCIs, closed-loop neural stimulation, and long-term neural recording.",
-                                                                           "technicalTerms":  [
-                                                                                                  "Spike sorting: separating waveforms produced by different neurons",
-                                                                                                  "BNN: a neural network using mostly one-bit weights or activations",
-                                                                                                  "ASIC: a chip customized for a fixed task"
-                                                                                              ]
-                                                                       }
-                                                     }
-                                          },
-                         "abstractUrl":  "https://arxiv.org/abs/2607.05590",
-                         "recommendationScore":  88,
-                         "paperTopic":  "brain_computer_interface",
-                         "qualityScore":  33,
-                         "readabilityStatus":  "open",
-                         "paperCard":  {
-                                           "problem":  "植入式脑机接口需要在设备端完成神经脉冲分类，否则原始数据传输会消耗大量带宽和电能。",
-                                           "method":  "使用两个 256 神经元的二值隐藏层和定点输出层，在 16 个采样点的短波形上完成无乘法器分类。",
-                                           "difference":  "相较依赖浮点乘法和更长波形的网络，它把核心计算压缩成符号控制累加与位逻辑。",
-                                           "innovation":  "把深度二值神经网络真正落到 FPGA 与 45 纳米 ASIC 流程，并同时报告准确率、面积、延迟和功耗。",
-                                           "implementation":  "FPGA 原型以 50 MHz 运行，每个脉冲 528 个周期；ASIC 综合估算面积 0.014 平方毫米，在 20 kHz、1.1 V 下功耗 122 纳瓦。",
-                                           "applications":  "低功耗植入式脑机接口、闭环神经刺激和长期神经记录设备。",
-                                           "technicalTerms":  [
-                                                                  "脉冲分类：把不同神经元产生的电信号波形分开",
-                                                                  "二值神经网络：权重或激活主要使用一位表示",
-                                                                  "ASIC：为固定任务定制的集成电路"
-                                                              ]
-                                       }
-                     },
-                     {
-                         "id":  "paper-2606-30319",
-                         "category":  "paper",
-                         "title":  "BrainJanus: A Unified Model for Understanding and Generation across Brain, Vision, and Language",
-                         "source":  "arXiv",
-                         "url":  "https://arxiv.org/pdf/2606.30319v1.pdf",
-                         "publishedAt":  "2026-06-29T14:02:15Z",
-                         "scoreLabel":  "Open primary or publisher source",
-                         "selectionReason":  "Fresh, openly readable, source-grounded, and not present in the historical identity ledger.",
-                         "highlight":  "统一脑信号分词器把连续神经活动映射到共享空间，支持脑信号与图像、文本之间的任意方向生成。",
-                         "summary":  "BrainJanus 把脑信号、视觉和语言放入同一个离散表示空间，用一个自回归架构同时完成刺激到脑活动的编码和脑活动到图像、文本的解码。它试图把以往割裂的脑科学任务变成可共享表示的通用模型。",
-                         "failureAnalysis":  "统一模型的优势来自多项基准，仍需检查跨受试者、跨设备和真实临床环境的稳定性。脑信号隐私、训练数据规模与生成结果被过度解读也是部署风险。",
-                         "summarySource":  "deepseek",
-                         "sourceExcerpt":  "BrainJanus introduces a Unified Brain Tokenizer and an all-in-one autoregressive architecture for image-to-brain, text-to-brain, brain-to-image, and brain-to-text generation.",
-                         "translations":  {
-                                              "zh":  {
-                                                         "title":  "BrainJanus 让大脑、视觉与语言在一个模型里双向转换",
-                                                         "highlight":  "统一脑信号分词器把连续神经活动映射到共享空间，支持脑信号与图像、文本之间的任意方向生成。",
-                                                         "summary":  "BrainJanus 把脑信号、视觉和语言放入同一个离散表示空间，用一个自回归架构同时完成刺激到脑活动的编码和脑活动到图像、文本的解码。它试图把以往割裂的脑科学任务变成可共享表示的通用模型。",
-                                                         "failureAnalysis":  "统一模型的优势来自多项基准，仍需检查跨受试者、跨设备和真实临床环境的稳定性。脑信号隐私、训练数据规模与生成结果被过度解读也是部署风险。",
-                                                         "paperCard":  {
-                                                                           "problem":  "过去的大脑编码和解码通常分开训练，也很少在同一空间里联合处理脑信号、图像与语言。",
-                                                                           "method":  "先用统一脑信号分词器把连续神经活动离散化，再用自回归模型通过下一个 token 预测完成任意方向生成。",
-                                                                           "difference":  "它不再分别维护图像到脑、脑到文本等单任务模型，而是在共享 Omni 空间里统一训练。",
-                                                                           "innovation":  "首次把大脑、视觉和语言的编码与生成整合为一个任意到任意框架，并报告零样本泛化与可解释脑区拓扑。",
-                                                                           "implementation":  "把神经动态量化为与视觉、语言对齐的离散 token，再用统一自回归架构处理图像到脑、文本到脑、脑到图像和脑到文本。",
-                                                                           "applications":  "脑信号解释、视觉刺激重建、辅助交流和跨模态神经科学研究。",
-                                                                           "technicalTerms":  [
-                                                                                                  "脑信号分词器：把连续神经活动转换为离散符号",
-                                                                                                  "自回归：根据已有 token 逐步预测下一个 token",
-                                                                                                  "零样本泛化：不针对新任务再训练也能完成推断"
-                                                                                              ]
-                                                                       }
-                                                     },
-                                              "en":  {
-                                                         "title":  "BrainJanus unifies brain, vision, and language generation",
-                                                         "highlight":  "A unified brain tokenizer supports generation between neural activity, images, and text in every direction.",
-                                                         "summary":  "BrainJanus places brain signals, vision, and language in one discrete representation space and uses a single autoregressive architecture for both neural encoding and decoding. It reframes isolated neuroscience tasks as a shared generative model.",
-                                                         "failureAnalysis":  "Benchmark gains still need validation across subjects, devices, and clinical conditions. Neural privacy, dataset scale, and overinterpretation of generated outputs are major deployment risks.",
-                                                         "paperCard":  {
-                                                                           "problem":  "Brain encoding and decoding are usually trained separately and rarely align neural activity, images, and language in one space.",
-                                                                           "method":  "A unified tokenizer discretizes neural dynamics, then an autoregressive model performs any-to-any generation by next-token prediction.",
-                                                                           "difference":  "Instead of separate image-to-brain or brain-to-text models, all directions share one Omni representation and architecture.",
-                                                                           "innovation":  "The work unifies brain, vision, and language generation while reporting zero-shot generalization and interpretable neural topography.",
-                                                                           "implementation":  "Neural dynamics become discrete tokens aligned with visual and language tokens, supporting image-to-brain, text-to-brain, brain-to-image, and brain-to-text tasks.",
-                                                                           "applications":  "Brain-signal interpretation, visual reconstruction, assistive communication, and multimodal neuroscience.",
-                                                                           "technicalTerms":  [
-                                                                                                  "Brain tokenizer: converts continuous neural activity into discrete symbols",
-                                                                                                  "Autoregressive model: predicts the next token from prior tokens",
-                                                                                                  "Zero-shot generalization: performs a new task without task-specific retraining"
-                                                                                              ]
-                                                                       }
-                                                     }
-                                          },
-                         "abstractUrl":  "https://arxiv.org/abs/2606.30319",
-                         "recommendationScore":  86,
-                         "paperTopic":  "brain_computer_interface",
-                         "qualityScore":  31,
-                         "readabilityStatus":  "open",
-                         "paperCard":  {
-                                           "problem":  "过去的大脑编码和解码通常分开训练，也很少在同一空间里联合处理脑信号、图像与语言。",
-                                           "method":  "先用统一脑信号分词器把连续神经活动离散化，再用自回归模型通过下一个 token 预测完成任意方向生成。",
-                                           "difference":  "它不再分别维护图像到脑、脑到文本等单任务模型，而是在共享 Omni 空间里统一训练。",
-                                           "innovation":  "首次把大脑、视觉和语言的编码与生成整合为一个任意到任意框架，并报告零样本泛化与可解释脑区拓扑。",
-                                           "implementation":  "把神经动态量化为与视觉、语言对齐的离散 token，再用统一自回归架构处理图像到脑、文本到脑、脑到图像和脑到文本。",
-                                           "applications":  "脑信号解释、视觉刺激重建、辅助交流和跨模态神经科学研究。",
-                                           "technicalTerms":  [
-                                                                  "脑信号分词器：把连续神经活动转换为离散符号",
-                                                                  "自回归：根据已有 token 逐步预测下一个 token",
-                                                                  "零样本泛化：不针对新任务再训练也能完成推断"
-                                                              ]
-                                       }
-                     }
-                 ]
+  "issueDate": "2026-07-14",
+  "updateStatus": "complete",
+  "contentFingerprint": "7225fe24e14e55449e90669816d91ce45c09752578e129665d59eadc93d739a1",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-11ee1753471643ec869a9ba489f49178",
+      "category": "international",
+      "title": "Ebola is spreading faster in eastern Congo than it can be tracked, as deaths pass 700",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/07/15/g-s1-133630/ebola-congo-deaths",
+      "publishedAt": "2026-07-15T05:39:55.0000000Z",
+      "scoreLabel": "Open RSS source",
+      "selectionReason": "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+      "highlight": "世界卫生组织称，刚果（金）东部80%的新增埃博拉病例来自未知传播链，表明疫情传播速度已超出卫生官员的追踪能力。",
+      "summary": "文章报道了刚果（金）东部埃博拉疫情的最新严峻形势：死亡人数已超过700人，且80%的新病例来自未知传播链，意味着疫情正在失控扩散。这凸显了当地公共卫生系统应对能力的不足，值得关注。",
+      "failureAnalysis": "关键启示：疫情传播速度超过追踪能力，导致防控措施难以有效实施。这提醒我们，在应对突发公共卫生事件时，快速建立监测和响应机制至关重要。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Eighty percent of new Ebola cases in eastern Congo are emerging from unknown chains of transmission, according to WHO, a sign the outbreak is spreading faster than health officials can track.",
+      "translations": {
+        "zh": {
+          "title": "刚果（金）东部埃博拉疫情失控，死亡人数超700",
+          "highlight": "世界卫生组织称，刚果（金）东部80%的新增埃博拉病例来自未知传播链，表明疫情传播速度已超出卫生官员的追踪能力。",
+          "summary": "文章报道了刚果（金）东部埃博拉疫情的最新严峻形势：死亡人数已超过700人，且80%的新病例来自未知传播链，意味着疫情正在失控扩散。这凸显了当地公共卫生系统应对能力的不足，值得关注。",
+          "failureAnalysis": "关键启示：疫情传播速度超过追踪能力，导致防控措施难以有效实施。这提醒我们，在应对突发公共卫生事件时，快速建立监测和响应机制至关重要。"
+        },
+        "en": {
+          "highlight": "Eighty percent of new Ebola cases in eastern Congo are emerging from unknown chains of transmission, according to WHO, a sign the outbreak is spreading faster than health officials can track.",
+          "summary": "The article reports that the Ebola outbreak in eastern Congo is worsening, with over 700 deaths and 80% of new cases from unknown transmission chains, indicating the outbreak is outpacing containment efforts. It highlights critical gaps in public health response.",
+          "failureAnalysis": "Key takeaway: The outbreak is spreading faster than tracking capabilities, undermining control measures. This underscores the need for rapid surveillance and response systems in health emergencies.",
+          "title": "Ebola spreading faster than trackable in eastern Congo, deaths pass 700"
+        }
+      }
+    },
+    {
+      "id": "news-fc0f1721700340e6bb2e5925827c8112",
+      "category": "international",
+      "title": "Killings continue on Del Monte farm in Kenya, families say, after G4S hired for security",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/jul/13/del-monte-pineapple-farm-kenya-deaths-g4s",
+      "publishedAt": "2026-07-13T14:00:49.0000000Z",
+      "scoreLabel": "Open RSS source",
+      "selectionReason": "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+      "highlight": "尽管德尔蒙特公司聘请英国安保公司G4S取代内部安保团队，其肯尼亚菠萝农场上仍持续发生杀人事件。",
+      "summary": "本文揭露了德尔蒙特公司在肯尼亚的菠萝农场尽管更换了安保公司，但暴力事件仍在继续。此前《卫报》曝光了该农场安保人员涉嫌非法侵入者遭殴打和杀害的指控。",
+      "failureAnalysis": "关键启示：即使更换为国际安保公司，若土地纠纷和执法合作问题未解决，暴力事件仍可能持续。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Exclusive: Three men killed in incidents over past year allegedly involving G4S guards, who replaced in-house team after previous deaths Bereaved families and politicians have raised alarm about continued killings on Del Monte’s pineapple farm in Kenya despite the company hiring a British security firm to replace its in-house security team after previous deaths were exposed by the Guardian. The multinational food company appointed G4S to guard the farm, which is estimated to cover at least 40 sq km, the area of a small city, after the Guardian detailed allegations of brutal assaults and killings of people suspected of trespassing on its land. Kenyan police have been working with G4S to guard the site.",
+      "translations": {
+        "zh": {
+          "title": "肯尼亚德尔蒙特大农场持续发生命案，英安保公司G4S接手后仍未能阻止",
+          "highlight": "尽管德尔蒙特公司聘请英国安保公司G4S取代内部安保团队，其肯尼亚菠萝农场上仍持续发生杀人事件。",
+          "summary": "本文揭露了德尔蒙特公司在肯尼亚的菠萝农场尽管更换了安保公司，但暴力事件仍在继续。此前《卫报》曝光了该农场安保人员涉嫌非法侵入者遭殴打和杀害的指控。",
+          "failureAnalysis": "关键启示：即使更换为国际安保公司，若土地纠纷和执法合作问题未解决，暴力事件仍可能持续。"
+        },
+        "en": {
+          "highlight": "Despite Del Monte hiring British security firm G4S to replace its in-house team, killings continue on its pineapple farm in Kenya.",
+          "summary": "This article reveals that violence persists on Del Monte's pineapple farm in Kenya despite a change in security contractor. The Guardian previously exposed allegations of brutal assaults and killings by the farm's security personnel against suspected trespassers.",
+          "failureAnalysis": "Key takeaway: Even with an international security firm, violence may continue if underlying land disputes and law enforcement collaboration are not addressed.",
+          "title": "Killings continue on Del Monte farm in Kenya, families say, after G4S hired for security"
+        }
+      }
+    },
+    {
+      "id": "news-8de0a568fb3c4cfea1b7574b93a28e48",
+      "category": "international",
+      "title": "Nigeria says army has killed 300 bandits in north-western state of Zamfara",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/jul/11/nigeria-army-kills-bandits-north-western-state-zamfara",
+      "publishedAt": "2026-07-11T11:59:11.0000000Z",
+      "scoreLabel": "Open RSS source",
+      "selectionReason": "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+      "highlight": "尼日利亚军方在扎姆法拉州古米地区的两天行动中“消灭了300多名恐怖分子”。",
+      "summary": "尼日利亚军方在西北部扎姆法拉州展开行动，击毙了300多名绑架和偷牛团伙成员。当地居民称，治安维持会成员也参与了这场持续整夜及次日上午的战斗。",
+      "failureAnalysis": "该报道展示了尼日利亚政府打击土匪的力度，但未提及行动对平民的影响或长期安全策略。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Vigilantes also took part in the fight that raged all night and the following morning, residents say Nigerian soldiers killed more than 300 members of kidnapping and cattle bandit gangs in the north-western state of Zamfara this week, according to a government official. Government troops targeted the gangs in Gummi district in a two-day operation that “led to the elimination of more than 300 terrorists”, Zamfara’s information commissioner, Mahmud Muhammad Dantawasa, said in a statement.",
+      "translations": {
+        "zh": {
+          "title": "尼日利亚军方在扎姆法拉州击毙300名土匪",
+          "highlight": "尼日利亚军方在扎姆法拉州古米地区的两天行动中“消灭了300多名恐怖分子”。",
+          "summary": "尼日利亚军方在西北部扎姆法拉州展开行动，击毙了300多名绑架和偷牛团伙成员。当地居民称，治安维持会成员也参与了这场持续整夜及次日上午的战斗。",
+          "failureAnalysis": "该报道展示了尼日利亚政府打击土匪的力度，但未提及行动对平民的影响或长期安全策略。"
+        },
+        "en": {
+          "highlight": "Nigerian soldiers killed more than 300 members of kidnapping and cattle bandit gangs in the north-western state of Zamfara this week.",
+          "summary": "Nigerian troops killed over 300 bandits in a two-day operation in Zamfara state. Vigilantes also participated in the fight that raged all night and the following morning.",
+          "failureAnalysis": "The report highlights the government's crackdown on banditry but does not address civilian impact or long-term security strategy.",
+          "title": "Nigeria says army has killed 300 bandits in north-western state of Zamfara"
+        }
+      }
+    },
+    {
+      "id": "ai-github-1263648864",
+      "category": "ai",
+      "title": "cobusgreyling/loop-engineering",
+      "source": "GitHub Search",
+      "url": "https://github.com/cobusgreyling/loop-engineering",
+      "abstractUrl": null,
+      "publishedAt": "2026-06-09T06:28:20.0000000Z",
+      "scoreLabel": "GitHub 7871 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该项目提供循环工程的实用模式、入门工具和CLI工具，帮助开发者使用AI编码代理构建系统。它包含循环审计、循环初始化和循环成本等工具，旨在简化代理编排流程。值得阅读因为它展示了如何在实际工程中应用AI代理模式。",
+      "failureAnalysis": "该项目可能因过度依赖特定AI代理框架而缺乏通用性，导致用户迁移成本高。此外，CLI工具和模式需要持续维护以适配快速变化的AI模型，若社区贡献不足可能停滞。最后，实际部署中代理的可靠性和成本控制仍是挑战。",
+      "aiSelectionScore": 7871,
+      "highlight": "设计系统来提示和编排代理，灵感来自Addy Osmani和Boris Cherny。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 7871 stars and recent public activity. Description: Practical patterns, starters & CLI tools for loop engineering with AI coding agents. Design systems that prompt and orchestrate agents (inspired by Addy Osmani and Boris Cherny).",
+      "translations": {
+        "zh": {
+          "title": "循环工程：AI编码代理的实用模式与CLI工具",
+          "highlight": "设计系统来提示和编排代理，灵感来自Addy Osmani和Boris Cherny。",
+          "summary": "该项目提供循环工程的实用模式、入门工具和CLI工具，帮助开发者使用AI编码代理构建系统。它包含循环审计、循环初始化和循环成本等工具，旨在简化代理编排流程。值得阅读因为它展示了如何在实际工程中应用AI代理模式。",
+          "failureAnalysis": "该项目可能因过度依赖特定AI代理框架而缺乏通用性，导致用户迁移成本高。此外，CLI工具和模式需要持续维护以适配快速变化的AI模型，若社区贡献不足可能停滞。最后，实际部署中代理的可靠性和成本控制仍是挑战。"
+        },
+        "en": {
+          "highlight": "Design systems that prompt and orchestrate agents, inspired by Addy Osmani and Boris Cherny.",
+          "summary": "This repository provides practical patterns, starters, and CLI tools for loop engineering with AI coding agents, including loop-audit, loop-init, and loop-cost. It is worth reading because it demonstrates how to apply AI agent patterns in real engineering.",
+          "failureAnalysis": "The project may fail due to lack of generality, high migration costs, and the need for continuous maintenance to keep up with rapidly evolving AI models. Deployment reliability and cost control remain challenges.",
+          "title": "Loop Engineering: Practical Patterns & CLI Tools for AI Coding Agents"
+        }
+      }
+    },
+    {
+      "id": "ai-feed-ac4846e1469f4c2587e2fc9bd3558fbe",
+      "category": "ai",
+      "title": "[AINews] not much happened today",
+      "source": "Latent Space",
+      "url": "https://www.latent.space/p/ainews-not-much-happened-today-c72",
+      "abstractUrl": null,
+      "publishedAt": "2026-07-14T23:54:07.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [],
+      "evidenceLabel": "No clear evidence",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
+      "summary": "本文是 Latent Space 的 AI 新闻简报，提到 Codex 用户增长迅速，每天新增 100 万用户。这反映了 AI 编程工具的普及趋势，值得关注。",
+      "failureAnalysis": "无失败分析。",
+      "aiSelectionScore": 100,
+      "highlight": "Codex 现在每天新增 100 万用户。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "a continuation: Codex adding 1M users a day now.",
+      "translations": {
+        "zh": {
+          "title": "AINews：今天没什么大事",
+          "highlight": "Codex 现在每天新增 100 万用户。",
+          "summary": "本文是 Latent Space 的 AI 新闻简报，提到 Codex 用户增长迅速，每天新增 100 万用户。这反映了 AI 编程工具的普及趋势，值得关注。",
+          "failureAnalysis": "无失败分析。"
+        },
+        "en": {
+          "highlight": "Codex is adding 1 million users a day now.",
+          "summary": "This is an AI news brief from Latent Space, noting that Codex is rapidly growing with 1 million new users per day. It highlights the trend of AI coding tools gaining popularity.",
+          "failureAnalysis": "No failure analysis.",
+          "title": "AINews: Not Much Happened Today"
+        }
+      }
+    },
+    {
+      "id": "paper-2607.05573",
+      "category": "paper",
+      "title": "Foundation Models for Automatic CAD Generation",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2607.05573v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2607.05573",
+      "publishedAt": "2026-07-06T19:17:49.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic ai; quality signal passed; application scenario is clear.",
+      "paperTopic": "ai",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 ai 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "关键技术词：保留原论文术语，并用白话解释其作用。"
+        ],
+        "whySelected": "Open full-text paper; topic ai; quality signal passed; application scenario is clear."
+      },
+      "highlight": "本文探讨了利用基础模型自动生成计算机辅助设计（CAD）模型的方法。",
+      "summary": "该论文提出利用基础模型实现CAD模型的自动生成，旨在提高设计效率。研究可能涉及深度学习技术，对工程设计自动化有潜在价值。",
+      "failureAnalysis": "由于仅提供摘要，缺乏具体方法、实验和结果细节，无法评估其技术可行性和实际效果。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Foundation Models for Automatic CAD Generation J. de Curt` o1,2, Victoria Guill´ en2,3 and I. de Zarz` a4 1 Department of Computer Applications in Science & Engineering, BARCELONA Supercomputing Center, 08034 Barcelona, Spain 2 Escuela T´ ecnica Superior de Ingenier´ ıa (ICAI), Universidad Pontificia Comillas, 28015 Madrid, Spain 3 Department of Artificial Intelligence, Chung-Ang University, Seoul, Republic of Korea 4 Human Centered AI, Data & Software, LUXEMBOURG Institute of Science and Technology, L-4362 Esch-sur-Alzette, Luxembourg Abstract.Recent advances in Large Language Models (LLMs) and Vision-Language Models (VLMs) have opened new pathways for the automatic generation of parametric three-dimensional designs from natural-language specifications.",
+      "translations": {
+        "zh": {
+          "title": "自动CAD生成的基础模型",
+          "highlight": "本文探讨了利用基础模型自动生成计算机辅助设计（CAD）模型的方法。",
+          "summary": "该论文提出利用基础模型实现CAD模型的自动生成，旨在提高设计效率。研究可能涉及深度学习技术，对工程设计自动化有潜在价值。",
+          "failureAnalysis": "由于仅提供摘要，缺乏具体方法、实验和结果细节，无法评估其技术可行性和实际效果。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 ai 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "关键技术词：保留原论文术语，并用白话解释其作用。"
+            ],
+            "whySelected": "Open full-text paper; topic ai; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "Foundation Models for Automatic CAD Generation",
+          "highlight": "This paper explores methods for automatically generating computer-aided design (CAD) models using foundation models.",
+          "summary": "The paper proposes using foundation models to automatically generate CAD models, aiming to improve design efficiency. The research may involve deep learning techniques and has potential value for engineering design automation.",
+          "failureAnalysis": "As only the abstract is provided, lacking specific methods, experiments, and results, it is impossible to assess technical feasibility and practical effectiveness.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "关键技术词：保留原论文术语，并用白话解释其作用。"
+            ],
+            "whySelected": "Open full-text paper; topic ai; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-github-1229284184",
+      "category": "ai",
+      "title": "WenyuChiou/awesome-agentic-ai-zh",
+      "source": "GitHub Search",
+      "url": "https://github.com/WenyuChiou/awesome-agentic-ai-zh",
+      "abstractUrl": null,
+      "publishedAt": "2026-05-04T22:18:51.0000000Z",
+      "scoreLabel": "GitHub 4528 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该项目是一个面向中文开发者的 AI Agent 学习路线图，从 LLM 基础到多智能体系统，提供了 240 多个精选资源和动手实例。它适合希望系统学习 Agent 构建的开发者，尤其是需要中文资料的学习者。",
+      "failureAnalysis": "该项目作为学习资源，本身不直接解决商业问题，可能因内容更新不及时或缺乏深度实践指导而价值有限。此外，AI Agent 领域发展迅速，路线图可能很快过时，需要持续维护。",
+      "aiSelectionScore": 4528,
+      "highlight": "三语（繁中/英文/简中）AI agent 学习路线图，包含 240+ 精选资源和动手实例。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 4528 stars and recent public activity. Description: A trilingual (繁中 / English / 简中) learning roadmap for agentic AI: from LLM basics to multi-agent systems, with 240+ curated resources and hands-on examples.",
+      "translations": {
+        "zh": {
+          "title": "AI Agent 学习路线图：从 LLM 基础到多智能体系统",
+          "highlight": "三语（繁中/英文/简中）AI agent 学习路线图，包含 240+ 精选资源和动手实例。",
+          "summary": "该项目是一个面向中文开发者的 AI Agent 学习路线图，从 LLM 基础到多智能体系统，提供了 240 多个精选资源和动手实例。它适合希望系统学习 Agent 构建的开发者，尤其是需要中文资料的学习者。",
+          "failureAnalysis": "该项目作为学习资源，本身不直接解决商业问题，可能因内容更新不及时或缺乏深度实践指导而价值有限。此外，AI Agent 领域发展迅速，路线图可能很快过时，需要持续维护。"
+        },
+        "en": {
+          "highlight": "A trilingual (Traditional Chinese/English/Simplified Chinese) learning roadmap for agentic AI with 240+ curated resources and hands-on examples.",
+          "summary": "This project provides a learning roadmap for AI agents, covering from LLM basics to multi-agent systems, with over 240 curated resources and hands-on examples. It is valuable for Chinese-speaking developers who want to systematically learn agent building.",
+          "failureAnalysis": "As a learning resource, it does not directly solve business problems and may become outdated quickly due to the fast pace of AI agent development. Continuous maintenance is required to remain relevant.",
+          "title": "AI Agent Learning Roadmap: From LLM Basics to Multi-Agent Systems"
+        }
+      }
+    }
+  ]
 }
