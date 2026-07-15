@@ -54,4 +54,17 @@ assert.equal(
   core.getArticleHighlight({ summary: "这篇论文提出了一种可检查的结构推理方法。值得阅读。" }, "zh"),
   "一种可检查的结构推理方法。",
 );
+assert.equal(
+  core.getArticleHighlight({
+    title: "边境会谈重新启动",
+    summary: "Local fallback: news candidate collected automatically.",
+    translations: {
+      en: {
+        title: "Border talks resume",
+        summary: "Local English fallback: read the source and identify the event.",
+      },
+    },
+  }, "en"),
+  "Border talks resume",
+);
 console.log("Site core tests passed.");

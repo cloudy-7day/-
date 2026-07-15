@@ -121,18 +121,25 @@
       .trim();
   }
 
+  function isPlaceholderHighlight(value) {
+    return /Local (?:English )?fallback|candidate collected automatically|智能总结需要\s*DeepSeek\s*key|read the source and/i.test(String(value || ""));
+  }
+
   function getArticleHighlight(article, language) {
     const localized = getLocalizedArticle(article, language);
     const explicit = cleanHighlightOpening(localized?.highlight);
-    if (explicit) return explicit;
+    if (explicit && !isPlaceholderHighlight(explicit)) return explicit;
 
     const summary = String(localized?.summary || "").replace(/\s+/g, " ").trim();
     const sentences = summary.match(/[^.!?。！？]+[.!?。！？]?/g) || [];
     for (const sentence of sentences) {
+      if (isPlaceholderHighlight(sentence)) continue;
       const cleaned = cleanHighlightOpening(sentence);
       if (cleaned.length >= 4) return cleaned.slice(0, 180).trim();
     }
-    return cleanHighlightOpening(summary).slice(0, 180).trim();
+    const fallback = cleanHighlightOpening(summary).slice(0, 180).trim();
+    if (fallback && !isPlaceholderHighlight(fallback)) return fallback;
+    return cleanHighlightOpening(localized?.title).slice(0, 180).trim();
   }
 
   return {
