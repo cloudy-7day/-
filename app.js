@@ -3,47 +3,48 @@ const state = {
   issueDate: "",
   dataPath: "data/articles.json",
   language: "zh",
-  detailPage: 1,
   archives: [],
 };
 
 const app = document.querySelector("#app");
 const routeStatus = document.querySelector("#route-status");
+const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+let activeSceneAnimation = 0;
+let homeSceneProgress = 0;
+let touchStartY = null;
 
 const copy = {
   zh: {
     daily: "每日七闻",
-    browse: "择一卷，启封细读",
     source: "前往原文",
     abstract: "论文摘要",
     back: "返回卷首",
-    brief: "简介",
-    associations: "延伸联想",
-    next: "翻至下一页",
-    previous: "返回上一页",
     archive: "往日卷册",
     today: "今日",
     readTime: "预计阅读",
     minute: "分钟",
     empty: "此卷今日暂无条目",
     loadingError: "今日卷册暂未展开，请稍后重试。",
+    sayWhat: "这件事在说什么",
+    consider: "顺手想一想",
+    enter: "进入每日七闻",
+    articleUnit: "篇",
   },
   en: {
     daily: "Seven Daily Notes",
-    browse: "Choose a volume to begin",
     source: "Read source",
     abstract: "View abstract",
     back: "Back to volume",
-    brief: "Brief",
-    associations: "Associations",
-    next: "Turn the page",
-    previous: "Previous page",
     archive: "Past issues",
     today: "Today",
     readTime: "Reading time",
     minute: "min",
     empty: "No entries in this volume today",
     loadingError: "The daily volume could not be opened. Please try again.",
+    sayWhat: "What it says",
+    consider: "Consider next",
+    enter: "Enter today’s notes",
+    articleUnit: "items",
   },
 };
 
@@ -85,15 +86,13 @@ function renderHome() {
   const grouped = SiteCore.groupArticles(state.articles);
   const cards = Object.entries(SiteCore.CATEGORY_CONFIG).map(([key, config], index) => {
     const title = state.language === "en" ? config.en : config.zh;
-    const kicker = state.language === "en" ? config.kickerEn : config.kickerZh;
     return `
       <a class="theme-card theme-card--${key}" href="#/category/${key}">
-        <span class="theme-number">卷 ${String(index + 1).padStart(2, "0")}</span>
+        <span class="theme-number">${String(index + 1).padStart(2, "0")}</span>
         <img src="assets/${config.creature}-transparent.png" alt="" aria-hidden="true">
         <span class="theme-card-copy">
-          <small>${escapeHtml(kicker)}</small>
           <strong>${escapeHtml(title)}</strong>
-          <em>${grouped[key].length} 篇</em>
+          <em>${grouped[key].length} ${t("articleUnit")}</em>
         </span>
       </a>`;
   }).join("");
@@ -105,41 +104,35 @@ function renderHome() {
         <div class="hero-copy">
           <p class="hero-overline">THE LOST CREATURES OF SHAN HAI JING</p>
           <h1 id="hero-title" class="hero-title">山海经的漏网之鱼</h1>
-          <p class="hero-subtitle">异闻、机巧与格物，藏入每日七篇。</p>
         </div>
-        <div class="theme-gate" aria-label="${t("browse")}">
-          <header class="theme-heading">
-            <p>${t("daily")} · ${escapeHtml(formatDate(state.issueDate))}</p>
-            <h2>${t("browse")}</h2>
-          </header>
+        <div class="theme-gate" aria-label="${t("daily")}">
+          <p class="theme-date">${t("daily")} · ${escapeHtml(formatDate(state.issueDate))}</p>
           <div class="theme-list">${cards}</div>
           <div class="home-archive">${renderArchiveControls()}</div>
         </div>
-        <div class="scroll-cue"><span>SCROLL</span><i aria-hidden="true"></i></div>
+        <button class="scroll-cue enter-button" type="button" aria-label="${t("enter")}">
+          <span>SCROLL</span><i aria-hidden="true"></i>
+        </button>
       </div>
     </section>`;
 
   document.body.classList.add("is-home");
-  requestAnimationFrame(updateIntroProgress);
-  setRouteStatus("首页");
+  homeSceneProgress = getHomeScrollProgress();
+  renderHomeScene(reducedMotion.matches ? 1 : homeSceneProgress);
+  setRouteStatus(state.language === "en" ? "Home" : "首页");
 }
 
 function renderIndexCard(article, index, position) {
   const localized = SiteCore.getLocalizedArticle(article, state.language);
-  const summarySourceLabel = SiteCore.getSummarySourceLabel(article, state.language);
-  const summarySourceMarkup = summarySourceLabel
-    ? `<small class="summary-source-label">${escapeHtml(summarySourceLabel)}</small>`
-    : "";
+  const highlight = SiteCore.getArticleHighlight(article, state.language);
   return `
     <a class="index-card" href="${SiteCore.getArticleRoute(state.issueDate, index)}">
       <span class="index-number">${String(position + 1).padStart(2, "0")}</span>
       <span class="index-copy">
         <small>${escapeHtml(article.source)} · ${escapeHtml(formatDate(article.publishedAt?.slice(0, 10)))}</small>
         <strong>${escapeHtml(localized.title)}</strong>
-        ${summarySourceMarkup}
-        <span>${escapeHtml(localized.summary)}</span>
+        <span class="index-highlight">${escapeHtml(highlight)}</span>
       </span>
-      <b>启封细读&nbsp;↗</b>
     </a>`;
 }
 
@@ -149,14 +142,13 @@ function renderCategory(category) {
     .map((article, index) => ({ article, index }))
     .filter(({ article }) => article.category === category);
   const title = state.language === "en" ? config.en : config.zh;
-  const kicker = state.language === "en" ? config.kickerEn : config.kickerZh;
 
   document.body.classList.remove("is-home");
   app.innerHTML = `
     <section class="category-view page-view">
       <header class="category-heading">
         <a href="#/home">← ${t("back")}</a>
-        <div><p>${escapeHtml(kicker)}</p><h1>${escapeHtml(title)}</h1></div>
+        <h1>${escapeHtml(title)}</h1>
         ${renderArchiveControls()}
       </header>
       <div class="category-rule" aria-hidden="true"></div>
@@ -195,72 +187,36 @@ function renderArticle(route) {
     <article class="detail-view page-view">
       <header class="detail-topline">
         <a href="#/category/${article.category}">← ${escapeHtml(categoryTitle)}</a>
-        <span>卷 ${String(route.index + 1).padStart(2, "0")} · 条目</span>
-        <span class="detail-progress">1 / 2</span>
+        <span>${escapeHtml(article.source)} · ${escapeHtml(formatDate(state.issueDate))}</span>
       </header>
 
-      <section class="detail-page" data-detail-page="1">
-        <div class="detail-hero">
-          <p>${escapeHtml(article.source)} · ${escapeHtml(formatDate(state.issueDate))}</p>
-          <h1 tabindex="-1">${escapeHtml(localized.title)}</h1>
-          <div class="detail-meta">
-            <span>${escapeHtml(categoryTitle)}</span>
-            <span>${t("readTime")} ${readingTime} ${t("minute")}</span>
-            <span>${escapeHtml(article.scoreLabel || "Curated")}</span>
-          </div>
+      <div class="detail-hero">
+        <h1 tabindex="-1">${escapeHtml(localized.title)}</h1>
+        <div class="detail-meta">
+          <span>${escapeHtml(categoryTitle)}</span>
+          <span>${t("readTime")} ${readingTime} ${t("minute")}</span>
+          <span>${escapeHtml(article.scoreLabel || "Curated")}</span>
         </div>
-        <div class="detail-spread">
-          <div class="detail-copy">
-            <p class="section-kicker">BRIEF / ${t("brief")}</p>
-            <h2>这件事在说什么</h2>
-            ${summarySourceMarkup}
-            <p class="detail-summary">${escapeHtml(localized.summary)}</p>
-          </div>
-          <figure class="detail-illustration">
-            <img src="assets/${config.creature}-transparent.png" alt="" aria-hidden="true">
-          </figure>
-        </div>
-      </section>
+      </div>
 
-      <section class="detail-page" data-detail-page="2" hidden>
-        <div class="detail-spread detail-spread--second">
-          <div class="detail-copy">
-            <p class="section-kicker">ASSOCIATIONS / ${t("associations")}</p>
-            <h2 tabindex="-1">顺手想一想</h2>
-            <div class="association-list">${associationMarkup(associations)}</div>
-            <div class="source-actions">
-              <a href="${escapeHtml(originalUrl)}" target="_blank" rel="noopener noreferrer">${t("source")} ↗</a>
-              ${abstractUrl !== "#" ? `<a href="${escapeHtml(abstractUrl)}" target="_blank" rel="noopener noreferrer">${t("abstract")} ↗</a>` : ""}
-            </div>
-          </div>
-          <figure class="detail-illustration detail-illustration--quiet">
-            <img src="assets/${config.creature}-transparent.png" alt="" aria-hidden="true">
-          </figure>
+      <section class="detail-content">
+        <div class="detail-primary">
+          <h2>${t("sayWhat")}</h2>
+          ${summarySourceMarkup}
+          <p class="detail-summary">${escapeHtml(localized.summary)}</p>
         </div>
+        <aside class="detail-secondary">
+          <h2>${t("consider")}</h2>
+          <div class="association-list">${associationMarkup(associations)}</div>
+          <div class="source-actions">
+            <a href="${escapeHtml(originalUrl)}" target="_blank" rel="noopener noreferrer">${t("source")} ↗</a>
+            ${abstractUrl !== "#" ? `<a href="${escapeHtml(abstractUrl)}" target="_blank" rel="noopener noreferrer">${t("abstract")} ↗</a>` : ""}
+          </div>
+        </aside>
       </section>
-
-      <footer class="detail-footer">
-        <button class="detail-page-toggle" type="button" data-next-page="2">${t("next")} <span>→</span></button>
-      </footer>
     </article>`;
-  setDetailPage(1);
+  document.querySelector(".detail-hero h1")?.focus({ preventScroll: true });
   setRouteStatus(localized.title);
-}
-
-function setDetailPage(page) {
-  state.detailPage = page === 2 ? 2 : 1;
-  document.querySelectorAll("[data-detail-page]").forEach((panel) => {
-    panel.hidden = Number(panel.dataset.detailPage) !== state.detailPage;
-  });
-  const progress = document.querySelector(".detail-progress");
-  if (progress) progress.textContent = `${state.detailPage} / 2`;
-  const button = document.querySelector(".detail-page-toggle");
-  if (button) {
-    const nextPage = state.detailPage === 1 ? 2 : 1;
-    button.dataset.nextPage = String(nextPage);
-    button.innerHTML = `${state.detailPage === 1 ? t("next") : t("previous")} <span>${state.detailPage === 1 ? "→" : "←"}</span>`;
-  }
-  document.querySelector(`[data-detail-page="${state.detailPage}"] h1, [data-detail-page="${state.detailPage}"] h2`)?.focus({ preventScroll: true });
 }
 
 function renderNotFound() {
@@ -270,11 +226,102 @@ function renderNotFound() {
 }
 
 function renderRoute() {
+  cancelAnimationFrame(activeSceneAnimation);
+  activeSceneAnimation = 0;
   const route = SiteCore.parseRoute(location.hash);
   if (route.name === "home") return renderHome();
   if (route.name === "category") return renderCategory(route.category);
   if (route.name === "article") return renderArticle(route);
   return renderNotFound();
+}
+
+function getHomeScrollProgress() {
+  const journey = document.querySelector(".intro-journey");
+  if (!journey) return homeSceneProgress;
+  const distance = Math.max(1, journey.offsetHeight - innerHeight);
+  return Math.min(1, Math.max(0, (scrollY - journey.offsetTop) / distance));
+}
+
+function renderHomeScene(progress) {
+  const journey = document.querySelector(".intro-journey");
+  if (!journey) return;
+  const value = Math.min(1, Math.max(0, Number(progress) || 0));
+  const hero = MotionCore.heroFrame(value);
+  const heroCopy = journey.querySelector(".hero-copy");
+  const gate = journey.querySelector(".theme-gate");
+  const date = journey.querySelector(".theme-date");
+  const cue = journey.querySelector(".scroll-cue");
+  const gateProgress = Math.min(1, Math.max(0, (value - 0.2) / 0.5));
+
+  if (heroCopy) {
+    heroCopy.style.opacity = String(hero.opacity);
+    heroCopy.style.transform = `translateY(${hero.yVh}vh) scale(${hero.scale})`;
+    heroCopy.style.filter = `blur(${hero.blurPx}px)`;
+  }
+  if (gate) {
+    gate.style.opacity = String(gateProgress);
+    gate.style.pointerEvents = value > 0.92 ? "auto" : "none";
+  }
+  if (date) {
+    date.style.opacity = String(gateProgress);
+    date.style.transform = `translateY(${18 * (1 - gateProgress)}vh)`;
+  }
+  journey.querySelectorAll(".theme-card").forEach((card, index) => {
+    const frame = MotionCore.cardFrame(value, index);
+    card.style.opacity = String(frame.opacity);
+    card.style.transform = `translateY(${frame.yVh}vh) scale(${frame.scale})`;
+    card.style.filter = `saturate(${frame.saturation}) blur(${frame.blurPx}px)`;
+  });
+  if (cue) cue.style.opacity = String(Math.max(0, 0.65 * (1 - value * 3)));
+  journey.classList.toggle("intro-complete", value > 0.92);
+  homeSceneProgress = value;
+}
+
+function animateHomeScene(targetProgress) {
+  const journey = document.querySelector(".intro-journey");
+  if (!journey) return;
+  cancelAnimationFrame(activeSceneAnimation);
+  if (reducedMotion.matches) {
+    renderHomeScene(1);
+    return;
+  }
+
+  const startProgress = homeSceneProgress;
+  const target = targetProgress > startProgress ? 1 : 0;
+  const distance = Math.max(1, journey.offsetHeight - innerHeight);
+  const startTime = performance.now();
+  const duration = Math.max(320, MotionCore.durationMs * Math.abs(target - startProgress));
+
+  function step(now) {
+    const elapsed = Math.min(1, (now - startTime) / duration);
+    const eased = elapsed * elapsed * (3 - 2 * elapsed);
+    const progress = startProgress + (target - startProgress) * eased;
+    renderHomeScene(progress);
+    scrollTo({ top: journey.offsetTop + distance * progress, behavior: "instant" });
+    if (elapsed < 1) {
+      activeSceneAnimation = requestAnimationFrame(step);
+    } else {
+      activeSceneAnimation = 0;
+      renderHomeScene(target);
+    }
+  }
+
+  activeSceneAnimation = requestAnimationFrame(step);
+}
+
+function handleWheel(event) {
+  if (!document.body.classList.contains("is-home") || Math.abs(event.deltaY) < 8) return;
+  event.preventDefault();
+  animateHomeScene(event.deltaY > 0 ? 1 : 0);
+}
+
+function handleHomeKey(event) {
+  if (!document.body.classList.contains("is-home")) return;
+  const down = ["ArrowDown", "PageDown", " "].includes(event.key);
+  const up = ["ArrowUp", "PageUp", "Home"].includes(event.key);
+  if (!down && !up) return;
+  event.preventDefault();
+  animateHomeScene(down ? 1 : 0);
 }
 
 async function loadArticles(path = state.dataPath) {
@@ -307,15 +354,6 @@ function setLanguage(language) {
   renderRoute();
 }
 
-function updateIntroProgress() {
-  const journey = document.querySelector(".intro-journey");
-  if (!journey) return;
-  const distance = Math.max(1, journey.offsetHeight - innerHeight);
-  const progress = Math.min(1, Math.max(0, -journey.getBoundingClientRect().top / distance));
-  document.documentElement.style.setProperty("--intro-progress", progress.toFixed(4));
-  journey.classList.toggle("intro-complete", progress > 0.68);
-}
-
 function setRouteStatus(message) {
   routeStatus.textContent = message;
 }
@@ -334,20 +372,36 @@ function updateClock() {
 }
 
 window.addEventListener("hashchange", () => {
-  state.detailPage = 1;
-  document.documentElement.style.setProperty("--intro-progress", "0");
-  renderRoute();
+  cancelAnimationFrame(activeSceneAnimation);
+  activeSceneAnimation = 0;
   scrollTo({ top: 0, behavior: "instant" });
+  renderRoute();
 });
-window.addEventListener("scroll", updateIntroProgress, { passive: true });
-window.addEventListener("resize", updateIntroProgress);
+window.addEventListener("wheel", handleWheel, { passive: false });
+window.addEventListener("keydown", handleHomeKey);
+window.addEventListener("scroll", () => {
+  if (document.body.classList.contains("is-home") && !activeSceneAnimation && !reducedMotion.matches) {
+    renderHomeScene(getHomeScrollProgress());
+  }
+}, { passive: true });
+window.addEventListener("resize", () => renderHomeScene(reducedMotion.matches ? 1 : getHomeScrollProgress()));
+window.addEventListener("touchstart", (event) => {
+  touchStartY = event.touches[0]?.clientY ?? null;
+}, { passive: true });
+window.addEventListener("touchend", (event) => {
+  if (touchStartY === null || !document.body.classList.contains("is-home")) return;
+  const endY = event.changedTouches[0]?.clientY ?? touchStartY;
+  const delta = touchStartY - endY;
+  touchStartY = null;
+  if (Math.abs(delta) >= 30) animateHomeScene(delta > 0 ? 1 : 0);
+}, { passive: true });
+reducedMotion.addEventListener?.("change", () => renderHomeScene(reducedMotion.matches ? 1 : getHomeScrollProgress()));
 
 document.addEventListener("click", (event) => {
   const languageButton = event.target.closest("[data-language]");
   if (languageButton) setLanguage(languageButton.dataset.language);
 
-  const pageButton = event.target.closest(".detail-page-toggle");
-  if (pageButton) setDetailPage(Number(pageButton.dataset.nextPage));
+  if (event.target.closest(".enter-button")) animateHomeScene(1);
 
   const themeButton = event.target.closest("[data-theme-toggle]");
   if (themeButton) {

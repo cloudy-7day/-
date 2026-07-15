@@ -1,12 +1,18 @@
 $ErrorActionPreference = "Stop"
-$css = Get-Content -Raw "styles.css"
-$js = Get-Content -Raw "app.js"
-if ($css -notmatch '--display-font') { throw "Missing display font stack" }
-if ($css -notmatch 'height:\s*220vh') { throw "Intro must have a 120vh scroll journey" }
-if ($css -notmatch 'translateY\(calc\(var\(--intro-progress\).*?-24vh') { throw "Hero must move upward" }
-if ($css -notmatch 'prefers-reduced-motion:\s*reduce') { throw "Missing reduced motion fallback" }
-if ($css -notmatch 'detail-page.*tabindex.*focus') { throw "Programmatic detail heading focus must not draw a box" }
-if ($css -notmatch 'word-break:\s*break-all') { throw "Mobile hero title must wrap within the viewport" }
-if ($css -notmatch 'max-width:\s*4\.5em') { throw "Mobile hero title must use a stable four-character line" }
-if ($js -notmatch 'updateIntroProgress' -or $js -notmatch '--intro-progress') { throw "Missing scroll progress controller" }
+$css = Get-Content -Raw -Encoding UTF8 "styles.css"
+$js = Get-Content -Raw -Encoding UTF8 "app.js"
+$motion = Get-Content -Raw -Encoding UTF8 "motion-core.js"
+
+if ($css -notmatch '--display-font') { throw "Missing display font stack." }
+if ($css -notmatch '--body-font:\s*"LXGW WenKai Screen"') { throw "Body copy must use the local LXGW screen font." }
+if ($css -notmatch 'height:\s*142vh') { throw "The B intro journey must finish within one normal wheel gesture." }
+if ($css -match 'scroll-snap') { throw "CSS scroll snap must not compete with the scene controller." }
+if ($motion -notmatch 'durationMs\s*=\s*1150') { throw "The selected B duration must remain 1150ms." }
+if ($motion -notmatch 'yVh:\s*clean\(-38' -or $motion -notmatch 'yVh:\s*clean\(34') { throw "Approved title exit and card entry distances are missing." }
+if ($motion -notmatch 'saturation:\s*clean\(0\.08\s*\+\s*0\.92') { throw "Cards must regain full color while entering." }
+if ($css -notmatch '\.index-highlight[\s\S]*-webkit-line-clamp:\s*2') { throw "Index highlights must render in at most two lines." }
+if ($css -notmatch 'prefers-reduced-motion:\s*reduce') { throw "Missing reduced-motion fallback." }
+if ($css -notmatch 'word-break:\s*break-all' -or $css -notmatch 'max-width:\s*4\.5em') { throw "Mobile hero title must wrap within the viewport." }
+if ($js -notmatch 'prefers-reduced-motion' -or $js -notmatch 'animateHomeScene') { throw "Motion preference and B controller wiring are missing." }
+
 Write-Host "Visual contract tests passed."
