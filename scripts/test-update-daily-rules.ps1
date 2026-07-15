@@ -75,6 +75,10 @@ if ($source -notmatch 'https://models\.github\.ai/inference/chat/completions' -o
   throw "Missing DeepSeek keys must fall back to DeepSeek V3 through GitHub Models."
 }
 
+if ($source -notmatch '\$gitHubModelsSourceLimit\s*=\s*4000' -or $source -notmatch '\$minimumGitHubModelsIntervalSeconds\s*=\s*12' -or $source -notmatch 'response_format\s*=\s*@\{\s*type\s*=\s*"json_object"') {
+  throw "GitHub Models calls must be token-bounded, rate-limited, and request strict JSON."
+}
+
 if ($source -notmatch 'foreach\s*\(\$entry\s+in\s+@\(\$uniqueItems') {
   throw "arXiv collection must use a real loop so one unreadable PDF cannot silently exit the whole script."
 }
@@ -148,7 +152,7 @@ if ($retryResult -ne "ok" -or $attempts -ne 2) {
 
 . (Import-ScriptFunction -Name "New-ArticleAnalysis")
 function Invoke-WithRetry {
-  param([scriptblock]$Operation)
+  param([scriptblock]$Operation, [int]$MaxAttempts = 2, [int]$DelaySeconds = 2)
   return & $Operation
 }
 function Invoke-JsonPostUtf8 {
@@ -182,10 +186,13 @@ try {
     -Title "GitHub Models fallback" `
     -Source "Test source" `
     -Url "https://example.com/github-models" `
-    -SourceText "Specific source material for the GitHub Models transport test." `
+    -SourceText (("A" * 9000) + "TAIL_MARKER_MUST_BE_TRUNCATED") `
     -ScoreLabel "Test"
   if ($capturedAnalysisUri -ne "https://models.github.ai/inference/chat/completions" -or $capturedAnalysisBody -notmatch 'deepseek/deepseek-v3-0324') {
     throw "GitHub Models fallback must call DeepSeek V3 with the built-in GitHub token."
+  }
+  if ($capturedAnalysisBody -match 'TAIL_MARKER_MUST_BE_TRUNCATED') {
+    throw "GitHub Models fallback must truncate oversized source text before inference."
   }
 } finally {
   $env:DEEPSEEK_API_KEY = $savedDeepSeekKey

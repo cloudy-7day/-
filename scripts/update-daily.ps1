@@ -447,6 +447,13 @@ function New-ArticleAnalysis {
       -RequiresRiskAnalysis $RequiresRiskAnalysis
   }
 
+  $usingGitHubModels = $analysisUri -eq "https://models.github.ai/inference/chat/completions"
+  $gitHubModelsSourceLimit = 4000
+  $minimumGitHubModelsIntervalSeconds = 12
+  if ($usingGitHubModels -and $SourceText.Length -gt $gitHubModelsSourceLimit) {
+    $SourceText = $SourceText.Substring(0, $gitHubModelsSourceLimit)
+  }
+
   $categoryGuide = switch ($Category) {
     "international" { "This is international news. Give a concise key takeaway. Do not force a failure analysis." }
     "ai" {
@@ -544,10 +551,24 @@ $translationGuide
       @{ role = "user"; content = $prompt }
     )
     temperature = 0.2
+    max_tokens = 1600
+    response_format = @{ type = "json_object" }
   } | ConvertTo-Json -Depth 8
 
   try {
-    $response = Invoke-WithRetry -Operation {
+    if ($usingGitHubModels -and $script:LastGitHubModelsCallAt) {
+      $elapsed = ((Get-Date) - $script:LastGitHubModelsCallAt).TotalSeconds
+      $remaining = $minimumGitHubModelsIntervalSeconds - $elapsed
+      if ($remaining -gt 0) {
+        Start-Sleep -Seconds ([Math]::Ceiling($remaining))
+      }
+    }
+    if ($usingGitHubModels) {
+      $script:LastGitHubModelsCallAt = Get-Date
+    }
+    $maxAnalysisAttempts = if ($usingGitHubModels) { 3 } else { 2 }
+    $analysisRetryDelay = if ($usingGitHubModels) { 18 } else { 2 }
+    $response = Invoke-WithRetry -MaxAttempts $maxAnalysisAttempts -DelaySeconds $analysisRetryDelay -Operation {
       Invoke-JsonPostUtf8 `
         -Uri $analysisUri `
         -JsonBody $body `
