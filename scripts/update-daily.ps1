@@ -119,8 +119,8 @@ function Assert-DailyPayload {
   }
 
   foreach ($item in $items) {
-    if (-not $item.id -or -not $item.title -or -not $item.category -or -not $item.url -or -not $item.publishedAt -or -not $item.summary -or -not $item.failureAnalysis) {
-      throw "Every article must include id, title, category, URL, publication date, summary, and analysis. Existing published data was not replaced."
+    if (-not $item.id -or -not $item.title -or -not $item.category -or -not $item.url -or -not $item.publishedAt -or -not $item.highlight -or -not $item.summary -or -not $item.failureAnalysis) {
+      throw "Every article must include id, title, category, URL, publication date, highlight, summary, and analysis. Existing published data was not replaced."
     }
 
     if ($item.category -notin $allowedCategories) {
@@ -133,6 +133,10 @@ function Assert-DailyPayload {
 
     if (Test-ForbiddenFallbackText -Text "$($item.summary) $($item.failureAnalysis)") {
       throw "Forbidden fallback text cannot be published: $($item.id)"
+    }
+
+    if ($item.highlight.Length -gt 260 -or (Test-ForbiddenHighlightOpening -Text ([string]$item.highlight))) {
+      throw "Article highlight is invalid or template-styled: $($item.id)"
     }
 
     if ($item.summarySource -eq "source_extract" -and -not $item.sourceExcerpt) {
@@ -156,8 +160,12 @@ function Assert-DailyPayload {
     }
 
     $english = $item.translations.en
-    if (-not $english -or -not $english.title -or -not $english.summary -or -not $english.failureAnalysis) {
+    if (-not $english -or -not $english.title -or -not $english.highlight -or -not $english.summary -or -not $english.failureAnalysis) {
       throw "Every article must include a complete English translation: $($item.id)"
+    }
+
+    if ($english.highlight.Length -gt 260) {
+      throw "English article highlight is too long: $($item.id)"
     }
 
     if ($item.category -eq "paper") {
@@ -429,6 +437,7 @@ function New-ArticleAnalysis {
       '  "translations": {'
       '    "en": {'
       '      "title": "A concise English title for this paper.",'
+      '      "highlight": "One source-grounded English sentence of 12-30 words; preserve the original sentence when it stands alone, otherwise translate faithfully.",'
       '      "summary": "2-3 English sentences explaining what the paper says and why it is worth reading.",'
       '      "failureAnalysis": "1-2 English sentences with the most important evidence limit or practical constraint.",'
       '      "paperCard": {'
@@ -448,6 +457,7 @@ function New-ArticleAnalysis {
       '  "translations": {'
       '    "en": {'
       '      "title": "A concise English title for this item.",'
+      '      "highlight": "One source-grounded English sentence of 12-30 words; preserve the original sentence when it stands alone, otherwise translate faithfully.",'
       '      "summary": "2-3 English sentences explaining the item and why it is worth reading.",'
       '      "failureAnalysis": "1-2 English sentences with the key takeaway or practical constraint."'
       '    }'
@@ -491,6 +501,7 @@ $categoryGuide
 
 Return strict JSON only. Do not use Markdown or code fences:
 {
+  "highlight": "One faithful Chinese rendering of the strongest source sentence, about 25-55 Chinese characters, without template openings such as 本文介绍、文章指出、值得阅读、这篇论文提出.",
   "summary": "2-3 Chinese sentences explaining what this article/paper says and why it is worth reading.",
   $analysisGuide,
 $translationGuide
@@ -517,7 +528,7 @@ $translationGuide
     $content = [string]$response.choices[0].message.content
     $content = $content.Trim() -replace "^```json\s*", "" -replace "^```\s*", "" -replace "\s*```$", ""
     $parsed = $content | ConvertFrom-Json
-    if (-not $parsed.summary -or -not $parsed.failureAnalysis -or -not $parsed.translations.en.summary -or -not $parsed.translations.en.failureAnalysis) {
+    if (-not $parsed.highlight -or -not $parsed.summary -or -not $parsed.failureAnalysis -or -not $parsed.translations.en.highlight -or -not $parsed.translations.en.summary -or -not $parsed.translations.en.failureAnalysis) {
       throw "DeepSeek returned incomplete summary JSON."
     }
     if ($Category -eq "paper") {
@@ -533,6 +544,7 @@ $translationGuide
     }
 
     $result = [ordered]@{
+      highlight = [string]$parsed.highlight
       summary = [string]$parsed.summary
       failureAnalysis = [string]$parsed.failureAnalysis
       summarySource = "deepseek"
@@ -551,6 +563,7 @@ $translationGuide
     }
     if ($parsed.translations -and $parsed.translations.en) {
       $english = [ordered]@{
+        highlight = [string]$parsed.translations.en.highlight
         summary = [string]$parsed.translations.en.summary
         failureAnalysis = [string]$parsed.translations.en.failureAnalysis
       }
@@ -692,6 +705,7 @@ function New-PaperItem {
     qualityScore = $profile.qualityScore
     readabilityStatus = $profile.readabilityStatus
     paperCard = $paperCard
+    highlight = $analysis.highlight
     summary = $analysis.summary
     failureAnalysis = $analysis.failureAnalysis
     summarySource = $analysis.summarySource
@@ -781,6 +795,7 @@ function Get-OpenWorldNewsItems {
         publishedAt = [string]$_.publishedAt
       scoreLabel = $scoreLabel
         selectionReason = "Open, non-paywalled RSS candidate; recent item across configured news feeds"
+      highlight = $analysis.highlight
       summary = $analysis.summary
       failureAnalysis = $analysis.failureAnalysis
       summarySource = $analysis.summarySource
@@ -857,6 +872,7 @@ function Add-AiArticleAnalysis {
     -RequiresRiskAnalysis ([bool]$Item.requiresRiskAnalysis)
 
   $Item.summary = $analysis.summary
+  $Item.highlight = $analysis.highlight
   $Item.failureAnalysis = $analysis.failureAnalysis
   $Item.summarySource = $analysis.summarySource
   $Item.sourceExcerpt = $analysis.sourceExcerpt

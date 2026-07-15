@@ -21,10 +21,14 @@ Conclusion. The approach may support assistive brain-computer interfaces.
 $excerpt = Get-SourceExcerpt -Text $paperText -MaxSentences 3 -MaxCharacters 260
 Assert-True ($excerpt -match "neural decoder") "The excerpt must contain source-specific content."
 Assert-True ($excerpt.Length -le 260) "The excerpt must respect MaxCharacters."
+$highlight = Get-SourceHighlight -Text $paperText
+Assert-Equal $highlight "Abstract. We introduce a neural decoder that corrects continuous cursor motion." "The highlight must be one complete traceable source sentence."
 
 $analysis = New-SourceExtractAnalysis -Category paper -Title "Residual decoding" -SourceText $paperText
 Assert-Equal $analysis.summarySource "source_extract" "Fallback provenance must be explicit."
 Assert-Equal $analysis.summary $analysis.sourceExcerpt "The summary field must contain only the source extract."
+Assert-Equal $analysis.highlight $highlight "Fallback highlights must use the traceable source sentence."
+Assert-Equal $analysis.translations.en.highlight $highlight "English fallback highlights must preserve the source sentence."
 Assert-True ($analysis.summary -notmatch "公开原文自动摘录") "The frontend label must own the fallback disclosure."
 Assert-True ($analysis.translations.en.summary -match "neural decoder") "English fallback must preserve the source excerpt."
 Assert-True (-not (Test-ForbiddenFallbackText -Text $analysis.summary)) "A real source extract must not match forbidden placeholders."
@@ -92,6 +96,7 @@ $upgradePayload = [pscustomobject]@{
     title = "Paper"
     url = "https://example.com/paper"
     summarySource = "source_extract"
+    highlight = "source highlight"
     summary = "extract"
     failureAnalysis = "pending"
     sourceExcerpt = "source"
@@ -104,15 +109,18 @@ $upgraded = Update-DegradedPayload -Payload $upgradePayload -AnalyzeItem {
   [pscustomobject]@{
     summarySource = "deepseek"
     sourceExcerpt = $item.sourceExcerpt
+    highlight = "upgraded highlight"
     summary = "analysis"
     failureAnalysis = "judgement"
     translations = [pscustomobject]@{
-      en = [pscustomobject]@{ title = "Paper"; summary = "Analysis"; failureAnalysis = "Judgement" }
+      en = [pscustomobject]@{ title = "Paper"; highlight = "Upgraded source highlight."; summary = "Analysis"; failureAnalysis = "Judgement" }
     }
   }
 }
 Assert-Equal $upgraded.updateStatus "complete" "A successful upgrade must become complete."
 Assert-Equal $upgraded.contentFingerprint $beforeFingerprint "Summary upgrades must preserve the URL fingerprint."
 Assert-Equal $upgraded.articles[0].id "paper-1" "Summary upgrades must preserve article identity."
+Assert-Equal $upgraded.articles[0].highlight "upgraded highlight" "Summary upgrades must replace the list highlight."
+Assert-Equal $upgraded.articles[0].translations.en.highlight "Upgraded source highlight." "Summary upgrades must replace the English highlight."
 
 Write-Host "Daily update support tests passed."

@@ -291,6 +291,7 @@ function New-ArticleEnglishTranslation {
   param(
     [string]$Category,
     [string]$Title,
+    [string]$Highlight,
     [string]$Summary,
     [string]$FailureAnalysis,
     $PaperCard = $null
@@ -310,6 +311,7 @@ function New-ArticleEnglishTranslation {
   }
 
   $result = [ordered]@{
+    highlight = if ($Highlight) { [string]$Highlight } else { [string]$Summary }
     summary = $summary
     failureAnalysis = $takeaway
   }
@@ -345,6 +347,7 @@ function Get-EnglishTranslationForAnalysis {
   return New-ArticleEnglishTranslation `
     -Category $Category `
     -Title $Title `
+    -Highlight ([string]$Analysis.highlight) `
     -Summary ([string]$Analysis.summary) `
     -FailureAnalysis ([string]$Analysis.failureAnalysis) `
     -PaperCard $PaperCard

@@ -83,8 +83,10 @@ git commit -m "feat: add source highlight and motion models"
 
 **Files:**
 - Modify: `scripts/daily-update-support.ps1`
+- Modify: `scripts/article-selection.ps1`
 - Modify: `scripts/update-daily.ps1`
 - Modify: `scripts/test-daily-update-support.ps1`
+- Modify: `scripts/test-translation.ps1`
 - Modify: `scripts/test-update-daily-rules.ps1`
 
 **Interfaces:**

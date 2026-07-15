@@ -2,6 +2,7 @@
 
 $scriptPath = Join-Path $PSScriptRoot "update-daily.ps1"
 $source = Get-Content -Raw -Encoding UTF8 $scriptPath
+$supportSource = Get-Content -Raw -Encoding UTF8 (Join-Path $PSScriptRoot "daily-update-support.ps1")
 $workflowPath = Join-Path (Split-Path -Parent $PSScriptRoot) ".github/workflows/daily-update.yml"
 $workflow = Get-Content -Raw -Encoding UTF8 $workflowPath
 . (Join-Path $PSScriptRoot "daily-update-support.ps1")
@@ -76,6 +77,14 @@ if ($source -notmatch 'Get-DailyUpdateAction' -or $source -notmatch 'Update-Degr
 
 if ($source -notmatch '"summary_upgrade"\s*\{[\s\S]*Get-PaperAnalysisText\s+-FullText') {
   throw "Summary upgrades must reapply the usable full-text gate to downloaded papers."
+}
+
+if ($source -notmatch '"highlight":\s*"One faithful Chinese rendering' -or $source -notmatch '"highlight":\s*"One source-grounded English sentence') {
+  throw "DeepSeek analysis must request bilingual source-grounded highlights."
+}
+
+if (("$source`n$supportSource") -notmatch '\$item\.highlight\s*=\s*\$analysis\.highlight') {
+  throw "Daily article construction and upgrades must propagate highlights."
 }
 
 $tokens = $null
@@ -157,12 +166,14 @@ function New-TestArticle {
     url = "https://example.com/$Id"
     publishedAt = "2026-07-13T12:00:00Z"
     summary = "Summary $Id"
+    highlight = "来源信息揭示了具体事件与可验证事实。"
     failureAnalysis = "Analysis $Id"
     summarySource = "deepseek"
     sourceExcerpt = "Source-specific material for $Id."
     translations = [ordered]@{
       en = [ordered]@{
         title = "English $Id"
+        highlight = "A source-grounded sentence captures the verifiable event clearly."
         summary = "English summary $Id"
         failureAnalysis = "English analysis $Id"
       }
@@ -203,6 +214,30 @@ $validPayload = [ordered]@{
   articles = $validArticles
 }
 Assert-DailyPayload -Payload $validPayload
+
+$missingHighlight = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$missingHighlight.articles[0].highlight = ""
+$rejected = $false
+try {
+  Assert-DailyPayload -Payload $missingHighlight
+} catch {
+  $rejected = $true
+}
+if (-not $rejected) {
+  throw "Published payloads must reject empty highlights."
+}
+
+$templateHighlight = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$templateHighlight.articles[0].highlight = "文章指出，来源中存在一项具体变化。"
+$rejected = $false
+try {
+  Assert-DailyPayload -Payload $templateHighlight
+} catch {
+  $rejected = $true
+}
+if (-not $rejected) {
+  throw "Published payloads must reject template-style highlight openings."
+}
 
 $placeholderPayload = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
 $placeholderPayload.articles[5].summary = "智能总结需要 DeepSeek key 和完整内容输入后生成。"

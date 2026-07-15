@@ -23,10 +23,48 @@
   return $excerpt.Substring(0, [Math]::Min($MaxCharacters, $excerpt.Length)).Trim()
 }
 
+function Get-SourceHighlight {
+  param(
+    [string]$Text,
+    [int]$MaxCharacters = 260
+  )
+
+  $clean = (($Text -replace '\s+', ' ').Trim())
+  if (-not $clean) {
+    return ""
+  }
+
+  $sentences = @(
+    [regex]::Split($clean, '(?<=[.!?。！？])\s+') |
+      ForEach-Object { $_.Trim() } |
+      Where-Object { $_ }
+  )
+  for ($index = 0; $index -lt $sentences.Count; $index += 1) {
+    $sentence = [string]$sentences[$index]
+    if ($sentence -match '^(Home|Menu|Skip|Subscribe|Sign in|Advertisement|Cookie)[.!?:：]?\s*$') {
+      continue
+    }
+    if ($sentence -match '^(Abstract|Summary|Method|Results|Conclusion)\.$' -and $index + 1 -lt $sentences.Count) {
+      $sentence = "$sentence $($sentences[$index + 1])"
+    }
+    if ($sentence.Length -ge 24) {
+      return $sentence.Substring(0, [Math]::Min($MaxCharacters, $sentence.Length)).Trim()
+    }
+  }
+
+  return $clean.Substring(0, [Math]::Min($MaxCharacters, $clean.Length)).Trim()
+}
+
 function Test-ForbiddenFallbackText {
   param([string]$Text)
 
   return [bool]($Text -match 'Local fallback|智能总结需要\s+DeepSeek\s+key|candidate collected automatically')
+}
+
+function Test-ForbiddenHighlightOpening {
+  param([string]$Text)
+
+  return [bool]($Text -match '^\s*(本文介绍|文章指出|值得阅读|这篇论文提出)')
 }
 
 function New-SourceExtractAnalysis {
@@ -38,6 +76,7 @@ function New-SourceExtractAnalysis {
   )
 
   $excerpt = Get-SourceExcerpt -Text $SourceText
+  $highlight = Get-SourceHighlight -Text $SourceText
   if (-not $excerpt) {
     throw "Cannot build a source extract from empty content: $Title"
   }
@@ -45,11 +84,13 @@ function New-SourceExtractAnalysis {
   return [ordered]@{
     summarySource = 'source_extract'
     sourceExcerpt = $excerpt
+    highlight = $highlight
     summary = $excerpt
     failureAnalysis = "当前条目仅提供可追溯原文摘录；待 DeepSeek 恢复后自动补充分析。"
     translations = [ordered]@{
       en = [ordered]@{
         title = $Title
+        highlight = $highlight
         summary = $excerpt
         failureAnalysis = 'This is a traceable source extract pending DeepSeek analysis.'
       }
@@ -137,6 +178,7 @@ function Update-DegradedPayload {
   foreach ($item in @($Payload.articles | Where-Object { $_.summarySource -eq "source_extract" })) {
     $analysis = & $AnalyzeItem $item
     $item.summary = $analysis.summary
+    $item.highlight = $analysis.highlight
     $item.failureAnalysis = $analysis.failureAnalysis
     $item.summarySource = $analysis.summarySource
     $item.sourceExcerpt = $analysis.sourceExcerpt

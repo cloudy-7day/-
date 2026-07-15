@@ -25,16 +25,19 @@ $paperCard = New-PaperReadingCard `
 $translation = New-ArticleEnglishTranslation `
   -Category "paper" `
   -Title "Hybrid CNN-SNN EEG speech decoding" `
+  -Highlight "A hybrid decoder combines temporal features with spike-based classification." `
   -Summary "这篇论文解释了一个可应用的脑机接口方案。" `
   -FailureAnalysis "重点检查样本量和真实部署成本。" `
   -PaperCard $paperCard
 
 Assert-True ($translation.summary.Length -gt 0) "English translation should include a summary."
+Assert-Equal $translation.highlight "A hybrid decoder combines temporal features with spike-based classification." "English translation should preserve a source-grounded highlight."
 Assert-True ($translation.failureAnalysis.Length -gt 0) "English translation should include the key takeaway."
 Assert-Equal $translation.title "Hybrid CNN-SNN EEG speech decoding" "English translation should preserve a title fallback."
 Assert-Equal $translation.paperCard.technicalTerms.Count $paperCard.technicalTerms.Count "Paper terms should remain available in English mode."
 
 $analysisWithoutTitle = [ordered]@{
+  highlight = "Traceable fallback sentence."
   summary = "Local fallback summary."
   failureAnalysis = "Local fallback takeaway."
 }
@@ -45,6 +48,7 @@ $fallback = Get-EnglishTranslationForAnalysis `
   -Analysis $analysisWithoutTitle
 
 Assert-Equal $fallback.title "Example AI Workflow" "Fallback translation helper should preserve the source title when analysis has no title."
+Assert-Equal $fallback.highlight "Traceable fallback sentence." "Fallback translation helper should preserve the source highlight."
 
 $analysisWithTranslationWithoutTitle = [ordered]@{
   summary = "Chinese summary."
