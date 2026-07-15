@@ -291,6 +291,68 @@ try {
   $env:GITHUB_TOKEN = $savedGitHubToken
 }
 
+. (Import-ScriptFunction -Name "Get-AiItems")
+$script:ArticleLedger = [pscustomobject]@{ version = 1; urls = @(); titles = @() }
+$script:testAiCandidatePool = @(
+  [ordered]@{
+    id = "degraded-application"
+    category = "ai"
+    title = "Autonomous workflow deployment platform"
+    source = "Test"
+    url = "https://example.com/degraded-application"
+    publishedAt = "2026-07-14T18:00:00Z"
+    aiArticleType = "application_innovation"
+    aiSelectionScore = 500
+  },
+  [ordered]@{
+    id = "valid-concept"
+    category = "ai"
+    title = "Context engineering for reliable agents"
+    source = "Test"
+    url = "https://example.com/valid-concept"
+    publishedAt = "2026-07-14T17:00:00Z"
+    aiArticleType = "concept_explanation"
+    aiSelectionScore = 400
+  },
+  [ordered]@{
+    id = "valid-application"
+    category = "ai"
+    title = "Visual inspection assistant for factories"
+    source = "Test"
+    url = "https://example.com/valid-application"
+    publishedAt = "2026-07-14T16:00:00Z"
+    aiArticleType = "application_innovation"
+    aiSelectionScore = 300
+  }
+)
+function Get-HnAiCandidates { return @($script:testAiCandidatePool) }
+function Get-FeedAiCandidates { return @() }
+function Get-GitHubAiCandidates { return @() }
+function Add-AiArticleAnalysis {
+  param($Item)
+
+  if ($Item.id -eq "degraded-application") {
+    $Item.summarySource = "source_extract"
+    $Item.translations = [ordered]@{ zh = [ordered]@{ title = "" } }
+  } else {
+    $Item.summarySource = "deepseek"
+    $Item.translations = [ordered]@{ zh = [ordered]@{ title = "完整合格的中文人工智能标题" } }
+  }
+  return $Item
+}
+$savedCandidateTestKey = $env:DEEPSEEK_API_KEY
+try {
+  $env:DEEPSEEK_API_KEY = "configured-primary-key"
+  $refilledAiItems = @(Get-AiItems -TargetCount 2)
+  $refilledIds = @($refilledAiItems | ForEach-Object { [string]$_.id })
+  if ($refilledAiItems.Count -ne 2 -or $refilledIds -contains "degraded-application" -or
+    $refilledIds -notcontains "valid-concept" -or $refilledIds -notcontains "valid-application") {
+    throw "AI selection must skip an incomplete analyzed candidate and refill from the remaining ranked pool."
+  }
+} finally {
+  $env:DEEPSEEK_API_KEY = $savedCandidateTestKey
+}
+
 . (Import-ScriptFunction -Name "Assert-DailyPayload")
 function New-TestArticle {
   param([string]$Id, [string]$Category)

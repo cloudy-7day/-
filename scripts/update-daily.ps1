@@ -1233,10 +1233,34 @@ function Get-AiItems {
     Where-Object { $pickedUrls -notcontains $_["url"] } |
     Sort-Object -Property { [int]$_["aiSelectionScore"] }, { [datetime]$_["publishedAt"] } -Descending
 
-  @($application, $conceptOrSignal) + @($remaining) |
-    Where-Object { $_ } |
-    Select-Object -First $TargetCount |
-    ForEach-Object { Add-AiArticleAnalysis -Item $_ }
+  $orderedCandidates = @(
+    @($application, $conceptOrSignal) + @($remaining) |
+      Where-Object { $_ }
+  )
+  $accepted = @()
+  foreach ($candidate in $orderedCandidates) {
+    try {
+      $analyzed = Add-AiArticleAnalysis -Item $candidate
+    } catch {
+      Write-Warning "Skipping AI candidate after analysis error '$($candidate.id)': $($_.Exception.Message)"
+      continue
+    }
+
+    $isComplete = $analyzed -and $analyzed.summarySource -eq "deepseek" -and
+      (Test-ChineseDisplayTitle -Title ([string]$analyzed.translations.zh.title))
+    if ($env:DEEPSEEK_API_KEY -and -not $isComplete) {
+      Write-Warning "Skipping AI candidate after incomplete DeepSeek analysis: $($candidate.id)"
+      continue
+    }
+
+    if ($analyzed) {
+      $accepted += $analyzed
+    }
+    if ($accepted.Count -ge $TargetCount) {
+      break
+    }
+  }
+  return $accepted
 }
 
 function Get-CrossrefAuthorityPapers {
