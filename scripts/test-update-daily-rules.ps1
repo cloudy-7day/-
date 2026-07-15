@@ -75,7 +75,7 @@ if ($source -notmatch 'https://models\.github\.ai/inference/chat/completions' -o
   throw "Missing DeepSeek keys must fall back to DeepSeek V3 through GitHub Models."
 }
 
-if ($source -notmatch 'function Invoke-GitHubModelsBatchAnalysis' -or $source -notmatch '\$batchSourceLimit\s*=\s*500' -or $source -notmatch 'response_format\s*=\s*@\{\s*type\s*=\s*"json_object"') {
+if ($source -notmatch 'function Invoke-DegradedArticleRecovery' -or $source -notmatch '\$batchSourceLimit\s*=\s*500' -or $source -notmatch 'response_format\s*=\s*@\{\s*type\s*=\s*"json_object"') {
   throw "GitHub Models fallback must batch all items into one token-bounded strict-JSON request."
 }
 
@@ -151,7 +151,7 @@ if ($retryResult -ne "ok" -or $attempts -ne 2) {
 }
 
 . (Import-ScriptFunction -Name "New-ArticleAnalysis")
-. (Import-ScriptFunction -Name "Invoke-GitHubModelsBatchAnalysis")
+. (Import-ScriptFunction -Name "Invoke-DegradedArticleRecovery")
 function Invoke-WithRetry {
   param([scriptblock]$Operation, [int]$MaxAttempts = 2, [int]$DelaySeconds = 2)
   return & $Operation
@@ -222,7 +222,7 @@ try {
     summarySource = "source_extract"
     translations = [ordered]@{ zh = [ordered]@{}; en = [ordered]@{} }
   }
-  $batchResult = @(Invoke-GitHubModelsBatchAnalysis -Articles @($batchArticle))
+  $batchResult = @(Invoke-DegradedArticleRecovery -Articles @($batchArticle))
   if ($capturedAnalysisUri -ne "https://models.github.ai/inference/chat/completions" -or $capturedAnalysisBody -notmatch 'deepseek/deepseek-v3-0324') {
     throw "Batch fallback must call DeepSeek V3 with the built-in GitHub token."
   }
@@ -235,6 +235,7 @@ try {
 
   function Invoke-JsonPostUtf8 {
     param([string]$Uri, [string]$JsonBody, [hashtable]$Headers)
+    $script:capturedAnalysisUri = $Uri
     $script:capturedAnalysisBody = $JsonBody
     return [pscustomobject]@{
       choices = @([pscustomobject]@{
@@ -243,6 +244,7 @@ try {
     }
   }
   $env:DEEPSEEK_API_KEY = "configured-primary-key"
+  $script:capturedAnalysisUri = ""
   $script:capturedAnalysisBody = ""
   $alreadyComplete = [ordered]@{
     id = "already-complete"
@@ -274,9 +276,12 @@ try {
       en = [ordered]@{ title = "Source title requiring recovery"; highlight = "Source highlight."; summary = "Source summary."; failureAnalysis = "Pending." }
     }
   }
-  $recoveredBatch = @(Invoke-GitHubModelsBatchAnalysis -Articles @($alreadyComplete, $needsRecovery))
+  $recoveredBatch = @(Invoke-DegradedArticleRecovery -Articles @($alreadyComplete, $needsRecovery))
   if ($recoveredBatch[1].translations.zh.title -ne "备用通道补齐的中文标题" -or $recoveredBatch[1].summarySource -ne "deepseek") {
-    throw "A per-item DeepSeek degradation must be recovered through GitHub Models even when the primary key is configured."
+    throw "A per-item DeepSeek degradation must be recovered through a bounded backup batch."
+  }
+  if ($capturedAnalysisUri -ne "https://api.deepseek.com/chat/completions" -or $capturedAnalysisBody -notmatch 'deepseek-chat') {
+    throw "Configured DeepSeek credentials must route degraded recovery through DeepSeek instead of rate-limited GitHub Models."
   }
   if ($recoveredBatch[0].translations.zh.title -ne "已经完成的中文标题" -or $capturedAnalysisBody -match 'already-complete') {
     throw "Backup recovery must leave already-complete articles unchanged and out of the recovery prompt."

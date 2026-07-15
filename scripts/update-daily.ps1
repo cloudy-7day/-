@@ -630,11 +630,30 @@ $translationGuide
   }
 }
 
-function Invoke-GitHubModelsBatchAnalysis {
+function Invoke-DegradedArticleRecovery {
   param([object[]]$Articles)
 
-  if (-not $env:GITHUB_TOKEN) {
+  if (-not $env:DEEPSEEK_API_KEY -and -not $env:GITHUB_TOKEN) {
     return $Articles
+  }
+
+  if ($env:DEEPSEEK_API_KEY) {
+    $recoveryProvider = "DeepSeek"
+    $recoveryUri = "https://api.deepseek.com/chat/completions"
+    $recoveryModel = "deepseek-chat"
+    $recoveryHeaders = @{ Authorization = "Bearer $env:DEEPSEEK_API_KEY" }
+    $recoveryAttempts = 2
+    $recoveryDelaySeconds = 2
+  } else {
+    $recoveryProvider = "GitHub Models"
+    $recoveryUri = "https://models.github.ai/inference/chat/completions"
+    $recoveryModel = "deepseek/deepseek-v3-0324"
+    $recoveryHeaders = @{
+      Authorization = "Bearer $env:GITHUB_TOKEN"
+      "X-GitHub-Api-Version" = "2026-03-10"
+    }
+    $recoveryAttempts = 3
+    $recoveryDelaySeconds = 20
   }
 
   $recoveryArticles = @($Articles | Where-Object { $_.summarySource -eq "source_extract" })
@@ -660,7 +679,7 @@ function Invoke-GitHubModelsBatchAnalysis {
   })
   $inputJson = $inputs | ConvertTo-Json -Depth 5 -Compress
   $prompt = @"
-Analyze all seven source items below in one batch. Use only the supplied source text. Respond in strict JSON, with one output object per input id and no Markdown.
+Analyze the degraded source items below in one batch. Use only the supplied source text. Respond in strict JSON, with one output object per input id and no Markdown.
 
 For every item produce:
 - title: a concise faithful Simplified Chinese display title containing Chinese characters.
@@ -672,11 +691,11 @@ For every item produce:
 Input items:
 $inputJson
 
-Return exactly:
+  Return exactly:
 {"items":[{"id":"same input id","title":"...","highlight":"...","summary":"...","failureAnalysis":"...","englishTitle":"...","englishHighlight":"...","englishSummary":"...","englishFailureAnalysis":"..."}]}
 "@
   $body = @{
-    model = "deepseek/deepseek-v3-0324"
+    model = $recoveryModel
     messages = @(
       @{ role = "system"; content = "You are a rigorous bilingual editor. Analyze only supplied evidence and return strict JSON." },
       @{ role = "user"; content = $prompt }
@@ -685,20 +704,17 @@ Return exactly:
     max_tokens = 1800
     response_format = @{ type = "json_object" }
   } | ConvertTo-Json -Depth 8
-  $response = Invoke-WithRetry -MaxAttempts 3 -DelaySeconds 20 -Operation {
+  $response = Invoke-WithRetry -MaxAttempts $recoveryAttempts -DelaySeconds $recoveryDelaySeconds -Operation {
     Invoke-JsonPostUtf8 `
-      -Uri "https://models.github.ai/inference/chat/completions" `
+      -Uri $recoveryUri `
       -JsonBody $body `
-      -Headers @{
-        Authorization = "Bearer $env:GITHUB_TOKEN"
-        "X-GitHub-Api-Version" = "2026-03-10"
-      }
+      -Headers $recoveryHeaders
   }
   $content = ([string]$response.choices[0].message.content).Trim() -replace "^```json\s*", "" -replace "^```\s*", "" -replace "\s*```$", ""
   $parsed = $content | ConvertFrom-Json
   $outputs = @($parsed.items)
   if ($outputs.Count -ne $recoveryArticles.Count) {
-    throw "GitHub Models batch returned $($outputs.Count) items for $($recoveryArticles.Count) degraded articles."
+    throw "$recoveryProvider batch returned $($outputs.Count) items for $($recoveryArticles.Count) degraded articles."
   }
   $byId = @{}
   foreach ($output in $outputs) { $byId[[string]$output.id] = $output }
@@ -708,7 +724,7 @@ Return exactly:
     if (-not $analysis -or -not (Test-ChineseDisplayTitle -Title ([string]$analysis.title)) -or
       -not $analysis.highlight -or -not $analysis.summary -or -not $analysis.failureAnalysis -or
       -not $analysis.englishTitle -or -not $analysis.englishHighlight -or -not $analysis.englishSummary -or -not $analysis.englishFailureAnalysis) {
-      throw "GitHub Models batch returned incomplete bilingual analysis: $($article.id)"
+      throw "$recoveryProvider batch returned incomplete bilingual analysis: $($article.id)"
     }
 
     $article.highlight = [string]$analysis.highlight
@@ -1567,7 +1583,7 @@ if ($paperShortfall -gt 0) {
 }
 
 if ($env:GITHUB_TOKEN -and @($articles | Where-Object { $_.summarySource -eq "source_extract" }).Count -gt 0) {
-  $articles = @(Invoke-GitHubModelsBatchAnalysis -Articles $articles)
+  $articles = @(Invoke-DegradedArticleRecovery -Articles $articles)
 }
 
 if ($articles.Count -eq 0) {
