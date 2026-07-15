@@ -35,4 +35,23 @@ assert.equal(
   "DeepSeek is temporarily unavailable; showing an automatic extract from the public source",
 );
 assert.equal(core.getSummarySourceLabel({}, "zh"), "");
+assert.equal(
+  core.getArticleHighlight({ highlight: "来源摘句", summary: "完整摘要。" }, "zh"),
+  "来源摘句",
+);
+assert.equal(
+  core.getArticleHighlight({ summary: "文章指出，边境之外仍在寻找更快路径。第二句。" }, "zh"),
+  "边境之外仍在寻找更快路径。",
+);
+assert.equal(
+  core.getArticleHighlight({
+    highlight: "中文摘句",
+    translations: { en: { highlight: "The original sentence remains intact." } },
+  }, "en"),
+  "The original sentence remains intact.",
+);
+assert.equal(
+  core.getArticleHighlight({ summary: "这篇论文提出了一种可检查的结构推理方法。值得阅读。" }, "zh"),
+  "一种可检查的结构推理方法。",
+);
 console.log("Site core tests passed.");

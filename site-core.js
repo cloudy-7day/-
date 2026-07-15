@@ -111,6 +111,30 @@
       : "DeepSeek 暂不可用，当前为公开原文自动摘录";
   }
 
+  function cleanHighlightOpening(value) {
+    return String(value || "")
+      .replace(/\s+/g, " ")
+      .trim()
+      .replace(/^(?:本文介绍(?:了)?|文章指出|这篇论文提出(?:了)?|值得阅读(?:的是)?)[，,:：]?\s*/, "")
+      .replace(/^This (?:article|paper) (?:introduces|reports that|reports|presents|proposes|explains)\s+/i, "")
+      .replace(/^Worth reading(?: because)?[,:]?\s*/i, "")
+      .trim();
+  }
+
+  function getArticleHighlight(article, language) {
+    const localized = getLocalizedArticle(article, language);
+    const explicit = cleanHighlightOpening(localized?.highlight);
+    if (explicit) return explicit;
+
+    const summary = String(localized?.summary || "").replace(/\s+/g, " ").trim();
+    const sentences = summary.match(/[^.!?。！？]+[.!?。！？]?/g) || [];
+    for (const sentence of sentences) {
+      const cleaned = cleanHighlightOpening(sentence);
+      if (cleaned.length >= 4) return cleaned.slice(0, 180).trim();
+    }
+    return cleanHighlightOpening(summary).slice(0, 180).trim();
+  }
+
   return {
     CATEGORY_CONFIG,
     parseRoute,
@@ -122,5 +146,6 @@
     buildAssociations,
     estimateReadingMinutes,
     getSummarySourceLabel,
+    getArticleHighlight,
   };
 });
