@@ -18,12 +18,14 @@
                          "publishedAt":  "2026-07-14T12:27:06.0000000Z",
                          "scoreLabel":  "Open RSS source",
                          "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+                         "highlight":  "一名在刚果（金）感染埃博拉的美国援助人员已抵达德国接受治疗。",
                          "summary":  "一名在刚果民主共和国感染埃博拉病毒的美国援助工作者已抵达德国柏林接受治疗，而特朗普政府同时禁止美国公民从该国乘坐商业航班返回美国。该事件凸显了国际公共卫生应对机制与政治决策之间的紧张关系，值得关注全球疫情下的跨境医疗与旅行限制。",
                          "failureAnalysis":  "关键启示：国际疫情应对中，医疗救治与政治管控可能产生冲突，需平衡公共卫生安全与个人权利。",
                          "summarySource":  "deepseek",
                          "sourceExcerpt":  "Aid worker flown to Berlin as Trump administration bars Americans from traveling to US on commercial flights A US national who contracted Ebola in the Democratic Republic of the Congo has arrived in Germany for treatment, the health ministry in Berlin said on Monday, weeks after another American infected with Ebola in the DRC was treated in Berlin. Meanwhile, the Trump administration on Monday said it was blocking American citizens in ⁠the DRC from traveling to the US on commercial flights, Reuters reported, citing a White House official.",
                          "translations":  {
                                               "en":  {
+                                                         "highlight":  "A US national who contracted Ebola in the Democratic Republic of the Congo has arrived in Germany for treatment.",
                                                          "summary":  "An American aid worker infected with Ebola in the DRC has arrived in Berlin for treatment, while the Trump administration bars US citizens from traveling to the US on commercial flights from the region. This highlights the tension between international health response and political travel restrictions, making it relevant for understanding global pandemic management.",
                                                          "failureAnalysis":  "Key takeaway: In global health crises, medical treatment and political controls may conflict, requiring a balance between public health safety and individual rights.",
                                                          "title":  "US Ebola Patient Arrives in Germany for Treatment Amid Travel Ban"
@@ -39,12 +41,14 @@
                          "publishedAt":  "2026-07-14T12:18:58.0000000Z",
                          "scoreLabel":  "Open RSS source",
                          "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+                         "highlight":  "美国计划今日恢复霍尔木兹海峡封锁，多个州同时起诉阻止派拉蒙与华纳合并。",
                          "summary":  "美国计划今日恢复对霍尔木兹海峡的封锁，同时多个州提起诉讼以阻止派拉蒙与华纳兄弟的合并。这篇文章值得阅读，因为它涉及地缘政治紧张局势和媒体行业重大交易，对理解国际动态和商业格局有参考价值。",
                          "failureAnalysis":  "关键要点：美国恢复霍尔木兹海峡封锁可能加剧中东紧张局势，而派拉蒙-华纳合并诉讼则凸显反垄断监管对媒体整合的制约。",
                          "summarySource":  "deepseek",
                          "sourceExcerpt":  "The United States plans to reinstate a blockade over the Strait of Hormuz today. And, several states are suing to stop the massive Paramount-Warner Bros.",
                          "translations":  {
                                               "en":  {
+                                                         "highlight":  "The United States plans to reinstate the Hormuz blockade as several states sue to stop the Paramount-Warner deal.",
                                                          "summary":  "The U.S. plans to reinstate a blockade over the Strait of Hormuz today, while several states sue to block the Paramount-Warner Bros. merger. This article is worth reading for its coverage of geopolitical tensions and a major media industry deal, offering insights into international dynamics and business regulation.",
                                                          "failureAnalysis":  "Key takeaway: The reinstated Hormuz blockade could escalate Middle East tensions, while the lawsuit over the Paramount-Warner merger highlights antitrust scrutiny on media consolidation.",
                                                          "title":  "U.S. to Reinstate Hormuz Blockade; States Sue Over Paramount-Warner Merger"
@@ -60,12 +64,14 @@
                          "publishedAt":  "2026-07-14T09:56:45.0000000Z",
                          "scoreLabel":  "Open RSS source",
                          "selectionReason":  "Open, non-paywalled RSS candidate; recent item across configured news feeds",
+                         "highlight":  "美国军方将于周二封锁霍尔木兹海峡的伊朗船只，伊朗则誓言维护自身控制权。",
                          "summary":  "美国军方宣布将于周二开始对霍尔木兹海峡的伊朗船只实施封锁，伊朗则誓言要维护自身对该关键国际水道的控制。这篇文章值得阅读，因为它揭示了美伊紧张局势的最新升级，可能影响全球石油运输和地缘政治稳定。",
                          "failureAnalysis":  "关键要点：美国重启霍尔木兹海峡封锁，伊朗强硬回应，凸显中东地缘政治风险加剧。",
                          "summarySource":  "deepseek",
                          "sourceExcerpt":  "military announced it will begin its blockade of Iranian ships over the Strait of Hormuz on Tuesday, as Iran vowed to assert its own control over the critical international waterway.",
                          "translations":  {
                                               "en":  {
+                                                         "highlight":  "The U.S. military will blockade Iranian ships in the Strait of Hormuz on Tuesday as Iran vows to assert control.",
                                                          "summary":  "The U.S. military announced it will begin a blockade of Iranian ships in the Strait of Hormuz on Tuesday, while Iran vows to assert its own control over the critical waterway. This article is worth reading as it highlights the latest escalation in U.S.-Iran tensions, which could impact global oil shipments and geopolitical stability.",
                                                          "failureAnalysis":  "Key takeaway: The U.S. reinstates a blockade over the Strait of Hormuz, with Iran vowing to respond, underscoring heightened geopolitical risks in the Middle East.",
                                                          "title":  "U.S. to Reinstate Blockade Over Strait of Hormuz"
@@ -96,6 +102,7 @@
                          "hasPrimaryAnchor":  true,
                          "requiresRiskAnalysis":  true,
                          "selectionReason":  "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+                         "highlight":  "让AI代理像房间里最懒的资深开发者一样思考：最好的代码，是从未写下的代码。",
                          "summary":  "该项目提出一种让AI代理模仿“最懒资深开发者”思维的方法，核心是减少不必要的代码编写。它通过GitHub上8.2万星标获得关注，暗示开发者对“少写代码、多思考”理念的强烈共鸣。值得阅读是因为它挑战了AI辅助编程中“生成越多越好”的默认假设，可能改变AI代码生成工具的设计方向。",
                          "failureAnalysis":  "核心风险在于“懒惰”与“正确性”的平衡难以量化——资深开发者的“懒”基于深厚经验，而AI可能错误简化关键逻辑。项目缺乏具体实现细节和验证案例，仅靠理念难以说服企业采用。部署路径不明确，用户价值依赖对“代码质量”的主观判断，而非可测量的效率指标。工程上，让AI自主决定“不写代码”可能引入隐蔽的缺陷，增加调试成本。",
                          "aiSelectionScore":  82882,
@@ -103,6 +110,7 @@
                          "sourceExcerpt":  "GitHub repository with 82882 stars and recent public activity. Description: Makes your AI agent think like the laziest senior dev in the room. The best code is the code you never wrote.",
                          "translations":  {
                                               "en":  {
+                                                         "highlight":  "Make your AI agent think like the laziest senior dev in the room—the best code is the code you never wrote.",
                                                          "summary":  "This project proposes a method to make AI agents emulate the \u0027laziest senior developer\u0027 mindset, focusing on reducing unnecessary code. Its 82k GitHub stars indicate strong resonance with the \u0027write less, think more\u0027 philosophy. Worth reading as it challenges the default assumption that more code generation is always better, potentially reshaping AI coding tool design.",
                                                          "failureAnalysis":  "The key risk is the unquantifiable balance between \u0027laziness\u0027 and correctness—senior devs\u0027 laziness stems from deep experience, while AI may oversimplify critical logic. Without concrete implementation or validation, the idea struggles to convince enterprises for adoption.",
                                                          "title":  "Ponytail: Making AI Think Like the Laziest Senior Dev"
@@ -126,6 +134,7 @@
                          "hasPrimaryAnchor":  false,
                          "requiresRiskAnalysis":  false,
                          "selectionReason":  "AI source passed freshness and evidence-chain gate: No clear evidence",
+                         "highlight":  "Codex用户量半年增长超过十倍至七百万，仅一天又新增约一百万。",
                          "summary":  "文章指出，OpenAI的Codex在6个月内用户量增长超过10倍，达到700万，最近一天内新增100万，可能已超越Claude Code。这反映了AI编程工具市场的快速扩张和竞争格局变化，值得关注其背后的技术趋势和用户偏好。",
                          "failureAnalysis":  "关键启示：AI编程助手用户增长迅猛，但需注意不同工具间的功能差异和实际使用场景，避免盲目跟风。",
                          "aiSelectionScore":  100,
@@ -133,6 +142,7 @@
                          "sourceExcerpt":  "a quiet day lets us fact check some numbers against the sound of silence of Claude Code reporting...",
                          "translations":  {
                                               "en":  {
+                                                         "highlight":  "Codex usage rose more than tenfold in six months to seven million users, adding roughly one million in a day.",
                                                          "summary":  "The article reports that OpenAI\u0027s Codex has grown over 10x in users in 6 months, reaching 7 million, with 1 million added in the past day, potentially surpassing Claude Code. This highlights rapid expansion and competition in AI coding tools, making it worth reading for understanding market dynamics.",
                                                          "failureAnalysis":  "Key takeaway: AI coding assistants are growing fast, but consider functional differences and real-world usage before making decisions.",
                                                          "title":  "Codex Usage Surges 10x in 6 Months to 7M Users, Overtaking Claude Code?"
@@ -166,12 +176,14 @@
                                                                   "自举原生结构推理：用强化学习让模型自己学会在推理中正确使用结构证据，而不需要人工标注推理过程。"
                                                               ]
                                        },
+                         "highlight":  "SciReasoner在86项基准中的67项达到最先进水平，并生成可检查的结构推理过程。",
                          "summary":  "这篇论文提出了一个名为SciReasoner的多模态科学基础模型，能够对蛋白质、小分子和晶体等结构进行“原生结构推理”，在预测性质的同时生成可检查的推理过程。它值得阅读，因为它在86个基准测试中的67个上达到了最先进性能，并且专家评估认为其推理质量优于或媲美前沿大语言模型。",
                          "failureAnalysis":  "论文未提及模型在极低数据或全新结构域上的泛化能力，且其依赖的离散化结构词汇可能丢失部分连续几何细节。",
                          "summarySource":  "deepseek",
                          "sourceExcerpt":  "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning Chen Tang1,2鈥? Shixiang Tang 2,1, Pengze Li 1,4, Encheng Su 1,8, Jun Yao 1,8, Jiabei Xiao 1,2, Yuqi Shi 9,10, Jielan Li 1, Hongxia Hao 1, Zhangyang Gao 1, Fang Wu 11, Ben Fei 1,2, Xiangyu Yue 2, Pan Tan 1, Bozitao Zhong3, Jinouwen Zhang 1, Aoran Wang 1, Yan Lu 2,1, Jiaheng Liu 6,1, Xinzhu Ma 1, Liang Hong 3, Mingyue Zheng 9,10, Phil Torr 7, Bowen Zhou 1, Wanli Ouyang 1,2, Lei Bai 1 1Shanghai Artificial Intelligence Laboratory, China. 2The Chinese University of Hong Kong, Hong Kong.",
                          "translations":  {
                                               "en":  {
+                                                         "highlight":  "SciReasoner achieved state-of-the-art performance on 67 of 86 benchmarks while producing inspectable structural reasoning traces.",
                                                          "summary":  "This paper introduces SciReasoner, a multimodal scientific foundation model that performs \u0027native structural reasoning\u0027 on proteins, small molecules, and crystals, generating inspectable reasoning traces alongside predictions. It is worth reading because it achieves state-of-the-art performance on 67 out of 86 benchmarks, and expert evaluation rates its reasoning quality as preferred or comparable to frontier LLMs.",
                                                          "failureAnalysis":  "The paper does not discuss generalization to extremely low-data or novel structural domains, and its discretized structural vocabulary may lose some continuous geometric details.",
                                                          "title":  "Accurate, Interdisciplinary and Transparent Structure-property Understanding with Deep Native Structural Reasoning",
@@ -220,12 +232,14 @@
                                                                   "邻近违规率：一个评价指标，计算模型错误预测中，那些跨越大距离（心理上不合理）的错误所占的比例。"
                                                               ]
                                        },
+                         "highlight":  "现有脑电情绪识别常把情绪视作孤立标签，忽略了它们之间的心理关联。",
                          "summary":  "这篇论文提出了一种图正则化深度学习框架，用于基于脑电信号的情绪识别。它通过将情绪之间的心理相似性建模成图结构，并引入三种正则化策略，显著提升了情绪分类的准确性和心理合理性。值得一读是因为它解决了传统方法忽略情绪内在关联的问题，且方法通用，适用于多种深度学习模型。",
                          "failureAnalysis":  "主要局限在于实验仅在两个公开数据集（SEED-IV和SEED-V）上进行，且情绪类别较少（4-5类），在更多类别或真实临床场景下的效果有待验证。此外，计算复杂度随情绪类别增加而上升，可能影响大规模应用。",
                          "summarySource":  "deepseek",
                          "sourceExcerpt":  "Graph-Regularized Deep Learning for EEG-Based Emotion Recognition with Psychologically-Grounded Label Structure Dongyang Kuang, Zizheng Ma, Yushan Zhang, and Xiaocong Zeng School of Mathematics (Zhuhai), Sun Yat-sen University, Guangzhou, China Abstract.EEG-based emotion recognition is critical for mental health monitoring and affective brain-computer interfaces, yet existing deep learning approaches often treat emotion classes as isolated labels, ignor- ingtheirpsychologicalinterdependencies.Weproposeagraph-regularized learning framework that conceptualizes emotions as nodes in a graph where edges encode proximity based on dimensional emotion theories. We adapt three complementary regularization strategies鈥擥raph Label Smoothing (intuitive soft labeling), Commuting distance on graph via Graph Laplacian (spectral graph theory), and Sliced Wasserstein Dis- tance (optimal transport on graph)鈥攐rdered by increasing computa- tional complexity. These strategies penalize model predictions that devi- ate from the established emotion topology.",
                          "translations":  {
                                               "en":  {
+                                                         "highlight":  "Existing EEG emotion models often treat emotion classes as isolated labels, ignoring their psychological interdependencies.",
                                                          "summary":  "This paper proposes a graph-regularized deep learning framework for EEG-based emotion recognition. It models psychological relationships between emotions as a graph and introduces three regularization strategies to penalize psychologically implausible misclassifications, improving accuracy and clinical relevance. It is worth reading because it addresses a key limitation of standard methods and is architecture-agnostic.",
                                                          "failureAnalysis":  "The main limitation is that experiments are conducted on only two datasets with few emotion classes (4-5), and the effectiveness in real clinical settings with more categories remains to be validated. Computational complexity also increases with the number of emotion classes.",
                                                          "title":  "Graph-Regularized Deep Learning for EEG-Based Emotion Recognition with Psychologically-Grounded Label Structure",
