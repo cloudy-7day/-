@@ -67,6 +67,10 @@ if ($source -notmatch 'Read-ArticleLedger' -or $source -notmatch 'Select-UniqueA
   throw "Daily selection must exclude historically used and same-topic candidates before ranking."
 }
 
+if ($source -notmatch 'foreach\s*\(\$entry\s+in\s+@\(\$uniqueItems') {
+  throw "arXiv collection must use a real loop so one unreadable PDF cannot silently exit the whole script."
+}
+
 if ($source -notmatch 'function Publish-DailyPayload') {
   throw "Publishing must be centralized behind validation."
 }

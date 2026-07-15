@@ -1183,9 +1183,10 @@ function Get-ArxivAppliedPapers {
       $_.title -notmatch "cosmological|Poincare|wave equation|mathematics|theory"
     } | Select-Object *, @{ Name = "url"; Expression = { "https://arxiv.org/pdf/$(([uri]$_.id).Segments[-1]).pdf" } })
     $uniqueItems = @(Select-UniqueArticleCandidates -Articles $eligibleItems -Ledger $script:ArticleLedger -MaxCount 6)
-    $uniqueItems | Select-Object -First 4 | ForEach-Object {
-      $sourceText = ([string]$_.summary).Trim()
-      $arxivId = ([uri]$_.id).Segments[-1]
+    $results = @()
+    foreach ($entry in @($uniqueItems | Select-Object -First 4)) {
+      $sourceText = ([string]$entry.summary).Trim()
+      $arxivId = ([uri]$entry.id).Segments[-1]
       $pdfUrl = "https://arxiv.org/pdf/$arxivId.pdf"
       $pdfText = Get-PdfTextFromUrl -Url $pdfUrl
       $analysisText = Get-PaperAnalysisText -FullText $pdfText -Abstract $sourceText
@@ -1193,17 +1194,19 @@ function Get-ArxivAppliedPapers {
 
       $arxivBase = $arxivId -replace "v\d+$", ""
       $abstractUrl = "https://arxiv.org/abs/$arxivBase"
-      New-PaperItem `
+      $paper = New-PaperItem `
         -Id ("paper-" + $arxivId.Replace("v1", "")) `
-        -Title ([string]$_.title) `
+        -Title ([string]$entry.title) `
         -Source "arXiv" `
         -Url $pdfUrl `
         -AbstractUrl $abstractUrl `
-        -PublishedAt (([datetime]$_.published).ToUniversalTime().ToString("o")) `
+        -PublishedAt (([datetime]$entry.published).ToUniversalTime().ToString("o")) `
         -SourceText $analysisText `
-        -AuthorCount (@($_.author).Count) `
+        -AuthorCount (@($entry.author).Count) `
         -HasOpenAccessFullText $true
+      if ($paper) { $results += $paper }
     }
+    return $results
   } catch {
     Write-Warning "Skipping arXiv applied papers: $($_.Exception.Message)"
     return @()
@@ -1365,7 +1368,8 @@ $action = Get-DailyUpdateAction `
   -CurrentPayload $currentPayload `
   -TodayArchive $todayArchive `
   -PreviousArchive $previousArchive `
-  -ForceRefresh $ForceRefresh
+  -ForceRefresh $ForceRefresh `
+  -Ledger $script:ArticleLedger
 
 Write-Host "Los Angeles time: $($localNow.ToString('yyyy-MM-dd HH:mm:ss'))"
 Write-Host "DeepSeek API key present: $([bool]$env:DEEPSEEK_API_KEY)"
