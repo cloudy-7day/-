@@ -75,8 +75,8 @@ if ($source -notmatch 'https://models\.github\.ai/inference/chat/completions' -o
   throw "Missing DeepSeek keys must fall back to DeepSeek V3 through GitHub Models."
 }
 
-if ($source -notmatch '\$gitHubModelsSourceLimit\s*=\s*4000' -or $source -notmatch '\$minimumGitHubModelsIntervalSeconds\s*=\s*12' -or $source -notmatch 'response_format\s*=\s*@\{\s*type\s*=\s*"json_object"') {
-  throw "GitHub Models calls must be token-bounded, rate-limited, and request strict JSON."
+if ($source -notmatch 'function Invoke-GitHubModelsBatchAnalysis' -or $source -notmatch '\$batchSourceLimit\s*=\s*500' -or $source -notmatch 'response_format\s*=\s*@\{\s*type\s*=\s*"json_object"') {
+  throw "GitHub Models fallback must batch all items into one token-bounded strict-JSON request."
 }
 
 if ($source -notmatch 'foreach\s*\(\$entry\s+in\s+@\(\$uniqueItems') {
@@ -151,6 +151,7 @@ if ($retryResult -ne "ok" -or $attempts -ne 2) {
 }
 
 . (Import-ScriptFunction -Name "New-ArticleAnalysis")
+. (Import-ScriptFunction -Name "Invoke-GitHubModelsBatchAnalysis")
 function Invoke-WithRetry {
   param([scriptblock]$Operation, [int]$MaxAttempts = 2, [int]$DelaySeconds = 2)
   return & $Operation
@@ -179,20 +180,39 @@ try {
   if ($incompleteAnalysis.summarySource -ne "source_extract") {
     throw "Incomplete DeepSeek JSON must fall back per item instead of failing the batch later."
   }
+  function Invoke-JsonPostUtf8 {
+    param([string]$Uri, [string]$JsonBody, [hashtable]$Headers)
+    $script:capturedAnalysisUri = $Uri
+    $script:capturedAnalysisBody = $JsonBody
+    return [pscustomobject]@{
+      choices = @([pscustomobject]@{
+        message = [pscustomobject]@{ content = '{"items":[{"id":"news-batch","title":"批量生成的中文标题","highlight":"一句忠于来源且足够具体的中文摘录。","summary":"这是批量生成的中文摘要。","failureAnalysis":"这是批量生成的中文判断。","englishTitle":"Batch-generated English title","englishHighlight":"A concrete source-grounded sentence.","englishSummary":"This is the batch-generated English summary.","englishFailureAnalysis":"This is the batch-generated English takeaway."}]}' }
+      })
+    }
+  }
   $env:DEEPSEEK_API_KEY = ""
   $env:GITHUB_TOKEN = "test-github-token"
-  $null = New-ArticleAnalysis `
-    -Category "international" `
-    -Title "GitHub Models fallback" `
-    -Source "Test source" `
-    -Url "https://example.com/github-models" `
-    -SourceText (("A" * 9000) + "TAIL_MARKER_MUST_BE_TRUNCATED") `
-    -ScoreLabel "Test"
+  $batchArticle = [ordered]@{
+    id = "news-batch"
+    category = "international"
+    title = "Original source title"
+    source = "Test source"
+    sourceExcerpt = (("A" * 9000) + "TAIL_MARKER_MUST_BE_TRUNCATED")
+    highlight = "Source highlight"
+    summary = "Source summary"
+    failureAnalysis = "Pending"
+    summarySource = "source_extract"
+    translations = [ordered]@{ zh = [ordered]@{}; en = [ordered]@{} }
+  }
+  $batchResult = @(Invoke-GitHubModelsBatchAnalysis -Articles @($batchArticle))
   if ($capturedAnalysisUri -ne "https://models.github.ai/inference/chat/completions" -or $capturedAnalysisBody -notmatch 'deepseek/deepseek-v3-0324') {
-    throw "GitHub Models fallback must call DeepSeek V3 with the built-in GitHub token."
+    throw "Batch fallback must call DeepSeek V3 with the built-in GitHub token."
   }
   if ($capturedAnalysisBody -match 'TAIL_MARKER_MUST_BE_TRUNCATED') {
-    throw "GitHub Models fallback must truncate oversized source text before inference."
+    throw "Batch fallback must truncate each oversized source excerpt before inference."
+  }
+  if ($batchResult[0].translations.zh.title -ne "批量生成的中文标题" -or $batchResult[0].summarySource -ne "deepseek") {
+    throw "Batch fallback must merge complete Chinese analysis into each article."
   }
 } finally {
   $env:DEEPSEEK_API_KEY = $savedDeepSeekKey

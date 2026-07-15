@@ -434,24 +434,12 @@ function New-ArticleAnalysis {
     $analysisUri = "https://api.deepseek.com/chat/completions"
     $analysisModel = "deepseek-chat"
     $analysisHeaders.Authorization = "Bearer $env:DEEPSEEK_API_KEY"
-  } elseif ($env:GITHUB_TOKEN) {
-    $analysisUri = "https://models.github.ai/inference/chat/completions"
-    $analysisModel = "deepseek/deepseek-v3-0324"
-    $analysisHeaders.Authorization = "Bearer $env:GITHUB_TOKEN"
-    $analysisHeaders["X-GitHub-Api-Version"] = "2026-03-10"
   } else {
     return New-SourceExtractAnalysis `
       -Category $Category `
       -Title $Title `
       -SourceText $SourceText `
       -RequiresRiskAnalysis $RequiresRiskAnalysis
-  }
-
-  $usingGitHubModels = $analysisUri -eq "https://models.github.ai/inference/chat/completions"
-  $gitHubModelsSourceLimit = 4000
-  $minimumGitHubModelsIntervalSeconds = 12
-  if ($usingGitHubModels -and $SourceText.Length -gt $gitHubModelsSourceLimit) {
-    $SourceText = $SourceText.Substring(0, $gitHubModelsSourceLimit)
   }
 
   $categoryGuide = switch ($Category) {
@@ -556,19 +544,7 @@ $translationGuide
   } | ConvertTo-Json -Depth 8
 
   try {
-    if ($usingGitHubModels -and $script:LastGitHubModelsCallAt) {
-      $elapsed = ((Get-Date) - $script:LastGitHubModelsCallAt).TotalSeconds
-      $remaining = $minimumGitHubModelsIntervalSeconds - $elapsed
-      if ($remaining -gt 0) {
-        Start-Sleep -Seconds ([Math]::Ceiling($remaining))
-      }
-    }
-    if ($usingGitHubModels) {
-      $script:LastGitHubModelsCallAt = Get-Date
-    }
-    $maxAnalysisAttempts = if ($usingGitHubModels) { 3 } else { 2 }
-    $analysisRetryDelay = if ($usingGitHubModels) { 18 } else { 2 }
-    $response = Invoke-WithRetry -MaxAttempts $maxAnalysisAttempts -DelaySeconds $analysisRetryDelay -Operation {
+    $response = Invoke-WithRetry -MaxAttempts 2 -DelaySeconds 2 -Operation {
       Invoke-JsonPostUtf8 `
         -Uri $analysisUri `
         -JsonBody $body `
@@ -652,6 +628,107 @@ $translationGuide
       -SourceText $SourceText `
       -RequiresRiskAnalysis $RequiresRiskAnalysis
   }
+}
+
+function Invoke-GitHubModelsBatchAnalysis {
+  param([object[]]$Articles)
+
+  if (-not $env:GITHUB_TOKEN -or $env:DEEPSEEK_API_KEY) {
+    return $Articles
+  }
+
+  $batchSourceLimit = 500
+  $inputs = @($Articles | ForEach-Object {
+    $sourceText = [string]$_.sourceExcerpt
+    if (-not $sourceText) { $sourceText = [string]$_.summary }
+    if ($sourceText.Length -gt $batchSourceLimit) {
+      $sourceText = $sourceText.Substring(0, $batchSourceLimit)
+    }
+    [ordered]@{
+      id = [string]$_.id
+      category = [string]$_.category
+      sourceTitle = [string]$_.title
+      source = [string]$_.source
+      sourceText = $sourceText
+      requiresRiskAnalysis = [bool]$_.requiresRiskAnalysis
+    }
+  })
+  $inputJson = $inputs | ConvertTo-Json -Depth 5 -Compress
+  $prompt = @"
+Analyze all seven source items below in one batch. Use only the supplied source text. Respond in strict JSON, with one output object per input id and no Markdown.
+
+For every item produce:
+- title: a concise faithful Simplified Chinese display title containing Chinese characters.
+- highlight: one source-grounded Chinese sentence, about 25-55 Chinese characters, with no template opening such as 本文介绍、文章指出、值得阅读、这篇论文提出.
+- summary: 2-3 restrained Chinese sentences explaining the item and why it matters.
+- failureAnalysis: for AI applications, 2-4 Chinese sentences about deployment risk; otherwise 1-2 Chinese sentences about the key evidence limit or takeaway.
+- englishTitle, englishHighlight, englishSummary, englishFailureAnalysis: faithful English equivalents. English highlights must be 12-30 words.
+
+Input items:
+$inputJson
+
+Return exactly:
+{"items":[{"id":"same input id","title":"...","highlight":"...","summary":"...","failureAnalysis":"...","englishTitle":"...","englishHighlight":"...","englishSummary":"...","englishFailureAnalysis":"..."}]}
+"@
+  $body = @{
+    model = "deepseek/deepseek-v3-0324"
+    messages = @(
+      @{ role = "system"; content = "You are a rigorous bilingual editor. Analyze only supplied evidence and return strict JSON." },
+      @{ role = "user"; content = $prompt }
+    )
+    temperature = 0.2
+    max_tokens = 1800
+    response_format = @{ type = "json_object" }
+  } | ConvertTo-Json -Depth 8
+  $response = Invoke-WithRetry -MaxAttempts 3 -DelaySeconds 20 -Operation {
+    Invoke-JsonPostUtf8 `
+      -Uri "https://models.github.ai/inference/chat/completions" `
+      -JsonBody $body `
+      -Headers @{
+        Authorization = "Bearer $env:GITHUB_TOKEN"
+        "X-GitHub-Api-Version" = "2026-03-10"
+      }
+  }
+  $content = ([string]$response.choices[0].message.content).Trim() -replace "^```json\s*", "" -replace "^```\s*", "" -replace "\s*```$", ""
+  $parsed = $content | ConvertFrom-Json
+  $outputs = @($parsed.items)
+  if ($outputs.Count -ne @($Articles).Count) {
+    throw "GitHub Models batch returned $($outputs.Count) items for $(@($Articles).Count) articles."
+  }
+  $byId = @{}
+  foreach ($output in $outputs) { $byId[[string]$output.id] = $output }
+
+  foreach ($article in @($Articles)) {
+    $analysis = $byId[[string]$article.id]
+    if (-not $analysis -or -not $analysis.title -or $analysis.title -notmatch '[\u3400-\u9fff]' -or
+      -not $analysis.highlight -or -not $analysis.summary -or -not $analysis.failureAnalysis -or
+      -not $analysis.englishTitle -or -not $analysis.englishHighlight -or -not $analysis.englishSummary -or -not $analysis.englishFailureAnalysis) {
+      throw "GitHub Models batch returned incomplete bilingual analysis: $($article.id)"
+    }
+
+    $article.highlight = [string]$analysis.highlight
+    $article.summary = [string]$analysis.summary
+    $article.failureAnalysis = [string]$analysis.failureAnalysis
+    $article.summarySource = "deepseek"
+    $chinese = [ordered]@{
+      title = [string]$analysis.title
+      highlight = [string]$analysis.highlight
+      summary = [string]$analysis.summary
+      failureAnalysis = [string]$analysis.failureAnalysis
+    }
+    $english = [ordered]@{
+      title = [string]$analysis.englishTitle
+      highlight = [string]$analysis.englishHighlight
+      summary = [string]$analysis.englishSummary
+      failureAnalysis = [string]$analysis.englishFailureAnalysis
+    }
+    if ($article.category -eq "paper") {
+      $chinese.paperCard = $article.paperCard
+      $english.paperCard = $article.translations.en.paperCard
+    }
+    $article.translations = [ordered]@{ zh = $chinese; en = $english }
+  }
+  return $Articles
 }
 
 function Get-DateStringFromCrossrefParts {
@@ -1471,6 +1548,10 @@ $articles += $selectedPapers
 $paperShortfall = 2 - $selectedPapers.Count
 if ($paperShortfall -gt 0) {
   $articles += $aiItems | Select-Object -Skip 2 -First $paperShortfall
+}
+
+if (-not $env:DEEPSEEK_API_KEY -and $env:GITHUB_TOKEN) {
+  $articles = @(Invoke-GitHubModelsBatchAnalysis -Articles $articles)
 }
 
 if ($articles.Count -eq 0) {
