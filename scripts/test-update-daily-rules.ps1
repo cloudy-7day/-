@@ -63,6 +63,10 @@ if ($source -notmatch 'Assert-DailyPayload') {
   throw "Generated data must be validated before replacing the published JSON files."
 }
 
+if ($source -notmatch 'Read-ArticleLedger' -or $source -notmatch 'Select-UniqueArticleCandidates') {
+  throw "Daily selection must exclude historically used and same-topic candidates before ranking."
+}
+
 if ($source -notmatch 'function Publish-DailyPayload') {
   throw "Publishing must be centralized behind validation."
 }

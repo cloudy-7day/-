@@ -35,6 +35,9 @@ function Import-LocalEnv {
 
 Import-LocalEnv
 
+$script:ArticleLedgerPath = Join-Path (Get-Location) "data/seen-articles.json"
+$script:ArticleLedger = Read-ArticleLedger -Path $script:ArticleLedgerPath
+
 function Get-LosAngelesNow {
   try {
     $tz = [System.TimeZoneInfo]::FindSystemTimeZoneById("America/Los_Angeles")
@@ -195,6 +198,8 @@ function Assert-DailyPayload {
       }
     }
   }
+
+  Assert-ArticleSetUnique -Articles $items -Ledger $script:ArticleLedger
 
   $expectedFingerprint = Get-ContentFingerprint -Articles $items
   if ($Payload.contentFingerprint -ne $expectedFingerprint) {
@@ -784,9 +789,9 @@ function Get-OpenWorldNewsItems {
     }
   }
 
-    $deduped = $candidates |
-    Group-Object -Property title |
-    ForEach-Object { $_.Group[0] }
+  $deduped = @(Select-UniqueArticleCandidates `
+    -Articles @($candidates | Sort-Object -Property publishedAt -Descending) `
+    -Ledger $script:ArticleLedger)
 
   # 每个来源最多选 1 篇，保证来源多样性
   $perSource = $deduped |
@@ -1068,9 +1073,9 @@ function Get-AiItems {
   $candidates += $feedCandidates
   $candidates += $githubCandidates
 
-  $deduped = $candidates |
-    Group-Object -Property { $_["url"] } |
-    ForEach-Object { $_.Group[0] }
+  $deduped = @(Select-UniqueArticleCandidates `
+    -Articles @($candidates | Sort-Object -Property { [datetime]$_["publishedAt"] } -Descending) `
+    -Ledger $script:ArticleLedger)
 
   $application = $deduped |
     Where-Object { $_["aiArticleType"] -eq "application_innovation" } |
@@ -1157,8 +1162,7 @@ function Get-CrossrefAuthorityPapers {
 
   $items |
     Sort-Object -Property recommendationScore,publishedAt -Descending |
-    Group-Object -Property title |
-    ForEach-Object { $_.Group[0] } |
+    Where-Object { Test-ArticleCandidate -Article $_ -Ledger $script:ArticleLedger } |
     Select-Object -First 2 |
     ForEach-Object {
       New-PaperItem `
@@ -1175,9 +1179,11 @@ function Get-ArxivAppliedPapers {
   $query = "https://export.arxiv.org/api/query?search_query=all:%22applied%20artificial%20intelligence%22%20OR%20all:%22brain-computer%20interface%22%20OR%20all:%22neuromorphic%20chip%22%20OR%20all:%22solid-state%20battery%22&start=0&max_results=12&sortBy=submittedDate&sortOrder=descending"
   try {
     $items = Invoke-WithRetry -Operation { Invoke-RestMethod -Uri $query -TimeoutSec 30 }
-    $items | Where-Object {
+    $eligibleItems = @($items | Where-Object {
       $_.title -notmatch "cosmological|Poincare|wave equation|mathematics|theory"
-    } | Select-Object -First 4 | ForEach-Object {
+    } | Select-Object *, @{ Name = "url"; Expression = { "https://arxiv.org/pdf/$(([uri]$_.id).Segments[-1]).pdf" } })
+    $uniqueItems = @(Select-UniqueArticleCandidates -Articles $eligibleItems -Ledger $script:ArticleLedger -MaxCount 6)
+    $uniqueItems | Select-Object -First 4 | ForEach-Object {
       $sourceText = ([string]$_.summary).Trim()
       $arxivId = ([uri]$_.id).Segments[-1]
       $pdfUrl = "https://arxiv.org/pdf/$arxivId.pdf"

@@ -135,6 +135,100 @@ function Test-ArticleSeen {
     ($normalizedTitle -and @($Ledger.titles) -contains $normalizedTitle)
 }
 
+function Test-ArticleCandidate {
+  param(
+    $Article,
+    $Ledger
+  )
+
+  return -not (Test-ArticleSeen -Article $Article -Ledger $Ledger)
+}
+
+function Get-ArticleTitleTokens {
+  param([string]$Title)
+
+  $stopWords = @(
+    "a", "an", "and", "are", "as", "at", "be", "by", "did", "do", "does", "for", "from", "how", "in", "into", "is", "it", "its", "new", "news", "of", "on", "or", "paper", "study", "that", "the", "this", "title", "to", "up", "was", "what", "when", "where", "which", "who", "why", "with"
+  )
+  @(
+    $Title.Normalize([Text.NormalizationForm]::FormKC).ToLowerInvariant() -split '[^\p{L}\p{N}]+' |
+      Where-Object { $_ -and $_.Length -ge 2 -and $_ -notmatch '^\d+$' -and $stopWords -notcontains $_ } |
+      Sort-Object -Unique
+  )
+}
+
+function Test-ArticlesSameTopic {
+  param(
+    $First,
+    $Second,
+    [double]$Threshold = 0.6
+  )
+
+  $firstTokens = @(Get-ArticleTitleTokens -Title ([string]$First.title))
+  $secondTokens = @(Get-ArticleTitleTokens -Title ([string]$Second.title))
+  $minimumCount = [Math]::Min($firstTokens.Count, $secondTokens.Count)
+  if ($minimumCount -lt 3) {
+    return $false
+  }
+  $sharedCount = @($firstTokens | Where-Object { $secondTokens -contains $_ }).Count
+  return ($sharedCount / $minimumCount) -ge $Threshold
+}
+
+function Assert-ArticleSetUnique {
+  param(
+    [object[]]$Articles,
+    $Ledger = $null
+  )
+
+  $seenUrls = @{}
+  $seenTitles = @{}
+  $accepted = @()
+  foreach ($article in @($Articles)) {
+    if ($Ledger -and (Test-ArticleSeen -Article $article -Ledger $Ledger)) {
+      throw "Article was already published: $($article.title)"
+    }
+    $url = Get-CanonicalArticleUrl -Url ([string]$article.url)
+    $title = Get-NormalizedArticleTitle -Title ([string]$article.title)
+    if (-not $url -or -not $title) {
+      throw "Article identity is incomplete: $($article.title)"
+    }
+    if ($seenUrls.ContainsKey($url) -or $seenTitles.ContainsKey($title)) {
+      throw "Article URL or title is duplicated: $($article.title)"
+    }
+    foreach ($previous in $accepted) {
+      if (Test-ArticlesSameTopic -First $previous -Second $article) {
+        throw "Articles cover the same topic: '$($previous.title)' and '$($article.title)'"
+      }
+    }
+    $seenUrls[$url] = $true
+    $seenTitles[$title] = $true
+    $accepted += $article
+  }
+}
+
+function Select-UniqueArticleCandidates {
+  param(
+    [object[]]$Articles,
+    $Ledger = $null,
+    [int]$MaxCount = [int]::MaxValue
+  )
+
+  $accepted = @()
+  foreach ($article in @($Articles)) {
+    if ($accepted.Count -ge $MaxCount) {
+      break
+    }
+    try {
+      $trial = @($accepted) + @($article)
+      Assert-ArticleSetUnique -Articles $trial -Ledger $Ledger
+      $accepted += $article
+    } catch {
+      continue
+    }
+  }
+  return $accepted
+}
+
 function New-SourceExtractAnalysis {
   param(
     [string]$Category,

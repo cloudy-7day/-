@@ -46,6 +46,25 @@ Assert-True (Test-ArticleSeen -Article ([pscustomobject]@{ url = "https://exampl
 Assert-True (Test-ArticleSeen -Article ([pscustomobject]@{ url = "https://example.com/new"; title = "Already Used" }) -Ledger $ledger) "A normalized ledger title must reject a candidate."
 Assert-True (-not (Test-ArticleSeen -Article ([pscustomobject]@{ url = "https://example.com/fresh"; title = "Fresh title" }) -Ledger $ledger)) "A new identity must remain eligible."
 
+$natoA = [pscustomobject]@{ url = "https://source-a.example/nato"; title = "What happened on the opening day of the NATO summit in Ankara" }
+$natoB = [pscustomobject]@{ url = "https://source-b.example/stakes"; title = "What's at stake at the NATO summit in Ankara" }
+$sameTopicRejected = $false
+try {
+  Assert-ArticleSetUnique -Articles @($natoA, $natoB) -Ledger ([pscustomobject]@{ urls = @(); titles = @() })
+} catch {
+  $sameTopicRejected = $true
+}
+Assert-True $sameTopicRejected "Different URLs covering the same event must be rejected."
+
+$distinctArticles = @(
+  [pscustomobject]@{ url = "https://example.com/battery"; title = "Solid-state battery reaches a new cycle-life milestone" },
+  [pscustomobject]@{ url = "https://example.com/robot"; title = "Warehouse robot learns safer grasp planning" }
+)
+Assert-ArticleSetUnique -Articles $distinctArticles -Ledger ([pscustomobject]@{ urls = @(); titles = @() })
+$selected = @(Select-UniqueArticleCandidates -Articles @($natoA, $natoB, $distinctArticles[0]) -Ledger ([pscustomobject]@{ urls = @(); titles = @() }))
+Assert-Equal $selected.Count 2 "Candidate selection must skip a same-topic duplicate and refill with a distinct item."
+Assert-Equal $selected[1].title $distinctArticles[0].title "Candidate selection must retain the next distinct item."
+
 $a = @(
   [pscustomobject]@{ url = "HTTPS://EXAMPLE.COM/a/" },
   [pscustomobject]@{ url = "https://example.com/b?x=1" }
