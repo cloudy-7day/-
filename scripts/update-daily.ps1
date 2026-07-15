@@ -427,7 +427,19 @@ function New-ArticleAnalysis {
     [bool]$RequiresRiskAnalysis = $false
   )
 
-  if (-not $env:DEEPSEEK_API_KEY) {
+  $analysisUri = ""
+  $analysisModel = ""
+  $analysisHeaders = @{}
+  if ($env:DEEPSEEK_API_KEY) {
+    $analysisUri = "https://api.deepseek.com/chat/completions"
+    $analysisModel = "deepseek-chat"
+    $analysisHeaders.Authorization = "Bearer $env:DEEPSEEK_API_KEY"
+  } elseif ($env:GITHUB_TOKEN) {
+    $analysisUri = "https://models.github.ai/inference/chat/completions"
+    $analysisModel = "deepseek/deepseek-v3-0324"
+    $analysisHeaders.Authorization = "Bearer $env:GITHUB_TOKEN"
+    $analysisHeaders["X-GitHub-Api-Version"] = "2026-03-10"
+  } else {
     return New-SourceExtractAnalysis `
       -Category $Category `
       -Title $Title `
@@ -526,7 +538,7 @@ $translationGuide
 "@
 
   $body = @{
-    model = "deepseek-chat"
+    model = $analysisModel
     messages = @(
       @{ role = "system"; content = "You are a rigorous technical-taste coach. You do not call GPT. Analyze only the provided information. Respond in Simplified Chinese." },
       @{ role = "user"; content = $prompt }
@@ -537,9 +549,9 @@ $translationGuide
   try {
     $response = Invoke-WithRetry -Operation {
       Invoke-JsonPostUtf8 `
-        -Uri "https://api.deepseek.com/chat/completions" `
+        -Uri $analysisUri `
         -JsonBody $body `
-        -Headers @{ Authorization = "Bearer $env:DEEPSEEK_API_KEY" }
+        -Headers $analysisHeaders
     }
 
     $content = [string]$response.choices[0].message.content

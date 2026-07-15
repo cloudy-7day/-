@@ -27,6 +27,10 @@ if ($workflow -notmatch 'GITHUB_TOKEN:\s*\$\{\{\s*secrets\.GITHUB_TOKEN\s*\}\}')
   throw "The update step must pass the GitHub Actions token to the collector."
 }
 
+if ($workflow -notmatch 'permissions:\s+contents:\s+write\s+models:\s+read') {
+  throw "The workflow must grant read access to GitHub Models for keyless DeepSeek fallback."
+}
+
 if ($workflow -notmatch '\$maxAttempts\s*=\s*2') {
   throw "The cloud update must retry once after a transient collection failure."
 }
@@ -65,6 +69,10 @@ if ($source -notmatch 'Assert-DailyPayload') {
 
 if ($source -notmatch 'Read-ArticleLedger' -or $source -notmatch 'Select-UniqueArticleCandidates') {
   throw "Daily selection must exclude historically used and same-topic candidates before ranking."
+}
+
+if ($source -notmatch 'https://models\.github\.ai/inference/chat/completions' -or $source -notmatch 'deepseek/deepseek-v3-0324') {
+  throw "Missing DeepSeek keys must fall back to DeepSeek V3 through GitHub Models."
 }
 
 if ($source -notmatch 'foreach\s*\(\$entry\s+in\s+@\(\$uniqueItems') {
@@ -144,6 +152,9 @@ function Invoke-WithRetry {
   return & $Operation
 }
 function Invoke-JsonPostUtf8 {
+  param([string]$Uri, [string]$JsonBody, [hashtable]$Headers)
+  $script:capturedAnalysisUri = $Uri
+  $script:capturedAnalysisBody = $JsonBody
   return [pscustomobject]@{
     choices = @([pscustomobject]@{
       message = [pscustomobject]@{ content = '{"summary":"","failureAnalysis":""}' }
@@ -151,6 +162,7 @@ function Invoke-JsonPostUtf8 {
   }
 }
 $savedDeepSeekKey = $env:DEEPSEEK_API_KEY
+$savedGitHubToken = $env:GITHUB_TOKEN
 $env:DEEPSEEK_API_KEY = "test-key"
 try {
   $incompleteAnalysis = New-ArticleAnalysis `
@@ -163,8 +175,21 @@ try {
   if ($incompleteAnalysis.summarySource -ne "source_extract") {
     throw "Incomplete DeepSeek JSON must fall back per item instead of failing the batch later."
   }
+  $env:DEEPSEEK_API_KEY = ""
+  $env:GITHUB_TOKEN = "test-github-token"
+  $null = New-ArticleAnalysis `
+    -Category "international" `
+    -Title "GitHub Models fallback" `
+    -Source "Test source" `
+    -Url "https://example.com/github-models" `
+    -SourceText "Specific source material for the GitHub Models transport test." `
+    -ScoreLabel "Test"
+  if ($capturedAnalysisUri -ne "https://models.github.ai/inference/chat/completions" -or $capturedAnalysisBody -notmatch 'deepseek/deepseek-v3-0324') {
+    throw "GitHub Models fallback must call DeepSeek V3 with the built-in GitHub token."
+  }
 } finally {
   $env:DEEPSEEK_API_KEY = $savedDeepSeekKey
+  $env:GITHUB_TOKEN = $savedGitHubToken
 }
 
 . (Import-ScriptFunction -Name "Assert-DailyPayload")
