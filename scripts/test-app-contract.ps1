@@ -19,5 +19,20 @@ if ($source -notmatch 'class="detail-content"[\s\S]*detail-summary[\s\S]*associa
 if ($source -notmatch "MotionCore.heroFrame" -or $source -notmatch "MotionCore.cardFrame") { throw "The app must consume the tested motion model." }
 if ($source -notmatch "cancelAnimationFrame\(activeSceneAnimation\)") { throw "A new scene animation must cancel the previous controller." }
 if ($source -notmatch "function animateHomeScene") { throw "The selected B scene controller is missing." }
+$domesticNews = -join ([char[]](0x56FD, 0x5185, 0x8981, 0x95FB))
+$internationalNews = -join ([char[]](0x56FD, 0x9645, 0x8981, 0x95FB))
+@($domesticNews, $internationalNews, "China", "World") | ForEach-Object {
+  if ($source -notmatch [regex]::Escape($_)) { throw "Missing combined news section label: $_" }
+}
+if ($source -notmatch 'filter\([\s\S]*SiteCore\.getDisplayCategory\(article\.category\)[\s\S]*=== category') {
+  throw "Category filtering must use SiteCore.getDisplayCategory."
+}
+if ($source -notmatch 'const displayCategory = SiteCore\.getDisplayCategory\(article\.category\)') {
+  throw "Article navigation/config resolution must use SiteCore.getDisplayCategory."
+}
+if ($source -notmatch 'CATEGORY_CONFIG\[displayCategory\]' -or $source -notmatch '#/category/\$\{displayCategory\}') {
+  throw "News article config and back navigation must share the display category."
+}
+if ($source -notmatch '#/category/news') { throw "News articles must share the #/category/news back route." }
 
 Write-Host "App contract tests passed."
