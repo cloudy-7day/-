@@ -5,7 +5,26 @@ $source = Get-Content -Raw -Encoding UTF8 $scriptPath
 $supportSource = Get-Content -Raw -Encoding UTF8 (Join-Path $PSScriptRoot "daily-update-support.ps1")
 $workflowPath = Join-Path (Split-Path -Parent $PSScriptRoot) ".github/workflows/daily-update.yml"
 $workflow = Get-Content -Raw -Encoding UTF8 $workflowPath
+. (Join-Path $PSScriptRoot "article-selection.ps1")
 . (Join-Path $PSScriptRoot "daily-update-support.ps1")
+
+if ($source -notmatch '(?m)^\. \(Join-Path \$PSScriptRoot "news-selection\.ps1"\)\s*$') {
+  throw "The daily updater must import the domestic/international news selection module."
+}
+
+foreach ($functionName in @("Get-OpenNewsFeeds", "Get-OpenNewsCandidates", "ConvertTo-NewsArticle", "Get-OpenNewsItems")) {
+  if ($source -notmatch "function\s+$functionName\b") {
+    throw "The daily updater is missing required news function: $functionName"
+  }
+}
+
+if ($source -notmatch '(?m)^\$articles \+= Get-OpenNewsItems\s*$') {
+  throw "The main assembly must collect the domestic/international news quotas through Get-OpenNewsItems."
+}
+
+if ($source -match '(?m)^\s*\$articles \+= Get-OpenWorldNewsItems\s*$') {
+  throw "The main assembly must not retain an active Get-OpenWorldNewsItems call."
+}
 
 if ($source -match "news-api\.ap\.org|apikey=demo") {
   throw "Default news feeds should not include API-gated AP demo endpoints."
@@ -133,6 +152,170 @@ function Import-ScriptFunction {
     throw "Missing required function: $Name"
   }
   return [scriptblock]::Create($definition.Extent.Text)
+}
+
+. (Import-ScriptFunction -Name "Get-OpenNewsFeeds")
+$savedNewsFeedUrls = $env:NEWS_FEED_URLS
+try {
+  $env:NEWS_FEED_URLS = "https://example.com/custom-news.xml,/relative-feed.xml,ftp://example.com/feed.xml"
+  $newsFeeds = @(Get-OpenNewsFeeds)
+} finally {
+  $env:NEWS_FEED_URLS = $savedNewsFeedUrls
+}
+$expectedOfficialFeeds = @(
+  "https://www.chinanews.com.cn/rss/china.xml",
+  "https://www.chinanews.com.cn/rss/society.xml",
+  "https://www.chinanews.com.cn/rss/finance.xml",
+  "http://www.xinhuanet.com/politics/news_politics.xml",
+  "http://www.xinhuanet.com/finance/news_finance.xml",
+  "http://www.people.com.cn/rss/politics.xml",
+  "http://www.people.com.cn/rss/society.xml",
+  "http://www.chinadaily.com.cn/rss/china_rss.xml",
+  "http://www.chinadaily.com.cn/rss/bizchina_rss.xml",
+  "https://cs.mfa.gov.cn/gyls/lsgz/lsyj/rss_57447.xml",
+  "https://feeds.npr.org/1004/rss.xml",
+  "https://www.theguardian.com/world/rss",
+  "https://feeds.reuters.com/Reuters/worldNews"
+)
+foreach ($feed in $newsFeeds) {
+  $feedUri = $null
+  if (-not $feed.source -or $feed.scope -notin @("domestic", "international") -or -not $feed.language -or
+    -not [uri]::TryCreate([string]$feed.url, [System.UriKind]::Absolute, [ref]$feedUri) -or $feedUri.Scheme -notin @("http", "https")) {
+    throw "Every open-news feed must declare source, scope, language, and an absolute HTTP(S) URL."
+  }
+}
+foreach ($expectedUrl in $expectedOfficialFeeds) {
+  if (@($newsFeeds | Where-Object { $_.url -eq $expectedUrl }).Count -ne 1) {
+    throw "Missing official open-news feed: $expectedUrl"
+  }
+}
+$customFeed = @($newsFeeds | Where-Object { $_.url -eq "https://example.com/custom-news.xml" })
+if ($customFeed.Count -ne 1 -or $customFeed[0].scope -ne "international" -or $customFeed[0].language -ne "unknown") {
+  throw "Custom NEWS_FEED_URLS entries must remain international feeds with unknown language."
+}
+if ($source -match 'miit\.gov\.cn') {
+  throw "The MIIT HTML subscription index must not be configured or scraped."
+}
+
+. (Import-ScriptFunction -Name "ConvertFrom-HtmlText")
+. (Import-ScriptFunction -Name "Get-FeedText")
+. (Import-ScriptFunction -Name "Get-FeedLink")
+. (Import-ScriptFunction -Name "Get-FeedItems")
+. (Import-ScriptFunction -Name "Invoke-WithRetry")
+. (Import-ScriptFunction -Name "Get-OpenNewsCandidates")
+$script:ArticleLedger = [pscustomobject]@{ version = 1; urls = @(); titles = @() }
+function Select-UniqueArticleCandidates {
+  param($Articles, $Ledger)
+  return @($Articles)
+}
+$script:fakeFeed = [pscustomobject]@{
+  rss = [pscustomobject]@{
+    channel = [pscustomobject]@{
+      item = @(
+        [pscustomobject]@{ title = "Valid domestic item"; link = "https://example.com/valid"; description = "<p>Retained <b>excerpt</b>.</p>"; pubDate = "Wed, 15 Jul 2026 12:00:00 GMT" },
+        [pscustomobject]@{ title = "Invalid date"; link = "https://example.com/bad-date"; description = "Bad date excerpt"; pubDate = "not-a-date" },
+        [pscustomobject]@{ title = "Unsafe link"; link = "javascript:alert(1)"; description = "Unsafe"; pubDate = "Wed, 15 Jul 2026 11:00:00 GMT" },
+        [pscustomobject]@{ title = "Relative link"; link = "/relative/story"; description = "Relative"; pubDate = "Wed, 15 Jul 2026 10:00:00 GMT" }
+      )
+    }
+  }
+}
+function Invoke-RestMethod {
+  param([string]$Uri, $Headers, [int]$TimeoutSec)
+  $script:capturedFeedUri = $Uri
+  $script:capturedFeedHeaders = $Headers
+  $script:capturedFeedTimeout = $TimeoutSec
+  return $script:fakeFeed
+}
+$fakeFeedInfo = [pscustomobject]@{ source = "Local official fixture"; url = "https://example.com/feed.xml"; scope = "domestic"; language = "zh" }
+$normalizedCandidates = @(Get-OpenNewsCandidates -Feeds @($fakeFeedInfo))
+if ($normalizedCandidates.Count -ne 1) {
+  throw "Candidate normalization must skip invalid dates and unsafe or nonabsolute URLs."
+}
+$normalized = $normalizedCandidates[0]
+if ($normalized.scope -ne "domestic" -or $normalized.language -ne "zh" -or $normalized.excerpt -notmatch '^Retained excerpt\s*\.$' -or
+  $capturedFeedUri -ne $fakeFeedInfo.url -or $capturedFeedHeaders["User-Agent"] -ne "personal-info-library/0.1" -or $capturedFeedTimeout -ne 30) {
+  throw "Candidate normalization must retain feed metadata/excerpts and use the bounded existing RSS request settings. Got scope='$($normalized.scope)', language='$($normalized.language)', excerpt='$($normalized.excerpt)', uri='$capturedFeedUri', userAgent='$($capturedFeedHeaders['User-Agent'])', timeout='$capturedFeedTimeout'."
+}
+$script:fakeFeed.rss.channel.item = @(1..13 | ForEach-Object {
+  [pscustomobject]@{
+    title = "Bounded item $_"
+    link = "https://example.com/bounded/$_"
+    description = "Excerpt $_"
+    pubDate = "Wed, 15 Jul 2026 12:00:00 GMT"
+  }
+})
+$boundedCandidates = @(Get-OpenNewsCandidates -Feeds @($fakeFeedInfo))
+if ($boundedCandidates.Count -ne 12) {
+  throw "Open-news collection must read no more than 12 entries per feed."
+}
+
+. (Import-ScriptFunction -Name "Get-OpenNewsItems")
+$script:testNewsCandidates = @(
+  1..3 | ForEach-Object { [pscustomobject]@{ id = "domestic-$_"; title = "Domestic $_"; scope = "domestic"; url = "https://example.com/domestic/$_"; publishedAt = "2026-07-15T12:00:00Z" } }
+  1..2 | ForEach-Object { [pscustomobject]@{ id = "international-$_"; title = "International $_"; scope = "international"; url = "https://example.com/international/$_"; publishedAt = "2026-07-15T12:00:00Z" } }
+)
+function Get-OpenNewsCandidates { return @($script:testNewsCandidates) }
+function Select-DomesticNewsCandidates { param($Candidates, [int]$TargetCount) return @($Candidates | Where-Object { $_.scope -eq "domestic" } | Select-Object -First $TargetCount) }
+function Select-InternationalNewsCandidates { param($Candidates, [int]$TargetCount) return @($Candidates | Where-Object { $_.scope -eq "international" } | Select-Object -First $TargetCount) }
+$script:convertedNewsCategories = @()
+function ConvertTo-NewsArticle {
+  param($Candidate, [string]$Category)
+  $script:convertedNewsCategories += $Category
+  return [pscustomobject]@{ id = $Candidate.id; category = $Category }
+}
+$quotaItems = @(Get-OpenNewsItems)
+if ($quotaItems.Count -ne 5 -or @($quotaItems | Where-Object { $_.category -eq "domestic" }).Count -ne 3 -or
+  @($quotaItems | Where-Object { $_.category -eq "international" }).Count -ne 2) {
+  throw "Get-OpenNewsItems must return exactly 3 domestic and 2 international articles."
+}
+$script:testNewsCandidates = @($script:testNewsCandidates | Where-Object { $_.id -ne "domestic-3" })
+$script:convertedNewsCategories = @()
+$quotaRejected = $false
+try {
+  Get-OpenNewsItems | Out-Null
+} catch {
+  $quotaRejected = $_.Exception.Message -match 'domestic.*2.*3' -and $_.Exception.Message -match 'international.*2.*2'
+}
+if (-not $quotaRejected -or $convertedNewsCategories.Count -ne 0) {
+  throw "A news quota shortfall must report both counts and throw before converting any candidate."
+}
+
+. (Import-ScriptFunction -Name "ConvertTo-NewsArticle")
+function New-ArticleAnalysis {
+  param([string]$Category, [string]$Title, [string]$Source, [string]$Url, [string]$SourceText, [string]$ScoreLabel)
+  $script:convertedAnalysisCategory = $Category
+  return [ordered]@{
+    title = "国内新闻转换测试"
+    highlight = "来源提供了可核验的国内公共影响事实。"
+    summary = "这是基于来源摘录的国内新闻摘要。"
+    failureAnalysis = "应继续核验来源证据。"
+    summarySource = "source_extract"
+    sourceExcerpt = $SourceText
+    translations = [ordered]@{
+      zh = [ordered]@{ title = "国内新闻转换测试"; highlight = "来源提供了可核验的国内公共影响事实。"; summary = "这是基于来源摘录的国内新闻摘要。"; failureAnalysis = "应继续核验来源证据。" }
+      en = [ordered]@{ title = "Domestic news conversion test"; highlight = "The source provides verifiable facts about public impact."; summary = "This domestic-news summary is based on the source excerpt."; failureAnalysis = "The source evidence should be verified further." }
+    }
+  }
+}
+function Get-DomesticNewsPriority { param($Candidate) return "national_policy" }
+function Get-InternationalNewsKind { param($Candidate) return "world_affairs" }
+$domesticArticle = ConvertTo-NewsArticle -Category "domestic" -Candidate ([pscustomobject]@{
+  id = "domestic-conversion"
+  title = "国内新闻转换测试"
+  source = "Fixture source"
+  url = "https://example.com/domestic-conversion"
+  publishedAt = "2026-07-15T12:00:00Z"
+  excerpt = "Specific public-impact facts from the source feed."
+})
+if ($convertedAnalysisCategory -ne "domestic" -or $domesticArticle.category -ne "domestic" -or
+  -not $domesticArticle.selectionReason -or -not $domesticArticle.translations.zh.title -or -not $domesticArticle.translations.en.title) {
+  throw "Domestic conversion must pass the actual category through analysis and return complete fallback translations. Got analysisCategory='$convertedAnalysisCategory', category='$($domesticArticle.category)', reason='$($domesticArticle.selectionReason)', zhTitle='$($domesticArticle.translations.zh.title)', enTitle='$($domesticArticle.translations.en.title)'."
+}
+$invalidCategoryRejected = $false
+try { ConvertTo-NewsArticle -Category "ai" -Candidate $domesticArticle | Out-Null } catch { $invalidCategoryRejected = $true }
+if (-not $invalidCategoryRejected) {
+  throw "ConvertTo-NewsArticle must reject categories other than domestic or international."
 }
 
 . (Import-ScriptFunction -Name "Get-LosAngelesNow")
@@ -411,9 +594,11 @@ function New-TestArticle {
 }
 
 $validArticles = @(
-  New-TestArticle -Id "news-1" -Category "international"
-  New-TestArticle -Id "news-2" -Category "international"
-  New-TestArticle -Id "news-3" -Category "international"
+  New-TestArticle -Id "domestic-1" -Category "domestic"
+  New-TestArticle -Id "domestic-2" -Category "domestic"
+  New-TestArticle -Id "domestic-3" -Category "domestic"
+  New-TestArticle -Id "international-1" -Category "international"
+  New-TestArticle -Id "international-2" -Category "international"
   New-TestArticle -Id "ai-1" -Category "ai"
   New-TestArticle -Id "ai-2" -Category "ai"
   New-TestArticle -Id "paper-1" -Category "paper"

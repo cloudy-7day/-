@@ -7,6 +7,7 @@ $ErrorActionPreference = "Stop"
 
 . (Join-Path $PSScriptRoot "article-selection.ps1")
 . (Join-Path $PSScriptRoot "daily-update-support.ps1")
+. (Join-Path $PSScriptRoot "news-selection.ps1")
 
 function Import-LocalEnv {
   $envPath = Join-Path (Get-Location) ".env.local"
@@ -97,13 +98,14 @@ function Assert-DailyPayload {
     throw "Daily payload issueDate must be $expectedDate; received $($Payload.issueDate)."
   }
 
-  if ($items.Count -ne 7) {
-    throw "Daily payload must contain exactly 7 articles; collected $($items.Count). Existing published data was not replaced."
+  if ($items.Count -ne 9) {
+    throw "Daily payload must contain exactly 9 articles; collected $($items.Count). Existing published data was not replaced."
   }
 
-  $newsCount = @($items | Where-Object { $_.category -eq "international" }).Count
-  if ($newsCount -ne 3) {
-    throw "Daily payload must contain exactly 3 international news items; collected $newsCount. Existing published data was not replaced."
+  $domesticCount = @($items | Where-Object { $_.category -eq "domestic" }).Count
+  $internationalCount = @($items | Where-Object { $_.category -eq "international" }).Count
+  if ($domesticCount -ne 3 -or $internationalCount -ne 2) {
+    throw "Daily payload must contain exactly 3 domestic and 2 international news items; collected $domesticCount domestic and $internationalCount international. Existing published data was not replaced."
   }
 
   $aiCount = @($items | Where-Object { $_.category -eq "ai" }).Count
@@ -112,7 +114,7 @@ function Assert-DailyPayload {
     throw "Daily payload must contain 2 AI items plus 0-2 papers, with AI filling any paper shortfall. Collected $aiCount AI and $paperCount papers."
   }
 
-  $allowedCategories = @("international", "ai", "paper")
+  $allowedCategories = @("domestic", "international", "ai", "paper")
   $seenIds = @{}
   $seenUrls = @{}
   $paperFields = @("problem", "method", "difference", "innovation", "implementation", "applications")
@@ -379,21 +381,143 @@ function Get-FeedItems {
 
 function Get-OpenNewsFeeds {
   $feeds = @(
-    @{ source = "NPR World"; url = "https://feeds.npr.org/1004/rss.xml" },
-    @{ source = "The Guardian World"; url = "https://www.theguardian.com/world/rss" },
-    @{ source = "Reuters World"; url = "https://feeds.reuters.com/Reuters/worldNews" }
+    @{ source = "中国新闻网国内"; url = "https://www.chinanews.com.cn/rss/china.xml"; scope = "domestic"; language = "zh" },
+    @{ source = "中国新闻网社会"; url = "https://www.chinanews.com.cn/rss/society.xml"; scope = "domestic"; language = "zh" },
+    @{ source = "中国新闻网财经"; url = "https://www.chinanews.com.cn/rss/finance.xml"; scope = "domestic"; language = "zh" },
+    @{ source = "新华网时政"; url = "http://www.xinhuanet.com/politics/news_politics.xml"; scope = "domestic"; language = "zh" },
+    @{ source = "新华网金融"; url = "http://www.xinhuanet.com/finance/news_finance.xml"; scope = "domestic"; language = "zh" },
+    @{ source = "人民网时政"; url = "http://www.people.com.cn/rss/politics.xml"; scope = "domestic"; language = "zh" },
+    @{ source = "人民网社会"; url = "http://www.people.com.cn/rss/society.xml"; scope = "domestic"; language = "zh" },
+    @{ source = "China Daily China"; url = "http://www.chinadaily.com.cn/rss/china_rss.xml"; scope = "domestic"; language = "en" },
+    @{ source = "China Daily BizChina"; url = "http://www.chinadaily.com.cn/rss/bizchina_rss.xml"; scope = "domestic"; language = "en" },
+    @{ source = "外交部领事安全提醒"; url = "https://cs.mfa.gov.cn/gyls/lsgz/lsyj/rss_57447.xml"; scope = "international"; language = "zh" },
+    @{ source = "NPR World"; url = "https://feeds.npr.org/1004/rss.xml"; scope = "international"; language = "en" },
+    @{ source = "The Guardian World"; url = "https://www.theguardian.com/world/rss"; scope = "international"; language = "en" },
+    @{ source = "Reuters World"; url = "https://feeds.reuters.com/Reuters/worldNews"; scope = "international"; language = "en" }
   )
 
   if ($env:NEWS_FEED_URLS) {
     $env:NEWS_FEED_URLS.Split(",") |
       ForEach-Object { $_.Trim() } |
       Where-Object { $_ } |
+      Where-Object {
+        $customUri = $null
+        [uri]::TryCreate($_, [System.UriKind]::Absolute, [ref]$customUri) -and $customUri.Scheme -in @("http", "https")
+      } |
       ForEach-Object {
-        $feeds += @{ source = "Custom open feed"; url = $_ }
+        $feeds += @{ source = "Custom open feed"; url = $_; scope = "international"; language = "unknown" }
       }
   }
 
   return $feeds
+}
+
+function Get-OpenNewsCandidates {
+  param([object[]]$Feeds = @(Get-OpenNewsFeeds))
+
+  $candidates = @()
+  foreach ($feedInfo in $Feeds) {
+    try {
+      $feed = Invoke-WithRetry -Operation {
+        Invoke-RestMethod -Uri $feedInfo.url -Headers @{ "User-Agent" = "personal-info-library/0.1" } -TimeoutSec 30
+      }
+      $rank = 0
+      foreach ($feedItem in @(Get-FeedItems -Feed $feed | Select-Object -First 12)) {
+        $rank += 1
+        $title = (Get-FeedText -Value $feedItem.title).Trim()
+        $link = (Get-FeedLink -Item $feedItem).Trim()
+        $excerptValue = if ($feedItem.description) {
+          $feedItem.description
+        } elseif ($feedItem.summary) {
+          $feedItem.summary
+        } else {
+          $feedItem.content
+        }
+        $excerpt = ConvertFrom-HtmlText -Value (Get-FeedText -Value $excerptValue)
+        $dateValue = if ($feedItem.pubDate) {
+          $feedItem.pubDate
+        } elseif ($feedItem.published) {
+          $feedItem.published
+        } else {
+          $feedItem.updated
+        }
+        $published = [datetimeoffset]::MinValue
+        $uri = $null
+        if (-not $title -or
+          -not [datetimeoffset]::TryParse((Get-FeedText -Value $dateValue), [ref]$published) -or
+          -not [uri]::TryCreate($link, [System.UriKind]::Absolute, [ref]$uri) -or
+          $uri.Scheme -notin @("http", "https")) {
+          continue
+        }
+
+        $candidates += [pscustomobject][ordered]@{
+          id = "news-" + ([guid]::NewGuid().ToString("N"))
+          title = $title
+          source = [string]$feedInfo.source
+          url = $uri.AbsoluteUri
+          publishedAt = $published.ToUniversalTime().ToString("o")
+          excerpt = $excerpt
+          sourceText = $excerpt
+          scope = [string]$feedInfo.scope
+          language = [string]$feedInfo.language
+          feedRank = $rank
+        }
+      }
+    } catch {
+      Write-Warning "Skipping feed $($feedInfo.source): $($_.Exception.Message)"
+    }
+  }
+
+  return @(Select-UniqueArticleCandidates `
+    -Articles @($candidates | Sort-Object -Property publishedAt -Descending) `
+    -Ledger $script:ArticleLedger)
+}
+
+function ConvertTo-NewsArticle {
+  param(
+    $Candidate,
+    [ValidateSet("domestic", "international")]
+    [string]$Category
+  )
+
+  if ($Category -notin @("domestic", "international")) {
+    throw "News article category must be domestic or international; received '$Category'."
+  }
+
+  $scoreLabel = "Official RSS source"
+  $selectionReason = if ($Category -eq "domestic") {
+    "Domestic priority: $(Get-DomesticNewsPriority -Candidate $Candidate)"
+  } else {
+    "International class: $(Get-InternationalNewsKind -Candidate $Candidate)"
+  }
+  $sourceText = [string]$Candidate.excerpt
+  $analysis = New-ArticleAnalysis `
+    -Category $Category `
+    -Title ([string]$Candidate.title) `
+    -Source ([string]$Candidate.source) `
+    -Url ([string]$Candidate.url) `
+    -SourceText $sourceText `
+    -ScoreLabel $scoreLabel
+
+  return [ordered]@{
+    id = [string]$Candidate.id
+    category = $Category
+    title = [string]$Candidate.title
+    source = [string]$Candidate.source
+    url = [string]$Candidate.url
+    publishedAt = [string]$Candidate.publishedAt
+    scoreLabel = $scoreLabel
+    selectionReason = $selectionReason
+    highlight = $analysis.highlight
+    summary = $analysis.summary
+    failureAnalysis = $analysis.failureAnalysis
+    summarySource = $analysis.summarySource
+    sourceExcerpt = $analysis.sourceExcerpt
+    translations = [ordered]@{
+      zh = Get-ChineseTranslationForAnalysis -Category $Category -Analysis $analysis
+      en = Get-EnglishTranslationForAnalysis -Category $Category -Title ([string]$Candidate.title) -Analysis $analysis
+    }
+  }
 }
 
 function Get-AiSourceFeeds {
@@ -443,6 +567,7 @@ function New-ArticleAnalysis {
   }
 
   $categoryGuide = switch ($Category) {
+    "domestic" { "This is important domestic Chinese news. Summarize the verifiable public impact and do not force a failure analysis." }
     "international" { "This is international news. Give a concise key takeaway. Do not force a failure analysis." }
     "ai" {
       if ($RequiresRiskAnalysis) {
@@ -879,101 +1004,18 @@ function New-PaperItem {
   }
 }
 
-function Get-OpenWorldNewsItems {
-  $candidates = @()
-  foreach ($feedInfo in Get-OpenNewsFeeds) {
-    try {
-      $feed = Invoke-WithRetry -Operation {
-        Invoke-RestMethod -Uri $feedInfo.url -Headers @{ "User-Agent" = "personal-info-library/0.1" } -TimeoutSec 30
-      }
-      $feedItems = Get-FeedItems -Feed $feed
-      $rank = 0
-      foreach ($feedItem in @($feedItems | Select-Object -First 6)) {
-        $rank += 1
-        $title = Get-FeedText -Value $feedItem.title
-        $link = Get-FeedText -Value $feedItem.link
-        $description = ConvertFrom-HtmlText -Value (Get-FeedText -Value $feedItem.description)
-        $publishedAt = try {
-          ([datetime](Get-FeedText -Value $feedItem.pubDate)).ToUniversalTime().ToString("o")
-        } catch {
-          (Get-Date).ToUniversalTime().ToString("o")
-        }
-
-        if (-not $title -or -not $link) {
-          continue
-        }
-
-        $sourceText = if ($description) { $description } else { "Open RSS item with title and URL. Full text may depend on the publisher page." }
-        $candidates += [pscustomobject][ordered]@{
-          id = "news-" + ([guid]::NewGuid().ToString("N"))
-          title = $title
-          source = [string]$feedInfo.source
-          url = [string]$link
-          publishedAt = $publishedAt
-          sourceText = $sourceText
-          feedRank = $rank
-        }
-      }
-    } catch {
-      Write-Warning "Skipping feed $($feedInfo.source): $($_.Exception.Message)"
-      continue
-    }
+function Get-OpenNewsItems {
+  $candidates = @(Get-OpenNewsCandidates)
+  $domestic = @(Select-DomesticNewsCandidates -Candidates $candidates -TargetCount 3 | Select-Object -First 3)
+  $international = @(Select-InternationalNewsCandidates -Candidates $candidates -TargetCount 2 | Select-Object -First 2)
+  if ($domestic.Count -ne 3 -or $international.Count -ne 2) {
+    throw "Open-news quota shortfall: domestic $($domestic.Count)/3; international $($international.Count)/2. Existing published data was not replaced."
   }
 
-  $deduped = @(Select-UniqueArticleCandidates `
-    -Articles @($candidates | Sort-Object -Property publishedAt -Descending) `
-    -Ledger $script:ArticleLedger)
-
-  # 每个来源最多选 1 篇，保证来源多样性
-  $perSource = $deduped |
-    Group-Object -Property source |
-    ForEach-Object { $_.Group | Sort-Object -Property publishedAt -Descending | Select-Object -First 1 }
-
-  $finalNews = @($perSource | Sort-Object -Property publishedAt -Descending)
-  if ($finalNews.Count -lt 3) {
-        $usedUrls = @{}
-    foreach ($item in $finalNews) { $usedUrls[$item.url] = $true }
-    $remaining = $deduped | Where-Object { -not $usedUrls.ContainsKey($_.url) }
-    $finalNews += $remaining | Sort-Object -Property publishedAt -Descending | Select-Object -First (3 - $finalNews.Count)
-  }
-
-  $finalNews | Select-Object -First 3 |
-    ForEach-Object {
-      $scoreLabel = "Open RSS source"
-      $sourceText = $_.sourceText
-    $analysis = New-ArticleAnalysis `
-      -Category "international" `
-        -Title ([string]$_.title) `
-        -Source ([string]$_.source) `
-        -Url ([string]$_.url) `
-        -SourceText $sourceText `
-      -ScoreLabel $scoreLabel
-
-    [ordered]@{
-        id = [string]$_.id
-      category = "international"
-      title = [string]$_.title
-        source = [string]$_.source
-        url = [string]$_.url
-        publishedAt = [string]$_.publishedAt
-      scoreLabel = $scoreLabel
-        selectionReason = "Open, non-paywalled RSS candidate; recent item across configured news feeds"
-      highlight = $analysis.highlight
-      summary = $analysis.summary
-      failureAnalysis = $analysis.failureAnalysis
-      summarySource = $analysis.summarySource
-      sourceExcerpt = $analysis.sourceExcerpt
-      translations = [ordered]@{
-        zh = Get-ChineseTranslationForAnalysis `
-          -Category "international" `
-          -Analysis $analysis
-        en = Get-EnglishTranslationForAnalysis `
-          -Category "international" `
-          -Title ([string]$_.title) `
-          -Analysis $analysis
-      }
-    }
-  }
+  return @(
+    $domestic | ForEach-Object { ConvertTo-NewsArticle -Candidate $_ -Category "domestic" }
+    $international | ForEach-Object { ConvertTo-NewsArticle -Candidate $_ -Category "international" }
+  )
 }
 
 function New-AiArticleItem {
@@ -1591,7 +1633,7 @@ Get-ChildItem -LiteralPath $archiveFolder -Filter "*.json" -ErrorAction Silently
 $script:ArticleLedger = Add-ArticlesToLedger -Ledger $script:ArticleLedger -Articles $publishedArticles
 
 $articles = @()
-$articles += Get-OpenWorldNewsItems
+$articles += Get-OpenNewsItems
 $aiItems = @(Get-AiItems -TargetCount 4)
 $articles += $aiItems | Select-Object -First 2
 $paperItems = @(Get-ArxivAppliedPapers)
