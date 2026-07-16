@@ -3,22 +3,23 @@ $script:RequiredNewsCandidateFields = @(
 )
 
 $script:NewsHardExclusionPattern = @(
-  "\b(?:entertainment|celebrity|celebrities|movie|film|television|tv|variety\s+show|box\s+office|sports?|football|basketball|fashion|travel\s+guides?|shopping|promotions?|promotional|discount|sale)\b",
+  "\b(?:entertainment|celebrity|celebrities|movie|film|television|tv|variety\s+show|box\s+office|sports?|football|basketball|fashion|travel\s+guides?|shopping|promotions?|promotional|discount|sale|opinion|commentary|editorial|advertorial|sponsored)\b",
   "\u5a31\u4e50", "\u660e\u661f", "\u7535\u5f71", "\u7535\u89c6", "\u7efc\u827a",
   "\u7968\u623f", "\u4f53\u80b2", "\u8db3\u7403", "\u7bee\u7403", "\u65f6\u5c1a",
-  "\u65c5\u6e38\u653b\u7565", "\u8d2d\u7269", "\u4fc3\u9500", "\u4f18\u60e0"
+  "\u65c5\u6e38\u653b\u7565", "\u8d2d\u7269", "\u4fc3\u9500", "\u4f18\u60e0",
+  "\u7eaf\u8bc4\u8bba", "\u8bc4\u8bba", "\u89c2\u70b9", "\u8f6f\u6587", "\u8d5e\u52a9"
 ) -join "|"
 
 $script:DomesticPriorityPatterns = @(
-  "politics|government|central\s+policy|policy|law|legal|regulation|parliament|\u653f\u6cbb|\u653f\u5e9c|\u4e2d\u592e|\u653f\u7b56|\u6cd5\u5f8b|\u6cd5\u89c4",
-  "disaster|earthquake|flood|typhoon|wildfire|emergency|public\s+safety|accident|rescue|\u707e\u5bb3|\u5730\u9707|\u6d2a\u6c34|\u53f0\u98ce|\u5e94\u6025|\u516c\u5171\u5b89\u5168|\u4e8b\u6545|\u6551\u63f4",
-  "science|scientific|technology|research|semiconductor|aerospace|quantum|key\s+technology|\u79d1\u5b66|\u79d1\u6280|\u7814\u7a76|\u534a\u5bfc\u4f53|\u822a\u5929|\u91cf\u5b50|\u5173\u952e\u6280\u672f",
-  "macroeconomy|economy|economic|finance|financial|industry|central\s+bank|markets?|gdp|trade|\u5b8f\u89c2\u7ecf\u6d4e|\u7ecf\u6d4e|\u91d1\u878d|\u4ea7\u4e1a|\u884c\u4e1a|\u592e\u884c|\u5e02\u573a|\u8d38\u6613",
-  "community|education|healthcare|housing|employment|residents?|ordinary|social|public\s+service|\u793e\u533a|\u6559\u80b2|\u533b\u7597|\u4f4f\u623f|\u5c31\u4e1a|\u5c45\u6c11|\u6c11\u751f|\u793e\u4f1a|\u516c\u5171\u670d\u52a1"
+  "\b(?:politics|government|central\s+policy|policy|law|legal|regulation|parliament)\b|\u653f\u6cbb|\u653f\u5e9c|\u4e2d\u592e|\u653f\u7b56|\u6cd5\u5f8b|\u6cd5\u89c4",
+  "\b(?:disaster|earthquake|flood|typhoon|wildfire|emergency|public\s+safety|accident|rescue)\b|\u707e\u5bb3|\u5730\u9707|\u6d2a\u6c34|\u53f0\u98ce|\u5e94\u6025|\u516c\u5171\u5b89\u5168|\u4e8b\u6545|\u6551\u63f4",
+  "\b(?:science|scientific|technology|research|semiconductor|aerospace|quantum|key\s+technology)\b|\u79d1\u5b66|\u79d1\u6280|\u7814\u7a76|\u534a\u5bfc\u4f53|\u822a\u5929|\u91cf\u5b50|\u5173\u952e\u6280\u672f",
+  "\b(?:macroeconomy|economy|economic|finance|financial|industry|central\s+bank|markets?|gdp|trade)\b|\u5b8f\u89c2\u7ecf\u6d4e|\u7ecf\u6d4e|\u91d1\u878d|\u4ea7\u4e1a|\u884c\u4e1a|\u592e\u884c|\u5e02\u573a|\u8d38\u6613",
+  "\b(?:community|education|healthcare|housing|employment|residents?|ordinary|social|public\s+service)\b|\u793e\u533a|\u6559\u80b2|\u533b\u7597|\u4f4f\u623f|\u5c31\u4e1a|\u5c45\u6c11|\u6c11\u751f|\u793e\u4f1a|\u516c\u5171\u670d\u52a1"
 )
 
-$script:InternationalPoliticsPattern = "politics|political|government|election|president|minister|parliament|diplomacy|diplomatic|sanction|war|conflict|policy|law|\u653f\u6cbb|\u653f\u5e9c|\u9009\u4e3e|\u603b\u7edf|\u90e8\u957f|\u8bae\u4f1a|\u5916\u4ea4|\u5236\u88c1|\u6218\u4e89|\u51b2\u7a81|\u653f\u7b56|\u6cd5\u5f8b"
-$script:InternationalFinancePattern = "finance|financial|economy|economic|markets?|stocks?|bonds?|currency|central\s+bank|interest\s+rates?|earnings|trade|gdp|\u91d1\u878d|\u7ecf\u6d4e|\u5e02\u573a|\u80a1\u7968|\u503a\u5238|\u8d27\u5e01|\u592e\u884c|\u5229\u7387|\u8d38\u6613"
+$script:InternationalPoliticsPattern = "\b(?:politics|political|government|election|president|minister|parliament|diplomacy|diplomatic|sanction|war|conflict|policy|law)\b|\u653f\u6cbb|\u653f\u5e9c|\u9009\u4e3e|\u603b\u7edf|\u90e8\u957f|\u8bae\u4f1a|\u5916\u4ea4|\u5236\u88c1|\u6218\u4e89|\u51b2\u7a81|\u653f\u7b56|\u6cd5\u5f8b"
+$script:InternationalFinancePattern = "\b(?:finance|financial|economy|economic|markets?|stocks?|bonds?|currency|central\s+bank|interest\s+rates?|earnings|trade|gdp)\b|\u91d1\u878d|\u7ecf\u6d4e|\u5e02\u573a|\u80a1\u7968|\u503a\u5238|\u8d27\u5e01|\u592e\u884c|\u5229\u7387|\u8d38\u6613"
 
 function Get-NewsCandidateText {
   param($Candidate)
@@ -42,7 +43,7 @@ function Test-NewsCandidateFresh {
   $published = [datetimeoffset]::MinValue
   if (-not [datetimeoffset]::TryParse([string]$Candidate.publishedAt, [ref]$published)) { return $false }
   $age = $Now.ToUniversalTime() - $published.ToUniversalTime()
-  return ($age.TotalSeconds -ge 0 -and $age.TotalHours -le 8)
+  return ($age.TotalSeconds -ge 0 -and $age.TotalHours -le 48)
 }
 
 function Test-NewsHardExcluded {
@@ -133,15 +134,26 @@ function Select-InternationalNewsCandidates {
   $selected = [System.Collections.ArrayList]::new()
   $selectedSources = @{}
   if ($politics.Count -gt 0 -and $finance.Count -gt 0) {
-    [void]$selected.Add($politics[0])
-    $selectedSources[([string]$politics[0].source).ToLowerInvariant()] = $true
+    $politicsChoice = $politics[0]
+    $financeChoice = $finance[0]
+    $pairFound = $false
+    foreach ($politicsCandidate in $politics) {
+      foreach ($financeCandidate in $finance) {
+        if ([string]$politicsCandidate.source -ine [string]$financeCandidate.source) {
+          $politicsChoice = $politicsCandidate
+          $financeChoice = $financeCandidate
+          $pairFound = $true
+          break
+        }
+      }
+      if ($pairFound) { break }
+    }
+
+    [void]$selected.Add($politicsChoice)
+    $selectedSources[([string]$politicsChoice.source).ToLowerInvariant()] = $true
     if ($selected.Count -lt $TargetCount) {
-      $financeChoice = @($finance | Where-Object {
-        -not $selectedSources.ContainsKey(([string]$_.source).ToLowerInvariant())
-      } | Select-Object -First 1)
-      if ($financeChoice.Count -eq 0) { $financeChoice = @($finance[0]) }
-      [void]$selected.Add($financeChoice[0])
-      $selectedSources[([string]$financeChoice[0].source).ToLowerInvariant()] = $true
+      [void]$selected.Add($financeChoice)
+      $selectedSources[([string]$financeChoice.source).ToLowerInvariant()] = $true
     }
   }
 

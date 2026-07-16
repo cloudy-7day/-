@@ -57,6 +57,21 @@ Assert-Equal (($withEntertainment.id) -join ",") "policy" "Domestic entertainmen
 $transportPolicy = New-NewsCandidate -Id "transport-policy" -Title "Government transport policy update"
 Assert-True (-not (Test-NewsHardExcluded -Candidate $transportPolicy)) "The sports exclusion must not match the word transport."
 
+$commentAndAdvertorialCandidates = @(
+  New-NewsCandidate -Id "opinion-policy" -Title "Opinion: government policy will reshape the country"
+  New-NewsCandidate -Id "commentary-industry" -Title "Commentary on the semiconductor industry"
+  New-NewsCandidate -Id "editorial-policy" -Title "Editorial: a new central policy direction"
+  New-NewsCandidate -Id "advertorial-industry" -Title "Advertorial for an industry product launch"
+  New-NewsCandidate -Id "sponsored-policy" -Title "Sponsored policy analysis from a consumer brand"
+  New-NewsCandidate -Id "pure-comment-cn" -Title ([regex]::Unescape("\u7eaf\u8bc4\u8bba\uff1a\u4e2d\u592e\u653f\u7b56\u89c2\u70b9"))
+  New-NewsCandidate -Id "soft-ad-cn" -Title ([regex]::Unescape("\u884c\u4e1a\u6d88\u8d39\u8f6f\u6587"))
+)
+foreach ($excludedCandidate in $commentAndAdvertorialCandidates) {
+  Assert-True (Test-NewsHardExcluded -Candidate $excludedCandidate) "Commentary and advertorial content '$($excludedCandidate.id)' should be hard excluded."
+}
+$commentAndAdvertorialSelected = @(Select-DomesticNewsCandidates -Candidates $commentAndAdvertorialCandidates -Now $now -TargetCount 3)
+Assert-Equal $commentAndAdvertorialSelected.Count 0 "Policy and industry keywords must not override commentary or advertorial exclusions."
+
 $ageCandidates = @(
   New-NewsCandidate -Id "recent" -Title "Central government policy update"
   New-NewsCandidate -Id "old" -Title "Central government policy archive" -PublishedAt "2026-07-14T04:00:00Z"
@@ -65,6 +80,14 @@ $ageCandidates = @(
 )
 $ageSelected = @(Select-DomesticNewsCandidates -Candidates $ageCandidates -Now $now -TargetCount 4)
 Assert-Equal (($ageSelected.id) -join ",") "recent" "Old, invalid, and future domestic timestamps should be rejected."
+
+$freshnessBoundary = @(
+  New-NewsCandidate -Id "age-48h" -Title "Central policy at freshness boundary" -PublishedAt "2026-07-14T16:00:00Z"
+  New-NewsCandidate -Id "age-48h-1m" -Title "Central policy beyond freshness boundary" -PublishedAt "2026-07-14T15:59:00Z"
+  New-NewsCandidate -Id "age-49h" -Title "Central policy outside freshness window" -PublishedAt "2026-07-14T15:00:00Z"
+)
+$boundarySelected = @(Select-DomesticNewsCandidates -Candidates $freshnessBoundary -Now $now -TargetCount 3)
+Assert-Equal (($boundarySelected.id) -join ",") "age-48h" "Exactly 48 hours should be accepted, while 48 hours plus one minute and 49 hours should be rejected."
 
 $tierAndDiversity = @(
   New-NewsCandidate -Id "policy-a1" -Title "Central policy alpha" -Source "Wire A"
@@ -85,6 +108,14 @@ Assert-Equal (Get-InternationalNewsKind -Candidate $internationalBalanced[1]) "f
 $balanced = @(Select-InternationalNewsCandidates -Candidates $internationalBalanced -Now $now -TargetCount 2)
 Assert-Equal (($balanced.id) -join ",") "politics-a,finance-b" "International selection should balance kinds and prefer different sources."
 
+$internationalReversePair = @(
+  New-NewsCandidate -Id "reverse-politics-a" -Title "Government election diplomacy update" -Source "Wire A" -Scope "international"
+  New-NewsCandidate -Id "reverse-politics-b" -Title "Parliament and minister diplomacy update" -Source "Wire B" -Scope "international"
+  New-NewsCandidate -Id "reverse-finance-a" -Title "Central bank and financial markets update" -Source "Wire A" -Scope "international"
+)
+$reverseBalanced = @(Select-InternationalNewsCandidates -Candidates $internationalReversePair -Now $now -TargetCount 2)
+Assert-Equal (($reverseBalanced.id) -join ",") "reverse-politics-b,reverse-finance-a" "International pairing should search both kinds for a different-source combination."
+
 $financeOnly = @(
   New-NewsCandidate -Id "finance-one" -Title "Stocks and markets rise after earnings" -Source "Wire A" -Scope "international"
   New-NewsCandidate -Id "finance-two" -Title "Central bank changes interest rates" -Source "Wire B" -Scope "international"
@@ -96,5 +127,16 @@ $internationalSports = New-NewsCandidate -Id "sports" -Title "Football team wins
 Assert-Equal (Get-InternationalNewsKind -Candidate $internationalSports) $null "International sports should not classify as politics or finance."
 $sportsSelected = @(Select-InternationalNewsCandidates -Candidates @($internationalSports, $financeOnly[0]) -Now $now -TargetCount 2)
 Assert-Equal (($sportsSelected.id) -join ",") "finance-one" "International sports should be excluded."
+
+$substringCandidates = @(
+  New-NewsCandidate -Id "hardware" -Title "A hardware product launch" -Scope "international"
+  New-NewsCandidate -Id "flaw" -Title "Researchers disclose a software flaw" -Scope "international"
+  New-NewsCandidate -Id "marketing" -Title "A company changes its marketing strategy" -Scope "international"
+)
+foreach ($substringCandidate in $substringCandidates) {
+  Assert-Equal (Get-InternationalNewsKind -Candidate $substringCandidate) $null "English category keywords must not match inside '$($substringCandidate.id)'."
+}
+$substringSelected = @(Select-InternationalNewsCandidates -Candidates $substringCandidates -Now $now -TargetCount 2)
+Assert-Equal $substringSelected.Count 0 "Substring-only international matches should not be selected."
 
 Write-Host "News selection tests passed."
