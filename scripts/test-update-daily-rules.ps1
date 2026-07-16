@@ -627,8 +627,8 @@ $validArticles = @(
   New-TestArticle -Id "domestic-1" -Category "domestic"
   New-TestArticle -Id "domestic-2" -Category "domestic"
   New-TestArticle -Id "domestic-3" -Category "domestic"
-  New-TestArticle -Id "international-1" -Category "international"
-  New-TestArticle -Id "international-2" -Category "international"
+  New-TestArticle -Id "news-1" -Category "international"
+  New-TestArticle -Id "news-2" -Category "international"
   New-TestArticle -Id "ai-1" -Category "ai"
   New-TestArticle -Id "ai-2" -Category "ai"
   New-TestArticle -Id "paper-1" -Category "paper"
@@ -641,6 +641,57 @@ $validPayload = [ordered]@{
   articles = $validArticles
 }
 Assert-DailyPayload -Payload $validPayload
+
+function Assert-DailyPayloadRejected {
+  param($Payload, [string]$Message, [string]$ExpectedMessagePattern = "")
+
+  $rejected = $false
+  $actualMessage = ""
+  try {
+    Assert-DailyPayload -Payload $Payload
+  } catch {
+    $rejected = $true
+    $actualMessage = $_.Exception.Message
+  }
+  if (-not $rejected) {
+    throw $Message
+  }
+  if ($ExpectedMessagePattern -and $actualMessage -notmatch $ExpectedMessagePattern) {
+    throw "$Message Expected an error matching '$ExpectedMessagePattern', got '$actualMessage'."
+  }
+}
+
+$eightArticles = @($validPayload.articles | Select-Object -First 8)
+$eightPayload = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$eightPayload.articles = $eightArticles
+$eightPayload.contentFingerprint = Get-ContentFingerprint -Articles $eightArticles
+Assert-DailyPayloadRejected -Payload $eightPayload -Message "Daily payloads must reject a total of eight articles." -ExpectedMessagePattern 'exactly 9 articles; collected 8'
+
+$tenPayload = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$extraArticle = New-TestArticle -Id "ai-3" -Category "ai"
+$tenPayload.articles = @($tenPayload.articles) + @($extraArticle)
+$tenPayload.contentFingerprint = Get-ContentFingerprint -Articles $tenPayload.articles
+Assert-DailyPayloadRejected -Payload $tenPayload -Message "Daily payloads must reject a total of ten articles." -ExpectedMessagePattern 'exactly 9 articles; collected 10'
+
+$wrongDomestic = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$wrongDomestic.articles[0].category = "international"
+$wrongDomestic.contentFingerprint = Get-ContentFingerprint -Articles $wrongDomestic.articles
+Assert-DailyPayloadRejected -Payload $wrongDomestic -Message "Daily payloads must reject a domestic count other than three." -ExpectedMessagePattern 'exactly 3 domestic and 2 international.*collected 2 domestic and 3 international'
+
+$wrongInternational = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$wrongInternational.articles[3].category = "ai"
+$wrongInternational.contentFingerprint = Get-ContentFingerprint -Articles $wrongInternational.articles
+Assert-DailyPayloadRejected -Payload $wrongInternational -Message "Daily payloads must reject an international count other than two." -ExpectedMessagePattern 'exactly 3 domestic and 2 international.*collected 3 domestic and 1 international'
+
+$wrongReading = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$wrongReading.articles[5].category = "other"
+$wrongReading.contentFingerprint = Get-ContentFingerprint -Articles $wrongReading.articles
+Assert-DailyPayloadRejected -Payload $wrongReading -Message "Daily payloads must reject a reading count other than four." -ExpectedMessagePattern 'exactly 4 AI/paper articles.*collected 1 AI and 2 papers'
+
+$unsupportedCategory = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$unsupportedCategory.articles[8].category = "unsupported"
+$unsupportedCategory.contentFingerprint = Get-ContentFingerprint -Articles $unsupportedCategory.articles
+Assert-DailyPayloadRejected -Payload $unsupportedCategory -Message "Daily payloads must reject unsupported categories."
 
 $missingChinese = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
 $missingChinese.articles[0].translations.PSObject.Properties.Remove("zh")

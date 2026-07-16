@@ -339,9 +339,10 @@ function Get-DailyUpdateAction {
   if ($Ledger -and @($items | Where-Object { Test-ArticleSeen -Article $_ -Ledger $Ledger }).Count -gt 0) {
     return "fresh_generation"
   }
-  $newsCount = @($items | Where-Object { $_.category -eq "international" }).Count
+  $domesticCount = @($items | Where-Object { $_.category -eq "domestic" }).Count
+  $internationalCount = @($items | Where-Object { $_.category -eq "international" }).Count
   $readingCount = @($items | Where-Object { $_.category -in @("ai", "paper") }).Count
-  if ($items.Count -ne 7 -or $newsCount -ne 3 -or $readingCount -ne 4) {
+  if ($items.Count -ne 9 -or $domesticCount -ne 3 -or $internationalCount -ne 2 -or $readingCount -ne 4) {
     return "fresh_generation"
   }
 

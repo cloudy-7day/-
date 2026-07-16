@@ -111,7 +111,7 @@ function Assert-DailyPayload {
   $aiCount = @($items | Where-Object { $_.category -eq "ai" }).Count
   $paperCount = @($items | Where-Object { $_.category -eq "paper" }).Count
   if ($aiCount -lt 2 -or $aiCount -gt 4 -or $paperCount -lt 0 -or $paperCount -gt 2 -or ($aiCount + $paperCount) -ne 4) {
-    throw "Daily payload must contain 2 AI items plus 0-2 papers, with AI filling any paper shortfall. Collected $aiCount AI and $paperCount papers."
+    throw "Daily payload must contain exactly 4 AI/paper articles (2-4 AI and 0-2 papers); collected $aiCount AI and $paperCount papers."
   }
 
   $allowedCategories = @("domestic", "international", "ai", "paper")
