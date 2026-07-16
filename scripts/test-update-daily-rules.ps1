@@ -7,6 +7,7 @@ $workflowPath = Join-Path (Split-Path -Parent $PSScriptRoot) ".github/workflows/
 $workflow = Get-Content -Raw -Encoding UTF8 $workflowPath
 . (Join-Path $PSScriptRoot "article-selection.ps1")
 . (Join-Path $PSScriptRoot "daily-update-support.ps1")
+. (Join-Path $PSScriptRoot "news-selection.ps1")
 
 if ($source -notmatch '(?m)^\. \(Join-Path \$PSScriptRoot "news-selection\.ps1"\)\s*$') {
   throw "The daily updater must import the domestic/international news selection module."
@@ -251,25 +252,56 @@ if ($boundedCandidates.Count -ne 12) {
 }
 
 . (Import-ScriptFunction -Name "Get-OpenNewsItems")
+$integrationNow = (Get-Date).ToUniversalTime()
+function New-IntegrationNewsCandidate {
+  param(
+    [string]$Id,
+    [string]$Title,
+    [string]$Source,
+    [string]$Scope,
+    [int]$AgeHours
+  )
+
+  return [pscustomobject]@{
+    id = $Id
+    title = $Title
+    source = $Source
+    url = "https://example.com/$Id"
+    publishedAt = $integrationNow.AddHours(-$AgeHours).ToString("o")
+    sourceText = "Verifiable source excerpt for $Id."
+    excerpt = "Verifiable source excerpt for $Id."
+    scope = $Scope
+    language = "en"
+  }
+}
 $script:testNewsCandidates = @(
-  1..3 | ForEach-Object { [pscustomobject]@{ id = "domestic-$_"; title = "Domestic $_"; scope = "domestic"; url = "https://example.com/domestic/$_"; publishedAt = "2026-07-15T12:00:00Z" } }
-  1..2 | ForEach-Object { [pscustomobject]@{ id = "international-$_"; title = "International $_"; scope = "international"; url = "https://example.com/international/$_"; publishedAt = "2026-07-15T12:00:00Z" } }
+  New-IntegrationNewsCandidate -Id "domestic-policy" -Title "Government announces central policy and law package" -Source "Domestic Wire A" -Scope "domestic" -AgeHours 1
+  New-IntegrationNewsCandidate -Id "domestic-disaster" -Title "Flood disaster triggers emergency public safety response" -Source "Domestic Wire B" -Scope "domestic" -AgeHours 2
+  New-IntegrationNewsCandidate -Id "domestic-science" -Title "Science research delivers a key technology breakthrough" -Source "Domestic Wire C" -Scope "domestic" -AgeHours 3
+  New-IntegrationNewsCandidate -Id "international-politics" -Title "Election and government diplomacy update" -Source "International Wire A" -Scope "international" -AgeHours 1
+  New-IntegrationNewsCandidate -Id "international-finance" -Title "Global markets and central bank finance update" -Source "International Wire B" -Scope "international" -AgeHours 2
 )
 function Get-OpenNewsCandidates { return @($script:testNewsCandidates) }
-function Select-DomesticNewsCandidates { param($Candidates, [int]$TargetCount) return @($Candidates | Where-Object { $_.scope -eq "domestic" } | Select-Object -First $TargetCount) }
-function Select-InternationalNewsCandidates { param($Candidates, [int]$TargetCount) return @($Candidates | Where-Object { $_.scope -eq "international" } | Select-Object -First $TargetCount) }
 $script:convertedNewsCategories = @()
 function ConvertTo-NewsArticle {
   param($Candidate, [string]$Category)
   $script:convertedNewsCategories += $Category
-  return [pscustomobject]@{ id = $Candidate.id; category = $Category }
+  return [pscustomobject]@{ id = $Candidate.id; category = $Category; url = $Candidate.url; candidateScope = $Candidate.scope }
 }
 $quotaItems = @(Get-OpenNewsItems)
 if ($quotaItems.Count -ne 5 -or @($quotaItems | Where-Object { $_.category -eq "domestic" }).Count -ne 3 -or
   @($quotaItems | Where-Object { $_.category -eq "international" }).Count -ne 2) {
-  throw "Get-OpenNewsItems must return exactly 3 domestic and 2 international articles."
+  throw "Real news selectors must return exactly 3 domestic and 2 international articles through Get-OpenNewsItems."
 }
-$script:testNewsCandidates = @($script:testNewsCandidates | Where-Object { $_.id -ne "domestic-3" })
+if (@($quotaItems.url | Sort-Object -Unique).Count -ne 5) {
+  throw "Domestic and international selection must not return the same candidate URL twice."
+}
+foreach ($quotaItem in $quotaItems) {
+  if ($quotaItem.category -ne $quotaItem.candidateScope) {
+    throw "News category '$($quotaItem.category)' must be converted only from the matching candidate scope '$($quotaItem.candidateScope)'."
+  }
+}
+$script:testNewsCandidates = @($script:testNewsCandidates | Where-Object { $_.id -ne "domestic-science" })
 $script:convertedNewsCategories = @()
 $quotaRejected = $false
 try {
@@ -298,8 +330,6 @@ function New-ArticleAnalysis {
     }
   }
 }
-function Get-DomesticNewsPriority { param($Candidate) return "national_policy" }
-function Get-InternationalNewsKind { param($Candidate) return "world_affairs" }
 $domesticArticle = ConvertTo-NewsArticle -Category "domestic" -Candidate ([pscustomobject]@{
   id = "domestic-conversion"
   title = "国内新闻转换测试"

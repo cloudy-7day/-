@@ -1006,8 +1006,11 @@ function New-PaperItem {
 
 function Get-OpenNewsItems {
   $candidates = @(Get-OpenNewsCandidates)
-  $domestic = @(Select-DomesticNewsCandidates -Candidates $candidates -TargetCount 3 | Select-Object -First 3)
-  $international = @(Select-InternationalNewsCandidates -Candidates $candidates -TargetCount 2 | Select-Object -First 2)
+  $now = (Get-Date).ToUniversalTime()
+  $domesticCandidates = @($candidates | Where-Object { $_.scope -eq "domestic" })
+  $internationalCandidates = @($candidates | Where-Object { $_.scope -eq "international" })
+  $domestic = @(Select-DomesticNewsCandidates -Candidates $domesticCandidates -Now $now -TargetCount 3 | Select-Object -First 3)
+  $international = @(Select-InternationalNewsCandidates -Candidates $internationalCandidates -Now $now -TargetCount 2 | Select-Object -First 2)
   if ($domestic.Count -ne 3 -or $international.Count -ne 2) {
     throw "Open-news quota shortfall: domestic $($domestic.Count)/3; international $($international.Count)/2. Existing published data was not replaced."
   }
