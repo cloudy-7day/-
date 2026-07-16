@@ -72,6 +72,19 @@ foreach ($excludedCandidate in $commentAndAdvertorialCandidates) {
 $commentAndAdvertorialSelected = @(Select-DomesticNewsCandidates -Candidates $commentAndAdvertorialCandidates -Now $now -TargetCount 3)
 Assert-Equal $commentAndAdvertorialSelected.Count 0 "Policy and industry keywords must not override commentary or advertorial exclusions."
 
+$lifestyleCandidates = @(
+  New-NewsCandidate -Id "lifestyle-policy" -Title "Government policy shapes lifestyle trends"
+  New-NewsCandidate -Id "lifestyle-finance" -Title "Financial markets shape lifestyle trends" -Scope "international"
+  New-NewsCandidate -Id "lifestyle-cn" -Title ([regex]::Unescape("\u653f\u5e9c\u91d1\u878d\u653f\u7b56\u4e0e\u751f\u6d3b\u65b9\u5f0f\u8d8b\u52bf")) -Scope "international"
+)
+foreach ($lifestyleCandidate in $lifestyleCandidates) {
+  Assert-True (Test-NewsHardExcluded -Candidate $lifestyleCandidate) "Lifestyle content '$($lifestyleCandidate.id)' should be hard excluded before policy or finance classification."
+}
+$lifestyleDomesticSelected = @(Select-DomesticNewsCandidates -Candidates @($lifestyleCandidates[0]) -Now $now -TargetCount 1)
+$lifestyleInternationalSelected = @(Select-InternationalNewsCandidates -Candidates @($lifestyleCandidates[1], $lifestyleCandidates[2]) -Now $now -TargetCount 2)
+Assert-Equal $lifestyleDomesticSelected.Count 0 "Lifestyle must override domestic policy priority."
+Assert-Equal $lifestyleInternationalSelected.Count 0 "Lifestyle must override international politics and finance classification."
+
 $ageCandidates = @(
   New-NewsCandidate -Id "recent" -Title "Central government policy update"
   New-NewsCandidate -Id "old" -Title "Central government policy archive" -PublishedAt "2026-07-14T04:00:00Z"
