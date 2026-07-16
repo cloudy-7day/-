@@ -71,6 +71,14 @@ if ($workflow -notmatch 'uses:\s*actions/checkout@v4\s+with:\s+ref:\s*main') {
   throw "Queued runs must check out the latest main branch before evaluating the daily archive gate."
 }
 
+if ($workflow -match '(?ms)- name:\s*Test daily update rules\s+shell:\s*pwsh\s+run:\s*powershell(?:\.exe)?\s+-ExecutionPolicy') {
+  throw "A pwsh workflow step must not invoke Windows PowerShell through powershell -ExecutionPolicy."
+}
+
+if ($workflow -notmatch '(?ms)- name:\s*Test daily update rules\s+shell:\s*pwsh\s+run:\s*(?:\./scripts/test-update-daily-rules\.ps1|pwsh\s+-File\s+scripts/test-update-daily-rules\.ps1)') {
+  throw "The cloud workflow must run the daily rule test directly from pwsh before updating articles."
+}
+
 if ($source -notmatch 'Authorization\s*=\s*"Bearer \$env:GITHUB_TOKEN"') {
   throw "GitHub API requests must use the Actions token when it is available."
 }
