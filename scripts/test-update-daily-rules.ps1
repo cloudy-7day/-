@@ -59,82 +59,208 @@ if ($source -match 'Invoke-WebRequest\s+-Uri\s+\$link') {
   throw "News collection should not fetch each selected RSS article page during candidate collection."
 }
 
-$pullRequestMatch = [regex]::Match(
-  $workflow,
-  '(?ms)^  pull_request:\s*\r?\n(?<block>.*?)(?=^  (?:workflow_dispatch|push|schedule):|^permissions:)'
-)
-if (-not $pullRequestMatch.Success) {
-  throw "Workflow must validate pull requests."
-}
-$pullRequestBlock = $pullRequestMatch.Groups['block'].Value
-foreach ($triggerPath in @(
-  '.github/workflows/daily-update.yml',
-  'scripts/**',
-  'app.js',
-  'site-core.js',
-  'data/**',
-  'PROJECT_CONTEXT.md',
-  'CHANGELOG.md'
-)) {
-  if ($pullRequestBlock -notmatch ('(?m)^\s+-\s+"?' + [regex]::Escape($triggerPath) + '"?\s*$')) {
-    throw "Workflow pull-request paths must include $triggerPath."
+function Assert-PullRequestValidationContract {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$WorkflowText
+  )
+
+  $pullRequestMatch = [regex]::Match(
+    $WorkflowText,
+    '(?ms)^  pull_request:\s*\r?\n(?<block>.*?)(?=^  (?:workflow_dispatch|push|schedule):|^permissions:)'
+  )
+  if (-not $pullRequestMatch.Success) {
+    throw "Workflow must validate pull requests."
+  }
+  $pullRequestBlock = $pullRequestMatch.Groups['block'].Value
+  foreach ($triggerPath in @(
+    '.github/workflows/daily-update.yml',
+    'scripts/**',
+    'app.js',
+    'site-core.js',
+    'data/**',
+    'PROJECT_CONTEXT.md',
+    'CHANGELOG.md'
+  )) {
+    if ($pullRequestBlock -notmatch ('(?m)^\s+-\s+"?' + [regex]::Escape($triggerPath) + '"?\s*$')) {
+      throw "Workflow pull-request paths must include $triggerPath."
+    }
+  }
+
+  $validateMatch = [regex]::Match($WorkflowText, '(?ms)^  validate:\s*\r?\n(?<block>.*?)(?=^  update:\s*$)')
+  if (-not $validateMatch.Success) {
+    throw "Workflow must define a validate job before the update job."
+  }
+  $validateBlock = $validateMatch.Groups['block'].Value
+  $updateMatch = [regex]::Match($WorkflowText, '(?ms)^  update:\s*\r?\n(?<block>.*)\z')
+  if (-not $updateMatch.Success) {
+    throw "Workflow must retain the update job."
+  }
+  $updateBlock = $updateMatch.Groups['block'].Value
+
+  if ($WorkflowText -match '(?m)^concurrency:\s*$') {
+    throw "Pull-request validation and production updates must not share global concurrency."
+  }
+  if ($WorkflowText -notmatch '(?ms)^permissions:\s*\r?\n\s{2}contents:\s*read\s*$') {
+    throw "Workflow top-level permissions must be read-only."
+  }
+  if ($validateBlock -notmatch "(?m)^\s+if:\s*github\.event_name\s*==\s*'pull_request'\s*$") {
+    throw "The validate job must run only for pull requests."
+  }
+  if ($validateBlock -notmatch '(?ms)^    concurrency:\s*\r?\n      group:\s*daily-article-validation-pr-\$\{\{ github\.event\.pull_request\.number \}\}\s*\r?\n      cancel-in-progress:\s*true\s*$') {
+    throw "Pull-request validation must use an isolated per-PR concurrency group."
+  }
+  if ($updateBlock -notmatch '(?ms)^    concurrency:\s*\r?\n      group:\s*daily-article-update\s*\r?\n      cancel-in-progress:\s*false\s*$') {
+    throw "The update job must preserve the production concurrency group."
+  }
+  if ($validateBlock -notmatch '(?m)^\s+runs-on:\s*ubuntu-latest\s*$' -or
+    $validateBlock -notmatch '(?m)^\s+timeout-minutes:\s*15\s*$' -or
+    $validateBlock -notmatch '(?m)^\s+uses:\s*actions/checkout@v4\s*$' -or
+    $validateBlock -notmatch '(?m)^\s+ref:\s*\$\{\{ github\.event\.pull_request\.head\.sha \}\}\s*$' -or
+    $validateBlock -notmatch '(?m)^\s+uses:\s*actions/setup-python@v5\s*$' -or
+    $validateBlock -notmatch '(?m)^\s+python-version:\s*"3\.12"\s*$' -or
+    $validateBlock -notmatch '(?m)^\s+run:\s*python -m pip install pypdf==6\.10\.2\s*$') {
+    throw "The validate job must check out the PR head and use the pinned read-only validation runtime."
+  }
+
+  $validatePermissionsMatch = [regex]::Match(
+    $validateBlock,
+    '(?ms)^    permissions:\s*\r?\n(?<block>(?:^      [^\r\n]*(?:\r?\n|$))+)'
+  )
+  if ($validatePermissionsMatch.Success -and $validatePermissionsMatch.Groups['block'].Value -match '(?m):\s*write\s*$') {
+    throw "The validate job must not declare write permissions."
+  }
+
+  $powerShellTests = @(
+    'scripts/test-news-selection.ps1',
+    'scripts/test-ai-selection.ps1',
+    'scripts/test-paper-selection.ps1',
+    'scripts/test-update-daily-rules.ps1',
+    'scripts/test-daily-update-support.ps1',
+    'scripts/test-published-data.ps1',
+    'scripts/test-translation.ps1',
+    'scripts/test-app-contract.ps1',
+    'scripts/test-site-shell.ps1',
+    'scripts/test-visual-contract.ps1'
+  )
+  foreach ($testPath in $powerShellTests) {
+    $escapedPath = [regex]::Escape($testPath)
+    if ($validateBlock -notmatch "(?m)^\s+(?:\./$escapedPath|pwsh(?:\.exe)?\s+(?:-File\s+)?(?:\./)?$escapedPath)\s*$") {
+      throw "The validate job must execute $testPath."
+    }
+  }
+  foreach ($testPath in @('scripts/test-site-core.js', 'scripts/test-frontend-language.js')) {
+    if ($validateBlock -notmatch ('(?m)^\s+node\s+' + [regex]::Escape($testPath) + '\s*$')) {
+      throw "The validate job must execute $testPath."
+    }
+  }
+
+  if ($validateBlock -match '(?im)^\s*(?!#)(?:&\s+)?(?:(?:\./)?scripts[\\/]update-daily\.ps1\b|pwsh(?:\.exe)?[^\r\n#]*scripts[\\/]update-daily\.ps1\b)' -or
+    $validateBlock -match '(?im)^\s*(?!#)(?:&\s+)?git(?:\.exe)?\b[^\r\n#]*\b(?:add|commit|push)\b') {
+    throw "The validate job must not execute updater or Git-write commands."
+  }
+  if ($updateBlock -notmatch "(?m)^\s+if:\s*github\.event_name\s*!=\s*'pull_request'\s*$") {
+    throw "The update job must not run for pull requests."
+  }
+  if ($updateBlock -notmatch '(?ms)^\s{4}permissions:\s*\r?\n\s{6}contents:\s*write\s*\r?\n\s{6}models:\s*read\s*$') {
+    throw "The update job must retain contents write and models read permissions."
   }
 }
 
-$validateMatch = [regex]::Match($workflow, '(?ms)^  validate:\s*\r?\n(?<block>.*?)(?=^  update:\s*$)')
-if (-not $validateMatch.Success) {
-  throw "Workflow must define a validate job before the update job."
-}
-$validateBlock = $validateMatch.Groups['block'].Value
-$updateMatch = [regex]::Match($workflow, '(?ms)^  update:\s*\r?\n(?<block>.*)\z')
-if (-not $updateMatch.Success) {
-  throw "Workflow must retain the update job."
-}
-$updateBlock = $updateMatch.Groups['block'].Value
+function Assert-ValidationContractRejected {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$WorkflowText,
+    [Parameter(Mandatory = $true)]
+    [string]$ExpectedMessage
+  )
 
-if ($workflow -notmatch '(?ms)^permissions:\s*\r?\n\s{2}contents:\s*read\s*$') {
-  throw "Workflow top-level permissions must be read-only."
-}
-if ($validateBlock -notmatch "(?m)^\s+if:\s*github\.event_name\s*==\s*'pull_request'\s*$") {
-  throw "The validate job must run only for pull requests."
-}
-if ($validateBlock -notmatch '(?m)^\s+runs-on:\s*ubuntu-latest\s*$' -or
-  $validateBlock -notmatch '(?m)^\s+timeout-minutes:\s*15\s*$' -or
-  $validateBlock -notmatch '(?m)^\s+uses:\s*actions/checkout@v4\s*$' -or
-  $validateBlock -notmatch '(?m)^\s+uses:\s*actions/setup-python@v5\s*$' -or
-  $validateBlock -notmatch '(?m)^\s+python-version:\s*"3\.12"\s*$' -or
-  $validateBlock -notmatch '(?m)^\s+run:\s*python -m pip install pypdf==6\.10\.2\s*$') {
-  throw "The validate job must use the pinned read-only validation runtime."
-}
-foreach ($testPath in @(
-  'scripts/test-news-selection.ps1',
-  'scripts/test-ai-selection.ps1',
-  'scripts/test-paper-selection.ps1',
-  'scripts/test-update-daily-rules.ps1',
-  'scripts/test-daily-update-support.ps1',
-  'scripts/test-published-data.ps1',
-  'scripts/test-translation.ps1',
-  'scripts/test-app-contract.ps1',
-  'scripts/test-site-shell.ps1',
-  'scripts/test-visual-contract.ps1',
-  'scripts/test-site-core.js',
-  'scripts/test-frontend-language.js'
-)) {
-  if ($validateBlock -notmatch [regex]::Escape($testPath)) {
-    throw "The validate job must run $testPath."
+  $rejected = $false
+  try {
+    Assert-PullRequestValidationContract -WorkflowText $WorkflowText
+  } catch {
+    if ($_.Exception.Message -ne $ExpectedMessage) {
+      throw
+    }
+    $rejected = $true
+  }
+  if (-not $rejected) {
+    throw "Validation contract mutation was not rejected: $ExpectedMessage"
   }
 }
-foreach ($forbiddenCommand in @('./scripts/update-daily.ps1', 'git add', 'git commit', 'git push')) {
-  if ($validateBlock -match [regex]::Escape($forbiddenCommand)) {
-    throw "The validate job must not run write-capable command: $forbiddenCommand"
-  }
-}
-if ($updateBlock -notmatch "(?m)^\s+if:\s*github\.event_name\s*!=\s*'pull_request'\s*$") {
-  throw "The update job must not run for pull requests."
-}
-if ($updateBlock -notmatch '(?ms)^\s{4}permissions:\s*\r?\n\s{6}contents:\s*write\s*\r?\n\s{6}models:\s*read\s*$') {
-  throw "The update job must retain contents write and models read permissions."
-}
+
+$validValidationWorkflowFixture = @'
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/daily-update.yml"
+      - "scripts/**"
+      - "app.js"
+      - "site-core.js"
+      - "data/**"
+      - "PROJECT_CONTEXT.md"
+      - "CHANGELOG.md"
+permissions:
+  contents: read
+jobs:
+  validate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: daily-article-validation-pr-${{ github.event.pull_request.number }}
+      cancel-in-progress: true
+    steps:
+      - name: Check out pull request
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependency
+        run: python -m pip install pypdf==6.10.2
+      - name: Run validation
+        run: |
+          ./scripts/test-news-selection.ps1
+          ./scripts/test-ai-selection.ps1
+          ./scripts/test-paper-selection.ps1
+          ./scripts/test-update-daily-rules.ps1
+          ./scripts/test-daily-update-support.ps1
+          ./scripts/test-published-data.ps1
+          ./scripts/test-translation.ps1
+          ./scripts/test-app-contract.ps1
+          ./scripts/test-site-shell.ps1
+          ./scripts/test-visual-contract.ps1
+          node scripts/test-site-core.js
+          node scripts/test-frontend-language.js
+  update:
+    if: github.event_name != 'pull_request'
+    permissions:
+      contents: write
+      models: read
+    concurrency:
+      group: daily-article-update
+      cancel-in-progress: false
+'@
+
+Assert-PullRequestValidationContract -WorkflowText $validValidationWorkflowFixture
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace('          ./scripts/test-news-selection.ps1', '          # ./scripts/test-news-selection.ps1') `
+  -ExpectedMessage 'The validate job must execute scripts/test-news-selection.ps1.'
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace('          ./scripts/test-ai-selection.ps1', '          echo ./scripts/test-ai-selection.ps1') `
+  -ExpectedMessage 'The validate job must execute scripts/test-ai-selection.ps1.'
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace('          ./scripts/test-paper-selection.ps1', "          ./scripts/test-paper-selection.ps1`n          pwsh ./scripts/update-daily.ps1") `
+  -ExpectedMessage 'The validate job must not execute updater or Git-write commands.'
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace('    runs-on: ubuntu-latest', "    permissions:`n      contents: write`n    runs-on: ubuntu-latest") `
+  -ExpectedMessage 'The validate job must not declare write permissions.'
+Write-Host "Pull-request validation contract mutation tests passed."
+
+Assert-PullRequestValidationContract -WorkflowText $workflow
 
 if ($workflow -notmatch 'actions/setup-python@v5') {
   throw "The cloud workflow must set up a known Python runtime."
