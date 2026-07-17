@@ -226,6 +226,13 @@ function Select-InternationalNewsCandidates {
 
   $selected = [System.Collections.ArrayList]::new()
   $selectedSources = @{}
+  if ($TargetCount -eq 2 -and
+    @($eligible | Where-Object { (Get-InternationalNewsKind -Candidate $_) -eq "politics" }).Count -gt 0 -and
+    @($eligible | Where-Object { (Get-InternationalNewsKind -Candidate $_) -eq "finance" }).Count -gt 0) {
+    Add-InternationalNewsPool -Pool $eligible -Selected $selected -SelectedSources $selectedSources -TargetCount $TargetCount
+    return @($selected)
+  }
+
   $freshnessPools = @(
     @($eligible | Where-Object { Test-NewsCandidateWithinRecentPool -Candidate $_ -Now $Now }),
     @($eligible | Where-Object { -not (Test-NewsCandidateWithinRecentPool -Candidate $_ -Now $Now) })

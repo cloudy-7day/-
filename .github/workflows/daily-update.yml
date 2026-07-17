@@ -24,6 +24,8 @@ on:
       - "app.js"
       - "index.html"
       - "styles.css"
+      - "motion-core.js"
+      - "assets/**"
       - "site-core.js"
       - "data/**"
       - "PROJECT_CONTEXT.md"

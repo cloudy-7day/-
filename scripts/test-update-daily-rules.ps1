@@ -59,6 +59,20 @@ if ($source -match 'Invoke-WebRequest\s+-Uri\s+\$link') {
   throw "News collection should not fetch each selected RSS article page during candidate collection."
 }
 
+$requiredPullRequestPaths = @(
+  '.github/workflows/daily-update.yml',
+  'scripts/**',
+  'app.js',
+  'index.html',
+  'styles.css',
+  'motion-core.js',
+  'assets/**',
+  'site-core.js',
+  'data/**',
+  'PROJECT_CONTEXT.md',
+  'CHANGELOG.md'
+)
+
 function Assert-PullRequestValidationContract {
   param(
     [Parameter(Mandatory = $true)]
@@ -73,17 +87,7 @@ function Assert-PullRequestValidationContract {
     throw "Workflow must validate pull requests."
   }
   $pullRequestBlock = $pullRequestMatch.Groups['block'].Value
-  foreach ($triggerPath in @(
-    '.github/workflows/daily-update.yml',
-    'scripts/**',
-    'app.js',
-    'index.html',
-    'styles.css',
-    'site-core.js',
-    'data/**',
-    'PROJECT_CONTEXT.md',
-    'CHANGELOG.md'
-  )) {
+  foreach ($triggerPath in $requiredPullRequestPaths) {
     if ($pullRequestBlock -notmatch ('(?m)^\s+-\s+"?' + [regex]::Escape($triggerPath) + '"?\s*$')) {
       throw "Workflow pull-request paths must include $triggerPath."
     }
@@ -213,6 +217,8 @@ on:
       - "app.js"
       - "index.html"
       - "styles.css"
+      - "motion-core.js"
+      - "assets/**"
       - "site-core.js"
       - "data/**"
       - "PROJECT_CONTEXT.md"
@@ -263,10 +269,10 @@ jobs:
 '@
 
 Assert-PullRequestValidationContract -WorkflowText $validValidationWorkflowFixture
-foreach ($frontendPath in @('index.html', 'styles.css')) {
+foreach ($triggerPath in $requiredPullRequestPaths) {
   Assert-ValidationContractRejected `
-    -WorkflowText $validValidationWorkflowFixture.Replace("      - `"$frontendPath`"`n", '') `
-    -ExpectedMessage "Workflow pull-request paths must include $frontendPath."
+    -WorkflowText $validValidationWorkflowFixture.Replace("      - `"$triggerPath`"`n", '') `
+    -ExpectedMessage "Workflow pull-request paths must include $triggerPath."
 }
 Assert-ValidationContractRejected `
   -WorkflowText $validValidationWorkflowFixture.Replace("permissions:`n  contents: read", "permissions:`n  contents: read`n  issues: write") `

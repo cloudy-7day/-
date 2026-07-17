@@ -159,6 +159,27 @@ $internationalRecentFirst = @(
 $internationalRecentFirstSelected = @(Select-InternationalNewsCandidates -Candidates $internationalRecentFirst -Now $now -TargetCount 2)
 Assert-Equal (($internationalRecentFirstSelected.id) -join ",") "recent-politics,recent-finance" "International candidates within 24 hours must fill the balanced quota before an older alternate-source candidate."
 
+$recentPoliticsWithOlderFinance = @(
+  New-NewsCandidate -Id "recent-politics-one" -Title "Election and government diplomacy newest" -Source "Wire A" -PublishedAt "2026-07-16T15:00:00Z" -Scope "international"
+  New-NewsCandidate -Id "recent-politics-two" -Title "Parliament and minister diplomacy recent" -Source "Wire B" -PublishedAt "2026-07-16T14:00:00Z" -Scope "international"
+  New-NewsCandidate -Id "older-finance-required" -Title "Central bank financial markets older" -Source "Wire C" -PublishedAt "2026-07-15T15:59:00Z" -Scope "international"
+)
+$recentFinanceWithOlderPolitics = @(
+  New-NewsCandidate -Id "recent-finance-one" -Title "Central bank financial markets newest" -Source "Wire A" -PublishedAt "2026-07-16T15:00:00Z" -Scope "international"
+  New-NewsCandidate -Id "recent-finance-two" -Title "Stocks and bonds markets recent" -Source "Wire B" -PublishedAt "2026-07-16T14:00:00Z" -Scope "international"
+  New-NewsCandidate -Id "older-politics-required" -Title "Election and government diplomacy older" -Source "Wire C" -PublishedAt "2026-07-15T15:59:00Z" -Scope "international"
+)
+$recentPoliticsWithOlderFinanceActual = ((Select-InternationalNewsCandidates -Candidates $recentPoliticsWithOlderFinance -Now $now -TargetCount 2).id -join ",")
+$recentFinanceWithOlderPoliticsActual = ((Select-InternationalNewsCandidates -Candidates $recentFinanceWithOlderPolitics -Now $now -TargetCount 2).id -join ",")
+$balancedKindFailures = @()
+if ($recentPoliticsWithOlderFinanceActual -ne "recent-politics-one,older-finance-required") {
+  $balancedKindFailures += "Expected recent-politics-one,older-finance-required; got $recentPoliticsWithOlderFinanceActual."
+}
+if ($recentFinanceWithOlderPoliticsActual -ne "older-politics-required,recent-finance-one") {
+  $balancedKindFailures += "Expected older-politics-required,recent-finance-one; got $recentFinanceWithOlderPoliticsActual."
+}
+Assert-Equal $balancedKindFailures.Count 0 "International selection must reserve one slot for each kind present in the complete 48-hour eligible set: $($balancedKindFailures -join ' ')"
+
 $internationalFreshnessBeforeDiversity = @(
   New-NewsCandidate -Id "fresh-politics-a" -Title "Election and government diplomacy freshest" -Source "Wire A" -PublishedAt "2026-07-16T15:00:00Z" -Scope "international"
   New-NewsCandidate -Id "fresh-finance-a" -Title "Central bank financial markets next freshest" -Source "Wire A" -PublishedAt "2026-07-16T14:00:00Z" -Scope "international"
