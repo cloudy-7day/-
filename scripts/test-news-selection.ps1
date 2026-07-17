@@ -161,6 +161,16 @@ Assert-Equal (($financeSelected.id) -join ",") "finance-one,finance-two" "Two fi
 
 $internationalSports = New-NewsCandidate -Id "sports" -Title "Football team wins championship match" -Scope "international"
 Assert-Equal (Get-InternationalNewsKind -Candidate $internationalSports) $null "International sports should not classify as politics or finance."
+$namedInternationalSports = @(
+  New-NewsCandidate -Id "world-cup-finance" -Title "World Cup finance outlook lifts global markets" -Scope "international"
+  New-NewsCandidate -Id "olympic-policy" -Title "Olympic policy changes prompt government debate" -Scope "international"
+  New-NewsCandidate -Id "world-cup-finance-cn" -Title ([regex]::Unescape("\u4e16\u754c\u676f\u5546\u4e1a\u4e0e\u91d1\u878d\u5c55\u671b")) -Scope "international"
+  New-NewsCandidate -Id "olympics-policy-cn" -Title ([regex]::Unescape("\u5965\u8fd0\u4f1a\u7ecf\u6d4e\u653f\u7b56\u8c03\u6574")) -Scope "international"
+)
+foreach ($namedSportsCandidate in $namedInternationalSports) {
+  Assert-True (Test-NewsHardExcluded -Candidate $namedSportsCandidate) "Named international sports event '$($namedSportsCandidate.id)' should be hard excluded."
+  Assert-Equal (Get-InternationalNewsKind -Candidate $namedSportsCandidate) $null "Named international sports event '$($namedSportsCandidate.id)' should not classify as politics or finance."
+}
 $sportsSelected = @(Select-InternationalNewsCandidates -Candidates @($internationalSports, $financeOnly[0]) -Now $now -TargetCount 2)
 Assert-Equal (($sportsSelected.id) -join ",") "finance-one" "International sports should be excluded."
 

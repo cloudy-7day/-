@@ -3,9 +3,10 @@ $script:RequiredNewsCandidateFields = @(
 )
 
 $script:NewsHardExclusionPattern = @(
-  "\b(?:entertainment|celebrity|celebrities|movie|film|television|tv|variety\s+show|box\s+office|sports?|football|basketball|fashion|lifestyle|travel\s+guides?|shopping|promotions?|promotional|discount|sale|opinion|commentary|editorial|advertorial|sponsored)\b",
+  "\b(?:entertainment|celebrity|celebrities|movie|film|television|tv|variety\s+show|box\s+office|sports?|football|basketball|fifa\s+world\s+cup|world\s+cup|olympics?|olympic|fashion|lifestyle|travel\s+guides?|shopping|promotions?|promotional|discount|sale|opinion|commentary|editorial|advertorial|sponsored)\b",
   "\u5a31\u4e50", "\u660e\u661f", "\u7535\u5f71", "\u7535\u89c6", "\u7efc\u827a",
-  "\u7968\u623f", "\u4f53\u80b2", "\u8db3\u7403", "\u7bee\u7403", "\u65f6\u5c1a",
+  "\u7968\u623f", "\u4f53\u80b2", "\u8db3\u7403", "\u7bee\u7403", "\u4e16\u754c\u676f",
+  "\u5965\u8fd0", "\u5965\u8fd0\u4f1a", "\u65f6\u5c1a",
   "\u65c5\u6e38\u653b\u7565", "\u8d2d\u7269", "\u4fc3\u9500", "\u4f18\u60e0",
   "\u7eaf\u8bc4\u8bba", "\u8bc4\u8bba", "\u89c2\u70b9", "\u8f6f\u6587", "\u8d5e\u52a9",
   "\u751f\u6d3b\u65b9\u5f0f"
