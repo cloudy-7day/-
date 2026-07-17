@@ -9,6 +9,26 @@ $workflow = Get-Content -Raw -Encoding UTF8 $workflowPath
 . (Join-Path $PSScriptRoot "daily-update-support.ps1")
 . (Join-Path $PSScriptRoot "news-selection.ps1")
 
+function Assert-WorkflowStepOrder {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$WorkflowText
+  )
+
+  $testIndex = $WorkflowText.IndexOf("- name: Test daily update rules", [System.StringComparison]::Ordinal)
+  $updateIndex = $WorkflowText.IndexOf("- name: Update articles", [System.StringComparison]::Ordinal)
+
+  if ($testIndex -lt 0) {
+    throw "Workflow must contain the 'Test daily update rules' step."
+  }
+  if ($updateIndex -lt 0) {
+    throw "Workflow must contain the 'Update articles' step."
+  }
+  if ($testIndex -ge $updateIndex) {
+    throw "The 'Test daily update rules' step must appear before the 'Update articles' step."
+  }
+}
+
 if ($source -notmatch '(?m)^\. \(Join-Path \$PSScriptRoot "news-selection\.ps1"\)\s*$') {
   throw "The daily updater must import the domestic/international news selection module."
 }
@@ -78,6 +98,31 @@ if ($workflow -match '(?ms)- name:\s*Test daily update rules\s+shell:\s*pwsh\s+r
 if ($workflow -notmatch '(?ms)- name:\s*Test daily update rules\s+shell:\s*pwsh\s+run:\s*(?:\./scripts/test-update-daily-rules\.ps1|pwsh\s+-File\s+scripts/test-update-daily-rules\.ps1)') {
   throw "The cloud workflow must run the daily rule test directly from pwsh before updating articles."
 }
+
+$expectedWorkflowOrderError = "The 'Test daily update rules' step must appear before the 'Update articles' step."
+$reorderedWorkflow = @'
+steps:
+  - name: Update articles
+    shell: pwsh
+    run: ./scripts/update-daily.ps1
+  - name: Test daily update rules
+    shell: pwsh
+    run: ./scripts/test-update-daily-rules.ps1
+'@
+$reorderedWorkflowRejected = $false
+try {
+  Assert-WorkflowStepOrder -WorkflowText $reorderedWorkflow
+} catch {
+  if ($_.Exception.Message -ne $expectedWorkflowOrderError) {
+    throw
+  }
+  $reorderedWorkflowRejected = $true
+}
+if (-not $reorderedWorkflowRejected) {
+  throw "The workflow order contract must reject an updater step that appears before the rule test step."
+}
+
+Assert-WorkflowStepOrder -WorkflowText $workflow
 
 if ($source -notmatch 'Authorization\s*=\s*"Bearer \$env:GITHUB_TOKEN"') {
   throw "GitHub API requests must use the Actions token when it is available."
