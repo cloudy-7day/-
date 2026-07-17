@@ -382,6 +382,7 @@ function New-ConvertedNewsFixture {
     id = $Candidate.id; category = $Category; title = $Candidate.title; source = $Candidate.source
     url = $Candidate.url; publishedAt = $Candidate.publishedAt; highlight = "Fixture highlight"
     summary = "Fixture summary"; failureAnalysis = "Fixture analysis"; summarySource = "source_extract"
+    sourceExcerpt = "Verifiable fixture source excerpt."
     translations = [pscustomobject]@{
       zh = [pscustomobject]@{ title = "完整中文标题"; highlight = "完整中文看点"; summary = "完整中文摘要"; failureAnalysis = "完整中文判断" }
       en = [pscustomobject]@{ title = "Complete title"; highlight = "Complete highlight"; summary = "Complete summary"; failureAnalysis = "Complete judgement" }
@@ -423,6 +424,11 @@ function ConvertTo-NewsArticle {
       $incomplete.translations.zh = [pscustomobject]@{}
       return $incomplete
     }
+    if ($script:domesticFailureMode -eq "invalid-quality") {
+      $invalidQuality = New-ConvertedNewsFixture -Candidate $Candidate -Category $Category
+      $invalidQuality.translations.zh.title = "English title only"
+      return $invalidQuality
+    }
     throw "fixture conversion failure"
   }
   if ($Candidate.id -eq "international-finance" -and -not $script:failedInternationalOnce) {
@@ -443,6 +449,42 @@ if ($refilledNews.Count -ne 5 -or @($refilledNews | Where-Object category -eq "d
 }
 if (@($successfulConversionCalls.Values | Where-Object { $_ -ne 1 }).Count -gt 0) {
   throw "Successful news conversions must be cached by URL across refill selection passes."
+}
+$script:failedDomesticOnce = $false
+$script:domesticFailureMode = "invalid-quality"
+$invalidQualityRefill = @(Get-OpenNewsItems)
+if (@($invalidQualityRefill | Where-Object id -eq "domestic-policy").Count -ne 0 -or
+  @($invalidQualityRefill | Where-Object id -eq "domestic-backup").Count -ne 1) {
+  throw "A selected domestic conversion that fails publication-quality checks must be removed and refilled from remaining eligible candidates."
+}
+$validConvertedNews = New-ConvertedNewsFixture -Candidate $script:testNewsCandidates[0] -Category "domestic"
+if (-not (Test-NewsArticleConversionComplete -Article $validConvertedNews -Category "domestic")) {
+  throw "A complete converted news fixture must pass conversion-quality validation."
+}
+$unknownSummarySource = New-ConvertedNewsFixture -Candidate $script:testNewsCandidates[0] -Category "domestic"
+$unknownSummarySource.summarySource = "unknown"
+if (Test-NewsArticleConversionComplete -Article $unknownSummarySource -Category "domestic") {
+  throw "Converted news must reject an unknown summarySource."
+}
+$emptySourceExcerpt = New-ConvertedNewsFixture -Candidate $script:testNewsCandidates[0] -Category "domestic"
+$emptySourceExcerpt.sourceExcerpt = ""
+if (Test-NewsArticleConversionComplete -Article $emptySourceExcerpt -Category "domestic") {
+  throw "Converted source extracts must reject an empty sourceExcerpt."
+}
+$longOriginalHighlight = New-ConvertedNewsFixture -Candidate $script:testNewsCandidates[0] -Category "domestic"
+$longOriginalHighlight.highlight = "x" * 261
+if (Test-NewsArticleConversionComplete -Article $longOriginalHighlight -Category "domestic") {
+  throw "Converted news must reject an original highlight longer than 260 characters."
+}
+$templateChineseHighlight = New-ConvertedNewsFixture -Candidate $script:testNewsCandidates[0] -Category "domestic"
+$templateChineseHighlight.translations.zh.highlight = "本文介绍了模板内容"
+if (Test-NewsArticleConversionComplete -Article $templateChineseHighlight -Category "domestic") {
+  throw "Converted news must reject a template-style Chinese highlight."
+}
+$fallbackOriginalSummary = New-ConvertedNewsFixture -Candidate $script:testNewsCandidates[0] -Category "domestic"
+$fallbackOriginalSummary.summary = "Local fallback: candidate collected automatically"
+if (Test-NewsArticleConversionComplete -Article $fallbackOriginalSummary -Category "domestic") {
+  throw "Converted news must reject forbidden fallback summary text."
 }
 $script:testNewsCandidates += @(
   New-IntegrationNewsCandidate -Id "international-politics-backup" -Title "Parliament and diplomatic policy update" -Source "International Wire C" -Scope "international" -AgeHours 3

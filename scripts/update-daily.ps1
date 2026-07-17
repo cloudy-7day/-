@@ -1014,13 +1014,21 @@ function Test-NewsArticleConversionComplete {
   foreach ($field in @("id", "title", "source", "url", "publishedAt", "highlight", "summary", "failureAnalysis", "summarySource")) {
     if ([string]::IsNullOrWhiteSpace([string]$Article.$field)) { return $false }
   }
+  if ($Article.summarySource -notin @("deepseek", "source_extract")) { return $false }
+  if ($Article.summarySource -eq "source_extract" -and [string]::IsNullOrWhiteSpace([string]$Article.sourceExcerpt)) { return $false }
+  if ($Article.highlight.Length -gt 260 -or (Test-ForbiddenHighlightOpening -Text ([string]$Article.highlight))) { return $false }
+  if (Test-ForbiddenFallbackText -Text "$($Article.summary) $($Article.failureAnalysis)") { return $false }
   foreach ($language in @("zh", "en")) {
     $translation = $Article.translations.$language
     if ($null -eq $translation) { return $false }
     foreach ($field in @("title", "highlight", "summary", "failureAnalysis")) {
       if ([string]::IsNullOrWhiteSpace([string]$translation.$field)) { return $false }
     }
+    if ($translation.highlight.Length -gt 260) { return $false }
+    if (Test-ForbiddenFallbackText -Text "$($translation.summary) $($translation.failureAnalysis)") { return $false }
   }
+  if (-not (Test-ChineseDisplayTitle -Title ([string]$Article.translations.zh.title))) { return $false }
+  if (Test-ForbiddenHighlightOpening -Text ([string]$Article.translations.zh.highlight)) { return $false }
   return $true
 }
 
