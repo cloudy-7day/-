@@ -1014,7 +1014,14 @@ function Test-NewsArticleConversionComplete {
   foreach ($field in @("id", "title", "source", "url", "publishedAt", "highlight", "summary", "failureAnalysis", "summarySource")) {
     if ([string]::IsNullOrWhiteSpace([string]$Article.$field)) { return $false }
   }
-  return $null -ne $Article.translations.zh -and $null -ne $Article.translations.en
+  foreach ($language in @("zh", "en")) {
+    $translation = $Article.translations.$language
+    if ($null -eq $translation) { return $false }
+    foreach ($field in @("title", "highlight", "summary", "failureAnalysis")) {
+      if ([string]::IsNullOrWhiteSpace([string]$translation.$field)) { return $false }
+    }
+  }
+  return $true
 }
 
 function Convert-NewsCandidateQuota {

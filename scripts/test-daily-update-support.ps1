@@ -69,6 +69,9 @@ $chineseDisasterB = [pscustomobject]@{ url = "https://source-b.example/flood-res
 $chineseUnrelated = [pscustomobject]@{ url = "https://source-c.example/spacecraft"; title = "中国航天器完成在轨科学实验任务" }
 Assert-True (Test-ArticlesSameTopic -First $chineseDisasterA -Second $chineseDisasterB) "Different-source Chinese headlines about the same named disaster must be duplicates."
 Assert-True (-not (Test-ArticlesSameTopic -First $chineseDisasterA -Second $chineseUnrelated)) "Unrelated Chinese headlines must not be duplicates."
+$genericPolicyA = [pscustomobject]@{ url = "https://source-a.example/private-economy"; title = "国务院发布关于促进民营经济发展的重要政策" }
+$genericPolicyB = [pscustomobject]@{ url = "https://source-b.example/science-innovation"; title = "国务院发布关于加强科技创新发展的重要政策" }
+Assert-True (-not (Test-ArticlesSameTopic -First $genericPolicyA -Second $genericPolicyB)) "Shared official-document boilerplate must not merge private-economy and science-innovation policies."
 
 $distinctArticles = @(
   [pscustomobject]@{ url = "https://example.com/battery"; title = "Solid-state battery reaches a new cycle-life milestone" },

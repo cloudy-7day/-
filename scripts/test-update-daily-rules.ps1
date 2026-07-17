@@ -373,7 +373,10 @@ function New-ConvertedNewsFixture {
     id = $Candidate.id; category = $Category; title = $Candidate.title; source = $Candidate.source
     url = $Candidate.url; publishedAt = $Candidate.publishedAt; highlight = "Fixture highlight"
     summary = "Fixture summary"; failureAnalysis = "Fixture analysis"; summarySource = "source_extract"
-    translations = [pscustomobject]@{ zh = [pscustomobject]@{}; en = [pscustomobject]@{} }
+    translations = [pscustomobject]@{
+      zh = [pscustomobject]@{ title = "完整中文标题"; highlight = "完整中文看点"; summary = "完整中文摘要"; failureAnalysis = "完整中文判断" }
+      en = [pscustomobject]@{ title = "Complete title"; highlight = "Complete highlight"; summary = "Complete summary"; failureAnalysis = "Complete judgement" }
+    }
     candidateScope = $Candidate.scope
   }
 }
@@ -399,12 +402,18 @@ foreach ($quotaItem in $quotaItems) {
 
 $script:testNewsCandidates += New-IntegrationNewsCandidate -Id "domestic-backup" -Title "Macroeconomy industry data affects public services" -Source "Domestic Wire D" -Scope "domestic" -AgeHours 4
 $script:failedDomesticOnce = $false
+$script:domesticFailureMode = "incomplete"
 $script:failedInternationalOnce = $true
 $script:successfulConversionCalls = @{}
 function ConvertTo-NewsArticle {
   param($Candidate, [string]$Category)
   if ($Candidate.id -eq "domestic-policy" -and -not $script:failedDomesticOnce) {
     $script:failedDomesticOnce = $true
+    if ($script:domesticFailureMode -eq "incomplete") {
+      $incomplete = New-ConvertedNewsFixture -Candidate $Candidate -Category $Category
+      $incomplete.translations.zh = [pscustomobject]@{}
+      return $incomplete
+    }
     throw "fixture conversion failure"
   }
   if ($Candidate.id -eq "international-finance" -and -not $script:failedInternationalOnce) {
@@ -439,6 +448,7 @@ if (($balancedRefill.id -join ",") -ne "international-politics,international-fin
 $script:testNewsCandidates = @($script:testNewsCandidates | Where-Object { $_.id -ne "domestic-backup" })
 $script:testNewsCandidates = @($script:testNewsCandidates | Where-Object { $_.id -notin @("international-politics-backup", "international-finance-backup") })
 $script:failedDomesticOnce = $false
+$script:domesticFailureMode = "throw"
 $script:failedInternationalOnce = $true
 $conversionShortfallRejected = $false
 try {

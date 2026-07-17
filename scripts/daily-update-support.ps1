@@ -193,7 +193,11 @@ function Get-ArticleTitleTokens {
 function Get-ChineseTitleNgrams {
   param([string]$Title, [int]$Size = 2)
 
-  $han = ([regex]::Matches($Title.Normalize([Text.NormalizationForm]::FormKC), '[\u3400-\u9fff]') |
+  $topicText = $Title.Normalize([Text.NormalizationForm]::FormKC)
+  foreach ($boilerplate in @("国务院", "发布", "关于", "重要", "政策", "促进", "加强", "发展", "工作", "通知")) {
+    $topicText = $topicText -replace [regex]::Escape($boilerplate), ""
+  }
+  $han = ([regex]::Matches($topicText, '[\u3400-\u9fff]') |
     ForEach-Object { $_.Value }) -join ''
   if ($han.Length -lt $Size) { return @() }
   return @(0..($han.Length - $Size) |
