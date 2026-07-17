@@ -101,8 +101,13 @@ function Assert-PullRequestValidationContract {
   if ($WorkflowText -match '(?m)^concurrency:\s*$') {
     throw "Pull-request validation and production updates must not share global concurrency."
   }
-  if ($WorkflowText -notmatch '(?ms)^permissions:\s*\r?\n\s{2}contents:\s*read\s*$') {
-    throw "Workflow top-level permissions must be read-only."
+  $topLevelPermissionsMatch = [regex]::Match(
+    $WorkflowText,
+    '(?ms)^permissions:\s*\r?\n(?<block>.*?)(?=^[^\s#][^:\r\n]*:\s*(?:\r?\n|$))'
+  )
+  if (-not $topLevelPermissionsMatch.Success -or
+    $topLevelPermissionsMatch.Groups['block'].Value -notmatch '(?ms)\A  contents:\s*read\s*\z') {
+    throw "Workflow top-level permissions must be exactly contents read."
   }
   if ($validateBlock -notmatch "(?m)^\s+if:\s*github\.event_name\s*==\s*'pull_request'\s*$") {
     throw "The validate job must run only for pull requests."
@@ -127,7 +132,8 @@ function Assert-PullRequestValidationContract {
     $validateBlock,
     '(?ms)^    permissions:\s*\r?\n(?<block>(?:^      [^\r\n]*(?:\r?\n|$))+)'
   )
-  if ($validatePermissionsMatch.Success -and $validatePermissionsMatch.Groups['block'].Value -match '(?m):\s*write\s*$') {
+  if ($validateBlock -match '(?m)^    permissions:\s*write-all\s*$' -or
+    ($validatePermissionsMatch.Success -and $validatePermissionsMatch.Groups['block'].Value -match '(?m):\s*write\s*$')) {
     throw "The validate job must not declare write permissions."
   }
 
@@ -155,9 +161,16 @@ function Assert-PullRequestValidationContract {
     }
   }
 
-  if ($validateBlock -match '(?im)^\s*(?!#)(?:&\s+)?(?:(?:\./)?scripts[\\/]update-daily\.ps1\b|pwsh(?:\.exe)?[^\r\n#]*scripts[\\/]update-daily\.ps1\b)' -or
-    $validateBlock -match '(?im)^\s*(?!#)(?:&\s+)?git(?:\.exe)?\b[^\r\n#]*\b(?:add|commit|push)\b') {
-    throw "The validate job must not execute updater or Git-write commands."
+  foreach ($line in ($validateBlock -split '\r?\n')) {
+    $commandLine = $line.Trim()
+    if (-not $commandLine -or $commandLine.StartsWith('#')) {
+      continue
+    }
+    $normalizedCommand = ($commandLine -replace '[''"]', '') -replace '^\s*&\s*', ''
+    if ($normalizedCommand -match '(?i)^(?:(?:\./)?scripts[\\/]update-daily\.ps1\b|pwsh(?:\.exe)?[^#]*scripts[\\/]update-daily\.ps1\b)' -or
+      $normalizedCommand -match '(?i)^git(?:\.exe)?\b[^#]*\b(?:add|commit|push)\b') {
+      throw "The validate job must not execute updater or Git-write commands."
+    }
   }
   if ($updateBlock -notmatch "(?m)^\s+if:\s*github\.event_name\s*!=\s*'pull_request'\s*$") {
     throw "The update job must not run for pull requests."
@@ -246,6 +259,18 @@ jobs:
 '@
 
 Assert-PullRequestValidationContract -WorkflowText $validValidationWorkflowFixture
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace("permissions:`n  contents: read", "permissions:`n  contents: read`n  issues: write") `
+  -ExpectedMessage 'Workflow top-level permissions must be exactly contents read.'
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace('    runs-on: ubuntu-latest', "    permissions: write-all`n    runs-on: ubuntu-latest") `
+  -ExpectedMessage 'The validate job must not declare write permissions.'
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace('          ./scripts/test-paper-selection.ps1', "          ./scripts/test-paper-selection.ps1`n          & `"./scripts/update-daily.ps1`"") `
+  -ExpectedMessage 'The validate job must not execute updater or Git-write commands.'
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace('          ./scripts/test-paper-selection.ps1', "          ./scripts/test-paper-selection.ps1`n          & `"git`" push") `
+  -ExpectedMessage 'The validate job must not execute updater or Git-write commands.'
 Assert-ValidationContractRejected `
   -WorkflowText $validValidationWorkflowFixture.Replace('          ./scripts/test-news-selection.ps1', '          # ./scripts/test-news-selection.ps1') `
   -ExpectedMessage 'The validate job must execute scripts/test-news-selection.ps1.'
