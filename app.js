@@ -15,7 +15,7 @@ let touchStartY = null;
 
 const copy = {
   zh: {
-    daily: "每日七闻",
+    daily: "每日九闻",
     source: "前往原文",
     abstract: "论文摘要",
     back: "返回卷首",
@@ -27,11 +27,11 @@ const copy = {
     loadingError: "今日卷册暂未展开，请稍后重试。",
     sayWhat: "这件事在说什么",
     consider: "顺手想一想",
-    enter: "进入每日七闻",
+    enter: "进入每日九闻",
     articleUnit: "篇",
   },
   en: {
-    daily: "Seven Daily Notes",
+    daily: "Nine Daily Notes",
     source: "Read source",
     abstract: "View abstract",
     back: "Back to volume",
@@ -43,7 +43,7 @@ const copy = {
     loadingError: "The daily volume could not be opened. Please try again.",
     sayWhat: "What it says",
     consider: "Consider next",
-    enter: "Enter today’s notes",
+    enter: "Enter today's nine notes",
     articleUnit: "items",
   },
 };
@@ -140,8 +140,23 @@ function renderCategory(category) {
   const config = SiteCore.CATEGORY_CONFIG[category];
   const items = state.articles
     .map((article, index) => ({ article, index }))
-    .filter(({ article }) => article.category === category);
+    .filter(({ article }) => SiteCore.getDisplayCategory(article.category) === category);
   const title = state.language === "en" ? config.en : config.zh;
+  const renderIndex = (indexItems) => `
+    <div class="article-index">
+      ${indexItems.length ? indexItems.map(({ article, index }, position) => renderIndexCard(article, index, position)).join("") : `<p class="empty-state">${t("empty")}</p>`}
+    </div>`;
+  const newsSectionCopy = {
+    domestic: { zh: "国内要闻", en: "China" },
+    international: { zh: "国际要闻", en: "World" },
+  };
+  const indexMarkup = category === "news"
+    ? SiteCore.getNewsSections(state.articles).map((section) => {
+      if (!section.items.length) return "";
+      const sectionTitle = newsSectionCopy[section.category][state.language === "en" ? "en" : "zh"];
+      return `<section class="category-section"><h2>${escapeHtml(sectionTitle)}</h2>${renderIndex(section.items)}</section>`;
+    }).join("") || renderIndex([])
+    : renderIndex(items);
 
   document.body.classList.remove("is-home");
   app.innerHTML = `
@@ -152,9 +167,7 @@ function renderCategory(category) {
         ${renderArchiveControls()}
       </header>
       <div class="category-rule" aria-hidden="true"></div>
-      <div class="article-index">
-        ${items.length ? items.map(({ article, index }, position) => renderIndexCard(article, index, position)).join("") : `<p class="empty-state">${t("empty")}</p>`}
-      </div>
+      ${indexMarkup}
     </section>`;
   setRouteStatus(title);
 }
@@ -171,7 +184,8 @@ function renderArticle(route) {
   const article = SiteCore.getArticleByRoute(state.articles, route);
   if (!article || route.issueDate !== state.issueDate) return renderNotFound();
   const localized = SiteCore.getLocalizedArticle(article, state.language);
-  const config = SiteCore.CATEGORY_CONFIG[article.category];
+  const displayCategory = SiteCore.getDisplayCategory(article.category);
+  const config = SiteCore.CATEGORY_CONFIG[displayCategory];
   const associations = SiteCore.buildAssociations(article, state.language);
   const categoryTitle = state.language === "en" ? config.en : config.zh;
   const originalUrl = SiteCore.getSafeArticleUrl(article.url, location.href);
@@ -186,7 +200,7 @@ function renderArticle(route) {
   app.innerHTML = `
     <article class="detail-view page-view">
       <header class="detail-topline">
-        <a href="#/category/${article.category}">← ${escapeHtml(categoryTitle)}</a>
+        <a href="${displayCategory === "news" ? "#/category/news" : `#/category/${displayCategory}`}">← ${escapeHtml(categoryTitle)}</a>
         <span>${escapeHtml(article.source)} · ${escapeHtml(formatDate(state.issueDate))}</span>
       </header>
 

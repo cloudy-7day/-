@@ -15,22 +15,82 @@ on:
       - ".github/workflows/daily-update.yml"
       - "scripts/update-daily.ps1"
       - "scripts/daily-update-support.ps1"
+      - "scripts/news-selection.ps1"
+      - "scripts/test-news-selection.ps1"
+  pull_request:
+    paths:
+      - ".github/workflows/daily-update.yml"
+      - "scripts/**"
+      - "app.js"
+      - "index.html"
+      - "styles.css"
+      - "motion-core.js"
+      - "assets/**"
+      - "site-core.js"
+      - "data/**"
+      - "PROJECT_CONTEXT.md"
+      - "CHANGELOG.md"
   schedule:
     # PDT: 08:07, 09:07, 10:07; PST: 07:07 (script skips), 08:07, 09:07.
     - cron: "7 15,16,17 * * *"
 
 permissions:
-  contents: write
-  models: read
-
-concurrency:
-  group: daily-article-update
-  cancel-in-progress: false
+  contents: read
 
 jobs:
+  validate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: daily-article-validation-pr-${{ github.event.pull_request.number }}
+      cancel-in-progress: true
+
+    steps:
+      - name: Check out pull request
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PDF extraction dependency
+        shell: bash
+        run: python -m pip install pypdf==6.10.2
+
+      - name: Run PowerShell validation
+        shell: pwsh
+        run: |
+          ./scripts/test-news-selection.ps1
+          ./scripts/test-ai-selection.ps1
+          ./scripts/test-paper-selection.ps1
+          ./scripts/test-update-daily-rules.ps1
+          ./scripts/test-daily-update-support.ps1
+          ./scripts/test-published-data.ps1
+          ./scripts/test-translation.ps1
+          ./scripts/test-app-contract.ps1
+          ./scripts/test-site-shell.ps1
+          ./scripts/test-visual-contract.ps1
+
+      - name: Run Node validation
+        shell: bash
+        run: |
+          node scripts/test-site-core.js
+          node scripts/test-frontend-language.js
+
   update:
+    if: github.event_name != 'pull_request'
     runs-on: ubuntu-latest
     timeout-minutes: 30
+    permissions:
+      contents: write
+      models: read
+    concurrency:
+      group: daily-article-update
+      cancel-in-progress: false
 
     steps:
       - name: Check out repository
@@ -47,6 +107,14 @@ jobs:
       - name: Install PDF extraction dependency
         shell: bash
         run: python -m pip install pypdf==6.10.2
+
+      - name: Test news selection
+        shell: pwsh
+        run: ./scripts/test-news-selection.ps1
+
+      - name: Test daily update rules
+        shell: pwsh
+        run: ./scripts/test-update-daily-rules.ps1
 
       - name: Update articles
         shell: pwsh

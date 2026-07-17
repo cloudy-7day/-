@@ -5,7 +5,51 @@ $source = Get-Content -Raw -Encoding UTF8 $scriptPath
 $supportSource = Get-Content -Raw -Encoding UTF8 (Join-Path $PSScriptRoot "daily-update-support.ps1")
 $workflowPath = Join-Path (Split-Path -Parent $PSScriptRoot) ".github/workflows/daily-update.yml"
 $workflow = Get-Content -Raw -Encoding UTF8 $workflowPath
+. (Join-Path $PSScriptRoot "article-selection.ps1")
 . (Join-Path $PSScriptRoot "daily-update-support.ps1")
+. (Join-Path $PSScriptRoot "news-selection.ps1")
+
+function Assert-WorkflowStepOrder {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$WorkflowText
+  )
+
+  $selectorIndex = $WorkflowText.IndexOf("- name: Test news selection", [System.StringComparison]::Ordinal)
+  $testIndex = $WorkflowText.IndexOf("- name: Test daily update rules", [System.StringComparison]::Ordinal)
+  $updateIndex = $WorkflowText.IndexOf("- name: Update articles", [System.StringComparison]::Ordinal)
+
+  if ($selectorIndex -lt 0) {
+    throw "Workflow must contain the 'Test news selection' step."
+  }
+  if ($testIndex -lt 0) {
+    throw "Workflow must contain the 'Test daily update rules' step."
+  }
+  if ($updateIndex -lt 0) {
+    throw "Workflow must contain the 'Update articles' step."
+  }
+  if ($selectorIndex -ge $testIndex -or $testIndex -ge $updateIndex) {
+    throw "The 'Test news selection' step must appear before the 'Test daily update rules' step, which must appear before the 'Update articles' step."
+  }
+}
+
+if ($source -notmatch '(?m)^\. \(Join-Path \$PSScriptRoot "news-selection\.ps1"\)\s*$') {
+  throw "The daily updater must import the domestic/international news selection module."
+}
+
+foreach ($functionName in @("Get-OpenNewsFeeds", "Get-OpenNewsCandidates", "ConvertTo-NewsArticle", "Get-OpenNewsItems")) {
+  if ($source -notmatch "function\s+$functionName\b") {
+    throw "The daily updater is missing required news function: $functionName"
+  }
+}
+
+if ($source -notmatch '(?m)^\$articles \+= Get-OpenNewsItems\s*$') {
+  throw "The main assembly must collect the domestic/international news quotas through Get-OpenNewsItems."
+}
+
+if ($source -match '(?m)^\s*\$articles \+= Get-OpenWorldNewsItems\s*$') {
+  throw "The main assembly must not retain an active Get-OpenWorldNewsItems call."
+}
 
 if ($source -match "news-api\.ap\.org|apikey=demo") {
   throw "Default news feeds should not include API-gated AP demo endpoints."
@@ -14,6 +58,249 @@ if ($source -match "news-api\.ap\.org|apikey=demo") {
 if ($source -match 'Invoke-WebRequest\s+-Uri\s+\$link') {
   throw "News collection should not fetch each selected RSS article page during candidate collection."
 }
+
+$requiredPullRequestPaths = @(
+  '.github/workflows/daily-update.yml',
+  'scripts/**',
+  'app.js',
+  'index.html',
+  'styles.css',
+  'motion-core.js',
+  'assets/**',
+  'site-core.js',
+  'data/**',
+  'PROJECT_CONTEXT.md',
+  'CHANGELOG.md'
+)
+
+function Assert-PullRequestValidationContract {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$WorkflowText
+  )
+
+  $pullRequestMatch = [regex]::Match(
+    $WorkflowText,
+    '(?ms)^  pull_request:\s*\r?\n(?<block>.*?)(?=^  (?:workflow_dispatch|push|schedule):|^permissions:)'
+  )
+  if (-not $pullRequestMatch.Success) {
+    throw "Workflow must validate pull requests."
+  }
+  $pullRequestBlock = $pullRequestMatch.Groups['block'].Value
+  foreach ($triggerPath in $requiredPullRequestPaths) {
+    if ($pullRequestBlock -notmatch ('(?m)^\s+-\s+"?' + [regex]::Escape($triggerPath) + '"?\s*$')) {
+      throw "Workflow pull-request paths must include $triggerPath."
+    }
+  }
+
+  $validateMatch = [regex]::Match($WorkflowText, '(?ms)^  validate:\s*\r?\n(?<block>.*?)(?=^  update:\s*$)')
+  if (-not $validateMatch.Success) {
+    throw "Workflow must define a validate job before the update job."
+  }
+  $validateBlock = $validateMatch.Groups['block'].Value
+  $updateMatch = [regex]::Match($WorkflowText, '(?ms)^  update:\s*\r?\n(?<block>.*)\z')
+  if (-not $updateMatch.Success) {
+    throw "Workflow must retain the update job."
+  }
+  $updateBlock = $updateMatch.Groups['block'].Value
+
+  if ($WorkflowText -match '(?m)^concurrency:\s*$') {
+    throw "Pull-request validation and production updates must not share global concurrency."
+  }
+  $topLevelPermissionsMatch = [regex]::Match(
+    $WorkflowText,
+    '(?ms)^permissions:\s*\r?\n(?<block>.*?)(?=^[^\s#][^:\r\n]*:\s*(?:\r?\n|$))'
+  )
+  if (-not $topLevelPermissionsMatch.Success -or
+    $topLevelPermissionsMatch.Groups['block'].Value -notmatch '(?ms)\A  contents:\s*read\s*\z') {
+    throw "Workflow top-level permissions must be exactly contents read."
+  }
+  if ($validateBlock -notmatch "(?m)^\s+if:\s*github\.event_name\s*==\s*'pull_request'\s*$") {
+    throw "The validate job must run only for pull requests."
+  }
+  if ($validateBlock -notmatch '(?ms)^    concurrency:\s*\r?\n      group:\s*daily-article-validation-pr-\$\{\{ github\.event\.pull_request\.number \}\}\s*\r?\n      cancel-in-progress:\s*true\s*$') {
+    throw "Pull-request validation must use an isolated per-PR concurrency group."
+  }
+  if ($updateBlock -notmatch '(?ms)^    concurrency:\s*\r?\n      group:\s*daily-article-update\s*\r?\n      cancel-in-progress:\s*false\s*$') {
+    throw "The update job must preserve the production concurrency group."
+  }
+  if ($validateBlock -notmatch '(?m)^\s+runs-on:\s*ubuntu-latest\s*$' -or
+    $validateBlock -notmatch '(?m)^\s+timeout-minutes:\s*15\s*$' -or
+    $validateBlock -notmatch '(?m)^\s+uses:\s*actions/checkout@v4\s*$' -or
+    $validateBlock -notmatch '(?m)^\s+ref:\s*\$\{\{ github\.event\.pull_request\.head\.sha \}\}\s*$' -or
+    $validateBlock -notmatch '(?m)^\s+uses:\s*actions/setup-python@v5\s*$' -or
+    $validateBlock -notmatch '(?m)^\s+python-version:\s*"3\.12"\s*$' -or
+    $validateBlock -notmatch '(?m)^\s+run:\s*python -m pip install pypdf==6\.10\.2\s*$') {
+    throw "The validate job must check out the PR head and use the pinned read-only validation runtime."
+  }
+
+  $validatePermissionsMatch = [regex]::Match(
+    $validateBlock,
+    '(?ms)^    permissions:\s*\r?\n(?<block>(?:^      [^\r\n]*(?:\r?\n|$))+)'
+  )
+  if ($validateBlock -match '(?m)^    permissions:\s*write-all\s*$' -or
+    ($validatePermissionsMatch.Success -and $validatePermissionsMatch.Groups['block'].Value -match '(?m):\s*write\s*$')) {
+    throw "The validate job must not declare write permissions."
+  }
+
+  $powerShellTests = @(
+    'scripts/test-news-selection.ps1',
+    'scripts/test-ai-selection.ps1',
+    'scripts/test-paper-selection.ps1',
+    'scripts/test-update-daily-rules.ps1',
+    'scripts/test-daily-update-support.ps1',
+    'scripts/test-published-data.ps1',
+    'scripts/test-translation.ps1',
+    'scripts/test-app-contract.ps1',
+    'scripts/test-site-shell.ps1',
+    'scripts/test-visual-contract.ps1'
+  )
+  foreach ($testPath in $powerShellTests) {
+    $escapedPath = [regex]::Escape($testPath)
+    if ($validateBlock -notmatch "(?m)^\s+(?:\./$escapedPath|pwsh(?:\.exe)?\s+(?:-File\s+)?(?:\./)?$escapedPath)\s*$") {
+      throw "The validate job must execute $testPath."
+    }
+  }
+  foreach ($testPath in @('scripts/test-site-core.js', 'scripts/test-frontend-language.js')) {
+    if ($validateBlock -notmatch ('(?m)^\s+node\s+' + [regex]::Escape($testPath) + '\s*$')) {
+      throw "The validate job must execute $testPath."
+    }
+  }
+
+  foreach ($line in ($validateBlock -split '\r?\n')) {
+    $commandLine = $line.Trim()
+    if (-not $commandLine -or $commandLine.StartsWith('#')) {
+      continue
+    }
+    $normalizedCommand = ($commandLine -replace '[''"]', '') -replace '^\s*&\s*', ''
+    if ($normalizedCommand -match '(?i)^(?:(?:\./)?scripts[\\/]update-daily\.ps1\b|pwsh(?:\.exe)?[^#]*scripts[\\/]update-daily\.ps1\b)' -or
+      $normalizedCommand -match '(?i)^git(?:\.exe)?\b[^#]*\b(?:add|commit|push)\b') {
+      throw "The validate job must not execute updater or Git-write commands."
+    }
+  }
+  if ($updateBlock -notmatch "(?m)^\s+if:\s*github\.event_name\s*!=\s*'pull_request'\s*$") {
+    throw "The update job must not run for pull requests."
+  }
+  if ($updateBlock -notmatch '(?ms)^\s{4}permissions:\s*\r?\n\s{6}contents:\s*write\s*\r?\n\s{6}models:\s*read\s*$') {
+    throw "The update job must retain contents write and models read permissions."
+  }
+}
+
+function Assert-ValidationContractRejected {
+  param(
+    [Parameter(Mandatory = $true)]
+    [string]$WorkflowText,
+    [Parameter(Mandatory = $true)]
+    [string]$ExpectedMessage
+  )
+
+  $rejected = $false
+  try {
+    Assert-PullRequestValidationContract -WorkflowText $WorkflowText
+  } catch {
+    if ($_.Exception.Message -ne $ExpectedMessage) {
+      throw
+    }
+    $rejected = $true
+  }
+  if (-not $rejected) {
+    throw "Validation contract mutation was not rejected: $ExpectedMessage"
+  }
+}
+
+$validValidationWorkflowFixture = @'
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/daily-update.yml"
+      - "scripts/**"
+      - "app.js"
+      - "index.html"
+      - "styles.css"
+      - "motion-core.js"
+      - "assets/**"
+      - "site-core.js"
+      - "data/**"
+      - "PROJECT_CONTEXT.md"
+      - "CHANGELOG.md"
+permissions:
+  contents: read
+jobs:
+  validate:
+    if: github.event_name == 'pull_request'
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    concurrency:
+      group: daily-article-validation-pr-${{ github.event.pull_request.number }}
+      cancel-in-progress: true
+    steps:
+      - name: Check out pull request
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.sha }}
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install dependency
+        run: python -m pip install pypdf==6.10.2
+      - name: Run validation
+        run: |
+          ./scripts/test-news-selection.ps1
+          ./scripts/test-ai-selection.ps1
+          ./scripts/test-paper-selection.ps1
+          ./scripts/test-update-daily-rules.ps1
+          ./scripts/test-daily-update-support.ps1
+          ./scripts/test-published-data.ps1
+          ./scripts/test-translation.ps1
+          ./scripts/test-app-contract.ps1
+          ./scripts/test-site-shell.ps1
+          ./scripts/test-visual-contract.ps1
+          node scripts/test-site-core.js
+          node scripts/test-frontend-language.js
+  update:
+    if: github.event_name != 'pull_request'
+    permissions:
+      contents: write
+      models: read
+    concurrency:
+      group: daily-article-update
+      cancel-in-progress: false
+'@
+
+Assert-PullRequestValidationContract -WorkflowText $validValidationWorkflowFixture
+foreach ($triggerPath in $requiredPullRequestPaths) {
+  Assert-ValidationContractRejected `
+    -WorkflowText $validValidationWorkflowFixture.Replace("      - `"$triggerPath`"`n", '') `
+    -ExpectedMessage "Workflow pull-request paths must include $triggerPath."
+}
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace("permissions:`n  contents: read", "permissions:`n  contents: read`n  issues: write") `
+  -ExpectedMessage 'Workflow top-level permissions must be exactly contents read.'
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace('    runs-on: ubuntu-latest', "    permissions: write-all`n    runs-on: ubuntu-latest") `
+  -ExpectedMessage 'The validate job must not declare write permissions.'
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace('          ./scripts/test-paper-selection.ps1', "          ./scripts/test-paper-selection.ps1`n          & `"./scripts/update-daily.ps1`"") `
+  -ExpectedMessage 'The validate job must not execute updater or Git-write commands.'
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace('          ./scripts/test-paper-selection.ps1', "          ./scripts/test-paper-selection.ps1`n          & `"git`" push") `
+  -ExpectedMessage 'The validate job must not execute updater or Git-write commands.'
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace('          ./scripts/test-news-selection.ps1', '          # ./scripts/test-news-selection.ps1') `
+  -ExpectedMessage 'The validate job must execute scripts/test-news-selection.ps1.'
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace('          ./scripts/test-ai-selection.ps1', '          echo ./scripts/test-ai-selection.ps1') `
+  -ExpectedMessage 'The validate job must execute scripts/test-ai-selection.ps1.'
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace('          ./scripts/test-paper-selection.ps1', "          ./scripts/test-paper-selection.ps1`n          pwsh ./scripts/update-daily.ps1") `
+  -ExpectedMessage 'The validate job must not execute updater or Git-write commands.'
+Assert-ValidationContractRejected `
+  -WorkflowText $validValidationWorkflowFixture.Replace('    runs-on: ubuntu-latest', "    permissions:`n      contents: write`n    runs-on: ubuntu-latest") `
+  -ExpectedMessage 'The validate job must not declare write permissions.'
+Write-Host "Pull-request validation contract mutation tests passed."
+
+Assert-PullRequestValidationContract -WorkflowText $workflow
 
 if ($workflow -notmatch 'actions/setup-python@v5') {
   throw "The cloud workflow must set up a known Python runtime."
@@ -25,10 +312,6 @@ if ($workflow -notmatch 'python -m pip install pypdf==6\.10\.2') {
 
 if ($workflow -notmatch 'GITHUB_TOKEN:\s*\$\{\{\s*secrets\.GITHUB_TOKEN\s*\}\}') {
   throw "The update step must pass the GitHub Actions token to the collector."
-}
-
-if ($workflow -notmatch 'permissions:\s+contents:\s+write\s+models:\s+read') {
-  throw "The workflow must grant read access to GitHub Models for keyless DeepSeek fallback."
 }
 
 if ($workflow -notmatch '\$maxAttempts\s*=\s*2') {
@@ -50,6 +333,50 @@ if ($workflow -match 'Archive for \$laDate already exists') {
 if ($workflow -notmatch 'uses:\s*actions/checkout@v4\s+with:\s+ref:\s*main') {
   throw "Queued runs must check out the latest main branch before evaluating the daily archive gate."
 }
+
+if ($workflow -match '(?ms)- name:\s*Test daily update rules\s+shell:\s*pwsh\s+run:\s*powershell(?:\.exe)?\s+-ExecutionPolicy') {
+  throw "A pwsh workflow step must not invoke Windows PowerShell through powershell -ExecutionPolicy."
+}
+
+if ($workflow -notmatch '(?ms)- name:\s*Test daily update rules\s+shell:\s*pwsh\s+run:\s*(?:\./scripts/test-update-daily-rules\.ps1|pwsh\s+-File\s+scripts/test-update-daily-rules\.ps1)') {
+  throw "The cloud workflow must run the daily rule test directly from pwsh before updating articles."
+}
+if ($workflow -notmatch '(?ms)- name:\s*Test news selection\s+shell:\s*pwsh\s+run:\s*\./scripts/test-news-selection\.ps1') {
+  throw "The cloud workflow must run the selector test directly from pwsh before the rule test."
+}
+foreach ($triggerPath in @('scripts/news-selection.ps1', 'scripts/test-news-selection.ps1')) {
+  if ($workflow -notmatch ('- "' + [regex]::Escape($triggerPath) + '"')) {
+    throw "Workflow push paths must include $triggerPath."
+  }
+}
+
+$expectedWorkflowOrderError = "The 'Test news selection' step must appear before the 'Test daily update rules' step, which must appear before the 'Update articles' step."
+$reorderedWorkflow = @'
+steps:
+  - name: Test news selection
+    shell: pwsh
+    run: ./scripts/test-news-selection.ps1
+  - name: Update articles
+    shell: pwsh
+    run: ./scripts/update-daily.ps1
+  - name: Test daily update rules
+    shell: pwsh
+    run: ./scripts/test-update-daily-rules.ps1
+'@
+$reorderedWorkflowRejected = $false
+try {
+  Assert-WorkflowStepOrder -WorkflowText $reorderedWorkflow
+} catch {
+  if ($_.Exception.Message -ne $expectedWorkflowOrderError) {
+    throw
+  }
+  $reorderedWorkflowRejected = $true
+}
+if (-not $reorderedWorkflowRejected) {
+  throw "The workflow order contract must reject an updater step that appears before the rule test step."
+}
+
+Assert-WorkflowStepOrder -WorkflowText $workflow
 
 if ($source -notmatch 'Authorization\s*=\s*"Bearer \$env:GITHUB_TOKEN"') {
   throw "GitHub API requests must use the Actions token when it is available."
@@ -133,6 +460,340 @@ function Import-ScriptFunction {
     throw "Missing required function: $Name"
   }
   return [scriptblock]::Create($definition.Extent.Text)
+}
+
+. (Import-ScriptFunction -Name "Get-OpenNewsFeeds")
+$savedNewsFeedUrls = $env:NEWS_FEED_URLS
+try {
+  $env:NEWS_FEED_URLS = "https://example.com/custom-news.xml,/relative-feed.xml,ftp://example.com/feed.xml"
+  $newsFeeds = @(Get-OpenNewsFeeds)
+} finally {
+  $env:NEWS_FEED_URLS = $savedNewsFeedUrls
+}
+$expectedOfficialFeeds = @(
+  "https://www.chinanews.com.cn/rss/china.xml",
+  "https://www.chinanews.com.cn/rss/society.xml",
+  "https://www.chinanews.com.cn/rss/finance.xml",
+  "http://www.xinhuanet.com/politics/news_politics.xml",
+  "http://www.xinhuanet.com/finance/news_finance.xml",
+  "http://www.people.com.cn/rss/politics.xml",
+  "http://www.people.com.cn/rss/society.xml",
+  "http://www.chinadaily.com.cn/rss/china_rss.xml",
+  "http://www.chinadaily.com.cn/rss/bizchina_rss.xml",
+  "https://feeds.npr.org/1004/rss.xml",
+  "https://www.theguardian.com/world/rss",
+  "https://feeds.bbci.co.uk/news/business/rss.xml"
+)
+foreach ($feed in $newsFeeds) {
+  $feedUri = $null
+  if (-not $feed.source -or $feed.scope -notin @("domestic", "international") -or -not $feed.language -or
+    -not [uri]::TryCreate([string]$feed.url, [System.UriKind]::Absolute, [ref]$feedUri) -or $feedUri.Scheme -notin @("http", "https")) {
+    throw "Every open-news feed must declare source, scope, language, and an absolute HTTP(S) URL."
+  }
+}
+foreach ($expectedUrl in $expectedOfficialFeeds) {
+  if (@($newsFeeds | Where-Object { $_.url -eq $expectedUrl }).Count -ne 1) {
+    throw "Missing official open-news feed: $expectedUrl"
+  }
+}
+$reutersFeeds = @($newsFeeds | Where-Object { $_.url -eq "https://feeds.reuters.com/Reuters/worldNews" })
+if ($reutersFeeds.Count -ne 0) {
+  throw "The inactive Reuters feed must be absent from active default feeds."
+}
+$bbcBusinessFeeds = @($newsFeeds | Where-Object { $_.url -eq "https://feeds.bbci.co.uk/news/business/rss.xml" })
+if ($bbcBusinessFeeds.Count -ne 1 -or $bbcBusinessFeeds[0].source -ne "BBC Business" -or
+  $bbcBusinessFeeds[0].scope -ne "international" -or $bbcBusinessFeeds[0].language -ne "en") {
+  throw "BBC Business must appear exactly once as an English-language international feed."
+}
+if ($source -match 'https://cs\.mfa\.gov\.cn/gyls/lsgz/lsyj/rss_57447\.xml') {
+  throw "The inactive MFA endpoint must be absent from active default feeds."
+}
+$customFeed = @($newsFeeds | Where-Object { $_.url -eq "https://example.com/custom-news.xml" })
+if ($customFeed.Count -ne 1 -or $customFeed[0].scope -ne "international" -or $customFeed[0].language -ne "unknown") {
+  throw "Custom NEWS_FEED_URLS entries must remain international feeds with unknown language."
+}
+if ($source -match 'miit\.gov\.cn') {
+  throw "The MIIT HTML subscription index must not be configured or scraped."
+}
+
+. (Import-ScriptFunction -Name "ConvertFrom-HtmlText")
+. (Import-ScriptFunction -Name "Get-FeedText")
+. (Import-ScriptFunction -Name "Get-FeedLink")
+. (Import-ScriptFunction -Name "Get-FeedItems")
+. (Import-ScriptFunction -Name "Get-FeedItemExcerpt")
+. (Import-ScriptFunction -Name "Invoke-WithRetry")
+. (Import-ScriptFunction -Name "Get-OpenNewsCandidates")
+$script:ArticleLedger = [pscustomobject]@{ version = 1; urls = @(); titles = @() }
+function Select-UniqueArticleCandidates {
+  param($Articles, $Ledger)
+  return @($Articles)
+}
+$script:fakeFeed = [pscustomobject]@{
+  rss = [pscustomobject]@{
+    channel = [pscustomobject]@{
+      item = @(
+        [pscustomobject]@{ title = "Valid domestic item"; link = "https://example.com/valid"; description = "<p>Retained <b>excerpt</b>.</p>"; pubDate = "Wed, 15 Jul 2026 12:00:00 GMT" },
+        [pscustomobject]@{ title = "Valid Atom summary"; link = "https://example.com/summary"; summary = "<p>Atom <b>summary</b> text.</p>"; published = "Wed, 15 Jul 2026 11:45:00 GMT" },
+        [pscustomobject]@{ title = "Valid content"; link = "https://example.com/content"; content = "<p>Content field text.</p>"; updated = "Wed, 15 Jul 2026 11:30:00 GMT" },
+        [pscustomobject]@{ title = "Valid encoded content"; link = "https://example.com/encoded"; 'content:encoded' = "<p>Encoded content text.</p>"; pubDate = "Wed, 15 Jul 2026 11:15:00 GMT" },
+        [pscustomobject]@{ title = "Empty excerpt"; link = "https://example.com/empty"; description = "<p> </p>"; pubDate = "Wed, 15 Jul 2026 11:00:00 GMT" },
+        [pscustomobject]@{ title = "Invalid date"; link = "https://example.com/bad-date"; description = "Bad date excerpt"; pubDate = "not-a-date" },
+        [pscustomobject]@{ title = "Unsafe link"; link = "javascript:alert(1)"; description = "Unsafe"; pubDate = "Wed, 15 Jul 2026 11:00:00 GMT" },
+        [pscustomobject]@{ title = "Relative link"; link = "/relative/story"; description = "Relative"; pubDate = "Wed, 15 Jul 2026 10:00:00 GMT" }
+      )
+    }
+  }
+}
+function Invoke-RestMethod {
+  param([string]$Uri, $Headers, [int]$TimeoutSec)
+  $script:capturedFeedUri = $Uri
+  $script:capturedFeedHeaders = $Headers
+  $script:capturedFeedTimeout = $TimeoutSec
+  return $script:fakeFeed
+}
+$fakeFeedInfo = [pscustomobject]@{ source = "Local official fixture"; url = "https://example.com/feed.xml"; scope = "domestic"; language = "zh" }
+$normalizedCandidates = @(Get-OpenNewsCandidates -Feeds @($fakeFeedInfo))
+if ($normalizedCandidates.Count -ne 4) {
+  throw "Candidate normalization must retain description/summary/content excerpts and skip empty excerpts, invalid dates, and unsafe or nonabsolute URLs."
+}
+$normalized = @($normalizedCandidates | Where-Object { $_.url -eq "https://example.com/valid" })[0]
+if ($normalized.scope -ne "domestic" -or $normalized.language -ne "zh" -or $normalized.excerpt -notmatch '^Retained excerpt\s*\.$' -or
+  $capturedFeedUri -ne $fakeFeedInfo.url -or $capturedFeedHeaders["User-Agent"] -ne "personal-info-library/0.1" -or $capturedFeedTimeout -ne 30) {
+  throw "Candidate normalization must retain feed metadata/excerpts and use the bounded existing RSS request settings. Got scope='$($normalized.scope)', language='$($normalized.language)', excerpt='$($normalized.excerpt)', uri='$capturedFeedUri', userAgent='$($capturedFeedHeaders['User-Agent'])', timeout='$capturedFeedTimeout'."
+}
+$normalizedByUrl = @{}
+foreach ($candidate in $normalizedCandidates) { $normalizedByUrl[[string]$candidate.url] = [string]$candidate.excerpt }
+if ($normalizedByUrl["https://example.com/summary"] -notmatch '^Atom summary text\s*\.$' -or
+  $normalizedByUrl["https://example.com/content"] -notmatch '^Content field text\s*\.$' -or
+  $normalizedByUrl["https://example.com/encoded"] -notmatch '^Encoded content text\s*\.$' -or
+  $normalizedByUrl.ContainsKey("https://example.com/empty")) {
+  throw "RSS excerpts must follow description, Atom summary, content/content:encoded normalization and reject empty text."
+}
+$script:fakeFeed.rss.channel.item = @(1..13 | ForEach-Object {
+  [pscustomobject]@{
+    title = "Bounded item $_"
+    link = "https://example.com/bounded/$_"
+    description = "Excerpt $_"
+    pubDate = "Wed, 15 Jul 2026 12:00:00 GMT"
+  }
+})
+$boundedCandidates = @(Get-OpenNewsCandidates -Feeds @($fakeFeedInfo))
+if ($boundedCandidates.Count -ne 12) {
+  throw "Open-news collection must read no more than 12 entries per feed."
+}
+
+. (Import-ScriptFunction -Name "Test-NewsArticleConversionComplete")
+. (Import-ScriptFunction -Name "Convert-NewsCandidateQuota")
+. (Import-ScriptFunction -Name "Get-OpenNewsItems")
+$integrationNow = (Get-Date).ToUniversalTime()
+function New-IntegrationNewsCandidate {
+  param(
+    [string]$Id,
+    [string]$Title,
+    [string]$Source,
+    [string]$Scope,
+    [int]$AgeHours
+  )
+
+  return [pscustomobject]@{
+    id = $Id
+    title = $Title
+    source = $Source
+    url = "https://example.com/$Id"
+    publishedAt = $integrationNow.AddHours(-$AgeHours).ToString("o")
+    sourceText = "Verifiable source excerpt for $Id."
+    excerpt = "Verifiable source excerpt for $Id."
+    scope = $Scope
+    language = "en"
+  }
+}
+$script:testNewsCandidates = @(
+  New-IntegrationNewsCandidate -Id "domestic-policy" -Title "Government announces central policy and law package" -Source "Domestic Wire A" -Scope "domestic" -AgeHours 1
+  New-IntegrationNewsCandidate -Id "domestic-disaster" -Title "Flood disaster triggers emergency public safety response" -Source "Domestic Wire B" -Scope "domestic" -AgeHours 2
+  New-IntegrationNewsCandidate -Id "domestic-science" -Title "Science research delivers a key technology breakthrough" -Source "Domestic Wire C" -Scope "domestic" -AgeHours 3
+  New-IntegrationNewsCandidate -Id "international-politics" -Title "Election and government diplomacy update" -Source "International Wire A" -Scope "international" -AgeHours 1
+  New-IntegrationNewsCandidate -Id "international-finance" -Title "Global markets and central bank finance update" -Source "International Wire B" -Scope "international" -AgeHours 2
+)
+function Get-OpenNewsCandidates { return @($script:testNewsCandidates) }
+function New-ConvertedNewsFixture {
+  param($Candidate, [string]$Category)
+  return [pscustomobject]@{
+    id = $Candidate.id; category = $Category; title = $Candidate.title; source = $Candidate.source
+    url = $Candidate.url; publishedAt = $Candidate.publishedAt; highlight = "Fixture highlight"
+    summary = "Fixture summary"; failureAnalysis = "Fixture analysis"; summarySource = "source_extract"
+    sourceExcerpt = "Verifiable fixture source excerpt."
+    translations = [pscustomobject]@{
+      zh = [pscustomobject]@{ title = "完整中文标题"; highlight = "完整中文看点"; summary = "完整中文摘要"; failureAnalysis = "完整中文判断" }
+      en = [pscustomobject]@{ title = "Complete title"; highlight = "Complete highlight"; summary = "Complete summary"; failureAnalysis = "Complete judgement" }
+    }
+    candidateScope = $Candidate.scope
+  }
+}
+$script:convertedNewsCategories = @()
+function ConvertTo-NewsArticle {
+  param($Candidate, [string]$Category)
+  $script:convertedNewsCategories += $Category
+  return New-ConvertedNewsFixture -Candidate $Candidate -Category $Category
+}
+$quotaItems = @(Get-OpenNewsItems)
+if ($quotaItems.Count -ne 5 -or @($quotaItems | Where-Object { $_.category -eq "domestic" }).Count -ne 3 -or
+  @($quotaItems | Where-Object { $_.category -eq "international" }).Count -ne 2) {
+  throw "Real news selectors must return exactly 3 domestic and 2 international articles through Get-OpenNewsItems."
+}
+if (@($quotaItems.url | Sort-Object -Unique).Count -ne 5) {
+  throw "Domestic and international selection must not return the same candidate URL twice."
+}
+foreach ($quotaItem in $quotaItems) {
+  if ($quotaItem.category -ne $quotaItem.candidateScope) {
+    throw "News category '$($quotaItem.category)' must be converted only from the matching candidate scope '$($quotaItem.candidateScope)'."
+  }
+}
+
+$script:testNewsCandidates += New-IntegrationNewsCandidate -Id "domestic-backup" -Title "Macroeconomy industry data affects public services" -Source "Domestic Wire D" -Scope "domestic" -AgeHours 4
+$script:failedDomesticOnce = $false
+$script:domesticFailureMode = "incomplete"
+$script:failedInternationalOnce = $true
+$script:successfulConversionCalls = @{}
+function ConvertTo-NewsArticle {
+  param($Candidate, [string]$Category)
+  if ($Candidate.id -eq "domestic-policy" -and -not $script:failedDomesticOnce) {
+    $script:failedDomesticOnce = $true
+    if ($script:domesticFailureMode -eq "incomplete") {
+      $incomplete = New-ConvertedNewsFixture -Candidate $Candidate -Category $Category
+      $incomplete.translations.zh = [pscustomobject]@{}
+      return $incomplete
+    }
+    if ($script:domesticFailureMode -eq "invalid-quality") {
+      $invalidQuality = New-ConvertedNewsFixture -Candidate $Candidate -Category $Category
+      $invalidQuality.translations.zh.title = "English title only"
+      return $invalidQuality
+    }
+    throw "fixture conversion failure"
+  }
+  if ($Candidate.id -eq "international-finance" -and -not $script:failedInternationalOnce) {
+    $script:failedInternationalOnce = $true
+    throw "fixture international conversion failure"
+  }
+  $url = [string]$Candidate.url
+  if (-not $script:successfulConversionCalls.ContainsKey($url)) { $script:successfulConversionCalls[$url] = 0 }
+  $script:successfulConversionCalls[$url] += 1
+  return New-ConvertedNewsFixture -Candidate $Candidate -Category $Category
+}
+$refilledNews = @(Get-OpenNewsItems)
+if ($refilledNews.Count -ne 5 -or @($refilledNews | Where-Object category -eq "domestic").Count -ne 3 -or
+  @($refilledNews | Where-Object category -eq "international").Count -ne 2 -or
+  @($refilledNews.url | Sort-Object -Unique).Count -ne 5 -or
+  @($refilledNews | Where-Object id -eq "domestic-backup").Count -ne 1) {
+  throw "A failed selected domestic conversion must be removed and refilled to 3 domestic / 2 international unique URLs."
+}
+if (@($successfulConversionCalls.Values | Where-Object { $_ -ne 1 }).Count -gt 0) {
+  throw "Successful news conversions must be cached by URL across refill selection passes."
+}
+$script:failedDomesticOnce = $false
+$script:domesticFailureMode = "invalid-quality"
+$invalidQualityRefill = @(Get-OpenNewsItems)
+if (@($invalidQualityRefill | Where-Object id -eq "domestic-policy").Count -ne 0 -or
+  @($invalidQualityRefill | Where-Object id -eq "domestic-backup").Count -ne 1) {
+  throw "A selected domestic conversion that fails publication-quality checks must be removed and refilled from remaining eligible candidates."
+}
+$validConvertedNews = New-ConvertedNewsFixture -Candidate $script:testNewsCandidates[0] -Category "domestic"
+if (-not (Test-NewsArticleConversionComplete -Article $validConvertedNews -Category "domestic")) {
+  throw "A complete converted news fixture must pass conversion-quality validation."
+}
+$unknownSummarySource = New-ConvertedNewsFixture -Candidate $script:testNewsCandidates[0] -Category "domestic"
+$unknownSummarySource.summarySource = "unknown"
+if (Test-NewsArticleConversionComplete -Article $unknownSummarySource -Category "domestic") {
+  throw "Converted news must reject an unknown summarySource."
+}
+$emptySourceExcerpt = New-ConvertedNewsFixture -Candidate $script:testNewsCandidates[0] -Category "domestic"
+$emptySourceExcerpt.sourceExcerpt = ""
+if (Test-NewsArticleConversionComplete -Article $emptySourceExcerpt -Category "domestic") {
+  throw "Converted source extracts must reject an empty sourceExcerpt."
+}
+$longOriginalHighlight = New-ConvertedNewsFixture -Candidate $script:testNewsCandidates[0] -Category "domestic"
+$longOriginalHighlight.highlight = "x" * 261
+if (Test-NewsArticleConversionComplete -Article $longOriginalHighlight -Category "domestic") {
+  throw "Converted news must reject an original highlight longer than 260 characters."
+}
+$templateChineseHighlight = New-ConvertedNewsFixture -Candidate $script:testNewsCandidates[0] -Category "domestic"
+$templateChineseHighlight.translations.zh.highlight = "本文介绍了模板内容"
+if (Test-NewsArticleConversionComplete -Article $templateChineseHighlight -Category "domestic") {
+  throw "Converted news must reject a template-style Chinese highlight."
+}
+$fallbackOriginalSummary = New-ConvertedNewsFixture -Candidate $script:testNewsCandidates[0] -Category "domestic"
+$fallbackOriginalSummary.summary = "Local fallback: candidate collected automatically"
+if (Test-NewsArticleConversionComplete -Article $fallbackOriginalSummary -Category "domestic") {
+  throw "Converted news must reject forbidden fallback summary text."
+}
+$script:testNewsCandidates += @(
+  New-IntegrationNewsCandidate -Id "international-politics-backup" -Title "Parliament and diplomatic policy update" -Source "International Wire C" -Scope "international" -AgeHours 3
+  New-IntegrationNewsCandidate -Id "international-finance-backup" -Title "Inflation and currency markets update" -Source "International Wire D" -Scope "international" -AgeHours 4
+)
+$script:failedDomesticOnce = $true
+$script:failedInternationalOnce = $false
+$balancedRefill = @(Get-OpenNewsItems | Where-Object { $_.category -eq "international" })
+if (($balancedRefill.id -join ",") -ne "international-politics,international-finance-backup") {
+  throw "International refill must preserve one-politics/one-finance balance after a selected finance conversion fails. Got '$($balancedRefill.id -join ',')'."
+}
+$script:testNewsCandidates = @($script:testNewsCandidates | Where-Object { $_.id -ne "domestic-backup" })
+$script:testNewsCandidates = @($script:testNewsCandidates | Where-Object { $_.id -notin @("international-politics-backup", "international-finance-backup") })
+$script:failedDomesticOnce = $false
+$script:domesticFailureMode = "throw"
+$script:failedInternationalOnce = $true
+$conversionShortfallRejected = $false
+try {
+  Get-OpenNewsItems | Out-Null
+} catch {
+  $conversionShortfallRejected = $_.Exception.Message -match 'conversion quota shortfall.*domestic.*2/3'
+}
+if (-not $conversionShortfallRejected) {
+  throw "A conversion failure with no remaining eligible candidate must throw before publication."
+}
+$script:testNewsCandidates = @($script:testNewsCandidates | Where-Object { $_.id -notin @("domestic-science", "domestic-backup") })
+$script:convertedNewsCategories = @()
+$quotaRejected = $false
+try {
+  Get-OpenNewsItems | Out-Null
+} catch {
+  $quotaRejected = $_.Exception.Message -match 'domestic.*2.*3' -and $_.Exception.Message -match 'international.*2.*2'
+}
+if (-not $quotaRejected -or $convertedNewsCategories.Count -ne 0) {
+  throw "A news quota shortfall must report both counts and throw before converting any candidate."
+}
+
+. (Import-ScriptFunction -Name "ConvertTo-NewsArticle")
+function New-ArticleAnalysis {
+  param([string]$Category, [string]$Title, [string]$Source, [string]$Url, [string]$SourceText, [string]$ScoreLabel)
+  $script:convertedAnalysisCategory = $Category
+  return [ordered]@{
+    title = "国内新闻转换测试"
+    highlight = "来源提供了可核验的国内公共影响事实。"
+    summary = "这是基于来源摘录的国内新闻摘要。"
+    failureAnalysis = "应继续核验来源证据。"
+    summarySource = "source_extract"
+    sourceExcerpt = $SourceText
+    translations = [ordered]@{
+      zh = [ordered]@{ title = "国内新闻转换测试"; highlight = "来源提供了可核验的国内公共影响事实。"; summary = "这是基于来源摘录的国内新闻摘要。"; failureAnalysis = "应继续核验来源证据。" }
+      en = [ordered]@{ title = "Domestic news conversion test"; highlight = "The source provides verifiable facts about public impact."; summary = "This domestic-news summary is based on the source excerpt."; failureAnalysis = "The source evidence should be verified further." }
+    }
+  }
+}
+$domesticArticle = ConvertTo-NewsArticle -Category "domestic" -Candidate ([pscustomobject]@{
+  id = "domestic-conversion"
+  title = "国内新闻转换测试"
+  source = "Fixture source"
+  url = "https://example.com/domestic-conversion"
+  publishedAt = "2026-07-15T12:00:00Z"
+  excerpt = "Specific public-impact facts from the source feed."
+})
+if ($convertedAnalysisCategory -ne "domestic" -or $domesticArticle.category -ne "domestic" -or
+  -not $domesticArticle.selectionReason -or -not $domesticArticle.translations.zh.title -or -not $domesticArticle.translations.en.title) {
+  throw "Domestic conversion must pass the actual category through analysis and return complete fallback translations. Got analysisCategory='$convertedAnalysisCategory', category='$($domesticArticle.category)', reason='$($domesticArticle.selectionReason)', zhTitle='$($domesticArticle.translations.zh.title)', enTitle='$($domesticArticle.translations.en.title)'."
+}
+$invalidCategoryRejected = $false
+try { ConvertTo-NewsArticle -Category "ai" -Candidate $domesticArticle | Out-Null } catch { $invalidCategoryRejected = $true }
+if (-not $invalidCategoryRejected) {
+  throw "ConvertTo-NewsArticle must reject categories other than domestic or international."
 }
 
 . (Import-ScriptFunction -Name "Get-LosAngelesNow")
@@ -411,9 +1072,11 @@ function New-TestArticle {
 }
 
 $validArticles = @(
+  New-TestArticle -Id "domestic-1" -Category "domestic"
+  New-TestArticle -Id "domestic-2" -Category "domestic"
+  New-TestArticle -Id "domestic-3" -Category "domestic"
   New-TestArticle -Id "news-1" -Category "international"
   New-TestArticle -Id "news-2" -Category "international"
-  New-TestArticle -Id "news-3" -Category "international"
   New-TestArticle -Id "ai-1" -Category "ai"
   New-TestArticle -Id "ai-2" -Category "ai"
   New-TestArticle -Id "paper-1" -Category "paper"
@@ -426,6 +1089,66 @@ $validPayload = [ordered]@{
   articles = $validArticles
 }
 Assert-DailyPayload -Payload $validPayload
+
+foreach ($validAiCount in @(3, 4)) {
+  $validMixPayload = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+  for ($index = 5; $index -le 8; $index += 1) {
+    $validMixPayload.articles[$index] = New-TestArticle -Id "reading-$validAiCount-$index" -Category $(if (($index - 5) -lt $validAiCount) { "ai" } else { "paper" })
+  }
+  $validMixPayload.contentFingerprint = Get-ContentFingerprint -Articles $validMixPayload.articles
+  Assert-DailyPayload -Payload $validMixPayload
+}
+
+function Assert-DailyPayloadRejected {
+  param($Payload, [string]$Message, [string]$ExpectedMessagePattern = "")
+
+  $rejected = $false
+  $actualMessage = ""
+  try {
+    Assert-DailyPayload -Payload $Payload
+  } catch {
+    $rejected = $true
+    $actualMessage = $_.Exception.Message
+  }
+  if (-not $rejected) {
+    throw $Message
+  }
+  if ($ExpectedMessagePattern -and $actualMessage -notmatch $ExpectedMessagePattern) {
+    throw "$Message Expected an error matching '$ExpectedMessagePattern', got '$actualMessage'."
+  }
+}
+
+$eightArticles = @($validPayload.articles | Select-Object -First 8)
+$eightPayload = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$eightPayload.articles = $eightArticles
+$eightPayload.contentFingerprint = Get-ContentFingerprint -Articles $eightArticles
+Assert-DailyPayloadRejected -Payload $eightPayload -Message "Daily payloads must reject a total of eight articles." -ExpectedMessagePattern 'exactly 9 articles; collected 8'
+
+$tenPayload = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$extraArticle = New-TestArticle -Id "ai-3" -Category "ai"
+$tenPayload.articles = @($tenPayload.articles) + @($extraArticle)
+$tenPayload.contentFingerprint = Get-ContentFingerprint -Articles $tenPayload.articles
+Assert-DailyPayloadRejected -Payload $tenPayload -Message "Daily payloads must reject a total of ten articles." -ExpectedMessagePattern 'exactly 9 articles; collected 10'
+
+$wrongDomestic = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$wrongDomestic.articles[0].category = "international"
+$wrongDomestic.contentFingerprint = Get-ContentFingerprint -Articles $wrongDomestic.articles
+Assert-DailyPayloadRejected -Payload $wrongDomestic -Message "Daily payloads must reject a domestic count other than three." -ExpectedMessagePattern 'exactly 3 domestic and 2 international.*collected 2 domestic and 3 international'
+
+$wrongInternational = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$wrongInternational.articles[3].category = "ai"
+$wrongInternational.contentFingerprint = Get-ContentFingerprint -Articles $wrongInternational.articles
+Assert-DailyPayloadRejected -Payload $wrongInternational -Message "Daily payloads must reject an international count other than two." -ExpectedMessagePattern 'exactly 3 domestic and 2 international.*collected 3 domestic and 1 international'
+
+$wrongReading = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$wrongReading.articles[5].category = "other"
+$wrongReading.contentFingerprint = Get-ContentFingerprint -Articles $wrongReading.articles
+Assert-DailyPayloadRejected -Payload $wrongReading -Message "Daily payloads must reject a reading count other than four." -ExpectedMessagePattern 'exactly 4 AI/paper articles.*collected 1 AI and 2 papers'
+
+$unsupportedCategory = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$unsupportedCategory.articles[8].category = "unsupported"
+$unsupportedCategory.contentFingerprint = Get-ContentFingerprint -Articles $unsupportedCategory.articles
+Assert-DailyPayloadRejected -Payload $unsupportedCategory -Message "Daily payloads must reject unsupported categories."
 
 $missingChinese = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
 $missingChinese.articles[0].translations.PSObject.Properties.Remove("zh")

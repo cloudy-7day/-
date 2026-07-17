@@ -64,6 +64,15 @@ try {
 }
 Assert-True $sameTopicRejected "Different URLs covering the same event must be rejected."
 
+$chineseDisasterA = [pscustomobject]@{ url = "https://source-a.example/yuzhong-flood"; title = "甘肃榆中山洪灾害造成多人失联救援持续" }
+$chineseDisasterB = [pscustomobject]@{ url = "https://source-b.example/flood-rescue"; title = "榆中发生山洪多人失联各方展开救援" }
+$chineseUnrelated = [pscustomobject]@{ url = "https://source-c.example/spacecraft"; title = "中国航天器完成在轨科学实验任务" }
+Assert-True (Test-ArticlesSameTopic -First $chineseDisasterA -Second $chineseDisasterB) "Different-source Chinese headlines about the same named disaster must be duplicates."
+Assert-True (-not (Test-ArticlesSameTopic -First $chineseDisasterA -Second $chineseUnrelated)) "Unrelated Chinese headlines must not be duplicates."
+$genericPolicyA = [pscustomobject]@{ url = "https://source-a.example/private-economy"; title = "国务院发布关于促进民营经济发展的重要政策" }
+$genericPolicyB = [pscustomobject]@{ url = "https://source-b.example/science-innovation"; title = "国务院发布关于加强科技创新发展的重要政策" }
+Assert-True (-not (Test-ArticlesSameTopic -First $genericPolicyA -Second $genericPolicyB)) "Shared official-document boilerplate must not merge private-economy and science-innovation policies."
+
 $distinctArticles = @(
   [pscustomobject]@{ url = "https://example.com/battery"; title = "Solid-state battery reaches a new cycle-life milestone" },
   [pscustomobject]@{ url = "https://example.com/robot"; title = "Warehouse robot learns safer grasp planning" }
@@ -91,6 +100,24 @@ Assert-True ((Get-ContentFingerprint $a) -ne (Get-ContentFingerprint $c)) "A cha
 function New-Payload {
   param([string]$Date, [string]$Status, [string]$UrlBase)
 
+  $categories = @("domestic", "domestic", "domestic", "international", "international", "ai", "ai", "paper", "paper")
+  $articles = @(0..8 | ForEach-Object {
+    [pscustomobject]@{
+      url = "$UrlBase-$_"
+      category = $categories[$_]
+    }
+  })
+  return [pscustomobject]@{
+    issueDate = $Date
+    updateStatus = $Status
+    contentFingerprint = Get-ContentFingerprint $articles
+    articles = $articles
+  }
+}
+
+function New-LegacyPayload {
+  param([string]$Date, [string]$Status, [string]$UrlBase)
+
   $articles = @(0..6 | ForEach-Object {
     [pscustomobject]@{
       url = "$UrlBase-$_"
@@ -107,24 +134,55 @@ function New-Payload {
 
 $today = "2026-07-14"
 $current = New-Payload -Date $today -Status complete -UrlBase "https://example.com/today"
-$previous = New-Payload -Date "2026-07-13" -Status complete -UrlBase "https://example.com/yesterday"
+$previous = New-LegacyPayload -Date "2026-07-13" -Status complete -UrlBase "https://example.com/yesterday"
 $degraded = New-Payload -Date $today -Status degraded -UrlBase "https://example.com/today"
-$stale = New-Payload -Date $today -Status complete -UrlBase "https://example.com/yesterday"
+$legacyBaseCurrent = New-Payload -Date $today -Status complete -UrlBase "https://example.com/yesterday"
 
 Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T07:30:00") -CurrentPayload $null -TodayArchive $null -PreviousArchive $previous) "before_window" "Runs before 08:00 must skip."
 Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T07:30:00") -CurrentPayload $current -TodayArchive $current -PreviousArchive $previous -ForceRefresh $true) "fresh_generation" "Explicit force must override the time window."
 Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T08:07:00") -CurrentPayload $null -TodayArchive $null -PreviousArchive $previous) "fresh_generation" "Missing today data must generate."
 Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $degraded -TodayArchive $degraded -PreviousArchive $previous) "summary_upgrade" "Degraded data must upgrade summaries."
 Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $previous -TodayArchive $current -PreviousArchive $previous) "repair_publish" "A valid archive with stale current data must republish."
-Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $stale -TodayArchive $stale -PreviousArchive $previous) "fresh_generation" "An unchanged whole-day URL fingerprint must regenerate."
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $legacyBaseCurrent -TodayArchive $legacyBaseCurrent -PreviousArchive $previous) "already_complete" "A legacy seven-item previous archive must not make a valid nine-item current payload stale when fingerprints differ."
+$equalFingerprintPrevious = New-LegacyPayload -Date "2026-07-13" -Status complete -UrlBase "https://example.com/equal-probe"
+$equalFingerprintPrevious.contentFingerprint = $current.contentFingerprint
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $current -TodayArchive $current -PreviousArchive $equalFingerprintPrevious) "fresh_generation" "Actually equal previous and current fingerprints must regenerate."
 Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $current -TodayArchive $current -PreviousArchive $previous) "already_complete" "Valid complete data must skip."
 $todayLedger = [pscustomobject]@{ urls = @("https://example.com/today-0"); titles = @() }
 Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $current -TodayArchive $current -PreviousArchive $previous -Ledger $todayLedger) "fresh_generation" "A current issue colliding with the historical ledger must regenerate."
 Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $current -TodayArchive $current -PreviousArchive $previous -ForceRefresh $true) "fresh_generation" "Explicit force must regenerate."
-$invalidShape = $current | ConvertTo-Json -Depth 20 | ConvertFrom-Json
-$invalidShape.articles = @($invalidShape.articles | Select-Object -First 6)
-$invalidShape.contentFingerprint = Get-ContentFingerprint $invalidShape.articles
-Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $invalidShape -TodayArchive $invalidShape -PreviousArchive $previous) "fresh_generation" "An invalid seven-item shape must regenerate."
+$missingDomestic = $current | ConvertTo-Json -Depth 20 | ConvertFrom-Json
+$missingDomestic.articles = @($missingDomestic.articles | Select-Object -Skip 1)
+$missingDomestic.contentFingerprint = Get-ContentFingerprint $missingDomestic.articles
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $missingDomestic -TodayArchive $missingDomestic -PreviousArchive $previous) "fresh_generation" "Removing one domestic item must regenerate."
+
+$wrongNewsSplit = $current | ConvertTo-Json -Depth 20 | ConvertFrom-Json
+$wrongNewsSplit.articles[0].category = "international"
+$wrongNewsSplit.contentFingerprint = Get-ContentFingerprint $wrongNewsSplit.articles
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $wrongNewsSplit -TodayArchive $wrongNewsSplit -PreviousArchive $previous) "fresh_generation" "Changing a domestic item to international must regenerate."
+
+$zeroAiReadingMix = $current | ConvertTo-Json -Depth 20 | ConvertFrom-Json
+$zeroAiReadingMix.articles[5].category = "paper"
+$zeroAiReadingMix.articles[6].category = "paper"
+$zeroAiReadingMix.contentFingerprint = Get-ContentFingerprint $zeroAiReadingMix.articles
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $zeroAiReadingMix -TodayArchive $zeroAiReadingMix -PreviousArchive $previous) "fresh_generation" "A 0 AI / 4 paper mix must regenerate even though the total reading count is four."
+
+$oneAiReadingMix = $current | ConvertTo-Json -Depth 20 | ConvertFrom-Json
+$oneAiReadingMix.articles[5].category = "paper"
+$oneAiReadingMix.contentFingerprint = Get-ContentFingerprint $oneAiReadingMix.articles
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $oneAiReadingMix -TodayArchive $oneAiReadingMix -PreviousArchive $previous) "fresh_generation" "A 1 AI / 3 paper mix must regenerate even though the total reading count is four."
+
+foreach ($validAiCount in @(2, 3, 4)) {
+  $validMix = $current | ConvertTo-Json -Depth 20 | ConvertFrom-Json
+  for ($index = 5; $index -le 8; $index += 1) {
+    $validMix.articles[$index].category = if (($index - 5) -lt $validAiCount) { "ai" } else { "paper" }
+  }
+  $validMix.contentFingerprint = Get-ContentFingerprint $validMix.articles
+  Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $validMix -TodayArchive $validMix -PreviousArchive $previous) "already_complete" "A valid $validAiCount AI / $(4 - $validAiCount) paper mix must be accepted."
+}
+
+$legacyCurrent = New-LegacyPayload -Date $today -Status complete -UrlBase "https://example.com/legacy-current"
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $legacyCurrent -TodayArchive $legacyCurrent -PreviousArchive $previous) "fresh_generation" "A seven-item payload must never be accepted as current complete data."
 
 $upgradePayload = [pscustomobject]@{
   issueDate = $today

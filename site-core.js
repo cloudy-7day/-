@@ -4,11 +4,11 @@
   root.SiteCore = api;
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   const CATEGORY_CONFIG = {
-    international: {
-      zh: "天下异闻",
-      en: "World Curiosities",
-      kickerZh: "观世间变局",
-      kickerEn: "Signals across the world",
+    news: {
+      zh: "天下要闻",
+      en: "Daily News",
+      kickerZh: "观天下大事",
+      kickerEn: "Signals at home and abroad",
       creature: "feifei",
     },
     ai: {
@@ -27,11 +27,16 @@
     },
   };
 
+  function getDisplayCategory(category) {
+    return category === "domestic" || category === "international" ? "news" : category;
+  }
+
   function parseRoute(hash = "#/home") {
     const parts = hash.replace(/^#\/?/, "").split("/").filter(Boolean);
     if (!parts.length || parts[0] === "home") return { name: "home" };
-    if (parts[0] === "category" && CATEGORY_CONFIG[parts[1]]) {
-      return { name: "category", category: parts[1] };
+    const category = getDisplayCategory(parts[1]);
+    if (parts[0] === "category" && CATEGORY_CONFIG[category]) {
+      return { name: "category", category };
     }
     if (
       parts[0] === "article" &&
@@ -47,9 +52,17 @@
     return Object.fromEntries(
       Object.keys(CATEGORY_CONFIG).map((key) => [
         key,
-        articles.filter((article) => article.category === key),
+        articles.filter((article) => getDisplayCategory(article.category) === key),
       ]),
     );
+  }
+
+  function getNewsSections(articles = []) {
+    const indexed = articles.map((article, index) => ({ article, index }));
+    return ["domestic", "international"].map((category) => ({
+      category,
+      items: indexed.filter(({ article }) => article.category === category),
+    }));
   }
 
   function getLocalizedArticle(article, language) {
@@ -144,8 +157,10 @@
 
   return {
     CATEGORY_CONFIG,
+    getDisplayCategory,
     parseRoute,
     groupArticles,
+    getNewsSections,
     getLocalizedArticle,
     getSafeArticleUrl,
     getArticleRoute,
