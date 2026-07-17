@@ -15,7 +15,7 @@ let touchStartY = null;
 
 const copy = {
   zh: {
-    daily: "每日七闻",
+    daily: "每日九闻",
     source: "前往原文",
     abstract: "论文摘要",
     back: "返回卷首",
@@ -27,11 +27,11 @@ const copy = {
     loadingError: "今日卷册暂未展开，请稍后重试。",
     sayWhat: "这件事在说什么",
     consider: "顺手想一想",
-    enter: "进入每日七闻",
+    enter: "进入每日九闻",
     articleUnit: "篇",
   },
   en: {
-    daily: "Seven Daily Notes",
+    daily: "Nine Daily Notes",
     source: "Read source",
     abstract: "View abstract",
     back: "Back to volume",
@@ -43,7 +43,7 @@ const copy = {
     loadingError: "The daily volume could not be opened. Please try again.",
     sayWhat: "What it says",
     consider: "Consider next",
-    enter: "Enter today’s notes",
+    enter: "Enter today's nine notes",
     articleUnit: "items",
   },
 };

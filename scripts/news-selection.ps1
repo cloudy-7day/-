@@ -95,20 +95,39 @@ function Add-NewsTierWithSourceDiversity {
     [int]$TargetCount
   )
 
-  foreach ($candidate in $Tier) {
+  $index = 0
+  while ($index -lt $Tier.Count) {
     if ($Selected.Count -ge $TargetCount) { return }
-    $sourceKey = ([string]$candidate.source).ToLowerInvariant()
-    if (-not $SelectedSources.ContainsKey($sourceKey)) {
+    $publishedTime = Get-NewsCandidatePublishedTime -Candidate $Tier[$index]
+    $freshnessTie = [System.Collections.ArrayList]::new()
+    while ($index -lt $Tier.Count -and
+      (Get-NewsCandidatePublishedTime -Candidate $Tier[$index]) -eq $publishedTime) {
+      [void]$freshnessTie.Add($Tier[$index])
+      $index++
+    }
+
+    foreach ($candidate in $freshnessTie) {
+      if ($Selected.Count -ge $TargetCount) { return }
+      $sourceKey = ([string]$candidate.source).ToLowerInvariant()
+      if (-not $SelectedSources.ContainsKey($sourceKey)) {
+        [void]$Selected.Add($candidate)
+        $SelectedSources[$sourceKey] = $true
+      }
+    }
+    foreach ($candidate in $freshnessTie) {
+      if ($Selected.Count -ge $TargetCount) { return }
+      if ($Selected -contains $candidate) { continue }
       [void]$Selected.Add($candidate)
-      $SelectedSources[$sourceKey] = $true
+      $SelectedSources[([string]$candidate.source).ToLowerInvariant()] = $true
     }
   }
-  foreach ($candidate in $Tier) {
-    if ($Selected.Count -ge $TargetCount) { return }
-    if ($Selected -contains $candidate) { continue }
-    [void]$Selected.Add($candidate)
-    $SelectedSources[([string]$candidate.source).ToLowerInvariant()] = $true
-  }
+}
+
+function Test-NewsCandidateWithinRecentPool {
+  param($Candidate, [datetimeoffset]$Now)
+
+  $published = Get-NewsCandidatePublishedTime -Candidate $Candidate
+  return (($Now.ToUniversalTime() - $published.ToUniversalTime()).TotalHours -le 24)
 }
 
 function Select-DomesticNewsCandidates {
@@ -125,40 +144,43 @@ function Select-DomesticNewsCandidates {
     @{ Expression = { [string]$_.id }; Ascending = $true })
   $selected = [System.Collections.ArrayList]::new()
   $selectedSources = @{}
-  for ($priority = $script:DomesticPriorityPatterns.Count; $priority -ge 1; $priority--) {
-    $tier = @($eligible | Where-Object { (Get-DomesticNewsPriority -Candidate $_) -eq $priority })
-    Add-NewsTierWithSourceDiversity -Tier $tier -Selected $selected -SelectedSources $selectedSources -TargetCount $TargetCount
+  $freshnessPools = @(
+    @($eligible | Where-Object { Test-NewsCandidateWithinRecentPool -Candidate $_ -Now $Now }),
+    @($eligible | Where-Object { -not (Test-NewsCandidateWithinRecentPool -Candidate $_ -Now $Now) })
+  )
+  foreach ($pool in $freshnessPools) {
+    for ($priority = $script:DomesticPriorityPatterns.Count; $priority -ge 1; $priority--) {
+      $tier = @($pool | Where-Object { (Get-DomesticNewsPriority -Candidate $_) -eq $priority })
+      Add-NewsTierWithSourceDiversity -Tier $tier -Selected $selected -SelectedSources $selectedSources -TargetCount $TargetCount
+      if ($selected.Count -ge $TargetCount) { break }
+    }
     if ($selected.Count -ge $TargetCount) { break }
   }
   return @($selected)
 }
 
-function Select-InternationalNewsCandidates {
-  param([object[]]$Candidates, [datetimeoffset]$Now, [int]$TargetCount)
+function Add-InternationalNewsPool {
+  param(
+    [object[]]$Pool,
+    [System.Collections.ArrayList]$Selected,
+    [hashtable]$SelectedSources,
+    [int]$TargetCount
+  )
 
-  if ($TargetCount -le 0) { return @() }
-  $politics = [System.Collections.ArrayList]::new()
-  $finance = [System.Collections.ArrayList]::new()
-  $eligible = @($Candidates | Where-Object {
-    [string]$_.scope -eq "international" -and
-    (Test-NewsCandidateFresh -Candidate $_ -Now $Now)
-  } | Sort-Object -Property `
-    @{ Expression = { Get-NewsCandidatePublishedTime -Candidate $_ }; Descending = $true },
-    @{ Expression = { [string]$_.id }; Ascending = $true })
-  foreach ($candidate in $eligible) {
-    $kind = Get-InternationalNewsKind -Candidate $candidate
-    if ($kind -eq "politics") { [void]$politics.Add($candidate) }
-    elseif ($kind -eq "finance") { [void]$finance.Add($candidate) }
-  }
+  if ($Selected.Count -ge $TargetCount) { return }
+  $politics = @($Pool | Where-Object { (Get-InternationalNewsKind -Candidate $_) -eq "politics" })
+  $finance = @($Pool | Where-Object { (Get-InternationalNewsKind -Candidate $_) -eq "finance" })
 
-  $selected = [System.Collections.ArrayList]::new()
-  $selectedSources = @{}
-  if ($politics.Count -gt 0 -and $finance.Count -gt 0) {
-    $politicsChoice = $politics[0]
-    $financeChoice = $finance[0]
+  if ($Selected.Count -eq 0 -and $politics.Count -gt 0 -and $finance.Count -gt 0) {
+    $freshestPoliticsTime = Get-NewsCandidatePublishedTime -Candidate $politics[0]
+    $freshestFinanceTime = Get-NewsCandidatePublishedTime -Candidate $finance[0]
+    $freshestPolitics = @($politics | Where-Object { (Get-NewsCandidatePublishedTime -Candidate $_) -eq $freshestPoliticsTime })
+    $freshestFinance = @($finance | Where-Object { (Get-NewsCandidatePublishedTime -Candidate $_) -eq $freshestFinanceTime })
+    $politicsChoice = $freshestPolitics[0]
+    $financeChoice = $freshestFinance[0]
     $pairFound = $false
-    foreach ($politicsCandidate in $politics) {
-      foreach ($financeCandidate in $finance) {
+    foreach ($politicsCandidate in $freshestPolitics) {
+      foreach ($financeCandidate in $freshestFinance) {
         if ([string]$politicsCandidate.source -ine [string]$financeCandidate.source) {
           $politicsChoice = $politicsCandidate
           $financeChoice = $financeCandidate
@@ -169,17 +191,48 @@ function Select-InternationalNewsCandidates {
       if ($pairFound) { break }
     }
 
-    [void]$selected.Add($politicsChoice)
-    $selectedSources[([string]$politicsChoice.source).ToLowerInvariant()] = $true
-    if ($selected.Count -lt $TargetCount) {
-      [void]$selected.Add($financeChoice)
-      $selectedSources[([string]$financeChoice.source).ToLowerInvariant()] = $true
+    [void]$Selected.Add($politicsChoice)
+    $SelectedSources[([string]$politicsChoice.source).ToLowerInvariant()] = $true
+    if ($Selected.Count -lt $TargetCount) {
+      [void]$Selected.Add($financeChoice)
+      $SelectedSources[([string]$financeChoice.source).ToLowerInvariant()] = $true
+    }
+  } elseif ($Selected.Count -gt 0) {
+    $selectedKinds = @($Selected | ForEach-Object { Get-InternationalNewsKind -Candidate $_ })
+    if ($selectedKinds -contains "politics" -and $selectedKinds -notcontains "finance" -and $finance.Count -gt 0) {
+      Add-NewsTierWithSourceDiversity -Tier $finance -Selected $Selected -SelectedSources $SelectedSources -TargetCount $TargetCount
+    } elseif ($selectedKinds -contains "finance" -and $selectedKinds -notcontains "politics" -and $politics.Count -gt 0) {
+      Add-NewsTierWithSourceDiversity -Tier $politics -Selected $Selected -SelectedSources $SelectedSources -TargetCount $TargetCount
     }
   }
 
-  if ($selected.Count -lt $TargetCount) {
-    $remaining = @(@($politics) + @($finance) | Where-Object { $selected -notcontains $_ })
-    Add-NewsTierWithSourceDiversity -Tier $remaining -Selected $selected -SelectedSources $selectedSources -TargetCount $TargetCount
+  if ($Selected.Count -lt $TargetCount) {
+    $remaining = @($Pool | Where-Object { $Selected -notcontains $_ })
+    Add-NewsTierWithSourceDiversity -Tier $remaining -Selected $Selected -SelectedSources $SelectedSources -TargetCount $TargetCount
+  }
+}
+
+function Select-InternationalNewsCandidates {
+  param([object[]]$Candidates, [datetimeoffset]$Now, [int]$TargetCount)
+
+  if ($TargetCount -le 0) { return @() }
+  $eligible = @($Candidates | Where-Object {
+    [string]$_.scope -eq "international" -and
+    (Test-NewsCandidateFresh -Candidate $_ -Now $Now)
+  } | Sort-Object -Property `
+    @{ Expression = { Get-NewsCandidatePublishedTime -Candidate $_ }; Descending = $true },
+    @{ Expression = { [string]$_.id }; Ascending = $true })
+  $eligible = @($eligible | Where-Object { $null -ne (Get-InternationalNewsKind -Candidate $_) })
+
+  $selected = [System.Collections.ArrayList]::new()
+  $selectedSources = @{}
+  $freshnessPools = @(
+    @($eligible | Where-Object { Test-NewsCandidateWithinRecentPool -Candidate $_ -Now $Now }),
+    @($eligible | Where-Object { -not (Test-NewsCandidateWithinRecentPool -Candidate $_ -Now $Now) })
+  )
+  foreach ($pool in $freshnessPools) {
+    Add-InternationalNewsPool -Pool $pool -Selected $selected -SelectedSources $selectedSources -TargetCount $TargetCount
+    if ($selected.Count -ge $TargetCount) { break }
   }
   return @($selected)
 }

@@ -102,6 +102,22 @@ $freshnessBoundary = @(
 $boundarySelected = @(Select-DomesticNewsCandidates -Candidates $freshnessBoundary -Now $now -TargetCount 3)
 Assert-Equal (($boundarySelected.id) -join ",") "age-48h" "Exactly 48 hours should be accepted, while 48 hours plus one minute and 49 hours should be rejected."
 
+$domesticRecentFirst = @(
+  New-NewsCandidate -Id "recent-science" -Title "Science research update" -Source "Wire A" -PublishedAt "2026-07-15T16:00:00Z"
+  New-NewsCandidate -Id "recent-economy" -Title "Economic industry update" -Source "Wire A" -PublishedAt "2026-07-16T15:00:00Z"
+  New-NewsCandidate -Id "older-policy" -Title "Central government policy update" -Source "Wire B" -PublishedAt "2026-07-15T15:59:00Z"
+)
+$domesticRecentFirstSelected = @(Select-DomesticNewsCandidates -Candidates $domesticRecentFirst -Now $now -TargetCount 2)
+Assert-Equal (($domesticRecentFirstSelected.id) -join ",") "recent-science,recent-economy" "Domestic candidates at or within 24 hours must fill the quota before an older higher-priority or alternate-source candidate."
+
+$domesticFreshnessBeforeDiversity = @(
+  New-NewsCandidate -Id "fresh-policy-a" -Title "Central policy freshest" -Source "Wire A" -PublishedAt "2026-07-16T15:00:00Z"
+  New-NewsCandidate -Id "fresh-policy-b" -Title "Central policy next freshest" -Source "Wire A" -PublishedAt "2026-07-16T14:00:00Z"
+  New-NewsCandidate -Id "old-policy-alternate" -Title "Central policy old alternate source" -Source "Wire B" -PublishedAt "2026-07-14T17:00:00Z"
+)
+$domesticFreshnessBeforeDiversitySelected = @(Select-DomesticNewsCandidates -Candidates $domesticFreshnessBeforeDiversity -Now $now -TargetCount 2)
+Assert-Equal (($domesticFreshnessBeforeDiversitySelected.id) -join ",") "fresh-policy-a,fresh-policy-b" "Domestic source diversity must not reach from 1-2-hour items to a 47-hour item."
+
 $tierAndDiversity = @(
   New-NewsCandidate -Id "policy-a1" -Title "Central policy alpha" -Source "Wire A"
   New-NewsCandidate -Id "policy-a2" -Title "Central policy beta" -Source "Wire A"
@@ -134,6 +150,22 @@ Assert-Equal (Get-InternationalNewsKind -Candidate $tariffPolicy) "finance" "Tar
 Assert-Equal (Get-InternationalNewsKind -Candidate $foreignPolicy) "politics" "Ordinary foreign policy and diplomacy must remain politics."
 $balanced = @(Select-InternationalNewsCandidates -Candidates $internationalBalanced -Now $now -TargetCount 2)
 Assert-Equal (($balanced.id) -join ",") "politics-a,finance-b" "International selection should balance kinds and prefer different sources."
+
+$internationalRecentFirst = @(
+  New-NewsCandidate -Id "recent-politics" -Title "Election and diplomacy freshest update" -Source "Wire A" -PublishedAt "2026-07-16T15:00:00Z" -Scope "international"
+  New-NewsCandidate -Id "recent-finance" -Title "Central bank financial markets fresh update" -Source "Wire A" -PublishedAt "2026-07-16T14:00:00Z" -Scope "international"
+  New-NewsCandidate -Id "older-finance-alternate" -Title "Central bank financial markets older update" -Source "Wire B" -PublishedAt "2026-07-15T15:59:00Z" -Scope "international"
+)
+$internationalRecentFirstSelected = @(Select-InternationalNewsCandidates -Candidates $internationalRecentFirst -Now $now -TargetCount 2)
+Assert-Equal (($internationalRecentFirstSelected.id) -join ",") "recent-politics,recent-finance" "International candidates within 24 hours must fill the balanced quota before an older alternate-source candidate."
+
+$internationalFreshnessBeforeDiversity = @(
+  New-NewsCandidate -Id "fresh-politics-a" -Title "Election and government diplomacy freshest" -Source "Wire A" -PublishedAt "2026-07-16T15:00:00Z" -Scope "international"
+  New-NewsCandidate -Id "fresh-finance-a" -Title "Central bank financial markets next freshest" -Source "Wire A" -PublishedAt "2026-07-16T14:00:00Z" -Scope "international"
+  New-NewsCandidate -Id "older-finance-b" -Title "Central bank financial markets alternate source" -Source "Wire B" -PublishedAt "2026-07-16T13:00:00Z" -Scope "international"
+)
+$internationalFreshnessBeforeDiversitySelected = @(Select-InternationalNewsCandidates -Candidates $internationalFreshnessBeforeDiversity -Now $now -TargetCount 2)
+Assert-Equal (($internationalFreshnessBeforeDiversitySelected.id) -join ",") "fresh-politics-a,fresh-finance-a" "International source diversity must only break exact freshness ties while preserving politics/finance balance."
 
 $internationalReversePair = @(
   New-NewsCandidate -Id "reverse-politics-a" -Title "Government election diplomacy update" -Source "Wire A" -Scope "international"

@@ -22,6 +22,8 @@ on:
       - ".github/workflows/daily-update.yml"
       - "scripts/**"
       - "app.js"
+      - "index.html"
+      - "styles.css"
       - "site-core.js"
       - "data/**"
       - "PROJECT_CONTEXT.md"

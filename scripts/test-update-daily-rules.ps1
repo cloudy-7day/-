@@ -77,6 +77,8 @@ function Assert-PullRequestValidationContract {
     '.github/workflows/daily-update.yml',
     'scripts/**',
     'app.js',
+    'index.html',
+    'styles.css',
     'site-core.js',
     'data/**',
     'PROJECT_CONTEXT.md',
@@ -209,6 +211,8 @@ on:
       - ".github/workflows/daily-update.yml"
       - "scripts/**"
       - "app.js"
+      - "index.html"
+      - "styles.css"
       - "site-core.js"
       - "data/**"
       - "PROJECT_CONTEXT.md"
@@ -259,6 +263,11 @@ jobs:
 '@
 
 Assert-PullRequestValidationContract -WorkflowText $validValidationWorkflowFixture
+foreach ($frontendPath in @('index.html', 'styles.css')) {
+  Assert-ValidationContractRejected `
+    -WorkflowText $validValidationWorkflowFixture.Replace("      - `"$frontendPath`"`n", '') `
+    -ExpectedMessage "Workflow pull-request paths must include $frontendPath."
+}
 Assert-ValidationContractRejected `
   -WorkflowText $validValidationWorkflowFixture.Replace("permissions:`n  contents: read", "permissions:`n  contents: read`n  issues: write") `
   -ExpectedMessage 'Workflow top-level permissions must be exactly contents read.'

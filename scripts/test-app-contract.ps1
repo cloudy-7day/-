@@ -9,6 +9,17 @@ $source = Get-Content -Raw -Encoding UTF8 "app.js"
   if ($source -match [regex]::Escape($_)) { throw "Removed interface copy or pagination remains: $_" }
 }
 
+$dailyNine = -join ([char[]](0x6BCF, 0x65E5, 0x4E5D, 0x95FB))
+$enterDailyNine = -join ([char[]](0x8FDB, 0x5165, 0x6BCF, 0x65E5, 0x4E5D, 0x95FB))
+$dailySeven = -join ([char[]](0x6BCF, 0x65E5, 0x4E03, 0x95FB))
+$enterDailySeven = -join ([char[]](0x8FDB, 0x5165, 0x6BCF, 0x65E5, 0x4E03, 0x95FB))
+foreach ($requiredLabel in @($dailyNine, $enterDailyNine, 'Nine Daily Notes', "Enter today's nine notes")) {
+  if ($source -notmatch [regex]::Escape($requiredLabel)) { throw "Missing nine-item brand label: $requiredLabel" }
+}
+foreach ($staleLabel in @($dailySeven, $enterDailySeven, 'Seven Daily Notes', "Enter today's seven notes")) {
+  if ($source -match [regex]::Escape($staleLabel)) { throw "Stale seven-item brand label remains: $staleLabel" }
+}
+
 if ($source -match 'config\.kicker' -or $source -match '<small>\$\{escapeHtml\(kicker\)\}</small>') {
   throw "Home and category kickers must be removed."
 }
