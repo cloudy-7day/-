@@ -403,7 +403,7 @@ function Get-OpenNewsFeeds {
     @{ source = "China Daily BizChina"; url = "http://www.chinadaily.com.cn/rss/bizchina_rss.xml"; scope = "domestic"; language = "en" },
     @{ source = "NPR World"; url = "https://feeds.npr.org/1004/rss.xml"; scope = "international"; language = "en" },
     @{ source = "The Guardian World"; url = "https://www.theguardian.com/world/rss"; scope = "international"; language = "en" },
-    @{ source = "Reuters World"; url = "https://feeds.reuters.com/Reuters/worldNews"; scope = "international"; language = "en" }
+    @{ source = "BBC Business"; url = "https://feeds.bbci.co.uk/news/business/rss.xml"; scope = "international"; language = "en" }
   )
 
   if ($env:NEWS_FEED_URLS) {

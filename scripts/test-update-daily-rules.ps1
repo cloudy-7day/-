@@ -243,7 +243,7 @@ $expectedOfficialFeeds = @(
   "http://www.chinadaily.com.cn/rss/bizchina_rss.xml",
   "https://feeds.npr.org/1004/rss.xml",
   "https://www.theguardian.com/world/rss",
-  "https://feeds.reuters.com/Reuters/worldNews"
+  "https://feeds.bbci.co.uk/news/business/rss.xml"
 )
 foreach ($feed in $newsFeeds) {
   $feedUri = $null
@@ -256,6 +256,15 @@ foreach ($expectedUrl in $expectedOfficialFeeds) {
   if (@($newsFeeds | Where-Object { $_.url -eq $expectedUrl }).Count -ne 1) {
     throw "Missing official open-news feed: $expectedUrl"
   }
+}
+$reutersFeeds = @($newsFeeds | Where-Object { $_.url -eq "https://feeds.reuters.com/Reuters/worldNews" })
+if ($reutersFeeds.Count -ne 0) {
+  throw "The inactive Reuters feed must be absent from active default feeds."
+}
+$bbcBusinessFeeds = @($newsFeeds | Where-Object { $_.url -eq "https://feeds.bbci.co.uk/news/business/rss.xml" })
+if ($bbcBusinessFeeds.Count -ne 1 -or $bbcBusinessFeeds[0].source -ne "BBC Business" -or
+  $bbcBusinessFeeds[0].scope -ne "international" -or $bbcBusinessFeeds[0].language -ne "en") {
+  throw "BBC Business must appear exactly once as an English-language international feed."
 }
 if ($source -match 'https://cs\.mfa\.gov\.cn/gyls/lsgz/lsyj/rss_57447\.xml') {
   throw "The inactive MFA endpoint must be absent from active default feeds."

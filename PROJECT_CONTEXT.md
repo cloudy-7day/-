@@ -133,7 +133,7 @@ D:\111 codex                    # GitHub Pages 主发布目录
 
 ### 近期新增（2026-07-08）
 - 新闻来源多样性：每来源最多选 1 篇，避免 3 篇来自同一媒体
-- 文档中 BBC World 引用全部删除，统一为 NPR World / The Guardian World / Reuters World
+- 国际公开 RSS 使用 NPR World、The Guardian World 和偏国际金融的 BBC Business；inactive Reuters feed 已移除
 - 论文卡片增加「阅读简介」链接（abstractUrl），与「阅读原文」（PDF）分开
 - 论文详情区域 max-height: 200px + 滚动，控制卡片高度统一
 - 数据结构：论文新增 `abstractUrl` 字段

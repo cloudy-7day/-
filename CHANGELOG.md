@@ -2,7 +2,7 @@
 
 ## 2026-07-16
 
-外交部领事安全提醒的旧 RSS 地址已从 active defaults 移除；在验证到可直接读取的官方 XML endpoint 前保持 inactive，不以页面抓取替代。
+外交部领事安全提醒的旧 RSS 地址已从 active defaults 移除；在验证到可直接读取的官方 XML endpoint 前保持 inactive，不以页面抓取替代。国际来源中 inactive Reuters feed 已移除，并以偏国际金融的公开 RSS BBC Business 替换。
 
 ### 增加国内要闻并将每日内容扩展为 9 篇
 改了什么：
