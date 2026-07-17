@@ -20,12 +20,25 @@ const articles = [
 ];
 
 const grouped = core.groupArticles(articles);
+assert.equal(core.CATEGORY_CONFIG.news.zh, "\u5929\u4e0b\u8981\u95fb");
+assert.equal(core.CATEGORY_CONFIG.news.en, "Daily News");
+assert.equal(core.CATEGORY_CONFIG.news.creature, "feifei");
 assert.deepEqual(Object.keys(grouped), ["news", "ai", "paper"]);
 assert.deepEqual(grouped.news, [articles[0], articles[2]]);
 assert.deepEqual(grouped.ai, [articles[1]]);
 assert.deepEqual(grouped.paper, [articles[3]]);
 assert.deepEqual(core.groupArticles([{ category: "international", title: "旧卷新闻" }]).news, [
   { category: "international", title: "旧卷新闻" },
+]);
+
+assert.deepEqual(core.getNewsSections(articles), [
+  { category: "domestic", items: [{ article: articles[0], index: 0 }] },
+  { category: "international", items: [{ article: articles[2], index: 2 }] },
+]);
+const internationalOnly = [{ category: "international", title: "Old world item" }];
+assert.deepEqual(core.getNewsSections(internationalOnly), [
+  { category: "domestic", items: [] },
+  { category: "international", items: [{ article: internationalOnly[0], index: 0 }] },
 ]);
 
 assert.equal(core.getDisplayCategory("domestic"), "news");

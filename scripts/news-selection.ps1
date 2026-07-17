@@ -20,7 +20,7 @@ $script:DomesticPriorityPatterns = @(
 )
 
 $script:InternationalPoliticsPattern = "\b(?:politics|political|government|election|president|minister|parliament|diplomacy|diplomatic|sanction|war|conflict|policy|law)\b|\u653f\u6cbb|\u653f\u5e9c|\u9009\u4e3e|\u603b\u7edf|\u90e8\u957f|\u8bae\u4f1a|\u5916\u4ea4|\u5236\u88c1|\u6218\u4e89|\u51b2\u7a81|\u653f\u7b56|\u6cd5\u5f8b"
-$script:InternationalFinancePattern = "\b(?:finance|financial|economy|economic|markets?|stocks?|bonds?|currency|central\s+bank|interest\s+rates?|earnings|trade|gdp)\b|\u91d1\u878d|\u7ecf\u6d4e|\u5e02\u573a|\u80a1\u7968|\u503a\u5238|\u8d27\u5e01|\u592e\u884c|\u5229\u7387|\u8d38\u6613"
+$script:InternationalFinancePattern = "\b(?:finance|financial|economy|economic|macroeconomy|markets?|stocks?|bonds?|currency|central\s+bank|monetary\s+policy|interest\s+rates?|inflation|earnings|tariffs?|trade|energy|gdp)\b|\u91d1\u878d|\u7ecf\u6d4e|\u5b8f\u89c2\u7ecf\u6d4e|\u5e02\u573a|\u80a1\u7968|\u503a\u5238|\u8d27\u5e01|\u592e\u884c|\u8d27\u5e01\u653f\u7b56|\u5229\u7387|\u901a\u80c0|\u5173\u7a0e|\u8d38\u6613|\u80fd\u6e90"
 
 function Get-NewsCandidateText {
   param($Candidate)
@@ -47,6 +47,16 @@ function Test-NewsCandidateFresh {
   return ($age.TotalSeconds -ge 0 -and $age.TotalHours -le 48)
 }
 
+function Get-NewsCandidatePublishedTime {
+  param($Candidate)
+
+  $published = [datetimeoffset]::MinValue
+  if ($null -ne $Candidate) {
+    [void][datetimeoffset]::TryParse([string]$Candidate.publishedAt, [ref]$published)
+  }
+  return $published
+}
+
 function Test-NewsHardExcluded {
   param($Candidate)
   if ($null -eq $Candidate) { return $false }
@@ -71,8 +81,8 @@ function Get-InternationalNewsKind {
 
   if ($null -eq $Candidate -or (Test-NewsHardExcluded -Candidate $Candidate)) { return $null }
   $text = Get-NewsCandidateText -Candidate $Candidate
-  if ($text -match $script:InternationalPoliticsPattern) { return "politics" }
   if ($text -match $script:InternationalFinancePattern) { return "finance" }
+  if ($text -match $script:InternationalPoliticsPattern) { return "politics" }
   return $null
 }
 
@@ -105,10 +115,13 @@ function Select-DomesticNewsCandidates {
 
   if ($TargetCount -le 0) { return @() }
   $eligible = @($Candidates | Where-Object {
+    [string]$_.scope -eq "domestic" -and
     (Test-NewsCandidateFresh -Candidate $_ -Now $Now) -and
     -not (Test-NewsHardExcluded -Candidate $_) -and
     (Get-DomesticNewsPriority -Candidate $_) -gt 0
-  })
+  } | Sort-Object -Property `
+    @{ Expression = { Get-NewsCandidatePublishedTime -Candidate $_ }; Descending = $true },
+    @{ Expression = { [string]$_.id }; Ascending = $true })
   $selected = [System.Collections.ArrayList]::new()
   $selectedSources = @{}
   for ($priority = $script:DomesticPriorityPatterns.Count; $priority -ge 1; $priority--) {
@@ -125,8 +138,13 @@ function Select-InternationalNewsCandidates {
   if ($TargetCount -le 0) { return @() }
   $politics = [System.Collections.ArrayList]::new()
   $finance = [System.Collections.ArrayList]::new()
-  foreach ($candidate in $Candidates) {
-    if (-not (Test-NewsCandidateFresh -Candidate $candidate -Now $Now)) { continue }
+  $eligible = @($Candidates | Where-Object {
+    [string]$_.scope -eq "international" -and
+    (Test-NewsCandidateFresh -Candidate $_ -Now $Now)
+  } | Sort-Object -Property `
+    @{ Expression = { Get-NewsCandidatePublishedTime -Candidate $_ }; Descending = $true },
+    @{ Expression = { [string]$_.id }; Ascending = $true })
+  foreach ($candidate in $eligible) {
     $kind = Get-InternationalNewsKind -Candidate $candidate
     if ($kind -eq "politics") { [void]$politics.Add($candidate) }
     elseif ($kind -eq "finance") { [void]$finance.Add($candidate) }

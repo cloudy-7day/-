@@ -16,24 +16,19 @@ $archiveFiles = @(Get-ChildItem -LiteralPath $archivePath -Filter "*.json" |
   Sort-Object BaseName)
 Assert-True ($archiveFiles.Count -gt 0) "At least one rebuilt archive must exist."
 
+$legacyFixture = @(1..7 | ForEach-Object { [pscustomobject]@{ category = if ($_ -le 3) { "international" } else { "ai" } } })
+$newFixtureCategories = @("domestic", "domestic", "domestic", "international", "international", "ai", "ai", "paper", "paper")
+$newFixture = @($newFixtureCategories | ForEach-Object { [pscustomobject]@{ category = $_ } })
+Assert-True ((Get-PublishedArchiveShape -Articles $legacyFixture).isValid) "The pure archive-shape helper must accept a legacy seven-item fixture."
+Assert-True ((Get-PublishedArchiveShape -Articles $newFixture).isValid) "The pure archive-shape helper must accept a new nine-item fixture."
+
 $allArchivedArticles = @()
 foreach ($file in $archiveFiles) {
   $payload = Get-Content -Raw -Encoding UTF8 $file.FullName | ConvertFrom-Json
   $articles = @($payload.articles)
   Assert-True ($payload.issueDate -eq $file.BaseName) "Archive filename and issueDate must match: $($file.Name)"
-  $domesticCount = @($articles | Where-Object category -eq "domestic").Count
-  $internationalCount = @($articles | Where-Object category -eq "international").Count
-  $readingCount = @($articles | Where-Object { $_.category -in @("ai", "paper") }).Count
-  if ($domesticCount -gt 0) {
-    Assert-True ($articles.Count -eq 9) "Domestic-era archives must contain exactly nine articles: $($file.Name)"
-    Assert-True ($domesticCount -eq 3) "Domestic-era archives must contain three domestic articles: $($file.Name)"
-    Assert-True ($internationalCount -eq 2) "Domestic-era archives must contain two international articles: $($file.Name)"
-    Assert-True ($readingCount -eq 4) "Domestic-era archives must contain four deep-reading articles: $($file.Name)"
-  } else {
-    Assert-True ($articles.Count -eq 7) "Legacy archives must contain exactly seven articles: $($file.Name)"
-    Assert-True ($internationalCount -eq 3) "Legacy archives must contain three international articles: $($file.Name)"
-    Assert-True ($readingCount -eq 4) "Legacy archives must contain four deep-reading articles: $($file.Name)"
-  }
+  $shape = Get-PublishedArchiveShape -Articles $articles
+  Assert-True $shape.isValid "Archive composition is invalid for its legacy/new shape: $($file.Name)"
   foreach ($article in $articles) {
     Assert-True (Test-ChineseDisplayTitle -Title ([string]$article.translations.zh.title)) "Chinese mode title is missing or predominantly English: $($article.id)"
     Assert-True ($article.translations.zh.highlight -and $article.translations.zh.summary -and $article.translations.zh.failureAnalysis) "Chinese translation is incomplete: $($article.id)"

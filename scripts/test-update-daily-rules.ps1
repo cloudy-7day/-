@@ -15,17 +15,21 @@ function Assert-WorkflowStepOrder {
     [string]$WorkflowText
   )
 
+  $selectorIndex = $WorkflowText.IndexOf("- name: Test news selection", [System.StringComparison]::Ordinal)
   $testIndex = $WorkflowText.IndexOf("- name: Test daily update rules", [System.StringComparison]::Ordinal)
   $updateIndex = $WorkflowText.IndexOf("- name: Update articles", [System.StringComparison]::Ordinal)
 
+  if ($selectorIndex -lt 0) {
+    throw "Workflow must contain the 'Test news selection' step."
+  }
   if ($testIndex -lt 0) {
     throw "Workflow must contain the 'Test daily update rules' step."
   }
   if ($updateIndex -lt 0) {
     throw "Workflow must contain the 'Update articles' step."
   }
-  if ($testIndex -ge $updateIndex) {
-    throw "The 'Test daily update rules' step must appear before the 'Update articles' step."
+  if ($selectorIndex -ge $testIndex -or $testIndex -ge $updateIndex) {
+    throw "The 'Test news selection' step must appear before the 'Test daily update rules' step, which must appear before the 'Update articles' step."
   }
 }
 
@@ -98,10 +102,21 @@ if ($workflow -match '(?ms)- name:\s*Test daily update rules\s+shell:\s*pwsh\s+r
 if ($workflow -notmatch '(?ms)- name:\s*Test daily update rules\s+shell:\s*pwsh\s+run:\s*(?:\./scripts/test-update-daily-rules\.ps1|pwsh\s+-File\s+scripts/test-update-daily-rules\.ps1)') {
   throw "The cloud workflow must run the daily rule test directly from pwsh before updating articles."
 }
+if ($workflow -notmatch '(?ms)- name:\s*Test news selection\s+shell:\s*pwsh\s+run:\s*\./scripts/test-news-selection\.ps1') {
+  throw "The cloud workflow must run the selector test directly from pwsh before the rule test."
+}
+foreach ($triggerPath in @('scripts/news-selection.ps1', 'scripts/test-news-selection.ps1')) {
+  if ($workflow -notmatch ('- "' + [regex]::Escape($triggerPath) + '"')) {
+    throw "Workflow push paths must include $triggerPath."
+  }
+}
 
-$expectedWorkflowOrderError = "The 'Test daily update rules' step must appear before the 'Update articles' step."
+$expectedWorkflowOrderError = "The 'Test news selection' step must appear before the 'Test daily update rules' step, which must appear before the 'Update articles' step."
 $reorderedWorkflow = @'
 steps:
+  - name: Test news selection
+    shell: pwsh
+    run: ./scripts/test-news-selection.ps1
   - name: Update articles
     shell: pwsh
     run: ./scripts/update-daily.ps1
@@ -226,7 +241,6 @@ $expectedOfficialFeeds = @(
   "http://www.people.com.cn/rss/society.xml",
   "http://www.chinadaily.com.cn/rss/china_rss.xml",
   "http://www.chinadaily.com.cn/rss/bizchina_rss.xml",
-  "https://cs.mfa.gov.cn/gyls/lsgz/lsyj/rss_57447.xml",
   "https://feeds.npr.org/1004/rss.xml",
   "https://www.theguardian.com/world/rss",
   "https://feeds.reuters.com/Reuters/worldNews"
@@ -243,6 +257,9 @@ foreach ($expectedUrl in $expectedOfficialFeeds) {
     throw "Missing official open-news feed: $expectedUrl"
   }
 }
+if ($source -match 'https://cs\.mfa\.gov\.cn/gyls/lsgz/lsyj/rss_57447\.xml') {
+  throw "The inactive MFA endpoint must be absent from active default feeds."
+}
 $customFeed = @($newsFeeds | Where-Object { $_.url -eq "https://example.com/custom-news.xml" })
 if ($customFeed.Count -ne 1 -or $customFeed[0].scope -ne "international" -or $customFeed[0].language -ne "unknown") {
   throw "Custom NEWS_FEED_URLS entries must remain international feeds with unknown language."
@@ -255,6 +272,7 @@ if ($source -match 'miit\.gov\.cn') {
 . (Import-ScriptFunction -Name "Get-FeedText")
 . (Import-ScriptFunction -Name "Get-FeedLink")
 . (Import-ScriptFunction -Name "Get-FeedItems")
+. (Import-ScriptFunction -Name "Get-FeedItemExcerpt")
 . (Import-ScriptFunction -Name "Invoke-WithRetry")
 . (Import-ScriptFunction -Name "Get-OpenNewsCandidates")
 $script:ArticleLedger = [pscustomobject]@{ version = 1; urls = @(); titles = @() }
@@ -267,6 +285,10 @@ $script:fakeFeed = [pscustomobject]@{
     channel = [pscustomobject]@{
       item = @(
         [pscustomobject]@{ title = "Valid domestic item"; link = "https://example.com/valid"; description = "<p>Retained <b>excerpt</b>.</p>"; pubDate = "Wed, 15 Jul 2026 12:00:00 GMT" },
+        [pscustomobject]@{ title = "Valid Atom summary"; link = "https://example.com/summary"; summary = "<p>Atom <b>summary</b> text.</p>"; published = "Wed, 15 Jul 2026 11:45:00 GMT" },
+        [pscustomobject]@{ title = "Valid content"; link = "https://example.com/content"; content = "<p>Content field text.</p>"; updated = "Wed, 15 Jul 2026 11:30:00 GMT" },
+        [pscustomobject]@{ title = "Valid encoded content"; link = "https://example.com/encoded"; 'content:encoded' = "<p>Encoded content text.</p>"; pubDate = "Wed, 15 Jul 2026 11:15:00 GMT" },
+        [pscustomobject]@{ title = "Empty excerpt"; link = "https://example.com/empty"; description = "<p> </p>"; pubDate = "Wed, 15 Jul 2026 11:00:00 GMT" },
         [pscustomobject]@{ title = "Invalid date"; link = "https://example.com/bad-date"; description = "Bad date excerpt"; pubDate = "not-a-date" },
         [pscustomobject]@{ title = "Unsafe link"; link = "javascript:alert(1)"; description = "Unsafe"; pubDate = "Wed, 15 Jul 2026 11:00:00 GMT" },
         [pscustomobject]@{ title = "Relative link"; link = "/relative/story"; description = "Relative"; pubDate = "Wed, 15 Jul 2026 10:00:00 GMT" }
@@ -283,13 +305,21 @@ function Invoke-RestMethod {
 }
 $fakeFeedInfo = [pscustomobject]@{ source = "Local official fixture"; url = "https://example.com/feed.xml"; scope = "domestic"; language = "zh" }
 $normalizedCandidates = @(Get-OpenNewsCandidates -Feeds @($fakeFeedInfo))
-if ($normalizedCandidates.Count -ne 1) {
-  throw "Candidate normalization must skip invalid dates and unsafe or nonabsolute URLs."
+if ($normalizedCandidates.Count -ne 4) {
+  throw "Candidate normalization must retain description/summary/content excerpts and skip empty excerpts, invalid dates, and unsafe or nonabsolute URLs."
 }
-$normalized = $normalizedCandidates[0]
+$normalized = @($normalizedCandidates | Where-Object { $_.url -eq "https://example.com/valid" })[0]
 if ($normalized.scope -ne "domestic" -or $normalized.language -ne "zh" -or $normalized.excerpt -notmatch '^Retained excerpt\s*\.$' -or
   $capturedFeedUri -ne $fakeFeedInfo.url -or $capturedFeedHeaders["User-Agent"] -ne "personal-info-library/0.1" -or $capturedFeedTimeout -ne 30) {
   throw "Candidate normalization must retain feed metadata/excerpts and use the bounded existing RSS request settings. Got scope='$($normalized.scope)', language='$($normalized.language)', excerpt='$($normalized.excerpt)', uri='$capturedFeedUri', userAgent='$($capturedFeedHeaders['User-Agent'])', timeout='$capturedFeedTimeout'."
+}
+$normalizedByUrl = @{}
+foreach ($candidate in $normalizedCandidates) { $normalizedByUrl[[string]$candidate.url] = [string]$candidate.excerpt }
+if ($normalizedByUrl["https://example.com/summary"] -notmatch '^Atom summary text\s*\.$' -or
+  $normalizedByUrl["https://example.com/content"] -notmatch '^Content field text\s*\.$' -or
+  $normalizedByUrl["https://example.com/encoded"] -notmatch '^Encoded content text\s*\.$' -or
+  $normalizedByUrl.ContainsKey("https://example.com/empty")) {
+  throw "RSS excerpts must follow description, Atom summary, content/content:encoded normalization and reject empty text."
 }
 $script:fakeFeed.rss.channel.item = @(1..13 | ForEach-Object {
   [pscustomobject]@{
@@ -304,6 +334,8 @@ if ($boundedCandidates.Count -ne 12) {
   throw "Open-news collection must read no more than 12 entries per feed."
 }
 
+. (Import-ScriptFunction -Name "Test-NewsArticleConversionComplete")
+. (Import-ScriptFunction -Name "Convert-NewsCandidateQuota")
 . (Import-ScriptFunction -Name "Get-OpenNewsItems")
 $integrationNow = (Get-Date).ToUniversalTime()
 function New-IntegrationNewsCandidate {
@@ -335,11 +367,21 @@ $script:testNewsCandidates = @(
   New-IntegrationNewsCandidate -Id "international-finance" -Title "Global markets and central bank finance update" -Source "International Wire B" -Scope "international" -AgeHours 2
 )
 function Get-OpenNewsCandidates { return @($script:testNewsCandidates) }
+function New-ConvertedNewsFixture {
+  param($Candidate, [string]$Category)
+  return [pscustomobject]@{
+    id = $Candidate.id; category = $Category; title = $Candidate.title; source = $Candidate.source
+    url = $Candidate.url; publishedAt = $Candidate.publishedAt; highlight = "Fixture highlight"
+    summary = "Fixture summary"; failureAnalysis = "Fixture analysis"; summarySource = "source_extract"
+    translations = [pscustomobject]@{ zh = [pscustomobject]@{}; en = [pscustomobject]@{} }
+    candidateScope = $Candidate.scope
+  }
+}
 $script:convertedNewsCategories = @()
 function ConvertTo-NewsArticle {
   param($Candidate, [string]$Category)
   $script:convertedNewsCategories += $Category
-  return [pscustomobject]@{ id = $Candidate.id; category = $Category; url = $Candidate.url; candidateScope = $Candidate.scope }
+  return New-ConvertedNewsFixture -Candidate $Candidate -Category $Category
 }
 $quotaItems = @(Get-OpenNewsItems)
 if ($quotaItems.Count -ne 5 -or @($quotaItems | Where-Object { $_.category -eq "domestic" }).Count -ne 3 -or
@@ -354,7 +396,60 @@ foreach ($quotaItem in $quotaItems) {
     throw "News category '$($quotaItem.category)' must be converted only from the matching candidate scope '$($quotaItem.candidateScope)'."
   }
 }
-$script:testNewsCandidates = @($script:testNewsCandidates | Where-Object { $_.id -ne "domestic-science" })
+
+$script:testNewsCandidates += New-IntegrationNewsCandidate -Id "domestic-backup" -Title "Macroeconomy industry data affects public services" -Source "Domestic Wire D" -Scope "domestic" -AgeHours 4
+$script:failedDomesticOnce = $false
+$script:failedInternationalOnce = $true
+$script:successfulConversionCalls = @{}
+function ConvertTo-NewsArticle {
+  param($Candidate, [string]$Category)
+  if ($Candidate.id -eq "domestic-policy" -and -not $script:failedDomesticOnce) {
+    $script:failedDomesticOnce = $true
+    throw "fixture conversion failure"
+  }
+  if ($Candidate.id -eq "international-finance" -and -not $script:failedInternationalOnce) {
+    $script:failedInternationalOnce = $true
+    throw "fixture international conversion failure"
+  }
+  $url = [string]$Candidate.url
+  if (-not $script:successfulConversionCalls.ContainsKey($url)) { $script:successfulConversionCalls[$url] = 0 }
+  $script:successfulConversionCalls[$url] += 1
+  return New-ConvertedNewsFixture -Candidate $Candidate -Category $Category
+}
+$refilledNews = @(Get-OpenNewsItems)
+if ($refilledNews.Count -ne 5 -or @($refilledNews | Where-Object category -eq "domestic").Count -ne 3 -or
+  @($refilledNews | Where-Object category -eq "international").Count -ne 2 -or
+  @($refilledNews.url | Sort-Object -Unique).Count -ne 5 -or
+  @($refilledNews | Where-Object id -eq "domestic-backup").Count -ne 1) {
+  throw "A failed selected domestic conversion must be removed and refilled to 3 domestic / 2 international unique URLs."
+}
+if (@($successfulConversionCalls.Values | Where-Object { $_ -ne 1 }).Count -gt 0) {
+  throw "Successful news conversions must be cached by URL across refill selection passes."
+}
+$script:testNewsCandidates += @(
+  New-IntegrationNewsCandidate -Id "international-politics-backup" -Title "Parliament and diplomatic policy update" -Source "International Wire C" -Scope "international" -AgeHours 3
+  New-IntegrationNewsCandidate -Id "international-finance-backup" -Title "Inflation and currency markets update" -Source "International Wire D" -Scope "international" -AgeHours 4
+)
+$script:failedDomesticOnce = $true
+$script:failedInternationalOnce = $false
+$balancedRefill = @(Get-OpenNewsItems | Where-Object { $_.category -eq "international" })
+if (($balancedRefill.id -join ",") -ne "international-politics,international-finance-backup") {
+  throw "International refill must preserve one-politics/one-finance balance after a selected finance conversion fails. Got '$($balancedRefill.id -join ',')'."
+}
+$script:testNewsCandidates = @($script:testNewsCandidates | Where-Object { $_.id -ne "domestic-backup" })
+$script:testNewsCandidates = @($script:testNewsCandidates | Where-Object { $_.id -notin @("international-politics-backup", "international-finance-backup") })
+$script:failedDomesticOnce = $false
+$script:failedInternationalOnce = $true
+$conversionShortfallRejected = $false
+try {
+  Get-OpenNewsItems | Out-Null
+} catch {
+  $conversionShortfallRejected = $_.Exception.Message -match 'conversion quota shortfall.*domestic.*2/3'
+}
+if (-not $conversionShortfallRejected) {
+  throw "A conversion failure with no remaining eligible candidate must throw before publication."
+}
+$script:testNewsCandidates = @($script:testNewsCandidates | Where-Object { $_.id -notin @("domestic-science", "domestic-backup") })
 $script:convertedNewsCategories = @()
 $quotaRejected = $false
 try {
@@ -694,6 +789,15 @@ $validPayload = [ordered]@{
   articles = $validArticles
 }
 Assert-DailyPayload -Payload $validPayload
+
+foreach ($validAiCount in @(3, 4)) {
+  $validMixPayload = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+  for ($index = 5; $index -le 8; $index += 1) {
+    $validMixPayload.articles[$index] = New-TestArticle -Id "reading-$validAiCount-$index" -Category $(if (($index - 5) -lt $validAiCount) { "ai" } else { "paper" })
+  }
+  $validMixPayload.contentFingerprint = Get-ContentFingerprint -Articles $validMixPayload.articles
+  Assert-DailyPayload -Payload $validMixPayload
+}
 
 function Assert-DailyPayloadRejected {
   param($Payload, [string]$Message, [string]$ExpectedMessagePattern = "")

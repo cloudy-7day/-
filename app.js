@@ -146,16 +146,15 @@ function renderCategory(category) {
     <div class="article-index">
       ${indexItems.length ? indexItems.map(({ article, index }, position) => renderIndexCard(article, index, position)).join("") : `<p class="empty-state">${t("empty")}</p>`}
     </div>`;
-  const newsSections = [
-    { category: "domestic", zh: "国内要闻", en: "China" },
-    { category: "international", zh: "国际要闻", en: "World" },
-  ];
+  const newsSectionCopy = {
+    domestic: { zh: "国内要闻", en: "China" },
+    international: { zh: "国际要闻", en: "World" },
+  };
   const indexMarkup = category === "news"
-    ? newsSections.map((section) => {
-      const sectionItems = items.filter(({ article }) => article.category === section.category);
-      if (!sectionItems.length) return "";
-      const sectionTitle = state.language === "en" ? section.en : section.zh;
-      return `<section class="category-section"><h2>${escapeHtml(sectionTitle)}</h2>${renderIndex(sectionItems)}</section>`;
+    ? SiteCore.getNewsSections(state.articles).map((section) => {
+      if (!section.items.length) return "";
+      const sectionTitle = newsSectionCopy[section.category][state.language === "en" ? "en" : "zh"];
+      return `<section class="category-section"><h2>${escapeHtml(sectionTitle)}</h2>${renderIndex(section.items)}</section>`;
     }).join("") || renderIndex([])
     : renderIndex(items);
 

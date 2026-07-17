@@ -64,6 +64,12 @@ try {
 }
 Assert-True $sameTopicRejected "Different URLs covering the same event must be rejected."
 
+$chineseDisasterA = [pscustomobject]@{ url = "https://source-a.example/yuzhong-flood"; title = "甘肃榆中山洪灾害造成多人失联救援持续" }
+$chineseDisasterB = [pscustomobject]@{ url = "https://source-b.example/flood-rescue"; title = "榆中发生山洪多人失联各方展开救援" }
+$chineseUnrelated = [pscustomobject]@{ url = "https://source-c.example/spacecraft"; title = "中国航天器完成在轨科学实验任务" }
+Assert-True (Test-ArticlesSameTopic -First $chineseDisasterA -Second $chineseDisasterB) "Different-source Chinese headlines about the same named disaster must be duplicates."
+Assert-True (-not (Test-ArticlesSameTopic -First $chineseDisasterA -Second $chineseUnrelated)) "Unrelated Chinese headlines must not be duplicates."
+
 $distinctArticles = @(
   [pscustomobject]@{ url = "https://example.com/battery"; title = "Solid-state battery reaches a new cycle-life milestone" },
   [pscustomobject]@{ url = "https://example.com/robot"; title = "Warehouse robot learns safer grasp planning" }
@@ -152,10 +158,25 @@ $wrongNewsSplit.articles[0].category = "international"
 $wrongNewsSplit.contentFingerprint = Get-ContentFingerprint $wrongNewsSplit.articles
 Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $wrongNewsSplit -TodayArchive $wrongNewsSplit -PreviousArchive $previous) "fresh_generation" "Changing a domestic item to international must regenerate."
 
-$wrongReadingCount = $current | ConvertTo-Json -Depth 20 | ConvertFrom-Json
-$wrongReadingCount.articles[5].category = "international"
-$wrongReadingCount.contentFingerprint = Get-ContentFingerprint $wrongReadingCount.articles
-Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $wrongReadingCount -TodayArchive $wrongReadingCount -PreviousArchive $previous) "fresh_generation" "Changing the reading count must regenerate."
+$zeroAiReadingMix = $current | ConvertTo-Json -Depth 20 | ConvertFrom-Json
+$zeroAiReadingMix.articles[5].category = "paper"
+$zeroAiReadingMix.articles[6].category = "paper"
+$zeroAiReadingMix.contentFingerprint = Get-ContentFingerprint $zeroAiReadingMix.articles
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $zeroAiReadingMix -TodayArchive $zeroAiReadingMix -PreviousArchive $previous) "fresh_generation" "A 0 AI / 4 paper mix must regenerate even though the total reading count is four."
+
+$oneAiReadingMix = $current | ConvertTo-Json -Depth 20 | ConvertFrom-Json
+$oneAiReadingMix.articles[5].category = "paper"
+$oneAiReadingMix.contentFingerprint = Get-ContentFingerprint $oneAiReadingMix.articles
+Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $oneAiReadingMix -TodayArchive $oneAiReadingMix -PreviousArchive $previous) "fresh_generation" "A 1 AI / 3 paper mix must regenerate even though the total reading count is four."
+
+foreach ($validAiCount in @(2, 3, 4)) {
+  $validMix = $current | ConvertTo-Json -Depth 20 | ConvertFrom-Json
+  for ($index = 5; $index -le 8; $index += 1) {
+    $validMix.articles[$index].category = if (($index - 5) -lt $validAiCount) { "ai" } else { "paper" }
+  }
+  $validMix.contentFingerprint = Get-ContentFingerprint $validMix.articles
+  Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $validMix -TodayArchive $validMix -PreviousArchive $previous) "already_complete" "A valid $validAiCount AI / $(4 - $validAiCount) paper mix must be accepted."
+}
 
 $legacyCurrent = New-LegacyPayload -Date $today -Status complete -UrlBase "https://example.com/legacy-current"
 Assert-Equal (Get-DailyUpdateAction -LocalNow ([datetime]"2026-07-14T09:07:00") -CurrentPayload $legacyCurrent -TodayArchive $legacyCurrent -PreviousArchive $previous) "fresh_generation" "A seven-item payload must never be accepted as current complete data."

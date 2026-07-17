@@ -57,6 +57,14 @@
     );
   }
 
+  function getNewsSections(articles = []) {
+    const indexed = articles.map((article, index) => ({ article, index }));
+    return ["domestic", "international"].map((category) => ({
+      category,
+      items: indexed.filter(({ article }) => article.category === category),
+    }));
+  }
+
   function getLocalizedArticle(article, language) {
     const translation = article?.translations?.[language];
     return translation
@@ -152,6 +160,7 @@
     getDisplayCategory,
     parseRoute,
     groupArticles,
+    getNewsSections,
     getLocalizedArticle,
     getSafeArticleUrl,
     getArticleRoute,

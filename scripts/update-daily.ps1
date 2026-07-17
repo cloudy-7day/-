@@ -93,25 +93,22 @@ function Assert-DailyPayload {
   param($Payload)
 
   $items = @($Payload.articles)
+  $composition = Get-DailyComposition -Articles $items
   $expectedDate = Get-LosAngelesDate
   if ($Payload.issueDate -ne $expectedDate) {
     throw "Daily payload issueDate must be $expectedDate; received $($Payload.issueDate)."
   }
 
-  if ($items.Count -ne 9) {
-    throw "Daily payload must contain exactly 9 articles; collected $($items.Count). Existing published data was not replaced."
+  if ($composition.total -ne 9) {
+    throw "Daily payload must contain exactly 9 articles; collected $($composition.total). Existing published data was not replaced."
   }
 
-  $domesticCount = @($items | Where-Object { $_.category -eq "domestic" }).Count
-  $internationalCount = @($items | Where-Object { $_.category -eq "international" }).Count
-  if ($domesticCount -ne 3 -or $internationalCount -ne 2) {
-    throw "Daily payload must contain exactly 3 domestic and 2 international news items; collected $domesticCount domestic and $internationalCount international. Existing published data was not replaced."
+  if ($composition.domestic -ne 3 -or $composition.international -ne 2) {
+    throw "Daily payload must contain exactly 3 domestic and 2 international news items; collected $($composition.domestic) domestic and $($composition.international) international. Existing published data was not replaced."
   }
 
-  $aiCount = @($items | Where-Object { $_.category -eq "ai" }).Count
-  $paperCount = @($items | Where-Object { $_.category -eq "paper" }).Count
-  if ($aiCount -lt 2 -or $aiCount -gt 4 -or $paperCount -lt 0 -or $paperCount -gt 2 -or ($aiCount + $paperCount) -ne 4) {
-    throw "Daily payload must contain exactly 4 AI/paper articles (2-4 AI and 0-2 papers); collected $aiCount AI and $paperCount papers."
+  if (-not $composition.isValid) {
+    throw "Daily payload must contain exactly 4 AI/paper articles (2-4 AI and 0-2 papers); collected $($composition.ai) AI and $($composition.paper) papers."
   }
 
   $allowedCategories = @("domestic", "international", "ai", "paper")
@@ -379,6 +376,20 @@ function Get-FeedItems {
   return @($Feed)
 }
 
+function Get-FeedItemExcerpt {
+  param($Item)
+
+  foreach ($propertyName in @("description", "summary", "content", "content:encoded")) {
+    $property = $Item.PSObject.Properties[$propertyName]
+    if (-not $property) { continue }
+    $excerpt = ConvertFrom-HtmlText -Value (Get-FeedText -Value $property.Value)
+    if (-not [string]::IsNullOrWhiteSpace($excerpt)) {
+      return $excerpt.Trim()
+    }
+  }
+  return ""
+}
+
 function Get-OpenNewsFeeds {
   $feeds = @(
     @{ source = "中国新闻网国内"; url = "https://www.chinanews.com.cn/rss/china.xml"; scope = "domestic"; language = "zh" },
@@ -390,7 +401,6 @@ function Get-OpenNewsFeeds {
     @{ source = "人民网社会"; url = "http://www.people.com.cn/rss/society.xml"; scope = "domestic"; language = "zh" },
     @{ source = "China Daily China"; url = "http://www.chinadaily.com.cn/rss/china_rss.xml"; scope = "domestic"; language = "en" },
     @{ source = "China Daily BizChina"; url = "http://www.chinadaily.com.cn/rss/bizchina_rss.xml"; scope = "domestic"; language = "en" },
-    @{ source = "外交部领事安全提醒"; url = "https://cs.mfa.gov.cn/gyls/lsgz/lsyj/rss_57447.xml"; scope = "international"; language = "zh" },
     @{ source = "NPR World"; url = "https://feeds.npr.org/1004/rss.xml"; scope = "international"; language = "en" },
     @{ source = "The Guardian World"; url = "https://www.theguardian.com/world/rss"; scope = "international"; language = "en" },
     @{ source = "Reuters World"; url = "https://feeds.reuters.com/Reuters/worldNews"; scope = "international"; language = "en" }
@@ -426,14 +436,7 @@ function Get-OpenNewsCandidates {
         $rank += 1
         $title = (Get-FeedText -Value $feedItem.title).Trim()
         $link = (Get-FeedLink -Item $feedItem).Trim()
-        $excerptValue = if ($feedItem.description) {
-          $feedItem.description
-        } elseif ($feedItem.summary) {
-          $feedItem.summary
-        } else {
-          $feedItem.content
-        }
-        $excerpt = ConvertFrom-HtmlText -Value (Get-FeedText -Value $excerptValue)
+        $excerpt = Get-FeedItemExcerpt -Item $feedItem
         $dateValue = if ($feedItem.pubDate) {
           $feedItem.pubDate
         } elseif ($feedItem.published) {
@@ -443,7 +446,7 @@ function Get-OpenNewsCandidates {
         }
         $published = [datetimeoffset]::MinValue
         $uri = $null
-        if (-not $title -or
+        if (-not $title -or -not $excerpt -or
           -not [datetimeoffset]::TryParse((Get-FeedText -Value $dateValue), [ref]$published) -or
           -not [uri]::TryCreate($link, [System.UriKind]::Absolute, [ref]$uri) -or
           $uri.Scheme -notin @("http", "https")) {
@@ -1004,21 +1007,89 @@ function New-PaperItem {
   }
 }
 
+function Test-NewsArticleConversionComplete {
+  param($Article, [string]$Category)
+
+  if ($null -eq $Article -or [string]$Article.category -ne $Category) { return $false }
+  foreach ($field in @("id", "title", "source", "url", "publishedAt", "highlight", "summary", "failureAnalysis", "summarySource")) {
+    if ([string]::IsNullOrWhiteSpace([string]$Article.$field)) { return $false }
+  }
+  return $null -ne $Article.translations.zh -and $null -ne $Article.translations.en
+}
+
+function Convert-NewsCandidateQuota {
+  param(
+    [object[]]$Candidates,
+    [ValidateSet("domestic", "international")][string]$Category,
+    [datetimeoffset]$Now,
+    [int]$TargetCount,
+    [hashtable]$ConversionCache
+  )
+
+  $accepted = [System.Collections.ArrayList]::new()
+  $acceptedKinds = [System.Collections.ArrayList]::new()
+  $unavailableUrls = @{}
+  while ($accepted.Count -lt $TargetCount) {
+    $remaining = @($Candidates | Where-Object { -not $unavailableUrls.ContainsKey([string]$_.url) })
+    $needed = $TargetCount - $accepted.Count
+    $selectionPool = $remaining
+    if ($Category -eq "international" -and $TargetCount -eq 2 -and $acceptedKinds.Count -eq 1) {
+      $oppositeKind = if ($acceptedKinds[0] -eq "politics") { "finance" } else { "politics" }
+      $oppositeCandidates = @($remaining | Where-Object { (Get-InternationalNewsKind -Candidate $_) -eq $oppositeKind })
+      if ($oppositeCandidates.Count -gt 0) { $selectionPool = $oppositeCandidates }
+    }
+    $selected = if ($Category -eq "domestic") {
+      @(Select-DomesticNewsCandidates -Candidates $selectionPool -Now $Now -TargetCount $needed)
+    } else {
+      @(Select-InternationalNewsCandidates -Candidates $selectionPool -Now $Now -TargetCount $needed)
+    }
+    if ($selected.Count -eq 0) { break }
+
+    foreach ($candidate in $selected) {
+      $url = [string]$candidate.url
+      try {
+        $article = if ($ConversionCache.ContainsKey($url)) {
+          $ConversionCache[$url]
+        } else {
+          ConvertTo-NewsArticle -Candidate $candidate -Category $Category
+        }
+        if (-not (Test-NewsArticleConversionComplete -Article $article -Category $Category)) {
+          throw "News conversion returned an incomplete $Category item."
+        }
+        $ConversionCache[$url] = $article
+        [void]$accepted.Add($article)
+        if ($Category -eq "international") {
+          [void]$acceptedKinds.Add((Get-InternationalNewsKind -Candidate $candidate))
+        }
+        $unavailableUrls[$url] = $true
+        if ($accepted.Count -ge $TargetCount) { break }
+      } catch {
+        Write-Warning "Skipping $Category news candidate after conversion failure '$($candidate.id)': $($_.Exception.Message)"
+        $unavailableUrls[$url] = $true
+        break
+      }
+    }
+  }
+
+  if ($accepted.Count -ne $TargetCount) {
+    throw "Open-news conversion quota shortfall: $Category $($accepted.Count)/$TargetCount. Existing published data was not replaced."
+  }
+  return @($accepted)
+}
+
 function Get-OpenNewsItems {
   $candidates = @(Get-OpenNewsCandidates)
   $now = (Get-Date).ToUniversalTime()
-  $domesticCandidates = @($candidates | Where-Object { $_.scope -eq "domestic" })
-  $internationalCandidates = @($candidates | Where-Object { $_.scope -eq "international" })
-  $domestic = @(Select-DomesticNewsCandidates -Candidates $domesticCandidates -Now $now -TargetCount 3 | Select-Object -First 3)
-  $international = @(Select-InternationalNewsCandidates -Candidates $internationalCandidates -Now $now -TargetCount 2 | Select-Object -First 2)
-  if ($domestic.Count -ne 3 -or $international.Count -ne 2) {
-    throw "Open-news quota shortfall: domestic $($domestic.Count)/3; international $($international.Count)/2. Existing published data was not replaced."
+  $domesticProbe = @(Select-DomesticNewsCandidates -Candidates $candidates -Now $now -TargetCount 3 | Select-Object -First 3)
+  $internationalProbe = @(Select-InternationalNewsCandidates -Candidates $candidates -Now $now -TargetCount 2 | Select-Object -First 2)
+  if ($domesticProbe.Count -ne 3 -or $internationalProbe.Count -ne 2) {
+    throw "Open-news quota shortfall: domestic $($domesticProbe.Count)/3; international $($internationalProbe.Count)/2. Existing published data was not replaced."
   }
 
-  return @(
-    $domestic | ForEach-Object { ConvertTo-NewsArticle -Candidate $_ -Category "domestic" }
-    $international | ForEach-Object { ConvertTo-NewsArticle -Candidate $_ -Category "international" }
-  )
+  $conversionCache = @{}
+  $domestic = @(Convert-NewsCandidateQuota -Candidates $candidates -Category "domestic" -Now $now -TargetCount 3 -ConversionCache $conversionCache)
+  $international = @(Convert-NewsCandidateQuota -Candidates $candidates -Category "international" -Now $now -TargetCount 2 -ConversionCache $conversionCache)
+  return @($domestic) + @($international)
 }
 
 function New-AiArticleItem {

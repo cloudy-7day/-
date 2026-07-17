@@ -111,6 +111,14 @@ $tierAndDiversity = @(
 $diverseDomestic = @(Select-DomesticNewsCandidates -Candidates $tierAndDiversity -Now $now -TargetCount 3)
 Assert-Equal (($diverseDomestic.id) -join ",") "policy-a1,policy-b,policy-a2" "Same-tier source diversity must not let a lower tier outrank a repeated source."
 
+$mixedDomestic = @(
+  New-NewsCandidate -Id "domestic-old" -Title "Central government policy older" -Source "Wire A" -PublishedAt "2026-07-14T17:00:00Z" -Scope "domestic"
+  New-NewsCandidate -Id "wrong-scope-new" -Title "Central government policy newest" -Source "Wire B" -PublishedAt "2026-07-16T15:30:00Z" -Scope "international"
+  New-NewsCandidate -Id "domestic-new" -Title "Central government policy newer" -Source "Wire A" -PublishedAt "2026-07-16T15:00:00Z" -Scope "domestic"
+)
+$mixedDomesticSelected = @(Select-DomesticNewsCandidates -Candidates $mixedDomestic -Now $now -TargetCount 2)
+Assert-Equal (($mixedDomesticSelected.id) -join ",") "domestic-new,domestic-old" "Domestic selection must reject wrong scope and sort newer first within an equal tier/source."
+
 $internationalBalanced = @(
   New-NewsCandidate -Id "politics-a" -Title "Election and government diplomacy update" -Source "Wire A" -Scope "international"
   New-NewsCandidate -Id "finance-a" -Title "Global markets and central bank finance update" -Source "Wire A" -Scope "international"
@@ -118,6 +126,12 @@ $internationalBalanced = @(
 )
 Assert-Equal (Get-InternationalNewsKind -Candidate $internationalBalanced[0]) "politics" "International politics classification mismatch."
 Assert-Equal (Get-InternationalNewsKind -Candidate $internationalBalanced[1]) "finance" "International finance classification mismatch."
+$monetaryPolicy = New-NewsCandidate -Id "monetary-policy" -Title "Central bank monetary policy holds interest rates steady" -Scope "international"
+$tariffPolicy = New-NewsCandidate -Id "tariff-policy" -Title "Government tariff and trade policy changes import costs" -Scope "international"
+$foreignPolicy = New-NewsCandidate -Id "foreign-policy" -Title "Foreign policy guides diplomatic talks between ministers" -Scope "international"
+Assert-Equal (Get-InternationalNewsKind -Candidate $monetaryPolicy) "finance" "Specific monetary-policy signals must override generic policy classification."
+Assert-Equal (Get-InternationalNewsKind -Candidate $tariffPolicy) "finance" "Tariff/trade policy must classify as finance."
+Assert-Equal (Get-InternationalNewsKind -Candidate $foreignPolicy) "politics" "Ordinary foreign policy and diplomacy must remain politics."
 $balanced = @(Select-InternationalNewsCandidates -Candidates $internationalBalanced -Now $now -TargetCount 2)
 Assert-Equal (($balanced.id) -join ",") "politics-a,finance-b" "International selection should balance kinds and prefer different sources."
 
@@ -128,6 +142,15 @@ $internationalReversePair = @(
 )
 $reverseBalanced = @(Select-InternationalNewsCandidates -Candidates $internationalReversePair -Now $now -TargetCount 2)
 Assert-Equal (($reverseBalanced.id) -join ",") "reverse-politics-b,reverse-finance-a" "International pairing should search both kinds for a different-source combination."
+
+$mixedInternational = @(
+  New-NewsCandidate -Id "international-politics-old" -Title "Election and diplomacy older update" -Source "Wire A" -PublishedAt "2026-07-14T17:00:00Z" -Scope "international"
+  New-NewsCandidate -Id "wrong-scope-finance" -Title "Central bank interest rates newest" -Source "Wire B" -PublishedAt "2026-07-16T15:30:00Z" -Scope "domestic"
+  New-NewsCandidate -Id "international-politics-new" -Title "Election and diplomacy newer update" -Source "Wire A" -PublishedAt "2026-07-16T15:00:00Z" -Scope "international"
+  New-NewsCandidate -Id "international-finance" -Title "Central bank interest rates update" -Source "Wire B" -PublishedAt "2026-07-16T14:00:00Z" -Scope "international"
+)
+$mixedInternationalSelected = @(Select-InternationalNewsCandidates -Candidates $mixedInternational -Now $now -TargetCount 2)
+Assert-Equal (($mixedInternationalSelected.id) -join ",") "international-politics-new,international-finance" "International selection must reject wrong scope and sort newer first within a class/source."
 
 $financeOnly = @(
   New-NewsCandidate -Id "finance-one" -Title "Stocks and markets rise after earnings" -Source "Wire A" -Scope "international"

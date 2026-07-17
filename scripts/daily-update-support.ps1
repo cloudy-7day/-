@@ -190,12 +190,33 @@ function Get-ArticleTitleTokens {
   )
 }
 
+function Get-ChineseTitleNgrams {
+  param([string]$Title, [int]$Size = 2)
+
+  $han = ([regex]::Matches($Title.Normalize([Text.NormalizationForm]::FormKC), '[\u3400-\u9fff]') |
+    ForEach-Object { $_.Value }) -join ''
+  if ($han.Length -lt $Size) { return @() }
+  return @(0..($han.Length - $Size) |
+    ForEach-Object { $han.Substring($_, $Size) } |
+    Sort-Object -Unique)
+}
+
 function Test-ArticlesSameTopic {
   param(
     $First,
     $Second,
     [double]$Threshold = 0.6
   )
+
+  $firstChinese = @(Get-ChineseTitleNgrams -Title ([string]$First.title))
+  $secondChinese = @(Get-ChineseTitleNgrams -Title ([string]$Second.title))
+  if ($firstChinese.Count -ge 3 -and $secondChinese.Count -ge 3) {
+    $sharedChinese = @($firstChinese | Where-Object { $secondChinese -contains $_ }).Count
+    $smallerChineseCount = [Math]::Min($firstChinese.Count, $secondChinese.Count)
+    if ($sharedChinese -ge 3 -and ($sharedChinese / $smallerChineseCount) -ge 0.3) {
+      return $true
+    }
+  }
 
   $firstTokens = @(Get-ArticleTitleTokens -Title ([string]$First.title))
   $secondTokens = @(Get-ArticleTitleTokens -Title ([string]$Second.title))
@@ -313,6 +334,52 @@ function Get-ContentFingerprint {
   return (($hash | ForEach-Object { $_.ToString('x2') }) -join '')
 }
 
+function Get-DailyComposition {
+  param([object[]]$Articles)
+
+  $items = @($Articles)
+  $domesticCount = @($items | Where-Object { $_.category -eq "domestic" }).Count
+  $internationalCount = @($items | Where-Object { $_.category -eq "international" }).Count
+  $aiCount = @($items | Where-Object { $_.category -eq "ai" }).Count
+  $paperCount = @($items | Where-Object { $_.category -eq "paper" }).Count
+  return [pscustomobject][ordered]@{
+    total = $items.Count
+    domestic = $domesticCount
+    international = $internationalCount
+    ai = $aiCount
+    paper = $paperCount
+    reading = $aiCount + $paperCount
+    isValid = $items.Count -eq 9 -and
+      $domesticCount -eq 3 -and
+      $internationalCount -eq 2 -and
+      $aiCount -ge 2 -and $aiCount -le 4 -and
+      $paperCount -ge 0 -and $paperCount -le 2 -and
+      ($aiCount + $paperCount) -eq 4
+  }
+}
+
+function Get-PublishedArchiveShape {
+  param([object[]]$Articles)
+
+  $items = @($Articles)
+  $daily = Get-DailyComposition -Articles $items
+  $legacyInternational = @($items | Where-Object { $_.category -eq "international" }).Count
+  $legacyReading = @($items | Where-Object { $_.category -in @("ai", "paper") }).Count
+  $isDomesticEra = $daily.domestic -gt 0
+  return [pscustomobject][ordered]@{
+    era = if ($isDomesticEra) { "domestic" } else { "legacy" }
+    total = $items.Count
+    domestic = $daily.domestic
+    international = $legacyInternational
+    reading = $legacyReading
+    isValid = if ($isDomesticEra) {
+      $daily.isValid
+    } else {
+      $items.Count -eq 7 -and $legacyInternational -eq 3 -and $legacyReading -eq 4
+    }
+  }
+}
+
 function Get-DailyUpdateAction {
   param(
     [datetime]$LocalNow,
@@ -339,10 +406,8 @@ function Get-DailyUpdateAction {
   if ($Ledger -and @($items | Where-Object { Test-ArticleSeen -Article $_ -Ledger $Ledger }).Count -gt 0) {
     return "fresh_generation"
   }
-  $domesticCount = @($items | Where-Object { $_.category -eq "domestic" }).Count
-  $internationalCount = @($items | Where-Object { $_.category -eq "international" }).Count
-  $readingCount = @($items | Where-Object { $_.category -in @("ai", "paper") }).Count
-  if ($items.Count -ne 9 -or $domesticCount -ne 3 -or $internationalCount -ne 2 -or $readingCount -ne 4) {
+  $composition = Get-DailyComposition -Articles $items
+  if (-not $composition.isValid) {
     return "fresh_generation"
   }
 
