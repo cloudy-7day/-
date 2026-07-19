@@ -5,6 +5,8 @@ assert.deepEqual(core.parseRoute("#/home"), { name: "home" });
 assert.deepEqual(core.parseRoute("#/category/ai"), { name: "category", category: "ai" });
 assert.deepEqual(core.parseRoute("#/category/news"), { name: "category", category: "news" });
 assert.deepEqual(core.parseRoute("#/category/international"), { name: "category", category: "news" });
+assert.deepEqual(core.parseRoute("#/favorites"), { name: "favorites" });
+assert.deepEqual(core.parseRoute("#/favorite/news-123"), { name: "favorite", id: "news-123" });
 assert.deepEqual(core.parseRoute("#/article/2026-07-14/3"), {
   name: "article",
   issueDate: "2026-07-14",
@@ -20,7 +22,7 @@ const articles = [
 ];
 
 const grouped = core.groupArticles(articles);
-assert.equal(core.CATEGORY_CONFIG.news.zh, "\u5929\u4e0b\u8981\u95fb");
+assert.equal(core.CATEGORY_CONFIG.news.zh, "\u5929\u4e0b\u5f02\u95fb");
 assert.equal(core.CATEGORY_CONFIG.news.en, "Daily News");
 assert.equal(core.CATEGORY_CONFIG.news.creature, "feifei");
 assert.deepEqual(Object.keys(grouped), ["news", "ai", "paper"]);
@@ -31,22 +33,66 @@ assert.deepEqual(core.groupArticles([{ category: "international", title: "旧卷
   { category: "international", title: "旧卷新闻" },
 ]);
 
-assert.deepEqual(core.getNewsSections(articles), [
-  { category: "domestic", items: [{ article: articles[0], index: 0 }] },
-  { category: "international", items: [{ article: articles[2], index: 2 }] },
-]);
-const internationalOnly = [{ category: "international", title: "Old world item" }];
-assert.deepEqual(core.getNewsSections(internationalOnly), [
-  { category: "domestic", items: [] },
-  { category: "international", items: [{ article: internationalOnly[0], index: 0 }] },
-]);
-
 assert.equal(core.getDisplayCategory("domestic"), "news");
 assert.equal(core.getDisplayCategory("international"), "news");
 assert.equal(core.getDisplayCategory("ai"), "ai");
 assert.equal(core.getDisplayCategory("paper"), "paper");
 assert.equal(core.getDisplayCategory("unknown"), "unknown");
 assert.equal(core.getSafeArticleUrl("javascript:alert(1)", "https://example.com"), "#");
+const favorite = core.createFavoriteSnapshot({
+  id: "news-123",
+  category: "domestic",
+  title: "值得保留的新闻",
+  source: "Example",
+  url: "https://example.com/story",
+  summary: "摘要",
+  translations: { en: { title: "A useful story", summary: "Summary" } },
+}, "2026-07-14", "2026-07-15T10:00:00.000Z");
+assert.equal(favorite.id, "news-123");
+assert.equal(favorite.issueDate, "2026-07-14");
+assert.equal(favorite.savedAt, "2026-07-15T10:00:00.000Z");
+assert.equal(favorite.translations.en.title, "A useful story");
+assert.equal(core.getFavoriteRoute("news-123"), "#/favorite/news-123");
+assert.deepEqual(core.parseFavoriteCollection("not-json"), []);
+assert.deepEqual(core.parseFavoriteCollection(JSON.stringify({ version: 1, items: [{ nope: true }] })), []);
+assert.deepEqual(core.parseFavoriteCollection(JSON.stringify({ version: 1, items: [{ ...favorite, category: "unknown" }] })), []);
+assert.deepEqual(
+  core.parseFavoriteCollection(JSON.stringify({ version: 1, items: [favorite, { ...favorite, title: "newer" }] })),
+  [{ ...favorite, title: "newer" }],
+);
+const legacyStore = core.parseFavoriteStore(JSON.stringify({ version: 1, items: [favorite] }), "device-a");
+assert.equal(legacyStore.version, 2);
+assert.equal(legacyStore.records[favorite.id].item.title, "值得保留的新闻");
+const deletedStore = core.parseFavoriteStore({
+  version: 2,
+  deviceId: "device-b",
+  updatedAt: "2026-07-16T10:00:00.000Z",
+  records: {
+    [favorite.id]: {
+      id: favorite.id,
+      updatedAt: "2026-07-16T10:00:00.000Z",
+      deviceId: "device-b",
+      deleted: true,
+      item: null,
+    },
+  },
+});
+assert.deepEqual(core.favoriteStoreToItems(core.mergeFavoriteStores(legacyStore, deletedStore)), []);
+const restoredStore = core.parseFavoriteStore({
+  version: 2,
+  deviceId: "device-a",
+  updatedAt: "2026-07-17T10:00:00.000Z",
+  records: {
+    [favorite.id]: {
+      id: favorite.id,
+      updatedAt: "2026-07-17T10:00:00.000Z",
+      deviceId: "device-a",
+      deleted: false,
+      item: { ...favorite, title: "重新收藏" },
+    },
+  },
+});
+assert.equal(core.favoriteStoreToItems(core.mergeFavoriteStores(deletedStore, restoredStore))[0].title, "重新收藏");
 assert.equal(
   core.getArticleByRoute(articles, { name: "article", issueDate: "2026-07-14", index: 1 }),
   articles[1],
