@@ -1,0 +1,7 @@
+@font-face {
+  font-family: "Source Han Serif SC Heavy Local";
+  src: url("./files/source-han-serif-sc-heavy.woff2") format("woff2");
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+}
