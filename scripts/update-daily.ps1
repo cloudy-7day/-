@@ -103,12 +103,12 @@ function Assert-DailyPayload {
     throw "Daily payload must contain exactly 9 articles; collected $($composition.total). Existing published data was not replaced."
   }
 
-  if ($composition.domestic -ne 3 -or $composition.international -ne 2) {
-    throw "Daily payload must contain exactly 3 domestic and 2 international news items; collected $($composition.domestic) domestic and $($composition.international) international. Existing published data was not replaced."
+  if ($composition.domestic -ne 3 -or $composition.international -lt 1 -or $composition.international -gt 2) {
+    throw "Daily payload must contain exactly 3 domestic and 1-2 international news items; collected $($composition.domestic) domestic and $($composition.international) international. Existing published data was not replaced."
   }
 
   if (-not $composition.isValid) {
-    throw "Daily payload must contain exactly 4 AI/paper articles (2-4 AI and 0-2 papers); collected $($composition.ai) AI and $($composition.paper) papers."
+    throw "Daily payload must contain exactly 4-5 AI/paper articles matching the news count (2-5 AI and 0-2 papers); collected $($composition.ai) AI and $($composition.paper) papers."
   }
 
   $allowedCategories = @("domestic", "international", "ai", "paper")
@@ -667,21 +667,32 @@ $translationGuide
       @{ role = "user"; content = $prompt }
     )
     temperature = 0.2
-    max_tokens = 1600
+    max_tokens = 2400
     response_format = @{ type = "json_object" }
   } | ConvertTo-Json -Depth 8
 
   try {
-    $response = Invoke-WithRetry -MaxAttempts 2 -DelaySeconds 2 -Operation {
-      Invoke-JsonPostUtf8 `
-        -Uri $analysisUri `
-        -JsonBody $body `
-        -Headers $analysisHeaders
-    }
+    $parsed = $null
+    for ($attempt = 1; $attempt -le 2; $attempt++) {
+      $response = Invoke-WithRetry -MaxAttempts 2 -DelaySeconds 2 -Operation {
+        Invoke-JsonPostUtf8 `
+          -Uri $analysisUri `
+          -JsonBody $body `
+          -Headers $analysisHeaders
+      }
 
-    $content = [string]$response.choices[0].message.content
-    $content = $content.Trim() -replace "^```json\s*", "" -replace "^```\s*", "" -replace "\s*```$", ""
-    $parsed = $content | ConvertFrom-Json
+      $content = [string]$response.choices[0].message.content
+      $content = $content.Trim() -replace "^```json\s*", "" -replace "^```\s*", "" -replace "\s*```$", ""
+      try {
+        $parsed = $content | ConvertFrom-Json
+      } catch {
+        $parsed = $null
+        Write-Warning "DeepSeek returned malformed JSON for '$Title' (attempt $attempt/2): $($_.Exception.Message)"
+      }
+      if ($parsed) { break }
+      Start-Sleep -Seconds 2
+    }
+    if (-not $parsed) { throw "DeepSeek returned incomplete summary JSON." }
     if (-not (Test-ChineseDisplayTitle -Title ([string]$parsed.title)) -or -not $parsed.highlight -or -not $parsed.summary -or -not $parsed.failureAnalysis -or -not $parsed.translations.en.title -or -not $parsed.translations.en.highlight -or -not $parsed.translations.en.summary -or -not $parsed.translations.en.failureAnalysis) {
       throw "DeepSeek returned incomplete summary JSON."
     }
@@ -829,7 +840,7 @@ $inputJson
       @{ role = "user"; content = $prompt }
     )
     temperature = 0.2
-    max_tokens = 1800
+    max_tokens = 3000
     response_format = @{ type = "json_object" }
   } | ConvertTo-Json -Depth 8
   $response = Invoke-WithRetry -MaxAttempts $recoveryAttempts -DelaySeconds $recoveryDelaySeconds -Operation {
@@ -839,20 +850,57 @@ $inputJson
       -Headers $recoveryHeaders
   }
   $content = ([string]$response.choices[0].message.content).Trim() -replace "^```json\s*", "" -replace "^```\s*", "" -replace "\s*```$", ""
-  $parsed = $content | ConvertFrom-Json
-  $outputs = @($parsed.items)
-  if ($outputs.Count -ne $recoveryArticles.Count) {
-    throw "$recoveryProvider batch returned $($outputs.Count) items for $($recoveryArticles.Count) degraded articles."
+  $parsed = $null
+  try {
+    $parsed = $content | ConvertFrom-Json
+  } catch {
+    Write-Warning "$recoveryProvider batch response was not valid JSON; keeping degraded items unchanged."
+  }
+  $outputs = if ($parsed -and $parsed.items) { @($parsed.items) } else { @() }
+  if ($outputs.Count -lt $recoveryArticles.Count) {
+    Write-Warning "$recoveryProvider batch returned $($outputs.Count) of $($recoveryArticles.Count) items; upgrading only matched items and retrying missing ones individually."
   }
   $byId = @{}
   foreach ($output in $outputs) { $byId[[string]$output.id] = $output }
 
   foreach ($article in $recoveryArticles) {
     $analysis = $byId[[string]$article.id]
-    if (-not $analysis -or -not (Test-ChineseDisplayTitle -Title ([string]$analysis.title)) -or
-      -not $analysis.highlight -or -not $analysis.summary -or -not $analysis.failureAnalysis -or
-      -not $analysis.englishTitle -or -not $analysis.englishHighlight -or -not $analysis.englishSummary -or -not $analysis.englishFailureAnalysis) {
-      throw "$recoveryProvider batch returned incomplete bilingual analysis: $($article.id)"
+    $validAnalysis = $analysis -and (Test-ChineseDisplayTitle -Title ([string]$analysis.title)) -and
+      -not [string]::IsNullOrWhiteSpace([string]$analysis.highlight) -and
+      -not [string]::IsNullOrWhiteSpace([string]$analysis.summary) -and
+      -not [string]::IsNullOrWhiteSpace([string]$analysis.failureAnalysis) -and
+      -not [string]::IsNullOrWhiteSpace([string]$analysis.englishTitle) -and
+      -not [string]::IsNullOrWhiteSpace([string]$analysis.englishHighlight) -and
+      -not [string]::IsNullOrWhiteSpace([string]$analysis.englishSummary) -and
+      -not [string]::IsNullOrWhiteSpace([string]$analysis.englishFailureAnalysis)
+    if (-not $validAnalysis) {
+      Write-Warning "Batch recovery missed item $($article.id); retrying individually."
+      $sourceText = [string]$article.sourceExcerpt
+      if (-not $sourceText) { $sourceText = [string]$article.summary }
+      $single = New-ArticleAnalysis `
+        -Category ([string]$article.category) `
+        -Title ([string]$article.title) `
+        -Source ([string]$article.source) `
+        -Url ([string]$article.url) `
+        -SourceText $sourceText `
+        -ScoreLabel ([string]$article.scoreLabel) `
+        -RequiresRiskAnalysis ($article.category -eq "ai")
+      if ($single -and $single.summarySource -eq "deepseek") {
+        $article.highlight = [string]$single.highlight
+        $article.summary = [string]$single.summary
+        $article.failureAnalysis = [string]$single.failureAnalysis
+        $article.summarySource = "deepseek"
+        $article.sourceExcerpt = [string]$single.sourceExcerpt
+        if ($single.translations) {
+          $article.translations = $single.translations
+        }
+        if ($single.paperCard -and $article.category -eq "paper") {
+          $article.paperCard = $single.paperCard
+        }
+      } else {
+        Write-Warning "Individual recovery also failed for $($article.id); keeping degraded extract."
+      }
+      continue
     }
 
     $article.highlight = [string]$analysis.highlight
@@ -1097,13 +1145,16 @@ function Get-OpenNewsItems {
   $now = (Get-Date).ToUniversalTime()
   $domesticProbe = @(Select-DomesticNewsCandidates -Candidates $candidates -Now $now -TargetCount 3 | Select-Object -First 3)
   $internationalProbe = @(Select-InternationalNewsCandidates -Candidates $candidates -Now $now -TargetCount 2 | Select-Object -First 2)
-  if ($domesticProbe.Count -ne 3 -or $internationalProbe.Count -ne 2) {
+  if ($domesticProbe.Count -ne 3 -or $internationalProbe.Count -lt 1) {
     throw "Open-news quota shortfall: domestic $($domesticProbe.Count)/3; international $($internationalProbe.Count)/2. Existing published data was not replaced."
+  }
+  if ($internationalProbe.Count -lt 2) {
+    Write-Warning "International news quota shortfall: only $($internationalProbe.Count) of 2 candidates available; the reading slot will fill the gap."
   }
 
   $conversionCache = @{}
   $domestic = @(Convert-NewsCandidateQuota -Candidates $candidates -Category "domestic" -Now $now -TargetCount 3 -ConversionCache $conversionCache)
-  $international = @(Convert-NewsCandidateQuota -Candidates $candidates -Category "international" -Now $now -TargetCount 2 -ConversionCache $conversionCache)
+  $international = @(Convert-NewsCandidateQuota -Candidates $candidates -Category "international" -Now $now -TargetCount $internationalProbe.Count -ConversionCache $conversionCache)
   return @($domestic) + @($international)
 }
 
@@ -1722,9 +1773,11 @@ Get-ChildItem -LiteralPath $archiveFolder -Filter "*.json" -ErrorAction Silently
 $script:ArticleLedger = Add-ArticlesToLedger -Ledger $script:ArticleLedger -Articles $publishedArticles
 
 $articles = @()
-$articles += Get-OpenNewsItems
-$aiItems = @(Get-AiItems -TargetCount 4)
-$articles += $aiItems | Select-Object -First 2
+$newsItems = @(Get-OpenNewsItems)
+$articles += $newsItems
+$newsShortfall = 5 - @($newsItems).Count
+$aiItems = @(Get-AiItems -TargetCount 6)
+$articles += $aiItems | Select-Object -First (2 + $newsShortfall)
 $paperItems = @(Get-ArxivAppliedPapers)
 $selectedPapers = @($paperItems |
   Where-Object { $_ } |
@@ -1734,7 +1787,7 @@ $articles += $selectedPapers
 
 $paperShortfall = 2 - $selectedPapers.Count
 if ($paperShortfall -gt 0) {
-  $articles += $aiItems | Select-Object -Skip 2 -First $paperShortfall
+  $articles += $aiItems | Select-Object -Skip (2 + $newsShortfall) -First $paperShortfall
 }
 
 if ($env:GITHUB_TOKEN -and @($articles | Where-Object { $_.summarySource -eq "source_extract" }).Count -gt 0) {

@@ -43,7 +43,7 @@ foreach ($functionName in @("Get-OpenNewsFeeds", "Get-OpenNewsCandidates", "Conv
   }
 }
 
-if ($source -notmatch '(?m)^\$articles \+= Get-OpenNewsItems\s*$') {
+if ($source -notmatch '\$newsItems = @\(Get-OpenNewsItems\)' -or $source -notmatch '\$articles \+= \$newsItems') {
   throw "The main assembly must collect the domestic/international news quotas through Get-OpenNewsItems."
 }
 
@@ -318,8 +318,8 @@ if ($workflow -notmatch '\$maxAttempts\s*=\s*2') {
   throw "The cloud update must retry once after a transient collection failure."
 }
 
-if ($workflow -notmatch 'cron:\s*"7 15,16,17 \* \* \*"') {
-  throw "Workflow must cover 08:07 and 09:07 in both PDT and PST."
+if ($workflow -notmatch 'cron:\s*"7 15,16,17,18 \* \* \*"') {
+  throw "Workflow must cover 08:07 and 09:07 in both PDT and PST plus an 18:07 UTC fallback."
 }
 
 if ($workflow -notmatch 'force:\s+description:') {
@@ -1133,17 +1133,23 @@ Assert-DailyPayloadRejected -Payload $tenPayload -Message "Daily payloads must r
 $wrongDomestic = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
 $wrongDomestic.articles[0].category = "international"
 $wrongDomestic.contentFingerprint = Get-ContentFingerprint -Articles $wrongDomestic.articles
-Assert-DailyPayloadRejected -Payload $wrongDomestic -Message "Daily payloads must reject a domestic count other than three." -ExpectedMessagePattern 'exactly 3 domestic and 2 international.*collected 2 domestic and 3 international'
+Assert-DailyPayloadRejected -Payload $wrongDomestic -Message "Daily payloads must reject a domestic count other than three." -ExpectedMessagePattern 'exactly 3 domestic and 1-2 international.*collected 2 domestic and 3 international'
 
-$wrongInternational = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
-$wrongInternational.articles[3].category = "ai"
-$wrongInternational.contentFingerprint = Get-ContentFingerprint -Articles $wrongInternational.articles
-Assert-DailyPayloadRejected -Payload $wrongInternational -Message "Daily payloads must reject an international count other than two." -ExpectedMessagePattern 'exactly 3 domestic and 2 international.*collected 3 domestic and 1 international'
+$noInternational = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$noInternational.articles[3].category = "ai"
+$noInternational.articles[4].category = "ai"
+$noInternational.contentFingerprint = Get-ContentFingerprint -Articles $noInternational.articles
+Assert-DailyPayloadRejected -Payload $noInternational -Message "Daily payloads must reject an international count below one." -ExpectedMessagePattern 'exactly 3 domestic and 1-2 international.*collected 3 domestic and 0 international'
+
+$degradedInternational = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
+$degradedInternational.articles[3].category = "ai"
+$degradedInternational.contentFingerprint = Get-ContentFingerprint -Articles $degradedInternational.articles
+Assert-DailyPayload -Payload $degradedInternational
 
 $wrongReading = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
 $wrongReading.articles[5].category = "other"
 $wrongReading.contentFingerprint = Get-ContentFingerprint -Articles $wrongReading.articles
-Assert-DailyPayloadRejected -Payload $wrongReading -Message "Daily payloads must reject a reading count other than four." -ExpectedMessagePattern 'exactly 4 AI/paper articles.*collected 1 AI and 2 papers'
+Assert-DailyPayloadRejected -Payload $wrongReading -Message "Daily payloads must reject a reading count other than four." -ExpectedMessagePattern 'exactly 4-5 AI/paper.*collected 1 AI and 2 papers'
 
 $unsupportedCategory = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
 $unsupportedCategory.articles[8].category = "unsupported"

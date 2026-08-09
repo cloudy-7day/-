@@ -355,10 +355,10 @@ function Get-DailyComposition {
     reading = $aiCount + $paperCount
     isValid = $items.Count -eq 9 -and
       $domesticCount -eq 3 -and
-      $internationalCount -eq 2 -and
-      $aiCount -ge 2 -and $aiCount -le 4 -and
+      $internationalCount -ge 1 -and $internationalCount -le 2 -and
+      $aiCount -ge 2 -and $aiCount -le 5 -and
       $paperCount -ge 0 -and $paperCount -le 2 -and
-      ($aiCount + $paperCount) -eq 4
+      ($aiCount + $paperCount) -eq (9 - $domesticCount - $internationalCount)
   }
 }
 

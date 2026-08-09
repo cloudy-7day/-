@@ -31,8 +31,9 @@ on:
       - "PROJECT_CONTEXT.md"
       - "CHANGELOG.md"
   schedule:
-    # PDT: 08:07, 09:07, 10:07; PST: 07:07 (script skips), 08:07, 09:07.
-    - cron: "7 15,16,17 * * *"
+    # PDT: 08:07, 09:07, 10:07, 11:07; PST: 07:07 (script skips), 08:07, 09:07, 10:07.
+    # 18:07 UTC is a last-chance fallback so a missed runner/queue does not leave the whole day unpublished.
+    - cron: "7 15,16,17,18 * * *"
 
 permissions:
   contents: read
@@ -148,5 +149,12 @@ jobs:
             echo "No article changes to commit."
           else
             git commit -m "Daily article update"
+            for attempt in 1 2; do
+              if git push; then
+                exit 0
+              fi
+              echo "git push attempt $attempt failed; retrying in 30s."
+              sleep 30
+            done
             git push
           fi
