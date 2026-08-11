@@ -1,6 +1,10 @@
 {
-  "updatedAt": "2026-08-10T17:15:39.9062967Z",
+  "updatedAt": "2026-08-11T16:09:29.5351103Z",
   "archives": [
+    {
+      "date": "2026-08-11",
+      "path": "data/archive/2026-08-11.json"
+    },
     {
       "date": "2026-08-10",
       "path": "data/archive/2026-08-10.json"
