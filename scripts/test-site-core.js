@@ -23,8 +23,8 @@ const articles = [
 ];
 
 const grouped = core.groupArticles(articles);
-assert.equal(core.CATEGORY_CONFIG.news.zh, "\u5929\u4e0b\u5f02\u95fb");
-assert.equal(core.CATEGORY_CONFIG.news.en, "Daily News");
+assert.equal(core.CATEGORY_CONFIG.news.zh, "\u56fd\u9645\u5f02\u95fb");
+assert.equal(core.CATEGORY_CONFIG.news.en, "International News");
 assert.equal(core.CATEGORY_CONFIG.news.creature, "feifei");
 assert.equal(core.CATEGORY_CONFIG.lifeSkills.zh, "\u751f\u6d3b\u767e\u6280");
 assert.equal(core.CATEGORY_CONFIG.lifeSkills.en, "Life Skills");
