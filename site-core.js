@@ -5,8 +5,8 @@
 })(typeof globalThis !== "undefined" ? globalThis : this, function () {
   const CATEGORY_CONFIG = {
     news: {
-      zh: "天下异闻",
-      en: "Daily News",
+      zh: "国际异闻",
+      en: "International News",
       kickerZh: "观天下大事",
       kickerEn: "Signals at home and abroad",
       creature: "feifei",

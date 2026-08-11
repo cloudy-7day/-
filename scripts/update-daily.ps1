@@ -104,12 +104,12 @@ function Assert-DailyPayload {
     throw "Daily payload must contain exactly 9 articles; collected $($composition.total). Existing published data was not replaced."
   }
 
-  if ($composition.domestic -ne 3 -or $composition.international -lt 1 -or $composition.international -gt 2) {
-    throw "Daily payload must contain exactly 3 domestic and 1-2 international news items; collected $($composition.domestic) domestic and $($composition.international) international. Existing published data was not replaced."
+  if ($composition.domestic -ne 3 -or $composition.international -lt 1 -or $composition.international -gt 4) {
+    throw "Daily payload must contain exactly 3 domestic and 1-4 international items (news plus curated selections); collected $($composition.domestic) domestic and $($composition.international) international. Existing published data was not replaced."
   }
 
   if (-not $composition.isValid) {
-    throw "Daily payload must contain exactly 4-5 AI/paper articles matching the news count (2-5 AI and 0-2 papers); collected $($composition.ai) AI and $($composition.paper) papers."
+    throw "Daily payload must contain valid AI/paper/life-skills composition matching the news count; collected $($composition.ai) AI, $($composition.paper) papers, and $($composition.lifeSkills) life-skills."
   }
 
   $allowedCategories = @("domestic", "international", "life-skills", "ai", "paper")
@@ -1163,9 +1163,11 @@ function Get-OpenNewsItems {
 }
 
 function Get-LifeSkillsBlockItems {
-  # 每日生活技能板块配额:先探测,不足则自动跳过,不影响当天发布
-  $lifeSkills = @(Get-LifeSkillsItems -TargetCount 2)
-  return @($lifeSkills)
+  # 每日生活技能板块配额:精选(trusted → international)优先取 2 篇,
+  # 普通生活技能源(life-skills)取 1 篇;均短额保护,不足自动跳过,不影响当天发布
+  $curated = @(Get-LifeSkillsItems -TargetCount 2 -TrustedOnly)
+  $lifeSkills = @(Get-LifeSkillsItems -TargetCount 1)
+  return @($curated) + @($lifeSkills)
 }
 
 function New-AiArticleItem {

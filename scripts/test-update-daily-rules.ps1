@@ -1133,13 +1133,13 @@ Assert-DailyPayloadRejected -Payload $tenPayload -Message "Daily payloads must r
 $wrongDomestic = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
 $wrongDomestic.articles[0].category = "international"
 $wrongDomestic.contentFingerprint = Get-ContentFingerprint -Articles $wrongDomestic.articles
-Assert-DailyPayloadRejected -Payload $wrongDomestic -Message "Daily payloads must reject a domestic count other than three." -ExpectedMessagePattern 'exactly 3 domestic and 1-2 international.*collected 2 domestic and 3 international'
+Assert-DailyPayloadRejected -Payload $wrongDomestic -Message "Daily payloads must reject a domestic count other than three." -ExpectedMessagePattern 'exactly 3 domestic and 1-4 international.*collected 2 domestic and 3 international'
 
 $noInternational = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
 $noInternational.articles[3].category = "ai"
 $noInternational.articles[4].category = "ai"
 $noInternational.contentFingerprint = Get-ContentFingerprint -Articles $noInternational.articles
-Assert-DailyPayloadRejected -Payload $noInternational -Message "Daily payloads must reject an international count below one." -ExpectedMessagePattern 'exactly 3 domestic and 1-2 international.*collected 3 domestic and 0 international'
+Assert-DailyPayloadRejected -Payload $noInternational -Message "Daily payloads must reject an international count below one." -ExpectedMessagePattern 'exactly 3 domestic and 1-4 international.*collected 3 domestic and 0 international'
 
 $degradedInternational = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
 $degradedInternational.articles[3].category = "ai"
@@ -1149,7 +1149,7 @@ Assert-DailyPayload -Payload $degradedInternational
 $wrongReading = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
 $wrongReading.articles[5].category = "other"
 $wrongReading.contentFingerprint = Get-ContentFingerprint -Articles $wrongReading.articles
-Assert-DailyPayloadRejected -Payload $wrongReading -Message "Daily payloads must reject a reading count other than four." -ExpectedMessagePattern 'exactly 4-5 AI/paper.*collected 1 AI and 2 papers'
+Assert-DailyPayloadRejected -Payload $wrongReading -Message "Daily payloads must reject a reading count other than four." -ExpectedMessagePattern 'valid AI/paper/life-skills composition.*collected 1 AI, 2 papers, and 0 life-skills'
 
 $unsupportedCategory = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
 $unsupportedCategory.articles[8].category = "unsupported"
