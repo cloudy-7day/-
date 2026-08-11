@@ -25,10 +25,19 @@
       kickerEn: "Ideas beneath the evidence",
       creature: "nine-tailed-fox",
     },
+    lifeSkills: {
+      zh: "生活百技",
+      en: "Life Skills",
+      kickerZh: "练人生基本功",
+      kickerEn: "Daily life fundamentals",
+      creature: "baihu",
+    },
   };
 
   function getDisplayCategory(category) {
-    return category === "domestic" || category === "international" ? "news" : category;
+    if (category === "domestic" || category === "international") return "news";
+    if (category === "life-skills") return "lifeSkills";
+    return category;
   }
 
   function parseRoute(hash = "#/home") {

@@ -19,16 +19,22 @@ const articles = [
   { category: "ai", title: "工具" },
   { category: "international", title: "国际新闻" },
   { category: "paper", title: "论文" },
+  { category: "life-skills", title: "生活技能" },
 ];
 
 const grouped = core.groupArticles(articles);
 assert.equal(core.CATEGORY_CONFIG.news.zh, "\u5929\u4e0b\u5f02\u95fb");
 assert.equal(core.CATEGORY_CONFIG.news.en, "Daily News");
 assert.equal(core.CATEGORY_CONFIG.news.creature, "feifei");
-assert.deepEqual(Object.keys(grouped), ["news", "ai", "paper"]);
+assert.equal(core.CATEGORY_CONFIG.lifeSkills.zh, "\u751f\u6d3b\u767e\u6280");
+assert.equal(core.CATEGORY_CONFIG.lifeSkills.en, "Life Skills");
+assert.equal(core.CATEGORY_CONFIG.lifeSkills.kickerZh, "\u7ec3\u4eba\u751f\u57fa\u672c\u529f");
+assert.equal(core.CATEGORY_CONFIG.lifeSkills.creature, "baihu");
+assert.deepEqual(Object.keys(grouped), ["news", "ai", "paper", "lifeSkills"]);
 assert.deepEqual(grouped.news, [articles[0], articles[2]]);
 assert.deepEqual(grouped.ai, [articles[1]]);
 assert.deepEqual(grouped.paper, [articles[3]]);
+assert.deepEqual(grouped.lifeSkills, [articles[4]]);
 assert.deepEqual(core.groupArticles([{ category: "international", title: "旧卷新闻" }]).news, [
   { category: "international", title: "旧卷新闻" },
 ]);
@@ -37,6 +43,7 @@ assert.equal(core.getDisplayCategory("domestic"), "news");
 assert.equal(core.getDisplayCategory("international"), "news");
 assert.equal(core.getDisplayCategory("ai"), "ai");
 assert.equal(core.getDisplayCategory("paper"), "paper");
+assert.equal(core.getDisplayCategory("life-skills"), "lifeSkills");
 assert.equal(core.getDisplayCategory("unknown"), "unknown");
 assert.equal(core.getSafeArticleUrl("javascript:alert(1)", "https://example.com"), "#");
 const favorite = core.createFavoriteSnapshot({

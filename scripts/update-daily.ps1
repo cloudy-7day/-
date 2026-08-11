@@ -8,6 +8,7 @@ $ErrorActionPreference = "Stop"
 . (Join-Path $PSScriptRoot "article-selection.ps1")
 . (Join-Path $PSScriptRoot "daily-update-support.ps1")
 . (Join-Path $PSScriptRoot "news-selection.ps1")
+. (Join-Path $PSScriptRoot "life-skills.ps1")
 
 function Import-LocalEnv {
   $envPath = Join-Path (Get-Location) ".env.local"
@@ -111,7 +112,7 @@ function Assert-DailyPayload {
     throw "Daily payload must contain exactly 4-5 AI/paper articles matching the news count (2-5 AI and 0-2 papers); collected $($composition.ai) AI and $($composition.paper) papers."
   }
 
-  $allowedCategories = @("domestic", "international", "ai", "paper")
+  $allowedCategories = @("domestic", "international", "life-skills", "ai", "paper")
   $seenIds = @{}
   $seenUrls = @{}
   $paperFields = @("problem", "method", "difference", "innovation", "implementation", "applications")
@@ -580,6 +581,9 @@ function New-ArticleAnalysis {
       }
     }
     "paper" { "This is an applied research paper with a public full-text link. Explain it in plain Chinese for a beginner. Focus on problem, method, difference from older methods, innovation, implementation path, and applications." }
+    "life-skills" {
+      "This is a practical life-skills article (personal finance, emotional intelligence, time management, cooking, first aid, critical thinking, communication, career soft skills). Explain its core actionable advice in plain Chinese for a beginner reader. Focus on: what the skill is, why it matters, and 2-3 concrete steps to practice it. Keep it useful and grounded; do not overhype."
+    }
     default { "Give a rigorous, restrained, verifiable first read." }
   }
 
@@ -1156,6 +1160,12 @@ function Get-OpenNewsItems {
   $domestic = @(Convert-NewsCandidateQuota -Candidates $candidates -Category "domestic" -Now $now -TargetCount 3 -ConversionCache $conversionCache)
   $international = @(Convert-NewsCandidateQuota -Candidates $candidates -Category "international" -Now $now -TargetCount $internationalProbe.Count -ConversionCache $conversionCache)
   return @($domestic) + @($international)
+}
+
+function Get-LifeSkillsBlockItems {
+  # 每日生活技能板块配额:先探测,不足则自动跳过,不影响当天发布
+  $lifeSkills = @(Get-LifeSkillsItems -TargetCount 2)
+  return @($lifeSkills)
 }
 
 function New-AiArticleItem {
@@ -1775,20 +1785,19 @@ $script:ArticleLedger = Add-ArticlesToLedger -Ledger $script:ArticleLedger -Arti
 $articles = @()
 $newsItems = @(Get-OpenNewsItems)
 $articles += $newsItems
-$newsShortfall = 5 - @($newsItems).Count
-$aiItems = @(Get-AiItems -TargetCount 6)
-$articles += $aiItems | Select-Object -First (2 + $newsShortfall)
+$lifeSkillsItems = @(Get-LifeSkillsBlockItems)
+$articles += $lifeSkillsItems
 $paperItems = @(Get-ArxivAppliedPapers)
+$readingSlots = 9 - @($articles).Count
+$paperTake = [Math]::Min(2, [Math]::Max(0, $readingSlots - 1))
 $selectedPapers = @($paperItems |
   Where-Object { $_ } |
   Sort-Object -Property recommendationScore,publishedAt -Descending |
-  Select-Object -First 2)
+  Select-Object -First $paperTake)
 $articles += $selectedPapers
-
-$paperShortfall = 2 - $selectedPapers.Count
-if ($paperShortfall -gt 0) {
-  $articles += $aiItems | Select-Object -Skip (2 + $newsShortfall) -First $paperShortfall
-}
+$aiItems = @(Get-AiItems -TargetCount 6)
+$aiNeeded = 9 - @($articles).Count
+$articles += $aiItems | Select-Object -First $aiNeeded
 
 if ($env:GITHUB_TOKEN -and @($articles | Where-Object { $_.summarySource -eq "source_extract" }).Count -gt 0) {
   $articles = @(Invoke-DegradedArticleRecovery -Articles $articles)

@@ -16,6 +16,7 @@ on:
       - "scripts/update-daily.ps1"
       - "scripts/daily-update-support.ps1"
       - "scripts/news-selection.ps1"
+      - "scripts/life-skills.ps1"
       - "scripts/test-news-selection.ps1"
   pull_request:
     paths:
