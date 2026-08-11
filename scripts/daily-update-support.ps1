@@ -344,21 +344,24 @@ function Get-DailyComposition {
   $items = @($Articles)
   $domesticCount = @($items | Where-Object { $_.category -eq "domestic" }).Count
   $internationalCount = @($items | Where-Object { $_.category -eq "international" }).Count
+  $lifeSkillsCount = @($items | Where-Object { $_.category -eq "life-skills" }).Count
   $aiCount = @($items | Where-Object { $_.category -eq "ai" }).Count
   $paperCount = @($items | Where-Object { $_.category -eq "paper" }).Count
   return [pscustomobject][ordered]@{
     total = $items.Count
     domestic = $domesticCount
     international = $internationalCount
+    lifeSkills = $lifeSkillsCount
     ai = $aiCount
     paper = $paperCount
-    reading = $aiCount + $paperCount
+    reading = $aiCount + $paperCount + $lifeSkillsCount
     isValid = $items.Count -eq 9 -and
       $domesticCount -eq 3 -and
       $internationalCount -ge 1 -and $internationalCount -le 2 -and
-      $aiCount -ge 2 -and $aiCount -le 5 -and
+      $lifeSkillsCount -ge 0 -and $lifeSkillsCount -le 2 -and
+      $aiCount -ge 1 -and $aiCount -le 5 -and
       $paperCount -ge 0 -and $paperCount -le 2 -and
-      ($aiCount + $paperCount) -eq (9 - $domesticCount - $internationalCount)
+      ($aiCount + $paperCount + $lifeSkillsCount) -eq (9 - $domesticCount - $internationalCount)
   }
 }
 
