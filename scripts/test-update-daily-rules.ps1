@@ -1149,7 +1149,7 @@ Assert-DailyPayload -Payload $degradedInternational
 $wrongReading = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
 $wrongReading.articles[5].category = "other"
 $wrongReading.contentFingerprint = Get-ContentFingerprint -Articles $wrongReading.articles
-Assert-DailyPayloadRejected -Payload $wrongReading -Message "Daily payloads must reject a reading count other than four." -ExpectedMessagePattern 'valid AI/paper/life-skills composition.*collected 1 AI, 2 papers, and 0 life-skills'
+Assert-DailyPayloadRejected -Payload $wrongReading -Message "Daily payloads must reject a reading count other than four." -ExpectedMessagePattern 'valid AI/paper composition.*collected 1 AI and 2 papers'
 
 $unsupportedCategory = $validPayload | ConvertTo-Json -Depth 10 | ConvertFrom-Json
 $unsupportedCategory.articles[8].category = "unsupported"

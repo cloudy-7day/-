@@ -25,7 +25,6 @@ $script:LifeSkillsFeeds = @(
 )
 
 # 生活技能主题关键词(中英),命中越多优先级越高
-$script:TrustedLifeSkillsSources = @("Psyche", "The Marginalian", "Aeon", "Scott H Young", "Barking Up The Wrong Tree", "Gretchen Rubin")
 $script:LifeSkillsKeywordPatterns = @(
   "\b(?:life\s+skills?|adulting|adult\s+skills?)\b|\u751f\u6d3b\u6280\u80fd|\u6210\u5e74\u4eba\u57fa\u672c\u529f",
   "\b(?:budgeting?|personal\s+finance|financial\s+literacy|saving|investing\s+basics)\b|\u7406\u8d22|\u8bb0\u8d26|\u9884\u7b97|\u50a8\u84c4|\u6295\u8d44\u5165\u95e8|\u91cf\u5165\u4e3a\u51fa",
@@ -190,9 +189,9 @@ function Select-LifeSkillsCandidates {
 function ConvertTo-LifeSkillsArticle {
   param($Candidate)
 
-  # trusted 精选源(Psyche/Aeon/Marginalian 等)产出国际异闻(international),
-  # 其余生活技能源保留生活百技(life-skills)。用户 2026-08-11 确认。
-  $outputCategory = if ($Candidate.source -in $script:TrustedLifeSkillsSources) { "international" } else { "life-skills" }
+  # 用户 2026-08-11 确认:取消「生活百技」卡片,life-skills 模块所有文章
+  # (含 trusted 精选与普通生活技能源)统一归入「国际异闻」(international)
+  $outputCategory = "international"
   $scoreLabel = "Life-skills RSS source"
   $selectionReason = "Life-skills match score: $(Get-LifeSkillsMatchScore -Candidate $Candidate)"
   $sourceText = [string]$Candidate.excerpt
@@ -226,14 +225,9 @@ function ConvertTo-LifeSkillsArticle {
 }
 
 function Get-LifeSkillsItems {
-  param([int]$TargetCount = 2, [switch]$TrustedOnly)
+  param([int]$TargetCount = 2)
 
-  # 按来源类型过滤:TrustedOnly 只抓 trusted 精选源(产出 international),
-  # 否则只抓普通生活技能源(产出 life-skills)
-  $feeds = @(Get-LifeSkillsFeeds | Where-Object {
-    if ($TrustedOnly) { $_.trusted } else { -not $_.trusted }
-  })
-  $candidates = @(Get-LifeSkillsCandidates -Feeds $feeds)
+  $candidates = @(Get-LifeSkillsCandidates)
   $now = (Get-Date).ToUniversalTime()
   $probe = @(Select-LifeSkillsCandidates -Candidates $candidates -Now $now -TargetCount $TargetCount)
   if ($probe.Count -lt 1) {
@@ -245,8 +239,7 @@ function Get-LifeSkillsItems {
   foreach ($candidate in $selected) {
     try {
       $article = ConvertTo-LifeSkillsArticle -Candidate $candidate
-      $expectedCategory = if ($candidate.source -in $script:TrustedLifeSkillsSources) { "international" } else { "life-skills" }
-      if (-not (Test-NewsArticleConversionComplete -Article $article -Category $expectedCategory)) {
+      if (-not (Test-NewsArticleConversionComplete -Article $article -Category "international")) {
         throw "Life-skills conversion returned an incomplete item."
       }
       $articles += $article
