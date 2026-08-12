@@ -109,7 +109,7 @@ function Assert-DailyPayload {
   }
 
   if (-not $composition.isValid) {
-    throw "Daily payload must contain valid AI/paper/life-skills composition matching the news count; collected $($composition.ai) AI, $($composition.paper) papers, and $($composition.lifeSkills) life-skills."
+    throw "Daily payload must contain valid AI/paper composition matching the news count; collected $($composition.ai) AI and $($composition.paper) papers."
   }
 
   $allowedCategories = @("domestic", "international", "life-skills", "ai", "paper")
@@ -1163,11 +1163,10 @@ function Get-OpenNewsItems {
 }
 
 function Get-LifeSkillsBlockItems {
-  # 每日生活技能板块配额:精选(trusted → international)优先取 2 篇,
-  # 普通生活技能源(life-skills)取 1 篇;均短额保护,不足自动跳过,不影响当天发布
-  $curated = @(Get-LifeSkillsItems -TargetCount 2 -TrustedOnly)
-  $lifeSkills = @(Get-LifeSkillsItems -TargetCount 1)
-  return @($curated) + @($lifeSkills)
+  # 生活百科内容(精选 + 生活技能)统一归入「国际异闻」,每日配额 2 篇,
+  # 短额保护:不足自动跳过,不影响当天发布
+  $lifeSkills = @(Get-LifeSkillsItems -TargetCount 2)
+  return @($lifeSkills)
 }
 
 function New-AiArticleItem {
