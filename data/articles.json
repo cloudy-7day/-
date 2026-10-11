@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-10-10",
+  "issueDate": "2026-10-11",
   "updateStatus": "complete",
-  "contentFingerprint": "bc6a225011df327c2891b1f44c6363d1b843bcd7c7e32f418ac6b364a1e8e924",
+  "contentFingerprint": "c64c653c417c325386e3a0af1a8a2ec2a1e26f01d9cb43748fc800b7e7a73eac",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,216 +10,216 @@
   ],
   "articles": [
     {
-      "id": "news-8d1c185120574c67adcdf851f9343bf0",
+      "id": "news-43fb0945fdaf461dbbca3b102122b650",
       "category": "domestic",
-      "title": "外交部：暂无中国公民在巴拿马地震中伤亡报告",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-10/10710856.shtml",
-      "publishedAt": "2026-10-10T15:22:44.0000000+00:00",
+      "title": "从草场放牧到高原种菊 西藏特色种养产业让群众致富增收",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-11/10711122.shtml",
+      "publishedAt": "2026-10-11T12:47:26.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "巴拿马发生7.6级地震并已发生100余次余震，截至目前，暂无中国公民在地震中伤亡报告。",
-      "summary": "中新社北京10月10日电，巴拿马10日发生7.6级地震，已发生100余次余震。中国外交部发言人10日在答记者问时表示，中方向巴拿马政府和灾区人民致以慰问，截至目前暂无中国公民在地震中伤亡报告。这条消息值得关注，因为它提供了海外突发灾害中涉及中国公民安全状况的官方信息。",
-      "failureAnalysis": "关键点在于：海外地震等突发事件发生后，官方通报可快速确认中国公民安全状况并表达外交慰问，属于可核验的公共影响信息。",
+      "highlight": "在党中央关心关怀和全国人民支援下，西藏从脱贫攻坚到乡村振兴接续发力，620多个边境村全部建成了小康村。",
+      "summary": "这则报道聚焦西藏特色种养产业，呈现从草场放牧到高原种菊等转变如何带动群众致富增收。结合已知信息，西藏从脱贫攻坚接续推进乡村振兴，620多个边境村全部建成小康村，展现了边疆民生改善与安居乐业的成效。",
+      "failureAnalysis": "关键启示是，特色种养产业可以成为西藏乡村振兴和群众增收的可验证路径；具体产业规模与持续成效仍需以权威发布和后续统计为准。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社北京10月10日电 巴拿马10日发生7.6级地震，已发生100余次余震。中国外交部发言人10日在答记者问时表示，中方向巴拿马政府和灾区人民致以慰问。截至目前，暂无中国公民在地震中伤亡报告。",
+      "sourceExcerpt": "近年来，在党中央关心关怀和全国人民支援下，西藏从脱贫攻坚到乡村振兴接续发力，620多个边境村全部建成了小康村，绘就边疆长治久安、人民安居乐业的壮美画卷。",
       "translations": {
         "zh": {
-          "title": "外交部：暂无中国公民在巴拿马地震中伤亡报告",
-          "highlight": "巴拿马发生7.6级地震并已发生100余次余震，截至目前，暂无中国公民在地震中伤亡报告。",
-          "summary": "中新社北京10月10日电，巴拿马10日发生7.6级地震，已发生100余次余震。中国外交部发言人10日在答记者问时表示，中方向巴拿马政府和灾区人民致以慰问，截至目前暂无中国公民在地震中伤亡报告。这条消息值得关注，因为它提供了海外突发灾害中涉及中国公民安全状况的官方信息。",
-          "failureAnalysis": "关键点在于：海外地震等突发事件发生后，官方通报可快速确认中国公民安全状况并表达外交慰问，属于可核验的公共影响信息。"
+          "title": "从草场放牧到高原种菊 西藏特色种养产业让群众致富增收",
+          "highlight": "在党中央关心关怀和全国人民支援下，西藏从脱贫攻坚到乡村振兴接续发力，620多个边境村全部建成了小康村。",
+          "summary": "这则报道聚焦西藏特色种养产业，呈现从草场放牧到高原种菊等转变如何带动群众致富增收。结合已知信息，西藏从脱贫攻坚接续推进乡村振兴，620多个边境村全部建成小康村，展现了边疆民生改善与安居乐业的成效。",
+          "failureAnalysis": "关键启示是，特色种养产业可以成为西藏乡村振兴和群众增收的可验证路径；具体产业规模与持续成效仍需以权威发布和后续统计为准。"
         },
         "en": {
-          "highlight": "China's Foreign Ministry expressed sympathy to Panama's government and disaster victims, saying no Chinese citizens have been reported injured or killed in the earthquake so far.",
-          "summary": "The article reports that a magnitude 7.6 earthquake struck Panama on October 10, with more than 100 aftershocks. A Chinese Foreign Ministry spokesperson expressed condolences to the Panamanian government and people in the affected area and said that, as of now, there are no reports of Chinese casualties. It is worth reading as an official update on the safety of Chinese citizens abroad.",
-          "failureAnalysis": "The key takeaway is that after an overseas emergency such as an earthquake, an official statement can quickly confirm the safety status of Chinese citizens and convey diplomatic condolences, providing verifiable public impact.",
-          "title": "Foreign Ministry: No Reports of Chinese Casualties in Panama Earthquake"
+          "highlight": "Under the Party Central Committee’s care and nationwide support, Tibet has moved from poverty alleviation to rural revitalization, and all 620-plus border villages have become moderately prosperous villages.",
+          "summary": "This report focuses on Tibet’s specialty farming and breeding industries, showing how a shift from grazing to plateau chrysanthemum cultivation helps local people increase their incomes. Based on the known information, Tibet has continued from poverty alleviation into rural revitalization, and all 620-plus border villages have been built into moderately prosperous villages, reflecting improved livelihoods and stability in the border areas.",
+          "failureAnalysis": "The key takeaway is that specialty farming and breeding can be a verifiable path for rural revitalization and income growth in Tibet; the scale and long-term effects still need to be checked against authoritative releases and follow-up statistics.",
+          "title": "From Grazing to Plateau Chrysanthemum Farming: Tibet’s Specialty Agriculture Boosts Incomes"
         }
       }
     },
     {
-      "id": "news-2bf9d34d67b14ebead0e7cfbfa94ccae",
+      "id": "news-56807aab83a34c58b7a53e570aff66f0",
       "category": "domestic",
-      "title": "中法举行战略对话",
+      "title": "“一带一路”地区极端气候事件及影响国际培训班在西安开班",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-10/10710786.shtml",
-      "publishedAt": "2026-10-10T14:09:08.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-11/10711087.shtml",
+      "publishedAt": "2026-10-11T11:55:09.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "王毅在大同与法国总统外事顾问博纳举行第二十八次中法战略对话，就深化中法战略合作长时间深入沟通，达成广泛共识。",
-      "summary": "文章报道中共中央政治局委员、中央外办主任王毅在大同与法国总统外事顾问博纳举行第二十八次中法战略对话，双方就深化中法战略合作进行了长时间深入沟通并达成广泛共识。报道同时提到，双方肯定中欧贸易投资磋商机制取得的积极成果。对关注中法、中欧关系走向的读者来说，这是判断双边沟通节奏与议题重点的一条官方口径信息。",
-      "failureAnalysis": "战略对话属于机制性安排，公开通报以“达成广泛共识”“肯定积极成果”等表述为主，具体承诺与后续落地仍需等待双方后续文件及经贸磋商进展来验证。",
+      "selectionReason": "Domestic priority: 3",
+      "highlight": "“一带一路”地区极端气候事件及影响国际培训班在西安开班，核心主题为“极端气候事件重建、预警与影响评估”。",
+      "summary": "中新网报道，10月11日“一带一路”地区极端气候事件及影响国际培训班在陕西西安开班。培训以“极端气候事件重建、预警与影响评估”为核心主题，来自10多个国家的20余名学员参加为期14天的培训。这体现了极端气候研究领域的国际交流与能力建设。",
+      "failureAnalysis": "这不是AI应用项目，因此不做失败复盘；关键看点是极端气候重建、预警与影响评估的国际培训合作如何落地。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社北京10月10日电 中共中央政治局委员、中央外办主任王毅10日在大同与法国总统外事顾问博纳举行第二十八次中法战略对话，就深化中法战略合作长时间深入沟通，达成广泛共识。双方还肯定了中欧贸易投资磋商机制取得的积极成果。",
+      "sourceExcerpt": "中新网西安10月11日电 (记者 孙自法)记者10月11日从中国科学院地球环境研究所(地环所)获悉，“一带一路”地区极端气候事件及影响国际培训班当天在陕西西安开班，以“极端气候事件重建、预警与影响评估”为核心主题，对来自10多个国家的20余名优秀学员，开展为期14天的培训。",
       "translations": {
         "zh": {
-          "title": "中法举行第二十八次战略对话 王毅在大同会见法国总统外事顾问博纳",
-          "highlight": "王毅在大同与法国总统外事顾问博纳举行第二十八次中法战略对话，就深化中法战略合作长时间深入沟通，达成广泛共识。",
-          "summary": "文章报道中共中央政治局委员、中央外办主任王毅在大同与法国总统外事顾问博纳举行第二十八次中法战略对话，双方就深化中法战略合作进行了长时间深入沟通并达成广泛共识。报道同时提到，双方肯定中欧贸易投资磋商机制取得的积极成果。对关注中法、中欧关系走向的读者来说，这是判断双边沟通节奏与议题重点的一条官方口径信息。",
-          "failureAnalysis": "战略对话属于机制性安排，公开通报以“达成广泛共识”“肯定积极成果”等表述为主，具体承诺与后续落地仍需等待双方后续文件及经贸磋商进展来验证。"
+          "title": "“一带一路”地区极端气候事件及影响国际培训班在西安开班",
+          "highlight": "“一带一路”地区极端气候事件及影响国际培训班在西安开班，核心主题为“极端气候事件重建、预警与影响评估”。",
+          "summary": "中新网报道，10月11日“一带一路”地区极端气候事件及影响国际培训班在陕西西安开班。培训以“极端气候事件重建、预警与影响评估”为核心主题，来自10多个国家的20余名学员参加为期14天的培训。这体现了极端气候研究领域的国际交流与能力建设。",
+          "failureAnalysis": "这不是AI应用项目，因此不做失败复盘；关键看点是极端气候重建、预警与影响评估的国际培训合作如何落地。"
         },
         "en": {
-          "highlight": "Wang Yi and French presidential diplomatic adviser Emmanuel Bonne held the 28th China-France strategic dialogue in Datong, reaching broad consensus on deepening strategic cooperation.",
-          "summary": "The report says Wang Yi, member of the Political Bureau of the CPC Central Committee and director of the Office of the Foreign Affairs Commission, held the 28th China-France strategic dialogue with French presidential diplomatic adviser Emmanuel Bonne in Datong, with long and in-depth talks that produced broad consensus on deepening strategic cooperation. Both sides also affirmed the positive results achieved by the China-EU trade and investment consultation mechanism. It is worth reading as an official readout of the pace and priorities in China-France and China-EU engagement.",
-          "failureAnalysis": "Strategic dialogues are institutional arrangements, and official readouts lean on phrases such as \"broad consensus\" and \"positive results\"; concrete commitments and follow-through still depend on later documents and the progress of trade and investment consultations.",
-          "title": "China and France Hold 28th Strategic Dialogue"
+          "highlight": "A Belt and Road international training workshop on extreme climate events opened in Xi'an, focused on reconstruction, early warning, and impact assessment.",
+          "summary": "China News Service reports that the workshop opened in Xi'an on October 11, organized around the theme of extreme climate event reconstruction, early warning, and impact assessment. More than 20 participants from over 10 countries will take part in a 14-day training program, highlighting international scientific exchange and capacity building.",
+          "failureAnalysis": "This is not an AI application project, so there is no failure analysis; the key takeaway is the international training and cooperation around extreme climate early warning and impact assessment.",
+          "title": "International Training Workshop on Extreme Climate Events and Impacts in Belt and Road Region Opens in Xi'an"
         }
       }
     },
     {
-      "id": "news-0d2bc73a664a4ff89874042a0cef00b1",
+      "id": "news-407d57372f2c4069895730160a99b1d2",
       "category": "domestic",
-      "title": "北京着力建设知识产权强国示范城市",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-10/10710835.shtml",
-      "publishedAt": "2026-10-10T14:06:40.0000000+00:00",
+      "title": "七年磨一展 浙江温州泵阀产业“链”全球",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-11/10711102.shtml",
+      "publishedAt": "2026-10-11T12:13:26.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "经北京市人民政府批准，《北京市“十五五”时期知识产权发展规划》近日正式印发。",
-      "summary": "《北京市“十五五”时期知识产权发展规划》经北京市人民政府批准后正式印发，提出到2030年北京要打造知识产权支撑新质生产力创新发展集聚源、赋能重点产业强链增效引领区、纠纷高效解决优选地、高端服务资源枢纽港和国际合作交往展示窗。该规划将知识产权与创新、产业、治理和国际合作并列推进，可作为观察北京“十五五”时期创新政策与产业政策方向的公开信号。",
-      "failureAnalysis": "政策信号清晰：知识产权被定位为支撑新质生产力和重点产业强链增效的发展工具，而不只是保护手段；后续效果取决于配套细则与执行力度。",
+      "selectionReason": "Domestic priority: 2",
+      "highlight": "不出国门就能直面全球采购商，降低了我们出海拓市的成本与风险。",
+      "summary": "中新网报道，浙江温州举办浙江国际阀门产业链展览会，已持续七年，让本地泵阀及管业企业不出国门即可对接全球采购商。以浙江志达管业为例，其出口业务占比约四成，在展会上与中亚客商实现对接。这体现了产业集群通过专业展会降低出海成本与风险、链接全球市场的路径。",
+      "failureAnalysis": "关键启示：本地产业展会能把全球买家集中到门口，降低中小企业出海成本；其可持续性取决于能否持续吸引真实采购商并转化为订单。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网北京10月10日电 (记者 徐婧)经北京市人民政府批准，《北京市“十五五”时期知识产权发展规划》(简称《规划》)近日正式印发。《规划》明确，到2030年，北京打造知识产权支撑新质生产力创新发展集聚源、知识产权赋能重点产业强链增效引领区、知识产权纠纷高效解决优选地、知识产权高端服务资源枢纽港、知识产权国际合作交往展示窗。",
+      "sourceExcerpt": "中新网温州10月11日电(蓝伊旎 高楼)“不出国门就能直面全球采购商，降低了我们出海拓市的成本与风险。”浙江志达管业有限公司董事长王忠华感触颇深。这家出口业务占比约四成的企业，在浙江国际阀门产业链展览会上与不少中亚客商实现了对接。",
       "translations": {
         "zh": {
-          "title": "北京印发“十五五”知识产权规划 着力建设强国示范城市",
-          "highlight": "经北京市人民政府批准，《北京市“十五五”时期知识产权发展规划》近日正式印发。",
-          "summary": "《北京市“十五五”时期知识产权发展规划》经北京市人民政府批准后正式印发，提出到2030年北京要打造知识产权支撑新质生产力创新发展集聚源、赋能重点产业强链增效引领区、纠纷高效解决优选地、高端服务资源枢纽港和国际合作交往展示窗。该规划将知识产权与创新、产业、治理和国际合作并列推进，可作为观察北京“十五五”时期创新政策与产业政策方向的公开信号。",
-          "failureAnalysis": "政策信号清晰：知识产权被定位为支撑新质生产力和重点产业强链增效的发展工具，而不只是保护手段；后续效果取决于配套细则与执行力度。"
+          "title": "七年磨一展：浙江温州泵阀产业“链”全球",
+          "highlight": "不出国门就能直面全球采购商，降低了我们出海拓市的成本与风险。",
+          "summary": "中新网报道，浙江温州举办浙江国际阀门产业链展览会，已持续七年，让本地泵阀及管业企业不出国门即可对接全球采购商。以浙江志达管业为例，其出口业务占比约四成，在展会上与中亚客商实现对接。这体现了产业集群通过专业展会降低出海成本与风险、链接全球市场的路径。",
+          "failureAnalysis": "关键启示：本地产业展会能把全球买家集中到门口，降低中小企业出海成本；其可持续性取决于能否持续吸引真实采购商并转化为订单。"
         },
         "en": {
-          "highlight": "Approved by the Beijing Municipal People's Government, the Beijing Intellectual Property Development Plan for the 15th Five-Year Plan Period has recently been officially issued.",
-          "summary": "The plan was approved by the Beijing Municipal People's Government and officially issued, setting out goals for 2030: Beijing aims to become a hub for IP-supported new quality productive forces, a leading zone for IP-enabled industrial chain strengthening, a preferred venue for efficient IP dispute resolution, a resource hub for high-end IP services, and a showcase for international IP cooperation. It is worth reading because it shows how Beijing is linking intellectual property with innovation, industry, governance, and international engagement during the 15th Five-Year Plan period.",
-          "failureAnalysis": "The key takeaway is that intellectual property is positioned as a development tool for new quality productive forces and industrial chain upgrading, not merely a protection mechanism; actual impact will depend on supporting rules and enforcement.",
-          "title": "Beijing Issues 15th Five-Year Intellectual Property Plan, Aiming to Build a Strong IP Demonstration City"
+          "highlight": "Not going abroad, we can meet global buyers directly, cutting the cost and risk of expanding overseas.",
+          "summary": "China News Service reports that Wenzhou, Zhejiang, hosted the Zhejiang International Valve Industry Chain Exhibition, now in its seventh year, allowing local pump, valve, and pipe firms to connect with global buyers without leaving China. Zhejiang Zhida Pipe Industry, whose exports account for about 40% of business, met Central Asian buyers at the event. It shows how industrial clusters use specialized exhibitions to lower the threshold and risk of going global.",
+          "failureAnalysis": "Key takeaway: a local industry exhibition can bring global buyers to companies' doorstep and reduce the cost of going overseas; its sustainability depends on attracting real buyers and turning contacts into orders.",
+          "title": "Seven Years in the Making: Wenzhou Pump and Valve Industry Links Global Markets"
         }
       }
     },
     {
-      "id": "news-56c3001fabf3412cb9213e098b16a59b",
+      "id": "news-521a9f04d4c64365a05dcc708df03f40",
       "category": "international",
-      "title": "Candidate named Hitler Mussolini elected mayor in Peru",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/oct/10/peru-election-hitler-mussolini-simeon-flores-mayor",
-      "publishedAt": "2026-10-10T12:00:10.0000000+00:00",
+      "title": "U.S. and Russia tout diesel deal to ease sanctions and reopen fuel flows",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/10/nx-s1-5996938/u-s-and-russia-tout-diesel-deal-to-ease-sanctions-and-reopen-fuel-flows",
+      "publishedAt": "2026-10-10T11:40:53.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "据当地选举数据，名叫希特勒·墨索里尼·西梅翁·弗洛雷斯的商人当选秘鲁安第斯偏远地区市长。",
-      "summary": "这则国际新闻称，左翼候选人希特勒·墨索里尼·西梅翁·弗洛雷斯在秘鲁安第斯偏远地区击败极右翼对手，当选为Queropalca的市长。他45岁，与两位臭名昭著的欧洲独裁者同名，将于1月1日就职。值得一看的是，奇特姓名如何让一则地方选举新闻受到国际关注。",
-      "failureAnalysis": "关键看点：候选人名字与两位欧洲独裁者相同，使这则偏远地区地方选举新闻获得国际关注。现有信息只涉及选举结果和就职日期，并未展开其政策主张。",
+      "highlight": "莫斯科与华盛顿高调宣传一项柴油协议，意在放宽制裁并恢复燃料流通，但细节寥寥，价格影响与美国政策仍存疑问。",
+      "summary": "美国与俄罗斯共同宣扬一项柴油协议，目标是放宽制裁、重新打通燃料流动渠道。但公开细节很少，柴油价格会如何变化、美国政策是否真正转向都还不明确，乌克兰及盟友对此表示愤怒。值得一读，是因为它可能牵动全球能源价格与对俄制裁的实际执行力度。",
+      "failureAnalysis": "目前信息只停留在“双方高调宣布”这一步，价格影响与政策细节均未落地，因此不宜把这条消息直接理解为制裁格局已被实质改变，应等具体条款与执行情况。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Leftwing Hitler Mussolini Simeon Flores beats far-right candidate in election in remote district of Andes A businessman called Hitler Mussolini Simeon Flores has been elected the mayor of a remote district in the Peruvian Andes, according to local election data. The 45-year-old, who shares two of his names with the notorious European dictators, won the race for mayor of Queropalca, in Peru’s central Huánuco region, and will take office on 1 January.",
+      "sourceExcerpt": "Moscow and Washington tout a diesel deal to ease sanctions and reopen fuel flows, but few details leave questions on price impacts and U.S. policy, sparking anger from Ukraine and allies.",
       "translations": {
         "zh": {
-          "title": "秘鲁：名为希特勒·墨索里尼的候选人当选市长",
-          "highlight": "据当地选举数据，名叫希特勒·墨索里尼·西梅翁·弗洛雷斯的商人当选秘鲁安第斯偏远地区市长。",
-          "summary": "这则国际新闻称，左翼候选人希特勒·墨索里尼·西梅翁·弗洛雷斯在秘鲁安第斯偏远地区击败极右翼对手，当选为Queropalca的市长。他45岁，与两位臭名昭著的欧洲独裁者同名，将于1月1日就职。值得一看的是，奇特姓名如何让一则地方选举新闻受到国际关注。",
-          "failureAnalysis": "关键看点：候选人名字与两位欧洲独裁者相同，使这则偏远地区地方选举新闻获得国际关注。现有信息只涉及选举结果和就职日期，并未展开其政策主张。"
+          "title": "美俄宣扬柴油协议以放宽制裁并恢复燃料流通",
+          "highlight": "莫斯科与华盛顿高调宣传一项柴油协议，意在放宽制裁并恢复燃料流通，但细节寥寥，价格影响与美国政策仍存疑问。",
+          "summary": "美国与俄罗斯共同宣扬一项柴油协议，目标是放宽制裁、重新打通燃料流动渠道。但公开细节很少，柴油价格会如何变化、美国政策是否真正转向都还不明确，乌克兰及盟友对此表示愤怒。值得一读，是因为它可能牵动全球能源价格与对俄制裁的实际执行力度。",
+          "failureAnalysis": "目前信息只停留在“双方高调宣布”这一步，价格影响与政策细节均未落地，因此不宜把这条消息直接理解为制裁格局已被实质改变，应等具体条款与执行情况。"
         },
         "en": {
-          "highlight": "A businessman called Hitler Mussolini Simeon Flores has been elected the mayor of a remote district in the Peruvian Andes, according to local election data.",
-          "summary": "This international news report says that a leftwing candidate named Hitler Mussolini Simeon Flores has won a mayoral race in a remote district of the Peruvian Andes, defeating a far-right rival. The 45-year-old shares two names with notorious European dictators and will take office on 1 January. It is worth reading because the unusual name gives an otherwise local election international attention.",
-          "failureAnalysis": "Key takeaway: the candidate’s name, shared with two European dictators, is what makes this remote local election newsworthy. The available information only covers the result and inauguration date, not his policies.",
-          "title": "Candidate Named Hitler Mussolini Elected Mayor in Peru"
+          "highlight": "Moscow and Washington tout a diesel deal to ease sanctions and reopen fuel flows, but few details leave questions on price impacts and U.S. policy, sparking anger from Ukraine and allies.",
+          "summary": "The United States and Russia are jointly promoting a diesel deal aimed at easing sanctions and reopening fuel flows. Yet few details are public, leaving unclear how diesel prices will move and whether U.S. policy has really shifted, while Ukraine and its allies are angry. It is worth reading because it could affect global energy prices and how Russian sanctions are actually enforced.",
+          "failureAnalysis": "The information so far stops at a joint announcement; price effects and policy details are not settled, so this should not be read as sanctions being substantively changed until specific terms and enforcement emerge.",
+          "title": "U.S. and Russia Tout Diesel Deal to Ease Sanctions and Reopen Fuel Flows"
         }
       }
     },
     {
-      "id": "news-666a6ad4f2664c9c933f6cf5dd20bf73",
+      "id": "news-94a24d506da2472c9b59f5946e22f58f",
       "category": "international",
-      "title": "‘Like a drill going into my eye’: why the mystery over Havana syndrome refuses to die",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/us-news/ng-interactive/2026/oct/10/havana-syndrome-mystery-cia-russia",
-      "publishedAt": "2026-10-10T05:00:48.0000000+00:00",
+      "title": "Photos: What a year of ceasefire in Gaza looks like",
+      "source": "NPR World",
+      "url": "https://www.npr.org/sections/the-picture-show/2026/10/10/nx-s1-5991619/gaza-ceasefire-israel-life",
+      "publishedAt": "2026-10-10T09:00:00.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "International class: finance",
-      "highlight": "2019年4月的一个凌晨1点刚过，一名出差伦敦的中情局官员在酒店房间里被前所未有的剧烈头痛惊醒。",
-      "summary": "过去十年间，数十名中情局官员出现脑雾、失去平衡、严重耳鸣等衰弱症状。围绕这些症状究竟是“群体癔症”，还是某种能量武器攻击、若有攻击又是谁所为、以及是否存在掩盖，至今没有定论。文章通过一名驻伦敦官员的亲身经历，梳理这场争议为何持续发酵，适合想了解情报机构健康事件争议全貌的读者。",
-      "failureAnalysis": "关键启示是：当症状真实存在却缺乏可公开核验的物证时，官方结论、当事人体验与政治猜测会长期并行，判断这类事件时应区分“无法解释”与“已被证伪”。",
+      "selectionReason": "International class: politics",
+      "highlight": "哈马斯释放剩余以色列人质、特朗普承诺结束战争已一年，但巴勒斯坦人称过去12个月只是名义上的停火。",
+      "summary": "NPR 的图片报道以加沙停火一周年为切入点，呈现当地生活在停火名义下的真实状态。报道提到，哈马斯释放剩余以色列人质、特朗普承诺结束战争已有一年，但巴勒斯坦人认为这12个月只是名义上的停火。想理解停火协议与实际生活之间的落差，这组图片提供了直观视角。",
+      "failureAnalysis": "关键看点是：停火是否真正改变平民生活，不能只看协议宣布，还要看当地人的日常处境与安全感受。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Dozens of CIA officers have been afflicted by debilitating symptoms over the past decade. Are they the result of ‘mass hysteria’? Or are they from attacks with an energy weapon and, if so, who is responsible?",
+      "sourceExcerpt": "It has been one year since Hamas released the remaining Israeli hostages and President Trump promised an end to the war, but Palestinians say the past 12 months have been a ceasefire in name only.",
       "translations": {
         "zh": {
-          "title": "“像钻头钻进眼睛”：哈瓦那综合征谜团为何迟迟无解",
-          "highlight": "2019年4月的一个凌晨1点刚过，一名出差伦敦的中情局官员在酒店房间里被前所未有的剧烈头痛惊醒。",
-          "summary": "过去十年间，数十名中情局官员出现脑雾、失去平衡、严重耳鸣等衰弱症状。围绕这些症状究竟是“群体癔症”，还是某种能量武器攻击、若有攻击又是谁所为、以及是否存在掩盖，至今没有定论。文章通过一名驻伦敦官员的亲身经历，梳理这场争议为何持续发酵，适合想了解情报机构健康事件争议全貌的读者。",
-          "failureAnalysis": "关键启示是：当症状真实存在却缺乏可公开核验的物证时，官方结论、当事人体验与政治猜测会长期并行，判断这类事件时应区分“无法解释”与“已被证伪”。"
+          "title": "图片：加沙停火一年是什么样子",
+          "highlight": "哈马斯释放剩余以色列人质、特朗普承诺结束战争已一年，但巴勒斯坦人称过去12个月只是名义上的停火。",
+          "summary": "NPR 的图片报道以加沙停火一周年为切入点，呈现当地生活在停火名义下的真实状态。报道提到，哈马斯释放剩余以色列人质、特朗普承诺结束战争已有一年，但巴勒斯坦人认为这12个月只是名义上的停火。想理解停火协议与实际生活之间的落差，这组图片提供了直观视角。",
+          "failureAnalysis": "关键看点是：停火是否真正改变平民生活，不能只看协议宣布，还要看当地人的日常处境与安全感受。"
         },
         "en": {
-          "highlight": "Shortly after 1am one night in April 2019, a CIA officer on a work trip to London was jolted awake in his hotel room by the most intense head pain he had ever experienced.",
-          "summary": "Over the past decade, dozens of CIA officers have suffered debilitating symptoms such as brain fog, loss of balance and severe tinnitus. It remains unresolved whether these are cases of 'mass hysteria', attacks with an energy weapon, who might be responsible, and whether there has been a cover-up. The article uses one officer's experience in London to explain why the controversy keeps resurfacing.",
-          "failureAnalysis": "The key takeaway: when symptoms are real but no publicly verifiable physical evidence exists, official findings, personal accounts and political speculation can coexist indefinitely, so it matters to distinguish 'unexplained' from 'disproven'.",
-          "title": "'Like a drill going into my eye': why the Havana syndrome mystery refuses to die"
+          "highlight": "A year after Hamas released the remaining Israeli hostages and Trump promised to end the war, Palestinians say it is a ceasefire in name only.",
+          "summary": "NPR's photo essay marks one year since the ceasefire began in Gaza, showing what life looks like on the ground. It notes that although Hamas released the remaining Israeli hostages and President Trump promised an end to the war, Palestinians describe the past 12 months as a ceasefire in name only. It is worth reading for the gap between a ceasefire announcement and lived reality.",
+          "failureAnalysis": "The key takeaway: a ceasefire in name may not mean real safety or change for civilians; look at daily life and security, not just official declarations.",
+          "title": "Photos: What a Year of Ceasefire in Gaza Looks Like"
         }
       }
     },
     {
-      "id": "life-3d6047b060034c069fe13a81995c346b",
+      "id": "life-4e780e12cde340699a41ab455f6396d1",
       "category": "international",
-      "title": "How Memory Makes Us and Breaks Truth: The Rashomon Effect and the Science of How Memories Form and Falter in the Brain",
-      "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/10/09/rashomon-effect-memory/",
-      "publishedAt": "2026-10-10T02:35:29.0000000+00:00",
-      "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 3",
-      "highlight": "我们就是我们的记忆……那座由变幻形状构成的虚幻博物馆，那堆破碎的镜子。",
-      "summary": "这篇文章来自 The Marginalian，围绕“罗生门效应”以及记忆在大脑中如何形成、如何变得不可靠展开。它借助“我们是我们的记忆”这一意象，提示记忆并非稳定录像，而更像不断变形、拼合甚至破碎的博物馆，从而影响我们对真相的把握。了解这一点，有助于更审慎地看待自己与他人的叙述。",
-      "failureAnalysis": "关键启示：记忆的可塑性既构成自我，也让真相容易随视角而分裂；理解记忆如何形成与失准，能帮助人更审慎地对待叙述和判断。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "\"We are our memory… that chimerical museum of shifting shapes, that pile of broken mirrors.”",
-      "translations": {
-        "zh": {
-          "title": "记忆如何成就我们，又如何瓦解真相：《罗生门效应》与大脑记忆形成和失准的科学",
-          "highlight": "我们就是我们的记忆……那座由变幻形状构成的虚幻博物馆，那堆破碎的镜子。",
-          "summary": "这篇文章来自 The Marginalian，围绕“罗生门效应”以及记忆在大脑中如何形成、如何变得不可靠展开。它借助“我们是我们的记忆”这一意象，提示记忆并非稳定录像，而更像不断变形、拼合甚至破碎的博物馆，从而影响我们对真相的把握。了解这一点，有助于更审慎地看待自己与他人的叙述。",
-          "failureAnalysis": "关键启示：记忆的可塑性既构成自我，也让真相容易随视角而分裂；理解记忆如何形成与失准，能帮助人更审慎地对待叙述和判断。"
-        },
-        "en": {
-          "highlight": "We are our memory… that chimerical museum of shifting shapes, that pile of broken mirrors.",
-          "summary": "This article from The Marginalian explores the Rashomon effect and the science of how memories form and falter in the brain. Using the image that we are our memory, it suggests memory is not a stable recording but a shifting, reassembling, even broken museum that shapes our grasp of truth. It is worth reading for a more cautious view of our own and others' accounts.",
-          "failureAnalysis": "Key takeaway: memory's plasticity both constitutes the self and makes truth prone to splitting by perspective; understanding how memory forms and falters can help us treat narratives and judgments more carefully.",
-          "title": "How Memory Makes Us and Breaks Truth: The Rashomon Effect and the Science of Memory Formation and Faltering"
-        }
-      }
-    },
-    {
-      "id": "life-5f81fa3c8dfe466683ab761c8a9dc7a6",
-      "category": "international",
-      "title": "App+1｜专注星空：让「少刷手机」这件事更愉悦一点",
+      "title": "写给「跑两步就喘」的你：不能忽略的跑后拉伸与恢复",
       "source": "少数派 sspai",
-      "url": "https://sspai.com/post/115237",
-      "publishedAt": "2026-10-10T02:19:52.0000000+00:00",
+      "url": "https://sspai.com/post/115568",
+      "publishedAt": "2026-10-11T07:00:49.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "把决定使用时长的时机放到每次打开应用之前，让「少刷手机」这件事更愉悦一点。",
-      "summary": "少数派「App+1」栏目介绍了一款名为「专注星空」的应用，它的核心思路是把决定使用时长的时机提前到每次打开应用之前。也就是说，不是等到刷完再后悔，而是在动手之前先想清楚要用多久。对于想减少手机使用又不想被强硬限制的人来说，这种更温和、更有掌控感的方式值得一看。",
-      "failureAnalysis": "关键点在于用「事前设定」替代「事后自责」：在打开应用前先决定用多久，比事后靠意志力刹车更符合人的行为习惯。",
+      "highlight": "想要舒适跑步，除了跑前和跑步中的小技巧，跑后如何正确拉伸、如何更好地帮助身体恢复同样不能忽略。",
+      "summary": "这是少数派跑步系列文章的后续，前两篇讲跑前热身和跑步中的技巧，这一篇转向跑后如何正确拉伸、怎样帮助身体恢复。对刚开始跑步、容易疲劳的人来说，跑后恢复常被忽略，却直接影响跑步体验和持续意愿。",
+      "failureAnalysis": "关键 takeaway 是：不要只关注跑前热身和跑中姿势，跑后拉伸与恢复同样应纳入日常跑步流程。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "把决定使用时长的时机，放到每次打开应用之前。 查看全文",
+      "sourceExcerpt": "前面两篇文章我们介绍了想要舒适跑步，在跑前和跑步中的一些小技巧，今天和大家聊聊跑后如何正确的拉伸，如何更好地帮助身体恢复。关联阅读：跑前精准热身，缓解跑时疼痛调整跑步姿势，舒适开跑正确拉伸多数人跑后会 ...",
       "translations": {
         "zh": {
-          "title": "App+1｜专注星空：让「少刷手机」这件事更愉悦一点",
-          "highlight": "把决定使用时长的时机放到每次打开应用之前，让「少刷手机」这件事更愉悦一点。",
-          "summary": "少数派「App+1」栏目介绍了一款名为「专注星空」的应用，它的核心思路是把决定使用时长的时机提前到每次打开应用之前。也就是说，不是等到刷完再后悔，而是在动手之前先想清楚要用多久。对于想减少手机使用又不想被强硬限制的人来说，这种更温和、更有掌控感的方式值得一看。",
-          "failureAnalysis": "关键点在于用「事前设定」替代「事后自责」：在打开应用前先决定用多久，比事后靠意志力刹车更符合人的行为习惯。"
+          "title": "写给「跑两步就喘」的你：不能忽略的跑后拉伸与恢复",
+          "highlight": "想要舒适跑步，除了跑前和跑步中的小技巧，跑后如何正确拉伸、如何更好地帮助身体恢复同样不能忽略。",
+          "summary": "这是少数派跑步系列文章的后续，前两篇讲跑前热身和跑步中的技巧，这一篇转向跑后如何正确拉伸、怎样帮助身体恢复。对刚开始跑步、容易疲劳的人来说，跑后恢复常被忽略，却直接影响跑步体验和持续意愿。",
+          "failureAnalysis": "关键 takeaway 是：不要只关注跑前热身和跑中姿势，跑后拉伸与恢复同样应纳入日常跑步流程。"
         },
         "en": {
-          "highlight": "Move the moment of deciding how long you will use an app to before each time you open it, making 'scrolling less' a bit more pleasant.",
-          "summary": "Minority Post's 'App+1' column introduces an app called Focus Starry Sky, whose core idea is to decide your usage duration before you open an app, not after. Instead of regretting the time spent afterwards, you set the limit up front. For people who want to cut down on phone use without harsh blocking, this gentler, more self-controlled approach is worth a look.",
-          "failureAnalysis": "The key takeaway is replacing 'guilt afterwards' with 'setting limits beforehand': deciding how long you will use an app before opening it fits human habits better than relying on willpower to stop later.",
-          "title": "App+1 | Focus Starry Sky: making 'scrolling less' a bit more pleasant"
+          "highlight": "For comfortable running, beyond pre-run and mid-run tips, correct post-run stretching and better recovery also matter.",
+          "summary": "This is a follow-up in a running series: previous pieces covered pre-run warm-up and mid-run technique, while this one addresses post-run stretching and recovery. For new runners who tire quickly, recovery is an easily overlooked part of making running more comfortable.",
+          "failureAnalysis": "Do not focus only on pre-run warm-up and mid-run form; post-run stretching and recovery deserve a place in your running routine.",
+          "title": "For Those Who Get Winded After Two Steps: Don’t Neglect Post-Run Stretching and Recovery"
         }
       }
     },
     {
-      "id": "ai-feed-f48c78e6b5b3431183c45eb38141ba0b",
+      "id": "life-74a4b84e7bb1490cb703529d839db49d",
+      "category": "international",
+      "title": "Elizabeth Gilbert on Love, Loss, and How to Move Through Grief as Grief Moves Through You",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/10/10/elizabeth-gilbert-ted-podcast-love-loss/",
+      "publishedAt": "2026-10-11T01:04:35.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "悲伤是一种无法被控制或预测的能量，它按自己的时间表来去，不服从你的计划与愿望。",
+      "summary": "这是《The Marginalian》对伊丽莎白·吉尔伯特在 TED 播客中谈爱与失去的一次整理。她认为悲伤不听人指挥，来去自有节奏，这一点与爱极为相似，因此与其试图管理悲伤，不如允许它流经自己。对于把「情绪稳定」当作能力标准的职场人，这个视角值得一读，它提供了一个更省力的应对框架。",
+      "failureAnalysis": "关键启发：面对悲伤这类无法被计划、无法被优化的力量，承认自己无法控制，往往比强行管理更有效；这一点与爱同理。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "\"Grief is a force of energy that cannot be controlled or predicted. It comes and goes on its own schedule. Grief does not obey your plans, or your wishes.",
+      "translations": {
+        "zh": {
+          "title": "伊丽莎白·吉尔伯特谈爱与失去：让悲伤穿过你，而非你去穿过悲伤",
+          "highlight": "悲伤是一种无法被控制或预测的能量，它按自己的时间表来去，不服从你的计划与愿望。",
+          "summary": "这是《The Marginalian》对伊丽莎白·吉尔伯特在 TED 播客中谈爱与失去的一次整理。她认为悲伤不听人指挥，来去自有节奏，这一点与爱极为相似，因此与其试图管理悲伤，不如允许它流经自己。对于把「情绪稳定」当作能力标准的职场人，这个视角值得一读，它提供了一个更省力的应对框架。",
+          "failureAnalysis": "关键启发：面对悲伤这类无法被计划、无法被优化的力量，承认自己无法控制，往往比强行管理更有效；这一点与爱同理。"
+        },
+        "en": {
+          "highlight": "Grief is a force of energy that cannot be controlled or predicted. It comes and goes on its own schedule.",
+          "summary": "This is The Marginalian's piece on Elizabeth Gilbert's TED podcast conversation about love and loss. Her point is that grief does not obey plans or wishes and arrives and leaves on its own timetable — much like love — so the better move is to let it pass through you rather than try to manage it. It is worth reading for anyone who treats emotional steadiness as a professional competence, because it offers a less exhausting way to respond.",
+          "failureAnalysis": "Key takeaway: with forces like grief that cannot be planned or optimized, admitting you cannot control them is often more effective than trying to manage them — the same is true of love.",
+          "title": "Elizabeth Gilbert on Love, Loss, and Letting Grief Move Through You"
+        }
+      }
+    },
+    {
+      "id": "ai-feed-a0d3010229ec49a9a355b348b261469a",
       "category": "ai",
-      "title": "Building AI for Reliable Execution: Lessons From Industrial Robotics",
-      "source": "Latent Space",
-      "url": "https://www.latent.space/p/standard-bots",
+      "title": "Dwarf Fortress uses version control now",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Oct/11/dwarf-fortress/",
       "abstractUrl": null,
-      "publishedAt": "2026-10-10T14:04:11.0000000Z",
+      "publishedAt": "2026-10-11T00:52:37.0000000Z",
       "scoreLabel": "Curated engineering feed",
       "aiArticleType": "concept_explanation",
       "evidenceAnchors": [],
@@ -227,36 +227,36 @@
       "hasPrimaryAnchor": false,
       "requiresRiskAnalysis": false,
       "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
-      "summary": "这篇文章介绍 Standard Bots 的 AI 技术栈：预训练模型先从人类演示中学习工厂任务，再依靠真实生产环境里的纠正反馈来迭代提升。它值得关注，因为它展示了让 AI 在工业场景中稳定可靠执行的一条现实路径——不是追求一次到位的通用智能，而是把学习闭环嵌入真实部署。",
-      "failureAnalysis": "关键启发是：可靠执行往往来自“演示学习 + 现场纠正”的持续闭环，而非一次性训练完成的模型；在落地场景中，纠正反馈机制本身比模型规模更值得优先设计。",
+      "summary": "文章回顾了《矮人要塞》开发者 Tarn Adams 多年来拒绝使用版本控制的立场，从 2013 年、2016 年一路引到 2023 年的说法，那时他已经在用版本控制相关的东西了。作者借此感叹，一个复杂度极高、按理最该受益于版本控制的代码库，竟然在如此长的时间里靠人力硬撑。值得一读，因为它把一个抽象的工程常识，变成了一个有具体年代与人名的真实案例。",
+      "failureAnalysis": "关键提醒是：版本控制的价值是长期和间接的，短期内它只带来摩擦、看不出好处，正因如此个人直觉很容易低估它。",
       "aiSelectionScore": 100,
-      "highlight": "Standard Bots 的 AI 技术栈中，预训练模型通过演示学习工厂任务，并从真实部署中的纠正反馈持续改进。",
+      "highlight": "我不使用版本控制——我不喜欢代码被提交进一个黑箱、却没有任何即时好处的感觉。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Inside Standard Bots’ AI stack, pretrained models learn factory tasks from demonstrations and improve through corrections from real deployments.",
+      "sourceExcerpt": "I remember hearing a while ago that Dwarf Fortress didn't use version control. That fact has been lodged in my head, because given its inherent complexity I have trouble imagining a codebase that would benefit from version control more . I went looking and I'm sad to report that the days without version control appear to have ended.",
       "translations": {
         "zh": {
-          "title": "为可靠执行而构建 AI：来自工业机器人的经验",
-          "highlight": "Standard Bots 的 AI 技术栈中，预训练模型通过演示学习工厂任务，并从真实部署中的纠正反馈持续改进。",
-          "summary": "这篇文章介绍 Standard Bots 的 AI 技术栈：预训练模型先从人类演示中学习工厂任务，再依靠真实生产环境里的纠正反馈来迭代提升。它值得关注，因为它展示了让 AI 在工业场景中稳定可靠执行的一条现实路径——不是追求一次到位的通用智能，而是把学习闭环嵌入真实部署。",
-          "failureAnalysis": "关键启发是：可靠执行往往来自“演示学习 + 现场纠正”的持续闭环，而非一次性训练完成的模型；在落地场景中，纠正反馈机制本身比模型规模更值得优先设计。"
+          "title": "《矮人要塞》如今也用上了版本控制",
+          "highlight": "我不使用版本控制——我不喜欢代码被提交进一个黑箱、却没有任何即时好处的感觉。",
+          "summary": "文章回顾了《矮人要塞》开发者 Tarn Adams 多年来拒绝使用版本控制的立场，从 2013 年、2016 年一路引到 2023 年的说法，那时他已经在用版本控制相关的东西了。作者借此感叹，一个复杂度极高、按理最该受益于版本控制的代码库，竟然在如此长的时间里靠人力硬撑。值得一读，因为它把一个抽象的工程常识，变成了一个有具体年代与人名的真实案例。",
+          "failureAnalysis": "关键提醒是：版本控制的价值是长期和间接的，短期内它只带来摩擦、看不出好处，正因如此个人直觉很容易低估它。"
         },
         "en": {
-          "highlight": "Inside Standard Bots' AI stack, pretrained models learn factory tasks from demonstrations and improve through corrections from real deployments.",
-          "summary": "This article looks at Standard Bots' AI stack, where pretrained models learn factory tasks from human demonstrations and then improve using correction feedback gathered from real deployments. It is worth reading because it shows a practical path to making AI execute reliably in industrial settings: embedding a learning loop into real-world deployment rather than aiming for one-shot general intelligence.",
-          "failureAnalysis": "The key takeaway is that reliable execution tends to come from a continuous loop of demonstration learning plus on-site correction, not from a one-time trained model; when deploying in the field, the correction-feedback mechanism itself deserves priority over model scale.",
-          "title": "Building AI for Reliable Execution: Lessons From Industrial Robotics"
+          "highlight": "I don't use version control -- I didn't like the feeling of having the code get committed into a black box thingy with no immediate upside",
+          "summary": "The piece traces Dwarf Fortress developer Tarn Adams's long refusal to use version control, quoting him in 2013, 2016 and 2023, by which point he was using version control stuff. The author marvels that a codebase of such complexity, arguably the one that would benefit most from version control, held out for so long. It is worth reading because it turns an abstract engineering truism into a concrete case with dates and names.",
+          "failureAnalysis": "The takeaway: version control's value is long-term and indirect, while its cost is immediate friction, which is exactly why individual intuition tends to undervalue it.",
+          "title": "Dwarf Fortress now uses version control"
         }
       }
     },
     {
-      "id": "ai-hn-50018817",
+      "id": "ai-github-1373665161",
       "category": "ai",
-      "title": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen",
-      "source": "Hacker News",
-      "url": "https://github.com/franzenzenhofer/big-arrow-on-the-screen",
+      "title": "devagrawal09/jev-review",
+      "source": "GitHub Search",
+      "url": "https://github.com/devagrawal09/jev-review",
       "abstractUrl": null,
-      "publishedAt": "2026-10-09T11:03:48.0000000Z",
-      "scoreLabel": "406 points / 186 comments",
+      "publishedAt": "2026-09-16T21:45:36.0000000Z",
+      "scoreLabel": "GitHub 683 stars",
       "aiArticleType": "application_innovation",
       "evidenceAnchors": [
         {
@@ -264,32 +264,32 @@
           "kind": "primary"
         },
         {
-          "label": "HN discussion",
+          "label": "Community signal",
           "kind": "secondary"
         }
       ],
-      "evidenceLabel": "GitHub + HN discussion",
+      "evidenceLabel": "GitHub + Community signal",
       "hasPrimaryAnchor": true,
       "requiresRiskAnalysis": true,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + HN discussion",
-      "summary": "这是 Hacker News 上的一个 Show HN 项目，标题显示它让 AI 代理能在屏幕上绘制大箭头、方框和文字，把抽象操作变成可见标注。该条目已获 406 分和 186 条评论，说明 AI 代理如何向人类传达空间信息这一方向引发了较多讨论。对于非技术管理者，值得关注它是否能成为代理与用户协作的通用交互层。",
-      "failureAnalysis": "屏幕标注可能只是新鲜演示，真实高频需求尚未被验证，用户可能看完就忘。跨平台悬浮窗、屏幕权限、隐私与安全限制会推高工程成本，而独立开源项目缺乏清晰收费路径。若 OpenAI、微软等平台把类似能力内建到自家 AI 代理中，第三方小工具的生存空间会被迅速压缩。",
-      "aiSelectionScore": 778,
-      "highlight": "Show HN 项目让 AI 代理在你的屏幕上绘制大箭头、方框和文字。",
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "这是一个 GitHub 上的开源工具仓库，把代码审查拆成有阶段的流程，并提供一个本地运行的仪表盘来查看审查状态，技术栈为 TypeSafe Jev。它能拿到 683 星说明开发者对「让代码审查更结构化、更可视化」这件事有真实兴趣，值得作为同类开发工具的产品形态样本来看。",
+      "failureAnalysis": "代码审查赛道已被 GitHub Pull Request、Graphite、Reviewable 等产品占据，一个本地仪表盘很难在企业协作场景中替代云端评审，需求容易被现有工作流吸收。构建在 TypeSafe Jev 这种小众框架上，会限制贡献者规模和长期维护，一旦框架社区降温项目就难以持续。本地部署意味着没有团队共享状态、没有审计与权限管理，企业采购时通常过不了安全与合规门槛。另外它更像流程工具而非真正依赖模型能力的产品，「AI」标签带来的差异化有限，变现路径也不清晰。",
+      "aiSelectionScore": 683,
+      "highlight": "该项目用 TypeSafe Jev 构建了一套分阶段的代码审查工作流，并配套一个本地仪表盘，目前在 GitHub 上获得 683 颗星。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "HN candidate with public discussion metrics.",
+      "sourceExcerpt": "GitHub repository with 683 stars and recent public activity. Description: A staged code-review workflow and local dashboard built with TypeSafe Jev.",
       "translations": {
         "zh": {
-          "title": "Show HN：让 AI 代理在你的屏幕上画大箭头、方框和文字",
-          "highlight": "Show HN 项目让 AI 代理在你的屏幕上绘制大箭头、方框和文字。",
-          "summary": "这是 Hacker News 上的一个 Show HN 项目，标题显示它让 AI 代理能在屏幕上绘制大箭头、方框和文字，把抽象操作变成可见标注。该条目已获 406 分和 186 条评论，说明 AI 代理如何向人类传达空间信息这一方向引发了较多讨论。对于非技术管理者，值得关注它是否能成为代理与用户协作的通用交互层。",
-          "failureAnalysis": "屏幕标注可能只是新鲜演示，真实高频需求尚未被验证，用户可能看完就忘。跨平台悬浮窗、屏幕权限、隐私与安全限制会推高工程成本，而独立开源项目缺乏清晰收费路径。若 OpenAI、微软等平台把类似能力内建到自家 AI 代理中，第三方小工具的生存空间会被迅速压缩。"
+          "title": "基于 TypeSafe Jev 的分阶段代码审查流程与本地看板",
+          "highlight": "该项目用 TypeSafe Jev 构建了一套分阶段的代码审查工作流，并配套一个本地仪表盘，目前在 GitHub 上获得 683 颗星。",
+          "summary": "这是一个 GitHub 上的开源工具仓库，把代码审查拆成有阶段的流程，并提供一个本地运行的仪表盘来查看审查状态，技术栈为 TypeSafe Jev。它能拿到 683 星说明开发者对「让代码审查更结构化、更可视化」这件事有真实兴趣，值得作为同类开发工具的产品形态样本来看。",
+          "failureAnalysis": "代码审查赛道已被 GitHub Pull Request、Graphite、Reviewable 等产品占据，一个本地仪表盘很难在企业协作场景中替代云端评审，需求容易被现有工作流吸收。构建在 TypeSafe Jev 这种小众框架上，会限制贡献者规模和长期维护，一旦框架社区降温项目就难以持续。本地部署意味着没有团队共享状态、没有审计与权限管理，企业采购时通常过不了安全与合规门槛。另外它更像流程工具而非真正依赖模型能力的产品，「AI」标签带来的差异化有限，变现路径也不清晰。"
         },
         "en": {
-          "highlight": "Let your AI agents paint big arrows, boxes and text on your screen.",
-          "summary": "This Hacker News Show HN item presents a project that lets AI agents draw large arrows, boxes, and text directly on the screen. With 406 points and 186 comments, it has drawn attention as a way to make agent actions spatially visible. It is worth watching as a test of whether visual annotation becomes a real interaction layer for AI agents.",
-          "failureAnalysis": "The idea may fail if screen annotation stays a novelty rather than a frequent need, and cross-platform overlay permissions, privacy limits, and lack of monetization add engineering and business risk. Platform owners could also absorb this feature into their own agent products.",
-          "title": "Show HN: Let your AI agents paint big arrows, boxes and text on your screen"
+          "highlight": "It provides a staged code-review workflow plus a local dashboard, built with TypeSafe Jev, and has reached 683 stars on GitHub.",
+          "summary": "This is an open-source GitHub project that breaks code review into explicit stages and ships a locally run dashboard for tracking them, built on TypeSafe Jev. Its 683 stars suggest real developer interest in making code review more structured and observable, making it a useful product-shape reference for developer tooling.",
+          "failureAnalysis": "Code review is already crowded by GitHub PRs, Graphite and Reviewable, and a local-only dashboard struggles to replace shared cloud review workflows. Building on a niche framework like TypeSafe Jev also caps contributor growth and long-term maintenance.",
+          "title": "A staged code-review workflow and local dashboard built with TypeSafe Jev"
         }
       }
     }

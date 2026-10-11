@@ -1,0 +1,297 @@
+{
+  "issueDate": "2026-10-11",
+  "updateStatus": "complete",
+  "contentFingerprint": "c64c653c417c325386e3a0af1a8a2ec2a1e26f01d9cb43748fc800b7e7a73eac",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-43fb0945fdaf461dbbca3b102122b650",
+      "category": "domestic",
+      "title": "从草场放牧到高原种菊 西藏特色种养产业让群众致富增收",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-11/10711122.shtml",
+      "publishedAt": "2026-10-11T12:47:26.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "在党中央关心关怀和全国人民支援下，西藏从脱贫攻坚到乡村振兴接续发力，620多个边境村全部建成了小康村。",
+      "summary": "这则报道聚焦西藏特色种养产业，呈现从草场放牧到高原种菊等转变如何带动群众致富增收。结合已知信息，西藏从脱贫攻坚接续推进乡村振兴，620多个边境村全部建成小康村，展现了边疆民生改善与安居乐业的成效。",
+      "failureAnalysis": "关键启示是，特色种养产业可以成为西藏乡村振兴和群众增收的可验证路径；具体产业规模与持续成效仍需以权威发布和后续统计为准。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "近年来，在党中央关心关怀和全国人民支援下，西藏从脱贫攻坚到乡村振兴接续发力，620多个边境村全部建成了小康村，绘就边疆长治久安、人民安居乐业的壮美画卷。",
+      "translations": {
+        "zh": {
+          "title": "从草场放牧到高原种菊 西藏特色种养产业让群众致富增收",
+          "highlight": "在党中央关心关怀和全国人民支援下，西藏从脱贫攻坚到乡村振兴接续发力，620多个边境村全部建成了小康村。",
+          "summary": "这则报道聚焦西藏特色种养产业，呈现从草场放牧到高原种菊等转变如何带动群众致富增收。结合已知信息，西藏从脱贫攻坚接续推进乡村振兴，620多个边境村全部建成小康村，展现了边疆民生改善与安居乐业的成效。",
+          "failureAnalysis": "关键启示是，特色种养产业可以成为西藏乡村振兴和群众增收的可验证路径；具体产业规模与持续成效仍需以权威发布和后续统计为准。"
+        },
+        "en": {
+          "highlight": "Under the Party Central Committee’s care and nationwide support, Tibet has moved from poverty alleviation to rural revitalization, and all 620-plus border villages have become moderately prosperous villages.",
+          "summary": "This report focuses on Tibet’s specialty farming and breeding industries, showing how a shift from grazing to plateau chrysanthemum cultivation helps local people increase their incomes. Based on the known information, Tibet has continued from poverty alleviation into rural revitalization, and all 620-plus border villages have been built into moderately prosperous villages, reflecting improved livelihoods and stability in the border areas.",
+          "failureAnalysis": "The key takeaway is that specialty farming and breeding can be a verifiable path for rural revitalization and income growth in Tibet; the scale and long-term effects still need to be checked against authoritative releases and follow-up statistics.",
+          "title": "From Grazing to Plateau Chrysanthemum Farming: Tibet’s Specialty Agriculture Boosts Incomes"
+        }
+      }
+    },
+    {
+      "id": "news-56807aab83a34c58b7a53e570aff66f0",
+      "category": "domestic",
+      "title": "“一带一路”地区极端气候事件及影响国际培训班在西安开班",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-11/10711087.shtml",
+      "publishedAt": "2026-10-11T11:55:09.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 3",
+      "highlight": "“一带一路”地区极端气候事件及影响国际培训班在西安开班，核心主题为“极端气候事件重建、预警与影响评估”。",
+      "summary": "中新网报道，10月11日“一带一路”地区极端气候事件及影响国际培训班在陕西西安开班。培训以“极端气候事件重建、预警与影响评估”为核心主题，来自10多个国家的20余名学员参加为期14天的培训。这体现了极端气候研究领域的国际交流与能力建设。",
+      "failureAnalysis": "这不是AI应用项目，因此不做失败复盘；关键看点是极端气候重建、预警与影响评估的国际培训合作如何落地。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网西安10月11日电 (记者 孙自法)记者10月11日从中国科学院地球环境研究所(地环所)获悉，“一带一路”地区极端气候事件及影响国际培训班当天在陕西西安开班，以“极端气候事件重建、预警与影响评估”为核心主题，对来自10多个国家的20余名优秀学员，开展为期14天的培训。",
+      "translations": {
+        "zh": {
+          "title": "“一带一路”地区极端气候事件及影响国际培训班在西安开班",
+          "highlight": "“一带一路”地区极端气候事件及影响国际培训班在西安开班，核心主题为“极端气候事件重建、预警与影响评估”。",
+          "summary": "中新网报道，10月11日“一带一路”地区极端气候事件及影响国际培训班在陕西西安开班。培训以“极端气候事件重建、预警与影响评估”为核心主题，来自10多个国家的20余名学员参加为期14天的培训。这体现了极端气候研究领域的国际交流与能力建设。",
+          "failureAnalysis": "这不是AI应用项目，因此不做失败复盘；关键看点是极端气候重建、预警与影响评估的国际培训合作如何落地。"
+        },
+        "en": {
+          "highlight": "A Belt and Road international training workshop on extreme climate events opened in Xi'an, focused on reconstruction, early warning, and impact assessment.",
+          "summary": "China News Service reports that the workshop opened in Xi'an on October 11, organized around the theme of extreme climate event reconstruction, early warning, and impact assessment. More than 20 participants from over 10 countries will take part in a 14-day training program, highlighting international scientific exchange and capacity building.",
+          "failureAnalysis": "This is not an AI application project, so there is no failure analysis; the key takeaway is the international training and cooperation around extreme climate early warning and impact assessment.",
+          "title": "International Training Workshop on Extreme Climate Events and Impacts in Belt and Road Region Opens in Xi'an"
+        }
+      }
+    },
+    {
+      "id": "news-407d57372f2c4069895730160a99b1d2",
+      "category": "domestic",
+      "title": "七年磨一展 浙江温州泵阀产业“链”全球",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-11/10711102.shtml",
+      "publishedAt": "2026-10-11T12:13:26.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 2",
+      "highlight": "不出国门就能直面全球采购商，降低了我们出海拓市的成本与风险。",
+      "summary": "中新网报道，浙江温州举办浙江国际阀门产业链展览会，已持续七年，让本地泵阀及管业企业不出国门即可对接全球采购商。以浙江志达管业为例，其出口业务占比约四成，在展会上与中亚客商实现对接。这体现了产业集群通过专业展会降低出海成本与风险、链接全球市场的路径。",
+      "failureAnalysis": "关键启示：本地产业展会能把全球买家集中到门口，降低中小企业出海成本；其可持续性取决于能否持续吸引真实采购商并转化为订单。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网温州10月11日电(蓝伊旎 高楼)“不出国门就能直面全球采购商，降低了我们出海拓市的成本与风险。”浙江志达管业有限公司董事长王忠华感触颇深。这家出口业务占比约四成的企业，在浙江国际阀门产业链展览会上与不少中亚客商实现了对接。",
+      "translations": {
+        "zh": {
+          "title": "七年磨一展：浙江温州泵阀产业“链”全球",
+          "highlight": "不出国门就能直面全球采购商，降低了我们出海拓市的成本与风险。",
+          "summary": "中新网报道，浙江温州举办浙江国际阀门产业链展览会，已持续七年，让本地泵阀及管业企业不出国门即可对接全球采购商。以浙江志达管业为例，其出口业务占比约四成，在展会上与中亚客商实现对接。这体现了产业集群通过专业展会降低出海成本与风险、链接全球市场的路径。",
+          "failureAnalysis": "关键启示：本地产业展会能把全球买家集中到门口，降低中小企业出海成本；其可持续性取决于能否持续吸引真实采购商并转化为订单。"
+        },
+        "en": {
+          "highlight": "Not going abroad, we can meet global buyers directly, cutting the cost and risk of expanding overseas.",
+          "summary": "China News Service reports that Wenzhou, Zhejiang, hosted the Zhejiang International Valve Industry Chain Exhibition, now in its seventh year, allowing local pump, valve, and pipe firms to connect with global buyers without leaving China. Zhejiang Zhida Pipe Industry, whose exports account for about 40% of business, met Central Asian buyers at the event. It shows how industrial clusters use specialized exhibitions to lower the threshold and risk of going global.",
+          "failureAnalysis": "Key takeaway: a local industry exhibition can bring global buyers to companies' doorstep and reduce the cost of going overseas; its sustainability depends on attracting real buyers and turning contacts into orders.",
+          "title": "Seven Years in the Making: Wenzhou Pump and Valve Industry Links Global Markets"
+        }
+      }
+    },
+    {
+      "id": "news-521a9f04d4c64365a05dcc708df03f40",
+      "category": "international",
+      "title": "U.S. and Russia tout diesel deal to ease sanctions and reopen fuel flows",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/10/nx-s1-5996938/u-s-and-russia-tout-diesel-deal-to-ease-sanctions-and-reopen-fuel-flows",
+      "publishedAt": "2026-10-10T11:40:53.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "莫斯科与华盛顿高调宣传一项柴油协议，意在放宽制裁并恢复燃料流通，但细节寥寥，价格影响与美国政策仍存疑问。",
+      "summary": "美国与俄罗斯共同宣扬一项柴油协议，目标是放宽制裁、重新打通燃料流动渠道。但公开细节很少，柴油价格会如何变化、美国政策是否真正转向都还不明确，乌克兰及盟友对此表示愤怒。值得一读，是因为它可能牵动全球能源价格与对俄制裁的实际执行力度。",
+      "failureAnalysis": "目前信息只停留在“双方高调宣布”这一步，价格影响与政策细节均未落地，因此不宜把这条消息直接理解为制裁格局已被实质改变，应等具体条款与执行情况。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Moscow and Washington tout a diesel deal to ease sanctions and reopen fuel flows, but few details leave questions on price impacts and U.S. policy, sparking anger from Ukraine and allies.",
+      "translations": {
+        "zh": {
+          "title": "美俄宣扬柴油协议以放宽制裁并恢复燃料流通",
+          "highlight": "莫斯科与华盛顿高调宣传一项柴油协议，意在放宽制裁并恢复燃料流通，但细节寥寥，价格影响与美国政策仍存疑问。",
+          "summary": "美国与俄罗斯共同宣扬一项柴油协议，目标是放宽制裁、重新打通燃料流动渠道。但公开细节很少，柴油价格会如何变化、美国政策是否真正转向都还不明确，乌克兰及盟友对此表示愤怒。值得一读，是因为它可能牵动全球能源价格与对俄制裁的实际执行力度。",
+          "failureAnalysis": "目前信息只停留在“双方高调宣布”这一步，价格影响与政策细节均未落地，因此不宜把这条消息直接理解为制裁格局已被实质改变，应等具体条款与执行情况。"
+        },
+        "en": {
+          "highlight": "Moscow and Washington tout a diesel deal to ease sanctions and reopen fuel flows, but few details leave questions on price impacts and U.S. policy, sparking anger from Ukraine and allies.",
+          "summary": "The United States and Russia are jointly promoting a diesel deal aimed at easing sanctions and reopening fuel flows. Yet few details are public, leaving unclear how diesel prices will move and whether U.S. policy has really shifted, while Ukraine and its allies are angry. It is worth reading because it could affect global energy prices and how Russian sanctions are actually enforced.",
+          "failureAnalysis": "The information so far stops at a joint announcement; price effects and policy details are not settled, so this should not be read as sanctions being substantively changed until specific terms and enforcement emerge.",
+          "title": "U.S. and Russia Tout Diesel Deal to Ease Sanctions and Reopen Fuel Flows"
+        }
+      }
+    },
+    {
+      "id": "news-94a24d506da2472c9b59f5946e22f58f",
+      "category": "international",
+      "title": "Photos: What a year of ceasefire in Gaza looks like",
+      "source": "NPR World",
+      "url": "https://www.npr.org/sections/the-picture-show/2026/10/10/nx-s1-5991619/gaza-ceasefire-israel-life",
+      "publishedAt": "2026-10-10T09:00:00.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "哈马斯释放剩余以色列人质、特朗普承诺结束战争已一年，但巴勒斯坦人称过去12个月只是名义上的停火。",
+      "summary": "NPR 的图片报道以加沙停火一周年为切入点，呈现当地生活在停火名义下的真实状态。报道提到，哈马斯释放剩余以色列人质、特朗普承诺结束战争已有一年，但巴勒斯坦人认为这12个月只是名义上的停火。想理解停火协议与实际生活之间的落差，这组图片提供了直观视角。",
+      "failureAnalysis": "关键看点是：停火是否真正改变平民生活，不能只看协议宣布，还要看当地人的日常处境与安全感受。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "It has been one year since Hamas released the remaining Israeli hostages and President Trump promised an end to the war, but Palestinians say the past 12 months have been a ceasefire in name only.",
+      "translations": {
+        "zh": {
+          "title": "图片：加沙停火一年是什么样子",
+          "highlight": "哈马斯释放剩余以色列人质、特朗普承诺结束战争已一年，但巴勒斯坦人称过去12个月只是名义上的停火。",
+          "summary": "NPR 的图片报道以加沙停火一周年为切入点，呈现当地生活在停火名义下的真实状态。报道提到，哈马斯释放剩余以色列人质、特朗普承诺结束战争已有一年，但巴勒斯坦人认为这12个月只是名义上的停火。想理解停火协议与实际生活之间的落差，这组图片提供了直观视角。",
+          "failureAnalysis": "关键看点是：停火是否真正改变平民生活，不能只看协议宣布，还要看当地人的日常处境与安全感受。"
+        },
+        "en": {
+          "highlight": "A year after Hamas released the remaining Israeli hostages and Trump promised to end the war, Palestinians say it is a ceasefire in name only.",
+          "summary": "NPR's photo essay marks one year since the ceasefire began in Gaza, showing what life looks like on the ground. It notes that although Hamas released the remaining Israeli hostages and President Trump promised an end to the war, Palestinians describe the past 12 months as a ceasefire in name only. It is worth reading for the gap between a ceasefire announcement and lived reality.",
+          "failureAnalysis": "The key takeaway: a ceasefire in name may not mean real safety or change for civilians; look at daily life and security, not just official declarations.",
+          "title": "Photos: What a Year of Ceasefire in Gaza Looks Like"
+        }
+      }
+    },
+    {
+      "id": "life-4e780e12cde340699a41ab455f6396d1",
+      "category": "international",
+      "title": "写给「跑两步就喘」的你：不能忽略的跑后拉伸与恢复",
+      "source": "少数派 sspai",
+      "url": "https://sspai.com/post/115568",
+      "publishedAt": "2026-10-11T07:00:49.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "想要舒适跑步，除了跑前和跑步中的小技巧，跑后如何正确拉伸、如何更好地帮助身体恢复同样不能忽略。",
+      "summary": "这是少数派跑步系列文章的后续，前两篇讲跑前热身和跑步中的技巧，这一篇转向跑后如何正确拉伸、怎样帮助身体恢复。对刚开始跑步、容易疲劳的人来说，跑后恢复常被忽略，却直接影响跑步体验和持续意愿。",
+      "failureAnalysis": "关键 takeaway 是：不要只关注跑前热身和跑中姿势，跑后拉伸与恢复同样应纳入日常跑步流程。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "前面两篇文章我们介绍了想要舒适跑步，在跑前和跑步中的一些小技巧，今天和大家聊聊跑后如何正确的拉伸，如何更好地帮助身体恢复。关联阅读：跑前精准热身，缓解跑时疼痛调整跑步姿势，舒适开跑正确拉伸多数人跑后会 ...",
+      "translations": {
+        "zh": {
+          "title": "写给「跑两步就喘」的你：不能忽略的跑后拉伸与恢复",
+          "highlight": "想要舒适跑步，除了跑前和跑步中的小技巧，跑后如何正确拉伸、如何更好地帮助身体恢复同样不能忽略。",
+          "summary": "这是少数派跑步系列文章的后续，前两篇讲跑前热身和跑步中的技巧，这一篇转向跑后如何正确拉伸、怎样帮助身体恢复。对刚开始跑步、容易疲劳的人来说，跑后恢复常被忽略，却直接影响跑步体验和持续意愿。",
+          "failureAnalysis": "关键 takeaway 是：不要只关注跑前热身和跑中姿势，跑后拉伸与恢复同样应纳入日常跑步流程。"
+        },
+        "en": {
+          "highlight": "For comfortable running, beyond pre-run and mid-run tips, correct post-run stretching and better recovery also matter.",
+          "summary": "This is a follow-up in a running series: previous pieces covered pre-run warm-up and mid-run technique, while this one addresses post-run stretching and recovery. For new runners who tire quickly, recovery is an easily overlooked part of making running more comfortable.",
+          "failureAnalysis": "Do not focus only on pre-run warm-up and mid-run form; post-run stretching and recovery deserve a place in your running routine.",
+          "title": "For Those Who Get Winded After Two Steps: Don’t Neglect Post-Run Stretching and Recovery"
+        }
+      }
+    },
+    {
+      "id": "life-74a4b84e7bb1490cb703529d839db49d",
+      "category": "international",
+      "title": "Elizabeth Gilbert on Love, Loss, and How to Move Through Grief as Grief Moves Through You",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/10/10/elizabeth-gilbert-ted-podcast-love-loss/",
+      "publishedAt": "2026-10-11T01:04:35.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "悲伤是一种无法被控制或预测的能量，它按自己的时间表来去，不服从你的计划与愿望。",
+      "summary": "这是《The Marginalian》对伊丽莎白·吉尔伯特在 TED 播客中谈爱与失去的一次整理。她认为悲伤不听人指挥，来去自有节奏，这一点与爱极为相似，因此与其试图管理悲伤，不如允许它流经自己。对于把「情绪稳定」当作能力标准的职场人，这个视角值得一读，它提供了一个更省力的应对框架。",
+      "failureAnalysis": "关键启发：面对悲伤这类无法被计划、无法被优化的力量，承认自己无法控制，往往比强行管理更有效；这一点与爱同理。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "\"Grief is a force of energy that cannot be controlled or predicted. It comes and goes on its own schedule. Grief does not obey your plans, or your wishes.",
+      "translations": {
+        "zh": {
+          "title": "伊丽莎白·吉尔伯特谈爱与失去：让悲伤穿过你，而非你去穿过悲伤",
+          "highlight": "悲伤是一种无法被控制或预测的能量，它按自己的时间表来去，不服从你的计划与愿望。",
+          "summary": "这是《The Marginalian》对伊丽莎白·吉尔伯特在 TED 播客中谈爱与失去的一次整理。她认为悲伤不听人指挥，来去自有节奏，这一点与爱极为相似，因此与其试图管理悲伤，不如允许它流经自己。对于把「情绪稳定」当作能力标准的职场人，这个视角值得一读，它提供了一个更省力的应对框架。",
+          "failureAnalysis": "关键启发：面对悲伤这类无法被计划、无法被优化的力量，承认自己无法控制，往往比强行管理更有效；这一点与爱同理。"
+        },
+        "en": {
+          "highlight": "Grief is a force of energy that cannot be controlled or predicted. It comes and goes on its own schedule.",
+          "summary": "This is The Marginalian's piece on Elizabeth Gilbert's TED podcast conversation about love and loss. Her point is that grief does not obey plans or wishes and arrives and leaves on its own timetable — much like love — so the better move is to let it pass through you rather than try to manage it. It is worth reading for anyone who treats emotional steadiness as a professional competence, because it offers a less exhausting way to respond.",
+          "failureAnalysis": "Key takeaway: with forces like grief that cannot be planned or optimized, admitting you cannot control them is often more effective than trying to manage them — the same is true of love.",
+          "title": "Elizabeth Gilbert on Love, Loss, and Letting Grief Move Through You"
+        }
+      }
+    },
+    {
+      "id": "ai-feed-a0d3010229ec49a9a355b348b261469a",
+      "category": "ai",
+      "title": "Dwarf Fortress uses version control now",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Oct/11/dwarf-fortress/",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-11T00:52:37.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [],
+      "evidenceLabel": "No clear evidence",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
+      "summary": "文章回顾了《矮人要塞》开发者 Tarn Adams 多年来拒绝使用版本控制的立场，从 2013 年、2016 年一路引到 2023 年的说法，那时他已经在用版本控制相关的东西了。作者借此感叹，一个复杂度极高、按理最该受益于版本控制的代码库，竟然在如此长的时间里靠人力硬撑。值得一读，因为它把一个抽象的工程常识，变成了一个有具体年代与人名的真实案例。",
+      "failureAnalysis": "关键提醒是：版本控制的价值是长期和间接的，短期内它只带来摩擦、看不出好处，正因如此个人直觉很容易低估它。",
+      "aiSelectionScore": 100,
+      "highlight": "我不使用版本控制——我不喜欢代码被提交进一个黑箱、却没有任何即时好处的感觉。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "I remember hearing a while ago that Dwarf Fortress didn't use version control. That fact has been lodged in my head, because given its inherent complexity I have trouble imagining a codebase that would benefit from version control more . I went looking and I'm sad to report that the days without version control appear to have ended.",
+      "translations": {
+        "zh": {
+          "title": "《矮人要塞》如今也用上了版本控制",
+          "highlight": "我不使用版本控制——我不喜欢代码被提交进一个黑箱、却没有任何即时好处的感觉。",
+          "summary": "文章回顾了《矮人要塞》开发者 Tarn Adams 多年来拒绝使用版本控制的立场，从 2013 年、2016 年一路引到 2023 年的说法，那时他已经在用版本控制相关的东西了。作者借此感叹，一个复杂度极高、按理最该受益于版本控制的代码库，竟然在如此长的时间里靠人力硬撑。值得一读，因为它把一个抽象的工程常识，变成了一个有具体年代与人名的真实案例。",
+          "failureAnalysis": "关键提醒是：版本控制的价值是长期和间接的，短期内它只带来摩擦、看不出好处，正因如此个人直觉很容易低估它。"
+        },
+        "en": {
+          "highlight": "I don't use version control -- I didn't like the feeling of having the code get committed into a black box thingy with no immediate upside",
+          "summary": "The piece traces Dwarf Fortress developer Tarn Adams's long refusal to use version control, quoting him in 2013, 2016 and 2023, by which point he was using version control stuff. The author marvels that a codebase of such complexity, arguably the one that would benefit most from version control, held out for so long. It is worth reading because it turns an abstract engineering truism into a concrete case with dates and names.",
+          "failureAnalysis": "The takeaway: version control's value is long-term and indirect, while its cost is immediate friction, which is exactly why individual intuition tends to undervalue it.",
+          "title": "Dwarf Fortress now uses version control"
+        }
+      }
+    },
+    {
+      "id": "ai-github-1373665161",
+      "category": "ai",
+      "title": "devagrawal09/jev-review",
+      "source": "GitHub Search",
+      "url": "https://github.com/devagrawal09/jev-review",
+      "abstractUrl": null,
+      "publishedAt": "2026-09-16T21:45:36.0000000Z",
+      "scoreLabel": "GitHub 683 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "这是一个 GitHub 上的开源工具仓库，把代码审查拆成有阶段的流程，并提供一个本地运行的仪表盘来查看审查状态，技术栈为 TypeSafe Jev。它能拿到 683 星说明开发者对「让代码审查更结构化、更可视化」这件事有真实兴趣，值得作为同类开发工具的产品形态样本来看。",
+      "failureAnalysis": "代码审查赛道已被 GitHub Pull Request、Graphite、Reviewable 等产品占据，一个本地仪表盘很难在企业协作场景中替代云端评审，需求容易被现有工作流吸收。构建在 TypeSafe Jev 这种小众框架上，会限制贡献者规模和长期维护，一旦框架社区降温项目就难以持续。本地部署意味着没有团队共享状态、没有审计与权限管理，企业采购时通常过不了安全与合规门槛。另外它更像流程工具而非真正依赖模型能力的产品，「AI」标签带来的差异化有限，变现路径也不清晰。",
+      "aiSelectionScore": 683,
+      "highlight": "该项目用 TypeSafe Jev 构建了一套分阶段的代码审查工作流，并配套一个本地仪表盘，目前在 GitHub 上获得 683 颗星。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 683 stars and recent public activity. Description: A staged code-review workflow and local dashboard built with TypeSafe Jev.",
+      "translations": {
+        "zh": {
+          "title": "基于 TypeSafe Jev 的分阶段代码审查流程与本地看板",
+          "highlight": "该项目用 TypeSafe Jev 构建了一套分阶段的代码审查工作流，并配套一个本地仪表盘，目前在 GitHub 上获得 683 颗星。",
+          "summary": "这是一个 GitHub 上的开源工具仓库，把代码审查拆成有阶段的流程，并提供一个本地运行的仪表盘来查看审查状态，技术栈为 TypeSafe Jev。它能拿到 683 星说明开发者对「让代码审查更结构化、更可视化」这件事有真实兴趣，值得作为同类开发工具的产品形态样本来看。",
+          "failureAnalysis": "代码审查赛道已被 GitHub Pull Request、Graphite、Reviewable 等产品占据，一个本地仪表盘很难在企业协作场景中替代云端评审，需求容易被现有工作流吸收。构建在 TypeSafe Jev 这种小众框架上，会限制贡献者规模和长期维护，一旦框架社区降温项目就难以持续。本地部署意味着没有团队共享状态、没有审计与权限管理，企业采购时通常过不了安全与合规门槛。另外它更像流程工具而非真正依赖模型能力的产品，「AI」标签带来的差异化有限，变现路径也不清晰。"
+        },
+        "en": {
+          "highlight": "It provides a staged code-review workflow plus a local dashboard, built with TypeSafe Jev, and has reached 683 stars on GitHub.",
+          "summary": "This is an open-source GitHub project that breaks code review into explicit stages and ships a locally run dashboard for tracking them, built on TypeSafe Jev. Its 683 stars suggest real developer interest in making code review more structured and observable, making it a useful product-shape reference for developer tooling.",
+          "failureAnalysis": "Code review is already crowded by GitHub PRs, Graphite and Reviewable, and a local-only dashboard struggles to replace shared cloud review workflows. Building on a niche framework like TypeSafe Jev also caps contributor growth and long-term maintenance.",
+          "title": "A staged code-review workflow and local dashboard built with TypeSafe Jev"
+        }
+      }
+    }
+  ]
+}
