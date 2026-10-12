@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-10-11",
+  "issueDate": "2026-10-12",
   "updateStatus": "complete",
-  "contentFingerprint": "c64c653c417c325386e3a0af1a8a2ec2a1e26f01d9cb43748fc800b7e7a73eac",
+  "contentFingerprint": "8844008c99c9a8377dd48d424fe52ae23353cffb9a5aec17d86d743cacdcc9bd",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,253 +10,311 @@
   ],
   "articles": [
     {
-      "id": "news-43fb0945fdaf461dbbca3b102122b650",
+      "id": "news-cb6b912cb4814488b3a3e014301174fc",
       "category": "domestic",
-      "title": "从草场放牧到高原种菊 西藏特色种养产业让群众致富增收",
-      "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-11/10711122.shtml",
-      "publishedAt": "2026-10-11T12:47:26.0000000+00:00",
+      "title": "王毅与俄罗斯总统助理、海事委员会主席帕特鲁舍夫举行会晤",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-12/10712340.shtml",
+      "publishedAt": "2026-10-12T15:14:25.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "在党中央关心关怀和全国人民支援下，西藏从脱贫攻坚到乡村振兴接续发力，620多个边境村全部建成了小康村。",
-      "summary": "这则报道聚焦西藏特色种养产业，呈现从草场放牧到高原种菊等转变如何带动群众致富增收。结合已知信息，西藏从脱贫攻坚接续推进乡村振兴，620多个边境村全部建成小康村，展现了边疆民生改善与安居乐业的成效。",
-      "failureAnalysis": "关键启示是，特色种养产业可以成为西藏乡村振兴和群众增收的可验证路径；具体产业规模与持续成效仍需以权威发布和后续统计为准。",
+      "highlight": "10月12日，中共中央政治局委员、中央外办主任王毅在北京与俄罗斯总统助理、海事委员会主席帕特鲁舍夫举行会晤。",
+      "summary": "这则中新社简讯确认了会晤的时间、地点与双方身份。它可作为跟踪中俄官方公开外交接触的一个具体节点。",
+      "failureAnalysis": "可核验的信息集中在会晤已举行及双方身份，未提供会谈议题、成果或更多细节。阅读时应以官方后续通报或完整报道为准。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "近年来，在党中央关心关怀和全国人民支援下，西藏从脱贫攻坚到乡村振兴接续发力，620多个边境村全部建成了小康村，绘就边疆长治久安、人民安居乐业的壮美画卷。",
+      "sourceExcerpt": "中新社北京10月12日电 10月12日，中共中央政治局委员、中央外办主任王毅在北京与俄罗斯总统助理、海事委员会主席帕特鲁舍夫举行会晤。",
       "translations": {
         "zh": {
-          "title": "从草场放牧到高原种菊 西藏特色种养产业让群众致富增收",
-          "highlight": "在党中央关心关怀和全国人民支援下，西藏从脱贫攻坚到乡村振兴接续发力，620多个边境村全部建成了小康村。",
-          "summary": "这则报道聚焦西藏特色种养产业，呈现从草场放牧到高原种菊等转变如何带动群众致富增收。结合已知信息，西藏从脱贫攻坚接续推进乡村振兴，620多个边境村全部建成小康村，展现了边疆民生改善与安居乐业的成效。",
-          "failureAnalysis": "关键启示是，特色种养产业可以成为西藏乡村振兴和群众增收的可验证路径；具体产业规模与持续成效仍需以权威发布和后续统计为准。"
+          "title": "王毅与俄罗斯总统助理、海事委员会主席帕特鲁舍夫举行会晤",
+          "highlight": "10月12日，中共中央政治局委员、中央外办主任王毅在北京与俄罗斯总统助理、海事委员会主席帕特鲁舍夫举行会晤。",
+          "summary": "这则中新社简讯确认了会晤的时间、地点与双方身份。它可作为跟踪中俄官方公开外交接触的一个具体节点。",
+          "failureAnalysis": "可核验的信息集中在会晤已举行及双方身份，未提供会谈议题、成果或更多细节。阅读时应以官方后续通报或完整报道为准。"
         },
         "en": {
-          "highlight": "Under the Party Central Committee’s care and nationwide support, Tibet has moved from poverty alleviation to rural revitalization, and all 620-plus border villages have become moderately prosperous villages.",
-          "summary": "This report focuses on Tibet’s specialty farming and breeding industries, showing how a shift from grazing to plateau chrysanthemum cultivation helps local people increase their incomes. Based on the known information, Tibet has continued from poverty alleviation into rural revitalization, and all 620-plus border villages have been built into moderately prosperous villages, reflecting improved livelihoods and stability in the border areas.",
-          "failureAnalysis": "The key takeaway is that specialty farming and breeding can be a verifiable path for rural revitalization and income growth in Tibet; the scale and long-term effects still need to be checked against authoritative releases and follow-up statistics.",
-          "title": "From Grazing to Plateau Chrysanthemum Farming: Tibet’s Specialty Agriculture Boosts Incomes"
+          "highlight": "On October 12, Wang Yi met in Beijing with Russian presidential aide and Maritime Board Chairman Patrushev, according to China News Service.",
+          "summary": "This brief China News Service report says Wang Yi met with Russian presidential aide and Maritime Board Chairman Patrushev in Beijing on October 12. It is worth reading as a concrete official signal of China-Russia high-level contacts, though the known excerpt gives no agenda or outcomes.",
+          "failureAnalysis": "The verifiable facts are the meeting, its date and place, and the two officials’ identities. Details on topics or results are not included in the provided excerpt.",
+          "title": "Wang Yi Meets with Russian Presidential Aide and Maritime Board Chairman Patrushev"
         }
       }
     },
     {
-      "id": "news-56807aab83a34c58b7a53e570aff66f0",
+      "id": "news-12544d2406a74104b090e733866e2a44",
       "category": "domestic",
-      "title": "“一带一路”地区极端气候事件及影响国际培训班在西安开班",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-11/10711087.shtml",
-      "publishedAt": "2026-10-11T11:55:09.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 3",
-      "highlight": "“一带一路”地区极端气候事件及影响国际培训班在西安开班，核心主题为“极端气候事件重建、预警与影响评估”。",
-      "summary": "中新网报道，10月11日“一带一路”地区极端气候事件及影响国际培训班在陕西西安开班。培训以“极端气候事件重建、预警与影响评估”为核心主题，来自10多个国家的20余名学员参加为期14天的培训。这体现了极端气候研究领域的国际交流与能力建设。",
-      "failureAnalysis": "这不是AI应用项目，因此不做失败复盘；关键看点是极端气候重建、预警与影响评估的国际培训合作如何落地。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "中新网西安10月11日电 (记者 孙自法)记者10月11日从中国科学院地球环境研究所(地环所)获悉，“一带一路”地区极端气候事件及影响国际培训班当天在陕西西安开班，以“极端气候事件重建、预警与影响评估”为核心主题，对来自10多个国家的20余名优秀学员，开展为期14天的培训。",
-      "translations": {
-        "zh": {
-          "title": "“一带一路”地区极端气候事件及影响国际培训班在西安开班",
-          "highlight": "“一带一路”地区极端气候事件及影响国际培训班在西安开班，核心主题为“极端气候事件重建、预警与影响评估”。",
-          "summary": "中新网报道，10月11日“一带一路”地区极端气候事件及影响国际培训班在陕西西安开班。培训以“极端气候事件重建、预警与影响评估”为核心主题，来自10多个国家的20余名学员参加为期14天的培训。这体现了极端气候研究领域的国际交流与能力建设。",
-          "failureAnalysis": "这不是AI应用项目，因此不做失败复盘；关键看点是极端气候重建、预警与影响评估的国际培训合作如何落地。"
-        },
-        "en": {
-          "highlight": "A Belt and Road international training workshop on extreme climate events opened in Xi'an, focused on reconstruction, early warning, and impact assessment.",
-          "summary": "China News Service reports that the workshop opened in Xi'an on October 11, organized around the theme of extreme climate event reconstruction, early warning, and impact assessment. More than 20 participants from over 10 countries will take part in a 14-day training program, highlighting international scientific exchange and capacity building.",
-          "failureAnalysis": "This is not an AI application project, so there is no failure analysis; the key takeaway is the international training and cooperation around extreme climate early warning and impact assessment.",
-          "title": "International Training Workshop on Extreme Climate Events and Impacts in Belt and Road Region Opens in Xi'an"
-        }
-      }
-    },
-    {
-      "id": "news-407d57372f2c4069895730160a99b1d2",
-      "category": "domestic",
-      "title": "七年磨一展 浙江温州泵阀产业“链”全球",
+      "title": "中国调整新能源汽车等部分产品出口退税政策",
       "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-11/10711102.shtml",
-      "publishedAt": "2026-10-11T12:13:26.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-12/10712320.shtml",
+      "publishedAt": "2026-10-12T13:54:54.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 2",
-      "highlight": "不出国门就能直面全球采购商，降低了我们出海拓市的成本与风险。",
-      "summary": "中新网报道，浙江温州举办浙江国际阀门产业链展览会，已持续七年，让本地泵阀及管业企业不出国门即可对接全球采购商。以浙江志达管业为例，其出口业务占比约四成，在展会上与中亚客商实现对接。这体现了产业集群通过专业展会降低出海成本与风险、链接全球市场的路径。",
-      "failureAnalysis": "关键启示：本地产业展会能把全球买家集中到门口，降低中小企业出海成本；其可持续性取决于能否持续吸引真实采购商并转化为订单。",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "中国财政部、国家税务总局12日宣布，将调整部分产品出口退税政策，涉及新能源汽车、电子烟设备装置等产品增值税。",
+      "summary": "该消息称，中国财政部、国家税务总局将调整部分产品出口退税政策，涉及新能源汽车、电子烟设备装置等产品的增值税。出口退税影响相关企业的出口成本、报价与现金流，因此这一政策变化值得关注。已知信息未披露具体退税率、生效时间和完整适用范围。",
+      "failureAnalysis": "出口退税调整通常直接影响相关产品在国际市场的价格竞争力和企业现金流。后续关键是关注财政部、税务总局公布的具体退税率、生效时间与适用范围。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网温州10月11日电(蓝伊旎 高楼)“不出国门就能直面全球采购商，降低了我们出海拓市的成本与风险。”浙江志达管业有限公司董事长王忠华感触颇深。这家出口业务占比约四成的企业，在浙江国际阀门产业链展览会上与不少中亚客商实现了对接。",
+      "sourceExcerpt": "中新社北京10月12日电 (记者 赵建华)中国财政部、国家税务总局12日宣布，将调整部分产品出口退税政策，涉及新能源汽车、电子烟设备装置等产品增值税。",
       "translations": {
         "zh": {
-          "title": "七年磨一展：浙江温州泵阀产业“链”全球",
-          "highlight": "不出国门就能直面全球采购商，降低了我们出海拓市的成本与风险。",
-          "summary": "中新网报道，浙江温州举办浙江国际阀门产业链展览会，已持续七年，让本地泵阀及管业企业不出国门即可对接全球采购商。以浙江志达管业为例，其出口业务占比约四成，在展会上与中亚客商实现对接。这体现了产业集群通过专业展会降低出海成本与风险、链接全球市场的路径。",
-          "failureAnalysis": "关键启示：本地产业展会能把全球买家集中到门口，降低中小企业出海成本；其可持续性取决于能否持续吸引真实采购商并转化为订单。"
+          "title": "中国调整新能源汽车等部分产品出口退税政策",
+          "highlight": "中国财政部、国家税务总局12日宣布，将调整部分产品出口退税政策，涉及新能源汽车、电子烟设备装置等产品增值税。",
+          "summary": "该消息称，中国财政部、国家税务总局将调整部分产品出口退税政策，涉及新能源汽车、电子烟设备装置等产品的增值税。出口退税影响相关企业的出口成本、报价与现金流，因此这一政策变化值得关注。已知信息未披露具体退税率、生效时间和完整适用范围。",
+          "failureAnalysis": "出口退税调整通常直接影响相关产品在国际市场的价格竞争力和企业现金流。后续关键是关注财政部、税务总局公布的具体退税率、生效时间与适用范围。"
         },
         "en": {
-          "highlight": "Not going abroad, we can meet global buyers directly, cutting the cost and risk of expanding overseas.",
-          "summary": "China News Service reports that Wenzhou, Zhejiang, hosted the Zhejiang International Valve Industry Chain Exhibition, now in its seventh year, allowing local pump, valve, and pipe firms to connect with global buyers without leaving China. Zhejiang Zhida Pipe Industry, whose exports account for about 40% of business, met Central Asian buyers at the event. It shows how industrial clusters use specialized exhibitions to lower the threshold and risk of going global.",
-          "failureAnalysis": "Key takeaway: a local industry exhibition can bring global buyers to companies' doorstep and reduce the cost of going overseas; its sustainability depends on attracting real buyers and turning contacts into orders.",
-          "title": "Seven Years in the Making: Wenzhou Pump and Valve Industry Links Global Markets"
+          "highlight": "China will adjust export tax rebates for certain products, including new energy vehicles and e-cigarette devices, the Ministry of Finance and State Taxation Administration said on Oct. 12.",
+          "summary": "The Ministry of Finance and the State Taxation Administration announced that China will adjust export tax rebates for certain products, including value-added tax treatment for new energy vehicles and e-cigarette devices. Export tax rebates affect exporters' costs, pricing, and cash flow, so the change is worth watching. The known information does not specify the new rebate rates, effective date, or full product scope.",
+          "failureAnalysis": "A change in export tax rebates can directly affect the international price competitiveness and cash flow of affected exporters. The key is to watch for the specific rebate rates, effective date, and scope to be released by the Ministry of Finance and the State Taxation Administration.",
+          "title": "China Adjusts Export Tax Rebate Policy for New Energy Vehicles and Other Products"
         }
       }
     },
     {
-      "id": "news-521a9f04d4c64365a05dcc708df03f40",
+      "id": "news-818906b3098e4fba9c9ba3fc4a516d2c",
+      "category": "domestic",
+      "title": "国际货币基金组织和世界银行集团2026年年会在曼谷开幕",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-12/10712311.shtml",
+      "publishedAt": "2026-10-12T13:44:00.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "国际货币基金组织和世界银行集团2026年年会在曼谷开幕，1.5万余名代表将围绕全球经济政策协调、金融稳定和人工智能等议题交流。",
+      "summary": "文章报道，国际货币基金组织和世界银行集团2026年年会在曼谷开幕，来自191个国家和地区的1.5万余名代表参会。会议议题包括全球经济政策协调、国际发展合作、金融稳定以及人工智能，显示主要国际经济机构正把AI纳入宏观与发展议程。对非技术管理者而言，这有助于理解全球经济治理的最新关注点及其对企业和政策环境的潜在影响。",
+      "failureAnalysis": "可核实的信息核心是会议规模与议题范围，未披露具体政策结论或对中国市场的直接措施。阅读价值在于把握国际机构议程风向，而非据此推断短期市场结果。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社曼谷10月12日电 (王茜 李映民)国际货币基金组织(IMF)和世界银行集团2026年年会12日在曼谷开幕。来自191个国家和地区的1.5万余名代表将围绕全球经济政策协调、国际发展合作、金融稳定以及人工智能等议题展开交流。",
+      "translations": {
+        "zh": {
+          "title": "国际货币基金组织和世界银行集团2026年年会在曼谷开幕",
+          "highlight": "国际货币基金组织和世界银行集团2026年年会在曼谷开幕，1.5万余名代表将围绕全球经济政策协调、金融稳定和人工智能等议题交流。",
+          "summary": "文章报道，国际货币基金组织和世界银行集团2026年年会在曼谷开幕，来自191个国家和地区的1.5万余名代表参会。会议议题包括全球经济政策协调、国际发展合作、金融稳定以及人工智能，显示主要国际经济机构正把AI纳入宏观与发展议程。对非技术管理者而言，这有助于理解全球经济治理的最新关注点及其对企业和政策环境的潜在影响。",
+          "failureAnalysis": "可核实的信息核心是会议规模与议题范围，未披露具体政策结论或对中国市场的直接措施。阅读价值在于把握国际机构议程风向，而非据此推断短期市场结果。"
+        },
+        "en": {
+          "highlight": "The IMF and World Bank Group 2026 annual meetings opened in Bangkok, with over 15,000 representatives from 191 countries and regions to discuss global economic policy coordination, financial stability and AI.",
+          "summary": "The article reports that the IMF and World Bank Group 2026 annual meetings opened in Bangkok, drawing more than 15,000 representatives from 191 countries and regions. The agenda includes global economic policy coordination, international development cooperation, financial stability and artificial intelligence, showing that major international economic institutions are putting AI on the macro and development agenda. For non-technical leaders, it is a useful signal of what global economic governance is prioritizing.",
+          "failureAnalysis": "The verifiable takeaway is the scale and agenda of the meetings; no specific policy outcomes or direct measures for China's market are disclosed in the known content. Read it to track the direction of international institutional agendas, not to infer short-term market results.",
+          "title": "IMF and World Bank Group 2026 Annual Meetings Open in Bangkok"
+        }
+      }
+    },
+    {
+      "id": "news-22840906bd924b5aab96c3cc9102bab2",
       "category": "international",
-      "title": "U.S. and Russia tout diesel deal to ease sanctions and reopen fuel flows",
-      "source": "NPR World",
-      "url": "https://www.npr.org/2026/10/10/nx-s1-5996938/u-s-and-russia-tout-diesel-deal-to-ease-sanctions-and-reopen-fuel-flows",
-      "publishedAt": "2026-10-10T11:40:53.0000000+00:00",
+      "title": "Bolivia investigates ex-president Evo Morales over alleged ties to 2009 killings",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/12/bolivia-investigates-ex-president-evo-morales-2009-killings",
+      "publishedAt": "2026-10-12T21:40:51.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "莫斯科与华盛顿高调宣传一项柴油协议，意在放宽制裁并恢复燃料流通，但细节寥寥，价格影响与美国政策仍存疑问。",
-      "summary": "美国与俄罗斯共同宣扬一项柴油协议，目标是放宽制裁、重新打通燃料流动渠道。但公开细节很少，柴油价格会如何变化、美国政策是否真正转向都还不明确，乌克兰及盟友对此表示愤怒。值得一读，是因为它可能牵动全球能源价格与对俄制裁的实际执行力度。",
-      "failureAnalysis": "目前信息只停留在“双方高调宣布”这一步，价格影响与政策细节均未落地，因此不宜把这条消息直接理解为制裁格局已被实质改变，应等具体条款与执行情况。",
+      "highlight": "玻利维亚总检察长宣布对左翼前总统埃沃·莫拉莱斯展开调查，指其涉嫌参与2009年对欧洲公民的谋杀与酷刑。",
+      "summary": "报道称，玻利维亚总检察长宣布调查左翼前总统埃沃·莫拉莱斯，指其涉嫌与2009年圣克鲁斯酒店突袭事件有关。当时警方行动造成三名欧洲人死亡，另有两人据称遭酷刑；死者包括一名玻利维亚-克罗地亚人、一名爱尔兰人和一名匈牙利-罗马尼亚人。该案牵涉前总统，后续司法与政治影响值得关注。",
+      "failureAnalysis": "关键看点：这是一项针对前总统的刑事调查，重点是厘清2009年致死与酷刑事件的责任归属，目前并非定罪结论。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Moscow and Washington tout a diesel deal to ease sanctions and reopen fuel flows, but few details leave questions on price impacts and U.S. policy, sparking anger from Ukraine and allies.",
+      "sourceExcerpt": "Leftist former leader accused of involvement in shooting of three Europeans in Santa Cruz and torture of two others Bolivia’s attorney general has announced an investigation into leftist former president Evo Morales, alleging his involvement in the murder and torture of European citizens in 2009. Seventeen years ago, police raided a hotel in the city of Santa Cruz, shooting dead Eduardo Rózsa Flores, a Bolivian-Croatian, Michael Dwyer, an Irishman, and Árpád Magyarosi, a Hungarian-Romanian.",
       "translations": {
         "zh": {
-          "title": "美俄宣扬柴油协议以放宽制裁并恢复燃料流通",
-          "highlight": "莫斯科与华盛顿高调宣传一项柴油协议，意在放宽制裁并恢复燃料流通，但细节寥寥，价格影响与美国政策仍存疑问。",
-          "summary": "美国与俄罗斯共同宣扬一项柴油协议，目标是放宽制裁、重新打通燃料流动渠道。但公开细节很少，柴油价格会如何变化、美国政策是否真正转向都还不明确，乌克兰及盟友对此表示愤怒。值得一读，是因为它可能牵动全球能源价格与对俄制裁的实际执行力度。",
-          "failureAnalysis": "目前信息只停留在“双方高调宣布”这一步，价格影响与政策细节均未落地，因此不宜把这条消息直接理解为制裁格局已被实质改变，应等具体条款与执行情况。"
+          "title": "玻利维亚调查前总统莫拉莱斯涉2009年枪杀与酷刑指控",
+          "highlight": "玻利维亚总检察长宣布对左翼前总统埃沃·莫拉莱斯展开调查，指其涉嫌参与2009年对欧洲公民的谋杀与酷刑。",
+          "summary": "报道称，玻利维亚总检察长宣布调查左翼前总统埃沃·莫拉莱斯，指其涉嫌与2009年圣克鲁斯酒店突袭事件有关。当时警方行动造成三名欧洲人死亡，另有两人据称遭酷刑；死者包括一名玻利维亚-克罗地亚人、一名爱尔兰人和一名匈牙利-罗马尼亚人。该案牵涉前总统，后续司法与政治影响值得关注。",
+          "failureAnalysis": "关键看点：这是一项针对前总统的刑事调查，重点是厘清2009年致死与酷刑事件的责任归属，目前并非定罪结论。"
         },
         "en": {
-          "highlight": "Moscow and Washington tout a diesel deal to ease sanctions and reopen fuel flows, but few details leave questions on price impacts and U.S. policy, sparking anger from Ukraine and allies.",
-          "summary": "The United States and Russia are jointly promoting a diesel deal aimed at easing sanctions and reopening fuel flows. Yet few details are public, leaving unclear how diesel prices will move and whether U.S. policy has really shifted, while Ukraine and its allies are angry. It is worth reading because it could affect global energy prices and how Russian sanctions are actually enforced.",
-          "failureAnalysis": "The information so far stops at a joint announcement; price effects and policy details are not settled, so this should not be read as sanctions being substantively changed until specific terms and enforcement emerge.",
-          "title": "U.S. and Russia Tout Diesel Deal to Ease Sanctions and Reopen Fuel Flows"
+          "highlight": "Bolivia’s attorney general has announced an investigation into leftist former president Evo Morales, alleging his involvement in the murder and torture of European citizens in 2009.",
+          "summary": "The report says Bolivia’s attorney general has announced an investigation into leftist former president Evo Morales over alleged links to a 2009 hotel raid in Santa Cruz. The police operation left three Europeans dead—a Bolivian-Croatian, an Irishman, and a Hungarian-Romanian—and two others were allegedly tortured. The case involves a former president and is worth watching for its legal and political implications.",
+          "failureAnalysis": "Key takeaway: this is a criminal investigation into a former president over 2009 deaths and torture, focused on accountability rather than a conviction; its political fallout is worth watching.",
+          "title": "Bolivia investigates ex-president Evo Morales over alleged ties to 2009 killings"
         }
       }
     },
     {
-      "id": "news-94a24d506da2472c9b59f5946e22f58f",
+      "id": "news-15ac6c5585da4b83b8004649f7e87d3c",
       "category": "international",
-      "title": "Photos: What a year of ceasefire in Gaza looks like",
+      "title": "Trump announced a partial Russia-Ukraine ceasefire. Did either country know about it?",
       "source": "NPR World",
-      "url": "https://www.npr.org/sections/the-picture-show/2026/10/10/nx-s1-5991619/gaza-ceasefire-israel-life",
-      "publishedAt": "2026-10-10T09:00:00.0000000+00:00",
+      "url": "https://www.npr.org/2026/10/12/nx-s1-5998808/trump-announced-a-partial-russia-ukraine-ceasefire-did-either-country-know-about-it",
+      "publishedAt": "2026-10-12T21:43:48.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "International class: politics",
-      "highlight": "哈马斯释放剩余以色列人质、特朗普承诺结束战争已一年，但巴勒斯坦人称过去12个月只是名义上的停火。",
-      "summary": "NPR 的图片报道以加沙停火一周年为切入点，呈现当地生活在停火名义下的真实状态。报道提到，哈马斯释放剩余以色列人质、特朗普承诺结束战争已有一年，但巴勒斯坦人认为这12个月只是名义上的停火。想理解停火协议与实际生活之间的落差，这组图片提供了直观视角。",
-      "failureAnalysis": "关键看点是：停火是否真正改变平民生活，不能只看协议宣布，还要看当地人的日常处境与安全感受。",
+      "selectionReason": "International class: finance",
+      "highlight": "乌克兰领导人表示，俄罗斯仍在继续攻击乌克兰，并无视特朗普总统宣布的“能源停火”。",
+      "summary": "这条国际新闻关注特朗普宣布的俄乌部分停火，尤其是其中的“能源停火”。已知信息是，乌克兰领导人称俄罗斯继续攻击乌克兰，并无视该停火声明。值得关注的是，停火宣布与实际战场行动之间似乎存在明显落差。",
+      "failureAnalysis": "关键点：单方面宣布停火不等于冲突方真正知情或遵守，需以战场行动与双方确认来判断。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "It has been one year since Hamas released the remaining Israeli hostages and President Trump promised an end to the war, but Palestinians say the past 12 months have been a ceasefire in name only.",
+      "sourceExcerpt": "Ukraine's leader says Russia is continuing to attack Ukraine and is ignoring an \"energy ceasefire\" declared by President Trump.",
       "translations": {
         "zh": {
-          "title": "图片：加沙停火一年是什么样子",
-          "highlight": "哈马斯释放剩余以色列人质、特朗普承诺结束战争已一年，但巴勒斯坦人称过去12个月只是名义上的停火。",
-          "summary": "NPR 的图片报道以加沙停火一周年为切入点，呈现当地生活在停火名义下的真实状态。报道提到，哈马斯释放剩余以色列人质、特朗普承诺结束战争已有一年，但巴勒斯坦人认为这12个月只是名义上的停火。想理解停火协议与实际生活之间的落差，这组图片提供了直观视角。",
-          "failureAnalysis": "关键看点是：停火是否真正改变平民生活，不能只看协议宣布，还要看当地人的日常处境与安全感受。"
+          "title": "特朗普宣布俄乌部分停火，但两国是否知情？",
+          "highlight": "乌克兰领导人表示，俄罗斯仍在继续攻击乌克兰，并无视特朗普总统宣布的“能源停火”。",
+          "summary": "这条国际新闻关注特朗普宣布的俄乌部分停火，尤其是其中的“能源停火”。已知信息是，乌克兰领导人称俄罗斯继续攻击乌克兰，并无视该停火声明。值得关注的是，停火宣布与实际战场行动之间似乎存在明显落差。",
+          "failureAnalysis": "关键点：单方面宣布停火不等于冲突方真正知情或遵守，需以战场行动与双方确认来判断。"
         },
         "en": {
-          "highlight": "A year after Hamas released the remaining Israeli hostages and Trump promised to end the war, Palestinians say it is a ceasefire in name only.",
-          "summary": "NPR's photo essay marks one year since the ceasefire began in Gaza, showing what life looks like on the ground. It notes that although Hamas released the remaining Israeli hostages and President Trump promised an end to the war, Palestinians describe the past 12 months as a ceasefire in name only. It is worth reading for the gap between a ceasefire announcement and lived reality.",
-          "failureAnalysis": "The key takeaway: a ceasefire in name may not mean real safety or change for civilians; look at daily life and security, not just official declarations.",
-          "title": "Photos: What a Year of Ceasefire in Gaza Looks Like"
+          "highlight": "Ukraine's leader says Russia is continuing to attack Ukraine and is ignoring an 'energy ceasefire' declared by President Trump.",
+          "summary": "This international news item focuses on Trump's announced partial Russia-Ukraine ceasefire, particularly an 'energy ceasefire.' The known details are that Ukraine's leader says Russia is continuing attacks and ignoring the declaration. It is worth reading because it highlights the gap between a ceasefire announcement and actual battlefield behavior.",
+          "failureAnalysis": "Key takeaway: a unilateral ceasefire announcement does not mean the parties know about it or will comply; battlefield actions and confirmation from both sides matter.",
+          "title": "Trump Announced a Partial Russia-Ukraine Ceasefire. Did Either Country Know About It?"
         }
       }
     },
     {
-      "id": "life-4e780e12cde340699a41ab455f6396d1",
+      "id": "life-14c1e49b5ac7438d881aaad63f55b045",
       "category": "international",
-      "title": "写给「跑两步就喘」的你：不能忽略的跑后拉伸与恢复",
-      "source": "少数派 sspai",
-      "url": "https://sspai.com/post/115568",
-      "publishedAt": "2026-10-11T07:00:49.0000000+00:00",
+      "title": "I Love My Hisense CanvasTV, and It's up to 50% Off Right Now",
+      "source": "Lifehacker",
+      "url": "https://lifehacker.com/tech/hisense-canvastv-deal-october-2026?utm_medium=RSS",
+      "publishedAt": "2026-10-12T19:30:00.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "想要舒适跑步，除了跑前和跑步中的小技巧，跑后如何正确拉伸、如何更好地帮助身体恢复同样不能忽略。",
-      "summary": "这是少数派跑步系列文章的后续，前两篇讲跑前热身和跑步中的技巧，这一篇转向跑后如何正确拉伸、怎样帮助身体恢复。对刚开始跑步、容易疲劳的人来说，跑后恢复常被忽略，却直接影响跑步体验和持续意愿。",
-      "failureAnalysis": "关键 takeaway 是：不要只关注跑前热身和跑中姿势，跑后拉伸与恢复同样应纳入日常跑步流程。",
+      "highlight": "它是三星“The Frame”的便宜替代品，而且里面的艺术画作是免费的。",
+      "summary": "这是一篇关于海信CanvasTV的消费推荐，把它定位为三星The Frame的低价替代方案，并强调其艺术画作内容免费。文章同时提到该产品目前最高有五折优惠。对非技术读者来说，这是一个观察“以更低成本满足同类需求”的消费电子案例。",
+      "failureAnalysis": "关键点：同类需求往往能用更便宜的产品满足，判断价值时要看核心体验是否可比，而不只看品牌和价格标签。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "前面两篇文章我们介绍了想要舒适跑步，在跑前和跑步中的一些小技巧，今天和大家聊聊跑后如何正确的拉伸，如何更好地帮助身体恢复。关联阅读：跑前精准热身，缓解跑时疼痛调整跑步姿势，舒适开跑正确拉伸多数人跑后会 ...",
+      "sourceExcerpt": "It's a cheaper alternative to Samsung's \"The Frame,\" and the art is free.",
       "translations": {
         "zh": {
-          "title": "写给「跑两步就喘」的你：不能忽略的跑后拉伸与恢复",
-          "highlight": "想要舒适跑步，除了跑前和跑步中的小技巧，跑后如何正确拉伸、如何更好地帮助身体恢复同样不能忽略。",
-          "summary": "这是少数派跑步系列文章的后续，前两篇讲跑前热身和跑步中的技巧，这一篇转向跑后如何正确拉伸、怎样帮助身体恢复。对刚开始跑步、容易疲劳的人来说，跑后恢复常被忽略，却直接影响跑步体验和持续意愿。",
-          "failureAnalysis": "关键 takeaway 是：不要只关注跑前热身和跑中姿势，跑后拉伸与恢复同样应纳入日常跑步流程。"
+          "title": "我喜欢我的海信CanvasTV，如今最高降价50%",
+          "highlight": "它是三星“The Frame”的便宜替代品，而且里面的艺术画作是免费的。",
+          "summary": "这是一篇关于海信CanvasTV的消费推荐，把它定位为三星The Frame的低价替代方案，并强调其艺术画作内容免费。文章同时提到该产品目前最高有五折优惠。对非技术读者来说，这是一个观察“以更低成本满足同类需求”的消费电子案例。",
+          "failureAnalysis": "关键点：同类需求往往能用更便宜的产品满足，判断价值时要看核心体验是否可比，而不只看品牌和价格标签。"
         },
         "en": {
-          "highlight": "For comfortable running, beyond pre-run and mid-run tips, correct post-run stretching and better recovery also matter.",
-          "summary": "This is a follow-up in a running series: previous pieces covered pre-run warm-up and mid-run technique, while this one addresses post-run stretching and recovery. For new runners who tire quickly, recovery is an easily overlooked part of making running more comfortable.",
-          "failureAnalysis": "Do not focus only on pre-run warm-up and mid-run form; post-run stretching and recovery deserve a place in your running routine.",
-          "title": "For Those Who Get Winded After Two Steps: Don’t Neglect Post-Run Stretching and Recovery"
+          "highlight": "It's a cheaper alternative to Samsung's \"The Frame,\" and the art is free.",
+          "summary": "This is a consumer recommendation for the Hisense CanvasTV, positioning it as a lower-cost alternative to Samsung's The Frame and highlighting that its art content is free. It also notes that the product is currently discounted by up to 50%. For non-technical readers, it is a simple example of meeting a similar need at a lower cost.",
+          "failureAnalysis": "Key takeaway: similar needs can often be met by cheaper products, so judge value by whether the core experience is comparable rather than by brand and price tag alone.",
+          "title": "I Love My Hisense CanvasTV, and It's Up to 50% Off Right Now"
         }
       }
     },
     {
-      "id": "life-74a4b84e7bb1490cb703529d839db49d",
+      "id": "life-b5715c86a9d14a658aebc376a0d572d2",
       "category": "international",
-      "title": "Elizabeth Gilbert on Love, Loss, and How to Move Through Grief as Grief Moves Through You",
+      "title": "James Baldwin on How Love (Finally) Finds You",
       "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/10/10/elizabeth-gilbert-ted-podcast-love-loss/",
-      "publishedAt": "2026-10-11T01:04:35.0000000+00:00",
+      "url": "https://www.themarginalian.org/2026/10/11/baldwin-love/",
+      "publishedAt": "2026-10-11T20:12:15.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "悲伤是一种无法被控制或预测的能量，它按自己的时间表来去，不服从你的计划与愿望。",
-      "summary": "这是《The Marginalian》对伊丽莎白·吉尔伯特在 TED 播客中谈爱与失去的一次整理。她认为悲伤不听人指挥，来去自有节奏，这一点与爱极为相似，因此与其试图管理悲伤，不如允许它流经自己。对于把「情绪稳定」当作能力标准的职场人，这个视角值得一读，它提供了一个更省力的应对框架。",
-      "failureAnalysis": "关键启发：面对悲伤这类无法被计划、无法被优化的力量，承认自己无法控制，往往比强行管理更有效；这一点与爱同理。",
+      "highlight": "我们的语言背叛了我们的自我背叛：我们谈论寻找爱，仿佛它是未发现的第八大洲。",
+      "summary": "文章以詹姆斯·鲍德温为引，讨论‘寻找爱’这一说法如何暴露我们的自我背叛，并指出其中同时有无助与傲慢。它值得读，因为它提醒我们：对爱的谈论方式，可能正塑造着我们对爱的理解。",
+      "failureAnalysis": "关键启示：把爱说成‘寻找’，本身混合了无助与傲慢，也可能掩盖我们真正缺失的东西；与其只盯着寻找，不如先审视自己的语言与自欺。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "\"Grief is a force of energy that cannot be controlled or predicted. It comes and goes on its own schedule. Grief does not obey your plans, or your wishes.",
+      "sourceExcerpt": "Our language betrays our self-betrayals: We speak of finding love, as if it were an undiscovered eighth continent or a habitable world in another solar system, as if it got lost like the Little Red Riding Hood or the names of the women who painted the caves. Like the paradoxical notion of finding yourself, the notion of finding love pulsates with equal parts helplessness and hubris — a rueful recognition that something is missing from your life and a belief that it falls on you to do the looking, that if you only look hard enough and long enough, you… read article",
       "translations": {
         "zh": {
-          "title": "伊丽莎白·吉尔伯特谈爱与失去：让悲伤穿过你，而非你去穿过悲伤",
-          "highlight": "悲伤是一种无法被控制或预测的能量，它按自己的时间表来去，不服从你的计划与愿望。",
-          "summary": "这是《The Marginalian》对伊丽莎白·吉尔伯特在 TED 播客中谈爱与失去的一次整理。她认为悲伤不听人指挥，来去自有节奏，这一点与爱极为相似，因此与其试图管理悲伤，不如允许它流经自己。对于把「情绪稳定」当作能力标准的职场人，这个视角值得一读，它提供了一个更省力的应对框架。",
-          "failureAnalysis": "关键启发：面对悲伤这类无法被计划、无法被优化的力量，承认自己无法控制，往往比强行管理更有效；这一点与爱同理。"
+          "title": "詹姆斯·鲍德温：爱如何最终找到你",
+          "highlight": "我们的语言背叛了我们的自我背叛：我们谈论寻找爱，仿佛它是未发现的第八大洲。",
+          "summary": "文章以詹姆斯·鲍德温为引，讨论‘寻找爱’这一说法如何暴露我们的自我背叛，并指出其中同时有无助与傲慢。它值得读，因为它提醒我们：对爱的谈论方式，可能正塑造着我们对爱的理解。",
+          "failureAnalysis": "关键启示：把爱说成‘寻找’，本身混合了无助与傲慢，也可能掩盖我们真正缺失的东西；与其只盯着寻找，不如先审视自己的语言与自欺。"
         },
         "en": {
-          "highlight": "Grief is a force of energy that cannot be controlled or predicted. It comes and goes on its own schedule.",
-          "summary": "This is The Marginalian's piece on Elizabeth Gilbert's TED podcast conversation about love and loss. Her point is that grief does not obey plans or wishes and arrives and leaves on its own timetable — much like love — so the better move is to let it pass through you rather than try to manage it. It is worth reading for anyone who treats emotional steadiness as a professional competence, because it offers a less exhausting way to respond.",
-          "failureAnalysis": "Key takeaway: with forces like grief that cannot be planned or optimized, admitting you cannot control them is often more effective than trying to manage them — the same is true of love.",
-          "title": "Elizabeth Gilbert on Love, Loss, and Letting Grief Move Through You"
+          "highlight": "Our language betrays our self-betrayals: We speak of finding love, as if it were an undiscovered eighth continent.",
+          "summary": "Drawing on James Baldwin, the article explores how the phrase 'finding love' betrays our self-deceptions and mixes helplessness with hubris. It is worth reading because it asks us to reconsider how the way we talk about love shapes what we think we are missing.",
+          "failureAnalysis": "The key takeaway is that 'finding love' can be a misleading frame, mixing helplessness and hubris; it may reveal more about our self-deceptions than about love itself.",
+          "title": "James Baldwin on How Love (Finally) Finds You"
         }
       }
     },
     {
-      "id": "ai-feed-a0d3010229ec49a9a355b348b261469a",
-      "category": "ai",
-      "title": "Dwarf Fortress uses version control now",
-      "source": "Simon Willison",
-      "url": "https://simonwillison.net/2026/Oct/11/dwarf-fortress/",
-      "abstractUrl": null,
-      "publishedAt": "2026-10-11T00:52:37.0000000Z",
-      "scoreLabel": "Curated engineering feed",
-      "aiArticleType": "concept_explanation",
-      "evidenceAnchors": [],
-      "evidenceLabel": "No clear evidence",
-      "hasPrimaryAnchor": false,
-      "requiresRiskAnalysis": false,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
-      "summary": "文章回顾了《矮人要塞》开发者 Tarn Adams 多年来拒绝使用版本控制的立场，从 2013 年、2016 年一路引到 2023 年的说法，那时他已经在用版本控制相关的东西了。作者借此感叹，一个复杂度极高、按理最该受益于版本控制的代码库，竟然在如此长的时间里靠人力硬撑。值得一读，因为它把一个抽象的工程常识，变成了一个有具体年代与人名的真实案例。",
-      "failureAnalysis": "关键提醒是：版本控制的价值是长期和间接的，短期内它只带来摩擦、看不出好处，正因如此个人直觉很容易低估它。",
-      "aiSelectionScore": 100,
-      "highlight": "我不使用版本控制——我不喜欢代码被提交进一个黑箱、却没有任何即时好处的感觉。",
+      "id": "paper-2610.13763",
+      "category": "paper",
+      "title": "Neurons++: A Unified Visual-Stream Framework for Image and Video Reconstruction from fMRI with Neural-to-Visual Interpretability",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2610.13763v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.13763",
+      "publishedAt": "2026-10-09T15:49:07.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "现有的脑活动（fMRI）解码方法有两个毛病：一是图像重建和视频重建被当成两件互不相干的事，图像模型的“空间与物体语义”经验帮不到视频；二是生成出来的画面虽然好看，但可能主要是生成模型的想象，并不真正对应大脑活动，而且中间过程难以追踪。",
+        "method": "作者把图像看作“单帧视觉流”、视频看作“多帧视觉流”，统一成一个问题来建模。先用大量“图像—fMRI”数据做多被试预训练，得到一个稳定的空间语义起点，再针对每个被试分别微调图像和视频任务。解码过程用一个“串行视觉解耦器”，按顺序把脑信号转成物体结构、物体语义、场景语言描述和粗略的时间变化，再交给生成模型出图或出视频。",
+        "difference": "之前的方法要么只做视频、要么只做图像，两类任务各用一套设计；而且脑信号里的低层结构、高层语义、时间动态往往是被隐式对齐或并行拼接的独立条件，看不出哪一层脑信息贡献了什么。NEURONS++把图像和视频放在同一个“视觉流”框架下，并把并行的任务条件改成串行、有先后层次的解码链，让“神经—视觉”的对应关系可追溯。",
+        "innovation": "三点：一是提出“视觉流”这一统一设定，把静态图像和动态视频重建串起来；二是提出受脑皮层启发的串行视觉解耦器，把空间、语义、语言、时间线索组织成层层递进的通路；三是做了delta-fMRI扰动、脑区（ROI）屏蔽和ROI放大三类实验，用证据说明解码内容是“方向可控的”、对刺激相关的皮层活动敏感、并且能通过干预特定脑区来调节语义结果。",
+        "implementation": "实现分三步走。第一步是编码：用脑编码模块把体素（voxel，fMRI里最小测量单元）响应映射到与CLIP视觉/文本模型对齐的向量空间。第二步是串行解耦：依次产出关键物体分割、概念识别、场景描述、模糊视频等线索，构成从空间到语义到语言再到时间的逐级表示。第三步是统一推理：用这些线索驱动扩散模型（diffusion model，一类通过逐步去噪生成图像的生成模型），单帧出图像、多帧出视频（实现中一个片段默认6帧）。训练上先做多被试图像-fMRI预训练，再做被试特定微调。",
+        "applications": "可用于脑机接口与认知神经科学研究：帮助理解人脑如何表征视觉内容；面向严重运动障碍患者的沟通辅助（用想象画面重建内容）；也可作为检验生成模型是否“忠于脑信号”的可解释性工具，以及脑区功能与视觉语义对应关系的研究手段。",
+        "technicalTerms": [
+          "fMRI：功能性磁共振成像，通过血流含氧变化间接测量大脑活动。",
+          "BOLD信号：fMRI测到的血氧依赖信号，变化慢，所以视频解码的时间分辨率受限。",
+          "视觉流：本文的说法，把图像看作单帧、视频看作多帧，统一成一条时间上的画面序列。",
+          "串行视觉解耦器：把脑信号按顺序拆成空间、语义、语言、时间四类线索的解码模块。",
+          "扩散模型：通过不断去噪逐步生成图像或视频的生成模型。",
+          "CLIP：能把图像和文字映射到同一向量空间的多模态模型，常用来做语义对齐。",
+          "ROI：感兴趣脑区，这里指对重建结果做屏蔽或放大实验的特定皮层区域。",
+          "delta-fMRI扰动：人为改变脑信号后观察重建结果是否按方向变化，用来检验因果性。",
+          "体素：fMRI数据里的最小三维测量单元，类似大脑图像的“像素”。",
+          "NSD：自然场景数据集，是fMRI到图像重建常用的大规模脑成像数据集。"
+        ]
+      },
+      "highlight": "NEURONS++在标准基准上取得了最先进的视频重建效果和有竞争力的图像重建表现。",
+      "summary": "这篇论文提出NEURONS++，把“从脑活动重建图像”和“从脑活动重建视频”统一成同一个“fMRI到视觉流”的问题：单帧就是图像，多帧就是视频。它用一个受大脑皮层结构启发的“串行视觉解耦器”，把脑信号逐级翻译成空间、语义、语言和时间四类线索，再用生成模型还原画面。文章的看点在于，它不仅关心“画得像不像”，还通过扰动脑信号、屏蔽或放大特定脑区来做实验，检验重建结果是否真的“由大脑决定”。",
+      "failureAnalysis": "目前可见信息只有摘要和引言，缺少具体实验数据与对比细节，其“最先进”“有竞争力”的说法无法从现有内容独立验证。此外，该方法仍需针对每个受试者和数据集做单独微调，泛化能力与真实脑机接口场景下的稳定性尚不明确。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "I remember hearing a while ago that Dwarf Fortress didn't use version control. That fact has been lodged in my head, because given its inherent complexity I have trouble imagining a codebase that would benefit from version control more . I went looking and I'm sad to report that the days without version control appear to have ended.",
+      "sourceExcerpt": "NEURONS++: A Unified Visual-Stream Framework for Image and Video Reconstruction from fMRI with Neural-to-Visual Interpretability Haonan Wang, Yuchen Wang, Jingyu Lu, Qixiang Zhang, Lehan Wang, Xuanqi Huang, and Xiaomeng Li Abstract—Decoding visual experience from fMRI is important for understanding human perception and developing brain- computer interfaces. Recent generative decoding methods can reconstruct plausible images and videos, but visual plausibility alone does not ensure that the output is faithfully grounded in brain activity. In this work, we propose NEURONS++, a visual- stream fMRI reconstruction framework for both static image and dynamic video reconstruction.",
       "translations": {
         "zh": {
-          "title": "《矮人要塞》如今也用上了版本控制",
-          "highlight": "我不使用版本控制——我不喜欢代码被提交进一个黑箱、却没有任何即时好处的感觉。",
-          "summary": "文章回顾了《矮人要塞》开发者 Tarn Adams 多年来拒绝使用版本控制的立场，从 2013 年、2016 年一路引到 2023 年的说法，那时他已经在用版本控制相关的东西了。作者借此感叹，一个复杂度极高、按理最该受益于版本控制的代码库，竟然在如此长的时间里靠人力硬撑。值得一读，因为它把一个抽象的工程常识，变成了一个有具体年代与人名的真实案例。",
-          "failureAnalysis": "关键提醒是：版本控制的价值是长期和间接的，短期内它只带来摩擦、看不出好处，正因如此个人直觉很容易低估它。"
+          "title": "Neurons++：统一的视觉流框架，实现从fMRI重建图像与视频，并带来神经到视觉的可解释性",
+          "highlight": "NEURONS++在标准基准上取得了最先进的视频重建效果和有竞争力的图像重建表现。",
+          "summary": "这篇论文提出NEURONS++，把“从脑活动重建图像”和“从脑活动重建视频”统一成同一个“fMRI到视觉流”的问题：单帧就是图像，多帧就是视频。它用一个受大脑皮层结构启发的“串行视觉解耦器”，把脑信号逐级翻译成空间、语义、语言和时间四类线索，再用生成模型还原画面。文章的看点在于，它不仅关心“画得像不像”，还通过扰动脑信号、屏蔽或放大特定脑区来做实验，检验重建结果是否真的“由大脑决定”。",
+          "failureAnalysis": "目前可见信息只有摘要和引言，缺少具体实验数据与对比细节，其“最先进”“有竞争力”的说法无法从现有内容独立验证。此外，该方法仍需针对每个受试者和数据集做单独微调，泛化能力与真实脑机接口场景下的稳定性尚不明确。",
+          "paperCard": {
+            "problem": "现有的脑活动（fMRI）解码方法有两个毛病：一是图像重建和视频重建被当成两件互不相干的事，图像模型的“空间与物体语义”经验帮不到视频；二是生成出来的画面虽然好看，但可能主要是生成模型的想象，并不真正对应大脑活动，而且中间过程难以追踪。",
+            "method": "作者把图像看作“单帧视觉流”、视频看作“多帧视觉流”，统一成一个问题来建模。先用大量“图像—fMRI”数据做多被试预训练，得到一个稳定的空间语义起点，再针对每个被试分别微调图像和视频任务。解码过程用一个“串行视觉解耦器”，按顺序把脑信号转成物体结构、物体语义、场景语言描述和粗略的时间变化，再交给生成模型出图或出视频。",
+            "difference": "之前的方法要么只做视频、要么只做图像，两类任务各用一套设计；而且脑信号里的低层结构、高层语义、时间动态往往是被隐式对齐或并行拼接的独立条件，看不出哪一层脑信息贡献了什么。NEURONS++把图像和视频放在同一个“视觉流”框架下，并把并行的任务条件改成串行、有先后层次的解码链，让“神经—视觉”的对应关系可追溯。",
+            "innovation": "三点：一是提出“视觉流”这一统一设定，把静态图像和动态视频重建串起来；二是提出受脑皮层启发的串行视觉解耦器，把空间、语义、语言、时间线索组织成层层递进的通路；三是做了delta-fMRI扰动、脑区（ROI）屏蔽和ROI放大三类实验，用证据说明解码内容是“方向可控的”、对刺激相关的皮层活动敏感、并且能通过干预特定脑区来调节语义结果。",
+            "implementation": "实现分三步走。第一步是编码：用脑编码模块把体素（voxel，fMRI里最小测量单元）响应映射到与CLIP视觉/文本模型对齐的向量空间。第二步是串行解耦：依次产出关键物体分割、概念识别、场景描述、模糊视频等线索，构成从空间到语义到语言再到时间的逐级表示。第三步是统一推理：用这些线索驱动扩散模型（diffusion model，一类通过逐步去噪生成图像的生成模型），单帧出图像、多帧出视频（实现中一个片段默认6帧）。训练上先做多被试图像-fMRI预训练，再做被试特定微调。",
+            "applications": "可用于脑机接口与认知神经科学研究：帮助理解人脑如何表征视觉内容；面向严重运动障碍患者的沟通辅助（用想象画面重建内容）；也可作为检验生成模型是否“忠于脑信号”的可解释性工具，以及脑区功能与视觉语义对应关系的研究手段。",
+            "technicalTerms": [
+              "fMRI：功能性磁共振成像，通过血流含氧变化间接测量大脑活动。",
+              "BOLD信号：fMRI测到的血氧依赖信号，变化慢，所以视频解码的时间分辨率受限。",
+              "视觉流：本文的说法，把图像看作单帧、视频看作多帧，统一成一条时间上的画面序列。",
+              "串行视觉解耦器：把脑信号按顺序拆成空间、语义、语言、时间四类线索的解码模块。",
+              "扩散模型：通过不断去噪逐步生成图像或视频的生成模型。",
+              "CLIP：能把图像和文字映射到同一向量空间的多模态模型，常用来做语义对齐。",
+              "ROI：感兴趣脑区，这里指对重建结果做屏蔽或放大实验的特定皮层区域。",
+              "delta-fMRI扰动：人为改变脑信号后观察重建结果是否按方向变化，用来检验因果性。",
+              "体素：fMRI数据里的最小三维测量单元，类似大脑图像的“像素”。",
+              "NSD：自然场景数据集，是fMRI到图像重建常用的大规模脑成像数据集。"
+            ]
+          }
         },
         "en": {
-          "highlight": "I don't use version control -- I didn't like the feeling of having the code get committed into a black box thingy with no immediate upside",
-          "summary": "The piece traces Dwarf Fortress developer Tarn Adams's long refusal to use version control, quoting him in 2013, 2016 and 2023, by which point he was using version control stuff. The author marvels that a codebase of such complexity, arguably the one that would benefit most from version control, held out for so long. It is worth reading because it turns an abstract engineering truism into a concrete case with dates and names.",
-          "failureAnalysis": "The takeaway: version control's value is long-term and indirect, while its cost is immediate friction, which is exactly why individual intuition tends to undervalue it.",
-          "title": "Dwarf Fortress now uses version control"
+          "highlight": "NEURONS++ achieves state-of-the-art video reconstruction and competitive image reconstruction across standard benchmarks.",
+          "summary": "This paper proposes NEURONS++, which unifies fMRI-to-image and fMRI-to-video reconstruction under a single 'fMRI-to-visual-stream' formulation: one frame means an image, multiple frames mean a video. A cortex-inspired Serial Visual Decoupler progressively turns brain activity into spatial, semantic, language-level and temporal cues that drive a generative model. What makes it worth reading is that beyond visual fidelity, it tests whether reconstructions are truly grounded in brain activity via delta-fMRI perturbation, ROI ablation and ROI amplification.",
+          "failureAnalysis": "Only the abstract and introduction are available here, so the claimed state-of-the-art and competitive results cannot be independently verified from the provided content. The method also still requires subject-specific and dataset-specific adaptation, leaving generalization to real brain-computer-interface settings unproven.",
+          "title": "Neurons++: A Unified Visual-Stream Framework for Image and Video Reconstruction from fMRI with Neural-to-Visual Interpretability",
+          "paperCard": {
+            "problem": "Existing fMRI decoding methods have two weaknesses: image and video reconstruction are developed as separate settings, so image models' spatial and object-semantic supervision cannot help dynamic decoding; and visually plausible outputs may be driven by generative priors rather than faithfully reflecting brain activity, with no traceable path from neural signal to output.",
+            "method": "The authors formulate images as single-frame visual streams and videos as multi-frame visual streams under one problem setting. Multi-subject image-fMRI pretraining provides a stable spatial-semantic initialization, followed by subject-specific fine-tuning for image and video tasks. A Serial Visual Decoupler progressively converts brain signals into spatial object structure, object-level semantics, scene-level language and coarse temporal appearance, which then drive image or video generation.",
+            "difference": "Earlier work either handled video only or images only, with separate designs, and typically aligned or aggregated neural cues implicitly or in parallel as independent conditions, making it hard to trace which neural level contributed what. NEURONS++ connects both tasks in a shared visual-stream formulation and replaces parallel task conditioning with a serial, brain-inspired, hierarchical decoding chain.",
+            "innovation": "Three contributions: a new visual-stream formulation linking static image and dynamic video reconstruction; a brain-inspired Serial Visual Decoupler organizing spatial, semantic, language-level and temporal cues into a progressive neural-to-visual hierarchy; and experimental evidence that decoded content is directionally controllable, sensitive to stimulus-relevant cortical activity, and modulated by region-specific neural interventions.",
+            "implementation": "Three steps. First, a brain encoding module maps voxel responses into visual and textual embeddings aligned with vision-language models such as CLIP. Second, the Serial Visual Decoupler produces key object segmentation, concept recognition, scene description and blurry video cues in sequence. Third, a unified visual-stream inference pipeline uses these cues to drive a diffusion model for single-frame images or multi-frame videos (six frames per clip by default). Training is two-stage: multi-subject image-fMRI pretraining, then subject-specific adaptation.",
+            "applications": "Brain-computer interfaces and cognitive neuroscience: understanding how the brain represents visual content; communication assistance for patients with severe motor impairment via imagined visual decoding; and use as an interpretability tool to check whether generative outputs are truly grounded in brain signals, as well as for studying brain-region-to-semantics correspondences.",
+            "technicalTerms": [
+              "fMRI: functional magnetic resonance imaging, which indirectly measures brain activity via blood oxygenation changes.",
+              "BOLD signal: the blood-oxygen-level-dependent signal measured by fMRI; it is slow, limiting temporal resolution for video decoding.",
+              "visual stream: the paper's notion of treating an image as a single frame and a video as multiple frames in one temporal sequence.",
+              "Serial Visual Decoupler: a decoding module that sequentially decomposes brain signals into spatial, semantic, language-level and temporal cues.",
+              "diffusion model: a generative model that produces images or videos by gradually denoising random noise.",
+              "CLIP: a multimodal model mapping images and text into a shared embedding space, used here for semantic alignment.",
+              "ROI: region of interest; here, specific cortical areas ablated or amplified in experiments.",
+              "delta-fMRI perturbation: artificially altering brain signals to see whether reconstructions change directionally, testing causality.",
+              "voxel: the smallest three-dimensional measurement unit in fMRI data, akin to a pixel of the brain image.",
+              "NSD: the Natural Scenes Dataset, a large-scale brain imaging dataset commonly used for fMRI-to-image reconstruction."
+            ]
+          }
         }
       }
     },
     {
-      "id": "ai-github-1373665161",
+      "id": "ai-github-1408011967",
       "category": "ai",
-      "title": "devagrawal09/jev-review",
+      "title": "sirioberati/Genjustsu-Open-Source-Workflow",
       "source": "GitHub Search",
-      "url": "https://github.com/devagrawal09/jev-review",
+      "url": "https://github.com/sirioberati/Genjustsu-Open-Source-Workflow",
       "abstractUrl": null,
-      "publishedAt": "2026-09-16T21:45:36.0000000Z",
-      "scoreLabel": "GitHub 683 stars",
+      "publishedAt": "2026-10-06T23:18:18.0000000Z",
+      "scoreLabel": "GitHub 729 stars",
       "aiArticleType": "application_innovation",
       "evidenceAnchors": [
         {
@@ -272,24 +330,24 @@
       "hasPrimaryAnchor": true,
       "requiresRiskAnalysis": true,
       "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-      "summary": "这是一个 GitHub 上的开源工具仓库，把代码审查拆成有阶段的流程，并提供一个本地运行的仪表盘来查看审查状态，技术栈为 TypeSafe Jev。它能拿到 683 星说明开发者对「让代码审查更结构化、更可视化」这件事有真实兴趣，值得作为同类开发工具的产品形态样本来看。",
-      "failureAnalysis": "代码审查赛道已被 GitHub Pull Request、Graphite、Reviewable 等产品占据，一个本地仪表盘很难在企业协作场景中替代云端评审，需求容易被现有工作流吸收。构建在 TypeSafe Jev 这种小众框架上，会限制贡献者规模和长期维护，一旦框架社区降温项目就难以持续。本地部署意味着没有团队共享状态、没有审计与权限管理，企业采购时通常过不了安全与合规门槛。另外它更像流程工具而非真正依赖模型能力的产品，「AI」标签带来的差异化有限，变现路径也不清晰。",
-      "aiSelectionScore": 683,
-      "highlight": "该项目用 TypeSafe Jev 构建了一套分阶段的代码审查工作流，并配套一个本地仪表盘，目前在 GitHub 上获得 683 颗星。",
+      "summary": "这个 GitHub 项目提供开源 AI 视频替换工作流，把深度图、SAM 分割、面部网格和音频处理组合起来，用 Seedance 替换角色或物体。它还带有本地 Web UI，用于准备输入、检查遮罩、预览生成并导出保留原始音频的视频。项目已有 729 星和近期公开活动，值得关注其把多种视觉模型串成可操作流水线的工程路径。",
+      "failureAnalysis": "该工作流依赖 Seedance 以及 SAM、面部网格等多个组件，推理成本和算力开销可能很高，普通用户难以日常使用。视频替换涉及肖像、版权与深度伪造合规风险，若缺少授权机制或内容溯源，可能限制分发和商业化。工程上，掩码、深度和音频同步的稳定性需要大量真实场景验证，否则输出质量波动会削弱实际需求。开源项目还要面对维护、文档和集成成本，729 星不足以证明付费或规模化采用。",
+      "aiSelectionScore": 729,
+      "highlight": "结合深度图、SAM 分割、面部网格与音频处理，用 Seedance 替换视频中的角色和物体。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "GitHub repository with 683 stars and recent public activity. Description: A staged code-review workflow and local dashboard built with TypeSafe Jev.",
+      "sourceExcerpt": "GitHub repository with 729 stars and recent public activity. Description: Open-source AI video replacement workflow by TEIN. Combine depth maps, SAM segmentation, face meshes, and audio processing to replace characters and objects with Seedance.",
       "translations": {
         "zh": {
-          "title": "基于 TypeSafe Jev 的分阶段代码审查流程与本地看板",
-          "highlight": "该项目用 TypeSafe Jev 构建了一套分阶段的代码审查工作流，并配套一个本地仪表盘，目前在 GitHub 上获得 683 颗星。",
-          "summary": "这是一个 GitHub 上的开源工具仓库，把代码审查拆成有阶段的流程，并提供一个本地运行的仪表盘来查看审查状态，技术栈为 TypeSafe Jev。它能拿到 683 星说明开发者对「让代码审查更结构化、更可视化」这件事有真实兴趣，值得作为同类开发工具的产品形态样本来看。",
-          "failureAnalysis": "代码审查赛道已被 GitHub Pull Request、Graphite、Reviewable 等产品占据，一个本地仪表盘很难在企业协作场景中替代云端评审，需求容易被现有工作流吸收。构建在 TypeSafe Jev 这种小众框架上，会限制贡献者规模和长期维护，一旦框架社区降温项目就难以持续。本地部署意味着没有团队共享状态、没有审计与权限管理，企业采购时通常过不了安全与合规门槛。另外它更像流程工具而非真正依赖模型能力的产品，「AI」标签带来的差异化有限，变现路径也不清晰。"
+          "title": "Genjustsu 开源工作流：用深度图、SAM 与面部网格替换视频角色",
+          "highlight": "结合深度图、SAM 分割、面部网格与音频处理，用 Seedance 替换视频中的角色和物体。",
+          "summary": "这个 GitHub 项目提供开源 AI 视频替换工作流，把深度图、SAM 分割、面部网格和音频处理组合起来，用 Seedance 替换角色或物体。它还带有本地 Web UI，用于准备输入、检查遮罩、预览生成并导出保留原始音频的视频。项目已有 729 星和近期公开活动，值得关注其把多种视觉模型串成可操作流水线的工程路径。",
+          "failureAnalysis": "该工作流依赖 Seedance 以及 SAM、面部网格等多个组件，推理成本和算力开销可能很高，普通用户难以日常使用。视频替换涉及肖像、版权与深度伪造合规风险，若缺少授权机制或内容溯源，可能限制分发和商业化。工程上，掩码、深度和音频同步的稳定性需要大量真实场景验证，否则输出质量波动会削弱实际需求。开源项目还要面对维护、文档和集成成本，729 星不足以证明付费或规模化采用。"
         },
         "en": {
-          "highlight": "It provides a staged code-review workflow plus a local dashboard, built with TypeSafe Jev, and has reached 683 stars on GitHub.",
-          "summary": "This is an open-source GitHub project that breaks code review into explicit stages and ships a locally run dashboard for tracking them, built on TypeSafe Jev. Its 683 stars suggest real developer interest in making code review more structured and observable, making it a useful product-shape reference for developer tooling.",
-          "failureAnalysis": "Code review is already crowded by GitHub PRs, Graphite and Reviewable, and a local-only dashboard struggles to replace shared cloud review workflows. Building on a niche framework like TypeSafe Jev also caps contributor growth and long-term maintenance.",
-          "title": "A staged code-review workflow and local dashboard built with TypeSafe Jev"
+          "highlight": "Combine depth maps, SAM segmentation, face meshes, and audio processing to replace characters and objects with Seedance.",
+          "summary": "This GitHub project offers an open-source AI video replacement workflow that combines depth maps, SAM segmentation, face meshes, and audio processing to replace characters or objects with Seedance. It also includes a local web UI for preparing inputs, reviewing masks, previewing generations, and exporting with original audio. With 729 stars and recent public activity, it is worth watching as an engineering path for chaining multiple vision models into a usable pipeline.",
+          "failureAnalysis": "The workflow depends on Seedance plus multiple vision components, so inference cost and hardware requirements may keep it out of everyday use. Video replacement also raises portrait rights, copyright, and deepfake compliance risks, while mask, depth, and audio synchronization still need real-world validation.",
+          "title": "Genjustsu Open-Source Workflow: AI Video Replacement with Depth Maps, SAM, and Face Meshes"
         }
       }
     }

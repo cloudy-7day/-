@@ -1,0 +1,355 @@
+{
+  "issueDate": "2026-10-12",
+  "updateStatus": "complete",
+  "contentFingerprint": "8844008c99c9a8377dd48d424fe52ae23353cffb9a5aec17d86d743cacdcc9bd",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-cb6b912cb4814488b3a3e014301174fc",
+      "category": "domestic",
+      "title": "王毅与俄罗斯总统助理、海事委员会主席帕特鲁舍夫举行会晤",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-12/10712340.shtml",
+      "publishedAt": "2026-10-12T15:14:25.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "10月12日，中共中央政治局委员、中央外办主任王毅在北京与俄罗斯总统助理、海事委员会主席帕特鲁舍夫举行会晤。",
+      "summary": "这则中新社简讯确认了会晤的时间、地点与双方身份。它可作为跟踪中俄官方公开外交接触的一个具体节点。",
+      "failureAnalysis": "可核验的信息集中在会晤已举行及双方身份，未提供会谈议题、成果或更多细节。阅读时应以官方后续通报或完整报道为准。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社北京10月12日电 10月12日，中共中央政治局委员、中央外办主任王毅在北京与俄罗斯总统助理、海事委员会主席帕特鲁舍夫举行会晤。",
+      "translations": {
+        "zh": {
+          "title": "王毅与俄罗斯总统助理、海事委员会主席帕特鲁舍夫举行会晤",
+          "highlight": "10月12日，中共中央政治局委员、中央外办主任王毅在北京与俄罗斯总统助理、海事委员会主席帕特鲁舍夫举行会晤。",
+          "summary": "这则中新社简讯确认了会晤的时间、地点与双方身份。它可作为跟踪中俄官方公开外交接触的一个具体节点。",
+          "failureAnalysis": "可核验的信息集中在会晤已举行及双方身份，未提供会谈议题、成果或更多细节。阅读时应以官方后续通报或完整报道为准。"
+        },
+        "en": {
+          "highlight": "On October 12, Wang Yi met in Beijing with Russian presidential aide and Maritime Board Chairman Patrushev, according to China News Service.",
+          "summary": "This brief China News Service report says Wang Yi met with Russian presidential aide and Maritime Board Chairman Patrushev in Beijing on October 12. It is worth reading as a concrete official signal of China-Russia high-level contacts, though the known excerpt gives no agenda or outcomes.",
+          "failureAnalysis": "The verifiable facts are the meeting, its date and place, and the two officials’ identities. Details on topics or results are not included in the provided excerpt.",
+          "title": "Wang Yi Meets with Russian Presidential Aide and Maritime Board Chairman Patrushev"
+        }
+      }
+    },
+    {
+      "id": "news-12544d2406a74104b090e733866e2a44",
+      "category": "domestic",
+      "title": "中国调整新能源汽车等部分产品出口退税政策",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-12/10712320.shtml",
+      "publishedAt": "2026-10-12T13:54:54.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "中国财政部、国家税务总局12日宣布，将调整部分产品出口退税政策，涉及新能源汽车、电子烟设备装置等产品增值税。",
+      "summary": "该消息称，中国财政部、国家税务总局将调整部分产品出口退税政策，涉及新能源汽车、电子烟设备装置等产品的增值税。出口退税影响相关企业的出口成本、报价与现金流，因此这一政策变化值得关注。已知信息未披露具体退税率、生效时间和完整适用范围。",
+      "failureAnalysis": "出口退税调整通常直接影响相关产品在国际市场的价格竞争力和企业现金流。后续关键是关注财政部、税务总局公布的具体退税率、生效时间与适用范围。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社北京10月12日电 (记者 赵建华)中国财政部、国家税务总局12日宣布，将调整部分产品出口退税政策，涉及新能源汽车、电子烟设备装置等产品增值税。",
+      "translations": {
+        "zh": {
+          "title": "中国调整新能源汽车等部分产品出口退税政策",
+          "highlight": "中国财政部、国家税务总局12日宣布，将调整部分产品出口退税政策，涉及新能源汽车、电子烟设备装置等产品增值税。",
+          "summary": "该消息称，中国财政部、国家税务总局将调整部分产品出口退税政策，涉及新能源汽车、电子烟设备装置等产品的增值税。出口退税影响相关企业的出口成本、报价与现金流，因此这一政策变化值得关注。已知信息未披露具体退税率、生效时间和完整适用范围。",
+          "failureAnalysis": "出口退税调整通常直接影响相关产品在国际市场的价格竞争力和企业现金流。后续关键是关注财政部、税务总局公布的具体退税率、生效时间与适用范围。"
+        },
+        "en": {
+          "highlight": "China will adjust export tax rebates for certain products, including new energy vehicles and e-cigarette devices, the Ministry of Finance and State Taxation Administration said on Oct. 12.",
+          "summary": "The Ministry of Finance and the State Taxation Administration announced that China will adjust export tax rebates for certain products, including value-added tax treatment for new energy vehicles and e-cigarette devices. Export tax rebates affect exporters' costs, pricing, and cash flow, so the change is worth watching. The known information does not specify the new rebate rates, effective date, or full product scope.",
+          "failureAnalysis": "A change in export tax rebates can directly affect the international price competitiveness and cash flow of affected exporters. The key is to watch for the specific rebate rates, effective date, and scope to be released by the Ministry of Finance and the State Taxation Administration.",
+          "title": "China Adjusts Export Tax Rebate Policy for New Energy Vehicles and Other Products"
+        }
+      }
+    },
+    {
+      "id": "news-818906b3098e4fba9c9ba3fc4a516d2c",
+      "category": "domestic",
+      "title": "国际货币基金组织和世界银行集团2026年年会在曼谷开幕",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-12/10712311.shtml",
+      "publishedAt": "2026-10-12T13:44:00.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "国际货币基金组织和世界银行集团2026年年会在曼谷开幕，1.5万余名代表将围绕全球经济政策协调、金融稳定和人工智能等议题交流。",
+      "summary": "文章报道，国际货币基金组织和世界银行集团2026年年会在曼谷开幕，来自191个国家和地区的1.5万余名代表参会。会议议题包括全球经济政策协调、国际发展合作、金融稳定以及人工智能，显示主要国际经济机构正把AI纳入宏观与发展议程。对非技术管理者而言，这有助于理解全球经济治理的最新关注点及其对企业和政策环境的潜在影响。",
+      "failureAnalysis": "可核实的信息核心是会议规模与议题范围，未披露具体政策结论或对中国市场的直接措施。阅读价值在于把握国际机构议程风向，而非据此推断短期市场结果。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社曼谷10月12日电 (王茜 李映民)国际货币基金组织(IMF)和世界银行集团2026年年会12日在曼谷开幕。来自191个国家和地区的1.5万余名代表将围绕全球经济政策协调、国际发展合作、金融稳定以及人工智能等议题展开交流。",
+      "translations": {
+        "zh": {
+          "title": "国际货币基金组织和世界银行集团2026年年会在曼谷开幕",
+          "highlight": "国际货币基金组织和世界银行集团2026年年会在曼谷开幕，1.5万余名代表将围绕全球经济政策协调、金融稳定和人工智能等议题交流。",
+          "summary": "文章报道，国际货币基金组织和世界银行集团2026年年会在曼谷开幕，来自191个国家和地区的1.5万余名代表参会。会议议题包括全球经济政策协调、国际发展合作、金融稳定以及人工智能，显示主要国际经济机构正把AI纳入宏观与发展议程。对非技术管理者而言，这有助于理解全球经济治理的最新关注点及其对企业和政策环境的潜在影响。",
+          "failureAnalysis": "可核实的信息核心是会议规模与议题范围，未披露具体政策结论或对中国市场的直接措施。阅读价值在于把握国际机构议程风向，而非据此推断短期市场结果。"
+        },
+        "en": {
+          "highlight": "The IMF and World Bank Group 2026 annual meetings opened in Bangkok, with over 15,000 representatives from 191 countries and regions to discuss global economic policy coordination, financial stability and AI.",
+          "summary": "The article reports that the IMF and World Bank Group 2026 annual meetings opened in Bangkok, drawing more than 15,000 representatives from 191 countries and regions. The agenda includes global economic policy coordination, international development cooperation, financial stability and artificial intelligence, showing that major international economic institutions are putting AI on the macro and development agenda. For non-technical leaders, it is a useful signal of what global economic governance is prioritizing.",
+          "failureAnalysis": "The verifiable takeaway is the scale and agenda of the meetings; no specific policy outcomes or direct measures for China's market are disclosed in the known content. Read it to track the direction of international institutional agendas, not to infer short-term market results.",
+          "title": "IMF and World Bank Group 2026 Annual Meetings Open in Bangkok"
+        }
+      }
+    },
+    {
+      "id": "news-22840906bd924b5aab96c3cc9102bab2",
+      "category": "international",
+      "title": "Bolivia investigates ex-president Evo Morales over alleged ties to 2009 killings",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/12/bolivia-investigates-ex-president-evo-morales-2009-killings",
+      "publishedAt": "2026-10-12T21:40:51.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "玻利维亚总检察长宣布对左翼前总统埃沃·莫拉莱斯展开调查，指其涉嫌参与2009年对欧洲公民的谋杀与酷刑。",
+      "summary": "报道称，玻利维亚总检察长宣布调查左翼前总统埃沃·莫拉莱斯，指其涉嫌与2009年圣克鲁斯酒店突袭事件有关。当时警方行动造成三名欧洲人死亡，另有两人据称遭酷刑；死者包括一名玻利维亚-克罗地亚人、一名爱尔兰人和一名匈牙利-罗马尼亚人。该案牵涉前总统，后续司法与政治影响值得关注。",
+      "failureAnalysis": "关键看点：这是一项针对前总统的刑事调查，重点是厘清2009年致死与酷刑事件的责任归属，目前并非定罪结论。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Leftist former leader accused of involvement in shooting of three Europeans in Santa Cruz and torture of two others Bolivia’s attorney general has announced an investigation into leftist former president Evo Morales, alleging his involvement in the murder and torture of European citizens in 2009. Seventeen years ago, police raided a hotel in the city of Santa Cruz, shooting dead Eduardo Rózsa Flores, a Bolivian-Croatian, Michael Dwyer, an Irishman, and Árpád Magyarosi, a Hungarian-Romanian.",
+      "translations": {
+        "zh": {
+          "title": "玻利维亚调查前总统莫拉莱斯涉2009年枪杀与酷刑指控",
+          "highlight": "玻利维亚总检察长宣布对左翼前总统埃沃·莫拉莱斯展开调查，指其涉嫌参与2009年对欧洲公民的谋杀与酷刑。",
+          "summary": "报道称，玻利维亚总检察长宣布调查左翼前总统埃沃·莫拉莱斯，指其涉嫌与2009年圣克鲁斯酒店突袭事件有关。当时警方行动造成三名欧洲人死亡，另有两人据称遭酷刑；死者包括一名玻利维亚-克罗地亚人、一名爱尔兰人和一名匈牙利-罗马尼亚人。该案牵涉前总统，后续司法与政治影响值得关注。",
+          "failureAnalysis": "关键看点：这是一项针对前总统的刑事调查，重点是厘清2009年致死与酷刑事件的责任归属，目前并非定罪结论。"
+        },
+        "en": {
+          "highlight": "Bolivia’s attorney general has announced an investigation into leftist former president Evo Morales, alleging his involvement in the murder and torture of European citizens in 2009.",
+          "summary": "The report says Bolivia’s attorney general has announced an investigation into leftist former president Evo Morales over alleged links to a 2009 hotel raid in Santa Cruz. The police operation left three Europeans dead—a Bolivian-Croatian, an Irishman, and a Hungarian-Romanian—and two others were allegedly tortured. The case involves a former president and is worth watching for its legal and political implications.",
+          "failureAnalysis": "Key takeaway: this is a criminal investigation into a former president over 2009 deaths and torture, focused on accountability rather than a conviction; its political fallout is worth watching.",
+          "title": "Bolivia investigates ex-president Evo Morales over alleged ties to 2009 killings"
+        }
+      }
+    },
+    {
+      "id": "news-15ac6c5585da4b83b8004649f7e87d3c",
+      "category": "international",
+      "title": "Trump announced a partial Russia-Ukraine ceasefire. Did either country know about it?",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/12/nx-s1-5998808/trump-announced-a-partial-russia-ukraine-ceasefire-did-either-country-know-about-it",
+      "publishedAt": "2026-10-12T21:43:48.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "乌克兰领导人表示，俄罗斯仍在继续攻击乌克兰，并无视特朗普总统宣布的“能源停火”。",
+      "summary": "这条国际新闻关注特朗普宣布的俄乌部分停火，尤其是其中的“能源停火”。已知信息是，乌克兰领导人称俄罗斯继续攻击乌克兰，并无视该停火声明。值得关注的是，停火宣布与实际战场行动之间似乎存在明显落差。",
+      "failureAnalysis": "关键点：单方面宣布停火不等于冲突方真正知情或遵守，需以战场行动与双方确认来判断。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Ukraine's leader says Russia is continuing to attack Ukraine and is ignoring an \"energy ceasefire\" declared by President Trump.",
+      "translations": {
+        "zh": {
+          "title": "特朗普宣布俄乌部分停火，但两国是否知情？",
+          "highlight": "乌克兰领导人表示，俄罗斯仍在继续攻击乌克兰，并无视特朗普总统宣布的“能源停火”。",
+          "summary": "这条国际新闻关注特朗普宣布的俄乌部分停火，尤其是其中的“能源停火”。已知信息是，乌克兰领导人称俄罗斯继续攻击乌克兰，并无视该停火声明。值得关注的是，停火宣布与实际战场行动之间似乎存在明显落差。",
+          "failureAnalysis": "关键点：单方面宣布停火不等于冲突方真正知情或遵守，需以战场行动与双方确认来判断。"
+        },
+        "en": {
+          "highlight": "Ukraine's leader says Russia is continuing to attack Ukraine and is ignoring an 'energy ceasefire' declared by President Trump.",
+          "summary": "This international news item focuses on Trump's announced partial Russia-Ukraine ceasefire, particularly an 'energy ceasefire.' The known details are that Ukraine's leader says Russia is continuing attacks and ignoring the declaration. It is worth reading because it highlights the gap between a ceasefire announcement and actual battlefield behavior.",
+          "failureAnalysis": "Key takeaway: a unilateral ceasefire announcement does not mean the parties know about it or will comply; battlefield actions and confirmation from both sides matter.",
+          "title": "Trump Announced a Partial Russia-Ukraine Ceasefire. Did Either Country Know About It?"
+        }
+      }
+    },
+    {
+      "id": "life-14c1e49b5ac7438d881aaad63f55b045",
+      "category": "international",
+      "title": "I Love My Hisense CanvasTV, and It's up to 50% Off Right Now",
+      "source": "Lifehacker",
+      "url": "https://lifehacker.com/tech/hisense-canvastv-deal-october-2026?utm_medium=RSS",
+      "publishedAt": "2026-10-12T19:30:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "它是三星“The Frame”的便宜替代品，而且里面的艺术画作是免费的。",
+      "summary": "这是一篇关于海信CanvasTV的消费推荐，把它定位为三星The Frame的低价替代方案，并强调其艺术画作内容免费。文章同时提到该产品目前最高有五折优惠。对非技术读者来说，这是一个观察“以更低成本满足同类需求”的消费电子案例。",
+      "failureAnalysis": "关键点：同类需求往往能用更便宜的产品满足，判断价值时要看核心体验是否可比，而不只看品牌和价格标签。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "It's a cheaper alternative to Samsung's \"The Frame,\" and the art is free.",
+      "translations": {
+        "zh": {
+          "title": "我喜欢我的海信CanvasTV，如今最高降价50%",
+          "highlight": "它是三星“The Frame”的便宜替代品，而且里面的艺术画作是免费的。",
+          "summary": "这是一篇关于海信CanvasTV的消费推荐，把它定位为三星The Frame的低价替代方案，并强调其艺术画作内容免费。文章同时提到该产品目前最高有五折优惠。对非技术读者来说，这是一个观察“以更低成本满足同类需求”的消费电子案例。",
+          "failureAnalysis": "关键点：同类需求往往能用更便宜的产品满足，判断价值时要看核心体验是否可比，而不只看品牌和价格标签。"
+        },
+        "en": {
+          "highlight": "It's a cheaper alternative to Samsung's \"The Frame,\" and the art is free.",
+          "summary": "This is a consumer recommendation for the Hisense CanvasTV, positioning it as a lower-cost alternative to Samsung's The Frame and highlighting that its art content is free. It also notes that the product is currently discounted by up to 50%. For non-technical readers, it is a simple example of meeting a similar need at a lower cost.",
+          "failureAnalysis": "Key takeaway: similar needs can often be met by cheaper products, so judge value by whether the core experience is comparable rather than by brand and price tag alone.",
+          "title": "I Love My Hisense CanvasTV, and It's Up to 50% Off Right Now"
+        }
+      }
+    },
+    {
+      "id": "life-b5715c86a9d14a658aebc376a0d572d2",
+      "category": "international",
+      "title": "James Baldwin on How Love (Finally) Finds You",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/10/11/baldwin-love/",
+      "publishedAt": "2026-10-11T20:12:15.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "我们的语言背叛了我们的自我背叛：我们谈论寻找爱，仿佛它是未发现的第八大洲。",
+      "summary": "文章以詹姆斯·鲍德温为引，讨论‘寻找爱’这一说法如何暴露我们的自我背叛，并指出其中同时有无助与傲慢。它值得读，因为它提醒我们：对爱的谈论方式，可能正塑造着我们对爱的理解。",
+      "failureAnalysis": "关键启示：把爱说成‘寻找’，本身混合了无助与傲慢，也可能掩盖我们真正缺失的东西；与其只盯着寻找，不如先审视自己的语言与自欺。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Our language betrays our self-betrayals: We speak of finding love, as if it were an undiscovered eighth continent or a habitable world in another solar system, as if it got lost like the Little Red Riding Hood or the names of the women who painted the caves. Like the paradoxical notion of finding yourself, the notion of finding love pulsates with equal parts helplessness and hubris — a rueful recognition that something is missing from your life and a belief that it falls on you to do the looking, that if you only look hard enough and long enough, you… read article",
+      "translations": {
+        "zh": {
+          "title": "詹姆斯·鲍德温：爱如何最终找到你",
+          "highlight": "我们的语言背叛了我们的自我背叛：我们谈论寻找爱，仿佛它是未发现的第八大洲。",
+          "summary": "文章以詹姆斯·鲍德温为引，讨论‘寻找爱’这一说法如何暴露我们的自我背叛，并指出其中同时有无助与傲慢。它值得读，因为它提醒我们：对爱的谈论方式，可能正塑造着我们对爱的理解。",
+          "failureAnalysis": "关键启示：把爱说成‘寻找’，本身混合了无助与傲慢，也可能掩盖我们真正缺失的东西；与其只盯着寻找，不如先审视自己的语言与自欺。"
+        },
+        "en": {
+          "highlight": "Our language betrays our self-betrayals: We speak of finding love, as if it were an undiscovered eighth continent.",
+          "summary": "Drawing on James Baldwin, the article explores how the phrase 'finding love' betrays our self-deceptions and mixes helplessness with hubris. It is worth reading because it asks us to reconsider how the way we talk about love shapes what we think we are missing.",
+          "failureAnalysis": "The key takeaway is that 'finding love' can be a misleading frame, mixing helplessness and hubris; it may reveal more about our self-deceptions than about love itself.",
+          "title": "James Baldwin on How Love (Finally) Finds You"
+        }
+      }
+    },
+    {
+      "id": "paper-2610.13763",
+      "category": "paper",
+      "title": "Neurons++: A Unified Visual-Stream Framework for Image and Video Reconstruction from fMRI with Neural-to-Visual Interpretability",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2610.13763v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.13763",
+      "publishedAt": "2026-10-09T15:49:07.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "现有的脑活动（fMRI）解码方法有两个毛病：一是图像重建和视频重建被当成两件互不相干的事，图像模型的“空间与物体语义”经验帮不到视频；二是生成出来的画面虽然好看，但可能主要是生成模型的想象，并不真正对应大脑活动，而且中间过程难以追踪。",
+        "method": "作者把图像看作“单帧视觉流”、视频看作“多帧视觉流”，统一成一个问题来建模。先用大量“图像—fMRI”数据做多被试预训练，得到一个稳定的空间语义起点，再针对每个被试分别微调图像和视频任务。解码过程用一个“串行视觉解耦器”，按顺序把脑信号转成物体结构、物体语义、场景语言描述和粗略的时间变化，再交给生成模型出图或出视频。",
+        "difference": "之前的方法要么只做视频、要么只做图像，两类任务各用一套设计；而且脑信号里的低层结构、高层语义、时间动态往往是被隐式对齐或并行拼接的独立条件，看不出哪一层脑信息贡献了什么。NEURONS++把图像和视频放在同一个“视觉流”框架下，并把并行的任务条件改成串行、有先后层次的解码链，让“神经—视觉”的对应关系可追溯。",
+        "innovation": "三点：一是提出“视觉流”这一统一设定，把静态图像和动态视频重建串起来；二是提出受脑皮层启发的串行视觉解耦器，把空间、语义、语言、时间线索组织成层层递进的通路；三是做了delta-fMRI扰动、脑区（ROI）屏蔽和ROI放大三类实验，用证据说明解码内容是“方向可控的”、对刺激相关的皮层活动敏感、并且能通过干预特定脑区来调节语义结果。",
+        "implementation": "实现分三步走。第一步是编码：用脑编码模块把体素（voxel，fMRI里最小测量单元）响应映射到与CLIP视觉/文本模型对齐的向量空间。第二步是串行解耦：依次产出关键物体分割、概念识别、场景描述、模糊视频等线索，构成从空间到语义到语言再到时间的逐级表示。第三步是统一推理：用这些线索驱动扩散模型（diffusion model，一类通过逐步去噪生成图像的生成模型），单帧出图像、多帧出视频（实现中一个片段默认6帧）。训练上先做多被试图像-fMRI预训练，再做被试特定微调。",
+        "applications": "可用于脑机接口与认知神经科学研究：帮助理解人脑如何表征视觉内容；面向严重运动障碍患者的沟通辅助（用想象画面重建内容）；也可作为检验生成模型是否“忠于脑信号”的可解释性工具，以及脑区功能与视觉语义对应关系的研究手段。",
+        "technicalTerms": [
+          "fMRI：功能性磁共振成像，通过血流含氧变化间接测量大脑活动。",
+          "BOLD信号：fMRI测到的血氧依赖信号，变化慢，所以视频解码的时间分辨率受限。",
+          "视觉流：本文的说法，把图像看作单帧、视频看作多帧，统一成一条时间上的画面序列。",
+          "串行视觉解耦器：把脑信号按顺序拆成空间、语义、语言、时间四类线索的解码模块。",
+          "扩散模型：通过不断去噪逐步生成图像或视频的生成模型。",
+          "CLIP：能把图像和文字映射到同一向量空间的多模态模型，常用来做语义对齐。",
+          "ROI：感兴趣脑区，这里指对重建结果做屏蔽或放大实验的特定皮层区域。",
+          "delta-fMRI扰动：人为改变脑信号后观察重建结果是否按方向变化，用来检验因果性。",
+          "体素：fMRI数据里的最小三维测量单元，类似大脑图像的“像素”。",
+          "NSD：自然场景数据集，是fMRI到图像重建常用的大规模脑成像数据集。"
+        ]
+      },
+      "highlight": "NEURONS++在标准基准上取得了最先进的视频重建效果和有竞争力的图像重建表现。",
+      "summary": "这篇论文提出NEURONS++，把“从脑活动重建图像”和“从脑活动重建视频”统一成同一个“fMRI到视觉流”的问题：单帧就是图像，多帧就是视频。它用一个受大脑皮层结构启发的“串行视觉解耦器”，把脑信号逐级翻译成空间、语义、语言和时间四类线索，再用生成模型还原画面。文章的看点在于，它不仅关心“画得像不像”，还通过扰动脑信号、屏蔽或放大特定脑区来做实验，检验重建结果是否真的“由大脑决定”。",
+      "failureAnalysis": "目前可见信息只有摘要和引言，缺少具体实验数据与对比细节，其“最先进”“有竞争力”的说法无法从现有内容独立验证。此外，该方法仍需针对每个受试者和数据集做单独微调，泛化能力与真实脑机接口场景下的稳定性尚不明确。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "NEURONS++: A Unified Visual-Stream Framework for Image and Video Reconstruction from fMRI with Neural-to-Visual Interpretability Haonan Wang, Yuchen Wang, Jingyu Lu, Qixiang Zhang, Lehan Wang, Xuanqi Huang, and Xiaomeng Li Abstract—Decoding visual experience from fMRI is important for understanding human perception and developing brain- computer interfaces. Recent generative decoding methods can reconstruct plausible images and videos, but visual plausibility alone does not ensure that the output is faithfully grounded in brain activity. In this work, we propose NEURONS++, a visual- stream fMRI reconstruction framework for both static image and dynamic video reconstruction.",
+      "translations": {
+        "zh": {
+          "title": "Neurons++：统一的视觉流框架，实现从fMRI重建图像与视频，并带来神经到视觉的可解释性",
+          "highlight": "NEURONS++在标准基准上取得了最先进的视频重建效果和有竞争力的图像重建表现。",
+          "summary": "这篇论文提出NEURONS++，把“从脑活动重建图像”和“从脑活动重建视频”统一成同一个“fMRI到视觉流”的问题：单帧就是图像，多帧就是视频。它用一个受大脑皮层结构启发的“串行视觉解耦器”，把脑信号逐级翻译成空间、语义、语言和时间四类线索，再用生成模型还原画面。文章的看点在于，它不仅关心“画得像不像”，还通过扰动脑信号、屏蔽或放大特定脑区来做实验，检验重建结果是否真的“由大脑决定”。",
+          "failureAnalysis": "目前可见信息只有摘要和引言，缺少具体实验数据与对比细节，其“最先进”“有竞争力”的说法无法从现有内容独立验证。此外，该方法仍需针对每个受试者和数据集做单独微调，泛化能力与真实脑机接口场景下的稳定性尚不明确。",
+          "paperCard": {
+            "problem": "现有的脑活动（fMRI）解码方法有两个毛病：一是图像重建和视频重建被当成两件互不相干的事，图像模型的“空间与物体语义”经验帮不到视频；二是生成出来的画面虽然好看，但可能主要是生成模型的想象，并不真正对应大脑活动，而且中间过程难以追踪。",
+            "method": "作者把图像看作“单帧视觉流”、视频看作“多帧视觉流”，统一成一个问题来建模。先用大量“图像—fMRI”数据做多被试预训练，得到一个稳定的空间语义起点，再针对每个被试分别微调图像和视频任务。解码过程用一个“串行视觉解耦器”，按顺序把脑信号转成物体结构、物体语义、场景语言描述和粗略的时间变化，再交给生成模型出图或出视频。",
+            "difference": "之前的方法要么只做视频、要么只做图像，两类任务各用一套设计；而且脑信号里的低层结构、高层语义、时间动态往往是被隐式对齐或并行拼接的独立条件，看不出哪一层脑信息贡献了什么。NEURONS++把图像和视频放在同一个“视觉流”框架下，并把并行的任务条件改成串行、有先后层次的解码链，让“神经—视觉”的对应关系可追溯。",
+            "innovation": "三点：一是提出“视觉流”这一统一设定，把静态图像和动态视频重建串起来；二是提出受脑皮层启发的串行视觉解耦器，把空间、语义、语言、时间线索组织成层层递进的通路；三是做了delta-fMRI扰动、脑区（ROI）屏蔽和ROI放大三类实验，用证据说明解码内容是“方向可控的”、对刺激相关的皮层活动敏感、并且能通过干预特定脑区来调节语义结果。",
+            "implementation": "实现分三步走。第一步是编码：用脑编码模块把体素（voxel，fMRI里最小测量单元）响应映射到与CLIP视觉/文本模型对齐的向量空间。第二步是串行解耦：依次产出关键物体分割、概念识别、场景描述、模糊视频等线索，构成从空间到语义到语言再到时间的逐级表示。第三步是统一推理：用这些线索驱动扩散模型（diffusion model，一类通过逐步去噪生成图像的生成模型），单帧出图像、多帧出视频（实现中一个片段默认6帧）。训练上先做多被试图像-fMRI预训练，再做被试特定微调。",
+            "applications": "可用于脑机接口与认知神经科学研究：帮助理解人脑如何表征视觉内容；面向严重运动障碍患者的沟通辅助（用想象画面重建内容）；也可作为检验生成模型是否“忠于脑信号”的可解释性工具，以及脑区功能与视觉语义对应关系的研究手段。",
+            "technicalTerms": [
+              "fMRI：功能性磁共振成像，通过血流含氧变化间接测量大脑活动。",
+              "BOLD信号：fMRI测到的血氧依赖信号，变化慢，所以视频解码的时间分辨率受限。",
+              "视觉流：本文的说法，把图像看作单帧、视频看作多帧，统一成一条时间上的画面序列。",
+              "串行视觉解耦器：把脑信号按顺序拆成空间、语义、语言、时间四类线索的解码模块。",
+              "扩散模型：通过不断去噪逐步生成图像或视频的生成模型。",
+              "CLIP：能把图像和文字映射到同一向量空间的多模态模型，常用来做语义对齐。",
+              "ROI：感兴趣脑区，这里指对重建结果做屏蔽或放大实验的特定皮层区域。",
+              "delta-fMRI扰动：人为改变脑信号后观察重建结果是否按方向变化，用来检验因果性。",
+              "体素：fMRI数据里的最小三维测量单元，类似大脑图像的“像素”。",
+              "NSD：自然场景数据集，是fMRI到图像重建常用的大规模脑成像数据集。"
+            ]
+          }
+        },
+        "en": {
+          "highlight": "NEURONS++ achieves state-of-the-art video reconstruction and competitive image reconstruction across standard benchmarks.",
+          "summary": "This paper proposes NEURONS++, which unifies fMRI-to-image and fMRI-to-video reconstruction under a single 'fMRI-to-visual-stream' formulation: one frame means an image, multiple frames mean a video. A cortex-inspired Serial Visual Decoupler progressively turns brain activity into spatial, semantic, language-level and temporal cues that drive a generative model. What makes it worth reading is that beyond visual fidelity, it tests whether reconstructions are truly grounded in brain activity via delta-fMRI perturbation, ROI ablation and ROI amplification.",
+          "failureAnalysis": "Only the abstract and introduction are available here, so the claimed state-of-the-art and competitive results cannot be independently verified from the provided content. The method also still requires subject-specific and dataset-specific adaptation, leaving generalization to real brain-computer-interface settings unproven.",
+          "title": "Neurons++: A Unified Visual-Stream Framework for Image and Video Reconstruction from fMRI with Neural-to-Visual Interpretability",
+          "paperCard": {
+            "problem": "Existing fMRI decoding methods have two weaknesses: image and video reconstruction are developed as separate settings, so image models' spatial and object-semantic supervision cannot help dynamic decoding; and visually plausible outputs may be driven by generative priors rather than faithfully reflecting brain activity, with no traceable path from neural signal to output.",
+            "method": "The authors formulate images as single-frame visual streams and videos as multi-frame visual streams under one problem setting. Multi-subject image-fMRI pretraining provides a stable spatial-semantic initialization, followed by subject-specific fine-tuning for image and video tasks. A Serial Visual Decoupler progressively converts brain signals into spatial object structure, object-level semantics, scene-level language and coarse temporal appearance, which then drive image or video generation.",
+            "difference": "Earlier work either handled video only or images only, with separate designs, and typically aligned or aggregated neural cues implicitly or in parallel as independent conditions, making it hard to trace which neural level contributed what. NEURONS++ connects both tasks in a shared visual-stream formulation and replaces parallel task conditioning with a serial, brain-inspired, hierarchical decoding chain.",
+            "innovation": "Three contributions: a new visual-stream formulation linking static image and dynamic video reconstruction; a brain-inspired Serial Visual Decoupler organizing spatial, semantic, language-level and temporal cues into a progressive neural-to-visual hierarchy; and experimental evidence that decoded content is directionally controllable, sensitive to stimulus-relevant cortical activity, and modulated by region-specific neural interventions.",
+            "implementation": "Three steps. First, a brain encoding module maps voxel responses into visual and textual embeddings aligned with vision-language models such as CLIP. Second, the Serial Visual Decoupler produces key object segmentation, concept recognition, scene description and blurry video cues in sequence. Third, a unified visual-stream inference pipeline uses these cues to drive a diffusion model for single-frame images or multi-frame videos (six frames per clip by default). Training is two-stage: multi-subject image-fMRI pretraining, then subject-specific adaptation.",
+            "applications": "Brain-computer interfaces and cognitive neuroscience: understanding how the brain represents visual content; communication assistance for patients with severe motor impairment via imagined visual decoding; and use as an interpretability tool to check whether generative outputs are truly grounded in brain signals, as well as for studying brain-region-to-semantics correspondences.",
+            "technicalTerms": [
+              "fMRI: functional magnetic resonance imaging, which indirectly measures brain activity via blood oxygenation changes.",
+              "BOLD signal: the blood-oxygen-level-dependent signal measured by fMRI; it is slow, limiting temporal resolution for video decoding.",
+              "visual stream: the paper's notion of treating an image as a single frame and a video as multiple frames in one temporal sequence.",
+              "Serial Visual Decoupler: a decoding module that sequentially decomposes brain signals into spatial, semantic, language-level and temporal cues.",
+              "diffusion model: a generative model that produces images or videos by gradually denoising random noise.",
+              "CLIP: a multimodal model mapping images and text into a shared embedding space, used here for semantic alignment.",
+              "ROI: region of interest; here, specific cortical areas ablated or amplified in experiments.",
+              "delta-fMRI perturbation: artificially altering brain signals to see whether reconstructions change directionally, testing causality.",
+              "voxel: the smallest three-dimensional measurement unit in fMRI data, akin to a pixel of the brain image.",
+              "NSD: the Natural Scenes Dataset, a large-scale brain imaging dataset commonly used for fMRI-to-image reconstruction."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-github-1408011967",
+      "category": "ai",
+      "title": "sirioberati/Genjustsu-Open-Source-Workflow",
+      "source": "GitHub Search",
+      "url": "https://github.com/sirioberati/Genjustsu-Open-Source-Workflow",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-06T23:18:18.0000000Z",
+      "scoreLabel": "GitHub 729 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "这个 GitHub 项目提供开源 AI 视频替换工作流，把深度图、SAM 分割、面部网格和音频处理组合起来，用 Seedance 替换角色或物体。它还带有本地 Web UI，用于准备输入、检查遮罩、预览生成并导出保留原始音频的视频。项目已有 729 星和近期公开活动，值得关注其把多种视觉模型串成可操作流水线的工程路径。",
+      "failureAnalysis": "该工作流依赖 Seedance 以及 SAM、面部网格等多个组件，推理成本和算力开销可能很高，普通用户难以日常使用。视频替换涉及肖像、版权与深度伪造合规风险，若缺少授权机制或内容溯源，可能限制分发和商业化。工程上，掩码、深度和音频同步的稳定性需要大量真实场景验证，否则输出质量波动会削弱实际需求。开源项目还要面对维护、文档和集成成本，729 星不足以证明付费或规模化采用。",
+      "aiSelectionScore": 729,
+      "highlight": "结合深度图、SAM 分割、面部网格与音频处理，用 Seedance 替换视频中的角色和物体。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 729 stars and recent public activity. Description: Open-source AI video replacement workflow by TEIN. Combine depth maps, SAM segmentation, face meshes, and audio processing to replace characters and objects with Seedance.",
+      "translations": {
+        "zh": {
+          "title": "Genjustsu 开源工作流：用深度图、SAM 与面部网格替换视频角色",
+          "highlight": "结合深度图、SAM 分割、面部网格与音频处理，用 Seedance 替换视频中的角色和物体。",
+          "summary": "这个 GitHub 项目提供开源 AI 视频替换工作流，把深度图、SAM 分割、面部网格和音频处理组合起来，用 Seedance 替换角色或物体。它还带有本地 Web UI，用于准备输入、检查遮罩、预览生成并导出保留原始音频的视频。项目已有 729 星和近期公开活动，值得关注其把多种视觉模型串成可操作流水线的工程路径。",
+          "failureAnalysis": "该工作流依赖 Seedance 以及 SAM、面部网格等多个组件，推理成本和算力开销可能很高，普通用户难以日常使用。视频替换涉及肖像、版权与深度伪造合规风险，若缺少授权机制或内容溯源，可能限制分发和商业化。工程上，掩码、深度和音频同步的稳定性需要大量真实场景验证，否则输出质量波动会削弱实际需求。开源项目还要面对维护、文档和集成成本，729 星不足以证明付费或规模化采用。"
+        },
+        "en": {
+          "highlight": "Combine depth maps, SAM segmentation, face meshes, and audio processing to replace characters and objects with Seedance.",
+          "summary": "This GitHub project offers an open-source AI video replacement workflow that combines depth maps, SAM segmentation, face meshes, and audio processing to replace characters or objects with Seedance. It also includes a local web UI for preparing inputs, reviewing masks, previewing generations, and exporting with original audio. With 729 stars and recent public activity, it is worth watching as an engineering path for chaining multiple vision models into a usable pipeline.",
+          "failureAnalysis": "The workflow depends on Seedance plus multiple vision components, so inference cost and hardware requirements may keep it out of everyday use. Video replacement also raises portrait rights, copyright, and deepfake compliance risks, while mask, depth, and audio synchronization still need real-world validation.",
+          "title": "Genjustsu Open-Source Workflow: AI Video Replacement with Depth Maps, SAM, and Face Meshes"
+        }
+      }
+    }
+  ]
+}
