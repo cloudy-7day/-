@@ -1,0 +1,325 @@
+{
+  "issueDate": "2026-10-13",
+  "updateStatus": "complete",
+  "contentFingerprint": "af7174d17c0d69400edb8ffb7cf79c65aa2f35eef3ac4f84e6d90ba2bad56aed",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-ebae757309004ea38ea812431baf84da",
+      "category": "domestic",
+      "title": "国考报名今开始：拟招3.57万人，打击“公考围岗”",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-14/10714094.shtml",
+      "publishedAt": "2026-10-13T16:00:20.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "今日8时起，中央机关及其直属机构2027年度考试录用公务员报名正式开启，共计划招录3.57万人。",
+      "summary": "中国新闻网报道，2027年度国考报名自10月14日8时开始，计划招录3.57万人，规模依然是社会关注的焦点。报道同时点出打击“公考围岗”这一动向，涉及报名环节的公平与秩序。对关心就业市场、体制内岗位竞争和招录规则的人来说，这是一条需要跟进的官方信息。",
+      "failureAnalysis": "这条新闻的可核实要点是招录规模与报名启动时间，以及官方对“围岗”行为的整治态度；解读时应把“拟招录人数”与最终报名、过审人数区分开，避免把计划数当成实际竞争结果。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网北京10月14日电(记者 李京统)今日8时起，中央机关及其直属机构2027年度考试录用公务员报名正式开启，共计划招录3.57万人。",
+      "translations": {
+        "zh": {
+          "title": "国考报名今日启动：拟招录3.57万人，并打击“公考围岗”",
+          "highlight": "今日8时起，中央机关及其直属机构2027年度考试录用公务员报名正式开启，共计划招录3.57万人。",
+          "summary": "中国新闻网报道，2027年度国考报名自10月14日8时开始，计划招录3.57万人，规模依然是社会关注的焦点。报道同时点出打击“公考围岗”这一动向，涉及报名环节的公平与秩序。对关心就业市场、体制内岗位竞争和招录规则的人来说，这是一条需要跟进的官方信息。",
+          "failureAnalysis": "这条新闻的可核实要点是招录规模与报名启动时间，以及官方对“围岗”行为的整治态度；解读时应把“拟招录人数”与最终报名、过审人数区分开，避免把计划数当成实际竞争结果。"
+        },
+        "en": {
+          "highlight": "Registration for the 2027 national civil service exam opened at 8 a.m. today, with a planned recruitment of 35,700 positions.",
+          "summary": "China News Service reports that registration for the 2027 central government civil service exam began on October 14 at 8 a.m., with 35,700 positions planned, keeping the scale of hiring in the public eye. The report also highlights a crackdown on \"exam post-blocking,\" pointing to fairness and order in the registration process. Anyone tracking the job market, competition for public-sector roles, or recruitment rules should follow this official update.",
+          "failureAnalysis": "The verifiable points are the recruitment scale, the registration start time, and the official stance against \"post-blocking\"; keep the planned number separate from actual applicant and eligibility figures rather than treating the plan as the final competition outcome.",
+          "title": "China's national civil service exam registration opens today, with 35,700 posts planned"
+        }
+      }
+    },
+    {
+      "id": "news-69dee4eb7e6a4c1f9620f1d3b9b9958f",
+      "category": "domestic",
+      "title": "丁薛祥会见清华大学经济管理学院顾问委员会委员代表",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-13/10714051.shtml",
+      "publishedAt": "2026-10-13T13:50:27.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "中共中央政治局常委、国务院副总理丁薛祥13日在北京会见清华大学经济管理学院顾问委员会委员代表。",
+      "summary": "据新华社北京10月13日电，中共中央政治局常委、国务院副总理丁薛祥当日在北京会见清华大学经济管理学院顾问委员会委员代表。目前可核实的信息就是这次会见本身，即高层与清华大学经济管理学院顾问委员会之间有公开的会见安排。文中并未披露会见中的具体谈话内容，因此它更适合作为一条时政动态来读，而不是用来推断具体政策方向。",
+      "failureAnalysis": "读官方时政讯息时，先分清“发生了什么”和“说了什么”：本条只给出会见这一可核实事实，没有具体表态，因此不宜据此延伸出政策结论。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "新华社北京10月13日电 中共中央政治局常委、国务院副总理丁薛祥13日在北京会见清华大学经济管理学院顾问委员会委员代表。",
+      "translations": {
+        "zh": {
+          "title": "丁薛祥会见清华大学经济管理学院顾问委员会委员代表",
+          "highlight": "中共中央政治局常委、国务院副总理丁薛祥13日在北京会见清华大学经济管理学院顾问委员会委员代表。",
+          "summary": "据新华社北京10月13日电，中共中央政治局常委、国务院副总理丁薛祥当日在北京会见清华大学经济管理学院顾问委员会委员代表。目前可核实的信息就是这次会见本身，即高层与清华大学经济管理学院顾问委员会之间有公开的会见安排。文中并未披露会见中的具体谈话内容，因此它更适合作为一条时政动态来读，而不是用来推断具体政策方向。",
+          "failureAnalysis": "读官方时政讯息时，先分清“发生了什么”和“说了什么”：本条只给出会见这一可核实事实，没有具体表态，因此不宜据此延伸出政策结论。"
+        },
+        "en": {
+          "highlight": "Ding Xuexiang, member of the Political Bureau Standing Committee and Vice Premier, met in Beijing on the 13th with representatives of the Advisory Board of Tsinghua University's School of Economics and Management.",
+          "summary": "Xinhua reported from Beijing on October 13 that Ding Xuexiang, member of the Political Bureau Standing Committee and Vice Premier, met that day in Beijing with representatives of the Advisory Board of Tsinghua University's School of Economics and Management. The verifiable information is the meeting itself, namely a publicly arranged meeting between a senior official and this university advisory board. No specific remarks from the meeting are disclosed, so it is best read as a political news item rather than as evidence of a particular policy direction.",
+          "failureAnalysis": "When reading official political news, separate what happened from what was said: this item provides only the verifiable fact of a meeting, with no substantive statements, so policy conclusions should not be drawn from it.",
+          "title": "Ding Xuexiang Meets Representatives of the Advisory Board of Tsinghua SEM"
+        }
+      }
+    },
+    {
+      "id": "news-8cbf72647ad94f1298ce6a625f603b18",
+      "category": "domestic",
+      "title": "韩国KOSPI指数收跌超5% 两大半导体股延续跌势",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-13/10714095.shtml",
+      "publishedAt": "2026-10-13T15:46:09.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 3",
+      "highlight": "韩国综合股价指数(KOSPI)13日收盘跌幅逾5%，创下自2026年8月19日以来单日最大跌幅。",
+      "summary": "该消息称，韩国KOSPI指数13日收跌逾5%，为2026年8月19日以来最大单日跌幅；标题还显示两大半导体股延续跌势。作为官方财经来源的快讯，它提供了观察韩国股市短期波动及其对区域市场情绪影响的可核查事实。",
+      "failureAnalysis": "关键要点是：KOSPI单日跌超5%并创阶段最大跌幅，同时半导体股延续跌势，显示韩国股市短期承压；但快讯未给出成因或后续走势判断。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社首尔10月14日电 (记者 金旭)韩国综合股价指数(KOSPI)13日收盘跌幅逾5%，创下自2026年8月19日以来单日最大跌幅。",
+      "translations": {
+        "zh": {
+          "title": "韩国KOSPI指数收跌超5%，两大半导体股延续跌势",
+          "highlight": "韩国综合股价指数(KOSPI)13日收盘跌幅逾5%，创下自2026年8月19日以来单日最大跌幅。",
+          "summary": "该消息称，韩国KOSPI指数13日收跌逾5%，为2026年8月19日以来最大单日跌幅；标题还显示两大半导体股延续跌势。作为官方财经来源的快讯，它提供了观察韩国股市短期波动及其对区域市场情绪影响的可核查事实。",
+          "failureAnalysis": "关键要点是：KOSPI单日跌超5%并创阶段最大跌幅，同时半导体股延续跌势，显示韩国股市短期承压；但快讯未给出成因或后续走势判断。"
+        },
+        "en": {
+          "highlight": "South Korea's KOSPI closed down more than 5% on the 13th, the largest single-day drop since August 19, 2026.",
+          "summary": "The report says South Korea's KOSPI fell more than 5% on the 13th, its biggest one-day decline since August 19, 2026; the headline also indicates two major semiconductor stocks extended their losses. As an official financial news brief, it offers a verifiable market signal for readers tracking short-term volatility in South Korean equities and regional sentiment.",
+          "failureAnalysis": "The key takeaway is that the KOSPI's more than 5% single-day drop, alongside continued weakness in semiconductor shares, points to short-term pressure on South Korean equities; the brief does not provide causes or a forward view.",
+          "title": "South Korea's KOSPI closes down over 5%; two major semiconductor stocks extend losses"
+        }
+      }
+    },
+    {
+      "id": "news-9295c7960098459fb0b0371a0d0b530a",
+      "category": "international",
+      "title": "The Trump administration warns Ukraine it could cut off intel, Zelenskyy tells NPR",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/13/nx-s1-6000051/ukraine-zelenskyy-npr-interview-russia-war",
+      "publishedAt": "2026-10-13T18:51:55.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "泽连斯基对NPR表示，特朗普政府警告乌克兰，美国可能切断情报支持。",
+      "summary": "乌克兰总统泽连斯基在接受NPR采访时表示，特朗普政府警告乌方可能被切断情报支持。此次采访发生在乌克兰与白宫关系再度紧张之际。这反映美乌关系与战时情报支持可能生变，值得关注。",
+      "failureAnalysis": "关键点：美乌关系紧张之际，情报支持被用作施压筹码，可能影响乌克兰战场态势。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Ukrainian President Volodymyr Zelenskyy sat down for an interview with NPR at a time of renewed tensions with the White House.",
+      "translations": {
+        "zh": {
+          "title": "特朗普政府警告乌克兰可能被切断情报支持，泽连斯基对NPR如是说",
+          "highlight": "泽连斯基对NPR表示，特朗普政府警告乌克兰，美国可能切断情报支持。",
+          "summary": "乌克兰总统泽连斯基在接受NPR采访时表示，特朗普政府警告乌方可能被切断情报支持。此次采访发生在乌克兰与白宫关系再度紧张之际。这反映美乌关系与战时情报支持可能生变，值得关注。",
+          "failureAnalysis": "关键点：美乌关系紧张之际，情报支持被用作施压筹码，可能影响乌克兰战场态势。"
+        },
+        "en": {
+          "highlight": "The Trump administration warns Ukraine it could cut off intel, Zelenskyy tells NPR.",
+          "summary": "Ukrainian President Volodymyr Zelenskyy gave an interview to NPR as tensions with the White House renewed. He said the Trump administration warned Ukraine it could cut off intelligence support. It matters because a possible shift in U.S. intelligence support could affect Ukraine's war effort.",
+          "failureAnalysis": "The key takeaway is that intelligence support is being used as leverage amid renewed U.S.-Ukraine tensions. That could affect Ukraine's battlefield position.",
+          "title": "Trump Administration Warns Ukraine It Could Cut Off Intel, Zelenskyy Tells NPR"
+        }
+      }
+    },
+    {
+      "id": "news-8057f5a8901c48809e7687d9fe60fa9d",
+      "category": "international",
+      "title": "How will a diesel deal with Russia impact the U.S. market?",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/13/nx-s1-6000118/how-will-a-diesel-deal-with-russia-impact-the-u-s-market",
+      "publishedAt": "2026-10-13T20:03:37.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "美国柴油价格9月创下历史新高，特朗普与俄罗斯达成让更多柴油进入市场的协议，能否把价格压下来？",
+      "summary": "这条国际新闻关注美国柴油价格在9月创下历史新高这一背景，以及特朗普推动俄罗斯向市场释放更多柴油的协议。它值得一读，因为它把一个看似遥远的对外交易直接连到了美国国内的能源价格，是观察地缘政治如何传导到日常成本的典型案例。",
+      "failureAnalysis": "关键看点在于：对外协议能否真正压低国内柴油价格，取决于供应实际增加多少、市场预期如何反应，而非协议本身。判断这类新闻时，先分清“宣布交易”和“价格实际变化”之间的时间差与中间环节。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "The price of diesel hit an all-time high in the U.S. Can President Trump's deal for Russia to release more diesel onto the market bring the price down?",
+      "translations": {
+        "zh": {
+          "title": "与俄罗斯达成柴油协议将如何影响美国市场？",
+          "highlight": "美国柴油价格9月创下历史新高，特朗普与俄罗斯达成让更多柴油进入市场的协议，能否把价格压下来？",
+          "summary": "这条国际新闻关注美国柴油价格在9月创下历史新高这一背景，以及特朗普推动俄罗斯向市场释放更多柴油的协议。它值得一读，因为它把一个看似遥远的对外交易直接连到了美国国内的能源价格，是观察地缘政治如何传导到日常成本的典型案例。",
+          "failureAnalysis": "关键看点在于：对外协议能否真正压低国内柴油价格，取决于供应实际增加多少、市场预期如何反应，而非协议本身。判断这类新闻时，先分清“宣布交易”和“价格实际变化”之间的时间差与中间环节。"
+        },
+        "en": {
+          "highlight": "The price of diesel hit an all-time high in the U.S. in September; can President Trump's deal for Russia to release more diesel bring it down?",
+          "summary": "This international news item covers the record-high U.S. diesel price in September and Trump's deal for Russia to release more diesel onto the market. It is worth reading because it links a foreign policy deal directly to domestic energy costs, a clear case of geopolitics feeding into everyday prices.",
+          "failureAnalysis": "The key point: whether such a deal actually lowers domestic diesel prices depends on how much supply really increases and how the market responds, not on the deal itself. When reading this kind of story, separate the announcement of a deal from the actual price change and the steps in between.",
+          "title": "How Will a Diesel Deal With Russia Impact the U.S. Market?"
+        }
+      }
+    },
+    {
+      "id": "life-6a0fc9f025394b1ba7f1e27650749569",
+      "category": "international",
+      "title": "App+1 | 我做了一个专为「P 人」和 ADHD 设计的精力管理 App",
+      "source": "少数派 sspai",
+      "url": "https://sspai.com/post/115400",
+      "publishedAt": "2026-10-13T07:00:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "在 2018、2019 年左右的少数派，大家曾有一段时间痴迷于折腾各种任务管理软件，我也是其中之一。",
+      "summary": "这是少数派 App+1 栏目的一篇文章，作者介绍自己做的精力管理 App，目标用户是 MBTI 中偏「P」的人和 ADHD 人群。作者回顾自己从 2018 年前后开始折腾任务管理工具，先后试过 Things、Sorted 以及各类大而全的知名产品，最终把关注点从「管理任务」转向「管理精力」。对非技术读者来说，它提供了一个观察工具选择思路转变的样本：与其继续换 App，不如先看清自己的注意力与精力节奏。",
+      "failureAnalysis": "关键启发在于：通用型效率工具默认的使用者状态，未必符合注意力容易波动的人；先明确自己的行为与精力模式，再决定用什么工具，往往比不断更换 App 更有效。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "在2018、2019年左右的少数派，大家曾有一段时间痴迷于折腾各种任务管理软件，我也是其中之一。经过这么多年，我尝试过世面上几乎所有知名的任务管理工具，从小而美的Things、Sorted到大而全的O ...",
+      "translations": {
+        "zh": {
+          "title": "App+1 | 专为「P 人」和 ADHD 设计的精力管理 App",
+          "highlight": "在 2018、2019 年左右的少数派，大家曾有一段时间痴迷于折腾各种任务管理软件，我也是其中之一。",
+          "summary": "这是少数派 App+1 栏目的一篇文章，作者介绍自己做的精力管理 App，目标用户是 MBTI 中偏「P」的人和 ADHD 人群。作者回顾自己从 2018 年前后开始折腾任务管理工具，先后试过 Things、Sorted 以及各类大而全的知名产品，最终把关注点从「管理任务」转向「管理精力」。对非技术读者来说，它提供了一个观察工具选择思路转变的样本：与其继续换 App，不如先看清自己的注意力与精力节奏。",
+          "failureAnalysis": "关键启发在于：通用型效率工具默认的使用者状态，未必符合注意力容易波动的人；先明确自己的行为与精力模式，再决定用什么工具，往往比不断更换 App 更有效。"
+        },
+        "en": {
+          "highlight": "Around 2018 and 2019 on sspai, many of us were briefly obsessed with tinkering with all kinds of task-management software, and I was one of them.",
+          "summary": "In this sspai \"App+1\" piece, the author introduces an energy-management app he built for people who lean toward the \"P\" side of MBTI and for users with ADHD. He traces his own path from tinkering with task managers around 2018 — trying Things, Sorted and nearly every well-known, feature-heavy tool — to shifting his focus from managing tasks to managing energy. For a non-technical reader, it is a useful sample of how tool choices can change once you look at your own attention and energy rhythms.",
+          "failureAnalysis": "The key takeaway: general-purpose productivity tools assume a user state that may not fit people whose attention fluctuates; understanding your own behavior and energy patterns first is usually more effective than repeatedly switching apps.",
+          "title": "App+1 | I built an energy-management app for \"P-type\" people and ADHD"
+        }
+      }
+    },
+    {
+      "id": "life-f65451c715574258bd1ce623c1889023",
+      "category": "international",
+      "title": "The Madman Who Saved Mothers: The Invention of Handwashing and the Bittersweet True Love Story Behind ‘Frankenstein’",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/10/11/wollstonecraft-godwin-semmelweis/",
+      "publishedAt": "2026-10-11T19:53:01.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "“永远做真实的自己，你就不会在人生中错过它真正的祝福：爱与尊重。”",
+      "summary": "文章从《Traversal》改编而来，把玛丽·沃斯通克拉夫特、戈德温、塞麦尔维斯，以及洗手发明和《弗兰肯斯坦》背后的爱情故事串联起来。已知片段引用沃斯通克拉夫特写给尚未出生女儿的话，强调真实、爱与尊重，并将她1791年完成《女权辩护》与同期美国《权利法案》的时代并置。它值得读，因为把医学史、思想史和私人情感放在同一条叙事线上。",
+      "failureAnalysis": "关键启示：真实地做自己，可能带来爱与尊重；历史进步常与个人牺牲和误解交织，私人情感也会进入公共思想史。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "This essay is adapted from Traversal. “Death may snatch me from you, before you can weigh my advice,” Mary Wollstonecraft wrote in the philosophical novel she wouldn’t live to finish, addressing a daughter she was yet to have. “Always appear what you are, and you will not pass through existence without enjoying its genuine blessings, love and respect.” In late 1791, as important men were sitting down in America to make ten amendments to the young country’s constitution, which they called a Universal Bill of Rights, Wollstonecraft was sitting down in England to complete A Vindication of the Rights of… read article",
+      "translations": {
+        "zh": {
+          "title": "拯救母亲们的“疯子”：洗手发明与《弗兰肯斯坦》背后的苦乐交织爱情故事",
+          "highlight": "“永远做真实的自己，你就不会在人生中错过它真正的祝福：爱与尊重。”",
+          "summary": "文章从《Traversal》改编而来，把玛丽·沃斯通克拉夫特、戈德温、塞麦尔维斯，以及洗手发明和《弗兰肯斯坦》背后的爱情故事串联起来。已知片段引用沃斯通克拉夫特写给尚未出生女儿的话，强调真实、爱与尊重，并将她1791年完成《女权辩护》与同期美国《权利法案》的时代并置。它值得读，因为把医学史、思想史和私人情感放在同一条叙事线上。",
+          "failureAnalysis": "关键启示：真实地做自己，可能带来爱与尊重；历史进步常与个人牺牲和误解交织，私人情感也会进入公共思想史。"
+        },
+        "en": {
+          "highlight": "“Always appear what you are, and you will not pass through existence without enjoying its genuine blessings, love and respect.”",
+          "summary": "Adapted from Traversal, the essay connects Mary Wollstonecraft, Godwin, Semmelweis, the invention of handwashing, and the bittersweet love story behind Frankenstein. In the known excerpt, Wollstonecraft addresses a daughter she has not yet had, urging her to appear what she is and to enjoy love and respect; it also places her late-1791 work on A Vindication of the Rights of… alongside America’s Bill of Rights. It is worth reading for weaving medical history, intellectual history, and private feeling into one narrative.",
+          "failureAnalysis": "The key takeaway: appearing as you are may bring genuine love and respect, while historical progress is often intertwined with personal sacrifice and misunderstanding.",
+          "title": "The Madman Who Saved Mothers: The Invention of Handwashing and the Bittersweet True Love Story Behind ‘Frankenstein’"
+        }
+      }
+    },
+    {
+      "id": "paper-2610.12921",
+      "category": "paper",
+      "title": "Teaching neural decoders with language",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2610.12921v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.12921",
+      "publishedAt": "2026-10-09T03:12:42.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。",
+          "CNN：擅长从信号或图像里提取局部特征的神经网络。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "脑机接口可解码神经活动，但类别标签监督使类别间关系保持隐含，作者提出语言监督方法，将神经特征与自然语言类别描述对齐。",
+      "summary": "该研究关注脑机接口中的神经解码，指出现有类别标签监督未显式表达类别关系。作者提出 Language as Supervision（LaS），将神经特征与自然语言类别描述对齐。若方法有效，或可为神经解码引入更丰富的语义监督，但所给文本截断，仍需实验证据支持。",
+      "failureAnalysis": "所给来源仅含摘要开头，缺少完整方法、实验设置与结果，无法确认 LaS 相较类别标签监督的实际增益。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "TEACHINGNEURALDECODERS WITHLANGUAGE Xuan Wen1 Yonghao Song1,∗ Yuhong Zhang2 Guoliang Li1 Tzyy-Ping Jung2 Xiaorong Gao1,∗ 1Tsinghua University 2University of California, San Diego ∗Corresponding authors eeyhsong@gmail.com;gxr-dea@tsinghua.edu.cn ABSTRACT Brain–computer interfaces decode neural activity, yet class-label supervision (CLS) leaves relationships among classes implicit. We propose Language as Su- pervision (LaS), which aligns neural features with natural-language class descrip- tions through learned projections and predicts classes using candidate text proto- types. We evaluate seven encoder architectures with independently trained mod- els for visual, motor, and speech decoding from scalp and intracranial recordings.",
+      "translations": {
+        "zh": {
+          "title": "以语言监督训练神经解码器",
+          "highlight": "脑机接口可解码神经活动，但类别标签监督使类别间关系保持隐含，作者提出语言监督方法，将神经特征与自然语言类别描述对齐。",
+          "summary": "该研究关注脑机接口中的神经解码，指出现有类别标签监督未显式表达类别关系。作者提出 Language as Supervision（LaS），将神经特征与自然语言类别描述对齐。若方法有效，或可为神经解码引入更丰富的语义监督，但所给文本截断，仍需实验证据支持。",
+          "failureAnalysis": "所给来源仅含摘要开头，缺少完整方法、实验设置与结果，无法确认 LaS 相较类别标签监督的实际增益。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。",
+              "CNN：擅长从信号或图像里提取局部特征的神经网络。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "Teaching Neural Decoders with Language",
+          "highlight": "Brain–computer interfaces decode neural activity, yet class-label supervision leaves relationships among classes implicit; the authors propose Language as Supervision to align neural features with natural-language class descriptions.",
+          "summary": "The work addresses neural decoding in brain–computer interfaces, noting that class-label supervision leaves relationships among classes implicit. It proposes Language as Supervision (LaS), which aligns neural features with natural-language class descriptions. The provided abstract is truncated, so the paper's full validation and impact remain unclear.",
+          "failureAnalysis": "The supplied text only includes the beginning of the abstract, lacking complete methods, experimental setup, and results, so it is not possible to confirm LaS's actual advantage over class-label supervision.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。",
+              "CNN：擅长从信号或图像里提取局部特征的神经网络。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-feed-83ef290743d9447ca348df1a9ce11e7b",
+      "category": "ai",
+      "title": "Quoting Geoffrey Huntley",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Oct/13/geoffrey-huntley/",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-13T13:32:00.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [],
+      "evidenceLabel": "No clear evidence",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
+      "summary": "Geoffrey Huntley 指出，当编码智能体没有按约定使用他的诊断库时，光靠内省并更新 AGENTS.md 仍会有偏差，而且会随时间漂移。他的做法是加一个 pre-commit 钩子，扫描 git diff 中绕过诊断模块的可观测性调用，直接让提交失败并把纠正提示注入给智能体，效果立刻变成十分。这个例子说明：与其依赖文档和提示来维持约定，不如把约定变成可自动执行的检查。",
+      "failureAnalysis": "关键要点是：对智能体的约束最好落在能自动失败、能给出修正信号的机制上，而不是写在会过期的说明文档里。",
+      "aiSelectionScore": 100,
+      "highlight": "我写一个 pre-commit 钩子，检查 git diff 里是否绕过诊断模块直接调用可观测性模块；一旦发现就让提交失败，并注入提示告诉智能体改用诊断库。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "If the agent isn't using my diagnostics library, I could introspect and update AGENTS.md, but there's still a delta, and it'll drift. Instead, I write a pre-commit hook that checks the git diff for direct calls to observability modules that bypass my diagnostics module. Boom: fail the commit, inject a prompt telling the agent to use the diagnostics library.",
+      "translations": {
+        "zh": {
+          "title": "别只更新 AGENTS.md：用 pre-commit 钩子强制编码智能体使用诊断库",
+          "highlight": "我写一个 pre-commit 钩子，检查 git diff 里是否绕过诊断模块直接调用可观测性模块；一旦发现就让提交失败，并注入提示告诉智能体改用诊断库。",
+          "summary": "Geoffrey Huntley 指出，当编码智能体没有按约定使用他的诊断库时，光靠内省并更新 AGENTS.md 仍会有偏差，而且会随时间漂移。他的做法是加一个 pre-commit 钩子，扫描 git diff 中绕过诊断模块的可观测性调用，直接让提交失败并把纠正提示注入给智能体，效果立刻变成十分。这个例子说明：与其依赖文档和提示来维持约定，不如把约定变成可自动执行的检查。",
+          "failureAnalysis": "关键要点是：对智能体的约束最好落在能自动失败、能给出修正信号的机制上，而不是写在会过期的说明文档里。"
+        },
+        "en": {
+          "highlight": "I write a pre-commit hook that checks the git diff for direct calls to observability modules that bypass my diagnostics module. Boom: fail the commit, inject a prompt telling the agent to use the diagnostics library.",
+          "summary": "Geoffrey Huntley notes that when a coding agent fails to use his diagnostics library, introspecting and updating AGENTS.md still leaves a delta, and it will drift over time. His answer is a pre-commit hook that scans the git diff for observability calls bypassing his diagnostics module, fails the commit, and injects a corrective prompt to the agent — which immediately made it ten out of ten. The lesson: keep agent conventions in automatically enforced checks rather than in documentation and prompts that decay.",
+          "failureAnalysis": "The key takeaway: constrain agents with mechanisms that can fail automatically and feed back a correction, not with instructions that go stale.",
+          "title": "Don't Just Update AGENTS.md: Use a Pre-Commit Hook to Force Agents to Use Your Diagnostics Library"
+        }
+      }
+    }
+  ]
+}
