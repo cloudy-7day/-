@@ -1,0 +1,351 @@
+{
+  "issueDate": "2026-10-14",
+  "updateStatus": "complete",
+  "contentFingerprint": "2b4ae30a04ae37ac5cc6e2ff575f73ddb6e2f0b2de40d0f774a3becee5a908a0",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-a77f42dafe214ee8a5e573931335b090",
+      "category": "domestic",
+      "title": "中国社会科学院第二届青年学术大会在北京召开",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-14/10714722.shtml",
+      "publishedAt": "2026-10-14T13:54:18.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "中国社会科学院第二届青年学术大会13日在北京召开，院长、党组书记高翔出席会议并作学术报告。",
+      "summary": "报道显示，中国社会科学院第二届青年学术大会于10月13日在北京召开，院长、党组书记高翔作学术报告。中央纪委国家监委驻院纪检监察组组长杭元祥、副院长李雪松、院党组成员金民卿和秘书长薛松岩等出席。作为官方学术机构的重要会议，它可被视作该院重视青年学术力量与学术交流的公开信号。",
+      "failureAnalysis": "可核实的信息主要是会议召开和出席人员，报道未披露会议议题、成果或具体政策安排。因此其影响更适合理解为机构层面的学术活动信号，而非可直接量化的公共政策变化。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网北京10月14日电(记者 李京泽)中国社会科学院第二届青年学术大会13日在北京召开。中国社会科学院院长、党组书记高翔出席会议并作学术报告。中央纪委国家监委驻院纪检监察组组长、院党组成员杭元祥，副院长、党组成员李雪松，院党组成员、当代中国研究所所长金民卿，秘书长、党组成员薛松岩出席会议。",
+      "translations": {
+        "zh": {
+          "title": "中国社会科学院第二届青年学术大会在北京召开",
+          "highlight": "中国社会科学院第二届青年学术大会13日在北京召开，院长、党组书记高翔出席会议并作学术报告。",
+          "summary": "报道显示，中国社会科学院第二届青年学术大会于10月13日在北京召开，院长、党组书记高翔作学术报告。中央纪委国家监委驻院纪检监察组组长杭元祥、副院长李雪松、院党组成员金民卿和秘书长薛松岩等出席。作为官方学术机构的重要会议，它可被视作该院重视青年学术力量与学术交流的公开信号。",
+          "failureAnalysis": "可核实的信息主要是会议召开和出席人员，报道未披露会议议题、成果或具体政策安排。因此其影响更适合理解为机构层面的学术活动信号，而非可直接量化的公共政策变化。"
+        },
+        "en": {
+          "highlight": "The Second Young Scholars Academic Conference of the Chinese Academy of Social Sciences was held in Beijing on October 13; President Gao Xiang delivered an academic report.",
+          "summary": "China News Service reported that the conference took place on October 13, with Gao Xiang, president and Party secretary of CASS, giving an academic report. Several CASS leaders and Party group members attended, including Hang Yuanxiang, Li Xuesong, Jin Minqing and Xue Songyan. It is worth noting as an official signal of the academy's attention to young scholars and academic exchange.",
+          "failureAnalysis": "The report confirms the meeting and attendees but does not provide its themes, outcomes or specific policy arrangements. Its significance is therefore best understood as an institutional academic event signal.",
+          "title": "The Second Young Scholars Academic Conference of the Chinese Academy of Social Sciences Held in Beijing"
+        }
+      }
+    },
+    {
+      "id": "news-59172b1705d4408d8277f11975ff7f0f",
+      "category": "domestic",
+      "title": "黑龙江部署“十五五”科创任务 以科技创新引领产业全面振兴",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-14/10714718.shtml",
+      "publishedAt": "2026-10-14T13:54:08.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "黑龙江省推动发展方式从资源驱动为主向创新引领为主转变，并介绍其进展成效",
+      "summary": "10月14日，黑龙江省人民政府新闻办公室举行“开局起步‘十五五’”系列主题新闻发布会科技厅专场，由省科技厅党组书记、厅长作主旨发布，多位副厅长回答记者与网友提问。发布会聚焦推动发展方式从资源驱动为主向创新引领为主转变的进展成效，即以科技创新引领产业全面振兴。对关注东北振兴与地方科技政策走向的读者，这是一份了解“十五五”开局阶段官方部署口径的直接材料。",
+      "failureAnalysis": "这类发布会主要给出方向与部署，具体的量化指标、资金安排和落地节奏通常要等后续文件与项目清单才可验证，因此阅读时应把“已部署的任务”与“已实现的成效”分开看待，避免把表态当作结果。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网哈尔滨10月14日电 (韩雪 贾欣燃)14日，黑龙江省人民政府新闻办公室举行“开局起步‘十五五’”系列主题新闻发布会科技厅专场，介绍黑龙江省推动发展方式从资源驱动为主向创新引领为主转变的进展成效。黑龙江省科学技术厅党组书记、厅长陈苏作主旨发布，黑龙江省科学技术厅党组成员、副厅长张喆、黑龙江省科学技术厅党组成员、副厅长闫志金、黑龙江省科学技术厅党组成员、副厅长韩国卿回答记者、网友提问。",
+      "translations": {
+        "zh": {
+          "title": "黑龙江部署“十五五”科创任务 以科技创新引领产业全面振兴",
+          "highlight": "黑龙江省推动发展方式从资源驱动为主向创新引领为主转变，并介绍其进展成效",
+          "summary": "10月14日，黑龙江省人民政府新闻办公室举行“开局起步‘十五五’”系列主题新闻发布会科技厅专场，由省科技厅党组书记、厅长作主旨发布，多位副厅长回答记者与网友提问。发布会聚焦推动发展方式从资源驱动为主向创新引领为主转变的进展成效，即以科技创新引领产业全面振兴。对关注东北振兴与地方科技政策走向的读者，这是一份了解“十五五”开局阶段官方部署口径的直接材料。",
+          "failureAnalysis": "这类发布会主要给出方向与部署，具体的量化指标、资金安排和落地节奏通常要等后续文件与项目清单才可验证，因此阅读时应把“已部署的任务”与“已实现的成效”分开看待，避免把表态当作结果。"
+        },
+        "en": {
+          "highlight": "Heilongjiang is shifting its development model from mainly resource-driven to mainly innovation-led, and officials briefed on the progress and results so far.",
+          "summary": "On October 14, the Information Office of the Heilongjiang Provincial People's Government held a science and technology department session of its \"Starting the 15th Five-Year Plan\" press conference series, with the provincial science and technology department's leading officials giving the keynote and several deputy heads taking questions from reporters and online users. The briefing focused on progress in moving the province's development model from mainly resource-driven to mainly innovation-led, using technological innovation to drive all-round industrial revitalization. For readers tracking Northeast China's revitalization and local science policy, it is a direct look at official priorities at the start of the 15th Five-Year Plan.",
+          "failureAnalysis": "Such briefings mainly convey direction and task assignments; specific metrics, funding arrangements and implementation timelines usually need follow-up documents and project lists to verify, so readers should distinguish deployed tasks from demonstrated results rather than treating statements as outcomes.",
+          "title": "Heilongjiang Deploys \"15th Five-Year Plan\" Science and Technology Tasks, Leading All-Round Industrial Revitalization Through Innovation"
+        }
+      }
+    },
+    {
+      "id": "news-cce3e6bee4374e6388346867b6190391",
+      "category": "domestic",
+      "title": "海南推广地质灾害一键报灾小程序 隐患即拍即报",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-14/10714730.shtml",
+      "publishedAt": "2026-10-14T14:09:01.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 4",
+      "highlight": "该省同步推广“海南地灾一键报灾”微信小程序，构建全民参与、全域覆盖、快速响应的地质灾害防治新格局。",
+      "summary": "据已知内容，海南省在推进地质灾害风险隐患排查复核“村村走到”专项行动的同时，推广“海南地灾一键报灾”微信小程序。该省希望借此形成全民参与、全域覆盖、快速响应的地质灾害防治新格局。它值得一读，因为展示了一个地方如何用微信小程序降低公众上报隐患的门槛。",
+      "failureAnalysis": "关键看点在于，一键报灾工具可降低上报门槛、加快隐患发现，但实际效果取决于基层推广、核查处置和闭环反馈是否到位。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网海口10月14日电 (尹建军 史继炎)近期，海南省地质灾害风险隐患排查复核“村村走到”专项行动正在推进。海南省自然资源和规划厅14日介绍，该省同步推广“海南地灾一键报灾”微信小程序，构建全民参与、全域覆盖、快速响应的地质灾害防治新格局。",
+      "translations": {
+        "zh": {
+          "title": "海南推广地质灾害一键报灾小程序 隐患即拍即报",
+          "highlight": "该省同步推广“海南地灾一键报灾”微信小程序，构建全民参与、全域覆盖、快速响应的地质灾害防治新格局。",
+          "summary": "据已知内容，海南省在推进地质灾害风险隐患排查复核“村村走到”专项行动的同时，推广“海南地灾一键报灾”微信小程序。该省希望借此形成全民参与、全域覆盖、快速响应的地质灾害防治新格局。它值得一读，因为展示了一个地方如何用微信小程序降低公众上报隐患的门槛。",
+          "failureAnalysis": "关键看点在于，一键报灾工具可降低上报门槛、加快隐患发现，但实际效果取决于基层推广、核查处置和闭环反馈是否到位。"
+        },
+        "en": {
+          "highlight": "The province is simultaneously promoting the “Hainan Geological Disaster One-Click Reporting” WeChat mini-program, building a new pattern of geological disaster prevention with broad public participation, full-area coverage, and rapid response.",
+          "summary": "According to the known content, Hainan is advancing a special campaign to inspect and review geological disaster risks in every village. At the same time, it is promoting a WeChat mini-program that lets the public photograph and report hazards immediately, aiming to create a prevention model with public participation, full coverage, and rapid response. It is worth reading as an example of how local governments use lightweight digital tools to mobilize public reporting and speed up hazard discovery.",
+          "failureAnalysis": "The key takeaway is that lowering the barrier to reporting can help discover hazards faster, but the real value depends on grassroots promotion, verification, and closed-loop handling of reported risks.",
+          "title": "Hainan Promotes One-Click Geological Disaster Reporting Mini-Program for Instant Hazard Reports"
+        }
+      }
+    },
+    {
+      "id": "news-687bc47739bf4f798506dccb7a634a90",
+      "category": "international",
+      "title": "Drop-off charges at UK airports to be reviewed after sharp increase",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/cwp8gynk13rro?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-14T17:46:30.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "确认将进行审查时，政府表示，确保旅行仍然便利、乘客受到公平对待至关重要。",
+      "summary": "BBC商业报道称，英国机场的落客费在急剧上涨后将接受审查。政府在确认审查时表示，确保出行依然便利、乘客得到公平对待至关重要。这则消息值得关注，因为它可能影响旅客在机场的附加成本以及后续监管方向。",
+      "failureAnalysis": "关键要点：机场落客费上涨已推动官方审查，核心争议在于出行便利与乘客公平；后续可观察收费是否调整或规则是否统一。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Confirming the review, the government said it was \"vital to ensure travel remains accessible and that passengers are treated fairly\".",
+      "translations": {
+        "zh": {
+          "title": "英国机场落客费大幅上涨后将接受审查",
+          "highlight": "确认将进行审查时，政府表示，确保旅行仍然便利、乘客受到公平对待至关重要。",
+          "summary": "BBC商业报道称，英国机场的落客费在急剧上涨后将接受审查。政府在确认审查时表示，确保出行依然便利、乘客得到公平对待至关重要。这则消息值得关注，因为它可能影响旅客在机场的附加成本以及后续监管方向。",
+          "failureAnalysis": "关键要点：机场落客费上涨已推动官方审查，核心争议在于出行便利与乘客公平；后续可观察收费是否调整或规则是否统一。"
+        },
+        "en": {
+          "highlight": "Confirming the review, the government said it was vital to ensure travel remains accessible and that passengers are treated fairly.",
+          "summary": "BBC Business reports that drop-off charges at UK airports will be reviewed after a sharp increase. In confirming the review, the government said it was vital to ensure travel remains accessible and that passengers are treated fairly. It is worth reading because it may affect travelers’ extra costs at airports and the direction of future regulation.",
+          "failureAnalysis": "Key takeaway: the sharp rise in airport drop-off charges has triggered an official review, with accessibility and fair treatment as the government’s stated principles; watch whether the charges are adjusted or rules are unified.",
+          "title": "Drop-off charges at UK airports to be reviewed after sharp increase"
+        }
+      }
+    },
+    {
+      "id": "news-f8685b67ed774de39a98e02ab7763a18",
+      "category": "international",
+      "title": "US inflation rises more than expected - here's what is happening with prices",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-14T15:26:14.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "截至9月的12个月内，物价上涨速度加快至3.7%，主要受机动车燃料成本上升推动。",
+      "summary": "这则BBC Business报道称，美国截至9月的年度通胀率升至3.7%，高于预期，主要因机动车燃料价格上涨。对关注宏观经济与政策的人来说，这是判断利率与物价压力的重要信号。",
+      "failureAnalysis": "关键信号是：美国年度通胀升至3.7%且高于预期，机动车燃料成本是主要推手，因此市场可能继续关注货币政策对物价压力的回应。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "The pace of price rises increased to 3.7% in the year to September, driving by higher motor fuel costs.",
+      "translations": {
+        "zh": {
+          "title": "美国通胀升幅超预期：物价走势解析",
+          "highlight": "截至9月的12个月内，物价上涨速度加快至3.7%，主要受机动车燃料成本上升推动。",
+          "summary": "这则BBC Business报道称，美国截至9月的年度通胀率升至3.7%，高于预期，主要因机动车燃料价格上涨。对关注宏观经济与政策的人来说，这是判断利率与物价压力的重要信号。",
+          "failureAnalysis": "关键信号是：美国年度通胀升至3.7%且高于预期，机动车燃料成本是主要推手，因此市场可能继续关注货币政策对物价压力的回应。"
+        },
+        "en": {
+          "highlight": "The pace of price rises increased to 3.7% in the year to September, driving by higher motor fuel costs.",
+          "summary": "This BBC Business report says US annual inflation rose to 3.7% in September, faster than expected, driven by higher motor fuel costs. It is worth reading because it signals ongoing price pressures that could influence interest-rate expectations.",
+          "failureAnalysis": "The key takeaway is that inflation accelerated to 3.7% and exceeded expectations, with motor fuel costs as the main driver; this keeps price pressure and monetary policy in focus.",
+          "title": "US inflation rises more than expected: what is happening with prices"
+        }
+      }
+    },
+    {
+      "id": "life-83e9a6f01f19402c8aa43c0829c2cc72",
+      "category": "international",
+      "title": "认知心理学背后的播客剪辑技巧",
+      "source": "少数派 sspai",
+      "url": "https://sspai.com/post/114861",
+      "publishedAt": "2026-10-14T09:33:49.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 6",
+      "highlight": "为什么剪辑时会时常出现爆音？为什么有些地方剪辑后意思接得上，听起来却觉得别扭？为什么有些地方稍微动一下就会不自然？",
+      "summary": "文章以“爆音、语义接得上却别扭、微调就不自然”等问题为线索，讨论认知心理学如何影响播客剪辑。它值得一读，因为能帮助非技术读者理解：剪辑不只是剪掉内容，更是在照顾听众的听感与连续性预期。",
+      "failureAnalysis": "关键 takeaway：好剪辑不只追求语义对齐，还要符合人耳对自然连续性的认知习惯；一个微小处理不当，就可能让听感明显变差。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "为什么剪辑时会时常出现爆音？为什么有些地方剪辑后意思接得上，听起来却觉得别扭？为什么有些地方稍微动一下就会不自然？",
+      "translations": {
+        "zh": {
+          "title": "认知心理学背后的播客剪辑技巧",
+          "highlight": "为什么剪辑时会时常出现爆音？为什么有些地方剪辑后意思接得上，听起来却觉得别扭？为什么有些地方稍微动一下就会不自然？",
+          "summary": "文章以“爆音、语义接得上却别扭、微调就不自然”等问题为线索，讨论认知心理学如何影响播客剪辑。它值得一读，因为能帮助非技术读者理解：剪辑不只是剪掉内容，更是在照顾听众的听感与连续性预期。",
+          "failureAnalysis": "关键 takeaway：好剪辑不只追求语义对齐，还要符合人耳对自然连续性的认知习惯；一个微小处理不当，就可能让听感明显变差。"
+        },
+        "en": {
+          "highlight": "Why do pops often appear during editing? Why do some cuts connect in meaning but still sound awkward? Why does even a slight adjustment feel unnatural?",
+          "summary": "This article uses cognitive psychology to discuss common problems in podcast editing, such as pops, transitions that are semantically coherent yet awkward to hear, and edits that feel unnatural after only a small change. It is worth reading because it shows that editing is not just about cutting content but also about managing listeners' perceptual and continuity expectations.",
+          "failureAnalysis": "The key takeaway is that good editing must respect human hearing and continuity, not merely remove errors; a small mishandled edit can noticeably damage the listening experience.",
+          "title": "The Cognitive Psychology Behind Podcast Editing Techniques"
+        }
+      }
+    },
+    {
+      "id": "life-1e05aa2ace374d94943dc5f895f1316b",
+      "category": "international",
+      "title": "NostradamusGPT: The Psychology of Prophecy and How to Break Free from the Prison of Predictive Technologies",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/10/13/carissa-veliz-prophecy/",
+      "publishedAt": "2026-10-14T03:59:54.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "我们的悖论是：明知不确定性是宇宙的基底、创造力的熔炉、通往真理之路，却终其一生寻找确定性。",
+      "summary": "这篇文章讨论人类对确定性的执念：不确定性本是宇宙的基底、创造力的熔炉和通往真理之路，我们却终生寻找确定性。作者把算法比作现代占卜的飞鸟，指出它们让人误以为能预知未来，从而回应未来并安抚焦虑。值得读它来反思预测技术如何塑造我们的心理依赖。",
+      "failureAnalysis": "关键提醒：算法像现代占卜的飞鸟，未必真能消除不确定性，却让人产生可预知未来的错觉。对决策者而言，应把预测结果当作有限参考，而不是安抚焦虑的确定性承诺。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "This is our paradox: We know that uncertainty is the substrate of the universe, is the crucible of creativity, is the path to truth, and yet we spend our lives searching for certainty. The word auspicious derives from the Latin auspex — one who examines the flight of birds for omens and divinations of the future. Today, our birds are made of bits — wind-up larks of our own making we call algorithms — but they serve the same function: to let us believe that we can divine the future in order to respond to it; to sedate our anxieties… read article",
+      "translations": {
+        "zh": {
+          "title": "诺查丹玛斯GPT：预言的心理机制与如何挣脱预测技术的牢笼",
+          "highlight": "我们的悖论是：明知不确定性是宇宙的基底、创造力的熔炉、通往真理之路，却终其一生寻找确定性。",
+          "summary": "这篇文章讨论人类对确定性的执念：不确定性本是宇宙的基底、创造力的熔炉和通往真理之路，我们却终生寻找确定性。作者把算法比作现代占卜的飞鸟，指出它们让人误以为能预知未来，从而回应未来并安抚焦虑。值得读它来反思预测技术如何塑造我们的心理依赖。",
+          "failureAnalysis": "关键提醒：算法像现代占卜的飞鸟，未必真能消除不确定性，却让人产生可预知未来的错觉。对决策者而言，应把预测结果当作有限参考，而不是安抚焦虑的确定性承诺。"
+        },
+        "en": {
+          "highlight": "We know uncertainty is the substrate of the universe, the crucible of creativity, the path to truth, yet we spend our lives searching for certainty.",
+          "summary": "The article explores the human craving for certainty despite uncertainty being the substrate of the universe, the crucible of creativity, and the path to truth. It compares algorithms to modern birds of augury: wind-up larks made of bits that let us believe we can divine and respond to the future while sedating our anxieties. It is worth reading as a reflection on how predictive technologies shape our psychological dependence on certainty.",
+          "failureAnalysis": "The key takeaway: predictive tools may function less as true foresight than as modern augury that soothes anxiety. For non-technical leaders, the practical constraint is to treat predictions as limited probabilities, not as certainty or emotional reassurance.",
+          "title": "NostradamusGPT: The Psychology of Prophecy and How to Break Free from the Prison of Predictive Technologies"
+        }
+      }
+    },
+    {
+      "id": "paper-2610.16921",
+      "category": "paper",
+      "title": "Time Window Optimization for Motor Imagery Classification via Temporal Structure Embedded Reinforcement Learning",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2610.16921v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.16921",
+      "publishedAt": "2026-10-12T15:06:03.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "在线运动想象脑机接口通常用固定长度的滑动窗口切分连续脑电信号，窗口长度靠人工设定，有的窗口只覆盖一部分运动想象事件，有的混入大量事件前基线或肌电等干扰，与实际神经事件对不齐，导致响应慢、解码不准。",
+        "method": "把“该保留哪个时间窗”建模为一个带约束的序列决策问题（马尔可夫决策过程），用强化学习智能体逐个窗口做决策：丢弃，或标记为事件的 Onset（起始）、Sustain（持续）、Offset（结束）；再用有限状态机限制每一步可选动作，保证决策顺序符合运动想象事件的生理演进。",
+        "difference": "以前的窗口优化方法（相关性选窗 CTWS、蚁群 ACO、麻雀搜索 SSA 等）把每个候选窗口孤立地判断“好或坏”，配置离线搜索后对所有试次统一套用，容易切出碎片化、生理上不合理的窗口序列；本文让每一步决策都依赖跨窗口的历史上下文和事件阶段约束，在线逐窗自适应决策。",
+        "innovation": "三点：一是把窗口动作空间从“保留/丢弃”改成与神经事件语义对齐的四种角色，提升可解释性；二是用有限状态机做动作掩码，把计划/执行/恢复三个阶段作为硬约束，避免出现“先 Offset 后 Onset”这类荒谬序列；三是用基于 Transformer 的历史编码器并行捕捉长距离窗口依赖，替代易梯度消失或爆炸的循环网络，训练更稳更快。",
+        "implementation": "输入是带标签的脑电数据，按窗长 L 和步长 Δ 滑动取窗，当前窗、历史窗和试次进度组成状态；特征提取器把窗口编码成向量，判别器输出类别概率用于奖励计算；策略网络结合当前特征、历史上下文和试次进度输出动作；奖励由判别奖励（当前窗分类置信度）、时间连续奖励（窗口序列是否平滑）和终止奖励（最终分类结果）组成；强化学习用 PPO 类算法训练策略，最终把保留下来的窗口序列交给 MI 分类器分类。",
+        "applications": "可用于需要实时响应的运动想象脑机接口，如神经康复训练、外骨骼或轮椅等辅助设备的脑控、娱乐与游戏交互、人机交互控制；其即插即用设计也可用来增强现有 EEGNet、FBCNet、ATCNet、EEGConformer 等解码器的在线表现。",
+        "technicalTerms": [
+          "运动想象（MI）：人只是想象肢体动作而不实际动，大脑感觉运动区会产生可测量的脑电变化。",
+          "脑机接口（BCI）：让大脑信号直接控制外部设备的通路。",
+          "脑电（EEG）：用头皮电极记录的大脑电活动，时间分辨率高、成本较低。",
+          "ERD/ERS：运动想象时 μ（8–13Hz）和 β（13–30Hz）节律先变弱（去同步，ERD），事件结束后又反弹增强（同步，ERS），这是判断事件阶段的生理依据。",
+          "滑动窗口：在连续信号上按固定长度不断向前平移取样，本文让算法自己决定每个窗口去留。",
+          "马尔可夫决策过程（MDP）：把序贯决策写成状态、动作、转移、奖励、折扣因子的数学框架，强化学习的标准建模方式。",
+          "有限状态机（FSM）：用一组离散状态和允许的转移规则来限制可行动作，这里用于保证决策顺序符合生理阶段。",
+          "动作掩码：在某状态下把不合法的动作直接屏蔽掉，让智能体只能选择合法动作。",
+          "Transformer 历史编码器：用自注意力机制并行建模历史窗口之间的依赖关系，比循环网络更稳定高效。",
+          "即插即用：不改动原有分类器结构，可以直接叠加到多种 MI 分类器上使用。"
+        ]
+      },
+      "highlight": "TSE-RL 把 MI 事件的时间结构先验嵌入强化学习，将窗口优化从孤立的“好/坏”判断升级为完整神经事件的语义对齐。",
+      "summary": "这篇预印本论文针对在线运动想象脑机接口的固定长度滑动窗口问题，提出 TSE-RL 框架，让强化学习智能体给每个时间窗打上 Discard/Onset/Sustain/Offset 的语义标签，并用有限状态机约束决策顺序。它值得读的地方在于：不只是提高解码准确率，还让算法学到的窗口选择顺序符合神经生理规律，且能即插即用地接到各种 MI 分类器上。",
+      "failureAnalysis": "目前可见内容只有摘要、引言和方法前半部分，缺少完整实验细节（数据集数量、提升幅度、稳定性数据），且所有结论均来自公共数据集的模拟在线实验，并非真实在线系统验证。此外，框架依赖对 MI 事件阶段（Planning/Execution/Recovery）的先验划分，若不同被试的神经事件时序差异较大，约束可能过强。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "PREPRINT 1 Time Window Optimization for Motor Imagery Classification via Temporal Structure Embedded Reinforcement Learning Huan Luo, Na Lu, Xiaopeng Wang, and Ziyang Shang Abstract— Online motor imagery-based brain-computer interfaces (MI-BCIs) usually processes continuous EEG signal with fixed-length sliding windows, which is inflexible, human intervened, and misaligned with neural events. Time window optimization has shown promising improvement as a substitute solution. However, the existing optimiza- tion methods typically evaluate windows isolatedly and fail to model temporal dependencies across consecutive windows, which may produce fragmented and physiologi- cally implausible sequences.",
+      "translations": {
+        "zh": {
+          "title": "用时间结构嵌入强化学习优化运动想象脑机接口的时间窗",
+          "highlight": "TSE-RL 把 MI 事件的时间结构先验嵌入强化学习，将窗口优化从孤立的“好/坏”判断升级为完整神经事件的语义对齐。",
+          "summary": "这篇预印本论文针对在线运动想象脑机接口的固定长度滑动窗口问题，提出 TSE-RL 框架，让强化学习智能体给每个时间窗打上 Discard/Onset/Sustain/Offset 的语义标签，并用有限状态机约束决策顺序。它值得读的地方在于：不只是提高解码准确率，还让算法学到的窗口选择顺序符合神经生理规律，且能即插即用地接到各种 MI 分类器上。",
+          "failureAnalysis": "目前可见内容只有摘要、引言和方法前半部分，缺少完整实验细节（数据集数量、提升幅度、稳定性数据），且所有结论均来自公共数据集的模拟在线实验，并非真实在线系统验证。此外，框架依赖对 MI 事件阶段（Planning/Execution/Recovery）的先验划分，若不同被试的神经事件时序差异较大，约束可能过强。",
+          "paperCard": {
+            "problem": "在线运动想象脑机接口通常用固定长度的滑动窗口切分连续脑电信号，窗口长度靠人工设定，有的窗口只覆盖一部分运动想象事件，有的混入大量事件前基线或肌电等干扰，与实际神经事件对不齐，导致响应慢、解码不准。",
+            "method": "把“该保留哪个时间窗”建模为一个带约束的序列决策问题（马尔可夫决策过程），用强化学习智能体逐个窗口做决策：丢弃，或标记为事件的 Onset（起始）、Sustain（持续）、Offset（结束）；再用有限状态机限制每一步可选动作，保证决策顺序符合运动想象事件的生理演进。",
+            "difference": "以前的窗口优化方法（相关性选窗 CTWS、蚁群 ACO、麻雀搜索 SSA 等）把每个候选窗口孤立地判断“好或坏”，配置离线搜索后对所有试次统一套用，容易切出碎片化、生理上不合理的窗口序列；本文让每一步决策都依赖跨窗口的历史上下文和事件阶段约束，在线逐窗自适应决策。",
+            "innovation": "三点：一是把窗口动作空间从“保留/丢弃”改成与神经事件语义对齐的四种角色，提升可解释性；二是用有限状态机做动作掩码，把计划/执行/恢复三个阶段作为硬约束，避免出现“先 Offset 后 Onset”这类荒谬序列；三是用基于 Transformer 的历史编码器并行捕捉长距离窗口依赖，替代易梯度消失或爆炸的循环网络，训练更稳更快。",
+            "implementation": "输入是带标签的脑电数据，按窗长 L 和步长 Δ 滑动取窗，当前窗、历史窗和试次进度组成状态；特征提取器把窗口编码成向量，判别器输出类别概率用于奖励计算；策略网络结合当前特征、历史上下文和试次进度输出动作；奖励由判别奖励（当前窗分类置信度）、时间连续奖励（窗口序列是否平滑）和终止奖励（最终分类结果）组成；强化学习用 PPO 类算法训练策略，最终把保留下来的窗口序列交给 MI 分类器分类。",
+            "applications": "可用于需要实时响应的运动想象脑机接口，如神经康复训练、外骨骼或轮椅等辅助设备的脑控、娱乐与游戏交互、人机交互控制；其即插即用设计也可用来增强现有 EEGNet、FBCNet、ATCNet、EEGConformer 等解码器的在线表现。",
+            "technicalTerms": [
+              "运动想象（MI）：人只是想象肢体动作而不实际动，大脑感觉运动区会产生可测量的脑电变化。",
+              "脑机接口（BCI）：让大脑信号直接控制外部设备的通路。",
+              "脑电（EEG）：用头皮电极记录的大脑电活动，时间分辨率高、成本较低。",
+              "ERD/ERS：运动想象时 μ（8–13Hz）和 β（13–30Hz）节律先变弱（去同步，ERD），事件结束后又反弹增强（同步，ERS），这是判断事件阶段的生理依据。",
+              "滑动窗口：在连续信号上按固定长度不断向前平移取样，本文让算法自己决定每个窗口去留。",
+              "马尔可夫决策过程（MDP）：把序贯决策写成状态、动作、转移、奖励、折扣因子的数学框架，强化学习的标准建模方式。",
+              "有限状态机（FSM）：用一组离散状态和允许的转移规则来限制可行动作，这里用于保证决策顺序符合生理阶段。",
+              "动作掩码：在某状态下把不合法的动作直接屏蔽掉，让智能体只能选择合法动作。",
+              "Transformer 历史编码器：用自注意力机制并行建模历史窗口之间的依赖关系，比循环网络更稳定高效。",
+              "即插即用：不改动原有分类器结构，可以直接叠加到多种 MI 分类器上使用。"
+            ]
+          }
+        },
+        "en": {
+          "highlight": "TSE-RL embeds prior temporal-structure knowledge of MI events into a stable RL framework, reformulating window optimization as a constrained Markov Decision Process.",
+          "summary": "This preprint targets the rigid, fixed-length sliding windows used in online motor imagery brain-computer interfaces, and proposes TSE-RL, a reinforcement learning framework that labels each window as Discard, Onset, Sustain or Offset under finite-state-machine constraints. It is worth reading because it improves decoding accuracy while making the learned window policy match neurophysiological principles, and it is plug-and-play with mainstream MI classifiers.",
+          "failureAnalysis": "Only the abstract, introduction and the first half of the methods are available, so experimental details such as datasets, improvement margins and stability are unverified; all results come from simulated online experiments on public datasets rather than real online systems. The framework also relies on a prior phase division (Planning/Execution/Recovery), which may be too rigid when subjects differ in event timing.",
+          "title": "Time Window Optimization for Motor Imagery Classification via Temporal Structure Embedded Reinforcement Learning",
+          "paperCard": {
+            "problem": "Online motor imagery BCIs split continuous EEG with fixed-length sliding windows whose length is set by hand; some windows cover only part of an MI event, others contain excessive pre-event baseline or artifacts, so they are misaligned with actual neural events and hurt both timeliness and accuracy.",
+            "method": "It formulates which window to keep as a constrained sequential decision problem (an MDP) and lets an RL agent decide per window: discard it, or mark it as Onset, Sustain or Offset of the event; a finite state machine restricts the legal actions so the decision order follows the physiological progression of the MI event.",
+            "difference": "Older window-optimization methods (correlation-based CTWS, ant colony optimization, sparrow search) judge each candidate window in isolation as good or bad, search configurations offline and apply them uniformly across trials, producing fragmented and physiologically implausible window sequences; this work conditions every decision on cross-window history and event-phase constraints.",
+            "innovation": "Three parts: changing the action space from retain/discard to semantic alignment with neural events; using a finite state machine for action masking so that planning/execution/recovery phases are hard constraints, preventing sequences such as Offset before Onset; and using a Transformer-based history encoder to capture long-range inter-window dependencies in parallel instead of unstable recurrent networks.",
+            "implementation": "Labeled EEG trials are cut into windows with length L and stride Δ; the state is the current window, historical windows and trial progress. A feature extractor encodes each window, a discriminator outputs class probabilities for reward computation, and a policy network combines current features, history and trial progress to choose actions. The reward combines a discrimination reward (classifier confidence), a temporal continuity reward and a termination reward (final classification outcome), and the policy is trained with RL, after which retained windows are passed to an MI classifier.",
+            "applications": "Real-time motor imagery BCIs such as neurorehabilitation training, brain-controlled assistive devices like exoskeletons or wheelchairs, entertainment and gaming interaction, and human-machine control; its plug-and-play design can also boost existing decoders such as EEGNet, FBCNet, ATCNet and EEGConformer.",
+            "technicalTerms": [
+              "Motor imagery (MI): imagining a limb movement without executing it, which elicits measurable EEG changes in sensorimotor areas.",
+              "Brain-computer interface (BCI): a direct pathway letting brain signals control external devices.",
+              "EEG: scalp-recorded brain electrical activity with high temporal resolution and relatively low cost.",
+              "ERD/ERS: during motor imagery the μ (8-13 Hz) and β (13-30 Hz) rhythms desynchronize (ERD) and then rebound in synchronization (ERS) after the event, providing the physiological basis for identifying event phases.",
+              "Sliding window: repeatedly sampling fixed-length segments while moving forward along a continuous signal; here the algorithm decides whether to keep each window.",
+              "Markov Decision Process (MDP): the standard mathematical formulation of sequential decision making with states, actions, transitions, rewards and a discount factor.",
+              "Finite state machine (FSM): a set of discrete states and allowed transitions used to restrict feasible actions, here enforcing physiologically plausible orders.",
+              "Action masking: blocking illegal actions in a given state so the agent can only choose valid ones.",
+              "Transformer history encoder: a self-attention module that models dependencies among historical windows in parallel, more stable and efficient than recurrent networks.",
+              "Plug-and-play: can be stacked onto various MI classifiers without changing their architecture."
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-feed-faeaad61a434440d9491cb52bcdd4531",
+      "category": "ai",
+      "title": "AI is mass decompiling games. That's both awesome and scary.",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-14T16:26:53.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        }
+      ],
+      "evidenceLabel": "GitHub",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub",
+      "summary": "独立游戏开发者 Popcar 谈到了近期 AI 驱动的游戏反编译浪潮：它促成了现有游戏之间各种奇怪的混搭，也带动了大量游戏保存项目，让老游戏能在新硬件甚至浏览器（借助 WebAssembly）上运行。Simon Willison 欣赏这篇文章同时呈现了正反两面——任何软件都可能被反编译，付费游戏或应用可能在违背厂商意愿的情况下被开源；但老游戏也因此更容易被移植、修改和增强。在主机厂商全面转向数字发行、服务器一关游戏就彻底玩不了的当下，这一点尤其值得关注。",
+      "failureAnalysis": "关键结论：反编译能力本身是中性的，同一项技术既能用于游戏保存与文化遗产抢救，也能用于商业抄袭，真正的变化是“软件难以被复制”这一长期假设开始失效。",
+      "aiSelectionScore": 100,
+      "highlight": "如果 AI 能反编译游戏和软件，那么整个科技行业即将天翻地覆，任何人都能反编译别人的软件并随意使用，没人拦得住。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "AI is mass decompiling games. That's both awesome and scary. Indie game developer Popcar talks about the recent wave of AI-powered decompilation of existing games, enabling weird mashups between existing games, and producing a boom in game preservation projects to get old games working on new hardware (often in a browser using WebAssembly).",
+      "translations": {
+        "zh": {
+          "title": "AI 正在大规模反编译游戏：既了不起，也令人恐惧",
+          "highlight": "如果 AI 能反编译游戏和软件，那么整个科技行业即将天翻地覆，任何人都能反编译别人的软件并随意使用，没人拦得住。",
+          "summary": "独立游戏开发者 Popcar 谈到了近期 AI 驱动的游戏反编译浪潮：它促成了现有游戏之间各种奇怪的混搭，也带动了大量游戏保存项目，让老游戏能在新硬件甚至浏览器（借助 WebAssembly）上运行。Simon Willison 欣赏这篇文章同时呈现了正反两面——任何软件都可能被反编译，付费游戏或应用可能在违背厂商意愿的情况下被开源；但老游戏也因此更容易被移植、修改和增强。在主机厂商全面转向数字发行、服务器一关游戏就彻底玩不了的当下，这一点尤其值得关注。",
+          "failureAnalysis": "关键结论：反编译能力本身是中性的，同一项技术既能用于游戏保存与文化遗产抢救，也能用于商业抄袭，真正的变化是“软件难以被复制”这一长期假设开始失效。"
+        },
+        "en": {
+          "highlight": "If AI can decompile games and software, then the entire tech industry is about to explode: anybody can decompile other software and use it any way they'd like.",
+          "summary": "Indie developer Popcar describes the recent wave of AI-powered decompilation of existing games, which enables weird mashups and a boom in preservation projects that get old games running on new hardware, often in the browser via WebAssembly. Simon Willison likes that the piece captures both sides: any software can be decompiled against its owner's wishes, yet old games can now be ported, modified and enhanced far more easily. With console makers going all in on digital and servers shutting down, this matters. ",
+          "failureAnalysis": "The key takeaway: decompilation itself is neutral, serving both preservation and outright copying; what really changes is that the long-standing assumption that software is hard to copy no longer holds.",
+          "title": "AI Is Mass Decompiling Games. That's Both Awesome and Scary."
+        }
+      }
+    }
+  ]
+}
