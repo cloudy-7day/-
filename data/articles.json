@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-10-14",
+  "issueDate": "2026-10-16",
   "updateStatus": "complete",
-  "contentFingerprint": "2b4ae30a04ae37ac5cc6e2ff575f73ddb6e2f0b2de40d0f774a3becee5a908a0",
+  "contentFingerprint": "10bbc0c55c83efb697de1597fe7b623068d9c92e6b615986c464c43b19464746",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,340 +10,286 @@
   ],
   "articles": [
     {
-      "id": "news-a77f42dafe214ee8a5e573931335b090",
+      "id": "news-3845c5bcdd2744d8b5647fd6d2ae4820",
       "category": "domestic",
-      "title": "中国社会科学院第二届青年学术大会在北京召开",
+      "title": "国考报名三天，热门岗位竞争已超1400:1",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-14/10714722.shtml",
-      "publishedAt": "2026-10-14T13:54:18.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-17/10716043.shtml",
+      "publishedAt": "2026-10-16T16:29:54.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "中国社会科学院第二届青年学术大会13日在北京召开，院长、党组书记高翔出席会议并作学术报告。",
-      "summary": "报道显示，中国社会科学院第二届青年学术大会于10月13日在北京召开，院长、党组书记高翔作学术报告。中央纪委国家监委驻院纪检监察组组长杭元祥、副院长李雪松、院党组成员金民卿和秘书长薛松岩等出席。作为官方学术机构的重要会议，它可被视作该院重视青年学术力量与学术交流的公开信号。",
-      "failureAnalysis": "可核实的信息主要是会议召开和出席人员，报道未披露会议议题、成果或具体政策安排。因此其影响更适合理解为机构层面的学术活动信号，而非可直接量化的公共政策变化。",
+      "highlight": "2027年度国考报名自10月14日8时开始，已进行三天，已有岗位出现超千人竞争一岗的现象。",
+      "summary": "中新网10月17日报道，中央机关及其直属机构2027年度考试录用公务员报名已进行三天，部分岗位出现超千人竞争一岗的情况。这条新闻用报名进度和岗位竞争比，直观呈现了当前公务员招录的热度分布。关注它可以快速把握体制内就业市场的冷热信号，以及报名期内竞争格局的变化节奏。",
+      "failureAnalysis": "关键看点不在总量，而在结构性失衡：少数岗位热度极高、竞争比迅速攀升，说明求职预期仍明显向稳定岗位集中；后续应关注竞争比是否会继续扩大，以及冷热岗位的分化程度。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网北京10月14日电(记者 李京泽)中国社会科学院第二届青年学术大会13日在北京召开。中国社会科学院院长、党组书记高翔出席会议并作学术报告。中央纪委国家监委驻院纪检监察组组长、院党组成员杭元祥，副院长、党组成员李雪松，院党组成员、当代中国研究所所长金民卿，秘书长、党组成员薛松岩出席会议。",
+      "sourceExcerpt": "中新网北京10月17日电(记者 李京统)中央机关及其直属机构2027年度考试录用公务员报名自14日8时开始，已经进行了三天。具体岗位报考方面，已有岗位出现超千人竞争一岗的现象。",
       "translations": {
         "zh": {
-          "title": "中国社会科学院第二届青年学术大会在北京召开",
-          "highlight": "中国社会科学院第二届青年学术大会13日在北京召开，院长、党组书记高翔出席会议并作学术报告。",
-          "summary": "报道显示，中国社会科学院第二届青年学术大会于10月13日在北京召开，院长、党组书记高翔作学术报告。中央纪委国家监委驻院纪检监察组组长杭元祥、副院长李雪松、院党组成员金民卿和秘书长薛松岩等出席。作为官方学术机构的重要会议，它可被视作该院重视青年学术力量与学术交流的公开信号。",
-          "failureAnalysis": "可核实的信息主要是会议召开和出席人员，报道未披露会议议题、成果或具体政策安排。因此其影响更适合理解为机构层面的学术活动信号，而非可直接量化的公共政策变化。"
+          "title": "国考报名三天，热门岗位竞争已超1400:1",
+          "highlight": "2027年度国考报名自10月14日8时开始，已进行三天，已有岗位出现超千人竞争一岗的现象。",
+          "summary": "中新网10月17日报道，中央机关及其直属机构2027年度考试录用公务员报名已进行三天，部分岗位出现超千人竞争一岗的情况。这条新闻用报名进度和岗位竞争比，直观呈现了当前公务员招录的热度分布。关注它可以快速把握体制内就业市场的冷热信号，以及报名期内竞争格局的变化节奏。",
+          "failureAnalysis": "关键看点不在总量，而在结构性失衡：少数岗位热度极高、竞争比迅速攀升，说明求职预期仍明显向稳定岗位集中；后续应关注竞争比是否会继续扩大，以及冷热岗位的分化程度。"
         },
         "en": {
-          "highlight": "The Second Young Scholars Academic Conference of the Chinese Academy of Social Sciences was held in Beijing on October 13; President Gao Xiang delivered an academic report.",
-          "summary": "China News Service reported that the conference took place on October 13, with Gao Xiang, president and Party secretary of CASS, giving an academic report. Several CASS leaders and Party group members attended, including Hang Yuanxiang, Li Xuesong, Jin Minqing and Xue Songyan. It is worth noting as an official signal of the academy's attention to young scholars and academic exchange.",
-          "failureAnalysis": "The report confirms the meeting and attendees but does not provide its themes, outcomes or specific policy arrangements. Its significance is therefore best understood as an institutional academic event signal.",
-          "title": "The Second Young Scholars Academic Conference of the Chinese Academy of Social Sciences Held in Beijing"
+          "highlight": "Registration for the 2027 central civil service exam began at 8 a.m. on October 14 and has run for three days, with some posts already drawing more than a thousand applicants each.",
+          "summary": "China News Service reported on October 17 that registration for the 2027 recruitment of civil servants by central agencies and their directly subordinate bodies had been open for three days, with some positions attracting over a thousand applicants per opening. The report uses registration progress and competition ratios to show how demand is distributed across available posts. It is worth reading as a quick signal of how concentrated job-seekers' preferences are toward stable public-sector work.",
+          "failureAnalysis": "The key point is structural imbalance rather than overall volume: a handful of posts see extremely high competition ratios, indicating that job expectations remain heavily concentrated on stable positions. Watch whether those ratios keep rising and how sharply hot and cold posts diverge.",
+          "title": "Three Days Into China's Civil Service Exam Registration, a Hot Post Draws Over 1,400 Applicants per Opening"
         }
       }
     },
     {
-      "id": "news-59172b1705d4408d8277f11975ff7f0f",
+      "id": "news-3b31a3ec124c4645a34df8e4633d16f4",
       "category": "domestic",
-      "title": "黑龙江部署“十五五”科创任务 以科技创新引领产业全面振兴",
-      "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-14/10714718.shtml",
-      "publishedAt": "2026-10-14T13:54:08.0000000+00:00",
+      "title": "五集历史纪录片《突围21天》揭秘一段鲜为人知的长征史",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-16/10716003.shtml",
+      "publishedAt": "2026-10-16T13:56:51.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "黑龙江省推动发展方式从资源驱动为主向创新引领为主转变，并介绍其进展成效",
-      "summary": "10月14日，黑龙江省人民政府新闻办公室举行“开局起步‘十五五’”系列主题新闻发布会科技厅专场，由省科技厅党组书记、厅长作主旨发布，多位副厅长回答记者与网友提问。发布会聚焦推动发展方式从资源驱动为主向创新引领为主转变的进展成效，即以科技创新引领产业全面振兴。对关注东北振兴与地方科技政策走向的读者，这是一份了解“十五五”开局阶段官方部署口径的直接材料。",
-      "failureAnalysis": "这类发布会主要给出方向与部署，具体的量化指标、资金安排和落地节奏通常要等后续文件与项目清单才可验证，因此阅读时应把“已部署的任务”与“已实现的成效”分开看待，避免把表态当作结果。",
+      "highlight": "从10月25日进入广东南雄，到11月14日离开乐昌，红军在粤北群山间跋涉了21天，突破国民党军设置的第二、第三道封锁线。",
+      "summary": "中新网报道，五集历史纪录片《突围21天》聚焦1934年10月中央红军从江西于都出发后的长征初期历程。片中披露，红军自10月25日进入广东南雄、至11月14日离开乐昌，在粤北群山间行军21天，突破第二、第三道封锁线，为长征初期打开西进通道。这段鲜为人知的粤北行军史，是理解长征整体进程的一个具体切口。",
+      "failureAnalysis": "这条消息的价值在于它记录了一段可核实的历史事实与公开传播动作：长征并非只有耳熟能详的节点，粤北21天这样的局部细节同样构成完整叙事，值得作为观察历史纪录片选题视角的样本。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网哈尔滨10月14日电 (韩雪 贾欣燃)14日，黑龙江省人民政府新闻办公室举行“开局起步‘十五五’”系列主题新闻发布会科技厅专场，介绍黑龙江省推动发展方式从资源驱动为主向创新引领为主转变的进展成效。黑龙江省科学技术厅党组书记、厅长陈苏作主旨发布，黑龙江省科学技术厅党组成员、副厅长张喆、黑龙江省科学技术厅党组成员、副厅长闫志金、黑龙江省科学技术厅党组成员、副厅长韩国卿回答记者、网友提问。",
+      "sourceExcerpt": "中新网广州10月16日电 1934年10月，中央红军从江西于都出发，走向一场改变中国命运的二万五千里长征。从10月25日进入广东南雄，到11月14日离开乐昌，红军在广东境内的粤北群山间跋涉了21天，突破国民党军设置的第二、第三道封锁线，为长征初期打开了西进通道。",
       "translations": {
         "zh": {
-          "title": "黑龙江部署“十五五”科创任务 以科技创新引领产业全面振兴",
-          "highlight": "黑龙江省推动发展方式从资源驱动为主向创新引领为主转变，并介绍其进展成效",
-          "summary": "10月14日，黑龙江省人民政府新闻办公室举行“开局起步‘十五五’”系列主题新闻发布会科技厅专场，由省科技厅党组书记、厅长作主旨发布，多位副厅长回答记者与网友提问。发布会聚焦推动发展方式从资源驱动为主向创新引领为主转变的进展成效，即以科技创新引领产业全面振兴。对关注东北振兴与地方科技政策走向的读者，这是一份了解“十五五”开局阶段官方部署口径的直接材料。",
-          "failureAnalysis": "这类发布会主要给出方向与部署，具体的量化指标、资金安排和落地节奏通常要等后续文件与项目清单才可验证，因此阅读时应把“已部署的任务”与“已实现的成效”分开看待，避免把表态当作结果。"
+          "title": "五集历史纪录片《突围21天》揭秘红军粤北长征21天",
+          "highlight": "从10月25日进入广东南雄，到11月14日离开乐昌，红军在粤北群山间跋涉了21天，突破国民党军设置的第二、第三道封锁线。",
+          "summary": "中新网报道，五集历史纪录片《突围21天》聚焦1934年10月中央红军从江西于都出发后的长征初期历程。片中披露，红军自10月25日进入广东南雄、至11月14日离开乐昌，在粤北群山间行军21天，突破第二、第三道封锁线，为长征初期打开西进通道。这段鲜为人知的粤北行军史，是理解长征整体进程的一个具体切口。",
+          "failureAnalysis": "这条消息的价值在于它记录了一段可核实的历史事实与公开传播动作：长征并非只有耳熟能详的节点，粤北21天这样的局部细节同样构成完整叙事，值得作为观察历史纪录片选题视角的样本。"
         },
         "en": {
-          "highlight": "Heilongjiang is shifting its development model from mainly resource-driven to mainly innovation-led, and officials briefed on the progress and results so far.",
-          "summary": "On October 14, the Information Office of the Heilongjiang Provincial People's Government held a science and technology department session of its \"Starting the 15th Five-Year Plan\" press conference series, with the provincial science and technology department's leading officials giving the keynote and several deputy heads taking questions from reporters and online users. The briefing focused on progress in moving the province's development model from mainly resource-driven to mainly innovation-led, using technological innovation to drive all-round industrial revitalization. For readers tracking Northeast China's revitalization and local science policy, it is a direct look at official priorities at the start of the 15th Five-Year Plan.",
-          "failureAnalysis": "Such briefings mainly convey direction and task assignments; specific metrics, funding arrangements and implementation timelines usually need follow-up documents and project lists to verify, so readers should distinguish deployed tasks from demonstrated results rather than treating statements as outcomes.",
-          "title": "Heilongjiang Deploys \"15th Five-Year Plan\" Science and Technology Tasks, Leading All-Round Industrial Revitalization Through Innovation"
+          "highlight": "From entering Nanxiong, Guangdong on October 25 to leaving Lechang on November 14, the Red Army trekked 21 days through the mountains of northern Guangdong, breaking through the second and third blockade lines.",
+          "summary": "China News Service reports that the five-part documentary 'Breakout: 21 Days' focuses on the early stages of the Long March after the Central Red Army set out from Yudu, Jiangxi in October 1934. It recounts how the Red Army marched 21 days through the mountains of northern Guangdong, from entering Nanxiong on October 25 to leaving Lechang on November 14, breaking the second and third blockade lines and opening a westward passage. The story offers a concrete window into a less familiar part of the Long March.",
+          "failureAnalysis": "The item's value lies in documenting a verifiable historical episode and a public-facing media effort: the Long March was not only its famous milestones, and local details such as these 21 days in northern Guangdong make it worth watching as a sample of documentary topic selection.",
+          "title": "Five-Part Historical Documentary 'Breakout: 21 Days' Reveals a Little-Known Chapter of the Long March"
         }
       }
     },
     {
-      "id": "news-cce3e6bee4374e6388346867b6190391",
+      "id": "news-17225bb6f183452d84bf9b011d4778da",
       "category": "domestic",
-      "title": "海南推广地质灾害一键报灾小程序 隐患即拍即报",
-      "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-14/10714730.shtml",
-      "publishedAt": "2026-10-14T14:09:01.0000000+00:00",
+      "title": "海南自贸港封关后首家琼港联营律师事务所揭牌",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-16/10716000.shtml",
+      "publishedAt": "2026-10-16T13:56:19.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 4",
-      "highlight": "该省同步推广“海南地灾一键报灾”微信小程序，构建全民参与、全域覆盖、快速响应的地质灾害防治新格局。",
-      "summary": "据已知内容，海南省在推进地质灾害风险隐患排查复核“村村走到”专项行动的同时，推广“海南地灾一键报灾”微信小程序。该省希望借此形成全民参与、全域覆盖、快速响应的地质灾害防治新格局。它值得一读，因为展示了一个地方如何用微信小程序降低公众上报隐患的门槛。",
-      "failureAnalysis": "关键看点在于，一键报灾工具可降低上报门槛、加快隐患发现，但实际效果取决于基层推广、核查处置和闭环反馈是否到位。",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "瀛和浩宸（海口）联营律师事务所16日在海口揭牌，成为海南自贸港全岛封关后首家落地的琼港联营律师事务所。",
+      "summary": "据中新网海口10月16日电（记者张茜翼）报道，在2026海南自由贸易港法律周举办期间，瀛和浩宸（海口）联营律师事务所于16日在海口揭牌。这是海南自贸港全岛封关后首家落地的琼港联营律师事务所。该消息可作为观察封关后海南法律服务领域开放进度与琼港合作落地节奏的一个具体节点。",
+      "failureAnalysis": "对非技术读者而言，关键看点是封关后的制度安排是否正转化为可核实的机构落地案例；此例属于法律服务领域开放的首个样本，但单家律所揭牌尚不足以说明整体规模效应。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网海口10月14日电 (尹建军 史继炎)近期，海南省地质灾害风险隐患排查复核“村村走到”专项行动正在推进。海南省自然资源和规划厅14日介绍，该省同步推广“海南地灾一键报灾”微信小程序，构建全民参与、全域覆盖、快速响应的地质灾害防治新格局。",
+      "sourceExcerpt": "中新网海口10月16日电(记者 张茜翼)在2026海南自由贸易港法律周举办期间，瀛和浩宸(海口)联营律师事务所16日在海口揭牌，成为海南自贸港全岛封关后首家落地的琼港联营律师事务所。",
       "translations": {
         "zh": {
-          "title": "海南推广地质灾害一键报灾小程序 隐患即拍即报",
-          "highlight": "该省同步推广“海南地灾一键报灾”微信小程序，构建全民参与、全域覆盖、快速响应的地质灾害防治新格局。",
-          "summary": "据已知内容，海南省在推进地质灾害风险隐患排查复核“村村走到”专项行动的同时，推广“海南地灾一键报灾”微信小程序。该省希望借此形成全民参与、全域覆盖、快速响应的地质灾害防治新格局。它值得一读，因为展示了一个地方如何用微信小程序降低公众上报隐患的门槛。",
-          "failureAnalysis": "关键看点在于，一键报灾工具可降低上报门槛、加快隐患发现，但实际效果取决于基层推广、核查处置和闭环反馈是否到位。"
+          "title": "海南自贸港封关后首家琼港联营律师事务所揭牌",
+          "highlight": "瀛和浩宸（海口）联营律师事务所16日在海口揭牌，成为海南自贸港全岛封关后首家落地的琼港联营律师事务所。",
+          "summary": "据中新网海口10月16日电（记者张茜翼）报道，在2026海南自由贸易港法律周举办期间，瀛和浩宸（海口）联营律师事务所于16日在海口揭牌。这是海南自贸港全岛封关后首家落地的琼港联营律师事务所。该消息可作为观察封关后海南法律服务领域开放进度与琼港合作落地节奏的一个具体节点。",
+          "failureAnalysis": "对非技术读者而言，关键看点是封关后的制度安排是否正转化为可核实的机构落地案例；此例属于法律服务领域开放的首个样本，但单家律所揭牌尚不足以说明整体规模效应。"
         },
         "en": {
-          "highlight": "The province is simultaneously promoting the “Hainan Geological Disaster One-Click Reporting” WeChat mini-program, building a new pattern of geological disaster prevention with broad public participation, full-area coverage, and rapid response.",
-          "summary": "According to the known content, Hainan is advancing a special campaign to inspect and review geological disaster risks in every village. At the same time, it is promoting a WeChat mini-program that lets the public photograph and report hazards immediately, aiming to create a prevention model with public participation, full coverage, and rapid response. It is worth reading as an example of how local governments use lightweight digital tools to mobilize public reporting and speed up hazard discovery.",
-          "failureAnalysis": "The key takeaway is that lowering the barrier to reporting can help discover hazards faster, but the real value depends on grassroots promotion, verification, and closed-loop handling of reported risks.",
-          "title": "Hainan Promotes One-Click Geological Disaster Reporting Mini-Program for Instant Hazard Reports"
+          "highlight": "Yinghe Haochen (Haikou) Joint Law Firm was unveiled in Haikou on the 16th, becoming the first Hainan-Hong Kong joint law firm to land after the island-wide customs closure of the Hainan Free Trade Port.",
+          "summary": "According to China News Service in Haikou on October 16 (reporter Zhang Qianyi), Yinghe Haochen (Haikou) Joint Law Firm was unveiled in Haikou on the 16th during the 2026 Hainan Free Trade Port Legal Week. It is the first Hainan-Hong Kong joint law firm to be established after the Hainan Free Trade Port's island-wide customs closure. The item offers a concrete checkpoint for tracking how legal-services opening and Hainan-Hong Kong cooperation are progressing after the closure.",
+          "failureAnalysis": "The key takeaway is whether post-closure institutional arrangements are turning into verifiable, on-the-ground institutions; this single unveiling marks a first example in legal services but does not by itself demonstrate broader scale effects.",
+          "title": "First Hainan-Hong Kong Joint Law Firm Unveiled After Hainan Free Trade Port's Island-Wide Customs Closure"
         }
       }
     },
     {
-      "id": "news-687bc47739bf4f798506dccb7a634a90",
+      "id": "news-c467dc809e7e48f4869c36e42b71b9dc",
       "category": "international",
-      "title": "Drop-off charges at UK airports to be reviewed after sharp increase",
-      "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/cwp8gynk13rro?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-10-14T17:46:30.0000000+00:00",
+      "title": "Crowds throng New Delhi and wave Indian flags amid escalating protests",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/16/g-s1-148383/crowds-throng-new-delhi-and-wave-indian-flags-amid-escalating-protests",
+      "publishedAt": "2026-10-16T13:26:43.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "确认将进行审查时，政府表示，确保旅行仍然便利、乘客受到公平对待至关重要。",
-      "summary": "BBC商业报道称，英国机场的落客费在急剧上涨后将接受审查。政府在确认审查时表示，确保出行依然便利、乘客得到公平对待至关重要。这则消息值得关注，因为它可能影响旅客在机场的附加成本以及后续监管方向。",
-      "failureAnalysis": "关键要点：机场落客费上涨已推动官方审查，核心争议在于出行便利与乘客公平；后续可观察收费是否调整或规则是否统一。",
+      "highlight": "抗议因选民名单审查持续升级，批评者称其出于政治动机并可能剥夺选民权利，选举委员会与莫迪政府否认指控。",
+      "summary": "这篇国际报道聚焦印度新德里不断升级的抗议活动。抗议源于对选民名单审查的争议，批评者认为审查带有政治动机，可能使部分选民失去投票权；印度选举委员会和莫迪政府否认相关指控。事件关系到选举公正与选民权利，因此值得关注。",
+      "failureAnalysis": "关键看点是选民名单审查争议如何影响印度选举公信力与选民权利，以及官方否认后抗议是否继续升级。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Confirming the review, the government said it was \"vital to ensure travel remains accessible and that passengers are treated fairly\".",
+      "sourceExcerpt": "Protests have intensified over a review of voter lists that critics say is politically motivated and threatens to disenfranchise voters. The Election Commission and Modi's administration deny these allegations.",
       "translations": {
         "zh": {
-          "title": "英国机场落客费大幅上涨后将接受审查",
-          "highlight": "确认将进行审查时，政府表示，确保旅行仍然便利、乘客受到公平对待至关重要。",
-          "summary": "BBC商业报道称，英国机场的落客费在急剧上涨后将接受审查。政府在确认审查时表示，确保出行依然便利、乘客得到公平对待至关重要。这则消息值得关注，因为它可能影响旅客在机场的附加成本以及后续监管方向。",
-          "failureAnalysis": "关键要点：机场落客费上涨已推动官方审查，核心争议在于出行便利与乘客公平；后续可观察收费是否调整或规则是否统一。"
+          "title": "抗议升级之际，人群聚集新德里并挥舞印度国旗",
+          "highlight": "抗议因选民名单审查持续升级，批评者称其出于政治动机并可能剥夺选民权利，选举委员会与莫迪政府否认指控。",
+          "summary": "这篇国际报道聚焦印度新德里不断升级的抗议活动。抗议源于对选民名单审查的争议，批评者认为审查带有政治动机，可能使部分选民失去投票权；印度选举委员会和莫迪政府否认相关指控。事件关系到选举公正与选民权利，因此值得关注。",
+          "failureAnalysis": "关键看点是选民名单审查争议如何影响印度选举公信力与选民权利，以及官方否认后抗议是否继续升级。"
         },
         "en": {
-          "highlight": "Confirming the review, the government said it was vital to ensure travel remains accessible and that passengers are treated fairly.",
-          "summary": "BBC Business reports that drop-off charges at UK airports will be reviewed after a sharp increase. In confirming the review, the government said it was vital to ensure travel remains accessible and that passengers are treated fairly. It is worth reading because it may affect travelers’ extra costs at airports and the direction of future regulation.",
-          "failureAnalysis": "Key takeaway: the sharp rise in airport drop-off charges has triggered an official review, with accessibility and fair treatment as the government’s stated principles; watch whether the charges are adjusted or rules are unified.",
-          "title": "Drop-off charges at UK airports to be reviewed after sharp increase"
+          "highlight": "Protests have intensified over a review of voter lists that critics say is politically motivated and threatens to disenfranchise voters.",
+          "summary": "This NPR World report focuses on escalating protests in New Delhi over a review of voter lists. Critics say the review is politically motivated and threatens to disenfranchise voters, while the Election Commission and Modi's administration deny the allegations. The dispute is worth watching because it touches on election integrity and voting rights in India.",
+          "failureAnalysis": "The key takeaway is that the voter-list review dispute now tests the credibility of India's electoral process and the government's response to public protest.",
+          "title": "Crowds Throng New Delhi and Wave Indian Flags as Protests Escalate"
         }
       }
     },
     {
-      "id": "news-f8685b67ed774de39a98e02ab7763a18",
+      "id": "news-fa6d87838ca64b838fabdf5823fa619e",
       "category": "international",
-      "title": "US inflation rises more than expected - here's what is happening with prices",
-      "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/cwy8lx3pg4k2o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-10-14T15:26:14.0000000+00:00",
+      "title": "No 10 leaves option open to impose Chinese EV tariffs if UK joins EU scheme",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/politics/2026/oct/16/uk-chinese-electric-vehicle-ev-tariffs-eu-made-in-europe-scheme",
+      "publishedAt": "2026-10-16T18:09:34.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "截至9月的12个月内，物价上涨速度加快至3.7%，主要受机动车燃料成本上升推动。",
-      "summary": "这则BBC Business报道称，美国截至9月的年度通胀率升至3.7%，高于预期，主要因机动车燃料价格上涨。对关注宏观经济与政策的人来说，这是判断利率与物价压力的重要信号。",
-      "failureAnalysis": "关键信号是：美国年度通胀升至3.7%且高于预期，机动车燃料成本是主要推手，因此市场可能继续关注货币政策对物价压力的回应。",
+      "highlight": "若英国加入欧盟计划，唐宁街不排除对中国产电动汽车加征关税，北京警告此举具有“歧视性”。",
+      "summary": "文章说，法国不再反对英国加入“欧洲制造”一揽子计划后，唐宁街表示欢迎英国被纳入《工业加速器法案》的目标，但未排除对中国产电动汽车加征关税。北京警告这种“歧视性”做法。此事值得关注，因为它关系到英国在欧盟产业政策中的位置以及中英贸易摩擦风险。",
+      "failureAnalysis": "关键点：英国是否加入欧盟产业计划，可能直接影响其对中国电动车关税的政策空间；北京已明确反对歧视性措施。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "The pace of price rises increased to 3.7% in the year to September, driving by higher motor fuel costs.",
+      "sourceExcerpt": "Beijing warns against ‘discriminatory’ step after France drops opposition to British role in Made in Europe package No 10 has left the door open to imposing tariffs on Chinese-made electric vehicles as part of the Made in Europe package, prompting a warning from Beijing that such a move would be “discriminatory”. Downing Street said on Friday that it would “welcome the objective to have the UK included in the Industrial Accelerator Act” after France dropped its opposition to Britain joining the scheme .",
       "translations": {
         "zh": {
-          "title": "美国通胀升幅超预期：物价走势解析",
-          "highlight": "截至9月的12个月内，物价上涨速度加快至3.7%，主要受机动车燃料成本上升推动。",
-          "summary": "这则BBC Business报道称，美国截至9月的年度通胀率升至3.7%，高于预期，主要因机动车燃料价格上涨。对关注宏观经济与政策的人来说，这是判断利率与物价压力的重要信号。",
-          "failureAnalysis": "关键信号是：美国年度通胀升至3.7%且高于预期，机动车燃料成本是主要推手，因此市场可能继续关注货币政策对物价压力的回应。"
+          "title": "英国若加入欧盟计划，唐宁街未排除对中国产电动车加征关税",
+          "highlight": "若英国加入欧盟计划，唐宁街不排除对中国产电动汽车加征关税，北京警告此举具有“歧视性”。",
+          "summary": "文章说，法国不再反对英国加入“欧洲制造”一揽子计划后，唐宁街表示欢迎英国被纳入《工业加速器法案》的目标，但未排除对中国产电动汽车加征关税。北京警告这种“歧视性”做法。此事值得关注，因为它关系到英国在欧盟产业政策中的位置以及中英贸易摩擦风险。",
+          "failureAnalysis": "关键点：英国是否加入欧盟产业计划，可能直接影响其对中国电动车关税的政策空间；北京已明确反对歧视性措施。"
         },
         "en": {
-          "highlight": "The pace of price rises increased to 3.7% in the year to September, driving by higher motor fuel costs.",
-          "summary": "This BBC Business report says US annual inflation rose to 3.7% in September, faster than expected, driven by higher motor fuel costs. It is worth reading because it signals ongoing price pressures that could influence interest-rate expectations.",
-          "failureAnalysis": "The key takeaway is that inflation accelerated to 3.7% and exceeded expectations, with motor fuel costs as the main driver; this keeps price pressure and monetary policy in focus.",
-          "title": "US inflation rises more than expected: what is happening with prices"
+          "highlight": "No 10 left the door open to imposing tariffs on Chinese-made EVs as part of the Made in Europe package, prompting Beijing to warn such a move would be 'discriminatory'.",
+          "summary": "The article says Downing Street has not ruled out tariffs on Chinese-made electric vehicles as part of the Made in Europe package, after France dropped its opposition to UK inclusion. Beijing warned that such a step would be 'discriminatory'. It is worth reading because it shows how UK participation in EU industrial policy could shape trade tensions with China.",
+          "failureAnalysis": "The key takeaway is that UK participation in the EU scheme could affect its room to impose Chinese EV tariffs, and Beijing has already signaled opposition to discriminatory measures.",
+          "title": "No 10 Leaves Option Open to Impose Chinese EV Tariffs if UK Joins EU Scheme"
         }
       }
     },
     {
-      "id": "life-83e9a6f01f19402c8aa43c0829c2cc72",
+      "id": "life-9db2ac35ec5842bdbfad12ba787a0548",
       "category": "international",
-      "title": "认知心理学背后的播客剪辑技巧",
-      "source": "少数派 sspai",
-      "url": "https://sspai.com/post/114861",
-      "publishedAt": "2026-10-14T09:33:49.0000000+00:00",
-      "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 6",
-      "highlight": "为什么剪辑时会时常出现爆音？为什么有些地方剪辑后意思接得上，听起来却觉得别扭？为什么有些地方稍微动一下就会不自然？",
-      "summary": "文章以“爆音、语义接得上却别扭、微调就不自然”等问题为线索，讨论认知心理学如何影响播客剪辑。它值得一读，因为能帮助非技术读者理解：剪辑不只是剪掉内容，更是在照顾听众的听感与连续性预期。",
-      "failureAnalysis": "关键 takeaway：好剪辑不只追求语义对齐，还要符合人耳对自然连续性的认知习惯；一个微小处理不当，就可能让听感明显变差。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "为什么剪辑时会时常出现爆音？为什么有些地方剪辑后意思接得上，听起来却觉得别扭？为什么有些地方稍微动一下就会不自然？",
-      "translations": {
-        "zh": {
-          "title": "认知心理学背后的播客剪辑技巧",
-          "highlight": "为什么剪辑时会时常出现爆音？为什么有些地方剪辑后意思接得上，听起来却觉得别扭？为什么有些地方稍微动一下就会不自然？",
-          "summary": "文章以“爆音、语义接得上却别扭、微调就不自然”等问题为线索，讨论认知心理学如何影响播客剪辑。它值得一读，因为能帮助非技术读者理解：剪辑不只是剪掉内容，更是在照顾听众的听感与连续性预期。",
-          "failureAnalysis": "关键 takeaway：好剪辑不只追求语义对齐，还要符合人耳对自然连续性的认知习惯；一个微小处理不当，就可能让听感明显变差。"
-        },
-        "en": {
-          "highlight": "Why do pops often appear during editing? Why do some cuts connect in meaning but still sound awkward? Why does even a slight adjustment feel unnatural?",
-          "summary": "This article uses cognitive psychology to discuss common problems in podcast editing, such as pops, transitions that are semantically coherent yet awkward to hear, and edits that feel unnatural after only a small change. It is worth reading because it shows that editing is not just about cutting content but also about managing listeners' perceptual and continuity expectations.",
-          "failureAnalysis": "The key takeaway is that good editing must respect human hearing and continuity, not merely remove errors; a small mishandled edit can noticeably damage the listening experience.",
-          "title": "The Cognitive Psychology Behind Podcast Editing Techniques"
-        }
-      }
-    },
-    {
-      "id": "life-1e05aa2ace374d94943dc5f895f1316b",
-      "category": "international",
-      "title": "NostradamusGPT: The Psychology of Prophecy and How to Break Free from the Prison of Predictive Technologies",
-      "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/10/13/carissa-veliz-prophecy/",
-      "publishedAt": "2026-10-14T03:59:54.0000000+00:00",
+      "title": "Whatever Happened to Daylight Saving Time Going Away?",
+      "source": "Lifehacker",
+      "url": "https://lifehacker.com/what-happened-to-ending-daylight-saving-time?utm_medium=RSS",
+      "publishedAt": "2026-10-16T17:30:00.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "我们的悖论是：明知不确定性是宇宙的基底、创造力的熔炉、通往真理之路，却终其一生寻找确定性。",
-      "summary": "这篇文章讨论人类对确定性的执念：不确定性本是宇宙的基底、创造力的熔炉和通往真理之路，我们却终生寻找确定性。作者把算法比作现代占卜的飞鸟，指出它们让人误以为能预知未来，从而回应未来并安抚焦虑。值得读它来反思预测技术如何塑造我们的心理依赖。",
-      "failureAnalysis": "关键提醒：算法像现代占卜的飞鸟，未必真能消除不确定性，却让人产生可预知未来的错觉。对决策者而言，应把预测结果当作有限参考，而不是安抚焦虑的确定性承诺。",
+      "highlight": "国会已经投票决定废除时间调整，可为什么我们至今还在每年改表？",
+      "summary": "这篇文章追问一个看似矛盾的现象：美国国会曾表决通过取消一年两次时钟切换，但现实中人们依旧照常调表。它梳理了立法通过之后为何迟迟没有落地，涉及执行细节、联邦与地方权限以及各方协调等现实障碍，适合用来理解政策从表决到生效之间的落差。",
+      "failureAnalysis": "关键启示是：立法表决通过并不等于政策立即生效，制度落地往往取决于执行细则、层级权限划分和行业协调，公众感受到的变化可能滞后多年。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "This is our paradox: We know that uncertainty is the substrate of the universe, is the crucible of creativity, is the path to truth, and yet we spend our lives searching for certainty. The word auspicious derives from the Latin auspex — one who examines the flight of birds for omens and divinations of the future. Today, our birds are made of bits — wind-up larks of our own making we call algorithms — but they serve the same function: to let us believe that we can divine the future in order to respond to it; to sedate our anxieties… read article",
+      "sourceExcerpt": "Congress voted to abolish the time change, so why are we still doing it?",
       "translations": {
         "zh": {
-          "title": "诺查丹玛斯GPT：预言的心理机制与如何挣脱预测技术的牢笼",
-          "highlight": "我们的悖论是：明知不确定性是宇宙的基底、创造力的熔炉、通往真理之路，却终其一生寻找确定性。",
-          "summary": "这篇文章讨论人类对确定性的执念：不确定性本是宇宙的基底、创造力的熔炉和通往真理之路，我们却终生寻找确定性。作者把算法比作现代占卜的飞鸟，指出它们让人误以为能预知未来，从而回应未来并安抚焦虑。值得读它来反思预测技术如何塑造我们的心理依赖。",
-          "failureAnalysis": "关键提醒：算法像现代占卜的飞鸟，未必真能消除不确定性，却让人产生可预知未来的错觉。对决策者而言，应把预测结果当作有限参考，而不是安抚焦虑的确定性承诺。"
+          "title": "夏令时取消之争：为何我们还在改表？",
+          "highlight": "国会已经投票决定废除时间调整，可为什么我们至今还在每年改表？",
+          "summary": "这篇文章追问一个看似矛盾的现象：美国国会曾表决通过取消一年两次时钟切换，但现实中人们依旧照常调表。它梳理了立法通过之后为何迟迟没有落地，涉及执行细节、联邦与地方权限以及各方协调等现实障碍，适合用来理解政策从表决到生效之间的落差。",
+          "failureAnalysis": "关键启示是：立法表决通过并不等于政策立即生效，制度落地往往取决于执行细则、层级权限划分和行业协调，公众感受到的变化可能滞后多年。"
         },
         "en": {
-          "highlight": "We know uncertainty is the substrate of the universe, the crucible of creativity, the path to truth, yet we spend our lives searching for certainty.",
-          "summary": "The article explores the human craving for certainty despite uncertainty being the substrate of the universe, the crucible of creativity, and the path to truth. It compares algorithms to modern birds of augury: wind-up larks made of bits that let us believe we can divine and respond to the future while sedating our anxieties. It is worth reading as a reflection on how predictive technologies shape our psychological dependence on certainty.",
-          "failureAnalysis": "The key takeaway: predictive tools may function less as true foresight than as modern augury that soothes anxiety. For non-technical leaders, the practical constraint is to treat predictions as limited probabilities, not as certainty or emotional reassurance.",
-          "title": "NostradamusGPT: The Psychology of Prophecy and How to Break Free from the Prison of Predictive Technologies"
+          "highlight": "Congress voted to abolish the time change, so why are we still doing it?",
+          "summary": "This article examines an apparent contradiction: Congress voted to end the twice-yearly clock change, yet people still reset their clocks as usual. It looks at why the legislation has not taken effect, touching on implementation details, federal versus local authority, and coordination among stakeholders, which helps explain the gap between a vote and real-world change.",
+          "failureAnalysis": "The key takeaway: passing a vote is not the same as a policy taking effect; implementation details, divided authority and industry coordination often delay visible change for years.",
+          "title": "Whatever Happened to Daylight Saving Time Going Away?"
         }
       }
     },
     {
-      "id": "paper-2610.16921",
-      "category": "paper",
-      "title": "Time Window Optimization for Motor Imagery Classification via Temporal Structure Embedded Reinforcement Learning",
-      "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2610.16921v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2610.16921",
-      "publishedAt": "2026-10-12T15:06:03.0000000Z",
-      "scoreLabel": "Quality 28/100 + topic fit 30/30",
-      "recommendationScore": 83,
-      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
-      "paperTopic": "brain_computer_interface",
-      "qualityScore": 28,
-      "readabilityStatus": "open",
-      "paperCard": {
-        "problem": "在线运动想象脑机接口通常用固定长度的滑动窗口切分连续脑电信号，窗口长度靠人工设定，有的窗口只覆盖一部分运动想象事件，有的混入大量事件前基线或肌电等干扰，与实际神经事件对不齐，导致响应慢、解码不准。",
-        "method": "把“该保留哪个时间窗”建模为一个带约束的序列决策问题（马尔可夫决策过程），用强化学习智能体逐个窗口做决策：丢弃，或标记为事件的 Onset（起始）、Sustain（持续）、Offset（结束）；再用有限状态机限制每一步可选动作，保证决策顺序符合运动想象事件的生理演进。",
-        "difference": "以前的窗口优化方法（相关性选窗 CTWS、蚁群 ACO、麻雀搜索 SSA 等）把每个候选窗口孤立地判断“好或坏”，配置离线搜索后对所有试次统一套用，容易切出碎片化、生理上不合理的窗口序列；本文让每一步决策都依赖跨窗口的历史上下文和事件阶段约束，在线逐窗自适应决策。",
-        "innovation": "三点：一是把窗口动作空间从“保留/丢弃”改成与神经事件语义对齐的四种角色，提升可解释性；二是用有限状态机做动作掩码，把计划/执行/恢复三个阶段作为硬约束，避免出现“先 Offset 后 Onset”这类荒谬序列；三是用基于 Transformer 的历史编码器并行捕捉长距离窗口依赖，替代易梯度消失或爆炸的循环网络，训练更稳更快。",
-        "implementation": "输入是带标签的脑电数据，按窗长 L 和步长 Δ 滑动取窗，当前窗、历史窗和试次进度组成状态；特征提取器把窗口编码成向量，判别器输出类别概率用于奖励计算；策略网络结合当前特征、历史上下文和试次进度输出动作；奖励由判别奖励（当前窗分类置信度）、时间连续奖励（窗口序列是否平滑）和终止奖励（最终分类结果）组成；强化学习用 PPO 类算法训练策略，最终把保留下来的窗口序列交给 MI 分类器分类。",
-        "applications": "可用于需要实时响应的运动想象脑机接口，如神经康复训练、外骨骼或轮椅等辅助设备的脑控、娱乐与游戏交互、人机交互控制；其即插即用设计也可用来增强现有 EEGNet、FBCNet、ATCNet、EEGConformer 等解码器的在线表现。",
-        "technicalTerms": [
-          "运动想象（MI）：人只是想象肢体动作而不实际动，大脑感觉运动区会产生可测量的脑电变化。",
-          "脑机接口（BCI）：让大脑信号直接控制外部设备的通路。",
-          "脑电（EEG）：用头皮电极记录的大脑电活动，时间分辨率高、成本较低。",
-          "ERD/ERS：运动想象时 μ（8–13Hz）和 β（13–30Hz）节律先变弱（去同步，ERD），事件结束后又反弹增强（同步，ERS），这是判断事件阶段的生理依据。",
-          "滑动窗口：在连续信号上按固定长度不断向前平移取样，本文让算法自己决定每个窗口去留。",
-          "马尔可夫决策过程（MDP）：把序贯决策写成状态、动作、转移、奖励、折扣因子的数学框架，强化学习的标准建模方式。",
-          "有限状态机（FSM）：用一组离散状态和允许的转移规则来限制可行动作，这里用于保证决策顺序符合生理阶段。",
-          "动作掩码：在某状态下把不合法的动作直接屏蔽掉，让智能体只能选择合法动作。",
-          "Transformer 历史编码器：用自注意力机制并行建模历史窗口之间的依赖关系，比循环网络更稳定高效。",
-          "即插即用：不改动原有分类器结构，可以直接叠加到多种 MI 分类器上使用。"
-        ]
-      },
-      "highlight": "TSE-RL 把 MI 事件的时间结构先验嵌入强化学习，将窗口优化从孤立的“好/坏”判断升级为完整神经事件的语义对齐。",
-      "summary": "这篇预印本论文针对在线运动想象脑机接口的固定长度滑动窗口问题，提出 TSE-RL 框架，让强化学习智能体给每个时间窗打上 Discard/Onset/Sustain/Offset 的语义标签，并用有限状态机约束决策顺序。它值得读的地方在于：不只是提高解码准确率，还让算法学到的窗口选择顺序符合神经生理规律，且能即插即用地接到各种 MI 分类器上。",
-      "failureAnalysis": "目前可见内容只有摘要、引言和方法前半部分，缺少完整实验细节（数据集数量、提升幅度、稳定性数据），且所有结论均来自公共数据集的模拟在线实验，并非真实在线系统验证。此外，框架依赖对 MI 事件阶段（Planning/Execution/Recovery）的先验划分，若不同被试的神经事件时序差异较大，约束可能过强。",
+      "id": "life-eb4feba738774b55af9281b01521dd16",
+      "category": "international",
+      "title": "一面专注体验，一面表达个性：麦金獭钢化膜与极稚墨水屏手机壳体验",
+      "source": "少数派 sspai",
+      "url": "https://sspai.com/post/115679",
+      "publishedAt": "2026-10-16T04:41:05.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "从正面的手感与显示聊起，再翻到背面看看换图的玩法。",
+      "summary": "这篇少数派体验围绕麦金獭钢化膜与极稚墨水屏手机壳展开：先从正面谈手感与显示，再翻到背面展示换图玩法。它把手机配件的实用体验与个性表达放在一起看，适合关注手机壳、贴膜质感与可玩性的人参考。",
+      "failureAnalysis": "关键看点在于：正面比的是手感与显示这种基础体验，背面比的是换图这种个性表达；选配件时可先判断自己更在意哪一面。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "PREPRINT 1 Time Window Optimization for Motor Imagery Classification via Temporal Structure Embedded Reinforcement Learning Huan Luo, Na Lu, Xiaopeng Wang, and Ziyang Shang Abstract— Online motor imagery-based brain-computer interfaces (MI-BCIs) usually processes continuous EEG signal with fixed-length sliding windows, which is inflexible, human intervened, and misaligned with neural events. Time window optimization has shown promising improvement as a substitute solution. However, the existing optimiza- tion methods typically evaluate windows isolatedly and fail to model temporal dependencies across consecutive windows, which may produce fragmented and physiologi- cally implausible sequences.",
+      "sourceExcerpt": "从正面的手感与显示聊起，再翻到背面看看换图的玩法。",
       "translations": {
         "zh": {
-          "title": "用时间结构嵌入强化学习优化运动想象脑机接口的时间窗",
-          "highlight": "TSE-RL 把 MI 事件的时间结构先验嵌入强化学习，将窗口优化从孤立的“好/坏”判断升级为完整神经事件的语义对齐。",
-          "summary": "这篇预印本论文针对在线运动想象脑机接口的固定长度滑动窗口问题，提出 TSE-RL 框架，让强化学习智能体给每个时间窗打上 Discard/Onset/Sustain/Offset 的语义标签，并用有限状态机约束决策顺序。它值得读的地方在于：不只是提高解码准确率，还让算法学到的窗口选择顺序符合神经生理规律，且能即插即用地接到各种 MI 分类器上。",
-          "failureAnalysis": "目前可见内容只有摘要、引言和方法前半部分，缺少完整实验细节（数据集数量、提升幅度、稳定性数据），且所有结论均来自公共数据集的模拟在线实验，并非真实在线系统验证。此外，框架依赖对 MI 事件阶段（Planning/Execution/Recovery）的先验划分，若不同被试的神经事件时序差异较大，约束可能过强。",
-          "paperCard": {
-            "problem": "在线运动想象脑机接口通常用固定长度的滑动窗口切分连续脑电信号，窗口长度靠人工设定，有的窗口只覆盖一部分运动想象事件，有的混入大量事件前基线或肌电等干扰，与实际神经事件对不齐，导致响应慢、解码不准。",
-            "method": "把“该保留哪个时间窗”建模为一个带约束的序列决策问题（马尔可夫决策过程），用强化学习智能体逐个窗口做决策：丢弃，或标记为事件的 Onset（起始）、Sustain（持续）、Offset（结束）；再用有限状态机限制每一步可选动作，保证决策顺序符合运动想象事件的生理演进。",
-            "difference": "以前的窗口优化方法（相关性选窗 CTWS、蚁群 ACO、麻雀搜索 SSA 等）把每个候选窗口孤立地判断“好或坏”，配置离线搜索后对所有试次统一套用，容易切出碎片化、生理上不合理的窗口序列；本文让每一步决策都依赖跨窗口的历史上下文和事件阶段约束，在线逐窗自适应决策。",
-            "innovation": "三点：一是把窗口动作空间从“保留/丢弃”改成与神经事件语义对齐的四种角色，提升可解释性；二是用有限状态机做动作掩码，把计划/执行/恢复三个阶段作为硬约束，避免出现“先 Offset 后 Onset”这类荒谬序列；三是用基于 Transformer 的历史编码器并行捕捉长距离窗口依赖，替代易梯度消失或爆炸的循环网络，训练更稳更快。",
-            "implementation": "输入是带标签的脑电数据，按窗长 L 和步长 Δ 滑动取窗，当前窗、历史窗和试次进度组成状态；特征提取器把窗口编码成向量，判别器输出类别概率用于奖励计算；策略网络结合当前特征、历史上下文和试次进度输出动作；奖励由判别奖励（当前窗分类置信度）、时间连续奖励（窗口序列是否平滑）和终止奖励（最终分类结果）组成；强化学习用 PPO 类算法训练策略，最终把保留下来的窗口序列交给 MI 分类器分类。",
-            "applications": "可用于需要实时响应的运动想象脑机接口，如神经康复训练、外骨骼或轮椅等辅助设备的脑控、娱乐与游戏交互、人机交互控制；其即插即用设计也可用来增强现有 EEGNet、FBCNet、ATCNet、EEGConformer 等解码器的在线表现。",
-            "technicalTerms": [
-              "运动想象（MI）：人只是想象肢体动作而不实际动，大脑感觉运动区会产生可测量的脑电变化。",
-              "脑机接口（BCI）：让大脑信号直接控制外部设备的通路。",
-              "脑电（EEG）：用头皮电极记录的大脑电活动，时间分辨率高、成本较低。",
-              "ERD/ERS：运动想象时 μ（8–13Hz）和 β（13–30Hz）节律先变弱（去同步，ERD），事件结束后又反弹增强（同步，ERS），这是判断事件阶段的生理依据。",
-              "滑动窗口：在连续信号上按固定长度不断向前平移取样，本文让算法自己决定每个窗口去留。",
-              "马尔可夫决策过程（MDP）：把序贯决策写成状态、动作、转移、奖励、折扣因子的数学框架，强化学习的标准建模方式。",
-              "有限状态机（FSM）：用一组离散状态和允许的转移规则来限制可行动作，这里用于保证决策顺序符合生理阶段。",
-              "动作掩码：在某状态下把不合法的动作直接屏蔽掉，让智能体只能选择合法动作。",
-              "Transformer 历史编码器：用自注意力机制并行建模历史窗口之间的依赖关系，比循环网络更稳定高效。",
-              "即插即用：不改动原有分类器结构，可以直接叠加到多种 MI 分类器上使用。"
-            ]
-          }
+          "title": "一面专注体验，一面表达个性：麦金獭钢化膜与极稚墨水屏手机壳体验",
+          "highlight": "从正面的手感与显示聊起，再翻到背面看看换图的玩法。",
+          "summary": "这篇少数派体验围绕麦金獭钢化膜与极稚墨水屏手机壳展开：先从正面谈手感与显示，再翻到背面展示换图玩法。它把手机配件的实用体验与个性表达放在一起看，适合关注手机壳、贴膜质感与可玩性的人参考。",
+          "failureAnalysis": "关键看点在于：正面比的是手感与显示这种基础体验，背面比的是换图这种个性表达；选配件时可先判断自己更在意哪一面。"
         },
         "en": {
-          "highlight": "TSE-RL embeds prior temporal-structure knowledge of MI events into a stable RL framework, reformulating window optimization as a constrained Markov Decision Process.",
-          "summary": "This preprint targets the rigid, fixed-length sliding windows used in online motor imagery brain-computer interfaces, and proposes TSE-RL, a reinforcement learning framework that labels each window as Discard, Onset, Sustain or Offset under finite-state-machine constraints. It is worth reading because it improves decoding accuracy while making the learned window policy match neurophysiological principles, and it is plug-and-play with mainstream MI classifiers.",
-          "failureAnalysis": "Only the abstract, introduction and the first half of the methods are available, so experimental details such as datasets, improvement margins and stability are unverified; all results come from simulated online experiments on public datasets rather than real online systems. The framework also relies on a prior phase division (Planning/Execution/Recovery), which may be too rigid when subjects differ in event timing.",
-          "title": "Time Window Optimization for Motor Imagery Classification via Temporal Structure Embedded Reinforcement Learning",
-          "paperCard": {
-            "problem": "Online motor imagery BCIs split continuous EEG with fixed-length sliding windows whose length is set by hand; some windows cover only part of an MI event, others contain excessive pre-event baseline or artifacts, so they are misaligned with actual neural events and hurt both timeliness and accuracy.",
-            "method": "It formulates which window to keep as a constrained sequential decision problem (an MDP) and lets an RL agent decide per window: discard it, or mark it as Onset, Sustain or Offset of the event; a finite state machine restricts the legal actions so the decision order follows the physiological progression of the MI event.",
-            "difference": "Older window-optimization methods (correlation-based CTWS, ant colony optimization, sparrow search) judge each candidate window in isolation as good or bad, search configurations offline and apply them uniformly across trials, producing fragmented and physiologically implausible window sequences; this work conditions every decision on cross-window history and event-phase constraints.",
-            "innovation": "Three parts: changing the action space from retain/discard to semantic alignment with neural events; using a finite state machine for action masking so that planning/execution/recovery phases are hard constraints, preventing sequences such as Offset before Onset; and using a Transformer-based history encoder to capture long-range inter-window dependencies in parallel instead of unstable recurrent networks.",
-            "implementation": "Labeled EEG trials are cut into windows with length L and stride Δ; the state is the current window, historical windows and trial progress. A feature extractor encodes each window, a discriminator outputs class probabilities for reward computation, and a policy network combines current features, history and trial progress to choose actions. The reward combines a discrimination reward (classifier confidence), a temporal continuity reward and a termination reward (final classification outcome), and the policy is trained with RL, after which retained windows are passed to an MI classifier.",
-            "applications": "Real-time motor imagery BCIs such as neurorehabilitation training, brain-controlled assistive devices like exoskeletons or wheelchairs, entertainment and gaming interaction, and human-machine control; its plug-and-play design can also boost existing decoders such as EEGNet, FBCNet, ATCNet and EEGConformer.",
-            "technicalTerms": [
-              "Motor imagery (MI): imagining a limb movement without executing it, which elicits measurable EEG changes in sensorimotor areas.",
-              "Brain-computer interface (BCI): a direct pathway letting brain signals control external devices.",
-              "EEG: scalp-recorded brain electrical activity with high temporal resolution and relatively low cost.",
-              "ERD/ERS: during motor imagery the μ (8-13 Hz) and β (13-30 Hz) rhythms desynchronize (ERD) and then rebound in synchronization (ERS) after the event, providing the physiological basis for identifying event phases.",
-              "Sliding window: repeatedly sampling fixed-length segments while moving forward along a continuous signal; here the algorithm decides whether to keep each window.",
-              "Markov Decision Process (MDP): the standard mathematical formulation of sequential decision making with states, actions, transitions, rewards and a discount factor.",
-              "Finite state machine (FSM): a set of discrete states and allowed transitions used to restrict feasible actions, here enforcing physiologically plausible orders.",
-              "Action masking: blocking illegal actions in a given state so the agent can only choose valid ones.",
-              "Transformer history encoder: a self-attention module that models dependencies among historical windows in parallel, more stable and efficient than recurrent networks.",
-              "Plug-and-play: can be stacked onto various MI classifiers without changing their architecture."
-            ]
-          }
+          "highlight": "It starts with the feel and display on the front, then flips to the back to see the image-switching feature.",
+          "summary": "This SSPAI hands-on looks at a tempered glass film and an e-ink phone case: it first discusses front feel and display, then turns to the back to show the image-changing feature. It brings practical experience and personal expression together, making it useful for readers interested in phone case and film texture and playability.",
+          "failureAnalysis": "The key point is that the front competes on basic feel and display, while the back competes on image-changing self-expression; when choosing accessories, first decide which side matters more to you.",
+          "title": "Hands-On with a Tempered Glass Film and an E-Ink Phone Case: One Side for Experience, One for Personality"
         }
       }
     },
     {
-      "id": "ai-feed-faeaad61a434440d9491cb52bcdd4531",
+      "id": "ai-github-1401476500",
       "category": "ai",
-      "title": "AI is mass decompiling games. That's both awesome and scary.",
-      "source": "Simon Willison",
-      "url": "https://simonwillison.net/2026/Oct/14/ai-is-mass-decompiling-games/",
+      "title": "QingYunA/answer-me-with-html",
+      "source": "GitHub Search",
+      "url": "https://github.com/QingYunA/answer-me-with-html",
       "abstractUrl": null,
-      "publishedAt": "2026-10-14T16:26:53.0000000Z",
-      "scoreLabel": "Curated engineering feed",
-      "aiArticleType": "concept_explanation",
+      "publishedAt": "2026-10-02T09:57:40.0000000Z",
+      "scoreLabel": "GitHub 3514 stars",
+      "aiArticleType": "application_innovation",
       "evidenceAnchors": [
         {
           "label": "GitHub",
           "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
         }
       ],
-      "evidenceLabel": "GitHub",
+      "evidenceLabel": "GitHub + Community signal",
       "hasPrimaryAnchor": true,
-      "requiresRiskAnalysis": false,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub",
-      "summary": "独立游戏开发者 Popcar 谈到了近期 AI 驱动的游戏反编译浪潮：它促成了现有游戏之间各种奇怪的混搭，也带动了大量游戏保存项目，让老游戏能在新硬件甚至浏览器（借助 WebAssembly）上运行。Simon Willison 欣赏这篇文章同时呈现了正反两面——任何软件都可能被反编译，付费游戏或应用可能在违背厂商意愿的情况下被开源；但老游戏也因此更容易被移植、修改和增强。在主机厂商全面转向数字发行、服务器一关游戏就彻底玩不了的当下，这一点尤其值得关注。",
-      "failureAnalysis": "关键结论：反编译能力本身是中性的，同一项技术既能用于游戏保存与文化遗产抢救，也能用于商业抄袭，真正的变化是“软件难以被复制”这一长期假设开始失效。",
-      "aiSelectionScore": 100,
-      "highlight": "如果 AI 能反编译游戏和软件，那么整个科技行业即将天翻地覆，任何人都能反编译别人的软件并随意使用，没人拦得住。",
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "这个 GitHub 项目是一个 AI Agent 技能，主旨是让 Agent 用一页 HTML 回答复杂问题，而不是输出难以阅读的长文本。它已获得 3514 stars，说明开发者对“把 AI 答案变成可读页面”这一交互形式有兴趣。值得关注的是，它尝试解决 AI 输出可读性与信息呈现方式的问题。",
+      "failureAnalysis": "这类项目可能失败在需求边界：简单问题不需要 HTML，复杂问题又未必靠一页页面就能讲清，用户可能仍更习惯聊天式追问。工程上，生成 HTML 会引入渲染、样式、安全（如 XSS）和维护成本，还要面对不同 Agent 平台的兼容与分发限制。3514 stars 只能证明早期关注度，不能证明留存、付费或持续使用。若没有明确场景和分发渠道，它容易停留在演示型技能。",
+      "aiSelectionScore": 3514,
+      "highlight": "用 HTML 回答我——一项让 AI Agent 用一页真正可读的 HTML 回答难题的技能。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "AI is mass decompiling games. That's both awesome and scary. Indie game developer Popcar talks about the recent wave of AI-powered decompilation of existing games, enabling weird mashups between existing games, and producing a boom in game preservation projects to get old games working on new hardware (often in a browser using WebAssembly).",
+      "sourceExcerpt": "GitHub repository with 3514 stars and recent public activity. Description: Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。",
       "translations": {
         "zh": {
-          "title": "AI 正在大规模反编译游戏：既了不起，也令人恐惧",
-          "highlight": "如果 AI 能反编译游戏和软件，那么整个科技行业即将天翻地覆，任何人都能反编译别人的软件并随意使用，没人拦得住。",
-          "summary": "独立游戏开发者 Popcar 谈到了近期 AI 驱动的游戏反编译浪潮：它促成了现有游戏之间各种奇怪的混搭，也带动了大量游戏保存项目，让老游戏能在新硬件甚至浏览器（借助 WebAssembly）上运行。Simon Willison 欣赏这篇文章同时呈现了正反两面——任何软件都可能被反编译，付费游戏或应用可能在违背厂商意愿的情况下被开源；但老游戏也因此更容易被移植、修改和增强。在主机厂商全面转向数字发行、服务器一关游戏就彻底玩不了的当下，这一点尤其值得关注。",
-          "failureAnalysis": "关键结论：反编译能力本身是中性的，同一项技术既能用于游戏保存与文化遗产抢救，也能用于商业抄袭，真正的变化是“软件难以被复制”这一长期假设开始失效。"
+          "title": "用一页 HTML 回答复杂问题的 AI Agent 技能",
+          "highlight": "用 HTML 回答我——一项让 AI Agent 用一页真正可读的 HTML 回答难题的技能。",
+          "summary": "这个 GitHub 项目是一个 AI Agent 技能，主旨是让 Agent 用一页 HTML 回答复杂问题，而不是输出难以阅读的长文本。它已获得 3514 stars，说明开发者对“把 AI 答案变成可读页面”这一交互形式有兴趣。值得关注的是，它尝试解决 AI 输出可读性与信息呈现方式的问题。",
+          "failureAnalysis": "这类项目可能失败在需求边界：简单问题不需要 HTML，复杂问题又未必靠一页页面就能讲清，用户可能仍更习惯聊天式追问。工程上，生成 HTML 会引入渲染、样式、安全（如 XSS）和维护成本，还要面对不同 Agent 平台的兼容与分发限制。3514 stars 只能证明早期关注度，不能证明留存、付费或持续使用。若没有明确场景和分发渠道，它容易停留在演示型技能。"
         },
         "en": {
-          "highlight": "If AI can decompile games and software, then the entire tech industry is about to explode: anybody can decompile other software and use it any way they'd like.",
-          "summary": "Indie developer Popcar describes the recent wave of AI-powered decompilation of existing games, which enables weird mashups and a boom in preservation projects that get old games running on new hardware, often in the browser via WebAssembly. Simon Willison likes that the piece captures both sides: any software can be decompiled against its owner's wishes, yet old games can now be ported, modified and enhanced far more easily. With console makers going all in on digital and servers shutting down, this matters. ",
-          "failureAnalysis": "The key takeaway: decompilation itself is neutral, serving both preservation and outright copying; what really changes is that the long-standing assumption that software is hard to copy no longer holds.",
-          "title": "AI Is Mass Decompiling Games. That's Both Awesome and Scary."
+          "highlight": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read.",
+          "summary": "This GitHub project is an AI agent skill that answers complex questions with a one-page HTML instead of a long, hard-to-read text response. It has 3,514 stars, suggesting developer interest in making AI answers more readable and presentable. It is worth reading as an example of improving AI output format and human readability.",
+          "failureAnalysis": "It may fail if simple questions do not need HTML and complex questions cannot be fully resolved in one page, while rendering, security, compatibility, and distribution add real costs. Stars show attention, not retention or a business model.",
+          "title": "An AI Agent Skill That Answers Complex Questions With a One-Page HTML"
+        }
+      }
+    },
+    {
+      "id": "ai-feed-5e77777ec8da46aeb58b66c1c922e6ee",
+      "category": "ai",
+      "title": "[AINews] Agents disprove Polysemanticity; greatly improve Interpretability & Alignment",
+      "source": "Latent Space",
+      "url": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-16T04:16:45.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [],
+      "evidenceLabel": "No clear evidence",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
+      "summary": "这是一篇 AI 概念解释类内容，记录了 Nick Cammarata 突然提出的重大主张：agents 能够证伪「多义性」（polysemanticity），并在可解释性与对齐上带来大幅提升。多义性是理解神经网络内部表征的核心难题之一，若该主张成立，意味着模型内部机制的解读方式可能出现转折。值得一读，因为它把可解释性与对齐两个议题放在同一个技术论断下重新讨论。",
+      "failureAnalysis": "关键要点：这是一项提出来的重大主张而非已定论的结论，对非技术决策者而言，先记住「agents 可能改变我们理解模型内部的方式」这一命题即可，具体证据仍需看原文。",
+      "aiSelectionScore": 100,
+      "highlight": "Nick Cammarata 突然发声，提出若干重大论断：agents 可证伪多义性，并大幅提升可解释性与对齐。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Nick Cammarata out of nowhere with some major claims!",
+      "translations": {
+        "zh": {
+          "title": "Agents 证伪多义性：可解释性与对齐大幅提升",
+          "highlight": "Nick Cammarata 突然发声，提出若干重大论断：agents 可证伪多义性，并大幅提升可解释性与对齐。",
+          "summary": "这是一篇 AI 概念解释类内容，记录了 Nick Cammarata 突然提出的重大主张：agents 能够证伪「多义性」（polysemanticity），并在可解释性与对齐上带来大幅提升。多义性是理解神经网络内部表征的核心难题之一，若该主张成立，意味着模型内部机制的解读方式可能出现转折。值得一读，因为它把可解释性与对齐两个议题放在同一个技术论断下重新讨论。",
+          "failureAnalysis": "关键要点：这是一项提出来的重大主张而非已定论的结论，对非技术决策者而言，先记住「agents 可能改变我们理解模型内部的方式」这一命题即可，具体证据仍需看原文。"
+        },
+        "en": {
+          "highlight": "Nick Cammarata out of nowhere with some major claims: agents disprove polysemanticity and greatly improve interpretability and alignment.",
+          "summary": "This is an AI concept explainer covering a sudden set of major claims from Nick Cammarata: that agents disprove polysemanticity and greatly improve interpretability and alignment. Polysemanticity is one of the central puzzles in reading what a neural network actually represents, so if the claim holds it marks a possible turning point in how we interpret model internals. Worth reading because it puts interpretability and alignment under a single technical claim.",
+          "failureAnalysis": "Key takeaway: this is a claimed result, not settled consensus; for a non-technical decision maker, the takeaway is that agents may change how we understand model internals, while the evidence still needs to be checked in the original.",
+          "title": "Agents Disprove Polysemanticity: Big Gains in Interpretability & Alignment"
         }
       }
     }

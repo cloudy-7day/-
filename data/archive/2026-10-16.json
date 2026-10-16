@@ -1,0 +1,297 @@
+{
+  "issueDate": "2026-10-16",
+  "updateStatus": "complete",
+  "contentFingerprint": "10bbc0c55c83efb697de1597fe7b623068d9c92e6b615986c464c43b19464746",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-3845c5bcdd2744d8b5647fd6d2ae4820",
+      "category": "domestic",
+      "title": "国考报名三天，热门岗位竞争已超1400:1",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-17/10716043.shtml",
+      "publishedAt": "2026-10-16T16:29:54.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "2027年度国考报名自10月14日8时开始，已进行三天，已有岗位出现超千人竞争一岗的现象。",
+      "summary": "中新网10月17日报道，中央机关及其直属机构2027年度考试录用公务员报名已进行三天，部分岗位出现超千人竞争一岗的情况。这条新闻用报名进度和岗位竞争比，直观呈现了当前公务员招录的热度分布。关注它可以快速把握体制内就业市场的冷热信号，以及报名期内竞争格局的变化节奏。",
+      "failureAnalysis": "关键看点不在总量，而在结构性失衡：少数岗位热度极高、竞争比迅速攀升，说明求职预期仍明显向稳定岗位集中；后续应关注竞争比是否会继续扩大，以及冷热岗位的分化程度。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网北京10月17日电(记者 李京统)中央机关及其直属机构2027年度考试录用公务员报名自14日8时开始，已经进行了三天。具体岗位报考方面，已有岗位出现超千人竞争一岗的现象。",
+      "translations": {
+        "zh": {
+          "title": "国考报名三天，热门岗位竞争已超1400:1",
+          "highlight": "2027年度国考报名自10月14日8时开始，已进行三天，已有岗位出现超千人竞争一岗的现象。",
+          "summary": "中新网10月17日报道，中央机关及其直属机构2027年度考试录用公务员报名已进行三天，部分岗位出现超千人竞争一岗的情况。这条新闻用报名进度和岗位竞争比，直观呈现了当前公务员招录的热度分布。关注它可以快速把握体制内就业市场的冷热信号，以及报名期内竞争格局的变化节奏。",
+          "failureAnalysis": "关键看点不在总量，而在结构性失衡：少数岗位热度极高、竞争比迅速攀升，说明求职预期仍明显向稳定岗位集中；后续应关注竞争比是否会继续扩大，以及冷热岗位的分化程度。"
+        },
+        "en": {
+          "highlight": "Registration for the 2027 central civil service exam began at 8 a.m. on October 14 and has run for three days, with some posts already drawing more than a thousand applicants each.",
+          "summary": "China News Service reported on October 17 that registration for the 2027 recruitment of civil servants by central agencies and their directly subordinate bodies had been open for three days, with some positions attracting over a thousand applicants per opening. The report uses registration progress and competition ratios to show how demand is distributed across available posts. It is worth reading as a quick signal of how concentrated job-seekers' preferences are toward stable public-sector work.",
+          "failureAnalysis": "The key point is structural imbalance rather than overall volume: a handful of posts see extremely high competition ratios, indicating that job expectations remain heavily concentrated on stable positions. Watch whether those ratios keep rising and how sharply hot and cold posts diverge.",
+          "title": "Three Days Into China's Civil Service Exam Registration, a Hot Post Draws Over 1,400 Applicants per Opening"
+        }
+      }
+    },
+    {
+      "id": "news-3b31a3ec124c4645a34df8e4633d16f4",
+      "category": "domestic",
+      "title": "五集历史纪录片《突围21天》揭秘一段鲜为人知的长征史",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-16/10716003.shtml",
+      "publishedAt": "2026-10-16T13:56:51.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "从10月25日进入广东南雄，到11月14日离开乐昌，红军在粤北群山间跋涉了21天，突破国民党军设置的第二、第三道封锁线。",
+      "summary": "中新网报道，五集历史纪录片《突围21天》聚焦1934年10月中央红军从江西于都出发后的长征初期历程。片中披露，红军自10月25日进入广东南雄、至11月14日离开乐昌，在粤北群山间行军21天，突破第二、第三道封锁线，为长征初期打开西进通道。这段鲜为人知的粤北行军史，是理解长征整体进程的一个具体切口。",
+      "failureAnalysis": "这条消息的价值在于它记录了一段可核实的历史事实与公开传播动作：长征并非只有耳熟能详的节点，粤北21天这样的局部细节同样构成完整叙事，值得作为观察历史纪录片选题视角的样本。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网广州10月16日电 1934年10月，中央红军从江西于都出发，走向一场改变中国命运的二万五千里长征。从10月25日进入广东南雄，到11月14日离开乐昌，红军在广东境内的粤北群山间跋涉了21天，突破国民党军设置的第二、第三道封锁线，为长征初期打开了西进通道。",
+      "translations": {
+        "zh": {
+          "title": "五集历史纪录片《突围21天》揭秘红军粤北长征21天",
+          "highlight": "从10月25日进入广东南雄，到11月14日离开乐昌，红军在粤北群山间跋涉了21天，突破国民党军设置的第二、第三道封锁线。",
+          "summary": "中新网报道，五集历史纪录片《突围21天》聚焦1934年10月中央红军从江西于都出发后的长征初期历程。片中披露，红军自10月25日进入广东南雄、至11月14日离开乐昌，在粤北群山间行军21天，突破第二、第三道封锁线，为长征初期打开西进通道。这段鲜为人知的粤北行军史，是理解长征整体进程的一个具体切口。",
+          "failureAnalysis": "这条消息的价值在于它记录了一段可核实的历史事实与公开传播动作：长征并非只有耳熟能详的节点，粤北21天这样的局部细节同样构成完整叙事，值得作为观察历史纪录片选题视角的样本。"
+        },
+        "en": {
+          "highlight": "From entering Nanxiong, Guangdong on October 25 to leaving Lechang on November 14, the Red Army trekked 21 days through the mountains of northern Guangdong, breaking through the second and third blockade lines.",
+          "summary": "China News Service reports that the five-part documentary 'Breakout: 21 Days' focuses on the early stages of the Long March after the Central Red Army set out from Yudu, Jiangxi in October 1934. It recounts how the Red Army marched 21 days through the mountains of northern Guangdong, from entering Nanxiong on October 25 to leaving Lechang on November 14, breaking the second and third blockade lines and opening a westward passage. The story offers a concrete window into a less familiar part of the Long March.",
+          "failureAnalysis": "The item's value lies in documenting a verifiable historical episode and a public-facing media effort: the Long March was not only its famous milestones, and local details such as these 21 days in northern Guangdong make it worth watching as a sample of documentary topic selection.",
+          "title": "Five-Part Historical Documentary 'Breakout: 21 Days' Reveals a Little-Known Chapter of the Long March"
+        }
+      }
+    },
+    {
+      "id": "news-17225bb6f183452d84bf9b011d4778da",
+      "category": "domestic",
+      "title": "海南自贸港封关后首家琼港联营律师事务所揭牌",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-16/10716000.shtml",
+      "publishedAt": "2026-10-16T13:56:19.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "瀛和浩宸（海口）联营律师事务所16日在海口揭牌，成为海南自贸港全岛封关后首家落地的琼港联营律师事务所。",
+      "summary": "据中新网海口10月16日电（记者张茜翼）报道，在2026海南自由贸易港法律周举办期间，瀛和浩宸（海口）联营律师事务所于16日在海口揭牌。这是海南自贸港全岛封关后首家落地的琼港联营律师事务所。该消息可作为观察封关后海南法律服务领域开放进度与琼港合作落地节奏的一个具体节点。",
+      "failureAnalysis": "对非技术读者而言，关键看点是封关后的制度安排是否正转化为可核实的机构落地案例；此例属于法律服务领域开放的首个样本，但单家律所揭牌尚不足以说明整体规模效应。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网海口10月16日电(记者 张茜翼)在2026海南自由贸易港法律周举办期间，瀛和浩宸(海口)联营律师事务所16日在海口揭牌，成为海南自贸港全岛封关后首家落地的琼港联营律师事务所。",
+      "translations": {
+        "zh": {
+          "title": "海南自贸港封关后首家琼港联营律师事务所揭牌",
+          "highlight": "瀛和浩宸（海口）联营律师事务所16日在海口揭牌，成为海南自贸港全岛封关后首家落地的琼港联营律师事务所。",
+          "summary": "据中新网海口10月16日电（记者张茜翼）报道，在2026海南自由贸易港法律周举办期间，瀛和浩宸（海口）联营律师事务所于16日在海口揭牌。这是海南自贸港全岛封关后首家落地的琼港联营律师事务所。该消息可作为观察封关后海南法律服务领域开放进度与琼港合作落地节奏的一个具体节点。",
+          "failureAnalysis": "对非技术读者而言，关键看点是封关后的制度安排是否正转化为可核实的机构落地案例；此例属于法律服务领域开放的首个样本，但单家律所揭牌尚不足以说明整体规模效应。"
+        },
+        "en": {
+          "highlight": "Yinghe Haochen (Haikou) Joint Law Firm was unveiled in Haikou on the 16th, becoming the first Hainan-Hong Kong joint law firm to land after the island-wide customs closure of the Hainan Free Trade Port.",
+          "summary": "According to China News Service in Haikou on October 16 (reporter Zhang Qianyi), Yinghe Haochen (Haikou) Joint Law Firm was unveiled in Haikou on the 16th during the 2026 Hainan Free Trade Port Legal Week. It is the first Hainan-Hong Kong joint law firm to be established after the Hainan Free Trade Port's island-wide customs closure. The item offers a concrete checkpoint for tracking how legal-services opening and Hainan-Hong Kong cooperation are progressing after the closure.",
+          "failureAnalysis": "The key takeaway is whether post-closure institutional arrangements are turning into verifiable, on-the-ground institutions; this single unveiling marks a first example in legal services but does not by itself demonstrate broader scale effects.",
+          "title": "First Hainan-Hong Kong Joint Law Firm Unveiled After Hainan Free Trade Port's Island-Wide Customs Closure"
+        }
+      }
+    },
+    {
+      "id": "news-c467dc809e7e48f4869c36e42b71b9dc",
+      "category": "international",
+      "title": "Crowds throng New Delhi and wave Indian flags amid escalating protests",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/16/g-s1-148383/crowds-throng-new-delhi-and-wave-indian-flags-amid-escalating-protests",
+      "publishedAt": "2026-10-16T13:26:43.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "抗议因选民名单审查持续升级，批评者称其出于政治动机并可能剥夺选民权利，选举委员会与莫迪政府否认指控。",
+      "summary": "这篇国际报道聚焦印度新德里不断升级的抗议活动。抗议源于对选民名单审查的争议，批评者认为审查带有政治动机，可能使部分选民失去投票权；印度选举委员会和莫迪政府否认相关指控。事件关系到选举公正与选民权利，因此值得关注。",
+      "failureAnalysis": "关键看点是选民名单审查争议如何影响印度选举公信力与选民权利，以及官方否认后抗议是否继续升级。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Protests have intensified over a review of voter lists that critics say is politically motivated and threatens to disenfranchise voters. The Election Commission and Modi's administration deny these allegations.",
+      "translations": {
+        "zh": {
+          "title": "抗议升级之际，人群聚集新德里并挥舞印度国旗",
+          "highlight": "抗议因选民名单审查持续升级，批评者称其出于政治动机并可能剥夺选民权利，选举委员会与莫迪政府否认指控。",
+          "summary": "这篇国际报道聚焦印度新德里不断升级的抗议活动。抗议源于对选民名单审查的争议，批评者认为审查带有政治动机，可能使部分选民失去投票权；印度选举委员会和莫迪政府否认相关指控。事件关系到选举公正与选民权利，因此值得关注。",
+          "failureAnalysis": "关键看点是选民名单审查争议如何影响印度选举公信力与选民权利，以及官方否认后抗议是否继续升级。"
+        },
+        "en": {
+          "highlight": "Protests have intensified over a review of voter lists that critics say is politically motivated and threatens to disenfranchise voters.",
+          "summary": "This NPR World report focuses on escalating protests in New Delhi over a review of voter lists. Critics say the review is politically motivated and threatens to disenfranchise voters, while the Election Commission and Modi's administration deny the allegations. The dispute is worth watching because it touches on election integrity and voting rights in India.",
+          "failureAnalysis": "The key takeaway is that the voter-list review dispute now tests the credibility of India's electoral process and the government's response to public protest.",
+          "title": "Crowds Throng New Delhi and Wave Indian Flags as Protests Escalate"
+        }
+      }
+    },
+    {
+      "id": "news-fa6d87838ca64b838fabdf5823fa619e",
+      "category": "international",
+      "title": "No 10 leaves option open to impose Chinese EV tariffs if UK joins EU scheme",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/politics/2026/oct/16/uk-chinese-electric-vehicle-ev-tariffs-eu-made-in-europe-scheme",
+      "publishedAt": "2026-10-16T18:09:34.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "若英国加入欧盟计划，唐宁街不排除对中国产电动汽车加征关税，北京警告此举具有“歧视性”。",
+      "summary": "文章说，法国不再反对英国加入“欧洲制造”一揽子计划后，唐宁街表示欢迎英国被纳入《工业加速器法案》的目标，但未排除对中国产电动汽车加征关税。北京警告这种“歧视性”做法。此事值得关注，因为它关系到英国在欧盟产业政策中的位置以及中英贸易摩擦风险。",
+      "failureAnalysis": "关键点：英国是否加入欧盟产业计划，可能直接影响其对中国电动车关税的政策空间；北京已明确反对歧视性措施。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Beijing warns against ‘discriminatory’ step after France drops opposition to British role in Made in Europe package No 10 has left the door open to imposing tariffs on Chinese-made electric vehicles as part of the Made in Europe package, prompting a warning from Beijing that such a move would be “discriminatory”. Downing Street said on Friday that it would “welcome the objective to have the UK included in the Industrial Accelerator Act” after France dropped its opposition to Britain joining the scheme .",
+      "translations": {
+        "zh": {
+          "title": "英国若加入欧盟计划，唐宁街未排除对中国产电动车加征关税",
+          "highlight": "若英国加入欧盟计划，唐宁街不排除对中国产电动汽车加征关税，北京警告此举具有“歧视性”。",
+          "summary": "文章说，法国不再反对英国加入“欧洲制造”一揽子计划后，唐宁街表示欢迎英国被纳入《工业加速器法案》的目标，但未排除对中国产电动汽车加征关税。北京警告这种“歧视性”做法。此事值得关注，因为它关系到英国在欧盟产业政策中的位置以及中英贸易摩擦风险。",
+          "failureAnalysis": "关键点：英国是否加入欧盟产业计划，可能直接影响其对中国电动车关税的政策空间；北京已明确反对歧视性措施。"
+        },
+        "en": {
+          "highlight": "No 10 left the door open to imposing tariffs on Chinese-made EVs as part of the Made in Europe package, prompting Beijing to warn such a move would be 'discriminatory'.",
+          "summary": "The article says Downing Street has not ruled out tariffs on Chinese-made electric vehicles as part of the Made in Europe package, after France dropped its opposition to UK inclusion. Beijing warned that such a step would be 'discriminatory'. It is worth reading because it shows how UK participation in EU industrial policy could shape trade tensions with China.",
+          "failureAnalysis": "The key takeaway is that UK participation in the EU scheme could affect its room to impose Chinese EV tariffs, and Beijing has already signaled opposition to discriminatory measures.",
+          "title": "No 10 Leaves Option Open to Impose Chinese EV Tariffs if UK Joins EU Scheme"
+        }
+      }
+    },
+    {
+      "id": "life-9db2ac35ec5842bdbfad12ba787a0548",
+      "category": "international",
+      "title": "Whatever Happened to Daylight Saving Time Going Away?",
+      "source": "Lifehacker",
+      "url": "https://lifehacker.com/what-happened-to-ending-daylight-saving-time?utm_medium=RSS",
+      "publishedAt": "2026-10-16T17:30:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "国会已经投票决定废除时间调整，可为什么我们至今还在每年改表？",
+      "summary": "这篇文章追问一个看似矛盾的现象：美国国会曾表决通过取消一年两次时钟切换，但现实中人们依旧照常调表。它梳理了立法通过之后为何迟迟没有落地，涉及执行细节、联邦与地方权限以及各方协调等现实障碍，适合用来理解政策从表决到生效之间的落差。",
+      "failureAnalysis": "关键启示是：立法表决通过并不等于政策立即生效，制度落地往往取决于执行细则、层级权限划分和行业协调，公众感受到的变化可能滞后多年。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Congress voted to abolish the time change, so why are we still doing it?",
+      "translations": {
+        "zh": {
+          "title": "夏令时取消之争：为何我们还在改表？",
+          "highlight": "国会已经投票决定废除时间调整，可为什么我们至今还在每年改表？",
+          "summary": "这篇文章追问一个看似矛盾的现象：美国国会曾表决通过取消一年两次时钟切换，但现实中人们依旧照常调表。它梳理了立法通过之后为何迟迟没有落地，涉及执行细节、联邦与地方权限以及各方协调等现实障碍，适合用来理解政策从表决到生效之间的落差。",
+          "failureAnalysis": "关键启示是：立法表决通过并不等于政策立即生效，制度落地往往取决于执行细则、层级权限划分和行业协调，公众感受到的变化可能滞后多年。"
+        },
+        "en": {
+          "highlight": "Congress voted to abolish the time change, so why are we still doing it?",
+          "summary": "This article examines an apparent contradiction: Congress voted to end the twice-yearly clock change, yet people still reset their clocks as usual. It looks at why the legislation has not taken effect, touching on implementation details, federal versus local authority, and coordination among stakeholders, which helps explain the gap between a vote and real-world change.",
+          "failureAnalysis": "The key takeaway: passing a vote is not the same as a policy taking effect; implementation details, divided authority and industry coordination often delay visible change for years.",
+          "title": "Whatever Happened to Daylight Saving Time Going Away?"
+        }
+      }
+    },
+    {
+      "id": "life-eb4feba738774b55af9281b01521dd16",
+      "category": "international",
+      "title": "一面专注体验，一面表达个性：麦金獭钢化膜与极稚墨水屏手机壳体验",
+      "source": "少数派 sspai",
+      "url": "https://sspai.com/post/115679",
+      "publishedAt": "2026-10-16T04:41:05.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "从正面的手感与显示聊起，再翻到背面看看换图的玩法。",
+      "summary": "这篇少数派体验围绕麦金獭钢化膜与极稚墨水屏手机壳展开：先从正面谈手感与显示，再翻到背面展示换图玩法。它把手机配件的实用体验与个性表达放在一起看，适合关注手机壳、贴膜质感与可玩性的人参考。",
+      "failureAnalysis": "关键看点在于：正面比的是手感与显示这种基础体验，背面比的是换图这种个性表达；选配件时可先判断自己更在意哪一面。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "从正面的手感与显示聊起，再翻到背面看看换图的玩法。",
+      "translations": {
+        "zh": {
+          "title": "一面专注体验，一面表达个性：麦金獭钢化膜与极稚墨水屏手机壳体验",
+          "highlight": "从正面的手感与显示聊起，再翻到背面看看换图的玩法。",
+          "summary": "这篇少数派体验围绕麦金獭钢化膜与极稚墨水屏手机壳展开：先从正面谈手感与显示，再翻到背面展示换图玩法。它把手机配件的实用体验与个性表达放在一起看，适合关注手机壳、贴膜质感与可玩性的人参考。",
+          "failureAnalysis": "关键看点在于：正面比的是手感与显示这种基础体验，背面比的是换图这种个性表达；选配件时可先判断自己更在意哪一面。"
+        },
+        "en": {
+          "highlight": "It starts with the feel and display on the front, then flips to the back to see the image-switching feature.",
+          "summary": "This SSPAI hands-on looks at a tempered glass film and an e-ink phone case: it first discusses front feel and display, then turns to the back to show the image-changing feature. It brings practical experience and personal expression together, making it useful for readers interested in phone case and film texture and playability.",
+          "failureAnalysis": "The key point is that the front competes on basic feel and display, while the back competes on image-changing self-expression; when choosing accessories, first decide which side matters more to you.",
+          "title": "Hands-On with a Tempered Glass Film and an E-Ink Phone Case: One Side for Experience, One for Personality"
+        }
+      }
+    },
+    {
+      "id": "ai-github-1401476500",
+      "category": "ai",
+      "title": "QingYunA/answer-me-with-html",
+      "source": "GitHub Search",
+      "url": "https://github.com/QingYunA/answer-me-with-html",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-02T09:57:40.0000000Z",
+      "scoreLabel": "GitHub 3514 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "这个 GitHub 项目是一个 AI Agent 技能，主旨是让 Agent 用一页 HTML 回答复杂问题，而不是输出难以阅读的长文本。它已获得 3514 stars，说明开发者对“把 AI 答案变成可读页面”这一交互形式有兴趣。值得关注的是，它尝试解决 AI 输出可读性与信息呈现方式的问题。",
+      "failureAnalysis": "这类项目可能失败在需求边界：简单问题不需要 HTML，复杂问题又未必靠一页页面就能讲清，用户可能仍更习惯聊天式追问。工程上，生成 HTML 会引入渲染、样式、安全（如 XSS）和维护成本，还要面对不同 Agent 平台的兼容与分发限制。3514 stars 只能证明早期关注度，不能证明留存、付费或持续使用。若没有明确场景和分发渠道，它容易停留在演示型技能。",
+      "aiSelectionScore": 3514,
+      "highlight": "用 HTML 回答我——一项让 AI Agent 用一页真正可读的 HTML 回答难题的技能。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 3514 stars and recent public activity. Description: Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。",
+      "translations": {
+        "zh": {
+          "title": "用一页 HTML 回答复杂问题的 AI Agent 技能",
+          "highlight": "用 HTML 回答我——一项让 AI Agent 用一页真正可读的 HTML 回答难题的技能。",
+          "summary": "这个 GitHub 项目是一个 AI Agent 技能，主旨是让 Agent 用一页 HTML 回答复杂问题，而不是输出难以阅读的长文本。它已获得 3514 stars，说明开发者对“把 AI 答案变成可读页面”这一交互形式有兴趣。值得关注的是，它尝试解决 AI 输出可读性与信息呈现方式的问题。",
+          "failureAnalysis": "这类项目可能失败在需求边界：简单问题不需要 HTML，复杂问题又未必靠一页页面就能讲清，用户可能仍更习惯聊天式追问。工程上，生成 HTML 会引入渲染、样式、安全（如 XSS）和维护成本，还要面对不同 Agent 平台的兼容与分发限制。3514 stars 只能证明早期关注度，不能证明留存、付费或持续使用。若没有明确场景和分发渠道，它容易停留在演示型技能。"
+        },
+        "en": {
+          "highlight": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read.",
+          "summary": "This GitHub project is an AI agent skill that answers complex questions with a one-page HTML instead of a long, hard-to-read text response. It has 3,514 stars, suggesting developer interest in making AI answers more readable and presentable. It is worth reading as an example of improving AI output format and human readability.",
+          "failureAnalysis": "It may fail if simple questions do not need HTML and complex questions cannot be fully resolved in one page, while rendering, security, compatibility, and distribution add real costs. Stars show attention, not retention or a business model.",
+          "title": "An AI Agent Skill That Answers Complex Questions With a One-Page HTML"
+        }
+      }
+    },
+    {
+      "id": "ai-feed-5e77777ec8da46aeb58b66c1c922e6ee",
+      "category": "ai",
+      "title": "[AINews] Agents disprove Polysemanticity; greatly improve Interpretability & Alignment",
+      "source": "Latent Space",
+      "url": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-16T04:16:45.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [],
+      "evidenceLabel": "No clear evidence",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
+      "summary": "这是一篇 AI 概念解释类内容，记录了 Nick Cammarata 突然提出的重大主张：agents 能够证伪「多义性」（polysemanticity），并在可解释性与对齐上带来大幅提升。多义性是理解神经网络内部表征的核心难题之一，若该主张成立，意味着模型内部机制的解读方式可能出现转折。值得一读，因为它把可解释性与对齐两个议题放在同一个技术论断下重新讨论。",
+      "failureAnalysis": "关键要点：这是一项提出来的重大主张而非已定论的结论，对非技术决策者而言，先记住「agents 可能改变我们理解模型内部的方式」这一命题即可，具体证据仍需看原文。",
+      "aiSelectionScore": 100,
+      "highlight": "Nick Cammarata 突然发声，提出若干重大论断：agents 可证伪多义性，并大幅提升可解释性与对齐。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Nick Cammarata out of nowhere with some major claims!",
+      "translations": {
+        "zh": {
+          "title": "Agents 证伪多义性：可解释性与对齐大幅提升",
+          "highlight": "Nick Cammarata 突然发声，提出若干重大论断：agents 可证伪多义性，并大幅提升可解释性与对齐。",
+          "summary": "这是一篇 AI 概念解释类内容，记录了 Nick Cammarata 突然提出的重大主张：agents 能够证伪「多义性」（polysemanticity），并在可解释性与对齐上带来大幅提升。多义性是理解神经网络内部表征的核心难题之一，若该主张成立，意味着模型内部机制的解读方式可能出现转折。值得一读，因为它把可解释性与对齐两个议题放在同一个技术论断下重新讨论。",
+          "failureAnalysis": "关键要点：这是一项提出来的重大主张而非已定论的结论，对非技术决策者而言，先记住「agents 可能改变我们理解模型内部的方式」这一命题即可，具体证据仍需看原文。"
+        },
+        "en": {
+          "highlight": "Nick Cammarata out of nowhere with some major claims: agents disprove polysemanticity and greatly improve interpretability and alignment.",
+          "summary": "This is an AI concept explainer covering a sudden set of major claims from Nick Cammarata: that agents disprove polysemanticity and greatly improve interpretability and alignment. Polysemanticity is one of the central puzzles in reading what a neural network actually represents, so if the claim holds it marks a possible turning point in how we interpret model internals. Worth reading because it puts interpretability and alignment under a single technical claim.",
+          "failureAnalysis": "Key takeaway: this is a claimed result, not settled consensus; for a non-technical decision maker, the takeaway is that agents may change how we understand model internals, while the evidence still needs to be checked in the original.",
+          "title": "Agents Disprove Polysemanticity: Big Gains in Interpretability & Alignment"
+        }
+      }
+    }
+  ]
+}
