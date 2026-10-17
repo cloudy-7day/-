@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-10-16",
+  "issueDate": "2026-10-17",
   "updateStatus": "complete",
-  "contentFingerprint": "10bbc0c55c83efb697de1597fe7b623068d9c92e6b615986c464c43b19464746",
+  "contentFingerprint": "4a047e8a8df62bc172f48d670f20094b243404ef5859f16b3641688a7836e5e8",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,261 +10,327 @@
   ],
   "articles": [
     {
-      "id": "news-3845c5bcdd2744d8b5647fd6d2ae4820",
+      "id": "news-a90f930332ea42308d8b00f1c27d0f0e",
       "category": "domestic",
-      "title": "国考报名三天，热门岗位竞争已超1400:1",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-17/10716043.shtml",
-      "publishedAt": "2026-10-16T16:29:54.0000000+00:00",
+      "title": "澳门卫生局局长：发挥澳门独特优势 助力中医药创新出海",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-17/10716469.shtml",
+      "publishedAt": "2026-10-17T14:21:39.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "2027年度国考报名自10月14日8时开始，已进行三天，已有岗位出现超千人竞争一岗的现象。",
-      "summary": "中新网10月17日报道，中央机关及其直属机构2027年度考试录用公务员报名已进行三天，部分岗位出现超千人竞争一岗的情况。这条新闻用报名进度和岗位竞争比，直观呈现了当前公务员招录的热度分布。关注它可以快速把握体制内就业市场的冷热信号，以及报名期内竞争格局的变化节奏。",
-      "failureAnalysis": "关键看点不在总量，而在结构性失衡：少数岗位热度极高、竞争比迅速攀升，说明求职预期仍明显向稳定岗位集中；后续应关注竞争比是否会继续扩大，以及冷热岗位的分化程度。",
+      "highlight": "依托制度优势，澳门持续深化中医药守正创新，搭建传统医药国际交流桥梁，服务健康中国与粤港澳大湾区建设。",
+      "summary": "2026世界传统医药大会10月17日在北京启幕，澳门特区政府卫生局局长罗奕龙在接受媒体采访时介绍了澳门中医药发展的方向。他表示，澳门将依托制度优势持续深化中医药守正创新，搭建传统医药国际交流桥梁，服务健康中国与粤港澳大湾区建设。该信息来自官方渠道，可作为观察澳门参与中医药国际交流与区域协同的公开信号。",
+      "failureAnalysis": "关键看点是澳门把制度优势转化为中医药创新与国际交流的平台角色，而非单次活动的成败。后续影响仍取决于具体合作项目和落地机制。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网北京10月17日电(记者 李京统)中央机关及其直属机构2027年度考试录用公务员报名自14日8时开始，已经进行了三天。具体岗位报考方面，已有岗位出现超千人竞争一岗的现象。",
+      "sourceExcerpt": "中新社北京10月17日电 (记者 李纯 周昕 马帅莎)2026世界传统医药大会17日在北京启幕。澳门特区政府卫生局局长罗奕龙当日在接受媒体采访时表示，依托制度优势，澳门持续深化中医药守正创新，搭建传统医药国际交流桥梁，服务健康中国与粤港澳大湾区建设。",
       "translations": {
         "zh": {
-          "title": "国考报名三天，热门岗位竞争已超1400:1",
-          "highlight": "2027年度国考报名自10月14日8时开始，已进行三天，已有岗位出现超千人竞争一岗的现象。",
-          "summary": "中新网10月17日报道，中央机关及其直属机构2027年度考试录用公务员报名已进行三天，部分岗位出现超千人竞争一岗的情况。这条新闻用报名进度和岗位竞争比，直观呈现了当前公务员招录的热度分布。关注它可以快速把握体制内就业市场的冷热信号，以及报名期内竞争格局的变化节奏。",
-          "failureAnalysis": "关键看点不在总量，而在结构性失衡：少数岗位热度极高、竞争比迅速攀升，说明求职预期仍明显向稳定岗位集中；后续应关注竞争比是否会继续扩大，以及冷热岗位的分化程度。"
+          "title": "澳门卫生局局长：发挥澳门独特优势 助力中医药创新出海",
+          "highlight": "依托制度优势，澳门持续深化中医药守正创新，搭建传统医药国际交流桥梁，服务健康中国与粤港澳大湾区建设。",
+          "summary": "2026世界传统医药大会10月17日在北京启幕，澳门特区政府卫生局局长罗奕龙在接受媒体采访时介绍了澳门中医药发展的方向。他表示，澳门将依托制度优势持续深化中医药守正创新，搭建传统医药国际交流桥梁，服务健康中国与粤港澳大湾区建设。该信息来自官方渠道，可作为观察澳门参与中医药国际交流与区域协同的公开信号。",
+          "failureAnalysis": "关键看点是澳门把制度优势转化为中医药创新与国际交流的平台角色，而非单次活动的成败。后续影响仍取决于具体合作项目和落地机制。"
         },
         "en": {
-          "highlight": "Registration for the 2027 central civil service exam began at 8 a.m. on October 14 and has run for three days, with some posts already drawing more than a thousand applicants each.",
-          "summary": "China News Service reported on October 17 that registration for the 2027 recruitment of civil servants by central agencies and their directly subordinate bodies had been open for three days, with some positions attracting over a thousand applicants per opening. The report uses registration progress and competition ratios to show how demand is distributed across available posts. It is worth reading as a quick signal of how concentrated job-seekers' preferences are toward stable public-sector work.",
-          "failureAnalysis": "The key point is structural imbalance rather than overall volume: a handful of posts see extremely high competition ratios, indicating that job expectations remain heavily concentrated on stable positions. Watch whether those ratios keep rising and how sharply hot and cold posts diverge.",
-          "title": "Three Days Into China's Civil Service Exam Registration, a Hot Post Draws Over 1,400 Applicants per Opening"
+          "highlight": "Relying on institutional advantages, Macao will continue to deepen innovation in traditional Chinese medicine and build an international exchange bridge for traditional medicine.",
+          "summary": "The 2026 World Conference on Traditional Medicine opened in Beijing on October 17. Macao's health bureau director said the SAR will rely on institutional advantages to deepen TCM inheritance and innovation, build an international exchange bridge for traditional medicine, and serve Healthy China and the Guangdong-Hong Kong-Macao Greater Bay Area. The item is worth reading as an official signal of Macao's positioning in TCM internationalization and regional coordination, though the excerpt provides limited detail.",
+          "failureAnalysis": "The key takeaway is Macao's stated role in turning institutional advantages into a platform for TCM innovation and international exchange, not a verdict on a single event. Actual impact will depend on concrete cooperation projects and implementation mechanisms.",
+          "title": "Macao Health Bureau Director: Leverage Macao's Unique Advantages to Help TCM Innovation Go Global"
         }
       }
     },
     {
-      "id": "news-3b31a3ec124c4645a34df8e4633d16f4",
+      "id": "news-f462ec2a92dc4653a29802a344b10eab",
       "category": "domestic",
-      "title": "五集历史纪录片《突围21天》揭秘一段鲜为人知的长征史",
+      "title": "克罗地亚总理普连科维奇会见王毅",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-16/10716003.shtml",
-      "publishedAt": "2026-10-16T13:56:51.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-17/10716470.shtml",
+      "publishedAt": "2026-10-17T13:52:58.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "从10月25日进入广东南雄，到11月14日离开乐昌，红军在粤北群山间跋涉了21天，突破国民党军设置的第二、第三道封锁线。",
-      "summary": "中新网报道，五集历史纪录片《突围21天》聚焦1934年10月中央红军从江西于都出发后的长征初期历程。片中披露，红军自10月25日进入广东南雄、至11月14日离开乐昌，在粤北群山间行军21天，突破第二、第三道封锁线，为长征初期打开西进通道。这段鲜为人知的粤北行军史，是理解长征整体进程的一个具体切口。",
-      "failureAnalysis": "这条消息的价值在于它记录了一段可核实的历史事实与公开传播动作：长征并非只有耳熟能详的节点，粤北21天这样的局部细节同样构成完整叙事，值得作为观察历史纪录片选题视角的样本。",
+      "highlight": "当地时间10月17日，克罗地亚总理普连科维奇在萨格勒布会见中共中央政治局委员、外交部长王毅。",
+      "summary": "据中新社报道，克罗地亚总理普连科维奇在萨格勒布会见到访的中共中央政治局委员、外交部长王毅。可核实的信息包括会见时间、地点和双方身份，体现中克高层外交接触。对关注中克关系及中国对欧外交动态的读者，这条简讯具有基础信息价值。",
+      "failureAnalysis": "这条消息属于外交会见简讯，核心价值在于确认会见事实、时间地点与双方身份；在缺少联合表态或成果文件时，不宜外推会谈内容。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网广州10月16日电 1934年10月，中央红军从江西于都出发，走向一场改变中国命运的二万五千里长征。从10月25日进入广东南雄，到11月14日离开乐昌，红军在广东境内的粤北群山间跋涉了21天，突破国民党军设置的第二、第三道封锁线，为长征初期打开了西进通道。",
+      "sourceExcerpt": "中新社北京10月17日电 当地时间10月17日，克罗地亚总理普连科维奇在萨格勒布会见中共中央政治局委员、外交部长王毅。",
       "translations": {
         "zh": {
-          "title": "五集历史纪录片《突围21天》揭秘红军粤北长征21天",
-          "highlight": "从10月25日进入广东南雄，到11月14日离开乐昌，红军在粤北群山间跋涉了21天，突破国民党军设置的第二、第三道封锁线。",
-          "summary": "中新网报道，五集历史纪录片《突围21天》聚焦1934年10月中央红军从江西于都出发后的长征初期历程。片中披露，红军自10月25日进入广东南雄、至11月14日离开乐昌，在粤北群山间行军21天，突破第二、第三道封锁线，为长征初期打开西进通道。这段鲜为人知的粤北行军史，是理解长征整体进程的一个具体切口。",
-          "failureAnalysis": "这条消息的价值在于它记录了一段可核实的历史事实与公开传播动作：长征并非只有耳熟能详的节点，粤北21天这样的局部细节同样构成完整叙事，值得作为观察历史纪录片选题视角的样本。"
+          "title": "克罗地亚总理普连科维奇会见王毅",
+          "highlight": "当地时间10月17日，克罗地亚总理普连科维奇在萨格勒布会见中共中央政治局委员、外交部长王毅。",
+          "summary": "据中新社报道，克罗地亚总理普连科维奇在萨格勒布会见到访的中共中央政治局委员、外交部长王毅。可核实的信息包括会见时间、地点和双方身份，体现中克高层外交接触。对关注中克关系及中国对欧外交动态的读者，这条简讯具有基础信息价值。",
+          "failureAnalysis": "这条消息属于外交会见简讯，核心价值在于确认会见事实、时间地点与双方身份；在缺少联合表态或成果文件时，不宜外推会谈内容。"
         },
         "en": {
-          "highlight": "From entering Nanxiong, Guangdong on October 25 to leaving Lechang on November 14, the Red Army trekked 21 days through the mountains of northern Guangdong, breaking through the second and third blockade lines.",
-          "summary": "China News Service reports that the five-part documentary 'Breakout: 21 Days' focuses on the early stages of the Long March after the Central Red Army set out from Yudu, Jiangxi in October 1934. It recounts how the Red Army marched 21 days through the mountains of northern Guangdong, from entering Nanxiong on October 25 to leaving Lechang on November 14, breaking the second and third blockade lines and opening a westward passage. The story offers a concrete window into a less familiar part of the Long March.",
-          "failureAnalysis": "The item's value lies in documenting a verifiable historical episode and a public-facing media effort: the Long March was not only its famous milestones, and local details such as these 21 days in northern Guangdong make it worth watching as a sample of documentary topic selection.",
-          "title": "Five-Part Historical Documentary 'Breakout: 21 Days' Reveals a Little-Known Chapter of the Long March"
+          "highlight": "On October 17 local time, Croatian Prime Minister Andrej Plenković met with Wang Yi, member of the Political Bureau of the CPC Central Committee and Foreign Minister, in Zagreb.",
+          "summary": "China News Service reports that Croatian Prime Minister Andrej Plenković met with Wang Yi, member of the Political Bureau of the CPC Central Committee and Foreign Minister, in Zagreb. The verifiable details are the time, place, and identities of the participants, reflecting high-level China-Croatia diplomatic contact. It is worth reading as a basic update for those tracking China-Croatia relations and China's diplomatic engagement with Europe.",
+          "failureAnalysis": "This is a brief diplomatic meeting report, and its main value is confirming the fact, time, place, and participants. Without joint statements or outcome documents, the content of the talks should not be overinterpreted.",
+          "title": "Croatian Prime Minister Plenković Meets Wang Yi"
         }
       }
     },
     {
-      "id": "news-17225bb6f183452d84bf9b011d4778da",
+      "id": "news-8b3830c13aa3495cac1da266a1416547",
       "category": "domestic",
-      "title": "海南自贸港封关后首家琼港联营律师事务所揭牌",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-16/10716000.shtml",
-      "publishedAt": "2026-10-16T13:56:19.0000000+00:00",
+      "title": "从原料输出到加工增值 海南自贸港政策赋能屯昌橡胶产业升级",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-17/10716432.shtml",
+      "publishedAt": "2026-10-17T12:56:02.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "瀛和浩宸（海口）联营律师事务所16日在海口揭牌，成为海南自贸港全岛封关后首家落地的琼港联营律师事务所。",
-      "summary": "据中新网海口10月16日电（记者张茜翼）报道，在2026海南自由贸易港法律周举办期间，瀛和浩宸（海口）联营律师事务所于16日在海口揭牌。这是海南自贸港全岛封关后首家落地的琼港联营律师事务所。该消息可作为观察封关后海南法律服务领域开放进度与琼港合作落地节奏的一个具体节点。",
-      "failureAnalysis": "对非技术读者而言，关键看点是封关后的制度安排是否正转化为可核实的机构落地案例；此例属于法律服务领域开放的首个样本，但单家律所揭牌尚不足以说明整体规模效应。",
+      "highlight": "一批105吨、货值约130万元的越南浓缩乳胶运抵屯昌，启动精深加工。",
+      "summary": "文章称，10月17日一批105吨、货值约130万元的越南浓缩乳胶运抵屯昌县海南翊沣农业科技有限公司乳胶丝项目厂区，启动精深加工，原料依托加工增值30%内销免关税政策进口。待加工增值达标并实现内销后，这标志着屯昌从“原料输出腹地”向“加工增值高地”转变，也是海南自贸港核心政策在县域实体经济场景的精准应用。值得读的地方在于，它展示自贸港政策如何落到具体县域产业项目上。",
+      "failureAnalysis": "关键看点是项目能否形成可持续的加工增值链条并满足内销条件；现有信息只说明首批原料到厂，后续达标与内销进展仍需观察。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网海口10月16日电(记者 张茜翼)在2026海南自由贸易港法律周举办期间，瀛和浩宸(海口)联营律师事务所16日在海口揭牌，成为海南自贸港全岛封关后首家落地的琼港联营律师事务所。",
+      "sourceExcerpt": "中新网海南屯昌10月17日电 (王翔龄 李韩智 傅后凡)一批105吨、货值约130万元的越南浓缩乳胶，17日运抵位于屯昌县的海南翊沣农业科技有限公司乳胶丝项目厂区启动精深加工。该批原料依托加工增值30%内销免关税政策进口，待加工增值达标并实现内销后，标志着屯昌实现从“原料输出腹地”向“加工增值高地”的转变，这也是海南自贸港核心政策在县域实体经济场景的精准应用。",
       "translations": {
         "zh": {
-          "title": "海南自贸港封关后首家琼港联营律师事务所揭牌",
-          "highlight": "瀛和浩宸（海口）联营律师事务所16日在海口揭牌，成为海南自贸港全岛封关后首家落地的琼港联营律师事务所。",
-          "summary": "据中新网海口10月16日电（记者张茜翼）报道，在2026海南自由贸易港法律周举办期间，瀛和浩宸（海口）联营律师事务所于16日在海口揭牌。这是海南自贸港全岛封关后首家落地的琼港联营律师事务所。该消息可作为观察封关后海南法律服务领域开放进度与琼港合作落地节奏的一个具体节点。",
-          "failureAnalysis": "对非技术读者而言，关键看点是封关后的制度安排是否正转化为可核实的机构落地案例；此例属于法律服务领域开放的首个样本，但单家律所揭牌尚不足以说明整体规模效应。"
+          "title": "海南自贸港加工增值政策落地屯昌 橡胶产业由原料输出转向加工增值",
+          "highlight": "一批105吨、货值约130万元的越南浓缩乳胶运抵屯昌，启动精深加工。",
+          "summary": "文章称，10月17日一批105吨、货值约130万元的越南浓缩乳胶运抵屯昌县海南翊沣农业科技有限公司乳胶丝项目厂区，启动精深加工，原料依托加工增值30%内销免关税政策进口。待加工增值达标并实现内销后，这标志着屯昌从“原料输出腹地”向“加工增值高地”转变，也是海南自贸港核心政策在县域实体经济场景的精准应用。值得读的地方在于，它展示自贸港政策如何落到具体县域产业项目上。",
+          "failureAnalysis": "关键看点是项目能否形成可持续的加工增值链条并满足内销条件；现有信息只说明首批原料到厂，后续达标与内销进展仍需观察。"
         },
         "en": {
-          "highlight": "Yinghe Haochen (Haikou) Joint Law Firm was unveiled in Haikou on the 16th, becoming the first Hainan-Hong Kong joint law firm to land after the island-wide customs closure of the Hainan Free Trade Port.",
-          "summary": "According to China News Service in Haikou on October 16 (reporter Zhang Qianyi), Yinghe Haochen (Haikou) Joint Law Firm was unveiled in Haikou on the 16th during the 2026 Hainan Free Trade Port Legal Week. It is the first Hainan-Hong Kong joint law firm to be established after the Hainan Free Trade Port's island-wide customs closure. The item offers a concrete checkpoint for tracking how legal-services opening and Hainan-Hong Kong cooperation are progressing after the closure.",
-          "failureAnalysis": "The key takeaway is whether post-closure institutional arrangements are turning into verifiable, on-the-ground institutions; this single unveiling marks a first example in legal services but does not by itself demonstrate broader scale effects.",
-          "title": "First Hainan-Hong Kong Joint Law Firm Unveiled After Hainan Free Trade Port's Island-Wide Customs Closure"
+          "highlight": "A 105-tonne, about 1.3-million-yuan batch of Vietnamese concentrated latex arrived in Tunchang for deep processing under the 30% value-added tariff exemption policy.",
+          "summary": "The article says a 105-tonne batch of Vietnamese concentrated latex worth about 1.3 million yuan arrived on October 17 at the latex thread project site of Hainan Yifeng Agricultural Technology in Tunchang County to begin deep processing, with the raw material imported under the 30% processing value-added tariff exemption policy for domestic sales. Once the value-added threshold is met and domestic sales are achieved, it marks Tunchang's shift from a raw material export hinterland to a processing value-added highland and a county-level application of a core Hainan Free Trade Port policy. It is worth reading for how the policy is applied to a concrete county-level industrial project.",
+          "failureAnalysis": "The key test is whether the project can build a sustainable, compliant value-added chain and meet domestic sales conditions; the provided information only covers the arrival of the first batch.",
+          "title": "Hainan Free Trade Port Value-Added Policy Lands in Tunchang, Shifting Rubber Industry from Raw Material Exports to Processing"
         }
       }
     },
     {
-      "id": "news-c467dc809e7e48f4869c36e42b71b9dc",
+      "id": "news-669286defa624776880dde583bf3ea7b",
       "category": "international",
-      "title": "Crowds throng New Delhi and wave Indian flags amid escalating protests",
-      "source": "NPR World",
-      "url": "https://www.npr.org/2026/10/16/g-s1-148383/crowds-throng-new-delhi-and-wave-indian-flags-amid-escalating-protests",
-      "publishedAt": "2026-10-16T13:26:43.0000000+00:00",
+      "title": "Brazilian Amazon deforestation falls to lowest on record as pivotal vote looms",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/environment/2026/oct/16/brazil-amazon-deforestation-lowest-on-record-election",
+      "publishedAt": "2026-10-16T19:37:53.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "抗议因选民名单审查持续升级，批评者称其出于政治动机并可能剥夺选民权利，选举委员会与莫迪政府否认指控。",
-      "summary": "这篇国际报道聚焦印度新德里不断升级的抗议活动。抗议源于对选民名单审查的争议，批评者认为审查带有政治动机，可能使部分选民失去投票权；印度选举委员会和莫迪政府否认相关指控。事件关系到选举公正与选民权利，因此值得关注。",
-      "failureAnalysis": "关键看点是选民名单审查争议如何影响印度选举公信力与选民权利，以及官方否认后抗议是否继续升级。",
+      "highlight": "巴西政府最新数据显示，亚马逊森林砍伐量已降至自1988年有记录以来的最低水平。",
+      "summary": "文章基于巴西政府最新公布的数据称，亚马逊森林砍伐总量创下有记录以来最低，这对现任总统卢拉而言是一项成果。但这一全球瞩目的成效能否延续，取决于10月25日总统决选的结果——两位候选人对雨林未来以及唐纳德·特朗普治下巴美关系的设想截然不同。对非技术读者而言，它展示了环境治理成果如何与政治周期紧密绑定，政策可能在一次投票后转向。",
+      "failureAnalysis": "关键启示：这类“创纪录”的治理成果往往缺少制度性保障，其可持续性取决于选举结果与执政者意愿，而非技术或数据的惯性。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Protests have intensified over a review of voter lists that critics say is politically motivated and threatens to disenfranchise voters. The Election Commission and Modi's administration deny these allegations.",
+      "sourceExcerpt": "Forest clearance at smallest total since records began in 1988 in success for Lula ahead of presidential run-off Deforestation in the Brazilian Amazon has fallen to its lowest level since records began, new government data shows. But whether this globally important success is maintained or reversed is on a knife edge ahead of a presidential election run-off on 25 October between two candidates with sharply different visions for the future of the rainforest and how that affects relations with the US under Donald Trump.",
       "translations": {
         "zh": {
-          "title": "抗议升级之际，人群聚集新德里并挥舞印度国旗",
-          "highlight": "抗议因选民名单审查持续升级，批评者称其出于政治动机并可能剥夺选民权利，选举委员会与莫迪政府否认指控。",
-          "summary": "这篇国际报道聚焦印度新德里不断升级的抗议活动。抗议源于对选民名单审查的争议，批评者认为审查带有政治动机，可能使部分选民失去投票权；印度选举委员会和莫迪政府否认相关指控。事件关系到选举公正与选民权利，因此值得关注。",
-          "failureAnalysis": "关键看点是选民名单审查争议如何影响印度选举公信力与选民权利，以及官方否认后抗议是否继续升级。"
+          "title": "巴西亚马逊森林砍伐降至1988年有记录以来最低，关键总统决选临近",
+          "highlight": "巴西政府最新数据显示，亚马逊森林砍伐量已降至自1988年有记录以来的最低水平。",
+          "summary": "文章基于巴西政府最新公布的数据称，亚马逊森林砍伐总量创下有记录以来最低，这对现任总统卢拉而言是一项成果。但这一全球瞩目的成效能否延续，取决于10月25日总统决选的结果——两位候选人对雨林未来以及唐纳德·特朗普治下巴美关系的设想截然不同。对非技术读者而言，它展示了环境治理成果如何与政治周期紧密绑定，政策可能在一次投票后转向。",
+          "failureAnalysis": "关键启示：这类“创纪录”的治理成果往往缺少制度性保障，其可持续性取决于选举结果与执政者意愿，而非技术或数据的惯性。"
         },
         "en": {
-          "highlight": "Protests have intensified over a review of voter lists that critics say is politically motivated and threatens to disenfranchise voters.",
-          "summary": "This NPR World report focuses on escalating protests in New Delhi over a review of voter lists. Critics say the review is politically motivated and threatens to disenfranchise voters, while the Election Commission and Modi's administration deny the allegations. The dispute is worth watching because it touches on election integrity and voting rights in India.",
-          "failureAnalysis": "The key takeaway is that the voter-list review dispute now tests the credibility of India's electoral process and the government's response to public protest.",
-          "title": "Crowds Throng New Delhi and Wave Indian Flags as Protests Escalate"
+          "highlight": "New government data shows deforestation in the Brazilian Amazon has fallen to its lowest level since records began in 1988.",
+          "summary": "Citing new government figures, the article reports that total forest clearance in the Brazilian Amazon is the lowest since records began, a success for President Lula. Whether that globally significant outcome holds or reverses hinges on the 25 October presidential runoff between two candidates with sharply different visions for the rainforest and for relations with the US under Donald Trump. For a non-technical reader, it shows how environmental governance results are tied to political cycles and can shift after a single vote.",
+          "failureAnalysis": "Key takeaway: record-breaking governance outcomes often lack institutional safeguards, so their durability depends on election results and the will of officeholders rather than on data or technical momentum.",
+          "title": "Brazilian Amazon deforestation falls to lowest level on record since 1988 as key presidential runoff looms"
         }
       }
     },
     {
-      "id": "news-fa6d87838ca64b838fabdf5823fa619e",
+      "id": "news-2eff8bf95d4749e6b3cb24f98e353cfb",
       "category": "international",
-      "title": "No 10 leaves option open to impose Chinese EV tariffs if UK joins EU scheme",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/politics/2026/oct/16/uk-chinese-electric-vehicle-ev-tariffs-eu-made-in-europe-scheme",
-      "publishedAt": "2026-10-16T18:09:34.0000000+00:00",
+      "title": "Sidewalk sleepers: They have nowhere else to stay while a loved one is in the hospital",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/17/g-s1-147874/hospital-diagnosis-patients-india-sidewalk",
+      "publishedAt": "2026-10-17T09:00:00.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "若英国加入欧盟计划，唐宁街不排除对中国产电动汽车加征关税，北京警告此举具有“歧视性”。",
-      "summary": "文章说，法国不再反对英国加入“欧洲制造”一揽子计划后，唐宁街表示欢迎英国被纳入《工业加速器法案》的目标，但未排除对中国产电动汽车加征关税。北京警告这种“歧视性”做法。此事值得关注，因为它关系到英国在欧盟产业政策中的位置以及中英贸易摩擦风险。",
-      "failureAnalysis": "关键点：英国是否加入欧盟产业计划，可能直接影响其对中国电动车关税的政策空间；北京已明确反对歧视性措施。",
+      "highlight": "但过夜住宿往往只能靠家属自己解决，他们常常只能睡在街上。",
+      "summary": "在德里，患者常长途跋涉到公立医院就医，符合条件的可获得医疗费用援助。但过夜住宿通常要家属自行解决，许多人只能露宿街头。报道让人看到公共医疗之外被忽视的陪护成本与安置压力。",
+      "failureAnalysis": "关键启示：医疗援助若只覆盖诊疗费用，而不考虑陪护者的住宿与安置，就会把一部分成本转嫁给最脆弱的家庭。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Beijing warns against ‘discriminatory’ step after France drops opposition to British role in Made in Europe package No 10 has left the door open to imposing tariffs on Chinese-made electric vehicles as part of the Made in Europe package, prompting a warning from Beijing that such a move would be “discriminatory”. Downing Street said on Friday that it would “welcome the objective to have the UK included in the Industrial Accelerator Act” after France dropped its opposition to Britain joining the scheme .",
+      "sourceExcerpt": "Patients travel miles to be treated at public hospitals in Delhi. Those in need get financial aid for their care. But for overnight accommodations, families are often on their own — and on the street.",
       "translations": {
         "zh": {
-          "title": "英国若加入欧盟计划，唐宁街未排除对中国产电动车加征关税",
-          "highlight": "若英国加入欧盟计划，唐宁街不排除对中国产电动汽车加征关税，北京警告此举具有“歧视性”。",
-          "summary": "文章说，法国不再反对英国加入“欧洲制造”一揽子计划后，唐宁街表示欢迎英国被纳入《工业加速器法案》的目标，但未排除对中国产电动汽车加征关税。北京警告这种“歧视性”做法。此事值得关注，因为它关系到英国在欧盟产业政策中的位置以及中英贸易摩擦风险。",
-          "failureAnalysis": "关键点：英国是否加入欧盟产业计划，可能直接影响其对中国电动车关税的政策空间；北京已明确反对歧视性措施。"
+          "title": "露宿人行道者：亲人住院时，他们无处可住",
+          "highlight": "但过夜住宿往往只能靠家属自己解决，他们常常只能睡在街上。",
+          "summary": "在德里，患者常长途跋涉到公立医院就医，符合条件的可获得医疗费用援助。但过夜住宿通常要家属自行解决，许多人只能露宿街头。报道让人看到公共医疗之外被忽视的陪护成本与安置压力。",
+          "failureAnalysis": "关键启示：医疗援助若只覆盖诊疗费用，而不考虑陪护者的住宿与安置，就会把一部分成本转嫁给最脆弱的家庭。"
         },
         "en": {
-          "highlight": "No 10 left the door open to imposing tariffs on Chinese-made EVs as part of the Made in Europe package, prompting Beijing to warn such a move would be 'discriminatory'.",
-          "summary": "The article says Downing Street has not ruled out tariffs on Chinese-made electric vehicles as part of the Made in Europe package, after France dropped its opposition to UK inclusion. Beijing warned that such a step would be 'discriminatory'. It is worth reading because it shows how UK participation in EU industrial policy could shape trade tensions with China.",
-          "failureAnalysis": "The key takeaway is that UK participation in the EU scheme could affect its room to impose Chinese EV tariffs, and Beijing has already signaled opposition to discriminatory measures.",
-          "title": "No 10 Leaves Option Open to Impose Chinese EV Tariffs if UK Joins EU Scheme"
+          "highlight": "But for overnight accommodations, families are often on their own — and on the street.",
+          "summary": "In Delhi, patients often travel long distances to public hospitals, and those in need can receive financial aid for care. Overnight accommodation, however, is usually left to families, many of whom end up sleeping on the street. The report highlights the overlooked costs and burdens of caregiving beyond medical treatment.",
+          "failureAnalysis": "Key takeaway: if medical aid covers treatment costs but not caregivers’ shelter and basic accommodation, part of the burden is shifted onto the most vulnerable families.",
+          "title": "Sidewalk Sleepers: Nowhere Else to Stay While a Loved One Is Hospitalized"
         }
       }
     },
     {
-      "id": "life-9db2ac35ec5842bdbfad12ba787a0548",
+      "id": "life-2a5b2d0a4efb465d97f8c67dbe20882d",
       "category": "international",
-      "title": "Whatever Happened to Daylight Saving Time Going Away?",
-      "source": "Lifehacker",
-      "url": "https://lifehacker.com/what-happened-to-ending-daylight-saving-time?utm_medium=RSS",
-      "publishedAt": "2026-10-16T17:30:00.0000000+00:00",
+      "title": "The ladder of knowledge",
+      "source": "Aeon",
+      "url": "https://aeon.co/essays/the-century-long-search-for-the-limits-to-knowledge",
+      "publishedAt": "2026-10-15T10:00:00.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "国会已经投票决定废除时间调整，可为什么我们至今还在每年改表？",
-      "summary": "这篇文章追问一个看似矛盾的现象：美国国会曾表决通过取消一年两次时钟切换，但现实中人们依旧照常调表。它梳理了立法通过之后为何迟迟没有落地，涉及执行细节、联邦与地方权限以及各方协调等现实障碍，适合用来理解政策从表决到生效之间的落差。",
-      "failureAnalysis": "关键启示是：立法表决通过并不等于政策立即生效，制度落地往往取决于执行细则、层级权限划分和行业协调，公众感受到的变化可能滞后多年。",
+      "highlight": "我们所宣称的“真”，并不是一个永远够不到的天花板，而是随着我们攀登而改变的东西。",
+      "summary": "这篇 Aeon 文章以“知识阶梯”为线索，讨论一个世纪以来人们对知识边界的寻找。它提醒读者：我们所说的“真”不是固定终点，会随着认知攀升而变化，因此值得重新理解知识边界。",
+      "failureAnalysis": "关键启发在于：不要把当前认知当作绝对天花板；真正可靠的知识观，应当承认相关标准会随着探索的推进而被修正。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Congress voted to abolish the time change, so why are we still doing it?",
+      "sourceExcerpt": "What we claim as ‘true’ is not a ceiling we are forever failing to reach but something that changes as we climb toward it - by Alexander V Gheorghiu Read on Aeon",
       "translations": {
         "zh": {
-          "title": "夏令时取消之争：为何我们还在改表？",
-          "highlight": "国会已经投票决定废除时间调整，可为什么我们至今还在每年改表？",
-          "summary": "这篇文章追问一个看似矛盾的现象：美国国会曾表决通过取消一年两次时钟切换，但现实中人们依旧照常调表。它梳理了立法通过之后为何迟迟没有落地，涉及执行细节、联邦与地方权限以及各方协调等现实障碍，适合用来理解政策从表决到生效之间的落差。",
-          "failureAnalysis": "关键启示是：立法表决通过并不等于政策立即生效，制度落地往往取决于执行细则、层级权限划分和行业协调，公众感受到的变化可能滞后多年。"
+          "title": "知识阶梯：我们所说的“真”会随攀登而改变",
+          "highlight": "我们所宣称的“真”，并不是一个永远够不到的天花板，而是随着我们攀登而改变的东西。",
+          "summary": "这篇 Aeon 文章以“知识阶梯”为线索，讨论一个世纪以来人们对知识边界的寻找。它提醒读者：我们所说的“真”不是固定终点，会随着认知攀升而变化，因此值得重新理解知识边界。",
+          "failureAnalysis": "关键启发在于：不要把当前认知当作绝对天花板；真正可靠的知识观，应当承认相关标准会随着探索的推进而被修正。"
         },
         "en": {
-          "highlight": "Congress voted to abolish the time change, so why are we still doing it?",
-          "summary": "This article examines an apparent contradiction: Congress voted to end the twice-yearly clock change, yet people still reset their clocks as usual. It looks at why the legislation has not taken effect, touching on implementation details, federal versus local authority, and coordination among stakeholders, which helps explain the gap between a vote and real-world change.",
-          "failureAnalysis": "The key takeaway: passing a vote is not the same as a policy taking effect; implementation details, divided authority and industry coordination often delay visible change for years.",
-          "title": "Whatever Happened to Daylight Saving Time Going Away?"
+          "highlight": "What we claim as ‘true’ is not a ceiling we are forever failing to reach but something that changes as we climb toward it.",
+          "summary": "This Aeon essay examines a century-long search for the limits of knowledge. It argues that what we call “true” is not a fixed ceiling but something that changes as we climb toward it, making the idea of a knowledge boundary worth reconsidering.",
+          "failureAnalysis": "The key takeaway is not to treat current understanding as an absolute ceiling; a sound view of knowledge accepts that standards can be revised as inquiry advances.",
+          "title": "The Ladder of Knowledge: What We Call ‘True’ Changes as We Climb"
         }
       }
     },
     {
-      "id": "life-eb4feba738774b55af9281b01521dd16",
-      "category": "international",
-      "title": "一面专注体验，一面表达个性：麦金獭钢化膜与极稚墨水屏手机壳体验",
-      "source": "少数派 sspai",
-      "url": "https://sspai.com/post/115679",
-      "publishedAt": "2026-10-16T04:41:05.0000000+00:00",
-      "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 3",
-      "highlight": "从正面的手感与显示聊起，再翻到背面看看换图的玩法。",
-      "summary": "这篇少数派体验围绕麦金獭钢化膜与极稚墨水屏手机壳展开：先从正面谈手感与显示，再翻到背面展示换图玩法。它把手机配件的实用体验与个性表达放在一起看，适合关注手机壳、贴膜质感与可玩性的人参考。",
-      "failureAnalysis": "关键看点在于：正面比的是手感与显示这种基础体验，背面比的是换图这种个性表达；选配件时可先判断自己更在意哪一面。",
+      "id": "paper-2610.20766",
+      "category": "paper",
+      "title": "Semantic Alignment of EEG and Text: A Contrastive Learning Framework for Decoding Imagined Speech",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2610.20766v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.20766",
+      "publishedAt": "2026-10-14T18:14:36.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "该框架利用对比学习对齐EEG与文本语义，以克服闭集分类器将语义类别视为独立标签的局限",
+      "summary": "该条目提出一种对比学习框架，用于对齐EEG与文本语义以解码想象语音。它针对传统闭集分类器将语义类别视为独立标签、未显式利用可能语言类别之间关系的局限。这可能有助于更自然的脑机接口，但所给文本仅为摘要片段。",
+      "failureAnalysis": "所给文本仅为摘要开头，缺少数据集、实验设置与性能结果。因此，该框架相对闭集分类器的优势尚无法依据现有材料验证。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "从正面的手感与显示聊起，再翻到背面看看换图的玩法。",
+      "sourceExcerpt": "1 Semantic Alignment of EEG and T ext: A Contrastive Learning Framework for Decoding Imagined Speech Shahryar G. Namdari*, Francesco Iacomi*, Riccardo Barbieri,Senior Member, IEEE, and Luca Mainardi, Member, IEEE Abstract— Imagined speech decoding from EEG is a promising route toward naturalistic brain–computer inter- faces. Traditional closed-set classifiers treat semantic cate- gories as independent labels and therefore do not explicitly exploit the relationships among possible linguistic intents, limiting the flexibility of their output representation.",
       "translations": {
         "zh": {
-          "title": "一面专注体验，一面表达个性：麦金獭钢化膜与极稚墨水屏手机壳体验",
-          "highlight": "从正面的手感与显示聊起，再翻到背面看看换图的玩法。",
-          "summary": "这篇少数派体验围绕麦金獭钢化膜与极稚墨水屏手机壳展开：先从正面谈手感与显示，再翻到背面展示换图玩法。它把手机配件的实用体验与个性表达放在一起看，适合关注手机壳、贴膜质感与可玩性的人参考。",
-          "failureAnalysis": "关键看点在于：正面比的是手感与显示这种基础体验，背面比的是换图这种个性表达；选配件时可先判断自己更在意哪一面。"
+          "title": "EEG与文本的语义对齐：解码想象语音的对比学习框架",
+          "highlight": "该框架利用对比学习对齐EEG与文本语义，以克服闭集分类器将语义类别视为独立标签的局限",
+          "summary": "该条目提出一种对比学习框架，用于对齐EEG与文本语义以解码想象语音。它针对传统闭集分类器将语义类别视为独立标签、未显式利用可能语言类别之间关系的局限。这可能有助于更自然的脑机接口，但所给文本仅为摘要片段。",
+          "failureAnalysis": "所给文本仅为摘要开头，缺少数据集、实验设置与性能结果。因此，该框架相对闭集分类器的优势尚无法依据现有材料验证。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
         },
         "en": {
-          "highlight": "It starts with the feel and display on the front, then flips to the back to see the image-switching feature.",
-          "summary": "This SSPAI hands-on looks at a tempered glass film and an e-ink phone case: it first discusses front feel and display, then turns to the back to show the image-changing feature. It brings practical experience and personal expression together, making it useful for readers interested in phone case and film texture and playability.",
-          "failureAnalysis": "The key point is that the front competes on basic feel and display, while the back competes on image-changing self-expression; when choosing accessories, first decide which side matters more to you.",
-          "title": "Hands-On with a Tempered Glass Film and an E-Ink Phone Case: One Side for Experience, One for Personality"
+          "title": "Semantic Alignment of EEG and Text: A Contrastive Learning Framework for Decoding Imagined Speech",
+          "highlight": "The framework uses contrastive learning to align EEG and text semantics, addressing closed-set classifiers that treat semantic categories as independent labels.",
+          "summary": "The item proposes a contrastive learning framework for aligning EEG and text semantics to decode imagined speech. It responds to the limitation that traditional closed-set classifiers treat semantic categories as independent labels and do not explicitly use relationships among possible linguistic categories. This could support more naturalistic brain-computer interfaces, though the supplied text is only an abstract fragment.",
+          "failureAnalysis": "Only an abstract fragment is available, with no experimental results, dataset details, or performance evidence. The claimed advantage over closed-set classifiers therefore remains unverified in the supplied text.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
         }
       }
     },
     {
-      "id": "ai-github-1401476500",
+      "id": "paper-2610.20349",
+      "category": "paper",
+      "title": "NeuroDETR: Multiscale Discrete Spatiotemporal Tokenization for Asynchronous EEG Event Detection",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2610.20349v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.20349",
+      "publishedAt": "2026-10-14T15:27:34.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "NeuroDETR面向异步EEG事件检测，采用多尺度离散时空标记化建模时空特征。",
+      "summary": "该条目提出NeuroDETR，一种面向异步EEG事件检测的多尺度离散时空标记化方法。所给文本列出了作者与机构信息，但没有摘要、数据或结果。其重要性只能依据标题所述的异步EEG事件检测任务来判断。",
+      "failureAnalysis": "所给源文本只有标题及作者与机构信息，没有方法细节、数据集或评估结果。因此，该方法在异步EEG事件检测中的有效性与泛化能力无法评估。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "NEURODETR: MULTISCALEDISCRETESPATIOTEM- PORALTOKENIZATION FORASYNCHRONOUSEEG EVENTDETECTION Yaozhi Wen1,2,3, Kun Zhao1,4, Wei Wei1, Haoyang Chen3,5, Kangning Wang1, Yi Sun1,3,4, Shaowei Gu1,2,3, Dingkun Liu3,6, Shuang Qiu1,*, and Huiguang He1,2,3,4,* 1Laboratory of Brain Atlas and Brain-Inspired Intelligence, State Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology, Institute of Automation, Chinese Academy of Sciences 2School of Future Technology, University of Chinese Academy of Sciences 3Zhongguancun Academy 4School of Artificial Intelligence, University of Chinese Academy of Sciences 5Wuhan University 6Hubei Key Laboratory of Brain-inspired Intelligent Systems, School of Artificial Intelligence and Automation, Huazhong University of Science and Technology *Corresponding authors {wenyaozhi2024, shuang.qiu, huiguang.he}@ia.ac.cn ABSTRACT Asynchronous EEG event detection supports practical brain-computer interfaces by identifying event classes and temporal boundaries directly from continuous recordings without predefined event boundaries at inference time. The primary challenge lies in extracting event-related patterns embedded in ongoing back- ground activity. To address this, we proposeNeuroDETR, a discrete spatiotem- poral multiscale framework that combines structured tokenization with event- aware feature refinement.",
+      "translations": {
+        "zh": {
+          "title": "NeuroDETR：面向异步EEG事件检测的多尺度离散时空标记化",
+          "highlight": "NeuroDETR面向异步EEG事件检测，采用多尺度离散时空标记化建模时空特征。",
+          "summary": "该条目提出NeuroDETR，一种面向异步EEG事件检测的多尺度离散时空标记化方法。所给文本列出了作者与机构信息，但没有摘要、数据或结果。其重要性只能依据标题所述的异步EEG事件检测任务来判断。",
+          "failureAnalysis": "所给源文本只有标题及作者与机构信息，没有方法细节、数据集或评估结果。因此，该方法在异步EEG事件检测中的有效性与泛化能力无法评估。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "NeuroDETR: Multiscale Discrete Spatiotemporal Tokenization for Asynchronous EEG Event Detection",
+          "highlight": "NeuroDETR targets asynchronous EEG event detection using multiscale discrete spatiotemporal tokenization to represent spatiotemporal features.",
+          "summary": "The item presents NeuroDETR, a method for multiscale discrete spatiotemporal tokenization aimed at asynchronous EEG event detection. The supplied text lists authors and institutional affiliations but provides no abstract, data, or results. Its significance therefore rests on the stated detection task rather than demonstrated performance.",
+          "failureAnalysis": "Only the title and author-affiliation information are supplied, with no method details, datasets, or evaluation results. The approach's effectiveness and generality for asynchronous EEG event detection therefore cannot be assessed.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-feed-dee691278f014b2ca46275c1ef3ba62b",
       "category": "ai",
-      "title": "QingYunA/answer-me-with-html",
-      "source": "GitHub Search",
-      "url": "https://github.com/QingYunA/answer-me-with-html",
-      "abstractUrl": null,
-      "publishedAt": "2026-10-02T09:57:40.0000000Z",
-      "scoreLabel": "GitHub 3514 stars",
-      "aiArticleType": "application_innovation",
-      "evidenceAnchors": [
-        {
-          "label": "GitHub",
-          "kind": "primary"
-        },
-        {
-          "label": "Community signal",
-          "kind": "secondary"
-        }
-      ],
-      "evidenceLabel": "GitHub + Community signal",
-      "hasPrimaryAnchor": true,
-      "requiresRiskAnalysis": true,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-      "summary": "这个 GitHub 项目是一个 AI Agent 技能，主旨是让 Agent 用一页 HTML 回答复杂问题，而不是输出难以阅读的长文本。它已获得 3514 stars，说明开发者对“把 AI 答案变成可读页面”这一交互形式有兴趣。值得关注的是，它尝试解决 AI 输出可读性与信息呈现方式的问题。",
-      "failureAnalysis": "这类项目可能失败在需求边界：简单问题不需要 HTML，复杂问题又未必靠一页页面就能讲清，用户可能仍更习惯聊天式追问。工程上，生成 HTML 会引入渲染、样式、安全（如 XSS）和维护成本，还要面对不同 Agent 平台的兼容与分发限制。3514 stars 只能证明早期关注度，不能证明留存、付费或持续使用。若没有明确场景和分发渠道，它容易停留在演示型技能。",
-      "aiSelectionScore": 3514,
-      "highlight": "用 HTML 回答我——一项让 AI Agent 用一页真正可读的 HTML 回答难题的技能。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "GitHub repository with 3514 stars and recent public activity. Description: Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read. 让 AI Agent 用一页 HTML 回答复杂问题。",
-      "translations": {
-        "zh": {
-          "title": "用一页 HTML 回答复杂问题的 AI Agent 技能",
-          "highlight": "用 HTML 回答我——一项让 AI Agent 用一页真正可读的 HTML 回答难题的技能。",
-          "summary": "这个 GitHub 项目是一个 AI Agent 技能，主旨是让 Agent 用一页 HTML 回答复杂问题，而不是输出难以阅读的长文本。它已获得 3514 stars，说明开发者对“把 AI 答案变成可读页面”这一交互形式有兴趣。值得关注的是，它尝试解决 AI 输出可读性与信息呈现方式的问题。",
-          "failureAnalysis": "这类项目可能失败在需求边界：简单问题不需要 HTML，复杂问题又未必靠一页页面就能讲清，用户可能仍更习惯聊天式追问。工程上，生成 HTML 会引入渲染、样式、安全（如 XSS）和维护成本，还要面对不同 Agent 平台的兼容与分发限制。3514 stars 只能证明早期关注度，不能证明留存、付费或持续使用。若没有明确场景和分发渠道，它容易停留在演示型技能。"
-        },
-        "en": {
-          "highlight": "Answer me with HTML — an agent skill that answers hard questions with a one-page HTML you can actually read.",
-          "summary": "This GitHub project is an AI agent skill that answers complex questions with a one-page HTML instead of a long, hard-to-read text response. It has 3,514 stars, suggesting developer interest in making AI answers more readable and presentable. It is worth reading as an example of improving AI output format and human readability.",
-          "failureAnalysis": "It may fail if simple questions do not need HTML and complex questions cannot be fully resolved in one page, while rendering, security, compatibility, and distribution add real costs. Stars show attention, not retention or a business model.",
-          "title": "An AI Agent Skill That Answers Complex Questions With a One-Page HTML"
-        }
-      }
-    },
-    {
-      "id": "ai-feed-5e77777ec8da46aeb58b66c1c922e6ee",
-      "category": "ai",
-      "title": "[AINews] Agents disprove Polysemanticity; greatly improve Interpretability & Alignment",
+      "title": "[AINews] High Taste Testers Ep. 1",
       "source": "Latent Space",
-      "url": "https://www.latent.space/p/ainews-agents-disprove-polysemanticity",
+      "url": "https://www.latent.space/p/ainews-high-taste-testers-ep-1",
       "abstractUrl": null,
-      "publishedAt": "2026-10-16T04:16:45.0000000Z",
+      "publishedAt": "2026-10-17T07:47:38.0000000Z",
       "scoreLabel": "Curated engineering feed",
       "aiArticleType": "concept_explanation",
       "evidenceAnchors": [],
@@ -272,24 +338,24 @@
       "hasPrimaryAnchor": false,
       "requiresRiskAnalysis": false,
       "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
-      "summary": "这是一篇 AI 概念解释类内容，记录了 Nick Cammarata 突然提出的重大主张：agents 能够证伪「多义性」（polysemanticity），并在可解释性与对齐上带来大幅提升。多义性是理解神经网络内部表征的核心难题之一，若该主张成立，意味着模型内部机制的解读方式可能出现转折。值得一读，因为它把可解释性与对齐两个议题放在同一个技术论断下重新讨论。",
-      "failureAnalysis": "关键要点：这是一项提出来的重大主张而非已定论的结论，对非技术决策者而言，先记住「agents 可能改变我们理解模型内部的方式」这一命题即可，具体证据仍需看原文。",
+      "summary": "这是一期试播节目：在新闻较少的安静日子里，团队借机测试一档新栏目的形式。它更像一次轻量的内容产品实验，而不是完整的技术论文或产品发布。对关注 AI 媒体选题与栏目形态的人，可观察如何用低新闻密度时段做低成本试播。",
+      "failureAnalysis": "关键启示：内容团队可以在信息清淡时用小成本试播验证新栏目形态，不必等待重大新闻。",
       "aiSelectionScore": 100,
-      "highlight": "Nick Cammarata 突然发声，提出若干重大论断：agents 可证伪多义性，并大幅提升可解释性与对齐。",
+      "highlight": "在一个安静的日子里，我们正好借机试播一档全新的节目。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Nick Cammarata out of nowhere with some major claims!",
+      "sourceExcerpt": "a quiet day lets us pilot a new show",
       "translations": {
         "zh": {
-          "title": "Agents 证伪多义性：可解释性与对齐大幅提升",
-          "highlight": "Nick Cammarata 突然发声，提出若干重大论断：agents 可证伪多义性，并大幅提升可解释性与对齐。",
-          "summary": "这是一篇 AI 概念解释类内容，记录了 Nick Cammarata 突然提出的重大主张：agents 能够证伪「多义性」（polysemanticity），并在可解释性与对齐上带来大幅提升。多义性是理解神经网络内部表征的核心难题之一，若该主张成立，意味着模型内部机制的解读方式可能出现转折。值得一读，因为它把可解释性与对齐两个议题放在同一个技术论断下重新讨论。",
-          "failureAnalysis": "关键要点：这是一项提出来的重大主张而非已定论的结论，对非技术决策者而言，先记住「agents 可能改变我们理解模型内部的方式」这一命题即可，具体证据仍需看原文。"
+          "title": "[AINews] 高品味测试者 第1期",
+          "highlight": "在一个安静的日子里，我们正好借机试播一档全新的节目。",
+          "summary": "这是一期试播节目：在新闻较少的安静日子里，团队借机测试一档新栏目的形式。它更像一次轻量的内容产品实验，而不是完整的技术论文或产品发布。对关注 AI 媒体选题与栏目形态的人，可观察如何用低新闻密度时段做低成本试播。",
+          "failureAnalysis": "关键启示：内容团队可以在信息清淡时用小成本试播验证新栏目形态，不必等待重大新闻。"
         },
         "en": {
-          "highlight": "Nick Cammarata out of nowhere with some major claims: agents disprove polysemanticity and greatly improve interpretability and alignment.",
-          "summary": "This is an AI concept explainer covering a sudden set of major claims from Nick Cammarata: that agents disprove polysemanticity and greatly improve interpretability and alignment. Polysemanticity is one of the central puzzles in reading what a neural network actually represents, so if the claim holds it marks a possible turning point in how we interpret model internals. Worth reading because it puts interpretability and alignment under a single technical claim.",
-          "failureAnalysis": "Key takeaway: this is a claimed result, not settled consensus; for a non-technical decision maker, the takeaway is that agents may change how we understand model internals, while the evidence still needs to be checked in the original.",
-          "title": "Agents Disprove Polysemanticity: Big Gains in Interpretability & Alignment"
+          "highlight": "A quiet day lets us pilot a new show and see how a new format works.",
+          "summary": "This is a pilot episode: on a quiet day with little news, the team uses the pause to test a new show format. It reads as a lightweight content experiment rather than a full technical paper or product launch. It is worth noting for how AI media can test new formats when there is little breaking news.",
+          "failureAnalysis": "Key takeaway: content teams can use quiet periods to run low-cost pilots and validate new formats instead of waiting for major news.",
+          "title": "[AINews] High Taste Testers Ep. 1"
         }
       }
     }
