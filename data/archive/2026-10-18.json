@@ -1,0 +1,338 @@
+{
+  "issueDate": "2026-10-18",
+  "updateStatus": "complete",
+  "contentFingerprint": "6d307077aaf4639cfd0f0d7b3896186ac8b4049db84c94c96c201cedde7425b8",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-52819820de004361b47fdf56c1b7740e",
+      "category": "domestic",
+      "title": "王毅同黑山副总理兼外长伊布拉希莫维奇会谈",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-19/10716911.shtml",
+      "publishedAt": "2026-10-18T16:54:55.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "当地时间2026年10月18日，王毅在波德戈里察同黑山副总理兼外长伊布拉希莫维奇举行会谈",
+      "summary": "报道显示，当地时间2026年10月18日，王毅在波德戈里察与黑山副总理兼外长伊布拉希莫维奇举行会谈。可核实的公开信息主要是双方进行高层外交沟通，有助于读者了解中黑双边交往动态。对关注中国与黑山关系及高层外交动向的读者具有信息价值。",
+      "failureAnalysis": "关键点在于这是一次公开确认的高层外交会谈，具体成果需以完整官方通稿为准。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "当地时间2026年10月18日，中共中央政治局委员、外交部长王毅在波德戈里察同黑山副总理兼外长伊布拉希莫维奇举行会谈。",
+      "translations": {
+        "zh": {
+          "title": "王毅同黑山副总理兼外长伊布拉希莫维奇会谈",
+          "highlight": "当地时间2026年10月18日，王毅在波德戈里察同黑山副总理兼外长伊布拉希莫维奇举行会谈",
+          "summary": "报道显示，当地时间2026年10月18日，王毅在波德戈里察与黑山副总理兼外长伊布拉希莫维奇举行会谈。可核实的公开信息主要是双方进行高层外交沟通，有助于读者了解中黑双边交往动态。对关注中国与黑山关系及高层外交动向的读者具有信息价值。",
+          "failureAnalysis": "关键点在于这是一次公开确认的高层外交会谈，具体成果需以完整官方通稿为准。"
+        },
+        "en": {
+          "highlight": "On October 18, 2026, Wang Yi held talks in Podgorica with Montenegrin Deputy Prime Minister and Foreign Minister Ibrahimović.",
+          "summary": "The report states that on October 18, 2026, Wang Yi held talks in Podgorica with Montenegrin Deputy Prime Minister and Foreign Minister Ibrahimović. The verifiable public information mainly confirms high-level diplomatic communication, offering readers a view of China-Montenegro bilateral engagement. It is informative for those tracking China-Montenegro relations and high-level diplomatic activity.",
+          "failureAnalysis": "The key takeaway is that the meeting confirms high-level diplomatic contact; specific outcomes should be checked against the full official readout.",
+          "title": "Wang Yi Holds Talks with Montenegrin Deputy Prime Minister and Foreign Minister Ibrahimović"
+        }
+      }
+    },
+    {
+      "id": "news-697f3877568b4d988b5ab53af05ed503",
+      "category": "domestic",
+      "title": "前海博物馆将于10月30日正式开放 十件展品来自国博",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-18/10716864.shtml",
+      "publishedAt": "2026-10-18T14:16:22.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "由深圳市人民政府与中国国家博物馆携手打造的前海博物馆，将于10月30日开馆试运行，当日14时起正式向公众开放。",
+      "summary": "报道通报，前海博物馆由深圳市人民政府与中国国家博物馆携手打造，将于10月30日开馆试运行，并从当日14时起正式向公众开放。标题还显示，将有十件展品来自中国国家博物馆。这条消息的公共价值在于，它提供了一座新的公共文化设施的开馆时间、开放安排和重要展品来源等可核实信息。",
+      "failureAnalysis": "可核实的公共影响是新增一座由地方政府与国家级博物馆合作打造的公共文化设施，并引入国博展品；关注点应落在开馆时间、公众开放安排和展品来源等已披露事实上。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网深圳10月18日电 (记者 索有为)由深圳市人民政府与中国国家博物馆携手打造的前海博物馆18日举办媒体见面会通报，该馆将于10月30日开馆试运行，当日14时起正式向公众开放。",
+      "translations": {
+        "zh": {
+          "title": "前海博物馆将于10月30日开放 十件展品来自国博",
+          "highlight": "由深圳市人民政府与中国国家博物馆携手打造的前海博物馆，将于10月30日开馆试运行，当日14时起正式向公众开放。",
+          "summary": "报道通报，前海博物馆由深圳市人民政府与中国国家博物馆携手打造，将于10月30日开馆试运行，并从当日14时起正式向公众开放。标题还显示，将有十件展品来自中国国家博物馆。这条消息的公共价值在于，它提供了一座新的公共文化设施的开馆时间、开放安排和重要展品来源等可核实信息。",
+          "failureAnalysis": "可核实的公共影响是新增一座由地方政府与国家级博物馆合作打造的公共文化设施，并引入国博展品；关注点应落在开馆时间、公众开放安排和展品来源等已披露事实上。"
+        },
+        "en": {
+          "highlight": "The Qianhai Museum, jointly developed by the Shenzhen Municipal Government and the National Museum of China, will open for trial operation on October 30 and welcome the public from 14:00 that day.",
+          "summary": "The report announces that the Qianhai Museum, jointly developed by the Shenzhen Municipal Government and the National Museum of China, will begin trial operation on October 30 and open to the public at 14:00 that day. The title also notes that ten exhibits come from the National Museum of China. It is worth reading because it provides verifiable details about a new public cultural facility, its opening schedule, and the source of key exhibits.",
+          "failureAnalysis": "The verifiable public impact is a new public cultural facility created through cooperation between a local government and a national museum, with exhibits sourced from the National Museum of China. The practical focus is on the disclosed opening schedule, public access arrangements, and exhibit provenance.",
+          "title": "Qianhai Museum to Open on October 30, with Ten Exhibits from the National Museum of China"
+        }
+      }
+    },
+    {
+      "id": "news-b5d449f2a785444b93a2b1e40fc89309",
+      "category": "domestic",
+      "title": "“陶瓷之城”遇上“千年瓷都” 中西陶艺家景德镇觅合作",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-18/10716857.shtml",
+      "publishedAt": "2026-10-18T14:14:07.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "景德镇与塔拉韦拉距离遥远，但两座城市都拥有悠久的陶瓷历史，并因陶瓷而相连。",
+      "summary": "中新网报道，西班牙塔拉韦拉-德拉雷纳市政府议员在2026中国景德镇国际陶瓷博览会上表示，两座城市虽距离遥远，却因悠久陶瓷历史而相连。报道以“陶瓷之城”与“千年瓷都”的相遇为线索，呈现中外陶艺家在景德镇寻找合作机会。可核验的公共信息主要是官方媒体对展会交流与议员表态的报道，适合用来观察陶瓷文化的国际连接。",
+      "failureAnalysis": "目前可核验的信息集中在议员表态和展会交流，尚不能确认具体合作协议、项目规模或经济影响。阅读时应把文化相连的共识与后续落地成果区分开来。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网景德镇10月18日电(记者 李韵涵)“景德镇与塔拉韦拉距离遥远，但两座城市都拥有悠久的陶瓷历史，并因陶瓷而相连。”西班牙塔拉韦拉-德拉雷纳市政府议员哈维尔·穆尼奥斯·加列戈·冈萨雷斯18日在景德镇参加2026中国景德镇国际陶瓷博览会(简称“瓷博会”)时如是说。",
+      "translations": {
+        "zh": {
+          "title": "“陶瓷之城”与“千年瓷都”：中西陶艺家景德镇觅合作",
+          "highlight": "景德镇与塔拉韦拉距离遥远，但两座城市都拥有悠久的陶瓷历史，并因陶瓷而相连。",
+          "summary": "中新网报道，西班牙塔拉韦拉-德拉雷纳市政府议员在2026中国景德镇国际陶瓷博览会上表示，两座城市虽距离遥远，却因悠久陶瓷历史而相连。报道以“陶瓷之城”与“千年瓷都”的相遇为线索，呈现中外陶艺家在景德镇寻找合作机会。可核验的公共信息主要是官方媒体对展会交流与议员表态的报道，适合用来观察陶瓷文化的国际连接。",
+          "failureAnalysis": "目前可核验的信息集中在议员表态和展会交流，尚不能确认具体合作协议、项目规模或经济影响。阅读时应把文化相连的共识与后续落地成果区分开来。"
+        },
+        "en": {
+          "highlight": "Jingdezhen and Talavera are far apart, but both cities share a long ceramic history and are connected by ceramics.",
+          "summary": "China News Service reports that a Talavera de la Reina city councilor said at the 2026 China Jingdezhen International Ceramics Fair that the two cities are far apart but connected by a long ceramic history. The report frames Jingdezhen’s encounter with Talavera as a setting for Chinese and Western ceramic artists to seek cooperation. Its verifiable public value lies in documenting an official-media account of cross-cultural ceramic exchange.",
+          "failureAnalysis": "The verifiable information is limited to the councilor’s remarks and the fair setting; specific agreements, project scale, or economic impact cannot be confirmed. Readers should distinguish the shared cultural narrative from later implementation outcomes.",
+          "title": "Ceramic City Meets Millennium Porcelain Capital: Chinese and Western Ceramic Artists Seek Cooperation in Jingdezhen"
+        }
+      }
+    },
+    {
+      "id": "news-e602f8d7f4cd49dc8f1761918f94464b",
+      "category": "international",
+      "title": "Four people killed in ‘violent, fast-moving’ fire at Canadian military base",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/18/serious-incident-alberta-military-base-deaths-injuries-canada-carney-cfb-wainwright",
+      "publishedAt": "2026-10-18T17:34:53.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "加拿大总理卡尼称，阿尔伯塔省一处军事训练基地发生猛烈且快速蔓延的火灾，造成4人死亡、数十人重伤。",
+      "summary": "报道显示，加拿大阿尔伯塔省一处繁忙的军事训练基地发生猛烈且快速蔓延的火灾，造成4人死亡、数十人重伤。加拿大总理马克·卡尼称，这是加拿大本土和平时期军队遭遇的最严重悲剧之一。当前已知内容主要集中在这起事件的伤亡规模和官方表态。",
+      "failureAnalysis": "关键点在于，这是一起造成重大人员伤亡的军事基地火灾，官方定性和伤亡规模是当前最确定的信息。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Prime minister Mark Carney describes blaze as ‘one of the worst tragedies for the forces on Canadian soil in peacetime’ Four people have been killed and dozens more seriously injured after a “violent, fast-moving” fire tore through one of Canada’s busiest military training bases in Alberta, Canada’s prime minister said on Sunday. Mark Carney called the incident “one of the worst tragedies for the forces on Canadian soil in peacetime”.",
+      "translations": {
+        "zh": {
+          "title": "加拿大军事基地火灾致4人死亡、数十人重伤",
+          "highlight": "加拿大总理卡尼称，阿尔伯塔省一处军事训练基地发生猛烈且快速蔓延的火灾，造成4人死亡、数十人重伤。",
+          "summary": "报道显示，加拿大阿尔伯塔省一处繁忙的军事训练基地发生猛烈且快速蔓延的火灾，造成4人死亡、数十人重伤。加拿大总理马克·卡尼称，这是加拿大本土和平时期军队遭遇的最严重悲剧之一。当前已知内容主要集中在这起事件的伤亡规模和官方表态。",
+          "failureAnalysis": "关键点在于，这是一起造成重大人员伤亡的军事基地火灾，官方定性和伤亡规模是当前最确定的信息。"
+        },
+        "en": {
+          "highlight": "Four people were killed and dozens seriously injured after a violent, fast-moving fire tore through a busy Canadian military training base in Alberta.",
+          "summary": "The Guardian reports that a fire at one of Canada’s busiest military training bases in Alberta killed four people and seriously injured dozens. Prime Minister Mark Carney called it one of the worst peacetime tragedies for the Canadian forces on Canadian soil. The known excerpt does not provide further details on the cause.",
+          "failureAnalysis": "The key takeaway is that this is a major peacetime military-base fire with significant casualties; the official characterization and casualty figures are the most certain facts available.",
+          "title": "Four killed in fire at Canadian military base"
+        }
+      }
+    },
+    {
+      "id": "news-692a858110e549df8dec52076530e094",
+      "category": "international",
+      "title": "Hilarious quips and ‘100,000-volt’ energy: the hypemen (and women) redefining Afrobeats music",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/18/lagos-hypemen-redefining-afrobeats-music-afrohype",
+      "publishedAt": "2026-10-18T09:00:55.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "这种以高能即兴人声为核心的喊麦风格，正因其独特的控场魅力而蓬勃发展。",
+      "summary": "文章讲述拉各斯大学一名学生因课堂展示获绰号 Toby Shang，他把高中时期担任活动暖场者和家教的经历，转化为感染全场的即兴喊麦风格，后来凭热词与能量走红并推出热门歌曲。如今他自称 Afrohype 或 lamba 子流派的“布道者与先驱”之一，折射出高能互动表演正在重新定义 Afrobeats 的现场表达。对理解 Afrobeats 的现场文化与新子流派有参考价值。",
+      "failureAnalysis": "关键点在于，现场表演者的即兴互动和控场能力本身就能催生新的音乐子流派与个人品牌。观察这类文化节点，有助于理解音乐产业的传播动力。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Style of emceeing based on high-octane, ad-libbed vocals has flourished thanks to its unique way of captivating crowds For the 2015 freshmen cohort of the history degree programme at the University of Lagos, their classmate’s first-semester presentation was so captivating that they began calling him Toby Shang, after the 16th-century Chinese dynasty he had focused on. His crowd engagement that day had been harnessed from his high school days as a ginger-man (energiser) in a three-man band and as a private tutor. By his final year at university, his viral catchphrases and infectious energy had resulted in a hit song, Shedibalabala.",
+      "translations": {
+        "zh": {
+          "title": "拉各斯“气氛带动者”如何以即兴喊麦重塑 Afrobeats",
+          "highlight": "这种以高能即兴人声为核心的喊麦风格，正因其独特的控场魅力而蓬勃发展。",
+          "summary": "文章讲述拉各斯大学一名学生因课堂展示获绰号 Toby Shang，他把高中时期担任活动暖场者和家教的经历，转化为感染全场的即兴喊麦风格，后来凭热词与能量走红并推出热门歌曲。如今他自称 Afrohype 或 lamba 子流派的“布道者与先驱”之一，折射出高能互动表演正在重新定义 Afrobeats 的现场表达。对理解 Afrobeats 的现场文化与新子流派有参考价值。",
+          "failureAnalysis": "关键点在于，现场表演者的即兴互动和控场能力本身就能催生新的音乐子流派与个人品牌。观察这类文化节点，有助于理解音乐产业的传播动力。"
+        },
+        "en": {
+          "highlight": "Style of emceeing based on high-octane, ad-libbed vocals has flourished thanks to its unique way of captivating crowds.",
+          "summary": "The article profiles a University of Lagos student nicknamed Toby Shang after a classroom presentation, whose high-school experience as an energiser and tutor shaped an infectious, improvised emceeing style that later led to viral catchphrases and a hit song. He now calls himself one of the “evangelists and pioneers” of the Afrobeats sub-genre some call Afrohype or lamba, showing how high-energy crowd engagement is redefining live Afrobeats expression. It is useful for understanding Afrobeats live culture and emerging sub-genres.",
+          "failureAnalysis": "The key takeaway is that a performer’s improvisation and crowd-control skills can themselves generate new music sub-genres and personal brands. Watching such cultural nodes helps explain how music trends spread.",
+          "title": "How Lagos hypemen are redefining Afrobeats with improvised hype and high-voltage energy"
+        }
+      }
+    },
+    {
+      "id": "life-714274c39b4d4dbe9857766105cb6470",
+      "category": "international",
+      "title": "Celebrating 20 Years of The Marginalian and the Search for Meaning: Free Livestream This Friday",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/10/18/20/",
+      "publishedAt": "2026-10-18T04:33:37.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "2006年10月23日，我开始把书籍段落、神经科学研究链接和16世纪日本木刻复制品等发现，通过办公室邮件分享给七位同事。",
+      "summary": "文章回顾作者在二十多岁孤独、贫困并打四份工读大学时，持续记录自己对意义的寻找。她把这些发现发给七位同事后，经朋友层层分享而扩散，几年内被美国国会图书馆收录。二十周年之际，本周五将举行免费直播，适合关注长期写作、公共分享与意义探索的读者了解。",
+      "failureAnalysis": "一个从七人邮件开始的长期写作项目说明，可持续的内容影响力往往来自真实问题、持续记录和便于转发的分享机制。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "At the dawn of my twenties, lonely, destitute, and disoriented by the demands of making a new life in an alien world, I started keeping notes on my search for meaning while working four jobs to pay my way through college. On October 23, 2006, I began sharing my discoveries — passages from books, links to neuroscience studies, reproductions of 16th-century Japanese woodcuts — in an office email to seven colleagues. They in turn began sharing it with friends, who began sharing it with friends.",
+      "translations": {
+        "zh": {
+          "title": "The Marginalian 二十周年：寻找意义的免费直播本周五举行",
+          "highlight": "2006年10月23日，我开始把书籍段落、神经科学研究链接和16世纪日本木刻复制品等发现，通过办公室邮件分享给七位同事。",
+          "summary": "文章回顾作者在二十多岁孤独、贫困并打四份工读大学时，持续记录自己对意义的寻找。她把这些发现发给七位同事后，经朋友层层分享而扩散，几年内被美国国会图书馆收录。二十周年之际，本周五将举行免费直播，适合关注长期写作、公共分享与意义探索的读者了解。",
+          "failureAnalysis": "一个从七人邮件开始的长期写作项目说明，可持续的内容影响力往往来自真实问题、持续记录和便于转发的分享机制。"
+        },
+        "en": {
+          "highlight": "On October 23, 2006, I began sharing my discoveries — passages from books, links to neuroscience studies, reproductions of 16th-century Japanese woodcuts — in an office email to seven colleagues.",
+          "summary": "The article looks back at how the author, while lonely, poor, and working four jobs to pay for college, kept notes on her search for meaning. After she shared her discoveries with seven colleagues by office email, the project spread through friends and was included by the Library of Congress within a few years. A free livestream is announced for this Friday to mark the twentieth anniversary.",
+          "failureAnalysis": "A long-running writing project that began as an email to seven people shows that durable content influence often comes from a real question, sustained recording, and a shareable format.",
+          "title": "Celebrating 20 Years of The Marginalian and the Search for Meaning: Free Livestream This Friday"
+        }
+      }
+    },
+    {
+      "id": "paper-2610.15986",
+      "category": "paper",
+      "title": "Extreme anharmonicity determines the superionic transition in the prototypical antifluorite Li$_2$O",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2610.15986v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.15986",
+      "publishedAt": "2026-10-11T23:39:00.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic energy; quality signal passed; application scenario is clear.",
+      "paperTopic": "energy",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 energy 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "关键技术词：保留原论文术语，并用白话解释其作用。"
+        ],
+        "whySelected": "Open full-text paper; topic energy; quality signal passed; application scenario is clear."
+      },
+      "highlight": "极端非谐性决定原型反萤石Li2O的超离子转变，题名将此作为核心判断。",
+      "summary": "该arXiv条目研究原型反萤石结构Li2O的超离子转变。题名把极端非谐性置于决定该转变的核心位置，若成立将凸显强非谐晶格效应的作用。提供的文本仅含题名与作者单位，具体机制和证据尚待核验。",
+      "failureAnalysis": "可见证据仅为题名、作者与单位，缺少摘要、方法、数据及结果，无法判断结论的稳健性和适用范围。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Extreme anharmonicity determines the superionic transition in the prototypical antifluorite Li2O Lorenzo Bastonero, ∗,†,∥ Chiara Cignarella,†,∥ Nicola Marzari,†,‡,¶ and Lorenzo Monacelli§ †U Bremen Excellence Chair, Bremen Center for Computational Materials Science, and MAPEX Center for Materials and Processes, Universität Bremen, 28359 Bremen, Germany ‡Theory and Simulation of Materials (THEOS), and National Centre for Computational Design and Discovery of Novel Materials (MARVEL), École Polytechnique Fédérale de Lausanne, 1015 Lausanne, Switzerland ¶Laboratory for Materials Simulations, Paul Scherrer Institut (PSI), 5232 Villigen, Switzerland §Departement of Physics, Sapienza Università di Roma, Rome, Italy ∥These authors contributed equally to this work E-mail: lbastone@uni-bremen.de Abstract Superionic conductors are promising electrolyte candidates for all-solid-state batter- ies, thanks to their liquid-like ionic mobility. In the prototypical lithium-ion oxide superionic conductor with antifluorite structure, the high-temperature transition to the fast-ion regime has long been attributed to volume-driven harmonic phonon soft- ening. However, this quasi-harmonic picture neglects the strong lattice anharmonic- ity inherent to the fast-ion regime, leaving the microscopic origin of the transition 1 arXiv:2610.15986v1 [cond-mat.mtrl-sci] 11 Oct 2026 unresolved.",
+      "translations": {
+        "zh": {
+          "title": "极端非谐性决定原型反萤石Li2O的超离子转变",
+          "highlight": "极端非谐性决定原型反萤石Li2O的超离子转变，题名将此作为核心判断。",
+          "summary": "该arXiv条目研究原型反萤石结构Li2O的超离子转变。题名把极端非谐性置于决定该转变的核心位置，若成立将凸显强非谐晶格效应的作用。提供的文本仅含题名与作者单位，具体机制和证据尚待核验。",
+          "failureAnalysis": "可见证据仅为题名、作者与单位，缺少摘要、方法、数据及结果，无法判断结论的稳健性和适用范围。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 energy 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "关键技术词：保留原论文术语，并用白话解释其作用。"
+            ],
+            "whySelected": "Open full-text paper; topic energy; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "Extreme anharmonicity determines the superionic transition in the prototypical antifluorite Li2O",
+          "highlight": "Extreme anharmonicity determines the superionic transition in the prototypical antifluorite Li2O, according to the paper's title.",
+          "summary": "This arXiv item concerns the superionic transition in prototypical antifluorite Li2O. Its title places extreme anharmonicity at the center of that transition. The supplied excerpt contains only the title and author affiliations, so methods and results cannot be verified.",
+          "failureAnalysis": "The available evidence is limited to the title, authors, and affiliations; without abstract, methods, data, or results, the conclusion's robustness and scope cannot be assessed.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "关键技术词：保留原论文术语，并用白话解释其作用。"
+            ],
+            "whySelected": "Open full-text paper; topic energy; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-feed-183eec34258e4757b6c5def664c7aed9",
+      "category": "ai",
+      "title": "web-edit 0.1a2",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Oct/17/web-edit/",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-17T13:16:49.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [],
+      "evidenceLabel": "No clear evidence",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
+      "summary": "web-edit 是 Simon Willison 自建的一个小型 Web 应用，用来浏览和编辑某个文件夹里的文件，主要场景是通过 Tailscale 在不同机器之间改文件。0.1a2 版本新增了文本与图片数据的“复制到剪贴板”功能。作者需要的起因是：他用手机给笔记本上的 pelican 跑提示词，想把生成的日志方便地复制进 Gist——这说明 AI 工作流会催生一些具体的小工具需求。",
+      "failureAnalysis": "关键点在于，许多实用工具只是为了让作者自己的个人工作流更顺手，需求就来自真实的使用摩擦，并不需要宏大设计。当 AI 使用场景从桌面扩展到手机、跨设备时，像“复制到剪贴板”这样的细节往往决定流程是否顺畅。",
+      "aiSelectionScore": 100,
+      "highlight": "我主要用它通过 Tailscale 在不同机器上编辑文件，这次为文本和图片数据都加了“复制到剪贴板”选项。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Release: web-edit 0.1a2 web-edit ( previously ) is my tiny web app for browsing and editing files in a folder. I mainly built it for editing files on different machines via Tailscale. I added a \"copy to clipboard\" option for both text and image data.",
+      "translations": {
+        "zh": {
+          "title": "web-edit 0.1a2：跨设备浏览与编辑文件夹的轻量 Web 应用",
+          "highlight": "我主要用它通过 Tailscale 在不同机器上编辑文件，这次为文本和图片数据都加了“复制到剪贴板”选项。",
+          "summary": "web-edit 是 Simon Willison 自建的一个小型 Web 应用，用来浏览和编辑某个文件夹里的文件，主要场景是通过 Tailscale 在不同机器之间改文件。0.1a2 版本新增了文本与图片数据的“复制到剪贴板”功能。作者需要的起因是：他用手机给笔记本上的 pelican 跑提示词，想把生成的日志方便地复制进 Gist——这说明 AI 工作流会催生一些具体的小工具需求。",
+          "failureAnalysis": "关键点在于，许多实用工具只是为了让作者自己的个人工作流更顺手，需求就来自真实的使用摩擦，并不需要宏大设计。当 AI 使用场景从桌面扩展到手机、跨设备时，像“复制到剪贴板”这样的细节往往决定流程是否顺畅。"
+        },
+        "en": {
+          "highlight": "I mainly built it for editing files on different machines via Tailscale, and I added a \"copy to clipboard\" option for both text and image data.",
+          "summary": "web-edit is Simon Willison's small self-built web app for browsing and editing files in a folder, chiefly used to edit files across machines via Tailscale. Version 0.1a2 adds copy-to-clipboard for both text and image data. The need arose because he was running pelican prompts on a laptop from his phone and wanted an easy way to copy the resulting logs into a Gist.",
+          "failureAnalysis": "The takeaway: many useful tools exist just to smooth the author's own workflow, driven by real friction rather than a grand design. As AI usage moves across devices and onto phones, details like copy-to-clipboard often decide whether a workflow flows smoothly.",
+          "title": "web-edit 0.1a2: a tiny web app for browsing and editing files in a folder"
+        }
+      }
+    },
+    {
+      "id": "ai-github-1363844227",
+      "category": "ai",
+      "title": "ZeroDayEvil/ai-security-tool",
+      "source": "GitHub Search",
+      "url": "https://github.com/ZeroDayEvil/ai-security-tool",
+      "abstractUrl": null,
+      "publishedAt": "2026-09-10T09:38:49.0000000Z",
+      "scoreLabel": "GitHub 899 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "这个GitHub项目提供免费开源、由AI驱动的安全终端与漏洞扫描能力，覆盖CVE与SBOM，并集成SSH、SFTP、RDP、VNC、串口等连接方式。仓库描述还称其支持12+自主AI代理（如DeepSeek、OpenAI）来编排自动化安全工作流、CTF与DevSecOps，并配有跨平台Web UI，目前有899颗星。对非技术管理者而言，它可作为观察AI安全工具如何把扫描、终端访问和智能体编排打包在一起的样本。",
+      "failureAnalysis": "风险在于，安全终端与漏洞扫描直接接触凭证、内网资产和远程协议，AI代理若误判或越权，可能造成比漏报更严重的操作事故。CVE/SBOM扫描依赖持续更新的情报与规则，12+代理和多种协议会抬高集成、测试与维护成本，免费开源也需明确责任边界。899星只能说明一定关注度，不能证明企业愿意付费或已通过真实环境验证；合规与数据驻留要求还会限制其部署。",
+      "aiSelectionScore": 899,
+      "highlight": "免费开源的AI安全终端与漏洞扫描器，覆盖CVE与SBOM，并支持SSH、SFTP、RDP等多种协议。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 899 stars and recent public activity. Description: 🛡️ Free open-source AI-powered security terminal & vulnerability scanner (CVE, SBOM). Supports SSH, SFTP, RDP, VNC, Serial, and 12+ autonomous AI agents (DeepSeek, OpenAI) for automated security workflows, CTF & DevSecOps.",
+      "translations": {
+        "zh": {
+          "title": "免费开源AI安全终端与漏洞扫描器，支持多协议与自主智能体",
+          "highlight": "免费开源的AI安全终端与漏洞扫描器，覆盖CVE与SBOM，并支持SSH、SFTP、RDP等多种协议。",
+          "summary": "这个GitHub项目提供免费开源、由AI驱动的安全终端与漏洞扫描能力，覆盖CVE与SBOM，并集成SSH、SFTP、RDP、VNC、串口等连接方式。仓库描述还称其支持12+自主AI代理（如DeepSeek、OpenAI）来编排自动化安全工作流、CTF与DevSecOps，并配有跨平台Web UI，目前有899颗星。对非技术管理者而言，它可作为观察AI安全工具如何把扫描、终端访问和智能体编排打包在一起的样本。",
+          "failureAnalysis": "风险在于，安全终端与漏洞扫描直接接触凭证、内网资产和远程协议，AI代理若误判或越权，可能造成比漏报更严重的操作事故。CVE/SBOM扫描依赖持续更新的情报与规则，12+代理和多种协议会抬高集成、测试与维护成本，免费开源也需明确责任边界。899星只能说明一定关注度，不能证明企业愿意付费或已通过真实环境验证；合规与数据驻留要求还会限制其部署。"
+        },
+        "en": {
+          "highlight": "Free open-source AI-powered security terminal and vulnerability scanner covering CVE and SBOM, with support for SSH, SFTP, RDP and other protocols.",
+          "summary": "This GitHub repository offers a free, open-source AI-driven security terminal and vulnerability scanner with CVE and SBOM coverage, plus SSH, SFTP, RDP, VNC, and serial connectivity. It claims support for 12+ autonomous AI agents such as DeepSeek and OpenAI to automate security workflows, CTF, and DevSecOps, with a cross-platform web UI and 899 stars. It is worth reading as an example of how scanning, terminal access, and agent orchestration are being bundled into AI security tooling.",
+          "failureAnalysis": "The main risk is that AI agents with access to credentials, internal assets, and remote protocols can cause serious operational errors if they hallucinate or overstep, while CVE/SBOM freshness and multi-protocol integration add ongoing engineering cost. Star count alone does not prove enterprise willingness to pay or validation in real environments, and compliance and data-residency requirements may limit deployment.",
+          "title": "Free Open-Source AI Security Terminal and Vulnerability Scanner with Multi-Protocol Agents"
+        }
+      }
+    }
+  ]
+}

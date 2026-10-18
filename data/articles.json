@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-10-17",
+  "issueDate": "2026-10-18",
   "updateStatus": "complete",
-  "contentFingerprint": "4a047e8a8df62bc172f48d670f20094b243404ef5859f16b3641688a7836e5e8",
+  "contentFingerprint": "6d307077aaf4639cfd0f0d7b3896186ac8b4049db84c94c96c201cedde7425b8",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,234 +10,234 @@
   ],
   "articles": [
     {
-      "id": "news-a90f930332ea42308d8b00f1c27d0f0e",
+      "id": "news-52819820de004361b47fdf56c1b7740e",
       "category": "domestic",
-      "title": "澳门卫生局局长：发挥澳门独特优势 助力中医药创新出海",
-      "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-17/10716469.shtml",
-      "publishedAt": "2026-10-17T14:21:39.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "依托制度优势，澳门持续深化中医药守正创新，搭建传统医药国际交流桥梁，服务健康中国与粤港澳大湾区建设。",
-      "summary": "2026世界传统医药大会10月17日在北京启幕，澳门特区政府卫生局局长罗奕龙在接受媒体采访时介绍了澳门中医药发展的方向。他表示，澳门将依托制度优势持续深化中医药守正创新，搭建传统医药国际交流桥梁，服务健康中国与粤港澳大湾区建设。该信息来自官方渠道，可作为观察澳门参与中医药国际交流与区域协同的公开信号。",
-      "failureAnalysis": "关键看点是澳门把制度优势转化为中医药创新与国际交流的平台角色，而非单次活动的成败。后续影响仍取决于具体合作项目和落地机制。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "中新社北京10月17日电 (记者 李纯 周昕 马帅莎)2026世界传统医药大会17日在北京启幕。澳门特区政府卫生局局长罗奕龙当日在接受媒体采访时表示，依托制度优势，澳门持续深化中医药守正创新，搭建传统医药国际交流桥梁，服务健康中国与粤港澳大湾区建设。",
-      "translations": {
-        "zh": {
-          "title": "澳门卫生局局长：发挥澳门独特优势 助力中医药创新出海",
-          "highlight": "依托制度优势，澳门持续深化中医药守正创新，搭建传统医药国际交流桥梁，服务健康中国与粤港澳大湾区建设。",
-          "summary": "2026世界传统医药大会10月17日在北京启幕，澳门特区政府卫生局局长罗奕龙在接受媒体采访时介绍了澳门中医药发展的方向。他表示，澳门将依托制度优势持续深化中医药守正创新，搭建传统医药国际交流桥梁，服务健康中国与粤港澳大湾区建设。该信息来自官方渠道，可作为观察澳门参与中医药国际交流与区域协同的公开信号。",
-          "failureAnalysis": "关键看点是澳门把制度优势转化为中医药创新与国际交流的平台角色，而非单次活动的成败。后续影响仍取决于具体合作项目和落地机制。"
-        },
-        "en": {
-          "highlight": "Relying on institutional advantages, Macao will continue to deepen innovation in traditional Chinese medicine and build an international exchange bridge for traditional medicine.",
-          "summary": "The 2026 World Conference on Traditional Medicine opened in Beijing on October 17. Macao's health bureau director said the SAR will rely on institutional advantages to deepen TCM inheritance and innovation, build an international exchange bridge for traditional medicine, and serve Healthy China and the Guangdong-Hong Kong-Macao Greater Bay Area. The item is worth reading as an official signal of Macao's positioning in TCM internationalization and regional coordination, though the excerpt provides limited detail.",
-          "failureAnalysis": "The key takeaway is Macao's stated role in turning institutional advantages into a platform for TCM innovation and international exchange, not a verdict on a single event. Actual impact will depend on concrete cooperation projects and implementation mechanisms.",
-          "title": "Macao Health Bureau Director: Leverage Macao's Unique Advantages to Help TCM Innovation Go Global"
-        }
-      }
-    },
-    {
-      "id": "news-f462ec2a92dc4653a29802a344b10eab",
-      "category": "domestic",
-      "title": "克罗地亚总理普连科维奇会见王毅",
+      "title": "王毅同黑山副总理兼外长伊布拉希莫维奇会谈",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-17/10716470.shtml",
-      "publishedAt": "2026-10-17T13:52:58.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-19/10716911.shtml",
+      "publishedAt": "2026-10-18T16:54:55.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "当地时间10月17日，克罗地亚总理普连科维奇在萨格勒布会见中共中央政治局委员、外交部长王毅。",
-      "summary": "据中新社报道，克罗地亚总理普连科维奇在萨格勒布会见到访的中共中央政治局委员、外交部长王毅。可核实的信息包括会见时间、地点和双方身份，体现中克高层外交接触。对关注中克关系及中国对欧外交动态的读者，这条简讯具有基础信息价值。",
-      "failureAnalysis": "这条消息属于外交会见简讯，核心价值在于确认会见事实、时间地点与双方身份；在缺少联合表态或成果文件时，不宜外推会谈内容。",
+      "highlight": "当地时间2026年10月18日，王毅在波德戈里察同黑山副总理兼外长伊布拉希莫维奇举行会谈",
+      "summary": "报道显示，当地时间2026年10月18日，王毅在波德戈里察与黑山副总理兼外长伊布拉希莫维奇举行会谈。可核实的公开信息主要是双方进行高层外交沟通，有助于读者了解中黑双边交往动态。对关注中国与黑山关系及高层外交动向的读者具有信息价值。",
+      "failureAnalysis": "关键点在于这是一次公开确认的高层外交会谈，具体成果需以完整官方通稿为准。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社北京10月17日电 当地时间10月17日，克罗地亚总理普连科维奇在萨格勒布会见中共中央政治局委员、外交部长王毅。",
+      "sourceExcerpt": "当地时间2026年10月18日，中共中央政治局委员、外交部长王毅在波德戈里察同黑山副总理兼外长伊布拉希莫维奇举行会谈。",
       "translations": {
         "zh": {
-          "title": "克罗地亚总理普连科维奇会见王毅",
-          "highlight": "当地时间10月17日，克罗地亚总理普连科维奇在萨格勒布会见中共中央政治局委员、外交部长王毅。",
-          "summary": "据中新社报道，克罗地亚总理普连科维奇在萨格勒布会见到访的中共中央政治局委员、外交部长王毅。可核实的信息包括会见时间、地点和双方身份，体现中克高层外交接触。对关注中克关系及中国对欧外交动态的读者，这条简讯具有基础信息价值。",
-          "failureAnalysis": "这条消息属于外交会见简讯，核心价值在于确认会见事实、时间地点与双方身份；在缺少联合表态或成果文件时，不宜外推会谈内容。"
+          "title": "王毅同黑山副总理兼外长伊布拉希莫维奇会谈",
+          "highlight": "当地时间2026年10月18日，王毅在波德戈里察同黑山副总理兼外长伊布拉希莫维奇举行会谈",
+          "summary": "报道显示，当地时间2026年10月18日，王毅在波德戈里察与黑山副总理兼外长伊布拉希莫维奇举行会谈。可核实的公开信息主要是双方进行高层外交沟通，有助于读者了解中黑双边交往动态。对关注中国与黑山关系及高层外交动向的读者具有信息价值。",
+          "failureAnalysis": "关键点在于这是一次公开确认的高层外交会谈，具体成果需以完整官方通稿为准。"
         },
         "en": {
-          "highlight": "On October 17 local time, Croatian Prime Minister Andrej Plenković met with Wang Yi, member of the Political Bureau of the CPC Central Committee and Foreign Minister, in Zagreb.",
-          "summary": "China News Service reports that Croatian Prime Minister Andrej Plenković met with Wang Yi, member of the Political Bureau of the CPC Central Committee and Foreign Minister, in Zagreb. The verifiable details are the time, place, and identities of the participants, reflecting high-level China-Croatia diplomatic contact. It is worth reading as a basic update for those tracking China-Croatia relations and China's diplomatic engagement with Europe.",
-          "failureAnalysis": "This is a brief diplomatic meeting report, and its main value is confirming the fact, time, place, and participants. Without joint statements or outcome documents, the content of the talks should not be overinterpreted.",
-          "title": "Croatian Prime Minister Plenković Meets Wang Yi"
+          "highlight": "On October 18, 2026, Wang Yi held talks in Podgorica with Montenegrin Deputy Prime Minister and Foreign Minister Ibrahimović.",
+          "summary": "The report states that on October 18, 2026, Wang Yi held talks in Podgorica with Montenegrin Deputy Prime Minister and Foreign Minister Ibrahimović. The verifiable public information mainly confirms high-level diplomatic communication, offering readers a view of China-Montenegro bilateral engagement. It is informative for those tracking China-Montenegro relations and high-level diplomatic activity.",
+          "failureAnalysis": "The key takeaway is that the meeting confirms high-level diplomatic contact; specific outcomes should be checked against the full official readout.",
+          "title": "Wang Yi Holds Talks with Montenegrin Deputy Prime Minister and Foreign Minister Ibrahimović"
         }
       }
     },
     {
-      "id": "news-8b3830c13aa3495cac1da266a1416547",
+      "id": "news-697f3877568b4d988b5ab53af05ed503",
       "category": "domestic",
-      "title": "从原料输出到加工增值 海南自贸港政策赋能屯昌橡胶产业升级",
-      "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-17/10716432.shtml",
-      "publishedAt": "2026-10-17T12:56:02.0000000+00:00",
+      "title": "前海博物馆将于10月30日正式开放 十件展品来自国博",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-18/10716864.shtml",
+      "publishedAt": "2026-10-18T14:16:22.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "一批105吨、货值约130万元的越南浓缩乳胶运抵屯昌，启动精深加工。",
-      "summary": "文章称，10月17日一批105吨、货值约130万元的越南浓缩乳胶运抵屯昌县海南翊沣农业科技有限公司乳胶丝项目厂区，启动精深加工，原料依托加工增值30%内销免关税政策进口。待加工增值达标并实现内销后，这标志着屯昌从“原料输出腹地”向“加工增值高地”转变，也是海南自贸港核心政策在县域实体经济场景的精准应用。值得读的地方在于，它展示自贸港政策如何落到具体县域产业项目上。",
-      "failureAnalysis": "关键看点是项目能否形成可持续的加工增值链条并满足内销条件；现有信息只说明首批原料到厂，后续达标与内销进展仍需观察。",
+      "highlight": "由深圳市人民政府与中国国家博物馆携手打造的前海博物馆，将于10月30日开馆试运行，当日14时起正式向公众开放。",
+      "summary": "报道通报，前海博物馆由深圳市人民政府与中国国家博物馆携手打造，将于10月30日开馆试运行，并从当日14时起正式向公众开放。标题还显示，将有十件展品来自中国国家博物馆。这条消息的公共价值在于，它提供了一座新的公共文化设施的开馆时间、开放安排和重要展品来源等可核实信息。",
+      "failureAnalysis": "可核实的公共影响是新增一座由地方政府与国家级博物馆合作打造的公共文化设施，并引入国博展品；关注点应落在开馆时间、公众开放安排和展品来源等已披露事实上。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网海南屯昌10月17日电 (王翔龄 李韩智 傅后凡)一批105吨、货值约130万元的越南浓缩乳胶，17日运抵位于屯昌县的海南翊沣农业科技有限公司乳胶丝项目厂区启动精深加工。该批原料依托加工增值30%内销免关税政策进口，待加工增值达标并实现内销后，标志着屯昌实现从“原料输出腹地”向“加工增值高地”的转变，这也是海南自贸港核心政策在县域实体经济场景的精准应用。",
+      "sourceExcerpt": "中新网深圳10月18日电 (记者 索有为)由深圳市人民政府与中国国家博物馆携手打造的前海博物馆18日举办媒体见面会通报，该馆将于10月30日开馆试运行，当日14时起正式向公众开放。",
       "translations": {
         "zh": {
-          "title": "海南自贸港加工增值政策落地屯昌 橡胶产业由原料输出转向加工增值",
-          "highlight": "一批105吨、货值约130万元的越南浓缩乳胶运抵屯昌，启动精深加工。",
-          "summary": "文章称，10月17日一批105吨、货值约130万元的越南浓缩乳胶运抵屯昌县海南翊沣农业科技有限公司乳胶丝项目厂区，启动精深加工，原料依托加工增值30%内销免关税政策进口。待加工增值达标并实现内销后，这标志着屯昌从“原料输出腹地”向“加工增值高地”转变，也是海南自贸港核心政策在县域实体经济场景的精准应用。值得读的地方在于，它展示自贸港政策如何落到具体县域产业项目上。",
-          "failureAnalysis": "关键看点是项目能否形成可持续的加工增值链条并满足内销条件；现有信息只说明首批原料到厂，后续达标与内销进展仍需观察。"
+          "title": "前海博物馆将于10月30日开放 十件展品来自国博",
+          "highlight": "由深圳市人民政府与中国国家博物馆携手打造的前海博物馆，将于10月30日开馆试运行，当日14时起正式向公众开放。",
+          "summary": "报道通报，前海博物馆由深圳市人民政府与中国国家博物馆携手打造，将于10月30日开馆试运行，并从当日14时起正式向公众开放。标题还显示，将有十件展品来自中国国家博物馆。这条消息的公共价值在于，它提供了一座新的公共文化设施的开馆时间、开放安排和重要展品来源等可核实信息。",
+          "failureAnalysis": "可核实的公共影响是新增一座由地方政府与国家级博物馆合作打造的公共文化设施，并引入国博展品；关注点应落在开馆时间、公众开放安排和展品来源等已披露事实上。"
         },
         "en": {
-          "highlight": "A 105-tonne, about 1.3-million-yuan batch of Vietnamese concentrated latex arrived in Tunchang for deep processing under the 30% value-added tariff exemption policy.",
-          "summary": "The article says a 105-tonne batch of Vietnamese concentrated latex worth about 1.3 million yuan arrived on October 17 at the latex thread project site of Hainan Yifeng Agricultural Technology in Tunchang County to begin deep processing, with the raw material imported under the 30% processing value-added tariff exemption policy for domestic sales. Once the value-added threshold is met and domestic sales are achieved, it marks Tunchang's shift from a raw material export hinterland to a processing value-added highland and a county-level application of a core Hainan Free Trade Port policy. It is worth reading for how the policy is applied to a concrete county-level industrial project.",
-          "failureAnalysis": "The key test is whether the project can build a sustainable, compliant value-added chain and meet domestic sales conditions; the provided information only covers the arrival of the first batch.",
-          "title": "Hainan Free Trade Port Value-Added Policy Lands in Tunchang, Shifting Rubber Industry from Raw Material Exports to Processing"
+          "highlight": "The Qianhai Museum, jointly developed by the Shenzhen Municipal Government and the National Museum of China, will open for trial operation on October 30 and welcome the public from 14:00 that day.",
+          "summary": "The report announces that the Qianhai Museum, jointly developed by the Shenzhen Municipal Government and the National Museum of China, will begin trial operation on October 30 and open to the public at 14:00 that day. The title also notes that ten exhibits come from the National Museum of China. It is worth reading because it provides verifiable details about a new public cultural facility, its opening schedule, and the source of key exhibits.",
+          "failureAnalysis": "The verifiable public impact is a new public cultural facility created through cooperation between a local government and a national museum, with exhibits sourced from the National Museum of China. The practical focus is on the disclosed opening schedule, public access arrangements, and exhibit provenance.",
+          "title": "Qianhai Museum to Open on October 30, with Ten Exhibits from the National Museum of China"
         }
       }
     },
     {
-      "id": "news-669286defa624776880dde583bf3ea7b",
+      "id": "news-b5d449f2a785444b93a2b1e40fc89309",
+      "category": "domestic",
+      "title": "“陶瓷之城”遇上“千年瓷都” 中西陶艺家景德镇觅合作",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-18/10716857.shtml",
+      "publishedAt": "2026-10-18T14:14:07.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "景德镇与塔拉韦拉距离遥远，但两座城市都拥有悠久的陶瓷历史，并因陶瓷而相连。",
+      "summary": "中新网报道，西班牙塔拉韦拉-德拉雷纳市政府议员在2026中国景德镇国际陶瓷博览会上表示，两座城市虽距离遥远，却因悠久陶瓷历史而相连。报道以“陶瓷之城”与“千年瓷都”的相遇为线索，呈现中外陶艺家在景德镇寻找合作机会。可核验的公共信息主要是官方媒体对展会交流与议员表态的报道，适合用来观察陶瓷文化的国际连接。",
+      "failureAnalysis": "目前可核验的信息集中在议员表态和展会交流，尚不能确认具体合作协议、项目规模或经济影响。阅读时应把文化相连的共识与后续落地成果区分开来。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网景德镇10月18日电(记者 李韵涵)“景德镇与塔拉韦拉距离遥远，但两座城市都拥有悠久的陶瓷历史，并因陶瓷而相连。”西班牙塔拉韦拉-德拉雷纳市政府议员哈维尔·穆尼奥斯·加列戈·冈萨雷斯18日在景德镇参加2026中国景德镇国际陶瓷博览会(简称“瓷博会”)时如是说。",
+      "translations": {
+        "zh": {
+          "title": "“陶瓷之城”与“千年瓷都”：中西陶艺家景德镇觅合作",
+          "highlight": "景德镇与塔拉韦拉距离遥远，但两座城市都拥有悠久的陶瓷历史，并因陶瓷而相连。",
+          "summary": "中新网报道，西班牙塔拉韦拉-德拉雷纳市政府议员在2026中国景德镇国际陶瓷博览会上表示，两座城市虽距离遥远，却因悠久陶瓷历史而相连。报道以“陶瓷之城”与“千年瓷都”的相遇为线索，呈现中外陶艺家在景德镇寻找合作机会。可核验的公共信息主要是官方媒体对展会交流与议员表态的报道，适合用来观察陶瓷文化的国际连接。",
+          "failureAnalysis": "目前可核验的信息集中在议员表态和展会交流，尚不能确认具体合作协议、项目规模或经济影响。阅读时应把文化相连的共识与后续落地成果区分开来。"
+        },
+        "en": {
+          "highlight": "Jingdezhen and Talavera are far apart, but both cities share a long ceramic history and are connected by ceramics.",
+          "summary": "China News Service reports that a Talavera de la Reina city councilor said at the 2026 China Jingdezhen International Ceramics Fair that the two cities are far apart but connected by a long ceramic history. The report frames Jingdezhen’s encounter with Talavera as a setting for Chinese and Western ceramic artists to seek cooperation. Its verifiable public value lies in documenting an official-media account of cross-cultural ceramic exchange.",
+          "failureAnalysis": "The verifiable information is limited to the councilor’s remarks and the fair setting; specific agreements, project scale, or economic impact cannot be confirmed. Readers should distinguish the shared cultural narrative from later implementation outcomes.",
+          "title": "Ceramic City Meets Millennium Porcelain Capital: Chinese and Western Ceramic Artists Seek Cooperation in Jingdezhen"
+        }
+      }
+    },
+    {
+      "id": "news-e602f8d7f4cd49dc8f1761918f94464b",
       "category": "international",
-      "title": "Brazilian Amazon deforestation falls to lowest on record as pivotal vote looms",
+      "title": "Four people killed in ‘violent, fast-moving’ fire at Canadian military base",
       "source": "The Guardian World",
-      "url": "https://www.theguardian.com/environment/2026/oct/16/brazil-amazon-deforestation-lowest-on-record-election",
-      "publishedAt": "2026-10-16T19:37:53.0000000+00:00",
+      "url": "https://www.theguardian.com/world/2026/oct/18/serious-incident-alberta-military-base-deaths-injuries-canada-carney-cfb-wainwright",
+      "publishedAt": "2026-10-18T17:34:53.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "巴西政府最新数据显示，亚马逊森林砍伐量已降至自1988年有记录以来的最低水平。",
-      "summary": "文章基于巴西政府最新公布的数据称，亚马逊森林砍伐总量创下有记录以来最低，这对现任总统卢拉而言是一项成果。但这一全球瞩目的成效能否延续，取决于10月25日总统决选的结果——两位候选人对雨林未来以及唐纳德·特朗普治下巴美关系的设想截然不同。对非技术读者而言，它展示了环境治理成果如何与政治周期紧密绑定，政策可能在一次投票后转向。",
-      "failureAnalysis": "关键启示：这类“创纪录”的治理成果往往缺少制度性保障，其可持续性取决于选举结果与执政者意愿，而非技术或数据的惯性。",
+      "highlight": "加拿大总理卡尼称，阿尔伯塔省一处军事训练基地发生猛烈且快速蔓延的火灾，造成4人死亡、数十人重伤。",
+      "summary": "报道显示，加拿大阿尔伯塔省一处繁忙的军事训练基地发生猛烈且快速蔓延的火灾，造成4人死亡、数十人重伤。加拿大总理马克·卡尼称，这是加拿大本土和平时期军队遭遇的最严重悲剧之一。当前已知内容主要集中在这起事件的伤亡规模和官方表态。",
+      "failureAnalysis": "关键点在于，这是一起造成重大人员伤亡的军事基地火灾，官方定性和伤亡规模是当前最确定的信息。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Forest clearance at smallest total since records began in 1988 in success for Lula ahead of presidential run-off Deforestation in the Brazilian Amazon has fallen to its lowest level since records began, new government data shows. But whether this globally important success is maintained or reversed is on a knife edge ahead of a presidential election run-off on 25 October between two candidates with sharply different visions for the future of the rainforest and how that affects relations with the US under Donald Trump.",
+      "sourceExcerpt": "Prime minister Mark Carney describes blaze as ‘one of the worst tragedies for the forces on Canadian soil in peacetime’ Four people have been killed and dozens more seriously injured after a “violent, fast-moving” fire tore through one of Canada’s busiest military training bases in Alberta, Canada’s prime minister said on Sunday. Mark Carney called the incident “one of the worst tragedies for the forces on Canadian soil in peacetime”.",
       "translations": {
         "zh": {
-          "title": "巴西亚马逊森林砍伐降至1988年有记录以来最低，关键总统决选临近",
-          "highlight": "巴西政府最新数据显示，亚马逊森林砍伐量已降至自1988年有记录以来的最低水平。",
-          "summary": "文章基于巴西政府最新公布的数据称，亚马逊森林砍伐总量创下有记录以来最低，这对现任总统卢拉而言是一项成果。但这一全球瞩目的成效能否延续，取决于10月25日总统决选的结果——两位候选人对雨林未来以及唐纳德·特朗普治下巴美关系的设想截然不同。对非技术读者而言，它展示了环境治理成果如何与政治周期紧密绑定，政策可能在一次投票后转向。",
-          "failureAnalysis": "关键启示：这类“创纪录”的治理成果往往缺少制度性保障，其可持续性取决于选举结果与执政者意愿，而非技术或数据的惯性。"
+          "title": "加拿大军事基地火灾致4人死亡、数十人重伤",
+          "highlight": "加拿大总理卡尼称，阿尔伯塔省一处军事训练基地发生猛烈且快速蔓延的火灾，造成4人死亡、数十人重伤。",
+          "summary": "报道显示，加拿大阿尔伯塔省一处繁忙的军事训练基地发生猛烈且快速蔓延的火灾，造成4人死亡、数十人重伤。加拿大总理马克·卡尼称，这是加拿大本土和平时期军队遭遇的最严重悲剧之一。当前已知内容主要集中在这起事件的伤亡规模和官方表态。",
+          "failureAnalysis": "关键点在于，这是一起造成重大人员伤亡的军事基地火灾，官方定性和伤亡规模是当前最确定的信息。"
         },
         "en": {
-          "highlight": "New government data shows deforestation in the Brazilian Amazon has fallen to its lowest level since records began in 1988.",
-          "summary": "Citing new government figures, the article reports that total forest clearance in the Brazilian Amazon is the lowest since records began, a success for President Lula. Whether that globally significant outcome holds or reverses hinges on the 25 October presidential runoff between two candidates with sharply different visions for the rainforest and for relations with the US under Donald Trump. For a non-technical reader, it shows how environmental governance results are tied to political cycles and can shift after a single vote.",
-          "failureAnalysis": "Key takeaway: record-breaking governance outcomes often lack institutional safeguards, so their durability depends on election results and the will of officeholders rather than on data or technical momentum.",
-          "title": "Brazilian Amazon deforestation falls to lowest level on record since 1988 as key presidential runoff looms"
+          "highlight": "Four people were killed and dozens seriously injured after a violent, fast-moving fire tore through a busy Canadian military training base in Alberta.",
+          "summary": "The Guardian reports that a fire at one of Canada’s busiest military training bases in Alberta killed four people and seriously injured dozens. Prime Minister Mark Carney called it one of the worst peacetime tragedies for the Canadian forces on Canadian soil. The known excerpt does not provide further details on the cause.",
+          "failureAnalysis": "The key takeaway is that this is a major peacetime military-base fire with significant casualties; the official characterization and casualty figures are the most certain facts available.",
+          "title": "Four killed in fire at Canadian military base"
         }
       }
     },
     {
-      "id": "news-2eff8bf95d4749e6b3cb24f98e353cfb",
+      "id": "news-692a858110e549df8dec52076530e094",
       "category": "international",
-      "title": "Sidewalk sleepers: They have nowhere else to stay while a loved one is in the hospital",
-      "source": "NPR World",
-      "url": "https://www.npr.org/2026/10/17/g-s1-147874/hospital-diagnosis-patients-india-sidewalk",
-      "publishedAt": "2026-10-17T09:00:00.0000000+00:00",
+      "title": "Hilarious quips and ‘100,000-volt’ energy: the hypemen (and women) redefining Afrobeats music",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/18/lagos-hypemen-redefining-afrobeats-music-afrohype",
+      "publishedAt": "2026-10-18T09:00:55.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "但过夜住宿往往只能靠家属自己解决，他们常常只能睡在街上。",
-      "summary": "在德里，患者常长途跋涉到公立医院就医，符合条件的可获得医疗费用援助。但过夜住宿通常要家属自行解决，许多人只能露宿街头。报道让人看到公共医疗之外被忽视的陪护成本与安置压力。",
-      "failureAnalysis": "关键启示：医疗援助若只覆盖诊疗费用，而不考虑陪护者的住宿与安置，就会把一部分成本转嫁给最脆弱的家庭。",
+      "highlight": "这种以高能即兴人声为核心的喊麦风格，正因其独特的控场魅力而蓬勃发展。",
+      "summary": "文章讲述拉各斯大学一名学生因课堂展示获绰号 Toby Shang，他把高中时期担任活动暖场者和家教的经历，转化为感染全场的即兴喊麦风格，后来凭热词与能量走红并推出热门歌曲。如今他自称 Afrohype 或 lamba 子流派的“布道者与先驱”之一，折射出高能互动表演正在重新定义 Afrobeats 的现场表达。对理解 Afrobeats 的现场文化与新子流派有参考价值。",
+      "failureAnalysis": "关键点在于，现场表演者的即兴互动和控场能力本身就能催生新的音乐子流派与个人品牌。观察这类文化节点，有助于理解音乐产业的传播动力。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Patients travel miles to be treated at public hospitals in Delhi. Those in need get financial aid for their care. But for overnight accommodations, families are often on their own — and on the street.",
+      "sourceExcerpt": "Style of emceeing based on high-octane, ad-libbed vocals has flourished thanks to its unique way of captivating crowds For the 2015 freshmen cohort of the history degree programme at the University of Lagos, their classmate’s first-semester presentation was so captivating that they began calling him Toby Shang, after the 16th-century Chinese dynasty he had focused on. His crowd engagement that day had been harnessed from his high school days as a ginger-man (energiser) in a three-man band and as a private tutor. By his final year at university, his viral catchphrases and infectious energy had resulted in a hit song, Shedibalabala.",
       "translations": {
         "zh": {
-          "title": "露宿人行道者：亲人住院时，他们无处可住",
-          "highlight": "但过夜住宿往往只能靠家属自己解决，他们常常只能睡在街上。",
-          "summary": "在德里，患者常长途跋涉到公立医院就医，符合条件的可获得医疗费用援助。但过夜住宿通常要家属自行解决，许多人只能露宿街头。报道让人看到公共医疗之外被忽视的陪护成本与安置压力。",
-          "failureAnalysis": "关键启示：医疗援助若只覆盖诊疗费用，而不考虑陪护者的住宿与安置，就会把一部分成本转嫁给最脆弱的家庭。"
+          "title": "拉各斯“气氛带动者”如何以即兴喊麦重塑 Afrobeats",
+          "highlight": "这种以高能即兴人声为核心的喊麦风格，正因其独特的控场魅力而蓬勃发展。",
+          "summary": "文章讲述拉各斯大学一名学生因课堂展示获绰号 Toby Shang，他把高中时期担任活动暖场者和家教的经历，转化为感染全场的即兴喊麦风格，后来凭热词与能量走红并推出热门歌曲。如今他自称 Afrohype 或 lamba 子流派的“布道者与先驱”之一，折射出高能互动表演正在重新定义 Afrobeats 的现场表达。对理解 Afrobeats 的现场文化与新子流派有参考价值。",
+          "failureAnalysis": "关键点在于，现场表演者的即兴互动和控场能力本身就能催生新的音乐子流派与个人品牌。观察这类文化节点，有助于理解音乐产业的传播动力。"
         },
         "en": {
-          "highlight": "But for overnight accommodations, families are often on their own — and on the street.",
-          "summary": "In Delhi, patients often travel long distances to public hospitals, and those in need can receive financial aid for care. Overnight accommodation, however, is usually left to families, many of whom end up sleeping on the street. The report highlights the overlooked costs and burdens of caregiving beyond medical treatment.",
-          "failureAnalysis": "Key takeaway: if medical aid covers treatment costs but not caregivers’ shelter and basic accommodation, part of the burden is shifted onto the most vulnerable families.",
-          "title": "Sidewalk Sleepers: Nowhere Else to Stay While a Loved One Is Hospitalized"
+          "highlight": "Style of emceeing based on high-octane, ad-libbed vocals has flourished thanks to its unique way of captivating crowds.",
+          "summary": "The article profiles a University of Lagos student nicknamed Toby Shang after a classroom presentation, whose high-school experience as an energiser and tutor shaped an infectious, improvised emceeing style that later led to viral catchphrases and a hit song. He now calls himself one of the “evangelists and pioneers” of the Afrobeats sub-genre some call Afrohype or lamba, showing how high-energy crowd engagement is redefining live Afrobeats expression. It is useful for understanding Afrobeats live culture and emerging sub-genres.",
+          "failureAnalysis": "The key takeaway is that a performer’s improvisation and crowd-control skills can themselves generate new music sub-genres and personal brands. Watching such cultural nodes helps explain how music trends spread.",
+          "title": "How Lagos hypemen are redefining Afrobeats with improvised hype and high-voltage energy"
         }
       }
     },
     {
-      "id": "life-2a5b2d0a4efb465d97f8c67dbe20882d",
+      "id": "life-714274c39b4d4dbe9857766105cb6470",
       "category": "international",
-      "title": "The ladder of knowledge",
-      "source": "Aeon",
-      "url": "https://aeon.co/essays/the-century-long-search-for-the-limits-to-knowledge",
-      "publishedAt": "2026-10-15T10:00:00.0000000+00:00",
+      "title": "Celebrating 20 Years of The Marginalian and the Search for Meaning: Free Livestream This Friday",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/10/18/20/",
+      "publishedAt": "2026-10-18T04:33:37.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "我们所宣称的“真”，并不是一个永远够不到的天花板，而是随着我们攀登而改变的东西。",
-      "summary": "这篇 Aeon 文章以“知识阶梯”为线索，讨论一个世纪以来人们对知识边界的寻找。它提醒读者：我们所说的“真”不是固定终点，会随着认知攀升而变化，因此值得重新理解知识边界。",
-      "failureAnalysis": "关键启发在于：不要把当前认知当作绝对天花板；真正可靠的知识观，应当承认相关标准会随着探索的推进而被修正。",
+      "highlight": "2006年10月23日，我开始把书籍段落、神经科学研究链接和16世纪日本木刻复制品等发现，通过办公室邮件分享给七位同事。",
+      "summary": "文章回顾作者在二十多岁孤独、贫困并打四份工读大学时，持续记录自己对意义的寻找。她把这些发现发给七位同事后，经朋友层层分享而扩散，几年内被美国国会图书馆收录。二十周年之际，本周五将举行免费直播，适合关注长期写作、公共分享与意义探索的读者了解。",
+      "failureAnalysis": "一个从七人邮件开始的长期写作项目说明，可持续的内容影响力往往来自真实问题、持续记录和便于转发的分享机制。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "What we claim as ‘true’ is not a ceiling we are forever failing to reach but something that changes as we climb toward it - by Alexander V Gheorghiu Read on Aeon",
+      "sourceExcerpt": "At the dawn of my twenties, lonely, destitute, and disoriented by the demands of making a new life in an alien world, I started keeping notes on my search for meaning while working four jobs to pay my way through college. On October 23, 2006, I began sharing my discoveries — passages from books, links to neuroscience studies, reproductions of 16th-century Japanese woodcuts — in an office email to seven colleagues. They in turn began sharing it with friends, who began sharing it with friends.",
       "translations": {
         "zh": {
-          "title": "知识阶梯：我们所说的“真”会随攀登而改变",
-          "highlight": "我们所宣称的“真”，并不是一个永远够不到的天花板，而是随着我们攀登而改变的东西。",
-          "summary": "这篇 Aeon 文章以“知识阶梯”为线索，讨论一个世纪以来人们对知识边界的寻找。它提醒读者：我们所说的“真”不是固定终点，会随着认知攀升而变化，因此值得重新理解知识边界。",
-          "failureAnalysis": "关键启发在于：不要把当前认知当作绝对天花板；真正可靠的知识观，应当承认相关标准会随着探索的推进而被修正。"
+          "title": "The Marginalian 二十周年：寻找意义的免费直播本周五举行",
+          "highlight": "2006年10月23日，我开始把书籍段落、神经科学研究链接和16世纪日本木刻复制品等发现，通过办公室邮件分享给七位同事。",
+          "summary": "文章回顾作者在二十多岁孤独、贫困并打四份工读大学时，持续记录自己对意义的寻找。她把这些发现发给七位同事后，经朋友层层分享而扩散，几年内被美国国会图书馆收录。二十周年之际，本周五将举行免费直播，适合关注长期写作、公共分享与意义探索的读者了解。",
+          "failureAnalysis": "一个从七人邮件开始的长期写作项目说明，可持续的内容影响力往往来自真实问题、持续记录和便于转发的分享机制。"
         },
         "en": {
-          "highlight": "What we claim as ‘true’ is not a ceiling we are forever failing to reach but something that changes as we climb toward it.",
-          "summary": "This Aeon essay examines a century-long search for the limits of knowledge. It argues that what we call “true” is not a fixed ceiling but something that changes as we climb toward it, making the idea of a knowledge boundary worth reconsidering.",
-          "failureAnalysis": "The key takeaway is not to treat current understanding as an absolute ceiling; a sound view of knowledge accepts that standards can be revised as inquiry advances.",
-          "title": "The Ladder of Knowledge: What We Call ‘True’ Changes as We Climb"
+          "highlight": "On October 23, 2006, I began sharing my discoveries — passages from books, links to neuroscience studies, reproductions of 16th-century Japanese woodcuts — in an office email to seven colleagues.",
+          "summary": "The article looks back at how the author, while lonely, poor, and working four jobs to pay for college, kept notes on her search for meaning. After she shared her discoveries with seven colleagues by office email, the project spread through friends and was included by the Library of Congress within a few years. A free livestream is announced for this Friday to mark the twentieth anniversary.",
+          "failureAnalysis": "A long-running writing project that began as an email to seven people shows that durable content influence often comes from a real question, sustained recording, and a shareable format.",
+          "title": "Celebrating 20 Years of The Marginalian and the Search for Meaning: Free Livestream This Friday"
         }
       }
     },
     {
-      "id": "paper-2610.20766",
+      "id": "paper-2610.15986",
       "category": "paper",
-      "title": "Semantic Alignment of EEG and Text: A Contrastive Learning Framework for Decoding Imagined Speech",
+      "title": "Extreme anharmonicity determines the superionic transition in the prototypical antifluorite Li$_2$O",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2610.20766v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2610.20766",
-      "publishedAt": "2026-10-14T18:14:36.0000000Z",
+      "url": "https://arxiv.org/pdf/2610.15986v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.15986",
+      "publishedAt": "2026-10-11T23:39:00.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
-      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
-      "paperTopic": "brain_computer_interface",
+      "selectionReason": "Open full-text paper; topic energy; quality signal passed; application scenario is clear.",
+      "paperTopic": "energy",
       "qualityScore": 28,
       "readabilityStatus": "open",
       "paperCard": {
-        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "problem": "解决的问题：这篇论文试图把 energy 方向的研究推进到更可用的场景。",
         "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
         "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
         "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
         "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
         "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
         "technicalTerms": [
-          "EEG：把大脑电信号当作输入数据。"
+          "关键技术词：保留原论文术语，并用白话解释其作用。"
         ],
-        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+        "whySelected": "Open full-text paper; topic energy; quality signal passed; application scenario is clear."
       },
-      "highlight": "该框架利用对比学习对齐EEG与文本语义，以克服闭集分类器将语义类别视为独立标签的局限",
-      "summary": "该条目提出一种对比学习框架，用于对齐EEG与文本语义以解码想象语音。它针对传统闭集分类器将语义类别视为独立标签、未显式利用可能语言类别之间关系的局限。这可能有助于更自然的脑机接口，但所给文本仅为摘要片段。",
-      "failureAnalysis": "所给文本仅为摘要开头，缺少数据集、实验设置与性能结果。因此，该框架相对闭集分类器的优势尚无法依据现有材料验证。",
+      "highlight": "极端非谐性决定原型反萤石Li2O的超离子转变，题名将此作为核心判断。",
+      "summary": "该arXiv条目研究原型反萤石结构Li2O的超离子转变。题名把极端非谐性置于决定该转变的核心位置，若成立将凸显强非谐晶格效应的作用。提供的文本仅含题名与作者单位，具体机制和证据尚待核验。",
+      "failureAnalysis": "可见证据仅为题名、作者与单位，缺少摘要、方法、数据及结果，无法判断结论的稳健性和适用范围。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "1 Semantic Alignment of EEG and T ext: A Contrastive Learning Framework for Decoding Imagined Speech Shahryar G. Namdari*, Francesco Iacomi*, Riccardo Barbieri,Senior Member, IEEE, and Luca Mainardi, Member, IEEE Abstract— Imagined speech decoding from EEG is a promising route toward naturalistic brain–computer inter- faces. Traditional closed-set classifiers treat semantic cate- gories as independent labels and therefore do not explicitly exploit the relationships among possible linguistic intents, limiting the flexibility of their output representation.",
+      "sourceExcerpt": "Extreme anharmonicity determines the superionic transition in the prototypical antifluorite Li2O Lorenzo Bastonero, ∗,†,∥ Chiara Cignarella,†,∥ Nicola Marzari,†,‡,¶ and Lorenzo Monacelli§ †U Bremen Excellence Chair, Bremen Center for Computational Materials Science, and MAPEX Center for Materials and Processes, Universität Bremen, 28359 Bremen, Germany ‡Theory and Simulation of Materials (THEOS), and National Centre for Computational Design and Discovery of Novel Materials (MARVEL), École Polytechnique Fédérale de Lausanne, 1015 Lausanne, Switzerland ¶Laboratory for Materials Simulations, Paul Scherrer Institut (PSI), 5232 Villigen, Switzerland §Departement of Physics, Sapienza Università di Roma, Rome, Italy ∥These authors contributed equally to this work E-mail: lbastone@uni-bremen.de Abstract Superionic conductors are promising electrolyte candidates for all-solid-state batter- ies, thanks to their liquid-like ionic mobility. In the prototypical lithium-ion oxide superionic conductor with antifluorite structure, the high-temperature transition to the fast-ion regime has long been attributed to volume-driven harmonic phonon soft- ening. However, this quasi-harmonic picture neglects the strong lattice anharmonic- ity inherent to the fast-ion regime, leaving the microscopic origin of the transition 1 arXiv:2610.15986v1 [cond-mat.mtrl-sci] 11 Oct 2026 unresolved.",
       "translations": {
         "zh": {
-          "title": "EEG与文本的语义对齐：解码想象语音的对比学习框架",
-          "highlight": "该框架利用对比学习对齐EEG与文本语义，以克服闭集分类器将语义类别视为独立标签的局限",
-          "summary": "该条目提出一种对比学习框架，用于对齐EEG与文本语义以解码想象语音。它针对传统闭集分类器将语义类别视为独立标签、未显式利用可能语言类别之间关系的局限。这可能有助于更自然的脑机接口，但所给文本仅为摘要片段。",
-          "failureAnalysis": "所给文本仅为摘要开头，缺少数据集、实验设置与性能结果。因此，该框架相对闭集分类器的优势尚无法依据现有材料验证。",
+          "title": "极端非谐性决定原型反萤石Li2O的超离子转变",
+          "highlight": "极端非谐性决定原型反萤石Li2O的超离子转变，题名将此作为核心判断。",
+          "summary": "该arXiv条目研究原型反萤石结构Li2O的超离子转变。题名把极端非谐性置于决定该转变的核心位置，若成立将凸显强非谐晶格效应的作用。提供的文本仅含题名与作者单位，具体机制和证据尚待核验。",
+          "failureAnalysis": "可见证据仅为题名、作者与单位，缺少摘要、方法、数据及结果，无法判断结论的稳健性和适用范围。",
           "paperCard": {
-            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "problem": "解决的问题：这篇论文试图把 energy 方向的研究推进到更可用的场景。",
             "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
             "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
             "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
             "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
             "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
+              "关键技术词：保留原论文术语，并用白话解释其作用。"
             ],
-            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+            "whySelected": "Open full-text paper; topic energy; quality signal passed; application scenario is clear."
           }
         },
         "en": {
-          "title": "Semantic Alignment of EEG and Text: A Contrastive Learning Framework for Decoding Imagined Speech",
-          "highlight": "The framework uses contrastive learning to align EEG and text semantics, addressing closed-set classifiers that treat semantic categories as independent labels.",
-          "summary": "The item proposes a contrastive learning framework for aligning EEG and text semantics to decode imagined speech. It responds to the limitation that traditional closed-set classifiers treat semantic categories as independent labels and do not explicitly use relationships among possible linguistic categories. This could support more naturalistic brain-computer interfaces, though the supplied text is only an abstract fragment.",
-          "failureAnalysis": "Only an abstract fragment is available, with no experimental results, dataset details, or performance evidence. The claimed advantage over closed-set classifiers therefore remains unverified in the supplied text.",
+          "title": "Extreme anharmonicity determines the superionic transition in the prototypical antifluorite Li2O",
+          "highlight": "Extreme anharmonicity determines the superionic transition in the prototypical antifluorite Li2O, according to the paper's title.",
+          "summary": "This arXiv item concerns the superionic transition in prototypical antifluorite Li2O. Its title places extreme anharmonicity at the center of that transition. The supplied excerpt contains only the title and author affiliations, so methods and results cannot be verified.",
+          "failureAnalysis": "The available evidence is limited to the title, authors, and affiliations; without abstract, methods, data, or results, the conclusion's robustness and scope cannot be assessed.",
           "paperCard": {
             "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
             "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
@@ -246,91 +246,21 @@
             "implementation": "Implementation: check the input data, core model or device, and validation results.",
             "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
+              "关键技术词：保留原论文术语，并用白话解释其作用。"
             ],
-            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+            "whySelected": "Open full-text paper; topic energy; quality signal passed; application scenario is clear."
           }
         }
       }
     },
     {
-      "id": "paper-2610.20349",
-      "category": "paper",
-      "title": "NeuroDETR: Multiscale Discrete Spatiotemporal Tokenization for Asynchronous EEG Event Detection",
-      "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2610.20349v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2610.20349",
-      "publishedAt": "2026-10-14T15:27:34.0000000Z",
-      "scoreLabel": "Quality 28/100 + topic fit 30/30",
-      "recommendationScore": 83,
-      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
-      "paperTopic": "brain_computer_interface",
-      "qualityScore": 28,
-      "readabilityStatus": "open",
-      "paperCard": {
-        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
-        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
-        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
-        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
-        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
-        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
-        "technicalTerms": [
-          "EEG：把大脑电信号当作输入数据。"
-        ],
-        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
-      },
-      "highlight": "NeuroDETR面向异步EEG事件检测，采用多尺度离散时空标记化建模时空特征。",
-      "summary": "该条目提出NeuroDETR，一种面向异步EEG事件检测的多尺度离散时空标记化方法。所给文本列出了作者与机构信息，但没有摘要、数据或结果。其重要性只能依据标题所述的异步EEG事件检测任务来判断。",
-      "failureAnalysis": "所给源文本只有标题及作者与机构信息，没有方法细节、数据集或评估结果。因此，该方法在异步EEG事件检测中的有效性与泛化能力无法评估。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "NEURODETR: MULTISCALEDISCRETESPATIOTEM- PORALTOKENIZATION FORASYNCHRONOUSEEG EVENTDETECTION Yaozhi Wen1,2,3, Kun Zhao1,4, Wei Wei1, Haoyang Chen3,5, Kangning Wang1, Yi Sun1,3,4, Shaowei Gu1,2,3, Dingkun Liu3,6, Shuang Qiu1,*, and Huiguang He1,2,3,4,* 1Laboratory of Brain Atlas and Brain-Inspired Intelligence, State Key Laboratory of Brain Cognition and Brain-inspired Intelligence Technology, Institute of Automation, Chinese Academy of Sciences 2School of Future Technology, University of Chinese Academy of Sciences 3Zhongguancun Academy 4School of Artificial Intelligence, University of Chinese Academy of Sciences 5Wuhan University 6Hubei Key Laboratory of Brain-inspired Intelligent Systems, School of Artificial Intelligence and Automation, Huazhong University of Science and Technology *Corresponding authors {wenyaozhi2024, shuang.qiu, huiguang.he}@ia.ac.cn ABSTRACT Asynchronous EEG event detection supports practical brain-computer interfaces by identifying event classes and temporal boundaries directly from continuous recordings without predefined event boundaries at inference time. The primary challenge lies in extracting event-related patterns embedded in ongoing back- ground activity. To address this, we proposeNeuroDETR, a discrete spatiotem- poral multiscale framework that combines structured tokenization with event- aware feature refinement.",
-      "translations": {
-        "zh": {
-          "title": "NeuroDETR：面向异步EEG事件检测的多尺度离散时空标记化",
-          "highlight": "NeuroDETR面向异步EEG事件检测，采用多尺度离散时空标记化建模时空特征。",
-          "summary": "该条目提出NeuroDETR，一种面向异步EEG事件检测的多尺度离散时空标记化方法。所给文本列出了作者与机构信息，但没有摘要、数据或结果。其重要性只能依据标题所述的异步EEG事件检测任务来判断。",
-          "failureAnalysis": "所给源文本只有标题及作者与机构信息，没有方法细节、数据集或评估结果。因此，该方法在异步EEG事件检测中的有效性与泛化能力无法评估。",
-          "paperCard": {
-            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
-            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
-            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
-            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
-            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
-            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
-            "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
-            ],
-            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
-          }
-        },
-        "en": {
-          "title": "NeuroDETR: Multiscale Discrete Spatiotemporal Tokenization for Asynchronous EEG Event Detection",
-          "highlight": "NeuroDETR targets asynchronous EEG event detection using multiscale discrete spatiotemporal tokenization to represent spatiotemporal features.",
-          "summary": "The item presents NeuroDETR, a method for multiscale discrete spatiotemporal tokenization aimed at asynchronous EEG event detection. The supplied text lists authors and institutional affiliations but provides no abstract, data, or results. Its significance therefore rests on the stated detection task rather than demonstrated performance.",
-          "failureAnalysis": "Only the title and author-affiliation information are supplied, with no method details, datasets, or evaluation results. The approach's effectiveness and generality for asynchronous EEG event detection therefore cannot be assessed.",
-          "paperCard": {
-            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
-            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
-            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
-            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
-            "implementation": "Implementation: check the input data, core model or device, and validation results.",
-            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
-            "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
-            ],
-            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
-          }
-        }
-      }
-    },
-    {
-      "id": "ai-feed-dee691278f014b2ca46275c1ef3ba62b",
+      "id": "ai-feed-183eec34258e4757b6c5def664c7aed9",
       "category": "ai",
-      "title": "[AINews] High Taste Testers Ep. 1",
-      "source": "Latent Space",
-      "url": "https://www.latent.space/p/ainews-high-taste-testers-ep-1",
+      "title": "web-edit 0.1a2",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Oct/17/web-edit/",
       "abstractUrl": null,
-      "publishedAt": "2026-10-17T07:47:38.0000000Z",
+      "publishedAt": "2026-10-17T13:16:49.0000000Z",
       "scoreLabel": "Curated engineering feed",
       "aiArticleType": "concept_explanation",
       "evidenceAnchors": [],
@@ -338,24 +268,69 @@
       "hasPrimaryAnchor": false,
       "requiresRiskAnalysis": false,
       "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
-      "summary": "这是一期试播节目：在新闻较少的安静日子里，团队借机测试一档新栏目的形式。它更像一次轻量的内容产品实验，而不是完整的技术论文或产品发布。对关注 AI 媒体选题与栏目形态的人，可观察如何用低新闻密度时段做低成本试播。",
-      "failureAnalysis": "关键启示：内容团队可以在信息清淡时用小成本试播验证新栏目形态，不必等待重大新闻。",
+      "summary": "web-edit 是 Simon Willison 自建的一个小型 Web 应用，用来浏览和编辑某个文件夹里的文件，主要场景是通过 Tailscale 在不同机器之间改文件。0.1a2 版本新增了文本与图片数据的“复制到剪贴板”功能。作者需要的起因是：他用手机给笔记本上的 pelican 跑提示词，想把生成的日志方便地复制进 Gist——这说明 AI 工作流会催生一些具体的小工具需求。",
+      "failureAnalysis": "关键点在于，许多实用工具只是为了让作者自己的个人工作流更顺手，需求就来自真实的使用摩擦，并不需要宏大设计。当 AI 使用场景从桌面扩展到手机、跨设备时，像“复制到剪贴板”这样的细节往往决定流程是否顺畅。",
       "aiSelectionScore": 100,
-      "highlight": "在一个安静的日子里，我们正好借机试播一档全新的节目。",
+      "highlight": "我主要用它通过 Tailscale 在不同机器上编辑文件，这次为文本和图片数据都加了“复制到剪贴板”选项。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "a quiet day lets us pilot a new show",
+      "sourceExcerpt": "Release: web-edit 0.1a2 web-edit ( previously ) is my tiny web app for browsing and editing files in a folder. I mainly built it for editing files on different machines via Tailscale. I added a \"copy to clipboard\" option for both text and image data.",
       "translations": {
         "zh": {
-          "title": "[AINews] 高品味测试者 第1期",
-          "highlight": "在一个安静的日子里，我们正好借机试播一档全新的节目。",
-          "summary": "这是一期试播节目：在新闻较少的安静日子里，团队借机测试一档新栏目的形式。它更像一次轻量的内容产品实验，而不是完整的技术论文或产品发布。对关注 AI 媒体选题与栏目形态的人，可观察如何用低新闻密度时段做低成本试播。",
-          "failureAnalysis": "关键启示：内容团队可以在信息清淡时用小成本试播验证新栏目形态，不必等待重大新闻。"
+          "title": "web-edit 0.1a2：跨设备浏览与编辑文件夹的轻量 Web 应用",
+          "highlight": "我主要用它通过 Tailscale 在不同机器上编辑文件，这次为文本和图片数据都加了“复制到剪贴板”选项。",
+          "summary": "web-edit 是 Simon Willison 自建的一个小型 Web 应用，用来浏览和编辑某个文件夹里的文件，主要场景是通过 Tailscale 在不同机器之间改文件。0.1a2 版本新增了文本与图片数据的“复制到剪贴板”功能。作者需要的起因是：他用手机给笔记本上的 pelican 跑提示词，想把生成的日志方便地复制进 Gist——这说明 AI 工作流会催生一些具体的小工具需求。",
+          "failureAnalysis": "关键点在于，许多实用工具只是为了让作者自己的个人工作流更顺手，需求就来自真实的使用摩擦，并不需要宏大设计。当 AI 使用场景从桌面扩展到手机、跨设备时，像“复制到剪贴板”这样的细节往往决定流程是否顺畅。"
         },
         "en": {
-          "highlight": "A quiet day lets us pilot a new show and see how a new format works.",
-          "summary": "This is a pilot episode: on a quiet day with little news, the team uses the pause to test a new show format. It reads as a lightweight content experiment rather than a full technical paper or product launch. It is worth noting for how AI media can test new formats when there is little breaking news.",
-          "failureAnalysis": "Key takeaway: content teams can use quiet periods to run low-cost pilots and validate new formats instead of waiting for major news.",
-          "title": "[AINews] High Taste Testers Ep. 1"
+          "highlight": "I mainly built it for editing files on different machines via Tailscale, and I added a \"copy to clipboard\" option for both text and image data.",
+          "summary": "web-edit is Simon Willison's small self-built web app for browsing and editing files in a folder, chiefly used to edit files across machines via Tailscale. Version 0.1a2 adds copy-to-clipboard for both text and image data. The need arose because he was running pelican prompts on a laptop from his phone and wanted an easy way to copy the resulting logs into a Gist.",
+          "failureAnalysis": "The takeaway: many useful tools exist just to smooth the author's own workflow, driven by real friction rather than a grand design. As AI usage moves across devices and onto phones, details like copy-to-clipboard often decide whether a workflow flows smoothly.",
+          "title": "web-edit 0.1a2: a tiny web app for browsing and editing files in a folder"
+        }
+      }
+    },
+    {
+      "id": "ai-github-1363844227",
+      "category": "ai",
+      "title": "ZeroDayEvil/ai-security-tool",
+      "source": "GitHub Search",
+      "url": "https://github.com/ZeroDayEvil/ai-security-tool",
+      "abstractUrl": null,
+      "publishedAt": "2026-09-10T09:38:49.0000000Z",
+      "scoreLabel": "GitHub 899 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "这个GitHub项目提供免费开源、由AI驱动的安全终端与漏洞扫描能力，覆盖CVE与SBOM，并集成SSH、SFTP、RDP、VNC、串口等连接方式。仓库描述还称其支持12+自主AI代理（如DeepSeek、OpenAI）来编排自动化安全工作流、CTF与DevSecOps，并配有跨平台Web UI，目前有899颗星。对非技术管理者而言，它可作为观察AI安全工具如何把扫描、终端访问和智能体编排打包在一起的样本。",
+      "failureAnalysis": "风险在于，安全终端与漏洞扫描直接接触凭证、内网资产和远程协议，AI代理若误判或越权，可能造成比漏报更严重的操作事故。CVE/SBOM扫描依赖持续更新的情报与规则，12+代理和多种协议会抬高集成、测试与维护成本，免费开源也需明确责任边界。899星只能说明一定关注度，不能证明企业愿意付费或已通过真实环境验证；合规与数据驻留要求还会限制其部署。",
+      "aiSelectionScore": 899,
+      "highlight": "免费开源的AI安全终端与漏洞扫描器，覆盖CVE与SBOM，并支持SSH、SFTP、RDP等多种协议。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 899 stars and recent public activity. Description: 🛡️ Free open-source AI-powered security terminal & vulnerability scanner (CVE, SBOM). Supports SSH, SFTP, RDP, VNC, Serial, and 12+ autonomous AI agents (DeepSeek, OpenAI) for automated security workflows, CTF & DevSecOps.",
+      "translations": {
+        "zh": {
+          "title": "免费开源AI安全终端与漏洞扫描器，支持多协议与自主智能体",
+          "highlight": "免费开源的AI安全终端与漏洞扫描器，覆盖CVE与SBOM，并支持SSH、SFTP、RDP等多种协议。",
+          "summary": "这个GitHub项目提供免费开源、由AI驱动的安全终端与漏洞扫描能力，覆盖CVE与SBOM，并集成SSH、SFTP、RDP、VNC、串口等连接方式。仓库描述还称其支持12+自主AI代理（如DeepSeek、OpenAI）来编排自动化安全工作流、CTF与DevSecOps，并配有跨平台Web UI，目前有899颗星。对非技术管理者而言，它可作为观察AI安全工具如何把扫描、终端访问和智能体编排打包在一起的样本。",
+          "failureAnalysis": "风险在于，安全终端与漏洞扫描直接接触凭证、内网资产和远程协议，AI代理若误判或越权，可能造成比漏报更严重的操作事故。CVE/SBOM扫描依赖持续更新的情报与规则，12+代理和多种协议会抬高集成、测试与维护成本，免费开源也需明确责任边界。899星只能说明一定关注度，不能证明企业愿意付费或已通过真实环境验证；合规与数据驻留要求还会限制其部署。"
+        },
+        "en": {
+          "highlight": "Free open-source AI-powered security terminal and vulnerability scanner covering CVE and SBOM, with support for SSH, SFTP, RDP and other protocols.",
+          "summary": "This GitHub repository offers a free, open-source AI-driven security terminal and vulnerability scanner with CVE and SBOM coverage, plus SSH, SFTP, RDP, VNC, and serial connectivity. It claims support for 12+ autonomous AI agents such as DeepSeek and OpenAI to automate security workflows, CTF, and DevSecOps, with a cross-platform web UI and 899 stars. It is worth reading as an example of how scanning, terminal access, and agent orchestration are being bundled into AI security tooling.",
+          "failureAnalysis": "The main risk is that AI agents with access to credentials, internal assets, and remote protocols can cause serious operational errors if they hallucinate or overstep, while CVE/SBOM freshness and multi-protocol integration add ongoing engineering cost. Star count alone does not prove enterprise willingness to pay or validation in real environments, and compliance and data-residency requirements may limit deployment.",
+          "title": "Free Open-Source AI Security Terminal and Vulnerability Scanner with Multi-Protocol Agents"
         }
       }
     }
