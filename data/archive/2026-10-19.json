@@ -1,0 +1,331 @@
+{
+  "issueDate": "2026-10-19",
+  "updateStatus": "complete",
+  "contentFingerprint": "51fbb5652ddbd091305f2c29e1b363512fca5632eefaa24c2f3e3e2822b3ae39",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-27886a21b7304321b564270c34f00ff4",
+      "category": "domestic",
+      "title": "天津“跨国企业天津行”将启 “四折好戏”促外资对接",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-19/10717523.shtml",
+      "publishedAt": "2026-10-19T14:49:20.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "2026“跨国企业天津行”将于10月21日至23日在津举办，重点安排“四折好戏”推动企业需求与产业资源对接。",
+      "summary": "文章称，2026“跨国企业天津行”将于10月21日至23日在天津举办，并重点安排“四折好戏”推动企业需求与天津产业资源对接。该信息来自天津市政府新闻办发布会，公开影响主要体现为活动日程和外资对接主题的正式发布，实际对接成效仍需后续信息验证。",
+      "failureAnalysis": "可确认的要点是：这是一次由官方发布的投资促进活动，核心在供需撮合；实际签约与落地效果尚需后续公开信息验证。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网天津10月19日电 (记者 周亚强)记者从天津市政府新闻办19日举行的发布会上获悉，2026“跨国企业天津行”将于10月21日至23日在津举办。活动重点安排“四折好戏”，推动企业需求与天津产业资源对接。",
+      "translations": {
+        "zh": {
+          "title": "天津“跨国企业天津行”将启：“四折好戏”促外资对接",
+          "highlight": "2026“跨国企业天津行”将于10月21日至23日在津举办，重点安排“四折好戏”推动企业需求与产业资源对接。",
+          "summary": "文章称，2026“跨国企业天津行”将于10月21日至23日在天津举办，并重点安排“四折好戏”推动企业需求与天津产业资源对接。该信息来自天津市政府新闻办发布会，公开影响主要体现为活动日程和外资对接主题的正式发布，实际对接成效仍需后续信息验证。",
+          "failureAnalysis": "可确认的要点是：这是一次由官方发布的投资促进活动，核心在供需撮合；实际签约与落地效果尚需后续公开信息验证。"
+        },
+        "en": {
+          "highlight": "The 2026 “Multinational Enterprises Tianjin Tour” will run from October 21 to 23 in Tianjin, with a “four-part program” to connect corporate needs with local industrial resources.",
+          "summary": "The article announces that the 2026 “Multinational Enterprises Tianjin Tour” will be held in Tianjin on October 21–23, with a “four-part program” designed to match corporate needs with the city’s industrial resources. The schedule was disclosed at a Tianjin municipal government press conference, making it a public signal of official efforts to promote foreign investment connections; concrete outcomes will depend on follow-up disclosures.",
+          "failureAnalysis": "The key takeaway is that this is an officially announced investment-promotion event centered on matching needs and resources; actual contracts and implementation results still require follow-up public information.",
+          "title": "Tianjin to Launch “Multinational Enterprises Tianjin Tour” with “Four-Part Program” to Boost Foreign Investment Connections"
+        }
+      }
+    },
+    {
+      "id": "news-32dd6520e7bc4713b1e5e7890528d3ae",
+      "category": "domestic",
+      "title": "重庆武隆：“十五五”制造业产值、规上工业总产值锚定双翻番",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-19/10717506.shtml",
+      "publishedAt": "2026-10-19T14:32:45.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "武隆区力争到2030年制造业产值、规上工业总产值实现双翻番，推动生态工业提质扩容。",
+      "summary": "中新网报道，重庆武隆在“十五五”主题发布会上提出，到2030年制造业产值和规上工业总产值实现双翻番。其路径包括科技创新赋能、强化招商引资、精准服务企业，推动生态工业提质扩容。这则消息值得关注，因为它把地方制造业目标、政策抓手和时间节点放在一起，便于判断后续落地；但已知信息未给出产值基数、产业结构和项目清单。",
+      "failureAnalysis": "可核验的要点是目标与抓手明确，但“双翻番”能否实现，取决于招商项目、企业服务和统计口径等落地条件。对非技术管理者而言，读这类地方产业新闻应先核对目标基数、产业构成和项目来源，再判断实际含金量。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网重庆10月19日电 (杨梦逸)19日，重庆市政府新闻办举行“开局起步十五五·建设现代化新重庆”系列主题新闻发布会。重庆市武隆区委副书记、区政府区长魏兴贵介绍，“十五五”期间，该区将围绕科技创新赋能、强化招商引资、精准服务企业等全方面发力，推动生态工业提质扩容，力争到2030年制造业产值、规上工业总产值实现双翻番。",
+      "translations": {
+        "zh": {
+          "title": "重庆武隆锚定“十五五”制造业产值与规上工业总产值双翻番",
+          "highlight": "武隆区力争到2030年制造业产值、规上工业总产值实现双翻番，推动生态工业提质扩容。",
+          "summary": "中新网报道，重庆武隆在“十五五”主题发布会上提出，到2030年制造业产值和规上工业总产值实现双翻番。其路径包括科技创新赋能、强化招商引资、精准服务企业，推动生态工业提质扩容。这则消息值得关注，因为它把地方制造业目标、政策抓手和时间节点放在一起，便于判断后续落地；但已知信息未给出产值基数、产业结构和项目清单。",
+          "failureAnalysis": "可核验的要点是目标与抓手明确，但“双翻番”能否实现，取决于招商项目、企业服务和统计口径等落地条件。对非技术管理者而言，读这类地方产业新闻应先核对目标基数、产业构成和项目来源，再判断实际含金量。"
+        },
+        "en": {
+          "highlight": "Wulong District aims to double both its manufacturing output value and the total output value of industrial enterprises above designated size by 2030, while upgrading its eco-industrial sector.",
+          "summary": "China News Service reports that at a Chongqing press conference on the 15th Five-Year Plan, Wulong District set a goal of doubling manufacturing output value and the total output value of industrial enterprises above designated size by 2030. It plans to pursue eco-industrial upgrading through science and technology empowerment, stronger investment promotion, and targeted enterprise services. The item is worth reading as a local policy signal, though the known excerpt does not provide baseline figures, industrial structure, or project details.",
+          "failureAnalysis": "The verifiable takeaway is a clear target and policy toolkit; whether the doubling can be delivered depends on investment projects, enterprise services, and statistical baselines.",
+          "title": "Chongqing's Wulong District Targets Doubling of Manufacturing and Above-Scale Industrial Output in the 15th Five-Year Plan"
+        }
+      }
+    },
+    {
+      "id": "news-f25a072d886a468a9b87c3178ee119ab",
+      "category": "domestic",
+      "title": "李强会见伊朗第一副总统阿雷夫",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-19/10717477.shtml",
+      "publishedAt": "2026-10-19T14:24:11.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "李强在杜尚别出席上海合作组织成员国政府首脑理事会第二十五次会议期间会见伊朗第一副总统阿雷夫。",
+      "summary": "报道交代，10月19日下午，李强在杜尚别出席上海合作组织成员国政府首脑（总理）理事会第二十五次会议期间会见伊朗第一副总统阿雷夫。这是可核实的公开外交活动信息，发生在上合组织总理会议场合，可用于跟踪中伊高层往来与会议期间的双边互动。由于已知内容有限，具体议题与会谈成果尚不能从现有材料确认。",
+      "failureAnalysis": "可核实的要点是会见的时间、地点与场合；在已知信息范围内，不应推断会谈议题或具体成果。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社杜尚别10月19日电 (记者 单璐)10月19日下午，中国国务院总理李强在杜尚别出席上海合作组织成员国政府首脑(总理)理事会第二十五次会议期间会见伊朗第一副总统阿雷夫。",
+      "translations": {
+        "zh": {
+          "title": "李强在杜尚别会见伊朗第一副总统阿雷夫",
+          "highlight": "李强在杜尚别出席上海合作组织成员国政府首脑理事会第二十五次会议期间会见伊朗第一副总统阿雷夫。",
+          "summary": "报道交代，10月19日下午，李强在杜尚别出席上海合作组织成员国政府首脑（总理）理事会第二十五次会议期间会见伊朗第一副总统阿雷夫。这是可核实的公开外交活动信息，发生在上合组织总理会议场合，可用于跟踪中伊高层往来与会议期间的双边互动。由于已知内容有限，具体议题与会谈成果尚不能从现有材料确认。",
+          "failureAnalysis": "可核实的要点是会见的时间、地点与场合；在已知信息范围内，不应推断会谈议题或具体成果。"
+        },
+        "en": {
+          "highlight": "On the afternoon of October 19, Chinese Premier Li Qiang met with Iranian First Vice President Aref in Dushanbe during the 25th SCO Heads of Government Council meeting.",
+          "summary": "The report states only that on the afternoon of October 19, Li Qiang met Iranian First Vice President Aref in Dushanbe during the 25th SCO Heads of Government Council meeting. This is a verifiable public diplomatic event on the sidelines of a multilateral gathering, useful for tracking China-Iran high-level exchanges and bilateral activity during the meeting. The available excerpt does not specify the topics or outcomes.",
+          "failureAnalysis": "The verifiable takeaway is limited to the time, place, and setting of the meeting; the known information does not support inferring its agenda or concrete results.",
+          "title": "Li Qiang Meets Iranian First Vice President Aref in Dushanbe"
+        }
+      }
+    },
+    {
+      "id": "news-1daf3ec8613d413788f2d0c0557ac064",
+      "category": "international",
+      "title": "Bereaved families could face 'unjust' tax bill after civil service pension delays",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/cq1m4zz9e44go?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-19T12:16:32.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "议会公共账目委员会主席表示，家属不应因并非自身的过错而被征税。",
+      "summary": "BBC Business 报道称，公务员养老金发放延迟可能让遗属收到被指“不公正”的税单。议会公共账目委员会主席强调，家属不应因非自身过错而承担税负。这件事值得关注，因为它涉及公共部门养老金行政延迟如何把成本转嫁给普通家庭。",
+      "failureAnalysis": "关键点在于：行政延迟不应转化为家庭的税务责任；制度设计需要避免让无过错方承担后果。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "The chairman of Parliament's Public Accounts Committee says families should not be taxed through no fault of their own.",
+      "translations": {
+        "zh": {
+          "title": "公务员养老金延迟发放，遗属或面临“不公正”税单",
+          "highlight": "议会公共账目委员会主席表示，家属不应因并非自身的过错而被征税。",
+          "summary": "BBC Business 报道称，公务员养老金发放延迟可能让遗属收到被指“不公正”的税单。议会公共账目委员会主席强调，家属不应因非自身过错而承担税负。这件事值得关注，因为它涉及公共部门养老金行政延迟如何把成本转嫁给普通家庭。",
+          "failureAnalysis": "关键点在于：行政延迟不应转化为家庭的税务责任；制度设计需要避免让无过错方承担后果。"
+        },
+        "en": {
+          "highlight": "The chairman of Parliament's Public Accounts Committee says families should not be taxed through no fault of their own.",
+          "summary": "BBC Business reports that delays in civil service pension payments could leave bereaved families with a tax bill described as “unjust.” The chairman of Parliament’s Public Accounts Committee says families should not be taxed through no fault of their own. It is worth reading because it shows how administrative delays in public-sector pensions can shift costs onto ordinary households.",
+          "failureAnalysis": "The key takeaway is that administrative delay should not become a family’s tax liability; system design must avoid making blameless people bear the consequences.",
+          "title": "Civil Service Pension Delays Could Leave Bereaved Families Facing an ‘Unjust’ Tax Bill"
+        }
+      }
+    },
+    {
+      "id": "news-194cd97f282d4964b304c7aeb7124dda",
+      "category": "international",
+      "title": "Drone attack near market kills 80 in Sudan",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/19/drone-attack-market-al-dibab-west-kordofan-sudan",
+      "publishedAt": "2026-10-19T14:45:53.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "苏丹南部一处市场附近遭无人机袭击，造成80人死亡，死者多为乘车回家的通勤者。",
+      "summary": "文章报道苏丹西科尔多凡州迪巴布镇市场附近周日傍晚遭无人机袭击，造成80人死亡，其中多为通勤者。目击者称袭击发生两次，他协助埋葬了50具遗体，其中包括自己的兄弟。这是这场战争中最致命的单次袭击之一，值得关注冲突中平民面临的风险。",
+      "failureAnalysis": "一次袭击就造成大量平民伤亡，说明市场和交通枢纽等开放场所极易成为无人机战争中的高风险目标。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Witness says drone struck twice at transport hub in al-Dibab, in one of deadliest single attacks of war A drone strike near a market in southern Sudan on Sunday evening killed 80 people, mostly commuters catching rides home. Ahmed Wadi, a witness, said the attack in the town of al-Dibab in West Kordofan state left “50 bodies who I helped bury, one of them my own brother Mohamed”.",
+      "translations": {
+        "zh": {
+          "title": "苏丹市场附近无人机袭击致80人死亡",
+          "highlight": "苏丹南部一处市场附近遭无人机袭击，造成80人死亡，死者多为乘车回家的通勤者。",
+          "summary": "文章报道苏丹西科尔多凡州迪巴布镇市场附近周日傍晚遭无人机袭击，造成80人死亡，其中多为通勤者。目击者称袭击发生两次，他协助埋葬了50具遗体，其中包括自己的兄弟。这是这场战争中最致命的单次袭击之一，值得关注冲突中平民面临的风险。",
+          "failureAnalysis": "一次袭击就造成大量平民伤亡，说明市场和交通枢纽等开放场所极易成为无人机战争中的高风险目标。"
+        },
+        "en": {
+          "highlight": "A drone strike near a market in southern Sudan killed 80 people, mostly commuters catching rides home.",
+          "summary": "The article reports that a drone strike near a market in al-Dibab, West Kordofan state, killed 80 people on Sunday evening, most of them commuters. A witness said the attack struck twice and that he helped bury 50 bodies, including his own brother. It is one of the deadliest single attacks of the war and highlights the risks to civilians in conflict.",
+          "failureAnalysis": "A single attack causing mass civilian casualties shows how open sites such as markets and transport hubs can become high-risk targets in drone warfare.",
+          "title": "Drone attack near Sudan market kills 80"
+        }
+      }
+    },
+    {
+      "id": "life-ee529b9ac2474f25b8f3238524aafbb3",
+      "category": "international",
+      "title": "How to Prepare Now so the End of Daylight Saving Time Is Less Jarring",
+      "source": "Lifehacker",
+      "url": "https://lifehacker.com/how-to-prepare-now-for-time-change?utm_medium=RSS",
+      "publishedAt": "2026-10-19T18:30:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "准备好“拨回”了吗？我也没准备好，但这些建议会有帮助。",
+      "summary": "文章关注即将到来的“拨回”时间调整，提醒读者提前准备，以减轻夏令时结束带来的不适。它属于生活技能类内容，适合想用简单方法平稳过渡的人快速参考。",
+      "failureAnalysis": "关键要点是：面对可预期的时间切换，提前准备能降低适应成本，重点是让作息调整更平缓。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Ready to \"fall back\" soon? Neither am I, but these tips will help.",
+      "translations": {
+        "zh": {
+          "title": "如何提前准备，让夏令时结束不那么难熬",
+          "highlight": "准备好“拨回”了吗？我也没准备好，但这些建议会有帮助。",
+          "summary": "文章关注即将到来的“拨回”时间调整，提醒读者提前准备，以减轻夏令时结束带来的不适。它属于生活技能类内容，适合想用简单方法平稳过渡的人快速参考。",
+          "failureAnalysis": "关键要点是：面对可预期的时间切换，提前准备能降低适应成本，重点是让作息调整更平缓。"
+        },
+        "en": {
+          "highlight": "Ready to “fall back” soon? Neither am I, but these tips will help.",
+          "summary": "The article offers guidance on preparing ahead of the end of daylight saving time so the time change is less jarring. It is a quick life-skills read for anyone who wants a smoother transition.",
+          "failureAnalysis": "The key takeaway is that preparing ahead for a predictable time change can make adaptation easier; the original points to practical tips rather than detailed steps.",
+          "title": "How to Prepare Now So the End of Daylight Saving Time Is Less Jarring"
+        }
+      }
+    },
+    {
+      "id": "life-878cb2d741564ce58c9bc476b9b1b550",
+      "category": "international",
+      "title": "When Relationships Change: Anne Morrow Lindbergh on Embracing the Intermittency and Mutability of Love",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/10/19/anne-morrow-lindbergh-change/",
+      "publishedAt": "2026-10-19T12:41:08.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "一切有生命的关系都处于变化与扩展的过程中，必须不断为自己建构新的形态。",
+      "summary": "这篇来自《The Marginalian》的文章借安妮·默罗·林德伯格的文字，讨论爱与人际关系为何无法固定不变，而会以间歇、流动的方式持续演化。它值得非技术读者一读，因为它提供了一种看待长期关系与团队协作的视角：把变化视为关系存续的条件，而非关系出问题的信号。",
+      "failureAnalysis": "关键结论是：稳定的关系并不靠维持原状，而靠双方不断为它重建新的形态；把变化当成常态，期待就不再容易落空。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "\"All living relationships are in process of change, of expansion, and must perpetually be building themselves new forms.\"",
+      "translations": {
+        "zh": {
+          "title": "当关系发生变化：安妮·默罗·林德伯格论接纳爱的间歇性与流动性",
+          "highlight": "一切有生命的关系都处于变化与扩展的过程中，必须不断为自己建构新的形态。",
+          "summary": "这篇来自《The Marginalian》的文章借安妮·默罗·林德伯格的文字，讨论爱与人际关系为何无法固定不变，而会以间歇、流动的方式持续演化。它值得非技术读者一读，因为它提供了一种看待长期关系与团队协作的视角：把变化视为关系存续的条件，而非关系出问题的信号。",
+          "failureAnalysis": "关键结论是：稳定的关系并不靠维持原状，而靠双方不断为它重建新的形态；把变化当成常态，期待就不再容易落空。"
+        },
+        "en": {
+          "highlight": "All living relationships are in process of change, of expansion, and must perpetually be building themselves new forms.",
+          "summary": "Drawing on Anne Morrow Lindbergh's writing, this Marginalian piece explores why love and human bonds cannot stay fixed, instead evolving through intermittency and mutability. It is worth reading because it offers a way to see long-term relationships and collaboration: change is what keeps a relationship alive, not a sign that it is broken.",
+          "failureAnalysis": "The key takeaway: durable relationships are not sustained by preserving the status quo, but by both sides continually rebuilding them in new forms, so treating change as normal keeps expectations from easily collapsing.",
+          "title": "When Relationships Change: Anne Morrow Lindbergh on Embracing the Intermittency and Mutability of Love"
+        }
+      }
+    },
+    {
+      "id": "paper-2610.23665",
+      "category": "paper",
+      "title": "TriRouter: Sparse-to-Dense Electrode-Space Routing for Robust EEG Motor Imagery Decoding",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2610.23665v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.23665",
+      "publishedAt": "2026-10-16T15:59:00.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "针对稀疏或受损电极蒙太奇，TriRouter 以电极空间路由框架提升运动想象脑电解码的鲁棒性。",
+      "summary": "论文关注运动想象脑机接口在多通道脑电采集中的实际难题：电极蒙太奇常出现稀疏或损坏。作者提出 TriRouter，一种电极空间路由框架，并涉及判别信息保持。其意义在于为不完整电极条件下的鲁棒解码提供新思路。",
+      "failureAnalysis": "当前可见文本仅给出摘要开头与框架名称，缺少实验设置、数据集和量化结果，无法据此判断其相对现有方法的实际增益。对稀疏或损坏电极条件的鲁棒性仍需完整论文中的对照实验支持。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "TRIROUTER: SPARSE-TO-DENSE ELECTRODE-SPACE ROUTING FOR ROBUST EEG MOTOR IMAGERY DECODING Ying Zhou1, Yaoxin Li2, Mengting Liu1∗ 1School of Biomedical Engineering, Shenzhen Campus of Sun Yat-sen University 2University of Waterloo ABSTRACT Motor imagery brain-computer interfaces require reliable decoding from multichannel EEG, but practical acquisi- tion often yields sparse or corrupted electrode montages. We propose TriRouter, an electrode-space routing frame- work with discriminative-preservation, mask-robustness, and latent-compensation paths. A validation-calibrated router uses observable channel availability to allocate path contri- butions, preserving complete-channel discrimination while increasing representation recovery under severe missingness.",
+      "translations": {
+        "zh": {
+          "title": "TriRouter：稀疏到密集电极空间路由的鲁棒脑电运动想象解码",
+          "highlight": "针对稀疏或受损电极蒙太奇，TriRouter 以电极空间路由框架提升运动想象脑电解码的鲁棒性。",
+          "summary": "论文关注运动想象脑机接口在多通道脑电采集中的实际难题：电极蒙太奇常出现稀疏或损坏。作者提出 TriRouter，一种电极空间路由框架，并涉及判别信息保持。其意义在于为不完整电极条件下的鲁棒解码提供新思路。",
+          "failureAnalysis": "当前可见文本仅给出摘要开头与框架名称，缺少实验设置、数据集和量化结果，无法据此判断其相对现有方法的实际增益。对稀疏或损坏电极条件的鲁棒性仍需完整论文中的对照实验支持。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "TriRouter: Sparse-to-Dense Electrode-Space Routing for Robust EEG Motor Imagery Decoding",
+          "highlight": "TriRouter introduces sparse-to-dense electrode-space routing to support robust motor-imagery EEG decoding when electrode montages are sparse or corrupted.",
+          "summary": "The paper addresses a practical problem in motor-imagery brain-computer interfaces: multichannel EEG acquisition often produces sparse or corrupted electrode montages. It proposes TriRouter, an electrode-space routing framework that appears to emphasize preservation of discriminative information. Its importance lies in offering a potential route to robust decoding under incomplete electrode conditions.",
+          "failureAnalysis": "The supplied text only includes the abstract opening and the framework name, without datasets, experimental settings, or quantitative results. The claimed robustness under sparse or corrupted montages therefore cannot be assessed from the available evidence.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-github-1414685342",
+      "category": "ai",
+      "title": "onehumanbeing/esp32-iphone-agent",
+      "source": "GitHub Search",
+      "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-11T19:10:25.0000000Z",
+      "scoreLabel": "GitHub 3276 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该GitHub仓库已有3276颗星和近期公开活动，目标是让AI模型通过一块7美元ESP32使用真实iPhone：以AirPlay作为视觉输入、USB HID作为触控/输入手段，并可接入任意OpenAI兼容的视觉模型。它不需要Mac、开发者账号或越狱，值得关注是因为它把AI代理落到真实移动设备上的成本压得很低，也暴露了硬件桥接、系统兼容和实际部署的工程边界。",
+      "failureAnalysis": "最大风险在工程可靠性：AirPlay取屏和USB HID注入依赖iOS与设备状态，跨版本、跨机型容易出兼容问题，实时视觉模型的延迟和误判也会影响操控成功率。无需Mac、开发者账号或越狱降低了门槛，但也可能限制后台运行、权限和可自动化的应用范围。对普通用户而言，硬件连接、配置和维护仍有支持成本；真实iPhone上的隐私、账号安全、平台条款和设备保修也是落地约束。3276星说明关注度高，但不等同于稳定需求或可规模化部署验证。",
+      "aiSelectionScore": 3276,
+      "highlight": "用7美元ESP32让AI模型操控真实iPhone：AirPlay作眼、USB HID作手，接任意OpenAI兼容视觉模型，无需Mac、开发者账号或越狱。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 3276 stars and recent public activity. Description: Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak.",
+      "translations": {
+        "zh": {
+          "title": "用7美元ESP32让AI操控真实iPhone的开源代理",
+          "highlight": "用7美元ESP32让AI模型操控真实iPhone：AirPlay作眼、USB HID作手，接任意OpenAI兼容视觉模型，无需Mac、开发者账号或越狱。",
+          "summary": "该GitHub仓库已有3276颗星和近期公开活动，目标是让AI模型通过一块7美元ESP32使用真实iPhone：以AirPlay作为视觉输入、USB HID作为触控/输入手段，并可接入任意OpenAI兼容的视觉模型。它不需要Mac、开发者账号或越狱，值得关注是因为它把AI代理落到真实移动设备上的成本压得很低，也暴露了硬件桥接、系统兼容和实际部署的工程边界。",
+          "failureAnalysis": "最大风险在工程可靠性：AirPlay取屏和USB HID注入依赖iOS与设备状态，跨版本、跨机型容易出兼容问题，实时视觉模型的延迟和误判也会影响操控成功率。无需Mac、开发者账号或越狱降低了门槛，但也可能限制后台运行、权限和可自动化的应用范围。对普通用户而言，硬件连接、配置和维护仍有支持成本；真实iPhone上的隐私、账号安全、平台条款和设备保修也是落地约束。3276星说明关注度高，但不等同于稳定需求或可规模化部署验证。"
+        },
+        "en": {
+          "highlight": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model—no Mac, no developer account, no jailbreak.",
+          "summary": "This GitHub repository, with 3,276 stars and recent public activity, aims to let an AI model operate a real iPhone through a $7 ESP32 using AirPlay for visual input and USB HID for input, with any OpenAI-compatible vision model. It avoids a Mac, developer account, and jailbreak, making it worth reading as a low-cost hardware bridge between AI agents and mobile devices and as a case study in deployment constraints.",
+          "failureAnalysis": "The main risks are engineering reliability and support cost: AirPlay capture and USB HID injection depend on iOS and device states, vision-model latency and errors can reduce control success, and privacy, account security, platform terms, and warranty constrain real-world use. High star count signals attention, not validated demand or scalable deployment.",
+          "title": "Open-source agent lets AI control a real iPhone with a $7 ESP32"
+        }
+      }
+    }
+  ]
+}
