@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-10-19",
+  "issueDate": "2026-10-20",
   "updateStatus": "complete",
-  "contentFingerprint": "51fbb5652ddbd091305f2c29e1b363512fca5632eefaa24c2f3e3e2822b3ae39",
+  "contentFingerprint": "b5b543df7f4a4eee2143a7e1f157943c6841ce5d6dda6f1320efae604b7e9236",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,216 +10,216 @@
   ],
   "articles": [
     {
-      "id": "news-27886a21b7304321b564270c34f00ff4",
+      "id": "news-788ecd63b13648c28617eda0785db3f2",
       "category": "domestic",
-      "title": "天津“跨国企业天津行”将启 “四折好戏”促外资对接",
-      "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-19/10717523.shtml",
-      "publishedAt": "2026-10-19T14:49:20.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "2026“跨国企业天津行”将于10月21日至23日在津举办，重点安排“四折好戏”推动企业需求与产业资源对接。",
-      "summary": "文章称，2026“跨国企业天津行”将于10月21日至23日在天津举办，并重点安排“四折好戏”推动企业需求与天津产业资源对接。该信息来自天津市政府新闻办发布会，公开影响主要体现为活动日程和外资对接主题的正式发布，实际对接成效仍需后续信息验证。",
-      "failureAnalysis": "可确认的要点是：这是一次由官方发布的投资促进活动，核心在供需撮合；实际签约与落地效果尚需后续公开信息验证。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "中新网天津10月19日电 (记者 周亚强)记者从天津市政府新闻办19日举行的发布会上获悉，2026“跨国企业天津行”将于10月21日至23日在津举办。活动重点安排“四折好戏”，推动企业需求与天津产业资源对接。",
-      "translations": {
-        "zh": {
-          "title": "天津“跨国企业天津行”将启：“四折好戏”促外资对接",
-          "highlight": "2026“跨国企业天津行”将于10月21日至23日在津举办，重点安排“四折好戏”推动企业需求与产业资源对接。",
-          "summary": "文章称，2026“跨国企业天津行”将于10月21日至23日在天津举办，并重点安排“四折好戏”推动企业需求与天津产业资源对接。该信息来自天津市政府新闻办发布会，公开影响主要体现为活动日程和外资对接主题的正式发布，实际对接成效仍需后续信息验证。",
-          "failureAnalysis": "可确认的要点是：这是一次由官方发布的投资促进活动，核心在供需撮合；实际签约与落地效果尚需后续公开信息验证。"
-        },
-        "en": {
-          "highlight": "The 2026 “Multinational Enterprises Tianjin Tour” will run from October 21 to 23 in Tianjin, with a “four-part program” to connect corporate needs with local industrial resources.",
-          "summary": "The article announces that the 2026 “Multinational Enterprises Tianjin Tour” will be held in Tianjin on October 21–23, with a “four-part program” designed to match corporate needs with the city’s industrial resources. The schedule was disclosed at a Tianjin municipal government press conference, making it a public signal of official efforts to promote foreign investment connections; concrete outcomes will depend on follow-up disclosures.",
-          "failureAnalysis": "The key takeaway is that this is an officially announced investment-promotion event centered on matching needs and resources; actual contracts and implementation results still require follow-up public information.",
-          "title": "Tianjin to Launch “Multinational Enterprises Tianjin Tour” with “Four-Part Program” to Boost Foreign Investment Connections"
-        }
-      }
-    },
-    {
-      "id": "news-32dd6520e7bc4713b1e5e7890528d3ae",
-      "category": "domestic",
-      "title": "重庆武隆：“十五五”制造业产值、规上工业总产值锚定双翻番",
-      "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-19/10717506.shtml",
-      "publishedAt": "2026-10-19T14:32:45.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "武隆区力争到2030年制造业产值、规上工业总产值实现双翻番，推动生态工业提质扩容。",
-      "summary": "中新网报道，重庆武隆在“十五五”主题发布会上提出，到2030年制造业产值和规上工业总产值实现双翻番。其路径包括科技创新赋能、强化招商引资、精准服务企业，推动生态工业提质扩容。这则消息值得关注，因为它把地方制造业目标、政策抓手和时间节点放在一起，便于判断后续落地；但已知信息未给出产值基数、产业结构和项目清单。",
-      "failureAnalysis": "可核验的要点是目标与抓手明确，但“双翻番”能否实现，取决于招商项目、企业服务和统计口径等落地条件。对非技术管理者而言，读这类地方产业新闻应先核对目标基数、产业构成和项目来源，再判断实际含金量。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "中新网重庆10月19日电 (杨梦逸)19日，重庆市政府新闻办举行“开局起步十五五·建设现代化新重庆”系列主题新闻发布会。重庆市武隆区委副书记、区政府区长魏兴贵介绍，“十五五”期间，该区将围绕科技创新赋能、强化招商引资、精准服务企业等全方面发力，推动生态工业提质扩容，力争到2030年制造业产值、规上工业总产值实现双翻番。",
-      "translations": {
-        "zh": {
-          "title": "重庆武隆锚定“十五五”制造业产值与规上工业总产值双翻番",
-          "highlight": "武隆区力争到2030年制造业产值、规上工业总产值实现双翻番，推动生态工业提质扩容。",
-          "summary": "中新网报道，重庆武隆在“十五五”主题发布会上提出，到2030年制造业产值和规上工业总产值实现双翻番。其路径包括科技创新赋能、强化招商引资、精准服务企业，推动生态工业提质扩容。这则消息值得关注，因为它把地方制造业目标、政策抓手和时间节点放在一起，便于判断后续落地；但已知信息未给出产值基数、产业结构和项目清单。",
-          "failureAnalysis": "可核验的要点是目标与抓手明确，但“双翻番”能否实现，取决于招商项目、企业服务和统计口径等落地条件。对非技术管理者而言，读这类地方产业新闻应先核对目标基数、产业构成和项目来源，再判断实际含金量。"
-        },
-        "en": {
-          "highlight": "Wulong District aims to double both its manufacturing output value and the total output value of industrial enterprises above designated size by 2030, while upgrading its eco-industrial sector.",
-          "summary": "China News Service reports that at a Chongqing press conference on the 15th Five-Year Plan, Wulong District set a goal of doubling manufacturing output value and the total output value of industrial enterprises above designated size by 2030. It plans to pursue eco-industrial upgrading through science and technology empowerment, stronger investment promotion, and targeted enterprise services. The item is worth reading as a local policy signal, though the known excerpt does not provide baseline figures, industrial structure, or project details.",
-          "failureAnalysis": "The verifiable takeaway is a clear target and policy toolkit; whether the doubling can be delivered depends on investment projects, enterprise services, and statistical baselines.",
-          "title": "Chongqing's Wulong District Targets Doubling of Manufacturing and Above-Scale Industrial Output in the 15th Five-Year Plan"
-        }
-      }
-    },
-    {
-      "id": "news-f25a072d886a468a9b87c3178ee119ab",
-      "category": "domestic",
-      "title": "李强会见伊朗第一副总统阿雷夫",
+      "title": "刘海星分别会见意大利、阿联酋客人",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-19/10717477.shtml",
-      "publishedAt": "2026-10-19T14:24:11.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-20/10718211.shtml",
+      "publishedAt": "2026-10-20T15:37:38.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "李强在杜尚别出席上海合作组织成员国政府首脑理事会第二十五次会议期间会见伊朗第一副总统阿雷夫。",
-      "summary": "报道交代，10月19日下午，李强在杜尚别出席上海合作组织成员国政府首脑（总理）理事会第二十五次会议期间会见伊朗第一副总统阿雷夫。这是可核实的公开外交活动信息，发生在上合组织总理会议场合，可用于跟踪中伊高层往来与会议期间的双边互动。由于已知内容有限，具体议题与会谈成果尚不能从现有材料确认。",
-      "failureAnalysis": "可核实的要点是会见的时间、地点与场合；在已知信息范围内，不应推断会谈议题或具体成果。",
+      "highlight": "刘海星在北京分别会见意大利五星运动代表团和阿联酋第一梯队领导人才代表团，就加强双边交流合作等交换意见。",
+      "summary": "报道显示，10月20日中共中央对外联络部部长刘海星在北京分别会见意大利五星运动代表团和阿联酋第一梯队领导人才代表团。双方就加强双边交流合作、推动国家关系发展等交换意见。由于内容来自官方通稿，可核实的重点是会晤对象、时间地点与议题，可作为观察中国政党外交和双边关系动向的公开信号。",
+      "failureAnalysis": "可确认的信息限于会晤安排与议题，具体成果和后续影响尚待更多公开信息。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社杜尚别10月19日电 (记者 单璐)10月19日下午，中国国务院总理李强在杜尚别出席上海合作组织成员国政府首脑(总理)理事会第二十五次会议期间会见伊朗第一副总统阿雷夫。",
+      "sourceExcerpt": "新华社北京10月20日电 10月20日，中共中央对外联络部部长刘海星在北京分别会见党的副主席、参议院外委会副主席利凯里率领的意大利五星运动代表团和阿布扎比执行办公室代理主任卡比率领的阿联酋第一梯队领导人才代表团，就加强双边交流合作、推动国家关系发展等交换意见。",
       "translations": {
         "zh": {
-          "title": "李强在杜尚别会见伊朗第一副总统阿雷夫",
-          "highlight": "李强在杜尚别出席上海合作组织成员国政府首脑理事会第二十五次会议期间会见伊朗第一副总统阿雷夫。",
-          "summary": "报道交代，10月19日下午，李强在杜尚别出席上海合作组织成员国政府首脑（总理）理事会第二十五次会议期间会见伊朗第一副总统阿雷夫。这是可核实的公开外交活动信息，发生在上合组织总理会议场合，可用于跟踪中伊高层往来与会议期间的双边互动。由于已知内容有限，具体议题与会谈成果尚不能从现有材料确认。",
-          "failureAnalysis": "可核实的要点是会见的时间、地点与场合；在已知信息范围内，不应推断会谈议题或具体成果。"
+          "title": "刘海星分别会见意大利、阿联酋客人",
+          "highlight": "刘海星在北京分别会见意大利五星运动代表团和阿联酋第一梯队领导人才代表团，就加强双边交流合作等交换意见。",
+          "summary": "报道显示，10月20日中共中央对外联络部部长刘海星在北京分别会见意大利五星运动代表团和阿联酋第一梯队领导人才代表团。双方就加强双边交流合作、推动国家关系发展等交换意见。由于内容来自官方通稿，可核实的重点是会晤对象、时间地点与议题，可作为观察中国政党外交和双边关系动向的公开信号。",
+          "failureAnalysis": "可确认的信息限于会晤安排与议题，具体成果和后续影响尚待更多公开信息。"
         },
         "en": {
-          "highlight": "On the afternoon of October 19, Chinese Premier Li Qiang met with Iranian First Vice President Aref in Dushanbe during the 25th SCO Heads of Government Council meeting.",
-          "summary": "The report states only that on the afternoon of October 19, Li Qiang met Iranian First Vice President Aref in Dushanbe during the 25th SCO Heads of Government Council meeting. This is a verifiable public diplomatic event on the sidelines of a multilateral gathering, useful for tracking China-Iran high-level exchanges and bilateral activity during the meeting. The available excerpt does not specify the topics or outcomes.",
-          "failureAnalysis": "The verifiable takeaway is limited to the time, place, and setting of the meeting; the known information does not support inferring its agenda or concrete results.",
-          "title": "Li Qiang Meets Iranian First Vice President Aref in Dushanbe"
+          "highlight": "On October 20, Liu Haixing met in Beijing with Italian Five Star Movement and UAE first-echelon leadership talent delegations to exchange views on bilateral exchanges, cooperation, and national relations.",
+          "summary": "The report states that on October 20, Liu Haixing, head of the International Department of the CPC Central Committee, met separately in Beijing with a Five Star Movement delegation from Italy and a UAE first-echelon leadership talent delegation. They exchanged views on strengthening bilateral exchanges and cooperation and advancing state-to-state relations. Because the available text is an official readout, the verifiable focus is the meeting participants, time, place, and topics rather than specific outcomes.",
+          "failureAnalysis": "This is a diplomatic meeting readout, so a forced failure analysis would be inappropriate; the confirmed information is limited to the meeting arrangements and topics, while concrete outcomes and follow-up effects require more public information.",
+          "title": "Liu Haixing Meets Guests from Italy and UAE"
         }
       }
     },
     {
-      "id": "news-1daf3ec8613d413788f2d0c0557ac064",
+      "id": "news-1a5c47ff89bf4d77817de3b97290e735",
+      "category": "domestic",
+      "title": "全国医保影像AI识图大赛决赛将在广西南宁举行",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-20/10718201.shtml",
+      "publishedAt": "2026-10-20T15:20:43.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "由国家医保局与广西壮族自治区政府联合主办的全国医保影像AI识图大赛，将于10月22日至23日在南宁展开线下竞技。",
+      "summary": "中新网南宁10月20日电，记者从大赛组委会获悉，全国医保影像AI识图大赛将进入线下决赛阶段，于10月22日至23日在广西南宁展开最终角逐。该赛事由中国国家医疗保障局与广西壮族自治区人民政府联合主办，可作为观察医保影像数据与AI识图技术结合情况的公开窗口。",
+      "failureAnalysis": "本条不是AI应用失败案例，可核实的信息主要是赛程时间、地点与主办方；报道未披露参赛规模、评审标准与技术细节，阅读时应区分已确认事实与待补充信息。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网南宁10月20日电(记者 黄艳梅)记者20日从全国医保影像AI识图大赛组委会获悉，由中国国家医疗保障局与广西壮族自治区人民政府联合主办的全国医保影像AI识图大赛，将于10月22日至23日在广西南宁迎来线下竞技，展开最终角逐。",
+      "translations": {
+        "zh": {
+          "title": "全国医保影像AI识图大赛决赛将于10月22日至23日在广西南宁举行",
+          "highlight": "由国家医保局与广西壮族自治区政府联合主办的全国医保影像AI识图大赛，将于10月22日至23日在南宁展开线下竞技。",
+          "summary": "中新网南宁10月20日电，记者从大赛组委会获悉，全国医保影像AI识图大赛将进入线下决赛阶段，于10月22日至23日在广西南宁展开最终角逐。该赛事由中国国家医疗保障局与广西壮族自治区人民政府联合主办，可作为观察医保影像数据与AI识图技术结合情况的公开窗口。",
+          "failureAnalysis": "本条不是AI应用失败案例，可核实的信息主要是赛程时间、地点与主办方；报道未披露参赛规模、评审标准与技术细节，阅读时应区分已确认事实与待补充信息。"
+        },
+        "en": {
+          "highlight": "Co-hosted by China's National Healthcare Security Administration and the Guangxi regional government, the national medical insurance imaging AI competition holds its offline finals in Nanning on October 22-23.",
+          "summary": "Reported from Nanning on October 20, the competition's organizing committee says the national medical insurance imaging AI recognition contest now moves to offline finals on October 22-23 in Nanning, Guangxi. Jointly hosted by the National Healthcare Security Administration and the Guangxi regional government, it offers a public window into how medical insurance imaging data is being paired with AI image-recognition technology.",
+          "failureAnalysis": "This is not an AI failure case; the verifiable facts are the dates, venue and organizers, while participant numbers, judging criteria and technical details are not disclosed, so confirmed facts should be separated from open questions.",
+          "title": "National Medical Insurance Imaging AI Recognition Competition Finals Set for Nanning, Guangxi"
+        }
+      }
+    },
+    {
+      "id": "news-17cfa9c7177c456a964203d107da3313",
+      "category": "domestic",
+      "title": "新时代高校“城载未来”育人共同体在上海成立",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-20/10718186.shtml",
+      "publishedAt": "2026-10-20T14:38:50.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "由同济大学联合48所高校、43家企业、5个政府部门等首批116家单位共同组建的育人共同体在上海成立。",
+      "summary": "中新网报道，10月20日，新时代高校“城载未来”育人共同体在同济大学成立，首批成员包括48所高校、43家企业、5个政府部门、3个行业组织、5家文博场馆和10所中小学等116家单位。该消息的价值在于呈现高校、企业、政府、行业组织、文博场馆和中小学共同参与育人的组织化尝试。已提供信息主要集中在成立事实与成员构成，具体合作机制和预期成果尚未展开。",
+      "failureAnalysis": "关键看点多主体协同能否落到课程、实践、就业等具体机制上；仅凭成立消息和成员规模，尚不足以判断实际效果。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网上海10月20日电 (记者 许婧)由同济大学联合48所高校、43家企业、5个政府部门、3个行业组织、5家文博场馆、10所中小学等首批116家单位共同组建的新时代高校“城载未来”育人共同体，20日在同济大学成立。",
+      "translations": {
+        "zh": {
+          "title": "新时代高校“城载未来”育人共同体在上海成立",
+          "highlight": "由同济大学联合48所高校、43家企业、5个政府部门等首批116家单位共同组建的育人共同体在上海成立。",
+          "summary": "中新网报道，10月20日，新时代高校“城载未来”育人共同体在同济大学成立，首批成员包括48所高校、43家企业、5个政府部门、3个行业组织、5家文博场馆和10所中小学等116家单位。该消息的价值在于呈现高校、企业、政府、行业组织、文博场馆和中小学共同参与育人的组织化尝试。已提供信息主要集中在成立事实与成员构成，具体合作机制和预期成果尚未展开。",
+          "failureAnalysis": "关键看点多主体协同能否落到课程、实践、就业等具体机制上；仅凭成立消息和成员规模，尚不足以判断实际效果。"
+        },
+        "en": {
+          "highlight": "A new education community jointly formed by Tongji University and an initial 116 units, including 48 universities, 43 enterprises, and 5 government departments, was established in Shanghai.",
+          "summary": "China News Service reports that the New Era University 'City-Carried Future' Education Community was established at Tongji University on October 20. Its initial 116 members include 48 universities, 43 enterprises, 5 government departments, 3 industry organizations, 5 cultural and museum venues, and 10 primary and secondary schools. Its value lies in showing an organized attempt at education involving universities, enterprises, government, industry groups, cultural institutions, and schools. The provided information focuses on the establishment and membership, without detailing cooperation mechanisms or expected outcomes.",
+          "failureAnalysis": "The key question is whether multi-party collaboration can be translated into concrete mechanisms for curricula, practice, and employment; the announcement and membership scale alone are not enough to judge actual impact.",
+          "title": "New Era University 'City-Carried Future' Education Community Established in Shanghai"
+        }
+      }
+    },
+    {
+      "id": "news-a9e65f6a1f6645f286adc5765e6cc2cf",
       "category": "international",
-      "title": "Bereaved families could face 'unjust' tax bill after civil service pension delays",
+      "title": "UK government to make Jackdaw gas field announcement",
       "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/cq1m4zz9e44go?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-10-19T12:16:32.0000000+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cvze4wx3elj1o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-20T17:33:42.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "议会公共账目委员会主席表示，家属不应因并非自身的过错而被征税。",
-      "summary": "BBC Business 报道称，公务员养老金发放延迟可能让遗属收到被指“不公正”的税单。议会公共账目委员会主席强调，家属不应因非自身过错而承担税负。这件事值得关注，因为它涉及公共部门养老金行政延迟如何把成本转嫁给普通家庭。",
-      "failureAnalysis": "关键点在于：行政延迟不应转化为家庭的税务责任；制度设计需要避免让无过错方承担后果。",
+      "highlight": "围绕这一备受争议的北海气田，外界期待已久的决定预计将于周三上午公布。",
+      "summary": "BBC Business报道称，英国政府将就备受争议的北海Jackdaw气田发布公告，相关决定预计在周三上午公布。这条简讯适合关注英国能源政策与北海油气开发动向的读者了解最新进展。",
+      "failureAnalysis": "关键看点在于英国政府在争议性能源项目上的取舍，而不只是公告本身；具体决定内容仍需等待周三上午公布。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "The chairman of Parliament's Public Accounts Committee says families should not be taxed through no fault of their own.",
+      "sourceExcerpt": "The long-awaited decision about the controversial North Sea field is expected on Wednesday morning.",
       "translations": {
         "zh": {
-          "title": "公务员养老金延迟发放，遗属或面临“不公正”税单",
-          "highlight": "议会公共账目委员会主席表示，家属不应因并非自身的过错而被征税。",
-          "summary": "BBC Business 报道称，公务员养老金发放延迟可能让遗属收到被指“不公正”的税单。议会公共账目委员会主席强调，家属不应因非自身过错而承担税负。这件事值得关注，因为它涉及公共部门养老金行政延迟如何把成本转嫁给普通家庭。",
-          "failureAnalysis": "关键点在于：行政延迟不应转化为家庭的税务责任；制度设计需要避免让无过错方承担后果。"
+          "title": "英国政府将就Jackdaw气田作出宣布",
+          "highlight": "围绕这一备受争议的北海气田，外界期待已久的决定预计将于周三上午公布。",
+          "summary": "BBC Business报道称，英国政府将就备受争议的北海Jackdaw气田发布公告，相关决定预计在周三上午公布。这条简讯适合关注英国能源政策与北海油气开发动向的读者了解最新进展。",
+          "failureAnalysis": "关键看点在于英国政府在争议性能源项目上的取舍，而不只是公告本身；具体决定内容仍需等待周三上午公布。"
         },
         "en": {
-          "highlight": "The chairman of Parliament's Public Accounts Committee says families should not be taxed through no fault of their own.",
-          "summary": "BBC Business reports that delays in civil service pension payments could leave bereaved families with a tax bill described as “unjust.” The chairman of Parliament’s Public Accounts Committee says families should not be taxed through no fault of their own. It is worth reading because it shows how administrative delays in public-sector pensions can shift costs onto ordinary households.",
-          "failureAnalysis": "The key takeaway is that administrative delay should not become a family’s tax liability; system design must avoid making blameless people bear the consequences.",
-          "title": "Civil Service Pension Delays Could Leave Bereaved Families Facing an ‘Unjust’ Tax Bill"
+          "highlight": "The long-awaited decision about the controversial North Sea field is expected on Wednesday morning.",
+          "summary": "BBC Business reports that the UK government will make an announcement on the controversial Jackdaw gas field in the North Sea, with a long-awaited decision expected on Wednesday morning. It is worth watching for anyone tracking UK energy policy and North Sea oil and gas development.",
+          "failureAnalysis": "The key point is not the announcement itself but how the government resolves the trade-off over a contested energy project; the specifics are still due Wednesday morning.",
+          "title": "UK Government to Announce Decision on Jackdaw Gas Field"
         }
       }
     },
     {
-      "id": "news-194cd97f282d4964b304c7aeb7124dda",
+      "id": "news-fa7033b8409a40eb859a956f440c885d",
       "category": "international",
-      "title": "Drone attack near market kills 80 in Sudan",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/oct/19/drone-attack-market-al-dibab-west-kordofan-sudan",
-      "publishedAt": "2026-10-19T14:45:53.0000000+00:00",
+      "title": "Trump makes Russia-friendly moves as he looks for a way to end the war with Ukraine",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/20/nx-s1-6007897/trump-makes-russia-friendly-moves-as-he-looks-for-a-way-to-end-the-war-with-ukraine",
+      "publishedAt": "2026-10-20T11:03:52.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "苏丹南部一处市场附近遭无人机袭击，造成80人死亡，死者多为乘车回家的通勤者。",
-      "summary": "文章报道苏丹西科尔多凡州迪巴布镇市场附近周日傍晚遭无人机袭击，造成80人死亡，其中多为通勤者。目击者称袭击发生两次，他协助埋葬了50具遗体，其中包括自己的兄弟。这是这场战争中最致命的单次袭击之一，值得关注冲突中平民面临的风险。",
-      "failureAnalysis": "一次袭击就造成大量平民伤亡，说明市场和交通枢纽等开放场所极易成为无人机战争中的高风险目标。",
+      "highlight": "随着美国中期选举前能源成本高企，特朗普推动结束乌克兰战争，他与俄罗斯起伏不定的关系再度升温。",
+      "summary": "据已知内容，文章聚焦特朗普为结束乌克兰战争而采取对俄友好举措，其背景是美国中期选举前能源成本高企。报道还提到，特朗普与俄罗斯的关系起伏不定，但如今再度升温。对非技术读者而言，这提供了一个观察美国外交转向与国内政治压力如何交织的窗口。",
+      "failureAnalysis": "关键看点：外交姿态与国内能源、选举压力相互牵动，理解这类新闻时要同时看政策动作和其政治时点。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Witness says drone struck twice at transport hub in al-Dibab, in one of deadliest single attacks of war A drone strike near a market in southern Sudan on Sunday evening killed 80 people, mostly commuters catching rides home. Ahmed Wadi, a witness, said the attack in the town of al-Dibab in West Kordofan state left “50 bodies who I helped bury, one of them my own brother Mohamed”.",
+      "sourceExcerpt": "President Trump's up and down relationship with Russia is back on as he presses to find an end to the war in Ukraine amid high energy costs ahead of the U.S.",
       "translations": {
         "zh": {
-          "title": "苏丹市场附近无人机袭击致80人死亡",
-          "highlight": "苏丹南部一处市场附近遭无人机袭击，造成80人死亡，死者多为乘车回家的通勤者。",
-          "summary": "文章报道苏丹西科尔多凡州迪巴布镇市场附近周日傍晚遭无人机袭击，造成80人死亡，其中多为通勤者。目击者称袭击发生两次，他协助埋葬了50具遗体，其中包括自己的兄弟。这是这场战争中最致命的单次袭击之一，值得关注冲突中平民面临的风险。",
-          "failureAnalysis": "一次袭击就造成大量平民伤亡，说明市场和交通枢纽等开放场所极易成为无人机战争中的高风险目标。"
+          "title": "特朗普寻求结束乌克兰战争，采取对俄友好举措",
+          "highlight": "随着美国中期选举前能源成本高企，特朗普推动结束乌克兰战争，他与俄罗斯起伏不定的关系再度升温。",
+          "summary": "据已知内容，文章聚焦特朗普为结束乌克兰战争而采取对俄友好举措，其背景是美国中期选举前能源成本高企。报道还提到，特朗普与俄罗斯的关系起伏不定，但如今再度升温。对非技术读者而言，这提供了一个观察美国外交转向与国内政治压力如何交织的窗口。",
+          "failureAnalysis": "关键看点：外交姿态与国内能源、选举压力相互牵动，理解这类新闻时要同时看政策动作和其政治时点。"
         },
         "en": {
-          "highlight": "A drone strike near a market in southern Sudan killed 80 people, mostly commuters catching rides home.",
-          "summary": "The article reports that a drone strike near a market in al-Dibab, West Kordofan state, killed 80 people on Sunday evening, most of them commuters. A witness said the attack struck twice and that he helped bury 50 bodies, including his own brother. It is one of the deadliest single attacks of the war and highlights the risks to civilians in conflict.",
-          "failureAnalysis": "A single attack causing mass civilian casualties shows how open sites such as markets and transport hubs can become high-risk targets in drone warfare.",
-          "title": "Drone attack near Sudan market kills 80"
+          "highlight": "Trump's up-and-down relationship with Russia is back on as he seeks to end the war in Ukraine amid high energy costs before the U.S. midterms.",
+          "summary": "Based on the known content, the article focuses on Trump's Russia-friendly moves as he seeks to end the war in Ukraine, against the backdrop of high energy costs ahead of the U.S. midterms. It also notes that Trump's up-and-down relationship with Russia is back on. For a non-technical reader, it offers a window into how U.S. foreign policy shifts intersect with domestic political pressure.",
+          "failureAnalysis": "The key takeaway is that diplomatic posture and domestic energy and election pressures are intertwined; read this kind of news by looking at both the policy moves and their political timing.",
+          "title": "Trump seeks to end Ukraine war with Russia-friendly moves"
         }
       }
     },
     {
-      "id": "life-ee529b9ac2474f25b8f3238524aafbb3",
+      "id": "life-a2da1d4bf960413fa32b2f57c2ea4254",
       "category": "international",
-      "title": "How to Prepare Now so the End of Daylight Saving Time Is Less Jarring",
-      "source": "Lifehacker",
-      "url": "https://lifehacker.com/how-to-prepare-now-for-time-change?utm_medium=RSS",
-      "publishedAt": "2026-10-19T18:30:00.0000000+00:00",
-      "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 3",
-      "highlight": "准备好“拨回”了吗？我也没准备好，但这些建议会有帮助。",
-      "summary": "文章关注即将到来的“拨回”时间调整，提醒读者提前准备，以减轻夏令时结束带来的不适。它属于生活技能类内容，适合想用简单方法平稳过渡的人快速参考。",
-      "failureAnalysis": "关键要点是：面对可预期的时间切换，提前准备能降低适应成本，重点是让作息调整更平缓。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "Ready to \"fall back\" soon? Neither am I, but these tips will help.",
-      "translations": {
-        "zh": {
-          "title": "如何提前准备，让夏令时结束不那么难熬",
-          "highlight": "准备好“拨回”了吗？我也没准备好，但这些建议会有帮助。",
-          "summary": "文章关注即将到来的“拨回”时间调整，提醒读者提前准备，以减轻夏令时结束带来的不适。它属于生活技能类内容，适合想用简单方法平稳过渡的人快速参考。",
-          "failureAnalysis": "关键要点是：面对可预期的时间切换，提前准备能降低适应成本，重点是让作息调整更平缓。"
-        },
-        "en": {
-          "highlight": "Ready to “fall back” soon? Neither am I, but these tips will help.",
-          "summary": "The article offers guidance on preparing ahead of the end of daylight saving time so the time change is less jarring. It is a quick life-skills read for anyone who wants a smoother transition.",
-          "failureAnalysis": "The key takeaway is that preparing ahead for a predictable time change can make adaptation easier; the original points to practical tips rather than detailed steps.",
-          "title": "How to Prepare Now So the End of Daylight Saving Time Is Less Jarring"
-        }
-      }
-    },
-    {
-      "id": "life-878cb2d741564ce58c9bc476b9b1b550",
-      "category": "international",
-      "title": "When Relationships Change: Anne Morrow Lindbergh on Embracing the Intermittency and Mutability of Love",
+      "title": "The Constitution of the Inner Country: Leonard Cohen on Language and the Poetry of Presence",
       "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/10/19/anne-morrow-lindbergh-change/",
-      "publishedAt": "2026-10-19T12:41:08.0000000+00:00",
+      "url": "https://www.themarginalian.org/2026/10/20/leonard-cohen-death-of-a-ladys-man-words/",
+      "publishedAt": "2026-10-20T16:02:51.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "一切有生命的关系都处于变化与扩展的过程中，必须不断为自己建构新的形态。",
-      "summary": "这篇来自《The Marginalian》的文章借安妮·默罗·林德伯格的文字，讨论爱与人际关系为何无法固定不变，而会以间歇、流动的方式持续演化。它值得非技术读者一读，因为它提供了一种看待长期关系与团队协作的视角：把变化视为关系存续的条件，而非关系出问题的信号。",
-      "failureAnalysis": "关键结论是：稳定的关系并不靠维持原状，而靠双方不断为它重建新的形态；把变化当成常态，期待就不再容易落空。",
+      "highlight": "诗无非是信息；它正是内心国度的宪法，以语言确认人的在场。",
+      "summary": "从标题与引文看，文章借莱昂纳德·科恩的话讨论语言和诗：诗不只是信息，而是内心国度的宪法。它值得读，因为它把表达提升为内在秩序的建构，而非单纯的信息传递。",
+      "failureAnalysis": "关键提醒：表达的价值不只在传递信息，更在于为内心建立可依循的秩序。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "\"All living relationships are in process of change, of expansion, and must perpetually be building themselves new forms.\"",
+      "sourceExcerpt": "\"The poem is nothing but information. It is the Constitution of the inner country.\"",
       "translations": {
         "zh": {
-          "title": "当关系发生变化：安妮·默罗·林德伯格论接纳爱的间歇性与流动性",
-          "highlight": "一切有生命的关系都处于变化与扩展的过程中，必须不断为自己建构新的形态。",
-          "summary": "这篇来自《The Marginalian》的文章借安妮·默罗·林德伯格的文字，讨论爱与人际关系为何无法固定不变，而会以间歇、流动的方式持续演化。它值得非技术读者一读，因为它提供了一种看待长期关系与团队协作的视角：把变化视为关系存续的条件，而非关系出问题的信号。",
-          "failureAnalysis": "关键结论是：稳定的关系并不靠维持原状，而靠双方不断为它重建新的形态；把变化当成常态，期待就不再容易落空。"
+          "title": "内心国度的宪法：莱昂纳德·科恩论语言与在场之诗",
+          "highlight": "诗无非是信息；它正是内心国度的宪法，以语言确认人的在场。",
+          "summary": "从标题与引文看，文章借莱昂纳德·科恩的话讨论语言和诗：诗不只是信息，而是内心国度的宪法。它值得读，因为它把表达提升为内在秩序的建构，而非单纯的信息传递。",
+          "failureAnalysis": "关键提醒：表达的价值不只在传递信息，更在于为内心建立可依循的秩序。"
         },
         "en": {
-          "highlight": "All living relationships are in process of change, of expansion, and must perpetually be building themselves new forms.",
-          "summary": "Drawing on Anne Morrow Lindbergh's writing, this Marginalian piece explores why love and human bonds cannot stay fixed, instead evolving through intermittency and mutability. It is worth reading because it offers a way to see long-term relationships and collaboration: change is what keeps a relationship alive, not a sign that it is broken.",
-          "failureAnalysis": "The key takeaway: durable relationships are not sustained by preserving the status quo, but by both sides continually rebuilding them in new forms, so treating change as normal keeps expectations from easily collapsing.",
-          "title": "When Relationships Change: Anne Morrow Lindbergh on Embracing the Intermittency and Mutability of Love"
+          "highlight": "The poem is nothing but information. It is the Constitution of the inner country.",
+          "summary": "Drawing on Leonard Cohen’s reflection on language and poetry, the piece presents the poem not merely as information but as a constitution for the inner country. It is worth reading for its reminder that language shapes inner order and presence, not just content.",
+          "failureAnalysis": "The key takeaway is that expression matters beyond information transfer: it can establish an inner order to live by.",
+          "title": "The Constitution of the Inner Country: Leonard Cohen on Language and the Poetry of Presence"
         }
       }
     },
     {
-      "id": "paper-2610.23665",
+      "id": "life-b1c0353ba5c6462ca9239392b2a55cf3",
+      "category": "international",
+      "title": "No-Prep Meal Prep",
+      "source": "The Art of Manliness",
+      "url": "https://www.artofmanliness.com/strength/nutrition/no-prep-meal-prep/",
+      "publishedAt": "2026-10-19T19:19:04.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "周六或周日，我会慢炖或烤一批鸡胸肉，或者烤一大块猪里脊或一些瘦肉……",
+      "summary": "文章从作者日常饮食谈起，说明他如何为一周午餐备餐：在周末集中慢炖或烤鸡胸肉，或烤猪里脊等瘦肉。它提供一种低复杂度的备餐思路，适合想节省工作日时间、又不想依赖繁琐流程的人参考。",
+      "failureAnalysis": "关键不是把备餐做复杂，而是用周末一次批量烹饪换取工作日午餐的确定性；方法越简单越容易坚持。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "A while back I wrote an article about what I eat in a day, and in it I talked about how I meal prep lunches for the week. Here’s the gist: on Saturday or Sunday, I’ll either slow cook or grill a bunch of chicken breasts, or grill a big pork loin or some lean […] This article was originally published on The Art of Manliness.",
+      "translations": {
+        "zh": {
+          "title": "免复杂准备的备餐法：周末批量做午餐",
+          "highlight": "周六或周日，我会慢炖或烤一批鸡胸肉，或者烤一大块猪里脊或一些瘦肉……",
+          "summary": "文章从作者日常饮食谈起，说明他如何为一周午餐备餐：在周末集中慢炖或烤鸡胸肉，或烤猪里脊等瘦肉。它提供一种低复杂度的备餐思路，适合想节省工作日时间、又不想依赖繁琐流程的人参考。",
+          "failureAnalysis": "关键不是把备餐做复杂，而是用周末一次批量烹饪换取工作日午餐的确定性；方法越简单越容易坚持。"
+        },
+        "en": {
+          "highlight": "On Saturday or Sunday, I’ll either slow cook or grill a bunch of chicken breasts, or grill a big pork loin or some lean...",
+          "summary": "The author explains how he prepares lunches for the week by cooking in batches on the weekend, such as slow-cooking or grilling chicken breasts or grilling pork loin and lean meat. It offers a low-complexity meal-prep approach for people who want to save weekday time without relying on an elaborate routine.",
+          "failureAnalysis": "The point is not to make meal prep complicated, but to trade one weekend batch-cooking session for more certainty about weekday lunches; simpler methods are easier to sustain.",
+          "title": "No-Prep Meal Prep: Batch-Cook Lunches on the Weekend"
+        }
+      }
+    },
+    {
+      "id": "paper-2610.26347",
       "category": "paper",
-      "title": "TriRouter: Sparse-to-Dense Electrode-Space Routing for Robust EEG Motor Imagery Decoding",
+      "title": "Logit Averaging During Training Sets a New State of the Art for Non-Invasive Speech BCI",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2610.23665v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2610.23665",
-      "publishedAt": "2026-10-16T15:59:00.0000000Z",
+      "url": "https://arxiv.org/pdf/2610.26347v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.26347",
+      "publishedAt": "2026-10-19T13:13:25.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
       "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
@@ -227,103 +227,91 @@
       "qualityScore": 28,
       "readabilityStatus": "open",
       "paperCard": {
-        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
-        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
-        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
-        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
-        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
-        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "problem": "非侵入式脑机接口（如用头戴式 MEG 采集脑信号）信噪比很低，单次测量的脑信号几乎解不出语音内容。业界的补救办法是把同一声刺激下重复测到的多次信号合并起来再判断，但不同论文各行其是：有人在模型输入端把脑信号先平均，有人在模型输出端把预测概率平均，没人把“在哪里合并”当成一个正经的设计问题来研究。",
+        "method": "作者把“合并”当成一个可比较的架构选择，统一在同一个卷积神经网络主干上实现了六种合并方案，覆盖三个数据集、四个任务、两种分组大小（每次合并多少条 trial）。六种方案分别是：输入端平均、事后概率平均（这两种来自已有工作），训练时 logit 平均，以及三种作者新提出的、在中间特征层做注意力的合并方式（学习加权平均、跨 trial 自注意力、可学习查询注意力）。全部用交叉熵损失训练，并按类别频率的平方根倒数加权以应对类别不平衡，用平衡准确率评估。",
+        "difference": "老方法要么在输入端平均原始信号（信息在进入模型前就被抹平），要么训练时把每条 trial 当独立样本、只在测试时才平均预测概率（训练目标与测试用法不一致）。新方法把平均操作搬进训练过程本身：先让每条 trial 各自过网络得到 logit，再把同一组的 logit 平均后才算损失。这样梯度会穿过平均操作回到每条 trial 的前向计算，网络被优化成“平均之后有用”，而不是“单条有用”。",
+        "innovation": "第一，首次把多次 trial 的合并策略作为独立设计变量做系统对比，得出“训练时 logit 平均”这个简单默认解，并在 7 种设置中 6 种最好。第二，在 2025 PNPL 竞赛音素分类任务上刷新最优，比冠军高 17.4 个百分点（平衡准确率）。第三，把 logit 平均和深度学习里“联合集成训练”的理论分析联系起来，指出其结果对那些解释“联合训练为何不如独立集成”的理论提出了质疑。",
+        "implementation": "实现路径很轻：共享同一个 CNN 主干；一组 g 条 trial 各自前向得到 logit（模型在 softmax 之前的原始打分向量），对 g 个 logit 取算术平均，再送入交叉熵损失；测试时同样先算各 trial 的 logit 再平均、取最大。相比“事后概率平均”，区别只是合并发生在训练阶段且合并的是 logit 而非 softmax 后的概率；相比“输入平均”，区别是不再提前损失单条信号的信息。三种注意力方案则在主干第一层卷积输出处做跨 trial 加权，用注意力权重（让某条 trial 的权重取决于其他 trial）实现，并通过设计保证结果与 trial 的排列顺序无关。",
+        "applications": "适用于一切“同一刺激重复测量、需要合并多次结果”的低信噪比解码场景：MEG/EEG 语音与语言解码、想象语音（如 MegNIST 数字想象任务）、脑机接口打字与沟通辅助设备；方法本身也可迁移到其他需要把一组重复观测合并成一个判断的深度学习任务，例如多帧图像分类、多次采样传感器诊断等。",
         "technicalTerms": [
-          "EEG：把大脑电信号当作输入数据。"
-        ],
-        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          ""
+        ]
       },
-      "highlight": "针对稀疏或受损电极蒙太奇，TriRouter 以电极空间路由框架提升运动想象脑电解码的鲁棒性。",
-      "summary": "论文关注运动想象脑机接口在多通道脑电采集中的实际难题：电极蒙太奇常出现稀疏或损坏。作者提出 TriRouter，一种电极空间路由框架，并涉及判别信息保持。其意义在于为不完整电极条件下的鲁棒解码提供新思路。",
-      "failureAnalysis": "当前可见文本仅给出摘要开头与框架名称，缺少实验设置、数据集和量化结果，无法据此判断其相对现有方法的实际增益。对稀疏或损坏电极条件的鲁棒性仍需完整论文中的对照实验支持。",
+      "highlight": "训练时的 logit 平均是作者提出的最简单方法，却在 7 种设置中有 6 种胜过其他所有方法。",
+      "summary": "这篇论文研究非侵入式脑机接口（用脑磁图 MEG 记录脑活动来解码语音）中一个被忽视的设计选择：同一声刺激下多次测量（多次 trial）的结果该如何合并。作者系统比较了六种合并方案，发现最简单的一种——在训练阶段就对多次 trial 的 logit（模型输出的原始分数）取平均——效果最好，并在 2025 PNPL 竞赛的音素分类任务上比冠军高出 17.4 个百分点（平衡准确率）。它值得读，是因为它说明：不必堆复杂结构，只要把一个“合并发生在哪一步”的问题想清楚，就能显著提升效果。",
+      "failureAnalysis": "需注意：这里的最优成绩是在 MEG 单被试数据、且测试样本由同一声刺激的 100 次 trial 平均而成的前提下取得的，并不代表单次 trial 就能实用；文中也提到非侵入式语音解码最好的词错误率仍高达 88%，离实际使用很远。此外，我们只看到摘要、方法与部分结果表，完整实验细节与统计结论未全部呈现。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "TRIROUTER: SPARSE-TO-DENSE ELECTRODE-SPACE ROUTING FOR ROBUST EEG MOTOR IMAGERY DECODING Ying Zhou1, Yaoxin Li2, Mengting Liu1∗ 1School of Biomedical Engineering, Shenzhen Campus of Sun Yat-sen University 2University of Waterloo ABSTRACT Motor imagery brain-computer interfaces require reliable decoding from multichannel EEG, but practical acquisi- tion often yields sparse or corrupted electrode montages. We propose TriRouter, an electrode-space routing frame- work with discriminative-preservation, mask-robustness, and latent-compensation paths. A validation-calibrated router uses observable channel availability to allocate path contri- butions, preserving complete-channel discrimination while increasing representation recovery under severe missingness.",
+      "sourceExcerpt": "Logit Averaging During Training Sets a New State of the Art for Non-Invasive Speech BCI Miran Özdogan University of Oxford miran@robots.ox.ac.uk Gereon Elvers University of Oxford gereon.elvers@tum.de Michael Bronstein University of Oxford michael.bronstein@cs.ox.ac.uk Oiwi Parker Jones University of Oxford oiwi@robots.ox.ac.uk Abstract Non-invasive brain-computer interfaces are in practice limited by signal-to-noise ratio, and recent state-of-the-art methods address this limitation by aggregating over repeated trials of the same stimulus. Yet multi-trial aggregation has been treated inconsistently across the literature: some work averages brain signals at the model’s input, other work averages predictions at the model’s output, and neither treats aggregation as an architectural choice in its own right. We provide the first systematic comparison of aggregation strategies for non-invasive neural decoding, evaluating six paradigms (including logit averaging during training and three attention-based variants we introduce) across three datasets, four tasks, and two group sizes.",
       "translations": {
         "zh": {
-          "title": "TriRouter：稀疏到密集电极空间路由的鲁棒脑电运动想象解码",
-          "highlight": "针对稀疏或受损电极蒙太奇，TriRouter 以电极空间路由框架提升运动想象脑电解码的鲁棒性。",
-          "summary": "论文关注运动想象脑机接口在多通道脑电采集中的实际难题：电极蒙太奇常出现稀疏或损坏。作者提出 TriRouter，一种电极空间路由框架，并涉及判别信息保持。其意义在于为不完整电极条件下的鲁棒解码提供新思路。",
-          "failureAnalysis": "当前可见文本仅给出摘要开头与框架名称，缺少实验设置、数据集和量化结果，无法据此判断其相对现有方法的实际增益。对稀疏或损坏电极条件的鲁棒性仍需完整论文中的对照实验支持。",
+          "title": "训练时做 logit 平均：非侵入式语音脑机接口创下新最优成绩",
+          "highlight": "训练时的 logit 平均是作者提出的最简单方法，却在 7 种设置中有 6 种胜过其他所有方法。",
+          "summary": "这篇论文研究非侵入式脑机接口（用脑磁图 MEG 记录脑活动来解码语音）中一个被忽视的设计选择：同一声刺激下多次测量（多次 trial）的结果该如何合并。作者系统比较了六种合并方案，发现最简单的一种——在训练阶段就对多次 trial 的 logit（模型输出的原始分数）取平均——效果最好，并在 2025 PNPL 竞赛的音素分类任务上比冠军高出 17.4 个百分点（平衡准确率）。它值得读，是因为它说明：不必堆复杂结构，只要把一个“合并发生在哪一步”的问题想清楚，就能显著提升效果。",
+          "failureAnalysis": "需注意：这里的最优成绩是在 MEG 单被试数据、且测试样本由同一声刺激的 100 次 trial 平均而成的前提下取得的，并不代表单次 trial 就能实用；文中也提到非侵入式语音解码最好的词错误率仍高达 88%，离实际使用很远。此外，我们只看到摘要、方法与部分结果表，完整实验细节与统计结论未全部呈现。",
           "paperCard": {
-            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
-            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
-            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
-            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
-            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
-            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "problem": "非侵入式脑机接口（如用头戴式 MEG 采集脑信号）信噪比很低，单次测量的脑信号几乎解不出语音内容。业界的补救办法是把同一声刺激下重复测到的多次信号合并起来再判断，但不同论文各行其是：有人在模型输入端把脑信号先平均，有人在模型输出端把预测概率平均，没人把“在哪里合并”当成一个正经的设计问题来研究。",
+            "method": "作者把“合并”当成一个可比较的架构选择，统一在同一个卷积神经网络主干上实现了六种合并方案，覆盖三个数据集、四个任务、两种分组大小（每次合并多少条 trial）。六种方案分别是：输入端平均、事后概率平均（这两种来自已有工作），训练时 logit 平均，以及三种作者新提出的、在中间特征层做注意力的合并方式（学习加权平均、跨 trial 自注意力、可学习查询注意力）。全部用交叉熵损失训练，并按类别频率的平方根倒数加权以应对类别不平衡，用平衡准确率评估。",
+            "difference": "老方法要么在输入端平均原始信号（信息在进入模型前就被抹平），要么训练时把每条 trial 当独立样本、只在测试时才平均预测概率（训练目标与测试用法不一致）。新方法把平均操作搬进训练过程本身：先让每条 trial 各自过网络得到 logit，再把同一组的 logit 平均后才算损失。这样梯度会穿过平均操作回到每条 trial 的前向计算，网络被优化成“平均之后有用”，而不是“单条有用”。",
+            "innovation": "第一，首次把多次 trial 的合并策略作为独立设计变量做系统对比，得出“训练时 logit 平均”这个简单默认解，并在 7 种设置中 6 种最好。第二，在 2025 PNPL 竞赛音素分类任务上刷新最优，比冠军高 17.4 个百分点（平衡准确率）。第三，把 logit 平均和深度学习里“联合集成训练”的理论分析联系起来，指出其结果对那些解释“联合训练为何不如独立集成”的理论提出了质疑。",
+            "implementation": "实现路径很轻：共享同一个 CNN 主干；一组 g 条 trial 各自前向得到 logit（模型在 softmax 之前的原始打分向量），对 g 个 logit 取算术平均，再送入交叉熵损失；测试时同样先算各 trial 的 logit 再平均、取最大。相比“事后概率平均”，区别只是合并发生在训练阶段且合并的是 logit 而非 softmax 后的概率；相比“输入平均”，区别是不再提前损失单条信号的信息。三种注意力方案则在主干第一层卷积输出处做跨 trial 加权，用注意力权重（让某条 trial 的权重取决于其他 trial）实现，并通过设计保证结果与 trial 的排列顺序无关。",
+            "applications": "适用于一切“同一刺激重复测量、需要合并多次结果”的低信噪比解码场景：MEG/EEG 语音与语言解码、想象语音（如 MegNIST 数字想象任务）、脑机接口打字与沟通辅助设备；方法本身也可迁移到其他需要把一组重复观测合并成一个判断的深度学习任务，例如多帧图像分类、多次采样传感器诊断等。",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
-            ],
-            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+              ""
+            ]
           }
         },
         "en": {
-          "title": "TriRouter: Sparse-to-Dense Electrode-Space Routing for Robust EEG Motor Imagery Decoding",
-          "highlight": "TriRouter introduces sparse-to-dense electrode-space routing to support robust motor-imagery EEG decoding when electrode montages are sparse or corrupted.",
-          "summary": "The paper addresses a practical problem in motor-imagery brain-computer interfaces: multichannel EEG acquisition often produces sparse or corrupted electrode montages. It proposes TriRouter, an electrode-space routing framework that appears to emphasize preservation of discriminative information. Its importance lies in offering a potential route to robust decoding under incomplete electrode conditions.",
-          "failureAnalysis": "The supplied text only includes the abstract opening and the framework name, without datasets, experimental settings, or quantitative results. The claimed robustness under sparse or corrupted montages therefore cannot be assessed from the available evidence.",
+          "highlight": "Training-time logit averaging, the simplest method we propose, outperforms all others in 6 of 7 settings.",
+          "summary": "This paper studies a neglected design choice in non-invasive speech brain-computer interfaces based on MEG: how to aggregate repeated trials evoked by the same stimulus. Comparing six aggregation paradigms across three datasets and four tasks, the authors find that the simplest one — averaging logits during training — wins in 6 of 7 settings and beats the 2025 PNPL competition winner by 17.4 absolute percentage points in balanced accuracy on phoneme classification. It is worth reading because it shows that a clear answer to 'where should aggregation happen' can matter more than architectural complexity.",
+          "failureAnalysis": "The state-of-the-art result holds for a single-subject MEG dataset where test samples are formed by averaging 100 trials of the same phoneme, so it does not demonstrate practical single-trial use; the paper also notes the best non-invasive word error rate remains around 88%. In addition, only the abstract, methods, and part of the results table are available here, so the full experimental and statistical picture is not visible.",
+          "title": "Logit Averaging During Training Sets a New State of the Art for Non-Invasive Speech BCI",
           "paperCard": {
-            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
-            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
-            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
-            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
-            "implementation": "Implementation: check the input data, core model or device, and validation results.",
-            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "problem": "Non-invasive BCIs such as MEG have very low signal-to-noise ratio, so single-trial decoding of speech is far too weak. Prior work compensates by aggregating repeated trials of the same stimulus, but papers do it inconsistently — some average brain signals at the model input, others average predicted probabilities at the output — and none treats aggregation as a design decision in its own right.",
+            "method": "The authors treat aggregation as an architectural choice and compare six paradigms on a shared CNN backbone across three datasets, four tasks, and two group sizes. The six are input averaging and post-hoc probability averaging (from prior work), training-time logit averaging, and three new attention-based aggregation variants at intermediate features (learned weighted averaging, cross-trial self-attention, learned query attention). All are trained with class-frequency-weighted cross-entropy and evaluated with balanced accuracy.",
+            "difference": "Older methods either average raw signals before the model sees them, or train on individual trials and only average predictions at test time, so training and inference disagree. The new approach moves averaging into training: each trial is passed through the backbone to produce logits, logits are averaged across the group, and only then is the loss computed, so gradients flow back through every trial's forward pass.",
+            "innovation": "First, the first systematic comparison of aggregation strategies for non-invasive neural decoding, identifying training-time logit averaging as a simple, effective default that wins 6 of 7 settings. Second, a new state of the art on the 2025 PNPL phoneme classification setting, beating the competition winner by 17.4 absolute percentage points in balanced accuracy. Third, a theoretical link to joint ensemble training that calls into question recent explanations of why joint training underperforms independent ensembling.",
+            "implementation": "A group of g trials passes through a shared CNN backbone; each trial yields a logit vector, the g logits are averaged, and the average is fed to a cross-entropy loss; at evaluation the same averaging is applied and the argmax is taken. Relative to post-hoc probability averaging, only the aggregation point and stage change (logits during training instead of probabilities at test time). The three attention variants aggregate at the first convolutional layer using attention weights that depend on the other trials, and are permutation-invariant by construction.",
+            "applications": "Any low-SNR decoding setting where the same stimulus is measured repeatedly and multiple observations must be fused: MEG/EEG speech and language decoding, imagined speech, BCI typing and communication aids, and more broadly any deep learning task that must combine a set of repeated observations — such as multi-frame image classification or repeated sensor readings in diagnostics.",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
-            ],
-            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+              ""
+            ]
           }
         }
       }
     },
     {
-      "id": "ai-github-1414685342",
+      "id": "ai-feed-c5a39d52800f4458beb9af92e96b72af",
       "category": "ai",
-      "title": "onehumanbeing/esp32-iphone-agent",
-      "source": "GitHub Search",
-      "url": "https://github.com/onehumanbeing/esp32-iphone-agent",
+      "title": "Latest open artifacts (#25): DeepSeek V4.1 Flash 1017, American-made models, and new regulatory controls in the US & China",
+      "source": "Interconnects",
+      "url": "https://www.interconnects.ai/p/latest-open-artifacts-25-deepseek",
       "abstractUrl": null,
-      "publishedAt": "2026-10-11T19:10:25.0000000Z",
-      "scoreLabel": "GitHub 3276 stars",
-      "aiArticleType": "application_innovation",
-      "evidenceAnchors": [
-        {
-          "label": "GitHub",
-          "kind": "primary"
-        },
-        {
-          "label": "Community signal",
-          "kind": "secondary"
-        }
-      ],
-      "evidenceLabel": "GitHub + Community signal",
-      "hasPrimaryAnchor": true,
-      "requiresRiskAnalysis": true,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-      "summary": "该GitHub仓库已有3276颗星和近期公开活动，目标是让AI模型通过一块7美元ESP32使用真实iPhone：以AirPlay作为视觉输入、USB HID作为触控/输入手段，并可接入任意OpenAI兼容的视觉模型。它不需要Mac、开发者账号或越狱，值得关注是因为它把AI代理落到真实移动设备上的成本压得很低，也暴露了硬件桥接、系统兼容和实际部署的工程边界。",
-      "failureAnalysis": "最大风险在工程可靠性：AirPlay取屏和USB HID注入依赖iOS与设备状态，跨版本、跨机型容易出兼容问题，实时视觉模型的延迟和误判也会影响操控成功率。无需Mac、开发者账号或越狱降低了门槛，但也可能限制后台运行、权限和可自动化的应用范围。对普通用户而言，硬件连接、配置和维护仍有支持成本；真实iPhone上的隐私、账号安全、平台条款和设备保修也是落地约束。3276星说明关注度高，但不等同于稳定需求或可规模化部署验证。",
-      "aiSelectionScore": 3276,
-      "highlight": "用7美元ESP32让AI模型操控真实iPhone：AirPlay作眼、USB HID作手，接任意OpenAI兼容视觉模型，无需Mac、开发者账号或越狱。",
+      "publishedAt": "2026-10-20T17:04:21.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [],
+      "evidenceLabel": "No clear evidence",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
+      "summary": "该条目汇总最新开放成果，包括 DeepSeek V4.1 Flash 1017、美国制造模型，以及美国和中国的新监管控制。其关键信号是“西方开放模型正在反击”，适合非技术管理者理解开放模型竞争与监管环境的最新变化。",
+      "failureAnalysis": "要点是：开放模型竞争不只比模型能力，也受地缘与监管控制影响；跟踪这类策展信号有助于判断技术路线和合规风险。",
+      "aiSelectionScore": 100,
+      "highlight": "西方开放模型正在反击，DeepSeek V4.1 Flash 1017、美国制造模型与美中监管新动向成为最新开放成果焦点。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "GitHub repository with 3276 stars and recent public activity. Description: Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model. No Mac, no developer account, no jailbreak.",
+      "sourceExcerpt": "Western open models strike back",
       "translations": {
         "zh": {
-          "title": "用7美元ESP32让AI操控真实iPhone的开源代理",
-          "highlight": "用7美元ESP32让AI模型操控真实iPhone：AirPlay作眼、USB HID作手，接任意OpenAI兼容视觉模型，无需Mac、开发者账号或越狱。",
-          "summary": "该GitHub仓库已有3276颗星和近期公开活动，目标是让AI模型通过一块7美元ESP32使用真实iPhone：以AirPlay作为视觉输入、USB HID作为触控/输入手段，并可接入任意OpenAI兼容的视觉模型。它不需要Mac、开发者账号或越狱，值得关注是因为它把AI代理落到真实移动设备上的成本压得很低，也暴露了硬件桥接、系统兼容和实际部署的工程边界。",
-          "failureAnalysis": "最大风险在工程可靠性：AirPlay取屏和USB HID注入依赖iOS与设备状态，跨版本、跨机型容易出兼容问题，实时视觉模型的延迟和误判也会影响操控成功率。无需Mac、开发者账号或越狱降低了门槛，但也可能限制后台运行、权限和可自动化的应用范围。对普通用户而言，硬件连接、配置和维护仍有支持成本；真实iPhone上的隐私、账号安全、平台条款和设备保修也是落地约束。3276星说明关注度高，但不等同于稳定需求或可规模化部署验证。"
+          "title": "最新开放成果#25：DeepSeek V4.1 Flash 1017、美国制造模型与美中监管新动向",
+          "highlight": "西方开放模型正在反击，DeepSeek V4.1 Flash 1017、美国制造模型与美中监管新动向成为最新开放成果焦点。",
+          "summary": "该条目汇总最新开放成果，包括 DeepSeek V4.1 Flash 1017、美国制造模型，以及美国和中国的新监管控制。其关键信号是“西方开放模型正在反击”，适合非技术管理者理解开放模型竞争与监管环境的最新变化。",
+          "failureAnalysis": "要点是：开放模型竞争不只比模型能力，也受地缘与监管控制影响；跟踪这类策展信号有助于判断技术路线和合规风险。"
         },
         "en": {
-          "highlight": "Let an AI model use a real iPhone with a $7 ESP32: AirPlay eyes, USB HID hands, any OpenAI-compatible vision model—no Mac, no developer account, no jailbreak.",
-          "summary": "This GitHub repository, with 3,276 stars and recent public activity, aims to let an AI model operate a real iPhone through a $7 ESP32 using AirPlay for visual input and USB HID for input, with any OpenAI-compatible vision model. It avoids a Mac, developer account, and jailbreak, making it worth reading as a low-cost hardware bridge between AI agents and mobile devices and as a case study in deployment constraints.",
-          "failureAnalysis": "The main risks are engineering reliability and support cost: AirPlay capture and USB HID injection depend on iOS and device states, vision-model latency and errors can reduce control success, and privacy, account security, platform terms, and warranty constrain real-world use. High star count signals attention, not validated demand or scalable deployment.",
-          "title": "Open-source agent lets AI control a real iPhone with a $7 ESP32"
+          "highlight": "Western open models strike back, with DeepSeek V4.1 Flash 1017, American-made models, and new US and China regulatory controls in focus.",
+          "summary": "This roundup covers the latest open artifacts, including DeepSeek V4.1 Flash 1017, American-made models, and new regulatory controls in the US and China. Its key signal is that Western open models are striking back, making it useful for understanding shifts in open-model competition and the regulatory environment.",
+          "failureAnalysis": "The key takeaway is that open-model competition is shaped not only by model capability but also by geopolitics and regulatory controls. Tracking curated signals like this helps assess technology direction and compliance risk.",
+          "title": "Latest Open Artifacts #25: DeepSeek V4.1 Flash 1017, American-Made Models, and New US-China Regulatory Controls"
         }
       }
     }
