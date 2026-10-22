@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-10-20",
+  "issueDate": "2026-10-22",
   "updateStatus": "complete",
-  "contentFingerprint": "b5b543df7f4a4eee2143a7e1f157943c6841ce5d6dda6f1320efae604b7e9236",
+  "contentFingerprint": "d5583f9568361d1cb2f4f51897663c08ec70635806e333107b344a6f9d90c9cb",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,308 +10,320 @@
   ],
   "articles": [
     {
-      "id": "news-788ecd63b13648c28617eda0785db3f2",
+      "id": "news-71fff51619854eca8022505555442244",
       "category": "domestic",
-      "title": "刘海星分别会见意大利、阿联酋客人",
+      "title": "国家大宗商品储运产业计量测试中心在浙江舟山揭牌",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-22/10719377.shtml",
+      "publishedAt": "2026-10-22T13:38:38.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "该中心将提供“全溯源链、全产业链、全寿命周期”和具有前瞻性的计量测试技术服务。",
+      "summary": "第九届油商大会全体会议在舟山举行期间，国家大宗商品储运产业计量测试中心正式揭牌。该中心经国家市场监督管理总局复函浙江省人民政府同意设立，将提供覆盖全溯源链、全产业链、全寿命周期及具有前瞻性的计量测试技术服务。它的设立为观察大宗商品储运产业的计量测试公共服务能力提供了一个明确节点。",
+      "failureAnalysis": "关键要看该中心后续能否把“全溯源链、全产业链、全寿命周期”的服务承诺转化为可核验的计量测试能力，并与产业实际需求有效对接。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网舟山10月22日电 (张斌)第九届油商大会全体会议22日在舟山举行。会议期间，国家大宗商品储运产业计量测试中心正式揭牌。该中心由国家市场监督管理总局复函浙江省人民政府同意设立，将提供“全溯源链、全产业链、全寿命周期”和具有前瞻性的计量测试技术服务。",
+      "translations": {
+        "zh": {
+          "title": "国家大宗商品储运产业计量测试中心在浙江舟山揭牌",
+          "highlight": "该中心将提供“全溯源链、全产业链、全寿命周期”和具有前瞻性的计量测试技术服务。",
+          "summary": "第九届油商大会全体会议在舟山举行期间，国家大宗商品储运产业计量测试中心正式揭牌。该中心经国家市场监督管理总局复函浙江省人民政府同意设立，将提供覆盖全溯源链、全产业链、全寿命周期及具有前瞻性的计量测试技术服务。它的设立为观察大宗商品储运产业的计量测试公共服务能力提供了一个明确节点。",
+          "failureAnalysis": "关键要看该中心后续能否把“全溯源链、全产业链、全寿命周期”的服务承诺转化为可核验的计量测试能力，并与产业实际需求有效对接。"
+        },
+        "en": {
+          "highlight": "The center will provide metrology and testing services covering the full traceability chain, the entire industrial chain, and the full life cycle, along with forward-looking technical support.",
+          "summary": "The National Bulk Commodity Storage and Transportation Industry Metrology and Testing Center was officially unveiled during the 9th Oil Merchants Conference in Zhoushan. It was approved by the State Administration for Market Regulation in a reply to the Zhejiang Provincial People's Government and will offer metrology and testing services across the full traceability chain, industrial chain, and life cycle. The announcement marks a concrete public platform for metrology and testing services in the bulk commodity storage and transportation sector.",
+          "failureAnalysis": "The practical test is whether the center can turn its full-chain, full-life-cycle service commitments into verifiable metrology and testing capacity that matches actual industry needs.",
+          "title": "National Bulk Commodity Storage and Transportation Industry Metrology and Testing Center Unveiled in Zhoushan, Zhejiang"
+        }
+      }
+    },
+    {
+      "id": "news-2222494b01a24bf197ad98f90c63216b",
+      "category": "domestic",
+      "title": "两部门启动国家地震灾害四级应急响应",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-22/10719441.shtml",
+      "publishedAt": "2026-10-22T15:58:24.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 4",
+      "highlight": "西藏那曲巴青县发生7.0级地震，两部门启动国家地震灾害四级应急响应。",
+      "summary": "该条目称，西藏那曲巴青县发生7.0级地震，两部门已启动国家地震灾害四级应急响应。可核实的信息集中在震级、地点和应急响应级别，适合作为跟踪官方震情与应急响应进展的信息入口。伤亡和损失等具体影响尚需以后续权威通报为准。",
+      "failureAnalysis": "可核实的要点是地震地点、震级和四级应急响应启动；伤亡与损失等影响应以官方后续通报为准。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "西藏那曲巴青县发生7.0级地震",
+      "translations": {
+        "zh": {
+          "title": "两部门启动国家地震灾害四级应急响应",
+          "highlight": "西藏那曲巴青县发生7.0级地震，两部门启动国家地震灾害四级应急响应。",
+          "summary": "该条目称，西藏那曲巴青县发生7.0级地震，两部门已启动国家地震灾害四级应急响应。可核实的信息集中在震级、地点和应急响应级别，适合作为跟踪官方震情与应急响应进展的信息入口。伤亡和损失等具体影响尚需以后续权威通报为准。",
+          "failureAnalysis": "可核实的要点是地震地点、震级和四级应急响应启动；伤亡与损失等影响应以官方后续通报为准。"
+        },
+        "en": {
+          "highlight": "A magnitude 7.0 earthquake struck Baqing County in Nagqu, Tibet, and two departments activated the national Level IV earthquake disaster emergency response.",
+          "summary": "The item reports that a magnitude 7.0 earthquake occurred in Baqing County, Nagqu, Tibet, and that two departments launched a Level IV national earthquake disaster emergency response. It is worth reading for authoritative updates on the quake and the official response. Details on casualties and damage are not included in the known content and should be checked against later official notices.",
+          "failureAnalysis": "The verifiable points are the location, magnitude, and activation of the Level IV response; casualty and damage figures should be treated as pending until official updates.",
+          "title": "Two Departments Activate Level IV National Earthquake Disaster Emergency Response"
+        }
+      }
+    },
+    {
+      "id": "news-150bdba24cd04cdc81397fafabd86cdb",
+      "category": "domestic",
+      "title": "西藏那曲市巴青县发生7.0级地震，震源深度10千米",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-20/10718211.shtml",
-      "publishedAt": "2026-10-20T15:37:38.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-22/10719432.shtml",
+      "publishedAt": "2026-10-22T14:49:32.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "刘海星在北京分别会见意大利五星运动代表团和阿联酋第一梯队领导人才代表团，就加强双边交流合作等交换意见。",
-      "summary": "报道显示，10月20日中共中央对外联络部部长刘海星在北京分别会见意大利五星运动代表团和阿联酋第一梯队领导人才代表团。双方就加强双边交流合作、推动国家关系发展等交换意见。由于内容来自官方通稿，可核实的重点是会晤对象、时间地点与议题，可作为观察中国政党外交和双边关系动向的公开信号。",
-      "failureAnalysis": "可确认的信息限于会晤安排与议题，具体成果和后续影响尚待更多公开信息。",
+      "selectionReason": "Domestic priority: 4",
+      "highlight": "中国地震台网正式测定：10月22日22时33分在西藏那曲市巴青县发生7.0级地震，震源深度10千米。",
+      "summary": "该条目记录中国地震台网正式测定的地震参数：10月22日22时33分，西藏那曲市巴青县发生7.0级地震，震源深度10千米。它提供了可核验的时间、地点、震级和震源深度信息，适合作为关注后续权威震情与公共影响的基线。",
+      "failureAnalysis": "关键约束是当前已知内容仅为正式测定参数，公共影响需等待权威部门后续通报；不宜据单条测定信息推断伤亡或损失。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "新华社北京10月20日电 10月20日，中共中央对外联络部部长刘海星在北京分别会见党的副主席、参议院外委会副主席利凯里率领的意大利五星运动代表团和阿布扎比执行办公室代理主任卡比率领的阿联酋第一梯队领导人才代表团，就加强双边交流合作、推动国家关系发展等交换意见。",
+      "sourceExcerpt": "中国地震台网正式测定：10月22日22时33分在西藏那曲市巴青县(北纬32.40度，东经93.79度)发生7.0级地震，震源深度10千米。",
       "translations": {
         "zh": {
-          "title": "刘海星分别会见意大利、阿联酋客人",
-          "highlight": "刘海星在北京分别会见意大利五星运动代表团和阿联酋第一梯队领导人才代表团，就加强双边交流合作等交换意见。",
-          "summary": "报道显示，10月20日中共中央对外联络部部长刘海星在北京分别会见意大利五星运动代表团和阿联酋第一梯队领导人才代表团。双方就加强双边交流合作、推动国家关系发展等交换意见。由于内容来自官方通稿，可核实的重点是会晤对象、时间地点与议题，可作为观察中国政党外交和双边关系动向的公开信号。",
-          "failureAnalysis": "可确认的信息限于会晤安排与议题，具体成果和后续影响尚待更多公开信息。"
+          "title": "西藏那曲市巴青县发生7.0级地震 震源深度10千米",
+          "highlight": "中国地震台网正式测定：10月22日22时33分在西藏那曲市巴青县发生7.0级地震，震源深度10千米。",
+          "summary": "该条目记录中国地震台网正式测定的地震参数：10月22日22时33分，西藏那曲市巴青县发生7.0级地震，震源深度10千米。它提供了可核验的时间、地点、震级和震源深度信息，适合作为关注后续权威震情与公共影响的基线。",
+          "failureAnalysis": "关键约束是当前已知内容仅为正式测定参数，公共影响需等待权威部门后续通报；不宜据单条测定信息推断伤亡或损失。"
         },
         "en": {
-          "highlight": "On October 20, Liu Haixing met in Beijing with Italian Five Star Movement and UAE first-echelon leadership talent delegations to exchange views on bilateral exchanges, cooperation, and national relations.",
-          "summary": "The report states that on October 20, Liu Haixing, head of the International Department of the CPC Central Committee, met separately in Beijing with a Five Star Movement delegation from Italy and a UAE first-echelon leadership talent delegation. They exchanged views on strengthening bilateral exchanges and cooperation and advancing state-to-state relations. Because the available text is an official readout, the verifiable focus is the meeting participants, time, place, and topics rather than specific outcomes.",
-          "failureAnalysis": "This is a diplomatic meeting readout, so a forced failure analysis would be inappropriate; the confirmed information is limited to the meeting arrangements and topics, while concrete outcomes and follow-up effects require more public information.",
-          "title": "Liu Haixing Meets Guests from Italy and UAE"
+          "highlight": "The China Earthquake Networks Center officially determined that a magnitude 7.0 earthquake struck Baqing County in Nagqu, Tibet, at 22:33 on October 22, with a focal depth of 10 kilometers.",
+          "summary": "The item records the China Earthquake Networks Center's official determination that a magnitude 7.0 earthquake struck Baqing County in Nagqu, Tibet, at 22:33 on October 22, with a focal depth of 10 kilometers. It provides verifiable time, location, magnitude, and depth information and is worth reading as a baseline for following authoritative updates on public impact.",
+          "failureAnalysis": "The key constraint is that the known content is limited to official earthquake parameters; public impact should await subsequent authoritative notices, and casualties or damage should not be inferred from this single determination.",
+          "title": "7.0-Magnitude Earthquake Strikes Baqing County, Nagqu, Tibet, With Focal Depth of 10 km"
         }
       }
     },
     {
-      "id": "news-1a5c47ff89bf4d77817de3b97290e735",
-      "category": "domestic",
-      "title": "全国医保影像AI识图大赛决赛将在广西南宁举行",
-      "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-20/10718201.shtml",
-      "publishedAt": "2026-10-20T15:20:43.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "由国家医保局与广西壮族自治区政府联合主办的全国医保影像AI识图大赛，将于10月22日至23日在南宁展开线下竞技。",
-      "summary": "中新网南宁10月20日电，记者从大赛组委会获悉，全国医保影像AI识图大赛将进入线下决赛阶段，于10月22日至23日在广西南宁展开最终角逐。该赛事由中国国家医疗保障局与广西壮族自治区人民政府联合主办，可作为观察医保影像数据与AI识图技术结合情况的公开窗口。",
-      "failureAnalysis": "本条不是AI应用失败案例，可核实的信息主要是赛程时间、地点与主办方；报道未披露参赛规模、评审标准与技术细节，阅读时应区分已确认事实与待补充信息。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "中新网南宁10月20日电(记者 黄艳梅)记者20日从全国医保影像AI识图大赛组委会获悉，由中国国家医疗保障局与广西壮族自治区人民政府联合主办的全国医保影像AI识图大赛，将于10月22日至23日在广西南宁迎来线下竞技，展开最终角逐。",
-      "translations": {
-        "zh": {
-          "title": "全国医保影像AI识图大赛决赛将于10月22日至23日在广西南宁举行",
-          "highlight": "由国家医保局与广西壮族自治区政府联合主办的全国医保影像AI识图大赛，将于10月22日至23日在南宁展开线下竞技。",
-          "summary": "中新网南宁10月20日电，记者从大赛组委会获悉，全国医保影像AI识图大赛将进入线下决赛阶段，于10月22日至23日在广西南宁展开最终角逐。该赛事由中国国家医疗保障局与广西壮族自治区人民政府联合主办，可作为观察医保影像数据与AI识图技术结合情况的公开窗口。",
-          "failureAnalysis": "本条不是AI应用失败案例，可核实的信息主要是赛程时间、地点与主办方；报道未披露参赛规模、评审标准与技术细节，阅读时应区分已确认事实与待补充信息。"
-        },
-        "en": {
-          "highlight": "Co-hosted by China's National Healthcare Security Administration and the Guangxi regional government, the national medical insurance imaging AI competition holds its offline finals in Nanning on October 22-23.",
-          "summary": "Reported from Nanning on October 20, the competition's organizing committee says the national medical insurance imaging AI recognition contest now moves to offline finals on October 22-23 in Nanning, Guangxi. Jointly hosted by the National Healthcare Security Administration and the Guangxi regional government, it offers a public window into how medical insurance imaging data is being paired with AI image-recognition technology.",
-          "failureAnalysis": "This is not an AI failure case; the verifiable facts are the dates, venue and organizers, while participant numbers, judging criteria and technical details are not disclosed, so confirmed facts should be separated from open questions.",
-          "title": "National Medical Insurance Imaging AI Recognition Competition Finals Set for Nanning, Guangxi"
-        }
-      }
-    },
-    {
-      "id": "news-17cfa9c7177c456a964203d107da3313",
-      "category": "domestic",
-      "title": "新时代高校“城载未来”育人共同体在上海成立",
-      "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-20/10718186.shtml",
-      "publishedAt": "2026-10-20T14:38:50.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "由同济大学联合48所高校、43家企业、5个政府部门等首批116家单位共同组建的育人共同体在上海成立。",
-      "summary": "中新网报道，10月20日，新时代高校“城载未来”育人共同体在同济大学成立，首批成员包括48所高校、43家企业、5个政府部门、3个行业组织、5家文博场馆和10所中小学等116家单位。该消息的价值在于呈现高校、企业、政府、行业组织、文博场馆和中小学共同参与育人的组织化尝试。已提供信息主要集中在成立事实与成员构成，具体合作机制和预期成果尚未展开。",
-      "failureAnalysis": "关键看点多主体协同能否落到课程、实践、就业等具体机制上；仅凭成立消息和成员规模，尚不足以判断实际效果。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "中新网上海10月20日电 (记者 许婧)由同济大学联合48所高校、43家企业、5个政府部门、3个行业组织、5家文博场馆、10所中小学等首批116家单位共同组建的新时代高校“城载未来”育人共同体，20日在同济大学成立。",
-      "translations": {
-        "zh": {
-          "title": "新时代高校“城载未来”育人共同体在上海成立",
-          "highlight": "由同济大学联合48所高校、43家企业、5个政府部门等首批116家单位共同组建的育人共同体在上海成立。",
-          "summary": "中新网报道，10月20日，新时代高校“城载未来”育人共同体在同济大学成立，首批成员包括48所高校、43家企业、5个政府部门、3个行业组织、5家文博场馆和10所中小学等116家单位。该消息的价值在于呈现高校、企业、政府、行业组织、文博场馆和中小学共同参与育人的组织化尝试。已提供信息主要集中在成立事实与成员构成，具体合作机制和预期成果尚未展开。",
-          "failureAnalysis": "关键看点多主体协同能否落到课程、实践、就业等具体机制上；仅凭成立消息和成员规模，尚不足以判断实际效果。"
-        },
-        "en": {
-          "highlight": "A new education community jointly formed by Tongji University and an initial 116 units, including 48 universities, 43 enterprises, and 5 government departments, was established in Shanghai.",
-          "summary": "China News Service reports that the New Era University 'City-Carried Future' Education Community was established at Tongji University on October 20. Its initial 116 members include 48 universities, 43 enterprises, 5 government departments, 3 industry organizations, 5 cultural and museum venues, and 10 primary and secondary schools. Its value lies in showing an organized attempt at education involving universities, enterprises, government, industry groups, cultural institutions, and schools. The provided information focuses on the establishment and membership, without detailing cooperation mechanisms or expected outcomes.",
-          "failureAnalysis": "The key question is whether multi-party collaboration can be translated into concrete mechanisms for curricula, practice, and employment; the announcement and membership scale alone are not enough to judge actual impact.",
-          "title": "New Era University 'City-Carried Future' Education Community Established in Shanghai"
-        }
-      }
-    },
-    {
-      "id": "news-a9e65f6a1f6645f286adc5765e6cc2cf",
+      "id": "news-5474336864fb472d955aafb167375c1a",
       "category": "international",
-      "title": "UK government to make Jackdaw gas field announcement",
-      "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/cvze4wx3elj1o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-10-20T17:33:42.0000000+00:00",
+      "title": "Former U.S. Ambassador to Ukraine William Taylor on Trump's embrace of Russia",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/22/nx-s1-6010509/former-u-s-ambassador-to-ukraine-william-taylor-on-trumps-embrace-of-russia",
+      "publishedAt": "2026-10-22T09:59:02.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "围绕这一备受争议的北海气田，外界期待已久的决定预计将于周三上午公布。",
-      "summary": "BBC Business报道称，英国政府将就备受争议的北海Jackdaw气田发布公告，相关决定预计在周三上午公布。这条简讯适合关注英国能源政策与北海油气开发动向的读者了解最新进展。",
-      "failureAnalysis": "关键看点在于英国政府在争议性能源项目上的取舍，而不只是公告本身；具体决定内容仍需等待周三上午公布。",
+      "highlight": "在特使威特科夫会见泽连斯基后访问莫斯科之际，NPR的史蒂夫·英斯基普就特朗普拥抱俄罗斯询问前驻乌大使泰勒。",
+      "summary": "这条 NPR 国际新闻聚焦一次采访：史蒂夫·英斯基普询问前美国驻乌克兰大使威廉·泰勒，如何看特朗普对俄罗斯的拥抱。背景是特使史蒂夫·威特科夫在会见乌克兰总统泽连斯基后访问莫斯科。它值得关注，因为同一行程把美乌沟通与美俄接触放在了一起。",
+      "failureAnalysis": "关键看点在于外交接触的顺序与对象：威特科夫先见泽连斯基、后访莫斯科，而泰勒的评论为理解特朗普对俄姿态提供了前任驻乌外交官视角。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "The long-awaited decision about the controversial North Sea field is expected on Wednesday morning.",
+      "sourceExcerpt": "NPR's Steve Inskeep asks former U.S. Ambassador to Ukraine William Taylor about President Trump's embrace of Russia as envoy Steve Witkoff visits Moscow after meeting Ukraine's Volodymyr Zelenskyy.",
       "translations": {
         "zh": {
-          "title": "英国政府将就Jackdaw气田作出宣布",
-          "highlight": "围绕这一备受争议的北海气田，外界期待已久的决定预计将于周三上午公布。",
-          "summary": "BBC Business报道称，英国政府将就备受争议的北海Jackdaw气田发布公告，相关决定预计在周三上午公布。这条简讯适合关注英国能源政策与北海油气开发动向的读者了解最新进展。",
-          "failureAnalysis": "关键看点在于英国政府在争议性能源项目上的取舍，而不只是公告本身；具体决定内容仍需等待周三上午公布。"
+          "title": "前美国驻乌克兰大使泰勒谈特朗普对俄罗斯的拥抱",
+          "highlight": "在特使威特科夫会见泽连斯基后访问莫斯科之际，NPR的史蒂夫·英斯基普就特朗普拥抱俄罗斯询问前驻乌大使泰勒。",
+          "summary": "这条 NPR 国际新闻聚焦一次采访：史蒂夫·英斯基普询问前美国驻乌克兰大使威廉·泰勒，如何看特朗普对俄罗斯的拥抱。背景是特使史蒂夫·威特科夫在会见乌克兰总统泽连斯基后访问莫斯科。它值得关注，因为同一行程把美乌沟通与美俄接触放在了一起。",
+          "failureAnalysis": "关键看点在于外交接触的顺序与对象：威特科夫先见泽连斯基、后访莫斯科，而泰勒的评论为理解特朗普对俄姿态提供了前任驻乌外交官视角。"
         },
         "en": {
-          "highlight": "The long-awaited decision about the controversial North Sea field is expected on Wednesday morning.",
-          "summary": "BBC Business reports that the UK government will make an announcement on the controversial Jackdaw gas field in the North Sea, with a long-awaited decision expected on Wednesday morning. It is worth watching for anyone tracking UK energy policy and North Sea oil and gas development.",
-          "failureAnalysis": "The key point is not the announcement itself but how the government resolves the trade-off over a contested energy project; the specifics are still due Wednesday morning.",
-          "title": "UK Government to Announce Decision on Jackdaw Gas Field"
+          "highlight": "NPR's Steve Inskeep asks former U.S. Ambassador to Ukraine William Taylor about President Trump's embrace of Russia as envoy Steve Witkoff visits Moscow after meeting Ukraine's Volodymyr Zelenskyy.",
+          "summary": "This NPR World item centers on Steve Inskeep's interview with former U.S. Ambassador to Ukraine William Taylor about President Trump's embrace of Russia. The context is envoy Steve Witkoff's visit to Moscow after meeting Ukraine's Volodymyr Zelenskyy. It is worth reading because the sequence places U.S.-Ukraine and U.S.-Russia contacts in the same diplomatic frame.",
+          "failureAnalysis": "The key takeaway is the diplomatic sequencing: Witkoff meets Zelenskyy first and then visits Moscow, while Taylor's comments offer a former U.S. ambassador to Ukraine perspective on Trump's posture toward Russia.",
+          "title": "Former U.S. Ambassador to Ukraine William Taylor on Trump's Embrace of Russia"
         }
       }
     },
     {
-      "id": "news-fa7033b8409a40eb859a956f440c885d",
+      "id": "news-ab8f73c156504ddeb20d8e461a7d3649",
       "category": "international",
-      "title": "Trump makes Russia-friendly moves as he looks for a way to end the war with Ukraine",
+      "title": "U.S. and Israel are planning for a possible attack on Iran, source tells NPR",
       "source": "NPR World",
-      "url": "https://www.npr.org/2026/10/20/nx-s1-6007897/trump-makes-russia-friendly-moves-as-he-looks-for-a-way-to-end-the-war-with-ukraine",
-      "publishedAt": "2026-10-20T11:03:52.0000000+00:00",
+      "url": "https://www.npr.org/2026/10/22/nx-s1-6011514/us-israel-iran-war",
+      "publishedAt": "2026-10-22T08:56:58.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "International class: finance",
-      "highlight": "随着美国中期选举前能源成本高企，特朗普推动结束乌克兰战争，他与俄罗斯起伏不定的关系再度升温。",
-      "summary": "据已知内容，文章聚焦特朗普为结束乌克兰战争而采取对俄友好举措，其背景是美国中期选举前能源成本高企。报道还提到，特朗普与俄罗斯的关系起伏不定，但如今再度升温。对非技术读者而言，这提供了一个观察美国外交转向与国内政治压力如何交织的窗口。",
-      "failureAnalysis": "关键看点：外交姿态与国内能源、选举压力相互牵动，理解这类新闻时要同时看政策动作和其政治时点。",
+      "selectionReason": "International class: politics",
+      "highlight": "一名听取战争规划简报的人士告诉NPR，美以正为11月初美国中期选举后可能袭击伊朗制定计划，伊朗表示已做好准备。",
+      "summary": "报道援引一名听取战争规划简报的人士称，美国和以色列正在制定计划，可能在11月初美国中期选举后对伊朗发动袭击，伊朗表示已做好准备。这则国际新闻值得关注，因为它涉及美以伊军事动向以及美国中期选举时点。",
+      "failureAnalysis": "关键看点：相关计划被描述为“可能”，且时点与美国中期选举相关，后续应以官方确认和局势变化为准。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "President Trump's up and down relationship with Russia is back on as he presses to find an end to the war in Ukraine amid high energy costs ahead of the U.S.",
+      "sourceExcerpt": "and Israel are preparing plans for a possible attack on Iran in early November, after the U.S. midterm elections, a person briefed on war planning told NPR. Iran said it is prepared.",
       "translations": {
         "zh": {
-          "title": "特朗普寻求结束乌克兰战争，采取对俄友好举措",
-          "highlight": "随着美国中期选举前能源成本高企，特朗普推动结束乌克兰战争，他与俄罗斯起伏不定的关系再度升温。",
-          "summary": "据已知内容，文章聚焦特朗普为结束乌克兰战争而采取对俄友好举措，其背景是美国中期选举前能源成本高企。报道还提到，特朗普与俄罗斯的关系起伏不定，但如今再度升温。对非技术读者而言，这提供了一个观察美国外交转向与国内政治压力如何交织的窗口。",
-          "failureAnalysis": "关键看点：外交姿态与国内能源、选举压力相互牵动，理解这类新闻时要同时看政策动作和其政治时点。"
+          "title": "美以据报制定计划 或于美中期选举后袭击伊朗",
+          "highlight": "一名听取战争规划简报的人士告诉NPR，美以正为11月初美国中期选举后可能袭击伊朗制定计划，伊朗表示已做好准备。",
+          "summary": "报道援引一名听取战争规划简报的人士称，美国和以色列正在制定计划，可能在11月初美国中期选举后对伊朗发动袭击，伊朗表示已做好准备。这则国际新闻值得关注，因为它涉及美以伊军事动向以及美国中期选举时点。",
+          "failureAnalysis": "关键看点：相关计划被描述为“可能”，且时点与美国中期选举相关，后续应以官方确认和局势变化为准。"
         },
         "en": {
-          "highlight": "Trump's up-and-down relationship with Russia is back on as he seeks to end the war in Ukraine amid high energy costs before the U.S. midterms.",
-          "summary": "Based on the known content, the article focuses on Trump's Russia-friendly moves as he seeks to end the war in Ukraine, against the backdrop of high energy costs ahead of the U.S. midterms. It also notes that Trump's up-and-down relationship with Russia is back on. For a non-technical reader, it offers a window into how U.S. foreign policy shifts intersect with domestic political pressure.",
-          "failureAnalysis": "The key takeaway is that diplomatic posture and domestic energy and election pressures are intertwined; read this kind of news by looking at both the policy moves and their political timing.",
-          "title": "Trump seeks to end Ukraine war with Russia-friendly moves"
+          "highlight": "A person briefed on war planning told NPR U.S. and Israel are preparing a possible attack on Iran in early November, after U.S. midterms; Iran says it is ready.",
+          "summary": "NPR reports, citing a person briefed on war planning, that the U.S. and Israel are preparing plans for a possible attack on Iran in early November after the U.S. midterm elections. Iran said it is prepared. The item is worth reading because it concerns military planning by the U.S., Israel, and Iran and the timing around U.S. domestic politics.",
+          "failureAnalysis": "Key takeaway: the reported plan is described as possible and tied to the timing of the U.S. midterms, so follow official confirmation and developments.",
+          "title": "U.S. and Israel Reportedly Plan Possible Iran Attack After Midterms"
         }
       }
     },
     {
-      "id": "life-a2da1d4bf960413fa32b2f57c2ea4254",
+      "id": "life-4d476e19a77940f5bafe384e7a7a5059",
       "category": "international",
-      "title": "The Constitution of the Inner Country: Leonard Cohen on Language and the Poetry of Presence",
-      "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/10/20/leonard-cohen-death-of-a-ladys-man-words/",
-      "publishedAt": "2026-10-20T16:02:51.0000000+00:00",
+      "title": "The Key to Creating Learning Projects You’ll Finish",
+      "source": "Scott H Young",
+      "url": "https://www.scotthyoung.com/blog/2026/10/21/the-key-to-creating-learning-projects-youll-finish/",
+      "publishedAt": "2026-10-21T20:25:47.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "诗无非是信息；它正是内心国度的宪法，以语言确认人的在场。",
-      "summary": "从标题与引文看，文章借莱昂纳德·科恩的话讨论语言和诗：诗不只是信息，而是内心国度的宪法。它值得读，因为它把表达提升为内在秩序的建构，而非单纯的信息传递。",
-      "failureAnalysis": "关键提醒：表达的价值不只在传递信息，更在于为内心建立可依循的秩序。",
+      "highlight": "一套三步流程，用来自主设计你真正能完成的学习项目。",
+      "summary": "Scott H Young 给出一个三步流程，帮助自学者设计并完成学习项目。对非技术读者而言，它的价值在于把“能不能做完”变成项目设计的一部分。",
+      "failureAnalysis": "关键不是先找更多学习材料，而是在开始前就用“能否完成”来约束项目设计。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "\"The poem is nothing but information. It is the Constitution of the inner country.\"",
+      "sourceExcerpt": "My three-step process for self-directed learning projects you'll actually complete. The post The Key to Creating Learning Projects You’ll Finish appeared first on Scott H Young .",
       "translations": {
         "zh": {
-          "title": "内心国度的宪法：莱昂纳德·科恩论语言与在场之诗",
-          "highlight": "诗无非是信息；它正是内心国度的宪法，以语言确认人的在场。",
-          "summary": "从标题与引文看，文章借莱昂纳德·科恩的话讨论语言和诗：诗不只是信息，而是内心国度的宪法。它值得读，因为它把表达提升为内在秩序的建构，而非单纯的信息传递。",
-          "failureAnalysis": "关键提醒：表达的价值不只在传递信息，更在于为内心建立可依循的秩序。"
+          "title": "完成学习项目的关键",
+          "highlight": "一套三步流程，用来自主设计你真正能完成的学习项目。",
+          "summary": "Scott H Young 给出一个三步流程，帮助自学者设计并完成学习项目。对非技术读者而言，它的价值在于把“能不能做完”变成项目设计的一部分。",
+          "failureAnalysis": "关键不是先找更多学习材料，而是在开始前就用“能否完成”来约束项目设计。"
         },
         "en": {
-          "highlight": "The poem is nothing but information. It is the Constitution of the inner country.",
-          "summary": "Drawing on Leonard Cohen’s reflection on language and poetry, the piece presents the poem not merely as information but as a constitution for the inner country. It is worth reading for its reminder that language shapes inner order and presence, not just content.",
-          "failureAnalysis": "The key takeaway is that expression matters beyond information transfer: it can establish an inner order to live by.",
-          "title": "The Constitution of the Inner Country: Leonard Cohen on Language and the Poetry of Presence"
+          "highlight": "My three-step process for self-directed learning projects you'll actually complete.",
+          "summary": "Scott H Young offers a three-step process for designing and completing self-directed learning projects. For a non-technical reader, its value is in making \"can I finish this?\" part of the project design.",
+          "failureAnalysis": "The key is not finding more learning materials first, but constraining the project design around whether you can actually complete it.",
+          "title": "The Key to Learning Projects You'll Actually Finish"
         }
       }
     },
     {
-      "id": "life-b1c0353ba5c6462ca9239392b2a55cf3",
+      "id": "life-b8104e8bdc8546ffb124879c6a011c06",
       "category": "international",
-      "title": "No-Prep Meal Prep",
-      "source": "The Art of Manliness",
-      "url": "https://www.artofmanliness.com/strength/nutrition/no-prep-meal-prep/",
-      "publishedAt": "2026-10-19T19:19:04.0000000+00:00",
+      "title": "怀旧手记｜世界首台 UMPC：三星 Q1，和当下平板有什么关系？",
+      "source": "少数派 sspai",
+      "url": "https://sspai.com/post/115107",
+      "publishedAt": "2026-10-21T02:23:21.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "周六或周日，我会慢炖或烤一批鸡胸肉，或者烤一大块猪里脊或一些瘦肉……",
-      "summary": "文章从作者日常饮食谈起，说明他如何为一周午餐备餐：在周末集中慢炖或烤鸡胸肉，或烤猪里脊等瘦肉。它提供一种低复杂度的备餐思路，适合想节省工作日时间、又不想依赖繁琐流程的人参考。",
-      "failureAnalysis": "关键不是把备餐做复杂，而是用周末一次批量烹饪换取工作日午餐的确定性；方法越简单越容易坚持。",
+      "highlight": "电脑与平板之间的界限，早在 20 年前的三星 Q1 上就已经可以随意切换了。",
+      "summary": "文章围绕世界首台 UMPC 三星 Q1，回顾它在二十年前如何让电脑与平板之间的形态和使用边界变得可切换。它值得读，是因为这有助于理解当下平板与电脑在功能定位上的延续与变化。",
+      "failureAnalysis": "关键启示是：产品形态的边界并非固定，早期实验往往会在多年后以新的产品形态重新出现。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "A while back I wrote an article about what I eat in a day, and in it I talked about how I meal prep lunches for the week. Here’s the gist: on Saturday or Sunday, I’ll either slow cook or grill a bunch of chicken breasts, or grill a big pork loin or some lean […] This article was originally published on The Art of Manliness.",
+      "sourceExcerpt": "电脑与平板之间的界限，早在 20 年前的三星 Q1 上就已经可以随意切换了。",
       "translations": {
         "zh": {
-          "title": "免复杂准备的备餐法：周末批量做午餐",
-          "highlight": "周六或周日，我会慢炖或烤一批鸡胸肉，或者烤一大块猪里脊或一些瘦肉……",
-          "summary": "文章从作者日常饮食谈起，说明他如何为一周午餐备餐：在周末集中慢炖或烤鸡胸肉，或烤猪里脊等瘦肉。它提供一种低复杂度的备餐思路，适合想节省工作日时间、又不想依赖繁琐流程的人参考。",
-          "failureAnalysis": "关键不是把备餐做复杂，而是用周末一次批量烹饪换取工作日午餐的确定性；方法越简单越容易坚持。"
+          "title": "世界首台 UMPC 三星 Q1：二十年前已模糊电脑与平板边界",
+          "highlight": "电脑与平板之间的界限，早在 20 年前的三星 Q1 上就已经可以随意切换了。",
+          "summary": "文章围绕世界首台 UMPC 三星 Q1，回顾它在二十年前如何让电脑与平板之间的形态和使用边界变得可切换。它值得读，是因为这有助于理解当下平板与电脑在功能定位上的延续与变化。",
+          "failureAnalysis": "关键启示是：产品形态的边界并非固定，早期实验往往会在多年后以新的产品形态重新出现。"
         },
         "en": {
-          "highlight": "On Saturday or Sunday, I’ll either slow cook or grill a bunch of chicken breasts, or grill a big pork loin or some lean...",
-          "summary": "The author explains how he prepares lunches for the week by cooking in batches on the weekend, such as slow-cooking or grilling chicken breasts or grilling pork loin and lean meat. It offers a low-complexity meal-prep approach for people who want to save weekday time without relying on an elaborate routine.",
-          "failureAnalysis": "The point is not to make meal prep complicated, but to trade one weekend batch-cooking session for more certainty about weekday lunches; simpler methods are easier to sustain.",
-          "title": "No-Prep Meal Prep: Batch-Cook Lunches on the Weekend"
+          "highlight": "The boundary between computers and tablets was already freely switchable on Samsung's Q1, the world's first UMPC, 20 years ago.",
+          "summary": "The article revisits the Samsung Q1, the world's first UMPC, and its relationship to today's tablets. It is worth reading for understanding how the line between PCs and tablets has been renegotiated over time.",
+          "failureAnalysis": "The key takeaway is that product-category boundaries are not fixed; early experiments can resurface in new forms years later.",
+          "title": "The World's First UMPC, Samsung Q1: Blurring the Line Between PC and Tablet 20 Years Ago"
         }
       }
     },
     {
-      "id": "paper-2610.26347",
+      "id": "paper-2610.25424",
       "category": "paper",
-      "title": "Logit Averaging During Training Sets a New State of the Art for Non-Invasive Speech BCI",
+      "title": "Small-scale neural simulation of Caenorhabditis elegans on Loihi-2 using NeuroML2Loihi",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2610.26347v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2610.26347",
-      "publishedAt": "2026-10-19T13:13:25.0000000Z",
+      "url": "https://arxiv.org/pdf/2610.25424v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.25424",
+      "publishedAt": "2026-10-18T17:27:16.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
-      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
-      "paperTopic": "brain_computer_interface",
+      "selectionReason": "Open full-text paper; topic chip; quality signal passed; application scenario is clear.",
+      "paperTopic": "chip",
       "qualityScore": 28,
       "readabilityStatus": "open",
       "paperCard": {
-        "problem": "非侵入式脑机接口（如用头戴式 MEG 采集脑信号）信噪比很低，单次测量的脑信号几乎解不出语音内容。业界的补救办法是把同一声刺激下重复测到的多次信号合并起来再判断，但不同论文各行其是：有人在模型输入端把脑信号先平均，有人在模型输出端把预测概率平均，没人把“在哪里合并”当成一个正经的设计问题来研究。",
-        "method": "作者把“合并”当成一个可比较的架构选择，统一在同一个卷积神经网络主干上实现了六种合并方案，覆盖三个数据集、四个任务、两种分组大小（每次合并多少条 trial）。六种方案分别是：输入端平均、事后概率平均（这两种来自已有工作），训练时 logit 平均，以及三种作者新提出的、在中间特征层做注意力的合并方式（学习加权平均、跨 trial 自注意力、可学习查询注意力）。全部用交叉熵损失训练，并按类别频率的平方根倒数加权以应对类别不平衡，用平衡准确率评估。",
-        "difference": "老方法要么在输入端平均原始信号（信息在进入模型前就被抹平），要么训练时把每条 trial 当独立样本、只在测试时才平均预测概率（训练目标与测试用法不一致）。新方法把平均操作搬进训练过程本身：先让每条 trial 各自过网络得到 logit，再把同一组的 logit 平均后才算损失。这样梯度会穿过平均操作回到每条 trial 的前向计算，网络被优化成“平均之后有用”，而不是“单条有用”。",
-        "innovation": "第一，首次把多次 trial 的合并策略作为独立设计变量做系统对比，得出“训练时 logit 平均”这个简单默认解，并在 7 种设置中 6 种最好。第二，在 2025 PNPL 竞赛音素分类任务上刷新最优，比冠军高 17.4 个百分点（平衡准确率）。第三，把 logit 平均和深度学习里“联合集成训练”的理论分析联系起来，指出其结果对那些解释“联合训练为何不如独立集成”的理论提出了质疑。",
-        "implementation": "实现路径很轻：共享同一个 CNN 主干；一组 g 条 trial 各自前向得到 logit（模型在 softmax 之前的原始打分向量），对 g 个 logit 取算术平均，再送入交叉熵损失；测试时同样先算各 trial 的 logit 再平均、取最大。相比“事后概率平均”，区别只是合并发生在训练阶段且合并的是 logit 而非 softmax 后的概率；相比“输入平均”，区别是不再提前损失单条信号的信息。三种注意力方案则在主干第一层卷积输出处做跨 trial 加权，用注意力权重（让某条 trial 的权重取决于其他 trial）实现，并通过设计保证结果与 trial 的排列顺序无关。",
-        "applications": "适用于一切“同一刺激重复测量、需要合并多次结果”的低信噪比解码场景：MEG/EEG 语音与语言解码、想象语音（如 MegNIST 数字想象任务）、脑机接口打字与沟通辅助设备；方法本身也可迁移到其他需要把一组重复观测合并成一个判断的深度学习任务，例如多帧图像分类、多次采样传感器诊断等。",
+        "problem": "解决的问题：这篇论文试图把 chip 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
         "technicalTerms": [
-          ""
-        ]
+          "SNN：模仿神经脉冲时序的神经网络。"
+        ],
+        "whySelected": "Open full-text paper; topic chip; quality signal passed; application scenario is clear."
       },
-      "highlight": "训练时的 logit 平均是作者提出的最简单方法，却在 7 种设置中有 6 种胜过其他所有方法。",
-      "summary": "这篇论文研究非侵入式脑机接口（用脑磁图 MEG 记录脑活动来解码语音）中一个被忽视的设计选择：同一声刺激下多次测量（多次 trial）的结果该如何合并。作者系统比较了六种合并方案，发现最简单的一种——在训练阶段就对多次 trial 的 logit（模型输出的原始分数）取平均——效果最好，并在 2025 PNPL 竞赛的音素分类任务上比冠军高出 17.4 个百分点（平衡准确率）。它值得读，是因为它说明：不必堆复杂结构，只要把一个“合并发生在哪一步”的问题想清楚，就能显著提升效果。",
-      "failureAnalysis": "需注意：这里的最优成绩是在 MEG 单被试数据、且测试样本由同一声刺激的 100 次 trial 平均而成的前提下取得的，并不代表单次 trial 就能实用；文中也提到非侵入式语音解码最好的词错误率仍高达 88%，离实际使用很远。此外，我们只看到摘要、方法与部分结果表，完整实验细节与统计结论未全部呈现。",
+      "highlight": "该研究在Loihi-2上利用NeuroML2Loihi开展秀丽隐杆线虫小规模神经模拟，以应对神经模拟的计算成本限制。",
+      "summary": "论文报告在Loihi-2神经形态硬件上借助NeuroML2Loihi进行秀丽隐杆线虫的小规模神经模拟。作者指出神经模拟对研究生物神经系统很重要，但反复更新神经与突触状态带来计算成本限制。该工作展示了面向这一限制的硬件实现尝试。",
+      "failureAnalysis": "来源仅提供标题和摘要片段，未给出模拟规模、精度、能耗或与基线对比等结果，因而无法判断其相对传统模拟的实际优势。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Logit Averaging During Training Sets a New State of the Art for Non-Invasive Speech BCI Miran Özdogan University of Oxford miran@robots.ox.ac.uk Gereon Elvers University of Oxford gereon.elvers@tum.de Michael Bronstein University of Oxford michael.bronstein@cs.ox.ac.uk Oiwi Parker Jones University of Oxford oiwi@robots.ox.ac.uk Abstract Non-invasive brain-computer interfaces are in practice limited by signal-to-noise ratio, and recent state-of-the-art methods address this limitation by aggregating over repeated trials of the same stimulus. Yet multi-trial aggregation has been treated inconsistently across the literature: some work averages brain signals at the model’s input, other work averages predictions at the model’s output, and neither treats aggregation as an architectural choice in its own right. We provide the first systematic comparison of aggregation strategies for non-invasive neural decoding, evaluating six paradigms (including logit averaging during training and three attention-based variants we introduce) across three datasets, four tasks, and two group sizes.",
+      "sourceExcerpt": "Small-scale neural simulation ofCaenorhabditis eleganson Loihi-2 using NeuroML2Loihi DANNY ROSEN,Virginia Polytechnic Institute and State University, USA RAMASHISH GAURAV,Virginia Polytechnic Institute and State University, USA YANG YI,Virginia Polytechnic Institute and State University, USA Neural simulation is an essential methodology for studying biological nervous systems, but it remains limited by the computational costs of repeatedly updating neural and synaptic states over many timesteps. Neuromorphic hardware is a promising substrate for this class of workloads because such devices combine event-driven execution, localized memory, and spike-based communication. However, neuromorphicsoftwareremains comparatively fragmented and difficult to integrate with the model-description standards used by the computational neuroscience community.",
       "translations": {
         "zh": {
-          "title": "训练时做 logit 平均：非侵入式语音脑机接口创下新最优成绩",
-          "highlight": "训练时的 logit 平均是作者提出的最简单方法，却在 7 种设置中有 6 种胜过其他所有方法。",
-          "summary": "这篇论文研究非侵入式脑机接口（用脑磁图 MEG 记录脑活动来解码语音）中一个被忽视的设计选择：同一声刺激下多次测量（多次 trial）的结果该如何合并。作者系统比较了六种合并方案，发现最简单的一种——在训练阶段就对多次 trial 的 logit（模型输出的原始分数）取平均——效果最好，并在 2025 PNPL 竞赛的音素分类任务上比冠军高出 17.4 个百分点（平衡准确率）。它值得读，是因为它说明：不必堆复杂结构，只要把一个“合并发生在哪一步”的问题想清楚，就能显著提升效果。",
-          "failureAnalysis": "需注意：这里的最优成绩是在 MEG 单被试数据、且测试样本由同一声刺激的 100 次 trial 平均而成的前提下取得的，并不代表单次 trial 就能实用；文中也提到非侵入式语音解码最好的词错误率仍高达 88%，离实际使用很远。此外，我们只看到摘要、方法与部分结果表，完整实验细节与统计结论未全部呈现。",
+          "title": "基于NeuroML2Loihi在Loihi-2上小规模神经模拟秀丽隐杆线虫",
+          "highlight": "该研究在Loihi-2上利用NeuroML2Loihi开展秀丽隐杆线虫小规模神经模拟，以应对神经模拟的计算成本限制。",
+          "summary": "论文报告在Loihi-2神经形态硬件上借助NeuroML2Loihi进行秀丽隐杆线虫的小规模神经模拟。作者指出神经模拟对研究生物神经系统很重要，但反复更新神经与突触状态带来计算成本限制。该工作展示了面向这一限制的硬件实现尝试。",
+          "failureAnalysis": "来源仅提供标题和摘要片段，未给出模拟规模、精度、能耗或与基线对比等结果，因而无法判断其相对传统模拟的实际优势。",
           "paperCard": {
-            "problem": "非侵入式脑机接口（如用头戴式 MEG 采集脑信号）信噪比很低，单次测量的脑信号几乎解不出语音内容。业界的补救办法是把同一声刺激下重复测到的多次信号合并起来再判断，但不同论文各行其是：有人在模型输入端把脑信号先平均，有人在模型输出端把预测概率平均，没人把“在哪里合并”当成一个正经的设计问题来研究。",
-            "method": "作者把“合并”当成一个可比较的架构选择，统一在同一个卷积神经网络主干上实现了六种合并方案，覆盖三个数据集、四个任务、两种分组大小（每次合并多少条 trial）。六种方案分别是：输入端平均、事后概率平均（这两种来自已有工作），训练时 logit 平均，以及三种作者新提出的、在中间特征层做注意力的合并方式（学习加权平均、跨 trial 自注意力、可学习查询注意力）。全部用交叉熵损失训练，并按类别频率的平方根倒数加权以应对类别不平衡，用平衡准确率评估。",
-            "difference": "老方法要么在输入端平均原始信号（信息在进入模型前就被抹平），要么训练时把每条 trial 当独立样本、只在测试时才平均预测概率（训练目标与测试用法不一致）。新方法把平均操作搬进训练过程本身：先让每条 trial 各自过网络得到 logit，再把同一组的 logit 平均后才算损失。这样梯度会穿过平均操作回到每条 trial 的前向计算，网络被优化成“平均之后有用”，而不是“单条有用”。",
-            "innovation": "第一，首次把多次 trial 的合并策略作为独立设计变量做系统对比，得出“训练时 logit 平均”这个简单默认解，并在 7 种设置中 6 种最好。第二，在 2025 PNPL 竞赛音素分类任务上刷新最优，比冠军高 17.4 个百分点（平衡准确率）。第三，把 logit 平均和深度学习里“联合集成训练”的理论分析联系起来，指出其结果对那些解释“联合训练为何不如独立集成”的理论提出了质疑。",
-            "implementation": "实现路径很轻：共享同一个 CNN 主干；一组 g 条 trial 各自前向得到 logit（模型在 softmax 之前的原始打分向量），对 g 个 logit 取算术平均，再送入交叉熵损失；测试时同样先算各 trial 的 logit 再平均、取最大。相比“事后概率平均”，区别只是合并发生在训练阶段且合并的是 logit 而非 softmax 后的概率；相比“输入平均”，区别是不再提前损失单条信号的信息。三种注意力方案则在主干第一层卷积输出处做跨 trial 加权，用注意力权重（让某条 trial 的权重取决于其他 trial）实现，并通过设计保证结果与 trial 的排列顺序无关。",
-            "applications": "适用于一切“同一刺激重复测量、需要合并多次结果”的低信噪比解码场景：MEG/EEG 语音与语言解码、想象语音（如 MegNIST 数字想象任务）、脑机接口打字与沟通辅助设备；方法本身也可迁移到其他需要把一组重复观测合并成一个判断的深度学习任务，例如多帧图像分类、多次采样传感器诊断等。",
+            "problem": "解决的问题：这篇论文试图把 chip 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
             "technicalTerms": [
-              ""
-            ]
+              "SNN：模仿神经脉冲时序的神经网络。"
+            ],
+            "whySelected": "Open full-text paper; topic chip; quality signal passed; application scenario is clear."
           }
         },
         "en": {
-          "highlight": "Training-time logit averaging, the simplest method we propose, outperforms all others in 6 of 7 settings.",
-          "summary": "This paper studies a neglected design choice in non-invasive speech brain-computer interfaces based on MEG: how to aggregate repeated trials evoked by the same stimulus. Comparing six aggregation paradigms across three datasets and four tasks, the authors find that the simplest one — averaging logits during training — wins in 6 of 7 settings and beats the 2025 PNPL competition winner by 17.4 absolute percentage points in balanced accuracy on phoneme classification. It is worth reading because it shows that a clear answer to 'where should aggregation happen' can matter more than architectural complexity.",
-          "failureAnalysis": "The state-of-the-art result holds for a single-subject MEG dataset where test samples are formed by averaging 100 trials of the same phoneme, so it does not demonstrate practical single-trial use; the paper also notes the best non-invasive word error rate remains around 88%. In addition, only the abstract, methods, and part of the results table are available here, so the full experimental and statistical picture is not visible.",
-          "title": "Logit Averaging During Training Sets a New State of the Art for Non-Invasive Speech BCI",
+          "title": "Small-Scale Neural Simulation of Caenorhabditis elegans on Loihi-2 Using NeuroML2Loihi",
+          "highlight": "The work simulates Caenorhabditis elegans at small scale on Loihi-2 using NeuroML2Loihi to address the computational cost of neural simulation.",
+          "summary": "The paper reports a small-scale neural simulation of Caenorhabditis elegans on Loihi-2 using NeuroML2Loihi. It frames neural simulation as essential for studying biological nervous systems but constrained by the computational cost of repeatedly updating neural and synaptic states. The work is a hardware-oriented attempt to address that constraint.",
+          "failureAnalysis": "The supplied source contains only the title and an abstract fragment, with no results on simulation scale, accuracy, energy use, or baseline comparisons, so its practical advantage over conventional simulation cannot be assessed.",
           "paperCard": {
-            "problem": "Non-invasive BCIs such as MEG have very low signal-to-noise ratio, so single-trial decoding of speech is far too weak. Prior work compensates by aggregating repeated trials of the same stimulus, but papers do it inconsistently — some average brain signals at the model input, others average predicted probabilities at the output — and none treats aggregation as a design decision in its own right.",
-            "method": "The authors treat aggregation as an architectural choice and compare six paradigms on a shared CNN backbone across three datasets, four tasks, and two group sizes. The six are input averaging and post-hoc probability averaging (from prior work), training-time logit averaging, and three new attention-based aggregation variants at intermediate features (learned weighted averaging, cross-trial self-attention, learned query attention). All are trained with class-frequency-weighted cross-entropy and evaluated with balanced accuracy.",
-            "difference": "Older methods either average raw signals before the model sees them, or train on individual trials and only average predictions at test time, so training and inference disagree. The new approach moves averaging into training: each trial is passed through the backbone to produce logits, logits are averaged across the group, and only then is the loss computed, so gradients flow back through every trial's forward pass.",
-            "innovation": "First, the first systematic comparison of aggregation strategies for non-invasive neural decoding, identifying training-time logit averaging as a simple, effective default that wins 6 of 7 settings. Second, a new state of the art on the 2025 PNPL phoneme classification setting, beating the competition winner by 17.4 absolute percentage points in balanced accuracy. Third, a theoretical link to joint ensemble training that calls into question recent explanations of why joint training underperforms independent ensembling.",
-            "implementation": "A group of g trials passes through a shared CNN backbone; each trial yields a logit vector, the g logits are averaged, and the average is fed to a cross-entropy loss; at evaluation the same averaging is applied and the argmax is taken. Relative to post-hoc probability averaging, only the aggregation point and stage change (logits during training instead of probabilities at test time). The three attention variants aggregate at the first convolutional layer using attention weights that depend on the other trials, and are permutation-invariant by construction.",
-            "applications": "Any low-SNR decoding setting where the same stimulus is measured repeatedly and multiple observations must be fused: MEG/EEG speech and language decoding, imagined speech, BCI typing and communication aids, and more broadly any deep learning task that must combine a set of repeated observations — such as multi-frame image classification or repeated sensor readings in diagnostics.",
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
             "technicalTerms": [
-              ""
-            ]
+              "SNN：模仿神经脉冲时序的神经网络。"
+            ],
+            "whySelected": "Open full-text paper; topic chip; quality signal passed; application scenario is clear."
           }
         }
       }
     },
     {
-      "id": "ai-feed-c5a39d52800f4458beb9af92e96b72af",
+      "id": "ai-github-1420305104",
       "category": "ai",
-      "title": "Latest open artifacts (#25): DeepSeek V4.1 Flash 1017, American-made models, and new regulatory controls in the US & China",
-      "source": "Interconnects",
-      "url": "https://www.interconnects.ai/p/latest-open-artifacts-25-deepseek",
+      "title": "Leonxlnx/earshot",
+      "source": "GitHub Search",
+      "url": "https://github.com/Leonxlnx/earshot",
       "abstractUrl": null,
-      "publishedAt": "2026-10-20T17:04:21.0000000Z",
-      "scoreLabel": "Curated engineering feed",
-      "aiArticleType": "concept_explanation",
-      "evidenceAnchors": [],
-      "evidenceLabel": "No clear evidence",
-      "hasPrimaryAnchor": false,
-      "requiresRiskAnalysis": false,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
-      "summary": "该条目汇总最新开放成果，包括 DeepSeek V4.1 Flash 1017、美国制造模型，以及美国和中国的新监管控制。其关键信号是“西方开放模型正在反击”，适合非技术管理者理解开放模型竞争与监管环境的最新变化。",
-      "failureAnalysis": "要点是：开放模型竞争不只比模型能力，也受地缘与监管控制影响；跟踪这类策展信号有助于判断技术路线和合规风险。",
-      "aiSelectionScore": 100,
-      "highlight": "西方开放模型正在反击，DeepSeek V4.1 Flash 1017、美国制造模型与美中监管新动向成为最新开放成果焦点。",
+      "publishedAt": "2026-10-15T06:52:46.0000000Z",
+      "scoreLabel": "GitHub 2131 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该 GitHub 仓库名为 Earshot，已获得 2131 星并有近期公开活动；其描述是为编程智能体提供“耳朵”，让 AI 听见、审查并发出声音，且仅用 CPU、开源。它的可读价值在于呈现了一个把音频感知与反馈接入 AI 编程工具的开源方向，CPU-only 也降低了试用和部署门槛。",
+      "failureAnalysis": "仅凭公开描述，“听见、审查并发出声音”对编程智能体的真实需求仍不明确，音频反馈可能不如文本日志直接，用户是否愿用、愿付费缺少验证。CPU-only 虽降低部署门槛，也可能在音频质量、延迟和复杂场景处理上受限。开源加 2131 星能带来关注，但若不能证明对开发效率的可量化提升，项目容易停留在演示层，工程集成和持续维护也会成为负担。",
+      "aiSelectionScore": 2131,
+      "highlight": "为编程智能体装上耳朵：让 AI 听见、审查并发出声音，仅用 CPU、开源。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Western open models strike back",
+      "sourceExcerpt": "GitHub repository with 2131 stars and recent public activity. Description: Ears for coding agents: let AI hear, review and make sound.",
       "translations": {
         "zh": {
-          "title": "最新开放成果#25：DeepSeek V4.1 Flash 1017、美国制造模型与美中监管新动向",
-          "highlight": "西方开放模型正在反击，DeepSeek V4.1 Flash 1017、美国制造模型与美中监管新动向成为最新开放成果焦点。",
-          "summary": "该条目汇总最新开放成果，包括 DeepSeek V4.1 Flash 1017、美国制造模型，以及美国和中国的新监管控制。其关键信号是“西方开放模型正在反击”，适合非技术管理者理解开放模型竞争与监管环境的最新变化。",
-          "failureAnalysis": "要点是：开放模型竞争不只比模型能力，也受地缘与监管控制影响；跟踪这类策展信号有助于判断技术路线和合规风险。"
+          "title": "Earshot：为编程智能体提供听觉、审查与发声能力",
+          "highlight": "为编程智能体装上耳朵：让 AI 听见、审查并发出声音，仅用 CPU、开源。",
+          "summary": "该 GitHub 仓库名为 Earshot，已获得 2131 星并有近期公开活动；其描述是为编程智能体提供“耳朵”，让 AI 听见、审查并发出声音，且仅用 CPU、开源。它的可读价值在于呈现了一个把音频感知与反馈接入 AI 编程工具的开源方向，CPU-only 也降低了试用和部署门槛。",
+          "failureAnalysis": "仅凭公开描述，“听见、审查并发出声音”对编程智能体的真实需求仍不明确，音频反馈可能不如文本日志直接，用户是否愿用、愿付费缺少验证。CPU-only 虽降低部署门槛，也可能在音频质量、延迟和复杂场景处理上受限。开源加 2131 星能带来关注，但若不能证明对开发效率的可量化提升，项目容易停留在演示层，工程集成和持续维护也会成为负担。"
         },
         "en": {
-          "highlight": "Western open models strike back, with DeepSeek V4.1 Flash 1017, American-made models, and new US and China regulatory controls in focus.",
-          "summary": "This roundup covers the latest open artifacts, including DeepSeek V4.1 Flash 1017, American-made models, and new regulatory controls in the US and China. Its key signal is that Western open models are striking back, making it useful for understanding shifts in open-model competition and the regulatory environment.",
-          "failureAnalysis": "The key takeaway is that open-model competition is shaped not only by model capability but also by geopolitics and regulatory controls. Tracking curated signals like this helps assess technology direction and compliance risk.",
-          "title": "Latest Open Artifacts #25: DeepSeek V4.1 Flash 1017, American-Made Models, and New US-China Regulatory Controls"
+          "highlight": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
+          "summary": "This GitHub repository, Earshot, has 2,131 stars and recent public activity. Its description says it provides ears for coding agents so AI can hear, review, and make sound, while being CPU-only and open source; it is worth reading as an open direction for adding audio perception and feedback to AI coding tools.",
+          "failureAnalysis": "The real demand for hearing, reviewing, and making sound in coding agents is still unclear, and audio feedback may add noise rather than measurable coding value. CPU-only and open source lower deployment barriers, but may also constrain audio quality, latency, and sustained engineering.",
+          "title": "Earshot: Giving Coding Agents Hearing, Review, and Sound"
         }
       }
     }

@@ -1,0 +1,331 @@
+{
+  "issueDate": "2026-10-22",
+  "updateStatus": "complete",
+  "contentFingerprint": "d5583f9568361d1cb2f4f51897663c08ec70635806e333107b344a6f9d90c9cb",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-71fff51619854eca8022505555442244",
+      "category": "domestic",
+      "title": "国家大宗商品储运产业计量测试中心在浙江舟山揭牌",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-22/10719377.shtml",
+      "publishedAt": "2026-10-22T13:38:38.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "该中心将提供“全溯源链、全产业链、全寿命周期”和具有前瞻性的计量测试技术服务。",
+      "summary": "第九届油商大会全体会议在舟山举行期间，国家大宗商品储运产业计量测试中心正式揭牌。该中心经国家市场监督管理总局复函浙江省人民政府同意设立，将提供覆盖全溯源链、全产业链、全寿命周期及具有前瞻性的计量测试技术服务。它的设立为观察大宗商品储运产业的计量测试公共服务能力提供了一个明确节点。",
+      "failureAnalysis": "关键要看该中心后续能否把“全溯源链、全产业链、全寿命周期”的服务承诺转化为可核验的计量测试能力，并与产业实际需求有效对接。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网舟山10月22日电 (张斌)第九届油商大会全体会议22日在舟山举行。会议期间，国家大宗商品储运产业计量测试中心正式揭牌。该中心由国家市场监督管理总局复函浙江省人民政府同意设立，将提供“全溯源链、全产业链、全寿命周期”和具有前瞻性的计量测试技术服务。",
+      "translations": {
+        "zh": {
+          "title": "国家大宗商品储运产业计量测试中心在浙江舟山揭牌",
+          "highlight": "该中心将提供“全溯源链、全产业链、全寿命周期”和具有前瞻性的计量测试技术服务。",
+          "summary": "第九届油商大会全体会议在舟山举行期间，国家大宗商品储运产业计量测试中心正式揭牌。该中心经国家市场监督管理总局复函浙江省人民政府同意设立，将提供覆盖全溯源链、全产业链、全寿命周期及具有前瞻性的计量测试技术服务。它的设立为观察大宗商品储运产业的计量测试公共服务能力提供了一个明确节点。",
+          "failureAnalysis": "关键要看该中心后续能否把“全溯源链、全产业链、全寿命周期”的服务承诺转化为可核验的计量测试能力，并与产业实际需求有效对接。"
+        },
+        "en": {
+          "highlight": "The center will provide metrology and testing services covering the full traceability chain, the entire industrial chain, and the full life cycle, along with forward-looking technical support.",
+          "summary": "The National Bulk Commodity Storage and Transportation Industry Metrology and Testing Center was officially unveiled during the 9th Oil Merchants Conference in Zhoushan. It was approved by the State Administration for Market Regulation in a reply to the Zhejiang Provincial People's Government and will offer metrology and testing services across the full traceability chain, industrial chain, and life cycle. The announcement marks a concrete public platform for metrology and testing services in the bulk commodity storage and transportation sector.",
+          "failureAnalysis": "The practical test is whether the center can turn its full-chain, full-life-cycle service commitments into verifiable metrology and testing capacity that matches actual industry needs.",
+          "title": "National Bulk Commodity Storage and Transportation Industry Metrology and Testing Center Unveiled in Zhoushan, Zhejiang"
+        }
+      }
+    },
+    {
+      "id": "news-2222494b01a24bf197ad98f90c63216b",
+      "category": "domestic",
+      "title": "两部门启动国家地震灾害四级应急响应",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-22/10719441.shtml",
+      "publishedAt": "2026-10-22T15:58:24.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 4",
+      "highlight": "西藏那曲巴青县发生7.0级地震，两部门启动国家地震灾害四级应急响应。",
+      "summary": "该条目称，西藏那曲巴青县发生7.0级地震，两部门已启动国家地震灾害四级应急响应。可核实的信息集中在震级、地点和应急响应级别，适合作为跟踪官方震情与应急响应进展的信息入口。伤亡和损失等具体影响尚需以后续权威通报为准。",
+      "failureAnalysis": "可核实的要点是地震地点、震级和四级应急响应启动；伤亡与损失等影响应以官方后续通报为准。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "西藏那曲巴青县发生7.0级地震",
+      "translations": {
+        "zh": {
+          "title": "两部门启动国家地震灾害四级应急响应",
+          "highlight": "西藏那曲巴青县发生7.0级地震，两部门启动国家地震灾害四级应急响应。",
+          "summary": "该条目称，西藏那曲巴青县发生7.0级地震，两部门已启动国家地震灾害四级应急响应。可核实的信息集中在震级、地点和应急响应级别，适合作为跟踪官方震情与应急响应进展的信息入口。伤亡和损失等具体影响尚需以后续权威通报为准。",
+          "failureAnalysis": "可核实的要点是地震地点、震级和四级应急响应启动；伤亡与损失等影响应以官方后续通报为准。"
+        },
+        "en": {
+          "highlight": "A magnitude 7.0 earthquake struck Baqing County in Nagqu, Tibet, and two departments activated the national Level IV earthquake disaster emergency response.",
+          "summary": "The item reports that a magnitude 7.0 earthquake occurred in Baqing County, Nagqu, Tibet, and that two departments launched a Level IV national earthquake disaster emergency response. It is worth reading for authoritative updates on the quake and the official response. Details on casualties and damage are not included in the known content and should be checked against later official notices.",
+          "failureAnalysis": "The verifiable points are the location, magnitude, and activation of the Level IV response; casualty and damage figures should be treated as pending until official updates.",
+          "title": "Two Departments Activate Level IV National Earthquake Disaster Emergency Response"
+        }
+      }
+    },
+    {
+      "id": "news-150bdba24cd04cdc81397fafabd86cdb",
+      "category": "domestic",
+      "title": "西藏那曲市巴青县发生7.0级地震，震源深度10千米",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-22/10719432.shtml",
+      "publishedAt": "2026-10-22T14:49:32.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 4",
+      "highlight": "中国地震台网正式测定：10月22日22时33分在西藏那曲市巴青县发生7.0级地震，震源深度10千米。",
+      "summary": "该条目记录中国地震台网正式测定的地震参数：10月22日22时33分，西藏那曲市巴青县发生7.0级地震，震源深度10千米。它提供了可核验的时间、地点、震级和震源深度信息，适合作为关注后续权威震情与公共影响的基线。",
+      "failureAnalysis": "关键约束是当前已知内容仅为正式测定参数，公共影响需等待权威部门后续通报；不宜据单条测定信息推断伤亡或损失。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中国地震台网正式测定：10月22日22时33分在西藏那曲市巴青县(北纬32.40度，东经93.79度)发生7.0级地震，震源深度10千米。",
+      "translations": {
+        "zh": {
+          "title": "西藏那曲市巴青县发生7.0级地震 震源深度10千米",
+          "highlight": "中国地震台网正式测定：10月22日22时33分在西藏那曲市巴青县发生7.0级地震，震源深度10千米。",
+          "summary": "该条目记录中国地震台网正式测定的地震参数：10月22日22时33分，西藏那曲市巴青县发生7.0级地震，震源深度10千米。它提供了可核验的时间、地点、震级和震源深度信息，适合作为关注后续权威震情与公共影响的基线。",
+          "failureAnalysis": "关键约束是当前已知内容仅为正式测定参数，公共影响需等待权威部门后续通报；不宜据单条测定信息推断伤亡或损失。"
+        },
+        "en": {
+          "highlight": "The China Earthquake Networks Center officially determined that a magnitude 7.0 earthquake struck Baqing County in Nagqu, Tibet, at 22:33 on October 22, with a focal depth of 10 kilometers.",
+          "summary": "The item records the China Earthquake Networks Center's official determination that a magnitude 7.0 earthquake struck Baqing County in Nagqu, Tibet, at 22:33 on October 22, with a focal depth of 10 kilometers. It provides verifiable time, location, magnitude, and depth information and is worth reading as a baseline for following authoritative updates on public impact.",
+          "failureAnalysis": "The key constraint is that the known content is limited to official earthquake parameters; public impact should await subsequent authoritative notices, and casualties or damage should not be inferred from this single determination.",
+          "title": "7.0-Magnitude Earthquake Strikes Baqing County, Nagqu, Tibet, With Focal Depth of 10 km"
+        }
+      }
+    },
+    {
+      "id": "news-5474336864fb472d955aafb167375c1a",
+      "category": "international",
+      "title": "Former U.S. Ambassador to Ukraine William Taylor on Trump's embrace of Russia",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/22/nx-s1-6010509/former-u-s-ambassador-to-ukraine-william-taylor-on-trumps-embrace-of-russia",
+      "publishedAt": "2026-10-22T09:59:02.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "在特使威特科夫会见泽连斯基后访问莫斯科之际，NPR的史蒂夫·英斯基普就特朗普拥抱俄罗斯询问前驻乌大使泰勒。",
+      "summary": "这条 NPR 国际新闻聚焦一次采访：史蒂夫·英斯基普询问前美国驻乌克兰大使威廉·泰勒，如何看特朗普对俄罗斯的拥抱。背景是特使史蒂夫·威特科夫在会见乌克兰总统泽连斯基后访问莫斯科。它值得关注，因为同一行程把美乌沟通与美俄接触放在了一起。",
+      "failureAnalysis": "关键看点在于外交接触的顺序与对象：威特科夫先见泽连斯基、后访莫斯科，而泰勒的评论为理解特朗普对俄姿态提供了前任驻乌外交官视角。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "NPR's Steve Inskeep asks former U.S. Ambassador to Ukraine William Taylor about President Trump's embrace of Russia as envoy Steve Witkoff visits Moscow after meeting Ukraine's Volodymyr Zelenskyy.",
+      "translations": {
+        "zh": {
+          "title": "前美国驻乌克兰大使泰勒谈特朗普对俄罗斯的拥抱",
+          "highlight": "在特使威特科夫会见泽连斯基后访问莫斯科之际，NPR的史蒂夫·英斯基普就特朗普拥抱俄罗斯询问前驻乌大使泰勒。",
+          "summary": "这条 NPR 国际新闻聚焦一次采访：史蒂夫·英斯基普询问前美国驻乌克兰大使威廉·泰勒，如何看特朗普对俄罗斯的拥抱。背景是特使史蒂夫·威特科夫在会见乌克兰总统泽连斯基后访问莫斯科。它值得关注，因为同一行程把美乌沟通与美俄接触放在了一起。",
+          "failureAnalysis": "关键看点在于外交接触的顺序与对象：威特科夫先见泽连斯基、后访莫斯科，而泰勒的评论为理解特朗普对俄姿态提供了前任驻乌外交官视角。"
+        },
+        "en": {
+          "highlight": "NPR's Steve Inskeep asks former U.S. Ambassador to Ukraine William Taylor about President Trump's embrace of Russia as envoy Steve Witkoff visits Moscow after meeting Ukraine's Volodymyr Zelenskyy.",
+          "summary": "This NPR World item centers on Steve Inskeep's interview with former U.S. Ambassador to Ukraine William Taylor about President Trump's embrace of Russia. The context is envoy Steve Witkoff's visit to Moscow after meeting Ukraine's Volodymyr Zelenskyy. It is worth reading because the sequence places U.S.-Ukraine and U.S.-Russia contacts in the same diplomatic frame.",
+          "failureAnalysis": "The key takeaway is the diplomatic sequencing: Witkoff meets Zelenskyy first and then visits Moscow, while Taylor's comments offer a former U.S. ambassador to Ukraine perspective on Trump's posture toward Russia.",
+          "title": "Former U.S. Ambassador to Ukraine William Taylor on Trump's Embrace of Russia"
+        }
+      }
+    },
+    {
+      "id": "news-ab8f73c156504ddeb20d8e461a7d3649",
+      "category": "international",
+      "title": "U.S. and Israel are planning for a possible attack on Iran, source tells NPR",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/22/nx-s1-6011514/us-israel-iran-war",
+      "publishedAt": "2026-10-22T08:56:58.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "一名听取战争规划简报的人士告诉NPR，美以正为11月初美国中期选举后可能袭击伊朗制定计划，伊朗表示已做好准备。",
+      "summary": "报道援引一名听取战争规划简报的人士称，美国和以色列正在制定计划，可能在11月初美国中期选举后对伊朗发动袭击，伊朗表示已做好准备。这则国际新闻值得关注，因为它涉及美以伊军事动向以及美国中期选举时点。",
+      "failureAnalysis": "关键看点：相关计划被描述为“可能”，且时点与美国中期选举相关，后续应以官方确认和局势变化为准。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "and Israel are preparing plans for a possible attack on Iran in early November, after the U.S. midterm elections, a person briefed on war planning told NPR. Iran said it is prepared.",
+      "translations": {
+        "zh": {
+          "title": "美以据报制定计划 或于美中期选举后袭击伊朗",
+          "highlight": "一名听取战争规划简报的人士告诉NPR，美以正为11月初美国中期选举后可能袭击伊朗制定计划，伊朗表示已做好准备。",
+          "summary": "报道援引一名听取战争规划简报的人士称，美国和以色列正在制定计划，可能在11月初美国中期选举后对伊朗发动袭击，伊朗表示已做好准备。这则国际新闻值得关注，因为它涉及美以伊军事动向以及美国中期选举时点。",
+          "failureAnalysis": "关键看点：相关计划被描述为“可能”，且时点与美国中期选举相关，后续应以官方确认和局势变化为准。"
+        },
+        "en": {
+          "highlight": "A person briefed on war planning told NPR U.S. and Israel are preparing a possible attack on Iran in early November, after U.S. midterms; Iran says it is ready.",
+          "summary": "NPR reports, citing a person briefed on war planning, that the U.S. and Israel are preparing plans for a possible attack on Iran in early November after the U.S. midterm elections. Iran said it is prepared. The item is worth reading because it concerns military planning by the U.S., Israel, and Iran and the timing around U.S. domestic politics.",
+          "failureAnalysis": "Key takeaway: the reported plan is described as possible and tied to the timing of the U.S. midterms, so follow official confirmation and developments.",
+          "title": "U.S. and Israel Reportedly Plan Possible Iran Attack After Midterms"
+        }
+      }
+    },
+    {
+      "id": "life-4d476e19a77940f5bafe384e7a7a5059",
+      "category": "international",
+      "title": "The Key to Creating Learning Projects You’ll Finish",
+      "source": "Scott H Young",
+      "url": "https://www.scotthyoung.com/blog/2026/10/21/the-key-to-creating-learning-projects-youll-finish/",
+      "publishedAt": "2026-10-21T20:25:47.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "一套三步流程，用来自主设计你真正能完成的学习项目。",
+      "summary": "Scott H Young 给出一个三步流程，帮助自学者设计并完成学习项目。对非技术读者而言，它的价值在于把“能不能做完”变成项目设计的一部分。",
+      "failureAnalysis": "关键不是先找更多学习材料，而是在开始前就用“能否完成”来约束项目设计。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "My three-step process for self-directed learning projects you'll actually complete. The post The Key to Creating Learning Projects You’ll Finish appeared first on Scott H Young .",
+      "translations": {
+        "zh": {
+          "title": "完成学习项目的关键",
+          "highlight": "一套三步流程，用来自主设计你真正能完成的学习项目。",
+          "summary": "Scott H Young 给出一个三步流程，帮助自学者设计并完成学习项目。对非技术读者而言，它的价值在于把“能不能做完”变成项目设计的一部分。",
+          "failureAnalysis": "关键不是先找更多学习材料，而是在开始前就用“能否完成”来约束项目设计。"
+        },
+        "en": {
+          "highlight": "My three-step process for self-directed learning projects you'll actually complete.",
+          "summary": "Scott H Young offers a three-step process for designing and completing self-directed learning projects. For a non-technical reader, its value is in making \"can I finish this?\" part of the project design.",
+          "failureAnalysis": "The key is not finding more learning materials first, but constraining the project design around whether you can actually complete it.",
+          "title": "The Key to Learning Projects You'll Actually Finish"
+        }
+      }
+    },
+    {
+      "id": "life-b8104e8bdc8546ffb124879c6a011c06",
+      "category": "international",
+      "title": "怀旧手记｜世界首台 UMPC：三星 Q1，和当下平板有什么关系？",
+      "source": "少数派 sspai",
+      "url": "https://sspai.com/post/115107",
+      "publishedAt": "2026-10-21T02:23:21.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "电脑与平板之间的界限，早在 20 年前的三星 Q1 上就已经可以随意切换了。",
+      "summary": "文章围绕世界首台 UMPC 三星 Q1，回顾它在二十年前如何让电脑与平板之间的形态和使用边界变得可切换。它值得读，是因为这有助于理解当下平板与电脑在功能定位上的延续与变化。",
+      "failureAnalysis": "关键启示是：产品形态的边界并非固定，早期实验往往会在多年后以新的产品形态重新出现。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "电脑与平板之间的界限，早在 20 年前的三星 Q1 上就已经可以随意切换了。",
+      "translations": {
+        "zh": {
+          "title": "世界首台 UMPC 三星 Q1：二十年前已模糊电脑与平板边界",
+          "highlight": "电脑与平板之间的界限，早在 20 年前的三星 Q1 上就已经可以随意切换了。",
+          "summary": "文章围绕世界首台 UMPC 三星 Q1，回顾它在二十年前如何让电脑与平板之间的形态和使用边界变得可切换。它值得读，是因为这有助于理解当下平板与电脑在功能定位上的延续与变化。",
+          "failureAnalysis": "关键启示是：产品形态的边界并非固定，早期实验往往会在多年后以新的产品形态重新出现。"
+        },
+        "en": {
+          "highlight": "The boundary between computers and tablets was already freely switchable on Samsung's Q1, the world's first UMPC, 20 years ago.",
+          "summary": "The article revisits the Samsung Q1, the world's first UMPC, and its relationship to today's tablets. It is worth reading for understanding how the line between PCs and tablets has been renegotiated over time.",
+          "failureAnalysis": "The key takeaway is that product-category boundaries are not fixed; early experiments can resurface in new forms years later.",
+          "title": "The World's First UMPC, Samsung Q1: Blurring the Line Between PC and Tablet 20 Years Ago"
+        }
+      }
+    },
+    {
+      "id": "paper-2610.25424",
+      "category": "paper",
+      "title": "Small-scale neural simulation of Caenorhabditis elegans on Loihi-2 using NeuroML2Loihi",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2610.25424v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.25424",
+      "publishedAt": "2026-10-18T17:27:16.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic chip; quality signal passed; application scenario is clear.",
+      "paperTopic": "chip",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 chip 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "SNN：模仿神经脉冲时序的神经网络。"
+        ],
+        "whySelected": "Open full-text paper; topic chip; quality signal passed; application scenario is clear."
+      },
+      "highlight": "该研究在Loihi-2上利用NeuroML2Loihi开展秀丽隐杆线虫小规模神经模拟，以应对神经模拟的计算成本限制。",
+      "summary": "论文报告在Loihi-2神经形态硬件上借助NeuroML2Loihi进行秀丽隐杆线虫的小规模神经模拟。作者指出神经模拟对研究生物神经系统很重要，但反复更新神经与突触状态带来计算成本限制。该工作展示了面向这一限制的硬件实现尝试。",
+      "failureAnalysis": "来源仅提供标题和摘要片段，未给出模拟规模、精度、能耗或与基线对比等结果，因而无法判断其相对传统模拟的实际优势。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Small-scale neural simulation ofCaenorhabditis eleganson Loihi-2 using NeuroML2Loihi DANNY ROSEN,Virginia Polytechnic Institute and State University, USA RAMASHISH GAURAV,Virginia Polytechnic Institute and State University, USA YANG YI,Virginia Polytechnic Institute and State University, USA Neural simulation is an essential methodology for studying biological nervous systems, but it remains limited by the computational costs of repeatedly updating neural and synaptic states over many timesteps. Neuromorphic hardware is a promising substrate for this class of workloads because such devices combine event-driven execution, localized memory, and spike-based communication. However, neuromorphicsoftwareremains comparatively fragmented and difficult to integrate with the model-description standards used by the computational neuroscience community.",
+      "translations": {
+        "zh": {
+          "title": "基于NeuroML2Loihi在Loihi-2上小规模神经模拟秀丽隐杆线虫",
+          "highlight": "该研究在Loihi-2上利用NeuroML2Loihi开展秀丽隐杆线虫小规模神经模拟，以应对神经模拟的计算成本限制。",
+          "summary": "论文报告在Loihi-2神经形态硬件上借助NeuroML2Loihi进行秀丽隐杆线虫的小规模神经模拟。作者指出神经模拟对研究生物神经系统很重要，但反复更新神经与突触状态带来计算成本限制。该工作展示了面向这一限制的硬件实现尝试。",
+          "failureAnalysis": "来源仅提供标题和摘要片段，未给出模拟规模、精度、能耗或与基线对比等结果，因而无法判断其相对传统模拟的实际优势。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 chip 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "SNN：模仿神经脉冲时序的神经网络。"
+            ],
+            "whySelected": "Open full-text paper; topic chip; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "Small-Scale Neural Simulation of Caenorhabditis elegans on Loihi-2 Using NeuroML2Loihi",
+          "highlight": "The work simulates Caenorhabditis elegans at small scale on Loihi-2 using NeuroML2Loihi to address the computational cost of neural simulation.",
+          "summary": "The paper reports a small-scale neural simulation of Caenorhabditis elegans on Loihi-2 using NeuroML2Loihi. It frames neural simulation as essential for studying biological nervous systems but constrained by the computational cost of repeatedly updating neural and synaptic states. The work is a hardware-oriented attempt to address that constraint.",
+          "failureAnalysis": "The supplied source contains only the title and an abstract fragment, with no results on simulation scale, accuracy, energy use, or baseline comparisons, so its practical advantage over conventional simulation cannot be assessed.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "SNN：模仿神经脉冲时序的神经网络。"
+            ],
+            "whySelected": "Open full-text paper; topic chip; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-github-1420305104",
+      "category": "ai",
+      "title": "Leonxlnx/earshot",
+      "source": "GitHub Search",
+      "url": "https://github.com/Leonxlnx/earshot",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-15T06:52:46.0000000Z",
+      "scoreLabel": "GitHub 2131 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该 GitHub 仓库名为 Earshot，已获得 2131 星并有近期公开活动；其描述是为编程智能体提供“耳朵”，让 AI 听见、审查并发出声音，且仅用 CPU、开源。它的可读价值在于呈现了一个把音频感知与反馈接入 AI 编程工具的开源方向，CPU-only 也降低了试用和部署门槛。",
+      "failureAnalysis": "仅凭公开描述，“听见、审查并发出声音”对编程智能体的真实需求仍不明确，音频反馈可能不如文本日志直接，用户是否愿用、愿付费缺少验证。CPU-only 虽降低部署门槛，也可能在音频质量、延迟和复杂场景处理上受限。开源加 2131 星能带来关注，但若不能证明对开发效率的可量化提升，项目容易停留在演示层，工程集成和持续维护也会成为负担。",
+      "aiSelectionScore": 2131,
+      "highlight": "为编程智能体装上耳朵：让 AI 听见、审查并发出声音，仅用 CPU、开源。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 2131 stars and recent public activity. Description: Ears for coding agents: let AI hear, review and make sound.",
+      "translations": {
+        "zh": {
+          "title": "Earshot：为编程智能体提供听觉、审查与发声能力",
+          "highlight": "为编程智能体装上耳朵：让 AI 听见、审查并发出声音，仅用 CPU、开源。",
+          "summary": "该 GitHub 仓库名为 Earshot，已获得 2131 星并有近期公开活动；其描述是为编程智能体提供“耳朵”，让 AI 听见、审查并发出声音，且仅用 CPU、开源。它的可读价值在于呈现了一个把音频感知与反馈接入 AI 编程工具的开源方向，CPU-only 也降低了试用和部署门槛。",
+          "failureAnalysis": "仅凭公开描述，“听见、审查并发出声音”对编程智能体的真实需求仍不明确，音频反馈可能不如文本日志直接，用户是否愿用、愿付费缺少验证。CPU-only 虽降低部署门槛，也可能在音频质量、延迟和复杂场景处理上受限。开源加 2131 星能带来关注，但若不能证明对开发效率的可量化提升，项目容易停留在演示层，工程集成和持续维护也会成为负担。"
+        },
+        "en": {
+          "highlight": "Ears for coding agents: let AI hear, review and make sound. CPU-only, open source.",
+          "summary": "This GitHub repository, Earshot, has 2,131 stars and recent public activity. Its description says it provides ears for coding agents so AI can hear, review, and make sound, while being CPU-only and open source; it is worth reading as an open direction for adding audio perception and feedback to AI coding tools.",
+          "failureAnalysis": "The real demand for hearing, reviewing, and making sound in coding agents is still unclear, and audio feedback may add noise rather than measurable coding value. CPU-only and open source lower deployment barriers, but may also constrain audio quality, latency, and sustained engineering.",
+          "title": "Earshot: Giving Coding Agents Hearing, Review, and Sound"
+        }
+      }
+    }
+  ]
+}
