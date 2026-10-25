@@ -1,0 +1,352 @@
+{
+  "issueDate": "2026-10-25",
+  "updateStatus": "complete",
+  "contentFingerprint": "2e15b3ccde411cc5526e14dc37b0debe96d983bad6269337cc914865085f5547",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-dac9e5a2e55c4f2c9a5b7069a7016f07",
+      "category": "domestic",
+      "title": "宁夏知识产权保护和运用“十五五”规划获批 锚定2030年知识产权强区建设目标",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720828.shtml",
+      "publishedAt": "2026-10-25T12:48:05.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "宁夏政府常务会议审议通过《宁夏回族自治区知识产权保护和运用“十五五”规划》",
+      "summary": "中新网报道显示，宁夏政府常务会议审议通过知识产权保护和运用“十五五”规划，为未来五年治理体系完善、保护运用效能提升划定路线图。标题还显示，该规划以2030年知识产权强区建设为目标。值得关注的是，规划获批意味着相关治理与运用工作进入正式推进阶段，后续落实成效仍需观察。",
+      "failureAnalysis": "可验证的关键点是规划已获审议通过；后续重点在于把治理体系完善和保护运用效能提升拆解为可执行、可评估的年度任务。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网银川10月25日电 (记者 于晶)25日，记者从宁夏回族自治区市场监督管理厅(知识产权局)获悉，宁夏政府常务会议审议通过《宁夏回族自治区知识产权保护和运用“十五五”规划》，为未来五年宁夏知识产权治理体系完善、保护运用效能提升划定路线图。",
+      "translations": {
+        "zh": {
+          "title": "宁夏知识产权保护和运用“十五五”规划获批",
+          "highlight": "宁夏政府常务会议审议通过《宁夏回族自治区知识产权保护和运用“十五五”规划》",
+          "summary": "中新网报道显示，宁夏政府常务会议审议通过知识产权保护和运用“十五五”规划，为未来五年治理体系完善、保护运用效能提升划定路线图。标题还显示，该规划以2030年知识产权强区建设为目标。值得关注的是，规划获批意味着相关治理与运用工作进入正式推进阶段，后续落实成效仍需观察。",
+          "failureAnalysis": "可验证的关键点是规划已获审议通过；后续重点在于把治理体系完善和保护运用效能提升拆解为可执行、可评估的年度任务。"
+        },
+        "en": {
+          "highlight": "The Ningxia government’s executive meeting reviewed and approved the “15th Five-Year Plan” for intellectual property protection and utilization in Ningxia Hui Autonomous Region.",
+          "summary": "The report says the Ningxia government’s executive meeting approved the “15th Five-Year Plan” for intellectual property protection and utilization, setting a roadmap for improving the governance system and protection and utilization effectiveness over the next five years. The title also anchors the work to the goal of building Ningxia into an intellectual property powerhouse by 2030. It is worth watching because approval marks a formal policy step, while actual impact will depend on implementation.",
+          "failureAnalysis": "The verifiable key point is that the plan has been reviewed and approved; the next focus is turning governance improvements and protection and utilization effectiveness into executable, assessable annual tasks.",
+          "title": "Ningxia’s IP Protection and Utilization ‘15th Five-Year Plan’ Approved"
+        }
+      }
+    },
+    {
+      "id": "news-7f1e02f72cde4582a0c6b8feaf9ecda5",
+      "category": "domestic",
+      "title": "中外企业绿色发展与全球贡献国际传播研讨会举行，平安集团盛瑞生发表主题演讲",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-25/10720724.shtml",
+      "publishedAt": "2026-10-25T09:06:21.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "中外企业绿色发展与全球贡献国际传播研讨会10月23日在深圳平安金融中心举行。",
+      "summary": "报道显示，该研讨会由中国公共关系协会主办，汇聚政府部门、中外企业、社会组织、国际机构、学界专家和媒体代表。活动围绕中外企业绿色发展和全球贡献的实践经验开展交流，旨在凝聚共识、推动务实合作，并为APEC会议营造良好舆论氛围。",
+      "failureAnalysis": "可验证的公共影响主要集中在议题设置与多方交流，具体合作成果和后续影响仍需更多公开信息印证。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "由中国公共关系协会主办的中外企业绿色发展与全球贡献国际传播研讨会10月23日在深圳平安金融中心举行。活动旨在贯彻落实国家生态文明战略，紧扣APEC开放创新合作、绿色可持续发展理念，汇聚政府部门、中外企业、社会组织、国际机构、学界专家、新闻媒体等代表，围绕中外企业绿色发展和全球贡献的实践经验，开展经验交流，凝聚各方共识，推动务实合作，进一步推进绿色发展和文明交流互鉴，为APEC第三十三次领导人非正式会议营造良好舆论氛围。",
+      "translations": {
+        "zh": {
+          "title": "中外企业绿色发展与全球贡献国际传播研讨会在深圳举行",
+          "highlight": "中外企业绿色发展与全球贡献国际传播研讨会10月23日在深圳平安金融中心举行。",
+          "summary": "报道显示，该研讨会由中国公共关系协会主办，汇聚政府部门、中外企业、社会组织、国际机构、学界专家和媒体代表。活动围绕中外企业绿色发展和全球贡献的实践经验开展交流，旨在凝聚共识、推动务实合作，并为APEC会议营造良好舆论氛围。",
+          "failureAnalysis": "可验证的公共影响主要集中在议题设置与多方交流，具体合作成果和后续影响仍需更多公开信息印证。"
+        },
+        "en": {
+          "highlight": "The International Communication Seminar on Green Development and Global Contributions of Chinese and Foreign Enterprises was held on October 23 at Ping An Financial Center in Shenzhen.",
+          "summary": "The report says the seminar was hosted by the China Public Relations Association and brought together representatives from government, Chinese and foreign enterprises, social organizations, international institutions, academia, and media. It focused on practical experience in green development and global contributions, aiming to build consensus, promote cooperation, and create a favorable public opinion environment for APEC.",
+          "failureAnalysis": "The verifiable public impact is mainly agenda-setting and multi-party exchange; specific cooperation outcomes and follow-up effects still need more public information.",
+          "title": "International Communication Seminar on Green Development and Global Contributions of Chinese and Foreign Enterprises Held in Shenzhen"
+        }
+      }
+    },
+    {
+      "id": "news-672fc487e43f494bb432517b921e6e9c",
+      "category": "domestic",
+      "title": "西藏那曲巴青7.0级地震震区玛如乡二村受灾群众安置点活动板房顺利通电",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-25/10720856.shtml",
+      "publishedAt": "2026-10-25T14:16:14.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 4",
+      "highlight": "10月25日20时，经过连续8小时奋战，西藏那曲巴青县玛如乡二村受灾群众安置点活动板房顺利通电。",
+      "summary": "报道称，10月25日20时，西藏那曲巴青县玛如乡二村受灾群众安置点的活动板房在连续8小时作业后顺利通电。可核实的信息是安置点活动板房已恢复供电，这直接关系到受灾群众的基本生活保障，因此值得关注。",
+      "failureAnalysis": "关键结论是安置点活动板房已实现通电，反映震区受灾群众安置保障取得具体进展；阅读时可关注通电时间、地点和覆盖对象这些可核实事实。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "10月25日20时，经过连续8小时奋战，西藏那曲巴青县玛如乡二村受灾群众安置点活动板房顺利通电。",
+      "translations": {
+        "zh": {
+          "title": "西藏那曲巴青7.0级地震震区玛如乡二村受灾群众安置点活动板房顺利通电",
+          "highlight": "10月25日20时，经过连续8小时奋战，西藏那曲巴青县玛如乡二村受灾群众安置点活动板房顺利通电。",
+          "summary": "报道称，10月25日20时，西藏那曲巴青县玛如乡二村受灾群众安置点的活动板房在连续8小时作业后顺利通电。可核实的信息是安置点活动板房已恢复供电，这直接关系到受灾群众的基本生活保障，因此值得关注。",
+          "failureAnalysis": "关键结论是安置点活动板房已实现通电，反映震区受灾群众安置保障取得具体进展；阅读时可关注通电时间、地点和覆盖对象这些可核实事实。"
+        },
+        "en": {
+          "highlight": "After eight hours of work, power was restored at 20:00 on October 25 to prefabricated housing at the resettlement site in Maru Township Village No. 2, Baqing County, Nagqu, Tibet.",
+          "summary": "The report says that at 20:00 on October 25, prefabricated housing at the resettlement site for affected residents in Maru Township Village No. 2, Baqing County, Nagqu, Tibet, was successfully powered after eight consecutive hours of work. The verifiable public impact is that the resettlement housing has electricity, which is directly relevant to basic living conditions for disaster-affected residents.",
+          "failureAnalysis": "The key takeaway is that electricity has been restored to the prefabricated housing at the resettlement site, a concrete step in resettlement support after the earthquake; the verifiable facts to note are the time, location, and target of restoration.",
+          "title": "Power Restored to Prefabricated Housing at Resettlement Site in Maru Township, Baqing County, Nagqu, Tibet After 7.0-Magnitude Earthquake"
+        }
+      }
+    },
+    {
+      "id": "news-78bd40578cf34a5293c69670ead288a3",
+      "category": "international",
+      "title": "Exiled opposition leader María Corina Machado returns to Venezuela",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/25/exiled-venezuelan-opposition-leader-maria-corina-machado-announces-her-return",
+      "publishedAt": "2026-10-25T17:18:28.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "诺贝尔和平奖得主在流亡近一年后回国，这不太可能让临时总统德尔西·罗德里格斯高兴。",
+      "summary": "报道称，委内瑞拉反对派领袖玛丽亚·科里纳·马查多宣布已返回委内瑞拉，并在X上写道“我在这里。和你们在一起。”她近一年前离国领取诺贝尔和平奖。此次回国可能影响委内瑞拉政治局势，因而值得关注。",
+      "failureAnalysis": "关键看点在于，马查多回国对委内瑞拉反对派动员和临时总统德尔西·罗德里格斯政府的影响，而不仅是回国动作本身。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Nobel peace prize winner’s return after almost a year in exile is unlikely to please interim president Delcy Rodríguez The Venezuelan opposition leader María Corina Machado has announced she has returned to Venezuela almost a year after she left the country to receive the Nobel peace prize. With you,” she wrote on X on Sunday lunchtime.",
+      "translations": {
+        "zh": {
+          "title": "流亡反对派领袖玛丽亚·科里纳·马查多返回委内瑞拉",
+          "highlight": "诺贝尔和平奖得主在流亡近一年后回国，这不太可能让临时总统德尔西·罗德里格斯高兴。",
+          "summary": "报道称，委内瑞拉反对派领袖玛丽亚·科里纳·马查多宣布已返回委内瑞拉，并在X上写道“我在这里。和你们在一起。”她近一年前离国领取诺贝尔和平奖。此次回国可能影响委内瑞拉政治局势，因而值得关注。",
+          "failureAnalysis": "关键看点在于，马查多回国对委内瑞拉反对派动员和临时总统德尔西·罗德里格斯政府的影响，而不仅是回国动作本身。"
+        },
+        "en": {
+          "highlight": "Nobel peace prize winner’s return after almost a year in exile is unlikely to please interim president Delcy Rodríguez",
+          "summary": "The report says Venezuelan opposition leader María Corina Machado has announced she has returned to Venezuela almost a year after leaving to receive the Nobel Peace Prize. She wrote on X: “I’m here. With you.” The move is worth watching because it could affect the country’s political balance and the interim president’s position.",
+          "failureAnalysis": "The key takeaway is the political effect of Machado’s return on Venezuela’s opposition and the interim government, not merely the fact of her return.",
+          "title": "Exiled opposition leader María Corina Machado returns to Venezuela"
+        }
+      }
+    },
+    {
+      "id": "news-e46644170f7945d5b45cbb7f4561da24",
+      "category": "international",
+      "title": "Protests roil France once again as police seek to quell violence",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/24/nx-s1-6014520/protests-roil-france-once-again-as-police-seek-to-quell-violence",
+      "publishedAt": "2026-10-24T21:21:00.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "数十万人走上法国各地街头，抗议从学校经费不足到经济不平等等问题；警方也重兵部署，防止上周暴力重演。",
+      "summary": "据已知内容，法国各地有数十万人参与抗议，诉求涵盖学校经费不足和经济不平等等议题。警方大规模出动，试图避免上周的暴力事件再次发生。这则国际新闻值得关注，因为它反映法国社会不满与公共秩序压力同时升温。",
+      "failureAnalysis": "关键看点在于抗议议题广泛且规模庞大，同时警方把防止暴力重演作为重点；后续局势取决于示威与安保之间的互动。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Hundreds of thousands turned out across France to protest everything from the lack of school funding to economic inequality. Police also were out in force to prevent a repeat of last week's violence.",
+      "translations": {
+        "zh": {
+          "title": "法国多地再爆抗议 警方力防暴力重演",
+          "highlight": "数十万人走上法国各地街头，抗议从学校经费不足到经济不平等等问题；警方也重兵部署，防止上周暴力重演。",
+          "summary": "据已知内容，法国各地有数十万人参与抗议，诉求涵盖学校经费不足和经济不平等等议题。警方大规模出动，试图避免上周的暴力事件再次发生。这则国际新闻值得关注，因为它反映法国社会不满与公共秩序压力同时升温。",
+          "failureAnalysis": "关键看点在于抗议议题广泛且规模庞大，同时警方把防止暴力重演作为重点；后续局势取决于示威与安保之间的互动。"
+        },
+        "en": {
+          "highlight": "Hundreds of thousands protested across France over issues from school funding shortages to economic inequality, while police deployed in force to prevent a repeat of last week's violence.",
+          "summary": "Known details say hundreds of thousands of people took part in protests across France, with demands spanning school funding shortages and economic inequality. Police also turned out in force to try to prevent a repeat of last week's violence. The item is worth reading because it shows social discontent and public-order pressure rising at the same time.",
+          "failureAnalysis": "The key takeaway is that the protests cover a wide range of grievances and are large in scale, while police are focused on preventing renewed violence; what happens next will depend on how demonstrations and security operations interact.",
+          "title": "Protests Erupt Again Across France as Police Seek to Prevent Violence"
+        }
+      }
+    },
+    {
+      "id": "life-671a8a3304b9497a9b1274b3c18bd131",
+      "category": "international",
+      "title": "The Baloney Detection Kit: Carl Sagan’s Timeless Tenets of Critical Thinking",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/10/24/baloney-detection-kit-carl-sagan/",
+      "publishedAt": "2026-10-24T20:52:43.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "这套工具是抵御宣传、伪科学和普遍虚假信息的必要认知防御。",
+      "summary": "文章围绕卡尔·萨根的“胡扯检测工具”，梳理其关于批判性思维的历久弥新的原则。它强调，面对宣传、伪科学和普遍虚假信息，需要建立必要的认知防御。对非技术读者而言，这是一份训练判断力、识别不实说法的简明读本。",
+      "failureAnalysis": "关键启示：在信息噪音中，先建立可重复的核验习惯，再判断一个说法是否可信。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Necessary cognitive fortification against propaganda, pseudoscience, and general falsehood.",
+      "translations": {
+        "zh": {
+          "title": "卡尔·萨根的“胡扯检测工具”：历久弥新的批判性思维原则",
+          "highlight": "这套工具是抵御宣传、伪科学和普遍虚假信息的必要认知防御。",
+          "summary": "文章围绕卡尔·萨根的“胡扯检测工具”，梳理其关于批判性思维的历久弥新的原则。它强调，面对宣传、伪科学和普遍虚假信息，需要建立必要的认知防御。对非技术读者而言，这是一份训练判断力、识别不实说法的简明读本。",
+          "failureAnalysis": "关键启示：在信息噪音中，先建立可重复的核验习惯，再判断一个说法是否可信。"
+        },
+        "en": {
+          "highlight": "It serves as a necessary cognitive fortification against propaganda, pseudoscience, and general falsehood.",
+          "summary": "The article revisits Carl Sagan’s Baloney Detection Kit and its timeless principles of critical thinking. It stresses the need for cognitive defenses against propaganda, pseudoscience, and general falsehood. For non-specialist readers, it is a concise guide to sharpening judgment and spotting dubious claims.",
+          "failureAnalysis": "Key takeaway: build repeatable verification habits before deciding whether a claim is credible, especially in noisy information environments.",
+          "title": "Carl Sagan’s Baloney Detection Kit: Timeless Tenets of Critical Thinking"
+        }
+      }
+    },
+    {
+      "id": "life-5cecae2ec6dd4e5ebdbc01b0652f42b8",
+      "category": "international",
+      "title": "Can you ever really think what someone else is thinking?",
+      "source": "Psyche",
+      "url": "https://psyche.co/ideas/can-you-ever-really-think-what-someone-else-is-thinking",
+      "publishedAt": "2026-10-23T10:00:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 0",
+      "highlight": "要看清沟通究竟如何运作，就应放下不同人能够共享同一想法这一观念。",
+      "summary": "这篇 Psyche 文章围绕“能否真正知道他人所想”展开，作者 Víctor Verdejo 提出：要理解沟通如何运作，需放下不同人能共享同一想法的假设。它值得读，是因为它促使读者重新审视日常沟通中默认的“想法可被共享”前提。",
+      "failureAnalysis": "关键提醒是：沟通未必建立在想法共享上；先质疑这一默认假设，才能更准确地理解交流。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "To see how communication truly works, we should set aside the notion that different people can share the same thoughts - by Víctor Verdejo Read on Psyche",
+      "translations": {
+        "zh": {
+          "title": "你真能知道别人在想什么吗？",
+          "highlight": "要看清沟通究竟如何运作，就应放下不同人能够共享同一想法这一观念。",
+          "summary": "这篇 Psyche 文章围绕“能否真正知道他人所想”展开，作者 Víctor Verdejo 提出：要理解沟通如何运作，需放下不同人能共享同一想法的假设。它值得读，是因为它促使读者重新审视日常沟通中默认的“想法可被共享”前提。",
+          "failureAnalysis": "关键提醒是：沟通未必建立在想法共享上；先质疑这一默认假设，才能更准确地理解交流。"
+        },
+        "en": {
+          "highlight": "To see how communication truly works, we should set aside the notion that different people can share the same thoughts.",
+          "summary": "This Psyche article asks whether one person can ever truly know another’s thoughts. Víctor Verdejo argues that to understand how communication actually works, we should set aside the assumption that different people can share the same thoughts. It is worth reading as a prompt to reconsider a default premise in everyday communication.",
+          "failureAnalysis": "The key takeaway is to question the default assumption that thoughts can be shared; doing so may lead to a more accurate understanding of communication.",
+          "title": "Can You Ever Really Know What Someone Else Is Thinking?"
+        }
+      }
+    },
+    {
+      "id": "paper-2610.25211",
+      "category": "paper",
+      "title": "NeuroAct: Advancing EEG Analysis and Decoding via Dual-Loop Autonomous Research",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2610.25211v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.25211",
+      "publishedAt": "2026-10-18T12:09:42.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "脑电信号要用于脑机接口、认知评估、睡眠监测，但“为什么这个模型表现不好、该改哪里”往往说不清。固定流程和奖励驱动的自动搜索不会明确判断信号结构、表征、预测器行为、训练动态各自贡献了多少误差，导致干预手段选得没有依据。",
+        "method": "NeuroAct 用“双环自主研究”来解：内环里设协调者（Coordinator）、研究员（Researcher）、开发者（Developer）、评审者（Reviewer）四种角色，围绕一个目标拆成多个并行问题，用文献、数据语义、模型行为和训练证据提出竞争性假设，再通过可执行的实验去验证，依据性能、稳定性、成本反馈决定下一步；外环把结果提炼成“在什么任务、什么模型条件下适用”的可测试建议，在后续任务中检验、修正或收窄适用范围。",
+        "difference": "和 BrainAgent（编排信号分析工具）、BrainPilot（固定预处理与训练下做架构研究）、NeuroWeaver（搜索领域受限的流水线）相比，NeuroAct 强调先做“诊断”再选干预，并且明确支持 EEG 基础模型适配、多任务联合训练、模型组合（看模型间错误是否重叠）这些更广的动作空间，还把跨任务经验的条件化复用写进了机制里。",
+        "innovation": "三点：一是证据引导的内环研究——用信号、表征、预测器、训练四类证据来挑选分析与干预；二是外环的条件化策略改进——经验被写成带适用条件、支持证据、反证据和重估条件的建议，被新任务检验后保留、修正或废弃；三是把 EEG 通用分析、跨任务模型优化、单任务开放研究、协同预测四类场景都做成了可执行的评测设置。另外还有渐进式能力披露（先给能力索引，按需展开细节）来控制上下文。",
+        "implementation": "协调者按公式选择研究决策与角色派单，每个交接单都记录要交付什么、有哪些证据、还有什么未决问题；研究员用文献与数据证据提方案，开发者写代码跑分析或训练（可并行跑多个 GPU 实验），评审者挑战站不住的结论并回传协调者整合。角色策略靠提示词驱动而非训练，所以行为能随积累的证据变化而不需要改模型参数；经验条目在后续任务中先匹配摘要再取细节，超出预算或被反证就收窄、暂停或替换。",
+        "applications": "脑机接口解码、认知负荷与认知状态评估（Workload）、睡眠监测（HMC）、年龄预测（HBN）、运动想象（PhysioMI、BCIC-IV-2a）、ADFTD 等神经疾病相关分析，以及作为 EEG 基础模型（如 EEGPT）的自动适配与多模型协同预测工具。",
+        "technicalTerms": [
+          "EEG：脑电图，从头皮电极记录的大脑电活动信号",
+          "EEG-FM（EEG 基础模型）：在大规模脑电数据上预训练、可迁移到多种下游任务的模型",
+          "内环/外环：内环负责单个任务里的假设—实验—评审循环，外环负责把经验跨任务沉淀、检验和修正",
+          "平衡准确率 BA：对各类别准确率取平均，避免类别不平衡时被多数类“刷分”",
+          "Pearson's r：皮尔逊相关系数，衡量预测值与真实值的线性相关程度，常用于年龄等连续值预测",
+          "BrainBench：论文用来做通用 EEG 分析评测的基准",
+          "渐进式能力披露：先只给智能体一份能力目录，需要时再展开具体工具或技能说明，以节省上下文",
+          "条件化经验/经验复用：把结论写成“在什么条件下该做什么”，新任务匹配得上才用，用后按效果修正",
+          "CodeAct / BrainAgent / BrainPilot：论文对比的三个外部智能体基线"
+        ]
+      },
+      "highlight": "经验复用把 BCIC-IV-2a 的平衡准确率从 34.66% 提升到 50.81%，同时把 LLM token 消耗降低 64.02%。",
+      "summary": "这篇预印本论文提出 NeuroAct，一个面向脑电（EEG）分析与解码的“自主研究智能体”框架：它把研究、开发、评审三种角色放进一个内循环里反复提出假设、做实验、接受审查，再把结论沉淀成有条件的经验用于后续任务（外环）。作者在 6 个数据集、3 种大模型后端、4 类研究设置上做了评测，报告的提升幅度不小，例如通用分析综合分 80.88 对基线 BrainAgent 的 63.13，ADFTD 上提升 16.33 个平衡准确率点。值得一看的地方在于它把“该做什么诊断、该上什么干预”这件事本身交给智能体去决策，而不是靠固定流程或单纯的奖励搜索。",
+      "failureAnalysis": "目前只是 arXiv 预印本（2026 年 10 月），尚未经过同行评审；评测只覆盖 6 个数据集和 3 个 LLM 后端，外部基线也只有 CodeAct、BrainPilot、BrainAgent，成绩高度依赖所选大模型（如 DeepSeek-V4 Flash）与预算设定。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Preprint NEUROACT: ADVANCINGEEG ANALYSIS ANDDECOD- ING VIADUAL-LOOPAUTONOMOUSRESEARCH Wei Xiong1,2, Jiangtong Li1, Han Zhao3, Linxiao Yang2, Jie Li4,1, Changjun Jiang1 1Tongji University 2Ant Group 3Shanghai Jiao Tong University 4Translational Research Center, Shanghai Yangzhi Rehabilitation Hospital (Shanghai Sunshine Rehabilitation Center), Tongji University ABSTRACT EEG analysis and decoding underpin brain-computer interfaces, cognitive assess- ment, and sleep monitoring. Fixed pipelines and reward-driven search do not explicitly determine how signal structure, representations, predictor behavior, and training dynamics contribute to performance or generalization gaps, leaving inter- vention choice underdetermined. We introduce NeuroAct, an autonomous research agent framework for EEG analysis and decoding.",
+      "translations": {
+        "zh": {
+          "title": "NeuroAct：用双环自主研究智能体推进脑电分析与解码",
+          "highlight": "经验复用把 BCIC-IV-2a 的平衡准确率从 34.66% 提升到 50.81%，同时把 LLM token 消耗降低 64.02%。",
+          "summary": "这篇预印本论文提出 NeuroAct，一个面向脑电（EEG）分析与解码的“自主研究智能体”框架：它把研究、开发、评审三种角色放进一个内循环里反复提出假设、做实验、接受审查，再把结论沉淀成有条件的经验用于后续任务（外环）。作者在 6 个数据集、3 种大模型后端、4 类研究设置上做了评测，报告的提升幅度不小，例如通用分析综合分 80.88 对基线 BrainAgent 的 63.13，ADFTD 上提升 16.33 个平衡准确率点。值得一看的地方在于它把“该做什么诊断、该上什么干预”这件事本身交给智能体去决策，而不是靠固定流程或单纯的奖励搜索。",
+          "failureAnalysis": "目前只是 arXiv 预印本（2026 年 10 月），尚未经过同行评审；评测只覆盖 6 个数据集和 3 个 LLM 后端，外部基线也只有 CodeAct、BrainPilot、BrainAgent，成绩高度依赖所选大模型（如 DeepSeek-V4 Flash）与预算设定。",
+          "paperCard": {
+            "problem": "脑电信号要用于脑机接口、认知评估、睡眠监测，但“为什么这个模型表现不好、该改哪里”往往说不清。固定流程和奖励驱动的自动搜索不会明确判断信号结构、表征、预测器行为、训练动态各自贡献了多少误差，导致干预手段选得没有依据。",
+            "method": "NeuroAct 用“双环自主研究”来解：内环里设协调者（Coordinator）、研究员（Researcher）、开发者（Developer）、评审者（Reviewer）四种角色，围绕一个目标拆成多个并行问题，用文献、数据语义、模型行为和训练证据提出竞争性假设，再通过可执行的实验去验证，依据性能、稳定性、成本反馈决定下一步；外环把结果提炼成“在什么任务、什么模型条件下适用”的可测试建议，在后续任务中检验、修正或收窄适用范围。",
+            "difference": "和 BrainAgent（编排信号分析工具）、BrainPilot（固定预处理与训练下做架构研究）、NeuroWeaver（搜索领域受限的流水线）相比，NeuroAct 强调先做“诊断”再选干预，并且明确支持 EEG 基础模型适配、多任务联合训练、模型组合（看模型间错误是否重叠）这些更广的动作空间，还把跨任务经验的条件化复用写进了机制里。",
+            "innovation": "三点：一是证据引导的内环研究——用信号、表征、预测器、训练四类证据来挑选分析与干预；二是外环的条件化策略改进——经验被写成带适用条件、支持证据、反证据和重估条件的建议，被新任务检验后保留、修正或废弃；三是把 EEG 通用分析、跨任务模型优化、单任务开放研究、协同预测四类场景都做成了可执行的评测设置。另外还有渐进式能力披露（先给能力索引，按需展开细节）来控制上下文。",
+            "implementation": "协调者按公式选择研究决策与角色派单，每个交接单都记录要交付什么、有哪些证据、还有什么未决问题；研究员用文献与数据证据提方案，开发者写代码跑分析或训练（可并行跑多个 GPU 实验），评审者挑战站不住的结论并回传协调者整合。角色策略靠提示词驱动而非训练，所以行为能随积累的证据变化而不需要改模型参数；经验条目在后续任务中先匹配摘要再取细节，超出预算或被反证就收窄、暂停或替换。",
+            "applications": "脑机接口解码、认知负荷与认知状态评估（Workload）、睡眠监测（HMC）、年龄预测（HBN）、运动想象（PhysioMI、BCIC-IV-2a）、ADFTD 等神经疾病相关分析，以及作为 EEG 基础模型（如 EEGPT）的自动适配与多模型协同预测工具。",
+            "technicalTerms": [
+              "EEG：脑电图，从头皮电极记录的大脑电活动信号",
+              "EEG-FM（EEG 基础模型）：在大规模脑电数据上预训练、可迁移到多种下游任务的模型",
+              "内环/外环：内环负责单个任务里的假设—实验—评审循环，外环负责把经验跨任务沉淀、检验和修正",
+              "平衡准确率 BA：对各类别准确率取平均，避免类别不平衡时被多数类“刷分”",
+              "Pearson's r：皮尔逊相关系数，衡量预测值与真实值的线性相关程度，常用于年龄等连续值预测",
+              "BrainBench：论文用来做通用 EEG 分析评测的基准",
+              "渐进式能力披露：先只给智能体一份能力目录，需要时再展开具体工具或技能说明，以节省上下文",
+              "条件化经验/经验复用：把结论写成“在什么条件下该做什么”，新任务匹配得上才用，用后按效果修正",
+              "CodeAct / BrainAgent / BrainPilot：论文对比的三个外部智能体基线"
+            ]
+          }
+        },
+        "en": {
+          "highlight": "Experience reuse raised BCIC-IV-2a balanced accuracy from 34.66% to 50.81% while cutting LLM token usage by 64.02%.",
+          "summary": "This preprint introduces NeuroAct, an autonomous research agent framework for EEG analysis and decoding: an inner loop in which Researcher, Developer, and Reviewer roles test competing diagnostic hypotheses through executable experiments, and an outer loop that distills results into conditional recommendations validated and revised across tasks. Evaluated on six datasets, three LLM backends, and four research settings, it reports large gains, such as an 80.88 macro-average versus BrainAgent's 63.13 and a 16.33-point balanced-accuracy improvement on ADFTD. It is worth reading because it makes the diagnostic decision itself — which analysis or intervention to try — the object of automation, rather than relying on fixed pipelines or reward-driven search.",
+          "failureAnalysis": "It is only an arXiv preprint (October 2026) without peer review, and the evaluation covers just six datasets, three LLM backends, and three external baselines, so results depend heavily on the chosen backend and budget settings.",
+          "title": "NeuroAct: Advancing EEG Analysis and Decoding via Dual-Loop Autonomous Research",
+          "paperCard": {
+            "problem": "EEG analysis and decoding underlie brain-computer interfaces, cognitive assessment, and sleep monitoring, but fixed pipelines and reward-driven search do not explicitly determine how signal structure, representations, predictor behavior, and training dynamics contribute to performance or generalization gaps, leaving intervention choice underdetermined.",
+            "method": "NeuroAct runs a dual-loop autonomous research process: an inner loop where a Coordinator directs Researcher, Developer, and Reviewer roles across parallel questions, testing competing hypotheses with executable analyses and choosing next actions from performance, stability, and cost feedback; and an outer loop that distills outcomes into conditional, testable recommendations and validates or revises them on later tasks.",
+            "difference": "Unlike BrainAgent (tool orchestration), BrainPilot (architecture research under fixed preprocessing and training), and NeuroWeaver (domain-constrained pipeline search), NeuroAct diagnoses gaps from signal, representation, predictor, and training evidence before choosing interventions, and it explicitly covers EEG foundation-model adaptation, joint multi-task training, and model combination via cross-model error overlap.",
+            "innovation": "Three parts: evidence-guided inner-loop research that uses signal, representation, predictor, and training evidence to select analyses or interventions; outer-loop conditional strategy improvement, where experience is stored with applicable task and model conditions, supporting and counterevidence, and reassessment conditions; and executable operationalization across four settings — EEG General Analysis, Cross-task Model Optimization, Single-task Open Research, and Collaborative Prediction.",
+            "implementation": "The Coordinator selects a research decision and specialist assignments, dispatching Researcher, Developer, and Reviewer in separate contexts; each handoff records the requested deliverable, supporting evidence, unresolved issues, and a recommendation. Roles are prompted rather than trained, so behavior evolves with accumulated evidence without LLM parameter updates. Experiments run in parallel when GPU resources permit, and experience entries are matched by summary before details are disclosed on demand.",
+            "applications": "Brain-computer interface decoding, cognitive workload and state assessment, sleep monitoring, age prediction, motor imagery, ADFTD and other clinical EEG analyses, plus automated adaptation of EEG foundation models such as EEGPT and multi-model collaborative prediction.",
+            "technicalTerms": [
+              "EEG: electrical brain activity recorded from scalp electrodes",
+              "EEG-FM: a foundation model pretrained on large EEG corpora and adaptable to downstream tasks",
+              "Inner/outer loop: the inner loop runs hypothesis-experiment-review cycles within a task; the outer loop distills, validates, and revises experience across tasks",
+              "Balanced accuracy (BA): the average of per-class accuracies, robust to class imbalance",
+              "Pearson's r: a correlation coefficient measuring linear agreement between predictions and targets",
+              "BrainBench: the benchmark used for general EEG analysis evaluation",
+              "Progressive disclosure: giving agents a compact capability index first and expanding details on demand to conserve context",
+              "Conditional experience: recommendations written with applicability conditions, used when matched and revised by outcomes",
+              "CodeAct / BrainAgent / BrainPilot: the three external agent baselines compared in the paper"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-hn-50198675",
+      "category": "ai",
+      "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+      "source": "Hacker News",
+      "url": "https://github.com/NVIDIA/OpenShell",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-22T17:44:06.0000000Z",
+      "scoreLabel": "501 points / 217 comments",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "HN discussion",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + HN discussion",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + HN discussion",
+      "summary": "OpenShell 是 NVIDIA GitHub 组织下的运行时项目，从标题看，它面向成批自主 AI 智能体，强调安全与隐私。该条目在 Hacker News 获得 501 分和 217 条评论，说明多智能体安全执行是受关注议题；值得读的点在于它如何落地部署，以及会受哪些工程与合规约束。",
+      "failureAnalysis": "安全私密运行时若不能兼容主流智能体框架和工具链，企业迁移成本会很高；成批运行还要求隔离、资源调度、可观测性和故障恢复等工程能力。合规审计、责任边界和数据治理也会抬高采用门槛。仅有 HN 高热度不足以证明真实采购需求或长期维护投入，项目可能停留在演示阶段。",
+      "aiSelectionScore": 935,
+      "highlight": "OpenShell 为成批运行的自主 AI 智能体提供安全且保护隐私的运行时环境",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "HN candidate with public discussion metrics.",
+      "translations": {
+        "zh": {
+          "title": "OpenShell：面向成批自主 AI 智能体的安全私密运行时",
+          "highlight": "OpenShell 为成批运行的自主 AI 智能体提供安全且保护隐私的运行时环境",
+          "summary": "OpenShell 是 NVIDIA GitHub 组织下的运行时项目，从标题看，它面向成批自主 AI 智能体，强调安全与隐私。该条目在 Hacker News 获得 501 分和 217 条评论，说明多智能体安全执行是受关注议题；值得读的点在于它如何落地部署，以及会受哪些工程与合规约束。",
+          "failureAnalysis": "安全私密运行时若不能兼容主流智能体框架和工具链，企业迁移成本会很高；成批运行还要求隔离、资源调度、可观测性和故障恢复等工程能力。合规审计、责任边界和数据治理也会抬高采用门槛。仅有 HN 高热度不足以证明真实采购需求或长期维护投入，项目可能停留在演示阶段。"
+        },
+        "en": {
+          "highlight": "OpenShell is a safe, private runtime for fleets of autonomous AI agents.",
+          "summary": "OpenShell is a GitHub project under NVIDIA that positions itself as a safe, private runtime for fleets of autonomous AI agents. Its Hacker News discussion—501 points and 217 comments—signals strong interest in secure multi-agent execution, making its deployment path and constraints worth examining.",
+          "failureAnalysis": "The project may struggle if it cannot integrate with existing agent frameworks, keep isolation and observability manageable at fleet scale, or satisfy enterprise compliance and audit requirements. Strong HN attention alone does not prove sustained adoption or a clear buyer.",
+          "title": "OpenShell: A Safe, Private Runtime for Fleets of Autonomous AI Agents"
+        }
+      }
+    }
+  ]
+}

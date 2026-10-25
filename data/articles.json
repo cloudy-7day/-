@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-10-24",
+  "issueDate": "2026-10-25",
   "updateStatus": "complete",
-  "contentFingerprint": "13c0a89b086fa0926aa7221945971cd8eb7d90c09beb33b8a882c9b2ab5d0f6e",
+  "contentFingerprint": "2e15b3ccde411cc5526e14dc37b0debe96d983bad6269337cc914865085f5547",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,216 +10,216 @@
   ],
   "articles": [
     {
-      "id": "news-e8cb0ec2dfd2493e850546ad735ce0b5",
+      "id": "news-dac9e5a2e55c4f2c9a5b7069a7016f07",
       "category": "domestic",
-      "title": "联合国政策事务副秘书长：全球治理倡议帮助落实联合国目标",
+      "title": "宁夏知识产权保护和运用“十五五”规划获批 锚定2030年知识产权强区建设目标",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-24/10720516.shtml",
-      "publishedAt": "2026-10-24T13:49:18.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-25/10720828.shtml",
+      "publishedAt": "2026-10-25T12:48:05.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "世界面临着巨大变革，中国提出的全球治理倡议能够帮助联合国落实相关目标。",
-      "summary": "中新社报道，2026全球治理论坛在河北雄安新区举行，联合国政策事务副秘书长莱德在大会发言和接受采访时表示，全球治理倡议能够帮助联合国落实相关目标。报道提供了联合国官员对中国全球治理倡议的公开评价，适合关注中国与联合国治理议程衔接的读者了解。",
-      "failureAnalysis": "关键信息来自联合国官员的公开表态，其实际政策影响仍需结合后续联合国议程与具体合作进展观察。",
+      "highlight": "宁夏政府常务会议审议通过《宁夏回族自治区知识产权保护和运用“十五五”规划》",
+      "summary": "中新网报道显示，宁夏政府常务会议审议通过知识产权保护和运用“十五五”规划，为未来五年治理体系完善、保护运用效能提升划定路线图。标题还显示，该规划以2030年知识产权强区建设为目标。值得关注的是，规划获批意味着相关治理与运用工作进入正式推进阶段，后续落实成效仍需观察。",
+      "failureAnalysis": "可验证的关键点是规划已获审议通过；后续重点在于把治理体系完善和保护运用效能提升拆解为可执行、可评估的年度任务。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社河北雄安10月24日电 (记者 周昕 曾玥)2026全球治理论坛(雄安)23日至25日在河北雄安新区举行。24日，联合国政策事务副秘书长莱德在大会发言并接受媒体采访。他表示，世界面临着巨大变革，中国提出的全球治理倡议能够帮助联合国落实相关目标。",
+      "sourceExcerpt": "中新网银川10月25日电 (记者 于晶)25日，记者从宁夏回族自治区市场监督管理厅(知识产权局)获悉，宁夏政府常务会议审议通过《宁夏回族自治区知识产权保护和运用“十五五”规划》，为未来五年宁夏知识产权治理体系完善、保护运用效能提升划定路线图。",
       "translations": {
         "zh": {
-          "title": "联合国政策事务副秘书长：全球治理倡议帮助落实联合国目标",
-          "highlight": "世界面临着巨大变革，中国提出的全球治理倡议能够帮助联合国落实相关目标。",
-          "summary": "中新社报道，2026全球治理论坛在河北雄安新区举行，联合国政策事务副秘书长莱德在大会发言和接受采访时表示，全球治理倡议能够帮助联合国落实相关目标。报道提供了联合国官员对中国全球治理倡议的公开评价，适合关注中国与联合国治理议程衔接的读者了解。",
-          "failureAnalysis": "关键信息来自联合国官员的公开表态，其实际政策影响仍需结合后续联合国议程与具体合作进展观察。"
+          "title": "宁夏知识产权保护和运用“十五五”规划获批",
+          "highlight": "宁夏政府常务会议审议通过《宁夏回族自治区知识产权保护和运用“十五五”规划》",
+          "summary": "中新网报道显示，宁夏政府常务会议审议通过知识产权保护和运用“十五五”规划，为未来五年治理体系完善、保护运用效能提升划定路线图。标题还显示，该规划以2030年知识产权强区建设为目标。值得关注的是，规划获批意味着相关治理与运用工作进入正式推进阶段，后续落实成效仍需观察。",
+          "failureAnalysis": "可验证的关键点是规划已获审议通过；后续重点在于把治理体系完善和保护运用效能提升拆解为可执行、可评估的年度任务。"
         },
         "en": {
-          "highlight": "The world is undergoing tremendous changes, and China's Global Governance Initiative can help the United Nations implement relevant goals.",
-          "summary": "China News Service reports that the 2026 Global Governance Forum (Xiong'an) was held in Hebei's Xiong'an New Area. In remarks and an interview, the UN Under-Secretary-General for Policy said China's Global Governance Initiative can help the UN advance relevant objectives. It is worth reading for a public, on-the-record view of how a UN official frames the initiative's link to UN goals.",
-          "failureAnalysis": "The key takeaway rests on a public official statement; actual policy impact still depends on the follow-up UN agenda and concrete cooperation.",
-          "title": "UN Under-Secretary-General for Policy: Global Governance Initiative Helps Implement UN Goals"
+          "highlight": "The Ningxia government’s executive meeting reviewed and approved the “15th Five-Year Plan” for intellectual property protection and utilization in Ningxia Hui Autonomous Region.",
+          "summary": "The report says the Ningxia government’s executive meeting approved the “15th Five-Year Plan” for intellectual property protection and utilization, setting a roadmap for improving the governance system and protection and utilization effectiveness over the next five years. The title also anchors the work to the goal of building Ningxia into an intellectual property powerhouse by 2030. It is worth watching because approval marks a formal policy step, while actual impact will depend on implementation.",
+          "failureAnalysis": "The verifiable key point is that the plan has been reviewed and approved; the next focus is turning governance improvements and protection and utilization effectiveness into executable, assessable annual tasks.",
+          "title": "Ningxia’s IP Protection and Utilization ‘15th Five-Year Plan’ Approved"
         }
       }
     },
     {
-      "id": "news-1a9bb55aec8c4af3a5fe6e08961daf1e",
+      "id": "news-7f1e02f72cde4582a0c6b8feaf9ecda5",
       "category": "domestic",
-      "title": "20类救灾物资已陆续运往西藏巴青地震灾区",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-24/10720506.shtml",
-      "publishedAt": "2026-10-24T13:26:17.0000000+00:00",
+      "title": "中外企业绿色发展与全球贡献国际传播研讨会举行，平安集团盛瑞生发表主题演讲",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-25/10720724.shtml",
+      "publishedAt": "2026-10-25T09:06:21.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "中央、自治区、市、县四级调配的20类救灾物资已陆续运往灾区",
-      "summary": "中新网报道，那曲市抗震救灾指挥部10月24日公布，四级调配的20类救灾物资正陆续运往西藏巴青地震灾区。物资包括棉衣、棉裤、折叠床等生活急需品，另有1台大型无人机翼龙已到达现场。该信息可用于观察应急物资调度和大型无人机参与救灾的公开进展。",
-      "failureAnalysis": "可核验的重点是物资类别、四级调配机制和翼龙无人机到场，体现应急物流与装备协同；具体数量、覆盖范围和实际效果仍待后续公开。",
+      "highlight": "中外企业绿色发展与全球贡献国际传播研讨会10月23日在深圳平安金融中心举行。",
+      "summary": "报道显示，该研讨会由中国公共关系协会主办，汇聚政府部门、中外企业、社会组织、国际机构、学界专家和媒体代表。活动围绕中外企业绿色发展和全球贡献的实践经验开展交流，旨在凝聚共识、推动务实合作，并为APEC会议营造良好舆论氛围。",
+      "failureAnalysis": "可验证的公共影响主要集中在议题设置与多方交流，具体合作成果和后续影响仍需更多公开信息印证。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网那曲10月24日电 (卢鑫)24日，西藏自治区那曲市抗震救灾指挥部公布信息，中央、自治区、市、县四级调配的20类救灾物资已陆续运往灾区。救灾物资中不但包含棉衣、棉裤、折叠床等灾区急需的生活物资，其中1台大型无人机翼龙已到达现场。",
+      "sourceExcerpt": "由中国公共关系协会主办的中外企业绿色发展与全球贡献国际传播研讨会10月23日在深圳平安金融中心举行。活动旨在贯彻落实国家生态文明战略，紧扣APEC开放创新合作、绿色可持续发展理念，汇聚政府部门、中外企业、社会组织、国际机构、学界专家、新闻媒体等代表，围绕中外企业绿色发展和全球贡献的实践经验，开展经验交流，凝聚各方共识，推动务实合作，进一步推进绿色发展和文明交流互鉴，为APEC第三十三次领导人非正式会议营造良好舆论氛围。",
       "translations": {
         "zh": {
-          "title": "20类救灾物资陆续运往西藏巴青地震灾区",
-          "highlight": "中央、自治区、市、县四级调配的20类救灾物资已陆续运往灾区",
-          "summary": "中新网报道，那曲市抗震救灾指挥部10月24日公布，四级调配的20类救灾物资正陆续运往西藏巴青地震灾区。物资包括棉衣、棉裤、折叠床等生活急需品，另有1台大型无人机翼龙已到达现场。该信息可用于观察应急物资调度和大型无人机参与救灾的公开进展。",
-          "failureAnalysis": "可核验的重点是物资类别、四级调配机制和翼龙无人机到场，体现应急物流与装备协同；具体数量、覆盖范围和实际效果仍待后续公开。"
+          "title": "中外企业绿色发展与全球贡献国际传播研讨会在深圳举行",
+          "highlight": "中外企业绿色发展与全球贡献国际传播研讨会10月23日在深圳平安金融中心举行。",
+          "summary": "报道显示，该研讨会由中国公共关系协会主办，汇聚政府部门、中外企业、社会组织、国际机构、学界专家和媒体代表。活动围绕中外企业绿色发展和全球贡献的实践经验开展交流，旨在凝聚共识、推动务实合作，并为APEC会议营造良好舆论氛围。",
+          "failureAnalysis": "可验证的公共影响主要集中在议题设置与多方交流，具体合作成果和后续影响仍需更多公开信息印证。"
         },
         "en": {
-          "highlight": "Relief supplies in 20 categories allocated by central, regional, municipal and county levels have been successively transported to the disaster area.",
-          "summary": "China News Service reports that on October 24, the Nagqu earthquake relief command announced that 20 categories of relief supplies allocated at four levels are being sent to the Baqing earthquake zone in Tibet. The supplies include urgently needed daily items such as cotton coats, cotton trousers and folding beds, and one large Wing Loong drone has arrived at the site. The information is useful for tracking public updates on emergency supply coordination and large-drone participation in relief.",
-          "failureAnalysis": "The verifiable takeaway is the four-level allocation of 20 supply categories and the arrival of a Wing Loong drone, reflecting emergency logistics and equipment coordination; details on quantities, coverage and outcomes remain to be disclosed.",
-          "title": "20 Types of Relief Supplies Being Sent to Tibet's Baqing Earthquake Zone"
+          "highlight": "The International Communication Seminar on Green Development and Global Contributions of Chinese and Foreign Enterprises was held on October 23 at Ping An Financial Center in Shenzhen.",
+          "summary": "The report says the seminar was hosted by the China Public Relations Association and brought together representatives from government, Chinese and foreign enterprises, social organizations, international institutions, academia, and media. It focused on practical experience in green development and global contributions, aiming to build consensus, promote cooperation, and create a favorable public opinion environment for APEC.",
+          "failureAnalysis": "The verifiable public impact is mainly agenda-setting and multi-party exchange; specific cooperation outcomes and follow-up effects still need more public information.",
+          "title": "International Communication Seminar on Green Development and Global Contributions of Chinese and Foreign Enterprises Held in Shenzhen"
         }
       }
     },
     {
-      "id": "news-be89281d014f4046825b16b4763be971",
+      "id": "news-672fc487e43f494bb432517b921e6e9c",
       "category": "domestic",
-      "title": "王沪宁陪同朝鲜最高领导人金正恩访问丹东",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-24/10720464.shtml",
-      "publishedAt": "2026-10-24T13:13:34.0000000+00:00",
+      "title": "西藏那曲巴青7.0级地震震区玛如乡二村受灾群众安置点活动板房顺利通电",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-25/10720856.shtml",
+      "publishedAt": "2026-10-25T14:16:14.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "王沪宁24日陪同朝鲜劳动党总书记、国务委员会委员长金正恩访问丹东，转达习近平总书记、国家主席的亲切问候和良好祝愿。",
-      "summary": "报道称，王沪宁在丹东陪同金正恩访问，并转达习近平总书记、国家主席的亲切问候和良好祝愿。该消息来自中国新闻网国内官方 RSS，核心信息明确，适合关注中朝高层交往与丹东相关公开动态的读者快速了解。",
-      "failureAnalysis": "可核实的公开信息集中在高层陪同访问和问候转达，未提供更多会谈或成果细节；阅读时应区分已确认事实与后续解读。",
+      "selectionReason": "Domestic priority: 4",
+      "highlight": "10月25日20时，经过连续8小时奋战，西藏那曲巴青县玛如乡二村受灾群众安置点活动板房顺利通电。",
+      "summary": "报道称，10月25日20时，西藏那曲巴青县玛如乡二村受灾群众安置点的活动板房在连续8小时作业后顺利通电。可核实的信息是安置点活动板房已恢复供电，这直接关系到受灾群众的基本生活保障，因此值得关注。",
+      "failureAnalysis": "关键结论是安置点活动板房已实现通电，反映震区受灾群众安置保障取得具体进展；阅读时可关注通电时间、地点和覆盖对象这些可核实事实。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社辽宁丹东10月24日电 中共中央政治局常委、全国政协主席王沪宁24日陪同朝鲜劳动党总书记、国务委员会委员长金正恩访问丹东，转达习近平总书记、国家主席的亲切问候和良好祝愿。",
+      "sourceExcerpt": "10月25日20时，经过连续8小时奋战，西藏那曲巴青县玛如乡二村受灾群众安置点活动板房顺利通电。",
       "translations": {
         "zh": {
-          "title": "王沪宁陪同朝鲜最高领导人金正恩访问丹东",
-          "highlight": "王沪宁24日陪同朝鲜劳动党总书记、国务委员会委员长金正恩访问丹东，转达习近平总书记、国家主席的亲切问候和良好祝愿。",
-          "summary": "报道称，王沪宁在丹东陪同金正恩访问，并转达习近平总书记、国家主席的亲切问候和良好祝愿。该消息来自中国新闻网国内官方 RSS，核心信息明确，适合关注中朝高层交往与丹东相关公开动态的读者快速了解。",
-          "failureAnalysis": "可核实的公开信息集中在高层陪同访问和问候转达，未提供更多会谈或成果细节；阅读时应区分已确认事实与后续解读。"
+          "title": "西藏那曲巴青7.0级地震震区玛如乡二村受灾群众安置点活动板房顺利通电",
+          "highlight": "10月25日20时，经过连续8小时奋战，西藏那曲巴青县玛如乡二村受灾群众安置点活动板房顺利通电。",
+          "summary": "报道称，10月25日20时，西藏那曲巴青县玛如乡二村受灾群众安置点的活动板房在连续8小时作业后顺利通电。可核实的信息是安置点活动板房已恢复供电，这直接关系到受灾群众的基本生活保障，因此值得关注。",
+          "failureAnalysis": "关键结论是安置点活动板房已实现通电，反映震区受灾群众安置保障取得具体进展；阅读时可关注通电时间、地点和覆盖对象这些可核实事实。"
         },
         "en": {
-          "highlight": "On the 24th, Wang Huning accompanied Kim Jong Un on a visit to Dandong and conveyed Xi Jinping's cordial greetings and best wishes.",
-          "summary": "The report says Wang Huning accompanied Kim Jong Un during a visit to Dandong and conveyed cordial greetings and best wishes from Xi Jinping. The item comes from an official domestic RSS feed and is worth reading for a quick, source-based update on public high-level China-DPRK exchanges and Dandong-related developments.",
-          "failureAnalysis": "The verifiable public information is limited to the high-level accompanying visit and the conveying of greetings, with no further details on talks or outcomes; readers should separate confirmed facts from later interpretation.",
-          "title": "Wang Huning Accompanies Kim Jong Un on Visit to Dandong"
+          "highlight": "After eight hours of work, power was restored at 20:00 on October 25 to prefabricated housing at the resettlement site in Maru Township Village No. 2, Baqing County, Nagqu, Tibet.",
+          "summary": "The report says that at 20:00 on October 25, prefabricated housing at the resettlement site for affected residents in Maru Township Village No. 2, Baqing County, Nagqu, Tibet, was successfully powered after eight consecutive hours of work. The verifiable public impact is that the resettlement housing has electricity, which is directly relevant to basic living conditions for disaster-affected residents.",
+          "failureAnalysis": "The key takeaway is that electricity has been restored to the prefabricated housing at the resettlement site, a concrete step in resettlement support after the earthquake; the verifiable facts to note are the time, location, and target of restoration.",
+          "title": "Power Restored to Prefabricated Housing at Resettlement Site in Maru Township, Baqing County, Nagqu, Tibet After 7.0-Magnitude Earthquake"
         }
       }
     },
     {
-      "id": "news-1ef47da8f3214ed387838768b84267ee",
+      "id": "news-78bd40578cf34a5293c69670ead288a3",
       "category": "international",
-      "title": "Ukraine says Starlink is back to normal after disruptions",
-      "source": "NPR World",
-      "url": "https://www.npr.org/2026/10/24/nx-s1-6015482/ukraine-starlink-working-after-disruptions",
-      "publishedAt": "2026-10-24T17:54:25.0000000+00:00",
+      "title": "Exiled opposition leader María Corina Machado returns to Venezuela",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/25/exiled-venezuelan-opposition-leader-maria-corina-machado-announces-her-return",
+      "publishedAt": "2026-10-25T17:18:28.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "乌克兰总统泽连斯基表示，在超过一周的中断后，Starlink正常运营速度已恢复。",
-      "summary": "报道援引乌克兰总统泽连斯基的说法称，Starlink在经历超过一周的服务中断后，正常运营速度已经恢复。这条国际简讯的价值在于快速确认关键通信服务恢复，但已知信息未解释中断原因或影响范围。",
-      "failureAnalysis": "关键信息是服务已恢复；已知内容未说明中断原因，因此不宜据此判断长期稳定性。",
+      "highlight": "诺贝尔和平奖得主在流亡近一年后回国，这不太可能让临时总统德尔西·罗德里格斯高兴。",
+      "summary": "报道称，委内瑞拉反对派领袖玛丽亚·科里纳·马查多宣布已返回委内瑞拉，并在X上写道“我在这里。和你们在一起。”她近一年前离国领取诺贝尔和平奖。此次回国可能影响委内瑞拉政治局势，因而值得关注。",
+      "failureAnalysis": "关键看点在于，马查多回国对委内瑞拉反对派动员和临时总统德尔西·罗德里格斯政府的影响，而不仅是回国动作本身。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Ukrainian President Volodymyr Zelenskyy said that normal Starlink operating speeds were restored after more than a week of disruptions.",
+      "sourceExcerpt": "Nobel peace prize winner’s return after almost a year in exile is unlikely to please interim president Delcy Rodríguez The Venezuelan opposition leader María Corina Machado has announced she has returned to Venezuela almost a year after she left the country to receive the Nobel peace prize. With you,” she wrote on X on Sunday lunchtime.",
       "translations": {
         "zh": {
-          "title": "乌克兰称Starlink在中断后恢复正常",
-          "highlight": "乌克兰总统泽连斯基表示，在超过一周的中断后，Starlink正常运营速度已恢复。",
-          "summary": "报道援引乌克兰总统泽连斯基的说法称，Starlink在经历超过一周的服务中断后，正常运营速度已经恢复。这条国际简讯的价值在于快速确认关键通信服务恢复，但已知信息未解释中断原因或影响范围。",
-          "failureAnalysis": "关键信息是服务已恢复；已知内容未说明中断原因，因此不宜据此判断长期稳定性。"
+          "title": "流亡反对派领袖玛丽亚·科里纳·马查多返回委内瑞拉",
+          "highlight": "诺贝尔和平奖得主在流亡近一年后回国，这不太可能让临时总统德尔西·罗德里格斯高兴。",
+          "summary": "报道称，委内瑞拉反对派领袖玛丽亚·科里纳·马查多宣布已返回委内瑞拉，并在X上写道“我在这里。和你们在一起。”她近一年前离国领取诺贝尔和平奖。此次回国可能影响委内瑞拉政治局势，因而值得关注。",
+          "failureAnalysis": "关键看点在于，马查多回国对委内瑞拉反对派动员和临时总统德尔西·罗德里格斯政府的影响，而不仅是回国动作本身。"
         },
         "en": {
-          "highlight": "Ukrainian President Volodymyr Zelenskyy said that normal Starlink operating speeds were restored after more than a week of disruptions.",
-          "summary": "The report says Ukrainian President Volodymyr Zelenskyy stated that normal Starlink operating speeds have been restored after more than a week of disruptions. It is a concise update confirming recovery of a key communications service; the known information does not explain the cause or full impact.",
-          "failureAnalysis": "The key takeaway is that service has been restored, but the known information does not identify the cause, so it is not enough to judge long-term reliability.",
-          "title": "Ukraine says Starlink is back to normal after disruptions"
+          "highlight": "Nobel peace prize winner’s return after almost a year in exile is unlikely to please interim president Delcy Rodríguez",
+          "summary": "The report says Venezuelan opposition leader María Corina Machado has announced she has returned to Venezuela almost a year after leaving to receive the Nobel Peace Prize. She wrote on X: “I’m here. With you.” The move is worth watching because it could affect the country’s political balance and the interim president’s position.",
+          "failureAnalysis": "The key takeaway is the political effect of Machado’s return on Venezuela’s opposition and the interim government, not merely the fact of her return.",
+          "title": "Exiled opposition leader María Corina Machado returns to Venezuela"
         }
       }
     },
     {
-      "id": "news-82a5291545dd4b0ca1755eed11662098",
+      "id": "news-e46644170f7945d5b45cbb7f4561da24",
       "category": "international",
-      "title": "White House lifts tariffs on some Canadian goods as midterm elections loom",
-      "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/c60qk573yzz8o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-10-24T00:36:47.0000000+00:00",
+      "title": "Protests roil France once again as police seek to quell violence",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/24/nx-s1-6014520/protests-roil-france-once-again-as-police-seek-to-quell-violence",
+      "publishedAt": "2026-10-24T21:21:00.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "自10月30日起，部分商品关税将下调，包括某些机械，而地毯等其他商品则将被加征关税。",
-      "summary": "BBC报道称，白宫将在中期选举临近之际调整对加拿大商品的关税：10月30日起放宽部分机械等产品，同时对地毯等商品加征。该消息值得关注，因为它显示贸易措施会随政治日程变化，并可能影响相关进出口企业。",
-      "failureAnalysis": "关键点：关税调整并非全面松绑，而是有升有降；企业需按具体商品类别核对新税率，不能把个别豁免当作整体趋势。",
+      "highlight": "数十万人走上法国各地街头，抗议从学校经费不足到经济不平等等问题；警方也重兵部署，防止上周暴力重演。",
+      "summary": "据已知内容，法国各地有数十万人参与抗议，诉求涵盖学校经费不足和经济不平等等议题。警方大规模出动，试图避免上周的暴力事件再次发生。这则国际新闻值得关注，因为它反映法国社会不满与公共秩序压力同时升温。",
+      "failureAnalysis": "关键看点在于抗议议题广泛且规模庞大，同时警方把防止暴力重演作为重点；后续局势取决于示威与安保之间的互动。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "From 30 October, tariffs will be eased on some products, including certain machinery, and placed on others, such as carpets.",
+      "sourceExcerpt": "Hundreds of thousands turned out across France to protest everything from the lack of school funding to economic inequality. Police also were out in force to prevent a repeat of last week's violence.",
       "translations": {
         "zh": {
-          "title": "白宫在中期选举临近之际放宽部分加拿大商品关税",
-          "highlight": "自10月30日起，部分商品关税将下调，包括某些机械，而地毯等其他商品则将被加征关税。",
-          "summary": "BBC报道称，白宫将在中期选举临近之际调整对加拿大商品的关税：10月30日起放宽部分机械等产品，同时对地毯等商品加征。该消息值得关注，因为它显示贸易措施会随政治日程变化，并可能影响相关进出口企业。",
-          "failureAnalysis": "关键点：关税调整并非全面松绑，而是有升有降；企业需按具体商品类别核对新税率，不能把个别豁免当作整体趋势。"
+          "title": "法国多地再爆抗议 警方力防暴力重演",
+          "highlight": "数十万人走上法国各地街头，抗议从学校经费不足到经济不平等等问题；警方也重兵部署，防止上周暴力重演。",
+          "summary": "据已知内容，法国各地有数十万人参与抗议，诉求涵盖学校经费不足和经济不平等等议题。警方大规模出动，试图避免上周的暴力事件再次发生。这则国际新闻值得关注，因为它反映法国社会不满与公共秩序压力同时升温。",
+          "failureAnalysis": "关键看点在于抗议议题广泛且规模庞大，同时警方把防止暴力重演作为重点；后续局势取决于示威与安保之间的互动。"
         },
         "en": {
-          "highlight": "From 30 October, tariffs will be eased on some products, including certain machinery, and placed on others, such as carpets.",
-          "summary": "BBC reports that the White House is adjusting tariffs on Canadian goods as midterm elections approach: from 30 October, duties will be eased on some products such as certain machinery and imposed on others such as carpets. It is worth reading because it shows trade measures can shift with political calendars and may affect importers and exporters.",
-          "failureAnalysis": "Key takeaway: the change is not a blanket easing but a mix of lower and higher tariffs; companies should check the new rates by specific product category rather than treating individual relief as a broad trend.",
-          "title": "White House lifts tariffs on some Canadian goods as midterm elections loom"
+          "highlight": "Hundreds of thousands protested across France over issues from school funding shortages to economic inequality, while police deployed in force to prevent a repeat of last week's violence.",
+          "summary": "Known details say hundreds of thousands of people took part in protests across France, with demands spanning school funding shortages and economic inequality. Police also turned out in force to try to prevent a repeat of last week's violence. The item is worth reading because it shows social discontent and public-order pressure rising at the same time.",
+          "failureAnalysis": "The key takeaway is that the protests cover a wide range of grievances and are large in scale, while police are focused on preventing renewed violence; what happens next will depend on how demonstrations and security operations interact.",
+          "title": "Protests Erupt Again Across France as Police Seek to Prevent Violence"
         }
       }
     },
     {
-      "id": "life-6acd7b6741bd49f3a5937721cb4dc8c5",
+      "id": "life-671a8a3304b9497a9b1274b3c18bd131",
       "category": "international",
-      "title": "Love After Life: Nobel-Winning Physicist Richard Feynman’s Extraordinary Letter to His Departed Wife",
+      "title": "The Baloney Detection Kit: Carl Sagan’s Timeless Tenets of Critical Thinking",
       "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/10/19/richard-feynman-arline-letter/",
-      "publishedAt": "2026-10-19T23:27:53.0000000+00:00",
+      "url": "https://www.themarginalian.org/2026/10/24/baloney-detection-kit-carl-sagan/",
+      "publishedAt": "2026-10-24T20:52:43.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "在物理学最坚硬的边缘，与人心最脆弱的形而上学相遇。",
-      "summary": "《大西洋月刊》旗下 The Marginalian 刊文介绍诺贝尔物理学奖得主理查德·费曼写给已故妻子的一封非凡信件，将硬核的物理学理性与丧偶之痛的私人情感并置。《Life-skills》类 RSS 源将其选入，看重的是它把“理性与情感如何共存”这一人生课题讲得极具体。适合非技术背景的读者借它理解：顶尖科学家的判断力并不排斥脆弱与深情，反而常与之并行。",
-      "failureAnalysis": "可带走的要点是：专业上的硬核与个人情感上的柔软并不互斥，把两者放在一起看，往往比只看一面更接近真实的人与决策。",
+      "highlight": "这套工具是抵御宣传、伪科学和普遍虚假信息的必要认知防御。",
+      "summary": "文章围绕卡尔·萨根的“胡扯检测工具”，梳理其关于批判性思维的历久弥新的原则。它强调，面对宣传、伪科学和普遍虚假信息，需要建立必要的认知防御。对非技术读者而言，这是一份训练判断力、识别不实说法的简明读本。",
+      "failureAnalysis": "关键启示：在信息噪音中，先建立可重复的核验习惯，再判断一个说法是否可信。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Where the hard edge of physics meets the vulnerable metaphysics of the human heart.",
+      "sourceExcerpt": "Necessary cognitive fortification against propaganda, pseudoscience, and general falsehood.",
       "translations": {
         "zh": {
-          "title": "诺贝尔物理学奖得主费曼写给亡妻的非凡信件：物理学最坚硬的边缘，与人心最脆弱的形而上学相遇",
-          "highlight": "在物理学最坚硬的边缘，与人心最脆弱的形而上学相遇。",
-          "summary": "《大西洋月刊》旗下 The Marginalian 刊文介绍诺贝尔物理学奖得主理查德·费曼写给已故妻子的一封非凡信件，将硬核的物理学理性与丧偶之痛的私人情感并置。《Life-skills》类 RSS 源将其选入，看重的是它把“理性与情感如何共存”这一人生课题讲得极具体。适合非技术背景的读者借它理解：顶尖科学家的判断力并不排斥脆弱与深情，反而常与之并行。",
-          "failureAnalysis": "可带走的要点是：专业上的硬核与个人情感上的柔软并不互斥，把两者放在一起看，往往比只看一面更接近真实的人与决策。"
+          "title": "卡尔·萨根的“胡扯检测工具”：历久弥新的批判性思维原则",
+          "highlight": "这套工具是抵御宣传、伪科学和普遍虚假信息的必要认知防御。",
+          "summary": "文章围绕卡尔·萨根的“胡扯检测工具”，梳理其关于批判性思维的历久弥新的原则。它强调，面对宣传、伪科学和普遍虚假信息，需要建立必要的认知防御。对非技术读者而言，这是一份训练判断力、识别不实说法的简明读本。",
+          "failureAnalysis": "关键启示：在信息噪音中，先建立可重复的核验习惯，再判断一个说法是否可信。"
         },
         "en": {
-          "highlight": "Where the hard edge of physics meets the vulnerable metaphysics of the human heart.",
-          "summary": "The Marginalian presents Nobel-winning physicist Richard Feynman's extraordinary letter to his late wife, placing hard scientific rationality side by side with the private grief of losing a spouse. Picked up by a life-skills RSS source, it treats the question of how reason and emotion coexist as something concrete rather than abstract. For non-technical readers, it is a reminder that a top scientist's judgment does not exclude vulnerability or deep feeling; the two often run together.",
-          "failureAnalysis": "The takeaway: professional rigor and personal tenderness are not mutually exclusive, and holding both in view usually gets closer to how real people and real decisions actually work.",
-          "title": "Nobel-Winning Physicist Richard Feynman's Extraordinary Letter to His Departed Wife: Where the Hard Edge of Physics Meets the Vulnerable Metaphysics of the Heart"
+          "highlight": "It serves as a necessary cognitive fortification against propaganda, pseudoscience, and general falsehood.",
+          "summary": "The article revisits Carl Sagan’s Baloney Detection Kit and its timeless principles of critical thinking. It stresses the need for cognitive defenses against propaganda, pseudoscience, and general falsehood. For non-specialist readers, it is a concise guide to sharpening judgment and spotting dubious claims.",
+          "failureAnalysis": "Key takeaway: build repeatable verification habits before deciding whether a claim is credible, especially in noisy information environments.",
+          "title": "Carl Sagan’s Baloney Detection Kit: Timeless Tenets of Critical Thinking"
         }
       }
     },
     {
-      "id": "life-f685e7c0c4a743969ea38e2536314db7",
+      "id": "life-5cecae2ec6dd4e5ebdbc01b0652f42b8",
       "category": "international",
-      "title": "Portraits of another life: Nemo Gould",
+      "title": "Can you ever really think what someone else is thinking?",
       "source": "Psyche",
-      "url": "https://psyche.co/videos/i-take-silly-very-seriously-a-kinetic-sculptors-credo-of-creation",
-      "publishedAt": "2026-10-19T10:01:00.0000000+00:00",
+      "url": "https://psyche.co/ideas/can-you-ever-really-think-what-someone-else-is-thinking",
+      "publishedAt": "2026-10-23T10:00:00.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 1",
-      "highlight": "受童年好奇心驱动，一位雕塑家把废弃物品变成动态艺术品，成为对抗AI粗制滥造内容的解药。",
-      "summary": "这段 Psyche 视频属于“另一种人生的肖像”系列，呈现雕塑家 Nemo Gould 受童年好奇心驱动，把废弃物品改造成动态艺术品。现有信息强调，这类创作被视为对抗 AI 粗制滥造内容的解药，值得关注它对创造力与手工价值的呈现。",
-      "failureAnalysis": "核心启示：好奇心、手工改造与动态雕塑所体现的创造力，是 AI 批量生成内容之外的一种价值参照。",
+      "selectionReason": "Life-skills match score: 0",
+      "highlight": "要看清沟通究竟如何运作，就应放下不同人能够共享同一想法这一观念。",
+      "summary": "这篇 Psyche 文章围绕“能否真正知道他人所想”展开，作者 Víctor Verdejo 提出：要理解沟通如何运作，需放下不同人能共享同一想法的假设。它值得读，是因为它促使读者重新审视日常沟通中默认的“想法可被共享”前提。",
+      "failureAnalysis": "关键提醒是：沟通未必建立在想法共享上；先质疑这一默认假设，才能更准确地理解交流。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Driven by childhood curiosity, a sculptor turns discarded objects into kinetic artworks that are the antidote to AI slop - Video by Portraits of Another Life Watch on Psyche",
+      "sourceExcerpt": "To see how communication truly works, we should set aside the notion that different people can share the same thoughts - by Víctor Verdejo Read on Psyche",
       "translations": {
         "zh": {
-          "title": "另一种人生的肖像：尼莫·古尔德",
-          "highlight": "受童年好奇心驱动，一位雕塑家把废弃物品变成动态艺术品，成为对抗AI粗制滥造内容的解药。",
-          "summary": "这段 Psyche 视频属于“另一种人生的肖像”系列，呈现雕塑家 Nemo Gould 受童年好奇心驱动，把废弃物品改造成动态艺术品。现有信息强调，这类创作被视为对抗 AI 粗制滥造内容的解药，值得关注它对创造力与手工价值的呈现。",
-          "failureAnalysis": "核心启示：好奇心、手工改造与动态雕塑所体现的创造力，是 AI 批量生成内容之外的一种价值参照。"
+          "title": "你真能知道别人在想什么吗？",
+          "highlight": "要看清沟通究竟如何运作，就应放下不同人能够共享同一想法这一观念。",
+          "summary": "这篇 Psyche 文章围绕“能否真正知道他人所想”展开，作者 Víctor Verdejo 提出：要理解沟通如何运作，需放下不同人能共享同一想法的假设。它值得读，是因为它促使读者重新审视日常沟通中默认的“想法可被共享”前提。",
+          "failureAnalysis": "关键提醒是：沟通未必建立在想法共享上；先质疑这一默认假设，才能更准确地理解交流。"
         },
         "en": {
-          "highlight": "Driven by childhood curiosity, a sculptor turns discarded objects into kinetic artworks that are the antidote to AI slop.",
-          "summary": "This Psyche video from the Portraits of Another Life series features sculptor Nemo Gould, who is driven by childhood curiosity to turn discarded objects into kinetic artworks. The available description frames such work as an antidote to AI slop, making it worth watching for its view of creativity and handmade value.",
-          "failureAnalysis": "The key takeaway is that curiosity, hands-on transformation, and kinetic sculpture offer a value reference beyond AI-generated mass content.",
-          "title": "Portraits of Another Life: Nemo Gould"
+          "highlight": "To see how communication truly works, we should set aside the notion that different people can share the same thoughts.",
+          "summary": "This Psyche article asks whether one person can ever truly know another’s thoughts. Víctor Verdejo argues that to understand how communication actually works, we should set aside the assumption that different people can share the same thoughts. It is worth reading as a prompt to reconsider a default premise in everyday communication.",
+          "failureAnalysis": "The key takeaway is to question the default assumption that thoughts can be shared; doing so may lead to a more accurate understanding of communication.",
+          "title": "Can You Ever Really Know What Someone Else Is Thinking?"
         }
       }
     },
     {
-      "id": "paper-2610.30422",
+      "id": "paper-2610.25211",
       "category": "paper",
-      "title": "Memory-Augmented Online Test-Time Adaptation for EEG Motor Imagery via Perturbation Consistency and Confidence Calibration",
+      "title": "NeuroAct: Advancing EEG Analysis and Decoding via Dual-Loop Autonomous Research",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2610.30422v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2610.30422",
-      "publishedAt": "2026-10-21T20:32:45.0000000Z",
+      "url": "https://arxiv.org/pdf/2610.25211v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.25211",
+      "publishedAt": "2026-10-18T12:09:42.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
       "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
@@ -227,94 +227,124 @@
       "qualityScore": 28,
       "readabilityStatus": "open",
       "paperCard": {
-        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
-        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
-        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
-        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
-        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
-        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "problem": "脑电信号要用于脑机接口、认知评估、睡眠监测，但“为什么这个模型表现不好、该改哪里”往往说不清。固定流程和奖励驱动的自动搜索不会明确判断信号结构、表征、预测器行为、训练动态各自贡献了多少误差，导致干预手段选得没有依据。",
+        "method": "NeuroAct 用“双环自主研究”来解：内环里设协调者（Coordinator）、研究员（Researcher）、开发者（Developer）、评审者（Reviewer）四种角色，围绕一个目标拆成多个并行问题，用文献、数据语义、模型行为和训练证据提出竞争性假设，再通过可执行的实验去验证，依据性能、稳定性、成本反馈决定下一步；外环把结果提炼成“在什么任务、什么模型条件下适用”的可测试建议，在后续任务中检验、修正或收窄适用范围。",
+        "difference": "和 BrainAgent（编排信号分析工具）、BrainPilot（固定预处理与训练下做架构研究）、NeuroWeaver（搜索领域受限的流水线）相比，NeuroAct 强调先做“诊断”再选干预，并且明确支持 EEG 基础模型适配、多任务联合训练、模型组合（看模型间错误是否重叠）这些更广的动作空间，还把跨任务经验的条件化复用写进了机制里。",
+        "innovation": "三点：一是证据引导的内环研究——用信号、表征、预测器、训练四类证据来挑选分析与干预；二是外环的条件化策略改进——经验被写成带适用条件、支持证据、反证据和重估条件的建议，被新任务检验后保留、修正或废弃；三是把 EEG 通用分析、跨任务模型优化、单任务开放研究、协同预测四类场景都做成了可执行的评测设置。另外还有渐进式能力披露（先给能力索引，按需展开细节）来控制上下文。",
+        "implementation": "协调者按公式选择研究决策与角色派单，每个交接单都记录要交付什么、有哪些证据、还有什么未决问题；研究员用文献与数据证据提方案，开发者写代码跑分析或训练（可并行跑多个 GPU 实验），评审者挑战站不住的结论并回传协调者整合。角色策略靠提示词驱动而非训练，所以行为能随积累的证据变化而不需要改模型参数；经验条目在后续任务中先匹配摘要再取细节，超出预算或被反证就收窄、暂停或替换。",
+        "applications": "脑机接口解码、认知负荷与认知状态评估（Workload）、睡眠监测（HMC）、年龄预测（HBN）、运动想象（PhysioMI、BCIC-IV-2a）、ADFTD 等神经疾病相关分析，以及作为 EEG 基础模型（如 EEGPT）的自动适配与多模型协同预测工具。",
         "technicalTerms": [
-          "EEG：把大脑电信号当作输入数据。"
-        ],
-        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          "EEG：脑电图，从头皮电极记录的大脑电活动信号",
+          "EEG-FM（EEG 基础模型）：在大规模脑电数据上预训练、可迁移到多种下游任务的模型",
+          "内环/外环：内环负责单个任务里的假设—实验—评审循环，外环负责把经验跨任务沉淀、检验和修正",
+          "平衡准确率 BA：对各类别准确率取平均，避免类别不平衡时被多数类“刷分”",
+          "Pearson's r：皮尔逊相关系数，衡量预测值与真实值的线性相关程度，常用于年龄等连续值预测",
+          "BrainBench：论文用来做通用 EEG 分析评测的基准",
+          "渐进式能力披露：先只给智能体一份能力目录，需要时再展开具体工具或技能说明，以节省上下文",
+          "条件化经验/经验复用：把结论写成“在什么条件下该做什么”，新任务匹配得上才用，用后按效果修正",
+          "CodeAct / BrainAgent / BrainPilot：论文对比的三个外部智能体基线"
+        ]
       },
-      "highlight": "脑电运动想象接口的实际部署常受非平稳性和跨被试分布偏移阻碍。",
-      "summary": "该论文关注基于脑电的运动想象脑机接口，指出便携式神经测量系统虽受关注，但非平稳性与跨被试分布偏移会影响实际部署。标题显示作者拟采用记忆增强的在线测试时适应，并结合扰动一致性与置信度校准来应对这一问题。",
-      "failureAnalysis": "所给文本仅包含标题和摘要开头，未提供方法细节、实验设置或量化结果，因而无法判断其适应效果与泛化能力。",
+      "highlight": "经验复用把 BCIC-IV-2a 的平衡准确率从 34.66% 提升到 50.81%，同时把 LLM token 消耗降低 64.02%。",
+      "summary": "这篇预印本论文提出 NeuroAct，一个面向脑电（EEG）分析与解码的“自主研究智能体”框架：它把研究、开发、评审三种角色放进一个内循环里反复提出假设、做实验、接受审查，再把结论沉淀成有条件的经验用于后续任务（外环）。作者在 6 个数据集、3 种大模型后端、4 类研究设置上做了评测，报告的提升幅度不小，例如通用分析综合分 80.88 对基线 BrainAgent 的 63.13，ADFTD 上提升 16.33 个平衡准确率点。值得一看的地方在于它把“该做什么诊断、该上什么干预”这件事本身交给智能体去决策，而不是靠固定流程或单纯的奖励搜索。",
+      "failureAnalysis": "目前只是 arXiv 预印本（2026 年 10 月），尚未经过同行评审；评测只覆盖 6 个数据集和 3 个 LLM 后端，外部基线也只有 CodeAct、BrainPilot、BrainAgent，成绩高度依赖所选大模型（如 DeepSeek-V4 Flash）与预算设定。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "1 Memory-Augmented Online Test-Time Adaptation for EEG Motor Imagery via Perturbation Consistency and Confidence Calibration Kunkun Zhang, Kehao Wu, Zhitao Chen, Haigen Hu,Member, IEEE, and Qianwei Zhou,Member, IEEE Abstract—Recently, electroencephalography (EEG)-based brain–computer interfaces (BCIs) have gained traction as portable neural measurement systems. However, the practical deployment of these instruments is often hindered by nonstationarity and cross-subject distribution shifts, which lead to significant intersubject inconsistency. Existing adaptation methods remain impractical for real-time measurement scenarios, as they typically require offline access to source or aggregated target data.",
+      "sourceExcerpt": "Preprint NEUROACT: ADVANCINGEEG ANALYSIS ANDDECOD- ING VIADUAL-LOOPAUTONOMOUSRESEARCH Wei Xiong1,2, Jiangtong Li1, Han Zhao3, Linxiao Yang2, Jie Li4,1, Changjun Jiang1 1Tongji University 2Ant Group 3Shanghai Jiao Tong University 4Translational Research Center, Shanghai Yangzhi Rehabilitation Hospital (Shanghai Sunshine Rehabilitation Center), Tongji University ABSTRACT EEG analysis and decoding underpin brain-computer interfaces, cognitive assess- ment, and sleep monitoring. Fixed pipelines and reward-driven search do not explicitly determine how signal structure, representations, predictor behavior, and training dynamics contribute to performance or generalization gaps, leaving inter- vention choice underdetermined. We introduce NeuroAct, an autonomous research agent framework for EEG analysis and decoding.",
       "translations": {
         "zh": {
-          "title": "基于扰动一致性与置信度校准的记忆增强脑电运动想象在线测试时适应",
-          "highlight": "脑电运动想象接口的实际部署常受非平稳性和跨被试分布偏移阻碍。",
-          "summary": "该论文关注基于脑电的运动想象脑机接口，指出便携式神经测量系统虽受关注，但非平稳性与跨被试分布偏移会影响实际部署。标题显示作者拟采用记忆增强的在线测试时适应，并结合扰动一致性与置信度校准来应对这一问题。",
-          "failureAnalysis": "所给文本仅包含标题和摘要开头，未提供方法细节、实验设置或量化结果，因而无法判断其适应效果与泛化能力。",
+          "title": "NeuroAct：用双环自主研究智能体推进脑电分析与解码",
+          "highlight": "经验复用把 BCIC-IV-2a 的平衡准确率从 34.66% 提升到 50.81%，同时把 LLM token 消耗降低 64.02%。",
+          "summary": "这篇预印本论文提出 NeuroAct，一个面向脑电（EEG）分析与解码的“自主研究智能体”框架：它把研究、开发、评审三种角色放进一个内循环里反复提出假设、做实验、接受审查，再把结论沉淀成有条件的经验用于后续任务（外环）。作者在 6 个数据集、3 种大模型后端、4 类研究设置上做了评测，报告的提升幅度不小，例如通用分析综合分 80.88 对基线 BrainAgent 的 63.13，ADFTD 上提升 16.33 个平衡准确率点。值得一看的地方在于它把“该做什么诊断、该上什么干预”这件事本身交给智能体去决策，而不是靠固定流程或单纯的奖励搜索。",
+          "failureAnalysis": "目前只是 arXiv 预印本（2026 年 10 月），尚未经过同行评审；评测只覆盖 6 个数据集和 3 个 LLM 后端，外部基线也只有 CodeAct、BrainPilot、BrainAgent，成绩高度依赖所选大模型（如 DeepSeek-V4 Flash）与预算设定。",
           "paperCard": {
-            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
-            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
-            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
-            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
-            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
-            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "problem": "脑电信号要用于脑机接口、认知评估、睡眠监测，但“为什么这个模型表现不好、该改哪里”往往说不清。固定流程和奖励驱动的自动搜索不会明确判断信号结构、表征、预测器行为、训练动态各自贡献了多少误差，导致干预手段选得没有依据。",
+            "method": "NeuroAct 用“双环自主研究”来解：内环里设协调者（Coordinator）、研究员（Researcher）、开发者（Developer）、评审者（Reviewer）四种角色，围绕一个目标拆成多个并行问题，用文献、数据语义、模型行为和训练证据提出竞争性假设，再通过可执行的实验去验证，依据性能、稳定性、成本反馈决定下一步；外环把结果提炼成“在什么任务、什么模型条件下适用”的可测试建议，在后续任务中检验、修正或收窄适用范围。",
+            "difference": "和 BrainAgent（编排信号分析工具）、BrainPilot（固定预处理与训练下做架构研究）、NeuroWeaver（搜索领域受限的流水线）相比，NeuroAct 强调先做“诊断”再选干预，并且明确支持 EEG 基础模型适配、多任务联合训练、模型组合（看模型间错误是否重叠）这些更广的动作空间，还把跨任务经验的条件化复用写进了机制里。",
+            "innovation": "三点：一是证据引导的内环研究——用信号、表征、预测器、训练四类证据来挑选分析与干预；二是外环的条件化策略改进——经验被写成带适用条件、支持证据、反证据和重估条件的建议，被新任务检验后保留、修正或废弃；三是把 EEG 通用分析、跨任务模型优化、单任务开放研究、协同预测四类场景都做成了可执行的评测设置。另外还有渐进式能力披露（先给能力索引，按需展开细节）来控制上下文。",
+            "implementation": "协调者按公式选择研究决策与角色派单，每个交接单都记录要交付什么、有哪些证据、还有什么未决问题；研究员用文献与数据证据提方案，开发者写代码跑分析或训练（可并行跑多个 GPU 实验），评审者挑战站不住的结论并回传协调者整合。角色策略靠提示词驱动而非训练，所以行为能随积累的证据变化而不需要改模型参数；经验条目在后续任务中先匹配摘要再取细节，超出预算或被反证就收窄、暂停或替换。",
+            "applications": "脑机接口解码、认知负荷与认知状态评估（Workload）、睡眠监测（HMC）、年龄预测（HBN）、运动想象（PhysioMI、BCIC-IV-2a）、ADFTD 等神经疾病相关分析，以及作为 EEG 基础模型（如 EEGPT）的自动适配与多模型协同预测工具。",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
-            ],
-            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+              "EEG：脑电图，从头皮电极记录的大脑电活动信号",
+              "EEG-FM（EEG 基础模型）：在大规模脑电数据上预训练、可迁移到多种下游任务的模型",
+              "内环/外环：内环负责单个任务里的假设—实验—评审循环，外环负责把经验跨任务沉淀、检验和修正",
+              "平衡准确率 BA：对各类别准确率取平均，避免类别不平衡时被多数类“刷分”",
+              "Pearson's r：皮尔逊相关系数，衡量预测值与真实值的线性相关程度，常用于年龄等连续值预测",
+              "BrainBench：论文用来做通用 EEG 分析评测的基准",
+              "渐进式能力披露：先只给智能体一份能力目录，需要时再展开具体工具或技能说明，以节省上下文",
+              "条件化经验/经验复用：把结论写成“在什么条件下该做什么”，新任务匹配得上才用，用后按效果修正",
+              "CodeAct / BrainAgent / BrainPilot：论文对比的三个外部智能体基线"
+            ]
           }
         },
         "en": {
-          "title": "Memory-Augmented Online Test-Time Adaptation for EEG Motor Imagery via Perturbation Consistency and Confidence Calibration",
-          "highlight": "Practical deployment of EEG motor-imagery brain–computer interfaces is often hindered by nonstationarity and cross-subject distribution shifts.",
-          "summary": "The paper addresses EEG-based motor-imagery brain–computer interfaces, noting that portable neural measurement systems face nonstationarity and cross-subject distribution shifts in practical deployment. Its title indicates a memory-augmented online test-time adaptation approach combining perturbation consistency and confidence calibration.",
-          "failureAnalysis": "The supplied text contains only the title and the opening of the abstract, with no method details, experimental setup, or quantitative results, so its adaptation effectiveness and generalization cannot be assessed.",
+          "highlight": "Experience reuse raised BCIC-IV-2a balanced accuracy from 34.66% to 50.81% while cutting LLM token usage by 64.02%.",
+          "summary": "This preprint introduces NeuroAct, an autonomous research agent framework for EEG analysis and decoding: an inner loop in which Researcher, Developer, and Reviewer roles test competing diagnostic hypotheses through executable experiments, and an outer loop that distills results into conditional recommendations validated and revised across tasks. Evaluated on six datasets, three LLM backends, and four research settings, it reports large gains, such as an 80.88 macro-average versus BrainAgent's 63.13 and a 16.33-point balanced-accuracy improvement on ADFTD. It is worth reading because it makes the diagnostic decision itself — which analysis or intervention to try — the object of automation, rather than relying on fixed pipelines or reward-driven search.",
+          "failureAnalysis": "It is only an arXiv preprint (October 2026) without peer review, and the evaluation covers just six datasets, three LLM backends, and three external baselines, so results depend heavily on the chosen backend and budget settings.",
+          "title": "NeuroAct: Advancing EEG Analysis and Decoding via Dual-Loop Autonomous Research",
           "paperCard": {
-            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
-            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
-            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
-            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
-            "implementation": "Implementation: check the input data, core model or device, and validation results.",
-            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "problem": "EEG analysis and decoding underlie brain-computer interfaces, cognitive assessment, and sleep monitoring, but fixed pipelines and reward-driven search do not explicitly determine how signal structure, representations, predictor behavior, and training dynamics contribute to performance or generalization gaps, leaving intervention choice underdetermined.",
+            "method": "NeuroAct runs a dual-loop autonomous research process: an inner loop where a Coordinator directs Researcher, Developer, and Reviewer roles across parallel questions, testing competing hypotheses with executable analyses and choosing next actions from performance, stability, and cost feedback; and an outer loop that distills outcomes into conditional, testable recommendations and validates or revises them on later tasks.",
+            "difference": "Unlike BrainAgent (tool orchestration), BrainPilot (architecture research under fixed preprocessing and training), and NeuroWeaver (domain-constrained pipeline search), NeuroAct diagnoses gaps from signal, representation, predictor, and training evidence before choosing interventions, and it explicitly covers EEG foundation-model adaptation, joint multi-task training, and model combination via cross-model error overlap.",
+            "innovation": "Three parts: evidence-guided inner-loop research that uses signal, representation, predictor, and training evidence to select analyses or interventions; outer-loop conditional strategy improvement, where experience is stored with applicable task and model conditions, supporting and counterevidence, and reassessment conditions; and executable operationalization across four settings — EEG General Analysis, Cross-task Model Optimization, Single-task Open Research, and Collaborative Prediction.",
+            "implementation": "The Coordinator selects a research decision and specialist assignments, dispatching Researcher, Developer, and Reviewer in separate contexts; each handoff records the requested deliverable, supporting evidence, unresolved issues, and a recommendation. Roles are prompted rather than trained, so behavior evolves with accumulated evidence without LLM parameter updates. Experiments run in parallel when GPU resources permit, and experience entries are matched by summary before details are disclosed on demand.",
+            "applications": "Brain-computer interface decoding, cognitive workload and state assessment, sleep monitoring, age prediction, motor imagery, ADFTD and other clinical EEG analyses, plus automated adaptation of EEG foundation models such as EEGPT and multi-model collaborative prediction.",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
-            ],
-            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+              "EEG: electrical brain activity recorded from scalp electrodes",
+              "EEG-FM: a foundation model pretrained on large EEG corpora and adaptable to downstream tasks",
+              "Inner/outer loop: the inner loop runs hypothesis-experiment-review cycles within a task; the outer loop distills, validates, and revises experience across tasks",
+              "Balanced accuracy (BA): the average of per-class accuracies, robust to class imbalance",
+              "Pearson's r: a correlation coefficient measuring linear agreement between predictions and targets",
+              "BrainBench: the benchmark used for general EEG analysis evaluation",
+              "Progressive disclosure: giving agents a compact capability index first and expanding details on demand to conserve context",
+              "Conditional experience: recommendations written with applicability conditions, used when matched and revised by outcomes",
+              "CodeAct / BrainAgent / BrainPilot: the three external agent baselines compared in the paper"
+            ]
           }
         }
       }
     },
     {
-      "id": "ai-feed-dbfff8b514774ed7a628249b43236063",
+      "id": "ai-hn-50198675",
       "category": "ai",
-      "title": "[AINews] Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights narrows Closed-AI lead to 1 month... and Pro Highspeed API with 2-3× speed",
-      "source": "Latent Space",
-      "url": "https://latent.space/p/ainews-kimi-31/",
+      "title": "OpenShell – A safe, private runtime for fleets of autonomous AI agents",
+      "source": "Hacker News",
+      "url": "https://github.com/NVIDIA/OpenShell",
       "abstractUrl": null,
-      "publishedAt": "2026-10-24T07:18:29.0000000Z",
-      "scoreLabel": "Curated engineering feed",
-      "aiArticleType": "concept_explanation",
-      "evidenceAnchors": [],
-      "evidenceLabel": "No clear evidence",
-      "hasPrimaryAnchor": false,
-      "requiresRiskAnalysis": false,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
-      "summary": "该条 AINews 聚焦 Kimi 3.1 Pro：规格标注为 104BA-2.8T，被称为 Fable-5.1 级别的开放权重模型，并把闭源 AI 的领先窗口压缩到约一个月。它还提到 Pro Highspeed API 具备 2–3 倍速度。对管理者而言，值得关注的是开放权重与闭源前沿的差距正以“月”为单位缩短，同时 API 速度也成为竞争维度。",
-      "failureAnalysis": "关键要点：开放权重模型的追赶速度与 API 性能会共同影响技术选型；原文配文提到“付费水军”，提示对“接近前沿”的宣传需结合基准和实测核验。",
-      "aiSelectionScore": 100,
-      "highlight": "Kimi 3.1 Pro 开放权重达到 Fable-5.1 级别，将闭源 AI 领先优势缩至约一个月，并提供 2–3 倍速 API。",
+      "publishedAt": "2026-10-22T17:44:06.0000000Z",
+      "scoreLabel": "501 points / 217 comments",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "HN discussion",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + HN discussion",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + HN discussion",
+      "summary": "OpenShell 是 NVIDIA GitHub 组织下的运行时项目，从标题看，它面向成批自主 AI 智能体，强调安全与隐私。该条目在 Hacker News 获得 501 分和 217 条评论，说明多智能体安全执行是受关注议题；值得读的点在于它如何落地部署，以及会受哪些工程与合规约束。",
+      "failureAnalysis": "安全私密运行时若不能兼容主流智能体框架和工具链，企业迁移成本会很高；成批运行还要求隔离、资源调度、可观测性和故障恢复等工程能力。合规审计、责任边界和数据治理也会抬高采用门槛。仅有 HN 高热度不足以证明真实采购需求或长期维护投入，项目可能停留在演示阶段。",
+      "aiSelectionScore": 935,
+      "highlight": "OpenShell 为成批运行的自主 AI 智能体提供安全且保护隐私的运行时环境",
       "summarySource": "deepseek",
-      "sourceExcerpt": "We have Fable at home... or so we are being told by paid shills",
+      "sourceExcerpt": "HN candidate with public discussion metrics.",
       "translations": {
         "zh": {
-          "title": "Kimi 3.1 Pro：104BA-2.8T 开放权重逼近 Fable-5.1，闭源领先收窄至约1个月，并推2–3倍速 API",
-          "highlight": "Kimi 3.1 Pro 开放权重达到 Fable-5.1 级别，将闭源 AI 领先优势缩至约一个月，并提供 2–3 倍速 API。",
-          "summary": "该条 AINews 聚焦 Kimi 3.1 Pro：规格标注为 104BA-2.8T，被称为 Fable-5.1 级别的开放权重模型，并把闭源 AI 的领先窗口压缩到约一个月。它还提到 Pro Highspeed API 具备 2–3 倍速度。对管理者而言，值得关注的是开放权重与闭源前沿的差距正以“月”为单位缩短，同时 API 速度也成为竞争维度。",
-          "failureAnalysis": "关键要点：开放权重模型的追赶速度与 API 性能会共同影响技术选型；原文配文提到“付费水军”，提示对“接近前沿”的宣传需结合基准和实测核验。"
+          "title": "OpenShell：面向成批自主 AI 智能体的安全私密运行时",
+          "highlight": "OpenShell 为成批运行的自主 AI 智能体提供安全且保护隐私的运行时环境",
+          "summary": "OpenShell 是 NVIDIA GitHub 组织下的运行时项目，从标题看，它面向成批自主 AI 智能体，强调安全与隐私。该条目在 Hacker News 获得 501 分和 217 条评论，说明多智能体安全执行是受关注议题；值得读的点在于它如何落地部署，以及会受哪些工程与合规约束。",
+          "failureAnalysis": "安全私密运行时若不能兼容主流智能体框架和工具链，企业迁移成本会很高；成批运行还要求隔离、资源调度、可观测性和故障恢复等工程能力。合规审计、责任边界和数据治理也会抬高采用门槛。仅有 HN 高热度不足以证明真实采购需求或长期维护投入，项目可能停留在演示阶段。"
         },
         "en": {
-          "highlight": "Kimi 3.1 Pro’s open weights are described as Fable-5.1-class, narrowing closed AI’s lead to about one month, alongside a 2–3× faster Pro Highspeed API.",
-          "summary": "This AINews item focuses on Kimi 3.1 Pro, labeled 104BA-2.8T and described as a Fable-5.1-class open-weights model that narrows closed AI’s lead to about one month. It also notes a Pro Highspeed API with 2–3× speed. For managers, the takeaway is that the open-versus-closed frontier gap is shrinking on a monthly timescale, while API speed is becoming a competitive dimension.",
-          "failureAnalysis": "Key takeaway: open-weight catch-up speed and API performance will jointly affect technology choices; the source’s “paid shills” aside signals that “near-frontier” claims should be checked against benchmarks and real-world tests.",
-          "title": "Kimi 3.1 Pro 104BA-2.8T: Fable-5.1-Class Open Weights Narrow Closed-AI Lead to About 1 Month, Plus 2–3× Faster Pro Highspeed API"
+          "highlight": "OpenShell is a safe, private runtime for fleets of autonomous AI agents.",
+          "summary": "OpenShell is a GitHub project under NVIDIA that positions itself as a safe, private runtime for fleets of autonomous AI agents. Its Hacker News discussion—501 points and 217 comments—signals strong interest in secure multi-agent execution, making its deployment path and constraints worth examining.",
+          "failureAnalysis": "The project may struggle if it cannot integrate with existing agent frameworks, keep isolation and observability manageable at fleet scale, or satisfy enterprise compliance and audit requirements. Strong HN attention alone does not prove sustained adoption or a clear buyer.",
+          "title": "OpenShell: A Safe, Private Runtime for Fleets of Autonomous AI Agents"
         }
       }
     }
