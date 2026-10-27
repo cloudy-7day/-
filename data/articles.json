@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-10-26",
+  "issueDate": "2026-10-27",
   "updateStatus": "complete",
-  "contentFingerprint": "e828b52f7470f9fd3f58bcaf37e3f7b41d2a00bc229da08877bc9d8ad3d185a9",
+  "contentFingerprint": "b8b6a69d3cf3b7b4aa2af4d4e67678605500ba8fcc7830e3268306c8ad493bac",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,263 +10,263 @@
   ],
   "articles": [
     {
-      "id": "news-22da8fbe94c84ce0a60be9a4f8c7eb4c",
+      "id": "news-c3dc8b7d895047c5834419ecdd8ee86c",
       "category": "domestic",
-      "title": "二十届中央第八轮巡视完成进驻",
+      "title": "中央纪委国家监委驻中国证监会纪检监察组原组长王会民一审被判死缓",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-26/10721327.shtml",
-      "publishedAt": "2026-10-26T12:32:56.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-27/10721818.shtml",
+      "publishedAt": "2026-10-27T11:37:41.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "15个中央巡视组将对教育部和31所中管高校党组织开展常规巡视。",
-      "summary": "根据中共中央关于巡视工作的统一部署，二十届中央第八轮巡视近日完成进驻。15个中央巡视组将对教育部和31所中管高校党组织开展常规巡视。该信息有助于了解本轮巡视的对象和范围。",
-      "failureAnalysis": "可核实的信息集中在巡视对象和范围，尚未披露具体问题或结果；后续进展应以官方通报为准。",
+      "highlight": "10月27日，成都市中级人民法院一审公开宣判王会民受贿案，王会民被判死缓。",
+      "summary": "中国新闻网国内报道，最高人民法院消息显示，10月27日成都市中级人民法院一审公开宣判中国证监会原党委委员、中央纪委国家监委驻中国证监会纪检监察组原组长王会民受贿案。标题显示其一审被判死缓。该案涉及金融监管系统高层，适合关注官方司法信息与反腐进展的读者了解公开披露的审理结果。",
+      "failureAnalysis": "可确认的公共影响是：金融监管系统高层腐败案件进入公开司法程序并作出一审判决，释放持续反腐信号。阅读时应以官方披露的判决结果为准，未公布的受贿金额等细节不宜推测。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社北京10月26日电 根据中共中央关于巡视工作的统一部署，近日，二十届中央第八轮巡视完成进驻工作。15个中央巡视组将对教育部和31所中管高校党组织开展常规巡视。",
+      "sourceExcerpt": "中新社北京10月27日电 (记者 张素)记者从中国最高人民法院获悉，10月27日，四川省成都市中级人民法院一审公开宣判中国证券监督管理委员会原党委委员、中央纪委国家监委驻中国证券监督管理委员会纪检监察组原组长王会民受贿案。",
       "translations": {
         "zh": {
-          "title": "二十届中央第八轮巡视完成进驻",
-          "highlight": "15个中央巡视组将对教育部和31所中管高校党组织开展常规巡视。",
-          "summary": "根据中共中央关于巡视工作的统一部署，二十届中央第八轮巡视近日完成进驻。15个中央巡视组将对教育部和31所中管高校党组织开展常规巡视。该信息有助于了解本轮巡视的对象和范围。",
-          "failureAnalysis": "可核实的信息集中在巡视对象和范围，尚未披露具体问题或结果；后续进展应以官方通报为准。"
+          "title": "证监会原纪检监察组组长王会民受贿案一审被判死缓",
+          "highlight": "10月27日，成都市中级人民法院一审公开宣判王会民受贿案，王会民被判死缓。",
+          "summary": "中国新闻网国内报道，最高人民法院消息显示，10月27日成都市中级人民法院一审公开宣判中国证监会原党委委员、中央纪委国家监委驻中国证监会纪检监察组原组长王会民受贿案。标题显示其一审被判死缓。该案涉及金融监管系统高层，适合关注官方司法信息与反腐进展的读者了解公开披露的审理结果。",
+          "failureAnalysis": "可确认的公共影响是：金融监管系统高层腐败案件进入公开司法程序并作出一审判决，释放持续反腐信号。阅读时应以官方披露的判决结果为准，未公布的受贿金额等细节不宜推测。"
         },
         "en": {
-          "highlight": "Fifteen central inspection teams will conduct routine inspections of the Ministry of Education and the Party organizations of 31 centrally administered universities.",
-          "summary": "Under the unified deployment of the CPC Central Committee on inspection work, the 8th round of inspections by the 20th Central Committee recently completed its stationing. Fifteen central inspection teams will conduct routine inspections of the Ministry of Education and the Party organizations of 31 centrally administered universities. This helps clarify the targets and scope of this round of inspections.",
-          "failureAnalysis": "The verifiable information is limited to the inspection targets and scope; specific problems or results have not been disclosed, and subsequent developments should be based on official announcements.",
-          "title": "The 8th Round of Inspections by the 20th Central Committee Completes Stationing"
+          "highlight": "On October 27, a Chengdu court handed Wang Huimin, former CSRC discipline inspection chief, a first-instance suspended death sentence in a bribery case.",
+          "summary": "China News Service domestic coverage, citing the Supreme People's Court, reports that the Chengdu Intermediate People's Court publicly sentenced Wang Huimin, former CSRC Party Committee member and former head of the discipline inspection group stationed at the CSRC, in a bribery case on October 27. The headline says he received a suspended death sentence at first instance. The case concerns a senior figure in the financial regulatory system and is worth reading for the officially disclosed judicial outcome and anti-corruption developments.",
+          "failureAnalysis": "The verifiable public impact is that a senior financial-regulatory corruption case has reached a public first-instance judgment, signaling continued anti-corruption enforcement. Readers should rely on official disclosures and avoid speculating about undisclosed details such as the bribery amount.",
+          "title": "Former CSRC Discipline Inspection Chief Wang Huimin Given Suspended Death Sentence at First Instance for Bribery"
         }
       }
     },
     {
-      "id": "news-a7e4699f4d4648e7a33f54cc3411f289",
+      "id": "news-d5a14349ec2349ef84ad83e3926706ed",
       "category": "domestic",
-      "title": "2027年国考345万人通过资格审查，平均报录比97：1",
+      "title": "2026年9月全国查处违反中央八项规定精神问题32940起",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-26/10721321.shtml",
-      "publishedAt": "2026-10-26T12:23:13.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-27/10721751.shtml",
+      "publishedAt": "2026-10-27T09:38:31.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "2027年国考345万人通过资格审查，平均报录比97：1。",
-      "summary": "文章给出2027年度国考的关键数据：345万人通过资格审查，平均报录比为97：1。已知信息还显示，注册认证、网上报名与资格审查分别在2026年10月23日、24日和26日18:00结束。对非技术管理者而言，这组官方数据有助于判断公共部门岗位的竞争强度与人才市场热度。",
-      "failureAnalysis": "关键信息不只是345万人通过资格审查，更在于97：1的平均报录比所体现的竞争强度。阅读此类官方数据时，应区分报名人数、通过资格审查人数和最终录用规模，避免把不同口径混为一谈。",
+      "highlight": "当月，全国共查处违反中央八项规定精神问题32940起，批评教育和处理40122人，其中党纪政务处分28461人",
+      "summary": "该报道依据中央纪委国家监委网站消息，公布2026年9月全国查处违反中央八项规定精神问题的月报数据，包括查处起数、批评教育和处理人数、党纪政务处分人数。报道同时说明，这是连续第157个月公布月报，因此可作为观察相关执纪公开节奏和规模的官方信息来读。",
+      "failureAnalysis": "关键约束是：这是官方月报数据，能够确认查处数量和处分人数，但所给摘要没有提供问题类型、地区分布或同比变化，不能据此推断趋势。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网北京10月26日电(记者 李京统)中央机关及其直属机构2027年度考试录用公务员注册认证、网上报名与资格审查工作分别于2026年10月23日18:00、10月24日18:00和10月26日18:00结束。",
+      "sourceExcerpt": "中新网10月27日电 据中央纪委国家监委网站消息，10月27日，中央纪委国家监委公布了2026年9月全国查处违反中央八项规定精神问题汇总情况。当月，全国共查处违反中央八项规定精神问题32940起，批评教育和处理40122人，其中党纪政务处分28461人，这是连续第157个月公布月报数据。",
       "translations": {
         "zh": {
-          "title": "2027年国考345万人通过资格审查，平均报录比97：1",
-          "highlight": "2027年国考345万人通过资格审查，平均报录比97：1。",
-          "summary": "文章给出2027年度国考的关键数据：345万人通过资格审查，平均报录比为97：1。已知信息还显示，注册认证、网上报名与资格审查分别在2026年10月23日、24日和26日18:00结束。对非技术管理者而言，这组官方数据有助于判断公共部门岗位的竞争强度与人才市场热度。",
-          "failureAnalysis": "关键信息不只是345万人通过资格审查，更在于97：1的平均报录比所体现的竞争强度。阅读此类官方数据时，应区分报名人数、通过资格审查人数和最终录用规模，避免把不同口径混为一谈。"
+          "title": "2026年9月全国查处违反中央八项规定精神问题32940起",
+          "highlight": "当月，全国共查处违反中央八项规定精神问题32940起，批评教育和处理40122人，其中党纪政务处分28461人",
+          "summary": "该报道依据中央纪委国家监委网站消息，公布2026年9月全国查处违反中央八项规定精神问题的月报数据，包括查处起数、批评教育和处理人数、党纪政务处分人数。报道同时说明，这是连续第157个月公布月报，因此可作为观察相关执纪公开节奏和规模的官方信息来读。",
+          "failureAnalysis": "关键约束是：这是官方月报数据，能够确认查处数量和处分人数，但所给摘要没有提供问题类型、地区分布或同比变化，不能据此推断趋势。"
         },
         "en": {
-          "highlight": "3.45 million people passed qualification review for the 2027 national civil service exam, with an average applicant-to-position ratio of 97:1.",
-          "summary": "The article provides key figures for the 2027 national civil service exam: 3.45 million people passed qualification review, with an average applicant-to-position ratio of 97:1. The known information also shows that registration authentication, online application, and qualification review ended at 18:00 on October 23, 24, and 26, 2026, respectively. For non-technical managers, these official figures help gauge the intensity of competition for public-sector positions and the heat of the talent market.",
-          "failureAnalysis": "The key point is not only that 3.45 million people passed qualification review, but also the intensity of competition reflected in the average ratio of 97:1. When reading such official data, distinguish between applicants, those who passed qualification review, and final hires to avoid mixing different measures.",
-          "title": "3.45 Million Pass Qualification Review for 2027 National Civil Service Exam, Average Ratio 97:1"
+          "highlight": "In September 2026, authorities nationwide investigated 32,940 cases of violating the Central Eight-Point Regulation, criticized and handled 40,122 people, and imposed Party discipline or administrative sanctions on 28,461.",
+          "summary": "The item cites the Central Commission for Discipline Inspection and the National Supervisory Commission's monthly release for September 2026, including the number of cases investigated, people criticized and handled, and people subject to Party discipline or administrative sanctions. It notes that this is the 157th consecutive monthly release, making it an official source for observing the cadence and scale of enforcement disclosure.",
+          "failureAnalysis": "The key constraint is that the release confirms case and personnel counts, but the provided excerpt lacks breakdowns by problem type, region, or year-on-year change, so it cannot support trend conclusions.",
+          "title": "In September 2026, 32,940 Cases of Violating the Central Eight-Point Regulation Were Investigated Nationwide"
         }
       }
     },
     {
-      "id": "news-596a173bb0fd45c8ad470908cfc823ac",
+      "id": "news-ada63eed90784b67a76ec6b5d50880eb",
       "category": "domestic",
-      "title": "西藏巴青7.0级地震：地震系统全力开展专业监测合力服务抗震救灾",
+      "title": "云南新修订安全生产条例11月起施行 重特大事故责任追究加码",
       "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-26/10721370.shtml",
-      "publishedAt": "2026-10-26T13:47:50.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-27/10721937.shtml",
+      "publishedAt": "2026-10-27T14:07:05.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 4",
-      "highlight": "西藏自治区那曲市巴青县10月22日夜间发生7.0级地震后，地震系统全力以赴开展专业监测，合力服务抗震救灾。",
-      "summary": "已披露信息显示，西藏那曲市巴青县于10月22日夜间发生7.0级地震，随后地震系统全力开展专业监测，并协同服务抗震救灾。该报道的价值在于呈现官方地震应急响应中的专业监测与救灾服务衔接；目前未提供人员伤亡或财产损失等细节。",
-      "failureAnalysis": "这不是AI应用项目，不宜套用失败分析；关键点在于震后专业监测与抗震救灾服务的协同。",
+      "highlight": "对重大、特别重大生产安全事故负有责任的企业主要负责人，终身不得担任本行业生产经营单位的主要负责人",
+      "summary": "新修订的《云南省安全生产条例》将于11月1日起施行，并大幅提高违法惩戒力度。条例明确，对重大、特别重大生产安全事故负有责任的企业主要负责人终身不得担任本行业生产经营单位主要负责人，同时保障从业人员拒绝违章指挥和强令冒险作业的权利。条例还明确平台经济、低空经济等新兴行业的安全监管责任，对了解地方安全生产监管和责任追究变化具有参考价值。",
+      "failureAnalysis": "关键变化是把重特大事故责任与企业主要负责人终身职业禁入挂钩，并将平台经济、低空经济等新兴行业纳入安全监管；实际效果取决于后续执法和配套细则。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网北京10月26日电 (记者 孙自法)记者10月26日从中国地震局获悉，西藏自治区那曲市巴青县10月22日夜间发生7.0级地震后，地震系统全力以赴开展专业监测，合力服务抗震救灾。",
+      "sourceExcerpt": "中新网昆明10月27日电 (陆希成 贝文)新修订的《云南省安全生产条例》(以下简称《条例》)将于11月1日起施行。《条例》大幅提高违法惩戒力度，明确对重大、特别重大生产安全事故负有责任的企业主要负责人，终身不得担任本行业生产经营单位的主要负责人；同时保障从业人员拒绝违章指挥和强令冒险作业的权利，并明确平台经济、低空经济等新兴行业的安全监管责任。",
       "translations": {
         "zh": {
-          "title": "西藏巴青7.0级地震：地震系统全力开展专业监测合力服务抗震救灾",
-          "highlight": "西藏自治区那曲市巴青县10月22日夜间发生7.0级地震后，地震系统全力以赴开展专业监测，合力服务抗震救灾。",
-          "summary": "已披露信息显示，西藏那曲市巴青县于10月22日夜间发生7.0级地震，随后地震系统全力开展专业监测，并协同服务抗震救灾。该报道的价值在于呈现官方地震应急响应中的专业监测与救灾服务衔接；目前未提供人员伤亡或财产损失等细节。",
-          "failureAnalysis": "这不是AI应用项目，不宜套用失败分析；关键点在于震后专业监测与抗震救灾服务的协同。"
+          "title": "云南新修订安全生产条例11月起施行 重特大事故责任追究加码",
+          "highlight": "对重大、特别重大生产安全事故负有责任的企业主要负责人，终身不得担任本行业生产经营单位的主要负责人",
+          "summary": "新修订的《云南省安全生产条例》将于11月1日起施行，并大幅提高违法惩戒力度。条例明确，对重大、特别重大生产安全事故负有责任的企业主要负责人终身不得担任本行业生产经营单位主要负责人，同时保障从业人员拒绝违章指挥和强令冒险作业的权利。条例还明确平台经济、低空经济等新兴行业的安全监管责任，对了解地方安全生产监管和责任追究变化具有参考价值。",
+          "failureAnalysis": "关键变化是把重特大事故责任与企业主要负责人终身职业禁入挂钩，并将平台经济、低空经济等新兴行业纳入安全监管；实际效果取决于后续执法和配套细则。"
         },
         "en": {
-          "highlight": "After a magnitude-7.0 earthquake hit Baqing County, Nagqu, Tibet, at night on October 22, the earthquake system conducted professional monitoring and supported relief efforts.",
-          "summary": "The disclosed information says a magnitude-7.0 earthquake struck Baqing County in Nagqu, Tibet, on the night of October 22. China's earthquake system then carried out professional monitoring and coordinated support for relief work. The item is worth reading as a concise official signal on disaster response and the role of specialized monitoring, though it provides no casualty or damage details.",
-          "failureAnalysis": "This is not an AI application project, so failure analysis does not apply; the key point is the post-earthquake coordination between professional monitoring and relief support.",
-          "title": "Magnitude-7.0 Earthquake in Baqing, Tibet: Earthquake System Conducts Professional Monitoring and Supports Relief"
+          "highlight": "Enterprise principals responsible for major or especially major work safety accidents shall be permanently barred from serving as principals of production and business units in the same industry.",
+          "summary": "Yunnan's newly revised Work Safety Regulation will take effect on November 1 and significantly increases penalties for violations. It permanently bars enterprise principals responsible for major or especially major accidents from leading production and business units in the same industry, and protects workers' right to refuse illegal commands and forced risky operations. The regulation also clarifies safety oversight responsibilities for emerging sectors such as the platform economy and low-altitude economy, offering a reference for understanding changes in local work safety regulation and accountability.",
+          "failureAnalysis": "The key change links responsibility for major accidents to a lifetime industry ban for enterprise principals and brings emerging sectors such as the platform economy and low-altitude economy under safety oversight; the practical effect will depend on enforcement and supporting rules.",
+          "title": "Yunnan's Revised Work Safety Regulation Takes Effect in November, with Stricter Accountability for Major Accidents"
         }
       }
     },
     {
-      "id": "news-c97cacfc00564919bbd75a5aea39440c",
+      "id": "news-4e8d00fb2ae14b43b2358c520b70bf20",
       "category": "international",
-      "title": "How the streets and social media drove Lula to a historic comeback in Brazil",
+      "title": "Flávio Bolsonaro flees Brazil after presidential election loss, reports say",
       "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/oct/26/lula-victory-brazil-bolsonaro-analysis",
-      "publishedAt": "2026-10-26T17:56:50.0000000+00:00",
+      "url": "https://www.theguardian.com/world/2026/oct/27/flavio-bolsonaro-brazil-argentina-fled",
+      "publishedAt": "2026-10-27T18:27:32.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "一个病毒式传播的WhatsApp频道和学生领导的抗议，在巴西这位资深左翼人士的选举胜利中发挥了关键作用。",
-      "summary": "文章聚焦巴西总统选举的逆转：首轮后卢拉阵营受挫，右翼对手被普遍看好，但学生抗议和WhatsApp传播成为关键变量。它值得读，因为这说明线下街头动员与社交平台传播可能共同改变选举走势。",
-      "failureAnalysis": "关键启示是：判断选举或舆论走向时，不能只看民调和传统阵营盘，还要观察基层动员与社交传播是否形成合力。",
+      "highlight": "极右翼参议员弗拉维奥·博索纳罗据报已逃离巴西，在周日总统选举输给左翼现任总统卢拉后正前往美国。",
+      "summary": "报道称，弗拉维奥·博索纳罗在输掉总统选举后据报前往美国；Metrópoles援引接近其家庭人士的消息称“飞机正在飞行”，但未说明起飞地点。此事值得关注，因为它涉及巴西选举结果公布后的政治人物去向，以及其未按期上交护照这一细节。",
+      "failureAnalysis": "关键要点：当前信息依赖“据报”和消息人士说法，起飞地点等细节仍未明确，阅读时应区分已证实事实与未经独立核实的报道。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "A viral WhatsApp channel and student-led protests played a key role in the veteran Brazilian leftist’s election victory After the first round of the Brazilian presidential election three weeks ago, the leftist incumbent Luiz Inácio Lula da Silva reportedly told allies he could not understand how he finished second after a government he considered the best of his three terms. A mood of dismay swept Brazil’s left, and because 9 million voters for the other candidates, all of them on the right, were expected to mostly transfer to senator Flávio Bolsonaro, analysts widely saw the far-right senator’s victory as certain.",
+      "sourceExcerpt": "Far-right senator on plane to US after missing deadline to hand over his passport since loss to Lula The far-right senator Flávio Bolsonaro has reportedly fled Brazil and is on his way to the United States after losing Sunday’s presidential election to the leftwing incumbent, Luiz Inácio Lula da Silva. A report by the news website Metrópoles , citing people close to the politician’s family, said he was en route to the US. “The plane is in flight,” Metrópoles reported, without making clear where it had departed from.",
       "translations": {
         "zh": {
-          "title": "街头与社交媒体如何推动卢拉在巴西历史性回归",
-          "highlight": "一个病毒式传播的WhatsApp频道和学生领导的抗议，在巴西这位资深左翼人士的选举胜利中发挥了关键作用。",
-          "summary": "文章聚焦巴西总统选举的逆转：首轮后卢拉阵营受挫，右翼对手被普遍看好，但学生抗议和WhatsApp传播成为关键变量。它值得读，因为这说明线下街头动员与社交平台传播可能共同改变选举走势。",
-          "failureAnalysis": "关键启示是：判断选举或舆论走向时，不能只看民调和传统阵营盘，还要观察基层动员与社交传播是否形成合力。"
+          "title": "弗拉维奥·博索纳罗在总统选举失利后据报逃往美国",
+          "highlight": "极右翼参议员弗拉维奥·博索纳罗据报已逃离巴西，在周日总统选举输给左翼现任总统卢拉后正前往美国。",
+          "summary": "报道称，弗拉维奥·博索纳罗在输掉总统选举后据报前往美国；Metrópoles援引接近其家庭人士的消息称“飞机正在飞行”，但未说明起飞地点。此事值得关注，因为它涉及巴西选举结果公布后的政治人物去向，以及其未按期上交护照这一细节。",
+          "failureAnalysis": "关键要点：当前信息依赖“据报”和消息人士说法，起飞地点等细节仍未明确，阅读时应区分已证实事实与未经独立核实的报道。"
         },
         "en": {
-          "highlight": "A viral WhatsApp channel and student-led protests played a key role in the veteran Brazilian leftist’s election victory.",
-          "summary": "The article examines Lula’s comeback in Brazil’s presidential election: after a disappointing first round, the left faced dismay while the far-right candidate was widely seen as certain to win. It is worth reading because it shows how student-led protests and viral WhatsApp distribution can combine with street-level mobilization to shift an election.",
-          "failureAnalysis": "The key takeaway is that election and public-opinion forecasts should look beyond polls and traditional voting blocs to whether grassroots mobilization and social distribution reinforce each other.",
-          "title": "How Streets and Social Media Drove Lula’s Historic Comeback in Brazil"
+          "highlight": "Far-right senator Flávio Bolsonaro has reportedly fled Brazil for the United States after losing Sunday’s presidential election to Luiz Inácio Lula da Silva.",
+          "summary": "The report says Flávio Bolsonaro is reportedly heading to the United States after losing the presidential election; Metrópoles, citing people close to his family, said “the plane is in flight” without clarifying where it departed from. It is worth reading because it concerns the movements of a political figure after Brazil’s election results and the detail that he missed a deadline to hand over his passport.",
+          "failureAnalysis": "The key takeaway is that the information relies on “reports” and sources close to the family, while details such as the departure point remain unclear; readers should distinguish confirmed facts from unverified reports.",
+          "title": "Flávio Bolsonaro Reportedly Flees Brazil for US After Election Loss"
         }
       }
     },
     {
-      "id": "news-338f6a6d06d74808a56a11e6895b98cf",
+      "id": "news-99f8925cb4d34aeab3e22702019a2009",
       "category": "international",
-      "title": "‘Zero-energy companionship’: bizarre hobby takes seed among China’s stressed young adults",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/oct/26/zero-energy-companionship-bizarre-hobby-takes-seed-among-chinas-stressed-young-adults",
-      "publishedAt": "2026-10-26T09:47:14.0000000+00:00",
+      "title": "Tax on banks, energy bill help and minimum wage rise - what could be in the Budget?",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-27T18:45:56.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "砖头也许不像猫那样可抱，也不像人类后代那样赋予生命意义，但它们几乎不花什么钱。",
-      "summary": "《卫报》报道，面对停滞的就业市场，一些中国年轻人把“养砖头”当作养孩子或养宠物的廉价、低维护替代方案。文中引用社交媒体说法“不养猫、不约会，我开始养砖头”，呈现压力下的低成本陪伴心态。它值得一读，是因为这一轻怪现象折射出青年就业压力与生活选择变化；但可确认内容仅限所提供的摘要。",
-      "failureAnalysis": "关键点在于：这不是技术失败，而是青年在就业压力下用近乎零成本的方式寻求陪伴与情绪出口。读这类报道时，应把“养砖头”理解为社会心态信号，而非普遍事实。",
+      "highlight": "英国财政大臣约翰·希利将于10月28日公布其税收计划。",
+      "summary": "这篇BBC商业报道围绕英国预算案可能包含的措施展开，标题提到银行税、能源账单补助和最低工资上调。已知信息是，财政大臣约翰·希利将于10月28日公布其税收计划。对关注英国财政政策走向的读者，这是一条值得留意的预算前瞻。",
+      "failureAnalysis": "关键看点是10月28日财政大臣公布税收计划时，银行税、能源账单补助和最低工资上调等可能措施中哪些会真正落地。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Faced with a stagnant jobs market, many are spurning children or pets in favour of ‘raising bricks’ Young adults in China looking for a cheaper, low-maintenance alternative to having children or pets have found an answer: raising bricks. Bricks may not be as cuddly as cats or as life-affirming as human offspring, but they also cost next to nothing. “No cats, no dating, I started raising a brick,” wrote one brick parent on social media.",
+      "sourceExcerpt": "Chancellor John Healey will set out his plans for UK taxes on 28 October.",
       "translations": {
         "zh": {
-          "title": "“零能量陪伴”：中国压力下的年轻人开始“养砖头”",
-          "highlight": "砖头也许不像猫那样可抱，也不像人类后代那样赋予生命意义，但它们几乎不花什么钱。",
-          "summary": "《卫报》报道，面对停滞的就业市场，一些中国年轻人把“养砖头”当作养孩子或养宠物的廉价、低维护替代方案。文中引用社交媒体说法“不养猫、不约会，我开始养砖头”，呈现压力下的低成本陪伴心态。它值得一读，是因为这一轻怪现象折射出青年就业压力与生活选择变化；但可确认内容仅限所提供的摘要。",
-          "failureAnalysis": "关键点在于：这不是技术失败，而是青年在就业压力下用近乎零成本的方式寻求陪伴与情绪出口。读这类报道时，应把“养砖头”理解为社会心态信号，而非普遍事实。"
+          "title": "银行税、能源账单补助与最低工资上调：英国预算案可能包含什么？",
+          "highlight": "英国财政大臣约翰·希利将于10月28日公布其税收计划。",
+          "summary": "这篇BBC商业报道围绕英国预算案可能包含的措施展开，标题提到银行税、能源账单补助和最低工资上调。已知信息是，财政大臣约翰·希利将于10月28日公布其税收计划。对关注英国财政政策走向的读者，这是一条值得留意的预算前瞻。",
+          "failureAnalysis": "关键看点是10月28日财政大臣公布税收计划时，银行税、能源账单补助和最低工资上调等可能措施中哪些会真正落地。"
         },
         "en": {
-          "highlight": "Bricks may not be as cuddly as cats or as life-affirming as human offspring, but they also cost next to nothing.",
-          "summary": "The Guardian reports that some young adults in China, facing a stagnant jobs market, are turning to ‘raising bricks’ as a cheaper, low-maintenance alternative to children or pets. One social media user is quoted saying, ‘No cats, no dating, I started raising a brick,’ illustrating a low-cost form of companionship under stress. It is worth reading as a light, unusual signal of youth employment pressure and changing lifestyle choices, though the available excerpt is limited.",
-          "failureAnalysis": "The key takeaway is that this is not a technology failure but a social signal: under job-market pressure, some young people seek companionship and emotional outlet at near-zero cost. The ‘brick parenting’ meme should be read as a symptom of anxiety and constrained choices, not as a universal trend.",
-          "title": "‘Zero-energy companionship’: young adults in China start ‘raising bricks’ under pressure"
+          "highlight": "Chancellor John Healey will set out his plans for UK taxes on 28 October.",
+          "summary": "This BBC Business report previews possible measures in the UK Budget, with the headline pointing to a bank tax, help with energy bills and a minimum wage rise. The known detail is that Chancellor John Healey will set out his tax plans on 28 October. It is worth reading as an early look at the direction of UK fiscal policy.",
+          "failureAnalysis": "The key point is not a specific conclusion but which of these possible measures actually materialise when the Chancellor sets out his tax plans on 28 October.",
+          "title": "Bank Tax, Energy Bill Support and Minimum Wage Rise: What Could Be in the UK Budget?"
         }
       }
     },
     {
-      "id": "life-5424e1cd733c48da83cff550234bd5ff",
+      "id": "life-5b0d43a1b6744afe85081f63c4158271",
       "category": "international",
-      "title": "The Dark Wood of the Golden Birds: Margaret Wise Brown’s Lost Masterpiece about Mortality and the Meaning of Life, Newly Illustrated",
-      "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/10/25/dark-wood-margaret-wise-brown-ofra-amit/",
-      "publishedAt": "2026-10-25T19:38:12.0000000+00:00",
-      "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 4",
-      "highlight": "1948年9月初，在《晚安月亮》出版一年后，玛格丽特·怀斯·布朗看着一生挚爱渐渐走向生命终点。",
-      "summary": "文章围绕玛格丽特·怀斯·布朗一部关于死亡与生命意义的失落杰作展开，并交代其背景：1948年9月，在《晚安月亮》出版一年后，她目睹挚爱迈克尔·斯特兰奇走向生命终点。文章也勾勒出斯特兰奇的鲜明形象：她原名布兰奇·奥尔里克斯，健谈、老练而自持，衣着与嗓音都极具个人风格。它值得读，是因为它把这位经典童书作者较少被谈论的生命观与情感经验带回公众视野。",
-      "failureAnalysis": "关键启示：理解一位创作者，不能只看她最著名的作品；亲密关系的失去与对死亡的思考，可能同样构成其创作的重要底色。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "In early September 1948, a year after she rewilded the landscape of literature with Goodnight Moon, Margaret Wise Brown watched the love of her life fade to black. Michael Strange, born Blanche Oelrichs, had cast an instant spell on Margaret — outspoken, sophisticated, and self-possessed, so tall Margaret had to lift her grey-blue eyes to meet the black of Michael’s, her tall frame clad in masculine clothing she herself had designed to cling to her curves, with a musical voice unspooling from her haunting dark beauty, a deep velvet laugh, and a reputation for rarely keeping a promise.",
-      "translations": {
-        "zh": {
-          "title": "金色鸟的暗黑森林：玛格丽特·怀斯·布朗关于死亡与生命意义的失落杰作，全新插画版",
-          "highlight": "1948年9月初，在《晚安月亮》出版一年后，玛格丽特·怀斯·布朗看着一生挚爱渐渐走向生命终点。",
-          "summary": "文章围绕玛格丽特·怀斯·布朗一部关于死亡与生命意义的失落杰作展开，并交代其背景：1948年9月，在《晚安月亮》出版一年后，她目睹挚爱迈克尔·斯特兰奇走向生命终点。文章也勾勒出斯特兰奇的鲜明形象：她原名布兰奇·奥尔里克斯，健谈、老练而自持，衣着与嗓音都极具个人风格。它值得读，是因为它把这位经典童书作者较少被谈论的生命观与情感经验带回公众视野。",
-          "failureAnalysis": "关键启示：理解一位创作者，不能只看她最著名的作品；亲密关系的失去与对死亡的思考，可能同样构成其创作的重要底色。"
-        },
-        "en": {
-          "highlight": "In early September 1948, a year after Goodnight Moon, Margaret Wise Brown watched the love of her life fade to black.",
-          "summary": "The article centers on Margaret Wise Brown’s lost masterpiece about mortality and the meaning of life, setting it against the death of her partner Michael Strange in early September 1948, a year after Goodnight Moon. It also sketches Strange—born Blanche Oelrichs—as outspoken, sophisticated, self-possessed, and vividly self-styled. It is worth reading because it brings Brown’s reflections on death and love back into view alongside her best-known children’s book.",
-          "failureAnalysis": "A key takeaway is that understanding a creator means looking beyond her most famous work; intimate loss and thoughts about mortality can shape the depth of what she makes.",
-          "title": "The Dark Wood of the Golden Birds: Margaret Wise Brown’s Lost Masterpiece on Mortality and the Meaning of Life, Newly Illustrated"
-        }
-      }
-    },
-    {
-      "id": "life-4e4806533cd8416a93053a63a112a87a",
-      "category": "international",
-      "title": "What I Love (and What I Don't) About the New Una Fitness Watch",
-      "source": "Lifehacker",
-      "url": "https://lifehacker.com/health/una-watch-review?utm_medium=RSS",
-      "publishedAt": "2026-10-26T19:00:00.0000000+00:00",
+      "title": "Love with nowhere to go",
+      "source": "Aeon",
+      "url": "https://aeon.co/essays/we-need-a-language-to-name-the-grief-that-comes-without-death",
+      "publishedAt": "2026-10-27T10:00:00.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "Una 手表通过 USB-C 充电，设计上追求可维修，并对开发者友好。",
-      "summary": "这是 Lifehacker 对新款 Una 健身手表的评测，标题显示作者既谈了优点，也谈了不足之处。根据已知内容，这款手表使用 USB-C 充电，并在设计上强调可维修性和对开发者友好，这三点是它区别于常见消费级穿戴设备的主要特征。对非技术读者来说，这篇评测值得一读，因为它把“能不能修、好不好接”这类容易被忽略的硬件属性放到了评价标准里。",
-      "failureAnalysis": "关键启示：评估硬件产品时，除了功能和外观，通用充电接口、可维修性和开发者友好度也是可以纳入考量的实际维度。不过，本文的具体结论仍需阅读完整评测才能确认。",
+      "highlight": "悲伤并不只属于逝者；当我们无法正视其他深刻的失去时，我们便成了自己的陌生人。",
+      "summary": "这篇 Aeon 文章由 Derek van Zoonen 撰写，主张悲伤体验不只发生在有人去世时：项目失败、关系破裂、身份转变等深刻失去同样需要被承认和哀悼。作者指出，如果缺少描述这类失去的语言，人们会把情绪压回自身，最终与自己变得疏远。值得一读的是，它提供了一个理解日常\"无声失去\"的视角，也提醒我们语言与仪式在情绪安放中的作用。",
+      "failureAnalysis": "关键启示：承认失去并为其命名本身就有价值，缺乏这种承认时，情绪会转化为自我疏离；这对管理者理解团队挫败感同样适用。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "The Una watch charges over USB-C and is made to be repairable and developer-friendly.",
+      "sourceExcerpt": "Grief is not only for the dead. When we are unable to honour other profound losses, we become strangers to ourselves - by Derek van Zoonen Read on Aeon",
       "translations": {
         "zh": {
-          "title": "新款 Una 健身手表：我喜欢的与不喜欢的地方",
-          "highlight": "Una 手表通过 USB-C 充电，设计上追求可维修，并对开发者友好。",
-          "summary": "这是 Lifehacker 对新款 Una 健身手表的评测，标题显示作者既谈了优点，也谈了不足之处。根据已知内容，这款手表使用 USB-C 充电，并在设计上强调可维修性和对开发者友好，这三点是它区别于常见消费级穿戴设备的主要特征。对非技术读者来说，这篇评测值得一读，因为它把“能不能修、好不好接”这类容易被忽略的硬件属性放到了评价标准里。",
-          "failureAnalysis": "关键启示：评估硬件产品时，除了功能和外观，通用充电接口、可维修性和开发者友好度也是可以纳入考量的实际维度。不过，本文的具体结论仍需阅读完整评测才能确认。"
+          "title": "无处安放的爱：为那些没有死亡的失去命名",
+          "highlight": "悲伤并不只属于逝者；当我们无法正视其他深刻的失去时，我们便成了自己的陌生人。",
+          "summary": "这篇 Aeon 文章由 Derek van Zoonen 撰写，主张悲伤体验不只发生在有人去世时：项目失败、关系破裂、身份转变等深刻失去同样需要被承认和哀悼。作者指出，如果缺少描述这类失去的语言，人们会把情绪压回自身，最终与自己变得疏远。值得一读的是，它提供了一个理解日常\"无声失去\"的视角，也提醒我们语言与仪式在情绪安放中的作用。",
+          "failureAnalysis": "关键启示：承认失去并为其命名本身就有价值，缺乏这种承认时，情绪会转化为自我疏离；这对管理者理解团队挫败感同样适用。"
         },
         "en": {
-          "highlight": "The Una watch charges over USB-C and is designed to be repairable and developer-friendly.",
-          "summary": "This is Lifehacker's review of the new Una fitness watch; its title indicates the author covers both what works and what doesn't. According to the known content, the watch charges over USB-C and is built with repairability and developer-friendliness in mind — three traits that set it apart from typical consumer wearables. It is worth reading for non-technical readers because it puts hardware attributes like repairability and interoperability into the evaluation criteria.",
-          "failureAnalysis": "Key takeaway: when evaluating hardware, universal charging ports, repairability and developer-friendliness are practical dimensions alongside features and design. Still, the article's specific verdict requires reading the full review.",
-          "title": "The New Una Fitness Watch: What I Love and What I Don't"
+          "highlight": "Grief is not only for the dead. When we are unable to honour other profound losses, we become strangers to ourselves.",
+          "summary": "In this Aeon essay, Derek van Zoonen argues that grief is not confined to death: failed projects, broken relationships and identity shifts are profound losses that also need to be acknowledged and mourned. Without a language for such losses, people push the feeling inward and become estranged from themselves. It is worth reading for a vocabulary that helps make sense of quiet, everyday loss.",
+          "failureAnalysis": "The takeaway: naming and acknowledging a loss has value in itself; when that recognition is missing, emotion turns into self-estrangement - a point that also applies to how managers read team frustration.",
+          "title": "Love with nowhere to go: naming the losses that come without death"
         }
       }
     },
     {
-      "id": "paper-2610.32938",
+      "id": "life-d53522a925954f15ac6109e4bbed0b01",
+      "category": "international",
+      "title": "Walt Whitman’s Advice on Living a Vibrant and Rewarding Life",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/10/26/walt-whitman-leaves-of-grass-preface/",
+      "publishedAt": "2026-10-26T17:14:12.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "热爱大地、太阳与动物……重新审视学校、教会或书本告诉你的一切，凡是侮辱你灵魂的，都应摒弃。",
+      "summary": "文章借惠特曼《草叶集》序言中的建议，谈如何过一种有活力且值得的人生。它强调热爱自然与生命，并提醒人重新审视来自学校、教会和书本的既有观念，摒弃那些冒犯自己灵魂的东西。适合想从经典文字中获得生活原则的读者。",
+      "failureAnalysis": "真正可操作的生活建议往往不是增加规则，而是保留对自然与生命的热爱，并敢于剔除违背内心的既有教条。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "“Love the earth and sun and the animals… re-examine all you have been told at school or church or in any book, dismiss whatever insults your own soul…”",
+      "translations": {
+        "zh": {
+          "title": "惠特曼谈如何活出蓬勃而丰盈的人生",
+          "highlight": "热爱大地、太阳与动物……重新审视学校、教会或书本告诉你的一切，凡是侮辱你灵魂的，都应摒弃。",
+          "summary": "文章借惠特曼《草叶集》序言中的建议，谈如何过一种有活力且值得的人生。它强调热爱自然与生命，并提醒人重新审视来自学校、教会和书本的既有观念，摒弃那些冒犯自己灵魂的东西。适合想从经典文字中获得生活原则的读者。",
+          "failureAnalysis": "真正可操作的生活建议往往不是增加规则，而是保留对自然与生命的热爱，并敢于剔除违背内心的既有教条。"
+        },
+        "en": {
+          "highlight": "Love the earth and sun and the animals… re-examine all you have been told at school or church or in any book, dismiss whatever insults your own soul…",
+          "summary": "The article draws on advice from Walt Whitman’s preface to Leaves of Grass to discuss how to live a vibrant and worthwhile life. It emphasizes loving nature and life, and urges readers to re-examine inherited ideas from school, church, and books, rejecting whatever insults their own soul. It is suited to readers seeking life principles from classic writing.",
+          "failureAnalysis": "Practical life advice often lies not in adding more rules, but in preserving love for nature and life and daring to discard inherited dogma that violates one’s inner self.",
+          "title": "Walt Whitman’s Advice on Living a Vibrant and Rewarding Life"
+        }
+      }
+    },
+    {
+      "id": "paper-2610.35355",
       "category": "paper",
-      "title": "Vacancy-enhanced Li solid-solution anodes for solid-state batteries: computational screening enabling high critical current density",
+      "title": "OneEEG: A Unified Signal-Visual Multimodal Language Model with Task-Aware Mixture of Projectors for Multi-Task EEG Understanding",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2610.32938v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2610.32938",
-      "publishedAt": "2026-10-23T17:34:01.0000000Z",
+      "url": "https://arxiv.org/pdf/2610.35355v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.35355",
+      "publishedAt": "2026-10-26T12:46:40.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
-      "selectionReason": "Open full-text paper; topic energy; quality signal passed; application scenario is clear.",
-      "paperTopic": "energy",
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
       "qualityScore": 28,
       "readabilityStatus": "open",
       "paperCard": {
-        "problem": "解决的问题：这篇论文试图把 energy 方向的研究推进到更可用的场景。",
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
         "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
         "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
         "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
         "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
         "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
         "technicalTerms": [
-          "关键技术词：保留原论文术语，并用白话解释其作用。"
+          "EEG：把大脑电信号当作输入数据。"
         ],
-        "whySelected": "Open full-text paper; topic energy; quality signal passed; application scenario is clear."
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
       },
-      "highlight": "该研究关注空位增强的锂固溶体负极，并尝试以计算筛选实现固态电池的高临界电流密度。",
-      "summary": "条目主题是固态电池中空位增强的锂固溶体负极，重点在计算筛选与高临界电流密度。标题显示其目标是以计算手段辅助负极设计，但所给文本未包含方法、数据或验证结果。其意义在于可能为高电流密度固态电池负极筛选提供思路。",
-      "failureAnalysis": "所给文本仅有标题和作者片段，无法核对计算模型、筛选标准与实验验证。因而不能据此判断高临界电流密度结论的可靠性。",
+      "highlight": "脑电图广泛用于临床评估、脑机接口与认知状态分析，但其建模仍分散于不同任务范式。",
+      "summary": "OneEEG 是一个统一信号-视觉多模态语言模型，面向多任务脑电理解，并采用任务感知的投影器混合机制。作者指出，脑电虽广泛用于临床评估、脑机接口和认知状态分析，但其建模长期分散在不同任务范式中。该工作尝试用多模态大语言模型提供统一接口，因而对跨任务脑电分析具有潜在意义。",
+      "failureAnalysis": "部署时，任务感知投影器混合可能依赖明确的任务标识或分布假设，遇到未见任务、设备差异和临床场景漂移时存在性能下降风险。统一多模态接口也可能放大信号噪声或对齐误差，需在真实脑机接口与临床环境中验证鲁棒性和安全性。所给文本未包含实验细节，因此不能据此判断其跨任务泛化与临床可用性。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Vacancy-enhanced Li solid-solution anodes for solid-state batteries: computational screening enabling high critical current density Arseniy S. Ashikhmina,2 Nurlan Zhanabayev,1 Anton O. Chepkasov,1 Alexander G.",
+      "sourceExcerpt": "IEEE TRANSACTIONS ON MULTIMEDIA 1 OneEEG: A Unified Signal-Visual Multimodal Language Model with Task-Aware Mixture of Projectors for Multi-Task EEG Understanding Jiacheng Zhang, Xueyi Zhang, Xin Lu, Siqi Cai, Haizhou Li Abstract—Electroencephalography (EEG) is widely used in clinical assessment, brain-computer interfaces, and cognitive- state analysis, yet EEG modeling remains fragmented across task paradigms. Recent multimodal large language models (MLLMs) provide a promising interface for flexible multimodal reasoning, but their ability to understand EEG inputs remains limited. In this work, we propose OneEEG, a unified EEG-MLLM framework for multi-task EEG understanding.",
       "translations": {
         "zh": {
-          "title": "空位增强锂固溶体负极：面向高临界电流密度的固态电池计算筛选",
-          "highlight": "该研究关注空位增强的锂固溶体负极，并尝试以计算筛选实现固态电池的高临界电流密度。",
-          "summary": "条目主题是固态电池中空位增强的锂固溶体负极，重点在计算筛选与高临界电流密度。标题显示其目标是以计算手段辅助负极设计，但所给文本未包含方法、数据或验证结果。其意义在于可能为高电流密度固态电池负极筛选提供思路。",
-          "failureAnalysis": "所给文本仅有标题和作者片段，无法核对计算模型、筛选标准与实验验证。因而不能据此判断高临界电流密度结论的可靠性。",
+          "title": "OneEEG：任务感知投影器混合的统一信号-视觉脑电理解模型",
+          "highlight": "脑电图广泛用于临床评估、脑机接口与认知状态分析，但其建模仍分散于不同任务范式。",
+          "summary": "OneEEG 是一个统一信号-视觉多模态语言模型，面向多任务脑电理解，并采用任务感知的投影器混合机制。作者指出，脑电虽广泛用于临床评估、脑机接口和认知状态分析，但其建模长期分散在不同任务范式中。该工作尝试用多模态大语言模型提供统一接口，因而对跨任务脑电分析具有潜在意义。",
+          "failureAnalysis": "部署时，任务感知投影器混合可能依赖明确的任务标识或分布假设，遇到未见任务、设备差异和临床场景漂移时存在性能下降风险。统一多模态接口也可能放大信号噪声或对齐误差，需在真实脑机接口与临床环境中验证鲁棒性和安全性。所给文本未包含实验细节，因此不能据此判断其跨任务泛化与临床可用性。",
           "paperCard": {
-            "problem": "解决的问题：这篇论文试图把 energy 方向的研究推进到更可用的场景。",
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
             "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
             "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
             "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
             "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
             "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
             "technicalTerms": [
-              "关键技术词：保留原论文术语，并用白话解释其作用。"
+              "EEG：把大脑电信号当作输入数据。"
             ],
-            "whySelected": "Open full-text paper; topic energy; quality signal passed; application scenario is clear."
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
         },
         "en": {
-          "title": "Vacancy-Enhanced Li Solid-Solution Anodes for Solid-State Batteries: Computational Screening Enabling High Critical Current Density",
-          "highlight": "The study focuses on vacancy-enhanced lithium solid-solution anodes and uses computational screening to pursue high critical current density in solid-state batteries.",
-          "summary": "The item concerns vacancy-enhanced lithium solid-solution anodes for solid-state batteries, with emphasis on computational screening and high critical current density. The title suggests a computational approach to anode design, but the supplied text provides no methods, data, or validation results. Its potential significance lies in supporting anode screening for high-current-density solid-state batteries.",
-          "failureAnalysis": "The supplied text contains only the title and an author fragment, so the computational model, screening criteria, and experimental validation cannot be checked. The reliability of the high critical current density claim therefore cannot be assessed from the available evidence.",
+          "title": "OneEEG: A Unified Signal-Visual Multimodal Language Model with Task-Aware Mixture of Projectors for Multi-Task EEG Understanding",
+          "highlight": "EEG is widely used in clinical assessment, brain-computer interfaces and cognitive-state analysis, yet modeling remains fragmented across task paradigms.",
+          "summary": "OneEEG is a unified signal-visual multimodal language model for multi-task EEG understanding that uses a task-aware mixture of projectors. The authors note that EEG supports clinical assessment, brain-computer interfaces and cognitive-state analysis, but its modeling remains fragmented across task paradigms. The work aims to offer a multimodal large-language-model interface for cross-task EEG analysis.",
+          "failureAnalysis": "In deployment, the task-aware mixture of projectors may rely on explicit task identifiers or distributional assumptions, creating performance risk for unseen tasks, device differences and clinical domain shift. The unified multimodal interface may also amplify signal noise or alignment errors, so robustness and safety need validation in real brain-computer interface and clinical settings. The supplied text lacks experimental detail, so cross-task generalization and clinical readiness cannot be judged from it.",
           "paperCard": {
             "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
             "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
@@ -275,51 +275,55 @@
             "implementation": "Implementation: check the input data, core model or device, and validation results.",
             "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
             "technicalTerms": [
-              "关键技术词：保留原论文术语，并用白话解释其作用。"
+              "EEG：把大脑电信号当作输入数据。"
             ],
-            "whySelected": "Open full-text paper; topic energy; quality signal passed; application scenario is clear."
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
         }
       }
     },
     {
-      "id": "ai-feed-7f17da21e4724ceaa402be29c7749b21",
+      "id": "ai-github-1410926671",
       "category": "ai",
-      "title": "Quoting Jason Koebler",
-      "source": "Simon Willison",
-      "url": "https://simonwillison.net/2026/Oct/26/jason-koebler/",
+      "title": "trhhubsd/ARTEX",
+      "source": "GitHub Search",
+      "url": "https://github.com/trhhubsd/ARTEX",
       "abstractUrl": null,
-      "publishedAt": "2026-10-26T19:00:25.0000000Z",
-      "scoreLabel": "Curated engineering feed",
-      "aiArticleType": "concept_explanation",
+      "publishedAt": "2026-10-08T20:35:22.0000000Z",
+      "scoreLabel": "GitHub 2057 stars",
+      "aiArticleType": "application_innovation",
       "evidenceAnchors": [
         {
-          "label": "Case study",
+          "label": "GitHub",
           "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
         }
       ],
-      "evidenceLabel": "Case study",
+      "evidenceLabel": "GitHub + Community signal",
       "hasPrimaryAnchor": true,
-      "requiresRiskAnalysis": false,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: Case study",
-      "summary": "Jason Koebler 指出，大科技平台缺乏客服、用户难以联系真人，导致人们把日常技术问题交给 ChatGPT。ChatGPT 越来越常告诉这些人，他们发现了具有新闻价值的事，并称 404 Media 能提供帮助。这展示了 AI 在替代客服入口时可能给出误导性建议，也凸显平台支持缺位带来的连锁影响。",
-      "failureAnalysis": "关键约束是：当平台客服缺位时，用户会把 ChatGPT 当作求助入口，而模型可能把普通技术问题误判为新闻线索并给出错误指向。",
-      "aiSelectionScore": 100,
-      "highlight": "大科技平台几乎没有客服，用户无法联系到真人，许多人因此转向 ChatGPT 处理普通技术问题。",
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该 GitHub 项目展示了一个名为 ARTEX 的 AI 自主渗透测试系统，采用多智能体 LLM，并以 Go 和 Next.js 实现。项目已有 2057 stars，且描述称其获得百度 agent+ 攻防挑战赛冠军，说明其在 AI 安全自动化方向受到一定关注。对非技术决策者而言，值得观察的是它如何把 LLM 多智能体能力落实到真实攻防流程，而不仅仅停留在演示。",
+      "failureAnalysis": "自主渗透测试直接涉及授权、合规与攻击面控制；如果缺少严格的权限边界、审计和沙箱，企业很难在生产环境中采用。真实攻防环境复杂，结果又需要可复现；多智能体 LLM 可能带来误报、漏报、成本与延迟问题，因此工程验证门槛较高。2057 stars 和比赛冠军能证明关注度与 Demo 能力，但不能替代对付费需求、部署成本和长期维护的验证。",
+      "aiSelectionScore": 2057,
+      "highlight": "ARTEX 是 AI 自主渗透测试系统，基于多智能体 LLM、Go 与 Next.js 构建，曾获百度 agent+ 攻防挑战赛冠军。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people experiencing run-of-the-mill tech problems have turned to ChatGPT. And, increasingly, ChatGPT is telling people that have normal tech support problems that they have discovered something journalistically notable and that 404 Media, specifically, can help them. — Jason Koebler , ChatGPT Keeps Telling People 404 Media Can Solve Their Tech Support Problems Tags: jason-koebler , openai , journalism , ai , llms , ai-ethics , ai-misuse , generative-ai , chatgpt , 404-media",
+      "sourceExcerpt": "GitHub repository with 2057 stars and recent public activity. Description: ARTEX · AI autonomous penetration testing system (multi-agent LLM, Go + Next.js) · AI 自主渗透测试系统 · 百度 agent+ 攻防挑战赛冠军",
       "translations": {
         "zh": {
-          "title": "ChatGPT 被用来解决技术支持，并被指向 404 Media",
-          "highlight": "大科技平台几乎没有客服，用户无法联系到真人，许多人因此转向 ChatGPT 处理普通技术问题。",
-          "summary": "Jason Koebler 指出，大科技平台缺乏客服、用户难以联系真人，导致人们把日常技术问题交给 ChatGPT。ChatGPT 越来越常告诉这些人，他们发现了具有新闻价值的事，并称 404 Media 能提供帮助。这展示了 AI 在替代客服入口时可能给出误导性建议，也凸显平台支持缺位带来的连锁影响。",
-          "failureAnalysis": "关键约束是：当平台客服缺位时，用户会把 ChatGPT 当作求助入口，而模型可能把普通技术问题误判为新闻线索并给出错误指向。"
+          "title": "ARTEX：多智能体 LLM 驱动的 AI 自主渗透测试系统",
+          "highlight": "ARTEX 是 AI 自主渗透测试系统，基于多智能体 LLM、Go 与 Next.js 构建，曾获百度 agent+ 攻防挑战赛冠军。",
+          "summary": "该 GitHub 项目展示了一个名为 ARTEX 的 AI 自主渗透测试系统，采用多智能体 LLM，并以 Go 和 Next.js 实现。项目已有 2057 stars，且描述称其获得百度 agent+ 攻防挑战赛冠军，说明其在 AI 安全自动化方向受到一定关注。对非技术决策者而言，值得观察的是它如何把 LLM 多智能体能力落实到真实攻防流程，而不仅仅停留在演示。",
+          "failureAnalysis": "自主渗透测试直接涉及授权、合规与攻击面控制；如果缺少严格的权限边界、审计和沙箱，企业很难在生产环境中采用。真实攻防环境复杂，结果又需要可复现；多智能体 LLM 可能带来误报、漏报、成本与延迟问题，因此工程验证门槛较高。2057 stars 和比赛冠军能证明关注度与 Demo 能力，但不能替代对付费需求、部署成本和长期维护的验证。"
         },
         "en": {
-          "highlight": "Because big tech platforms essentially do not have customer support and make it impossible for their users to contact a human, many people with ordinary tech problems turn to ChatGPT.",
-          "summary": "Jason Koebler points out that big tech platforms lack customer support and make it hard for users to reach a human, so people hand everyday tech problems to ChatGPT. Increasingly, ChatGPT tells these people they have found something newsworthy and that 404 Media can help. This shows how AI can give misleading guidance when it fills the support gap, and how the absence of platform support creates knock-on effects.",
-          "failureAnalysis": "The key constraint is that when platform support is missing, users treat ChatGPT as a help desk, and the model may mistake ordinary tech problems for news tips and point them in the wrong direction.",
-          "title": "ChatGPT Is Being Used for Tech Support and Points People to 404 Media"
+          "highlight": "ARTEX is an AI autonomous penetration testing system built with multi-agent LLMs, Go, and Next.js, and its description says it won the Baidu agent+ offense-defense challenge.",
+          "summary": "This GitHub repository presents ARTEX, an AI autonomous penetration testing system using multi-agent LLMs and implemented with Go and Next.js. It has 2,057 stars and claims a championship in Baidu's agent+ offense-defense challenge, making it worth watching as an example of LLM agents applied to security automation.",
+          "failureAnalysis": "Autonomous penetration testing faces strict authorization, compliance, auditability, and sandboxing requirements, while LLM agents can introduce false positives, missed findings, latency, and cost issues in complex real-world environments. Stars and a competition win validate attention and demo capability, not production demand or deployment economics.",
+          "title": "ARTEX: An AI Autonomous Penetration Testing System Powered by Multi-Agent LLMs"
         }
       }
     }
