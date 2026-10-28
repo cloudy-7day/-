@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-10-27",
+  "issueDate": "2026-10-28",
   "updateStatus": "complete",
-  "contentFingerprint": "b8b6a69d3cf3b7b4aa2af4d4e67678605500ba8fcc7830e3268306c8ad493bac",
+  "contentFingerprint": "bffcdc23761c2fad92dfbc5924dfa8568cb19ee4aa70b639d1bc5620d1d88f8f",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,263 +10,263 @@
   ],
   "articles": [
     {
-      "id": "news-c3dc8b7d895047c5834419ecdd8ee86c",
+      "id": "news-78c323af128a4abf8e3173392cb3e507",
       "category": "domestic",
-      "title": "中央纪委国家监委驻中国证监会纪检监察组原组长王会民一审被判死缓",
+      "title": "广西多点发力 加快完善生育支持政策体系",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-27/10721818.shtml",
-      "publishedAt": "2026-10-27T11:37:41.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-28/10722473.shtml",
+      "publishedAt": "2026-10-28T14:17:17.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "10月27日，成都市中级人民法院一审公开宣判王会民受贿案，王会民被判死缓。",
-      "summary": "中国新闻网国内报道，最高人民法院消息显示，10月27日成都市中级人民法院一审公开宣判中国证监会原党委委员、中央纪委国家监委驻中国证监会纪检监察组原组长王会民受贿案。标题显示其一审被判死缓。该案涉及金融监管系统高层，适合关注官方司法信息与反腐进展的读者了解公开披露的审理结果。",
-      "failureAnalysis": "可确认的公共影响是：金融监管系统高层腐败案件进入公开司法程序并作出一审判决，释放持续反腐信号。阅读时应以官方披露的判决结果为准，未公布的受贿金额等细节不宜推测。",
+      "highlight": "从育儿补贴落地、托育服务扩容，到母婴安全保障、人口服务管理夯实，广西正以系列措施回应民众生育关切。",
+      "summary": "广西壮族自治区卫生健康委员会10月28日举行新闻发布会，介绍加快完善生育支持政策体系、推动建设生育友好型社会的工作进展与成效。内容涉及育儿补贴、托育服务、母婴安全和人口服务管理等方面，体现地方以系列措施回应民众生育关切。可据此观察地方生育支持政策的落地重点与公开进展。",
+      "failureAnalysis": "关键看点是政策覆盖从补贴扩展到托育、母婴安全与服务管理，落地成效仍需后续数据和执行细节验证。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社北京10月27日电 (记者 张素)记者从中国最高人民法院获悉，10月27日，四川省成都市中级人民法院一审公开宣判中国证券监督管理委员会原党委委员、中央纪委国家监委驻中国证券监督管理委员会纪检监察组原组长王会民受贿案。",
+      "sourceExcerpt": "中新网南宁10月28日电(记者 黄艳梅)广西壮族自治区卫生健康委员会28日举行新闻发布会，介绍广西加快完善生育支持政策体系、推动建设生育友好型社会的工作进展与成效。从育儿补贴落地、托育服务扩容，到母婴安全保障、人口服务管理夯实，广西正以系列措施回应民众生育关切。",
       "translations": {
         "zh": {
-          "title": "证监会原纪检监察组组长王会民受贿案一审被判死缓",
-          "highlight": "10月27日，成都市中级人民法院一审公开宣判王会民受贿案，王会民被判死缓。",
-          "summary": "中国新闻网国内报道，最高人民法院消息显示，10月27日成都市中级人民法院一审公开宣判中国证监会原党委委员、中央纪委国家监委驻中国证监会纪检监察组原组长王会民受贿案。标题显示其一审被判死缓。该案涉及金融监管系统高层，适合关注官方司法信息与反腐进展的读者了解公开披露的审理结果。",
-          "failureAnalysis": "可确认的公共影响是：金融监管系统高层腐败案件进入公开司法程序并作出一审判决，释放持续反腐信号。阅读时应以官方披露的判决结果为准，未公布的受贿金额等细节不宜推测。"
+          "title": "广西多点发力加快完善生育支持政策体系",
+          "highlight": "从育儿补贴落地、托育服务扩容，到母婴安全保障、人口服务管理夯实，广西正以系列措施回应民众生育关切。",
+          "summary": "广西壮族自治区卫生健康委员会10月28日举行新闻发布会，介绍加快完善生育支持政策体系、推动建设生育友好型社会的工作进展与成效。内容涉及育儿补贴、托育服务、母婴安全和人口服务管理等方面，体现地方以系列措施回应民众生育关切。可据此观察地方生育支持政策的落地重点与公开进展。",
+          "failureAnalysis": "关键看点是政策覆盖从补贴扩展到托育、母婴安全与服务管理，落地成效仍需后续数据和执行细节验证。"
         },
         "en": {
-          "highlight": "On October 27, a Chengdu court handed Wang Huimin, former CSRC discipline inspection chief, a first-instance suspended death sentence in a bribery case.",
-          "summary": "China News Service domestic coverage, citing the Supreme People's Court, reports that the Chengdu Intermediate People's Court publicly sentenced Wang Huimin, former CSRC Party Committee member and former head of the discipline inspection group stationed at the CSRC, in a bribery case on October 27. The headline says he received a suspended death sentence at first instance. The case concerns a senior figure in the financial regulatory system and is worth reading for the officially disclosed judicial outcome and anti-corruption developments.",
-          "failureAnalysis": "The verifiable public impact is that a senior financial-regulatory corruption case has reached a public first-instance judgment, signaling continued anti-corruption enforcement. Readers should rely on official disclosures and avoid speculating about undisclosed details such as the bribery amount.",
-          "title": "Former CSRC Discipline Inspection Chief Wang Huimin Given Suspended Death Sentence at First Instance for Bribery"
+          "highlight": "From childcare subsidies and expanded nursery services to maternal and infant safety and population service management, Guangxi is responding to public concerns about childbirth through a series of measures.",
+          "summary": "Guangxi's health commission held a press conference on October 28 to present progress in improving the birth support policy system and building a childbirth-friendly society. The reported measures cover childcare subsidies, nursery service expansion, maternal and infant safety, and population service management, signaling local policy priorities. It is worth reading to track the public rollout of local birth support policies.",
+          "failureAnalysis": "The key takeaway is that policy attention now spans subsidies, childcare, health safety, and service management; actual results will depend on implementation details and follow-up data.",
+          "title": "Guangxi Steps Up Efforts to Improve Birth Support Policy System"
         }
       }
     },
     {
-      "id": "news-d5a14349ec2349ef84ad83e3926706ed",
+      "id": "news-8bb8efcf69054195976a1d40b1e2232c",
       "category": "domestic",
-      "title": "2026年9月全国查处违反中央八项规定精神问题32940起",
+      "title": "马来西亚应邀担任第十六届安徽国际文化旅游节主宾国",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-27/10721751.shtml",
-      "publishedAt": "2026-10-27T09:38:31.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-28/10722424.shtml",
+      "publishedAt": "2026-10-28T13:22:42.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "当月，全国共查处违反中央八项规定精神问题32940起，批评教育和处理40122人，其中党纪政务处分28461人",
-      "summary": "该报道依据中央纪委国家监委网站消息，公布2026年9月全国查处违反中央八项规定精神问题的月报数据，包括查处起数、批评教育和处理人数、党纪政务处分人数。报道同时说明，这是连续第157个月公布月报，因此可作为观察相关执纪公开节奏和规模的官方信息来读。",
-      "failureAnalysis": "关键约束是：这是官方月报数据，能够确认查处数量和处分人数，但所给摘要没有提供问题类型、地区分布或同比变化，不能据此推断趋势。",
+      "highlight": "第十六届安徽国际文化旅游节定于11月10日在合肥开幕，马来西亚应邀担任主宾国。",
+      "summary": "文章称，安徽省政府新闻办发布会披露，第十六届安徽国际文化旅游节将于11月10日在合肥开幕，马来西亚应邀担任主宾国。可核实信息主要是活动时间、地点及主宾国安排，适合关注地方国际文旅交流动态的读者了解。",
+      "failureAnalysis": "目前公开信息集中在时间、地点和主宾国身份，活动议程与具体合作内容仍待官方进一步发布。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网10月27日电 据中央纪委国家监委网站消息，10月27日，中央纪委国家监委公布了2026年9月全国查处违反中央八项规定精神问题汇总情况。当月，全国共查处违反中央八项规定精神问题32940起，批评教育和处理40122人，其中党纪政务处分28461人，这是连续第157个月公布月报数据。",
+      "sourceExcerpt": "中新网合肥10月28日电 (记者 张强)记者28日从安徽省政府新闻办举行的新闻发布会上获悉，第十六届安徽国际文化旅游节定于11月10日在合肥开幕，马来西亚应邀担任主宾国。",
       "translations": {
         "zh": {
-          "title": "2026年9月全国查处违反中央八项规定精神问题32940起",
-          "highlight": "当月，全国共查处违反中央八项规定精神问题32940起，批评教育和处理40122人，其中党纪政务处分28461人",
-          "summary": "该报道依据中央纪委国家监委网站消息，公布2026年9月全国查处违反中央八项规定精神问题的月报数据，包括查处起数、批评教育和处理人数、党纪政务处分人数。报道同时说明，这是连续第157个月公布月报，因此可作为观察相关执纪公开节奏和规模的官方信息来读。",
-          "failureAnalysis": "关键约束是：这是官方月报数据，能够确认查处数量和处分人数，但所给摘要没有提供问题类型、地区分布或同比变化，不能据此推断趋势。"
+          "title": "第十六届安徽国际文化旅游节11月10日开幕 马来西亚任主宾国",
+          "highlight": "第十六届安徽国际文化旅游节定于11月10日在合肥开幕，马来西亚应邀担任主宾国。",
+          "summary": "文章称，安徽省政府新闻办发布会披露，第十六届安徽国际文化旅游节将于11月10日在合肥开幕，马来西亚应邀担任主宾国。可核实信息主要是活动时间、地点及主宾国安排，适合关注地方国际文旅交流动态的读者了解。",
+          "failureAnalysis": "目前公开信息集中在时间、地点和主宾国身份，活动议程与具体合作内容仍待官方进一步发布。"
         },
         "en": {
-          "highlight": "In September 2026, authorities nationwide investigated 32,940 cases of violating the Central Eight-Point Regulation, criticized and handled 40,122 people, and imposed Party discipline or administrative sanctions on 28,461.",
-          "summary": "The item cites the Central Commission for Discipline Inspection and the National Supervisory Commission's monthly release for September 2026, including the number of cases investigated, people criticized and handled, and people subject to Party discipline or administrative sanctions. It notes that this is the 157th consecutive monthly release, making it an official source for observing the cadence and scale of enforcement disclosure.",
-          "failureAnalysis": "The key constraint is that the release confirms case and personnel counts, but the provided excerpt lacks breakdowns by problem type, region, or year-on-year change, so it cannot support trend conclusions.",
-          "title": "In September 2026, 32,940 Cases of Violating the Central Eight-Point Regulation Were Investigated Nationwide"
+          "highlight": "The 16th Anhui International Culture and Tourism Festival will open in Hefei on November 10, with Malaysia invited as the guest country of honor.",
+          "summary": "The article reports that the 16th Anhui International Culture and Tourism Festival will open in Hefei on November 10, with Malaysia invited as the guest country of honor, according to a provincial government press conference. The verifiable information centers on the date, location, and guest-country arrangement, making it relevant for readers tracking local international cultural tourism exchanges.",
+          "failureAnalysis": "The available information is limited to the time, venue, and guest-country status; the event agenda and specific cooperation details await further official release.",
+          "title": "16th Anhui International Culture and Tourism Festival to Open Nov 10 with Malaysia as Guest Country of Honor"
         }
       }
     },
     {
-      "id": "news-ada63eed90784b67a76ec6b5d50880eb",
+      "id": "news-2ac4fc6242d3407894676eee29dc3d5b",
       "category": "domestic",
-      "title": "云南新修订安全生产条例11月起施行 重特大事故责任追究加码",
-      "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-27/10721937.shtml",
-      "publishedAt": "2026-10-27T14:07:05.0000000+00:00",
+      "title": "青海柴达木好物常驻长三角核心商圈",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-28/10722441.shtml",
+      "publishedAt": "2026-10-28T13:20:52.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 4",
-      "highlight": "对重大、特别重大生产安全事故负有责任的企业主要负责人，终身不得担任本行业生产经营单位的主要负责人",
-      "summary": "新修订的《云南省安全生产条例》将于11月1日起施行，并大幅提高违法惩戒力度。条例明确，对重大、特别重大生产安全事故负有责任的企业主要负责人终身不得担任本行业生产经营单位主要负责人，同时保障从业人员拒绝违章指挥和强令冒险作业的权利。条例还明确平台经济、低空经济等新兴行业的安全监管责任，对了解地方安全生产监管和责任追究变化具有参考价值。",
-      "failureAnalysis": "关键变化是把重特大事故责任与企业主要负责人终身职业禁入挂钩，并将平台经济、低空经济等新兴行业纳入安全监管；实际效果取决于后续执法和配套细则。",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "神奇柴达木品牌展示中心27日在杭州市上城区启用，海西州在长三角核心商圈有了常态化展示和产销对接窗口。",
+      "summary": "文章报道，由青海省海西州人民政府与浙江省援青指挥部主办的“海西州数智空间暨神奇柴达木品牌展示中心”，于10月27日在杭州市上城区启用。这意味着海西州在长三角核心商圈拥有了一个常态化的品牌展示与产销对接窗口。值得关注的是，这是东部对口支援与西部地方品牌走出去相结合的一种具体落地形式。",
+      "failureAnalysis": "可核实的信息是：一项常设展示与产销对接窗口已落地启用。“常设”意味着它并非一次性展会；后续成效取决于运营与供应链配合，这一点原文未提及，无法据此判断。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网昆明10月27日电 (陆希成 贝文)新修订的《云南省安全生产条例》(以下简称《条例》)将于11月1日起施行。《条例》大幅提高违法惩戒力度，明确对重大、特别重大生产安全事故负有责任的企业主要负责人，终身不得担任本行业生产经营单位的主要负责人；同时保障从业人员拒绝违章指挥和强令冒险作业的权利，并明确平台经济、低空经济等新兴行业的安全监管责任。",
+      "sourceExcerpt": "中新网西宁10月28日电 (记者 孙睿)由青海省海西蒙古族藏族自治州(简称“海西州”)人民政府、浙江省援青指挥部主办的海西州数智空间暨神奇柴达木品牌展示中心启用仪式27日在杭州市上城区启用，自此，青海省海西州在长三角核心商圈有了常态化展示和产销对接窗口。",
       "translations": {
         "zh": {
-          "title": "云南新修订安全生产条例11月起施行 重特大事故责任追究加码",
-          "highlight": "对重大、特别重大生产安全事故负有责任的企业主要负责人，终身不得担任本行业生产经营单位的主要负责人",
-          "summary": "新修订的《云南省安全生产条例》将于11月1日起施行，并大幅提高违法惩戒力度。条例明确，对重大、特别重大生产安全事故负有责任的企业主要负责人终身不得担任本行业生产经营单位主要负责人，同时保障从业人员拒绝违章指挥和强令冒险作业的权利。条例还明确平台经济、低空经济等新兴行业的安全监管责任，对了解地方安全生产监管和责任追究变化具有参考价值。",
-          "failureAnalysis": "关键变化是把重特大事故责任与企业主要负责人终身职业禁入挂钩，并将平台经济、低空经济等新兴行业纳入安全监管；实际效果取决于后续执法和配套细则。"
+          "title": "青海海西州“神奇柴达木”品牌展示中心落户杭州上城区",
+          "highlight": "神奇柴达木品牌展示中心27日在杭州市上城区启用，海西州在长三角核心商圈有了常态化展示和产销对接窗口。",
+          "summary": "文章报道，由青海省海西州人民政府与浙江省援青指挥部主办的“海西州数智空间暨神奇柴达木品牌展示中心”，于10月27日在杭州市上城区启用。这意味着海西州在长三角核心商圈拥有了一个常态化的品牌展示与产销对接窗口。值得关注的是，这是东部对口支援与西部地方品牌走出去相结合的一种具体落地形式。",
+          "failureAnalysis": "可核实的信息是：一项常设展示与产销对接窗口已落地启用。“常设”意味着它并非一次性展会；后续成效取决于运营与供应链配合，这一点原文未提及，无法据此判断。"
         },
         "en": {
-          "highlight": "Enterprise principals responsible for major or especially major work safety accidents shall be permanently barred from serving as principals of production and business units in the same industry.",
-          "summary": "Yunnan's newly revised Work Safety Regulation will take effect on November 1 and significantly increases penalties for violations. It permanently bars enterprise principals responsible for major or especially major accidents from leading production and business units in the same industry, and protects workers' right to refuse illegal commands and forced risky operations. The regulation also clarifies safety oversight responsibilities for emerging sectors such as the platform economy and low-altitude economy, offering a reference for understanding changes in local work safety regulation and accountability.",
-          "failureAnalysis": "The key change links responsibility for major accidents to a lifetime industry ban for enterprise principals and brings emerging sectors such as the platform economy and low-altitude economy under safety oversight; the practical effect will depend on enforcement and supporting rules.",
-          "title": "Yunnan's Revised Work Safety Regulation Takes Effect in November, with Stricter Accountability for Major Accidents"
+          "highlight": "The Magic Qaidam brand exhibition center opened on the 27th in Shangcheng District, Hangzhou, giving Haixi Prefecture a standing showcase and sales-matching window in the Yangtze River Delta.",
+          "summary": "The article reports that the Haixi Digital-Intelligent Space and Magic Qaidam Brand Exhibition Center, hosted by the Haixi Prefecture government of Qinghai and the Zhejiang aid-Qinghai headquarters, opened on October 27 in Shangcheng District, Hangzhou. It gives Haixi a permanent brand showcase and production-sales matching window in the Yangtze River Delta's core commercial district. It is worth noting as a concrete form of pairing eastern assistance with western local brands going outward.",
+          "failureAnalysis": "The verifiable fact is that a permanent exhibition and sales-matching window has opened; 'permanent' distinguishes it from a one-off trade fair. Actual results depend on operations and supply-chain coordination, which the source does not address, so no judgment can be made from it.",
+          "title": "Qinghai Haixi's 'Magic Qaidam' Brand Center Opens in Hangzhou's Shangcheng District"
         }
       }
     },
     {
-      "id": "news-4e8d00fb2ae14b43b2358c520b70bf20",
+      "id": "news-29420d8e6a4e4b42ab5ef8aeb1569a54",
       "category": "international",
-      "title": "Flávio Bolsonaro flees Brazil after presidential election loss, reports say",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/oct/27/flavio-bolsonaro-brazil-argentina-fled",
-      "publishedAt": "2026-10-27T18:27:32.0000000+00:00",
+      "title": "Elon Musk is a 'real genius', Putin says after satellite talks with SpaceX boss",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/c63djl148n3eo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-28T19:15:58.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "极右翼参议员弗拉维奥·博索纳罗据报已逃离巴西，在周日总统选举输给左翼现任总统卢拉后正前往美国。",
-      "summary": "报道称，弗拉维奥·博索纳罗在输掉总统选举后据报前往美国；Metrópoles援引接近其家庭人士的消息称“飞机正在飞行”，但未说明起飞地点。此事值得关注，因为它涉及巴西选举结果公布后的政治人物去向，以及其未按期上交护照这一细节。",
-      "failureAnalysis": "关键要点：当前信息依赖“据报”和消息人士说法，起飞地点等细节仍未明确，阅读时应区分已证实事实与未经独立核实的报道。",
+      "highlight": "俄罗斯总统称赞马斯克，并表示两人保持着“密切”联系。",
+      "summary": "据BBC Business报道，俄罗斯总统普京在与SpaceX老板马斯克进行卫星会谈后，称马斯克是“真正的天才”。报道称，普京称赞了马斯克，并表示双方保持“密切”联系。这条国际新闻的看点在于，它公开呈现了政商高层互动与卫星议题相关的信号。",
+      "failureAnalysis": "关键信号是：普京公开称赞马斯克，并称双方保持“密切”联系；对非技术决策者而言，这更适合作为观察政商关系与卫星议题的窗口，而不是技术细节披露。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Far-right senator on plane to US after missing deadline to hand over his passport since loss to Lula The far-right senator Flávio Bolsonaro has reportedly fled Brazil and is on his way to the United States after losing Sunday’s presidential election to the leftwing incumbent, Luiz Inácio Lula da Silva. A report by the news website Metrópoles , citing people close to the politician’s family, said he was en route to the US. “The plane is in flight,” Metrópoles reported, without making clear where it had departed from.",
+      "sourceExcerpt": "The Russian President praised Musk and said they are in \"close\" contact.",
       "translations": {
         "zh": {
-          "title": "弗拉维奥·博索纳罗在总统选举失利后据报逃往美国",
-          "highlight": "极右翼参议员弗拉维奥·博索纳罗据报已逃离巴西，在周日总统选举输给左翼现任总统卢拉后正前往美国。",
-          "summary": "报道称，弗拉维奥·博索纳罗在输掉总统选举后据报前往美国；Metrópoles援引接近其家庭人士的消息称“飞机正在飞行”，但未说明起飞地点。此事值得关注，因为它涉及巴西选举结果公布后的政治人物去向，以及其未按期上交护照这一细节。",
-          "failureAnalysis": "关键要点：当前信息依赖“据报”和消息人士说法，起飞地点等细节仍未明确，阅读时应区分已证实事实与未经独立核实的报道。"
+          "title": "普京称马斯克是“真正的天才”，此前与SpaceX老板进行卫星会谈",
+          "highlight": "俄罗斯总统称赞马斯克，并表示两人保持着“密切”联系。",
+          "summary": "据BBC Business报道，俄罗斯总统普京在与SpaceX老板马斯克进行卫星会谈后，称马斯克是“真正的天才”。报道称，普京称赞了马斯克，并表示双方保持“密切”联系。这条国际新闻的看点在于，它公开呈现了政商高层互动与卫星议题相关的信号。",
+          "failureAnalysis": "关键信号是：普京公开称赞马斯克，并称双方保持“密切”联系；对非技术决策者而言，这更适合作为观察政商关系与卫星议题的窗口，而不是技术细节披露。"
         },
         "en": {
-          "highlight": "Far-right senator Flávio Bolsonaro has reportedly fled Brazil for the United States after losing Sunday’s presidential election to Luiz Inácio Lula da Silva.",
-          "summary": "The report says Flávio Bolsonaro is reportedly heading to the United States after losing the presidential election; Metrópoles, citing people close to his family, said “the plane is in flight” without clarifying where it departed from. It is worth reading because it concerns the movements of a political figure after Brazil’s election results and the detail that he missed a deadline to hand over his passport.",
-          "failureAnalysis": "The key takeaway is that the information relies on “reports” and sources close to the family, while details such as the departure point remain unclear; readers should distinguish confirmed facts from unverified reports.",
-          "title": "Flávio Bolsonaro Reportedly Flees Brazil for US After Election Loss"
+          "highlight": "The Russian President praised Musk and said they are in 'close' contact.",
+          "summary": "BBC Business reports that Russian President Vladimir Putin called Musk a 'real genius' after satellite talks with the SpaceX boss. The report says Putin praised Musk and said they are in 'close' contact. The item is worth reading as a public signal of high-level political-business interaction and satellite-related issues.",
+          "failureAnalysis": "The key signal is that Putin publicly praised Musk and said they are in 'close' contact; for a non-technical decision-maker, this is better viewed as a window into political-business relations and satellite issues than as a disclosure of technical details.",
+          "title": "Putin Calls Musk a 'Real Genius' After Satellite Talks With SpaceX Boss"
         }
       }
     },
     {
-      "id": "news-99f8925cb4d34aeab3e22702019a2009",
+      "id": "news-d0b770da7a2c478d9648dc2bd579ff8b",
       "category": "international",
-      "title": "Tax on banks, energy bill help and minimum wage rise - what could be in the Budget?",
+      "title": "What we now know about the UK economy in four charts",
       "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/c6x2zrjl7kjno?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-10-27T18:45:56.0000000+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/c9x28350ly07o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-28T20:08:45.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "英国财政大臣约翰·希利将于10月28日公布其税收计划。",
-      "summary": "这篇BBC商业报道围绕英国预算案可能包含的措施展开，标题提到银行税、能源账单补助和最低工资上调。已知信息是，财政大臣约翰·希利将于10月28日公布其税收计划。对关注英国财政政策走向的读者，这是一条值得留意的预算前瞻。",
-      "failureAnalysis": "关键看点是10月28日财政大臣公布税收计划时，银行税、能源账单补助和最低工资上调等可能措施中哪些会真正落地。",
+      "highlight": "预算责任办公室表示，能源价格上涨将影响从物价、生活水平到经济增长的方方面面。",
+      "summary": "BBC Business 用四张图表梳理英国经济现状，并引用预算责任办公室的判断。核心信息是，能源价格上涨不仅影响物价，也会波及生活水平和经济增长。对关注国际宏观经济的人来说，这提供了一个理解英国经济压力的简明切口。",
+      "failureAnalysis": "关键要点：能源价格是观察英国通胀、生活成本和增长前景的共同变量，判断经济走势时要把它放在核心位置。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Chancellor John Healey will set out his plans for UK taxes on 28 October.",
+      "sourceExcerpt": "The Office for Budget Responsibility says higher energy prices will impact everything from prices and living standards to economic growth.",
       "translations": {
         "zh": {
-          "title": "银行税、能源账单补助与最低工资上调：英国预算案可能包含什么？",
-          "highlight": "英国财政大臣约翰·希利将于10月28日公布其税收计划。",
-          "summary": "这篇BBC商业报道围绕英国预算案可能包含的措施展开，标题提到银行税、能源账单补助和最低工资上调。已知信息是，财政大臣约翰·希利将于10月28日公布其税收计划。对关注英国财政政策走向的读者，这是一条值得留意的预算前瞻。",
-          "failureAnalysis": "关键看点是10月28日财政大臣公布税收计划时，银行税、能源账单补助和最低工资上调等可能措施中哪些会真正落地。"
+          "title": "四张图看懂英国经济现状",
+          "highlight": "预算责任办公室表示，能源价格上涨将影响从物价、生活水平到经济增长的方方面面。",
+          "summary": "BBC Business 用四张图表梳理英国经济现状，并引用预算责任办公室的判断。核心信息是，能源价格上涨不仅影响物价，也会波及生活水平和经济增长。对关注国际宏观经济的人来说，这提供了一个理解英国经济压力的简明切口。",
+          "failureAnalysis": "关键要点：能源价格是观察英国通胀、生活成本和增长前景的共同变量，判断经济走势时要把它放在核心位置。"
         },
         "en": {
-          "highlight": "Chancellor John Healey will set out his plans for UK taxes on 28 October.",
-          "summary": "This BBC Business report previews possible measures in the UK Budget, with the headline pointing to a bank tax, help with energy bills and a minimum wage rise. The known detail is that Chancellor John Healey will set out his tax plans on 28 October. It is worth reading as an early look at the direction of UK fiscal policy.",
-          "failureAnalysis": "The key point is not a specific conclusion but which of these possible measures actually materialise when the Chancellor sets out his tax plans on 28 October.",
-          "title": "Bank Tax, Energy Bill Support and Minimum Wage Rise: What Could Be in the UK Budget?"
+          "highlight": "The Office for Budget Responsibility says higher energy prices will impact everything from prices and living standards to economic growth.",
+          "summary": "BBC Business uses four charts to outline the current state of the UK economy, citing the Office for Budget Responsibility's assessment. The core message is that higher energy prices affect not only prices but also living standards and economic growth. For readers following international macroeconomics, it offers a concise way to understand UK economic pressures.",
+          "failureAnalysis": "Key takeaway: energy prices are a common variable linking UK inflation, living costs and growth prospects, so they should be central when judging the economic outlook.",
+          "title": "The UK economy in four charts: what we now know"
         }
       }
     },
     {
-      "id": "life-5b0d43a1b6744afe85081f63c4158271",
+      "id": "life-e5c2202a83444e1fb74e05bccd80d0c5",
       "category": "international",
-      "title": "Love with nowhere to go",
-      "source": "Aeon",
-      "url": "https://aeon.co/essays/we-need-a-language-to-name-the-grief-that-comes-without-death",
-      "publishedAt": "2026-10-27T10:00:00.0000000+00:00",
+      "title": "断舍离只是起点：打造能长期经营的实用主义衣柜",
+      "source": "少数派 sspai",
+      "url": "https://sspai.com/post/116990",
+      "publishedAt": "2026-10-28T07:00:00.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "悲伤并不只属于逝者；当我们无法正视其他深刻的失去时，我们便成了自己的陌生人。",
-      "summary": "这篇 Aeon 文章由 Derek van Zoonen 撰写，主张悲伤体验不只发生在有人去世时：项目失败、关系破裂、身份转变等深刻失去同样需要被承认和哀悼。作者指出，如果缺少描述这类失去的语言，人们会把情绪压回自身，最终与自己变得疏远。值得一读的是，它提供了一个理解日常\"无声失去\"的视角，也提醒我们语言与仪式在情绪安放中的作用。",
-      "failureAnalysis": "关键启示：承认失去并为其命名本身就有价值，缺乏这种承认时，情绪会转化为自我疏离；这对管理者理解团队挫败感同样适用。",
+      "highlight": "只扔不买是没有用的，穿衣服时不多费心神才是目的，断舍离只是起点。",
+      "summary": "文章从断舍离出发，讨论如何打造能长期经营的实用主义衣柜：单纯只扔不买并不能解决问题，真正目标是让日常穿衣少耗费心神。对想降低穿搭决策成本、建立可持续衣柜的人有参考价值。",
+      "failureAnalysis": "关键不在一次清理，而在建立能长期维持的穿衣规则，让每天穿衣服不必反复纠结。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Grief is not only for the dead. When we are unable to honour other profound losses, we become strangers to ourselves - by Derek van Zoonen Read on Aeon",
+      "sourceExcerpt": "只扔不买是没有用的，穿衣服时不多费心神才是目的。",
       "translations": {
         "zh": {
-          "title": "无处安放的爱：为那些没有死亡的失去命名",
-          "highlight": "悲伤并不只属于逝者；当我们无法正视其他深刻的失去时，我们便成了自己的陌生人。",
-          "summary": "这篇 Aeon 文章由 Derek van Zoonen 撰写，主张悲伤体验不只发生在有人去世时：项目失败、关系破裂、身份转变等深刻失去同样需要被承认和哀悼。作者指出，如果缺少描述这类失去的语言，人们会把情绪压回自身，最终与自己变得疏远。值得一读的是，它提供了一个理解日常\"无声失去\"的视角，也提醒我们语言与仪式在情绪安放中的作用。",
-          "failureAnalysis": "关键启示：承认失去并为其命名本身就有价值，缺乏这种承认时，情绪会转化为自我疏离；这对管理者理解团队挫败感同样适用。"
+          "title": "断舍离只是起点：打造能长期经营的实用主义衣柜",
+          "highlight": "只扔不买是没有用的，穿衣服时不多费心神才是目的，断舍离只是起点。",
+          "summary": "文章从断舍离出发，讨论如何打造能长期经营的实用主义衣柜：单纯只扔不买并不能解决问题，真正目标是让日常穿衣少耗费心神。对想降低穿搭决策成本、建立可持续衣柜的人有参考价值。",
+          "failureAnalysis": "关键不在一次清理，而在建立能长期维持的穿衣规则，让每天穿衣服不必反复纠结。"
         },
         "en": {
-          "highlight": "Grief is not only for the dead. When we are unable to honour other profound losses, we become strangers to ourselves.",
-          "summary": "In this Aeon essay, Derek van Zoonen argues that grief is not confined to death: failed projects, broken relationships and identity shifts are profound losses that also need to be acknowledged and mourned. Without a language for such losses, people push the feeling inward and become estranged from themselves. It is worth reading for a vocabulary that helps make sense of quiet, everyday loss.",
-          "failureAnalysis": "The takeaway: naming and acknowledging a loss has value in itself; when that recognition is missing, emotion turns into self-estrangement - a point that also applies to how managers read team frustration.",
-          "title": "Love with nowhere to go: naming the losses that come without death"
+          "highlight": "Decluttering is only the starting point: simply throwing things away without buying is useless; the real goal is to spend less mental effort getting dressed.",
+          "summary": "The article discusses how to build a practical wardrobe that can be maintained long term, starting from decluttering but going beyond it. It argues that merely discarding clothes without buying is not enough; the aim is to make daily dressing require less mental effort. It is worth reading for anyone who wants to reduce outfit-decision costs and create a sustainable clothing system.",
+          "failureAnalysis": "The key is not a one-time cleanup but a sustainable set of dressing rules that keeps daily clothing choices from becoming a recurring burden.",
+          "title": "Beyond Decluttering: Building a Practical Wardrobe That Lasts"
         }
       }
     },
     {
-      "id": "life-d53522a925954f15ac6109e4bbed0b01",
+      "id": "life-9c27c3fa51234f419b77e4dd16881da6",
       "category": "international",
-      "title": "Walt Whitman’s Advice on Living a Vibrant and Rewarding Life",
+      "title": "What It Takes to Be Free",
       "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/10/26/walt-whitman-leaves-of-grass-preface/",
-      "publishedAt": "2026-10-26T17:14:12.0000000+00:00",
+      "url": "https://www.themarginalian.org/2026/10/27/freedom/",
+      "publishedAt": "2026-10-28T00:02:10.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 1",
-      "highlight": "热爱大地、太阳与动物……重新审视学校、教会或书本告诉你的一切，凡是侮辱你灵魂的，都应摒弃。",
-      "summary": "文章借惠特曼《草叶集》序言中的建议，谈如何过一种有活力且值得的人生。它强调热爱自然与生命，并提醒人重新审视来自学校、教会和书本的既有观念，摒弃那些冒犯自己灵魂的东西。适合想从经典文字中获得生活原则的读者。",
-      "failureAnalysis": "真正可操作的生活建议往往不是增加规则，而是保留对自然与生命的热爱，并敢于剔除违背内心的既有教条。",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "我们生活在一个扭曲了权力意义与尺度的文化中，把可见性混同于价值，把地位混同于实质，把关注混同于爱。",
+      "summary": "文章追问人如何找到自己的力量与自由，并指出这并不容易：文化误导了我们对权力和价值的衡量，而自由意志本身也可能是幻觉。出身、时代、身体、生化条件、相遇与爱情中的偶然，构成了人生的大多数牌面。值得读的地方在于，它不把自由当成口号，而是先呈现自由要面对的真实约束。",
+      "failureAnalysis": "关键提醒是：谈自由不能只靠意志口号，先看清文化误导与偶然性约束，再谈如何守住自主。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "“Love the earth and sun and the animals… re-examine all you have been told at school or church or in any book, dismiss whatever insults your own soul…”",
+      "sourceExcerpt": "We spend our lives trying to find our power and our freedom. It is not easy: We live in a culture that has distorted the meaning and measure of power, confusing visibility with value, status with substance, attention with love; we live in a universe where free will may be an illusion, where chance deals the vast majority of the cards — the family and epoch we are born into, the body and biochemistry we live in, the people we cross paths with, the accidents of chemistry and happenstance we call love. The great double-edged question is how to keep… read article",
       "translations": {
         "zh": {
-          "title": "惠特曼谈如何活出蓬勃而丰盈的人生",
-          "highlight": "热爱大地、太阳与动物……重新审视学校、教会或书本告诉你的一切，凡是侮辱你灵魂的，都应摒弃。",
-          "summary": "文章借惠特曼《草叶集》序言中的建议，谈如何过一种有活力且值得的人生。它强调热爱自然与生命，并提醒人重新审视来自学校、教会和书本的既有观念，摒弃那些冒犯自己灵魂的东西。适合想从经典文字中获得生活原则的读者。",
-          "failureAnalysis": "真正可操作的生活建议往往不是增加规则，而是保留对自然与生命的热爱，并敢于剔除违背内心的既有教条。"
+          "title": "获得自由究竟需要什么",
+          "highlight": "我们生活在一个扭曲了权力意义与尺度的文化中，把可见性混同于价值，把地位混同于实质，把关注混同于爱。",
+          "summary": "文章追问人如何找到自己的力量与自由，并指出这并不容易：文化误导了我们对权力和价值的衡量，而自由意志本身也可能是幻觉。出身、时代、身体、生化条件、相遇与爱情中的偶然，构成了人生的大多数牌面。值得读的地方在于，它不把自由当成口号，而是先呈现自由要面对的真实约束。",
+          "failureAnalysis": "关键提醒是：谈自由不能只靠意志口号，先看清文化误导与偶然性约束，再谈如何守住自主。"
         },
         "en": {
-          "highlight": "Love the earth and sun and the animals… re-examine all you have been told at school or church or in any book, dismiss whatever insults your own soul…",
-          "summary": "The article draws on advice from Walt Whitman’s preface to Leaves of Grass to discuss how to live a vibrant and worthwhile life. It emphasizes loving nature and life, and urges readers to re-examine inherited ideas from school, church, and books, rejecting whatever insults their own soul. It is suited to readers seeking life principles from classic writing.",
-          "failureAnalysis": "Practical life advice often lies not in adding more rules, but in preserving love for nature and life and daring to discard inherited dogma that violates one’s inner self.",
-          "title": "Walt Whitman’s Advice on Living a Vibrant and Rewarding Life"
+          "highlight": "We live in a culture that has distorted the meaning and measure of power, confusing visibility with value, status with substance, attention with love.",
+          "summary": "The article asks how people can find their power and freedom, and why this is so difficult: culture distorts how we measure power and value, while free will itself may be an illusion. The family and era we are born into, our body and biochemistry, the people we meet, and the accidents we call love deal most of the cards. It is worth reading because it treats freedom not as a slogan but as a problem shaped by real constraints.",
+          "failureAnalysis": "The key takeaway is that freedom cannot rest on slogans of will alone; first see the cultural distortions and the constraints of chance, then ask how to preserve autonomy.",
+          "title": "What It Really Takes to Be Free"
         }
       }
     },
     {
-      "id": "paper-2610.35355",
+      "id": "paper-2610.36999",
       "category": "paper",
-      "title": "OneEEG: A Unified Signal-Visual Multimodal Language Model with Task-Aware Mixture of Projectors for Multi-Task EEG Understanding",
+      "title": "Online gas classification at the edge",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2610.35355v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2610.35355",
-      "publishedAt": "2026-10-26T12:46:40.0000000Z",
+      "url": "https://arxiv.org/pdf/2610.36999v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.36999",
+      "publishedAt": "2026-10-27T10:46:19.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
-      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
-      "paperTopic": "brain_computer_interface",
+      "selectionReason": "Open full-text paper; topic chip; quality signal passed; application scenario is clear.",
+      "paperTopic": "chip",
       "qualityScore": 28,
       "readabilityStatus": "open",
       "paperCard": {
-        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "problem": "解决的问题：这篇论文试图把 chip 方向的研究推进到更可用的场景。",
         "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
         "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
         "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
         "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
         "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
         "technicalTerms": [
-          "EEG：把大脑电信号当作输入数据。"
+          "SNN：模仿神经脉冲时序的神经网络。"
         ],
-        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+        "whySelected": "Open full-text paper; topic chip; quality signal passed; application scenario is clear."
       },
-      "highlight": "脑电图广泛用于临床评估、脑机接口与认知状态分析，但其建模仍分散于不同任务范式。",
-      "summary": "OneEEG 是一个统一信号-视觉多模态语言模型，面向多任务脑电理解，并采用任务感知的投影器混合机制。作者指出，脑电虽广泛用于临床评估、脑机接口和认知状态分析，但其建模长期分散在不同任务范式中。该工作尝试用多模态大语言模型提供统一接口，因而对跨任务脑电分析具有潜在意义。",
-      "failureAnalysis": "部署时，任务感知投影器混合可能依赖明确的任务标识或分布假设，遇到未见任务、设备差异和临床场景漂移时存在性能下降风险。统一多模态接口也可能放大信号噪声或对齐误差，需在真实脑机接口与临床环境中验证鲁棒性和安全性。所给文本未包含实验细节，因此不能据此判断其跨任务泛化与临床可用性。",
+      "highlight": "化学传感现场应用需要轻量、响应快且能用有限标注数据重新校准的模型。",
+      "summary": "该工作关注边缘端在线气体分类，面向便携安全监测和移动机器人等现场化学传感场景。摘要指出既有流程依赖受控采样周期、离线特征提取和计算开销较大的模型，因此需要更轻量、响应更快并可利用有限标注数据重校准的方案。源文本末尾仅提到数千个神经元，未给出完整方法与性能结论。",
+      "failureAnalysis": "源文本在“数千个神经元”处截断，缺少数据集、校准协议和在线性能指标，无法据此判断方法有效性或泛化能力。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "IEEE TRANSACTIONS ON MULTIMEDIA 1 OneEEG: A Unified Signal-Visual Multimodal Language Model with Task-Aware Mixture of Projectors for Multi-Task EEG Understanding Jiacheng Zhang, Xueyi Zhang, Xin Lu, Siqi Cai, Haizhou Li Abstract—Electroencephalography (EEG) is widely used in clinical assessment, brain-computer interfaces, and cognitive- state analysis, yet EEG modeling remains fragmented across task paradigms. Recent multimodal large language models (MLLMs) provide a promising interface for flexible multimodal reasoning, but their ability to understand EEG inputs remains limited. In this work, we propose OneEEG, a unified EEG-MLLM framework for multi-task EEG understanding.",
+      "sourceExcerpt": "Online gas classification at the edge Ton Juny Pina1,2,*,Hugh Greatorex 1,2,3,Elisabetta Chicca 1,2 October 28, 2026 Abstract Field applications in chemical sensing, from portable safety monitors to mobile robots, re- quire models that are lightweight, fast to respond, and can be recalibrated from limited labelled data. Current gas classification pipelines assume controlled sampling cycles and offline feature extraction, and rely on computationally expensive models. With a few thousand neurons and sub-milliwatt power consumption, insects reliably classify odours in open environments.",
       "translations": {
         "zh": {
-          "title": "OneEEG：任务感知投影器混合的统一信号-视觉脑电理解模型",
-          "highlight": "脑电图广泛用于临床评估、脑机接口与认知状态分析，但其建模仍分散于不同任务范式。",
-          "summary": "OneEEG 是一个统一信号-视觉多模态语言模型，面向多任务脑电理解，并采用任务感知的投影器混合机制。作者指出，脑电虽广泛用于临床评估、脑机接口和认知状态分析，但其建模长期分散在不同任务范式中。该工作尝试用多模态大语言模型提供统一接口，因而对跨任务脑电分析具有潜在意义。",
-          "failureAnalysis": "部署时，任务感知投影器混合可能依赖明确的任务标识或分布假设，遇到未见任务、设备差异和临床场景漂移时存在性能下降风险。统一多模态接口也可能放大信号噪声或对齐误差，需在真实脑机接口与临床环境中验证鲁棒性和安全性。所给文本未包含实验细节，因此不能据此判断其跨任务泛化与临床可用性。",
+          "title": "边缘端在线气体分类",
+          "highlight": "化学传感现场应用需要轻量、响应快且能用有限标注数据重新校准的模型。",
+          "summary": "该工作关注边缘端在线气体分类，面向便携安全监测和移动机器人等现场化学传感场景。摘要指出既有流程依赖受控采样周期、离线特征提取和计算开销较大的模型，因此需要更轻量、响应更快并可利用有限标注数据重校准的方案。源文本末尾仅提到数千个神经元，未给出完整方法与性能结论。",
+          "failureAnalysis": "源文本在“数千个神经元”处截断，缺少数据集、校准协议和在线性能指标，无法据此判断方法有效性或泛化能力。",
           "paperCard": {
-            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "problem": "解决的问题：这篇论文试图把 chip 方向的研究推进到更可用的场景。",
             "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
             "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
             "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
             "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
             "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
+              "SNN：模仿神经脉冲时序的神经网络。"
             ],
-            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+            "whySelected": "Open full-text paper; topic chip; quality signal passed; application scenario is clear."
           }
         },
         "en": {
-          "title": "OneEEG: A Unified Signal-Visual Multimodal Language Model with Task-Aware Mixture of Projectors for Multi-Task EEG Understanding",
-          "highlight": "EEG is widely used in clinical assessment, brain-computer interfaces and cognitive-state analysis, yet modeling remains fragmented across task paradigms.",
-          "summary": "OneEEG is a unified signal-visual multimodal language model for multi-task EEG understanding that uses a task-aware mixture of projectors. The authors note that EEG supports clinical assessment, brain-computer interfaces and cognitive-state analysis, but its modeling remains fragmented across task paradigms. The work aims to offer a multimodal large-language-model interface for cross-task EEG analysis.",
-          "failureAnalysis": "In deployment, the task-aware mixture of projectors may rely on explicit task identifiers or distributional assumptions, creating performance risk for unseen tasks, device differences and clinical domain shift. The unified multimodal interface may also amplify signal noise or alignment errors, so robustness and safety need validation in real brain-computer interface and clinical settings. The supplied text lacks experimental detail, so cross-task generalization and clinical readiness cannot be judged from it.",
+          "title": "Online Gas Classification at the Edge",
+          "highlight": "Field chemical sensing applications need models that are lightweight, fast to respond, and recalibratable from limited labeled data.",
+          "summary": "The work addresses online gas classification at the edge for field chemical sensing such as portable safety monitors and mobile robots. It notes that current pipelines assume controlled sampling cycles, offline feature extraction, and computationally expensive models, motivating lighter and faster models that can be recalibrated with limited labeled data. The supplied text stops at a mention of a few thousand neurons, so the full method and performance are not available.",
+          "failureAnalysis": "The source is truncated at “a few thousand neurons,” leaving datasets, calibration protocols, and online performance metrics unavailable for judging effectiveness or generalization.",
           "paperCard": {
             "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
             "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
@@ -275,22 +275,22 @@
             "implementation": "Implementation: check the input data, core model or device, and validation results.",
             "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
+              "SNN：模仿神经脉冲时序的神经网络。"
             ],
-            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+            "whySelected": "Open full-text paper; topic chip; quality signal passed; application scenario is clear."
           }
         }
       }
     },
     {
-      "id": "ai-github-1410926671",
+      "id": "ai-github-1371687666",
       "category": "ai",
-      "title": "trhhubsd/ARTEX",
+      "title": "leemysw/yovoice",
       "source": "GitHub Search",
-      "url": "https://github.com/trhhubsd/ARTEX",
+      "url": "https://github.com/leemysw/yovoice",
       "abstractUrl": null,
-      "publishedAt": "2026-10-08T20:35:22.0000000Z",
-      "scoreLabel": "GitHub 2057 stars",
+      "publishedAt": "2026-09-15T15:18:35.0000000Z",
+      "scoreLabel": "GitHub 1954 stars",
       "aiArticleType": "application_innovation",
       "evidenceAnchors": [
         {
@@ -306,24 +306,24 @@
       "hasPrimaryAnchor": true,
       "requiresRiskAnalysis": true,
       "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-      "summary": "该 GitHub 项目展示了一个名为 ARTEX 的 AI 自主渗透测试系统，采用多智能体 LLM，并以 Go 和 Next.js 实现。项目已有 2057 stars，且描述称其获得百度 agent+ 攻防挑战赛冠军，说明其在 AI 安全自动化方向受到一定关注。对非技术决策者而言，值得观察的是它如何把 LLM 多智能体能力落实到真实攻防流程，而不仅仅停留在演示。",
-      "failureAnalysis": "自主渗透测试直接涉及授权、合规与攻击面控制；如果缺少严格的权限边界、审计和沙箱，企业很难在生产环境中采用。真实攻防环境复杂，结果又需要可复现；多智能体 LLM 可能带来误报、漏报、成本与延迟问题，因此工程验证门槛较高。2057 stars 和比赛冠军能证明关注度与 Demo 能力，但不能替代对付费需求、部署成本和长期维护的验证。",
-      "aiSelectionScore": 2057,
-      "highlight": "ARTEX 是 AI 自主渗透测试系统，基于多智能体 LLM、Go 与 Next.js 构建，曾获百度 agent+ 攻防挑战赛冠军。",
+      "summary": "这是一个在 GitHub 上获得约 1954 星的开源项目，为 macOS 与 Windows 提供本地化的 AI 音频与音乐创作环境，功能包括语音合成、语音克隆、带歌词的歌曲生成以及多轨乐谱。它最大的卖点是完全离线运行，且不产生 API 调用费用，因此直接回应了创作者在隐私、成本和网络依赖上的顾虑。对非技术决策者来说，它代表了一种“把生成式能力装进本地软件”的产品路径，值得观察它能否从开源仓库成长为可持续的工具。",
+      "failureAnalysis": "完全离线意味着把模型推理放到用户设备上，容易受到显存、CPU 和安装包体积的严格限制，中低端设备体验可能明显变差；同时 Windows 与 macOS 双平台的分发、驱动兼容和模型更新，会持续消耗维护成本。语音克隆天然面临声音权属、deepfake 滥用与各地合规风险，一旦被用于伪造他人声音，项目可能遭遇下架或法律压力。商业上，它既要面对 ElevenLabs、Suno 等成熟付费产品的功能竞争，又缺乏 API 收费这一变现途径，仅靠社区贡献很难长期支撑。真正需要验证的是用户是否愿意为“离线”这一特性牺牲效果与便利，而目前只有星标数，尚缺少留存和付费意愿的证据。",
+      "aiSelectionScore": 1954,
+      "highlight": "开源本地 AI 音频与音乐工作室，覆盖 TTS、语音克隆、歌词歌曲与多轨乐谱，100% 离线、零 API 费用。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "GitHub repository with 2057 stars and recent public activity. Description: ARTEX · AI autonomous penetration testing system (multi-agent LLM, Go + Next.js) · AI 自主渗透测试系统 · 百度 agent+ 攻防挑战赛冠军",
+      "sourceExcerpt": "GitHub repository with 1954 stars and recent public activity. Description: Open-source local AI audio & music studio for macOS & Windows. TTS, voice cloning, songs with lyrics, and multi-track scores — 100% offline, zero API fees.",
       "translations": {
         "zh": {
-          "title": "ARTEX：多智能体 LLM 驱动的 AI 自主渗透测试系统",
-          "highlight": "ARTEX 是 AI 自主渗透测试系统，基于多智能体 LLM、Go 与 Next.js 构建，曾获百度 agent+ 攻防挑战赛冠军。",
-          "summary": "该 GitHub 项目展示了一个名为 ARTEX 的 AI 自主渗透测试系统，采用多智能体 LLM，并以 Go 和 Next.js 实现。项目已有 2057 stars，且描述称其获得百度 agent+ 攻防挑战赛冠军，说明其在 AI 安全自动化方向受到一定关注。对非技术决策者而言，值得观察的是它如何把 LLM 多智能体能力落实到真实攻防流程，而不仅仅停留在演示。",
-          "failureAnalysis": "自主渗透测试直接涉及授权、合规与攻击面控制；如果缺少严格的权限边界、审计和沙箱，企业很难在生产环境中采用。真实攻防环境复杂，结果又需要可复现；多智能体 LLM 可能带来误报、漏报、成本与延迟问题，因此工程验证门槛较高。2057 stars 和比赛冠军能证明关注度与 Demo 能力，但不能替代对付费需求、部署成本和长期维护的验证。"
+          "title": "yovoice：完全离线的开源 AI 音频与音乐工作室",
+          "highlight": "开源本地 AI 音频与音乐工作室，覆盖 TTS、语音克隆、歌词歌曲与多轨乐谱，100% 离线、零 API 费用。",
+          "summary": "这是一个在 GitHub 上获得约 1954 星的开源项目，为 macOS 与 Windows 提供本地化的 AI 音频与音乐创作环境，功能包括语音合成、语音克隆、带歌词的歌曲生成以及多轨乐谱。它最大的卖点是完全离线运行，且不产生 API 调用费用，因此直接回应了创作者在隐私、成本和网络依赖上的顾虑。对非技术决策者来说，它代表了一种“把生成式能力装进本地软件”的产品路径，值得观察它能否从开源仓库成长为可持续的工具。",
+          "failureAnalysis": "完全离线意味着把模型推理放到用户设备上，容易受到显存、CPU 和安装包体积的严格限制，中低端设备体验可能明显变差；同时 Windows 与 macOS 双平台的分发、驱动兼容和模型更新，会持续消耗维护成本。语音克隆天然面临声音权属、deepfake 滥用与各地合规风险，一旦被用于伪造他人声音，项目可能遭遇下架或法律压力。商业上，它既要面对 ElevenLabs、Suno 等成熟付费产品的功能竞争，又缺乏 API 收费这一变现途径，仅靠社区贡献很难长期支撑。真正需要验证的是用户是否愿意为“离线”这一特性牺牲效果与便利，而目前只有星标数，尚缺少留存和付费意愿的证据。"
         },
         "en": {
-          "highlight": "ARTEX is an AI autonomous penetration testing system built with multi-agent LLMs, Go, and Next.js, and its description says it won the Baidu agent+ offense-defense challenge.",
-          "summary": "This GitHub repository presents ARTEX, an AI autonomous penetration testing system using multi-agent LLMs and implemented with Go and Next.js. It has 2,057 stars and claims a championship in Baidu's agent+ offense-defense challenge, making it worth watching as an example of LLM agents applied to security automation.",
-          "failureAnalysis": "Autonomous penetration testing faces strict authorization, compliance, auditability, and sandboxing requirements, while LLM agents can introduce false positives, missed findings, latency, and cost issues in complex real-world environments. Stars and a competition win validate attention and demo capability, not production demand or deployment economics.",
-          "title": "ARTEX: An AI Autonomous Penetration Testing System Powered by Multi-Agent LLMs"
+          "highlight": "Open-source local AI audio and music studio for macOS and Windows with TTS, voice cloning, songs with lyrics and multi-track scores, 100% offline and zero API fees.",
+          "summary": "This GitHub project, with roughly 1,954 stars, offers a local AI audio and music creation environment for macOS and Windows, covering text-to-speech, voice cloning, lyric-based songs and multi-track scores. Its main pitch is fully offline operation with no API costs, which speaks directly to creators' concerns about privacy, spend and network dependency. For a non-technical decision maker, it illustrates the product path of packaging generative capability into local software.",
+          "failureAnalysis": "Running models entirely on-device caps quality by the user's GPU and disk, and dual-platform distribution plus model updates create ongoing maintenance cost. Voice cloning also carries voice-rights, deepfake and regulatory risk, while free offline use offers no clear revenue path against commercial rivals.",
+          "title": "yovoice: an open-source, fully offline AI audio and music studio"
         }
       }
     }
