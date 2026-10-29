@@ -1,0 +1,325 @@
+{
+  "issueDate": "2026-10-29",
+  "updateStatus": "complete",
+  "contentFingerprint": "61aa5df5b5a6c9b4b879bd24a0e17a58cfb595902df0c671cbede408d44fbd44",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-379495c9091a4a19a428d4e9fe709306",
+      "category": "domestic",
+      "title": "王毅同冰岛外长贡纳尔斯多蒂尔会谈",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-29/10723067.shtml",
+      "publishedAt": "2026-10-29T15:33:35.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "10月29日，中共中央政治局委员、外交部长王毅在北京同冰岛外长贡纳尔斯多蒂尔举行会谈。",
+      "summary": "这则官方报道披露，10月29日，王毅在北京同冰岛外长贡纳尔斯多蒂尔举行会谈。目前可以确认的公开信息是双方进行了外交会谈，具体议题与成果尚未在已知内容中展开。它可作为观察中冰外交互动及官方发布口径的公开线索。",
+      "failureAnalysis": "现有信息只覆盖会谈举行这一事实，未披露议题、共识或成果；阅读时应区分已确认信息与后续细节。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社北京10月29日电 10月29日，中共中央政治局委员、外交部长王毅在北京同冰岛外长贡纳尔斯多蒂尔举行会谈。",
+      "translations": {
+        "zh": {
+          "title": "王毅在北京同冰岛外长贡纳尔斯多蒂尔举行会谈",
+          "highlight": "10月29日，中共中央政治局委员、外交部长王毅在北京同冰岛外长贡纳尔斯多蒂尔举行会谈。",
+          "summary": "这则官方报道披露，10月29日，王毅在北京同冰岛外长贡纳尔斯多蒂尔举行会谈。目前可以确认的公开信息是双方进行了外交会谈，具体议题与成果尚未在已知内容中展开。它可作为观察中冰外交互动及官方发布口径的公开线索。",
+          "failureAnalysis": "现有信息只覆盖会谈举行这一事实，未披露议题、共识或成果；阅读时应区分已确认信息与后续细节。"
+        },
+        "en": {
+          "highlight": "On October 29, Wang Yi, member of the Political Bureau of the CPC Central Committee and Foreign Minister, held talks in Beijing with Icelandic Foreign Minister Gunnarsdottir.",
+          "summary": "This official report states that Wang Yi held talks in Beijing with Icelandic Foreign Minister Gunnarsdottir on October 29. The confirmed public information is that the two sides held a diplomatic meeting, while specific topics and outcomes are not elaborated in the known content. It serves as a public clue for observing China-Iceland diplomatic interaction and official messaging.",
+          "failureAnalysis": "The available information covers only the fact that the talks took place, without disclosing topics, consensus, or outcomes; readers should distinguish confirmed facts from details that may follow.",
+          "title": "Wang Yi Holds Talks in Beijing with Icelandic Foreign Minister Gunnarsdottir"
+        }
+      }
+    },
+    {
+      "id": "news-e7b3fb2773574502b9f9451f6fff3fc2",
+      "category": "domestic",
+      "title": "天津：2030年数字经济综合发展水平位居全国第一梯队",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-29/10723062.shtml",
+      "publishedAt": "2026-10-29T15:22:59.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "“十五五”时期，天津将高标准打造国家数字经济创新发展试验区，到2030年数字经济综合发展水平位居全国第一梯队。",
+      "summary": "文章称，在10月29日天津市政府新闻办发布会上获悉，“十五五”时期天津将高标准打造国家数字经济创新发展试验区。到2030年，天津数字经济综合发展水平要位居全国第一梯队。这是官方渠道披露的阶段性政策目标，值得关注其后续实施路径与公开指标。",
+      "failureAnalysis": "当前可核实的是天津的数字经济政策方向与2030年目标定位。具体实施路径、量化指标和阶段性进展仍需后续公开信息验证。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网天津10月29日电(孙翼飞)记者在29日天津市政府新闻办举行的发布会上获悉，“十五五”时期，天津将高标准打造国家数字经济创新发展试验区，到2030年，数字经济综合发展水平位居全国第一梯队。",
+      "translations": {
+        "zh": {
+          "title": "天津提出2030年数字经济综合发展水平进入全国第一梯队",
+          "highlight": "“十五五”时期，天津将高标准打造国家数字经济创新发展试验区，到2030年数字经济综合发展水平位居全国第一梯队。",
+          "summary": "文章称，在10月29日天津市政府新闻办发布会上获悉，“十五五”时期天津将高标准打造国家数字经济创新发展试验区。到2030年，天津数字经济综合发展水平要位居全国第一梯队。这是官方渠道披露的阶段性政策目标，值得关注其后续实施路径与公开指标。",
+          "failureAnalysis": "当前可核实的是天津的数字经济政策方向与2030年目标定位。具体实施路径、量化指标和阶段性进展仍需后续公开信息验证。"
+        },
+        "en": {
+          "highlight": "During the 15th Five-Year Plan period, Tianjin will build a national digital economy innovation development pilot zone and aims to rank in the national first tier by 2030.",
+          "summary": "The article reports that during the 15th Five-Year Plan period, Tianjin will high-standard build a national digital economy innovation and development pilot zone. By 2030, the city aims for its comprehensive digital economy development level to be in the national first tier. It is worth reading as an official-source policy target, with implementation details to be watched.",
+          "failureAnalysis": "The verifiable takeaway is a policy direction and a 2030 target, not a detailed implementation plan. Practical details and quantitative indicators would require follow-up disclosures.",
+          "title": "Tianjin aims to join China’s top tier in digital economy by 2030"
+        }
+      }
+    },
+    {
+      "id": "news-7e3e088495e84da68d1c31c7315e75d3",
+      "category": "domestic",
+      "title": "新疆兵团优化妇女儿童发展环境 全面提升维权服务质效",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-29/10723055.shtml",
+      "publishedAt": "2026-10-29T15:15:36.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "新疆兵团构建覆盖妇女儿童生存、发展、保护全过程的政策保障网络，妇女儿童获得感、幸福感、安全感显著增强。",
+      "summary": "文章报道新疆兵团新闻办10月29日召开新闻发布会，介绍“十四五”期间新疆兵团妇女儿童事业发展成就。兵团妇联党组书记、主席姜淑霞表示，五年来当地推动构建覆盖妇女儿童生存、发展、保护全过程的政策保障网络，并形成党委领导、政府主责、妇儿工委协调、多部门合作、全社会共同参与的工作机制。报道呈现了妇女儿童获得感、幸福感、安全感增强的官方表述，适合关注公共政策与妇女儿童权益的人了解。",
+      "failureAnalysis": "可核验的信息主要来自发布会与官方表述，重点是政策保障网络和工作机制的建立；阅读时应区分发布口径与后续可量化成效。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网乌鲁木齐10月29日电 (史玉江)新疆生产建设兵团新闻办29日召开“十四五”期间新疆兵团妇女儿童事业发展成就新闻发布会。新疆兵团妇联党组书记、主席姜淑霞表示，五年来，新疆兵团推动构建覆盖妇女儿童生存、发展、保护全过程的政策保障网络，形成党委领导、政府主责、妇儿工委协调、多部门合作、全社会共同参与的妇女儿童工作机制，妇女儿童的获得感、幸福感、安全感显著增强。",
+      "translations": {
+        "zh": {
+          "title": "新疆兵团优化妇女儿童发展环境 全面提升维权服务质效",
+          "highlight": "新疆兵团构建覆盖妇女儿童生存、发展、保护全过程的政策保障网络，妇女儿童获得感、幸福感、安全感显著增强。",
+          "summary": "文章报道新疆兵团新闻办10月29日召开新闻发布会，介绍“十四五”期间新疆兵团妇女儿童事业发展成就。兵团妇联党组书记、主席姜淑霞表示，五年来当地推动构建覆盖妇女儿童生存、发展、保护全过程的政策保障网络，并形成党委领导、政府主责、妇儿工委协调、多部门合作、全社会共同参与的工作机制。报道呈现了妇女儿童获得感、幸福感、安全感增强的官方表述，适合关注公共政策与妇女儿童权益的人了解。",
+          "failureAnalysis": "可核验的信息主要来自发布会与官方表述，重点是政策保障网络和工作机制的建立；阅读时应区分发布口径与后续可量化成效。"
+        },
+        "en": {
+          "highlight": "Over five years, the Xinjiang Corps built a policy support network covering women and children's survival, development and protection, improving their sense of gain, happiness and security.",
+          "summary": "The article reports on an Oct. 29 press conference by the Xinjiang Corps Information Office on achievements in women's and children's development during the 14th Five-Year Plan period. It says the Corps has built a policy support network and a multi-department, society-wide working mechanism, with official claims of stronger senses of gain, happiness and security. It is worth reading for those tracking public policy and rights protection for women and children.",
+          "failureAnalysis": "The verifiable information comes mainly from the press conference and official statements, focusing on policy networks and working mechanisms; readers should distinguish official framing from later quantifiable outcomes.",
+          "title": "Xinjiang Corps Optimizes Environment for Women and Children, Enhances Rights Protection Services"
+        }
+      }
+    },
+    {
+      "id": "news-93959f73c7a14014b399d3dc30c2900a",
+      "category": "international",
+      "title": "Hong Kong’s leader apologises for residential fire that killed 168 people",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/29/hong-kong-john-lee-apologises-wang-fuk-court-fire-killed-168-people",
+      "publishedAt": "2026-10-29T18:14:21.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "香港特首就政府不足导致去年造成168人死亡的火灾道歉，但部分遇难者家属并不买账。",
+      "summary": "文章报道香港特首李家超等官员就政府机构“数十年失误”导致的住宅火灾公开鞠躬道歉；这场火灾造成168人死亡，是1980年以来全球最致命的住宅火灾。报道同时指出，部分幸存者和遇难者家属认为正义尚未得到伸张，道歉未能令他们满意。这则新闻值得关注，因为它呈现了官方罕见公开认错与受害者家属追问责任之间的紧张关系。",
+      "failureAnalysis": "关键启示是：公开道歉可以体现问责姿态；但如果缺乏后续责任追究与制度修正，就难以满足受害者家属对正义的期待。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Blaze was world’s deadliest residential fire since 1980, but some survivors and bereaved families say justice has yet to be served Hong Kong’s leader has apologised for government shortcomings that contributed to a fire that killed 168 people in the city last year, a rare sign of public contrition that nevertheless failed to impress some victims’ families. The chief executive, John Lee, and seven other officials bowed in apology at the release of a report that pointed to “decades of failure” by government bodies.",
+      "translations": {
+        "zh": {
+          "title": "香港特首为造成168人死亡的住宅火灾道歉",
+          "highlight": "香港特首就政府不足导致去年造成168人死亡的火灾道歉，但部分遇难者家属并不买账。",
+          "summary": "文章报道香港特首李家超等官员就政府机构“数十年失误”导致的住宅火灾公开鞠躬道歉；这场火灾造成168人死亡，是1980年以来全球最致命的住宅火灾。报道同时指出，部分幸存者和遇难者家属认为正义尚未得到伸张，道歉未能令他们满意。这则新闻值得关注，因为它呈现了官方罕见公开认错与受害者家属追问责任之间的紧张关系。",
+          "failureAnalysis": "关键启示是：公开道歉可以体现问责姿态；但如果缺乏后续责任追究与制度修正，就难以满足受害者家属对正义的期待。"
+        },
+        "en": {
+          "highlight": "Hong Kong’s leader apologised for government shortcomings that contributed to a fire that killed 168 people last year, but some victims’ families were not impressed.",
+          "summary": "The article reports that Hong Kong Chief Executive John Lee and other officials bowed in apology after a report pointed to “decades of failure” by government bodies behind a residential fire that killed 168 people, the world’s deadliest such fire since 1980. It notes that some survivors and bereaved families say justice has yet to be served and were not satisfied by the apology. It is worth reading for the tension between a rare official apology and victims’ demands for accountability.",
+          "failureAnalysis": "The key takeaway is that a public apology signals accountability, but without follow-up accountability and institutional reform it may not meet victims’ families’ expectations of justice.",
+          "title": "Hong Kong leader apologises for residential fire that killed 168 people"
+        }
+      }
+    },
+    {
+      "id": "news-8a801921a6ce47459704c5de6dff3313",
+      "category": "international",
+      "title": "US interest rates held steady and economy grows - what it means for you",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/cr15jxzv4w24o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-29T17:15:05.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "美联储的利率决策会影响从房贷到汽车贷款的各项成本。",
+      "summary": "从标题和已知内容看，这篇BBC Business报道围绕美联储维持利率不变、美国经济仍在增长展开，并讨论这对个人财务可能意味着什么。已知信息强调，美联储的利率决策会传导到房贷、车贷等日常借贷成本，因此值得非专业读者关注。",
+      "failureAnalysis": "关键点在于，美联储利率决策不只影响宏观经济，也会通过房贷和车贷等渠道影响普通人的借贷成本；阅读时可重点看利率维持不变与经济增长并存意味着什么。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "The Federal Reserve's interest rate decisions affect everything from mortgages to car loans",
+      "translations": {
+        "zh": {
+          "title": "美国利率维持不变、经济仍在增长：这对普通人意味着什么",
+          "highlight": "美联储的利率决策会影响从房贷到汽车贷款的各项成本。",
+          "summary": "从标题和已知内容看，这篇BBC Business报道围绕美联储维持利率不变、美国经济仍在增长展开，并讨论这对个人财务可能意味着什么。已知信息强调，美联储的利率决策会传导到房贷、车贷等日常借贷成本，因此值得非专业读者关注。",
+          "failureAnalysis": "关键点在于，美联储利率决策不只影响宏观经济，也会通过房贷和车贷等渠道影响普通人的借贷成本；阅读时可重点看利率维持不变与经济增长并存意味着什么。"
+        },
+        "en": {
+          "highlight": "The Federal Reserve's interest rate decisions affect everything from mortgages to car loans.",
+          "summary": "This BBC Business report looks at the Federal Reserve holding interest rates steady while the US economy grows, and what that may mean for personal finances. The known detail stresses that Fed rate decisions feed through to everyday borrowing costs such as mortgages and car loans.",
+          "failureAnalysis": "The key takeaway is that Fed rate decisions affect not only the macroeconomy but also ordinary borrowers through mortgages and car loans; readers should focus on what steady rates alongside growth imply.",
+          "title": "US Interest Rates Held Steady as Economy Grows: What It Means for You"
+        }
+      }
+    },
+    {
+      "id": "life-d3130f93da334eabafa088b57856c23b",
+      "category": "international",
+      "title": "Should You Study The Solutions Or Solve Problems?",
+      "source": "Scott H Young",
+      "url": "https://www.scotthyoung.com/blog/2026/10/28/solving-hard-problems/",
+      "publishedAt": "2026-10-28T20:42:05.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "哪种学习方法能带来更通用的学习效果，让你在遇到新类型问题时表现更好？",
+      "summary": "文章从一个课堂问题集的场景切入：直接研究答案，还是自己解题，哪种方式更能带来可迁移的学习效果。它强调学习需要努力，但并非所有努力都有助于学习，因此值得读者反思自己的练习方式。",
+      "failureAnalysis": "关键不是是否努力，而是努力是否服务于可迁移的理解；选练习方式时，应优先考虑能否在新问题上表现更好。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Watch the video of this essay. Learning requires effort. But not all effort is useful for learning.",
+      "translations": {
+        "zh": {
+          "title": "该研究答案，还是自己解题？",
+          "highlight": "哪种学习方法能带来更通用的学习效果，让你在遇到新类型问题时表现更好？",
+          "summary": "文章从一个课堂问题集的场景切入：直接研究答案，还是自己解题，哪种方式更能带来可迁移的学习效果。它强调学习需要努力，但并非所有努力都有助于学习，因此值得读者反思自己的练习方式。",
+          "failureAnalysis": "关键不是是否努力，而是努力是否服务于可迁移的理解；选练习方式时，应优先考虑能否在新问题上表现更好。"
+        },
+        "en": {
+          "highlight": "Which method would result in more general learning, letting you perform better on new types of problems?",
+          "summary": "The essay uses a problem-set scenario to ask whether studying solutions or solving problems leads to more general learning. It emphasizes that learning takes effort, but not all effort is useful, making it worth reading for anyone choosing how to practice.",
+          "failureAnalysis": "The key takeaway is to judge study effort by whether it transfers to new problems, not by effort alone; choose methods that build more general understanding.",
+          "title": "Study Solutions or Solve Problems?"
+        }
+      }
+    },
+    {
+      "id": "life-cf9f3fdb58d042bea586fd6737366a29",
+      "category": "international",
+      "title": "The physics of getting fired",
+      "source": "Aeon",
+      "url": "https://aeon.co/essays/how-to-use-physics-to-make-sense-of-the-messiness-of-life",
+      "publishedAt": "2026-10-29T10:00:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "物理学曾给我秩序感与目标感，但当生活变得混乱时，我意识到它能给出更深层的洞见。",
+      "summary": "作者扎汉·巴马尔谈到，物理学曾给他秩序感与目标感；生活变得混乱后，他发现物理学还能提供更深层的洞见。文章以“被解雇”为入口，讨论科学视角如何帮助人理解现实中的杂乱与失序，适合想借科学思维获得生活启发的人阅读。",
+      "failureAnalysis": "关键要点是：物理学的价值不只在给出秩序，也可能在生活失序时提供重新理解处境的心智框架。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Physics offered me a sense of order and purpose. But when life got messy I realised it had a much deeper insight to give - by Zahaan Bharmal Read on Aeon",
+      "translations": {
+        "zh": {
+          "title": "被解雇的物理学：生活失序时的更深洞见",
+          "highlight": "物理学曾给我秩序感与目标感，但当生活变得混乱时，我意识到它能给出更深层的洞见。",
+          "summary": "作者扎汉·巴马尔谈到，物理学曾给他秩序感与目标感；生活变得混乱后，他发现物理学还能提供更深层的洞见。文章以“被解雇”为入口，讨论科学视角如何帮助人理解现实中的杂乱与失序，适合想借科学思维获得生活启发的人阅读。",
+          "failureAnalysis": "关键要点是：物理学的价值不只在给出秩序，也可能在生活失序时提供重新理解处境的心智框架。"
+        },
+        "en": {
+          "highlight": "Physics offered me a sense of order and purpose. But when life got messy I realised it had a much deeper insight to give.",
+          "summary": "Zahaan Bharmal describes how physics gave him a sense of order and purpose, and how he realised it had a deeper insight to offer when life became messy. The essay uses the idea of getting fired to explore how a scientific perspective can help make sense of life’s disorder, making it worth reading for those seeking practical inspiration from scientific thinking.",
+          "failureAnalysis": "The key takeaway is that physics can offer more than order: when life becomes messy, it may provide a mental framework for reinterpreting one’s situation.",
+          "title": "The Physics of Getting Fired"
+        }
+      }
+    },
+    {
+      "id": "paper-2610.36541",
+      "category": "paper",
+      "title": "The geometry of cognition: from neural populations to neurotechnology",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2610.36541v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.36541",
+      "publishedAt": "2026-10-27T02:54:14.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。",
+          "SNN：模仿神经脉冲时序的神经网络。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "论文题目将认知的几何、神经群体与神经技术并列，署名作者为Bayones、Narain和Rossi-Pool。",
+      "summary": "从题名看，论文试图以几何视角连接神经群体研究与神经技术。现有来源仅含题名、作者和机构信息，尚不足以判断其具体论证与贡献。",
+      "failureAnalysis": "来源文本仅含题名、作者与机构，缺少摘要、方法、结果和讨论，无法评估其证据强度或可复现性。阅读或引用时需回到论文全文，当前材料的可核查信息有限。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "From neural populations to neurotechnology 1 The geometry of cognition: from neural populations to neurotechnology Lucas Bayonesa,*, Devika Narainb,c,* & Román Rossi-Pool a,d,* a Instituto de Fisiología Celular ─ Neurociencias, Universidad Nacional Autónoma de México, 04510 Mexico City, Mexico b Department of Neuroscience, Erasmus MC, Dr. Molewaterplein 40, 3015 GD Rotterdam, The Netherlands c Donders Centre for Neuroscience, Radboud University, Nijmegen, The Netherlands d Centro de Ciencias de la Complejidad, Universidad Nacional Autónoma de México, 04510 Mexico City, Mexico * Corresponding authors. E-mail: lbayones@ifc.unam.mx ; d.narain@erasmusmc.nl ; romar@ifc.unam.mx From neural populations to neurotechnology 2 Abstract Cognition is implemented by distributed neural populations whose collective activity evolves through structured, low-dimensional state spaces.",
+      "translations": {
+        "zh": {
+          "title": "认知的几何：从神经群体到神经技术",
+          "highlight": "论文题目将认知的几何、神经群体与神经技术并列，署名作者为Bayones、Narain和Rossi-Pool。",
+          "summary": "从题名看，论文试图以几何视角连接神经群体研究与神经技术。现有来源仅含题名、作者和机构信息，尚不足以判断其具体论证与贡献。",
+          "failureAnalysis": "来源文本仅含题名、作者与机构，缺少摘要、方法、结果和讨论，无法评估其证据强度或可复现性。阅读或引用时需回到论文全文，当前材料的可核查信息有限。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。",
+              "SNN：模仿神经脉冲时序的神经网络。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "The geometry of cognition: from neural populations to neurotechnology",
+          "highlight": "The paper's title links the geometry of cognition with neural populations and neurotechnology, and lists Bayones, Narain, and Rossi-Pool as authors.",
+          "summary": "The title indicates a discussion of the geometry of cognition that connects neural populations with neurotechnology. The supplied source, however, provides only the title, authors, and affiliations, without an abstract or results.",
+          "failureAnalysis": "The source text lacks an abstract, methods, results, and discussion, so its evidence strength and reproducibility cannot be assessed. Any citation should rely on the full paper, as the available material supports only limited verification.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。",
+              "SNN：模仿神经脉冲时序的神经网络。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-feed-9664ebac06f949e3b0a763d5aac5e704",
+      "category": "ai",
+      "title": "Building a multiplayer game world with autonomous Fable-class models",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-29T17:00:26.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [],
+      "evidenceLabel": "No clear evidence",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
+      "summary": "这篇文章是 Jacob Sansbury 讲述他们如何打造 Spawn：一个大型多人在线游戏环境，玩家可用提示让游戏内智能体 Savi 直接改造游戏世界（例如生成城堡、龙并骑龙飞行）。其开发由一群 Fable 驱动的智能体自主完成，每月 token 支出超过 300 万美元（约为人力成本的 30 倍）；约 60% 的工作源自线上错误、Savi 提交的 bug、日志异常或功能请求，一小时内没有发布被视为最高级别的 SEV-0 事故，故障可在 30 秒内精确回滚。作者认为这类极端实验正是探索当今编码智能体能力边界的有价值试验场。",
+      "failureAnalysis": "关键约束在模型选择与工程配套：Jacob 称 Fable 5（及 5.1）才让这种自主程度成为可能，Opus 5.5 尚不够用，而 GPT-6 Astra 在执行安全审查修复时把每个功能都关掉了；同时这种循环依赖极快的发布节奏来让智能体保持连贯。",
+      "aiSelectionScore": 100,
+      "highlight": "我们的智能体直接修改线上代码，每小时发布到生产环境，因此它们自己读取每一个错误、bug 报告和指标。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "How I Built the Most AI-Pilled Company in the World Don't be put off by the clickbait headline, this piece by Jacob Sansbury describing how they are building Spawn is a fascinating exploration of the bleeding edge of what's possible with agentic engineering against frontier models. Spawn is a massively multiplayer gaming environment where players can use prompts (to the in-game agent, Savi) to modify the game world. I fired it up on my phone for a few minutes and was able to prompt a castle into existence, then a dragon, then ride the dragon to fly around that castle.",
+      "translations": {
+        "zh": {
+          "title": "用自主 Fable 级模型构建多人游戏世界",
+          "highlight": "我们的智能体直接修改线上代码，每小时发布到生产环境，因此它们自己读取每一个错误、bug 报告和指标。",
+          "summary": "这篇文章是 Jacob Sansbury 讲述他们如何打造 Spawn：一个大型多人在线游戏环境，玩家可用提示让游戏内智能体 Savi 直接改造游戏世界（例如生成城堡、龙并骑龙飞行）。其开发由一群 Fable 驱动的智能体自主完成，每月 token 支出超过 300 万美元（约为人力成本的 30 倍）；约 60% 的工作源自线上错误、Savi 提交的 bug、日志异常或功能请求，一小时内没有发布被视为最高级别的 SEV-0 事故，故障可在 30 秒内精确回滚。作者认为这类极端实验正是探索当今编码智能体能力边界的有价值试验场。",
+          "failureAnalysis": "关键约束在模型选择与工程配套：Jacob 称 Fable 5（及 5.1）才让这种自主程度成为可能，Opus 5.5 尚不够用，而 GPT-6 Astra 在执行安全审查修复时把每个功能都关掉了；同时这种循环依赖极快的发布节奏来让智能体保持连贯。"
+        },
+        "en": {
+          "highlight": "Our agents change the live code directly and ship to production hourly, so they read every error, bug report and metric themselves.",
+          "summary": "Jacob Sansbury describes Spawn, a massively multiplayer gaming environment where players prompt an in-game agent, Savi, to modify the world — the author prompted a castle, a dragon, and rode the dragon around it. Development is largely autonomous: a swarm of Fable-powered agents costs over $3 million in tokens per month, roughly 60% of work starts from a production error, Savi bug report, log anomaly or feature request, and an hour without a ship is treated as a SEV-0 incident with 30-second targeted rollbacks. The author finds this a valuable substrate for probing the limits of today's coding agents.",
+          "failureAnalysis": "Model choice and engineering scaffolding are the binding constraints: Jacob says Fable 5 (then 5.1) made this autonomy possible, Opus 5.5 falls short, and GPT-6 Astra disabled every feature while applying security-review fixes; the loop also depends on shipping faster than an agent's few-hour working memory.",
+          "title": "Building a multiplayer game world with autonomous Fable-class models"
+        }
+      }
+    }
+  ]
+}
