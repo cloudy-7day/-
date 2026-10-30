@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-10-29",
+  "issueDate": "2026-10-30",
   "updateStatus": "complete",
-  "contentFingerprint": "61aa5df5b5a6c9b4b879bd24a0e17a58cfb595902df0c671cbede408d44fbd44",
+  "contentFingerprint": "5910e69a2ebc5f4b47e5389ffb3f804d554b3b6d271a3c0a02cf3a3408592714",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,216 +10,216 @@
   ],
   "articles": [
     {
-      "id": "news-379495c9091a4a19a428d4e9fe709306",
+      "id": "news-f8191f84315248bfaf36c412f37e2c25",
       "category": "domestic",
-      "title": "王毅同冰岛外长贡纳尔斯多蒂尔会谈",
+      "title": "外媒关注二十届五中全会：全面从严治党表明中国共产党的政治决心",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-29/10723067.shtml",
-      "publishedAt": "2026-10-29T15:33:35.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/10-31/10723687.shtml",
+      "publishedAt": "2026-10-30T16:01:22.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "10月29日，中共中央政治局委员、外交部长王毅在北京同冰岛外长贡纳尔斯多蒂尔举行会谈。",
-      "summary": "这则官方报道披露，10月29日，王毅在北京同冰岛外长贡纳尔斯多蒂尔举行会谈。目前可以确认的公开信息是双方进行了外交会谈，具体议题与成果尚未在已知内容中展开。它可作为观察中冰外交互动及官方发布口径的公开线索。",
-      "failureAnalysis": "现有信息只覆盖会谈举行这一事实，未披露议题、共识或成果；阅读时应区分已确认信息与后续细节。",
+      "highlight": "多家外媒认为，二十届五中全会是观察中国未来治理体系走向的重要窗口，全面从严治党表明中共政治决心。",
+      "summary": "文章报道中共二十届五中全会于10月26日至29日在北京举行，多家外媒将其视为观察中国未来治理体系走向和长期发展战略的重要窗口。报道称，外媒把全面从严治党视为中国共产党政治决心的体现。这条官方媒体转述的信息价值在于，它提供了外部视角如何解读中国重要政策会议的观察样本。",
+      "failureAnalysis": "这条信息是对外媒观点的汇总转述，未给出全会具体政策条文、数据或外媒原文出处，因此判断时宜回到全会公报等一手文本核对。阅读此类报道时，区分“外媒说了什么”与“会议实际决议了什么”，是更稳妥的读法。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社北京10月29日电 10月29日，中共中央政治局委员、外交部长王毅在北京同冰岛外长贡纳尔斯多蒂尔举行会谈。",
+      "sourceExcerpt": "中新社北京10月30日电 综合消息：中国共产党第二十届中央委员会第五次全体会议26日至29日在北京举行。多家外媒关注报道，认为这次会议是观察中国未来治理体系走向和长期发展战略的重要窗口，全面从严治党表明中国共产党的政治决心。",
       "translations": {
         "zh": {
-          "title": "王毅在北京同冰岛外长贡纳尔斯多蒂尔举行会谈",
-          "highlight": "10月29日，中共中央政治局委员、外交部长王毅在北京同冰岛外长贡纳尔斯多蒂尔举行会谈。",
-          "summary": "这则官方报道披露，10月29日，王毅在北京同冰岛外长贡纳尔斯多蒂尔举行会谈。目前可以确认的公开信息是双方进行了外交会谈，具体议题与成果尚未在已知内容中展开。它可作为观察中冰外交互动及官方发布口径的公开线索。",
-          "failureAnalysis": "现有信息只覆盖会谈举行这一事实，未披露议题、共识或成果；阅读时应区分已确认信息与后续细节。"
+          "title": "外媒关注二十届五中全会：全面从严治党表明中国共产党的政治决心",
+          "highlight": "多家外媒认为，二十届五中全会是观察中国未来治理体系走向的重要窗口，全面从严治党表明中共政治决心。",
+          "summary": "文章报道中共二十届五中全会于10月26日至29日在北京举行，多家外媒将其视为观察中国未来治理体系走向和长期发展战略的重要窗口。报道称，外媒把全面从严治党视为中国共产党政治决心的体现。这条官方媒体转述的信息价值在于，它提供了外部视角如何解读中国重要政策会议的观察样本。",
+          "failureAnalysis": "这条信息是对外媒观点的汇总转述，未给出全会具体政策条文、数据或外媒原文出处，因此判断时宜回到全会公报等一手文本核对。阅读此类报道时，区分“外媒说了什么”与“会议实际决议了什么”，是更稳妥的读法。"
         },
         "en": {
-          "highlight": "On October 29, Wang Yi, member of the Political Bureau of the CPC Central Committee and Foreign Minister, held talks in Beijing with Icelandic Foreign Minister Gunnarsdottir.",
-          "summary": "This official report states that Wang Yi held talks in Beijing with Icelandic Foreign Minister Gunnarsdottir on October 29. The confirmed public information is that the two sides held a diplomatic meeting, while specific topics and outcomes are not elaborated in the known content. It serves as a public clue for observing China-Iceland diplomatic interaction and official messaging.",
-          "failureAnalysis": "The available information covers only the fact that the talks took place, without disclosing topics, consensus, or outcomes; readers should distinguish confirmed facts from details that may follow.",
-          "title": "Wang Yi Holds Talks in Beijing with Icelandic Foreign Minister Gunnarsdottir"
+          "highlight": "Several foreign media outlets see the Fifth Plenum as an important window for observing the direction of China's future governance system and long-term development strategy.",
+          "summary": "The article reports that the Fifth Plenum of the 20th CPC Central Committee was held in Beijing from October 26 to 29, and that several foreign media outlets view it as an important window for observing the direction of China's future governance system and long-term development strategy. Those outlets read the emphasis on full strict Party governance as a sign of the CPC's political resolve. Its value lies in offering a sample of how outside observers interpret a major Chinese policy meeting.",
+          "failureAnalysis": "This is a summary of foreign media commentary, without specific policy texts, data, or citations to the original reports, so readers should check the plenum communique itself. Distinguishing what foreign media said from what the meeting actually decided is the safer reading habit.",
+          "title": "Foreign Media Focus on the 20th CPC Central Committee's Fifth Plenum: Full Strict Party Governance Shows the CPC's Political Resolve"
         }
       }
     },
     {
-      "id": "news-e7b3fb2773574502b9f9451f6fff3fc2",
+      "id": "news-e5395ff1771048c98c141076c81d6f98",
       "category": "domestic",
-      "title": "天津：2030年数字经济综合发展水平位居全国第一梯队",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-29/10723062.shtml",
-      "publishedAt": "2026-10-29T15:22:59.0000000+00:00",
+      "title": "三部门增加调拨1000套中央救灾物资板房 保障西藏受灾群众安全温暖过冬",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-30/10723655.shtml",
+      "publishedAt": "2026-10-30T13:53:02.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "“十五五”时期，天津将高标准打造国家数字经济创新发展试验区，到2030年数字经济综合发展水平位居全国第一梯队。",
-      "summary": "文章称，在10月29日天津市政府新闻办发布会上获悉，“十五五”时期天津将高标准打造国家数字经济创新发展试验区。到2030年，天津数字经济综合发展水平要位居全国第一梯队。这是官方渠道披露的阶段性政策目标，值得关注其后续实施路径与公开指标。",
-      "failureAnalysis": "当前可核实的是天津的数字经济政策方向与2030年目标定位。具体实施路径、量化指标和阶段性进展仍需后续公开信息验证。",
+      "highlight": "三部门会同国家粮食和物资储备局向西藏增加调拨1000套救灾板房，组织各方高效有序搭建，支持灾区过渡期安置。",
+      "summary": "据应急管理部网站消息，10月30日，针对西藏巴青县地震灾区降雪影响，三部门在前期调拨救灾物资、协调救灾板房基础上，增加调拨1000套救灾板房。文章说明，这批物资将用于组织各方高效有序搭建，支持受灾群众过渡期安置和冬春生活保障，体现了官方应急救助的持续推进。",
+      "failureAnalysis": "这条新闻的重点是可核验的应急物资增拨与安置保障，不宜强行套用项目失败分析；可关注物资数量、搭建组织和越冬保障是否真正落地。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网天津10月29日电(孙翼飞)记者在29日天津市政府新闻办举行的发布会上获悉，“十五五”时期，天津将高标准打造国家数字经济创新发展试验区，到2030年，数字经济综合发展水平位居全国第一梯队。",
+      "sourceExcerpt": "中新网10月30日电 据应急管理部网站消息，10月30日，国家防灾减灾救灾委员会办公室、应急管理部针对西藏巴青县地震灾区降雪影响，在前期已向西藏调拨中央救灾物资，协调救灾板房基础上，会同国家粮食和物资储备局向西藏增加调拨1000套救灾板房，组织各方高效有序搭建，支持灾区妥善做好受灾群众过渡期安置和冬春生活保障工作。",
       "translations": {
         "zh": {
-          "title": "天津提出2030年数字经济综合发展水平进入全国第一梯队",
-          "highlight": "“十五五”时期，天津将高标准打造国家数字经济创新发展试验区，到2030年数字经济综合发展水平位居全国第一梯队。",
-          "summary": "文章称，在10月29日天津市政府新闻办发布会上获悉，“十五五”时期天津将高标准打造国家数字经济创新发展试验区。到2030年，天津数字经济综合发展水平要位居全国第一梯队。这是官方渠道披露的阶段性政策目标，值得关注其后续实施路径与公开指标。",
-          "failureAnalysis": "当前可核实的是天津的数字经济政策方向与2030年目标定位。具体实施路径、量化指标和阶段性进展仍需后续公开信息验证。"
+          "title": "三部门向西藏地震灾区增加调拨1000套救灾板房",
+          "highlight": "三部门会同国家粮食和物资储备局向西藏增加调拨1000套救灾板房，组织各方高效有序搭建，支持灾区过渡期安置。",
+          "summary": "据应急管理部网站消息，10月30日，针对西藏巴青县地震灾区降雪影响，三部门在前期调拨救灾物资、协调救灾板房基础上，增加调拨1000套救灾板房。文章说明，这批物资将用于组织各方高效有序搭建，支持受灾群众过渡期安置和冬春生活保障，体现了官方应急救助的持续推进。",
+          "failureAnalysis": "这条新闻的重点是可核验的应急物资增拨与安置保障，不宜强行套用项目失败分析；可关注物资数量、搭建组织和越冬保障是否真正落地。"
         },
         "en": {
-          "highlight": "During the 15th Five-Year Plan period, Tianjin will build a national digital economy innovation development pilot zone and aims to rank in the national first tier by 2030.",
-          "summary": "The article reports that during the 15th Five-Year Plan period, Tianjin will high-standard build a national digital economy innovation and development pilot zone. By 2030, the city aims for its comprehensive digital economy development level to be in the national first tier. It is worth reading as an official-source policy target, with implementation details to be watched.",
-          "failureAnalysis": "The verifiable takeaway is a policy direction and a 2030 target, not a detailed implementation plan. Practical details and quantitative indicators would require follow-up disclosures.",
-          "title": "Tianjin aims to join China’s top tier in digital economy by 2030"
+          "highlight": "Three departments, together with the National Food and Strategic Reserves Administration, added 1,000 prefabricated relief housing units for Tibet and organized efficient, orderly installation to support transitional resettlement.",
+          "summary": "According to the Ministry of Emergency Management website, on October 30, in response to snowfall affecting the earthquake-hit area of Baqing County in Tibet, three departments added 1,000 prefabricated relief housing units after earlier allocations of relief supplies and coordination of housing. The units are to be installed in an efficient and orderly way to support transitional resettlement and winter-spring living assistance for affected residents.",
+          "failureAnalysis": "The key point is verifiable emergency supply allocation and resettlement support, not a forced failure analysis; attention should go to whether the quantity, installation, and winter protection are delivered on the ground.",
+          "title": "Three departments add 1,000 prefabricated relief housing units for Tibet quake area"
         }
       }
     },
     {
-      "id": "news-7e3e088495e84da68d1c31c7315e75d3",
+      "id": "news-e4cf36f940df4eda9099c223753ebd9f",
       "category": "domestic",
-      "title": "新疆兵团优化妇女儿童发展环境 全面提升维权服务质效",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-29/10723055.shtml",
-      "publishedAt": "2026-10-29T15:15:36.0000000+00:00",
+      "title": "西藏巴青7.0级地震：受灾民众板房入住率超七成",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-30/10723638.shtml",
+      "publishedAt": "2026-10-30T13:39:44.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "新疆兵团构建覆盖妇女儿童生存、发展、保护全过程的政策保障网络，妇女儿童获得感、幸福感、安全感显著增强。",
-      "summary": "文章报道新疆兵团新闻办10月29日召开新闻发布会，介绍“十四五”期间新疆兵团妇女儿童事业发展成就。兵团妇联党组书记、主席姜淑霞表示，五年来当地推动构建覆盖妇女儿童生存、发展、保护全过程的政策保障网络，并形成党委领导、政府主责、妇儿工委协调、多部门合作、全社会共同参与的工作机制。报道呈现了妇女儿童获得感、幸福感、安全感增强的官方表述，适合关注公共政策与妇女儿童权益的人了解。",
-      "failureAnalysis": "可核验的信息主要来自发布会与官方表述，重点是政策保障网络和工作机制的建立；阅读时应区分发布口径与后续可量化成效。",
+      "selectionReason": "Domestic priority: 4",
+      "highlight": "截至10月29日18时，地震灾害造成死亡16人、受伤76人、已康复出院67人、在院患者9人。",
+      "summary": "中国新闻网报道，西藏巴青7.0级地震灾害应急处置指挥部公布截至10月29日18时的伤亡与救治数据。灾区板房需求3299间，现有3192间、已搭建2787间，已入住民众1644户、9136人，入住率70.4%。板房仍有276间缺口，剩余3828人预计10月30日全部入住，文章呈现了震后过渡安置的进度与缺口。",
+      "failureAnalysis": "可核验的公共影响集中在伤亡救治和过渡安置进度：入住率已达70.4%，但仍有276间板房缺口，剩余3828人安置需在10月30日完成。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网乌鲁木齐10月29日电 (史玉江)新疆生产建设兵团新闻办29日召开“十四五”期间新疆兵团妇女儿童事业发展成就新闻发布会。新疆兵团妇联党组书记、主席姜淑霞表示，五年来，新疆兵团推动构建覆盖妇女儿童生存、发展、保护全过程的政策保障网络，形成党委领导、政府主责、妇儿工委协调、多部门合作、全社会共同参与的妇女儿童工作机制，妇女儿童的获得感、幸福感、安全感显著增强。",
+      "sourceExcerpt": "中新网拉萨10月30日电(记者 江飞波)西藏自治区巴青7.0级地震灾害应急处置指挥部(以下简称指挥部)30日公布，截至10月29日18时，地震灾害造成死亡16人、受伤76人、已康复出院67人、在院患者9人。灾区板房需求3299间，现有3192间、已搭建2787间，已入住民众1644户、9136人，入住率70.4%，板房缺口276间(未到位107间、损坏169间)，剩余3828人预计10月30日全部入住。",
       "translations": {
         "zh": {
-          "title": "新疆兵团优化妇女儿童发展环境 全面提升维权服务质效",
-          "highlight": "新疆兵团构建覆盖妇女儿童生存、发展、保护全过程的政策保障网络，妇女儿童获得感、幸福感、安全感显著增强。",
-          "summary": "文章报道新疆兵团新闻办10月29日召开新闻发布会，介绍“十四五”期间新疆兵团妇女儿童事业发展成就。兵团妇联党组书记、主席姜淑霞表示，五年来当地推动构建覆盖妇女儿童生存、发展、保护全过程的政策保障网络，并形成党委领导、政府主责、妇儿工委协调、多部门合作、全社会共同参与的工作机制。报道呈现了妇女儿童获得感、幸福感、安全感增强的官方表述，适合关注公共政策与妇女儿童权益的人了解。",
-          "failureAnalysis": "可核验的信息主要来自发布会与官方表述，重点是政策保障网络和工作机制的建立；阅读时应区分发布口径与后续可量化成效。"
+          "title": "西藏巴青7.0级地震：板房入住率超七成",
+          "highlight": "截至10月29日18时，地震灾害造成死亡16人、受伤76人、已康复出院67人、在院患者9人。",
+          "summary": "中国新闻网报道，西藏巴青7.0级地震灾害应急处置指挥部公布截至10月29日18时的伤亡与救治数据。灾区板房需求3299间，现有3192间、已搭建2787间，已入住民众1644户、9136人，入住率70.4%。板房仍有276间缺口，剩余3828人预计10月30日全部入住，文章呈现了震后过渡安置的进度与缺口。",
+          "failureAnalysis": "可核验的公共影响集中在伤亡救治和过渡安置进度：入住率已达70.4%，但仍有276间板房缺口，剩余3828人安置需在10月30日完成。"
         },
         "en": {
-          "highlight": "Over five years, the Xinjiang Corps built a policy support network covering women and children's survival, development and protection, improving their sense of gain, happiness and security.",
-          "summary": "The article reports on an Oct. 29 press conference by the Xinjiang Corps Information Office on achievements in women's and children's development during the 14th Five-Year Plan period. It says the Corps has built a policy support network and a multi-department, society-wide working mechanism, with official claims of stronger senses of gain, happiness and security. It is worth reading for those tracking public policy and rights protection for women and children.",
-          "failureAnalysis": "The verifiable information comes mainly from the press conference and official statements, focusing on policy networks and working mechanisms; readers should distinguish official framing from later quantifiable outcomes.",
-          "title": "Xinjiang Corps Optimizes Environment for Women and Children, Enhances Rights Protection Services"
+          "highlight": "As of 18:00 on October 29, the earthquake had caused 16 deaths, 76 injuries, 67 recoveries and discharges, and 9 hospitalized patients.",
+          "summary": "China News Service reports that the emergency response command for the Tibet Baqen 7.0 earthquake released casualty and treatment figures as of 18:00 on October 29. The disaster area needs 3,299 prefabricated housing units; 3,192 are available, 2,787 have been built, and 1,644 households comprising 9,136 people have moved in, an occupancy rate of 70.4%. A gap of 276 units remains, and the remaining 3,828 people are expected to be housed by October 30, showing both progress and remaining gaps in transitional shelter.",
+          "failureAnalysis": "The verifiable public impact centers on casualty treatment and transitional housing progress: occupancy has reached 70.4%, but a gap of 276 prefabricated housing units remains, and the remaining 3,828 people need to be housed by October 30.",
+          "title": "Tibet Baqen 7.0 Earthquake: Prefabricated Housing Occupancy Exceeds 70%"
         }
       }
     },
     {
-      "id": "news-93959f73c7a14014b399d3dc30c2900a",
+      "id": "news-a525152fb2ce4d7f857bce548d35deb1",
       "category": "international",
-      "title": "Hong Kong’s leader apologises for residential fire that killed 168 people",
+      "title": "Canada and EU announce new alliance open to like-minded countries",
       "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/oct/29/hong-kong-john-lee-apologises-wang-fuk-court-fire-killed-168-people",
-      "publishedAt": "2026-10-29T18:14:21.0000000+00:00",
+      "url": "https://www.theguardian.com/world/2026/oct/30/canada-european-union-alliance",
+      "publishedAt": "2026-10-30T19:42:15.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "香港特首就政府不足导致去年造成168人死亡的火灾道歉，但部分遇难者家属并不买账。",
-      "summary": "文章报道香港特首李家超等官员就政府机构“数十年失误”导致的住宅火灾公开鞠躬道歉；这场火灾造成168人死亡，是1980年以来全球最致命的住宅火灾。报道同时指出，部分幸存者和遇难者家属认为正义尚未得到伸张，道歉未能令他们满意。这则新闻值得关注，因为它呈现了官方罕见公开认错与受害者家属追问责任之间的紧张关系。",
-      "failureAnalysis": "关键启示是：公开道歉可以体现问责姿态；但如果缺乏后续责任追究与制度修正，就难以满足受害者家属对正义的期待。",
+      "highlight": "新伙伴关系名为“未来联盟”，加欧称其可提供“前所未有的稳定与机遇”。",
+      "summary": "加拿大与欧盟在蒙特利尔峰会上公布“未来联盟”，称其既是为民众提供庇护的“保护伞”，也是对地缘政治不确定性的有力对冲，并欢迎其他志同道合国家加入。卡尼与冯德莱恩强调，加拿大与27国集团尽可能深入的合作有望带来前所未有的稳定与机遇。这有助于观察国际政治如何通过结盟来管理不确定性。",
+      "failureAnalysis": "关键点在于，这类联盟的价值更取决于能否把“稳定与机遇”的承诺转化为可执行、可持续的合作机制，而非仅看成员数量。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Blaze was world’s deadliest residential fire since 1980, but some survivors and bereaved families say justice has yet to be served Hong Kong’s leader has apologised for government shortcomings that contributed to a fire that killed 168 people in the city last year, a rare sign of public contrition that nevertheless failed to impress some victims’ families. The chief executive, John Lee, and seven other officials bowed in apology at the release of a report that pointed to “decades of failure” by government bodies.",
+      "sourceExcerpt": "Alliance for the Future, unveiled at Montreal summit and open to other countries, conceived for world ‘shaken by new storms’ Canada and Europe have announced a new alliance of like-minded nations to serve as both a “protective canopy under which our citizens can thrive” and a powerful hedge against the unpredictable nature of geopolitics, while welcoming other countries to join. Speaking to reporters on Friday from Montreal, the prime minister, Mark Carney, and the European Commission president, Ursula von der Leyen, called the new partnership the Alliance for the Future and said the “deepest possible partnership between Canada and the 27-member bloc had the potential to offer unprecedented stability and opportunity”.",
       "translations": {
         "zh": {
-          "title": "香港特首为造成168人死亡的住宅火灾道歉",
-          "highlight": "香港特首就政府不足导致去年造成168人死亡的火灾道歉，但部分遇难者家属并不买账。",
-          "summary": "文章报道香港特首李家超等官员就政府机构“数十年失误”导致的住宅火灾公开鞠躬道歉；这场火灾造成168人死亡，是1980年以来全球最致命的住宅火灾。报道同时指出，部分幸存者和遇难者家属认为正义尚未得到伸张，道歉未能令他们满意。这则新闻值得关注，因为它呈现了官方罕见公开认错与受害者家属追问责任之间的紧张关系。",
-          "failureAnalysis": "关键启示是：公开道歉可以体现问责姿态；但如果缺乏后续责任追究与制度修正，就难以满足受害者家属对正义的期待。"
+          "title": "加拿大与欧盟宣布成立“未来联盟”，向志同道合国家开放",
+          "highlight": "新伙伴关系名为“未来联盟”，加欧称其可提供“前所未有的稳定与机遇”。",
+          "summary": "加拿大与欧盟在蒙特利尔峰会上公布“未来联盟”，称其既是为民众提供庇护的“保护伞”，也是对地缘政治不确定性的有力对冲，并欢迎其他志同道合国家加入。卡尼与冯德莱恩强调，加拿大与27国集团尽可能深入的合作有望带来前所未有的稳定与机遇。这有助于观察国际政治如何通过结盟来管理不确定性。",
+          "failureAnalysis": "关键点在于，这类联盟的价值更取决于能否把“稳定与机遇”的承诺转化为可执行、可持续的合作机制，而非仅看成员数量。"
         },
         "en": {
-          "highlight": "Hong Kong’s leader apologised for government shortcomings that contributed to a fire that killed 168 people last year, but some victims’ families were not impressed.",
-          "summary": "The article reports that Hong Kong Chief Executive John Lee and other officials bowed in apology after a report pointed to “decades of failure” by government bodies behind a residential fire that killed 168 people, the world’s deadliest such fire since 1980. It notes that some survivors and bereaved families say justice has yet to be served and were not satisfied by the apology. It is worth reading for the tension between a rare official apology and victims’ demands for accountability.",
-          "failureAnalysis": "The key takeaway is that a public apology signals accountability, but without follow-up accountability and institutional reform it may not meet victims’ families’ expectations of justice.",
-          "title": "Hong Kong leader apologises for residential fire that killed 168 people"
+          "highlight": "Canada and Europe announced a new alliance of like-minded nations as a 'protective canopy' and a hedge against unpredictable geopolitics.",
+          "summary": "Canada and the EU unveiled the Alliance for the Future at a Montreal summit, describing it as a protective canopy for citizens and a hedge against geopolitical uncertainty, with other like-minded countries invited to join. Mark Carney and Ursula von der Leyen said the deepest possible partnership between Canada and the 27-member bloc could offer unprecedented stability and opportunity. It is worth reading as a signal of how major democracies are organizing around uncertainty.",
+          "failureAnalysis": "The key takeaway is that the value of such an alliance depends less on the number of members than on whether its promise of stability and opportunity becomes a workable, durable cooperation mechanism.",
+          "title": "Canada and EU unveil 'Alliance for the Future' open to like-minded countries"
         }
       }
     },
     {
-      "id": "news-8a801921a6ce47459704c5de6dff3313",
+      "id": "news-1bb70c6cb3d64590b76d66c8ba6be0e1",
       "category": "international",
-      "title": "US interest rates held steady and economy grows - what it means for you",
+      "title": "US tech stocks see sharp falls as AI spending nears $1tn",
       "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/cr15jxzv4w24o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-10-29T17:15:05.0000000+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-10-30T17:47:01.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "美联储的利率决策会影响从房贷到汽车贷款的各项成本。",
-      "summary": "从标题和已知内容看，这篇BBC Business报道围绕美联储维持利率不变、美国经济仍在增长展开，并讨论这对个人财务可能意味着什么。已知信息强调，美联储的利率决策会传导到房贷、车贷等日常借贷成本，因此值得非专业读者关注。",
-      "failureAnalysis": "关键点在于，美联储利率决策不只影响宏观经济，也会通过房贷和车贷等渠道影响普通人的借贷成本；阅读时可重点看利率维持不变与经济增长并存意味着什么。",
+      "highlight": "英特尔股价持续下跌，而以科技股为主的纳斯达克开盘创下两个多月来最低水平。",
+      "summary": "BBC Business 称，美国科技股出现大幅下跌，同时 AI 支出正接近 1 万亿美元。已知内容显示，英特尔股价继续下跌，以科技股为主的纳斯达克开盘创下两个多月来最低水平。对非技术管理者而言，这可作为观察 AI 投资热度与科技股市场情绪的一个信号。",
+      "failureAnalysis": "关键点在于，AI 支出逼近 1 万亿美元之际，美国科技股仍出现明显下跌，市场对高投入的反应值得持续观察。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "The Federal Reserve's interest rate decisions affect everything from mortgages to car loans",
+      "sourceExcerpt": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.",
       "translations": {
         "zh": {
-          "title": "美国利率维持不变、经济仍在增长：这对普通人意味着什么",
-          "highlight": "美联储的利率决策会影响从房贷到汽车贷款的各项成本。",
-          "summary": "从标题和已知内容看，这篇BBC Business报道围绕美联储维持利率不变、美国经济仍在增长展开，并讨论这对个人财务可能意味着什么。已知信息强调，美联储的利率决策会传导到房贷、车贷等日常借贷成本，因此值得非专业读者关注。",
-          "failureAnalysis": "关键点在于，美联储利率决策不只影响宏观经济，也会通过房贷和车贷等渠道影响普通人的借贷成本；阅读时可重点看利率维持不变与经济增长并存意味着什么。"
+          "title": "美国科技股大幅下跌，AI支出接近1万亿美元",
+          "highlight": "英特尔股价持续下跌，而以科技股为主的纳斯达克开盘创下两个多月来最低水平。",
+          "summary": "BBC Business 称，美国科技股出现大幅下跌，同时 AI 支出正接近 1 万亿美元。已知内容显示，英特尔股价继续下跌，以科技股为主的纳斯达克开盘创下两个多月来最低水平。对非技术管理者而言，这可作为观察 AI 投资热度与科技股市场情绪的一个信号。",
+          "failureAnalysis": "关键点在于，AI 支出逼近 1 万亿美元之际，美国科技股仍出现明显下跌，市场对高投入的反应值得持续观察。"
         },
         "en": {
-          "highlight": "The Federal Reserve's interest rate decisions affect everything from mortgages to car loans.",
-          "summary": "This BBC Business report looks at the Federal Reserve holding interest rates steady while the US economy grows, and what that may mean for personal finances. The known detail stresses that Fed rate decisions feed through to everyday borrowing costs such as mortgages and car loans.",
-          "failureAnalysis": "The key takeaway is that Fed rate decisions affect not only the macroeconomy but also ordinary borrowers through mortgages and car loans; readers should focus on what steady rates alongside growth imply.",
-          "title": "US Interest Rates Held Steady as Economy Grows: What It Means for You"
+          "highlight": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.",
+          "summary": "BBC Business reports that US tech stocks have fallen sharply as AI spending approaches $1 trillion. The known excerpt says Intel shares kept falling and the tech-heavy Nasdaq opened at its lowest level in more than two months. It is worth reading as a signal of how AI investment and market sentiment are interacting.",
+          "failureAnalysis": "The key takeaway is that even with AI spending nearing $1 trillion, US tech stocks are falling sharply, so the market reaction to heavy AI investment deserves close attention.",
+          "title": "US tech stocks see sharp falls as AI spending nears $1tn"
         }
       }
     },
     {
-      "id": "life-d3130f93da334eabafa088b57856c23b",
+      "id": "life-9fbce5f420984a29979ca07872845943",
       "category": "international",
-      "title": "Should You Study The Solutions Or Solve Problems?",
-      "source": "Scott H Young",
-      "url": "https://www.scotthyoung.com/blog/2026/10/28/solving-hard-problems/",
-      "publishedAt": "2026-10-28T20:42:05.0000000+00:00",
-      "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 3",
-      "highlight": "哪种学习方法能带来更通用的学习效果，让你在遇到新类型问题时表现更好？",
-      "summary": "文章从一个课堂问题集的场景切入：直接研究答案，还是自己解题，哪种方式更能带来可迁移的学习效果。它强调学习需要努力，但并非所有努力都有助于学习，因此值得读者反思自己的练习方式。",
-      "failureAnalysis": "关键不是是否努力，而是努力是否服务于可迁移的理解；选练习方式时，应优先考虑能否在新问题上表现更好。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "Watch the video of this essay. Learning requires effort. But not all effort is useful for learning.",
-      "translations": {
-        "zh": {
-          "title": "该研究答案，还是自己解题？",
-          "highlight": "哪种学习方法能带来更通用的学习效果，让你在遇到新类型问题时表现更好？",
-          "summary": "文章从一个课堂问题集的场景切入：直接研究答案，还是自己解题，哪种方式更能带来可迁移的学习效果。它强调学习需要努力，但并非所有努力都有助于学习，因此值得读者反思自己的练习方式。",
-          "failureAnalysis": "关键不是是否努力，而是努力是否服务于可迁移的理解；选练习方式时，应优先考虑能否在新问题上表现更好。"
-        },
-        "en": {
-          "highlight": "Which method would result in more general learning, letting you perform better on new types of problems?",
-          "summary": "The essay uses a problem-set scenario to ask whether studying solutions or solving problems leads to more general learning. It emphasizes that learning takes effort, but not all effort is useful, making it worth reading for anyone choosing how to practice.",
-          "failureAnalysis": "The key takeaway is to judge study effort by whether it transfers to new problems, not by effort alone; choose methods that build more general understanding.",
-          "title": "Study Solutions or Solve Problems?"
-        }
-      }
-    },
-    {
-      "id": "life-cf9f3fdb58d042bea586fd6737366a29",
-      "category": "international",
-      "title": "The physics of getting fired",
-      "source": "Aeon",
-      "url": "https://aeon.co/essays/how-to-use-physics-to-make-sense-of-the-messiness-of-life",
-      "publishedAt": "2026-10-29T10:00:00.0000000+00:00",
+      "title": "Why I Celebrate Minor Holidays (And How You Can Use Them to Boost Happiness)",
+      "source": "Gretchen Rubin",
+      "url": "https://gretchenrubin.com/articles/why-i-celebrate-leap-day-other-minor-holidays/",
+      "publishedAt": "2026-10-30T16:11:20.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 1",
-      "highlight": "物理学曾给我秩序感与目标感，但当生活变得混乱时，我意识到它能给出更深层的洞见。",
-      "summary": "作者扎汉·巴马尔谈到，物理学曾给他秩序感与目标感；生活变得混乱后，他发现物理学还能提供更深层的洞见。文章以“被解雇”为入口，讨论科学视角如何帮助人理解现实中的杂乱与失序，适合想借科学思维获得生活启发的人阅读。",
-      "failureAnalysis": "关键要点是：物理学的价值不只在给出秩序，也可能在生活失序时提供重新理解处境的心智框架。",
+      "highlight": "我最喜欢的决心之一——我在《幸福计划》和《在家更快乐》中写过——就是庆祝小型节日。",
+      "summary": "文章从作者的个人决心出发，讲述她如何把“庆祝小型节日”作为提升幸福感的方法，并提到这一习惯最初源于“节日早餐”的想法。它值得一读，因为它提供了一种低成本、可融入日常的生活技能视角。",
+      "failureAnalysis": "关键启发是：可以把小型节日当作可执行的小决心，用仪式感为日常增加期待；这是一种简单的生活方法。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Physics offered me a sense of order and purpose. But when life got messy I realised it had a much deeper insight to give - by Zahaan Bharmal Read on Aeon",
+      "sourceExcerpt": "An earlier version of this article appeared Feb. 29, 2016 One of my favorite resolutions — and I write about it in my books The Happiness Project and Happier at Home — is to celebrate minor holidays. This resolution started as “Celebrate holiday breakfasts,” but over time, I realized that that my real purpose was […] The post Why I Celebrate Minor Holidays (And How You Can Use Them to Boost Happiness) appeared first on Gretchen Rubin .",
       "translations": {
         "zh": {
-          "title": "被解雇的物理学：生活失序时的更深洞见",
-          "highlight": "物理学曾给我秩序感与目标感，但当生活变得混乱时，我意识到它能给出更深层的洞见。",
-          "summary": "作者扎汉·巴马尔谈到，物理学曾给他秩序感与目标感；生活变得混乱后，他发现物理学还能提供更深层的洞见。文章以“被解雇”为入口，讨论科学视角如何帮助人理解现实中的杂乱与失序，适合想借科学思维获得生活启发的人阅读。",
-          "failureAnalysis": "关键要点是：物理学的价值不只在给出秩序，也可能在生活失序时提供重新理解处境的心智框架。"
+          "title": "为什么我庆祝小型节日：用小仪式提升幸福感",
+          "highlight": "我最喜欢的决心之一——我在《幸福计划》和《在家更快乐》中写过——就是庆祝小型节日。",
+          "summary": "文章从作者的个人决心出发，讲述她如何把“庆祝小型节日”作为提升幸福感的方法，并提到这一习惯最初源于“节日早餐”的想法。它值得一读，因为它提供了一种低成本、可融入日常的生活技能视角。",
+          "failureAnalysis": "关键启发是：可以把小型节日当作可执行的小决心，用仪式感为日常增加期待；这是一种简单的生活方法。"
         },
         "en": {
-          "highlight": "Physics offered me a sense of order and purpose. But when life got messy I realised it had a much deeper insight to give.",
-          "summary": "Zahaan Bharmal describes how physics gave him a sense of order and purpose, and how he realised it had a deeper insight to offer when life became messy. The essay uses the idea of getting fired to explore how a scientific perspective can help make sense of life’s disorder, making it worth reading for those seeking practical inspiration from scientific thinking.",
-          "failureAnalysis": "The key takeaway is that physics can offer more than order: when life becomes messy, it may provide a mental framework for reinterpreting one’s situation.",
-          "title": "The Physics of Getting Fired"
+          "highlight": "One of my favorite resolutions—and I write about it in my books The Happiness Project and Happier at Home—is to celebrate minor holidays.",
+          "summary": "The article describes the author's resolution to celebrate minor holidays as a way to boost happiness, noting that the habit began as “Celebrate holiday breakfasts.” It is worth reading for a practical life-skills perspective on adding small rituals to daily life.",
+          "failureAnalysis": "The key takeaway is to treat minor holidays as a small, actionable resolution that adds anticipation to ordinary days; it is a simple life practice.",
+          "title": "Why I Celebrate Minor Holidays: Using Small Rituals to Boost Happiness"
         }
       }
     },
     {
-      "id": "paper-2610.36541",
+      "id": "life-7b369f0d67414e7cac59b0e9257f3c0a",
+      "category": "international",
+      "title": "How To Deal With Life’s Toughest Moments: 5 Secrets From Research",
+      "source": "Barking Up The Wrong Tree",
+      "url": "https://bakadesuyo.com/2026/10/closure/?utm_source=rss&utm_medium=rss&utm_campaign=closure",
+      "publishedAt": "2026-10-26T01:28:03.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "事件已经结束，但你的情绪却拒绝遵从日历；这时所有人都会立刻告诉你，你需要的是“closure”。",
+      "summary": "文章从亲人离世、关系破裂、朋友背叛或某人不作解释地消失等情境切入：事情已经过去，情绪却不按日历推进。周围人常出于好意劝你寻求“closure”，希望你别再痛苦。标题承诺结合研究给出五个应对人生艰难时刻的秘诀，值得关注它如何处理这一常见建议。",
+      "failureAnalysis": "面对重大失去，周围人常把“closure”当作止痛药；更值得思考的是，情绪恢复并不按事件结束的时间表推进。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Or a relationship collapsed. A friend betrayed you, or somebody vanished without explaining why. But your feelings, well, they’re refusing to respect the calendar.",
+      "translations": {
+        "zh": {
+          "title": "如何应对人生最艰难的时刻：来自研究的5个秘诀",
+          "highlight": "事件已经结束，但你的情绪却拒绝遵从日历；这时所有人都会立刻告诉你，你需要的是“closure”。",
+          "summary": "文章从亲人离世、关系破裂、朋友背叛或某人不作解释地消失等情境切入：事情已经过去，情绪却不按日历推进。周围人常出于好意劝你寻求“closure”，希望你别再痛苦。标题承诺结合研究给出五个应对人生艰难时刻的秘诀，值得关注它如何处理这一常见建议。",
+          "failureAnalysis": "面对重大失去，周围人常把“closure”当作止痛药；更值得思考的是，情绪恢复并不按事件结束的时间表推进。"
+        },
+        "en": {
+          "highlight": "The event’s over. But your feelings, well, they’re refusing to respect the calendar.",
+          "summary": "The article opens with situations such as a death, a collapsed relationship, a betrayal, or someone vanishing without explanation: the event is over, but feelings do not follow the calendar. People often rush to prescribe “closure,” meaning well and wanting the pain to stop. The title promises five research-informed secrets for dealing with life’s toughest moments.",
+          "failureAnalysis": "A common takeaway is that “closure” is often offered as a quick remedy, while emotional recovery does not follow the calendar of the event itself.",
+          "title": "How to Deal With Life’s Toughest Moments: 5 Secrets From Research"
+        }
+      }
+    },
+    {
+      "id": "paper-2610.39171",
       "category": "paper",
-      "title": "The geometry of cognition: from neural populations to neurotechnology",
+      "title": "ACAM-J-MARS: Multi-Atlas Riemannian Spectral Representations for Decoding Advanced Meditation States from fMRI",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2610.36541v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2610.36541",
-      "publishedAt": "2026-10-27T02:54:14.0000000Z",
+      "url": "https://arxiv.org/pdf/2610.39171v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.39171",
+      "publishedAt": "2026-10-29T02:00:45.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
       "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
@@ -234,22 +234,21 @@
         "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
         "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
         "technicalTerms": [
-          "EEG：把大脑电信号当作输入数据。",
-          "SNN：模仿神经脉冲时序的神经网络。"
+          "CNN：擅长从信号或图像里提取局部特征的神经网络。"
         ],
         "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
       },
-      "highlight": "论文题目将认知的几何、神经群体与神经技术并列，署名作者为Bayones、Narain和Rossi-Pool。",
-      "summary": "从题名看，论文试图以几何视角连接神经群体研究与神经技术。现有来源仅含题名、作者和机构信息，尚不足以判断其具体论证与贡献。",
-      "failureAnalysis": "来源文本仅含题名、作者与机构，缺少摘要、方法、结果和讨论，无法评估其证据强度或可复现性。阅读或引用时需回到论文全文，当前材料的可核查信息有限。",
+      "highlight": "ACAM-J-MARS通过多图谱黎曼谱表示，从fMRI数据中解码jhana型高阶专注吸收状态。",
+      "summary": "该工作聚焦于从fMRI信号推断jhana型高阶专注吸收状态，并采用多图谱黎曼谱表示构建解码方法。题名与摘要片段显示，其核心是把多图谱与黎曼谱特征结合，用于冥想状态分类。所给文本仅含题名、作者信息和摘要开头，尚不足以判断数据规模、实验设计与性能。",
+      "failureAnalysis": "所给文本仅包含题名、作者与摘要开头，缺少方法细节、对照设置和量化结果，无法评估该解码方法的性能与泛化能力。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "From neural populations to neurotechnology 1 The geometry of cognition: from neural populations to neurotechnology Lucas Bayonesa,*, Devika Narainb,c,* & Román Rossi-Pool a,d,* a Instituto de Fisiología Celular ─ Neurociencias, Universidad Nacional Autónoma de México, 04510 Mexico City, Mexico b Department of Neuroscience, Erasmus MC, Dr. Molewaterplein 40, 3015 GD Rotterdam, The Netherlands c Donders Centre for Neuroscience, Radboud University, Nijmegen, The Netherlands d Centro de Ciencias de la Complejidad, Universidad Nacional Autónoma de México, 04510 Mexico City, Mexico * Corresponding authors. E-mail: lbayones@ifc.unam.mx ; d.narain@erasmusmc.nl ; romar@ifc.unam.mx From neural populations to neurotechnology 2 Abstract Cognition is implemented by distributed neural populations whose collective activity evolves through structured, low-dimensional state spaces.",
+      "sourceExcerpt": "ACAM-J-MARS: MULTI-ATLAS RIEMANNIAN SPECTRAL REPRESENTATIONS FOR DECODING ADV ANCED MEDITATION STATES FROM FMRI Jian Wang1,2, Winson F . Yang1,2, Wugeng Zheng3, Matthew D. Sacchet 1,2 1Meditation Research Program, Psychiatry, MGH and Harvard Medical School, Boston, MA, USA 2Martinos Center for Biomedical Imaging, Radiology, MGH and Harvard Medical School, Boston, MA, USA 3College of Engineering, Northeastern University, Boston, MA, USA ABSTRACT Inferring jhana-type advanced concentration absorption med- itation (ACAM-J) states from fMRI data is challenging due to the spatially distributed nature of meditation-related ef- fects, substantial inter-individual variability that can exceed within-subject state differences, and limited sample sizes.",
       "translations": {
         "zh": {
-          "title": "认知的几何：从神经群体到神经技术",
-          "highlight": "论文题目将认知的几何、神经群体与神经技术并列，署名作者为Bayones、Narain和Rossi-Pool。",
-          "summary": "从题名看，论文试图以几何视角连接神经群体研究与神经技术。现有来源仅含题名、作者和机构信息，尚不足以判断其具体论证与贡献。",
-          "failureAnalysis": "来源文本仅含题名、作者与机构，缺少摘要、方法、结果和讨论，无法评估其证据强度或可复现性。阅读或引用时需回到论文全文，当前材料的可核查信息有限。",
+          "title": "多图谱黎曼谱表示解码高阶冥想状态",
+          "highlight": "ACAM-J-MARS通过多图谱黎曼谱表示，从fMRI数据中解码jhana型高阶专注吸收状态。",
+          "summary": "该工作聚焦于从fMRI信号推断jhana型高阶专注吸收状态，并采用多图谱黎曼谱表示构建解码方法。题名与摘要片段显示，其核心是把多图谱与黎曼谱特征结合，用于冥想状态分类。所给文本仅含题名、作者信息和摘要开头，尚不足以判断数据规模、实验设计与性能。",
+          "failureAnalysis": "所给文本仅包含题名、作者与摘要开头，缺少方法细节、对照设置和量化结果，无法评估该解码方法的性能与泛化能力。",
           "paperCard": {
             "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
             "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
@@ -258,17 +257,16 @@
             "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
             "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。",
-              "SNN：模仿神经脉冲时序的神经网络。"
+              "CNN：擅长从信号或图像里提取局部特征的神经网络。"
             ],
             "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
         },
         "en": {
-          "title": "The geometry of cognition: from neural populations to neurotechnology",
-          "highlight": "The paper's title links the geometry of cognition with neural populations and neurotechnology, and lists Bayones, Narain, and Rossi-Pool as authors.",
-          "summary": "The title indicates a discussion of the geometry of cognition that connects neural populations with neurotechnology. The supplied source, however, provides only the title, authors, and affiliations, without an abstract or results.",
-          "failureAnalysis": "The source text lacks an abstract, methods, results, and discussion, so its evidence strength and reproducibility cannot be assessed. Any citation should rely on the full paper, as the available material supports only limited verification.",
+          "title": "ACAM-J-MARS: Multi-Atlas Riemannian Spectral Representations for Decoding Advanced Meditation States from fMRI",
+          "highlight": "ACAM-J-MARS uses multi-atlas Riemannian spectral representations to decode jhana-type advanced concentration absorption states from fMRI data.",
+          "summary": "The work targets inference of jhana-type advanced concentration absorption states from fMRI signals using multi-atlas Riemannian spectral representations. The supplied text indicates a decoding approach that combines multiple atlases with Riemannian spectral features for meditation-state classification. Only the title, author information, and opening of the abstract are available, so data size, experimental design, and performance cannot be assessed.",
+          "failureAnalysis": "The available evidence stops at the abstract opening, with no method details, controls, or quantitative results, so the decoder’s performance and generalization cannot be evaluated.",
           "paperCard": {
             "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
             "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
@@ -277,8 +275,7 @@
             "implementation": "Implementation: check the input data, core model or device, and validation results.",
             "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。",
-              "SNN：模仿神经脉冲时序的神经网络。"
+              "CNN：擅长从信号或图像里提取局部特征的神经网络。"
             ],
             "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
@@ -286,13 +283,13 @@
       }
     },
     {
-      "id": "ai-feed-9664ebac06f949e3b0a763d5aac5e704",
+      "id": "ai-feed-b67329e6d1ab4b1985257c58cc980aff",
       "category": "ai",
-      "title": "Building a multiplayer game world with autonomous Fable-class models",
-      "source": "Simon Willison",
-      "url": "https://simonwillison.net/2026/Oct/29/how-i-built-the-most-ai-pilled-company-in-the-world/",
+      "title": "Was I wrong about open models & cyber risks?",
+      "source": "Interconnects",
+      "url": "https://www.interconnects.ai/p/was-i-wrong-about-open-models-and",
       "abstractUrl": null,
-      "publishedAt": "2026-10-29T17:00:26.0000000Z",
+      "publishedAt": "2026-10-30T17:36:56.0000000Z",
       "scoreLabel": "Curated engineering feed",
       "aiArticleType": "concept_explanation",
       "evidenceAnchors": [],
@@ -300,24 +297,24 @@
       "hasPrimaryAnchor": false,
       "requiresRiskAnalysis": false,
       "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
-      "summary": "这篇文章是 Jacob Sansbury 讲述他们如何打造 Spawn：一个大型多人在线游戏环境，玩家可用提示让游戏内智能体 Savi 直接改造游戏世界（例如生成城堡、龙并骑龙飞行）。其开发由一群 Fable 驱动的智能体自主完成，每月 token 支出超过 300 万美元（约为人力成本的 30 倍）；约 60% 的工作源自线上错误、Savi 提交的 bug、日志异常或功能请求，一小时内没有发布被视为最高级别的 SEV-0 事故，故障可在 30 秒内精确回滚。作者认为这类极端实验正是探索当今编码智能体能力边界的有价值试验场。",
-      "failureAnalysis": "关键约束在模型选择与工程配套：Jacob 称 Fable 5（及 5.1）才让这种自主程度成为可能，Opus 5.5 尚不够用，而 GPT-6 Astra 在执行安全审查修复时把每个功能都关掉了；同时这种循环依赖极快的发布节奏来让智能体保持连贯。",
+      "summary": "文章围绕作者提出的“黑色十月”概念，讨论一连串关键漏洞披露是否标志着AI模型的网络安全风险开始成为现实。它值得读，因为文章把开放模型与网络风险这一抽象争论，拉回到具体漏洞事件的时间线上重新检视。",
+      "failureAnalysis": "关键 takeaway 是：讨论AI安全风险时，应关注具体漏洞披露与模型开放程度的交汇点，而不是只停留在抽象担忧。",
       "aiSelectionScore": 100,
-      "highlight": "我们的智能体直接修改线上代码，每小时发布到生产环境，因此它们自己读取每一个错误、bug 报告和指标。",
+      "highlight": "在PHP2Shell、GitLab等关键漏洞密集披露后，作者用“黑色十月”指称AI模型网络风险开始显现的时刻。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "How I Built the Most AI-Pilled Company in the World Don't be put off by the clickbait headline, this piece by Jacob Sansbury describing how they are building Spawn is a fascinating exploration of the bleeding edge of what's possible with agentic engineering against frontier models. Spawn is a massively multiplayer gaming environment where players can use prompts (to the in-game agent, Savi) to modify the game world. I fired it up on my phone for a few minutes and was able to prompt a castle into existence, then a dragon, then ride the dragon to fly around that castle.",
+      "sourceExcerpt": "Last week coined the term “Black October“ after an onslaught of critical vulnerability disclosures, including PHP2Shell and GitLab, signified the moment when the cyber risks of AI models started to materialize.",
       "translations": {
         "zh": {
-          "title": "用自主 Fable 级模型构建多人游戏世界",
-          "highlight": "我们的智能体直接修改线上代码，每小时发布到生产环境，因此它们自己读取每一个错误、bug 报告和指标。",
-          "summary": "这篇文章是 Jacob Sansbury 讲述他们如何打造 Spawn：一个大型多人在线游戏环境，玩家可用提示让游戏内智能体 Savi 直接改造游戏世界（例如生成城堡、龙并骑龙飞行）。其开发由一群 Fable 驱动的智能体自主完成，每月 token 支出超过 300 万美元（约为人力成本的 30 倍）；约 60% 的工作源自线上错误、Savi 提交的 bug、日志异常或功能请求，一小时内没有发布被视为最高级别的 SEV-0 事故，故障可在 30 秒内精确回滚。作者认为这类极端实验正是探索当今编码智能体能力边界的有价值试验场。",
-          "failureAnalysis": "关键约束在模型选择与工程配套：Jacob 称 Fable 5（及 5.1）才让这种自主程度成为可能，Opus 5.5 尚不够用，而 GPT-6 Astra 在执行安全审查修复时把每个功能都关掉了；同时这种循环依赖极快的发布节奏来让智能体保持连贯。"
+          "title": "开放模型与网络风险：我错了吗？",
+          "highlight": "在PHP2Shell、GitLab等关键漏洞密集披露后，作者用“黑色十月”指称AI模型网络风险开始显现的时刻。",
+          "summary": "文章围绕作者提出的“黑色十月”概念，讨论一连串关键漏洞披露是否标志着AI模型的网络安全风险开始成为现实。它值得读，因为文章把开放模型与网络风险这一抽象争论，拉回到具体漏洞事件的时间线上重新检视。",
+          "failureAnalysis": "关键 takeaway 是：讨论AI安全风险时，应关注具体漏洞披露与模型开放程度的交汇点，而不是只停留在抽象担忧。"
         },
         "en": {
-          "highlight": "Our agents change the live code directly and ship to production hourly, so they read every error, bug report and metric themselves.",
-          "summary": "Jacob Sansbury describes Spawn, a massively multiplayer gaming environment where players prompt an in-game agent, Savi, to modify the world — the author prompted a castle, a dragon, and rode the dragon around it. Development is largely autonomous: a swarm of Fable-powered agents costs over $3 million in tokens per month, roughly 60% of work starts from a production error, Savi bug report, log anomaly or feature request, and an hour without a ship is treated as a SEV-0 incident with 30-second targeted rollbacks. The author finds this a valuable substrate for probing the limits of today's coding agents.",
-          "failureAnalysis": "Model choice and engineering scaffolding are the binding constraints: Jacob says Fable 5 (then 5.1) made this autonomy possible, Opus 5.5 falls short, and GPT-6 Astra disabled every feature while applying security-review fixes; the loop also depends on shipping faster than an agent's few-hour working memory.",
-          "title": "Building a multiplayer game world with autonomous Fable-class models"
+          "highlight": "The term “Black October” followed an onslaught of critical vulnerability disclosures, including PHP2Shell and GitLab, marking when AI models’ cyber risks began to materialize.",
+          "summary": "The article uses the author’s “Black October” concept to ask whether a wave of critical vulnerability disclosures signals that AI models’ cybersecurity risks are becoming real. It is worth reading because it grounds the abstract debate over open models and cyber risk in a concrete timeline of vulnerability events.",
+          "failureAnalysis": "The key takeaway is to examine where specific vulnerability disclosures and model openness intersect, rather than staying at the level of abstract concern about AI security risk.",
+          "title": "Was I wrong about open models and cyber risks?"
         }
       }
     }
