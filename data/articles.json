@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-10-30",
+  "issueDate": "2026-10-31",
   "updateStatus": "complete",
-  "contentFingerprint": "5910e69a2ebc5f4b47e5389ffb3f804d554b3b6d271a3c0a02cf3a3408592714",
+  "contentFingerprint": "24c2a2a785e83c641c2d65817c2318178d1f0053ce1b85a5d8a974a6e2927506",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,263 +10,263 @@
   ],
   "articles": [
     {
-      "id": "news-f8191f84315248bfaf36c412f37e2c25",
+      "id": "news-198ed2c412f245a6a9aad15423fb6dba",
       "category": "domestic",
-      "title": "外媒关注二十届五中全会：全面从严治党表明中国共产党的政治决心",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/10-31/10723687.shtml",
-      "publishedAt": "2026-10-30T16:01:22.0000000+00:00",
+      "title": "绿色航运加快发展（政策解读）",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/10-31/10724070.shtml",
+      "publishedAt": "2026-10-31T13:05:19.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "多家外媒认为，二十届五中全会是观察中国未来治理体系走向的重要窗口，全面从严治党表明中共政治决心。",
-      "summary": "文章报道中共二十届五中全会于10月26日至29日在北京举行，多家外媒将其视为观察中国未来治理体系走向和长期发展战略的重要窗口。报道称，外媒把全面从严治党视为中国共产党政治决心的体现。这条官方媒体转述的信息价值在于，它提供了外部视角如何解读中国重要政策会议的观察样本。",
-      "failureAnalysis": "这条信息是对外媒观点的汇总转述，未给出全会具体政策条文、数据或外媒原文出处，因此判断时宜回到全会公报等一手文本核对。阅读此类报道时，区分“外媒说了什么”与“会议实际决议了什么”，是更稳妥的读法。",
+      "highlight": "《方案》提出，到2028年，内河新能源船舶保有量较2025年翻倍；到2030年，初步实现新能源船舶规模化应用。",
+      "summary": "文章解读交通运输部等3部门联合印发的《内河新能源船舶推广应用行动方案(2026—2030年)》。方案提出加快全场景应用、加强全链条支撑，明确到2028年内河新能源船舶保有量较2025年翻倍，到2030年初步实现规模化应用，并重点推动内河电动、甲醇动力船舶应用。长江干线、西江航运干线等将逐步形成“两横一纵两网”零碳水路运输通道，值得关注政策对绿色航运的推进节奏。",
+      "failureAnalysis": "这项政策的关键在于把船舶保有量目标、技术路线和零碳通道建设放在同一时间表内，执行效果取决于配套补能设施和全链条支撑能否同步落地。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社北京10月30日电 综合消息：中国共产党第二十届中央委员会第五次全体会议26日至29日在北京举行。多家外媒关注报道，认为这次会议是观察中国未来治理体系走向和长期发展战略的重要窗口，全面从严治党表明中国共产党的政治决心。",
+      "sourceExcerpt": "近日，交通运输部等3部门联合印发的《内河新能源船舶推广应用行动方案(2026—2030年)》(以下简称《方案》)提出，加快全场景应用、加强全链条支撑，到2028年，内河新能源船舶保有量较2025年翻倍；到2030年，初步实现新能源船舶规模化应用。重点推动内河电动、甲醇动力船舶应用。在长江干线、西江航运干线等逐步形成“两横一纵两网”零碳水路运输通道。",
       "translations": {
         "zh": {
-          "title": "外媒关注二十届五中全会：全面从严治党表明中国共产党的政治决心",
-          "highlight": "多家外媒认为，二十届五中全会是观察中国未来治理体系走向的重要窗口，全面从严治党表明中共政治决心。",
-          "summary": "文章报道中共二十届五中全会于10月26日至29日在北京举行，多家外媒将其视为观察中国未来治理体系走向和长期发展战略的重要窗口。报道称，外媒把全面从严治党视为中国共产党政治决心的体现。这条官方媒体转述的信息价值在于，它提供了外部视角如何解读中国重要政策会议的观察样本。",
-          "failureAnalysis": "这条信息是对外媒观点的汇总转述，未给出全会具体政策条文、数据或外媒原文出处，因此判断时宜回到全会公报等一手文本核对。阅读此类报道时，区分“外媒说了什么”与“会议实际决议了什么”，是更稳妥的读法。"
+          "title": "绿色航运加快发展：内河新能源船舶推广方案明确阶段性目标",
+          "highlight": "《方案》提出，到2028年，内河新能源船舶保有量较2025年翻倍；到2030年，初步实现新能源船舶规模化应用。",
+          "summary": "文章解读交通运输部等3部门联合印发的《内河新能源船舶推广应用行动方案(2026—2030年)》。方案提出加快全场景应用、加强全链条支撑，明确到2028年内河新能源船舶保有量较2025年翻倍，到2030年初步实现规模化应用，并重点推动内河电动、甲醇动力船舶应用。长江干线、西江航运干线等将逐步形成“两横一纵两网”零碳水路运输通道，值得关注政策对绿色航运的推进节奏。",
+          "failureAnalysis": "这项政策的关键在于把船舶保有量目标、技术路线和零碳通道建设放在同一时间表内，执行效果取决于配套补能设施和全链条支撑能否同步落地。"
         },
         "en": {
-          "highlight": "Several foreign media outlets see the Fifth Plenum as an important window for observing the direction of China's future governance system and long-term development strategy.",
-          "summary": "The article reports that the Fifth Plenum of the 20th CPC Central Committee was held in Beijing from October 26 to 29, and that several foreign media outlets view it as an important window for observing the direction of China's future governance system and long-term development strategy. Those outlets read the emphasis on full strict Party governance as a sign of the CPC's political resolve. Its value lies in offering a sample of how outside observers interpret a major Chinese policy meeting.",
-          "failureAnalysis": "This is a summary of foreign media commentary, without specific policy texts, data, or citations to the original reports, so readers should check the plenum communique itself. Distinguishing what foreign media said from what the meeting actually decided is the safer reading habit.",
-          "title": "Foreign Media Focus on the 20th CPC Central Committee's Fifth Plenum: Full Strict Party Governance Shows the CPC's Political Resolve"
+          "highlight": "By 2028, the number of inland new-energy vessels is to double from 2025, and by 2030, large-scale application is to be initially achieved.",
+          "summary": "The article interprets a joint action plan issued by the Ministry of Transport and two other departments for promoting new-energy vessels on inland waterways from 2026 to 2030. The plan calls for broader scenario application and full-chain support, with targets to double the inland new-energy vessel fleet by 2028 versus 2025 and to initially achieve large-scale application by 2030, focusing on electric and methanol-powered vessels. It also envisions zero-carbon waterway corridors along the Yangtze River mainline and Xijiang shipping mainline, making the policy pace worth watching.",
+          "failureAnalysis": "The key takeaway is that fleet targets, technology routes, and zero-carbon corridor construction are placed on the same timetable; implementation will depend on whether supporting refueling and charging infrastructure and full-chain support keep pace.",
+          "title": "Green Shipping Accelerates: Inland New-Energy Vessel Targets Set"
         }
       }
     },
     {
-      "id": "news-e5395ff1771048c98c141076c81d6f98",
+      "id": "news-e67ed936c39a4e5eba7a6588bf90eff6",
       "category": "domestic",
-      "title": "三部门增加调拨1000套中央救灾物资板房 保障西藏受灾群众安全温暖过冬",
+      "title": "四川华蓥大摆荡项目事故调查报告公布",
       "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-30/10723655.shtml",
-      "publishedAt": "2026-10-30T13:53:02.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-31/10724049.shtml",
+      "publishedAt": "2026-10-31T12:36:57.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "三部门会同国家粮食和物资储备局向西藏增加调拨1000套救灾板房，组织各方高效有序搭建，支持灾区过渡期安置。",
-      "summary": "据应急管理部网站消息，10月30日，针对西藏巴青县地震灾区降雪影响，三部门在前期调拨救灾物资、协调救灾板房基础上，增加调拨1000套救灾板房。文章说明，这批物资将用于组织各方高效有序搭建，支持受灾群众过渡期安置和冬春生活保障，体现了官方应急救助的持续推进。",
-      "failureAnalysis": "这条新闻的重点是可核验的应急物资增拨与安置保障，不宜强行套用项目失败分析；可关注物资数量、搭建组织和越冬保障是否真正落地。",
+      "highlight": "调查认定，事故因企业安全生产主体责任悬空、管理缺位，违规安排未经培训合格人员上岗，属地监管不到位所致。",
+      "summary": "中国新闻网社会频道报道，华蓥市人民政府事故调查组公布了溪口玛琉岩大摆荡项目“5·3”一般高处坠落事故调查报告。报告认定这是一般生产安全责任事故，原因涉及企业安全生产主体责任悬空、管理缺位、未有效辨识管控安全风险、违规安排未经安全生产教育和培训合格人员上岗，以及属地政府及监管部门监督检查存在漏洞。该报道的价值在于公开呈现官方调查结论和责任链条，便于公众了解高风险游乐项目运营与监管中的问责信息。",
+      "failureAnalysis": "关键约束是高风险游乐项目不能只靠事后调查，运营方必须落实安全生产主体责任、人员培训和风险管控，属地监管也需补上监督检查漏洞。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网10月30日电 据应急管理部网站消息，10月30日，国家防灾减灾救灾委员会办公室、应急管理部针对西藏巴青县地震灾区降雪影响，在前期已向西藏调拨中央救灾物资，协调救灾板房基础上，会同国家粮食和物资储备局向西藏增加调拨1000套救灾板房，组织各方高效有序搭建，支持灾区妥善做好受灾群众过渡期安置和冬春生活保障工作。",
+      "sourceExcerpt": "记者获悉，华蓥市人民政府事故调查组发布了华蓥市溪口玛琉岩大摆荡项目“5·3”一般高处坠落事故调查报告。经调查认定，该事故是一起因项目运营企业安全生产主体责任悬空、管理缺位，未有效辨识管控安全风险，违规安排未经安全生产教育和培训合格人员上岗，属地政府及监管部门安全监管不到位、监督检查存在漏洞而导致的一般生产安全责任事故。",
       "translations": {
         "zh": {
-          "title": "三部门向西藏地震灾区增加调拨1000套救灾板房",
-          "highlight": "三部门会同国家粮食和物资储备局向西藏增加调拨1000套救灾板房，组织各方高效有序搭建，支持灾区过渡期安置。",
-          "summary": "据应急管理部网站消息，10月30日，针对西藏巴青县地震灾区降雪影响，三部门在前期调拨救灾物资、协调救灾板房基础上，增加调拨1000套救灾板房。文章说明，这批物资将用于组织各方高效有序搭建，支持受灾群众过渡期安置和冬春生活保障，体现了官方应急救助的持续推进。",
-          "failureAnalysis": "这条新闻的重点是可核验的应急物资增拨与安置保障，不宜强行套用项目失败分析；可关注物资数量、搭建组织和越冬保障是否真正落地。"
+          "title": "四川华蓥大摆荡项目事故调查报告公布",
+          "highlight": "调查认定，事故因企业安全生产主体责任悬空、管理缺位，违规安排未经培训合格人员上岗，属地监管不到位所致。",
+          "summary": "中国新闻网社会频道报道，华蓥市人民政府事故调查组公布了溪口玛琉岩大摆荡项目“5·3”一般高处坠落事故调查报告。报告认定这是一般生产安全责任事故，原因涉及企业安全生产主体责任悬空、管理缺位、未有效辨识管控安全风险、违规安排未经安全生产教育和培训合格人员上岗，以及属地政府及监管部门监督检查存在漏洞。该报道的价值在于公开呈现官方调查结论和责任链条，便于公众了解高风险游乐项目运营与监管中的问责信息。",
+          "failureAnalysis": "关键约束是高风险游乐项目不能只靠事后调查，运营方必须落实安全生产主体责任、人员培训和风险管控，属地监管也需补上监督检查漏洞。"
         },
         "en": {
-          "highlight": "Three departments, together with the National Food and Strategic Reserves Administration, added 1,000 prefabricated relief housing units for Tibet and organized efficient, orderly installation to support transitional resettlement.",
-          "summary": "According to the Ministry of Emergency Management website, on October 30, in response to snowfall affecting the earthquake-hit area of Baqing County in Tibet, three departments added 1,000 prefabricated relief housing units after earlier allocations of relief supplies and coordination of housing. The units are to be installed in an efficient and orderly way to support transitional resettlement and winter-spring living assistance for affected residents.",
-          "failureAnalysis": "The key point is verifiable emergency supply allocation and resettlement support, not a forced failure analysis; attention should go to whether the quantity, installation, and winter protection are delivered on the ground.",
-          "title": "Three departments add 1,000 prefabricated relief housing units for Tibet quake area"
+          "highlight": "The investigation found the accident was caused by the operator's unfulfilled safety responsibilities, management gaps, use of untrained personnel, and inadequate local supervision.",
+          "summary": "China News Service's society channel reports that the Huaying City government accident investigation team released a report on the May 3 general fall accident at the Xikou Maliuyan giant swing project. The report identifies it as a general production safety responsibility accident involving unfulfilled corporate safety responsibilities, management gaps, failure to effectively identify and control risks, use of personnel without required safety training, and inadequate local government and regulatory supervision. The report is worth reading because it publicly sets out the official findings and the chain of accountability for a high-risk amusement project.",
+          "failureAnalysis": "The key constraint is that high-risk amusement projects cannot rely on after-the-fact investigation alone: operators must implement safety responsibilities, personnel training, and risk controls, while local regulators must close supervision gaps.",
+          "title": "Investigation Report Released on Sichuan Huaying Giant Swing Accident"
         }
       }
     },
     {
-      "id": "news-e4cf36f940df4eda9099c223753ebd9f",
+      "id": "news-855e40945182410985464bfb4b9e4022",
       "category": "domestic",
-      "title": "西藏巴青7.0级地震：受灾民众板房入住率超七成",
+      "title": "地震灾区降雪又降温！西藏巴青消防连夜清雪除冰、入户排险",
       "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-30/10723638.shtml",
-      "publishedAt": "2026-10-30T13:39:44.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/sh/2026/10-31/10724081.shtml",
+      "publishedAt": "2026-10-31T13:17:05.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 4",
-      "highlight": "截至10月29日18时，地震灾害造成死亡16人、受伤76人、已康复出院67人、在院患者9人。",
-      "summary": "中国新闻网报道，西藏巴青7.0级地震灾害应急处置指挥部公布截至10月29日18时的伤亡与救治数据。灾区板房需求3299间，现有3192间、已搭建2787间，已入住民众1644户、9136人，入住率70.4%。板房仍有276间缺口，剩余3828人预计10月30日全部入住，文章呈现了震后过渡安置的进度与缺口。",
-      "failureAnalysis": "可核验的公共影响集中在伤亡救治和过渡安置进度：入住率已达70.4%，但仍有276间板房缺口，剩余3828人安置需在10月30日完成。",
+      "highlight": "昨天(30日)晚上，西藏巴青县地震灾区出现降雪过程，本轮降雪将持续到明天(11月1日)，降雪给安置点受灾群众的生活造成一定影响。",
+      "summary": "内容显示，10月30日晚西藏巴青县地震灾区出现降雪，预计持续至11月1日，安置点受灾群众生活受到一定影响。当地消防救援人员开展积雪清扫、取暖安全排查和入户排险，以应对降雪降温带来的现实困难。这条消息值得关注的是灾后低温天气下基层应急保障的具体动作。",
+      "failureAnalysis": "可核验的公共影响是降雪降温直接扰动安置点生活，应急重点落在清雪除冰与取暖安全排查。此类报道的关键约束在于降雪持续时间及安置点基本保障能力。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网拉萨10月30日电(记者 江飞波)西藏自治区巴青7.0级地震灾害应急处置指挥部(以下简称指挥部)30日公布，截至10月29日18时，地震灾害造成死亡16人、受伤76人、已康复出院67人、在院患者9人。灾区板房需求3299间，现有3192间、已搭建2787间，已入住民众1644户、9136人，入住率70.4%，板房缺口276间(未到位107间、损坏169间)，剩余3828人预计10月30日全部入住。",
+      "sourceExcerpt": "昨天(30日)晚上，西藏巴青县地震灾区出现降雪过程，本轮降雪将持续到明天(11月1日)，降雪给安置点受灾群众的生活造成一定影响。面对降雪，当地消防救援人员积极开展积雪清扫、取暖安全排查等工作。",
       "translations": {
         "zh": {
-          "title": "西藏巴青7.0级地震：板房入住率超七成",
-          "highlight": "截至10月29日18时，地震灾害造成死亡16人、受伤76人、已康复出院67人、在院患者9人。",
-          "summary": "中国新闻网报道，西藏巴青7.0级地震灾害应急处置指挥部公布截至10月29日18时的伤亡与救治数据。灾区板房需求3299间，现有3192间、已搭建2787间，已入住民众1644户、9136人，入住率70.4%。板房仍有276间缺口，剩余3828人预计10月30日全部入住，文章呈现了震后过渡安置的进度与缺口。",
-          "failureAnalysis": "可核验的公共影响集中在伤亡救治和过渡安置进度：入住率已达70.4%，但仍有276间板房缺口，剩余3828人安置需在10月30日完成。"
+          "title": "西藏巴青地震灾区降雪降温，消防连夜清雪除冰、入户排险",
+          "highlight": "昨天(30日)晚上，西藏巴青县地震灾区出现降雪过程，本轮降雪将持续到明天(11月1日)，降雪给安置点受灾群众的生活造成一定影响。",
+          "summary": "内容显示，10月30日晚西藏巴青县地震灾区出现降雪，预计持续至11月1日，安置点受灾群众生活受到一定影响。当地消防救援人员开展积雪清扫、取暖安全排查和入户排险，以应对降雪降温带来的现实困难。这条消息值得关注的是灾后低温天气下基层应急保障的具体动作。",
+          "failureAnalysis": "可核验的公共影响是降雪降温直接扰动安置点生活，应急重点落在清雪除冰与取暖安全排查。此类报道的关键约束在于降雪持续时间及安置点基本保障能力。"
         },
         "en": {
-          "highlight": "As of 18:00 on October 29, the earthquake had caused 16 deaths, 76 injuries, 67 recoveries and discharges, and 9 hospitalized patients.",
-          "summary": "China News Service reports that the emergency response command for the Tibet Baqen 7.0 earthquake released casualty and treatment figures as of 18:00 on October 29. The disaster area needs 3,299 prefabricated housing units; 3,192 are available, 2,787 have been built, and 1,644 households comprising 9,136 people have moved in, an occupancy rate of 70.4%. A gap of 276 units remains, and the remaining 3,828 people are expected to be housed by October 30, showing both progress and remaining gaps in transitional shelter.",
-          "failureAnalysis": "The verifiable public impact centers on casualty treatment and transitional housing progress: occupancy has reached 70.4%, but a gap of 276 prefabricated housing units remains, and the remaining 3,828 people need to be housed by October 30.",
-          "title": "Tibet Baqen 7.0 Earthquake: Prefabricated Housing Occupancy Exceeds 70%"
+          "highlight": "On the evening of Oct. 30, snowfall hit the earthquake-affected area of Baqing County in Tibet and was expected to last until Nov. 1, affecting residents at resettlement sites.",
+          "summary": "The report says the earthquake-affected area of Baqing County in Tibet saw snowfall starting on the evening of Oct. 30, expected to continue through Nov. 1, with some impact on people living at resettlement sites. Local firefighters cleared snow, checked heating safety, and conducted household risk inspections to address the practical difficulties caused by the cold and snow. It is worth reading for a concrete look at local emergency support in post-earthquake cold weather.",
+          "failureAnalysis": "The verifiable public impact is that snow and colder weather directly disrupt life at resettlement sites, making snow clearance and heating-safety checks immediate priorities. The practical constraint is how long the snowfall lasts and how well temporary sites can maintain basic services.",
+          "title": "Snow and Cold Hit Tibet’s Baqing Earthquake Zone as Firefighters Clear Snow and Check Heating Safety"
         }
       }
     },
     {
-      "id": "news-a525152fb2ce4d7f857bce548d35deb1",
+      "id": "news-99396647c9d74cbd8f46c992b9f00fe5",
       "category": "international",
-      "title": "Canada and EU announce new alliance open to like-minded countries",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/oct/30/canada-european-union-alliance",
-      "publishedAt": "2026-10-30T19:42:15.0000000+00:00",
+      "title": "Anti-corruption and party discipline: takeaways from from this week's key political meeting in Beijing",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6024695/political-meeting-beijing-takeaways",
+      "publishedAt": "2026-10-31T18:42:33.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "新伙伴关系名为“未来联盟”，加欧称其可提供“前所未有的稳定与机遇”。",
-      "summary": "加拿大与欧盟在蒙特利尔峰会上公布“未来联盟”，称其既是为民众提供庇护的“保护伞”，也是对地缘政治不确定性的有力对冲，并欢迎其他志同道合国家加入。卡尼与冯德莱恩强调，加拿大与27国集团尽可能深入的合作有望带来前所未有的稳定与机遇。这有助于观察国际政治如何通过结盟来管理不确定性。",
-      "failureAnalysis": "关键点在于，这类联盟的价值更取决于能否把“稳定与机遇”的承诺转化为可执行、可持续的合作机制，而非仅看成员数量。",
+      "highlight": "中共中中央委员会会议聚焦纪律与反腐，正值外界普遍预计习近平明年寻求第四个任期之际。",
+      "summary": "美国国家公共电台报道，本周北京召开的关键政治会议以党的纪律和反腐败为重点。报道指出，会议时点在前方，外界普遍预计习近平明年将争取第四个任期。阅读这条简讯有助于把握中国高层政治议程与人事预期的交集。",
+      "failureAnalysis": "关键看点是会议主题与时间背景：反腐党纪是明确议题，第四个任期预期则是外界观察窗口，阅读时应区分已确认信息与预期判断。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Alliance for the Future, unveiled at Montreal summit and open to other countries, conceived for world ‘shaken by new storms’ Canada and Europe have announced a new alliance of like-minded nations to serve as both a “protective canopy under which our citizens can thrive” and a powerful hedge against the unpredictable nature of geopolitics, while welcoming other countries to join. Speaking to reporters on Friday from Montreal, the prime minister, Mark Carney, and the European Commission president, Ursula von der Leyen, called the new partnership the Alliance for the Future and said the “deepest possible partnership between Canada and the 27-member bloc had the potential to offer unprecedented stability and opportunity”.",
+      "sourceExcerpt": "The Communist party central committee meeting was focused on discipline and fighting corruption. It comes ahead of next year when Xi is widely expected to try to secure a fourth term.",
       "translations": {
         "zh": {
-          "title": "加拿大与欧盟宣布成立“未来联盟”，向志同道合国家开放",
-          "highlight": "新伙伴关系名为“未来联盟”，加欧称其可提供“前所未有的稳定与机遇”。",
-          "summary": "加拿大与欧盟在蒙特利尔峰会上公布“未来联盟”，称其既是为民众提供庇护的“保护伞”，也是对地缘政治不确定性的有力对冲，并欢迎其他志同道合国家加入。卡尼与冯德莱恩强调，加拿大与27国集团尽可能深入的合作有望带来前所未有的稳定与机遇。这有助于观察国际政治如何通过结盟来管理不确定性。",
-          "failureAnalysis": "关键点在于，这类联盟的价值更取决于能否把“稳定与机遇”的承诺转化为可执行、可持续的合作机制，而非仅看成员数量。"
+          "title": "北京关键政治会议聚焦反腐与党纪，外界关注习近平第四任期预期",
+          "highlight": "中共中中央委员会会议聚焦纪律与反腐，正值外界普遍预计习近平明年寻求第四个任期之际。",
+          "summary": "美国国家公共电台报道，本周北京召开的关键政治会议以党的纪律和反腐败为重点。报道指出，会议时点在前方，外界普遍预计习近平明年将争取第四个任期。阅读这条简讯有助于把握中国高层政治议程与人事预期的交集。",
+          "failureAnalysis": "关键看点是会议主题与时间背景：反腐党纪是明确议题，第四个任期预期则是外界观察窗口，阅读时应区分已确认信息与预期判断。"
         },
         "en": {
-          "highlight": "Canada and Europe announced a new alliance of like-minded nations as a 'protective canopy' and a hedge against unpredictable geopolitics.",
-          "summary": "Canada and the EU unveiled the Alliance for the Future at a Montreal summit, describing it as a protective canopy for citizens and a hedge against geopolitical uncertainty, with other like-minded countries invited to join. Mark Carney and Ursula von der Leyen said the deepest possible partnership between Canada and the 27-member bloc could offer unprecedented stability and opportunity. It is worth reading as a signal of how major democracies are organizing around uncertainty.",
-          "failureAnalysis": "The key takeaway is that the value of such an alliance depends less on the number of members than on whether its promise of stability and opportunity becomes a workable, durable cooperation mechanism.",
-          "title": "Canada and EU unveil 'Alliance for the Future' open to like-minded countries"
+          "highlight": "The Communist Party central committee meeting focused on discipline and fighting corruption, ahead of next year when Xi is widely expected to try to secure a fourth term.",
+          "summary": "NPR reports that this week's key political meeting in Beijing centered on party discipline and anti-corruption. The meeting comes ahead of next year, when Xi is widely expected to seek a fourth term. The item is worth reading for the intersection of China's high-level political agenda and leadership-term expectations.",
+          "failureAnalysis": "The key takeaway is the timing and framing: anti-corruption and discipline are the stated focus, while the fourth-term expectation is the background signal, so readers should distinguish confirmed facts from expectations.",
+          "title": "Beijing Political Meeting Focuses on Anti-Corruption and Party Discipline as Xi's Fourth-Term Expectations Loom"
         }
       }
     },
     {
-      "id": "news-1bb70c6cb3d64590b76d66c8ba6be0e1",
+      "id": "news-70de4602229b4ea2a6bc21ba7cfdbd76",
       "category": "international",
-      "title": "US tech stocks see sharp falls as AI spending nears $1tn",
-      "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/cvwy72e0n72yo?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-10-30T17:47:01.0000000+00:00",
+      "title": "How crypto hacking funds isolated North Korea’s nuclear programme",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/oct/30/how-crypto-hacking-funds-isolated-north-korea-nuclear-programme",
+      "publishedAt": "2026-10-30T17:37:46.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "英特尔股价持续下跌，而以科技股为主的纳斯达克开盘创下两个多月来最低水平。",
-      "summary": "BBC Business 称，美国科技股出现大幅下跌，同时 AI 支出正接近 1 万亿美元。已知内容显示，英特尔股价继续下跌，以科技股为主的纳斯达克开盘创下两个多月来最低水平。对非技术管理者而言，这可作为观察 AI 投资热度与科技股市场情绪的一个信号。",
-      "failureAnalysis": "关键点在于，AI 支出逼近 1 万亿美元之际，美国科技股仍出现明显下跌，市场对高投入的反应值得持续观察。",
+      "highlight": "据估计，加密货币盗窃为朝鲜带来了其外汇收入的一半。",
+      "summary": "文章称，朝鲜虽基本被排除在全球经济体系之外，却依靠高水平黑客手段窃取加密货币来获取外汇；这类盗窃估计占其外汇收入的一半。卫报提到，专家将币安63亿美元失窃归因于朝鲜黑客组织TraderTraitor（又称Lazarus Group）；尽管这一联系尚未证实，但行为模式并不陌生。值得读，因为它把网络犯罪与国家核计划融资联系了起来。",
+      "failureAnalysis": "关键不在于单次归因是否已坐实，而在于一种可复用的模式：封闭国家可通过加密资产盗窃，把网络犯罪转化为外汇和战略资金。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.",
+      "sourceExcerpt": "Cryptocurrency theft is estimated to generate half of the country’s foreign currency income North Korea plays by its own rules. The isolated, secretive and autocratic country is largely cut off from the world’s economic system – but when it comes to generating foreign earnings it relies on some of the world’s most sophisticated hacking. Experts, such as TRM Labs, quickly attributed the extraordinary $6.3bn (£4.7bn) Binance cryptocurrency theft to TraderTraitor, an elite North Korean hacking unit that has also been known as the Lazarus Group.",
       "translations": {
         "zh": {
-          "title": "美国科技股大幅下跌，AI支出接近1万亿美元",
-          "highlight": "英特尔股价持续下跌，而以科技股为主的纳斯达克开盘创下两个多月来最低水平。",
-          "summary": "BBC Business 称，美国科技股出现大幅下跌，同时 AI 支出正接近 1 万亿美元。已知内容显示，英特尔股价继续下跌，以科技股为主的纳斯达克开盘创下两个多月来最低水平。对非技术管理者而言，这可作为观察 AI 投资热度与科技股市场情绪的一个信号。",
-          "failureAnalysis": "关键点在于，AI 支出逼近 1 万亿美元之际，美国科技股仍出现明显下跌，市场对高投入的反应值得持续观察。"
+          "title": "加密黑客如何为孤立的朝鲜核计划提供资金",
+          "highlight": "据估计，加密货币盗窃为朝鲜带来了其外汇收入的一半。",
+          "summary": "文章称，朝鲜虽基本被排除在全球经济体系之外，却依靠高水平黑客手段窃取加密货币来获取外汇；这类盗窃估计占其外汇收入的一半。卫报提到，专家将币安63亿美元失窃归因于朝鲜黑客组织TraderTraitor（又称Lazarus Group）；尽管这一联系尚未证实，但行为模式并不陌生。值得读，因为它把网络犯罪与国家核计划融资联系了起来。",
+          "failureAnalysis": "关键不在于单次归因是否已坐实，而在于一种可复用的模式：封闭国家可通过加密资产盗窃，把网络犯罪转化为外汇和战略资金。"
         },
         "en": {
-          "highlight": "Shares in Intel continue to fall while the tech-heavy Nasdaq opens at its lowest level in more than two months.",
-          "summary": "BBC Business reports that US tech stocks have fallen sharply as AI spending approaches $1 trillion. The known excerpt says Intel shares kept falling and the tech-heavy Nasdaq opened at its lowest level in more than two months. It is worth reading as a signal of how AI investment and market sentiment are interacting.",
-          "failureAnalysis": "The key takeaway is that even with AI spending nearing $1 trillion, US tech stocks are falling sharply, so the market reaction to heavy AI investment deserves close attention.",
-          "title": "US tech stocks see sharp falls as AI spending nears $1tn"
+          "highlight": "Cryptocurrency theft is estimated to generate half of the country’s foreign currency income.",
+          "summary": "The article says North Korea, largely cut off from the global economic system, relies on sophisticated hacking to earn foreign currency, with crypto theft estimated to provide half of that income. The Guardian notes that experts attributed the $6.3bn Binance theft to TraderTraitor, also known as the Lazarus Group; the link may not be proven, but the pattern is familiar. It is worth reading because it connects cybercrime to financing a national nuclear programme.",
+          "failureAnalysis": "The key takeaway is not whether a single attribution is proven, but the repeatable pattern: an isolated state can turn crypto theft into foreign exchange and strategic funding.",
+          "title": "How crypto hacking funds isolated North Korea’s nuclear programme"
         }
       }
     },
     {
-      "id": "life-9fbce5f420984a29979ca07872845943",
+      "id": "life-b6a7064ae30641d0a9a5064f4a37f8b0",
       "category": "international",
-      "title": "Why I Celebrate Minor Holidays (And How You Can Use Them to Boost Happiness)",
-      "source": "Gretchen Rubin",
-      "url": "https://gretchenrubin.com/articles/why-i-celebrate-leap-day-other-minor-holidays/",
-      "publishedAt": "2026-10-30T16:11:20.0000000+00:00",
+      "title": "Sleep Inertia Remedy: What Actually Clears the Morning Fog",
+      "source": "Lifehack.org",
+      "url": "https://www.lifehack.org/991547/sleep-inertia-remedy",
+      "publishedAt": "2026-10-31T00:00:00.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 1",
-      "highlight": "我最喜欢的决心之一——我在《幸福计划》和《在家更快乐》中写过——就是庆祝小型节日。",
-      "summary": "文章从作者的个人决心出发，讲述她如何把“庆祝小型节日”作为提升幸福感的方法，并提到这一习惯最初源于“节日早餐”的想法。它值得一读，因为它提供了一种低成本、可融入日常的生活技能视角。",
-      "failureAnalysis": "关键启发是：可以把小型节日当作可执行的小决心，用仪式感为日常增加期待；这是一种简单的生活方法。",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "睡眠惰性大多在闹钟响起前就已决定；我们按证据为睡眠机会、闹钟时机、咖啡因滞后、光照和炒作排序。",
+      "summary": "核心观点是睡眠惰性大多在闹钟响前已经决定，因此补救措施应按证据强弱排序。文章比较睡眠机会、闹钟时机、咖啡因滞后和光照等做法，并提醒区分被炒作的项目。想改善早晨清醒状态的人，可据此优先选择更有依据的干预。",
+      "failureAnalysis": "关键要点是：先保证睡眠机会和闹钟时机，再考虑咖啡因与光照，别被缺乏证据的噱头带偏。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "An earlier version of this article appeared Feb. 29, 2016 One of my favorite resolutions — and I write about it in my books The Happiness Project and Happier at Home — is to celebrate minor holidays. This resolution started as “Celebrate holiday breakfasts,” but over time, I realized that that my real purpose was […] The post Why I Celebrate Minor Holidays (And How You Can Use Them to Boost Happiness) appeared first on Gretchen Rubin .",
+      "sourceExcerpt": "Sleep inertia is mostly decided before your alarm. We rank the remedies by evidence: sleep opportunity, alarm timing, caffeine lag, light, and the hype.",
       "translations": {
         "zh": {
-          "title": "为什么我庆祝小型节日：用小仪式提升幸福感",
-          "highlight": "我最喜欢的决心之一——我在《幸福计划》和《在家更快乐》中写过——就是庆祝小型节日。",
-          "summary": "文章从作者的个人决心出发，讲述她如何把“庆祝小型节日”作为提升幸福感的方法，并提到这一习惯最初源于“节日早餐”的想法。它值得一读，因为它提供了一种低成本、可融入日常的生活技能视角。",
-          "failureAnalysis": "关键启发是：可以把小型节日当作可执行的小决心，用仪式感为日常增加期待；这是一种简单的生活方法。"
+          "title": "睡眠惰性补救：真正驱散晨雾的是什么",
+          "highlight": "睡眠惰性大多在闹钟响起前就已决定；我们按证据为睡眠机会、闹钟时机、咖啡因滞后、光照和炒作排序。",
+          "summary": "核心观点是睡眠惰性大多在闹钟响前已经决定，因此补救措施应按证据强弱排序。文章比较睡眠机会、闹钟时机、咖啡因滞后和光照等做法，并提醒区分被炒作的项目。想改善早晨清醒状态的人，可据此优先选择更有依据的干预。",
+          "failureAnalysis": "关键要点是：先保证睡眠机会和闹钟时机，再考虑咖啡因与光照，别被缺乏证据的噱头带偏。"
         },
         "en": {
-          "highlight": "One of my favorite resolutions—and I write about it in my books The Happiness Project and Happier at Home—is to celebrate minor holidays.",
-          "summary": "The article describes the author's resolution to celebrate minor holidays as a way to boost happiness, noting that the habit began as “Celebrate holiday breakfasts.” It is worth reading for a practical life-skills perspective on adding small rituals to daily life.",
-          "failureAnalysis": "The key takeaway is to treat minor holidays as a small, actionable resolution that adds anticipation to ordinary days; it is a simple life practice.",
-          "title": "Why I Celebrate Minor Holidays: Using Small Rituals to Boost Happiness"
+          "highlight": "Sleep inertia is mostly decided before your alarm, so remedies should be ranked by evidence: sleep opportunity, alarm timing, caffeine lag, light, and the hype.",
+          "summary": "The article explains that sleep inertia is largely set before the alarm goes off. It ranks possible remedies—sleep opportunity, alarm timing, caffeine lag, and light—by evidence, while flagging hype. It is worth reading for a practical, evidence-first way to think about morning grogginess.",
+          "failureAnalysis": "Key takeaway: prioritize sleep opportunity and alarm timing before caffeine or light, and be wary of remedies that lack evidence.",
+          "title": "Sleep Inertia Remedy: What Actually Clears the Morning Fog"
         }
       }
     },
     {
-      "id": "life-7b369f0d67414e7cac59b0e9257f3c0a",
+      "id": "life-139e822d348e4ef7a3e1786de782e86d",
       "category": "international",
-      "title": "How To Deal With Life’s Toughest Moments: 5 Secrets From Research",
-      "source": "Barking Up The Wrong Tree",
-      "url": "https://bakadesuyo.com/2026/10/closure/?utm_source=rss&utm_medium=rss&utm_campaign=closure",
-      "publishedAt": "2026-10-26T01:28:03.0000000+00:00",
+      "title": "Meteor of Joy: The Young People’s Chorus of New York City Sings Bird Divinations",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/10/31/meteor-of-joy-paola-prestini/",
+      "publishedAt": "2026-10-31T18:01:08.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 1",
-      "highlight": "事件已经结束，但你的情绪却拒绝遵从日历；这时所有人都会立刻告诉你，你需要的是“closure”。",
-      "summary": "文章从亲人离世、关系破裂、朋友背叛或某人不作解释地消失等情境切入：事情已经过去，情绪却不按日历推进。周围人常出于好意劝你寻求“closure”，希望你别再痛苦。标题承诺结合研究给出五个应对人生艰难时刻的秘诀，值得关注它如何处理这一常见建议。",
-      "failureAnalysis": "面对重大失去，周围人常把“closure”当作止痛药；更值得思考的是，情绪恢复并不按事件结束的时间表推进。",
+      "selectionReason": "Life-skills match score: 2",
+      "highlight": "孩子们知晓生命最深的真理，那是我们在生活过程中逐渐遗忘的原初知识。",
+      "summary": "为纪念《Marginalian》二十周年，作曲家保拉·普雷斯蒂尼创作了六首作品，由纽约市青年合唱团演唱《鸟的占卜》。文章借孩子歌唱心中秘密智慧，谈论音乐如何唤起我们遗忘的原初知识，并让人更真切地感受生命。它值得读，因为把合唱、诗意与对生命短暂的体认放在一起，提供一种超越论说的感受。",
+      "failureAnalysis": "关键启发是：音乐与儿童歌声能传达难以言说的生命真相，提醒我们珍惜身体与活着的短暂时光；但已知内容只是引子，具体作品与演出细节仍需读全文。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Or a relationship collapsed. A friend betrayed you, or somebody vanished without explaining why. But your feelings, well, they’re refusing to respect the calendar.",
+      "sourceExcerpt": "Children know the deepest truths about life, the elemental knowledge we unlearn in the act of living, those inarticulable truths music alone helps us remember. To hear children sing the secret wisdom of the heart is to be in the presence of something truer and more transcendent than any of our poems and postulates can touch — the ultimate affirmation of our aliveness, emanating Richard Powers’s beautiful and bittersweet assertion that “the use of music is to remind us how short a time we have a body.” To celebrate twenty years of The Marginalian, composer extraordinaire Paola Prestini set six… read article",
       "translations": {
         "zh": {
-          "title": "如何应对人生最艰难的时刻：来自研究的5个秘诀",
-          "highlight": "事件已经结束，但你的情绪却拒绝遵从日历；这时所有人都会立刻告诉你，你需要的是“closure”。",
-          "summary": "文章从亲人离世、关系破裂、朋友背叛或某人不作解释地消失等情境切入：事情已经过去，情绪却不按日历推进。周围人常出于好意劝你寻求“closure”，希望你别再痛苦。标题承诺结合研究给出五个应对人生艰难时刻的秘诀，值得关注它如何处理这一常见建议。",
-          "failureAnalysis": "面对重大失去，周围人常把“closure”当作止痛药；更值得思考的是，情绪恢复并不按事件结束的时间表推进。"
+          "title": "欢乐的流星：纽约市青年合唱团唱响《鸟的占卜》",
+          "highlight": "孩子们知晓生命最深的真理，那是我们在生活过程中逐渐遗忘的原初知识。",
+          "summary": "为纪念《Marginalian》二十周年，作曲家保拉·普雷斯蒂尼创作了六首作品，由纽约市青年合唱团演唱《鸟的占卜》。文章借孩子歌唱心中秘密智慧，谈论音乐如何唤起我们遗忘的原初知识，并让人更真切地感受生命。它值得读，因为把合唱、诗意与对生命短暂的体认放在一起，提供一种超越论说的感受。",
+          "failureAnalysis": "关键启发是：音乐与儿童歌声能传达难以言说的生命真相，提醒我们珍惜身体与活着的短暂时光；但已知内容只是引子，具体作品与演出细节仍需读全文。"
         },
         "en": {
-          "highlight": "The event’s over. But your feelings, well, they’re refusing to respect the calendar.",
-          "summary": "The article opens with situations such as a death, a collapsed relationship, a betrayal, or someone vanishing without explanation: the event is over, but feelings do not follow the calendar. People often rush to prescribe “closure,” meaning well and wanting the pain to stop. The title promises five research-informed secrets for dealing with life’s toughest moments.",
-          "failureAnalysis": "A common takeaway is that “closure” is often offered as a quick remedy, while emotional recovery does not follow the calendar of the event itself.",
-          "title": "How to Deal With Life’s Toughest Moments: 5 Secrets From Research"
+          "highlight": "Children know the deepest truths about life, the elemental knowledge we unlearn in the act of living.",
+          "summary": "To mark The Marginalian’s twentieth anniversary, composer Paola Prestini set six works for the Young People’s Chorus of New York City to sing Bird Divinations. The piece reflects on children’s singing as a way to recover secret wisdom of the heart and to feel a transcendent affirmation of being alive. It is worth reading for its blend of choral music, poetry, and Richard Powers’s reminder that music shows how short a time we have a body.",
+          "failureAnalysis": "The key takeaway is that music and children’s voices can carry truths that argument cannot, reminding us to cherish our brief embodied life; the excerpt is only an opening, so the full article is needed for details.",
+          "title": "Meteor of Joy: The Young People’s Chorus of New York City Sings Bird Divinations"
         }
       }
     },
     {
-      "id": "paper-2610.39171",
+      "id": "paper-2610.38564",
       "category": "paper",
-      "title": "ACAM-J-MARS: Multi-Atlas Riemannian Spectral Representations for Decoding Advanced Meditation States from fMRI",
+      "title": "Recognition of auditory objects from continuous and ultra-sparse spike streams in neuromorphic devices",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2610.39171v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2610.39171",
-      "publishedAt": "2026-10-29T02:00:45.0000000Z",
+      "url": "https://arxiv.org/pdf/2610.38564v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.38564",
+      "publishedAt": "2026-10-28T09:58:41.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
-      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
-      "paperTopic": "brain_computer_interface",
+      "selectionReason": "Open full-text paper; topic ai; quality signal passed; application scenario is clear.",
+      "paperTopic": "ai",
       "qualityScore": 28,
       "readabilityStatus": "open",
       "paperCard": {
-        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "problem": "解决的问题：这篇论文试图把 ai 方向的研究推进到更可用的场景。",
         "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
         "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
         "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
         "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
         "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
         "technicalTerms": [
-          "CNN：擅长从信号或图像里提取局部特征的神经网络。"
+          "SNN：模仿神经脉冲时序的神经网络。"
         ],
-        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+        "whySelected": "Open full-text paper; topic ai; quality signal passed; application scenario is clear."
       },
-      "highlight": "ACAM-J-MARS通过多图谱黎曼谱表示，从fMRI数据中解码jhana型高阶专注吸收状态。",
-      "summary": "该工作聚焦于从fMRI信号推断jhana型高阶专注吸收状态，并采用多图谱黎曼谱表示构建解码方法。题名与摘要片段显示，其核心是把多图谱与黎曼谱特征结合，用于冥想状态分类。所给文本仅含题名、作者信息和摘要开头，尚不足以判断数据规模、实验设计与性能。",
-      "failureAnalysis": "所给文本仅包含题名、作者与摘要开头，缺少方法细节、对照设置和量化结果，无法评估该解码方法的性能与泛化能力。",
+      "highlight": "现代人工智能应用面临显著能耗问题，而大脑可能借助稀疏编码实现高能效计算。",
+      "summary": "该论文研究神经形态设备如何从连续和超稀疏脉冲流中识别听觉对象。其出发点是现代AI应用能耗高，而大脑可能通过稀疏编码实现高能效计算。若成立，这类脉冲流识别对低能耗神经形态听觉处理具有潜在意义。",
+      "failureAnalysis": "可用来源仅包含标题、作者单位和摘要开头，缺少实验设置、数据集与识别性能等关键证据。因此无法判断超稀疏脉冲流下的识别效果及其能效优势是否成立。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "ACAM-J-MARS: MULTI-ATLAS RIEMANNIAN SPECTRAL REPRESENTATIONS FOR DECODING ADV ANCED MEDITATION STATES FROM FMRI Jian Wang1,2, Winson F . Yang1,2, Wugeng Zheng3, Matthew D. Sacchet 1,2 1Meditation Research Program, Psychiatry, MGH and Harvard Medical School, Boston, MA, USA 2Martinos Center for Biomedical Imaging, Radiology, MGH and Harvard Medical School, Boston, MA, USA 3College of Engineering, Northeastern University, Boston, MA, USA ABSTRACT Inferring jhana-type advanced concentration absorption med- itation (ACAM-J) states from fMRI data is challenging due to the spatially distributed nature of meditation-related ef- fects, substantial inter-individual variability that can exceed within-subject state differences, and limited sample sizes.",
+      "sourceExcerpt": "Recognition of auditory objects from continuous and ultra-sparse spike streams in neuromorphic devices Leonardo E. Jin 1,∗ 1Department of Physics and Huck Institutes of the Life Sciences, Pennsylvania State University, University Park, Pennsylvania 16802, USA 2Department of Biology, McGill University, Montreal, Quebec, Canada Energy consumption is a major concern for modern artificial intelligence (AI) applications. The brain is thought to achieve energy-efficient computation through sparse coding schemes.",
       "translations": {
         "zh": {
-          "title": "多图谱黎曼谱表示解码高阶冥想状态",
-          "highlight": "ACAM-J-MARS通过多图谱黎曼谱表示，从fMRI数据中解码jhana型高阶专注吸收状态。",
-          "summary": "该工作聚焦于从fMRI信号推断jhana型高阶专注吸收状态，并采用多图谱黎曼谱表示构建解码方法。题名与摘要片段显示，其核心是把多图谱与黎曼谱特征结合，用于冥想状态分类。所给文本仅含题名、作者信息和摘要开头，尚不足以判断数据规模、实验设计与性能。",
-          "failureAnalysis": "所给文本仅包含题名、作者与摘要开头，缺少方法细节、对照设置和量化结果，无法评估该解码方法的性能与泛化能力。",
+          "title": "神经形态器件中基于连续与超稀疏脉冲流的听觉对象识别",
+          "highlight": "现代人工智能应用面临显著能耗问题，而大脑可能借助稀疏编码实现高能效计算。",
+          "summary": "该论文研究神经形态设备如何从连续和超稀疏脉冲流中识别听觉对象。其出发点是现代AI应用能耗高，而大脑可能通过稀疏编码实现高能效计算。若成立，这类脉冲流识别对低能耗神经形态听觉处理具有潜在意义。",
+          "failureAnalysis": "可用来源仅包含标题、作者单位和摘要开头，缺少实验设置、数据集与识别性能等关键证据。因此无法判断超稀疏脉冲流下的识别效果及其能效优势是否成立。",
           "paperCard": {
-            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "problem": "解决的问题：这篇论文试图把 ai 方向的研究推进到更可用的场景。",
             "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
             "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
             "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
             "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
             "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
             "technicalTerms": [
-              "CNN：擅长从信号或图像里提取局部特征的神经网络。"
+              "SNN：模仿神经脉冲时序的神经网络。"
             ],
-            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+            "whySelected": "Open full-text paper; topic ai; quality signal passed; application scenario is clear."
           }
         },
         "en": {
-          "title": "ACAM-J-MARS: Multi-Atlas Riemannian Spectral Representations for Decoding Advanced Meditation States from fMRI",
-          "highlight": "ACAM-J-MARS uses multi-atlas Riemannian spectral representations to decode jhana-type advanced concentration absorption states from fMRI data.",
-          "summary": "The work targets inference of jhana-type advanced concentration absorption states from fMRI signals using multi-atlas Riemannian spectral representations. The supplied text indicates a decoding approach that combines multiple atlases with Riemannian spectral features for meditation-state classification. Only the title, author information, and opening of the abstract are available, so data size, experimental design, and performance cannot be assessed.",
-          "failureAnalysis": "The available evidence stops at the abstract opening, with no method details, controls, or quantitative results, so the decoder’s performance and generalization cannot be evaluated.",
+          "title": "Recognition of Auditory Objects from Continuous and Ultra-Sparse Spike Streams in Neuromorphic Devices",
+          "highlight": "Modern AI applications face major energy costs, while the brain may achieve efficient computation through sparse coding.",
+          "summary": "The paper examines how neuromorphic devices recognize auditory objects from continuous and ultra-sparse spike streams. Its motivation is the energy cost of modern AI and the brain's possible use of sparse coding for efficient computation. The supplied text only includes the title, affiliations, and the start of the abstract, so methods and results cannot be verified.",
+          "failureAnalysis": "The available source omits experimental setup, datasets, and recognition performance, leaving key evidence unverified. It is therefore not possible to judge the reported recognition effectiveness or energy-efficiency advantage under ultra-sparse spike streams.",
           "paperCard": {
             "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
             "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
@@ -275,21 +275,21 @@
             "implementation": "Implementation: check the input data, core model or device, and validation results.",
             "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
             "technicalTerms": [
-              "CNN：擅长从信号或图像里提取局部特征的神经网络。"
+              "SNN：模仿神经脉冲时序的神经网络。"
             ],
-            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+            "whySelected": "Open full-text paper; topic ai; quality signal passed; application scenario is clear."
           }
         }
       }
     },
     {
-      "id": "ai-feed-b67329e6d1ab4b1985257c58cc980aff",
+      "id": "ai-feed-a2859f261ba4403d8779d456af62edd6",
       "category": "ai",
-      "title": "Was I wrong about open models & cyber risks?",
-      "source": "Interconnects",
-      "url": "https://www.interconnects.ai/p/was-i-wrong-about-open-models-and",
+      "title": "Agents Prompt People: Using Agents for Long-Horizon Financial Work",
+      "source": "Latent Space",
+      "url": "https://latent.space/p/arca/",
       "abstractUrl": null,
-      "publishedAt": "2026-10-30T17:36:56.0000000Z",
+      "publishedAt": "2026-10-31T16:05:00.0000000Z",
       "scoreLabel": "Curated engineering feed",
       "aiArticleType": "concept_explanation",
       "evidenceAnchors": [],
@@ -297,24 +297,24 @@
       "hasPrimaryAnchor": false,
       "requiresRiskAnalysis": false,
       "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
-      "summary": "文章围绕作者提出的“黑色十月”概念，讨论一连串关键漏洞披露是否标志着AI模型的网络安全风险开始成为现实。它值得读，因为文章把开放模型与网络风险这一抽象争论，拉回到具体漏洞事件的时间线上重新检视。",
-      "failureAnalysis": "关键 takeaway 是：讨论AI安全风险时，应关注具体漏洞披露与模型开放程度的交汇点，而不是只停留在抽象担忧。",
+      "summary": "该文围绕 Arca 的 AI 负责人对长周期金融工作的实践展开，重点谈到持久记忆、定制化运行框架的优势，以及能持续数天的智能体工作流。它值得关注，是因为这些要素指向智能体从单次任务走向跨天复杂工作的关键能力。",
+      "failureAnalysis": "关键不在于单轮问答，而在于用持久记忆与定制化运行框架支撑智能体连续数天推进复杂金融任务。",
       "aiSelectionScore": 100,
-      "highlight": "在PHP2Shell、GitLab等关键漏洞密集披露后，作者用“黑色十月”指称AI模型网络风险开始显现的时刻。",
+      "highlight": "Arca 的 AI 负责人讨论持久记忆、定制化运行框架的优势，以及可跨越数天的智能体工作流。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Last week coined the term “Black October“ after an onslaught of critical vulnerability disclosures, including PHP2Shell and GitLab, signified the moment when the cyber risks of AI models started to materialize.",
+      "sourceExcerpt": "Arca's head of AI discusses persistent memory, the benefits of a custom harness, and agentic workflows that span days.",
       "translations": {
         "zh": {
-          "title": "开放模型与网络风险：我错了吗？",
-          "highlight": "在PHP2Shell、GitLab等关键漏洞密集披露后，作者用“黑色十月”指称AI模型网络风险开始显现的时刻。",
-          "summary": "文章围绕作者提出的“黑色十月”概念，讨论一连串关键漏洞披露是否标志着AI模型的网络安全风险开始成为现实。它值得读，因为文章把开放模型与网络风险这一抽象争论，拉回到具体漏洞事件的时间线上重新检视。",
-          "failureAnalysis": "关键 takeaway 是：讨论AI安全风险时，应关注具体漏洞披露与模型开放程度的交汇点，而不是只停留在抽象担忧。"
+          "title": "智能体提示人：用智能体处理长周期金融工作",
+          "highlight": "Arca 的 AI 负责人讨论持久记忆、定制化运行框架的优势，以及可跨越数天的智能体工作流。",
+          "summary": "该文围绕 Arca 的 AI 负责人对长周期金融工作的实践展开，重点谈到持久记忆、定制化运行框架的优势，以及能持续数天的智能体工作流。它值得关注，是因为这些要素指向智能体从单次任务走向跨天复杂工作的关键能力。",
+          "failureAnalysis": "关键不在于单轮问答，而在于用持久记忆与定制化运行框架支撑智能体连续数天推进复杂金融任务。"
         },
         "en": {
-          "highlight": "The term “Black October” followed an onslaught of critical vulnerability disclosures, including PHP2Shell and GitLab, marking when AI models’ cyber risks began to materialize.",
-          "summary": "The article uses the author’s “Black October” concept to ask whether a wave of critical vulnerability disclosures signals that AI models’ cybersecurity risks are becoming real. It is worth reading because it grounds the abstract debate over open models and cyber risk in a concrete timeline of vulnerability events.",
-          "failureAnalysis": "The key takeaway is to examine where specific vulnerability disclosures and model openness intersect, rather than staying at the level of abstract concern about AI security risk.",
-          "title": "Was I wrong about open models and cyber risks?"
+          "highlight": "Arca's head of AI discusses persistent memory, the benefits of a custom harness, and agentic workflows that span days.",
+          "summary": "The article centers on Arca's head of AI discussing long-horizon financial work, including persistent memory, the benefits of a custom harness, and agentic workflows that span days. It is worth reading because these elements point to what agents need in order to handle complex, multi-day work rather than single-turn tasks.",
+          "failureAnalysis": "The key is not single-turn Q&A but enabling agents to sustain complex financial work over multiple days through persistent memory and a custom harness.",
+          "title": "Agents Prompt People: Using Agents for Long-Horizon Financial Work"
         }
       }
     }
