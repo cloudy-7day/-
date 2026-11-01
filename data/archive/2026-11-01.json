@@ -1,0 +1,331 @@
+{
+  "issueDate": "2026-11-01",
+  "updateStatus": "complete",
+  "contentFingerprint": "29f02feae0c3649a23a8f733fa3c4206ccc1bacc678b1d240ad7883d285d6ea0",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-ba345300858748388fe73cae4f6458ae",
+      "category": "domestic",
+      "title": "“理财产品要变相保本了”是误读政策",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-01/10724506.shtml",
+      "publishedAt": "2026-11-01T13:41:36.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "真相来了：所谓“理财产品要变相保本了”是对政策的误读。",
+      "summary": "该文针对“理财产品要变相保本了”的说法进行澄清，指出这种解读误读了政策。对关注理财市场和监管口径的读者来说，这有助于区分市场传言与政策原意，避免被标题化说法带偏。",
+      "failureAnalysis": "关键提醒是：面对理财产品政策传闻，应先核对官方口径，不能把“变相保本”这类概括当作政策事实。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "真相来了丨“理财产品要变相保本了”是误读政策",
+      "translations": {
+        "zh": {
+          "title": "“理财产品要变相保本了”系误读政策",
+          "highlight": "真相来了：所谓“理财产品要变相保本了”是对政策的误读。",
+          "summary": "该文针对“理财产品要变相保本了”的说法进行澄清，指出这种解读误读了政策。对关注理财市场和监管口径的读者来说，这有助于区分市场传言与政策原意，避免被标题化说法带偏。",
+          "failureAnalysis": "关键提醒是：面对理财产品政策传闻，应先核对官方口径，不能把“变相保本”这类概括当作政策事实。"
+        },
+        "en": {
+          "highlight": "The claim that wealth management products are effectively returning to principal guarantee is a misreading of policy.",
+          "summary": "The article clarifies that the statement that wealth management products are effectively returning to principal guarantee is a misreading of policy. For readers tracking the wealth management market and regulatory stance, it helps separate market rumors from the policy's intended meaning and avoid being misled by headline claims.",
+          "failureAnalysis": "The practical takeaway is to check official wording before treating claims about 'disguised principal guarantee' in wealth products as fact.",
+          "title": "'Wealth Products Will Effectively Guarantee Principal' Is a Misreading of Policy"
+        }
+      }
+    },
+    {
+      "id": "news-af46dcae91c5437eb5fa16add6077b56",
+      "category": "domestic",
+      "title": "新华社受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》和习近平总书记所作的《关于〈中共中央关于持之以恒推进全面从严治党若干重大问题的决定〉的说明》",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-01/10724499.shtml",
+      "publishedAt": "2026-11-01T13:10:08.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "新华社受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》和习近平总书记所作的说明。",
+      "summary": "该报道记录新华社于11月1日受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》，以及中共中央总书记习近平就这一决定所作的说明。所给信息只涉及播发事实、文件名称和时间，未涉及具体条款内容。对有需要跟踪党内法规与党建动向的读者，这条消息提供了确认权威文本发布渠道与时间节点的第一手信源。",
+      "failureAnalysis": "可核实的要点是：决定全文与习近平所作的说明同日由新华社受权播发；具体政策内容应以全文为准，不能仅凭这条播发消息推断细节。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "新华社北京11月1日电 新华社11月1日受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》和中共中央总书记习近平所作的《关于〈中共中央关于持之以恒推进全面从严治党若干重大问题的决定〉的说明》。",
+      "translations": {
+        "zh": {
+          "title": "新华社受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》和习近平总书记所作的说明",
+          "highlight": "新华社受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》和习近平总书记所作的说明。",
+          "summary": "该报道记录新华社于11月1日受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》，以及中共中央总书记习近平就这一决定所作的说明。所给信息只涉及播发事实、文件名称和时间，未涉及具体条款内容。对有需要跟踪党内法规与党建动向的读者，这条消息提供了确认权威文本发布渠道与时间节点的第一手信源。",
+          "failureAnalysis": "可核实的要点是：决定全文与习近平所作的说明同日由新华社受权播发；具体政策内容应以全文为准，不能仅凭这条播发消息推断细节。"
+        },
+        "en": {
+          "highlight": "Xinhua released on November 1, authorized, the full text of the CPC Central Committee's decision on persistently advancing full and rigorous Party self-governance and Xi Jinping's explanatory remarks on it.",
+          "summary": "The report records that Xinhua released on November 1, with authorization, the full text of the CPC Central Committee decision on persistently advancing full and rigorous Party self-governance, together with the explanatory remarks delivered by Xi Jinping, general secretary of the CPC Central Committee. The available information covers only the fact of publication, the document titles and the date, not the specific provisions. For readers tracking Party regulations and Party-building developments, it is a primary source confirming the channel and timing of the authoritative text's release.",
+          "failureAnalysis": "The verifiable point is that the decision's full text and Xi's explanatory remarks were released by Xinhua, with authorization, on the same day; substantive policy content should be read from the full text rather than inferred from this publication notice alone.",
+          "title": "Xinhua releases full text of the CPC Central Committee decision on advancing full and rigorous Party self-governance, along with Xi Jinping's explanatory remarks"
+        }
+      }
+    },
+    {
+      "id": "news-29ea15ea26e3494ead7dc50d168c8047",
+      "category": "domestic",
+      "title": "大风蓝色预警：新疆西藏等6省区部分地区阵风可达7至8级",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-01/10724410.shtml",
+      "publishedAt": "2026-11-01T10:44:34.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "预计11月1日20时至2日20时，新疆东部、西藏北部、青海南部、内蒙古中西部、河北北部、江西北部等地的部分地区有5~6级风，阵风7~8级。",
+      "summary": "中央气象台于11月1日18时继续发布大风蓝色预警，预警时段为11月1日20时至11月2日20时。新疆东部、西藏北部、青海南部、内蒙古中西部、河北北部、江西北部等6省区的部分地区将出现5~6级风、阵风可达7~8级，同时渤海、黄海、东海西部及台湾海峡等海域将有7~8级、阵风9级的大风。这条预警对相关地区的出行、海上作业和设施防风有直接参考价值。",
+      "failureAnalysis": "这是一条标准的气象预警信息，判断价值在于看准时间窗口和具体影响区域：陆上关注阵风7~8级，海上则要关注阵风9级，再据此安排出行和作业。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网11月1日电 据中央气象台网站消息，中央气象台11月1日18时继续发布大风蓝色预警：预计，11月1日20时至2日20时，新疆东部、西藏北部、青海南部、内蒙古中西部、河北北部、江西北部等地的部分地区有5~6级风，阵风7~8级；渤海北部、渤海海峡、黄海北部、黄海南部偏西海域、东海西部海域、台湾海峡将有7~8级、阵风9级的大风。",
+      "translations": {
+        "zh": {
+          "title": "中央气象台发布大风蓝色预警：新疆西藏等6省区阵风可达7至8级",
+          "highlight": "预计11月1日20时至2日20时，新疆东部、西藏北部、青海南部、内蒙古中西部、河北北部、江西北部等地的部分地区有5~6级风，阵风7~8级。",
+          "summary": "中央气象台于11月1日18时继续发布大风蓝色预警，预警时段为11月1日20时至11月2日20时。新疆东部、西藏北部、青海南部、内蒙古中西部、河北北部、江西北部等6省区的部分地区将出现5~6级风、阵风可达7~8级，同时渤海、黄海、东海西部及台湾海峡等海域将有7~8级、阵风9级的大风。这条预警对相关地区的出行、海上作业和设施防风有直接参考价值。",
+          "failureAnalysis": "这是一条标准的气象预警信息，判断价值在于看准时间窗口和具体影响区域：陆上关注阵风7~8级，海上则要关注阵风9级，再据此安排出行和作业。"
+        },
+        "en": {
+          "highlight": "From 20:00 on November 1 to 20:00 on November 2, parts of eastern Xinjiang, northern Tibet, southern Qinghai, central and western Inner Mongolia, northern Hebei and northern Jiangxi will see force 5-6 winds with gusts of force 7-8.",
+          "summary": "The Central Meteorological Observatory continued a blue wind alert at 18:00 on November 1, covering the period from 20:00 that day to 20:00 on November 2. Parts of six provinces and regions, including eastern Xinjiang, northern Tibet, southern Qinghai, central and western Inner Mongolia, northern Hebei and northern Jiangxi, will see force 5-6 winds with gusts of force 7-8, while sea areas including the Bohai Sea, Yellow Sea, western East China Sea and Taiwan Strait will see force 7-8 winds with gusts of force 9. The alert is directly useful for travel planning, maritime operations and windproofing of facilities in the affected areas.",
+          "failureAnalysis": "This is a standard meteorological warning; its value lies in the time window and the specific affected areas, with gusts of force 7-8 on land and force 9 at sea, which can guide travel and operational decisions.",
+          "title": "Blueprint for Strong Winds: Central Meteorological Observatory issues blue alert for six provinces and regions including Xinjiang and Tibet, with gusts up to force 7-8"
+        }
+      }
+    },
+    {
+      "id": "news-060510642b334807b1e15452e305ee30",
+      "category": "international",
+      "title": "A new political era in the Southern Philippines",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6020639/a-new-political-era-in-the-southern-philippines",
+      "publishedAt": "2026-10-31T21:14:32.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "菲律宾南部新地方政府已就职，这标志着持续约80年冲突的和平进程迈出里程碑一步。",
+      "summary": "报道说，菲律宾南部一个新地方政府已宣誓就职，这是当地和平进程中的重要节点。这一进展涉及一场持续约80年的冲突，值得关注的是和平安排能否由此进入落实阶段。",
+      "failureAnalysis": "关键看点在于，长期冲突的解决正从和平进程推进到地方治理落地，后续能否巩固和平仍取决于治理与和解的持续性。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "A new local government has taken its seat in the southern Philippines, in a step that marks a milestone in the peace process for a conflict that has lasted some 80 years.",
+      "translations": {
+        "zh": {
+          "title": "菲律宾南部开启政治新纪元",
+          "highlight": "菲律宾南部新地方政府已就职，这标志着持续约80年冲突的和平进程迈出里程碑一步。",
+          "summary": "报道说，菲律宾南部一个新地方政府已宣誓就职，这是当地和平进程中的重要节点。这一进展涉及一场持续约80年的冲突，值得关注的是和平安排能否由此进入落实阶段。",
+          "failureAnalysis": "关键看点在于，长期冲突的解决正从和平进程推进到地方治理落地，后续能否巩固和平仍取决于治理与和解的持续性。"
+        },
+        "en": {
+          "highlight": "A new local government has taken its seat in the southern Philippines, in a step that marks a milestone in the peace process for a conflict that has lasted some 80 years.",
+          "summary": "The report says a new local government has taken office in the southern Philippines, marking an important point in the peace process. The development concerns a conflict that has lasted about 80 years, and the key question is whether the peace arrangements can now move into implementation.",
+          "failureAnalysis": "The key takeaway is that the resolution of a long-running conflict is moving from the peace process toward local governance; whether peace can be consolidated will depend on sustained governance and reconciliation.",
+          "title": "A New Political Era in the Southern Philippines"
+        }
+      }
+    },
+    {
+      "id": "news-ad73135d31624e0ab61d8fd087bc2892",
+      "category": "international",
+      "title": "The US-China trade war seems to have subsided – but the sense of calm is misleading",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/01/us-china-trade-war-trump-xi",
+      "publishedAt": "2026-11-01T12:00:12.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "平静的表象具有误导性：世界正悄然迈向一场规模可能空前的经济战，历史表明它可能外溢为真正的战争。",
+      "summary": "文章指出，美中贸易战因停火而暂时降温，但两国都没有采取行动限制新的敌对冲突爆发。贸易战淡出头条并不意味着风险消失，世界仍在滑向可能规模巨大的经济战，并可能外溢为真实冲突。值得读在于它提醒读者关注低可见度但高影响的地缘经济风险。",
+      "failureAnalysis": "关键不是贸易战已经结束，而是停火并未改变结构性对抗；越是表面平静，越要警惕未被头条反映的升级风险。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "A truce has cooled the trade conflict, but neither country has done anything to limit the outbreak of new hostilities Donald Trump ’s trade wars have largely fallen off the headlines. Fears of new tariffs flare up from time to time when the US president goes off the rails – for instance, threatening to end US trade with countries with which it has a deficit unless the Federal Reserve cuts interest rates. But the sense that the world’s two largest economies are plowing ahead into an overt economic conflagration has taken a back seat to other, more salient fears, about Trump ending American democracy, AI killing us all and stuff like that.",
+      "translations": {
+        "zh": {
+          "title": "美中贸易战似已降温，但平静只是假象",
+          "highlight": "平静的表象具有误导性：世界正悄然迈向一场规模可能空前的经济战，历史表明它可能外溢为真正的战争。",
+          "summary": "文章指出，美中贸易战因停火而暂时降温，但两国都没有采取行动限制新的敌对冲突爆发。贸易战淡出头条并不意味着风险消失，世界仍在滑向可能规模巨大的经济战，并可能外溢为真实冲突。值得读在于它提醒读者关注低可见度但高影响的地缘经济风险。",
+          "failureAnalysis": "关键不是贸易战已经结束，而是停火并未改变结构性对抗；越是表面平静，越要警惕未被头条反映的升级风险。"
+        },
+        "en": {
+          "highlight": "The sense of calm is misleading: under the radar, the world is marching toward an economic war of potentially epic proportions that history suggests could spill over into real conflict.",
+          "summary": "The article says the US-China trade war has cooled because of a truce, but neither country has done anything to limit the outbreak of new hostilities. The conflict falling off the headlines does not mean the risk is gone; the world is still moving toward a potentially epic economic war that could spill over into real conflict. It is worth reading because it flags a low-visibility but high-impact geopolitical economic risk.",
+          "failureAnalysis": "The key point is not that the trade war is over, but that the truce has not changed the structural confrontation; the calmer the surface looks, the more important it is to watch for escalation that headlines do not reflect.",
+          "title": "US-China Trade War Looks Calmer, but the Calm Is Misleading"
+        }
+      }
+    },
+    {
+      "id": "life-d8570f87fc6a4c63845144984062d121",
+      "category": "international",
+      "title": "The Art of Being Alone: May Sarton’s Stunning 1938 Ode to Solitude",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/01/may-sarton-canticle-6-considerations/",
+      "publishedAt": "2026-11-01T13:38:09.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 0",
+      "highlight": "世上再没有比一个人独处时的精神更私密、更亲密的地方了。",
+      "summary": "文章聚焦梅·萨顿1938年关于独处的颂歌，并借“世上再没有比一个人独处时的精神更私密、更亲密的地方了”这一句子呈现主题。它值得读，因为能让人从文学角度重新理解独处与内在精神生活。",
+      "failureAnalysis": "关键要点：独处可以是一种亲密的自我相处，而不只是远离他人；给自己留出与精神相处的空间，本身就有价值。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "\"There is no place more intimate than the spirit alone.\"",
+      "translations": {
+        "zh": {
+          "title": "独处的艺术：梅·萨顿1938年写给孤独的惊艳颂歌",
+          "highlight": "世上再没有比一个人独处时的精神更私密、更亲密的地方了。",
+          "summary": "文章聚焦梅·萨顿1938年关于独处的颂歌，并借“世上再没有比一个人独处时的精神更私密、更亲密的地方了”这一句子呈现主题。它值得读，因为能让人从文学角度重新理解独处与内在精神生活。",
+          "failureAnalysis": "关键要点：独处可以是一种亲密的自我相处，而不只是远离他人；给自己留出与精神相处的空间，本身就有价值。"
+        },
+        "en": {
+          "highlight": "May Sarton writes that there is no place more intimate than the spirit alone.",
+          "summary": "The article centers on May Sarton’s 1938 ode to solitude and uses the line about the intimacy of the spirit alone to frame its theme. It is worth reading as a literary reflection on solitude and inner life.",
+          "failureAnalysis": "The key takeaway is that solitude can be an intimate form of self-company, not merely distance from others; making room for the spirit alone has value.",
+          "title": "The Art of Being Alone: May Sarton’s Stunning 1938 Ode to Solitude"
+        }
+      }
+    },
+    {
+      "id": "life-b359b7207ebc424eae30ee922d98e973",
+      "category": "international",
+      "title": "The power of pareidolia",
+      "source": "Psyche",
+      "url": "https://psyche.co/videos/why-we-see-faces-in-unexpected-places-and-what-it-says-about-us",
+      "publishedAt": "2026-10-30T10:01:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 0",
+      "highlight": "从岩石、云朵到吐司切片，探索无处不在的熟悉形状背后的艺术与科学。",
+      "summary": "该视频从岩石、云朵到吐司切片等日常对象出发，探讨人们为何会在各处看见熟悉形状，并呈现这一现象背后的艺术与科学。它属于生活技能类国际内容，适合快速了解幻想性视错觉这一感知现象。",
+      "failureAnalysis": "关键启示：人类感知倾向于在随机图案中寻找熟悉形状，幻想性视错觉因此成为理解视觉认知的一个直观入口。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "From rocks and clouds to slices of toast, explore the art and science of seeing familiar shapes everywhere - Video by Mary McGillivray Watch on Psyche",
+      "translations": {
+        "zh": {
+          "title": "幻想性视错觉的力量",
+          "highlight": "从岩石、云朵到吐司切片，探索无处不在的熟悉形状背后的艺术与科学。",
+          "summary": "该视频从岩石、云朵到吐司切片等日常对象出发，探讨人们为何会在各处看见熟悉形状，并呈现这一现象背后的艺术与科学。它属于生活技能类国际内容，适合快速了解幻想性视错觉这一感知现象。",
+          "failureAnalysis": "关键启示：人类感知倾向于在随机图案中寻找熟悉形状，幻想性视错觉因此成为理解视觉认知的一个直观入口。"
+        },
+        "en": {
+          "highlight": "From rocks and clouds to slices of toast, explore the art and science of seeing familiar shapes everywhere.",
+          "summary": "This Psyche video explores why people see familiar shapes in everyday objects, from rocks and clouds to slices of toast. It presents the art and science behind pareidolia as a perceptual phenomenon.",
+          "failureAnalysis": "The key takeaway is that human perception readily finds familiar shapes in random patterns, making pareidolia an intuitive entry point for understanding visual cognition.",
+          "title": "The Power of Pareidolia"
+        }
+      }
+    },
+    {
+      "id": "paper-2610.37958",
+      "category": "paper",
+      "title": "Neuroscience of Improvisation Across Music and Other Domains: A Survey and Outlook",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2610.37958v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.37958",
+      "publishedAt": "2026-10-27T20:45:09.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "即兴是实时生成新颖且贴合情境的行动，见于音乐、舞蹈、戏剧、体育、教育与治疗，但其神经科学证据几乎全部来自音乐。",
+      "summary": "该综述把即兴界定为实时生成新颖且贴合情境的行动，并指出它存在于音乐、舞蹈、戏剧、体育、教育与治疗等实践中。作者强调，目前多数定量神经影像证据几乎只集中在音乐即兴上。文章据此梳理跨领域的既有研究，并提出后续研究的方向。",
+      "failureAnalysis": "由于定量影像证据几乎全部来自音乐即兴，将相关神经机制推广到其他领域尚缺乏直接数据支持。作为综述，其结论也受既有文献覆盖范围与各研究测量方法差异的限制。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "1 Neuroscience of Improvisation Across Music and Other Domains: A Survey and Outlook Levina Perzhilla∗, Muhammad Mahboob Ur Rahman ∗,Senior member, IEEE, Tareq Y . Al-Naffouri ∗,Fellow, IEEE Abstract—Improvisation (or Improv), the real-time generation of novel, context-appropriate action, occurs in music, dance, theater, sport, education, therapy, and professional practice. Its neuroscience, however, has been studied almost exclusively for music, where most quantitative neuroimaging evidence lies.",
+      "translations": {
+        "zh": {
+          "title": "即兴的神经科学：跨音乐与其他领域的综述与展望",
+          "highlight": "即兴是实时生成新颖且贴合情境的行动，见于音乐、舞蹈、戏剧、体育、教育与治疗，但其神经科学证据几乎全部来自音乐。",
+          "summary": "该综述把即兴界定为实时生成新颖且贴合情境的行动，并指出它存在于音乐、舞蹈、戏剧、体育、教育与治疗等实践中。作者强调，目前多数定量神经影像证据几乎只集中在音乐即兴上。文章据此梳理跨领域的既有研究，并提出后续研究的方向。",
+          "failureAnalysis": "由于定量影像证据几乎全部来自音乐即兴，将相关神经机制推广到其他领域尚缺乏直接数据支持。作为综述，其结论也受既有文献覆盖范围与各研究测量方法差异的限制。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "Neuroscience of Improvisation Across Music and Other Domains: A Survey and Outlook",
+          "highlight": "Improvisation, the real-time generation of novel, context-appropriate action, spans music, dance, theater, sport, education and therapy, yet its neuroscience evidence comes almost exclusively from music.",
+          "summary": "The survey defines improvisation as the real-time generation of novel, context-appropriate action and notes that it appears in music, dance, theater, sport, education, therapy and professional practice. The authors stress that most quantitative neuroimaging evidence is confined almost entirely to musical improvisation. The article maps existing cross-domain work and outlines an outlook for future research.",
+          "failureAnalysis": "Because the quantitative imaging evidence comes almost exclusively from musical improvisation, extending these neural findings to other domains lacks direct empirical support. As a survey, its conclusions are also limited by the coverage of existing literature and by differences in measurement methods across studies.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-github-1416442720",
+      "category": "ai",
+      "title": "microsoft/TokenEconomizer",
+      "source": "GitHub Search",
+      "url": "https://github.com/microsoft/TokenEconomizer",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-13T04:16:50.0000000Z",
+      "scoreLabel": "GitHub 3745 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "公开信息显示，microsoft/TokenEconomizer 是一个获得 3745 stars 且有近期公开活动的 GitHub 项目，定位为面向编码智能体的经验驱动黑盒成本控制。它的价值在于把 AI 编码代理的调用成本作为可管理对象，而不是只看功能演示。对准备落地编码智能体的团队，可重点观察其成本节省是否以代码质量为代价，以及接入和跨模型迁移难度。",
+      "failureAnalysis": "经验驱动的黑盒控制通常需要足够多的真实调用样本来冷启动，面对模型、任务或团队变化时可能失效。编码智能体链路长且结果质量难统一，压低 token 成本可能损害代码正确性，或把成本转移到工程接入和调参上。项目目前仅有仓库描述和 star 信号，尚不能证明需求刚性、可复现收益和跨团队分发能力。",
+      "aiSelectionScore": 3745,
+      "highlight": "微软开源项目 TokenEconomizer 以经验驱动的黑盒方式，为编码智能体提供成本控制。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 3745 stars and recent public activity. Description: Experience-Driven Black-Box Cost Control for Coding Agents",
+      "translations": {
+        "zh": {
+          "title": "微软 TokenEconomizer：面向编码智能体的经验驱动黑盒成本控制",
+          "highlight": "微软开源项目 TokenEconomizer 以经验驱动的黑盒方式，为编码智能体提供成本控制。",
+          "summary": "公开信息显示，microsoft/TokenEconomizer 是一个获得 3745 stars 且有近期公开活动的 GitHub 项目，定位为面向编码智能体的经验驱动黑盒成本控制。它的价值在于把 AI 编码代理的调用成本作为可管理对象，而不是只看功能演示。对准备落地编码智能体的团队，可重点观察其成本节省是否以代码质量为代价，以及接入和跨模型迁移难度。",
+          "failureAnalysis": "经验驱动的黑盒控制通常需要足够多的真实调用样本来冷启动，面对模型、任务或团队变化时可能失效。编码智能体链路长且结果质量难统一，压低 token 成本可能损害代码正确性，或把成本转移到工程接入和调参上。项目目前仅有仓库描述和 star 信号，尚不能证明需求刚性、可复现收益和跨团队分发能力。"
+        },
+        "en": {
+          "highlight": "Microsoft's TokenEconomizer is a GitHub project with 3,745 stars that offers experience-driven black-box cost control for coding agents.",
+          "summary": "Public information shows that microsoft/TokenEconomizer is a GitHub project with 3,745 stars and recent public activity, positioned as experience-driven black-box cost control for coding agents. Its value is to make the cost of AI coding-agent calls a managed concern rather than only a feature demo. Teams deploying coding agents should check whether savings come at the expense of code quality and how hard it is to integrate or transfer across models.",
+          "failureAnalysis": "Experience-driven black-box control needs enough real-call data to cold-start and may degrade as models, tasks, or teams change. With only a repository description and star count, the project has not yet proven hard demand, reproducible savings, or cross-team distribution.",
+          "title": "Microsoft TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents"
+        }
+      }
+    }
+  ]
+}

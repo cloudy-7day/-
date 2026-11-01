@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-10-31",
+  "issueDate": "2026-11-01",
   "updateStatus": "complete",
-  "contentFingerprint": "24c2a2a785e83c641c2d65817c2318178d1f0053ce1b85a5d8a974a6e2927506",
+  "contentFingerprint": "29f02feae0c3649a23a8f733fa3c4206ccc1bacc678b1d240ad7883d285d6ea0",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,263 +10,263 @@
   ],
   "articles": [
     {
-      "id": "news-198ed2c412f245a6a9aad15423fb6dba",
+      "id": "news-ba345300858748388fe73cae4f6458ae",
       "category": "domestic",
-      "title": "绿色航运加快发展（政策解读）",
+      "title": "“理财产品要变相保本了”是误读政策",
       "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/10-31/10724070.shtml",
-      "publishedAt": "2026-10-31T13:05:19.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-01/10724506.shtml",
+      "publishedAt": "2026-11-01T13:41:36.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "《方案》提出，到2028年，内河新能源船舶保有量较2025年翻倍；到2030年，初步实现新能源船舶规模化应用。",
-      "summary": "文章解读交通运输部等3部门联合印发的《内河新能源船舶推广应用行动方案(2026—2030年)》。方案提出加快全场景应用、加强全链条支撑，明确到2028年内河新能源船舶保有量较2025年翻倍，到2030年初步实现规模化应用，并重点推动内河电动、甲醇动力船舶应用。长江干线、西江航运干线等将逐步形成“两横一纵两网”零碳水路运输通道，值得关注政策对绿色航运的推进节奏。",
-      "failureAnalysis": "这项政策的关键在于把船舶保有量目标、技术路线和零碳通道建设放在同一时间表内，执行效果取决于配套补能设施和全链条支撑能否同步落地。",
+      "highlight": "真相来了：所谓“理财产品要变相保本了”是对政策的误读。",
+      "summary": "该文针对“理财产品要变相保本了”的说法进行澄清，指出这种解读误读了政策。对关注理财市场和监管口径的读者来说，这有助于区分市场传言与政策原意，避免被标题化说法带偏。",
+      "failureAnalysis": "关键提醒是：面对理财产品政策传闻，应先核对官方口径，不能把“变相保本”这类概括当作政策事实。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "近日，交通运输部等3部门联合印发的《内河新能源船舶推广应用行动方案(2026—2030年)》(以下简称《方案》)提出，加快全场景应用、加强全链条支撑，到2028年，内河新能源船舶保有量较2025年翻倍；到2030年，初步实现新能源船舶规模化应用。重点推动内河电动、甲醇动力船舶应用。在长江干线、西江航运干线等逐步形成“两横一纵两网”零碳水路运输通道。",
+      "sourceExcerpt": "真相来了丨“理财产品要变相保本了”是误读政策",
       "translations": {
         "zh": {
-          "title": "绿色航运加快发展：内河新能源船舶推广方案明确阶段性目标",
-          "highlight": "《方案》提出，到2028年，内河新能源船舶保有量较2025年翻倍；到2030年，初步实现新能源船舶规模化应用。",
-          "summary": "文章解读交通运输部等3部门联合印发的《内河新能源船舶推广应用行动方案(2026—2030年)》。方案提出加快全场景应用、加强全链条支撑，明确到2028年内河新能源船舶保有量较2025年翻倍，到2030年初步实现规模化应用，并重点推动内河电动、甲醇动力船舶应用。长江干线、西江航运干线等将逐步形成“两横一纵两网”零碳水路运输通道，值得关注政策对绿色航运的推进节奏。",
-          "failureAnalysis": "这项政策的关键在于把船舶保有量目标、技术路线和零碳通道建设放在同一时间表内，执行效果取决于配套补能设施和全链条支撑能否同步落地。"
+          "title": "“理财产品要变相保本了”系误读政策",
+          "highlight": "真相来了：所谓“理财产品要变相保本了”是对政策的误读。",
+          "summary": "该文针对“理财产品要变相保本了”的说法进行澄清，指出这种解读误读了政策。对关注理财市场和监管口径的读者来说，这有助于区分市场传言与政策原意，避免被标题化说法带偏。",
+          "failureAnalysis": "关键提醒是：面对理财产品政策传闻，应先核对官方口径，不能把“变相保本”这类概括当作政策事实。"
         },
         "en": {
-          "highlight": "By 2028, the number of inland new-energy vessels is to double from 2025, and by 2030, large-scale application is to be initially achieved.",
-          "summary": "The article interprets a joint action plan issued by the Ministry of Transport and two other departments for promoting new-energy vessels on inland waterways from 2026 to 2030. The plan calls for broader scenario application and full-chain support, with targets to double the inland new-energy vessel fleet by 2028 versus 2025 and to initially achieve large-scale application by 2030, focusing on electric and methanol-powered vessels. It also envisions zero-carbon waterway corridors along the Yangtze River mainline and Xijiang shipping mainline, making the policy pace worth watching.",
-          "failureAnalysis": "The key takeaway is that fleet targets, technology routes, and zero-carbon corridor construction are placed on the same timetable; implementation will depend on whether supporting refueling and charging infrastructure and full-chain support keep pace.",
-          "title": "Green Shipping Accelerates: Inland New-Energy Vessel Targets Set"
+          "highlight": "The claim that wealth management products are effectively returning to principal guarantee is a misreading of policy.",
+          "summary": "The article clarifies that the statement that wealth management products are effectively returning to principal guarantee is a misreading of policy. For readers tracking the wealth management market and regulatory stance, it helps separate market rumors from the policy's intended meaning and avoid being misled by headline claims.",
+          "failureAnalysis": "The practical takeaway is to check official wording before treating claims about 'disguised principal guarantee' in wealth products as fact.",
+          "title": "'Wealth Products Will Effectively Guarantee Principal' Is a Misreading of Policy"
         }
       }
     },
     {
-      "id": "news-e67ed936c39a4e5eba7a6588bf90eff6",
+      "id": "news-af46dcae91c5437eb5fa16add6077b56",
       "category": "domestic",
-      "title": "四川华蓥大摆荡项目事故调查报告公布",
-      "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-31/10724049.shtml",
-      "publishedAt": "2026-10-31T12:36:57.0000000+00:00",
+      "title": "新华社受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》和习近平总书记所作的《关于〈中共中央关于持之以恒推进全面从严治党若干重大问题的决定〉的说明》",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-01/10724499.shtml",
+      "publishedAt": "2026-11-01T13:10:08.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "调查认定，事故因企业安全生产主体责任悬空、管理缺位，违规安排未经培训合格人员上岗，属地监管不到位所致。",
-      "summary": "中国新闻网社会频道报道，华蓥市人民政府事故调查组公布了溪口玛琉岩大摆荡项目“5·3”一般高处坠落事故调查报告。报告认定这是一般生产安全责任事故，原因涉及企业安全生产主体责任悬空、管理缺位、未有效辨识管控安全风险、违规安排未经安全生产教育和培训合格人员上岗，以及属地政府及监管部门监督检查存在漏洞。该报道的价值在于公开呈现官方调查结论和责任链条，便于公众了解高风险游乐项目运营与监管中的问责信息。",
-      "failureAnalysis": "关键约束是高风险游乐项目不能只靠事后调查，运营方必须落实安全生产主体责任、人员培训和风险管控，属地监管也需补上监督检查漏洞。",
+      "highlight": "新华社受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》和习近平总书记所作的说明。",
+      "summary": "该报道记录新华社于11月1日受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》，以及中共中央总书记习近平就这一决定所作的说明。所给信息只涉及播发事实、文件名称和时间，未涉及具体条款内容。对有需要跟踪党内法规与党建动向的读者，这条消息提供了确认权威文本发布渠道与时间节点的第一手信源。",
+      "failureAnalysis": "可核实的要点是：决定全文与习近平所作的说明同日由新华社受权播发；具体政策内容应以全文为准，不能仅凭这条播发消息推断细节。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "记者获悉，华蓥市人民政府事故调查组发布了华蓥市溪口玛琉岩大摆荡项目“5·3”一般高处坠落事故调查报告。经调查认定，该事故是一起因项目运营企业安全生产主体责任悬空、管理缺位，未有效辨识管控安全风险，违规安排未经安全生产教育和培训合格人员上岗，属地政府及监管部门安全监管不到位、监督检查存在漏洞而导致的一般生产安全责任事故。",
+      "sourceExcerpt": "新华社北京11月1日电 新华社11月1日受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》和中共中央总书记习近平所作的《关于〈中共中央关于持之以恒推进全面从严治党若干重大问题的决定〉的说明》。",
       "translations": {
         "zh": {
-          "title": "四川华蓥大摆荡项目事故调查报告公布",
-          "highlight": "调查认定，事故因企业安全生产主体责任悬空、管理缺位，违规安排未经培训合格人员上岗，属地监管不到位所致。",
-          "summary": "中国新闻网社会频道报道，华蓥市人民政府事故调查组公布了溪口玛琉岩大摆荡项目“5·3”一般高处坠落事故调查报告。报告认定这是一般生产安全责任事故，原因涉及企业安全生产主体责任悬空、管理缺位、未有效辨识管控安全风险、违规安排未经安全生产教育和培训合格人员上岗，以及属地政府及监管部门监督检查存在漏洞。该报道的价值在于公开呈现官方调查结论和责任链条，便于公众了解高风险游乐项目运营与监管中的问责信息。",
-          "failureAnalysis": "关键约束是高风险游乐项目不能只靠事后调查，运营方必须落实安全生产主体责任、人员培训和风险管控，属地监管也需补上监督检查漏洞。"
+          "title": "新华社受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》和习近平总书记所作的说明",
+          "highlight": "新华社受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》和习近平总书记所作的说明。",
+          "summary": "该报道记录新华社于11月1日受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》，以及中共中央总书记习近平就这一决定所作的说明。所给信息只涉及播发事实、文件名称和时间，未涉及具体条款内容。对有需要跟踪党内法规与党建动向的读者，这条消息提供了确认权威文本发布渠道与时间节点的第一手信源。",
+          "failureAnalysis": "可核实的要点是：决定全文与习近平所作的说明同日由新华社受权播发；具体政策内容应以全文为准，不能仅凭这条播发消息推断细节。"
         },
         "en": {
-          "highlight": "The investigation found the accident was caused by the operator's unfulfilled safety responsibilities, management gaps, use of untrained personnel, and inadequate local supervision.",
-          "summary": "China News Service's society channel reports that the Huaying City government accident investigation team released a report on the May 3 general fall accident at the Xikou Maliuyan giant swing project. The report identifies it as a general production safety responsibility accident involving unfulfilled corporate safety responsibilities, management gaps, failure to effectively identify and control risks, use of personnel without required safety training, and inadequate local government and regulatory supervision. The report is worth reading because it publicly sets out the official findings and the chain of accountability for a high-risk amusement project.",
-          "failureAnalysis": "The key constraint is that high-risk amusement projects cannot rely on after-the-fact investigation alone: operators must implement safety responsibilities, personnel training, and risk controls, while local regulators must close supervision gaps.",
-          "title": "Investigation Report Released on Sichuan Huaying Giant Swing Accident"
+          "highlight": "Xinhua released on November 1, authorized, the full text of the CPC Central Committee's decision on persistently advancing full and rigorous Party self-governance and Xi Jinping's explanatory remarks on it.",
+          "summary": "The report records that Xinhua released on November 1, with authorization, the full text of the CPC Central Committee decision on persistently advancing full and rigorous Party self-governance, together with the explanatory remarks delivered by Xi Jinping, general secretary of the CPC Central Committee. The available information covers only the fact of publication, the document titles and the date, not the specific provisions. For readers tracking Party regulations and Party-building developments, it is a primary source confirming the channel and timing of the authoritative text's release.",
+          "failureAnalysis": "The verifiable point is that the decision's full text and Xi's explanatory remarks were released by Xinhua, with authorization, on the same day; substantive policy content should be read from the full text rather than inferred from this publication notice alone.",
+          "title": "Xinhua releases full text of the CPC Central Committee decision on advancing full and rigorous Party self-governance, along with Xi Jinping's explanatory remarks"
         }
       }
     },
     {
-      "id": "news-855e40945182410985464bfb4b9e4022",
+      "id": "news-29ea15ea26e3494ead7dc50d168c8047",
       "category": "domestic",
-      "title": "地震灾区降雪又降温！西藏巴青消防连夜清雪除冰、入户排险",
+      "title": "大风蓝色预警：新疆西藏等6省区部分地区阵风可达7至8级",
       "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/10-31/10724081.shtml",
-      "publishedAt": "2026-10-31T13:17:05.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-01/10724410.shtml",
+      "publishedAt": "2026-11-01T10:44:34.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 4",
-      "highlight": "昨天(30日)晚上，西藏巴青县地震灾区出现降雪过程，本轮降雪将持续到明天(11月1日)，降雪给安置点受灾群众的生活造成一定影响。",
-      "summary": "内容显示，10月30日晚西藏巴青县地震灾区出现降雪，预计持续至11月1日，安置点受灾群众生活受到一定影响。当地消防救援人员开展积雪清扫、取暖安全排查和入户排险，以应对降雪降温带来的现实困难。这条消息值得关注的是灾后低温天气下基层应急保障的具体动作。",
-      "failureAnalysis": "可核验的公共影响是降雪降温直接扰动安置点生活，应急重点落在清雪除冰与取暖安全排查。此类报道的关键约束在于降雪持续时间及安置点基本保障能力。",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "预计11月1日20时至2日20时，新疆东部、西藏北部、青海南部、内蒙古中西部、河北北部、江西北部等地的部分地区有5~6级风，阵风7~8级。",
+      "summary": "中央气象台于11月1日18时继续发布大风蓝色预警，预警时段为11月1日20时至11月2日20时。新疆东部、西藏北部、青海南部、内蒙古中西部、河北北部、江西北部等6省区的部分地区将出现5~6级风、阵风可达7~8级，同时渤海、黄海、东海西部及台湾海峡等海域将有7~8级、阵风9级的大风。这条预警对相关地区的出行、海上作业和设施防风有直接参考价值。",
+      "failureAnalysis": "这是一条标准的气象预警信息，判断价值在于看准时间窗口和具体影响区域：陆上关注阵风7~8级，海上则要关注阵风9级，再据此安排出行和作业。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "昨天(30日)晚上，西藏巴青县地震灾区出现降雪过程，本轮降雪将持续到明天(11月1日)，降雪给安置点受灾群众的生活造成一定影响。面对降雪，当地消防救援人员积极开展积雪清扫、取暖安全排查等工作。",
+      "sourceExcerpt": "中新网11月1日电 据中央气象台网站消息，中央气象台11月1日18时继续发布大风蓝色预警：预计，11月1日20时至2日20时，新疆东部、西藏北部、青海南部、内蒙古中西部、河北北部、江西北部等地的部分地区有5~6级风，阵风7~8级；渤海北部、渤海海峡、黄海北部、黄海南部偏西海域、东海西部海域、台湾海峡将有7~8级、阵风9级的大风。",
       "translations": {
         "zh": {
-          "title": "西藏巴青地震灾区降雪降温，消防连夜清雪除冰、入户排险",
-          "highlight": "昨天(30日)晚上，西藏巴青县地震灾区出现降雪过程，本轮降雪将持续到明天(11月1日)，降雪给安置点受灾群众的生活造成一定影响。",
-          "summary": "内容显示，10月30日晚西藏巴青县地震灾区出现降雪，预计持续至11月1日，安置点受灾群众生活受到一定影响。当地消防救援人员开展积雪清扫、取暖安全排查和入户排险，以应对降雪降温带来的现实困难。这条消息值得关注的是灾后低温天气下基层应急保障的具体动作。",
-          "failureAnalysis": "可核验的公共影响是降雪降温直接扰动安置点生活，应急重点落在清雪除冰与取暖安全排查。此类报道的关键约束在于降雪持续时间及安置点基本保障能力。"
+          "title": "中央气象台发布大风蓝色预警：新疆西藏等6省区阵风可达7至8级",
+          "highlight": "预计11月1日20时至2日20时，新疆东部、西藏北部、青海南部、内蒙古中西部、河北北部、江西北部等地的部分地区有5~6级风，阵风7~8级。",
+          "summary": "中央气象台于11月1日18时继续发布大风蓝色预警，预警时段为11月1日20时至11月2日20时。新疆东部、西藏北部、青海南部、内蒙古中西部、河北北部、江西北部等6省区的部分地区将出现5~6级风、阵风可达7~8级，同时渤海、黄海、东海西部及台湾海峡等海域将有7~8级、阵风9级的大风。这条预警对相关地区的出行、海上作业和设施防风有直接参考价值。",
+          "failureAnalysis": "这是一条标准的气象预警信息，判断价值在于看准时间窗口和具体影响区域：陆上关注阵风7~8级，海上则要关注阵风9级，再据此安排出行和作业。"
         },
         "en": {
-          "highlight": "On the evening of Oct. 30, snowfall hit the earthquake-affected area of Baqing County in Tibet and was expected to last until Nov. 1, affecting residents at resettlement sites.",
-          "summary": "The report says the earthquake-affected area of Baqing County in Tibet saw snowfall starting on the evening of Oct. 30, expected to continue through Nov. 1, with some impact on people living at resettlement sites. Local firefighters cleared snow, checked heating safety, and conducted household risk inspections to address the practical difficulties caused by the cold and snow. It is worth reading for a concrete look at local emergency support in post-earthquake cold weather.",
-          "failureAnalysis": "The verifiable public impact is that snow and colder weather directly disrupt life at resettlement sites, making snow clearance and heating-safety checks immediate priorities. The practical constraint is how long the snowfall lasts and how well temporary sites can maintain basic services.",
-          "title": "Snow and Cold Hit Tibet’s Baqing Earthquake Zone as Firefighters Clear Snow and Check Heating Safety"
+          "highlight": "From 20:00 on November 1 to 20:00 on November 2, parts of eastern Xinjiang, northern Tibet, southern Qinghai, central and western Inner Mongolia, northern Hebei and northern Jiangxi will see force 5-6 winds with gusts of force 7-8.",
+          "summary": "The Central Meteorological Observatory continued a blue wind alert at 18:00 on November 1, covering the period from 20:00 that day to 20:00 on November 2. Parts of six provinces and regions, including eastern Xinjiang, northern Tibet, southern Qinghai, central and western Inner Mongolia, northern Hebei and northern Jiangxi, will see force 5-6 winds with gusts of force 7-8, while sea areas including the Bohai Sea, Yellow Sea, western East China Sea and Taiwan Strait will see force 7-8 winds with gusts of force 9. The alert is directly useful for travel planning, maritime operations and windproofing of facilities in the affected areas.",
+          "failureAnalysis": "This is a standard meteorological warning; its value lies in the time window and the specific affected areas, with gusts of force 7-8 on land and force 9 at sea, which can guide travel and operational decisions.",
+          "title": "Blueprint for Strong Winds: Central Meteorological Observatory issues blue alert for six provinces and regions including Xinjiang and Tibet, with gusts up to force 7-8"
         }
       }
     },
     {
-      "id": "news-99396647c9d74cbd8f46c992b9f00fe5",
+      "id": "news-060510642b334807b1e15452e305ee30",
       "category": "international",
-      "title": "Anti-corruption and party discipline: takeaways from from this week's key political meeting in Beijing",
+      "title": "A new political era in the Southern Philippines",
       "source": "NPR World",
-      "url": "https://www.npr.org/2026/10/31/nx-s1-6024695/political-meeting-beijing-takeaways",
-      "publishedAt": "2026-10-31T18:42:33.0000000+00:00",
+      "url": "https://www.npr.org/2026/10/31/nx-s1-6020639/a-new-political-era-in-the-southern-philippines",
+      "publishedAt": "2026-10-31T21:14:32.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "中共中中央委员会会议聚焦纪律与反腐，正值外界普遍预计习近平明年寻求第四个任期之际。",
-      "summary": "美国国家公共电台报道，本周北京召开的关键政治会议以党的纪律和反腐败为重点。报道指出，会议时点在前方，外界普遍预计习近平明年将争取第四个任期。阅读这条简讯有助于把握中国高层政治议程与人事预期的交集。",
-      "failureAnalysis": "关键看点是会议主题与时间背景：反腐党纪是明确议题，第四个任期预期则是外界观察窗口，阅读时应区分已确认信息与预期判断。",
+      "highlight": "菲律宾南部新地方政府已就职，这标志着持续约80年冲突的和平进程迈出里程碑一步。",
+      "summary": "报道说，菲律宾南部一个新地方政府已宣誓就职，这是当地和平进程中的重要节点。这一进展涉及一场持续约80年的冲突，值得关注的是和平安排能否由此进入落实阶段。",
+      "failureAnalysis": "关键看点在于，长期冲突的解决正从和平进程推进到地方治理落地，后续能否巩固和平仍取决于治理与和解的持续性。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "The Communist party central committee meeting was focused on discipline and fighting corruption. It comes ahead of next year when Xi is widely expected to try to secure a fourth term.",
+      "sourceExcerpt": "A new local government has taken its seat in the southern Philippines, in a step that marks a milestone in the peace process for a conflict that has lasted some 80 years.",
       "translations": {
         "zh": {
-          "title": "北京关键政治会议聚焦反腐与党纪，外界关注习近平第四任期预期",
-          "highlight": "中共中中央委员会会议聚焦纪律与反腐，正值外界普遍预计习近平明年寻求第四个任期之际。",
-          "summary": "美国国家公共电台报道，本周北京召开的关键政治会议以党的纪律和反腐败为重点。报道指出，会议时点在前方，外界普遍预计习近平明年将争取第四个任期。阅读这条简讯有助于把握中国高层政治议程与人事预期的交集。",
-          "failureAnalysis": "关键看点是会议主题与时间背景：反腐党纪是明确议题，第四个任期预期则是外界观察窗口，阅读时应区分已确认信息与预期判断。"
+          "title": "菲律宾南部开启政治新纪元",
+          "highlight": "菲律宾南部新地方政府已就职，这标志着持续约80年冲突的和平进程迈出里程碑一步。",
+          "summary": "报道说，菲律宾南部一个新地方政府已宣誓就职，这是当地和平进程中的重要节点。这一进展涉及一场持续约80年的冲突，值得关注的是和平安排能否由此进入落实阶段。",
+          "failureAnalysis": "关键看点在于，长期冲突的解决正从和平进程推进到地方治理落地，后续能否巩固和平仍取决于治理与和解的持续性。"
         },
         "en": {
-          "highlight": "The Communist Party central committee meeting focused on discipline and fighting corruption, ahead of next year when Xi is widely expected to try to secure a fourth term.",
-          "summary": "NPR reports that this week's key political meeting in Beijing centered on party discipline and anti-corruption. The meeting comes ahead of next year, when Xi is widely expected to seek a fourth term. The item is worth reading for the intersection of China's high-level political agenda and leadership-term expectations.",
-          "failureAnalysis": "The key takeaway is the timing and framing: anti-corruption and discipline are the stated focus, while the fourth-term expectation is the background signal, so readers should distinguish confirmed facts from expectations.",
-          "title": "Beijing Political Meeting Focuses on Anti-Corruption and Party Discipline as Xi's Fourth-Term Expectations Loom"
+          "highlight": "A new local government has taken its seat in the southern Philippines, in a step that marks a milestone in the peace process for a conflict that has lasted some 80 years.",
+          "summary": "The report says a new local government has taken office in the southern Philippines, marking an important point in the peace process. The development concerns a conflict that has lasted about 80 years, and the key question is whether the peace arrangements can now move into implementation.",
+          "failureAnalysis": "The key takeaway is that the resolution of a long-running conflict is moving from the peace process toward local governance; whether peace can be consolidated will depend on sustained governance and reconciliation.",
+          "title": "A New Political Era in the Southern Philippines"
         }
       }
     },
     {
-      "id": "news-70de4602229b4ea2a6bc21ba7cfdbd76",
+      "id": "news-ad73135d31624e0ab61d8fd087bc2892",
       "category": "international",
-      "title": "How crypto hacking funds isolated North Korea’s nuclear programme",
+      "title": "The US-China trade war seems to have subsided – but the sense of calm is misleading",
       "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/oct/30/how-crypto-hacking-funds-isolated-north-korea-nuclear-programme",
-      "publishedAt": "2026-10-30T17:37:46.0000000+00:00",
+      "url": "https://www.theguardian.com/world/2026/nov/01/us-china-trade-war-trump-xi",
+      "publishedAt": "2026-11-01T12:00:12.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "据估计，加密货币盗窃为朝鲜带来了其外汇收入的一半。",
-      "summary": "文章称，朝鲜虽基本被排除在全球经济体系之外，却依靠高水平黑客手段窃取加密货币来获取外汇；这类盗窃估计占其外汇收入的一半。卫报提到，专家将币安63亿美元失窃归因于朝鲜黑客组织TraderTraitor（又称Lazarus Group）；尽管这一联系尚未证实，但行为模式并不陌生。值得读，因为它把网络犯罪与国家核计划融资联系了起来。",
-      "failureAnalysis": "关键不在于单次归因是否已坐实，而在于一种可复用的模式：封闭国家可通过加密资产盗窃，把网络犯罪转化为外汇和战略资金。",
+      "highlight": "平静的表象具有误导性：世界正悄然迈向一场规模可能空前的经济战，历史表明它可能外溢为真正的战争。",
+      "summary": "文章指出，美中贸易战因停火而暂时降温，但两国都没有采取行动限制新的敌对冲突爆发。贸易战淡出头条并不意味着风险消失，世界仍在滑向可能规模巨大的经济战，并可能外溢为真实冲突。值得读在于它提醒读者关注低可见度但高影响的地缘经济风险。",
+      "failureAnalysis": "关键不是贸易战已经结束，而是停火并未改变结构性对抗；越是表面平静，越要警惕未被头条反映的升级风险。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Cryptocurrency theft is estimated to generate half of the country’s foreign currency income North Korea plays by its own rules. The isolated, secretive and autocratic country is largely cut off from the world’s economic system – but when it comes to generating foreign earnings it relies on some of the world’s most sophisticated hacking. Experts, such as TRM Labs, quickly attributed the extraordinary $6.3bn (£4.7bn) Binance cryptocurrency theft to TraderTraitor, an elite North Korean hacking unit that has also been known as the Lazarus Group.",
+      "sourceExcerpt": "A truce has cooled the trade conflict, but neither country has done anything to limit the outbreak of new hostilities Donald Trump ’s trade wars have largely fallen off the headlines. Fears of new tariffs flare up from time to time when the US president goes off the rails – for instance, threatening to end US trade with countries with which it has a deficit unless the Federal Reserve cuts interest rates. But the sense that the world’s two largest economies are plowing ahead into an overt economic conflagration has taken a back seat to other, more salient fears, about Trump ending American democracy, AI killing us all and stuff like that.",
       "translations": {
         "zh": {
-          "title": "加密黑客如何为孤立的朝鲜核计划提供资金",
-          "highlight": "据估计，加密货币盗窃为朝鲜带来了其外汇收入的一半。",
-          "summary": "文章称，朝鲜虽基本被排除在全球经济体系之外，却依靠高水平黑客手段窃取加密货币来获取外汇；这类盗窃估计占其外汇收入的一半。卫报提到，专家将币安63亿美元失窃归因于朝鲜黑客组织TraderTraitor（又称Lazarus Group）；尽管这一联系尚未证实，但行为模式并不陌生。值得读，因为它把网络犯罪与国家核计划融资联系了起来。",
-          "failureAnalysis": "关键不在于单次归因是否已坐实，而在于一种可复用的模式：封闭国家可通过加密资产盗窃，把网络犯罪转化为外汇和战略资金。"
+          "title": "美中贸易战似已降温，但平静只是假象",
+          "highlight": "平静的表象具有误导性：世界正悄然迈向一场规模可能空前的经济战，历史表明它可能外溢为真正的战争。",
+          "summary": "文章指出，美中贸易战因停火而暂时降温，但两国都没有采取行动限制新的敌对冲突爆发。贸易战淡出头条并不意味着风险消失，世界仍在滑向可能规模巨大的经济战，并可能外溢为真实冲突。值得读在于它提醒读者关注低可见度但高影响的地缘经济风险。",
+          "failureAnalysis": "关键不是贸易战已经结束，而是停火并未改变结构性对抗；越是表面平静，越要警惕未被头条反映的升级风险。"
         },
         "en": {
-          "highlight": "Cryptocurrency theft is estimated to generate half of the country’s foreign currency income.",
-          "summary": "The article says North Korea, largely cut off from the global economic system, relies on sophisticated hacking to earn foreign currency, with crypto theft estimated to provide half of that income. The Guardian notes that experts attributed the $6.3bn Binance theft to TraderTraitor, also known as the Lazarus Group; the link may not be proven, but the pattern is familiar. It is worth reading because it connects cybercrime to financing a national nuclear programme.",
-          "failureAnalysis": "The key takeaway is not whether a single attribution is proven, but the repeatable pattern: an isolated state can turn crypto theft into foreign exchange and strategic funding.",
-          "title": "How crypto hacking funds isolated North Korea’s nuclear programme"
+          "highlight": "The sense of calm is misleading: under the radar, the world is marching toward an economic war of potentially epic proportions that history suggests could spill over into real conflict.",
+          "summary": "The article says the US-China trade war has cooled because of a truce, but neither country has done anything to limit the outbreak of new hostilities. The conflict falling off the headlines does not mean the risk is gone; the world is still moving toward a potentially epic economic war that could spill over into real conflict. It is worth reading because it flags a low-visibility but high-impact geopolitical economic risk.",
+          "failureAnalysis": "The key point is not that the trade war is over, but that the truce has not changed the structural confrontation; the calmer the surface looks, the more important it is to watch for escalation that headlines do not reflect.",
+          "title": "US-China Trade War Looks Calmer, but the Calm Is Misleading"
         }
       }
     },
     {
-      "id": "life-b6a7064ae30641d0a9a5064f4a37f8b0",
+      "id": "life-d8570f87fc6a4c63845144984062d121",
       "category": "international",
-      "title": "Sleep Inertia Remedy: What Actually Clears the Morning Fog",
-      "source": "Lifehack.org",
-      "url": "https://www.lifehack.org/991547/sleep-inertia-remedy",
-      "publishedAt": "2026-10-31T00:00:00.0000000+00:00",
-      "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 3",
-      "highlight": "睡眠惰性大多在闹钟响起前就已决定；我们按证据为睡眠机会、闹钟时机、咖啡因滞后、光照和炒作排序。",
-      "summary": "核心观点是睡眠惰性大多在闹钟响前已经决定，因此补救措施应按证据强弱排序。文章比较睡眠机会、闹钟时机、咖啡因滞后和光照等做法，并提醒区分被炒作的项目。想改善早晨清醒状态的人，可据此优先选择更有依据的干预。",
-      "failureAnalysis": "关键要点是：先保证睡眠机会和闹钟时机，再考虑咖啡因与光照，别被缺乏证据的噱头带偏。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "Sleep inertia is mostly decided before your alarm. We rank the remedies by evidence: sleep opportunity, alarm timing, caffeine lag, light, and the hype.",
-      "translations": {
-        "zh": {
-          "title": "睡眠惰性补救：真正驱散晨雾的是什么",
-          "highlight": "睡眠惰性大多在闹钟响起前就已决定；我们按证据为睡眠机会、闹钟时机、咖啡因滞后、光照和炒作排序。",
-          "summary": "核心观点是睡眠惰性大多在闹钟响前已经决定，因此补救措施应按证据强弱排序。文章比较睡眠机会、闹钟时机、咖啡因滞后和光照等做法，并提醒区分被炒作的项目。想改善早晨清醒状态的人，可据此优先选择更有依据的干预。",
-          "failureAnalysis": "关键要点是：先保证睡眠机会和闹钟时机，再考虑咖啡因与光照，别被缺乏证据的噱头带偏。"
-        },
-        "en": {
-          "highlight": "Sleep inertia is mostly decided before your alarm, so remedies should be ranked by evidence: sleep opportunity, alarm timing, caffeine lag, light, and the hype.",
-          "summary": "The article explains that sleep inertia is largely set before the alarm goes off. It ranks possible remedies—sleep opportunity, alarm timing, caffeine lag, and light—by evidence, while flagging hype. It is worth reading for a practical, evidence-first way to think about morning grogginess.",
-          "failureAnalysis": "Key takeaway: prioritize sleep opportunity and alarm timing before caffeine or light, and be wary of remedies that lack evidence.",
-          "title": "Sleep Inertia Remedy: What Actually Clears the Morning Fog"
-        }
-      }
-    },
-    {
-      "id": "life-139e822d348e4ef7a3e1786de782e86d",
-      "category": "international",
-      "title": "Meteor of Joy: The Young People’s Chorus of New York City Sings Bird Divinations",
+      "title": "The Art of Being Alone: May Sarton’s Stunning 1938 Ode to Solitude",
       "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/10/31/meteor-of-joy-paola-prestini/",
-      "publishedAt": "2026-10-31T18:01:08.0000000+00:00",
+      "url": "https://www.themarginalian.org/2026/11/01/may-sarton-canticle-6-considerations/",
+      "publishedAt": "2026-11-01T13:38:09.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 2",
-      "highlight": "孩子们知晓生命最深的真理，那是我们在生活过程中逐渐遗忘的原初知识。",
-      "summary": "为纪念《Marginalian》二十周年，作曲家保拉·普雷斯蒂尼创作了六首作品，由纽约市青年合唱团演唱《鸟的占卜》。文章借孩子歌唱心中秘密智慧，谈论音乐如何唤起我们遗忘的原初知识，并让人更真切地感受生命。它值得读，因为把合唱、诗意与对生命短暂的体认放在一起，提供一种超越论说的感受。",
-      "failureAnalysis": "关键启发是：音乐与儿童歌声能传达难以言说的生命真相，提醒我们珍惜身体与活着的短暂时光；但已知内容只是引子，具体作品与演出细节仍需读全文。",
+      "selectionReason": "Life-skills match score: 0",
+      "highlight": "世上再没有比一个人独处时的精神更私密、更亲密的地方了。",
+      "summary": "文章聚焦梅·萨顿1938年关于独处的颂歌，并借“世上再没有比一个人独处时的精神更私密、更亲密的地方了”这一句子呈现主题。它值得读，因为能让人从文学角度重新理解独处与内在精神生活。",
+      "failureAnalysis": "关键要点：独处可以是一种亲密的自我相处，而不只是远离他人；给自己留出与精神相处的空间，本身就有价值。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Children know the deepest truths about life, the elemental knowledge we unlearn in the act of living, those inarticulable truths music alone helps us remember. To hear children sing the secret wisdom of the heart is to be in the presence of something truer and more transcendent than any of our poems and postulates can touch — the ultimate affirmation of our aliveness, emanating Richard Powers’s beautiful and bittersweet assertion that “the use of music is to remind us how short a time we have a body.” To celebrate twenty years of The Marginalian, composer extraordinaire Paola Prestini set six… read article",
+      "sourceExcerpt": "\"There is no place more intimate than the spirit alone.\"",
       "translations": {
         "zh": {
-          "title": "欢乐的流星：纽约市青年合唱团唱响《鸟的占卜》",
-          "highlight": "孩子们知晓生命最深的真理，那是我们在生活过程中逐渐遗忘的原初知识。",
-          "summary": "为纪念《Marginalian》二十周年，作曲家保拉·普雷斯蒂尼创作了六首作品，由纽约市青年合唱团演唱《鸟的占卜》。文章借孩子歌唱心中秘密智慧，谈论音乐如何唤起我们遗忘的原初知识，并让人更真切地感受生命。它值得读，因为把合唱、诗意与对生命短暂的体认放在一起，提供一种超越论说的感受。",
-          "failureAnalysis": "关键启发是：音乐与儿童歌声能传达难以言说的生命真相，提醒我们珍惜身体与活着的短暂时光；但已知内容只是引子，具体作品与演出细节仍需读全文。"
+          "title": "独处的艺术：梅·萨顿1938年写给孤独的惊艳颂歌",
+          "highlight": "世上再没有比一个人独处时的精神更私密、更亲密的地方了。",
+          "summary": "文章聚焦梅·萨顿1938年关于独处的颂歌，并借“世上再没有比一个人独处时的精神更私密、更亲密的地方了”这一句子呈现主题。它值得读，因为能让人从文学角度重新理解独处与内在精神生活。",
+          "failureAnalysis": "关键要点：独处可以是一种亲密的自我相处，而不只是远离他人；给自己留出与精神相处的空间，本身就有价值。"
         },
         "en": {
-          "highlight": "Children know the deepest truths about life, the elemental knowledge we unlearn in the act of living.",
-          "summary": "To mark The Marginalian’s twentieth anniversary, composer Paola Prestini set six works for the Young People’s Chorus of New York City to sing Bird Divinations. The piece reflects on children’s singing as a way to recover secret wisdom of the heart and to feel a transcendent affirmation of being alive. It is worth reading for its blend of choral music, poetry, and Richard Powers’s reminder that music shows how short a time we have a body.",
-          "failureAnalysis": "The key takeaway is that music and children’s voices can carry truths that argument cannot, reminding us to cherish our brief embodied life; the excerpt is only an opening, so the full article is needed for details.",
-          "title": "Meteor of Joy: The Young People’s Chorus of New York City Sings Bird Divinations"
+          "highlight": "May Sarton writes that there is no place more intimate than the spirit alone.",
+          "summary": "The article centers on May Sarton’s 1938 ode to solitude and uses the line about the intimacy of the spirit alone to frame its theme. It is worth reading as a literary reflection on solitude and inner life.",
+          "failureAnalysis": "The key takeaway is that solitude can be an intimate form of self-company, not merely distance from others; making room for the spirit alone has value.",
+          "title": "The Art of Being Alone: May Sarton’s Stunning 1938 Ode to Solitude"
         }
       }
     },
     {
-      "id": "paper-2610.38564",
+      "id": "life-b359b7207ebc424eae30ee922d98e973",
+      "category": "international",
+      "title": "The power of pareidolia",
+      "source": "Psyche",
+      "url": "https://psyche.co/videos/why-we-see-faces-in-unexpected-places-and-what-it-says-about-us",
+      "publishedAt": "2026-10-30T10:01:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 0",
+      "highlight": "从岩石、云朵到吐司切片，探索无处不在的熟悉形状背后的艺术与科学。",
+      "summary": "该视频从岩石、云朵到吐司切片等日常对象出发，探讨人们为何会在各处看见熟悉形状，并呈现这一现象背后的艺术与科学。它属于生活技能类国际内容，适合快速了解幻想性视错觉这一感知现象。",
+      "failureAnalysis": "关键启示：人类感知倾向于在随机图案中寻找熟悉形状，幻想性视错觉因此成为理解视觉认知的一个直观入口。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "From rocks and clouds to slices of toast, explore the art and science of seeing familiar shapes everywhere - Video by Mary McGillivray Watch on Psyche",
+      "translations": {
+        "zh": {
+          "title": "幻想性视错觉的力量",
+          "highlight": "从岩石、云朵到吐司切片，探索无处不在的熟悉形状背后的艺术与科学。",
+          "summary": "该视频从岩石、云朵到吐司切片等日常对象出发，探讨人们为何会在各处看见熟悉形状，并呈现这一现象背后的艺术与科学。它属于生活技能类国际内容，适合快速了解幻想性视错觉这一感知现象。",
+          "failureAnalysis": "关键启示：人类感知倾向于在随机图案中寻找熟悉形状，幻想性视错觉因此成为理解视觉认知的一个直观入口。"
+        },
+        "en": {
+          "highlight": "From rocks and clouds to slices of toast, explore the art and science of seeing familiar shapes everywhere.",
+          "summary": "This Psyche video explores why people see familiar shapes in everyday objects, from rocks and clouds to slices of toast. It presents the art and science behind pareidolia as a perceptual phenomenon.",
+          "failureAnalysis": "The key takeaway is that human perception readily finds familiar shapes in random patterns, making pareidolia an intuitive entry point for understanding visual cognition.",
+          "title": "The Power of Pareidolia"
+        }
+      }
+    },
+    {
+      "id": "paper-2610.37958",
       "category": "paper",
-      "title": "Recognition of auditory objects from continuous and ultra-sparse spike streams in neuromorphic devices",
+      "title": "Neuroscience of Improvisation Across Music and Other Domains: A Survey and Outlook",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2610.38564v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2610.38564",
-      "publishedAt": "2026-10-28T09:58:41.0000000Z",
+      "url": "https://arxiv.org/pdf/2610.37958v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.37958",
+      "publishedAt": "2026-10-27T20:45:09.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
-      "selectionReason": "Open full-text paper; topic ai; quality signal passed; application scenario is clear.",
-      "paperTopic": "ai",
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
       "qualityScore": 28,
       "readabilityStatus": "open",
       "paperCard": {
-        "problem": "解决的问题：这篇论文试图把 ai 方向的研究推进到更可用的场景。",
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
         "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
         "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
         "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
         "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
         "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
         "technicalTerms": [
-          "SNN：模仿神经脉冲时序的神经网络。"
+          "EEG：把大脑电信号当作输入数据。"
         ],
-        "whySelected": "Open full-text paper; topic ai; quality signal passed; application scenario is clear."
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
       },
-      "highlight": "现代人工智能应用面临显著能耗问题，而大脑可能借助稀疏编码实现高能效计算。",
-      "summary": "该论文研究神经形态设备如何从连续和超稀疏脉冲流中识别听觉对象。其出发点是现代AI应用能耗高，而大脑可能通过稀疏编码实现高能效计算。若成立，这类脉冲流识别对低能耗神经形态听觉处理具有潜在意义。",
-      "failureAnalysis": "可用来源仅包含标题、作者单位和摘要开头，缺少实验设置、数据集与识别性能等关键证据。因此无法判断超稀疏脉冲流下的识别效果及其能效优势是否成立。",
+      "highlight": "即兴是实时生成新颖且贴合情境的行动，见于音乐、舞蹈、戏剧、体育、教育与治疗，但其神经科学证据几乎全部来自音乐。",
+      "summary": "该综述把即兴界定为实时生成新颖且贴合情境的行动，并指出它存在于音乐、舞蹈、戏剧、体育、教育与治疗等实践中。作者强调，目前多数定量神经影像证据几乎只集中在音乐即兴上。文章据此梳理跨领域的既有研究，并提出后续研究的方向。",
+      "failureAnalysis": "由于定量影像证据几乎全部来自音乐即兴，将相关神经机制推广到其他领域尚缺乏直接数据支持。作为综述，其结论也受既有文献覆盖范围与各研究测量方法差异的限制。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Recognition of auditory objects from continuous and ultra-sparse spike streams in neuromorphic devices Leonardo E. Jin 1,∗ 1Department of Physics and Huck Institutes of the Life Sciences, Pennsylvania State University, University Park, Pennsylvania 16802, USA 2Department of Biology, McGill University, Montreal, Quebec, Canada Energy consumption is a major concern for modern artificial intelligence (AI) applications. The brain is thought to achieve energy-efficient computation through sparse coding schemes.",
+      "sourceExcerpt": "1 Neuroscience of Improvisation Across Music and Other Domains: A Survey and Outlook Levina Perzhilla∗, Muhammad Mahboob Ur Rahman ∗,Senior member, IEEE, Tareq Y . Al-Naffouri ∗,Fellow, IEEE Abstract—Improvisation (or Improv), the real-time generation of novel, context-appropriate action, occurs in music, dance, theater, sport, education, therapy, and professional practice. Its neuroscience, however, has been studied almost exclusively for music, where most quantitative neuroimaging evidence lies.",
       "translations": {
         "zh": {
-          "title": "神经形态器件中基于连续与超稀疏脉冲流的听觉对象识别",
-          "highlight": "现代人工智能应用面临显著能耗问题，而大脑可能借助稀疏编码实现高能效计算。",
-          "summary": "该论文研究神经形态设备如何从连续和超稀疏脉冲流中识别听觉对象。其出发点是现代AI应用能耗高，而大脑可能通过稀疏编码实现高能效计算。若成立，这类脉冲流识别对低能耗神经形态听觉处理具有潜在意义。",
-          "failureAnalysis": "可用来源仅包含标题、作者单位和摘要开头，缺少实验设置、数据集与识别性能等关键证据。因此无法判断超稀疏脉冲流下的识别效果及其能效优势是否成立。",
+          "title": "即兴的神经科学：跨音乐与其他领域的综述与展望",
+          "highlight": "即兴是实时生成新颖且贴合情境的行动，见于音乐、舞蹈、戏剧、体育、教育与治疗，但其神经科学证据几乎全部来自音乐。",
+          "summary": "该综述把即兴界定为实时生成新颖且贴合情境的行动，并指出它存在于音乐、舞蹈、戏剧、体育、教育与治疗等实践中。作者强调，目前多数定量神经影像证据几乎只集中在音乐即兴上。文章据此梳理跨领域的既有研究，并提出后续研究的方向。",
+          "failureAnalysis": "由于定量影像证据几乎全部来自音乐即兴，将相关神经机制推广到其他领域尚缺乏直接数据支持。作为综述，其结论也受既有文献覆盖范围与各研究测量方法差异的限制。",
           "paperCard": {
-            "problem": "解决的问题：这篇论文试图把 ai 方向的研究推进到更可用的场景。",
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
             "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
             "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
             "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
             "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
             "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
             "technicalTerms": [
-              "SNN：模仿神经脉冲时序的神经网络。"
+              "EEG：把大脑电信号当作输入数据。"
             ],
-            "whySelected": "Open full-text paper; topic ai; quality signal passed; application scenario is clear."
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
         },
         "en": {
-          "title": "Recognition of Auditory Objects from Continuous and Ultra-Sparse Spike Streams in Neuromorphic Devices",
-          "highlight": "Modern AI applications face major energy costs, while the brain may achieve efficient computation through sparse coding.",
-          "summary": "The paper examines how neuromorphic devices recognize auditory objects from continuous and ultra-sparse spike streams. Its motivation is the energy cost of modern AI and the brain's possible use of sparse coding for efficient computation. The supplied text only includes the title, affiliations, and the start of the abstract, so methods and results cannot be verified.",
-          "failureAnalysis": "The available source omits experimental setup, datasets, and recognition performance, leaving key evidence unverified. It is therefore not possible to judge the reported recognition effectiveness or energy-efficiency advantage under ultra-sparse spike streams.",
+          "title": "Neuroscience of Improvisation Across Music and Other Domains: A Survey and Outlook",
+          "highlight": "Improvisation, the real-time generation of novel, context-appropriate action, spans music, dance, theater, sport, education and therapy, yet its neuroscience evidence comes almost exclusively from music.",
+          "summary": "The survey defines improvisation as the real-time generation of novel, context-appropriate action and notes that it appears in music, dance, theater, sport, education, therapy and professional practice. The authors stress that most quantitative neuroimaging evidence is confined almost entirely to musical improvisation. The article maps existing cross-domain work and outlines an outlook for future research.",
+          "failureAnalysis": "Because the quantitative imaging evidence comes almost exclusively from musical improvisation, extending these neural findings to other domains lacks direct empirical support. As a survey, its conclusions are also limited by the coverage of existing literature and by differences in measurement methods across studies.",
           "paperCard": {
             "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
             "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
@@ -275,46 +275,55 @@
             "implementation": "Implementation: check the input data, core model or device, and validation results.",
             "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
             "technicalTerms": [
-              "SNN：模仿神经脉冲时序的神经网络。"
+              "EEG：把大脑电信号当作输入数据。"
             ],
-            "whySelected": "Open full-text paper; topic ai; quality signal passed; application scenario is clear."
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
         }
       }
     },
     {
-      "id": "ai-feed-a2859f261ba4403d8779d456af62edd6",
+      "id": "ai-github-1416442720",
       "category": "ai",
-      "title": "Agents Prompt People: Using Agents for Long-Horizon Financial Work",
-      "source": "Latent Space",
-      "url": "https://latent.space/p/arca/",
+      "title": "microsoft/TokenEconomizer",
+      "source": "GitHub Search",
+      "url": "https://github.com/microsoft/TokenEconomizer",
       "abstractUrl": null,
-      "publishedAt": "2026-10-31T16:05:00.0000000Z",
-      "scoreLabel": "Curated engineering feed",
-      "aiArticleType": "concept_explanation",
-      "evidenceAnchors": [],
-      "evidenceLabel": "No clear evidence",
-      "hasPrimaryAnchor": false,
-      "requiresRiskAnalysis": false,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
-      "summary": "该文围绕 Arca 的 AI 负责人对长周期金融工作的实践展开，重点谈到持久记忆、定制化运行框架的优势，以及能持续数天的智能体工作流。它值得关注，是因为这些要素指向智能体从单次任务走向跨天复杂工作的关键能力。",
-      "failureAnalysis": "关键不在于单轮问答，而在于用持久记忆与定制化运行框架支撑智能体连续数天推进复杂金融任务。",
-      "aiSelectionScore": 100,
-      "highlight": "Arca 的 AI 负责人讨论持久记忆、定制化运行框架的优势，以及可跨越数天的智能体工作流。",
+      "publishedAt": "2026-10-13T04:16:50.0000000Z",
+      "scoreLabel": "GitHub 3745 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "公开信息显示，microsoft/TokenEconomizer 是一个获得 3745 stars 且有近期公开活动的 GitHub 项目，定位为面向编码智能体的经验驱动黑盒成本控制。它的价值在于把 AI 编码代理的调用成本作为可管理对象，而不是只看功能演示。对准备落地编码智能体的团队，可重点观察其成本节省是否以代码质量为代价，以及接入和跨模型迁移难度。",
+      "failureAnalysis": "经验驱动的黑盒控制通常需要足够多的真实调用样本来冷启动，面对模型、任务或团队变化时可能失效。编码智能体链路长且结果质量难统一，压低 token 成本可能损害代码正确性，或把成本转移到工程接入和调参上。项目目前仅有仓库描述和 star 信号，尚不能证明需求刚性、可复现收益和跨团队分发能力。",
+      "aiSelectionScore": 3745,
+      "highlight": "微软开源项目 TokenEconomizer 以经验驱动的黑盒方式，为编码智能体提供成本控制。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Arca's head of AI discusses persistent memory, the benefits of a custom harness, and agentic workflows that span days.",
+      "sourceExcerpt": "GitHub repository with 3745 stars and recent public activity. Description: Experience-Driven Black-Box Cost Control for Coding Agents",
       "translations": {
         "zh": {
-          "title": "智能体提示人：用智能体处理长周期金融工作",
-          "highlight": "Arca 的 AI 负责人讨论持久记忆、定制化运行框架的优势，以及可跨越数天的智能体工作流。",
-          "summary": "该文围绕 Arca 的 AI 负责人对长周期金融工作的实践展开，重点谈到持久记忆、定制化运行框架的优势，以及能持续数天的智能体工作流。它值得关注，是因为这些要素指向智能体从单次任务走向跨天复杂工作的关键能力。",
-          "failureAnalysis": "关键不在于单轮问答，而在于用持久记忆与定制化运行框架支撑智能体连续数天推进复杂金融任务。"
+          "title": "微软 TokenEconomizer：面向编码智能体的经验驱动黑盒成本控制",
+          "highlight": "微软开源项目 TokenEconomizer 以经验驱动的黑盒方式，为编码智能体提供成本控制。",
+          "summary": "公开信息显示，microsoft/TokenEconomizer 是一个获得 3745 stars 且有近期公开活动的 GitHub 项目，定位为面向编码智能体的经验驱动黑盒成本控制。它的价值在于把 AI 编码代理的调用成本作为可管理对象，而不是只看功能演示。对准备落地编码智能体的团队，可重点观察其成本节省是否以代码质量为代价，以及接入和跨模型迁移难度。",
+          "failureAnalysis": "经验驱动的黑盒控制通常需要足够多的真实调用样本来冷启动，面对模型、任务或团队变化时可能失效。编码智能体链路长且结果质量难统一，压低 token 成本可能损害代码正确性，或把成本转移到工程接入和调参上。项目目前仅有仓库描述和 star 信号，尚不能证明需求刚性、可复现收益和跨团队分发能力。"
         },
         "en": {
-          "highlight": "Arca's head of AI discusses persistent memory, the benefits of a custom harness, and agentic workflows that span days.",
-          "summary": "The article centers on Arca's head of AI discussing long-horizon financial work, including persistent memory, the benefits of a custom harness, and agentic workflows that span days. It is worth reading because these elements point to what agents need in order to handle complex, multi-day work rather than single-turn tasks.",
-          "failureAnalysis": "The key is not single-turn Q&A but enabling agents to sustain complex financial work over multiple days through persistent memory and a custom harness.",
-          "title": "Agents Prompt People: Using Agents for Long-Horizon Financial Work"
+          "highlight": "Microsoft's TokenEconomizer is a GitHub project with 3,745 stars that offers experience-driven black-box cost control for coding agents.",
+          "summary": "Public information shows that microsoft/TokenEconomizer is a GitHub project with 3,745 stars and recent public activity, positioned as experience-driven black-box cost control for coding agents. Its value is to make the cost of AI coding-agent calls a managed concern rather than only a feature demo. Teams deploying coding agents should check whether savings come at the expense of code quality and how hard it is to integrate or transfer across models.",
+          "failureAnalysis": "Experience-driven black-box control needs enough real-call data to cold-start and may degrade as models, tasks, or teams change. With only a repository description and star count, the project has not yet proven hard demand, reproducible savings, or cross-team distribution.",
+          "title": "Microsoft TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents"
         }
       }
     }
