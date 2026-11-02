@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-11-01",
+  "issueDate": "2026-11-02",
   "updateStatus": "complete",
-  "contentFingerprint": "29f02feae0c3649a23a8f733fa3c4206ccc1bacc678b1d240ad7883d285d6ea0",
+  "contentFingerprint": "163569eb7fe07decba80846ce756729a6ae7c66576ac19f7e4ddc3092a4d6321",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,216 +10,216 @@
   ],
   "articles": [
     {
-      "id": "news-ba345300858748388fe73cae4f6458ae",
+      "id": "news-9861c115a8a842e5ab8321f8b0afae9f",
       "category": "domestic",
-      "title": "“理财产品要变相保本了”是误读政策",
-      "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-01/10724506.shtml",
-      "publishedAt": "2026-11-01T13:41:36.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "真相来了：所谓“理财产品要变相保本了”是对政策的误读。",
-      "summary": "该文针对“理财产品要变相保本了”的说法进行澄清，指出这种解读误读了政策。对关注理财市场和监管口径的读者来说，这有助于区分市场传言与政策原意，避免被标题化说法带偏。",
-      "failureAnalysis": "关键提醒是：面对理财产品政策传闻，应先核对官方口径，不能把“变相保本”这类概括当作政策事实。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "真相来了丨“理财产品要变相保本了”是误读政策",
-      "translations": {
-        "zh": {
-          "title": "“理财产品要变相保本了”系误读政策",
-          "highlight": "真相来了：所谓“理财产品要变相保本了”是对政策的误读。",
-          "summary": "该文针对“理财产品要变相保本了”的说法进行澄清，指出这种解读误读了政策。对关注理财市场和监管口径的读者来说，这有助于区分市场传言与政策原意，避免被标题化说法带偏。",
-          "failureAnalysis": "关键提醒是：面对理财产品政策传闻，应先核对官方口径，不能把“变相保本”这类概括当作政策事实。"
-        },
-        "en": {
-          "highlight": "The claim that wealth management products are effectively returning to principal guarantee is a misreading of policy.",
-          "summary": "The article clarifies that the statement that wealth management products are effectively returning to principal guarantee is a misreading of policy. For readers tracking the wealth management market and regulatory stance, it helps separate market rumors from the policy's intended meaning and avoid being misled by headline claims.",
-          "failureAnalysis": "The practical takeaway is to check official wording before treating claims about 'disguised principal guarantee' in wealth products as fact.",
-          "title": "'Wealth Products Will Effectively Guarantee Principal' Is a Misreading of Policy"
-        }
-      }
-    },
-    {
-      "id": "news-af46dcae91c5437eb5fa16add6077b56",
-      "category": "domestic",
-      "title": "新华社受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》和习近平总书记所作的《关于〈中共中央关于持之以恒推进全面从严治党若干重大问题的决定〉的说明》",
+      "title": "李干杰受中共中央委托向党外人士通报中共二十届五中全会精神",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-01/10724499.shtml",
-      "publishedAt": "2026-11-01T13:10:08.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-02/10725065.shtml",
+      "publishedAt": "2026-11-02T14:33:23.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "新华社受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》和习近平总书记所作的说明。",
-      "summary": "该报道记录新华社于11月1日受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》，以及中共中央总书记习近平就这一决定所作的说明。所给信息只涉及播发事实、文件名称和时间，未涉及具体条款内容。对有需要跟踪党内法规与党建动向的读者，这条消息提供了确认权威文本发布渠道与时间节点的第一手信源。",
-      "failureAnalysis": "可核实的要点是：决定全文与习近平所作的说明同日由新华社受权播发；具体政策内容应以全文为准，不能仅凭这条播发消息推断细节。",
+      "highlight": "受中共中央委托，李干杰向党外人士通报中共二十届五中全会精神",
+      "summary": "新华社消息显示，11月2日，受中共中央委托，中共中央政治局委员、中央统战部部长李干杰向党外人士通报中共二十届五中全会精神。该消息属于官方时政通报，核心信息是通报人、通报对象和全会精神主题。可作为跟踪官方政策传达节奏与统战工作动态的公开信号。",
+      "failureAnalysis": "这是一则官方时政通报，能确认的公开信息集中在通报行为与主题，不宜据此展开超出原文的政策或技术推断。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "新华社北京11月1日电 新华社11月1日受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》和中共中央总书记习近平所作的《关于〈中共中央关于持之以恒推进全面从严治党若干重大问题的决定〉的说明》。",
+      "sourceExcerpt": "新华社北京11月2日电 11月2日，受中共中央委托，中共中央政治局委员、中央统战部部长李干杰向党外人士通报中共二十届五中全会精神。",
       "translations": {
         "zh": {
-          "title": "新华社受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》和习近平总书记所作的说明",
-          "highlight": "新华社受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》和习近平总书记所作的说明。",
-          "summary": "该报道记录新华社于11月1日受权全文播发《中共中央关于持之以恒推进全面从严治党若干重大问题的决定》，以及中共中央总书记习近平就这一决定所作的说明。所给信息只涉及播发事实、文件名称和时间，未涉及具体条款内容。对有需要跟踪党内法规与党建动向的读者，这条消息提供了确认权威文本发布渠道与时间节点的第一手信源。",
-          "failureAnalysis": "可核实的要点是：决定全文与习近平所作的说明同日由新华社受权播发；具体政策内容应以全文为准，不能仅凭这条播发消息推断细节。"
+          "title": "李干杰受中共中央委托向党外人士通报中共二十届五中全会精神",
+          "highlight": "受中共中央委托，李干杰向党外人士通报中共二十届五中全会精神",
+          "summary": "新华社消息显示，11月2日，受中共中央委托，中共中央政治局委员、中央统战部部长李干杰向党外人士通报中共二十届五中全会精神。该消息属于官方时政通报，核心信息是通报人、通报对象和全会精神主题。可作为跟踪官方政策传达节奏与统战工作动态的公开信号。",
+          "failureAnalysis": "这是一则官方时政通报，能确认的公开信息集中在通报行为与主题，不宜据此展开超出原文的政策或技术推断。"
         },
         "en": {
-          "highlight": "Xinhua released on November 1, authorized, the full text of the CPC Central Committee's decision on persistently advancing full and rigorous Party self-governance and Xi Jinping's explanatory remarks on it.",
-          "summary": "The report records that Xinhua released on November 1, with authorization, the full text of the CPC Central Committee decision on persistently advancing full and rigorous Party self-governance, together with the explanatory remarks delivered by Xi Jinping, general secretary of the CPC Central Committee. The available information covers only the fact of publication, the document titles and the date, not the specific provisions. For readers tracking Party regulations and Party-building developments, it is a primary source confirming the channel and timing of the authoritative text's release.",
-          "failureAnalysis": "The verifiable point is that the decision's full text and Xi's explanatory remarks were released by Xinhua, with authorization, on the same day; substantive policy content should be read from the full text rather than inferred from this publication notice alone.",
-          "title": "Xinhua releases full text of the CPC Central Committee decision on advancing full and rigorous Party self-governance, along with Xi Jinping's explanatory remarks"
+          "highlight": "Entrusted by the CPC Central Committee, Li Ganjie briefed non-Party figures on the spirit of the 20th CPC Central Committee's Fifth Plenary Session.",
+          "summary": "Xinhua reported that on November 2, Li Ganjie, a Political Bureau member and head of the United Front Work Department, briefed non-Party figures on the spirit of the Fifth Plenary Session. The item is an official political briefing; its verifiable content is limited to the briefer, audience, and topic. It is useful as a public signal of policy communication and united front work, not as technical analysis.",
+          "failureAnalysis": "The key takeaway is that the available public information is a brief official notice, so policy or technical conclusions beyond the stated briefing should not be inferred.",
+          "title": "Li Ganjie Briefs Non-Party Figures on Fifth Plenary Session Spirit"
         }
       }
     },
     {
-      "id": "news-29ea15ea26e3494ead7dc50d168c8047",
+      "id": "news-c205120f37234ab1b6c9be7e84c97ce5",
       "category": "domestic",
-      "title": "大风蓝色预警：新疆西藏等6省区部分地区阵风可达7至8级",
-      "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-01/10724410.shtml",
-      "publishedAt": "2026-11-01T10:44:34.0000000+00:00",
+      "title": "王毅同沙特国家安全顾问艾班会谈",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-02/10725049.shtml",
+      "publishedAt": "2026-11-02T13:59:09.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "预计11月1日20时至2日20时，新疆东部、西藏北部、青海南部、内蒙古中西部、河北北部、江西北部等地的部分地区有5~6级风，阵风7~8级。",
-      "summary": "中央气象台于11月1日18时继续发布大风蓝色预警，预警时段为11月1日20时至11月2日20时。新疆东部、西藏北部、青海南部、内蒙古中西部、河北北部、江西北部等6省区的部分地区将出现5~6级风、阵风可达7~8级，同时渤海、黄海、东海西部及台湾海峡等海域将有7~8级、阵风9级的大风。这条预警对相关地区的出行、海上作业和设施防风有直接参考价值。",
-      "failureAnalysis": "这是一条标准的气象预警信息，判断价值在于看准时间窗口和具体影响区域：陆上关注阵风7~8级，海上则要关注阵风9级，再据此安排出行和作业。",
+      "highlight": "王毅在京同沙特国务大臣、内阁成员、国家安全顾问艾班举行会谈，艾班转交了沙特王储兼首相穆罕默德致习近平主席的信函。",
+      "summary": "报道称，11月2日中共中央政治局委员、中央外办主任王毅在北京同沙特国务大臣、内阁成员、国家安全顾问艾班举行会谈。会谈中，艾班转交了沙特王储兼首相穆罕默德就中沙双边关系发展和双方共同关心问题致习近平主席的信函。这条消息来自官方信源，适合用来跟踪中沙高层沟通的节奏与层级。",
+      "failureAnalysis": "这是官方外事活动的程序性报道，可确认的事实是会谈举行以及信函转交；至于双方具体谈了什么、达成了哪些共识，公开信息并未披露，不宜过度解读。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网11月1日电 据中央气象台网站消息，中央气象台11月1日18时继续发布大风蓝色预警：预计，11月1日20时至2日20时，新疆东部、西藏北部、青海南部、内蒙古中西部、河北北部、江西北部等地的部分地区有5~6级风，阵风7~8级；渤海北部、渤海海峡、黄海北部、黄海南部偏西海域、东海西部海域、台湾海峡将有7~8级、阵风9级的大风。",
+      "sourceExcerpt": "11月2日，中共中央政治局委员、中央外办主任王毅在京同沙特国务大臣、内阁成员、国家安全顾问艾班举行会谈。艾班转交了沙特王储兼首相穆罕默德就中沙双边关系发展和双方共同关心的问题致习近平主席的信函。",
       "translations": {
         "zh": {
-          "title": "中央气象台发布大风蓝色预警：新疆西藏等6省区阵风可达7至8级",
-          "highlight": "预计11月1日20时至2日20时，新疆东部、西藏北部、青海南部、内蒙古中西部、河北北部、江西北部等地的部分地区有5~6级风，阵风7~8级。",
-          "summary": "中央气象台于11月1日18时继续发布大风蓝色预警，预警时段为11月1日20时至11月2日20时。新疆东部、西藏北部、青海南部、内蒙古中西部、河北北部、江西北部等6省区的部分地区将出现5~6级风、阵风可达7~8级，同时渤海、黄海、东海西部及台湾海峡等海域将有7~8级、阵风9级的大风。这条预警对相关地区的出行、海上作业和设施防风有直接参考价值。",
-          "failureAnalysis": "这是一条标准的气象预警信息，判断价值在于看准时间窗口和具体影响区域：陆上关注阵风7~8级，海上则要关注阵风9级，再据此安排出行和作业。"
+          "title": "王毅同沙特国家安全顾问艾班会谈",
+          "highlight": "王毅在京同沙特国务大臣、内阁成员、国家安全顾问艾班举行会谈，艾班转交了沙特王储兼首相穆罕默德致习近平主席的信函。",
+          "summary": "报道称，11月2日中共中央政治局委员、中央外办主任王毅在北京同沙特国务大臣、内阁成员、国家安全顾问艾班举行会谈。会谈中，艾班转交了沙特王储兼首相穆罕默德就中沙双边关系发展和双方共同关心问题致习近平主席的信函。这条消息来自官方信源，适合用来跟踪中沙高层沟通的节奏与层级。",
+          "failureAnalysis": "这是官方外事活动的程序性报道，可确认的事实是会谈举行以及信函转交；至于双方具体谈了什么、达成了哪些共识，公开信息并未披露，不宜过度解读。"
         },
         "en": {
-          "highlight": "From 20:00 on November 1 to 20:00 on November 2, parts of eastern Xinjiang, northern Tibet, southern Qinghai, central and western Inner Mongolia, northern Hebei and northern Jiangxi will see force 5-6 winds with gusts of force 7-8.",
-          "summary": "The Central Meteorological Observatory continued a blue wind alert at 18:00 on November 1, covering the period from 20:00 that day to 20:00 on November 2. Parts of six provinces and regions, including eastern Xinjiang, northern Tibet, southern Qinghai, central and western Inner Mongolia, northern Hebei and northern Jiangxi, will see force 5-6 winds with gusts of force 7-8, while sea areas including the Bohai Sea, Yellow Sea, western East China Sea and Taiwan Strait will see force 7-8 winds with gusts of force 9. The alert is directly useful for travel planning, maritime operations and windproofing of facilities in the affected areas.",
-          "failureAnalysis": "This is a standard meteorological warning; its value lies in the time window and the specific affected areas, with gusts of force 7-8 on land and force 9 at sea, which can guide travel and operational decisions.",
-          "title": "Blueprint for Strong Winds: Central Meteorological Observatory issues blue alert for six provinces and regions including Xinjiang and Tibet, with gusts up to force 7-8"
+          "highlight": "Wang Yi held talks in Beijing with Saudi Minister of State and National Security Advisor Al-Aiban, who delivered a letter from Crown Prince Mohammed to President Xi Jinping.",
+          "summary": "The report says that on November 2, Wang Yi, member of the Political Bureau of the CPC Central Committee and director of the Office of the Central Commission for Foreign Affairs, held talks in Beijing with Saudi Minister of State, cabinet member and National Security Advisor Al-Aiban. During the meeting, Al-Aiban handed over a letter from Saudi Crown Prince and Prime Minister Mohammed to President Xi Jinping on bilateral relations and issues of common concern. Coming from an official source, it is useful for tracking the pace and level of China-Saudi high-level communication.",
+          "failureAnalysis": "This is a procedural readout of an official diplomatic event: the verifiable facts are that the talks took place and the letter was delivered, while the substance of the discussion was not disclosed, so it should not be over-interpreted.",
+          "title": "Wang Yi Holds Talks with Saudi National Security Advisor Al-Aiban"
         }
       }
     },
     {
-      "id": "news-060510642b334807b1e15452e305ee30",
+      "id": "news-0d4cc0885f6740cc9ea836f0369f215f",
+      "category": "domestic",
+      "title": "前三季度陕西税费收入超6300亿元 税费红利赋能产业创新发展",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-02/10724983.shtml",
+      "publishedAt": "2026-11-02T13:58:53.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "2026年前三季度，陕西全省累计组织税费收入超6300亿元，同比增长3.2%。",
+      "summary": "报道援引陕西省政府新闻办发布会信息称，2026年前三季度陕西累计组织税费收入超6300亿元，同比增长3.2%。文章将这组数据与减税降费、智慧办税等举措联系起来，认为其反映出当地产业升级、创新驱动和民生改善的态势。对关注区域经济与财税政策的企业管理者而言，这是一条可核查的省级财政与产业信号。",
+      "failureAnalysis": "阅读此类数据时应关注其口径：税费收入是政府收入指标，增长3.2%并不直接等同于企业负担或产业效益改善。可把它作为区域经济观察的起点，具体投资与经营判断仍需结合产业结构与政策细则。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网西安11月2日电 (记者 杨英琦)记者2日从陕西省人民政府新闻办公室举办的新闻发布会获悉，2026年前三季度，陕西全省累计组织税费收入超6300亿元(人民币，下同)，同比增长3.2%。该省一系列减税降费、智慧办税等举措落地见效，折射出当地产业升级、创新驱动、民生改善的发展态势。",
+      "translations": {
+        "zh": {
+          "title": "前三季度陕西税费收入超6300亿元 税费红利赋能产业创新发展",
+          "highlight": "2026年前三季度，陕西全省累计组织税费收入超6300亿元，同比增长3.2%。",
+          "summary": "报道援引陕西省政府新闻办发布会信息称，2026年前三季度陕西累计组织税费收入超6300亿元，同比增长3.2%。文章将这组数据与减税降费、智慧办税等举措联系起来，认为其反映出当地产业升级、创新驱动和民生改善的态势。对关注区域经济与财税政策的企业管理者而言，这是一条可核查的省级财政与产业信号。",
+          "failureAnalysis": "阅读此类数据时应关注其口径：税费收入是政府收入指标，增长3.2%并不直接等同于企业负担或产业效益改善。可把它作为区域经济观察的起点，具体投资与经营判断仍需结合产业结构与政策细则。"
+        },
+        "en": {
+          "highlight": "In the first three quarters of 2026, Shaanxi Province collected more than 630 billion yuan in tax and fee revenue, up 3.2% year on year.",
+          "summary": "Citing a press conference held by Shaanxi Province's Information Office, the report says the province collected over 630 billion yuan in tax and fee revenue in the first three quarters of 2026, a 3.2% year-on-year increase. It links this figure to tax and fee reductions and smart tax services, framing them as signs of industrial upgrading, innovation-driven growth and improved livelihoods. For business leaders tracking regional economies and fiscal policy, it is a verifiable provincial-level signal.",
+          "failureAnalysis": "Read such figures with care: tax and fee revenue is a government income metric, and 3.2% growth does not directly mean lighter corporate burdens or better industrial returns. Treat it as a starting point for regional analysis, and pair it with industrial structure and policy details before making business or investment judgments.",
+          "title": "Shaanxi's Tax and Fee Revenue Exceeds 630 Billion Yuan in First Three Quarters, Tax Reliefs Boost Industrial Innovation"
+        }
+      }
+    },
+    {
+      "id": "news-880134f4de564a04a0ecb9d408bccd57",
       "category": "international",
-      "title": "A new political era in the Southern Philippines",
-      "source": "NPR World",
-      "url": "https://www.npr.org/2026/10/31/nx-s1-6020639/a-new-political-era-in-the-southern-philippines",
-      "publishedAt": "2026-10-31T21:14:32.0000000+00:00",
+      "title": "Poundland's former owner offers to invest as minister prepares to meet board",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/ck1wv1j0xgywo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-02T13:40:36.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "菲律宾南部新地方政府已就职，这标志着持续约80年冲突的和平进程迈出里程碑一步。",
-      "summary": "报道说，菲律宾南部一个新地方政府已宣誓就职，这是当地和平进程中的重要节点。这一进展涉及一场持续约80年的冲突，值得关注的是和平安排能否由此进入落实阶段。",
-      "failureAnalysis": "关键看点在于，长期冲突的解决正从和平进程推进到地方治理落地，后续能否巩固和平仍取决于治理与和解的持续性。",
+      "highlight": "沃尔弗汉普顿的史蒂夫·史密斯表示，他希望向自己创办的这家公司重新投入一些资金。",
+      "summary": "BBC Business报道，Poundland前所有者提出投资，同时一位部长准备与董事会会面。已知内容显示，史蒂夫·史密斯表示愿意向自己创办的公司重新投入资金。此事涉及这家零售商的资本与治理动向，后续董事会及政府方面的回应值得关注。",
+      "failureAnalysis": "关键看点在于前创始人的投资意向能否落地，以及部长与董事会的会面会否影响公司决策；目前已知信息只有投资意向和会面安排，具体金额与条件尚不清楚。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "A new local government has taken its seat in the southern Philippines, in a step that marks a milestone in the peace process for a conflict that has lasted some 80 years.",
+      "sourceExcerpt": "Wolverhampton's Steve Smith said he wants to put some money back into the firm he started.",
       "translations": {
         "zh": {
-          "title": "菲律宾南部开启政治新纪元",
-          "highlight": "菲律宾南部新地方政府已就职，这标志着持续约80年冲突的和平进程迈出里程碑一步。",
-          "summary": "报道说，菲律宾南部一个新地方政府已宣誓就职，这是当地和平进程中的重要节点。这一进展涉及一场持续约80年的冲突，值得关注的是和平安排能否由此进入落实阶段。",
-          "failureAnalysis": "关键看点在于，长期冲突的解决正从和平进程推进到地方治理落地，后续能否巩固和平仍取决于治理与和解的持续性。"
+          "title": "Poundland前所有者提出投资，部长准备会见董事会",
+          "highlight": "沃尔弗汉普顿的史蒂夫·史密斯表示，他希望向自己创办的这家公司重新投入一些资金。",
+          "summary": "BBC Business报道，Poundland前所有者提出投资，同时一位部长准备与董事会会面。已知内容显示，史蒂夫·史密斯表示愿意向自己创办的公司重新投入资金。此事涉及这家零售商的资本与治理动向，后续董事会及政府方面的回应值得关注。",
+          "failureAnalysis": "关键看点在于前创始人的投资意向能否落地，以及部长与董事会的会面会否影响公司决策；目前已知信息只有投资意向和会面安排，具体金额与条件尚不清楚。"
         },
         "en": {
-          "highlight": "A new local government has taken its seat in the southern Philippines, in a step that marks a milestone in the peace process for a conflict that has lasted some 80 years.",
-          "summary": "The report says a new local government has taken office in the southern Philippines, marking an important point in the peace process. The development concerns a conflict that has lasted about 80 years, and the key question is whether the peace arrangements can now move into implementation.",
-          "failureAnalysis": "The key takeaway is that the resolution of a long-running conflict is moving from the peace process toward local governance; whether peace can be consolidated will depend on sustained governance and reconciliation.",
-          "title": "A New Political Era in the Southern Philippines"
+          "highlight": "Wolverhampton's Steve Smith said he wants to put some money back into the firm he started.",
+          "summary": "BBC Business reports that Poundland's former owner has offered to invest while a minister prepares to meet the board. Known content says Wolverhampton's Steve Smith wants to put money back into the company he founded. The item is worth watching for what it signals about the retailer's ownership and government attention.",
+          "failureAnalysis": "The key takeaway is that only an investment intention and a planned meeting are known; the amount, terms and board response are not yet clear.",
+          "title": "Former Poundland owner offers to invest as minister prepares to meet board"
         }
       }
     },
     {
-      "id": "news-ad73135d31624e0ab61d8fd087bc2892",
+      "id": "news-52ec1afe4bbd4e128c5a3f692011e4be",
       "category": "international",
-      "title": "The US-China trade war seems to have subsided – but the sense of calm is misleading",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/nov/01/us-china-trade-war-trump-xi",
-      "publishedAt": "2026-11-01T12:00:12.0000000+00:00",
+      "title": "Ryanair says it may freeze workers' pay and raise airfares",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/cr0qkve1x224o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-02T12:22:10.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "International class: finance",
-      "highlight": "平静的表象具有误导性：世界正悄然迈向一场规模可能空前的经济战，历史表明它可能外溢为真正的战争。",
-      "summary": "文章指出，美中贸易战因停火而暂时降温，但两国都没有采取行动限制新的敌对冲突爆发。贸易战淡出头条并不意味着风险消失，世界仍在滑向可能规模巨大的经济战，并可能外溢为真实冲突。值得读在于它提醒读者关注低可见度但高影响的地缘经济风险。",
-      "failureAnalysis": "关键不是贸易战已经结束，而是停火并未改变结构性对抗；越是表面平静，越要警惕未被头条反映的升级风险。",
+      "selectionReason": "International class: politics",
+      "highlight": "该航空公司表示，除非美国与以色列同伊朗的战争结束，否则2028年燃油价格可能上涨20亿欧元。",
+      "summary": "BBC Business 报道，瑞安航空称可能冻结员工薪资并提高机票价格。公司给出的原因是：美国与以色列同伊朗的战争若不结束，2028年燃油成本可能增加20亿欧元。这凸显地缘政治与燃油价格如何传导至航空公司的成本和票价。",
+      "failureAnalysis": "关键约束是燃油成本：地缘政治冲突若持续，航空公司可能通过冻结薪资和上调票价来转嫁成本压力。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "A truce has cooled the trade conflict, but neither country has done anything to limit the outbreak of new hostilities Donald Trump ’s trade wars have largely fallen off the headlines. Fears of new tariffs flare up from time to time when the US president goes off the rails – for instance, threatening to end US trade with countries with which it has a deficit unless the Federal Reserve cuts interest rates. But the sense that the world’s two largest economies are plowing ahead into an overt economic conflagration has taken a back seat to other, more salient fears, about Trump ending American democracy, AI killing us all and stuff like that.",
+      "sourceExcerpt": "The airline says fuel prices may rise by €2bn in 2028 unless there is an end to the US-Israel war with Iran.",
       "translations": {
         "zh": {
-          "title": "美中贸易战似已降温，但平静只是假象",
-          "highlight": "平静的表象具有误导性：世界正悄然迈向一场规模可能空前的经济战，历史表明它可能外溢为真正的战争。",
-          "summary": "文章指出，美中贸易战因停火而暂时降温，但两国都没有采取行动限制新的敌对冲突爆发。贸易战淡出头条并不意味着风险消失，世界仍在滑向可能规模巨大的经济战，并可能外溢为真实冲突。值得读在于它提醒读者关注低可见度但高影响的地缘经济风险。",
-          "failureAnalysis": "关键不是贸易战已经结束，而是停火并未改变结构性对抗；越是表面平静，越要警惕未被头条反映的升级风险。"
+          "title": "瑞安航空称可能冻结员工薪资并提高票价",
+          "highlight": "该航空公司表示，除非美国与以色列同伊朗的战争结束，否则2028年燃油价格可能上涨20亿欧元。",
+          "summary": "BBC Business 报道，瑞安航空称可能冻结员工薪资并提高机票价格。公司给出的原因是：美国与以色列同伊朗的战争若不结束，2028年燃油成本可能增加20亿欧元。这凸显地缘政治与燃油价格如何传导至航空公司的成本和票价。",
+          "failureAnalysis": "关键约束是燃油成本：地缘政治冲突若持续，航空公司可能通过冻结薪资和上调票价来转嫁成本压力。"
         },
         "en": {
-          "highlight": "The sense of calm is misleading: under the radar, the world is marching toward an economic war of potentially epic proportions that history suggests could spill over into real conflict.",
-          "summary": "The article says the US-China trade war has cooled because of a truce, but neither country has done anything to limit the outbreak of new hostilities. The conflict falling off the headlines does not mean the risk is gone; the world is still moving toward a potentially epic economic war that could spill over into real conflict. It is worth reading because it flags a low-visibility but high-impact geopolitical economic risk.",
-          "failureAnalysis": "The key point is not that the trade war is over, but that the truce has not changed the structural confrontation; the calmer the surface looks, the more important it is to watch for escalation that headlines do not reflect.",
-          "title": "US-China Trade War Looks Calmer, but the Calm Is Misleading"
+          "highlight": "The airline says fuel prices may rise by €2bn in 2028 unless there is an end to the US-Israel war with Iran.",
+          "summary": "BBC Business reports that Ryanair says it may freeze workers' pay and raise airfares. The airline says fuel prices may rise by €2bn in 2028 unless the US-Israel war with Iran ends. This shows how geopolitics and fuel prices can feed into airline costs and ticket prices.",
+          "failureAnalysis": "The key constraint is fuel cost: if geopolitical conflict continues, the airline may pass on cost pressure through frozen pay and higher fares.",
+          "title": "Ryanair says it may freeze worker pay and raise airfares"
         }
       }
     },
     {
-      "id": "life-d8570f87fc6a4c63845144984062d121",
+      "id": "life-107531aa1b384cdc9ba5863113eb8d80",
       "category": "international",
-      "title": "The Art of Being Alone: May Sarton’s Stunning 1938 Ode to Solitude",
-      "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/11/01/may-sarton-canticle-6-considerations/",
-      "publishedAt": "2026-11-01T13:38:09.0000000+00:00",
+      "title": "This Handheld Vacuum Fixed My Biggest Problem With Cleaning",
+      "source": "Lifehacker",
+      "url": "https://lifehacker.com/home/handheld-vacuum-upgrade-of-the-week?utm_medium=RSS",
+      "publishedAt": "2026-11-02T18:00:00.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 0",
-      "highlight": "世上再没有比一个人独处时的精神更私密、更亲密的地方了。",
-      "summary": "文章聚焦梅·萨顿1938年关于独处的颂歌，并借“世上再没有比一个人独处时的精神更私密、更亲密的地方了”这一句子呈现主题。它值得读，因为能让人从文学角度重新理解独处与内在精神生活。",
-      "failureAnalysis": "关键要点：独处可以是一种亲密的自我相处，而不只是远离他人；给自己留出与精神相处的空间，本身就有价值。",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "我清洁时最大的问题就是懒惰，说到底，问题恰恰出在懒惰本身。",
+      "summary": "文章以一款手持吸尘器为切口，讲它如何解决作者清洁时最大的问题。文中把问题的根源直接归结为懒惰，提示更省事的工具可能比空谈自律更能降低清洁阻力。对非技术读者来说，这是一个关于日常工具如何影响行为习惯的简短观察。",
+      "failureAnalysis": "关键启示：先承认懒惰是日常清洁中的真实阻力，再用更省事的工具降低行动门槛，往往比单纯依靠意志力更实际。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "\"There is no place more intimate than the spirit alone.\"",
+      "sourceExcerpt": "The problem is laziness.",
       "translations": {
         "zh": {
-          "title": "独处的艺术：梅·萨顿1938年写给孤独的惊艳颂歌",
-          "highlight": "世上再没有比一个人独处时的精神更私密、更亲密的地方了。",
-          "summary": "文章聚焦梅·萨顿1938年关于独处的颂歌，并借“世上再没有比一个人独处时的精神更私密、更亲密的地方了”这一句子呈现主题。它值得读，因为能让人从文学角度重新理解独处与内在精神生活。",
-          "failureAnalysis": "关键要点：独处可以是一种亲密的自我相处，而不只是远离他人；给自己留出与精神相处的空间，本身就有价值。"
+          "title": "这款手持吸尘器解决了我清洁时最大的问题",
+          "highlight": "我清洁时最大的问题就是懒惰，说到底，问题恰恰出在懒惰本身。",
+          "summary": "文章以一款手持吸尘器为切口，讲它如何解决作者清洁时最大的问题。文中把问题的根源直接归结为懒惰，提示更省事的工具可能比空谈自律更能降低清洁阻力。对非技术读者来说，这是一个关于日常工具如何影响行为习惯的简短观察。",
+          "failureAnalysis": "关键启示：先承认懒惰是日常清洁中的真实阻力，再用更省事的工具降低行动门槛，往往比单纯依靠意志力更实际。"
         },
         "en": {
-          "highlight": "May Sarton writes that there is no place more intimate than the spirit alone.",
-          "summary": "The article centers on May Sarton’s 1938 ode to solitude and uses the line about the intimacy of the spirit alone to frame its theme. It is worth reading as a literary reflection on solitude and inner life.",
-          "failureAnalysis": "The key takeaway is that solitude can be an intimate form of self-company, not merely distance from others; making room for the spirit alone has value.",
-          "title": "The Art of Being Alone: May Sarton’s Stunning 1938 Ode to Solitude"
+          "highlight": "The article's key line is blunt: it's laziness, and the biggest problem with cleaning is laziness itself.",
+          "summary": "The article uses a handheld vacuum to discuss the author's biggest cleaning problem. Its key line reduces that problem to laziness, suggesting that easier tools may matter more than lecturing people about discipline. For non-technical readers, it is a short reminder of how convenience shapes daily behavior.",
+          "failureAnalysis": "Key takeaway: admit laziness as a real daily constraint, then use easier tools to lower the friction of cleaning; that is often more practical than relying on willpower alone.",
+          "title": "This Handheld Vacuum Solved My Biggest Cleaning Problem"
         }
       }
     },
     {
-      "id": "life-b359b7207ebc424eae30ee922d98e973",
+      "id": "life-9cd9c172397f4379bc0e49c6ff550d1b",
       "category": "international",
-      "title": "The power of pareidolia",
+      "title": "How psychology’s classic studies misled us about the self",
       "source": "Psyche",
-      "url": "https://psyche.co/videos/why-we-see-faces-in-unexpected-places-and-what-it-says-about-us",
-      "publishedAt": "2026-10-30T10:01:00.0000000+00:00",
+      "url": "https://psyche.co/ideas/its-time-to-ditch-the-empty-self-view-of-human-psychology",
+      "publishedAt": "2026-11-02T11:00:00.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 0",
-      "highlight": "从岩石、云朵到吐司切片，探索无处不在的熟悉形状背后的艺术与科学。",
-      "summary": "该视频从岩石、云朵到吐司切片等日常对象出发，探讨人们为何会在各处看见熟悉形状，并呈现这一现象背后的艺术与科学。它属于生活技能类国际内容，适合快速了解幻想性视错觉这一感知现象。",
-      "failureAnalysis": "关键启示：人类感知倾向于在随机图案中寻找熟悉形状，幻想性视错觉因此成为理解视觉认知的一个直观入口。",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "米尔格拉姆、津巴多和近期启动研究表明人高度可塑，但他们低估了我们实际上有多稳定。",
+      "summary": "文章讨论米尔格拉姆、津巴多及近期启动研究如何让人以为人类高度可塑，并指出这种判断低估了自我的稳定性。作者 Jack W Klein 与 William B Swann 认为，我们比自己想象中更稳定；这值得用来校准对经典心理学结论的信任。",
+      "failureAnalysis": "关键提醒：经典心理学研究的传播结论可能夸大可塑性；理解自我时，应同时重视稳定性证据。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "From rocks and clouds to slices of toast, explore the art and science of seeing familiar shapes everywhere - Video by Mary McGillivray Watch on Psyche",
+      "sourceExcerpt": "Milgram, Zimbardo and recent priming studies suggested we’re highly malleable. They underestimated how stable we really are - by Jack W Klein & William B Swann Read on Psyche",
       "translations": {
         "zh": {
-          "title": "幻想性视错觉的力量",
-          "highlight": "从岩石、云朵到吐司切片，探索无处不在的熟悉形状背后的艺术与科学。",
-          "summary": "该视频从岩石、云朵到吐司切片等日常对象出发，探讨人们为何会在各处看见熟悉形状，并呈现这一现象背后的艺术与科学。它属于生活技能类国际内容，适合快速了解幻想性视错觉这一感知现象。",
-          "failureAnalysis": "关键启示：人类感知倾向于在随机图案中寻找熟悉形状，幻想性视错觉因此成为理解视觉认知的一个直观入口。"
+          "title": "心理学经典研究如何误导了我们对自我的理解",
+          "highlight": "米尔格拉姆、津巴多和近期启动研究表明人高度可塑，但他们低估了我们实际上有多稳定。",
+          "summary": "文章讨论米尔格拉姆、津巴多及近期启动研究如何让人以为人类高度可塑，并指出这种判断低估了自我的稳定性。作者 Jack W Klein 与 William B Swann 认为，我们比自己想象中更稳定；这值得用来校准对经典心理学结论的信任。",
+          "failureAnalysis": "关键提醒：经典心理学研究的传播结论可能夸大可塑性；理解自我时，应同时重视稳定性证据。"
         },
         "en": {
-          "highlight": "From rocks and clouds to slices of toast, explore the art and science of seeing familiar shapes everywhere.",
-          "summary": "This Psyche video explores why people see familiar shapes in everyday objects, from rocks and clouds to slices of toast. It presents the art and science behind pareidolia as a perceptual phenomenon.",
-          "failureAnalysis": "The key takeaway is that human perception readily finds familiar shapes in random patterns, making pareidolia an intuitive entry point for understanding visual cognition.",
-          "title": "The Power of Pareidolia"
+          "highlight": "Milgram, Zimbardo and recent priming studies suggested we are highly malleable, but underestimated how stable we really are.",
+          "summary": "The article discusses how Milgram, Zimbardo and recent priming studies suggested that people are highly malleable, while overlooking how stable the self actually is. Jack W Klein and William B Swann argue that we are more stable than often assumed, which is worth considering when assessing classic psychology findings.",
+          "failureAnalysis": "Key takeaway: widely circulated conclusions from classic psychology may overstate malleability; understanding the self should also take stability evidence seriously.",
+          "title": "How Psychology’s Classic Studies Misled Us About the Self"
         }
       }
     },
     {
-      "id": "paper-2610.37958",
+      "id": "paper-2610.36536",
       "category": "paper",
-      "title": "Neuroscience of Improvisation Across Music and Other Domains: A Survey and Outlook",
+      "title": "ATEMPO: Amortized Transfer Entropy Model Per-lag Over-Time",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2610.37958v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2610.37958",
-      "publishedAt": "2026-10-27T20:45:09.0000000Z",
+      "url": "https://arxiv.org/pdf/2610.36536v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.36536",
+      "publishedAt": "2026-10-27T02:49:07.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
       "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
@@ -234,21 +234,21 @@
         "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
         "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
         "technicalTerms": [
-          "EEG：把大脑电信号当作输入数据。"
+          "关键技术词：保留原论文术语，并用白话解释其作用。"
         ],
         "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
       },
-      "highlight": "即兴是实时生成新颖且贴合情境的行动，见于音乐、舞蹈、戏剧、体育、教育与治疗，但其神经科学证据几乎全部来自音乐。",
-      "summary": "该综述把即兴界定为实时生成新颖且贴合情境的行动，并指出它存在于音乐、舞蹈、戏剧、体育、教育与治疗等实践中。作者强调，目前多数定量神经影像证据几乎只集中在音乐即兴上。文章据此梳理跨领域的既有研究，并提出后续研究的方向。",
-      "failureAnalysis": "由于定量影像证据几乎全部来自音乐即兴，将相关神经机制推广到其他领域尚缺乏直接数据支持。作为综述，其结论也受既有文献覆盖范围与各研究测量方法差异的限制。",
+      "highlight": "一个时间序列对另一个序列的预测信息可能只在特定滞后处强烈，在相邻滞后处却很弱。",
+      "summary": "该工作提出 ATEMPO，一种逐滞后随时间的摊销转移熵建模方法，关注两个时间序列之间信息传递的延迟结构。原文指出，固定输入窗口可能掩盖只在特定滞后处出现的预测关系，因此这一建模角度对时序分析具有潜在意义。",
+      "failureAnalysis": "当前可见文本只说明研究动机，未提供实验设置、基线或量化结果，因此无法判断其相对固定窗口方法的实际增益。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "1 Neuroscience of Improvisation Across Music and Other Domains: A Survey and Outlook Levina Perzhilla∗, Muhammad Mahboob Ur Rahman ∗,Senior member, IEEE, Tareq Y . Al-Naffouri ∗,Fellow, IEEE Abstract—Improvisation (or Improv), the real-time generation of novel, context-appropriate action, occurs in music, dance, theater, sport, education, therapy, and professional practice. Its neuroscience, however, has been studied almost exclusively for music, where most quantitative neuroimaging evidence lies.",
+      "sourceExcerpt": "A TEMPO: Amortized Transfer Entropy Model Per-lag Over-Time Emma Andrews1, Konstantinos Kontras2,3, Keane Ong1,3, Maarten De V os2, Gianmarco Mengaldo1 1 National University of Singapore, 2KU Leuven, 3MIT, When one time series informs another, the delay at which that information arrives determines if models can utilize this relationship effectively. A source may be strongly predictive at one delay but uninformative at neighboring lags. Therefore, fixed input windows may obscure this structure by bundling informative and irrelevant history together.",
       "translations": {
         "zh": {
-          "title": "即兴的神经科学：跨音乐与其他领域的综述与展望",
-          "highlight": "即兴是实时生成新颖且贴合情境的行动，见于音乐、舞蹈、戏剧、体育、教育与治疗，但其神经科学证据几乎全部来自音乐。",
-          "summary": "该综述把即兴界定为实时生成新颖且贴合情境的行动，并指出它存在于音乐、舞蹈、戏剧、体育、教育与治疗等实践中。作者强调，目前多数定量神经影像证据几乎只集中在音乐即兴上。文章据此梳理跨领域的既有研究，并提出后续研究的方向。",
-          "failureAnalysis": "由于定量影像证据几乎全部来自音乐即兴，将相关神经机制推广到其他领域尚缺乏直接数据支持。作为综述，其结论也受既有文献覆盖范围与各研究测量方法差异的限制。",
+          "title": "ATEMPO：逐滞后随时间的摊销转移熵模型",
+          "highlight": "一个时间序列对另一个序列的预测信息可能只在特定滞后处强烈，在相邻滞后处却很弱。",
+          "summary": "该工作提出 ATEMPO，一种逐滞后随时间的摊销转移熵建模方法，关注两个时间序列之间信息传递的延迟结构。原文指出，固定输入窗口可能掩盖只在特定滞后处出现的预测关系，因此这一建模角度对时序分析具有潜在意义。",
+          "failureAnalysis": "当前可见文本只说明研究动机，未提供实验设置、基线或量化结果，因此无法判断其相对固定窗口方法的实际增益。",
           "paperCard": {
             "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
             "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
@@ -257,16 +257,16 @@
             "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
             "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
+              "关键技术词：保留原论文术语，并用白话解释其作用。"
             ],
             "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
         },
         "en": {
-          "title": "Neuroscience of Improvisation Across Music and Other Domains: A Survey and Outlook",
-          "highlight": "Improvisation, the real-time generation of novel, context-appropriate action, spans music, dance, theater, sport, education and therapy, yet its neuroscience evidence comes almost exclusively from music.",
-          "summary": "The survey defines improvisation as the real-time generation of novel, context-appropriate action and notes that it appears in music, dance, theater, sport, education, therapy and professional practice. The authors stress that most quantitative neuroimaging evidence is confined almost entirely to musical improvisation. The article maps existing cross-domain work and outlines an outlook for future research.",
-          "failureAnalysis": "Because the quantitative imaging evidence comes almost exclusively from musical improvisation, extending these neural findings to other domains lacks direct empirical support. As a survey, its conclusions are also limited by the coverage of existing literature and by differences in measurement methods across studies.",
+          "title": "ATEMPO: Amortized Transfer Entropy Model Per-lag Over-Time",
+          "highlight": "A source time series may be strongly predictive at one lag but uninformative at neighboring lags, so fixed input windows can obscure this delay structure.",
+          "summary": "The work introduces ATEMPO, an amortized transfer entropy model that addresses per-lag over-time structure when one time series informs another. The supplied text motivates the method by noting that predictive information can be concentrated at specific delays and that fixed input windows may hide this structure. This framing matters for time-series modeling because delay-specific relationships may be missed by fixed-window approaches.",
+          "failureAnalysis": "The supplied excerpt covers motivation only and lacks experimental setup, baselines, or quantitative results, so the method's practical benefit over fixed-window approaches cannot be assessed.",
           "paperCard": {
             "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
             "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
@@ -275,7 +275,7 @@
             "implementation": "Implementation: check the input data, core model or device, and validation results.",
             "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
+              "关键技术词：保留原论文术语，并用白话解释其作用。"
             ],
             "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
@@ -283,14 +283,14 @@
       }
     },
     {
-      "id": "ai-github-1416442720",
+      "id": "ai-github-1368596582",
       "category": "ai",
-      "title": "microsoft/TokenEconomizer",
+      "title": "google/elephant-goldfish-model",
       "source": "GitHub Search",
-      "url": "https://github.com/microsoft/TokenEconomizer",
+      "url": "https://github.com/google/elephant-goldfish-model",
       "abstractUrl": null,
-      "publishedAt": "2026-10-13T04:16:50.0000000Z",
-      "scoreLabel": "GitHub 3745 stars",
+      "publishedAt": "2026-09-13T16:31:06.0000000Z",
+      "scoreLabel": "GitHub 10588 stars",
       "aiArticleType": "application_innovation",
       "evidenceAnchors": [
         {
@@ -306,24 +306,24 @@
       "hasPrimaryAnchor": true,
       "requiresRiskAnalysis": true,
       "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-      "summary": "公开信息显示，microsoft/TokenEconomizer 是一个获得 3745 stars 且有近期公开活动的 GitHub 项目，定位为面向编码智能体的经验驱动黑盒成本控制。它的价值在于把 AI 编码代理的调用成本作为可管理对象，而不是只看功能演示。对准备落地编码智能体的团队，可重点观察其成本节省是否以代码质量为代价，以及接入和跨模型迁移难度。",
-      "failureAnalysis": "经验驱动的黑盒控制通常需要足够多的真实调用样本来冷启动，面对模型、任务或团队变化时可能失效。编码智能体链路长且结果质量难统一，压低 token 成本可能损害代码正确性，或把成本转移到工程接入和调参上。项目目前仅有仓库描述和 star 信号，尚不能证明需求刚性、可复现收益和跨团队分发能力。",
-      "aiSelectionScore": 3745,
-      "highlight": "微软开源项目 TokenEconomizer 以经验驱动的黑盒方式，为编码智能体提供成本控制。",
+      "summary": "该 GitHub 仓库获得 10588 星标并有近期公开活动，定位是提供开源技能，让 AI 智能体参与软件设计与审查。对非技术管理者而言，值得关注的是它把 AI 智能体的作用放在设计、评审等软件工程环节，而不只是代码生成。",
+      "failureAnalysis": "这类技能库能否产生价值，取决于它是否能稳定嵌入真实研发流程；若缺少与现有代码库、评审规范、权限系统的深度集成，容易停留在演示层面。软件设计与审查依赖组织上下文和高质量数据，审查成本、责任归属与工程落地难度都会限制采用。GitHub 星标和近期活动只能说明关注度，不能直接证明生产可用性或明确商业需求。",
+      "aiSelectionScore": 10588,
+      "highlight": "该项目提供开源技能，让 AI 智能体参与软件设计与审查流程。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "GitHub repository with 3745 stars and recent public activity. Description: Experience-Driven Black-Box Cost Control for Coding Agents",
+      "sourceExcerpt": "GitHub repository with 10588 stars and recent public activity. Description: Open-source skills for designing and reviewing software with AI agents",
       "translations": {
         "zh": {
-          "title": "微软 TokenEconomizer：面向编码智能体的经验驱动黑盒成本控制",
-          "highlight": "微软开源项目 TokenEconomizer 以经验驱动的黑盒方式，为编码智能体提供成本控制。",
-          "summary": "公开信息显示，microsoft/TokenEconomizer 是一个获得 3745 stars 且有近期公开活动的 GitHub 项目，定位为面向编码智能体的经验驱动黑盒成本控制。它的价值在于把 AI 编码代理的调用成本作为可管理对象，而不是只看功能演示。对准备落地编码智能体的团队，可重点观察其成本节省是否以代码质量为代价，以及接入和跨模型迁移难度。",
-          "failureAnalysis": "经验驱动的黑盒控制通常需要足够多的真实调用样本来冷启动，面对模型、任务或团队变化时可能失效。编码智能体链路长且结果质量难统一，压低 token 成本可能损害代码正确性，或把成本转移到工程接入和调参上。项目目前仅有仓库描述和 star 信号，尚不能证明需求刚性、可复现收益和跨团队分发能力。"
+          "title": "Google 开源大象金鱼模型：面向 AI 智能体的软件设计与审查技能",
+          "highlight": "该项目提供开源技能，让 AI 智能体参与软件设计与审查流程。",
+          "summary": "该 GitHub 仓库获得 10588 星标并有近期公开活动，定位是提供开源技能，让 AI 智能体参与软件设计与审查。对非技术管理者而言，值得关注的是它把 AI 智能体的作用放在设计、评审等软件工程环节，而不只是代码生成。",
+          "failureAnalysis": "这类技能库能否产生价值，取决于它是否能稳定嵌入真实研发流程；若缺少与现有代码库、评审规范、权限系统的深度集成，容易停留在演示层面。软件设计与审查依赖组织上下文和高质量数据，审查成本、责任归属与工程落地难度都会限制采用。GitHub 星标和近期活动只能说明关注度，不能直接证明生产可用性或明确商业需求。"
         },
         "en": {
-          "highlight": "Microsoft's TokenEconomizer is a GitHub project with 3,745 stars that offers experience-driven black-box cost control for coding agents.",
-          "summary": "Public information shows that microsoft/TokenEconomizer is a GitHub project with 3,745 stars and recent public activity, positioned as experience-driven black-box cost control for coding agents. Its value is to make the cost of AI coding-agent calls a managed concern rather than only a feature demo. Teams deploying coding agents should check whether savings come at the expense of code quality and how hard it is to integrate or transfer across models.",
-          "failureAnalysis": "Experience-driven black-box control needs enough real-call data to cold-start and may degrade as models, tasks, or teams change. With only a repository description and star count, the project has not yet proven hard demand, reproducible savings, or cross-team distribution.",
-          "title": "Microsoft TokenEconomizer: Experience-Driven Black-Box Cost Control for Coding Agents"
+          "highlight": "The project offers open-source skills to help AI agents participate in software design and review workflows.",
+          "summary": "This GitHub repository has 10,588 stars and recent public activity, and it provides open-source skills for designing and reviewing software with AI agents. It is worth reading because it positions AI agents in higher-value engineering work such as design and review, not only code generation.",
+          "failureAnalysis": "The skills may remain demos without deep integration into real codebases, review standards, permissions, and workflows; GitHub stars and recent activity do not prove production readiness or clear business demand.",
+          "title": "Google Elephant Goldfish Model: Open-Source Skills for AI-Agent Software Design and Review"
         }
       }
     }

@@ -1,0 +1,331 @@
+{
+  "issueDate": "2026-11-02",
+  "updateStatus": "complete",
+  "contentFingerprint": "163569eb7fe07decba80846ce756729a6ae7c66576ac19f7e4ddc3092a4d6321",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-9861c115a8a842e5ab8321f8b0afae9f",
+      "category": "domestic",
+      "title": "李干杰受中共中央委托向党外人士通报中共二十届五中全会精神",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-02/10725065.shtml",
+      "publishedAt": "2026-11-02T14:33:23.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "受中共中央委托，李干杰向党外人士通报中共二十届五中全会精神",
+      "summary": "新华社消息显示，11月2日，受中共中央委托，中共中央政治局委员、中央统战部部长李干杰向党外人士通报中共二十届五中全会精神。该消息属于官方时政通报，核心信息是通报人、通报对象和全会精神主题。可作为跟踪官方政策传达节奏与统战工作动态的公开信号。",
+      "failureAnalysis": "这是一则官方时政通报，能确认的公开信息集中在通报行为与主题，不宜据此展开超出原文的政策或技术推断。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "新华社北京11月2日电 11月2日，受中共中央委托，中共中央政治局委员、中央统战部部长李干杰向党外人士通报中共二十届五中全会精神。",
+      "translations": {
+        "zh": {
+          "title": "李干杰受中共中央委托向党外人士通报中共二十届五中全会精神",
+          "highlight": "受中共中央委托，李干杰向党外人士通报中共二十届五中全会精神",
+          "summary": "新华社消息显示，11月2日，受中共中央委托，中共中央政治局委员、中央统战部部长李干杰向党外人士通报中共二十届五中全会精神。该消息属于官方时政通报，核心信息是通报人、通报对象和全会精神主题。可作为跟踪官方政策传达节奏与统战工作动态的公开信号。",
+          "failureAnalysis": "这是一则官方时政通报，能确认的公开信息集中在通报行为与主题，不宜据此展开超出原文的政策或技术推断。"
+        },
+        "en": {
+          "highlight": "Entrusted by the CPC Central Committee, Li Ganjie briefed non-Party figures on the spirit of the 20th CPC Central Committee's Fifth Plenary Session.",
+          "summary": "Xinhua reported that on November 2, Li Ganjie, a Political Bureau member and head of the United Front Work Department, briefed non-Party figures on the spirit of the Fifth Plenary Session. The item is an official political briefing; its verifiable content is limited to the briefer, audience, and topic. It is useful as a public signal of policy communication and united front work, not as technical analysis.",
+          "failureAnalysis": "The key takeaway is that the available public information is a brief official notice, so policy or technical conclusions beyond the stated briefing should not be inferred.",
+          "title": "Li Ganjie Briefs Non-Party Figures on Fifth Plenary Session Spirit"
+        }
+      }
+    },
+    {
+      "id": "news-c205120f37234ab1b6c9be7e84c97ce5",
+      "category": "domestic",
+      "title": "王毅同沙特国家安全顾问艾班会谈",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-02/10725049.shtml",
+      "publishedAt": "2026-11-02T13:59:09.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "王毅在京同沙特国务大臣、内阁成员、国家安全顾问艾班举行会谈，艾班转交了沙特王储兼首相穆罕默德致习近平主席的信函。",
+      "summary": "报道称，11月2日中共中央政治局委员、中央外办主任王毅在北京同沙特国务大臣、内阁成员、国家安全顾问艾班举行会谈。会谈中，艾班转交了沙特王储兼首相穆罕默德就中沙双边关系发展和双方共同关心问题致习近平主席的信函。这条消息来自官方信源，适合用来跟踪中沙高层沟通的节奏与层级。",
+      "failureAnalysis": "这是官方外事活动的程序性报道，可确认的事实是会谈举行以及信函转交；至于双方具体谈了什么、达成了哪些共识，公开信息并未披露，不宜过度解读。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "11月2日，中共中央政治局委员、中央外办主任王毅在京同沙特国务大臣、内阁成员、国家安全顾问艾班举行会谈。艾班转交了沙特王储兼首相穆罕默德就中沙双边关系发展和双方共同关心的问题致习近平主席的信函。",
+      "translations": {
+        "zh": {
+          "title": "王毅同沙特国家安全顾问艾班会谈",
+          "highlight": "王毅在京同沙特国务大臣、内阁成员、国家安全顾问艾班举行会谈，艾班转交了沙特王储兼首相穆罕默德致习近平主席的信函。",
+          "summary": "报道称，11月2日中共中央政治局委员、中央外办主任王毅在北京同沙特国务大臣、内阁成员、国家安全顾问艾班举行会谈。会谈中，艾班转交了沙特王储兼首相穆罕默德就中沙双边关系发展和双方共同关心问题致习近平主席的信函。这条消息来自官方信源，适合用来跟踪中沙高层沟通的节奏与层级。",
+          "failureAnalysis": "这是官方外事活动的程序性报道，可确认的事实是会谈举行以及信函转交；至于双方具体谈了什么、达成了哪些共识，公开信息并未披露，不宜过度解读。"
+        },
+        "en": {
+          "highlight": "Wang Yi held talks in Beijing with Saudi Minister of State and National Security Advisor Al-Aiban, who delivered a letter from Crown Prince Mohammed to President Xi Jinping.",
+          "summary": "The report says that on November 2, Wang Yi, member of the Political Bureau of the CPC Central Committee and director of the Office of the Central Commission for Foreign Affairs, held talks in Beijing with Saudi Minister of State, cabinet member and National Security Advisor Al-Aiban. During the meeting, Al-Aiban handed over a letter from Saudi Crown Prince and Prime Minister Mohammed to President Xi Jinping on bilateral relations and issues of common concern. Coming from an official source, it is useful for tracking the pace and level of China-Saudi high-level communication.",
+          "failureAnalysis": "This is a procedural readout of an official diplomatic event: the verifiable facts are that the talks took place and the letter was delivered, while the substance of the discussion was not disclosed, so it should not be over-interpreted.",
+          "title": "Wang Yi Holds Talks with Saudi National Security Advisor Al-Aiban"
+        }
+      }
+    },
+    {
+      "id": "news-0d4cc0885f6740cc9ea836f0369f215f",
+      "category": "domestic",
+      "title": "前三季度陕西税费收入超6300亿元 税费红利赋能产业创新发展",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-02/10724983.shtml",
+      "publishedAt": "2026-11-02T13:58:53.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "2026年前三季度，陕西全省累计组织税费收入超6300亿元，同比增长3.2%。",
+      "summary": "报道援引陕西省政府新闻办发布会信息称，2026年前三季度陕西累计组织税费收入超6300亿元，同比增长3.2%。文章将这组数据与减税降费、智慧办税等举措联系起来，认为其反映出当地产业升级、创新驱动和民生改善的态势。对关注区域经济与财税政策的企业管理者而言，这是一条可核查的省级财政与产业信号。",
+      "failureAnalysis": "阅读此类数据时应关注其口径：税费收入是政府收入指标，增长3.2%并不直接等同于企业负担或产业效益改善。可把它作为区域经济观察的起点，具体投资与经营判断仍需结合产业结构与政策细则。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网西安11月2日电 (记者 杨英琦)记者2日从陕西省人民政府新闻办公室举办的新闻发布会获悉，2026年前三季度，陕西全省累计组织税费收入超6300亿元(人民币，下同)，同比增长3.2%。该省一系列减税降费、智慧办税等举措落地见效，折射出当地产业升级、创新驱动、民生改善的发展态势。",
+      "translations": {
+        "zh": {
+          "title": "前三季度陕西税费收入超6300亿元 税费红利赋能产业创新发展",
+          "highlight": "2026年前三季度，陕西全省累计组织税费收入超6300亿元，同比增长3.2%。",
+          "summary": "报道援引陕西省政府新闻办发布会信息称，2026年前三季度陕西累计组织税费收入超6300亿元，同比增长3.2%。文章将这组数据与减税降费、智慧办税等举措联系起来，认为其反映出当地产业升级、创新驱动和民生改善的态势。对关注区域经济与财税政策的企业管理者而言，这是一条可核查的省级财政与产业信号。",
+          "failureAnalysis": "阅读此类数据时应关注其口径：税费收入是政府收入指标，增长3.2%并不直接等同于企业负担或产业效益改善。可把它作为区域经济观察的起点，具体投资与经营判断仍需结合产业结构与政策细则。"
+        },
+        "en": {
+          "highlight": "In the first three quarters of 2026, Shaanxi Province collected more than 630 billion yuan in tax and fee revenue, up 3.2% year on year.",
+          "summary": "Citing a press conference held by Shaanxi Province's Information Office, the report says the province collected over 630 billion yuan in tax and fee revenue in the first three quarters of 2026, a 3.2% year-on-year increase. It links this figure to tax and fee reductions and smart tax services, framing them as signs of industrial upgrading, innovation-driven growth and improved livelihoods. For business leaders tracking regional economies and fiscal policy, it is a verifiable provincial-level signal.",
+          "failureAnalysis": "Read such figures with care: tax and fee revenue is a government income metric, and 3.2% growth does not directly mean lighter corporate burdens or better industrial returns. Treat it as a starting point for regional analysis, and pair it with industrial structure and policy details before making business or investment judgments.",
+          "title": "Shaanxi's Tax and Fee Revenue Exceeds 630 Billion Yuan in First Three Quarters, Tax Reliefs Boost Industrial Innovation"
+        }
+      }
+    },
+    {
+      "id": "news-880134f4de564a04a0ecb9d408bccd57",
+      "category": "international",
+      "title": "Poundland's former owner offers to invest as minister prepares to meet board",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/ck1wv1j0xgywo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-02T13:40:36.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "沃尔弗汉普顿的史蒂夫·史密斯表示，他希望向自己创办的这家公司重新投入一些资金。",
+      "summary": "BBC Business报道，Poundland前所有者提出投资，同时一位部长准备与董事会会面。已知内容显示，史蒂夫·史密斯表示愿意向自己创办的公司重新投入资金。此事涉及这家零售商的资本与治理动向，后续董事会及政府方面的回应值得关注。",
+      "failureAnalysis": "关键看点在于前创始人的投资意向能否落地，以及部长与董事会的会面会否影响公司决策；目前已知信息只有投资意向和会面安排，具体金额与条件尚不清楚。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Wolverhampton's Steve Smith said he wants to put some money back into the firm he started.",
+      "translations": {
+        "zh": {
+          "title": "Poundland前所有者提出投资，部长准备会见董事会",
+          "highlight": "沃尔弗汉普顿的史蒂夫·史密斯表示，他希望向自己创办的这家公司重新投入一些资金。",
+          "summary": "BBC Business报道，Poundland前所有者提出投资，同时一位部长准备与董事会会面。已知内容显示，史蒂夫·史密斯表示愿意向自己创办的公司重新投入资金。此事涉及这家零售商的资本与治理动向，后续董事会及政府方面的回应值得关注。",
+          "failureAnalysis": "关键看点在于前创始人的投资意向能否落地，以及部长与董事会的会面会否影响公司决策；目前已知信息只有投资意向和会面安排，具体金额与条件尚不清楚。"
+        },
+        "en": {
+          "highlight": "Wolverhampton's Steve Smith said he wants to put some money back into the firm he started.",
+          "summary": "BBC Business reports that Poundland's former owner has offered to invest while a minister prepares to meet the board. Known content says Wolverhampton's Steve Smith wants to put money back into the company he founded. The item is worth watching for what it signals about the retailer's ownership and government attention.",
+          "failureAnalysis": "The key takeaway is that only an investment intention and a planned meeting are known; the amount, terms and board response are not yet clear.",
+          "title": "Former Poundland owner offers to invest as minister prepares to meet board"
+        }
+      }
+    },
+    {
+      "id": "news-52ec1afe4bbd4e128c5a3f692011e4be",
+      "category": "international",
+      "title": "Ryanair says it may freeze workers' pay and raise airfares",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/cr0qkve1x224o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-02T12:22:10.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "该航空公司表示，除非美国与以色列同伊朗的战争结束，否则2028年燃油价格可能上涨20亿欧元。",
+      "summary": "BBC Business 报道，瑞安航空称可能冻结员工薪资并提高机票价格。公司给出的原因是：美国与以色列同伊朗的战争若不结束，2028年燃油成本可能增加20亿欧元。这凸显地缘政治与燃油价格如何传导至航空公司的成本和票价。",
+      "failureAnalysis": "关键约束是燃油成本：地缘政治冲突若持续，航空公司可能通过冻结薪资和上调票价来转嫁成本压力。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "The airline says fuel prices may rise by €2bn in 2028 unless there is an end to the US-Israel war with Iran.",
+      "translations": {
+        "zh": {
+          "title": "瑞安航空称可能冻结员工薪资并提高票价",
+          "highlight": "该航空公司表示，除非美国与以色列同伊朗的战争结束，否则2028年燃油价格可能上涨20亿欧元。",
+          "summary": "BBC Business 报道，瑞安航空称可能冻结员工薪资并提高机票价格。公司给出的原因是：美国与以色列同伊朗的战争若不结束，2028年燃油成本可能增加20亿欧元。这凸显地缘政治与燃油价格如何传导至航空公司的成本和票价。",
+          "failureAnalysis": "关键约束是燃油成本：地缘政治冲突若持续，航空公司可能通过冻结薪资和上调票价来转嫁成本压力。"
+        },
+        "en": {
+          "highlight": "The airline says fuel prices may rise by €2bn in 2028 unless there is an end to the US-Israel war with Iran.",
+          "summary": "BBC Business reports that Ryanair says it may freeze workers' pay and raise airfares. The airline says fuel prices may rise by €2bn in 2028 unless the US-Israel war with Iran ends. This shows how geopolitics and fuel prices can feed into airline costs and ticket prices.",
+          "failureAnalysis": "The key constraint is fuel cost: if geopolitical conflict continues, the airline may pass on cost pressure through frozen pay and higher fares.",
+          "title": "Ryanair says it may freeze worker pay and raise airfares"
+        }
+      }
+    },
+    {
+      "id": "life-107531aa1b384cdc9ba5863113eb8d80",
+      "category": "international",
+      "title": "This Handheld Vacuum Fixed My Biggest Problem With Cleaning",
+      "source": "Lifehacker",
+      "url": "https://lifehacker.com/home/handheld-vacuum-upgrade-of-the-week?utm_medium=RSS",
+      "publishedAt": "2026-11-02T18:00:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "我清洁时最大的问题就是懒惰，说到底，问题恰恰出在懒惰本身。",
+      "summary": "文章以一款手持吸尘器为切口，讲它如何解决作者清洁时最大的问题。文中把问题的根源直接归结为懒惰，提示更省事的工具可能比空谈自律更能降低清洁阻力。对非技术读者来说，这是一个关于日常工具如何影响行为习惯的简短观察。",
+      "failureAnalysis": "关键启示：先承认懒惰是日常清洁中的真实阻力，再用更省事的工具降低行动门槛，往往比单纯依靠意志力更实际。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "The problem is laziness.",
+      "translations": {
+        "zh": {
+          "title": "这款手持吸尘器解决了我清洁时最大的问题",
+          "highlight": "我清洁时最大的问题就是懒惰，说到底，问题恰恰出在懒惰本身。",
+          "summary": "文章以一款手持吸尘器为切口，讲它如何解决作者清洁时最大的问题。文中把问题的根源直接归结为懒惰，提示更省事的工具可能比空谈自律更能降低清洁阻力。对非技术读者来说，这是一个关于日常工具如何影响行为习惯的简短观察。",
+          "failureAnalysis": "关键启示：先承认懒惰是日常清洁中的真实阻力，再用更省事的工具降低行动门槛，往往比单纯依靠意志力更实际。"
+        },
+        "en": {
+          "highlight": "The article's key line is blunt: it's laziness, and the biggest problem with cleaning is laziness itself.",
+          "summary": "The article uses a handheld vacuum to discuss the author's biggest cleaning problem. Its key line reduces that problem to laziness, suggesting that easier tools may matter more than lecturing people about discipline. For non-technical readers, it is a short reminder of how convenience shapes daily behavior.",
+          "failureAnalysis": "Key takeaway: admit laziness as a real daily constraint, then use easier tools to lower the friction of cleaning; that is often more practical than relying on willpower alone.",
+          "title": "This Handheld Vacuum Solved My Biggest Cleaning Problem"
+        }
+      }
+    },
+    {
+      "id": "life-9cd9c172397f4379bc0e49c6ff550d1b",
+      "category": "international",
+      "title": "How psychology’s classic studies misled us about the self",
+      "source": "Psyche",
+      "url": "https://psyche.co/ideas/its-time-to-ditch-the-empty-self-view-of-human-psychology",
+      "publishedAt": "2026-11-02T11:00:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "米尔格拉姆、津巴多和近期启动研究表明人高度可塑，但他们低估了我们实际上有多稳定。",
+      "summary": "文章讨论米尔格拉姆、津巴多及近期启动研究如何让人以为人类高度可塑，并指出这种判断低估了自我的稳定性。作者 Jack W Klein 与 William B Swann 认为，我们比自己想象中更稳定；这值得用来校准对经典心理学结论的信任。",
+      "failureAnalysis": "关键提醒：经典心理学研究的传播结论可能夸大可塑性；理解自我时，应同时重视稳定性证据。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Milgram, Zimbardo and recent priming studies suggested we’re highly malleable. They underestimated how stable we really are - by Jack W Klein & William B Swann Read on Psyche",
+      "translations": {
+        "zh": {
+          "title": "心理学经典研究如何误导了我们对自我的理解",
+          "highlight": "米尔格拉姆、津巴多和近期启动研究表明人高度可塑，但他们低估了我们实际上有多稳定。",
+          "summary": "文章讨论米尔格拉姆、津巴多及近期启动研究如何让人以为人类高度可塑，并指出这种判断低估了自我的稳定性。作者 Jack W Klein 与 William B Swann 认为，我们比自己想象中更稳定；这值得用来校准对经典心理学结论的信任。",
+          "failureAnalysis": "关键提醒：经典心理学研究的传播结论可能夸大可塑性；理解自我时，应同时重视稳定性证据。"
+        },
+        "en": {
+          "highlight": "Milgram, Zimbardo and recent priming studies suggested we are highly malleable, but underestimated how stable we really are.",
+          "summary": "The article discusses how Milgram, Zimbardo and recent priming studies suggested that people are highly malleable, while overlooking how stable the self actually is. Jack W Klein and William B Swann argue that we are more stable than often assumed, which is worth considering when assessing classic psychology findings.",
+          "failureAnalysis": "Key takeaway: widely circulated conclusions from classic psychology may overstate malleability; understanding the self should also take stability evidence seriously.",
+          "title": "How Psychology’s Classic Studies Misled Us About the Self"
+        }
+      }
+    },
+    {
+      "id": "paper-2610.36536",
+      "category": "paper",
+      "title": "ATEMPO: Amortized Transfer Entropy Model Per-lag Over-Time",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2610.36536v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.36536",
+      "publishedAt": "2026-10-27T02:49:07.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "关键技术词：保留原论文术语，并用白话解释其作用。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "一个时间序列对另一个序列的预测信息可能只在特定滞后处强烈，在相邻滞后处却很弱。",
+      "summary": "该工作提出 ATEMPO，一种逐滞后随时间的摊销转移熵建模方法，关注两个时间序列之间信息传递的延迟结构。原文指出，固定输入窗口可能掩盖只在特定滞后处出现的预测关系，因此这一建模角度对时序分析具有潜在意义。",
+      "failureAnalysis": "当前可见文本只说明研究动机，未提供实验设置、基线或量化结果，因此无法判断其相对固定窗口方法的实际增益。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "A TEMPO: Amortized Transfer Entropy Model Per-lag Over-Time Emma Andrews1, Konstantinos Kontras2,3, Keane Ong1,3, Maarten De V os2, Gianmarco Mengaldo1 1 National University of Singapore, 2KU Leuven, 3MIT, When one time series informs another, the delay at which that information arrives determines if models can utilize this relationship effectively. A source may be strongly predictive at one delay but uninformative at neighboring lags. Therefore, fixed input windows may obscure this structure by bundling informative and irrelevant history together.",
+      "translations": {
+        "zh": {
+          "title": "ATEMPO：逐滞后随时间的摊销转移熵模型",
+          "highlight": "一个时间序列对另一个序列的预测信息可能只在特定滞后处强烈，在相邻滞后处却很弱。",
+          "summary": "该工作提出 ATEMPO，一种逐滞后随时间的摊销转移熵建模方法，关注两个时间序列之间信息传递的延迟结构。原文指出，固定输入窗口可能掩盖只在特定滞后处出现的预测关系，因此这一建模角度对时序分析具有潜在意义。",
+          "failureAnalysis": "当前可见文本只说明研究动机，未提供实验设置、基线或量化结果，因此无法判断其相对固定窗口方法的实际增益。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "关键技术词：保留原论文术语，并用白话解释其作用。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "ATEMPO: Amortized Transfer Entropy Model Per-lag Over-Time",
+          "highlight": "A source time series may be strongly predictive at one lag but uninformative at neighboring lags, so fixed input windows can obscure this delay structure.",
+          "summary": "The work introduces ATEMPO, an amortized transfer entropy model that addresses per-lag over-time structure when one time series informs another. The supplied text motivates the method by noting that predictive information can be concentrated at specific delays and that fixed input windows may hide this structure. This framing matters for time-series modeling because delay-specific relationships may be missed by fixed-window approaches.",
+          "failureAnalysis": "The supplied excerpt covers motivation only and lacks experimental setup, baselines, or quantitative results, so the method's practical benefit over fixed-window approaches cannot be assessed.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "关键技术词：保留原论文术语，并用白话解释其作用。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-github-1368596582",
+      "category": "ai",
+      "title": "google/elephant-goldfish-model",
+      "source": "GitHub Search",
+      "url": "https://github.com/google/elephant-goldfish-model",
+      "abstractUrl": null,
+      "publishedAt": "2026-09-13T16:31:06.0000000Z",
+      "scoreLabel": "GitHub 10588 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该 GitHub 仓库获得 10588 星标并有近期公开活动，定位是提供开源技能，让 AI 智能体参与软件设计与审查。对非技术管理者而言，值得关注的是它把 AI 智能体的作用放在设计、评审等软件工程环节，而不只是代码生成。",
+      "failureAnalysis": "这类技能库能否产生价值，取决于它是否能稳定嵌入真实研发流程；若缺少与现有代码库、评审规范、权限系统的深度集成，容易停留在演示层面。软件设计与审查依赖组织上下文和高质量数据，审查成本、责任归属与工程落地难度都会限制采用。GitHub 星标和近期活动只能说明关注度，不能直接证明生产可用性或明确商业需求。",
+      "aiSelectionScore": 10588,
+      "highlight": "该项目提供开源技能，让 AI 智能体参与软件设计与审查流程。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 10588 stars and recent public activity. Description: Open-source skills for designing and reviewing software with AI agents",
+      "translations": {
+        "zh": {
+          "title": "Google 开源大象金鱼模型：面向 AI 智能体的软件设计与审查技能",
+          "highlight": "该项目提供开源技能，让 AI 智能体参与软件设计与审查流程。",
+          "summary": "该 GitHub 仓库获得 10588 星标并有近期公开活动，定位是提供开源技能，让 AI 智能体参与软件设计与审查。对非技术管理者而言，值得关注的是它把 AI 智能体的作用放在设计、评审等软件工程环节，而不只是代码生成。",
+          "failureAnalysis": "这类技能库能否产生价值，取决于它是否能稳定嵌入真实研发流程；若缺少与现有代码库、评审规范、权限系统的深度集成，容易停留在演示层面。软件设计与审查依赖组织上下文和高质量数据，审查成本、责任归属与工程落地难度都会限制采用。GitHub 星标和近期活动只能说明关注度，不能直接证明生产可用性或明确商业需求。"
+        },
+        "en": {
+          "highlight": "The project offers open-source skills to help AI agents participate in software design and review workflows.",
+          "summary": "This GitHub repository has 10,588 stars and recent public activity, and it provides open-source skills for designing and reviewing software with AI agents. It is worth reading because it positions AI agents in higher-value engineering work such as design and review, not only code generation.",
+          "failureAnalysis": "The skills may remain demos without deep integration into real codebases, review standards, permissions, and workflows; GitHub stars and recent activity do not prove production readiness or clear business demand.",
+          "title": "Google Elephant Goldfish Model: Open-Source Skills for AI-Agent Software Design and Review"
+        }
+      }
+    }
+  ]
+}
