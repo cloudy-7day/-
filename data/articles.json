@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-11-02",
+  "issueDate": "2026-11-03",
   "updateStatus": "complete",
-  "contentFingerprint": "163569eb7fe07decba80846ce756729a6ae7c66576ac19f7e4ddc3092a4d6321",
+  "contentFingerprint": "ebc39ded4f38a7154a2bcb4a2feb1e9c5ea669557db559f76c7e9080ac2f259e",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,216 +10,216 @@
   ],
   "articles": [
     {
-      "id": "news-9861c115a8a842e5ab8321f8b0afae9f",
+      "id": "news-3556a95bd0574fccbb2a03c2ea70868d",
       "category": "domestic",
-      "title": "李干杰受中共中央委托向党外人士通报中共二十届五中全会精神",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-02/10725065.shtml",
-      "publishedAt": "2026-11-02T14:33:23.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "受中共中央委托，李干杰向党外人士通报中共二十届五中全会精神",
-      "summary": "新华社消息显示，11月2日，受中共中央委托，中共中央政治局委员、中央统战部部长李干杰向党外人士通报中共二十届五中全会精神。该消息属于官方时政通报，核心信息是通报人、通报对象和全会精神主题。可作为跟踪官方政策传达节奏与统战工作动态的公开信号。",
-      "failureAnalysis": "这是一则官方时政通报，能确认的公开信息集中在通报行为与主题，不宜据此展开超出原文的政策或技术推断。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "新华社北京11月2日电 11月2日，受中共中央委托，中共中央政治局委员、中央统战部部长李干杰向党外人士通报中共二十届五中全会精神。",
-      "translations": {
-        "zh": {
-          "title": "李干杰受中共中央委托向党外人士通报中共二十届五中全会精神",
-          "highlight": "受中共中央委托，李干杰向党外人士通报中共二十届五中全会精神",
-          "summary": "新华社消息显示，11月2日，受中共中央委托，中共中央政治局委员、中央统战部部长李干杰向党外人士通报中共二十届五中全会精神。该消息属于官方时政通报，核心信息是通报人、通报对象和全会精神主题。可作为跟踪官方政策传达节奏与统战工作动态的公开信号。",
-          "failureAnalysis": "这是一则官方时政通报，能确认的公开信息集中在通报行为与主题，不宜据此展开超出原文的政策或技术推断。"
-        },
-        "en": {
-          "highlight": "Entrusted by the CPC Central Committee, Li Ganjie briefed non-Party figures on the spirit of the 20th CPC Central Committee's Fifth Plenary Session.",
-          "summary": "Xinhua reported that on November 2, Li Ganjie, a Political Bureau member and head of the United Front Work Department, briefed non-Party figures on the spirit of the Fifth Plenary Session. The item is an official political briefing; its verifiable content is limited to the briefer, audience, and topic. It is useful as a public signal of policy communication and united front work, not as technical analysis.",
-          "failureAnalysis": "The key takeaway is that the available public information is a brief official notice, so policy or technical conclusions beyond the stated briefing should not be inferred.",
-          "title": "Li Ganjie Briefs Non-Party Figures on Fifth Plenary Session Spirit"
-        }
-      }
-    },
-    {
-      "id": "news-c205120f37234ab1b6c9be7e84c97ce5",
-      "category": "domestic",
-      "title": "王毅同沙特国家安全顾问艾班会谈",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-02/10725049.shtml",
-      "publishedAt": "2026-11-02T13:59:09.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "王毅在京同沙特国务大臣、内阁成员、国家安全顾问艾班举行会谈，艾班转交了沙特王储兼首相穆罕默德致习近平主席的信函。",
-      "summary": "报道称，11月2日中共中央政治局委员、中央外办主任王毅在北京同沙特国务大臣、内阁成员、国家安全顾问艾班举行会谈。会谈中，艾班转交了沙特王储兼首相穆罕默德就中沙双边关系发展和双方共同关心问题致习近平主席的信函。这条消息来自官方信源，适合用来跟踪中沙高层沟通的节奏与层级。",
-      "failureAnalysis": "这是官方外事活动的程序性报道，可确认的事实是会谈举行以及信函转交；至于双方具体谈了什么、达成了哪些共识，公开信息并未披露，不宜过度解读。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "11月2日，中共中央政治局委员、中央外办主任王毅在京同沙特国务大臣、内阁成员、国家安全顾问艾班举行会谈。艾班转交了沙特王储兼首相穆罕默德就中沙双边关系发展和双方共同关心的问题致习近平主席的信函。",
-      "translations": {
-        "zh": {
-          "title": "王毅同沙特国家安全顾问艾班会谈",
-          "highlight": "王毅在京同沙特国务大臣、内阁成员、国家安全顾问艾班举行会谈，艾班转交了沙特王储兼首相穆罕默德致习近平主席的信函。",
-          "summary": "报道称，11月2日中共中央政治局委员、中央外办主任王毅在北京同沙特国务大臣、内阁成员、国家安全顾问艾班举行会谈。会谈中，艾班转交了沙特王储兼首相穆罕默德就中沙双边关系发展和双方共同关心问题致习近平主席的信函。这条消息来自官方信源，适合用来跟踪中沙高层沟通的节奏与层级。",
-          "failureAnalysis": "这是官方外事活动的程序性报道，可确认的事实是会谈举行以及信函转交；至于双方具体谈了什么、达成了哪些共识，公开信息并未披露，不宜过度解读。"
-        },
-        "en": {
-          "highlight": "Wang Yi held talks in Beijing with Saudi Minister of State and National Security Advisor Al-Aiban, who delivered a letter from Crown Prince Mohammed to President Xi Jinping.",
-          "summary": "The report says that on November 2, Wang Yi, member of the Political Bureau of the CPC Central Committee and director of the Office of the Central Commission for Foreign Affairs, held talks in Beijing with Saudi Minister of State, cabinet member and National Security Advisor Al-Aiban. During the meeting, Al-Aiban handed over a letter from Saudi Crown Prince and Prime Minister Mohammed to President Xi Jinping on bilateral relations and issues of common concern. Coming from an official source, it is useful for tracking the pace and level of China-Saudi high-level communication.",
-          "failureAnalysis": "This is a procedural readout of an official diplomatic event: the verifiable facts are that the talks took place and the letter was delivered, while the substance of the discussion was not disclosed, so it should not be over-interpreted.",
-          "title": "Wang Yi Holds Talks with Saudi National Security Advisor Al-Aiban"
-        }
-      }
-    },
-    {
-      "id": "news-0d4cc0885f6740cc9ea836f0369f215f",
-      "category": "domestic",
-      "title": "前三季度陕西税费收入超6300亿元 税费红利赋能产业创新发展",
+      "title": "“京港国际会客厅”在北京揭牌",
       "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-02/10724983.shtml",
-      "publishedAt": "2026-11-02T13:58:53.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-03/10725688.shtml",
+      "publishedAt": "2026-11-03T15:54:32.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "2026年前三季度，陕西全省累计组织税费收入超6300亿元，同比增长3.2%。",
-      "summary": "报道援引陕西省政府新闻办发布会信息称，2026年前三季度陕西累计组织税费收入超6300亿元，同比增长3.2%。文章将这组数据与减税降费、智慧办税等举措联系起来，认为其反映出当地产业升级、创新驱动和民生改善的态势。对关注区域经济与财税政策的企业管理者而言，这是一条可核查的省级财政与产业信号。",
-      "failureAnalysis": "阅读此类数据时应关注其口径：税费收入是政府收入指标，增长3.2%并不直接等同于企业负担或产业效益改善。可把它作为区域经济观察的起点，具体投资与经营判断仍需结合产业结构与政策细则。",
+      "highlight": "该空间将承接政策宣讲、企业路演等各类活动，助力两地企业更好发展。",
+      "summary": "第二十九届京港洽谈会朝阳专题活动在北京举办，“京港国际会客厅”由北京市朝阳区投资促进服务中心联合将台乡、中国香港(地区)商会、中旅酒店等多方共同打造并揭牌。该空间将承接政策宣讲、企业路演等活动，服务京港两地企业发展，可观察京港合作在区级层面的落地方式。",
+      "failureAnalysis": "从已披露信息看，该会客厅的短期价值在于提供常态化活动空间，实际成效仍取决于后续活动组织与企业参与度。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网西安11月2日电 (记者 杨英琦)记者2日从陕西省人民政府新闻办公室举办的新闻发布会获悉，2026年前三季度，陕西全省累计组织税费收入超6300亿元(人民币，下同)，同比增长3.2%。该省一系列减税降费、智慧办税等举措落地见效，折射出当地产业升级、创新驱动、民生改善的发展态势。",
+      "sourceExcerpt": "中新网北京11月3日电 (记者 杜燕)第二十九届京港洽谈会朝阳专题活动3日在北京举办。活动现场，由北京市朝阳区投资促进服务中心联合将台乡、中国香港(地区)商会、中旅酒店等多方共同打造的“京港国际会客厅”揭牌。该空间将承接政策宣讲、企业路演等各类活动，助力两地企业更好发展。",
       "translations": {
         "zh": {
-          "title": "前三季度陕西税费收入超6300亿元 税费红利赋能产业创新发展",
-          "highlight": "2026年前三季度，陕西全省累计组织税费收入超6300亿元，同比增长3.2%。",
-          "summary": "报道援引陕西省政府新闻办发布会信息称，2026年前三季度陕西累计组织税费收入超6300亿元，同比增长3.2%。文章将这组数据与减税降费、智慧办税等举措联系起来，认为其反映出当地产业升级、创新驱动和民生改善的态势。对关注区域经济与财税政策的企业管理者而言，这是一条可核查的省级财政与产业信号。",
-          "failureAnalysis": "阅读此类数据时应关注其口径：税费收入是政府收入指标，增长3.2%并不直接等同于企业负担或产业效益改善。可把它作为区域经济观察的起点，具体投资与经营判断仍需结合产业结构与政策细则。"
+          "title": "“京港国际会客厅”在北京揭牌",
+          "highlight": "该空间将承接政策宣讲、企业路演等各类活动，助力两地企业更好发展。",
+          "summary": "第二十九届京港洽谈会朝阳专题活动在北京举办，“京港国际会客厅”由北京市朝阳区投资促进服务中心联合将台乡、中国香港(地区)商会、中旅酒店等多方共同打造并揭牌。该空间将承接政策宣讲、企业路演等活动，服务京港两地企业发展，可观察京港合作在区级层面的落地方式。",
+          "failureAnalysis": "从已披露信息看，该会客厅的短期价值在于提供常态化活动空间，实际成效仍取决于后续活动组织与企业参与度。"
         },
         "en": {
-          "highlight": "In the first three quarters of 2026, Shaanxi Province collected more than 630 billion yuan in tax and fee revenue, up 3.2% year on year.",
-          "summary": "Citing a press conference held by Shaanxi Province's Information Office, the report says the province collected over 630 billion yuan in tax and fee revenue in the first three quarters of 2026, a 3.2% year-on-year increase. It links this figure to tax and fee reductions and smart tax services, framing them as signs of industrial upgrading, innovation-driven growth and improved livelihoods. For business leaders tracking regional economies and fiscal policy, it is a verifiable provincial-level signal.",
-          "failureAnalysis": "Read such figures with care: tax and fee revenue is a government income metric, and 3.2% growth does not directly mean lighter corporate burdens or better industrial returns. Treat it as a starting point for regional analysis, and pair it with industrial structure and policy details before making business or investment judgments.",
-          "title": "Shaanxi's Tax and Fee Revenue Exceeds 630 Billion Yuan in First Three Quarters, Tax Reliefs Boost Industrial Innovation"
+          "highlight": "The space will host policy briefings, enterprise roadshows and other activities to help companies from both places develop better.",
+          "summary": "The 29th Beijing-Hong Kong Economic Cooperation Symposium's Chaoyang-themed event was held in Beijing, where the \"Beijing-Hong Kong International Reception Room\" was unveiled. It was jointly created by the Chaoyang District Investment Promotion Service Center, Jiangtai Township, the Hong Kong (China) Chamber of Commerce, China Travel Hotel and other parties. The space will host policy briefings and enterprise roadshows to support companies from both places.",
+          "failureAnalysis": "Based on disclosed information, the room's short-term value lies in providing a regular activity space. Its practical impact will depend on follow-up event organization and enterprise participation.",
+          "title": "\"Beijing-Hong Kong International Reception Room\" Unveiled in Beijing"
         }
       }
     },
     {
-      "id": "news-880134f4de564a04a0ecb9d408bccd57",
+      "id": "news-7ff26abcc77847ac9dbc69f4181e1ebc",
+      "category": "domestic",
+      "title": "山西吕梁“十五五”规划：旧产能提质 新链条起势",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-03/10725667.shtml",
+      "publishedAt": "2026-11-03T15:38:25.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "11月3日，吕梁市举行“开局起步‘十五五’”首场新闻发布会，解读“十五五”规划纲要。",
+      "summary": "文章报道，11月3日吕梁市举行“开局起步‘十五五’”系列主题首场新闻发布会，解读《吕梁市国民经济和社会发展“十五五”规划纲要》。标题显示当地规划关注旧产能提质与新链条起势，但已知信息未展开具体举措，适合作为观察地方“十五五”产业转型的入口。",
+      "failureAnalysis": "关键信息是发布会解读规划纲要；判断产业影响应回到纲要原文和后续执行数据，而非仅凭标题。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网太原11月3日电 (记者 范丽芳)11月3日，山西省吕梁市委宣传部、吕梁市政府新闻办举行“开局起步‘十五五’”系列主题首场新闻发布会，解读《吕梁市国民经济和社会发展“十五五”规划纲要》。",
+      "translations": {
+        "zh": {
+          "title": "山西吕梁“十五五”规划：旧产能提质，新链条起势",
+          "highlight": "11月3日，吕梁市举行“开局起步‘十五五’”首场新闻发布会，解读“十五五”规划纲要。",
+          "summary": "文章报道，11月3日吕梁市举行“开局起步‘十五五’”系列主题首场新闻发布会，解读《吕梁市国民经济和社会发展“十五五”规划纲要》。标题显示当地规划关注旧产能提质与新链条起势，但已知信息未展开具体举措，适合作为观察地方“十五五”产业转型的入口。",
+          "failureAnalysis": "关键信息是发布会解读规划纲要；判断产业影响应回到纲要原文和后续执行数据，而非仅凭标题。"
+        },
+        "en": {
+          "highlight": "On November 3, Lüliang held the first press conference in its “Starting the 15th Five-Year Plan” series to interpret the plan outline.",
+          "summary": "The article reports that Lüliang held the first press conference in its “Starting the 15th Five-Year Plan” series on November 3 to interpret the city’s 15th Five-Year Plan outline. The headline indicates a focus on upgrading old capacity and launching new industrial chains, though the known information does not detail specific measures; it is a useful entry point for observing local industrial transformation.",
+          "failureAnalysis": "The key verified fact is the press conference interpreting the plan outline; judging industrial impact should rely on the original outline and subsequent implementation data, not the headline alone.",
+          "title": "Lüliang, Shanxi’s 15th Five-Year Plan: Upgrading Old Capacity, Launching New Chains"
+        }
+      }
+    },
+    {
+      "id": "news-5693060148b84ef9a75cc8147d6ec28e",
+      "category": "domestic",
+      "title": "浙江海事金融探索迎新突破 落地首笔自贸区船舶授信业务",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-03/10725661.shtml",
+      "publishedAt": "2026-11-03T15:31:19.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "宁波海事局打造的海事金融资源配置中心成功落地首笔自贸区登记船舶授信业务，为新建远洋渔业冷藏船办理7000余万元抵押融资。",
+      "summary": "文章称，浙江自贸区船舶融资服务场景实现新延伸：宁波海事局相关中心为自贸区注册企业旗下新建远洋渔业冷藏船办理7000余万元抵押融资。此举进一步丰富船舶金融服务供给，并推动释放自贸区船舶登记政策红利。值得关注的是，它体现了海事金融资源配置与自贸区船舶登记政策在具体业务中的衔接。",
+      "failureAnalysis": "关键看点是政策红利能否转化为可复制的融资流程。对非技术管理者而言，应关注业务落地后的服务标准化与风险控制，而非单笔授信规模。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中国(浙江)自由贸易试验区内的宁波舟山港梅山集装箱码头。连林怡供图 中新网杭州11月3日电(王逸飞 付一方 连林怡)记者3日从浙江海事部门获悉，近日，由宁波海事局打造的海事金融资源配置中心成功落地首笔自贸区登记船舶授信业务，为中国(浙江)自由贸易试验区注册企业旗下新建远洋渔业冷藏船办理7000余万元的抵押融资，标志着船舶融资服务场景实现新延伸，进一步丰富船舶金融服务供给，更好释放自贸区船舶登记政策红利。",
+      "translations": {
+        "zh": {
+          "title": "浙江海事金融探索迎新突破 落地首笔自贸区船舶授信业务",
+          "highlight": "宁波海事局打造的海事金融资源配置中心成功落地首笔自贸区登记船舶授信业务，为新建远洋渔业冷藏船办理7000余万元抵押融资。",
+          "summary": "文章称，浙江自贸区船舶融资服务场景实现新延伸：宁波海事局相关中心为自贸区注册企业旗下新建远洋渔业冷藏船办理7000余万元抵押融资。此举进一步丰富船舶金融服务供给，并推动释放自贸区船舶登记政策红利。值得关注的是，它体现了海事金融资源配置与自贸区船舶登记政策在具体业务中的衔接。",
+          "failureAnalysis": "关键看点是政策红利能否转化为可复制的融资流程。对非技术管理者而言，应关注业务落地后的服务标准化与风险控制，而非单笔授信规模。"
+        },
+        "en": {
+          "highlight": "Ningbo's maritime financial resource center completed the first FTZ-registered ship credit business, arranging over 70 million yuan in mortgage financing for a new ocean fishery refrigerated vessel.",
+          "summary": "The report says Zhejiang's FTZ has extended ship financing services: a center built by the Ningbo Maritime Safety Administration arranged over 70 million yuan in mortgage financing for a new ocean fishery refrigerated vessel owned by an FTZ-registered company. It is presented as enriching ship finance supply and releasing the policy benefits of FTZ ship registration. The practical point is how maritime financial resource allocation connects with ship-registration policy on the ground.",
+          "failureAnalysis": "The key question is whether this policy dividend can become a repeatable financing process; for non-technical leaders, the focus should be on service standardization and risk control after the transaction, not the size of a single credit deal.",
+          "title": "Zhejiang Maritime Finance Breaks New Ground with First FTZ Ship Credit Business"
+        }
+      }
+    },
+    {
+      "id": "news-7817cba1286f412bb869fd7feb19a275",
       "category": "international",
-      "title": "Poundland's former owner offers to invest as minister prepares to meet board",
-      "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/ck1wv1j0xgywo?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-02T13:40:36.0000000+00:00",
+      "title": "Trump’s troubles with Iran could open the door to China",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/03/trump-iran-middle-east-china-gulf-hormuz-xi-jinping",
+      "publishedAt": "2026-11-03T13:13:50.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "沃尔弗汉普顿的史蒂夫·史密斯表示，他希望向自己创办的这家公司重新投入一些资金。",
-      "summary": "BBC Business报道，Poundland前所有者提出投资，同时一位部长准备与董事会会面。已知内容显示，史蒂夫·史密斯表示愿意向自己创办的公司重新投入资金。此事涉及这家零售商的资本与治理动向，后续董事会及政府方面的回应值得关注。",
-      "failureAnalysis": "关键看点在于前创始人的投资意向能否落地，以及部长与董事会的会面会否影响公司决策；目前已知信息只有投资意向和会面安排，具体金额与条件尚不清楚。",
+      "highlight": "中国已与海湾国家领导人举行一系列会晤，显示北京正在加大在中东的外交力度。",
+      "summary": "已披露内容显示，北京密集会晤海湾领导人，以扩大其在中东的影响力；这一外交动作发生在特朗普与习近平预计于深圳APEC会议期间会晤之前。报道标题将特朗普的伊朗麻烦与中国可能获得的机会联系起来，值得关注中美互动如何影响海湾国家的外交选择。",
+      "failureAnalysis": "关键点：密集外交的时机本身就是信号，美伊紧张与中美峰会可能同时影响海湾国家在中美之间的站位。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Wolverhampton's Steve Smith said he wants to put some money back into the firm he started.",
+      "sourceExcerpt": "Beijing launches diplomatic salvo to woo Gulf leaders and bolster its influence in the region China has held a flurry of meetings with Gulf leaders in a sign that Beijing is stepping up its diplomatic efforts in the Middle East. The diplomatic salvo comes before a highly anticipated meeting between Donald Trump and Xi Jinping when the US president is expected to attend the Apec conference in Shenzhen, China, on 18 and 19 November.",
       "translations": {
         "zh": {
-          "title": "Poundland前所有者提出投资，部长准备会见董事会",
-          "highlight": "沃尔弗汉普顿的史蒂夫·史密斯表示，他希望向自己创办的这家公司重新投入一些资金。",
-          "summary": "BBC Business报道，Poundland前所有者提出投资，同时一位部长准备与董事会会面。已知内容显示，史蒂夫·史密斯表示愿意向自己创办的公司重新投入资金。此事涉及这家零售商的资本与治理动向，后续董事会及政府方面的回应值得关注。",
-          "failureAnalysis": "关键看点在于前创始人的投资意向能否落地，以及部长与董事会的会面会否影响公司决策；目前已知信息只有投资意向和会面安排，具体金额与条件尚不清楚。"
+          "title": "特朗普的伊朗麻烦或为中国打开大门",
+          "highlight": "中国已与海湾国家领导人举行一系列会晤，显示北京正在加大在中东的外交力度。",
+          "summary": "已披露内容显示，北京密集会晤海湾领导人，以扩大其在中东的影响力；这一外交动作发生在特朗普与习近平预计于深圳APEC会议期间会晤之前。报道标题将特朗普的伊朗麻烦与中国可能获得的机会联系起来，值得关注中美互动如何影响海湾国家的外交选择。",
+          "failureAnalysis": "关键点：密集外交的时机本身就是信号，美伊紧张与中美峰会可能同时影响海湾国家在中美之间的站位。"
         },
         "en": {
-          "highlight": "Wolverhampton's Steve Smith said he wants to put some money back into the firm he started.",
-          "summary": "BBC Business reports that Poundland's former owner has offered to invest while a minister prepares to meet the board. Known content says Wolverhampton's Steve Smith wants to put money back into the company he founded. The item is worth watching for what it signals about the retailer's ownership and government attention.",
-          "failureAnalysis": "The key takeaway is that only an investment intention and a planned meeting are known; the amount, terms and board response are not yet clear.",
-          "title": "Former Poundland owner offers to invest as minister prepares to meet board"
+          "highlight": "China has held a flurry of meetings with Gulf leaders in a sign that Beijing is stepping up its diplomatic efforts in the Middle East.",
+          "summary": "The disclosed content says Beijing has held a flurry of meetings with Gulf leaders to expand its influence in the Middle East, ahead of an expected Trump–Xi meeting during the APEC conference in Shenzhen. The headline links Trump’s Iran troubles to a possible opening for China, making it worth watching how US–China interaction shapes Gulf diplomacy.",
+          "failureAnalysis": "The key point: the timing of intensive diplomacy is itself a signal, as US–Iran tensions and a Trump–Xi meeting may shape Gulf states’ positioning between Washington and Beijing.",
+          "title": "Trump’s Iran Troubles Could Open the Door to China"
         }
       }
     },
     {
-      "id": "news-52ec1afe4bbd4e128c5a3f692011e4be",
+      "id": "news-e7020b46a8ba49e597768e82c55b36eb",
       "category": "international",
-      "title": "Ryanair says it may freeze workers' pay and raise airfares",
-      "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/cr0qkve1x224o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-02T12:22:10.0000000+00:00",
+      "title": "Brazil publishes first global ‘roadmap’ for phasing out fossil fuels",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/environment/2026/nov/03/brazil-first-global-roadmap-phasing-out-fossil-fuels",
+      "publishedAt": "2026-11-03T13:00:07.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "International class: politics",
-      "highlight": "该航空公司表示，除非美国与以色列同伊朗的战争结束，否则2028年燃油价格可能上涨20亿欧元。",
-      "summary": "BBC Business 报道，瑞安航空称可能冻结员工薪资并提高机票价格。公司给出的原因是：美国与以色列同伊朗的战争若不结束，2028年燃油成本可能增加20亿欧元。这凸显地缘政治与燃油价格如何传导至航空公司的成本和票价。",
-      "failureAnalysis": "关键约束是燃油成本：地缘政治冲突若持续，航空公司可能通过冻结薪资和上调票价来转嫁成本压力。",
+      "selectionReason": "International class: finance",
+      "highlight": "巴西政府表示，所有国家现在就可以开始摆脱对化石燃料的依赖，无需等待新技术或经济变革。",
+      "summary": "巴西在COP30前发布全球首份化石燃料淘汰路线图，提出摆脱煤炭、石油和天然气的步骤，并希望把气候议程从谈判转向落实。报道强调，巴西认为各国无需等待新技术或经济条件变化即可行动，同时可兼顾经济增长和减贫。对关注国际气候治理的人来说，这提供了观察全球能源转型执行路径的一个信号。",
+      "failureAnalysis": "关键看点在于执行：路线图把重点放在各国现在可采取的行动上，而不是等待新技术突破；其实际影响取决于后续能否转化为具体政策与投资。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "The airline says fuel prices may rise by €2bn in 2028 unless there is an end to the US-Israel war with Iran.",
+      "sourceExcerpt": "Cop30 host sets out steps to break link with coal, oil and gas as it aims to move focus from negotiating to implementing All countries can start to break their dependence on fossil fuels now without needing to wait for new technologies or economic changes, Brazil’s government has said ahead of a global climate summit. Brazil, the host of last year’s UN climate conference , set out the world’s first global “roadmap” for phasing out fossil fuels on Tuesday, showing that countries could boost their economies and pull people out of poverty while breaking the link with coal, oil and gas.",
       "translations": {
         "zh": {
-          "title": "瑞安航空称可能冻结员工薪资并提高票价",
-          "highlight": "该航空公司表示，除非美国与以色列同伊朗的战争结束，否则2028年燃油价格可能上涨20亿欧元。",
-          "summary": "BBC Business 报道，瑞安航空称可能冻结员工薪资并提高机票价格。公司给出的原因是：美国与以色列同伊朗的战争若不结束，2028年燃油成本可能增加20亿欧元。这凸显地缘政治与燃油价格如何传导至航空公司的成本和票价。",
-          "failureAnalysis": "关键约束是燃油成本：地缘政治冲突若持续，航空公司可能通过冻结薪资和上调票价来转嫁成本压力。"
+          "title": "巴西发布全球首份化石燃料淘汰路线图",
+          "highlight": "巴西政府表示，所有国家现在就可以开始摆脱对化石燃料的依赖，无需等待新技术或经济变革。",
+          "summary": "巴西在COP30前发布全球首份化石燃料淘汰路线图，提出摆脱煤炭、石油和天然气的步骤，并希望把气候议程从谈判转向落实。报道强调，巴西认为各国无需等待新技术或经济条件变化即可行动，同时可兼顾经济增长和减贫。对关注国际气候治理的人来说，这提供了观察全球能源转型执行路径的一个信号。",
+          "failureAnalysis": "关键看点在于执行：路线图把重点放在各国现在可采取的行动上，而不是等待新技术突破；其实际影响取决于后续能否转化为具体政策与投资。"
         },
         "en": {
-          "highlight": "The airline says fuel prices may rise by €2bn in 2028 unless there is an end to the US-Israel war with Iran.",
-          "summary": "BBC Business reports that Ryanair says it may freeze workers' pay and raise airfares. The airline says fuel prices may rise by €2bn in 2028 unless the US-Israel war with Iran ends. This shows how geopolitics and fuel prices can feed into airline costs and ticket prices.",
-          "failureAnalysis": "The key constraint is fuel cost: if geopolitical conflict continues, the airline may pass on cost pressure through frozen pay and higher fares.",
-          "title": "Ryanair says it may freeze worker pay and raise airfares"
+          "highlight": "All countries can start to break their dependence on fossil fuels now without needing to wait for new technologies or economic changes, Brazil’s government has said.",
+          "summary": "Ahead of a global climate summit, Brazil published the world’s first global roadmap for phasing out fossil fuels, setting out steps to break dependence on coal, oil and gas. It argues that countries can act now without waiting for new technologies or economic changes, while still pursuing growth and poverty reduction. It is worth reading as a signal of how climate goals may shift from negotiation to implementation.",
+          "failureAnalysis": "The key takeaway is implementation: the roadmap emphasizes actions countries can take now, but its impact will depend on whether it translates into concrete policies and investment.",
+          "title": "Brazil Publishes First Global Roadmap to Phase Out Fossil Fuels"
         }
       }
     },
     {
-      "id": "life-107531aa1b384cdc9ba5863113eb8d80",
+      "id": "life-3b82afea823842be89dae000a050acc2",
       "category": "international",
-      "title": "This Handheld Vacuum Fixed My Biggest Problem With Cleaning",
-      "source": "Lifehacker",
-      "url": "https://lifehacker.com/home/handheld-vacuum-upgrade-of-the-week?utm_medium=RSS",
-      "publishedAt": "2026-11-02T18:00:00.0000000+00:00",
+      "title": "Love in the Time of Dinosaurs",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/02/mary-morland-buckland-megalosaurus/",
+      "publishedAt": "2026-11-02T23:09:06.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "我清洁时最大的问题就是懒惰，说到底，问题恰恰出在懒惰本身。",
-      "summary": "文章以一款手持吸尘器为切口，讲它如何解决作者清洁时最大的问题。文中把问题的根源直接归结为懒惰，提示更省事的工具可能比空谈自律更能降低清洁阻力。对非技术读者来说，这是一个关于日常工具如何影响行为习惯的简短观察。",
-      "failureAnalysis": "关键启示：先承认懒惰是日常清洁中的真实阻力，再用更省事的工具降低行动门槛，往往比单纯依靠意志力更实际。",
+      "highlight": "他意识到这些并非先前以为的大象遗骸，而是一种在化石记录和现存世界中都找不到对应物的巨大食肉爬行动物。",
+      "summary": "1824年，威廉·巴克兰研究牛津附近采石场出土的大型化石骨骼时，发现下颌骨碎片与“大象遗骸”的旧判断不符。他认定这是一种在化石记录和现存世界中都没有对应物的巨大食肉爬行动物，将其命名为斑龙（Megalosaurus），即第一种被命名的恐龙，并着手撰写完整描述。这个小异常推翻旧假设并开启新类别的过程，值得非技术读者体会。",
+      "failureAnalysis": "关键启发：重大认知突破常始于一个“不对劲”的细节；先命名并系统描述异常，能把模糊疑问变成可研究的新类别。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "The problem is laziness.",
+      "sourceExcerpt": "In 1824, studying a set of large fossil bones discovered in a quarry near Oxford two centuries earlier, the English theologian, geologist, and paleontologist William Buckland kept looking at the fragment of the lower jaw. Something didn’t add up. As he examined it more closely, he realized these were not the remains of an elephant, as previously thought, but of an enormous carnivorous reptile with no analogue in the fossil record or in the living world.",
       "translations": {
         "zh": {
-          "title": "这款手持吸尘器解决了我清洁时最大的问题",
-          "highlight": "我清洁时最大的问题就是懒惰，说到底，问题恰恰出在懒惰本身。",
-          "summary": "文章以一款手持吸尘器为切口，讲它如何解决作者清洁时最大的问题。文中把问题的根源直接归结为懒惰，提示更省事的工具可能比空谈自律更能降低清洁阻力。对非技术读者来说，这是一个关于日常工具如何影响行为习惯的简短观察。",
-          "failureAnalysis": "关键启示：先承认懒惰是日常清洁中的真实阻力，再用更省事的工具降低行动门槛，往往比单纯依靠意志力更实际。"
+          "title": "恐龙时代的爱：第一只被命名的恐龙",
+          "highlight": "他意识到这些并非先前以为的大象遗骸，而是一种在化石记录和现存世界中都找不到对应物的巨大食肉爬行动物。",
+          "summary": "1824年，威廉·巴克兰研究牛津附近采石场出土的大型化石骨骼时，发现下颌骨碎片与“大象遗骸”的旧判断不符。他认定这是一种在化石记录和现存世界中都没有对应物的巨大食肉爬行动物，将其命名为斑龙（Megalosaurus），即第一种被命名的恐龙，并着手撰写完整描述。这个小异常推翻旧假设并开启新类别的过程，值得非技术读者体会。",
+          "failureAnalysis": "关键启发：重大认知突破常始于一个“不对劲”的细节；先命名并系统描述异常，能把模糊疑问变成可研究的新类别。"
         },
         "en": {
-          "highlight": "The article's key line is blunt: it's laziness, and the biggest problem with cleaning is laziness itself.",
-          "summary": "The article uses a handheld vacuum to discuss the author's biggest cleaning problem. Its key line reduces that problem to laziness, suggesting that easier tools may matter more than lecturing people about discipline. For non-technical readers, it is a short reminder of how convenience shapes daily behavior.",
-          "failureAnalysis": "Key takeaway: admit laziness as a real daily constraint, then use easier tools to lower the friction of cleaning; that is often more practical than relying on willpower alone.",
-          "title": "This Handheld Vacuum Solved My Biggest Cleaning Problem"
+          "highlight": "Examining the jaw more closely, he realized it was not an elephant’s remains but those of an enormous carnivorous reptile with no analogue in the fossil record or living world.",
+          "summary": "In 1824, William Buckland studied large fossil bones from an Oxford quarry and noticed that the lower jaw did not fit the prevailing elephant explanation. He identified the remains as a giant carnivorous reptile unlike anything in the fossil record or the living world, named it Megalosaurus, and began a full account. It is worth reading as a case of a small anatomical anomaly overturning an old assumption and creating a new category.",
+          "failureAnalysis": "Key takeaway: breakthroughs often begin with a detail that does not add up; naming and systematically describing the anomaly can turn it into a researchable new category.",
+          "title": "Love in the Time of Dinosaurs: The First Named Dinosaur"
         }
       }
     },
     {
-      "id": "life-9cd9c172397f4379bc0e49c6ff550d1b",
+      "id": "life-b1b5b2fe862c40ff9ecde0310fb7180b",
       "category": "international",
-      "title": "How psychology’s classic studies misled us about the self",
-      "source": "Psyche",
-      "url": "https://psyche.co/ideas/its-time-to-ditch-the-empty-self-view-of-human-psychology",
-      "publishedAt": "2026-11-02T11:00:00.0000000+00:00",
+      "title": "Jo Marchant: In search of now",
+      "source": "Aeon",
+      "url": "https://aeon.co/videos/always-with-us-yet-ever-elusive-on-the-knottiness-of-now",
+      "publishedAt": "2026-11-02T11:01:00.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 3",
-      "highlight": "米尔格拉姆、津巴多和近期启动研究表明人高度可塑，但他们低估了我们实际上有多稳定。",
-      "summary": "文章讨论米尔格拉姆、津巴多及近期启动研究如何让人以为人类高度可塑，并指出这种判断低估了自我的稳定性。作者 Jack W Klein 与 William B Swann 认为，我们比自己想象中更稳定；这值得用来校准对经典心理学结论的信任。",
-      "failureAnalysis": "关键提醒：经典心理学研究的传播结论可能夸大可塑性；理解自我时，应同时重视稳定性证据。",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "什么是“现在”？借由物理学、哲学与心理学，探索当下时刻的科学与谜团。",
+      "summary": "Aeon 视频围绕“现在”这一看似日常却难以定义的概念，串联物理学、哲学与心理学视角。它适合读者用跨学科方式重新审视时间体验，理解当下为何既始终伴随我们又难以把握。",
+      "failureAnalysis": "关键启发：对“当下”的理解不宜停留在常识层面，跨学科视角能同时呈现其科学解释与未解之谜。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Milgram, Zimbardo and recent priming studies suggested we’re highly malleable. They underestimated how stable we really are - by Jack W Klein & William B Swann Read on Psyche",
+      "sourceExcerpt": "Through physics via philosophy and psychology, discover the science and mystery of the present moment - by Aeon Video Watch on Aeon",
       "translations": {
         "zh": {
-          "title": "心理学经典研究如何误导了我们对自我的理解",
-          "highlight": "米尔格拉姆、津巴多和近期启动研究表明人高度可塑，但他们低估了我们实际上有多稳定。",
-          "summary": "文章讨论米尔格拉姆、津巴多及近期启动研究如何让人以为人类高度可塑，并指出这种判断低估了自我的稳定性。作者 Jack W Klein 与 William B Swann 认为，我们比自己想象中更稳定；这值得用来校准对经典心理学结论的信任。",
-          "failureAnalysis": "关键提醒：经典心理学研究的传播结论可能夸大可塑性；理解自我时，应同时重视稳定性证据。"
+          "title": "琼·马钱特：寻找当下",
+          "highlight": "什么是“现在”？借由物理学、哲学与心理学，探索当下时刻的科学与谜团。",
+          "summary": "Aeon 视频围绕“现在”这一看似日常却难以定义的概念，串联物理学、哲学与心理学视角。它适合读者用跨学科方式重新审视时间体验，理解当下为何既始终伴随我们又难以把握。",
+          "failureAnalysis": "关键启发：对“当下”的理解不宜停留在常识层面，跨学科视角能同时呈现其科学解释与未解之谜。"
         },
         "en": {
-          "highlight": "Milgram, Zimbardo and recent priming studies suggested we are highly malleable, but underestimated how stable we really are.",
-          "summary": "The article discusses how Milgram, Zimbardo and recent priming studies suggested that people are highly malleable, while overlooking how stable the self actually is. Jack W Klein and William B Swann argue that we are more stable than often assumed, which is worth considering when assessing classic psychology findings.",
-          "failureAnalysis": "Key takeaway: widely circulated conclusions from classic psychology may overstate malleability; understanding the self should also take stability evidence seriously.",
-          "title": "How Psychology’s Classic Studies Misled Us About the Self"
+          "highlight": "What is ‘now’? Through physics, philosophy, and psychology, explore the science and mystery of the present moment.",
+          "summary": "This Aeon video examines “now,” a seemingly everyday yet hard-to-define concept, by connecting physics, philosophy, and psychology. It is worth reading for a cross-disciplinary way to reconsider temporal experience and why the present is both ever-present and elusive.",
+          "failureAnalysis": "Key takeaway: understanding “now” should go beyond common sense; a cross-disciplinary view can present both scientific explanations and unresolved mysteries.",
+          "title": "Jo Marchant: In Search of Now"
         }
       }
     },
     {
-      "id": "paper-2610.36536",
+      "id": "paper-2611.03623",
       "category": "paper",
-      "title": "ATEMPO: Amortized Transfer Entropy Model Per-lag Over-Time",
+      "title": "Thought-deciphering via hierarchical EEG-to-text alignment",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2610.36536v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2610.36536",
-      "publishedAt": "2026-10-27T02:49:07.0000000Z",
+      "url": "https://arxiv.org/pdf/2611.03623v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.03623",
+      "publishedAt": "2026-11-02T18:52:26.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
       "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
@@ -234,21 +234,21 @@
         "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
         "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
         "technicalTerms": [
-          "关键技术词：保留原论文术语，并用白话解释其作用。"
+          "EEG：把大脑电信号当作输入数据。"
         ],
         "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
       },
-      "highlight": "一个时间序列对另一个序列的预测信息可能只在特定滞后处强烈，在相邻滞后处却很弱。",
-      "summary": "该工作提出 ATEMPO，一种逐滞后随时间的摊销转移熵建模方法，关注两个时间序列之间信息传递的延迟结构。原文指出，固定输入窗口可能掩盖只在特定滞后处出现的预测关系，因此这一建模角度对时序分析具有潜在意义。",
-      "failureAnalysis": "当前可见文本只说明研究动机，未提供实验设置、基线或量化结果，因此无法判断其相对固定窗口方法的实际增益。",
+      "highlight": "研究聚焦分层脑电图到文本对齐，以探索思维解读的可行路径。",
+      "summary": "该论文题为《基于分层脑电图到文本对齐的思维解读》，来自 arXiv，作者隶属丹麦技术大学与韩国科学技术院等机构。题名指向将脑电信号与文本进行分层对齐以解读思维的研究方向，但所给材料未包含方法、数据或结果细节。",
+      "failureAnalysis": "所给来源仅含标题、作者与机构信息，缺少实验设置、性能指标和误差分析，无法判断该方法的有效性或泛化能力。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "A TEMPO: Amortized Transfer Entropy Model Per-lag Over-Time Emma Andrews1, Konstantinos Kontras2,3, Keane Ong1,3, Maarten De V os2, Gianmarco Mengaldo1 1 National University of Singapore, 2KU Leuven, 3MIT, When one time series informs another, the delay at which that information arrives determines if models can utilize this relationship effectively. A source may be strongly predictive at one delay but uninformative at neighboring lags. Therefore, fixed input windows may obscure this structure by bundling informative and irrelevant history together.",
+      "sourceExcerpt": "Thought-deciphering via hierarchical EEG-to-text alignment Xiaopeng Mao1*, Morten Mørup 2, Xin Xu 3, Sang Wan Lee3,4,5,6,7, Sadasivan Puthusserypady 1 1*Department of Health Technology, Technical University of Denmark (DTU), Ørsteds Plads, Kongens Lyngby, 2800, Denmark. 2Department of Applied Mathematics and Computer Science, Technical University of Denmark (DTU), Richard Petersens Plads, Kongens Lyngby, 2800, Denmark. 3Department of Brain and Cognitive Sciences, Korea Advanced Institute of Science and Technology (KAIST), Daejeon, City, 34141, Republic of Korea.",
       "translations": {
         "zh": {
-          "title": "ATEMPO：逐滞后随时间的摊销转移熵模型",
-          "highlight": "一个时间序列对另一个序列的预测信息可能只在特定滞后处强烈，在相邻滞后处却很弱。",
-          "summary": "该工作提出 ATEMPO，一种逐滞后随时间的摊销转移熵建模方法，关注两个时间序列之间信息传递的延迟结构。原文指出，固定输入窗口可能掩盖只在特定滞后处出现的预测关系，因此这一建模角度对时序分析具有潜在意义。",
-          "failureAnalysis": "当前可见文本只说明研究动机，未提供实验设置、基线或量化结果，因此无法判断其相对固定窗口方法的实际增益。",
+          "title": "基于分层脑电图到文本对齐的思维解读",
+          "highlight": "研究聚焦分层脑电图到文本对齐，以探索思维解读的可行路径。",
+          "summary": "该论文题为《基于分层脑电图到文本对齐的思维解读》，来自 arXiv，作者隶属丹麦技术大学与韩国科学技术院等机构。题名指向将脑电信号与文本进行分层对齐以解读思维的研究方向，但所给材料未包含方法、数据或结果细节。",
+          "failureAnalysis": "所给来源仅含标题、作者与机构信息，缺少实验设置、性能指标和误差分析，无法判断该方法的有效性或泛化能力。",
           "paperCard": {
             "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
             "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
@@ -257,16 +257,16 @@
             "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
             "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
             "technicalTerms": [
-              "关键技术词：保留原论文术语，并用白话解释其作用。"
+              "EEG：把大脑电信号当作输入数据。"
             ],
             "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
         },
         "en": {
-          "title": "ATEMPO: Amortized Transfer Entropy Model Per-lag Over-Time",
-          "highlight": "A source time series may be strongly predictive at one lag but uninformative at neighboring lags, so fixed input windows can obscure this delay structure.",
-          "summary": "The work introduces ATEMPO, an amortized transfer entropy model that addresses per-lag over-time structure when one time series informs another. The supplied text motivates the method by noting that predictive information can be concentrated at specific delays and that fixed input windows may hide this structure. This framing matters for time-series modeling because delay-specific relationships may be missed by fixed-window approaches.",
-          "failureAnalysis": "The supplied excerpt covers motivation only and lacks experimental setup, baselines, or quantitative results, so the method's practical benefit over fixed-window approaches cannot be assessed.",
+          "title": "Thought-Deciphering via Hierarchical EEG-to-Text Alignment",
+          "highlight": "The study focuses on hierarchical EEG-to-text alignment as a route for thought deciphering.",
+          "summary": "The paper is titled \"Thought-Deciphering via Hierarchical EEG-to-Text Alignment\" and is listed on arXiv, with authors affiliated with institutions including DTU and KAIST. The title points to a research direction that aligns EEG signals with text hierarchically for thought decoding, but the supplied material provides no methods, data, or results.",
+          "failureAnalysis": "The supplied source contains only the title, authors, and affiliations, with no experimental setup, performance metrics, or error analysis, so the method's effectiveness and generalization cannot be assessed.",
           "paperCard": {
             "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
             "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
@@ -275,7 +275,7 @@
             "implementation": "Implementation: check the input data, core model or device, and validation results.",
             "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
             "technicalTerms": [
-              "关键技术词：保留原论文术语，并用白话解释其作用。"
+              "EEG：把大脑电信号当作输入数据。"
             ],
             "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
@@ -283,47 +283,47 @@
       }
     },
     {
-      "id": "ai-github-1368596582",
+      "id": "ai-feed-01182b6d11754c268be9ae9f7bd4e12c",
       "category": "ai",
-      "title": "google/elephant-goldfish-model",
-      "source": "GitHub Search",
-      "url": "https://github.com/google/elephant-goldfish-model",
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
       "abstractUrl": null,
-      "publishedAt": "2026-09-13T16:31:06.0000000Z",
-      "scoreLabel": "GitHub 10588 stars",
-      "aiArticleType": "application_innovation",
+      "publishedAt": "2026-11-03T16:29:48.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
       "evidenceAnchors": [
         {
           "label": "GitHub",
           "kind": "primary"
         },
         {
-          "label": "Community signal",
+          "label": "Expert analysis",
           "kind": "secondary"
         }
       ],
-      "evidenceLabel": "GitHub + Community signal",
+      "evidenceLabel": "GitHub + Expert analysis",
       "hasPrimaryAnchor": true,
-      "requiresRiskAnalysis": true,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-      "summary": "该 GitHub 仓库获得 10588 星标并有近期公开活动，定位是提供开源技能，让 AI 智能体参与软件设计与审查。对非技术管理者而言，值得关注的是它把 AI 智能体的作用放在设计、评审等软件工程环节，而不只是代码生成。",
-      "failureAnalysis": "这类技能库能否产生价值，取决于它是否能稳定嵌入真实研发流程；若缺少与现有代码库、评审规范、权限系统的深度集成，容易停留在演示层面。软件设计与审查依赖组织上下文和高质量数据，审查成本、责任归属与工程落地难度都会限制采用。GitHub 星标和近期活动只能说明关注度，不能直接证明生产可用性或明确商业需求。",
-      "aiSelectionScore": 10588,
-      "highlight": "该项目提供开源技能，让 AI 智能体参与软件设计与审查流程。",
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Expert analysis",
+      "summary": "论文把 LLM 直接分析、修改浮点权重称为 Weight-Space Programming，并称 GPT-6 Astra 仅看权重就能识别网络任务，甚至无需梯度、只改动少量权重来提升数学表现。Simon Willison 用笔记本上的 Qwen 3.8 27B 复现“从权重猜游戏”示例，它成功识别 Pac-Man、Pong 和 Breakout，但在更冷门的 Freeway 上失败。围绕该论文的批评指出，应区分无工具理解权重与借助代码更新模型，后者更接近人类研究流程；因此它值得读，但不足以宣告源码时代结束。",
+      "failureAnalysis": "关键收获是：模型直接读权重的能力确实有趣，但“看懂”与“用代码改好”是两类能力，不能把演示效果直接外推为模型自治改写权重的新时代。",
+      "aiSelectionScore": 100,
+      "highlight": "仅凭原始权重，GPT-6 Astra 就能判断一个神经网络当初被训练来做什么。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "GitHub repository with 10588 stars and recent public activity. Description: Open-source skills for designing and reviewing software with AI agents",
+      "sourceExcerpt": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers. I've been playing with one of the examples from the paper and I'm delighted to share that Qwen 3.8 27B running on my laptop can do this as well!",
       "translations": {
         "zh": {
-          "title": "Google 开源大象金鱼模型：面向 AI 智能体的软件设计与审查技能",
-          "highlight": "该项目提供开源技能，让 AI 智能体参与软件设计与审查流程。",
-          "summary": "该 GitHub 仓库获得 10588 星标并有近期公开活动，定位是提供开源技能，让 AI 智能体参与软件设计与审查。对非技术管理者而言，值得关注的是它把 AI 智能体的作用放在设计、评审等软件工程环节，而不只是代码生成。",
-          "failureAnalysis": "这类技能库能否产生价值，取决于它是否能稳定嵌入真实研发流程；若缺少与现有代码库、评审规范、权限系统的深度集成，容易停留在演示层面。软件设计与审查依赖组织上下文和高质量数据，审查成本、责任归属与工程落地难度都会限制采用。GitHub 星标和近期活动只能说明关注度，不能直接证明生产可用性或明确商业需求。"
+          "title": "笔记本上的 Qwen 3.8 27B 也能读懂模型权重",
+          "highlight": "仅凭原始权重，GPT-6 Astra 就能判断一个神经网络当初被训练来做什么。",
+          "summary": "论文把 LLM 直接分析、修改浮点权重称为 Weight-Space Programming，并称 GPT-6 Astra 仅看权重就能识别网络任务，甚至无需梯度、只改动少量权重来提升数学表现。Simon Willison 用笔记本上的 Qwen 3.8 27B 复现“从权重猜游戏”示例，它成功识别 Pac-Man、Pong 和 Breakout，但在更冷门的 Freeway 上失败。围绕该论文的批评指出，应区分无工具理解权重与借助代码更新模型，后者更接近人类研究流程；因此它值得读，但不足以宣告源码时代结束。",
+          "failureAnalysis": "关键收获是：模型直接读权重的能力确实有趣，但“看懂”与“用代码改好”是两类能力，不能把演示效果直接外推为模型自治改写权重的新时代。"
         },
         "en": {
-          "highlight": "The project offers open-source skills to help AI agents participate in software design and review workflows.",
-          "summary": "This GitHub repository has 10,588 stars and recent public activity, and it provides open-source skills for designing and reviewing software with AI agents. It is worth reading because it positions AI agents in higher-value engineering work such as design and review, not only code generation.",
-          "failureAnalysis": "The skills may remain demos without deep integration into real codebases, review standards, permissions, and workflows; GitHub stars and recent activity do not prove production readiness or clear business demand.",
-          "title": "Google Elephant Goldfish Model: Open-Source Skills for AI-Agent Software Design and Review"
+          "highlight": "Just by looking at the raw weights, GPT-6 Astra can tell what a network was trained to do.",
+          "summary": "The paper coins “Weight-Space Programming” for LLMs that analyze and edit raw floating-point weights, claiming GPT-6 Astra can infer a network’s task from weights alone and improve Qwen3.5-0.8B’s math performance by editing a tiny fraction of weights without gradients. Simon Willison reproduces the game-identification demo with Qwen 3.8 27B on his laptop: it identifies Pac-Man, Pong, and Breakout but fails on the more obscure Freeway. Critics argue the work conflates no-tool weight interpretation with code-assisted model improvement, so it is worth reading as a striking demo rather than proof that source code is obsolete.",
+          "failureAnalysis": "The key takeaway is to separate weight interpretation from code-assisted weight editing; the demo is striking, but it does not justify declaring the end of source code or a new era of self-editing models.",
+          "title": "Qwen 3.8 27B on a Laptop Can Also Interpret Model Weights"
         }
       }
     }

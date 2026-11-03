@@ -1,0 +1,331 @@
+{
+  "issueDate": "2026-11-03",
+  "updateStatus": "complete",
+  "contentFingerprint": "ebc39ded4f38a7154a2bcb4a2feb1e9c5ea669557db559f76c7e9080ac2f259e",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-3556a95bd0574fccbb2a03c2ea70868d",
+      "category": "domestic",
+      "title": "“京港国际会客厅”在北京揭牌",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-03/10725688.shtml",
+      "publishedAt": "2026-11-03T15:54:32.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "该空间将承接政策宣讲、企业路演等各类活动，助力两地企业更好发展。",
+      "summary": "第二十九届京港洽谈会朝阳专题活动在北京举办，“京港国际会客厅”由北京市朝阳区投资促进服务中心联合将台乡、中国香港(地区)商会、中旅酒店等多方共同打造并揭牌。该空间将承接政策宣讲、企业路演等活动，服务京港两地企业发展，可观察京港合作在区级层面的落地方式。",
+      "failureAnalysis": "从已披露信息看，该会客厅的短期价值在于提供常态化活动空间，实际成效仍取决于后续活动组织与企业参与度。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网北京11月3日电 (记者 杜燕)第二十九届京港洽谈会朝阳专题活动3日在北京举办。活动现场，由北京市朝阳区投资促进服务中心联合将台乡、中国香港(地区)商会、中旅酒店等多方共同打造的“京港国际会客厅”揭牌。该空间将承接政策宣讲、企业路演等各类活动，助力两地企业更好发展。",
+      "translations": {
+        "zh": {
+          "title": "“京港国际会客厅”在北京揭牌",
+          "highlight": "该空间将承接政策宣讲、企业路演等各类活动，助力两地企业更好发展。",
+          "summary": "第二十九届京港洽谈会朝阳专题活动在北京举办，“京港国际会客厅”由北京市朝阳区投资促进服务中心联合将台乡、中国香港(地区)商会、中旅酒店等多方共同打造并揭牌。该空间将承接政策宣讲、企业路演等活动，服务京港两地企业发展，可观察京港合作在区级层面的落地方式。",
+          "failureAnalysis": "从已披露信息看，该会客厅的短期价值在于提供常态化活动空间，实际成效仍取决于后续活动组织与企业参与度。"
+        },
+        "en": {
+          "highlight": "The space will host policy briefings, enterprise roadshows and other activities to help companies from both places develop better.",
+          "summary": "The 29th Beijing-Hong Kong Economic Cooperation Symposium's Chaoyang-themed event was held in Beijing, where the \"Beijing-Hong Kong International Reception Room\" was unveiled. It was jointly created by the Chaoyang District Investment Promotion Service Center, Jiangtai Township, the Hong Kong (China) Chamber of Commerce, China Travel Hotel and other parties. The space will host policy briefings and enterprise roadshows to support companies from both places.",
+          "failureAnalysis": "Based on disclosed information, the room's short-term value lies in providing a regular activity space. Its practical impact will depend on follow-up event organization and enterprise participation.",
+          "title": "\"Beijing-Hong Kong International Reception Room\" Unveiled in Beijing"
+        }
+      }
+    },
+    {
+      "id": "news-7ff26abcc77847ac9dbc69f4181e1ebc",
+      "category": "domestic",
+      "title": "山西吕梁“十五五”规划：旧产能提质 新链条起势",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-03/10725667.shtml",
+      "publishedAt": "2026-11-03T15:38:25.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "11月3日，吕梁市举行“开局起步‘十五五’”首场新闻发布会，解读“十五五”规划纲要。",
+      "summary": "文章报道，11月3日吕梁市举行“开局起步‘十五五’”系列主题首场新闻发布会，解读《吕梁市国民经济和社会发展“十五五”规划纲要》。标题显示当地规划关注旧产能提质与新链条起势，但已知信息未展开具体举措，适合作为观察地方“十五五”产业转型的入口。",
+      "failureAnalysis": "关键信息是发布会解读规划纲要；判断产业影响应回到纲要原文和后续执行数据，而非仅凭标题。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网太原11月3日电 (记者 范丽芳)11月3日，山西省吕梁市委宣传部、吕梁市政府新闻办举行“开局起步‘十五五’”系列主题首场新闻发布会，解读《吕梁市国民经济和社会发展“十五五”规划纲要》。",
+      "translations": {
+        "zh": {
+          "title": "山西吕梁“十五五”规划：旧产能提质，新链条起势",
+          "highlight": "11月3日，吕梁市举行“开局起步‘十五五’”首场新闻发布会，解读“十五五”规划纲要。",
+          "summary": "文章报道，11月3日吕梁市举行“开局起步‘十五五’”系列主题首场新闻发布会，解读《吕梁市国民经济和社会发展“十五五”规划纲要》。标题显示当地规划关注旧产能提质与新链条起势，但已知信息未展开具体举措，适合作为观察地方“十五五”产业转型的入口。",
+          "failureAnalysis": "关键信息是发布会解读规划纲要；判断产业影响应回到纲要原文和后续执行数据，而非仅凭标题。"
+        },
+        "en": {
+          "highlight": "On November 3, Lüliang held the first press conference in its “Starting the 15th Five-Year Plan” series to interpret the plan outline.",
+          "summary": "The article reports that Lüliang held the first press conference in its “Starting the 15th Five-Year Plan” series on November 3 to interpret the city’s 15th Five-Year Plan outline. The headline indicates a focus on upgrading old capacity and launching new industrial chains, though the known information does not detail specific measures; it is a useful entry point for observing local industrial transformation.",
+          "failureAnalysis": "The key verified fact is the press conference interpreting the plan outline; judging industrial impact should rely on the original outline and subsequent implementation data, not the headline alone.",
+          "title": "Lüliang, Shanxi’s 15th Five-Year Plan: Upgrading Old Capacity, Launching New Chains"
+        }
+      }
+    },
+    {
+      "id": "news-5693060148b84ef9a75cc8147d6ec28e",
+      "category": "domestic",
+      "title": "浙江海事金融探索迎新突破 落地首笔自贸区船舶授信业务",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-03/10725661.shtml",
+      "publishedAt": "2026-11-03T15:31:19.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "宁波海事局打造的海事金融资源配置中心成功落地首笔自贸区登记船舶授信业务，为新建远洋渔业冷藏船办理7000余万元抵押融资。",
+      "summary": "文章称，浙江自贸区船舶融资服务场景实现新延伸：宁波海事局相关中心为自贸区注册企业旗下新建远洋渔业冷藏船办理7000余万元抵押融资。此举进一步丰富船舶金融服务供给，并推动释放自贸区船舶登记政策红利。值得关注的是，它体现了海事金融资源配置与自贸区船舶登记政策在具体业务中的衔接。",
+      "failureAnalysis": "关键看点是政策红利能否转化为可复制的融资流程。对非技术管理者而言，应关注业务落地后的服务标准化与风险控制，而非单笔授信规模。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中国(浙江)自由贸易试验区内的宁波舟山港梅山集装箱码头。连林怡供图 中新网杭州11月3日电(王逸飞 付一方 连林怡)记者3日从浙江海事部门获悉，近日，由宁波海事局打造的海事金融资源配置中心成功落地首笔自贸区登记船舶授信业务，为中国(浙江)自由贸易试验区注册企业旗下新建远洋渔业冷藏船办理7000余万元的抵押融资，标志着船舶融资服务场景实现新延伸，进一步丰富船舶金融服务供给，更好释放自贸区船舶登记政策红利。",
+      "translations": {
+        "zh": {
+          "title": "浙江海事金融探索迎新突破 落地首笔自贸区船舶授信业务",
+          "highlight": "宁波海事局打造的海事金融资源配置中心成功落地首笔自贸区登记船舶授信业务，为新建远洋渔业冷藏船办理7000余万元抵押融资。",
+          "summary": "文章称，浙江自贸区船舶融资服务场景实现新延伸：宁波海事局相关中心为自贸区注册企业旗下新建远洋渔业冷藏船办理7000余万元抵押融资。此举进一步丰富船舶金融服务供给，并推动释放自贸区船舶登记政策红利。值得关注的是，它体现了海事金融资源配置与自贸区船舶登记政策在具体业务中的衔接。",
+          "failureAnalysis": "关键看点是政策红利能否转化为可复制的融资流程。对非技术管理者而言，应关注业务落地后的服务标准化与风险控制，而非单笔授信规模。"
+        },
+        "en": {
+          "highlight": "Ningbo's maritime financial resource center completed the first FTZ-registered ship credit business, arranging over 70 million yuan in mortgage financing for a new ocean fishery refrigerated vessel.",
+          "summary": "The report says Zhejiang's FTZ has extended ship financing services: a center built by the Ningbo Maritime Safety Administration arranged over 70 million yuan in mortgage financing for a new ocean fishery refrigerated vessel owned by an FTZ-registered company. It is presented as enriching ship finance supply and releasing the policy benefits of FTZ ship registration. The practical point is how maritime financial resource allocation connects with ship-registration policy on the ground.",
+          "failureAnalysis": "The key question is whether this policy dividend can become a repeatable financing process; for non-technical leaders, the focus should be on service standardization and risk control after the transaction, not the size of a single credit deal.",
+          "title": "Zhejiang Maritime Finance Breaks New Ground with First FTZ Ship Credit Business"
+        }
+      }
+    },
+    {
+      "id": "news-7817cba1286f412bb869fd7feb19a275",
+      "category": "international",
+      "title": "Trump’s troubles with Iran could open the door to China",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/03/trump-iran-middle-east-china-gulf-hormuz-xi-jinping",
+      "publishedAt": "2026-11-03T13:13:50.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "中国已与海湾国家领导人举行一系列会晤，显示北京正在加大在中东的外交力度。",
+      "summary": "已披露内容显示，北京密集会晤海湾领导人，以扩大其在中东的影响力；这一外交动作发生在特朗普与习近平预计于深圳APEC会议期间会晤之前。报道标题将特朗普的伊朗麻烦与中国可能获得的机会联系起来，值得关注中美互动如何影响海湾国家的外交选择。",
+      "failureAnalysis": "关键点：密集外交的时机本身就是信号，美伊紧张与中美峰会可能同时影响海湾国家在中美之间的站位。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Beijing launches diplomatic salvo to woo Gulf leaders and bolster its influence in the region China has held a flurry of meetings with Gulf leaders in a sign that Beijing is stepping up its diplomatic efforts in the Middle East. The diplomatic salvo comes before a highly anticipated meeting between Donald Trump and Xi Jinping when the US president is expected to attend the Apec conference in Shenzhen, China, on 18 and 19 November.",
+      "translations": {
+        "zh": {
+          "title": "特朗普的伊朗麻烦或为中国打开大门",
+          "highlight": "中国已与海湾国家领导人举行一系列会晤，显示北京正在加大在中东的外交力度。",
+          "summary": "已披露内容显示，北京密集会晤海湾领导人，以扩大其在中东的影响力；这一外交动作发生在特朗普与习近平预计于深圳APEC会议期间会晤之前。报道标题将特朗普的伊朗麻烦与中国可能获得的机会联系起来，值得关注中美互动如何影响海湾国家的外交选择。",
+          "failureAnalysis": "关键点：密集外交的时机本身就是信号，美伊紧张与中美峰会可能同时影响海湾国家在中美之间的站位。"
+        },
+        "en": {
+          "highlight": "China has held a flurry of meetings with Gulf leaders in a sign that Beijing is stepping up its diplomatic efforts in the Middle East.",
+          "summary": "The disclosed content says Beijing has held a flurry of meetings with Gulf leaders to expand its influence in the Middle East, ahead of an expected Trump–Xi meeting during the APEC conference in Shenzhen. The headline links Trump’s Iran troubles to a possible opening for China, making it worth watching how US–China interaction shapes Gulf diplomacy.",
+          "failureAnalysis": "The key point: the timing of intensive diplomacy is itself a signal, as US–Iran tensions and a Trump–Xi meeting may shape Gulf states’ positioning between Washington and Beijing.",
+          "title": "Trump’s Iran Troubles Could Open the Door to China"
+        }
+      }
+    },
+    {
+      "id": "news-e7020b46a8ba49e597768e82c55b36eb",
+      "category": "international",
+      "title": "Brazil publishes first global ‘roadmap’ for phasing out fossil fuels",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/environment/2026/nov/03/brazil-first-global-roadmap-phasing-out-fossil-fuels",
+      "publishedAt": "2026-11-03T13:00:07.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "巴西政府表示，所有国家现在就可以开始摆脱对化石燃料的依赖，无需等待新技术或经济变革。",
+      "summary": "巴西在COP30前发布全球首份化石燃料淘汰路线图，提出摆脱煤炭、石油和天然气的步骤，并希望把气候议程从谈判转向落实。报道强调，巴西认为各国无需等待新技术或经济条件变化即可行动，同时可兼顾经济增长和减贫。对关注国际气候治理的人来说，这提供了观察全球能源转型执行路径的一个信号。",
+      "failureAnalysis": "关键看点在于执行：路线图把重点放在各国现在可采取的行动上，而不是等待新技术突破；其实际影响取决于后续能否转化为具体政策与投资。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Cop30 host sets out steps to break link with coal, oil and gas as it aims to move focus from negotiating to implementing All countries can start to break their dependence on fossil fuels now without needing to wait for new technologies or economic changes, Brazil’s government has said ahead of a global climate summit. Brazil, the host of last year’s UN climate conference , set out the world’s first global “roadmap” for phasing out fossil fuels on Tuesday, showing that countries could boost their economies and pull people out of poverty while breaking the link with coal, oil and gas.",
+      "translations": {
+        "zh": {
+          "title": "巴西发布全球首份化石燃料淘汰路线图",
+          "highlight": "巴西政府表示，所有国家现在就可以开始摆脱对化石燃料的依赖，无需等待新技术或经济变革。",
+          "summary": "巴西在COP30前发布全球首份化石燃料淘汰路线图，提出摆脱煤炭、石油和天然气的步骤，并希望把气候议程从谈判转向落实。报道强调，巴西认为各国无需等待新技术或经济条件变化即可行动，同时可兼顾经济增长和减贫。对关注国际气候治理的人来说，这提供了观察全球能源转型执行路径的一个信号。",
+          "failureAnalysis": "关键看点在于执行：路线图把重点放在各国现在可采取的行动上，而不是等待新技术突破；其实际影响取决于后续能否转化为具体政策与投资。"
+        },
+        "en": {
+          "highlight": "All countries can start to break their dependence on fossil fuels now without needing to wait for new technologies or economic changes, Brazil’s government has said.",
+          "summary": "Ahead of a global climate summit, Brazil published the world’s first global roadmap for phasing out fossil fuels, setting out steps to break dependence on coal, oil and gas. It argues that countries can act now without waiting for new technologies or economic changes, while still pursuing growth and poverty reduction. It is worth reading as a signal of how climate goals may shift from negotiation to implementation.",
+          "failureAnalysis": "The key takeaway is implementation: the roadmap emphasizes actions countries can take now, but its impact will depend on whether it translates into concrete policies and investment.",
+          "title": "Brazil Publishes First Global Roadmap to Phase Out Fossil Fuels"
+        }
+      }
+    },
+    {
+      "id": "life-3b82afea823842be89dae000a050acc2",
+      "category": "international",
+      "title": "Love in the Time of Dinosaurs",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/02/mary-morland-buckland-megalosaurus/",
+      "publishedAt": "2026-11-02T23:09:06.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "他意识到这些并非先前以为的大象遗骸，而是一种在化石记录和现存世界中都找不到对应物的巨大食肉爬行动物。",
+      "summary": "1824年，威廉·巴克兰研究牛津附近采石场出土的大型化石骨骼时，发现下颌骨碎片与“大象遗骸”的旧判断不符。他认定这是一种在化石记录和现存世界中都没有对应物的巨大食肉爬行动物，将其命名为斑龙（Megalosaurus），即第一种被命名的恐龙，并着手撰写完整描述。这个小异常推翻旧假设并开启新类别的过程，值得非技术读者体会。",
+      "failureAnalysis": "关键启发：重大认知突破常始于一个“不对劲”的细节；先命名并系统描述异常，能把模糊疑问变成可研究的新类别。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "In 1824, studying a set of large fossil bones discovered in a quarry near Oxford two centuries earlier, the English theologian, geologist, and paleontologist William Buckland kept looking at the fragment of the lower jaw. Something didn’t add up. As he examined it more closely, he realized these were not the remains of an elephant, as previously thought, but of an enormous carnivorous reptile with no analogue in the fossil record or in the living world.",
+      "translations": {
+        "zh": {
+          "title": "恐龙时代的爱：第一只被命名的恐龙",
+          "highlight": "他意识到这些并非先前以为的大象遗骸，而是一种在化石记录和现存世界中都找不到对应物的巨大食肉爬行动物。",
+          "summary": "1824年，威廉·巴克兰研究牛津附近采石场出土的大型化石骨骼时，发现下颌骨碎片与“大象遗骸”的旧判断不符。他认定这是一种在化石记录和现存世界中都没有对应物的巨大食肉爬行动物，将其命名为斑龙（Megalosaurus），即第一种被命名的恐龙，并着手撰写完整描述。这个小异常推翻旧假设并开启新类别的过程，值得非技术读者体会。",
+          "failureAnalysis": "关键启发：重大认知突破常始于一个“不对劲”的细节；先命名并系统描述异常，能把模糊疑问变成可研究的新类别。"
+        },
+        "en": {
+          "highlight": "Examining the jaw more closely, he realized it was not an elephant’s remains but those of an enormous carnivorous reptile with no analogue in the fossil record or living world.",
+          "summary": "In 1824, William Buckland studied large fossil bones from an Oxford quarry and noticed that the lower jaw did not fit the prevailing elephant explanation. He identified the remains as a giant carnivorous reptile unlike anything in the fossil record or the living world, named it Megalosaurus, and began a full account. It is worth reading as a case of a small anatomical anomaly overturning an old assumption and creating a new category.",
+          "failureAnalysis": "Key takeaway: breakthroughs often begin with a detail that does not add up; naming and systematically describing the anomaly can turn it into a researchable new category.",
+          "title": "Love in the Time of Dinosaurs: The First Named Dinosaur"
+        }
+      }
+    },
+    {
+      "id": "life-b1b5b2fe862c40ff9ecde0310fb7180b",
+      "category": "international",
+      "title": "Jo Marchant: In search of now",
+      "source": "Aeon",
+      "url": "https://aeon.co/videos/always-with-us-yet-ever-elusive-on-the-knottiness-of-now",
+      "publishedAt": "2026-11-02T11:01:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "什么是“现在”？借由物理学、哲学与心理学，探索当下时刻的科学与谜团。",
+      "summary": "Aeon 视频围绕“现在”这一看似日常却难以定义的概念，串联物理学、哲学与心理学视角。它适合读者用跨学科方式重新审视时间体验，理解当下为何既始终伴随我们又难以把握。",
+      "failureAnalysis": "关键启发：对“当下”的理解不宜停留在常识层面，跨学科视角能同时呈现其科学解释与未解之谜。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Through physics via philosophy and psychology, discover the science and mystery of the present moment - by Aeon Video Watch on Aeon",
+      "translations": {
+        "zh": {
+          "title": "琼·马钱特：寻找当下",
+          "highlight": "什么是“现在”？借由物理学、哲学与心理学，探索当下时刻的科学与谜团。",
+          "summary": "Aeon 视频围绕“现在”这一看似日常却难以定义的概念，串联物理学、哲学与心理学视角。它适合读者用跨学科方式重新审视时间体验，理解当下为何既始终伴随我们又难以把握。",
+          "failureAnalysis": "关键启发：对“当下”的理解不宜停留在常识层面，跨学科视角能同时呈现其科学解释与未解之谜。"
+        },
+        "en": {
+          "highlight": "What is ‘now’? Through physics, philosophy, and psychology, explore the science and mystery of the present moment.",
+          "summary": "This Aeon video examines “now,” a seemingly everyday yet hard-to-define concept, by connecting physics, philosophy, and psychology. It is worth reading for a cross-disciplinary way to reconsider temporal experience and why the present is both ever-present and elusive.",
+          "failureAnalysis": "Key takeaway: understanding “now” should go beyond common sense; a cross-disciplinary view can present both scientific explanations and unresolved mysteries.",
+          "title": "Jo Marchant: In Search of Now"
+        }
+      }
+    },
+    {
+      "id": "paper-2611.03623",
+      "category": "paper",
+      "title": "Thought-deciphering via hierarchical EEG-to-text alignment",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2611.03623v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.03623",
+      "publishedAt": "2026-11-02T18:52:26.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "研究聚焦分层脑电图到文本对齐，以探索思维解读的可行路径。",
+      "summary": "该论文题为《基于分层脑电图到文本对齐的思维解读》，来自 arXiv，作者隶属丹麦技术大学与韩国科学技术院等机构。题名指向将脑电信号与文本进行分层对齐以解读思维的研究方向，但所给材料未包含方法、数据或结果细节。",
+      "failureAnalysis": "所给来源仅含标题、作者与机构信息，缺少实验设置、性能指标和误差分析，无法判断该方法的有效性或泛化能力。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Thought-deciphering via hierarchical EEG-to-text alignment Xiaopeng Mao1*, Morten Mørup 2, Xin Xu 3, Sang Wan Lee3,4,5,6,7, Sadasivan Puthusserypady 1 1*Department of Health Technology, Technical University of Denmark (DTU), Ørsteds Plads, Kongens Lyngby, 2800, Denmark. 2Department of Applied Mathematics and Computer Science, Technical University of Denmark (DTU), Richard Petersens Plads, Kongens Lyngby, 2800, Denmark. 3Department of Brain and Cognitive Sciences, Korea Advanced Institute of Science and Technology (KAIST), Daejeon, City, 34141, Republic of Korea.",
+      "translations": {
+        "zh": {
+          "title": "基于分层脑电图到文本对齐的思维解读",
+          "highlight": "研究聚焦分层脑电图到文本对齐，以探索思维解读的可行路径。",
+          "summary": "该论文题为《基于分层脑电图到文本对齐的思维解读》，来自 arXiv，作者隶属丹麦技术大学与韩国科学技术院等机构。题名指向将脑电信号与文本进行分层对齐以解读思维的研究方向，但所给材料未包含方法、数据或结果细节。",
+          "failureAnalysis": "所给来源仅含标题、作者与机构信息，缺少实验设置、性能指标和误差分析，无法判断该方法的有效性或泛化能力。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "Thought-Deciphering via Hierarchical EEG-to-Text Alignment",
+          "highlight": "The study focuses on hierarchical EEG-to-text alignment as a route for thought deciphering.",
+          "summary": "The paper is titled \"Thought-Deciphering via Hierarchical EEG-to-Text Alignment\" and is listed on arXiv, with authors affiliated with institutions including DTU and KAIST. The title points to a research direction that aligns EEG signals with text hierarchically for thought decoding, but the supplied material provides no methods, data, or results.",
+          "failureAnalysis": "The supplied source contains only the title, authors, and affiliations, with no experimental setup, performance metrics, or error analysis, so the method's effectiveness and generalization cannot be assessed.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-feed-01182b6d11754c268be9ae9f7bd4e12c",
+      "category": "ai",
+      "title": "Qwen 3.8 27B on my laptop can interpret model weights, too",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Nov/3/qwen-can-interpret-model-weights/",
+      "abstractUrl": null,
+      "publishedAt": "2026-11-03T16:29:48.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Expert analysis",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Expert analysis",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Expert analysis",
+      "summary": "论文把 LLM 直接分析、修改浮点权重称为 Weight-Space Programming，并称 GPT-6 Astra 仅看权重就能识别网络任务，甚至无需梯度、只改动少量权重来提升数学表现。Simon Willison 用笔记本上的 Qwen 3.8 27B 复现“从权重猜游戏”示例，它成功识别 Pac-Man、Pong 和 Breakout，但在更冷门的 Freeway 上失败。围绕该论文的批评指出，应区分无工具理解权重与借助代码更新模型，后者更接近人类研究流程；因此它值得读，但不足以宣告源码时代结束。",
+      "failureAnalysis": "关键收获是：模型直接读权重的能力确实有趣，但“看懂”与“用代码改好”是两类能力，不能把演示效果直接外推为模型自治改写权重的新时代。",
+      "aiSelectionScore": 100,
+      "highlight": "仅凭原始权重，GPT-6 Astra 就能判断一个神经网络当初被训练来做什么。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Yesterday's hot paper was Sparks of Weight-Space Programming: LLMs can natively read & write neural network weights by Rikiya Takehi, Jayden Teoh, Alex Zhang, and Omar Khattab. The paper (OK, the authors classify is as a \"blog post\", but it's paper-shaped) found that frontier models, in particular GPT-6 Astra, can both interpret and modify the raw weights of a machine learning model - literally a text description of the model containing a bunch of floating point numbers. I've been playing with one of the examples from the paper and I'm delighted to share that Qwen 3.8 27B running on my laptop can do this as well!",
+      "translations": {
+        "zh": {
+          "title": "笔记本上的 Qwen 3.8 27B 也能读懂模型权重",
+          "highlight": "仅凭原始权重，GPT-6 Astra 就能判断一个神经网络当初被训练来做什么。",
+          "summary": "论文把 LLM 直接分析、修改浮点权重称为 Weight-Space Programming，并称 GPT-6 Astra 仅看权重就能识别网络任务，甚至无需梯度、只改动少量权重来提升数学表现。Simon Willison 用笔记本上的 Qwen 3.8 27B 复现“从权重猜游戏”示例，它成功识别 Pac-Man、Pong 和 Breakout，但在更冷门的 Freeway 上失败。围绕该论文的批评指出，应区分无工具理解权重与借助代码更新模型，后者更接近人类研究流程；因此它值得读，但不足以宣告源码时代结束。",
+          "failureAnalysis": "关键收获是：模型直接读权重的能力确实有趣，但“看懂”与“用代码改好”是两类能力，不能把演示效果直接外推为模型自治改写权重的新时代。"
+        },
+        "en": {
+          "highlight": "Just by looking at the raw weights, GPT-6 Astra can tell what a network was trained to do.",
+          "summary": "The paper coins “Weight-Space Programming” for LLMs that analyze and edit raw floating-point weights, claiming GPT-6 Astra can infer a network’s task from weights alone and improve Qwen3.5-0.8B’s math performance by editing a tiny fraction of weights without gradients. Simon Willison reproduces the game-identification demo with Qwen 3.8 27B on his laptop: it identifies Pac-Man, Pong, and Breakout but fails on the more obscure Freeway. Critics argue the work conflates no-tool weight interpretation with code-assisted model improvement, so it is worth reading as a striking demo rather than proof that source code is obsolete.",
+          "failureAnalysis": "The key takeaway is to separate weight interpretation from code-assisted weight editing; the demo is striking, but it does not justify declaring the end of source code or a new era of self-editing models.",
+          "title": "Qwen 3.8 27B on a Laptop Can Also Interpret Model Weights"
+        }
+      }
+    }
+  ]
+}
