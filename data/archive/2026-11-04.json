@@ -1,0 +1,334 @@
+{
+  "issueDate": "2026-11-04",
+  "updateStatus": "complete",
+  "contentFingerprint": "f4e3141c3dfab507ac3795fd9c01bd39eb6fbabd9f21fa14d1e1c15e773c32a0",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-553744c1e7e64f93bbb7e186cba91b25",
+      "category": "domestic",
+      "title": "奥地利总理施托克尔到访同济大学 共叙两国百年科研合作情谊",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-04/10726321.shtml",
+      "publishedAt": "2026-11-04T14:57:17.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "奥地利总理施托克尔4日携政府高层及企业代表团到访同济大学，出席汉斯·李斯特教授同济任教百年活动。",
+      "summary": "报道记录了奥地利总理施托克尔在上海访问同济大学，面向师生发表演讲，并参加汉斯·李斯特教授同济任教百年活动。活动以百年科研合作情谊为线索，体现两国在教育和科研交流上的延续性。可核实的公共影响主要是高层来访与校际纪念活动本身，未见更多协议细节。",
+      "failureAnalysis": "可确认的是高层来访和百年纪念活动本身；解读时应区分外交象征、教育交流与具体合作成果，避免把礼节性访问等同于已落地协议。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社上海11月4日电 (记者 许婧 郑莹莹)在华访问的奥地利总理克里斯蒂安·施托克尔(Christian Stocker)4日携奥地利联邦政府高层代表及企业代表团到访同济大学，为同济师生作主题演讲，并出席汉斯·李斯特(Hans List)教授同济任教百年活动，寄望两国美好未来。",
+      "translations": {
+        "zh": {
+          "title": "奥地利总理施托克尔到访同济大学 共叙两国百年科研合作情谊",
+          "highlight": "奥地利总理施托克尔4日携政府高层及企业代表团到访同济大学，出席汉斯·李斯特教授同济任教百年活动。",
+          "summary": "报道记录了奥地利总理施托克尔在上海访问同济大学，面向师生发表演讲，并参加汉斯·李斯特教授同济任教百年活动。活动以百年科研合作情谊为线索，体现两国在教育和科研交流上的延续性。可核实的公共影响主要是高层来访与校际纪念活动本身，未见更多协议细节。",
+          "failureAnalysis": "可确认的是高层来访和百年纪念活动本身；解读时应区分外交象征、教育交流与具体合作成果，避免把礼节性访问等同于已落地协议。"
+        },
+        "en": {
+          "highlight": "Austrian Chancellor Christian Stocker visited Tongji University with senior government and business delegates and attended the centenary event marking Hans List's teaching there.",
+          "summary": "The report records Austrian Chancellor Christian Stocker's visit to Tongji University in Shanghai, where he delivered a keynote speech to faculty and students and attended an event marking 100 years since Hans List taught at the university. The occasion frames the two countries' educational and scientific exchanges through a century of cooperation. The verifiable public impact is the high-level visit and the university commemorative event itself; no further agreement details are provided.",
+          "failureAnalysis": "What can be confirmed is the high-level visit and the centenary event themselves; readers should distinguish diplomatic symbolism and educational exchange from concrete cooperation outcomes, and avoid equating a courtesy visit with agreements already implemented.",
+          "title": "Austrian Chancellor Stocker Visits Tongji University to Mark a Century of Scientific Cooperation"
+        }
+      }
+    },
+    {
+      "id": "news-eb1c9522710b415f9602328afe2915d6",
+      "category": "domestic",
+      "title": "澜沧江－湄公河合作第十一次外长会在北京举行",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-04/10726320.shtml",
+      "publishedAt": "2026-11-04T14:55:21.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "澜沧江－湄公河合作第十一次外长会4日在北京举行，王毅和泰国副总理兼外长西哈萨共同主持会议。",
+      "summary": "报道显示，澜沧江－湄公河合作第十一次外长会于11月4日在北京举行，王毅与泰国副总理兼外长西哈萨共同主持，柬埔寨、老挝、越南、缅甸方面代表出席。可核对的信息集中在外长会的举行时间、地点、主持安排和参与方，适合用来了解该区域合作机制的公开外交动态。",
+      "failureAnalysis": "目前可确认的是会议时间、地点、共同主持人和出席方；所给信息未展开具体成果或后续影响，阅读时不宜据此外推。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社北京11月4日电 (记者 黄钰钦)澜沧江－湄公河合作第十一次外长会4日在北京举行。中共中央政治局委员、外交部长王毅和泰国副总理兼外长西哈萨共同主持会议，柬埔寨副首相兼外交大臣布拉索昆，老挝副总理兼外长通沙万，越南外长黎怀忠，缅甸国家计划、投资与对外经济部部长昂觉霍出席。",
+      "translations": {
+        "zh": {
+          "title": "澜沧江－湄公河合作第十一次外长会在北京举行",
+          "highlight": "澜沧江－湄公河合作第十一次外长会4日在北京举行，王毅和泰国副总理兼外长西哈萨共同主持会议。",
+          "summary": "报道显示，澜沧江－湄公河合作第十一次外长会于11月4日在北京举行，王毅与泰国副总理兼外长西哈萨共同主持，柬埔寨、老挝、越南、缅甸方面代表出席。可核对的信息集中在外长会的举行时间、地点、主持安排和参与方，适合用来了解该区域合作机制的公开外交动态。",
+          "failureAnalysis": "目前可确认的是会议时间、地点、共同主持人和出席方；所给信息未展开具体成果或后续影响，阅读时不宜据此外推。"
+        },
+        "en": {
+          "highlight": "The 11th Lancang-Mekong Cooperation Foreign Ministers' Meeting was held in Beijing on November 4, co-chaired by Wang Yi and Thai Deputy Prime Minister and Foreign Minister Sihasak.",
+          "summary": "The report says the 11th Lancang-Mekong Cooperation Foreign Ministers' Meeting took place in Beijing on November 4, co-chaired by Wang Yi and Thai Deputy Prime Minister and Foreign Minister Sihasak, with representatives from Cambodia, Laos, Vietnam, and Myanmar attending. It is worth reading for the verifiable public record of the meeting's timing, venue, co-chairs, and participating parties within the Lancang-Mekong cooperation framework.",
+          "failureAnalysis": "The available information confirms the meeting's time, venue, co-chairs, and attendees; it does not elaborate on specific outcomes or impacts, so readers should not infer beyond the source.",
+          "title": "The 11th Lancang-Mekong Cooperation Foreign Ministers' Meeting Held in Beijing"
+        }
+      }
+    },
+    {
+      "id": "news-16cf7f4f2c9b489882fb34010a1b5d5e",
+      "category": "domestic",
+      "title": "促技术研发走向产业应用 具身智能开发者大会在京举办",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-04/10726286.shtml",
+      "publishedAt": "2026-11-04T13:58:28.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "政府主管部门、金融资本与场景应用方现场“搭台”，共同支持开发者探索具身智能从技术研发走向产业应用的落地路径。",
+      "summary": "据中新网报道，OpenLET具身智能开发者大会于11月3日在北京举办，政府主管部门、金融资本与场景应用方到场参与，共同支持开发者探索具身智能从技术研发走向产业应用的落地路径。这条新闻的价值在于，它呈现出具身智能推进过程中的多方协同结构，而不只是单项技术展示，值得关注后续是否有具体的落地场景与合作成果。",
+      "failureAnalysis": "对非技术管理者而言，判断一个具身智能项目时，应当优先看有没有真实的场景应用方和资金方参与，而不只看技术指标；这类“政府+资本+场景方”同台的会议，是观察技术能否真正落地的参照信号。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网北京11月4日电(记者 陈杭)OpenLET具身智能开发者大会3日在北京举办。政府主管部门、金融资本与场景应用方现场“搭台”，共同支持开发者探索具身智能从技术研发走向产业应用的落地路径。",
+      "translations": {
+        "zh": {
+          "title": "促技术研发走向产业应用 具身智能开发者大会在京举办",
+          "highlight": "政府主管部门、金融资本与场景应用方现场“搭台”，共同支持开发者探索具身智能从技术研发走向产业应用的落地路径。",
+          "summary": "据中新网报道，OpenLET具身智能开发者大会于11月3日在北京举办，政府主管部门、金融资本与场景应用方到场参与，共同支持开发者探索具身智能从技术研发走向产业应用的落地路径。这条新闻的价值在于，它呈现出具身智能推进过程中的多方协同结构，而不只是单项技术展示，值得关注后续是否有具体的落地场景与合作成果。",
+          "failureAnalysis": "对非技术管理者而言，判断一个具身智能项目时，应当优先看有没有真实的场景应用方和资金方参与，而不只看技术指标；这类“政府+资本+场景方”同台的会议，是观察技术能否真正落地的参照信号。"
+        },
+        "en": {
+          "highlight": "Government regulators, financial capital and scenario-application players took the stage together to help developers explore a path from embodied-AI research to industrial deployment.",
+          "summary": "China News Service reports that the OpenLET Embodied AI Developer Conference was held in Beijing on November 3, bringing together government authorities, financial capital and scenario-application players to support developers in moving embodied intelligence from R&D toward industrial deployment. Its value lies in showing the multi-party coordination structure behind embodied AI rather than a single technology demo, making the follow-up on concrete deployment cases worth watching.",
+          "failureAnalysis": "For non-technical managers, judging an embodied-AI project should start with whether real scenario owners and funders are involved, not with technical metrics alone; events where government, capital and scenario players share the stage are a useful signal of whether the technology can actually land.",
+          "title": "Embodied AI Developer Conference Held in Beijing to Move Tech from R&D to Industrial Application"
+        }
+      }
+    },
+    {
+      "id": "news-605f5ed964e345d8a485ec128639c397",
+      "category": "international",
+      "title": "British healthcare worker with Ebola evacuated from DR Congo to UK",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/04/british-healthcare-worker-ebola-evacuated-drc-to-uk-document-shows",
+      "publishedAt": "2026-11-04T18:18:37.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "英国政府表示，一名目前在刚果（金）的英国公民埃博拉检测呈阳性，对英国公众的风险仍然较低。",
+      "summary": "文章报道一名英国医护人员在刚果（金）感染埃博拉后正被撤回英国治疗，患者情况稳定，将转入专门的高后果传染病病房。英国政府称已启动成熟应对程序，并评估对英国公众风险较低。值得关注的是跨境医疗撤离与高等级传染病防控如何衔接。",
+      "failureAnalysis": "关键看点是高后果传染病处置流程能否在跨境撤离中稳定执行，而非恐慌；官方同时强调对英国公众风险低。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Patient is ⁠in ​stable condition and will be transferred to a specialist ‘high consequence’ infectious disease unit A British healthcare worker with Ebola is being evacuated from the Democratic Republic of the Congo to the UK for medical treatment, it has been confirmed. “A British citizen currently in the DR Congo has tested positive for Ebola,” a spokesperson for the UK government said in a statement on Wednesday. “The UK has well-established procedures for dealing with cases like this, and those processes have been activated … The risk to the UK public from Ebola remains low.” Continue reading...",
+      "translations": {
+        "zh": {
+          "title": "英国医护感染埃博拉 从刚果（金）撤至英国治疗",
+          "highlight": "英国政府表示，一名目前在刚果（金）的英国公民埃博拉检测呈阳性，对英国公众的风险仍然较低。",
+          "summary": "文章报道一名英国医护人员在刚果（金）感染埃博拉后正被撤回英国治疗，患者情况稳定，将转入专门的高后果传染病病房。英国政府称已启动成熟应对程序，并评估对英国公众风险较低。值得关注的是跨境医疗撤离与高等级传染病防控如何衔接。",
+          "failureAnalysis": "关键看点是高后果传染病处置流程能否在跨境撤离中稳定执行，而非恐慌；官方同时强调对英国公众风险低。"
+        },
+        "en": {
+          "highlight": "A British citizen currently in the DR Congo has tested positive for Ebola, the UK government said, adding that the risk to the UK public remains low.",
+          "summary": "The article reports that a British healthcare worker with Ebola is being evacuated from the Democratic Republic of the Congo to the UK for treatment. The patient is in stable condition and will be transferred to a specialist high-consequence infectious disease unit. The UK government says established procedures have been activated and the risk to the UK public remains low.",
+          "failureAnalysis": "The key takeaway is less about alarm than about whether high-consequence infectious disease protocols can be executed reliably during cross-border medical evacuation. Officials stress that the risk to the UK public remains low.",
+          "title": "British Healthcare Worker With Ebola Evacuated From DR Congo to UK"
+        }
+      }
+    },
+    {
+      "id": "news-be6bbdbf84cf4f3db4b147450bb29c78",
+      "category": "international",
+      "title": "Drivers may get compensation offers before car finance saga ends",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/cqrky5nxxn4po?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-03T11:56:31.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "监管机构表示，只要方案公平，它支持贷款方主动提供提前赔偿。",
+      "summary": "BBC Business 报道称，在汽车金融纠纷尚未结束前，司机可能会收到赔偿方案。监管机构明确支持贷款方提供提前赔偿，但前提是方案必须公平。这有助于理解监管态度以及消费者可能受到的影响。",
+      "failureAnalysis": "关键点在于，提前赔偿可能加快问题处理，但“公平”是监管认可的前提。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "The regulator says it supports lenders offering early compensation offers, as long as they are fair.",
+      "translations": {
+        "zh": {
+          "title": "汽车金融纠纷结束前，司机可能收到赔偿方案",
+          "highlight": "监管机构表示，只要方案公平，它支持贷款方主动提供提前赔偿。",
+          "summary": "BBC Business 报道称，在汽车金融纠纷尚未结束前，司机可能会收到赔偿方案。监管机构明确支持贷款方提供提前赔偿，但前提是方案必须公平。这有助于理解监管态度以及消费者可能受到的影响。",
+          "failureAnalysis": "关键点在于，提前赔偿可能加快问题处理，但“公平”是监管认可的前提。"
+        },
+        "en": {
+          "highlight": "The regulator says it supports lenders offering early compensation offers, as long as they are fair.",
+          "summary": "BBC Business reports that drivers may receive compensation offers before the car finance dispute is resolved. The regulator says it supports lenders making early compensation offers, provided they are fair. This is worth reading to understand the regulatory stance and the potential impact on consumers.",
+          "failureAnalysis": "The key point is that early compensation may speed up resolution, but fairness is the regulator’s precondition for supporting it.",
+          "title": "Drivers May Get Compensation Offers Before Car Finance Saga Ends"
+        }
+      }
+    },
+    {
+      "id": "life-201be5b71fe9412c8bbb033be2e9b540",
+      "category": "international",
+      "title": "No One You Love Is Ever Dead: Hemingway on Loss and the Meaning of Life",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/04/hemingway-loss-letter/",
+      "publishedAt": "2026-11-04T12:10:07.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 6",
+      "highlight": "我们必须一天一天地生活下去，并且非常小心，不要伤害彼此。",
+      "summary": "文章围绕海明威对失去与生命意义的思考展开，并引用他信中的一句话：我们必须一天一天地生活下去，并且非常小心，不要伤害彼此。它值得一读，是因为文章把宏大的人生问题落回到日常相处与彼此体谅上。",
+      "failureAnalysis": "关键启发是：面对失去，意义不在抽象答案，而在把日子一天天过好，并尽量减少对身边人的伤害。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "\"We must live it, now, a day at a time and be very careful not to hurt each other.\"",
+      "translations": {
+        "zh": {
+          "title": "你所爱之人从未真正逝去：海明威论失去与生命的意义",
+          "highlight": "我们必须一天一天地生活下去，并且非常小心，不要伤害彼此。",
+          "summary": "文章围绕海明威对失去与生命意义的思考展开，并引用他信中的一句话：我们必须一天一天地生活下去，并且非常小心，不要伤害彼此。它值得一读，是因为文章把宏大的人生问题落回到日常相处与彼此体谅上。",
+          "failureAnalysis": "关键启发是：面对失去，意义不在抽象答案，而在把日子一天天过好，并尽量减少对身边人的伤害。"
+        },
+        "en": {
+          "highlight": "We must live it, now, a day at a time and be very careful not to hurt each other.",
+          "summary": "The article reflects on Hemingway's view of loss and the meaning of life, centering on his letter's reminder to live day by day and avoid hurting one another. It is worth reading because it turns a large existential question into a practical guide for daily relationships and mutual care.",
+          "failureAnalysis": "The key takeaway is that meaning after loss is found less in abstract answers than in living one day at a time and being careful not to hurt the people around us.",
+          "title": "No One You Love Is Ever Dead: Hemingway on Loss and the Meaning of Life"
+        }
+      }
+    },
+    {
+      "id": "life-c8af44ac4aab484ca73d05d34c86c0ff",
+      "category": "international",
+      "title": "Firefox's New 'Mini Window' Feature Is a Game Changer for Productivity",
+      "source": "Lifehacker",
+      "url": "https://lifehacker.com/tech/firefoxs-new-mini-window-feature-is-a-game-changer?utm_medium=RSS",
+      "publishedAt": "2026-11-04T18:30:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "Firefox 的新“迷你窗口”功能就像画中画，可把任意内容放进一个小悬浮窗口中。",
+      "summary": "Lifehacker 报道 Firefox 推出“迷你窗口”，它的形态类似画中画，但适用于任意内容。它把内容固定在小窗里，方便用户在处理其他任务时持续参考，因此被视为提升生产力的新功能。现有信息较简短，具体操作方式和限制仍需查看原文。",
+      "failureAnalysis": "关键取舍是：迷你窗口能减少来回切换，但也会占用屏幕空间；它是否提升效率，取决于你是否需要边做事边持续参考某类内容。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Mini Window is like picture-in-picture for anything.",
+      "translations": {
+        "zh": {
+          "title": "Firefox 新“迷你窗口”功能：把任意内容变成画中画，或成生产力利器",
+          "highlight": "Firefox 的新“迷你窗口”功能就像画中画，可把任意内容放进一个小悬浮窗口中。",
+          "summary": "Lifehacker 报道 Firefox 推出“迷你窗口”，它的形态类似画中画，但适用于任意内容。它把内容固定在小窗里，方便用户在处理其他任务时持续参考，因此被视为提升生产力的新功能。现有信息较简短，具体操作方式和限制仍需查看原文。",
+          "failureAnalysis": "关键取舍是：迷你窗口能减少来回切换，但也会占用屏幕空间；它是否提升效率，取决于你是否需要边做事边持续参考某类内容。"
+        },
+        "en": {
+          "highlight": "Firefox's new “Mini Window” feature is like picture-in-picture for anything, keeping content in a small floating window.",
+          "summary": "Lifehacker reports that Firefox has introduced Mini Window, a feature that works like picture-in-picture but for any content. It keeps material in a small window so users can reference it while doing other work, which is why it is framed as a productivity game changer. The available information is brief, so exact controls and limitations still require the original article.",
+          "failureAnalysis": "The key trade-off is that Mini Window can reduce window switching but still takes up screen space; whether it improves efficiency depends on whether you need to keep referencing content while working.",
+          "title": "Firefox's New 'Mini Window' Feature: Picture-in-Picture for Anything, a Productivity Boost"
+        }
+      }
+    },
+    {
+      "id": "paper-2611.03735",
+      "category": "paper",
+      "title": "HyVox: Rethinking Low-Power Voice Intelligence towards Neuromorphic-von Neumann Edge Computing",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2611.03735v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.03735",
+      "publishedAt": "2026-11-01T16:57:28.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic chip; quality signal passed; application scenario is clear.",
+      "paperTopic": "chip",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 chip 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "CNN：擅长从信号或图像里提取局部特征的神经网络。",
+          "SNN：模仿神经脉冲时序的神经网络。"
+        ],
+        "whySelected": "Open full-text paper; topic chip; quality signal passed; application scenario is clear."
+      },
+      "highlight": "HyVox 是一种混合神经形态与冯·诺依曼架构的系统，面向极紧能量预算下的低能耗开放集说话人识别。",
+      "summary": "论文提出 HyVox，将神经形态计算与冯·诺依曼边缘计算结合，用于开放集说话人识别。其目标是在极低能量预算下维持语音智能任务，这关系到边缘设备上的持续语音感知。由于提供的文本仅包含开场与截断的方法描述，具体性能与系统细节尚不可见。",
+      "failureAnalysis": "现有摘录只说明系统定位与目标场景，未给出识别准确率、能耗实测或对比基线，因此无法据此判断其实际优势。对这类边缘语音系统而言，开放集泛化与真实能量预算下的稳定性仍需完整实验证据支持。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "HyVox: Rethinking Low-Power Voice Intelligence with Hybrid Neuromorphic–von Neumann Edge Computing SNEHASIS ADDY,University of Massachusetts Amherst, USA EDUARDO CALLE ORTIZ,University of Massachusetts Amherst, USA PRASHANT SHENOY∗,University of Massachusetts Amherst, USA PHUC NGUYEN∗,University of Massachusetts Amherst, USA In this paper, we presentHyVox, a hybrid neuromorphic–von Neumann system for low-energy open-set speaker identification underextremely tight energy budgets.HyVoxsplits the workload at the speaker embedding. Aneuromorphic processorembeds the speech with sparse, event-driven computation, and avon Neumann microcontrollerholds the speaker gallery and makes every decision: it scores queries by cosine similarity, rejects unknown speakers, and enrolls new users by writing a prototype, with no weight update. On the neuromorphic processor, a hierarchical temporal abstraction (HTA) SNN backbone learns a synaptic time constant per leaky integrate-and-fire (LIF) neuron, allocating832neurons across fast, medium, and slow timescales.",
+      "translations": {
+        "zh": {
+          "title": "HyVox：面向神经形态-冯·诺依曼边缘计算的低功耗语音智能再思考",
+          "highlight": "HyVox 是一种混合神经形态与冯·诺依曼架构的系统，面向极紧能量预算下的低能耗开放集说话人识别。",
+          "summary": "论文提出 HyVox，将神经形态计算与冯·诺依曼边缘计算结合，用于开放集说话人识别。其目标是在极低能量预算下维持语音智能任务，这关系到边缘设备上的持续语音感知。由于提供的文本仅包含开场与截断的方法描述，具体性能与系统细节尚不可见。",
+          "failureAnalysis": "现有摘录只说明系统定位与目标场景，未给出识别准确率、能耗实测或对比基线，因此无法据此判断其实际优势。对这类边缘语音系统而言，开放集泛化与真实能量预算下的稳定性仍需完整实验证据支持。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 chip 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "CNN：擅长从信号或图像里提取局部特征的神经网络。",
+              "SNN：模仿神经脉冲时序的神经网络。"
+            ],
+            "whySelected": "Open full-text paper; topic chip; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "HyVox: Rethinking Low-Power Voice Intelligence towards Neuromorphic-von Neumann Edge Computing",
+          "highlight": "HyVox is a hybrid neuromorphic–von Neumann system targeting low-energy open-set speaker identification under extremely tight energy budgets.",
+          "summary": "The paper presents HyVox, which combines neuromorphic and von Neumann edge computing for open-set speaker identification. Its goal is to sustain voice intelligence under very low energy budgets, an important constraint for continuous edge sensing. The supplied excerpt is truncated and does not provide performance or implementation details.",
+          "failureAnalysis": "The available excerpt states the system's scope and target scenario but gives no accuracy, measured energy, or baseline comparisons, so its practical advantage cannot be assessed. For edge voice systems, open-set generalization and stability under real energy budgets still require complete experimental evidence.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "CNN：擅长从信号或图像里提取局部特征的神经网络。",
+              "SNN：模仿神经脉冲时序的神经网络。"
+            ],
+            "whySelected": "Open full-text paper; topic chip; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-github-1432859403",
+      "category": "ai",
+      "title": "qybaihe/bla",
+      "source": "GitHub Search",
+      "url": "https://github.com/qybaihe/bla",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-25T05:25:45.0000000Z",
+      "scoreLabel": "GitHub 2247 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该 GitHub 项目提出 BLA（Blind LLM Agents），用“毒化→耗尽→幻觉”的对抗策略，防御 REA 等 AI 逆向工程智能体，覆盖二进制、Electron 应用、JS 包、Python 与 WebAssembly。仓库已有 2247 stars 和近期公开活动，说明该方向受到一定关注；它值得看的是把 AI 逆向工程视为现实攻击面，并尝试提供跨技术栈的防护思路。",
+      "failureAnalysis": "这类防御可能陷入与 AI 逆向工程智能体的持续对抗，攻击方模型和工具更新后，防护规则容易失效，验证成本高。跨二进制、Electron、JS、Python 和 WebAssembly 做统一防护，工程复杂度和运行时开销都不低，还可能造成误伤或破坏正常构建。真实需求是否足够强、用户是否愿意为防护付费、开源项目如何分发和持续维护，也都尚未从提供信息中体现。若策略依赖“毒化→耗尽→幻觉”这类间接干扰，误报、合规与安全边界不清会限制落地。",
+      "aiSelectionScore": 2247,
+      "highlight": "BLA 以“毒化→耗尽→幻觉”的对抗性防御盾，保护二进制、Electron 应用、JS 包、Python 与 WebAssembly 免受 REA 等 AI 逆向工程智能体攻击。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 2247 stars and recent public activity. Description: 🛡️ BLA (Blind LLM Agents) — Adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA. Poison -> Exhaust -> Hallucinate.",
+      "translations": {
+        "zh": {
+          "title": "BLA：抵御 AI 逆向工程智能体的盲化防御盾",
+          "highlight": "BLA 以“毒化→耗尽→幻觉”的对抗性防御盾，保护二进制、Electron 应用、JS 包、Python 与 WebAssembly 免受 REA 等 AI 逆向工程智能体攻击。",
+          "summary": "该 GitHub 项目提出 BLA（Blind LLM Agents），用“毒化→耗尽→幻觉”的对抗策略，防御 REA 等 AI 逆向工程智能体，覆盖二进制、Electron 应用、JS 包、Python 与 WebAssembly。仓库已有 2247 stars 和近期公开活动，说明该方向受到一定关注；它值得看的是把 AI 逆向工程视为现实攻击面，并尝试提供跨技术栈的防护思路。",
+          "failureAnalysis": "这类防御可能陷入与 AI 逆向工程智能体的持续对抗，攻击方模型和工具更新后，防护规则容易失效，验证成本高。跨二进制、Electron、JS、Python 和 WebAssembly 做统一防护，工程复杂度和运行时开销都不低，还可能造成误伤或破坏正常构建。真实需求是否足够强、用户是否愿意为防护付费、开源项目如何分发和持续维护，也都尚未从提供信息中体现。若策略依赖“毒化→耗尽→幻觉”这类间接干扰，误报、合规与安全边界不清会限制落地。"
+        },
+        "en": {
+          "highlight": "BLA is an adversarial defense shield that protects binaries, Electron apps, JS bundles, Python, and WebAssembly against AI reverse-engineering agents like REA.",
+          "summary": "The GitHub repository presents BLA (Blind LLM Agents), which uses a 'Poison -> Exhaust -> Hallucinate' strategy to defend software artifacts against AI reverse-engineering agents. With 2,247 stars and recent public activity, it is worth reading as an early attempt to treat AI-driven reverse engineering as a real attack surface and to offer cross-stack protection.",
+          "failureAnalysis": "The defense may be brittle in an arms race with rapidly evolving AI reverse-engineering agents, and supporting binaries, Electron, JS, Python, and WebAssembly adds engineering and runtime overhead. Demand, willingness to pay, distribution, and maintenance are not established by the available information.",
+          "title": "BLA: A Blind LLM Agents Defense Shield Against AI Reverse Engineering"
+        }
+      }
+    }
+  ]
+}
