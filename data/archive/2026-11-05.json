@@ -1,0 +1,331 @@
+{
+  "issueDate": "2026-11-05",
+  "updateStatus": "complete",
+  "contentFingerprint": "df4e962a4b4574c3d03defd3e050d28e7dc3c923d13b88c7c1b9be0aaf34ec5a",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-dd1f09404fd34d39b2201049d1e56d79",
+      "category": "domestic",
+      "title": "向北开放势能持续释放 绥芬河迎来新增长极",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726940.shtml",
+      "publishedAt": "2026-11-05T15:04:01.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "依托口岸区位优势与中俄免签政策红利，绥芬河前三季度经济运行稳中有进，对外开放动能持续迸发。",
+      "summary": "文章聚焦绥芬河依托口岸区位与中俄免签政策红利，前三季度经济运行稳中有进，对外开放动能持续释放。消费、外贸、交通枢纽等指标全线向好，显示这座北疆口岸城市正迎来新的增长极，值得关注其开放政策对地方经济的带动。",
+      "failureAnalysis": "关键看点在于口岸区位与免签政策形成叠加效应，推动消费、外贸和交通枢纽指标同步向好；观察地方开放成效时可重点跟踪这些可验证指标。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网绥芬河11月5日电 (田晓慧)依托口岸区位优势与中俄免签政策红利，北疆口岸城市绥芬河前三季度经济运行稳中有进，对外开放动能持续迸发，消费、外贸、交通枢纽各项指标全线向好。",
+      "translations": {
+        "zh": {
+          "title": "向北开放势能持续释放 绥芬河迎来新增长极",
+          "highlight": "依托口岸区位优势与中俄免签政策红利，绥芬河前三季度经济运行稳中有进，对外开放动能持续迸发。",
+          "summary": "文章聚焦绥芬河依托口岸区位与中俄免签政策红利，前三季度经济运行稳中有进，对外开放动能持续释放。消费、外贸、交通枢纽等指标全线向好，显示这座北疆口岸城市正迎来新的增长极，值得关注其开放政策对地方经济的带动。",
+          "failureAnalysis": "关键看点在于口岸区位与免签政策形成叠加效应，推动消费、外贸和交通枢纽指标同步向好；观察地方开放成效时可重点跟踪这些可验证指标。"
+        },
+        "en": {
+          "highlight": "Relying on port location advantages and the China-Russia visa-free policy dividend, Suifenhe's economy remained stable with progress in the first three quarters, and its opening-up momentum continued to surge.",
+          "summary": "The article focuses on Suifenhe, a northern border port city, using its port location and the China-Russia visa-free policy dividend to keep its economy stable and advance opening-up in the first three quarters. Consumption, foreign trade, and transport hub indicators all improved, pointing to a new growth pole and making the city's policy-driven economic momentum worth watching.",
+          "failureAnalysis": "The key takeaway is that port location and visa-free policy are combining to support consumption, foreign trade, and transport indicators; track these verifiable metrics when assessing local opening-up results.",
+          "title": "Northbound Opening Momentum Continues as Suifenhe Gains New Growth Pole"
+        }
+      }
+    },
+    {
+      "id": "news-a56b85d5a3a24ce2a6919e93a4b9bbf0",
+      "category": "domestic",
+      "title": "黑龙江优化入境旅游服务 前10个月入境游客花费同比增长36.7%",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-05/10726935.shtml",
+      "publishedAt": "2026-11-05T14:51:42.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "2026年1—10月，黑龙江接待入境游客180.5万人次，花费198.1亿元，同比增35.6%、36.7%。",
+      "summary": "文章报道黑龙江省在哈尔滨发布2026—2027年冬季冰雪旅游百日行动消息，并公布2026年1—10月入境旅游数据。数据显示，全省接待入境游客180.5万人次，入境游客花费198.1亿元，分别同比增长35.6%和36.7%。这些可核验的官方数据说明了当地优化入境旅游服务所对应的公开市场表现，值得关注。",
+      "failureAnalysis": "关键信息是可核验的官方发布数据：入境游客人次与花费均实现约三成增长。解读时应区分总量增长与服务优化之间的因果关系，避免仅凭同比数据下结论。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网哈尔滨11月5日电 (记者 王琳)由黑龙江省人民政府新闻办公室举行的“2026—2027年黑龙江冬季冰雪旅游百日行动”新闻发布会于5日在哈尔滨发布消息：2026年1月—10月，黑龙江省接待入境游客180.5万人次，实现入境游客花费198.1亿元人民币，分别同比增长35.6%、36.7%。",
+      "translations": {
+        "zh": {
+          "title": "黑龙江优化入境旅游服务 前10个月入境游客花费同比增长36.7%",
+          "highlight": "2026年1—10月，黑龙江接待入境游客180.5万人次，花费198.1亿元，同比增35.6%、36.7%。",
+          "summary": "文章报道黑龙江省在哈尔滨发布2026—2027年冬季冰雪旅游百日行动消息，并公布2026年1—10月入境旅游数据。数据显示，全省接待入境游客180.5万人次，入境游客花费198.1亿元，分别同比增长35.6%和36.7%。这些可核验的官方数据说明了当地优化入境旅游服务所对应的公开市场表现，值得关注。",
+          "failureAnalysis": "关键信息是可核验的官方发布数据：入境游客人次与花费均实现约三成增长。解读时应区分总量增长与服务优化之间的因果关系，避免仅凭同比数据下结论。"
+        },
+        "en": {
+          "highlight": "From January to October 2026, Heilongjiang received 1.805 million inbound tourists and recorded 19.81 billion yuan in inbound tourist spending, up 35.6% and 36.7% year-on-year, respectively.",
+          "summary": "The article reports that Heilongjiang released its 2026–2027 winter ice and snow tourism 100-day action plan in Harbin and disclosed inbound tourism figures for January–October 2026. It says the province received 1.805 million inbound tourists and 19.81 billion yuan in inbound tourist spending, up 35.6% and 36.7% year-on-year. These verifiable official figures make the public impact of inbound tourism service optimization worth watching.",
+          "failureAnalysis": "The key takeaway is the verifiable official data: both inbound visitor numbers and spending grew by roughly one-third. When interpreting it, distinguish total growth from a causal link to service optimization rather than drawing conclusions from year-on-year figures alone.",
+          "title": "Heilongjiang Optimizes Inbound Tourism Services; Inbound Tourist Spending Up 36.7% Year-on-Year in First 10 Months"
+        }
+      }
+    },
+    {
+      "id": "news-f8a3f63d30094b7b85b8deaf45e2a1a5",
+      "category": "domestic",
+      "title": "海南自贸港吸引力持续上升 多国客商赴琼寻商机",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726927.shtml",
+      "publishedAt": "2026-11-05T14:39:45.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "海南自贸港在中国开放格局中扮演特殊角色，随着政策落地，大量机遇正在涌现。",
+      "summary": "中国新闻网报道称，海南自贸港吸引力持续上升，多国客商赴琼寻找商机。报道引用瑞典艾力塔集团首席执行官的说法，称自贸港在中国开放格局中角色特殊，政策落地带来大量机遇；他在认真研究政策后到海南进行全面考察和投资评估。这为观察外国企业如何评估海南自贸港政策与投资机会提供了一个具体视角。",
+      "failureAnalysis": "可验证的信息显示，海南自贸港的政策落地正在吸引外国企业赴当地实地考察并开展投资评估。对非技术管理者而言，判断这类开放政策时，应注意区分企业表达兴趣与形成实际投资动作。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社海口11月5日电 (记者 王子谦)“海南自贸港在中国开放格局中扮演特殊角色，随着政策落地，大量机遇正在涌现。”瑞典工业仪器制造企业艾力塔集团(Eletta Group)首席执行官谢尔·克里斯特·恩斯特罗姆(Kjell Christer Engstroem)5日告诉中新社记者，他在认真研究自贸港政策后来到海南，“全面考察并进行投资评估”。",
+      "translations": {
+        "zh": {
+          "title": "海南自贸港吸引力持续上升 多国客商赴琼寻商机",
+          "highlight": "海南自贸港在中国开放格局中扮演特殊角色，随着政策落地，大量机遇正在涌现。",
+          "summary": "中国新闻网报道称，海南自贸港吸引力持续上升，多国客商赴琼寻找商机。报道引用瑞典艾力塔集团首席执行官的说法，称自贸港在中国开放格局中角色特殊，政策落地带来大量机遇；他在认真研究政策后到海南进行全面考察和投资评估。这为观察外国企业如何评估海南自贸港政策与投资机会提供了一个具体视角。",
+          "failureAnalysis": "可验证的信息显示，海南自贸港的政策落地正在吸引外国企业赴当地实地考察并开展投资评估。对非技术管理者而言，判断这类开放政策时，应注意区分企业表达兴趣与形成实际投资动作。"
+        },
+        "en": {
+          "highlight": "Hainan Free Trade Port plays a special role in China’s opening-up landscape; as policies are implemented, a large number of opportunities are emerging.",
+          "summary": "China News Service reports that the Hainan Free Trade Port’s appeal is rising and that businesspeople from multiple countries are visiting Hainan to look for opportunities. It cites the CEO of Sweden’s Eletta Group as saying that the port plays a special role in China’s opening-up and that policy implementation is creating many opportunities; after studying the policies, he came to Hainan for a comprehensive inspection and investment assessment. This offers a concrete foreign-business perspective for observing how companies evaluate the port’s policies and investment prospects.",
+          "failureAnalysis": "The verifiable information indicates that policy implementation at the Hainan Free Trade Port is drawing foreign companies to conduct on-site inspections and investment assessments. For non-technical managers, the practical point is to distinguish expressed interest from actual investment commitments when judging such opening-up policies.",
+          "title": "Hainan Free Trade Port’s Appeal Continues to Rise as Multinational Merchants Seek Business Opportunities"
+        }
+      }
+    },
+    {
+      "id": "news-ab6738bc9cb640c1ba1e45d828c0ff15",
+      "category": "international",
+      "title": "Paraguay's president is impeached minutes after resigning following a bank collapse",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/11/05/nx-s1-6030842/paraguay-president-impeached-bank-collapse",
+      "publishedAt": "2026-11-05T18:30:16.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "巴拉圭议员在总统培尼亚辞职数分钟后投票弹劾他，起因是与其政府关联的数字银行倒闭，冻结了数百万人的储蓄。",
+      "summary": "这条国际新闻讲的是：巴拉圭总统圣地亚哥·培尼亚辞职后仅数分钟，议员便投票通过弹劾；直接导火索是一家与 his 政府有关联的数字银行倒闭，导致数百万人的储蓄被冻结。新闻的看点在于，金融事件与最高权力更替在极短时间内连锁发生，是观察小国政治与金融风险联动的一个典型样本。",
+      "failureAnalysis": "关键启示：一家与政府关联的数字银行倒闭，足以在数分钟内触发总统辞职与被弹劾的连锁反应，说明金融风险与政治问责在这类经济体中是高度绑定的。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Paraguayan lawmakers voted to impeach President Santiago Peña minutes after his resignation, as the collapse of a digital bank tied to his government froze millions of people's savings.",
+      "translations": {
+        "zh": {
+          "title": "巴拉圭总统辞职数分钟后遭弹劾：一家数字银行倒闭引发政治剧变",
+          "highlight": "巴拉圭议员在总统培尼亚辞职数分钟后投票弹劾他，起因是与其政府关联的数字银行倒闭，冻结了数百万人的储蓄。",
+          "summary": "这条国际新闻讲的是：巴拉圭总统圣地亚哥·培尼亚辞职后仅数分钟，议员便投票通过弹劾；直接导火索是一家与 his 政府有关联的数字银行倒闭，导致数百万人的储蓄被冻结。新闻的看点在于，金融事件与最高权力更替在极短时间内连锁发生，是观察小国政治与金融风险联动的一个典型样本。",
+          "failureAnalysis": "关键启示：一家与政府关联的数字银行倒闭，足以在数分钟内触发总统辞职与被弹劾的连锁反应，说明金融风险与政治问责在这类经济体中是高度绑定的。"
+        },
+        "en": {
+          "highlight": "Paraguayan lawmakers voted to impeach President Santiago Peña minutes after his resignation, as the collapse of a digital bank tied to his government froze millions of people's savings.",
+          "summary": "This international news report describes how Paraguayan lawmakers impeached President Santiago Peña just minutes after he resigned, triggered by the collapse of a digital bank linked to his government that froze millions of people's savings. It is worth reading as a compact case of how a financial failure can cascade into a head-of-state change within minutes.",
+          "failureAnalysis": "Key takeaway: the collapse of a single government-linked digital bank was enough to trigger a president's resignation and impeachment within minutes, showing how tightly financial risk and political accountability are coupled in such economies.",
+          "title": "Paraguay's President Impeached Minutes After Resigning Over a Bank Collapse"
+        }
+      }
+    },
+    {
+      "id": "news-6d70b633d59b47d283b573ad8b549301",
+      "category": "international",
+      "title": "Paraguay’s president quits after millions of people’s savings frozen in bank crisis",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/05/paraguay-president-santiago-pena-resigns",
+      "publishedAt": "2026-11-05T18:48:07.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "巴拉圭右翼总统圣地亚哥·培尼亚周四辞职，此前一场政治与金融危机导致该国银行体系在近日崩溃。",
+      "summary": "文章称，巴拉圭总统圣地亚哥·培尼亚在政治与金融危机导致该国银行体系崩溃后于周四辞职。危机中心是乌埃诺银行，它在培尼亚任内短短几年从一家不知名的数字银行扩张为该国最大贷款机构之一，并声称拥有约60%的巴拉圭成年人客户。此事值得关注，因为它把银行快速扩张、授权扩张与储户储蓄被冻结的政治后果串联在一起。",
+      "failureAnalysis": "关键教训是：当银行短期内从边缘参与者膨胀为系统重要性机构时，授权扩张必须与风险控制同步，否则储户信心和金融稳定会迅速反噬政治秩序。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Santiago Peña’s rightwing administration had authorised Ueno Bank to drastically expand operations before collapse Paraguay’s rightwing president, Santiago Peña, resigned on Thursday after a political and financial crisis collapsed the South American country’s banking system in recent days. At the centre of the crisis is Ueno Bank, which in just a few years under Peña went from an obscure digital bank to one of the country’s largest lenders, claiming to have about 60% of Paraguay’s adult population as customers.",
+      "translations": {
+        "zh": {
+          "title": "巴拉圭总统因银行危机辞职，数百万人的储蓄被冻结",
+          "highlight": "巴拉圭右翼总统圣地亚哥·培尼亚周四辞职，此前一场政治与金融危机导致该国银行体系在近日崩溃。",
+          "summary": "文章称，巴拉圭总统圣地亚哥·培尼亚在政治与金融危机导致该国银行体系崩溃后于周四辞职。危机中心是乌埃诺银行，它在培尼亚任内短短几年从一家不知名的数字银行扩张为该国最大贷款机构之一，并声称拥有约60%的巴拉圭成年人客户。此事值得关注，因为它把银行快速扩张、授权扩张与储户储蓄被冻结的政治后果串联在一起。",
+          "failureAnalysis": "关键教训是：当银行短期内从边缘参与者膨胀为系统重要性机构时，授权扩张必须与风险控制同步，否则储户信心和金融稳定会迅速反噬政治秩序。"
+        },
+        "en": {
+          "highlight": "Paraguay’s rightwing president, Santiago Peña, resigned on Thursday after a political and financial crisis collapsed the South American country’s banking system in recent days.",
+          "summary": "The article says Paraguay’s rightwing president, Santiago Peña, resigned on Thursday after a political and financial crisis collapsed the country’s banking system. At the centre is Ueno Bank, which under Peña grew in a few years from an obscure digital bank into one of the country’s largest lenders, claiming about 60% of Paraguay’s adult population as customers. It is worth reading because it links rapid bank expansion and authorised growth to the political consequences of frozen savings.",
+          "failureAnalysis": "The key takeaway is that when a bank expands from a marginal player into a systemically important lender in a short period, authorisation for rapid growth must be matched by risk controls; otherwise depositor confidence and financial stability can quickly destabilise politics.",
+          "title": "Paraguay’s President Resigns After Millions’ Savings Frozen in Bank Crisis"
+        }
+      }
+    },
+    {
+      "id": "life-dfc694c530924e0c9a360f8233978922",
+      "category": "international",
+      "title": "The Generosity of Selfishness: C.S. Lewis on How to Be Interesting",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/05/interesting/",
+      "publishedAt": "2026-11-05T17:58:43.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "凡你不自由而丰盛地给予的东西，终将失去；你打开保险箱，只发现灰烬。",
+      "summary": "这篇短文围绕C.S.刘易斯关于“自私的慷慨”的思考：生活不由拥有多少定义，而由我们如何付出时间、精力、物质与心智能力定义。它提醒人，给予并非单向消耗，能持续给予的前提是允许自己休息、接受和充电。值得一读，因为它提供了一个重新理解慷慨、自利与“有趣”的简洁视角。",
+      "failureAnalysis": "关键启发是：给予并非单向消耗，能持续给予的前提是先允许自己休息、充电与接受；个人时间与心力的分配，比拥有多少更能定义生活。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Our lives are defined not by what we have but what we give — on what and whom we spend our energy and time, how we share our material possessions and our mental powers, what we do with our gifts. “Anything you do not give freely and abundantly becomes lost to you,” Annie Dillard wrote in contemplating the nature of creativity. “You open your safe and find ashes.” Paradoxically, the ability to give hinges on the ability to receive: You must be rested in order to labor, taking the repose it takes to recharge your vital energies; you must be… read article",
+      "translations": {
+        "zh": {
+          "title": "自私的慷慨：C.S.刘易斯论如何变得有趣",
+          "highlight": "凡你不自由而丰盛地给予的东西，终将失去；你打开保险箱，只发现灰烬。",
+          "summary": "这篇短文围绕C.S.刘易斯关于“自私的慷慨”的思考：生活不由拥有多少定义，而由我们如何付出时间、精力、物质与心智能力定义。它提醒人，给予并非单向消耗，能持续给予的前提是允许自己休息、接受和充电。值得一读，因为它提供了一个重新理解慷慨、自利与“有趣”的简洁视角。",
+          "failureAnalysis": "关键启发是：给予并非单向消耗，能持续给予的前提是先允许自己休息、充电与接受；个人时间与心力的分配，比拥有多少更能定义生活。"
+        },
+        "en": {
+          "highlight": "Anything you do not give freely and abundantly becomes lost to you; you open your safe and find ashes.",
+          "summary": "This short reflection draws on C.S. Lewis to argue that our lives are defined less by what we have than by what we give—our time, energy, possessions, and mental powers. It also notes the paradox that giving depends on the ability to receive, including rest and replenishment. It is worth reading as a compact prompt to rethink generosity, self-interest, and how we become interesting.",
+          "failureAnalysis": "The key takeaway is that giving is not mere one-way depletion: sustainable generosity requires rest, receptivity, and replenishment. How we allocate time and mental energy may define us more than what we own.",
+          "title": "The Generosity of Selfishness: C.S. Lewis on How to Be Interesting"
+        }
+      }
+    },
+    {
+      "id": "life-027af32c35714557ad10820b68efb8b1",
+      "category": "international",
+      "title": "Who am I if I don’t run?",
+      "source": "Psyche",
+      "url": "https://psyche.co/notes-to-self/the-perils-of-stopping-an-activity-that-forms-your-identity",
+      "publishedAt": "2026-11-05T11:00:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "脚踝受伤让我不得不暂停跑步习惯时，我重新思考把身份认同系于一项活动是否明智。",
+      "summary": "这篇文章以作者因脚踝受伤暂停跑步为切入点，讨论把身份认同绑定在某一活动上的风险。对于把运动或爱好视为自我核心的人，它提供了一个重新审视“我是谁”的角度。",
+      "failureAnalysis": "当一项活动构成自我认同时，暂停它不只是习惯中断，也会迫使人重新界定“我是谁”；提前为身份保留活动之外的支点，可能更稳妥。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "When an ankle injury put the brakes on my running habit, I had to rethink the wisdom of tying my identity to an activity - by Richard Fisher Read on Psyche",
+      "translations": {
+        "zh": {
+          "title": "不跑步时，我是谁？",
+          "highlight": "脚踝受伤让我不得不暂停跑步习惯时，我重新思考把身份认同系于一项活动是否明智。",
+          "summary": "这篇文章以作者因脚踝受伤暂停跑步为切入点，讨论把身份认同绑定在某一活动上的风险。对于把运动或爱好视为自我核心的人，它提供了一个重新审视“我是谁”的角度。",
+          "failureAnalysis": "当一项活动构成自我认同时，暂停它不只是习惯中断，也会迫使人重新界定“我是谁”；提前为身份保留活动之外的支点，可能更稳妥。"
+        },
+        "en": {
+          "highlight": "When an ankle injury put the brakes on my running habit, I had to rethink the wisdom of tying my identity to an activity.",
+          "summary": "Using the author’s ankle injury and pause in running as a starting point, this article discusses the risks of tying one’s identity to a single activity. It offers a useful angle for anyone who treats exercise or a hobby as central to who they are.",
+          "failureAnalysis": "When an activity becomes part of your identity, stopping it is not just a break in habit; it forces you to redefine who you are. Keeping sources of identity beyond any single activity may be more resilient.",
+          "title": "Who Am I If I Don’t Run?"
+        }
+      }
+    },
+    {
+      "id": "paper-2611.05652",
+      "category": "paper",
+      "title": "Quantifying Trait-State Hierarchy in EEG Foundation Model and Signal Processing Embeddings",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2611.05652v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.05652",
+      "publishedAt": "2026-11-03T21:37:52.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "脑电记录包含两类不同特征，其中特质信息在记录过程中相对稳定，标题聚焦量化基础模型与信号处理嵌入中的特质—状态层级。",
+      "summary": "该文关注脑电记录中相对稳定的特质信息与状态信息，并试图在脑电基础模型和信号处理嵌入中量化二者的层级关系。摘要说明脑电通过记录头皮电位测量脑活动，且记录包含两类不同特征，其中特质信息在记录过程中较稳定。若这种层级能够被量化，将有助于评估不同嵌入对稳定特质与状态特征的区分能力。",
+      "failureAnalysis": "所给材料仅为摘要开头，缺少数据、指标和实验结果，无法判断层级量化方法的有效性。当前证据只能说明研究问题与概念框架，不足以支持对模型性能的结论。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "QUANTIFYING TRAIT-STATE HIERARCHY IN EEG FOUNDATION MODEL AND SIGNAL PROCESSING EMBEDDINGS Anusha Madapura∗, Aditya Kommineni∗, Shrikanth Narayanan Signal Analysis and Interpretation Laboratory, University of Southern California, USA ABSTRACT Electroencephalography (EEG) measures brain activity through recording electrical potentials of the scalp. EEG recordings cap- ture two distinct sets of characteristics in the signal: (1)Traits– information that remains relatively constant over the course of a recording session, such as subject identity, age, and sex; (2)States – signatures that encode responses to external stimuli, including visual, auditory, and motor information. There is limited under- standing of how different EEG modeling features (signal processing and foundation models) encode state and trait characteristics.",
+      "translations": {
+        "zh": {
+          "title": "量化脑电基础模型与信号处理嵌入中的特质—状态层级",
+          "highlight": "脑电记录包含两类不同特征，其中特质信息在记录过程中相对稳定，标题聚焦量化基础模型与信号处理嵌入中的特质—状态层级。",
+          "summary": "该文关注脑电记录中相对稳定的特质信息与状态信息，并试图在脑电基础模型和信号处理嵌入中量化二者的层级关系。摘要说明脑电通过记录头皮电位测量脑活动，且记录包含两类不同特征，其中特质信息在记录过程中较稳定。若这种层级能够被量化，将有助于评估不同嵌入对稳定特质与状态特征的区分能力。",
+          "failureAnalysis": "所给材料仅为摘要开头，缺少数据、指标和实验结果，无法判断层级量化方法的有效性。当前证据只能说明研究问题与概念框架，不足以支持对模型性能的结论。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "Quantifying Trait-State Hierarchy in EEG Foundation Model and Signal Processing Embeddings",
+          "highlight": "EEG recordings contain two distinct feature sets, with trait information remaining relatively stable; the title focuses on quantifying trait-state hierarchy in foundation-model and signal-processing embeddings.",
+          "summary": "The paper examines relatively stable trait information and state information in EEG recordings and aims to quantify their hierarchy in EEG foundation-model and signal-processing embeddings. The abstract notes that EEG measures brain activity via scalp potentials and that recordings contain two distinct feature sets, with trait information remaining relatively stable. If this hierarchy can be quantified, it could help assess how well different embeddings separate stable traits from state features.",
+          "failureAnalysis": "The supplied text is only the opening of the abstract and provides no data, metrics, or experimental results, so the method's effectiveness cannot be judged. It supports only the problem framing and conceptual motivation, not conclusions about model performance.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-github-1438540053",
+      "category": "ai",
+      "title": "wangzan101/Mika",
+      "source": "GitHub Search",
+      "url": "https://github.com/wangzan101/Mika",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-29T14:34:07.0000000Z",
+      "scoreLabel": "GitHub 7066 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该项目是一个 Android 端侧 AI 代理，目标是在设备上直接操作应用和网页，替用户完成跨应用任务。它获得 7066 星并保持近期公开活动，说明端侧代理方向受到关注；值得看的是它如何把“代操作”落到真实 Android 环境。",
+      "failureAnalysis": "端侧代理依赖 Android 无障碍或自动化能力，应用界面改版、厂商差异和权限限制都会让操作链路易碎。端侧模型在延迟、耗电、内存和复杂任务成功率上受限，用户对账号、支付和隐私操作的信任门槛也很高。若不能证明高频刚需和稳定完成率，项目容易停留在演示阶段；分发与合规审核也会增加落地成本。",
+      "aiSelectionScore": 7066,
+      "highlight": "一个运行在 Android 设备上的端侧 AI 代理，可操作应用与网页替你完成任务。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 7066 stars and recent public activity. Description: An on-device AI agent for Android that operates apps and the web to get things done for you.",
+      "translations": {
+        "zh": {
+          "title": "Mika：可操作应用与网页的 Android 端侧 AI 代理",
+          "highlight": "一个运行在 Android 设备上的端侧 AI 代理，可操作应用与网页替你完成任务。",
+          "summary": "该项目是一个 Android 端侧 AI 代理，目标是在设备上直接操作应用和网页，替用户完成跨应用任务。它获得 7066 星并保持近期公开活动，说明端侧代理方向受到关注；值得看的是它如何把“代操作”落到真实 Android 环境。",
+          "failureAnalysis": "端侧代理依赖 Android 无障碍或自动化能力，应用界面改版、厂商差异和权限限制都会让操作链路易碎。端侧模型在延迟、耗电、内存和复杂任务成功率上受限，用户对账号、支付和隐私操作的信任门槛也很高。若不能证明高频刚需和稳定完成率，项目容易停留在演示阶段；分发与合规审核也会增加落地成本。"
+        },
+        "en": {
+          "highlight": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
+          "summary": "This project is an on-device AI agent for Android that aims to operate apps and the web directly on the device to complete cross-app tasks. Its 7,066 stars and recent public activity show interest in on-device agents; what is worth examining is how it makes app automation work in real Android environments.",
+          "failureAnalysis": "On-device agents depend on Android accessibility or automation capabilities, so UI changes, OEM differences, and permission limits can make workflows fragile. Latency, battery, memory, success rates on complex tasks, and user trust around accounts, payments, and privacy are also major constraints.",
+          "title": "Mika: An On-Device Android AI Agent That Operates Apps and the Web"
+        }
+      }
+    }
+  ]
+}
