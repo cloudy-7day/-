@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-11-05",
+  "issueDate": "2026-11-06",
   "updateStatus": "complete",
-  "contentFingerprint": "df4e962a4b4574c3d03defd3e050d28e7dc3c923d13b88c7c1b9be0aaf34ec5a",
+  "contentFingerprint": "42338e973341eb8ad88bf8a51e0f236380b7140799a83a1bdc1bd0e86591f9a4",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,216 +10,216 @@
   ],
   "articles": [
     {
-      "id": "news-dd1f09404fd34d39b2201049d1e56d79",
+      "id": "news-751c631f9be44df6b6267baddba326f7",
       "category": "domestic",
-      "title": "向北开放势能持续释放 绥芬河迎来新增长极",
-      "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726940.shtml",
-      "publishedAt": "2026-11-05T15:04:01.0000000+00:00",
+      "title": "我国南极活动与环境保护法出台 对国际南极治理意义几何？",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-06/10727716.shtml",
+      "publishedAt": "2026-11-06T15:44:56.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "依托口岸区位优势与中俄免签政策红利，绥芬河前三季度经济运行稳中有进，对外开放动能持续迸发。",
-      "summary": "文章聚焦绥芬河依托口岸区位与中俄免签政策红利，前三季度经济运行稳中有进，对外开放动能持续释放。消费、外贸、交通枢纽等指标全线向好，显示这座北疆口岸城市正迎来新的增长极，值得关注其开放政策对地方经济的带动。",
-      "failureAnalysis": "关键看点在于口岸区位与免签政策形成叠加效应，推动消费、外贸和交通枢纽指标同步向好；观察地方开放成效时可重点跟踪这些可验证指标。",
+      "highlight": "十四届全国人大常委会第二十五次会议表决通过《中华人民共和国南极活动与环境保护法》，明年1月1日起施行。",
+      "summary": "报道称，十四届全国人大常委会第二十五次会议表决通过《中华人民共和国南极活动与环境保护法》，该法将于明年1月1日起施行。报道将其定位为对外履行《南极条约》的履约法，对内则把我国南极工作实践经验系统上升为法律，使各类南极活动有法可依。值得关注的是，这部法律把国际南极治理义务与国内法治框架连接起来。",
+      "failureAnalysis": "关键看点是“对外履约、对内立规”的双重定位：国际条约义务需要通过国内法律转化为可执行规则。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网绥芬河11月5日电 (田晓慧)依托口岸区位优势与中俄免签政策红利，北疆口岸城市绥芬河前三季度经济运行稳中有进，对外开放动能持续迸发，消费、外贸、交通枢纽各项指标全线向好。",
+      "sourceExcerpt": "十四届全国人大常委会第二十五次会议今天(6日)表决通过《中华人民共和国南极活动与环境保护法》，明年1月1日起施行。该法的通过，是我国严格遵守、切实履行国际南极治理的基石——《南极条约》的具体体现。它对外是一部履约法，对内则全面系统地将我国南极工作实践经验上升为法律，让各类南极活动有法可依。",
       "translations": {
         "zh": {
-          "title": "向北开放势能持续释放 绥芬河迎来新增长极",
-          "highlight": "依托口岸区位优势与中俄免签政策红利，绥芬河前三季度经济运行稳中有进，对外开放动能持续迸发。",
-          "summary": "文章聚焦绥芬河依托口岸区位与中俄免签政策红利，前三季度经济运行稳中有进，对外开放动能持续释放。消费、外贸、交通枢纽等指标全线向好，显示这座北疆口岸城市正迎来新的增长极，值得关注其开放政策对地方经济的带动。",
-          "failureAnalysis": "关键看点在于口岸区位与免签政策形成叠加效应，推动消费、外贸和交通枢纽指标同步向好；观察地方开放成效时可重点跟踪这些可验证指标。"
+          "title": "我国出台南极活动与环境保护法 明年1月1日起施行",
+          "highlight": "十四届全国人大常委会第二十五次会议表决通过《中华人民共和国南极活动与环境保护法》，明年1月1日起施行。",
+          "summary": "报道称，十四届全国人大常委会第二十五次会议表决通过《中华人民共和国南极活动与环境保护法》，该法将于明年1月1日起施行。报道将其定位为对外履行《南极条约》的履约法，对内则把我国南极工作实践经验系统上升为法律，使各类南极活动有法可依。值得关注的是，这部法律把国际南极治理义务与国内法治框架连接起来。",
+          "failureAnalysis": "关键看点是“对外履约、对内立规”的双重定位：国际条约义务需要通过国内法律转化为可执行规则。"
         },
         "en": {
-          "highlight": "Relying on port location advantages and the China-Russia visa-free policy dividend, Suifenhe's economy remained stable with progress in the first three quarters, and its opening-up momentum continued to surge.",
-          "summary": "The article focuses on Suifenhe, a northern border port city, using its port location and the China-Russia visa-free policy dividend to keep its economy stable and advance opening-up in the first three quarters. Consumption, foreign trade, and transport hub indicators all improved, pointing to a new growth pole and making the city's policy-driven economic momentum worth watching.",
-          "failureAnalysis": "The key takeaway is that port location and visa-free policy are combining to support consumption, foreign trade, and transport indicators; track these verifiable metrics when assessing local opening-up results.",
-          "title": "Northbound Opening Momentum Continues as Suifenhe Gains New Growth Pole"
+          "highlight": "The Standing Committee of the 14th National People's Congress adopted the Law of the People's Republic of China on Antarctic Activities and Environmental Protection, effective January 1 next year.",
+          "summary": "The article reports that China's legislature passed the Antarctic Activities and Environmental Protection Law, which will take effect on January 1 next year. It frames the law as a treaty-implementation measure abroad and as a domestic legal codification of China's Antarctic work practices at home, giving various activities a legal basis. It is worth reading for how domestic legislation connects with international Antarctic governance.",
+          "failureAnalysis": "The key takeaway is the dual framing: international treaty obligations are translated into an executable domestic legal framework, with compliance implications for Antarctic activities.",
+          "title": "China Enacts Law on Antarctic Activities and Environmental Protection"
         }
       }
     },
     {
-      "id": "news-a56b85d5a3a24ce2a6919e93a4b9bbf0",
+      "id": "news-2a336572e1644fa0873a0aeb473e5de7",
       "category": "domestic",
-      "title": "黑龙江优化入境旅游服务 前10个月入境游客花费同比增长36.7%",
+      "title": "刘海星同朝鲜劳动党中央政治局委员、中央书记、国际部部长金成男举行会谈",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-06/10727715.shtml",
+      "publishedAt": "2026-11-06T15:42:37.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "双方就共同落实好两党两国最高领导人重要共识，加强党际交往、推动中朝关系发展等交换意见。",
+      "summary": "新华社消息显示，11月6日中共中央对外联络部部长刘海星在北京同朝鲜劳动党中央政治局委员、中央书记、国际部部长金成男举行会谈。双方围绕落实两党两国最高领导人重要共识、加强党际交往和推动中朝关系发展交换意见，适合关注中朝党际交往与双边关系公开动向的读者了解。",
+      "failureAnalysis": "这是一则官方外事会谈消息，公开信息集中在会谈议题与双方共识，未披露具体成果或后续安排。阅读时应把已确认的会谈事实与尚未公开的细节区分开。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "新华社北京11月6日电 11月6日，中共中央对外联络部部长刘海星在北京同朝鲜劳动党中央政治局委员、中央书记、国际部部长金成男举行会谈。双方就共同落实好两党两国最高领导人重要共识，加强党际交往、推动中朝关系发展等交换意见。",
+      "translations": {
+        "zh": {
+          "title": "刘海星同朝鲜劳动党中央书记金成男举行会谈",
+          "highlight": "双方就共同落实好两党两国最高领导人重要共识，加强党际交往、推动中朝关系发展等交换意见。",
+          "summary": "新华社消息显示，11月6日中共中央对外联络部部长刘海星在北京同朝鲜劳动党中央政治局委员、中央书记、国际部部长金成男举行会谈。双方围绕落实两党两国最高领导人重要共识、加强党际交往和推动中朝关系发展交换意见，适合关注中朝党际交往与双边关系公开动向的读者了解。",
+          "failureAnalysis": "这是一则官方外事会谈消息，公开信息集中在会谈议题与双方共识，未披露具体成果或后续安排。阅读时应把已确认的会谈事实与尚未公开的细节区分开。"
+        },
+        "en": {
+          "highlight": "The two sides exchanged views on implementing the important consensus of the top leaders of the two parties and countries, strengthening inter-party exchanges, and advancing China-DPRK relations.",
+          "summary": "Xinhua reports that on November 6, Liu Haixing, head of the International Department of the CPC Central Committee, held talks in Beijing with Kim Song Nam, a Political Bureau member, Central Committee secretary, and International Department director of the DPRK Workers' Party. They exchanged views on implementing the top leaders' important consensus, strengthening inter-party exchanges, and advancing China-DPRK relations, making this an official readout for tracking publicly stated positions on party-to-party and bilateral ties.",
+          "failureAnalysis": "This is an official foreign-affairs meeting readout; the public information centers on discussion topics and consensus, without specific outcomes or follow-up arrangements. Readers should distinguish confirmed meeting facts from undisclosed details.",
+          "title": "Liu Haixing Holds Talks with Kim Song Nam of the DPRK Workers' Party"
+        }
+      }
+    },
+    {
+      "id": "news-034f03f668fd4afabec261867025aad3",
+      "category": "domestic",
+      "title": "浙江开展长期照护师培训和技能竞赛 充实专业人才队伍",
       "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-05/10726935.shtml",
-      "publishedAt": "2026-11-05T14:51:42.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-06/10727703.shtml",
+      "publishedAt": "2026-11-06T15:40:33.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "2026年1—10月，黑龙江接待入境游客180.5万人次，花费198.1亿元，同比增35.6%、36.7%。",
-      "summary": "文章报道黑龙江省在哈尔滨发布2026—2027年冬季冰雪旅游百日行动消息，并公布2026年1—10月入境旅游数据。数据显示，全省接待入境游客180.5万人次，入境游客花费198.1亿元，分别同比增长35.6%和36.7%。这些可核验的官方数据说明了当地优化入境旅游服务所对应的公开市场表现，值得关注。",
-      "failureAnalysis": "关键信息是可核验的官方发布数据：入境游客人次与花费均实现约三成增长。解读时应区分总量增长与服务优化之间的因果关系，避免仅凭同比数据下结论。",
+      "highlight": "这是浙江首次将长期护理保险职业的师资培训、技能竞赛、管理服务体系建设培训合并举办，以赛促训、以训促建。",
+      "summary": "5日至6日，浙江省长期照护师政策业务系列培训班在湖州举行，并同步举办第二届长期护理保险职业技能竞赛和管理服务体系建设培训。这是浙江首次将师资培训、技能竞赛与管理服务体系建设培训合并举办，强调以赛促训、以训促建。对非技术管理者而言，这提供了一个观察地方如何系统化充实长期照护专业人才队伍的窗口。",
+      "failureAnalysis": "关键点在于，长期照护人才队伍建设不能只靠单次培训；浙江将培训、竞赛和管理服务体系建设合并推进，实际成效仍需看后续人才留存与服务质量管理。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网哈尔滨11月5日电 (记者 王琳)由黑龙江省人民政府新闻办公室举行的“2026—2027年黑龙江冬季冰雪旅游百日行动”新闻发布会于5日在哈尔滨发布消息：2026年1月—10月，黑龙江省接待入境游客180.5万人次，实现入境游客花费198.1亿元人民币，分别同比增长35.6%、36.7%。",
+      "sourceExcerpt": "中新网湖州11月6日电(张煜欢)5日至6日，浙江省长期照护师政策业务系列培训班在浙江湖州举行，其间同步举办第二届长期护理保险职业技能竞赛，并开展管理服务体系建设培训。这是浙江首次将长期护理保险职业的师资培训、技能竞赛、管理服务体系建设培训合并举办，以赛促训、以训促建。",
       "translations": {
         "zh": {
-          "title": "黑龙江优化入境旅游服务 前10个月入境游客花费同比增长36.7%",
-          "highlight": "2026年1—10月，黑龙江接待入境游客180.5万人次，花费198.1亿元，同比增35.6%、36.7%。",
-          "summary": "文章报道黑龙江省在哈尔滨发布2026—2027年冬季冰雪旅游百日行动消息，并公布2026年1—10月入境旅游数据。数据显示，全省接待入境游客180.5万人次，入境游客花费198.1亿元，分别同比增长35.6%和36.7%。这些可核验的官方数据说明了当地优化入境旅游服务所对应的公开市场表现，值得关注。",
-          "failureAnalysis": "关键信息是可核验的官方发布数据：入境游客人次与花费均实现约三成增长。解读时应区分总量增长与服务优化之间的因果关系，避免仅凭同比数据下结论。"
+          "title": "浙江首次合并举办长期照护师培训与技能竞赛",
+          "highlight": "这是浙江首次将长期护理保险职业的师资培训、技能竞赛、管理服务体系建设培训合并举办，以赛促训、以训促建。",
+          "summary": "5日至6日，浙江省长期照护师政策业务系列培训班在湖州举行，并同步举办第二届长期护理保险职业技能竞赛和管理服务体系建设培训。这是浙江首次将师资培训、技能竞赛与管理服务体系建设培训合并举办，强调以赛促训、以训促建。对非技术管理者而言，这提供了一个观察地方如何系统化充实长期照护专业人才队伍的窗口。",
+          "failureAnalysis": "关键点在于，长期照护人才队伍建设不能只靠单次培训；浙江将培训、竞赛和管理服务体系建设合并推进，实际成效仍需看后续人才留存与服务质量管理。"
         },
         "en": {
-          "highlight": "From January to October 2026, Heilongjiang received 1.805 million inbound tourists and recorded 19.81 billion yuan in inbound tourist spending, up 35.6% and 36.7% year-on-year, respectively.",
-          "summary": "The article reports that Heilongjiang released its 2026–2027 winter ice and snow tourism 100-day action plan in Harbin and disclosed inbound tourism figures for January–October 2026. It says the province received 1.805 million inbound tourists and 19.81 billion yuan in inbound tourist spending, up 35.6% and 36.7% year-on-year. These verifiable official figures make the public impact of inbound tourism service optimization worth watching.",
-          "failureAnalysis": "The key takeaway is the verifiable official data: both inbound visitor numbers and spending grew by roughly one-third. When interpreting it, distinguish total growth from a causal link to service optimization rather than drawing conclusions from year-on-year figures alone.",
-          "title": "Heilongjiang Optimizes Inbound Tourism Services; Inbound Tourist Spending Up 36.7% Year-on-Year in First 10 Months"
+          "highlight": "Zhejiang for the first time combined long-term care insurance teacher training, skills competitions, and management service system training, using competition to drive training and training to drive system building.",
+          "summary": "On November 5-6, Zhejiang held a long-term care worker policy and business training series in Huzhou, alongside the second long-term care insurance vocational skills competition and management service system training. It was the first time the province combined teacher training, skills competition, and management service system training, with the aim of promoting training through competition and system building through training. It offers a view of how a local government is trying to strengthen the long-term care workforce.",
+          "failureAnalysis": "The key takeaway is that long-term care workforce development requires more than one-off training; combining training, competition, and system building is a useful approach, but retention and service quality will determine the actual effect.",
+          "title": "Zhejiang First Combines Long-Term Care Worker Training and Skills Competition"
         }
       }
     },
     {
-      "id": "news-f8a3f63d30094b7b85b8deaf45e2a1a5",
-      "category": "domestic",
-      "title": "海南自贸港吸引力持续上升 多国客商赴琼寻商机",
-      "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-05/10726927.shtml",
-      "publishedAt": "2026-11-05T14:39:45.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "海南自贸港在中国开放格局中扮演特殊角色，随着政策落地，大量机遇正在涌现。",
-      "summary": "中国新闻网报道称，海南自贸港吸引力持续上升，多国客商赴琼寻找商机。报道引用瑞典艾力塔集团首席执行官的说法，称自贸港在中国开放格局中角色特殊，政策落地带来大量机遇；他在认真研究政策后到海南进行全面考察和投资评估。这为观察外国企业如何评估海南自贸港政策与投资机会提供了一个具体视角。",
-      "failureAnalysis": "可验证的信息显示，海南自贸港的政策落地正在吸引外国企业赴当地实地考察并开展投资评估。对非技术管理者而言，判断这类开放政策时，应注意区分企业表达兴趣与形成实际投资动作。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "中新社海口11月5日电 (记者 王子谦)“海南自贸港在中国开放格局中扮演特殊角色，随着政策落地，大量机遇正在涌现。”瑞典工业仪器制造企业艾力塔集团(Eletta Group)首席执行官谢尔·克里斯特·恩斯特罗姆(Kjell Christer Engstroem)5日告诉中新社记者，他在认真研究自贸港政策后来到海南，“全面考察并进行投资评估”。",
-      "translations": {
-        "zh": {
-          "title": "海南自贸港吸引力持续上升 多国客商赴琼寻商机",
-          "highlight": "海南自贸港在中国开放格局中扮演特殊角色，随着政策落地，大量机遇正在涌现。",
-          "summary": "中国新闻网报道称，海南自贸港吸引力持续上升，多国客商赴琼寻找商机。报道引用瑞典艾力塔集团首席执行官的说法，称自贸港在中国开放格局中角色特殊，政策落地带来大量机遇；他在认真研究政策后到海南进行全面考察和投资评估。这为观察外国企业如何评估海南自贸港政策与投资机会提供了一个具体视角。",
-          "failureAnalysis": "可验证的信息显示，海南自贸港的政策落地正在吸引外国企业赴当地实地考察并开展投资评估。对非技术管理者而言，判断这类开放政策时，应注意区分企业表达兴趣与形成实际投资动作。"
-        },
-        "en": {
-          "highlight": "Hainan Free Trade Port plays a special role in China’s opening-up landscape; as policies are implemented, a large number of opportunities are emerging.",
-          "summary": "China News Service reports that the Hainan Free Trade Port’s appeal is rising and that businesspeople from multiple countries are visiting Hainan to look for opportunities. It cites the CEO of Sweden’s Eletta Group as saying that the port plays a special role in China’s opening-up and that policy implementation is creating many opportunities; after studying the policies, he came to Hainan for a comprehensive inspection and investment assessment. This offers a concrete foreign-business perspective for observing how companies evaluate the port’s policies and investment prospects.",
-          "failureAnalysis": "The verifiable information indicates that policy implementation at the Hainan Free Trade Port is drawing foreign companies to conduct on-site inspections and investment assessments. For non-technical managers, the practical point is to distinguish expressed interest from actual investment commitments when judging such opening-up policies.",
-          "title": "Hainan Free Trade Port’s Appeal Continues to Rise as Multinational Merchants Seek Business Opportunities"
-        }
-      }
-    },
-    {
-      "id": "news-ab6738bc9cb640c1ba1e45d828c0ff15",
+      "id": "news-9c041ca6d45b47fc8a4e8038b7b0f295",
       "category": "international",
-      "title": "Paraguay's president is impeached minutes after resigning following a bank collapse",
-      "source": "NPR World",
-      "url": "https://www.npr.org/2026/11/05/nx-s1-6030842/paraguay-president-impeached-bank-collapse",
-      "publishedAt": "2026-11-05T18:30:16.0000000+00:00",
+      "title": "PM tells firms to publish salaries in job adverts ahead of new law",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/cmd9343z3zw2o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-06T15:25:43.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "巴拉圭议员在总统培尼亚辞职数分钟后投票弹劾他，起因是与其政府关联的数字银行倒闭，冻结了数百万人的储蓄。",
-      "summary": "这条国际新闻讲的是：巴拉圭总统圣地亚哥·培尼亚辞职后仅数分钟，议员便投票通过弹劾；直接导火索是一家与 his 政府有关联的数字银行倒闭，导致数百万人的储蓄被冻结。新闻的看点在于，金融事件与最高权力更替在极短时间内连锁发生，是观察小国政治与金融风险联动的一个典型样本。",
-      "failureAnalysis": "关键启示：一家与政府关联的数字银行倒闭，足以在数分钟内触发总统辞职与被弹劾的连锁反应，说明金融风险与政治问责在这类经济体中是高度绑定的。",
+      "highlight": "政府认为，这一变化将帮助求职者，并可能有助于防止薪酬歧视。",
+      "summary": "BBC Business 报道，首相要求企业在招聘广告中公布薪资，为即将实施的新法做准备。政府认为，这能帮助求职者，也可能有助于防止薪酬歧视。对企业招聘透明度和薪酬公平而言，这是值得关注的监管信号。",
+      "failureAnalysis": "这项要求的核心是把薪资透明度前置到招聘环节，政府将其视为保护求职者和减少薪酬歧视的手段。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Paraguayan lawmakers voted to impeach President Santiago Peña minutes after his resignation, as the collapse of a digital bank tied to his government froze millions of people's savings.",
+      "sourceExcerpt": "The government argues the change will help jobseekers and could help to prevent pay discrimination.",
       "translations": {
         "zh": {
-          "title": "巴拉圭总统辞职数分钟后遭弹劾：一家数字银行倒闭引发政治剧变",
-          "highlight": "巴拉圭议员在总统培尼亚辞职数分钟后投票弹劾他，起因是与其政府关联的数字银行倒闭，冻结了数百万人的储蓄。",
-          "summary": "这条国际新闻讲的是：巴拉圭总统圣地亚哥·培尼亚辞职后仅数分钟，议员便投票通过弹劾；直接导火索是一家与 his 政府有关联的数字银行倒闭，导致数百万人的储蓄被冻结。新闻的看点在于，金融事件与最高权力更替在极短时间内连锁发生，是观察小国政治与金融风险联动的一个典型样本。",
-          "failureAnalysis": "关键启示：一家与政府关联的数字银行倒闭，足以在数分钟内触发总统辞职与被弹劾的连锁反应，说明金融风险与政治问责在这类经济体中是高度绑定的。"
+          "title": "首相要求企业在招聘广告中公布薪资，为新法铺路",
+          "highlight": "政府认为，这一变化将帮助求职者，并可能有助于防止薪酬歧视。",
+          "summary": "BBC Business 报道，首相要求企业在招聘广告中公布薪资，为即将实施的新法做准备。政府认为，这能帮助求职者，也可能有助于防止薪酬歧视。对企业招聘透明度和薪酬公平而言，这是值得关注的监管信号。",
+          "failureAnalysis": "这项要求的核心是把薪资透明度前置到招聘环节，政府将其视为保护求职者和减少薪酬歧视的手段。"
         },
         "en": {
-          "highlight": "Paraguayan lawmakers voted to impeach President Santiago Peña minutes after his resignation, as the collapse of a digital bank tied to his government froze millions of people's savings.",
-          "summary": "This international news report describes how Paraguayan lawmakers impeached President Santiago Peña just minutes after he resigned, triggered by the collapse of a digital bank linked to his government that froze millions of people's savings. It is worth reading as a compact case of how a financial failure can cascade into a head-of-state change within minutes.",
-          "failureAnalysis": "Key takeaway: the collapse of a single government-linked digital bank was enough to trigger a president's resignation and impeachment within minutes, showing how tightly financial risk and political accountability are coupled in such economies.",
-          "title": "Paraguay's President Impeached Minutes After Resigning Over a Bank Collapse"
+          "highlight": "The government argues the change will help jobseekers and could help to prevent pay discrimination.",
+          "summary": "BBC Business reports that the prime minister is telling firms to publish salaries in job adverts ahead of new legislation. The government argues the change will help jobseekers and could help prevent pay discrimination. It is worth reading as a signal about pay transparency and fairness in hiring.",
+          "failureAnalysis": "The key takeaway is that pay transparency is being pushed into the hiring process, with the government framing it as a way to help jobseekers and reduce pay discrimination.",
+          "title": "PM Tells Firms to Publish Salaries in Job Adverts Ahead of New Law"
         }
       }
     },
     {
-      "id": "news-6d70b633d59b47d283b573ad8b549301",
+      "id": "news-ab7dfa95429444dfb08f4d81844ccd22",
       "category": "international",
-      "title": "Paraguay’s president quits after millions of people’s savings frozen in bank crisis",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/nov/05/paraguay-president-santiago-pena-resigns",
-      "publishedAt": "2026-11-05T18:48:07.0000000+00:00",
+      "title": "AI stocks climb after trillions wiped from market values",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-06T19:37:10.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "巴拉圭右翼总统圣地亚哥·培尼亚周四辞职，此前一场政治与金融危机导致该国银行体系在近日崩溃。",
-      "summary": "文章称，巴拉圭总统圣地亚哥·培尼亚在政治与金融危机导致该国银行体系崩溃后于周四辞职。危机中心是乌埃诺银行，它在培尼亚任内短短几年从一家不知名的数字银行扩张为该国最大贷款机构之一，并声称拥有约60%的巴拉圭成年人客户。此事值得关注，因为它把银行快速扩张、授权扩张与储户储蓄被冻结的政治后果串联在一起。",
-      "failureAnalysis": "关键教训是：当银行短期内从边缘参与者膨胀为系统重要性机构时，授权扩张必须与风险控制同步，否则储户信心和金融稳定会迅速反噬政治秩序。",
+      "highlight": "投资者此前抛售科技股，部分原因是担心民主党赢得选举会导致人工智能发展放缓。",
+      "summary": "BBC Business 报道，AI 股票在经历数万亿美元市值蒸发后出现上涨。此前的抛售部分源于投资者担心民主党胜选会使 AI 发展放缓。这条新闻值得关注，因为它显示 AI 板块的短期走势会受到政治预期和市场情绪影响。",
+      "failureAnalysis": "关键点在于：AI 股票也会被政治预期和情绪交易左右，短期涨跌不一定反映技术或业务基本面的变化。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Santiago Peña’s rightwing administration had authorised Ueno Bank to drastically expand operations before collapse Paraguay’s rightwing president, Santiago Peña, resigned on Thursday after a political and financial crisis collapsed the South American country’s banking system in recent days. At the centre of the crisis is Ueno Bank, which in just a few years under Peña went from an obscure digital bank to one of the country’s largest lenders, claiming to have about 60% of Paraguay’s adult population as customers.",
+      "sourceExcerpt": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI development.",
       "translations": {
         "zh": {
-          "title": "巴拉圭总统因银行危机辞职，数百万人的储蓄被冻结",
-          "highlight": "巴拉圭右翼总统圣地亚哥·培尼亚周四辞职，此前一场政治与金融危机导致该国银行体系在近日崩溃。",
-          "summary": "文章称，巴拉圭总统圣地亚哥·培尼亚在政治与金融危机导致该国银行体系崩溃后于周四辞职。危机中心是乌埃诺银行，它在培尼亚任内短短几年从一家不知名的数字银行扩张为该国最大贷款机构之一，并声称拥有约60%的巴拉圭成年人客户。此事值得关注，因为它把银行快速扩张、授权扩张与储户储蓄被冻结的政治后果串联在一起。",
-          "failureAnalysis": "关键教训是：当银行短期内从边缘参与者膨胀为系统重要性机构时，授权扩张必须与风险控制同步，否则储户信心和金融稳定会迅速反噬政治秩序。"
+          "title": "AI股票在数万亿美元市值蒸发后回升",
+          "highlight": "投资者此前抛售科技股，部分原因是担心民主党赢得选举会导致人工智能发展放缓。",
+          "summary": "BBC Business 报道，AI 股票在经历数万亿美元市值蒸发后出现上涨。此前的抛售部分源于投资者担心民主党胜选会使 AI 发展放缓。这条新闻值得关注，因为它显示 AI 板块的短期走势会受到政治预期和市场情绪影响。",
+          "failureAnalysis": "关键点在于：AI 股票也会被政治预期和情绪交易左右，短期涨跌不一定反映技术或业务基本面的变化。"
         },
         "en": {
-          "highlight": "Paraguay’s rightwing president, Santiago Peña, resigned on Thursday after a political and financial crisis collapsed the South American country’s banking system in recent days.",
-          "summary": "The article says Paraguay’s rightwing president, Santiago Peña, resigned on Thursday after a political and financial crisis collapsed the country’s banking system. At the centre is Ueno Bank, which under Peña grew in a few years from an obscure digital bank into one of the country’s largest lenders, claiming about 60% of Paraguay’s adult population as customers. It is worth reading because it links rapid bank expansion and authorised growth to the political consequences of frozen savings.",
-          "failureAnalysis": "The key takeaway is that when a bank expands from a marginal player into a systemically important lender in a short period, authorisation for rapid growth must be matched by risk controls; otherwise depositor confidence and financial stability can quickly destabilise politics.",
-          "title": "Paraguay’s President Resigns After Millions’ Savings Frozen in Bank Crisis"
+          "highlight": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI development.",
+          "summary": "BBC Business reports that AI stocks climbed after trillions of dollars were wiped from market values. The earlier sell-off was partly driven by concerns that a Democrat election victory would slow AI development. It is worth reading because it shows how political expectations and market sentiment can shape short-term moves in AI-related shares.",
+          "failureAnalysis": "The key takeaway is that AI stocks can be swayed by political expectations and sentiment-driven trading, so short-term price moves may not reflect changes in technology or business fundamentals.",
+          "title": "AI Stocks Rebound After Trillions Wiped From Market Values"
         }
       }
     },
     {
-      "id": "life-dfc694c530924e0c9a360f8233978922",
+      "id": "life-c883b863887c486fa39a256284cb6f3b",
       "category": "international",
-      "title": "The Generosity of Selfishness: C.S. Lewis on How to Be Interesting",
+      "title": "The Relationship Between Comedy, Democracy, and AI",
       "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/11/05/interesting/",
-      "publishedAt": "2026-11-05T17:58:43.0000000+00:00",
+      "url": "https://www.themarginalian.org/2026/11/06/humor/",
+      "publishedAt": "2026-11-06T19:46:28.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 1",
-      "highlight": "凡你不自由而丰盛地给予的东西，终将失去；你打开保险箱，只发现灰烬。",
-      "summary": "这篇短文围绕C.S.刘易斯关于“自私的慷慨”的思考：生活不由拥有多少定义，而由我们如何付出时间、精力、物质与心智能力定义。它提醒人，给予并非单向消耗，能持续给予的前提是允许自己休息、接受和充电。值得一读，因为它提供了一个重新理解慷慨、自利与“有趣”的简洁视角。",
-      "failureAnalysis": "关键启发是：给予并非单向消耗，能持续给予的前提是先允许自己休息、充电与接受；个人时间与心力的分配，比拥有多少更能定义生活。",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "幽默是一种基本的人类自由：笑能保护我们免受一切使人非人化的东西——暴政、交易主义、囚禁与商品化。",
+      "summary": "文章从弗兰克尔在霍尔ocaust中把幽默视为保持理智与生存的救生索出发，提出幽默是一种基本的人类自由，能让人暂时超脱处境。它进一步把共同的笑与自由社会、思想自由和民主联系起来，并把幽默理解为制造惊喜的艺术。适合想从人文角度理解幽默、民主与AI关系的人阅读。",
+      "failureAnalysis": "关键启示：幽默是保护人性与自由的基本能力，不应被简化为娱乐或交易；讨论AI与民主时，应重视这种维系共同人性的经验。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Our lives are defined not by what we have but what we give — on what and whom we spend our energy and time, how we share our material possessions and our mental powers, what we do with our gifts. “Anything you do not give freely and abundantly becomes lost to you,” Annie Dillard wrote in contemplating the nature of creativity. “You open your safe and find ashes.” Paradoxically, the ability to give hinges on the ability to receive: You must be rested in order to labor, taking the repose it takes to recharge your vital energies; you must be… read article",
+      "sourceExcerpt": "“Humor, more than anything else in the human make-up, can afford an aloofness and an ability to rise above any situation, even if only for a few seconds,” Viktor Frankl wrote in recalling the role of humor as a lifeline to sanity and survival in the Holocaust. Humor is a fundamental human freedom: To laugh is to protect ourselves from all that dehumanizes us — tyranny and transactionalism, captivity and commodification. Humor is also fundamental to free societies, to freedom of thought, to democracy: To laugh together is to harmonize our deepest humanity.",
       "translations": {
         "zh": {
-          "title": "自私的慷慨：C.S.刘易斯论如何变得有趣",
-          "highlight": "凡你不自由而丰盛地给予的东西，终将失去；你打开保险箱，只发现灰烬。",
-          "summary": "这篇短文围绕C.S.刘易斯关于“自私的慷慨”的思考：生活不由拥有多少定义，而由我们如何付出时间、精力、物质与心智能力定义。它提醒人，给予并非单向消耗，能持续给予的前提是允许自己休息、接受和充电。值得一读，因为它提供了一个重新理解慷慨、自利与“有趣”的简洁视角。",
-          "failureAnalysis": "关键启发是：给予并非单向消耗，能持续给予的前提是先允许自己休息、充电与接受；个人时间与心力的分配，比拥有多少更能定义生活。"
+          "title": "喜剧、民主与AI的关系",
+          "highlight": "幽默是一种基本的人类自由：笑能保护我们免受一切使人非人化的东西——暴政、交易主义、囚禁与商品化。",
+          "summary": "文章从弗兰克尔在霍尔ocaust中把幽默视为保持理智与生存的救生索出发，提出幽默是一种基本的人类自由，能让人暂时超脱处境。它进一步把共同的笑与自由社会、思想自由和民主联系起来，并把幽默理解为制造惊喜的艺术。适合想从人文角度理解幽默、民主与AI关系的人阅读。",
+          "failureAnalysis": "关键启示：幽默是保护人性与自由的基本能力，不应被简化为娱乐或交易；讨论AI与民主时，应重视这种维系共同人性的经验。"
         },
         "en": {
-          "highlight": "Anything you do not give freely and abundantly becomes lost to you; you open your safe and find ashes.",
-          "summary": "This short reflection draws on C.S. Lewis to argue that our lives are defined less by what we have than by what we give—our time, energy, possessions, and mental powers. It also notes the paradox that giving depends on the ability to receive, including rest and replenishment. It is worth reading as a compact prompt to rethink generosity, self-interest, and how we become interesting.",
-          "failureAnalysis": "The key takeaway is that giving is not mere one-way depletion: sustainable generosity requires rest, receptivity, and replenishment. How we allocate time and mental energy may define us more than what we own.",
-          "title": "The Generosity of Selfishness: C.S. Lewis on How to Be Interesting"
+          "highlight": "Humor is a fundamental human freedom: To laugh is to protect ourselves from all that dehumanizes us — tyranny and transactionalism, captivity and commodification.",
+          "summary": "Starting from Viktor Frankl’s account of humor as a lifeline to sanity and survival in the Holocaust, the article presents humor as a basic human freedom that lets us rise above any situation, if only briefly. It links laughing together to free societies, freedom of thought, and democracy, and describes humor as the art of surprise. It is worth reading for a humanistic perspective on why humor matters beyond entertainment.",
+          "failureAnalysis": "The key takeaway is that humor is a basic freedom that protects human dignity against tyranny and commodification; debates about AI and democracy should not reduce it to entertainment or a transaction.",
+          "title": "The Relationship Between Comedy, Democracy, and AI"
         }
       }
     },
     {
-      "id": "life-027af32c35714557ad10820b68efb8b1",
+      "id": "life-8a8b034424ba4393bb8631ad103376fa",
       "category": "international",
-      "title": "Who am I if I don’t run?",
+      "title": "How to break a bad habit",
       "source": "Psyche",
-      "url": "https://psyche.co/notes-to-self/the-perils-of-stopping-an-activity-that-forms-your-identity",
-      "publishedAt": "2026-11-05T11:00:00.0000000+00:00",
+      "url": "https://psyche.co/videos/to-break-a-bad-habit-try-telling-yourself-a-different-story",
+      "publishedAt": "2026-11-06T11:01:00.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 1",
-      "highlight": "脚踝受伤让我不得不暂停跑步习惯时，我重新思考把身份认同系于一项活动是否明智。",
-      "summary": "这篇文章以作者因脚踝受伤暂停跑步为切入点，讨论把身份认同绑定在某一活动上的风险。对于把运动或爱好视为自我核心的人，它提供了一个重新审视“我是谁”的角度。",
-      "failureAnalysis": "当一项活动构成自我认同时，暂停它不只是习惯中断，也会迫使人重新界定“我是谁”；提前为身份保留活动之外的支点，可能更稳妥。",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "如果你明知某个习惯对自己有害却仍感到卡住，更了解自己的大脑或许能帮你改写叙事。",
+      "summary": "这段 Psyche 视频由 Dr Tracey Marks 讲述如何打破坏习惯：先更了解大脑，再改变自己讲述习惯的方式。它适合想从认知角度理解习惯改变的人快速获取一个可操作的切入点。",
+      "failureAnalysis": "关键不是只靠意志力硬扛，而是先理解大脑如何维持旧习惯，再改写你对它的叙述。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "When an ankle injury put the brakes on my running habit, I had to rethink the wisdom of tying my identity to an activity - by Richard Fisher Read on Psyche",
+      "sourceExcerpt": "Feel stuck with a habit you know is bad for you? Getting to know your brain better could help you change the narrative - Video by Dr Tracey Marks Watch on Psyche",
       "translations": {
         "zh": {
-          "title": "不跑步时，我是谁？",
-          "highlight": "脚踝受伤让我不得不暂停跑步习惯时，我重新思考把身份认同系于一项活动是否明智。",
-          "summary": "这篇文章以作者因脚踝受伤暂停跑步为切入点，讨论把身份认同绑定在某一活动上的风险。对于把运动或爱好视为自我核心的人，它提供了一个重新审视“我是谁”的角度。",
-          "failureAnalysis": "当一项活动构成自我认同时，暂停它不只是习惯中断，也会迫使人重新界定“我是谁”；提前为身份保留活动之外的支点，可能更稳妥。"
+          "title": "如何打破坏习惯",
+          "highlight": "如果你明知某个习惯对自己有害却仍感到卡住，更了解自己的大脑或许能帮你改写叙事。",
+          "summary": "这段 Psyche 视频由 Dr Tracey Marks 讲述如何打破坏习惯：先更了解大脑，再改变自己讲述习惯的方式。它适合想从认知角度理解习惯改变的人快速获取一个可操作的切入点。",
+          "failureAnalysis": "关键不是只靠意志力硬扛，而是先理解大脑如何维持旧习惯，再改写你对它的叙述。"
         },
         "en": {
-          "highlight": "When an ankle injury put the brakes on my running habit, I had to rethink the wisdom of tying my identity to an activity.",
-          "summary": "Using the author’s ankle injury and pause in running as a starting point, this article discusses the risks of tying one’s identity to a single activity. It offers a useful angle for anyone who treats exercise or a hobby as central to who they are.",
-          "failureAnalysis": "When an activity becomes part of your identity, stopping it is not just a break in habit; it forces you to redefine who you are. Keeping sources of identity beyond any single activity may be more resilient.",
-          "title": "Who Am I If I Don’t Run?"
+          "highlight": "Feel stuck with a habit you know is bad for you? Getting to know your brain better could help you change the narrative.",
+          "summary": "This Psyche video by Dr Tracey Marks explains that breaking a bad habit can start with understanding your brain better and changing the story you tell yourself about the habit. It offers a quick cognitive angle for readers who want a practical entry point into habit change.",
+          "failureAnalysis": "The key is not simply to tough it out through willpower, but to understand how the brain sustains the old habit and then rewrite the narrative around it.",
+          "title": "How to Break a Bad Habit"
         }
       }
     },
     {
-      "id": "paper-2611.05652",
+      "id": "paper-2611.01731",
       "category": "paper",
-      "title": "Quantifying Trait-State Hierarchy in EEG Foundation Model and Signal Processing Embeddings",
+      "title": "Robust EEG-based Emotion Recognition from Coarse Trial-level Labels under Intra-trial Affective Variability",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2611.05652v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2611.05652",
-      "publishedAt": "2026-11-03T21:37:52.0000000Z",
+      "url": "https://arxiv.org/pdf/2611.01731v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.01731",
+      "publishedAt": "2026-11-01T09:26:14.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
       "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
@@ -238,17 +238,17 @@
         ],
         "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
       },
-      "highlight": "脑电记录包含两类不同特征，其中特质信息在记录过程中相对稳定，标题聚焦量化基础模型与信号处理嵌入中的特质—状态层级。",
-      "summary": "该文关注脑电记录中相对稳定的特质信息与状态信息，并试图在脑电基础模型和信号处理嵌入中量化二者的层级关系。摘要说明脑电通过记录头皮电位测量脑活动，且记录包含两类不同特征，其中特质信息在记录过程中较稳定。若这种层级能够被量化，将有助于评估不同嵌入对稳定特质与状态特征的区分能力。",
-      "failureAnalysis": "所给材料仅为摘要开头，缺少数据、指标和实验结果，无法判断层级量化方法的有效性。当前证据只能说明研究问题与概念框架，不足以支持对模型性能的结论。",
+      "highlight": "该预印本关注试次内情感波动条件下，仅依赖粗粒度试次级标签进行鲁棒脑电情绪识别的问题。",
+      "summary": "论文标题表明其研究脑电情绪识别在标签较粗且单个试次内情感存在变化时的鲁棒性。由于仅提供标题与作者单位信息，具体方法、数据和结论尚无法从给定文本确认。该问题对真实场景中标注成本高、情感动态变化的应用具有潜在意义。",
+      "failureAnalysis": "当前可见文本仅为标题和作者单位，缺少摘要、实验设置与结果，无法评估其鲁棒性主张的证据强度。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "QUANTIFYING TRAIT-STATE HIERARCHY IN EEG FOUNDATION MODEL AND SIGNAL PROCESSING EMBEDDINGS Anusha Madapura∗, Aditya Kommineni∗, Shrikanth Narayanan Signal Analysis and Interpretation Laboratory, University of Southern California, USA ABSTRACT Electroencephalography (EEG) measures brain activity through recording electrical potentials of the scalp. EEG recordings cap- ture two distinct sets of characteristics in the signal: (1)Traits– information that remains relatively constant over the course of a recording session, such as subject identity, age, and sex; (2)States – signatures that encode responses to external stimuli, including visual, auditory, and motor information. There is limited under- standing of how different EEG modeling features (signal processing and foundation models) encode state and trait characteristics.",
+      "sourceExcerpt": "ROBUSTEEG-BASEDEMOTIONRECOGNITION FROMCOARSE TRIAL-LEVELLABELS UNDERINTRA-TRIALAFFECTIVE VARIABILITY A PREPRINT Xiaocong Zeng School of Mathematics (Zhuhai) Sun Yat-sen University Guangdong, 519082, CHINA zengxc3@mail2.sysu.edu.cn Buxuan Wang School of Computer Science and Engineering Sun Yat-sen University Guangdong, 510275, CHINA wangbx29@mail2.sysu.edu.cn Xin Yang School of Mathematics (Zhuhai) Sun Yat-sen University Guangdong, 519082, CHINA yangx367@mail2.sysu.edu.cn Pei Huang School of Mathematics (Zhuhai) Sun Yat-sen University Guangdong, 519082, CHINA huangpei1993@qq.com Dongyang Kuang School of Mathematics (Zhuhai) Sun Yat-sen University Guangdong, 519082, CHINA kuangdy@mail.sysu.edu.cn ABSTRACT EEG-based emotion recognition has become an active research area in brain–computer interfaces. However, fine-grained affective annotation is costly, so most datasets provide only a global label for each long EEG trial. For practical emotion recognition, trials are commonly divided into short temporal windows, with the global label propagated to all windows for training.",
       "translations": {
         "zh": {
-          "title": "量化脑电基础模型与信号处理嵌入中的特质—状态层级",
-          "highlight": "脑电记录包含两类不同特征，其中特质信息在记录过程中相对稳定，标题聚焦量化基础模型与信号处理嵌入中的特质—状态层级。",
-          "summary": "该文关注脑电记录中相对稳定的特质信息与状态信息，并试图在脑电基础模型和信号处理嵌入中量化二者的层级关系。摘要说明脑电通过记录头皮电位测量脑活动，且记录包含两类不同特征，其中特质信息在记录过程中较稳定。若这种层级能够被量化，将有助于评估不同嵌入对稳定特质与状态特征的区分能力。",
-          "failureAnalysis": "所给材料仅为摘要开头，缺少数据、指标和实验结果，无法判断层级量化方法的有效性。当前证据只能说明研究问题与概念框架，不足以支持对模型性能的结论。",
+          "title": "基于粗粒度试次级标签的试次内情感变化鲁棒脑电情绪识别",
+          "highlight": "该预印本关注试次内情感波动条件下，仅依赖粗粒度试次级标签进行鲁棒脑电情绪识别的问题。",
+          "summary": "论文标题表明其研究脑电情绪识别在标签较粗且单个试次内情感存在变化时的鲁棒性。由于仅提供标题与作者单位信息，具体方法、数据和结论尚无法从给定文本确认。该问题对真实场景中标注成本高、情感动态变化的应用具有潜在意义。",
+          "failureAnalysis": "当前可见文本仅为标题和作者单位，缺少摘要、实验设置与结果，无法评估其鲁棒性主张的证据强度。",
           "paperCard": {
             "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
             "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
@@ -263,10 +263,10 @@
           }
         },
         "en": {
-          "title": "Quantifying Trait-State Hierarchy in EEG Foundation Model and Signal Processing Embeddings",
-          "highlight": "EEG recordings contain two distinct feature sets, with trait information remaining relatively stable; the title focuses on quantifying trait-state hierarchy in foundation-model and signal-processing embeddings.",
-          "summary": "The paper examines relatively stable trait information and state information in EEG recordings and aims to quantify their hierarchy in EEG foundation-model and signal-processing embeddings. The abstract notes that EEG measures brain activity via scalp potentials and that recordings contain two distinct feature sets, with trait information remaining relatively stable. If this hierarchy can be quantified, it could help assess how well different embeddings separate stable traits from state features.",
-          "failureAnalysis": "The supplied text is only the opening of the abstract and provides no data, metrics, or experimental results, so the method's effectiveness cannot be judged. It supports only the problem framing and conceptual motivation, not conclusions about model performance.",
+          "title": "Robust EEG-Based Emotion Recognition from Coarse Trial-Level Labels under Intra-Trial Affective Variability",
+          "highlight": "This preprint addresses robust EEG emotion recognition when only coarse trial-level labels are available and affect varies within a trial.",
+          "summary": "The title indicates a study of robustness in EEG emotion recognition with coarse trial-level labels and intra-trial affective variability. The supplied text contains only the title and author affiliations, so methods, data, and findings cannot be verified. The topic is potentially relevant where fine-grained labels are costly and affect changes dynamically.",
+          "failureAnalysis": "Only the title and author affiliations are visible, with no abstract, experimental setup, or results to assess the strength of the robustness claim.",
           "paperCard": {
             "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
             "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
@@ -283,47 +283,43 @@
       }
     },
     {
-      "id": "ai-github-1438540053",
+      "id": "ai-hn-50379249",
       "category": "ai",
-      "title": "wangzan101/Mika",
-      "source": "GitHub Search",
-      "url": "https://github.com/wangzan101/Mika",
+      "title": "MCP Explained",
+      "source": "Hacker News",
+      "url": "https://mcp-explained.com/",
       "abstractUrl": null,
-      "publishedAt": "2026-10-29T14:34:07.0000000Z",
-      "scoreLabel": "GitHub 7066 stars",
-      "aiArticleType": "application_innovation",
+      "publishedAt": "2026-11-05T14:08:35.0000000Z",
+      "scoreLabel": "328 points / 133 comments",
+      "aiArticleType": "concept_explanation",
       "evidenceAnchors": [
         {
-          "label": "GitHub",
-          "kind": "primary"
-        },
-        {
-          "label": "Community signal",
+          "label": "HN discussion",
           "kind": "secondary"
         }
       ],
-      "evidenceLabel": "GitHub + Community signal",
-      "hasPrimaryAnchor": true,
-      "requiresRiskAnalysis": true,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-      "summary": "该项目是一个 Android 端侧 AI 代理，目标是在设备上直接操作应用和网页，替用户完成跨应用任务。它获得 7066 星并保持近期公开活动，说明端侧代理方向受到关注；值得看的是它如何把“代操作”落到真实 Android 环境。",
-      "failureAnalysis": "端侧代理依赖 Android 无障碍或自动化能力，应用界面改版、厂商差异和权限限制都会让操作链路易碎。端侧模型在延迟、耗电、内存和复杂任务成功率上受限，用户对账号、支付和隐私操作的信任门槛也很高。若不能证明高频刚需和稳定完成率，项目容易停留在演示阶段；分发与合规审核也会增加落地成本。",
-      "aiSelectionScore": 7066,
-      "highlight": "一个运行在 Android 设备上的端侧 AI 代理，可操作应用与网页替你完成任务。",
+      "evidenceLabel": "HN discussion",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: HN discussion",
+      "summary": "这是一篇面向 AI 概念解释的 MCP 主题文章，在 Hacker News 获得 328 分和 133 条评论。它适合非技术管理者用来判断 MCP 为何受到技术社区关注，并建立对该概念的初步认知。",
+      "failureAnalysis": "关键不在于记住术语，而在于理解社区为何愿意投入注意力讨论一个 AI 基础概念；阅读时应把它当作概念入口，而非完整技术评估。",
+      "aiSelectionScore": 594,
+      "highlight": "该条目在 Hacker News 获得 328 分和 133 条评论，显示 AI 概念解释类内容具有较高社区讨论热度。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "GitHub repository with 7066 stars and recent public activity. Description: An on-device AI agent for Android that operates apps and the web to get things done for you.",
+      "sourceExcerpt": "HN candidate with public discussion metrics.",
       "translations": {
         "zh": {
-          "title": "Mika：可操作应用与网页的 Android 端侧 AI 代理",
-          "highlight": "一个运行在 Android 设备上的端侧 AI 代理，可操作应用与网页替你完成任务。",
-          "summary": "该项目是一个 Android 端侧 AI 代理，目标是在设备上直接操作应用和网页，替用户完成跨应用任务。它获得 7066 星并保持近期公开活动，说明端侧代理方向受到关注；值得看的是它如何把“代操作”落到真实 Android 环境。",
-          "failureAnalysis": "端侧代理依赖 Android 无障碍或自动化能力，应用界面改版、厂商差异和权限限制都会让操作链路易碎。端侧模型在延迟、耗电、内存和复杂任务成功率上受限，用户对账号、支付和隐私操作的信任门槛也很高。若不能证明高频刚需和稳定完成率，项目容易停留在演示阶段；分发与合规审核也会增加落地成本。"
+          "title": "MCP 解释：AI 概念入门",
+          "highlight": "该条目在 Hacker News 获得 328 分和 133 条评论，显示 AI 概念解释类内容具有较高社区讨论热度。",
+          "summary": "这是一篇面向 AI 概念解释的 MCP 主题文章，在 Hacker News 获得 328 分和 133 条评论。它适合非技术管理者用来判断 MCP 为何受到技术社区关注，并建立对该概念的初步认知。",
+          "failureAnalysis": "关键不在于记住术语，而在于理解社区为何愿意投入注意力讨论一个 AI 基础概念；阅读时应把它当作概念入口，而非完整技术评估。"
         },
         "en": {
-          "highlight": "An on-device AI agent for Android that operates apps and the web to get things done for you.",
-          "summary": "This project is an on-device AI agent for Android that aims to operate apps and the web directly on the device to complete cross-app tasks. Its 7,066 stars and recent public activity show interest in on-device agents; what is worth examining is how it makes app automation work in real Android environments.",
-          "failureAnalysis": "On-device agents depend on Android accessibility or automation capabilities, so UI changes, OEM differences, and permission limits can make workflows fragile. Latency, battery, memory, success rates on complex tasks, and user trust around accounts, payments, and privacy are also major constraints.",
-          "title": "Mika: An On-Device Android AI Agent That Operates Apps and the Web"
+          "highlight": "The item drew 328 points and 133 comments on Hacker News, signaling strong community interest in an AI concept explainer.",
+          "summary": "This is an AI concept explainer about MCP, surfaced on Hacker News with 328 points and 133 comments. It is worth reading as an entry point for a non-technical leader to see why the topic is drawing technical-community attention.",
+          "failureAnalysis": "The takeaway is to treat it as a concept primer, not a full technical evaluation; the discussion signal shows attention, not proof of importance.",
+          "title": "MCP Explained: An AI Concept Primer"
         }
       }
     }
