@@ -1,0 +1,334 @@
+{
+  "issueDate": "2026-11-07",
+  "updateStatus": "complete",
+  "contentFingerprint": "03d3b14519ebcf399501f1627de2c0c76310ebf657168d2540f2922effb0d43f",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-f5bd16662a51426786070efbdadc532a",
+      "category": "domestic",
+      "title": "原创性“中国方案”→国家法律制度 检察公益诉讼法明年起施行",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-07/10728166.shtml",
+      "publishedAt": "2026-11-07T13:45:48.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "十四届全国人大常委会第二十五次会议表决通过《中华人民共和国检察公益诉讼法》，自2027年1月1日起施行。",
+      "summary": "文章称，十四届全国人大常委会第二十五次会议表决通过《中华人民共和国检察公益诉讼法》，该法自2027年1月1日起施行。报道将其定位为原创性“中国方案”上升为国家法律制度，值得关注其后续对检察公益诉讼实践的规范作用。",
+      "failureAnalysis": "已确认的是法律获得表决通过并明确施行日期；具体条文、适用范围和配套安排仍需以正式法律文本为准。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "昨天(6日)，十四届全国人大常委会第二十五次会议表决通过《中华人民共和国检察公益诉讼法》，该法自2027年1月1日起施行。",
+      "translations": {
+        "zh": {
+          "title": "检察公益诉讼法表决通过 2027年起施行",
+          "highlight": "十四届全国人大常委会第二十五次会议表决通过《中华人民共和国检察公益诉讼法》，自2027年1月1日起施行。",
+          "summary": "文章称，十四届全国人大常委会第二十五次会议表决通过《中华人民共和国检察公益诉讼法》，该法自2027年1月1日起施行。报道将其定位为原创性“中国方案”上升为国家法律制度，值得关注其后续对检察公益诉讼实践的规范作用。",
+          "failureAnalysis": "已确认的是法律获得表决通过并明确施行日期；具体条文、适用范围和配套安排仍需以正式法律文本为准。"
+        },
+        "en": {
+          "highlight": "The 25th session of the 14th NPC Standing Committee voted to adopt the PRC Procuratorial Public Interest Litigation Law, which will take effect on January 1, 2027.",
+          "summary": "The article reports that the 25th session of the 14th NPC Standing Committee voted to adopt the PRC Procuratorial Public Interest Litigation Law, effective January 1, 2027. It frames the law as an original “Chinese approach” elevated into the national legal system, making its later role in regulating procuratorial public interest litigation worth watching.",
+          "failureAnalysis": "The confirmed facts are passage and the effective date; specific provisions, scope, and implementing arrangements should be checked against the official legal text.",
+          "title": "Procuratorial Public Interest Litigation Law Adopted, Effective in 2027"
+        }
+      }
+    },
+    {
+      "id": "news-e04c897a05b84ae68b932890a9223d2b",
+      "category": "domestic",
+      "title": "专访英国经济学家罗思义：与中国合作才是欧洲合理的选择",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-07/10728163.shtml",
+      "publishedAt": "2026-11-07T13:20:56.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "欧洲的经济问题不是中国制造的问题，当政府部门一些人不断推动保护主义时，欧洲的行业主体却开始反对保护主义。",
+      "summary": "文章报道，近期欧洲对华贸易保护主义持续抬头，但今年参加进博会的欧洲企业数量达到上千家，欧洲学界及产业界也纷纷发声反对贸易保护主义。英国经济学家罗思义认为，欧洲的经济问题并非源于中国制造，政府层面推动保护主义时，欧洲行业主体却在反对保护主义。这有助于观察欧洲对华政策表态与产业界实际选择之间的分化。",
+      "failureAnalysis": "关键看点在于，欧洲政治层面的保护主义升温，并不等于企业界愿意放弃与中国的合作。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "近期，欧洲对华贸易保护主义持续抬头，但今年，参加进博会的欧洲企业数量达到了上千家，欧洲学界及产业界也纷纷发出不同声音，反对贸易保护主义。来进博会参加上海虹桥国际经济论坛的英国经济学家罗思义认为：欧洲的经济问题不是中国制造的问题，当政府部门一些人不断推动保护主义时，欧洲的行业主体却开始反对保护主义。",
+      "translations": {
+        "zh": {
+          "title": "英国经济学家罗思义：与中国合作才是欧洲合理的选择",
+          "highlight": "欧洲的经济问题不是中国制造的问题，当政府部门一些人不断推动保护主义时，欧洲的行业主体却开始反对保护主义。",
+          "summary": "文章报道，近期欧洲对华贸易保护主义持续抬头，但今年参加进博会的欧洲企业数量达到上千家，欧洲学界及产业界也纷纷发声反对贸易保护主义。英国经济学家罗思义认为，欧洲的经济问题并非源于中国制造，政府层面推动保护主义时，欧洲行业主体却在反对保护主义。这有助于观察欧洲对华政策表态与产业界实际选择之间的分化。",
+          "failureAnalysis": "关键看点在于，欧洲政治层面的保护主义升温，并不等于企业界愿意放弃与中国的合作。"
+        },
+        "en": {
+          "highlight": "Europe's economic problems are not caused by Chinese manufacturing; while some government officials keep pushing protectionism, European industry actors are beginning to oppose it.",
+          "summary": "The article reports that European trade protectionism has been rising recently, yet thousands of European companies are attending this year's CIIE, and European academic and industry voices are opposing protectionism. British economist Luo Siyi argues that Europe's economic problems are not caused by Chinese manufacturing. It is worth reading for the contrast between protectionist pressure in some government circles and resistance from European industry.",
+          "failureAnalysis": "The key takeaway is a split between political rhetoric and business practice in Europe: rising protectionism at the policy level does not mean European firms are willing to give up cooperation with China.",
+          "title": "British Economist Luo Siyi: Cooperation with China Is the Reasonable Choice for Europe"
+        }
+      }
+    },
+    {
+      "id": "news-c679e3c1e14b480f9e00d89897a1525c",
+      "category": "domestic",
+      "title": "学习贯彻党的二十届五中全会精神丨学习贯彻党的二十届五中全会精神中央宣讲团在青海宣讲",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-07/10728126.shtml",
+      "publishedAt": "2026-11-07T12:47:08.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "中央宣讲团11月6日至7日在青海宣讲党的二十届五中全会精神，吴汉圣作宣讲报告。",
+      "summary": "报道显示，中央宣讲团于11月6日至7日在青海开展党的二十届五中全会精神宣讲，中央社会工作部部长吴汉圣作报告。信息来自官方RSS源，核心可核实事实是宣讲时间、地点、主题和报告人。对关注国内政策传达节奏的读者，这是一条可确认的官方活动信息。",
+      "failureAnalysis": "可确认的公共影响限于官方宣讲活动本身：时间、地点、主题和报告人明确；未提供更多政策细节或现场效果数据。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "新华社西宁11月7日电(记者柳泽兴)学习贯彻党的二十届五中全会精神中央宣讲团11月6日至7日在青海宣讲，中央宣讲团成员、中央社会工作部部长吴汉圣作宣讲报告。",
+      "translations": {
+        "zh": {
+          "title": "中央宣讲团在青海宣讲党的二十届五中全会精神",
+          "highlight": "中央宣讲团11月6日至7日在青海宣讲党的二十届五中全会精神，吴汉圣作宣讲报告。",
+          "summary": "报道显示，中央宣讲团于11月6日至7日在青海开展党的二十届五中全会精神宣讲，中央社会工作部部长吴汉圣作报告。信息来自官方RSS源，核心可核实事实是宣讲时间、地点、主题和报告人。对关注国内政策传达节奏的读者，这是一条可确认的官方活动信息。",
+          "failureAnalysis": "可确认的公共影响限于官方宣讲活动本身：时间、地点、主题和报告人明确；未提供更多政策细节或现场效果数据。"
+        },
+        "en": {
+          "highlight": "The central lecture team delivered a report on the Fifth Plenary Session of the 20th CPC Central Committee in Qinghai on Nov. 6-7, with Wu Hansheng as speaker.",
+          "summary": "The report says the central lecture team held a session in Qinghai on Nov. 6-7 to promote the spirit of the Fifth Plenary Session of the 20th CPC Central Committee, and Wu Hansheng, minister of the Central Social Work Department, gave the lecture report. The verifiable facts are the time, place, theme and speaker, drawn from an official RSS source. It is worth reading as a confirmed signal of how official policy messaging is being scheduled.",
+          "failureAnalysis": "The confirmed public impact is limited to the official lecture activity itself: time, place, theme and speaker are clear, but no further policy details or on-site effect data are provided.",
+          "title": "Central Lecture Team Promotes Fifth Plenary Session Spirit in Qinghai"
+        }
+      }
+    },
+    {
+      "id": "news-58721770021c432fa07080532572fb23",
+      "category": "international",
+      "title": "Ousted Paraguayan president appears before prosecutors",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/11/07/nx-s1-6033373/paraguay-president-ousted-bank-collapse",
+      "publishedAt": "2026-11-07T17:14:36.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "巴拉圭总统圣地亚哥·培尼亚周五被解职并被软禁；参议院在国有附属银行倒闭后表决通过弹劾。",
+      "summary": "文章报道巴拉圭总统圣地亚哥·培尼亚遭解职并被软禁，随后出现在检察官面前。参议院在国有附属银行倒闭后通过弹劾投票。事件值得关注，因为它显示银行危机如何迅速演变为政治与法律危机。",
+      "failureAnalysis": "关键点在于，银行倒闭触发了弹劾，并迅速将政治领导人置于司法程序之中；后续应关注问询与弹劾程序的法律依据。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Paraguayan President Santiago Peña was removed from office and placed under house arrest Friday. The Senate voted on his impeachment after the collapse of a state-affiliated bank.",
+      "translations": {
+        "zh": {
+          "title": "巴拉圭被解职总统接受检察官问询",
+          "highlight": "巴拉圭总统圣地亚哥·培尼亚周五被解职并被软禁；参议院在国有附属银行倒闭后表决通过弹劾。",
+          "summary": "文章报道巴拉圭总统圣地亚哥·培尼亚遭解职并被软禁，随后出现在检察官面前。参议院在国有附属银行倒闭后通过弹劾投票。事件值得关注，因为它显示银行危机如何迅速演变为政治与法律危机。",
+          "failureAnalysis": "关键点在于，银行倒闭触发了弹劾，并迅速将政治领导人置于司法程序之中；后续应关注问询与弹劾程序的法律依据。"
+        },
+        "en": {
+          "highlight": "Paraguayan President Santiago Peña was removed from office and placed under house arrest Friday; the Senate voted to impeach him after the collapse of a state-affiliated bank.",
+          "summary": "The article reports that Paraguayan President Santiago Peña was removed from office and placed under house arrest, then appeared before prosecutors. The Senate voted to impeach him after the collapse of a state-affiliated bank. It is worth reading because it shows how a banking crisis can quickly become a political and legal crisis.",
+          "failureAnalysis": "The key point is that the bank collapse triggered impeachment and quickly put a political leader into judicial proceedings; follow-up should focus on the legal basis for the questioning and impeachment process.",
+          "title": "Ousted Paraguayan president appears before prosecutors"
+        }
+      }
+    },
+    {
+      "id": "news-e5da783438274cdf8ee0dd5b5dc98010",
+      "category": "international",
+      "title": "Why the US midterms sparked an AI stock selloff",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-06T18:32:16.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "对更多AI监管的担忧似乎引发了投资者的恐惧，但对AI行业的担忧已持续一段时间。",
+      "summary": "BBC Business报道称，美国中期选举后的AI股票抛售，似乎源于市场对更多AI监管的担忧。投资者对AI行业的顾虑在此之前已在累积。对非技术管理者而言，这提醒政策预期会快速改变AI相关公司的市场情绪。",
+      "failureAnalysis": "关键点：AI板块会受监管预期驱动，市场情绪可能先于基本面变化；对AI行业的担忧也可能早已存在。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Fears of more AI regulation appear to have sparked fear among investors, but concerns about the industry have been growing for some time.",
+      "translations": {
+        "zh": {
+          "title": "美国中期选举为何引发AI股票抛售",
+          "highlight": "对更多AI监管的担忧似乎引发了投资者的恐惧，但对AI行业的担忧已持续一段时间。",
+          "summary": "BBC Business报道称，美国中期选举后的AI股票抛售，似乎源于市场对更多AI监管的担忧。投资者对AI行业的顾虑在此之前已在累积。对非技术管理者而言，这提醒政策预期会快速改变AI相关公司的市场情绪。",
+          "failureAnalysis": "关键点：AI板块会受监管预期驱动，市场情绪可能先于基本面变化；对AI行业的担忧也可能早已存在。"
+        },
+        "en": {
+          "highlight": "Fears of more AI regulation appear to have sparked fear among investors, but concerns about the industry have been growing for some time.",
+          "summary": "BBC Business reports that the AI stock selloff after the US midterms appears to have been sparked by fears of more AI regulation. Investor concerns about the industry had already been growing for some time. The item is worth reading as a reminder that policy expectations can quickly shift sentiment around AI-related companies.",
+          "failureAnalysis": "Key takeaway: AI stocks can be driven by regulatory expectations, and market sentiment may move before fundamentals do; concerns about the industry may also predate the election.",
+          "title": "Why the US Midterms Sparked an AI Stock Selloff"
+        }
+      }
+    },
+    {
+      "id": "life-d437b7fa74c2443b85ca564ff4038f8f",
+      "category": "international",
+      "title": "Umberto Eco’s Antilibrary: Why Unread Books Are More Valuable to Our Lives than Read Ones",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/05/umberto-eco-antilibrary/",
+      "publishedAt": "2026-11-05T13:25:39.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "在一个把知识当作让我们在等级秩序中攀升的装饰的文化里，如何成为一个“反学者”。",
+      "summary": "文章围绕艾柯的“反图书馆”概念，讨论未读之书为何可能比已读之书对生活更有价值。它进一步追问：在一个把知识当作阶层攀升装饰的文化里，人如何成为“反学者”。这值得读，因为它促使人重新思考阅读与知识的意义，而不只把它们当作身份展示。",
+      "failureAnalysis": "关键启发：把知识当装饰会让人追逐身份排序；保留大量未读之书，可提醒自己未知仍大、学习不该止于展示。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "How to become an \"antischolar\" in a culture that treats knowledge as \"an ornament that allows us to rise in the pecking order.\"",
+      "translations": {
+        "zh": {
+          "title": "艾柯的“反图书馆”：为何未读之书比已读之书更有价值",
+          "highlight": "在一个把知识当作让我们在等级秩序中攀升的装饰的文化里，如何成为一个“反学者”。",
+          "summary": "文章围绕艾柯的“反图书馆”概念，讨论未读之书为何可能比已读之书对生活更有价值。它进一步追问：在一个把知识当作阶层攀升装饰的文化里，人如何成为“反学者”。这值得读，因为它促使人重新思考阅读与知识的意义，而不只把它们当作身份展示。",
+          "failureAnalysis": "关键启发：把知识当装饰会让人追逐身份排序；保留大量未读之书，可提醒自己未知仍大、学习不该止于展示。"
+        },
+        "en": {
+          "highlight": "How to become an \"antischolar\" in a culture that treats knowledge as \"an ornament that allows us to rise in the pecking order.\"",
+          "summary": "The piece uses Umberto Eco's idea of the \"antilibrary\" to ask why unread books may matter more to our lives than read ones. It also asks how to become an \"antischolar\" in a culture that treats knowledge as an ornament for climbing the pecking order. It is worth reading because it invites a rethink of reading and knowledge beyond status display.",
+          "failureAnalysis": "Key takeaway: treating knowledge as an ornament encourages status competition; keeping many unread books can remind us that the unknown remains large and learning should not stop at display.",
+          "title": "Umberto Eco's Antilibrary: Why Unread Books Matter More Than Read Ones"
+        }
+      }
+    },
+    {
+      "id": "life-d15977c704af46609374a1fd59c3fb5a",
+      "category": "international",
+      "title": "How to take notes that actually help you learn",
+      "source": "Psyche",
+      "url": "https://psyche.co/guides/how-to-take-notes-that-actually-help-you-learn",
+      "publishedAt": "2026-11-05T11:00:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "若想记住并理解，单纯抄写还不够；一位学习专家分享如何让笔记真正为你所用。",
+      "summary": "文章的核心观点是：做笔记若只停留在复制内容，难以帮助记忆和理解。学习专家 Cynthia Nebel 在 Psyche 的指南中分享如何让笔记真正服务于学习，适合想改进学习方法的人阅读。",
+      "failureAnalysis": "关键启示：笔记的价值不只在记录得全，更在于是否促进理解与记忆；先让笔记服务于学习，而不是只做抄写。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "If you want to remember and understand, copying isn’t enough. An expert on learning shares how to make notes work for you - by Cynthia Nebel Read on Psyche",
+      "translations": {
+        "zh": {
+          "title": "如何做真正帮助学习的笔记",
+          "highlight": "若想记住并理解，单纯抄写还不够；一位学习专家分享如何让笔记真正为你所用。",
+          "summary": "文章的核心观点是：做笔记若只停留在复制内容，难以帮助记忆和理解。学习专家 Cynthia Nebel 在 Psyche 的指南中分享如何让笔记真正服务于学习，适合想改进学习方法的人阅读。",
+          "failureAnalysis": "关键启示：笔记的价值不只在记录得全，更在于是否促进理解与记忆；先让笔记服务于学习，而不是只做抄写。"
+        },
+        "en": {
+          "highlight": "If you want to remember and understand, copying isn’t enough; a learning expert shares how to make notes work for you.",
+          "summary": "This Psyche guide says that copying alone is not enough to help you remember and understand. Cynthia Nebel shares how to make notes serve learning, making it worth reading for anyone who wants better study methods.",
+          "failureAnalysis": "The practical point is that copying is not enough: note-taking should be designed to help you remember and understand.",
+          "title": "How to Take Notes That Actually Help You Learn"
+        }
+      }
+    },
+    {
+      "id": "paper-2610.36159",
+      "category": "paper",
+      "title": "MtReNIRS: A Self-Supervised Foundation Model for Transferable Neurovascular Representations",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2610.36159v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.36159",
+      "publishedAt": "2026-10-26T18:59:54.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。",
+          "LoRA：用较小参数改造大模型的轻量适配方法。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "MtReNIRS是面向可迁移神经血管表征的自监督基础模型，题名明确其定位。",
+      "summary": "所给材料只包含论文题名、作者信息和单位开头，未提供摘要、方法或实验结果。题名显示该研究提出MtReNIRS，一个自监督基础模型，目标是学习可迁移的神经血管表征。其重要性目前只能从题名所强调的可迁移定位推断。",
+      "failureAnalysis": "源文本缺少摘要、方法和实验部分，无法核验该模型的迁移效果、性能或临床适用性，只能确认题名所声明的自监督基础模型定位。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "<Society logo(s) and publica- tion title will appear here.> Received XX Month, XXXX; revised XX Month, XXXX; accepted XX Month, XXXX; Date of publication XX Month, XXXX; date of current version XX Month, XXXX. Digital Object Identifier 10.1109/XXXX.2022.1234567 MtReNIRS: A Self-Supervised Foundation Model for Transferable Neurovascular Representations Tony Chae1, Kleanthis Avramidis2, Dimitra Emmanouilidou3, and Ivan J. Tashev3 1Department of Electrical Engineering and Computer Sciences, University of California, Berkeley , Berkeley , CA, USA 2Signal Analysis and Interpretation Lab, University of Southern California, Los Angeles, CA, USA 3Microsoft Research, Redmond, WA, USA Corresponding author: T ony Chae (email: tonychae01@berkeley .edu).",
+      "translations": {
+        "zh": {
+          "title": "MtReNIRS：面向可迁移神经血管表征的自监督基础模型",
+          "highlight": "MtReNIRS是面向可迁移神经血管表征的自监督基础模型，题名明确其定位。",
+          "summary": "所给材料只包含论文题名、作者信息和单位开头，未提供摘要、方法或实验结果。题名显示该研究提出MtReNIRS，一个自监督基础模型，目标是学习可迁移的神经血管表征。其重要性目前只能从题名所强调的可迁移定位推断。",
+          "failureAnalysis": "源文本缺少摘要、方法和实验部分，无法核验该模型的迁移效果、性能或临床适用性，只能确认题名所声明的自监督基础模型定位。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。",
+              "LoRA：用较小参数改造大模型的轻量适配方法。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "MtReNIRS: A Self-Supervised Foundation Model for Transferable Neurovascular Representations",
+          "highlight": "MtReNIRS is described as a self-supervised foundation model for transferable neurovascular representations, based only on the supplied title.",
+          "summary": "The supplied material contains only the paper title, author information, and the beginning of an affiliation; it provides no abstract, methods, or experimental results. The title identifies MtReNIRS as a self-supervised foundation model intended for transferable neurovascular representations, so its significance can currently be inferred only from that stated positioning.",
+          "failureAnalysis": "Because the source lacks an abstract, methods, and experiments, the model’s transfer performance, effectiveness, and clinical applicability cannot be verified; only the self-supervised foundation-model positioning stated in the title is confirmed.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。",
+              "LoRA：用较小参数改造大模型的轻量适配方法。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-github-1382865521",
+      "category": "ai",
+      "title": "nano-muse/nanoMuse",
+      "source": "GitHub Search",
+      "url": "https://github.com/nano-muse/nanoMuse",
+      "abstractUrl": null,
+      "publishedAt": "2026-09-23T06:13:06.0000000Z",
+      "scoreLabel": "GitHub 3293 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "这个 GitHub 项目提出开源个人代理，覆盖手机、电脑和浏览器，把手机屏幕与电脑作为“手”来执行任务。它强调有独立名称与外观、应用关闭后仍可工作、记住用户，并在不可逆操作前征求确认。值得关注的是它试图把跨设备个人代理做成可部署的开源产品，而不只是单点 AI 功能。",
+      "failureAnalysis": "最大风险在工程与信任：跨 Android、iOS、桌面和浏览器持续运行，受后台限制、耗电、权限和系统沙箱约束，稳定执行并不容易。它要接触屏幕、文件和设备操作，一旦误操作或数据泄露，用户信任成本很高；开源还带来安全审计与滥用治理压力。需求侧也要验证用户是否愿意把跨设备日常任务交给一个统一代理，而不是继续用现成助理和自动化工具。",
+      "aiSelectionScore": 3293,
+      "highlight": "一个有名有貌的代理，能做事、在应用关闭后继续工作、记住你，并在不可逆操作前先询问。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 3293 stars and recent public activity. Description: nanoMuse: an open-source personal agent for every device you own. One agent with a name and a look of its own that does things, keeps working while the app is closed, remembers you, and asks before anything you cannot undo.",
+      "translations": {
+        "zh": {
+          "title": "nanoMuse：面向所有设备的开源个人代理",
+          "highlight": "一个有名有貌的代理，能做事、在应用关闭后继续工作、记住你，并在不可逆操作前先询问。",
+          "summary": "这个 GitHub 项目提出开源个人代理，覆盖手机、电脑和浏览器，把手机屏幕与电脑作为“手”来执行任务。它强调有独立名称与外观、应用关闭后仍可工作、记住用户，并在不可逆操作前征求确认。值得关注的是它试图把跨设备个人代理做成可部署的开源产品，而不只是单点 AI 功能。",
+          "failureAnalysis": "最大风险在工程与信任：跨 Android、iOS、桌面和浏览器持续运行，受后台限制、耗电、权限和系统沙箱约束，稳定执行并不容易。它要接触屏幕、文件和设备操作，一旦误操作或数据泄露，用户信任成本很高；开源还带来安全审计与滥用治理压力。需求侧也要验证用户是否愿意把跨设备日常任务交给一个统一代理，而不是继续用现成助理和自动化工具。"
+        },
+        "en": {
+          "highlight": "One agent with a name and a look of its own that does things, keeps working while the app is closed, remembers you, and asks before anything you cannot undo.",
+          "summary": "This GitHub project presents an open-source personal agent spanning Android, iPhone/iPad, Windows/macOS/Linux, and the browser, using the phone screen and computer as its hands. It emphasizes a named, distinct-looking agent that keeps working while the app is closed, remembers the user, and asks before irreversible actions. It is worth reading as an attempt to turn cross-device personal agents into a deployable open-source product rather than a single AI feature.",
+          "failureAnalysis": "The main risks are engineering and trust: always-on cross-device execution faces background limits, battery use, permissions, and sandboxing, while screen/file access makes mistakes and data exposure costly. It also needs validation that users will delegate everyday cross-device tasks to one agent instead of existing assistants and automation tools.",
+          "title": "nanoMuse: An Open-Source Personal Agent for Every Device"
+        }
+      }
+    }
+  ]
+}

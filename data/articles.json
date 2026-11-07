@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-11-06",
+  "issueDate": "2026-11-07",
   "updateStatus": "complete",
-  "contentFingerprint": "42338e973341eb8ad88bf8a51e0f236380b7140799a83a1bdc1bd0e86591f9a4",
+  "contentFingerprint": "03d3b14519ebcf399501f1627de2c0c76310ebf657168d2540f2922effb0d43f",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,216 +10,216 @@
   ],
   "articles": [
     {
-      "id": "news-751c631f9be44df6b6267baddba326f7",
+      "id": "news-f5bd16662a51426786070efbdadc532a",
       "category": "domestic",
-      "title": "我国南极活动与环境保护法出台 对国际南极治理意义几何？",
+      "title": "原创性“中国方案”→国家法律制度 检察公益诉讼法明年起施行",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-06/10727716.shtml",
-      "publishedAt": "2026-11-06T15:44:56.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-07/10728166.shtml",
+      "publishedAt": "2026-11-07T13:45:48.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "十四届全国人大常委会第二十五次会议表决通过《中华人民共和国南极活动与环境保护法》，明年1月1日起施行。",
-      "summary": "报道称，十四届全国人大常委会第二十五次会议表决通过《中华人民共和国南极活动与环境保护法》，该法将于明年1月1日起施行。报道将其定位为对外履行《南极条约》的履约法，对内则把我国南极工作实践经验系统上升为法律，使各类南极活动有法可依。值得关注的是，这部法律把国际南极治理义务与国内法治框架连接起来。",
-      "failureAnalysis": "关键看点是“对外履约、对内立规”的双重定位：国际条约义务需要通过国内法律转化为可执行规则。",
+      "highlight": "十四届全国人大常委会第二十五次会议表决通过《中华人民共和国检察公益诉讼法》，自2027年1月1日起施行。",
+      "summary": "文章称，十四届全国人大常委会第二十五次会议表决通过《中华人民共和国检察公益诉讼法》，该法自2027年1月1日起施行。报道将其定位为原创性“中国方案”上升为国家法律制度，值得关注其后续对检察公益诉讼实践的规范作用。",
+      "failureAnalysis": "已确认的是法律获得表决通过并明确施行日期；具体条文、适用范围和配套安排仍需以正式法律文本为准。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "十四届全国人大常委会第二十五次会议今天(6日)表决通过《中华人民共和国南极活动与环境保护法》，明年1月1日起施行。该法的通过，是我国严格遵守、切实履行国际南极治理的基石——《南极条约》的具体体现。它对外是一部履约法，对内则全面系统地将我国南极工作实践经验上升为法律，让各类南极活动有法可依。",
+      "sourceExcerpt": "昨天(6日)，十四届全国人大常委会第二十五次会议表决通过《中华人民共和国检察公益诉讼法》，该法自2027年1月1日起施行。",
       "translations": {
         "zh": {
-          "title": "我国出台南极活动与环境保护法 明年1月1日起施行",
-          "highlight": "十四届全国人大常委会第二十五次会议表决通过《中华人民共和国南极活动与环境保护法》，明年1月1日起施行。",
-          "summary": "报道称，十四届全国人大常委会第二十五次会议表决通过《中华人民共和国南极活动与环境保护法》，该法将于明年1月1日起施行。报道将其定位为对外履行《南极条约》的履约法，对内则把我国南极工作实践经验系统上升为法律，使各类南极活动有法可依。值得关注的是，这部法律把国际南极治理义务与国内法治框架连接起来。",
-          "failureAnalysis": "关键看点是“对外履约、对内立规”的双重定位：国际条约义务需要通过国内法律转化为可执行规则。"
+          "title": "检察公益诉讼法表决通过 2027年起施行",
+          "highlight": "十四届全国人大常委会第二十五次会议表决通过《中华人民共和国检察公益诉讼法》，自2027年1月1日起施行。",
+          "summary": "文章称，十四届全国人大常委会第二十五次会议表决通过《中华人民共和国检察公益诉讼法》，该法自2027年1月1日起施行。报道将其定位为原创性“中国方案”上升为国家法律制度，值得关注其后续对检察公益诉讼实践的规范作用。",
+          "failureAnalysis": "已确认的是法律获得表决通过并明确施行日期；具体条文、适用范围和配套安排仍需以正式法律文本为准。"
         },
         "en": {
-          "highlight": "The Standing Committee of the 14th National People's Congress adopted the Law of the People's Republic of China on Antarctic Activities and Environmental Protection, effective January 1 next year.",
-          "summary": "The article reports that China's legislature passed the Antarctic Activities and Environmental Protection Law, which will take effect on January 1 next year. It frames the law as a treaty-implementation measure abroad and as a domestic legal codification of China's Antarctic work practices at home, giving various activities a legal basis. It is worth reading for how domestic legislation connects with international Antarctic governance.",
-          "failureAnalysis": "The key takeaway is the dual framing: international treaty obligations are translated into an executable domestic legal framework, with compliance implications for Antarctic activities.",
-          "title": "China Enacts Law on Antarctic Activities and Environmental Protection"
+          "highlight": "The 25th session of the 14th NPC Standing Committee voted to adopt the PRC Procuratorial Public Interest Litigation Law, which will take effect on January 1, 2027.",
+          "summary": "The article reports that the 25th session of the 14th NPC Standing Committee voted to adopt the PRC Procuratorial Public Interest Litigation Law, effective January 1, 2027. It frames the law as an original “Chinese approach” elevated into the national legal system, making its later role in regulating procuratorial public interest litigation worth watching.",
+          "failureAnalysis": "The confirmed facts are passage and the effective date; specific provisions, scope, and implementing arrangements should be checked against the official legal text.",
+          "title": "Procuratorial Public Interest Litigation Law Adopted, Effective in 2027"
         }
       }
     },
     {
-      "id": "news-2a336572e1644fa0873a0aeb473e5de7",
+      "id": "news-e04c897a05b84ae68b932890a9223d2b",
       "category": "domestic",
-      "title": "刘海星同朝鲜劳动党中央政治局委员、中央书记、国际部部长金成男举行会谈",
+      "title": "专访英国经济学家罗思义：与中国合作才是欧洲合理的选择",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-07/10728163.shtml",
+      "publishedAt": "2026-11-07T13:20:56.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "欧洲的经济问题不是中国制造的问题，当政府部门一些人不断推动保护主义时，欧洲的行业主体却开始反对保护主义。",
+      "summary": "文章报道，近期欧洲对华贸易保护主义持续抬头，但今年参加进博会的欧洲企业数量达到上千家，欧洲学界及产业界也纷纷发声反对贸易保护主义。英国经济学家罗思义认为，欧洲的经济问题并非源于中国制造，政府层面推动保护主义时，欧洲行业主体却在反对保护主义。这有助于观察欧洲对华政策表态与产业界实际选择之间的分化。",
+      "failureAnalysis": "关键看点在于，欧洲政治层面的保护主义升温，并不等于企业界愿意放弃与中国的合作。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "近期，欧洲对华贸易保护主义持续抬头，但今年，参加进博会的欧洲企业数量达到了上千家，欧洲学界及产业界也纷纷发出不同声音，反对贸易保护主义。来进博会参加上海虹桥国际经济论坛的英国经济学家罗思义认为：欧洲的经济问题不是中国制造的问题，当政府部门一些人不断推动保护主义时，欧洲的行业主体却开始反对保护主义。",
+      "translations": {
+        "zh": {
+          "title": "英国经济学家罗思义：与中国合作才是欧洲合理的选择",
+          "highlight": "欧洲的经济问题不是中国制造的问题，当政府部门一些人不断推动保护主义时，欧洲的行业主体却开始反对保护主义。",
+          "summary": "文章报道，近期欧洲对华贸易保护主义持续抬头，但今年参加进博会的欧洲企业数量达到上千家，欧洲学界及产业界也纷纷发声反对贸易保护主义。英国经济学家罗思义认为，欧洲的经济问题并非源于中国制造，政府层面推动保护主义时，欧洲行业主体却在反对保护主义。这有助于观察欧洲对华政策表态与产业界实际选择之间的分化。",
+          "failureAnalysis": "关键看点在于，欧洲政治层面的保护主义升温，并不等于企业界愿意放弃与中国的合作。"
+        },
+        "en": {
+          "highlight": "Europe's economic problems are not caused by Chinese manufacturing; while some government officials keep pushing protectionism, European industry actors are beginning to oppose it.",
+          "summary": "The article reports that European trade protectionism has been rising recently, yet thousands of European companies are attending this year's CIIE, and European academic and industry voices are opposing protectionism. British economist Luo Siyi argues that Europe's economic problems are not caused by Chinese manufacturing. It is worth reading for the contrast between protectionist pressure in some government circles and resistance from European industry.",
+          "failureAnalysis": "The key takeaway is a split between political rhetoric and business practice in Europe: rising protectionism at the policy level does not mean European firms are willing to give up cooperation with China.",
+          "title": "British Economist Luo Siyi: Cooperation with China Is the Reasonable Choice for Europe"
+        }
+      }
+    },
+    {
+      "id": "news-c679e3c1e14b480f9e00d89897a1525c",
+      "category": "domestic",
+      "title": "学习贯彻党的二十届五中全会精神丨学习贯彻党的二十届五中全会精神中央宣讲团在青海宣讲",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-06/10727715.shtml",
-      "publishedAt": "2026-11-06T15:42:37.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-07/10728126.shtml",
+      "publishedAt": "2026-11-07T12:47:08.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "双方就共同落实好两党两国最高领导人重要共识，加强党际交往、推动中朝关系发展等交换意见。",
-      "summary": "新华社消息显示，11月6日中共中央对外联络部部长刘海星在北京同朝鲜劳动党中央政治局委员、中央书记、国际部部长金成男举行会谈。双方围绕落实两党两国最高领导人重要共识、加强党际交往和推动中朝关系发展交换意见，适合关注中朝党际交往与双边关系公开动向的读者了解。",
-      "failureAnalysis": "这是一则官方外事会谈消息，公开信息集中在会谈议题与双方共识，未披露具体成果或后续安排。阅读时应把已确认的会谈事实与尚未公开的细节区分开。",
+      "highlight": "中央宣讲团11月6日至7日在青海宣讲党的二十届五中全会精神，吴汉圣作宣讲报告。",
+      "summary": "报道显示，中央宣讲团于11月6日至7日在青海开展党的二十届五中全会精神宣讲，中央社会工作部部长吴汉圣作报告。信息来自官方RSS源，核心可核实事实是宣讲时间、地点、主题和报告人。对关注国内政策传达节奏的读者，这是一条可确认的官方活动信息。",
+      "failureAnalysis": "可确认的公共影响限于官方宣讲活动本身：时间、地点、主题和报告人明确；未提供更多政策细节或现场效果数据。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "新华社北京11月6日电 11月6日，中共中央对外联络部部长刘海星在北京同朝鲜劳动党中央政治局委员、中央书记、国际部部长金成男举行会谈。双方就共同落实好两党两国最高领导人重要共识，加强党际交往、推动中朝关系发展等交换意见。",
+      "sourceExcerpt": "新华社西宁11月7日电(记者柳泽兴)学习贯彻党的二十届五中全会精神中央宣讲团11月6日至7日在青海宣讲，中央宣讲团成员、中央社会工作部部长吴汉圣作宣讲报告。",
       "translations": {
         "zh": {
-          "title": "刘海星同朝鲜劳动党中央书记金成男举行会谈",
-          "highlight": "双方就共同落实好两党两国最高领导人重要共识，加强党际交往、推动中朝关系发展等交换意见。",
-          "summary": "新华社消息显示，11月6日中共中央对外联络部部长刘海星在北京同朝鲜劳动党中央政治局委员、中央书记、国际部部长金成男举行会谈。双方围绕落实两党两国最高领导人重要共识、加强党际交往和推动中朝关系发展交换意见，适合关注中朝党际交往与双边关系公开动向的读者了解。",
-          "failureAnalysis": "这是一则官方外事会谈消息，公开信息集中在会谈议题与双方共识，未披露具体成果或后续安排。阅读时应把已确认的会谈事实与尚未公开的细节区分开。"
+          "title": "中央宣讲团在青海宣讲党的二十届五中全会精神",
+          "highlight": "中央宣讲团11月6日至7日在青海宣讲党的二十届五中全会精神，吴汉圣作宣讲报告。",
+          "summary": "报道显示，中央宣讲团于11月6日至7日在青海开展党的二十届五中全会精神宣讲，中央社会工作部部长吴汉圣作报告。信息来自官方RSS源，核心可核实事实是宣讲时间、地点、主题和报告人。对关注国内政策传达节奏的读者，这是一条可确认的官方活动信息。",
+          "failureAnalysis": "可确认的公共影响限于官方宣讲活动本身：时间、地点、主题和报告人明确；未提供更多政策细节或现场效果数据。"
         },
         "en": {
-          "highlight": "The two sides exchanged views on implementing the important consensus of the top leaders of the two parties and countries, strengthening inter-party exchanges, and advancing China-DPRK relations.",
-          "summary": "Xinhua reports that on November 6, Liu Haixing, head of the International Department of the CPC Central Committee, held talks in Beijing with Kim Song Nam, a Political Bureau member, Central Committee secretary, and International Department director of the DPRK Workers' Party. They exchanged views on implementing the top leaders' important consensus, strengthening inter-party exchanges, and advancing China-DPRK relations, making this an official readout for tracking publicly stated positions on party-to-party and bilateral ties.",
-          "failureAnalysis": "This is an official foreign-affairs meeting readout; the public information centers on discussion topics and consensus, without specific outcomes or follow-up arrangements. Readers should distinguish confirmed meeting facts from undisclosed details.",
-          "title": "Liu Haixing Holds Talks with Kim Song Nam of the DPRK Workers' Party"
+          "highlight": "The central lecture team delivered a report on the Fifth Plenary Session of the 20th CPC Central Committee in Qinghai on Nov. 6-7, with Wu Hansheng as speaker.",
+          "summary": "The report says the central lecture team held a session in Qinghai on Nov. 6-7 to promote the spirit of the Fifth Plenary Session of the 20th CPC Central Committee, and Wu Hansheng, minister of the Central Social Work Department, gave the lecture report. The verifiable facts are the time, place, theme and speaker, drawn from an official RSS source. It is worth reading as a confirmed signal of how official policy messaging is being scheduled.",
+          "failureAnalysis": "The confirmed public impact is limited to the official lecture activity itself: time, place, theme and speaker are clear, but no further policy details or on-site effect data are provided.",
+          "title": "Central Lecture Team Promotes Fifth Plenary Session Spirit in Qinghai"
         }
       }
     },
     {
-      "id": "news-034f03f668fd4afabec261867025aad3",
-      "category": "domestic",
-      "title": "浙江开展长期照护师培训和技能竞赛 充实专业人才队伍",
-      "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-06/10727703.shtml",
-      "publishedAt": "2026-11-06T15:40:33.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "这是浙江首次将长期护理保险职业的师资培训、技能竞赛、管理服务体系建设培训合并举办，以赛促训、以训促建。",
-      "summary": "5日至6日，浙江省长期照护师政策业务系列培训班在湖州举行，并同步举办第二届长期护理保险职业技能竞赛和管理服务体系建设培训。这是浙江首次将师资培训、技能竞赛与管理服务体系建设培训合并举办，强调以赛促训、以训促建。对非技术管理者而言，这提供了一个观察地方如何系统化充实长期照护专业人才队伍的窗口。",
-      "failureAnalysis": "关键点在于，长期照护人才队伍建设不能只靠单次培训；浙江将培训、竞赛和管理服务体系建设合并推进，实际成效仍需看后续人才留存与服务质量管理。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "中新网湖州11月6日电(张煜欢)5日至6日，浙江省长期照护师政策业务系列培训班在浙江湖州举行，其间同步举办第二届长期护理保险职业技能竞赛，并开展管理服务体系建设培训。这是浙江首次将长期护理保险职业的师资培训、技能竞赛、管理服务体系建设培训合并举办，以赛促训、以训促建。",
-      "translations": {
-        "zh": {
-          "title": "浙江首次合并举办长期照护师培训与技能竞赛",
-          "highlight": "这是浙江首次将长期护理保险职业的师资培训、技能竞赛、管理服务体系建设培训合并举办，以赛促训、以训促建。",
-          "summary": "5日至6日，浙江省长期照护师政策业务系列培训班在湖州举行，并同步举办第二届长期护理保险职业技能竞赛和管理服务体系建设培训。这是浙江首次将师资培训、技能竞赛与管理服务体系建设培训合并举办，强调以赛促训、以训促建。对非技术管理者而言，这提供了一个观察地方如何系统化充实长期照护专业人才队伍的窗口。",
-          "failureAnalysis": "关键点在于，长期照护人才队伍建设不能只靠单次培训；浙江将培训、竞赛和管理服务体系建设合并推进，实际成效仍需看后续人才留存与服务质量管理。"
-        },
-        "en": {
-          "highlight": "Zhejiang for the first time combined long-term care insurance teacher training, skills competitions, and management service system training, using competition to drive training and training to drive system building.",
-          "summary": "On November 5-6, Zhejiang held a long-term care worker policy and business training series in Huzhou, alongside the second long-term care insurance vocational skills competition and management service system training. It was the first time the province combined teacher training, skills competition, and management service system training, with the aim of promoting training through competition and system building through training. It offers a view of how a local government is trying to strengthen the long-term care workforce.",
-          "failureAnalysis": "The key takeaway is that long-term care workforce development requires more than one-off training; combining training, competition, and system building is a useful approach, but retention and service quality will determine the actual effect.",
-          "title": "Zhejiang First Combines Long-Term Care Worker Training and Skills Competition"
-        }
-      }
-    },
-    {
-      "id": "news-9c041ca6d45b47fc8a4e8038b7b0f295",
+      "id": "news-58721770021c432fa07080532572fb23",
       "category": "international",
-      "title": "PM tells firms to publish salaries in job adverts ahead of new law",
-      "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/cmd9343z3zw2o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-06T15:25:43.0000000+00:00",
+      "title": "Ousted Paraguayan president appears before prosecutors",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/11/07/nx-s1-6033373/paraguay-president-ousted-bank-collapse",
+      "publishedAt": "2026-11-07T17:14:36.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "政府认为，这一变化将帮助求职者，并可能有助于防止薪酬歧视。",
-      "summary": "BBC Business 报道，首相要求企业在招聘广告中公布薪资，为即将实施的新法做准备。政府认为，这能帮助求职者，也可能有助于防止薪酬歧视。对企业招聘透明度和薪酬公平而言，这是值得关注的监管信号。",
-      "failureAnalysis": "这项要求的核心是把薪资透明度前置到招聘环节，政府将其视为保护求职者和减少薪酬歧视的手段。",
+      "highlight": "巴拉圭总统圣地亚哥·培尼亚周五被解职并被软禁；参议院在国有附属银行倒闭后表决通过弹劾。",
+      "summary": "文章报道巴拉圭总统圣地亚哥·培尼亚遭解职并被软禁，随后出现在检察官面前。参议院在国有附属银行倒闭后通过弹劾投票。事件值得关注，因为它显示银行危机如何迅速演变为政治与法律危机。",
+      "failureAnalysis": "关键点在于，银行倒闭触发了弹劾，并迅速将政治领导人置于司法程序之中；后续应关注问询与弹劾程序的法律依据。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "The government argues the change will help jobseekers and could help to prevent pay discrimination.",
+      "sourceExcerpt": "Paraguayan President Santiago Peña was removed from office and placed under house arrest Friday. The Senate voted on his impeachment after the collapse of a state-affiliated bank.",
       "translations": {
         "zh": {
-          "title": "首相要求企业在招聘广告中公布薪资，为新法铺路",
-          "highlight": "政府认为，这一变化将帮助求职者，并可能有助于防止薪酬歧视。",
-          "summary": "BBC Business 报道，首相要求企业在招聘广告中公布薪资，为即将实施的新法做准备。政府认为，这能帮助求职者，也可能有助于防止薪酬歧视。对企业招聘透明度和薪酬公平而言，这是值得关注的监管信号。",
-          "failureAnalysis": "这项要求的核心是把薪资透明度前置到招聘环节，政府将其视为保护求职者和减少薪酬歧视的手段。"
+          "title": "巴拉圭被解职总统接受检察官问询",
+          "highlight": "巴拉圭总统圣地亚哥·培尼亚周五被解职并被软禁；参议院在国有附属银行倒闭后表决通过弹劾。",
+          "summary": "文章报道巴拉圭总统圣地亚哥·培尼亚遭解职并被软禁，随后出现在检察官面前。参议院在国有附属银行倒闭后通过弹劾投票。事件值得关注，因为它显示银行危机如何迅速演变为政治与法律危机。",
+          "failureAnalysis": "关键点在于，银行倒闭触发了弹劾，并迅速将政治领导人置于司法程序之中；后续应关注问询与弹劾程序的法律依据。"
         },
         "en": {
-          "highlight": "The government argues the change will help jobseekers and could help to prevent pay discrimination.",
-          "summary": "BBC Business reports that the prime minister is telling firms to publish salaries in job adverts ahead of new legislation. The government argues the change will help jobseekers and could help prevent pay discrimination. It is worth reading as a signal about pay transparency and fairness in hiring.",
-          "failureAnalysis": "The key takeaway is that pay transparency is being pushed into the hiring process, with the government framing it as a way to help jobseekers and reduce pay discrimination.",
-          "title": "PM Tells Firms to Publish Salaries in Job Adverts Ahead of New Law"
+          "highlight": "Paraguayan President Santiago Peña was removed from office and placed under house arrest Friday; the Senate voted to impeach him after the collapse of a state-affiliated bank.",
+          "summary": "The article reports that Paraguayan President Santiago Peña was removed from office and placed under house arrest, then appeared before prosecutors. The Senate voted to impeach him after the collapse of a state-affiliated bank. It is worth reading because it shows how a banking crisis can quickly become a political and legal crisis.",
+          "failureAnalysis": "The key point is that the bank collapse triggered impeachment and quickly put a political leader into judicial proceedings; follow-up should focus on the legal basis for the questioning and impeachment process.",
+          "title": "Ousted Paraguayan president appears before prosecutors"
         }
       }
     },
     {
-      "id": "news-ab7dfa95429444dfb08f4d81844ccd22",
+      "id": "news-e5da783438274cdf8ee0dd5b5dc98010",
       "category": "international",
-      "title": "AI stocks climb after trillions wiped from market values",
+      "title": "Why the US midterms sparked an AI stock selloff",
       "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/c35ynnpzdq51o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-06T19:37:10.0000000+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-06T18:32:16.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "投资者此前抛售科技股，部分原因是担心民主党赢得选举会导致人工智能发展放缓。",
-      "summary": "BBC Business 报道，AI 股票在经历数万亿美元市值蒸发后出现上涨。此前的抛售部分源于投资者担心民主党胜选会使 AI 发展放缓。这条新闻值得关注，因为它显示 AI 板块的短期走势会受到政治预期和市场情绪影响。",
-      "failureAnalysis": "关键点在于：AI 股票也会被政治预期和情绪交易左右，短期涨跌不一定反映技术或业务基本面的变化。",
+      "highlight": "对更多AI监管的担忧似乎引发了投资者的恐惧，但对AI行业的担忧已持续一段时间。",
+      "summary": "BBC Business报道称，美国中期选举后的AI股票抛售，似乎源于市场对更多AI监管的担忧。投资者对AI行业的顾虑在此之前已在累积。对非技术管理者而言，这提醒政策预期会快速改变AI相关公司的市场情绪。",
+      "failureAnalysis": "关键点：AI板块会受监管预期驱动，市场情绪可能先于基本面变化；对AI行业的担忧也可能早已存在。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI development.",
+      "sourceExcerpt": "Fears of more AI regulation appear to have sparked fear among investors, but concerns about the industry have been growing for some time.",
       "translations": {
         "zh": {
-          "title": "AI股票在数万亿美元市值蒸发后回升",
-          "highlight": "投资者此前抛售科技股，部分原因是担心民主党赢得选举会导致人工智能发展放缓。",
-          "summary": "BBC Business 报道，AI 股票在经历数万亿美元市值蒸发后出现上涨。此前的抛售部分源于投资者担心民主党胜选会使 AI 发展放缓。这条新闻值得关注，因为它显示 AI 板块的短期走势会受到政治预期和市场情绪影响。",
-          "failureAnalysis": "关键点在于：AI 股票也会被政治预期和情绪交易左右，短期涨跌不一定反映技术或业务基本面的变化。"
+          "title": "美国中期选举为何引发AI股票抛售",
+          "highlight": "对更多AI监管的担忧似乎引发了投资者的恐惧，但对AI行业的担忧已持续一段时间。",
+          "summary": "BBC Business报道称，美国中期选举后的AI股票抛售，似乎源于市场对更多AI监管的担忧。投资者对AI行业的顾虑在此之前已在累积。对非技术管理者而言，这提醒政策预期会快速改变AI相关公司的市场情绪。",
+          "failureAnalysis": "关键点：AI板块会受监管预期驱动，市场情绪可能先于基本面变化；对AI行业的担忧也可能早已存在。"
         },
         "en": {
-          "highlight": "Investors had been selling off tech shares in part due to concerns the Democrat election victory would mean slower AI development.",
-          "summary": "BBC Business reports that AI stocks climbed after trillions of dollars were wiped from market values. The earlier sell-off was partly driven by concerns that a Democrat election victory would slow AI development. It is worth reading because it shows how political expectations and market sentiment can shape short-term moves in AI-related shares.",
-          "failureAnalysis": "The key takeaway is that AI stocks can be swayed by political expectations and sentiment-driven trading, so short-term price moves may not reflect changes in technology or business fundamentals.",
-          "title": "AI Stocks Rebound After Trillions Wiped From Market Values"
+          "highlight": "Fears of more AI regulation appear to have sparked fear among investors, but concerns about the industry have been growing for some time.",
+          "summary": "BBC Business reports that the AI stock selloff after the US midterms appears to have been sparked by fears of more AI regulation. Investor concerns about the industry had already been growing for some time. The item is worth reading as a reminder that policy expectations can quickly shift sentiment around AI-related companies.",
+          "failureAnalysis": "Key takeaway: AI stocks can be driven by regulatory expectations, and market sentiment may move before fundamentals do; concerns about the industry may also predate the election.",
+          "title": "Why the US Midterms Sparked an AI Stock Selloff"
         }
       }
     },
     {
-      "id": "life-c883b863887c486fa39a256284cb6f3b",
+      "id": "life-d437b7fa74c2443b85ca564ff4038f8f",
       "category": "international",
-      "title": "The Relationship Between Comedy, Democracy, and AI",
+      "title": "Umberto Eco’s Antilibrary: Why Unread Books Are More Valuable to Our Lives than Read Ones",
       "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/11/06/humor/",
-      "publishedAt": "2026-11-06T19:46:28.0000000+00:00",
+      "url": "https://www.themarginalian.org/2026/11/05/umberto-eco-antilibrary/",
+      "publishedAt": "2026-11-05T13:25:39.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 3",
-      "highlight": "幽默是一种基本的人类自由：笑能保护我们免受一切使人非人化的东西——暴政、交易主义、囚禁与商品化。",
-      "summary": "文章从弗兰克尔在霍尔ocaust中把幽默视为保持理智与生存的救生索出发，提出幽默是一种基本的人类自由，能让人暂时超脱处境。它进一步把共同的笑与自由社会、思想自由和民主联系起来，并把幽默理解为制造惊喜的艺术。适合想从人文角度理解幽默、民主与AI关系的人阅读。",
-      "failureAnalysis": "关键启示：幽默是保护人性与自由的基本能力，不应被简化为娱乐或交易；讨论AI与民主时，应重视这种维系共同人性的经验。",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "在一个把知识当作让我们在等级秩序中攀升的装饰的文化里，如何成为一个“反学者”。",
+      "summary": "文章围绕艾柯的“反图书馆”概念，讨论未读之书为何可能比已读之书对生活更有价值。它进一步追问：在一个把知识当作阶层攀升装饰的文化里，人如何成为“反学者”。这值得读，因为它促使人重新思考阅读与知识的意义，而不只把它们当作身份展示。",
+      "failureAnalysis": "关键启发：把知识当装饰会让人追逐身份排序；保留大量未读之书，可提醒自己未知仍大、学习不该止于展示。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "“Humor, more than anything else in the human make-up, can afford an aloofness and an ability to rise above any situation, even if only for a few seconds,” Viktor Frankl wrote in recalling the role of humor as a lifeline to sanity and survival in the Holocaust. Humor is a fundamental human freedom: To laugh is to protect ourselves from all that dehumanizes us — tyranny and transactionalism, captivity and commodification. Humor is also fundamental to free societies, to freedom of thought, to democracy: To laugh together is to harmonize our deepest humanity.",
+      "sourceExcerpt": "How to become an \"antischolar\" in a culture that treats knowledge as \"an ornament that allows us to rise in the pecking order.\"",
       "translations": {
         "zh": {
-          "title": "喜剧、民主与AI的关系",
-          "highlight": "幽默是一种基本的人类自由：笑能保护我们免受一切使人非人化的东西——暴政、交易主义、囚禁与商品化。",
-          "summary": "文章从弗兰克尔在霍尔ocaust中把幽默视为保持理智与生存的救生索出发，提出幽默是一种基本的人类自由，能让人暂时超脱处境。它进一步把共同的笑与自由社会、思想自由和民主联系起来，并把幽默理解为制造惊喜的艺术。适合想从人文角度理解幽默、民主与AI关系的人阅读。",
-          "failureAnalysis": "关键启示：幽默是保护人性与自由的基本能力，不应被简化为娱乐或交易；讨论AI与民主时，应重视这种维系共同人性的经验。"
+          "title": "艾柯的“反图书馆”：为何未读之书比已读之书更有价值",
+          "highlight": "在一个把知识当作让我们在等级秩序中攀升的装饰的文化里，如何成为一个“反学者”。",
+          "summary": "文章围绕艾柯的“反图书馆”概念，讨论未读之书为何可能比已读之书对生活更有价值。它进一步追问：在一个把知识当作阶层攀升装饰的文化里，人如何成为“反学者”。这值得读，因为它促使人重新思考阅读与知识的意义，而不只把它们当作身份展示。",
+          "failureAnalysis": "关键启发：把知识当装饰会让人追逐身份排序；保留大量未读之书，可提醒自己未知仍大、学习不该止于展示。"
         },
         "en": {
-          "highlight": "Humor is a fundamental human freedom: To laugh is to protect ourselves from all that dehumanizes us — tyranny and transactionalism, captivity and commodification.",
-          "summary": "Starting from Viktor Frankl’s account of humor as a lifeline to sanity and survival in the Holocaust, the article presents humor as a basic human freedom that lets us rise above any situation, if only briefly. It links laughing together to free societies, freedom of thought, and democracy, and describes humor as the art of surprise. It is worth reading for a humanistic perspective on why humor matters beyond entertainment.",
-          "failureAnalysis": "The key takeaway is that humor is a basic freedom that protects human dignity against tyranny and commodification; debates about AI and democracy should not reduce it to entertainment or a transaction.",
-          "title": "The Relationship Between Comedy, Democracy, and AI"
+          "highlight": "How to become an \"antischolar\" in a culture that treats knowledge as \"an ornament that allows us to rise in the pecking order.\"",
+          "summary": "The piece uses Umberto Eco's idea of the \"antilibrary\" to ask why unread books may matter more to our lives than read ones. It also asks how to become an \"antischolar\" in a culture that treats knowledge as an ornament for climbing the pecking order. It is worth reading because it invites a rethink of reading and knowledge beyond status display.",
+          "failureAnalysis": "Key takeaway: treating knowledge as an ornament encourages status competition; keeping many unread books can remind us that the unknown remains large and learning should not stop at display.",
+          "title": "Umberto Eco's Antilibrary: Why Unread Books Matter More Than Read Ones"
         }
       }
     },
     {
-      "id": "life-8a8b034424ba4393bb8631ad103376fa",
+      "id": "life-d15977c704af46609374a1fd59c3fb5a",
       "category": "international",
-      "title": "How to break a bad habit",
+      "title": "How to take notes that actually help you learn",
       "source": "Psyche",
-      "url": "https://psyche.co/videos/to-break-a-bad-habit-try-telling-yourself-a-different-story",
-      "publishedAt": "2026-11-06T11:01:00.0000000+00:00",
+      "url": "https://psyche.co/guides/how-to-take-notes-that-actually-help-you-learn",
+      "publishedAt": "2026-11-05T11:00:00.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 3",
-      "highlight": "如果你明知某个习惯对自己有害却仍感到卡住，更了解自己的大脑或许能帮你改写叙事。",
-      "summary": "这段 Psyche 视频由 Dr Tracey Marks 讲述如何打破坏习惯：先更了解大脑，再改变自己讲述习惯的方式。它适合想从认知角度理解习惯改变的人快速获取一个可操作的切入点。",
-      "failureAnalysis": "关键不是只靠意志力硬扛，而是先理解大脑如何维持旧习惯，再改写你对它的叙述。",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "若想记住并理解，单纯抄写还不够；一位学习专家分享如何让笔记真正为你所用。",
+      "summary": "文章的核心观点是：做笔记若只停留在复制内容，难以帮助记忆和理解。学习专家 Cynthia Nebel 在 Psyche 的指南中分享如何让笔记真正服务于学习，适合想改进学习方法的人阅读。",
+      "failureAnalysis": "关键启示：笔记的价值不只在记录得全，更在于是否促进理解与记忆；先让笔记服务于学习，而不是只做抄写。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Feel stuck with a habit you know is bad for you? Getting to know your brain better could help you change the narrative - Video by Dr Tracey Marks Watch on Psyche",
+      "sourceExcerpt": "If you want to remember and understand, copying isn’t enough. An expert on learning shares how to make notes work for you - by Cynthia Nebel Read on Psyche",
       "translations": {
         "zh": {
-          "title": "如何打破坏习惯",
-          "highlight": "如果你明知某个习惯对自己有害却仍感到卡住，更了解自己的大脑或许能帮你改写叙事。",
-          "summary": "这段 Psyche 视频由 Dr Tracey Marks 讲述如何打破坏习惯：先更了解大脑，再改变自己讲述习惯的方式。它适合想从认知角度理解习惯改变的人快速获取一个可操作的切入点。",
-          "failureAnalysis": "关键不是只靠意志力硬扛，而是先理解大脑如何维持旧习惯，再改写你对它的叙述。"
+          "title": "如何做真正帮助学习的笔记",
+          "highlight": "若想记住并理解，单纯抄写还不够；一位学习专家分享如何让笔记真正为你所用。",
+          "summary": "文章的核心观点是：做笔记若只停留在复制内容，难以帮助记忆和理解。学习专家 Cynthia Nebel 在 Psyche 的指南中分享如何让笔记真正服务于学习，适合想改进学习方法的人阅读。",
+          "failureAnalysis": "关键启示：笔记的价值不只在记录得全，更在于是否促进理解与记忆；先让笔记服务于学习，而不是只做抄写。"
         },
         "en": {
-          "highlight": "Feel stuck with a habit you know is bad for you? Getting to know your brain better could help you change the narrative.",
-          "summary": "This Psyche video by Dr Tracey Marks explains that breaking a bad habit can start with understanding your brain better and changing the story you tell yourself about the habit. It offers a quick cognitive angle for readers who want a practical entry point into habit change.",
-          "failureAnalysis": "The key is not simply to tough it out through willpower, but to understand how the brain sustains the old habit and then rewrite the narrative around it.",
-          "title": "How to Break a Bad Habit"
+          "highlight": "If you want to remember and understand, copying isn’t enough; a learning expert shares how to make notes work for you.",
+          "summary": "This Psyche guide says that copying alone is not enough to help you remember and understand. Cynthia Nebel shares how to make notes serve learning, making it worth reading for anyone who wants better study methods.",
+          "failureAnalysis": "The practical point is that copying is not enough: note-taking should be designed to help you remember and understand.",
+          "title": "How to Take Notes That Actually Help You Learn"
         }
       }
     },
     {
-      "id": "paper-2611.01731",
+      "id": "paper-2610.36159",
       "category": "paper",
-      "title": "Robust EEG-based Emotion Recognition from Coarse Trial-level Labels under Intra-trial Affective Variability",
+      "title": "MtReNIRS: A Self-Supervised Foundation Model for Transferable Neurovascular Representations",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2611.01731v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2611.01731",
-      "publishedAt": "2026-11-01T09:26:14.0000000Z",
+      "url": "https://arxiv.org/pdf/2610.36159v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2610.36159",
+      "publishedAt": "2026-10-26T18:59:54.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
       "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
@@ -234,21 +234,22 @@
         "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
         "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
         "technicalTerms": [
-          "EEG：把大脑电信号当作输入数据。"
+          "EEG：把大脑电信号当作输入数据。",
+          "LoRA：用较小参数改造大模型的轻量适配方法。"
         ],
         "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
       },
-      "highlight": "该预印本关注试次内情感波动条件下，仅依赖粗粒度试次级标签进行鲁棒脑电情绪识别的问题。",
-      "summary": "论文标题表明其研究脑电情绪识别在标签较粗且单个试次内情感存在变化时的鲁棒性。由于仅提供标题与作者单位信息，具体方法、数据和结论尚无法从给定文本确认。该问题对真实场景中标注成本高、情感动态变化的应用具有潜在意义。",
-      "failureAnalysis": "当前可见文本仅为标题和作者单位，缺少摘要、实验设置与结果，无法评估其鲁棒性主张的证据强度。",
+      "highlight": "MtReNIRS是面向可迁移神经血管表征的自监督基础模型，题名明确其定位。",
+      "summary": "所给材料只包含论文题名、作者信息和单位开头，未提供摘要、方法或实验结果。题名显示该研究提出MtReNIRS，一个自监督基础模型，目标是学习可迁移的神经血管表征。其重要性目前只能从题名所强调的可迁移定位推断。",
+      "failureAnalysis": "源文本缺少摘要、方法和实验部分，无法核验该模型的迁移效果、性能或临床适用性，只能确认题名所声明的自监督基础模型定位。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "ROBUSTEEG-BASEDEMOTIONRECOGNITION FROMCOARSE TRIAL-LEVELLABELS UNDERINTRA-TRIALAFFECTIVE VARIABILITY A PREPRINT Xiaocong Zeng School of Mathematics (Zhuhai) Sun Yat-sen University Guangdong, 519082, CHINA zengxc3@mail2.sysu.edu.cn Buxuan Wang School of Computer Science and Engineering Sun Yat-sen University Guangdong, 510275, CHINA wangbx29@mail2.sysu.edu.cn Xin Yang School of Mathematics (Zhuhai) Sun Yat-sen University Guangdong, 519082, CHINA yangx367@mail2.sysu.edu.cn Pei Huang School of Mathematics (Zhuhai) Sun Yat-sen University Guangdong, 519082, CHINA huangpei1993@qq.com Dongyang Kuang School of Mathematics (Zhuhai) Sun Yat-sen University Guangdong, 519082, CHINA kuangdy@mail.sysu.edu.cn ABSTRACT EEG-based emotion recognition has become an active research area in brain–computer interfaces. However, fine-grained affective annotation is costly, so most datasets provide only a global label for each long EEG trial. For practical emotion recognition, trials are commonly divided into short temporal windows, with the global label propagated to all windows for training.",
+      "sourceExcerpt": "<Society logo(s) and publica- tion title will appear here.> Received XX Month, XXXX; revised XX Month, XXXX; accepted XX Month, XXXX; Date of publication XX Month, XXXX; date of current version XX Month, XXXX. Digital Object Identifier 10.1109/XXXX.2022.1234567 MtReNIRS: A Self-Supervised Foundation Model for Transferable Neurovascular Representations Tony Chae1, Kleanthis Avramidis2, Dimitra Emmanouilidou3, and Ivan J. Tashev3 1Department of Electrical Engineering and Computer Sciences, University of California, Berkeley , Berkeley , CA, USA 2Signal Analysis and Interpretation Lab, University of Southern California, Los Angeles, CA, USA 3Microsoft Research, Redmond, WA, USA Corresponding author: T ony Chae (email: tonychae01@berkeley .edu).",
       "translations": {
         "zh": {
-          "title": "基于粗粒度试次级标签的试次内情感变化鲁棒脑电情绪识别",
-          "highlight": "该预印本关注试次内情感波动条件下，仅依赖粗粒度试次级标签进行鲁棒脑电情绪识别的问题。",
-          "summary": "论文标题表明其研究脑电情绪识别在标签较粗且单个试次内情感存在变化时的鲁棒性。由于仅提供标题与作者单位信息，具体方法、数据和结论尚无法从给定文本确认。该问题对真实场景中标注成本高、情感动态变化的应用具有潜在意义。",
-          "failureAnalysis": "当前可见文本仅为标题和作者单位，缺少摘要、实验设置与结果，无法评估其鲁棒性主张的证据强度。",
+          "title": "MtReNIRS：面向可迁移神经血管表征的自监督基础模型",
+          "highlight": "MtReNIRS是面向可迁移神经血管表征的自监督基础模型，题名明确其定位。",
+          "summary": "所给材料只包含论文题名、作者信息和单位开头，未提供摘要、方法或实验结果。题名显示该研究提出MtReNIRS，一个自监督基础模型，目标是学习可迁移的神经血管表征。其重要性目前只能从题名所强调的可迁移定位推断。",
+          "failureAnalysis": "源文本缺少摘要、方法和实验部分，无法核验该模型的迁移效果、性能或临床适用性，只能确认题名所声明的自监督基础模型定位。",
           "paperCard": {
             "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
             "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
@@ -257,16 +258,17 @@
             "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
             "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
+              "EEG：把大脑电信号当作输入数据。",
+              "LoRA：用较小参数改造大模型的轻量适配方法。"
             ],
             "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
         },
         "en": {
-          "title": "Robust EEG-Based Emotion Recognition from Coarse Trial-Level Labels under Intra-Trial Affective Variability",
-          "highlight": "This preprint addresses robust EEG emotion recognition when only coarse trial-level labels are available and affect varies within a trial.",
-          "summary": "The title indicates a study of robustness in EEG emotion recognition with coarse trial-level labels and intra-trial affective variability. The supplied text contains only the title and author affiliations, so methods, data, and findings cannot be verified. The topic is potentially relevant where fine-grained labels are costly and affect changes dynamically.",
-          "failureAnalysis": "Only the title and author affiliations are visible, with no abstract, experimental setup, or results to assess the strength of the robustness claim.",
+          "title": "MtReNIRS: A Self-Supervised Foundation Model for Transferable Neurovascular Representations",
+          "highlight": "MtReNIRS is described as a self-supervised foundation model for transferable neurovascular representations, based only on the supplied title.",
+          "summary": "The supplied material contains only the paper title, author information, and the beginning of an affiliation; it provides no abstract, methods, or experimental results. The title identifies MtReNIRS as a self-supervised foundation model intended for transferable neurovascular representations, so its significance can currently be inferred only from that stated positioning.",
+          "failureAnalysis": "Because the source lacks an abstract, methods, and experiments, the model’s transfer performance, effectiveness, and clinical applicability cannot be verified; only the self-supervised foundation-model positioning stated in the title is confirmed.",
           "paperCard": {
             "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
             "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
@@ -275,7 +277,8 @@
             "implementation": "Implementation: check the input data, core model or device, and validation results.",
             "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
+              "EEG：把大脑电信号当作输入数据。",
+              "LoRA：用较小参数改造大模型的轻量适配方法。"
             ],
             "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
@@ -283,43 +286,47 @@
       }
     },
     {
-      "id": "ai-hn-50379249",
+      "id": "ai-github-1382865521",
       "category": "ai",
-      "title": "MCP Explained",
-      "source": "Hacker News",
-      "url": "https://mcp-explained.com/",
+      "title": "nano-muse/nanoMuse",
+      "source": "GitHub Search",
+      "url": "https://github.com/nano-muse/nanoMuse",
       "abstractUrl": null,
-      "publishedAt": "2026-11-05T14:08:35.0000000Z",
-      "scoreLabel": "328 points / 133 comments",
-      "aiArticleType": "concept_explanation",
+      "publishedAt": "2026-09-23T06:13:06.0000000Z",
+      "scoreLabel": "GitHub 3293 stars",
+      "aiArticleType": "application_innovation",
       "evidenceAnchors": [
         {
-          "label": "HN discussion",
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
           "kind": "secondary"
         }
       ],
-      "evidenceLabel": "HN discussion",
-      "hasPrimaryAnchor": false,
-      "requiresRiskAnalysis": false,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: HN discussion",
-      "summary": "这是一篇面向 AI 概念解释的 MCP 主题文章，在 Hacker News 获得 328 分和 133 条评论。它适合非技术管理者用来判断 MCP 为何受到技术社区关注，并建立对该概念的初步认知。",
-      "failureAnalysis": "关键不在于记住术语，而在于理解社区为何愿意投入注意力讨论一个 AI 基础概念；阅读时应把它当作概念入口，而非完整技术评估。",
-      "aiSelectionScore": 594,
-      "highlight": "该条目在 Hacker News 获得 328 分和 133 条评论，显示 AI 概念解释类内容具有较高社区讨论热度。",
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "这个 GitHub 项目提出开源个人代理，覆盖手机、电脑和浏览器，把手机屏幕与电脑作为“手”来执行任务。它强调有独立名称与外观、应用关闭后仍可工作、记住用户，并在不可逆操作前征求确认。值得关注的是它试图把跨设备个人代理做成可部署的开源产品，而不只是单点 AI 功能。",
+      "failureAnalysis": "最大风险在工程与信任：跨 Android、iOS、桌面和浏览器持续运行，受后台限制、耗电、权限和系统沙箱约束，稳定执行并不容易。它要接触屏幕、文件和设备操作，一旦误操作或数据泄露，用户信任成本很高；开源还带来安全审计与滥用治理压力。需求侧也要验证用户是否愿意把跨设备日常任务交给一个统一代理，而不是继续用现成助理和自动化工具。",
+      "aiSelectionScore": 3293,
+      "highlight": "一个有名有貌的代理，能做事、在应用关闭后继续工作、记住你，并在不可逆操作前先询问。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "HN candidate with public discussion metrics.",
+      "sourceExcerpt": "GitHub repository with 3293 stars and recent public activity. Description: nanoMuse: an open-source personal agent for every device you own. One agent with a name and a look of its own that does things, keeps working while the app is closed, remembers you, and asks before anything you cannot undo.",
       "translations": {
         "zh": {
-          "title": "MCP 解释：AI 概念入门",
-          "highlight": "该条目在 Hacker News 获得 328 分和 133 条评论，显示 AI 概念解释类内容具有较高社区讨论热度。",
-          "summary": "这是一篇面向 AI 概念解释的 MCP 主题文章，在 Hacker News 获得 328 分和 133 条评论。它适合非技术管理者用来判断 MCP 为何受到技术社区关注，并建立对该概念的初步认知。",
-          "failureAnalysis": "关键不在于记住术语，而在于理解社区为何愿意投入注意力讨论一个 AI 基础概念；阅读时应把它当作概念入口，而非完整技术评估。"
+          "title": "nanoMuse：面向所有设备的开源个人代理",
+          "highlight": "一个有名有貌的代理，能做事、在应用关闭后继续工作、记住你，并在不可逆操作前先询问。",
+          "summary": "这个 GitHub 项目提出开源个人代理，覆盖手机、电脑和浏览器，把手机屏幕与电脑作为“手”来执行任务。它强调有独立名称与外观、应用关闭后仍可工作、记住用户，并在不可逆操作前征求确认。值得关注的是它试图把跨设备个人代理做成可部署的开源产品，而不只是单点 AI 功能。",
+          "failureAnalysis": "最大风险在工程与信任：跨 Android、iOS、桌面和浏览器持续运行，受后台限制、耗电、权限和系统沙箱约束，稳定执行并不容易。它要接触屏幕、文件和设备操作，一旦误操作或数据泄露，用户信任成本很高；开源还带来安全审计与滥用治理压力。需求侧也要验证用户是否愿意把跨设备日常任务交给一个统一代理，而不是继续用现成助理和自动化工具。"
         },
         "en": {
-          "highlight": "The item drew 328 points and 133 comments on Hacker News, signaling strong community interest in an AI concept explainer.",
-          "summary": "This is an AI concept explainer about MCP, surfaced on Hacker News with 328 points and 133 comments. It is worth reading as an entry point for a non-technical leader to see why the topic is drawing technical-community attention.",
-          "failureAnalysis": "The takeaway is to treat it as a concept primer, not a full technical evaluation; the discussion signal shows attention, not proof of importance.",
-          "title": "MCP Explained: An AI Concept Primer"
+          "highlight": "One agent with a name and a look of its own that does things, keeps working while the app is closed, remembers you, and asks before anything you cannot undo.",
+          "summary": "This GitHub project presents an open-source personal agent spanning Android, iPhone/iPad, Windows/macOS/Linux, and the browser, using the phone screen and computer as its hands. It emphasizes a named, distinct-looking agent that keeps working while the app is closed, remembers the user, and asks before irreversible actions. It is worth reading as an attempt to turn cross-device personal agents into a deployable open-source product rather than a single AI feature.",
+          "failureAnalysis": "The main risks are engineering and trust: always-on cross-device execution faces background limits, battery use, permissions, and sandboxing, while screen/file access makes mistakes and data exposure costly. It also needs validation that users will delegate everyday cross-device tasks to one agent instead of existing assistants and automation tools.",
+          "title": "nanoMuse: An Open-Source Personal Agent for Every Device"
         }
       }
     }
