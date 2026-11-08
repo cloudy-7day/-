@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-11-07",
+  "issueDate": "2026-11-08",
   "updateStatus": "complete",
-  "contentFingerprint": "03d3b14519ebcf399501f1627de2c0c76310ebf657168d2540f2922effb0d43f",
+  "contentFingerprint": "db5cea311595fc091a8bb9e39a7934762bf8d4ac3c0cf5185fac3c6e54cb5f8a",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,290 +10,262 @@
   ],
   "articles": [
     {
-      "id": "news-f5bd16662a51426786070efbdadc532a",
+      "id": "news-42119130a7744767b83446c6f5f74a64",
       "category": "domestic",
-      "title": "原创性“中国方案”→国家法律制度 检察公益诉讼法明年起施行",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-07/10728166.shtml",
-      "publishedAt": "2026-11-07T13:45:48.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "十四届全国人大常委会第二十五次会议表决通过《中华人民共和国检察公益诉讼法》，自2027年1月1日起施行。",
-      "summary": "文章称，十四届全国人大常委会第二十五次会议表决通过《中华人民共和国检察公益诉讼法》，该法自2027年1月1日起施行。报道将其定位为原创性“中国方案”上升为国家法律制度，值得关注其后续对检察公益诉讼实践的规范作用。",
-      "failureAnalysis": "已确认的是法律获得表决通过并明确施行日期；具体条文、适用范围和配套安排仍需以正式法律文本为准。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "昨天(6日)，十四届全国人大常委会第二十五次会议表决通过《中华人民共和国检察公益诉讼法》，该法自2027年1月1日起施行。",
-      "translations": {
-        "zh": {
-          "title": "检察公益诉讼法表决通过 2027年起施行",
-          "highlight": "十四届全国人大常委会第二十五次会议表决通过《中华人民共和国检察公益诉讼法》，自2027年1月1日起施行。",
-          "summary": "文章称，十四届全国人大常委会第二十五次会议表决通过《中华人民共和国检察公益诉讼法》，该法自2027年1月1日起施行。报道将其定位为原创性“中国方案”上升为国家法律制度，值得关注其后续对检察公益诉讼实践的规范作用。",
-          "failureAnalysis": "已确认的是法律获得表决通过并明确施行日期；具体条文、适用范围和配套安排仍需以正式法律文本为准。"
-        },
-        "en": {
-          "highlight": "The 25th session of the 14th NPC Standing Committee voted to adopt the PRC Procuratorial Public Interest Litigation Law, which will take effect on January 1, 2027.",
-          "summary": "The article reports that the 25th session of the 14th NPC Standing Committee voted to adopt the PRC Procuratorial Public Interest Litigation Law, effective January 1, 2027. It frames the law as an original “Chinese approach” elevated into the national legal system, making its later role in regulating procuratorial public interest litigation worth watching.",
-          "failureAnalysis": "The confirmed facts are passage and the effective date; specific provisions, scope, and implementing arrangements should be checked against the official legal text.",
-          "title": "Procuratorial Public Interest Litigation Law Adopted, Effective in 2027"
-        }
-      }
-    },
-    {
-      "id": "news-e04c897a05b84ae68b932890a9223d2b",
-      "category": "domestic",
-      "title": "专访英国经济学家罗思义：与中国合作才是欧洲合理的选择",
+      "title": "畅通教育科技人才良性循环 为新质生产力蓄势赋能",
       "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-07/10728163.shtml",
-      "publishedAt": "2026-11-07T13:20:56.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-08/10728567.shtml",
+      "publishedAt": "2026-11-08T14:53:10.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "欧洲的经济问题不是中国制造的问题，当政府部门一些人不断推动保护主义时，欧洲的行业主体却开始反对保护主义。",
-      "summary": "文章报道，近期欧洲对华贸易保护主义持续抬头，但今年参加进博会的欧洲企业数量达到上千家，欧洲学界及产业界也纷纷发声反对贸易保护主义。英国经济学家罗思义认为，欧洲的经济问题并非源于中国制造，政府层面推动保护主义时，欧洲行业主体却在反对保护主义。这有助于观察欧洲对华政策表态与产业界实际选择之间的分化。",
-      "failureAnalysis": "关键看点在于，欧洲政治层面的保护主义升温，并不等于企业界愿意放弃与中国的合作。",
+      "highlight": "《意见》明确部署统筹推进教育科技人才体制机制一体改革，为发展新质生产力提供支撑。",
+      "summary": "文章围绕中共中央、国务院印发的《关于发展新质生产力的意见》展开解读，指出发展新质生产力的一项关键部署是统筹推进教育科技人才体制机制一体改革。作为三里河权威专家系列解读之一，本文有助于理解政策如何通过教育、科技、人才协同改革为新质生产力蓄势赋能。",
+      "failureAnalysis": "可验证的重点是政策解读强调教育、科技、人才一体改革，而非单一领域突进；理解新质生产力需关注体制机制协同。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "近期，欧洲对华贸易保护主义持续抬头，但今年，参加进博会的欧洲企业数量达到了上千家，欧洲学界及产业界也纷纷发出不同声音，反对贸易保护主义。来进博会参加上海虹桥国际经济论坛的英国经济学家罗思义认为：欧洲的经济问题不是中国制造的问题，当政府部门一些人不断推动保护主义时，欧洲的行业主体却开始反对保护主义。",
+      "sourceExcerpt": "编者按： 发展新质生产力是推动高质量发展的内在要求和重要着力点。近日，中共中央、国务院印发《关于发展新质生产力的意见》，为加快发展新质生产力作出系统部署。三里河推出权威专家系列解读，阐释政策内涵、洞察发展大势。今日刊发国家发展改革委国际合作中心处长、研究员鲍淑君的署名文章《得打好这三张牌》。 发展新质生产力，关键靠什么？近日，中共中央、国务院印发的《关于发展新质生产力的意见》（以下简称《意见》）给出了明确回答，其中一项重要部署就是“统筹推进教育科技人才体制机制一体改革”。",
       "translations": {
         "zh": {
-          "title": "英国经济学家罗思义：与中国合作才是欧洲合理的选择",
-          "highlight": "欧洲的经济问题不是中国制造的问题，当政府部门一些人不断推动保护主义时，欧洲的行业主体却开始反对保护主义。",
-          "summary": "文章报道，近期欧洲对华贸易保护主义持续抬头，但今年参加进博会的欧洲企业数量达到上千家，欧洲学界及产业界也纷纷发声反对贸易保护主义。英国经济学家罗思义认为，欧洲的经济问题并非源于中国制造，政府层面推动保护主义时，欧洲行业主体却在反对保护主义。这有助于观察欧洲对华政策表态与产业界实际选择之间的分化。",
-          "failureAnalysis": "关键看点在于，欧洲政治层面的保护主义升温，并不等于企业界愿意放弃与中国的合作。"
+          "title": "畅通教育科技人才良性循环 为新质生产力蓄势赋能",
+          "highlight": "《意见》明确部署统筹推进教育科技人才体制机制一体改革，为发展新质生产力提供支撑。",
+          "summary": "文章围绕中共中央、国务院印发的《关于发展新质生产力的意见》展开解读，指出发展新质生产力的一项关键部署是统筹推进教育科技人才体制机制一体改革。作为三里河权威专家系列解读之一，本文有助于理解政策如何通过教育、科技、人才协同改革为新质生产力蓄势赋能。",
+          "failureAnalysis": "可验证的重点是政策解读强调教育、科技、人才一体改革，而非单一领域突进；理解新质生产力需关注体制机制协同。"
         },
         "en": {
-          "highlight": "Europe's economic problems are not caused by Chinese manufacturing; while some government officials keep pushing protectionism, European industry actors are beginning to oppose it.",
-          "summary": "The article reports that European trade protectionism has been rising recently, yet thousands of European companies are attending this year's CIIE, and European academic and industry voices are opposing protectionism. British economist Luo Siyi argues that Europe's economic problems are not caused by Chinese manufacturing. It is worth reading for the contrast between protectionist pressure in some government circles and resistance from European industry.",
-          "failureAnalysis": "The key takeaway is a split between political rhetoric and business practice in Europe: rising protectionism at the policy level does not mean European firms are willing to give up cooperation with China.",
-          "title": "British Economist Luo Siyi: Cooperation with China Is the Reasonable Choice for Europe"
+          "highlight": "The Opinions explicitly deploy integrated reform of education, science and technology, and talent systems and mechanisms to support the development of new quality productive forces.",
+          "summary": "The article interprets the Opinions on Developing New Quality Productive Forces issued by the CPC Central Committee and the State Council, identifying integrated reform of education, science and technology, and talent systems as one key deployment. As part of an expert commentary series, it helps readers understand how coordinated reforms in these areas are meant to empower new quality productive forces.",
+          "failureAnalysis": "The verifiable takeaway is that policy interpretation stresses coordinated institutional reform across education, science and technology, and talent, rather than advances in a single field.",
+          "title": "Facilitate a Virtuous Cycle Among Education, Science and Technology, and Talent to Empower New Quality Productive Forces"
         }
       }
     },
     {
-      "id": "news-c679e3c1e14b480f9e00d89897a1525c",
+      "id": "news-18268d6591894efd97b631f00133888d",
       "category": "domestic",
-      "title": "学习贯彻党的二十届五中全会精神丨学习贯彻党的二十届五中全会精神中央宣讲团在青海宣讲",
+      "title": "2026中国北欧民间友好对话会在四川宜宾举行",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-07/10728126.shtml",
-      "publishedAt": "2026-11-07T12:47:08.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-08/10728539.shtml",
+      "publishedAt": "2026-11-08T13:02:00.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "中央宣讲团11月6日至7日在青海宣讲党的二十届五中全会精神，吴汉圣作宣讲报告。",
-      "summary": "报道显示，中央宣讲团于11月6日至7日在青海开展党的二十届五中全会精神宣讲，中央社会工作部部长吴汉圣作报告。信息来自官方RSS源，核心可核实事实是宣讲时间、地点、主题和报告人。对关注国内政策传达节奏的读者，这是一条可确认的官方活动信息。",
-      "failureAnalysis": "可确认的公共影响限于官方宣讲活动本身：时间、地点、主题和报告人明确；未提供更多政策细节或现场效果数据。",
+      "highlight": "以“共筑互信桥梁，开启合作新局”为主题的2026中国北欧民间友好对话会8日在四川宜宾举办。",
+      "summary": "报道显示，2026中国北欧民间友好对话会于11月8日在四川宜宾举行，主题为“共筑互信桥梁，开启合作新局”。来自中国有关部门、地方政府以及瑞典、丹麦、芬兰、挪威、冰岛五国友好组织等约100名代表参会，探讨深化民间交往与务实合作的路径。对关注中北欧关系和地方对外交流的读者，这是一条可核实的公开活动信息。",
+      "failureAnalysis": "这条消息的核心价值在于提供可核实的时间、地点、主题和参会范围；具体成果尚未在已知内容中披露，阅读时应区分活动举办与后续合作落地。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "新华社西宁11月7日电(记者柳泽兴)学习贯彻党的二十届五中全会精神中央宣讲团11月6日至7日在青海宣讲，中央宣讲团成员、中央社会工作部部长吴汉圣作宣讲报告。",
+      "sourceExcerpt": "中新社四川宜宾11月8日电 (程兆)以“共筑互信桥梁，开启合作新局”为主题的2026中国北欧民间友好对话会8日在四川宜宾举办。来自中国有关部门、地方政府及瑞典、丹麦、芬兰、挪威、冰岛五国友好组织等各界的代表约100人参会，探讨深化民间交往与务实合作的路径。",
       "translations": {
         "zh": {
-          "title": "中央宣讲团在青海宣讲党的二十届五中全会精神",
-          "highlight": "中央宣讲团11月6日至7日在青海宣讲党的二十届五中全会精神，吴汉圣作宣讲报告。",
-          "summary": "报道显示，中央宣讲团于11月6日至7日在青海开展党的二十届五中全会精神宣讲，中央社会工作部部长吴汉圣作报告。信息来自官方RSS源，核心可核实事实是宣讲时间、地点、主题和报告人。对关注国内政策传达节奏的读者，这是一条可确认的官方活动信息。",
-          "failureAnalysis": "可确认的公共影响限于官方宣讲活动本身：时间、地点、主题和报告人明确；未提供更多政策细节或现场效果数据。"
+          "title": "2026中国北欧民间友好对话会在四川宜宾举行",
+          "highlight": "以“共筑互信桥梁，开启合作新局”为主题的2026中国北欧民间友好对话会8日在四川宜宾举办。",
+          "summary": "报道显示，2026中国北欧民间友好对话会于11月8日在四川宜宾举行，主题为“共筑互信桥梁，开启合作新局”。来自中国有关部门、地方政府以及瑞典、丹麦、芬兰、挪威、冰岛五国友好组织等约100名代表参会，探讨深化民间交往与务实合作的路径。对关注中北欧关系和地方对外交流的读者，这是一条可核实的公开活动信息。",
+          "failureAnalysis": "这条消息的核心价值在于提供可核实的时间、地点、主题和参会范围；具体成果尚未在已知内容中披露，阅读时应区分活动举办与后续合作落地。"
         },
         "en": {
-          "highlight": "The central lecture team delivered a report on the Fifth Plenary Session of the 20th CPC Central Committee in Qinghai on Nov. 6-7, with Wu Hansheng as speaker.",
-          "summary": "The report says the central lecture team held a session in Qinghai on Nov. 6-7 to promote the spirit of the Fifth Plenary Session of the 20th CPC Central Committee, and Wu Hansheng, minister of the Central Social Work Department, gave the lecture report. The verifiable facts are the time, place, theme and speaker, drawn from an official RSS source. It is worth reading as a confirmed signal of how official policy messaging is being scheduled.",
-          "failureAnalysis": "The confirmed public impact is limited to the official lecture activity itself: time, place, theme and speaker are clear, but no further policy details or on-site effect data are provided.",
-          "title": "Central Lecture Team Promotes Fifth Plenary Session Spirit in Qinghai"
+          "highlight": "The 2026 China-Nordic People-to-People Friendship Dialogue, themed “Building Bridges of Mutual Trust and Opening New Prospects for Cooperation,” was held on November 8 in Yibin, Sichuan.",
+          "summary": "The report says the 2026 China-Nordic People-to-People Friendship Dialogue took place on November 8 in Yibin, Sichuan, under the theme “Building Bridges of Mutual Trust and Opening New Prospects for Cooperation.” About 100 representatives from relevant Chinese departments, local governments, and friendship organizations in Sweden, Denmark, Finland, Norway, and Iceland attended to discuss ways to deepen people-to-people exchanges and practical cooperation. It is worth reading as a verifiable public record of China-Nordic local and civil-society engagement.",
+          "failureAnalysis": "The key takeaway is the verifiable event details—date, venue, theme, and participant scope; the known content does not disclose specific outcomes, so readers should distinguish the meeting itself from later cooperation results.",
+          "title": "2026 China-Nordic People-to-People Friendship Dialogue Held in Yibin, Sichuan"
         }
       }
     },
     {
-      "id": "news-58721770021c432fa07080532572fb23",
+      "id": "news-22efb092c6964c58830ac56a7c83a471",
+      "category": "domestic",
+      "title": "中央气象台11月8日18时继续发布大风蓝色预警",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-08/10728465.shtml",
+      "publishedAt": "2026-11-08T11:05:39.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "据中央气象台网站消息，中央气象台11月8日18时继续发布大风蓝色预警。",
+      "summary": "该消息转引中央气象台网站信息，明确11月8日18时继续发布大风蓝色预警。它提供了官方预警状态的直接确认，适合关注国内天气与出行安排的人快速了解。",
+      "failureAnalysis": "已知信息只确认预警仍在生效，未展开风力范围、影响区域和防御指引；具体影响需以中央气象台后续发布为准。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网11月8日电 据中央气象台网站消息，中央气象台11月8日18时继续发布大风蓝色预警。",
+      "translations": {
+        "zh": {
+          "title": "中央气象台11月8日18时继续发布大风蓝色预警",
+          "highlight": "据中央气象台网站消息，中央气象台11月8日18时继续发布大风蓝色预警。",
+          "summary": "该消息转引中央气象台网站信息，明确11月8日18时继续发布大风蓝色预警。它提供了官方预警状态的直接确认，适合关注国内天气与出行安排的人快速了解。",
+          "failureAnalysis": "已知信息只确认预警仍在生效，未展开风力范围、影响区域和防御指引；具体影响需以中央气象台后续发布为准。"
+        },
+        "en": {
+          "highlight": "According to the Central Meteorological Observatory website, the observatory continued to issue a blue gale warning at 18:00 on November 8.",
+          "summary": "This item relays the Central Meteorological Observatory's notice that the blue gale warning remains in effect at 18:00 on November 8. It offers a direct official confirmation of the warning status for readers tracking domestic weather and travel plans.",
+          "failureAnalysis": "The known notice confirms only that the warning remains active; it does not detail wind ranges, affected areas, or precautionary guidance. Concrete impacts should be checked against subsequent official releases.",
+          "title": "Central Meteorological Observatory Continues Blue Gale Warning at 18:00 on November 8"
+        }
+      }
+    },
+    {
+      "id": "news-ae834529f113488abeb2747315370fd0",
       "category": "international",
-      "title": "Ousted Paraguayan president appears before prosecutors",
-      "source": "NPR World",
-      "url": "https://www.npr.org/2026/11/07/nx-s1-6033373/paraguay-president-ousted-bank-collapse",
-      "publishedAt": "2026-11-07T17:14:36.0000000+00:00",
+      "title": "Collision of two trains in Egypt kills at least seven",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/08/egypt-two-trains-deadly-collision",
+      "publishedAt": "2026-11-08T17:51:17.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "巴拉圭总统圣地亚哥·培尼亚周五被解职并被软禁；参议院在国有附属银行倒闭后表决通过弹劾。",
-      "summary": "文章报道巴拉圭总统圣地亚哥·培尼亚遭解职并被软禁，随后出现在检察官面前。参议院在国有附属银行倒闭后通过弹劾投票。事件值得关注，因为它显示银行危机如何迅速演变为政治与法律危机。",
-      "failureAnalysis": "关键点在于，银行倒闭触发了弹劾，并迅速将政治领导人置于司法程序之中；后续应关注问询与弹劾程序的法律依据。",
+      "highlight": "埃及官员称，周日两列火车在开罗以南相撞，造成七人死亡、100多人受伤。",
+      "summary": "事故发生在距开罗约30英里的吉萨省al-Ayyat区，一列开往法尤姆省的火车撞上另一列开往阿斯旺省火车的尾部。埃及总统已下令迅速调查。这条国际突发新闻值得关注，因为它涉及重大公共交通安全与官方应急处置。",
+      "failureAnalysis": "读这类突发新闻时，应先确认伤亡数字、地点、涉事列车和官方处置，在调查结论公布前不宜推断事故原因。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Paraguayan President Santiago Peña was removed from office and placed under house arrest Friday. The Senate voted on his impeachment after the collapse of a state-affiliated bank.",
+      "sourceExcerpt": "President orders prompt investigation after one train derails in collision in al-Ayyat about 30 miles from Cairo Seven people were killed and more than 100 injured when two trains collided on Sunday south of the Egyptian capital, Cairo, officials said. The crash occurred in al-Ayyat district in Giza province, about 30 miles south of Cairo, when a train travelling to Fayoum province crashed into the rear of a train heading to the southern province of Aswan, according to the transport ministry.",
       "translations": {
         "zh": {
-          "title": "巴拉圭被解职总统接受检察官问询",
-          "highlight": "巴拉圭总统圣地亚哥·培尼亚周五被解职并被软禁；参议院在国有附属银行倒闭后表决通过弹劾。",
-          "summary": "文章报道巴拉圭总统圣地亚哥·培尼亚遭解职并被软禁，随后出现在检察官面前。参议院在国有附属银行倒闭后通过弹劾投票。事件值得关注，因为它显示银行危机如何迅速演变为政治与法律危机。",
-          "failureAnalysis": "关键点在于，银行倒闭触发了弹劾，并迅速将政治领导人置于司法程序之中；后续应关注问询与弹劾程序的法律依据。"
+          "title": "埃及两列火车相撞致至少七人死亡",
+          "highlight": "埃及官员称，周日两列火车在开罗以南相撞，造成七人死亡、100多人受伤。",
+          "summary": "事故发生在距开罗约30英里的吉萨省al-Ayyat区，一列开往法尤姆省的火车撞上另一列开往阿斯旺省火车的尾部。埃及总统已下令迅速调查。这条国际突发新闻值得关注，因为它涉及重大公共交通安全与官方应急处置。",
+          "failureAnalysis": "读这类突发新闻时，应先确认伤亡数字、地点、涉事列车和官方处置，在调查结论公布前不宜推断事故原因。"
         },
         "en": {
-          "highlight": "Paraguayan President Santiago Peña was removed from office and placed under house arrest Friday; the Senate voted to impeach him after the collapse of a state-affiliated bank.",
-          "summary": "The article reports that Paraguayan President Santiago Peña was removed from office and placed under house arrest, then appeared before prosecutors. The Senate voted to impeach him after the collapse of a state-affiliated bank. It is worth reading because it shows how a banking crisis can quickly become a political and legal crisis.",
-          "failureAnalysis": "The key point is that the bank collapse triggered impeachment and quickly put a political leader into judicial proceedings; follow-up should focus on the legal basis for the questioning and impeachment process.",
-          "title": "Ousted Paraguayan president appears before prosecutors"
+          "highlight": "Seven people were killed and more than 100 injured when two trains collided on Sunday south of the Egyptian capital, Cairo, officials said.",
+          "summary": "The crash occurred in the al-Ayyat district of Giza province, about 30 miles south of Cairo, when a train traveling to Fayoum province hit the rear of a train heading to Aswan. Egypt’s president ordered a prompt investigation. The international breaking news is worth reading because it concerns major public transport safety and the official emergency response.",
+          "failureAnalysis": "For breaking news like this, first confirm the casualties, location, trains involved and official response; avoid speculating about the cause before investigation findings are released.",
+          "title": "Two trains collide in Egypt, killing at least seven"
         }
       }
     },
     {
-      "id": "news-e5da783438274cdf8ee0dd5b5dc98010",
+      "id": "news-e207b818355d49b19c23080da59980bd",
       "category": "international",
-      "title": "Why the US midterms sparked an AI stock selloff",
-      "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/crlykkzwwpydo?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-06T18:32:16.0000000+00:00",
+      "title": "Banana producers in Latin America want better pay to cope with effects of climate crisis",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/business/2026/nov/08/banana-producers-in-latin-america-want-better-pay-to-cope-with-effects-of-climate-crisis",
+      "publishedAt": "2026-11-08T07:00:34.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "对更多AI监管的担忧似乎引发了投资者的恐惧，但对AI行业的担忧已持续一段时间。",
-      "summary": "BBC Business报道称，美国中期选举后的AI股票抛售，似乎源于市场对更多AI监管的担忧。投资者对AI行业的顾虑在此之前已在累积。对非技术管理者而言，这提醒政策预期会快速改变AI相关公司的市场情绪。",
-      "failureAnalysis": "关键点：AI板块会受监管预期驱动，市场情绪可能先于基本面变化；对AI行业的担忧也可能早已存在。",
+      "highlight": "拉丁美洲香蕉生产者呼吁提高报酬，以应对气候危机，因为今年超级厄尔尼诺引发的极端天气正导致产量大幅下降。",
+      "summary": "文章称，拉丁美洲香蕉生产者正面临超级厄尔尼诺带来的极端天气，产量已明显下降。哥伦比亚的大风、秘鲁和厄瓜多尔的强降雨，以及多米尼加共和国预计的干旱，都在影响生产。生产商因此呼吁改善报酬，以增强应对气候危机的能力。",
+      "failureAnalysis": "关键点在于，气候风险会沿供应链传导为生产波动和农民收入压力，公平贸易与价格机制是缓冲手段之一。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Fears of more AI regulation appear to have sparked fear among investors, but concerns about the industry have been growing for some time.",
+      "sourceExcerpt": "Farmers face big drop in production from extreme weather during this year’s super El Niño event Banana producers in Latin America are calling for better pay to help cope with the impact of the climate crisis, as they face big drops in production resulting from extreme weather during this year’s super El Niño event. High winds in parts of Colombia, one of the biggest suppliers to the UK market where droughts are predicted in some regions this year, and heavy rainfall in Peru and Ecuador are already affecting production, according to the Fairtrade Foundation ethical trade body. In the Dominican Republic, farmers are expected to face drought conditions, with forecasts of drier and warmer than usual conditions.",
       "translations": {
         "zh": {
-          "title": "美国中期选举为何引发AI股票抛售",
-          "highlight": "对更多AI监管的担忧似乎引发了投资者的恐惧，但对AI行业的担忧已持续一段时间。",
-          "summary": "BBC Business报道称，美国中期选举后的AI股票抛售，似乎源于市场对更多AI监管的担忧。投资者对AI行业的顾虑在此之前已在累积。对非技术管理者而言，这提醒政策预期会快速改变AI相关公司的市场情绪。",
-          "failureAnalysis": "关键点：AI板块会受监管预期驱动，市场情绪可能先于基本面变化；对AI行业的担忧也可能早已存在。"
+          "title": "拉美香蕉生产者呼吁提高报酬以应对气候危机",
+          "highlight": "拉丁美洲香蕉生产者呼吁提高报酬，以应对气候危机，因为今年超级厄尔尼诺引发的极端天气正导致产量大幅下降。",
+          "summary": "文章称，拉丁美洲香蕉生产者正面临超级厄尔尼诺带来的极端天气，产量已明显下降。哥伦比亚的大风、秘鲁和厄瓜多尔的强降雨，以及多米尼加共和国预计的干旱，都在影响生产。生产商因此呼吁改善报酬，以增强应对气候危机的能力。",
+          "failureAnalysis": "关键点在于，气候风险会沿供应链传导为生产波动和农民收入压力，公平贸易与价格机制是缓冲手段之一。"
         },
         "en": {
-          "highlight": "Fears of more AI regulation appear to have sparked fear among investors, but concerns about the industry have been growing for some time.",
-          "summary": "BBC Business reports that the AI stock selloff after the US midterms appears to have been sparked by fears of more AI regulation. Investor concerns about the industry had already been growing for some time. The item is worth reading as a reminder that policy expectations can quickly shift sentiment around AI-related companies.",
-          "failureAnalysis": "Key takeaway: AI stocks can be driven by regulatory expectations, and market sentiment may move before fundamentals do; concerns about the industry may also predate the election.",
-          "title": "Why the US Midterms Sparked an AI Stock Selloff"
+          "highlight": "Latin American banana producers are calling for better pay as extreme weather during this year’s super El Niño causes big production drops.",
+          "summary": "The article reports that Latin American banana producers face sharp production declines from extreme weather during this year’s super El Niño. High winds in Colombia, heavy rain in Peru and Ecuador, and expected drought in the Dominican Republic are already affecting output. Producers are therefore asking for better pay to cope with climate-related risks.",
+          "failureAnalysis": "The key takeaway is that climate risk can travel through supply chains into production volatility and farmer income pressure, making fair pricing and trade support relevant buffers.",
+          "title": "Latin American Banana Producers Seek Better Pay to Cope With Climate Crisis"
         }
       }
     },
     {
-      "id": "life-d437b7fa74c2443b85ca564ff4038f8f",
+      "id": "life-53cf2d43396548048f6005932b339469",
       "category": "international",
-      "title": "Umberto Eco’s Antilibrary: Why Unread Books Are More Valuable to Our Lives than Read Ones",
+      "title": "Hope Is the Thing with Feathers, and with Fangs: The Alchemy of Unrequited Love and the Story Behind Emily Dickinson’s Most Famous Poem",
       "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/11/05/umberto-eco-antilibrary/",
-      "publishedAt": "2026-11-05T13:25:39.0000000+00:00",
+      "url": "https://www.themarginalian.org/2026/11/08/emily-dickinson-hope-kate/",
+      "publishedAt": "2026-11-08T19:02:18.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 1",
-      "highlight": "在一个把知识当作让我们在等级秩序中攀升的装饰的文化里，如何成为一个“反学者”。",
-      "summary": "文章围绕艾柯的“反图书馆”概念，讨论未读之书为何可能比已读之书对生活更有价值。它进一步追问：在一个把知识当作阶层攀升装饰的文化里，人如何成为“反学者”。这值得读，因为它促使人重新思考阅读与知识的意义，而不只把它们当作身份展示。",
-      "failureAnalysis": "关键启发：把知识当装饰会让人追逐身份排序；保留大量未读之书，可提醒自己未知仍大、学习不该止于展示。",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "自九月以来，我怀有一种恐惧——无人可诉，于是我歌唱，就像男孩在墓地旁那样——因为我害怕。",
+      "summary": "这篇随笔改编自《Figuring》第十九章，从狄金森三十岁初秋写给希金森的信中“无人可诉的恐惧”入手，追索她最著名诗作《希望是长着羽毛的东西》背后的情感经验。传记作者多年来用死亡等猜测填补这段空白，文章则关注她如何把恐惧与单恋转化为诗。对理解名诗如何从私人情感中诞生有启发。",
+      "failureAnalysis": "关键启示：最私密、难以言说的恐惧也可能成为创作的材料；理解名诗，也要看到诗背后复杂的人生经验。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "How to become an \"antischolar\" in a culture that treats knowledge as \"an ornament that allows us to rise in the pecking order.\"",
+      "sourceExcerpt": "This essay is adapted from the nineteenth chapter of my book Figuring. In the first autumn of her thirties, Emily Dickinson wrote to her confidante and eventual editor Thomas Wentworth Higginson: I had a terror — since September — I could tell to none, and so I sing, as the Boy does by the Burying Ground — because I am afraid. Not a “fright,” not a “shock,” but a terror.",
       "translations": {
         "zh": {
-          "title": "艾柯的“反图书馆”：为何未读之书比已读之书更有价值",
-          "highlight": "在一个把知识当作让我们在等级秩序中攀升的装饰的文化里，如何成为一个“反学者”。",
-          "summary": "文章围绕艾柯的“反图书馆”概念，讨论未读之书为何可能比已读之书对生活更有价值。它进一步追问：在一个把知识当作阶层攀升装饰的文化里，人如何成为“反学者”。这值得读，因为它促使人重新思考阅读与知识的意义，而不只把它们当作身份展示。",
-          "failureAnalysis": "关键启发：把知识当装饰会让人追逐身份排序；保留大量未读之书，可提醒自己未知仍大、学习不该止于展示。"
+          "title": "希望是长着羽毛的东西，也长着尖牙：单恋的炼金术与艾米莉·狄金森名诗背后的故事",
+          "highlight": "自九月以来，我怀有一种恐惧——无人可诉，于是我歌唱，就像男孩在墓地旁那样——因为我害怕。",
+          "summary": "这篇随笔改编自《Figuring》第十九章，从狄金森三十岁初秋写给希金森的信中“无人可诉的恐惧”入手，追索她最著名诗作《希望是长着羽毛的东西》背后的情感经验。传记作者多年来用死亡等猜测填补这段空白，文章则关注她如何把恐惧与单恋转化为诗。对理解名诗如何从私人情感中诞生有启发。",
+          "failureAnalysis": "关键启示：最私密、难以言说的恐惧也可能成为创作的材料；理解名诗，也要看到诗背后复杂的人生经验。"
         },
         "en": {
-          "highlight": "How to become an \"antischolar\" in a culture that treats knowledge as \"an ornament that allows us to rise in the pecking order.\"",
-          "summary": "The piece uses Umberto Eco's idea of the \"antilibrary\" to ask why unread books may matter more to our lives than read ones. It also asks how to become an \"antischolar\" in a culture that treats knowledge as an ornament for climbing the pecking order. It is worth reading because it invites a rethink of reading and knowledge beyond status display.",
-          "failureAnalysis": "Key takeaway: treating knowledge as an ornament encourages status competition; keeping many unread books can remind us that the unknown remains large and learning should not stop at display.",
-          "title": "Umberto Eco's Antilibrary: Why Unread Books Matter More Than Read Ones"
+          "highlight": "I had a terror — since September — I could tell to none, and so I sing, as the Boy does by the Burying Ground — because I am afraid.",
+          "summary": "This essay, adapted from the nineteenth chapter of Figuring, begins with Emily Dickinson’s letter to Thomas Wentworth Higginson about a terror she could tell to none, and explores the emotional story behind her most famous poem, “Hope Is the Thing with Feathers.” Biographers have long filled the gap with conjectures such as a death, while the essay focuses on how private fear and unrequited love were transformed into poetry. It is worth reading for a closer view of how a famous poem can grow out of intimate, difficult experience.",
+          "failureAnalysis": "Key takeaway: the most private and unspeakable terror can become the raw material of art; reading a famous poem means also seeing the complex life behind it.",
+          "title": "Hope Is the Thing with Feathers, and with Fangs: The Alchemy of Unrequited Love and the Story Behind Emily Dickinson’s Most Famous Poem"
         }
       }
     },
     {
-      "id": "life-d15977c704af46609374a1fd59c3fb5a",
+      "id": "life-0705d2c6c1d34c3fa703a9baa7f48e1f",
       "category": "international",
-      "title": "How to take notes that actually help you learn",
-      "source": "Psyche",
-      "url": "https://psyche.co/guides/how-to-take-notes-that-actually-help-you-learn",
-      "publishedAt": "2026-11-05T11:00:00.0000000+00:00",
+      "title": "苹果产品那些不够颠覆，却值得被学习的细节",
+      "source": "少数派 sspai",
+      "url": "https://sspai.com/post/118114",
+      "publishedAt": "2026-11-08T03:18:54.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 1",
-      "highlight": "若想记住并理解，单纯抄写还不够；一位学习专家分享如何让笔记真正为你所用。",
-      "summary": "文章的核心观点是：做笔记若只停留在复制内容，难以帮助记忆和理解。学习专家 Cynthia Nebel 在 Psyche 的指南中分享如何让笔记真正服务于学习，适合想改进学习方法的人阅读。",
-      "failureAnalysis": "关键启示：笔记的价值不只在记录得全，更在于是否促进理解与记忆；先让笔记服务于学习，而不是只做抄写。",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "我们主张分享真实的产品体验，有实用价值的经验与思考。",
+      "summary": "这篇少数派 Matrix 文章从苹果产品的局部细节切入，讨论那些未必称得上颠覆、但值得产品人借鉴的设计与体验。Matrix 是少数派写作社区，强调分享真实产品体验和有实用价值的经验；文章代表作者个人观点。",
+      "failureAnalysis": "对非技术管理者而言，关键不是只追逐“颠覆式创新”，而是从成熟产品的小细节中学习可复用的产品判断。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "If you want to remember and understand, copying isn’t enough. An expert on learning shares how to make notes work for you - by Cynthia Nebel Read on Psyche",
+      "sourceExcerpt": "Matrix首页推荐Matrix是少数派的写作社区，我们主张分享真实的产品体验，有实用价值的经验与思考。我们会不定期挑选Matrix最优质的文章，展示来自用户的最真实的体验和观点。文章代表作者个人观点 ...",
       "translations": {
         "zh": {
-          "title": "如何做真正帮助学习的笔记",
-          "highlight": "若想记住并理解，单纯抄写还不够；一位学习专家分享如何让笔记真正为你所用。",
-          "summary": "文章的核心观点是：做笔记若只停留在复制内容，难以帮助记忆和理解。学习专家 Cynthia Nebel 在 Psyche 的指南中分享如何让笔记真正服务于学习，适合想改进学习方法的人阅读。",
-          "failureAnalysis": "关键启示：笔记的价值不只在记录得全，更在于是否促进理解与记忆；先让笔记服务于学习，而不是只做抄写。"
+          "title": "苹果产品那些不够颠覆，却值得被学习的细节",
+          "highlight": "我们主张分享真实的产品体验，有实用价值的经验与思考。",
+          "summary": "这篇少数派 Matrix 文章从苹果产品的局部细节切入，讨论那些未必称得上颠覆、但值得产品人借鉴的设计与体验。Matrix 是少数派写作社区，强调分享真实产品体验和有实用价值的经验；文章代表作者个人观点。",
+          "failureAnalysis": "对非技术管理者而言，关键不是只追逐“颠覆式创新”，而是从成熟产品的小细节中学习可复用的产品判断。"
         },
         "en": {
-          "highlight": "If you want to remember and understand, copying isn’t enough; a learning expert shares how to make notes work for you.",
-          "summary": "This Psyche guide says that copying alone is not enough to help you remember and understand. Cynthia Nebel shares how to make notes serve learning, making it worth reading for anyone who wants better study methods.",
-          "failureAnalysis": "The practical point is that copying is not enough: note-taking should be designed to help you remember and understand.",
-          "title": "How to Take Notes That Actually Help You Learn"
+          "highlight": "We aim to share real product experiences and practical thoughts and lessons.",
+          "summary": "This SSPAI Matrix article looks at specific details in Apple products that may not be disruptive but are worth studying for product design and experience. Matrix is SSPAI’s writing community, focused on real product experiences and practical lessons; the article reflects the author’s personal views.",
+          "failureAnalysis": "For non-technical leaders, the takeaway is to learn reusable product judgment from small details in mature products rather than chasing disruptive innovation alone.",
+          "title": "Apple Product Details That Aren’t Disruptive but Are Worth Learning From"
         }
       }
     },
     {
-      "id": "paper-2610.36159",
-      "category": "paper",
-      "title": "MtReNIRS: A Self-Supervised Foundation Model for Transferable Neurovascular Representations",
-      "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2610.36159v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2610.36159",
-      "publishedAt": "2026-10-26T18:59:54.0000000Z",
-      "scoreLabel": "Quality 28/100 + topic fit 30/30",
-      "recommendationScore": 83,
-      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
-      "paperTopic": "brain_computer_interface",
-      "qualityScore": 28,
-      "readabilityStatus": "open",
-      "paperCard": {
-        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
-        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
-        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
-        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
-        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
-        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
-        "technicalTerms": [
-          "EEG：把大脑电信号当作输入数据。",
-          "LoRA：用较小参数改造大模型的轻量适配方法。"
-        ],
-        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
-      },
-      "highlight": "MtReNIRS是面向可迁移神经血管表征的自监督基础模型，题名明确其定位。",
-      "summary": "所给材料只包含论文题名、作者信息和单位开头，未提供摘要、方法或实验结果。题名显示该研究提出MtReNIRS，一个自监督基础模型，目标是学习可迁移的神经血管表征。其重要性目前只能从题名所强调的可迁移定位推断。",
-      "failureAnalysis": "源文本缺少摘要、方法和实验部分，无法核验该模型的迁移效果、性能或临床适用性，只能确认题名所声明的自监督基础模型定位。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "<Society logo(s) and publica- tion title will appear here.> Received XX Month, XXXX; revised XX Month, XXXX; accepted XX Month, XXXX; Date of publication XX Month, XXXX; date of current version XX Month, XXXX. Digital Object Identifier 10.1109/XXXX.2022.1234567 MtReNIRS: A Self-Supervised Foundation Model for Transferable Neurovascular Representations Tony Chae1, Kleanthis Avramidis2, Dimitra Emmanouilidou3, and Ivan J. Tashev3 1Department of Electrical Engineering and Computer Sciences, University of California, Berkeley , Berkeley , CA, USA 2Signal Analysis and Interpretation Lab, University of Southern California, Los Angeles, CA, USA 3Microsoft Research, Redmond, WA, USA Corresponding author: T ony Chae (email: tonychae01@berkeley .edu).",
-      "translations": {
-        "zh": {
-          "title": "MtReNIRS：面向可迁移神经血管表征的自监督基础模型",
-          "highlight": "MtReNIRS是面向可迁移神经血管表征的自监督基础模型，题名明确其定位。",
-          "summary": "所给材料只包含论文题名、作者信息和单位开头，未提供摘要、方法或实验结果。题名显示该研究提出MtReNIRS，一个自监督基础模型，目标是学习可迁移的神经血管表征。其重要性目前只能从题名所强调的可迁移定位推断。",
-          "failureAnalysis": "源文本缺少摘要、方法和实验部分，无法核验该模型的迁移效果、性能或临床适用性，只能确认题名所声明的自监督基础模型定位。",
-          "paperCard": {
-            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
-            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
-            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
-            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
-            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
-            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
-            "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。",
-              "LoRA：用较小参数改造大模型的轻量适配方法。"
-            ],
-            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
-          }
-        },
-        "en": {
-          "title": "MtReNIRS: A Self-Supervised Foundation Model for Transferable Neurovascular Representations",
-          "highlight": "MtReNIRS is described as a self-supervised foundation model for transferable neurovascular representations, based only on the supplied title.",
-          "summary": "The supplied material contains only the paper title, author information, and the beginning of an affiliation; it provides no abstract, methods, or experimental results. The title identifies MtReNIRS as a self-supervised foundation model intended for transferable neurovascular representations, so its significance can currently be inferred only from that stated positioning.",
-          "failureAnalysis": "Because the source lacks an abstract, methods, and experiments, the model’s transfer performance, effectiveness, and clinical applicability cannot be verified; only the self-supervised foundation-model positioning stated in the title is confirmed.",
-          "paperCard": {
-            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
-            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
-            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
-            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
-            "implementation": "Implementation: check the input data, core model or device, and validation results.",
-            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
-            "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。",
-              "LoRA：用较小参数改造大模型的轻量适配方法。"
-            ],
-            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
-          }
-        }
-      }
-    },
-    {
-      "id": "ai-github-1382865521",
+      "id": "ai-hn-50385272",
       "category": "ai",
-      "title": "nano-muse/nanoMuse",
-      "source": "GitHub Search",
-      "url": "https://github.com/nano-muse/nanoMuse",
+      "title": "Claude Code sends your email address to websites",
+      "source": "Hacker News",
+      "url": "https://github.com/anthropics/claude-code/issues/107757",
       "abstractUrl": null,
-      "publishedAt": "2026-09-23T06:13:06.0000000Z",
-      "scoreLabel": "GitHub 3293 stars",
+      "publishedAt": "2026-11-05T22:17:15.0000000Z",
+      "scoreLabel": "1599 points / 530 comments",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "HN discussion",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + HN discussion",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + HN discussion",
+      "summary": "这条 Hacker News 讨论指向一个 GitHub issue：Claude Code 会把用户的邮箱地址发送给网站。1599 分和 530 条评论说明开发者对 AI 编程工具的隐私与默认行为高度敏感，值得读来判断风险边界。",
+      "failureAnalysis": "这类问题可能失败的地方不在模型能力，而在默认数据流和信任：若邮箱等身份信息被无意带出，用户会质疑工具是否适合处理私有代码。修复需要定位请求链路、调整默认行为并清楚告知，否则可能破坏兼容性或使用体验。若响应迟缓，企业客户的安全审查和采用会被直接拖住。",
+      "aiSelectionScore": 2659,
+      "highlight": "Claude Code 会把你的邮箱地址发送给网站，相关讨论获得 1599 分和 530 条评论。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "HN candidate with public discussion metrics.",
+      "translations": {
+        "zh": {
+          "title": "Claude Code 会把你的邮箱地址发送给网站",
+          "highlight": "Claude Code 会把你的邮箱地址发送给网站，相关讨论获得 1599 分和 530 条评论。",
+          "summary": "这条 Hacker News 讨论指向一个 GitHub issue：Claude Code 会把用户的邮箱地址发送给网站。1599 分和 530 条评论说明开发者对 AI 编程工具的隐私与默认行为高度敏感，值得读来判断风险边界。",
+          "failureAnalysis": "这类问题可能失败的地方不在模型能力，而在默认数据流和信任：若邮箱等身份信息被无意带出，用户会质疑工具是否适合处理私有代码。修复需要定位请求链路、调整默认行为并清楚告知，否则可能破坏兼容性或使用体验。若响应迟缓，企业客户的安全审查和采用会被直接拖住。"
+        },
+        "en": {
+          "highlight": "Claude Code sends your email address to websites, and the related discussion has drawn 1,599 points and 530 comments.",
+          "summary": "This Hacker News discussion points to a GitHub issue claiming that Claude Code sends users' email addresses to websites. The 1,599 points and 530 comments show that developers are highly sensitive to the privacy and default behavior of AI coding tools, making this worth reading to assess the risk boundary.",
+          "failureAnalysis": "The key risk is default data flow and trust, not model capability: if identity details such as email addresses are exposed unintentionally, users may question whether the tool is suitable for private code. Fixing it requires tracing the request path, changing defaults, and communicating clearly, or enterprise security reviews and adoption may be delayed.",
+          "title": "Claude Code Sends Your Email Address to Websites"
+        }
+      }
+    },
+    {
+      "id": "ai-github-1354611198",
+      "category": "ai",
+      "title": "adtexterry-lgtm/unigit-ecosystem",
+      "source": "GitHub Search",
+      "url": "https://github.com/adtexterry-lgtm/unigit-ecosystem",
+      "abstractUrl": null,
+      "publishedAt": "2026-09-02T10:08:01.0000000Z",
+      "scoreLabel": "GitHub 2288 stars",
       "aiArticleType": "application_innovation",
       "evidenceAnchors": [
         {
@@ -309,24 +281,24 @@
       "hasPrimaryAnchor": true,
       "requiresRiskAnalysis": true,
       "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-      "summary": "这个 GitHub 项目提出开源个人代理，覆盖手机、电脑和浏览器，把手机屏幕与电脑作为“手”来执行任务。它强调有独立名称与外观、应用关闭后仍可工作、记住用户，并在不可逆操作前征求确认。值得关注的是它试图把跨设备个人代理做成可部署的开源产品，而不只是单点 AI 功能。",
-      "failureAnalysis": "最大风险在工程与信任：跨 Android、iOS、桌面和浏览器持续运行，受后台限制、耗电、权限和系统沙箱约束，稳定执行并不容易。它要接触屏幕、文件和设备操作，一旦误操作或数据泄露，用户信任成本很高；开源还带来安全审计与滥用治理压力。需求侧也要验证用户是否愿意把跨设备日常任务交给一个统一代理，而不是继续用现成助理和自动化工具。",
-      "aiSelectionScore": 3293,
-      "highlight": "一个有名有貌的代理，能做事、在应用关闭后继续工作、记住你，并在不可逆操作前先询问。",
+      "summary": "这是 GitHub 上一个名为 unigit-ecosystem 的仓库，目前获得约 2288 星，近期有公开活动记录，自我定位是 UNIGIT 的公共品牌与生态枢纽，口号是“AI 应当为每个人服务”。目前可见的信息只有仓库描述和热度数据，还没有公开的产品形态、技术实现和部署方式。它值得快速浏览一次，主要是把它当作观察“AI 普惠叙事如何被包装成生态品牌”的样本，而不宜据此判断其技术价值。",
+      "failureAnalysis": "这个仓库的定位是“品牌与生态枢纽”，并非具体产品，最容易出的问题是只有叙事、没有可验证的用户价值：谁在什么场景下用它、解决了什么痛点，目前都看不出来。生态型项目高度依赖持续运营和开发者供给，如果缺少真实的接入方和用例，2288 星很可能只反映传播热度，无法说明留存。同时，“AI 为每个人服务”这类普惠口号通常意味着低付费意愿与高服务成本并存，商业化路径和算力成本约束都需要被追问。",
+      "aiSelectionScore": 2288,
+      "highlight": "UNIGIT 公共品牌与生态枢纽——AI 应当为每个人服务。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "GitHub repository with 3293 stars and recent public activity. Description: nanoMuse: an open-source personal agent for every device you own. One agent with a name and a look of its own that does things, keeps working while the app is closed, remembers you, and asks before anything you cannot undo.",
+      "sourceExcerpt": "GitHub repository with 2288 stars and recent public activity. Description: UNIGIT public brand and ecosystem hub — AI should work for everyone.",
       "translations": {
         "zh": {
-          "title": "nanoMuse：面向所有设备的开源个人代理",
-          "highlight": "一个有名有貌的代理，能做事、在应用关闭后继续工作、记住你，并在不可逆操作前先询问。",
-          "summary": "这个 GitHub 项目提出开源个人代理，覆盖手机、电脑和浏览器，把手机屏幕与电脑作为“手”来执行任务。它强调有独立名称与外观、应用关闭后仍可工作、记住用户，并在不可逆操作前征求确认。值得关注的是它试图把跨设备个人代理做成可部署的开源产品，而不只是单点 AI 功能。",
-          "failureAnalysis": "最大风险在工程与信任：跨 Android、iOS、桌面和浏览器持续运行，受后台限制、耗电、权限和系统沙箱约束，稳定执行并不容易。它要接触屏幕、文件和设备操作，一旦误操作或数据泄露，用户信任成本很高；开源还带来安全审计与滥用治理压力。需求侧也要验证用户是否愿意把跨设备日常任务交给一个统一代理，而不是继续用现成助理和自动化工具。"
+          "title": "UNIGIT 生态枢纽：让 AI 服务每一个人的公共品牌仓库",
+          "highlight": "UNIGIT 公共品牌与生态枢纽——AI 应当为每个人服务。",
+          "summary": "这是 GitHub 上一个名为 unigit-ecosystem 的仓库，目前获得约 2288 星，近期有公开活动记录，自我定位是 UNIGIT 的公共品牌与生态枢纽，口号是“AI 应当为每个人服务”。目前可见的信息只有仓库描述和热度数据，还没有公开的产品形态、技术实现和部署方式。它值得快速浏览一次，主要是把它当作观察“AI 普惠叙事如何被包装成生态品牌”的样本，而不宜据此判断其技术价值。",
+          "failureAnalysis": "这个仓库的定位是“品牌与生态枢纽”，并非具体产品，最容易出的问题是只有叙事、没有可验证的用户价值：谁在什么场景下用它、解决了什么痛点，目前都看不出来。生态型项目高度依赖持续运营和开发者供给，如果缺少真实的接入方和用例，2288 星很可能只反映传播热度，无法说明留存。同时，“AI 为每个人服务”这类普惠口号通常意味着低付费意愿与高服务成本并存，商业化路径和算力成本约束都需要被追问。"
         },
         "en": {
-          "highlight": "One agent with a name and a look of its own that does things, keeps working while the app is closed, remembers you, and asks before anything you cannot undo.",
-          "summary": "This GitHub project presents an open-source personal agent spanning Android, iPhone/iPad, Windows/macOS/Linux, and the browser, using the phone screen and computer as its hands. It emphasizes a named, distinct-looking agent that keeps working while the app is closed, remembers the user, and asks before irreversible actions. It is worth reading as an attempt to turn cross-device personal agents into a deployable open-source product rather than a single AI feature.",
-          "failureAnalysis": "The main risks are engineering and trust: always-on cross-device execution faces background limits, battery use, permissions, and sandboxing, while screen/file access makes mistakes and data exposure costly. It also needs validation that users will delegate everyday cross-device tasks to one agent instead of existing assistants and automation tools.",
-          "title": "nanoMuse: An Open-Source Personal Agent for Every Device"
+          "highlight": "UNIGIT public brand and ecosystem hub — AI should work for everyone.",
+          "summary": "This is a GitHub repository called unigit-ecosystem with about 2,288 stars and recent public activity, describing itself as UNIGIT's public brand and ecosystem hub under the slogan \"AI should work for everyone.\" Only the repository description and popularity signals are visible; no product form, technical implementation, or deployment path is disclosed. It is worth a quick look mainly as a sample of how an AI-for-everyone narrative gets packaged as an ecosystem brand, not as evidence of technical value.",
+          "failureAnalysis": "A repo positioned as a brand and ecosystem hub rather than a product risks being all narrative with no verifiable user value, since the actual users, scenarios, and pain points are undisclosed. Ecosystem plays depend on sustained operations and real developer adoption, so the star count may reflect传播 more than retention, and the universal-access slogan implies low willingness to pay against high serving costs.",
+          "title": "UNIGIT Ecosystem Hub: A Public Brand Repo Claiming AI for Everyone"
         }
       }
     }
