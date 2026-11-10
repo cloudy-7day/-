@@ -1,0 +1,335 @@
+{
+  "issueDate": "2026-11-10",
+  "updateStatus": "complete",
+  "contentFingerprint": "57853ca4e18d71b982537539119d6e56777aa743effcca17314cd9396becc0dc",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-37841c587a854e37adba315c1c1287af",
+      "category": "domestic",
+      "title": "胡军：产业向新向绿让中国经济增长动能更加强劲",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-10/10729860.shtml",
+      "publishedAt": "2026-11-10T15:28:40.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "胡军发布题为《“绿水青山就是金山银山”——中国绿色发展之路》的智库报告",
+      "summary": "文章报道，当地时间11月10日，胡军在土耳其安塔利亚举行的COP31中国角主题边会上发布《“绿水青山就是金山银山”——中国绿色发展之路》智库报告，并围绕中国绿色发展的理念、实践与世界意义展开探讨。它值得阅读，因为可据此观察中国在国际气候场合如何阐述绿色发展叙事。",
+      "failureAnalysis": "关键提示：这是官方智库报告的发布信息，重点在表达中国绿色发展理念；仅凭已知内容还无法判断报告的具体论证和后续影响。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网安塔利亚11月10日电(记者 魏园 陈溯 徐峻杰)当地时间11月10日，在土耳其安塔利亚举行的《联合国气候变化框架公约》第三十一次缔约方大会(COP31)中国角主题边会上，习近平生态文明思想研究中心主任、生态环境部环境与经济政策研究中心主任胡军发布题为《“绿水青山就是金山银山”——中国绿色发展之路》的智库报告，并围绕中国绿色发展的理念、实践与世界意义展开探讨。",
+      "translations": {
+        "zh": {
+          "title": "胡军发布智库报告：绿水青山就是金山银山",
+          "highlight": "胡军发布题为《“绿水青山就是金山银山”——中国绿色发展之路》的智库报告",
+          "summary": "文章报道，当地时间11月10日，胡军在土耳其安塔利亚举行的COP31中国角主题边会上发布《“绿水青山就是金山银山”——中国绿色发展之路》智库报告，并围绕中国绿色发展的理念、实践与世界意义展开探讨。它值得阅读，因为可据此观察中国在国际气候场合如何阐述绿色发展叙事。",
+          "failureAnalysis": "关键提示：这是官方智库报告的发布信息，重点在表达中国绿色发展理念；仅凭已知内容还无法判断报告的具体论证和后续影响。"
+        },
+        "en": {
+          "highlight": "Hu Jun released a think tank report titled “Lucid Waters and Lush Mountains Are Invaluable Assets—China’s Path of Green Development.”",
+          "summary": "The article reports that on November 10 local time, Hu Jun presented the report at a China Corner side event during COP31 in Antalya, Turkey, and discussed China’s green development concepts, practices, and global significance. It is worth reading as a window into how China frames its green development narrative at an international climate meeting.",
+          "failureAnalysis": "The key takeaway is that this is an official think tank release focused on China’s green development message; the provided information does not allow judgment on the report’s detailed arguments or later impact.",
+          "title": "Hu Jun Releases Think Tank Report on China’s Green Development at COP31"
+        }
+      }
+    },
+    {
+      "id": "news-53311f83a8794b5bb1dd6441397b30fc",
+      "category": "domestic",
+      "title": "中国国民党举办孙中山先生诞辰纪念座谈会",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-10/10729840.shtml",
+      "publishedAt": "2026-11-10T14:03:06.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "今年适逢孙中山先生诞辰160周年，中国国民党10日在位于台北的中央党部中山厅举办纪念座谈会。",
+      "summary": "报道称，今年是孙中山先生诞辰160周年，中国国民党在台北中央党部中山厅举办纪念座谈会。可核实的信息主要是活动时间、地点、主办方和纪念主题，适合作为观察岛内相关纪念活动的公开来源。",
+      "failureAnalysis": "目前可核实内容仅限纪念座谈会的基本事实，未提供更多政策或社会影响细节；阅读时应把事实与后续解读分开。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社台北11月10日电 (记者 路梅)今年适逢孙中山先生诞辰160周年，中国国民党10日在位于台北的中央党部中山厅举办纪念座谈会。",
+      "translations": {
+        "zh": {
+          "title": "中国国民党举办孙中山先生诞辰160周年纪念座谈会",
+          "highlight": "今年适逢孙中山先生诞辰160周年，中国国民党10日在位于台北的中央党部中山厅举办纪念座谈会。",
+          "summary": "报道称，今年是孙中山先生诞辰160周年，中国国民党在台北中央党部中山厅举办纪念座谈会。可核实的信息主要是活动时间、地点、主办方和纪念主题，适合作为观察岛内相关纪念活动的公开来源。",
+          "failureAnalysis": "目前可核实内容仅限纪念座谈会的基本事实，未提供更多政策或社会影响细节；阅读时应把事实与后续解读分开。"
+        },
+        "en": {
+          "highlight": "This year marks the 160th anniversary of Sun Yat-sen’s birth, and the Kuomintang held a commemorative symposium on Nov. 10 at Zhongshan Hall in its Taipei central headquarters.",
+          "summary": "The report states that the Kuomintang held a commemorative symposium in Taipei for the 160th anniversary of Sun Yat-sen’s birth. The verifiable information is limited to the event’s timing, venue, organizer, and theme, making it a public source for observing related commemorative activity.",
+          "failureAnalysis": "The available details are limited to the basic facts of the symposium and do not provide further policy or social-impact specifics; readers should separate the reported facts from later interpretation.",
+          "title": "Kuomintang Holds Symposium Commemorating Sun Yat-sen’s 160th Birth Anniversary"
+        }
+      }
+    },
+    {
+      "id": "news-5efaa8d20ec64ba985db58ccd0d1dcd7",
+      "category": "domestic",
+      "title": "海南推进城乡建设低碳转型 全面推广绿色建筑",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-10/10729843.shtml",
+      "publishedAt": "2026-11-10T14:01:48.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "海南近年来加快提升建筑领域绿色低碳发展质量，目前绿色建筑实现全面推广，装配式建造“应建尽建”。",
+      "summary": "中新网报道，海南在《海南省应对气候变化的政策与行动2026年度报告》白皮书新闻发布会上介绍了建筑领域绿色低碳发展进展：绿色建筑已全面推广，装配式建造实行“应建尽建”。这条官方信息适合用来观察地方城乡建设低碳转型的政策落地信号。",
+      "failureAnalysis": "关键看点在于政策表述已从目标转向全面推广和“应建尽建”的执行要求；但已知信息未给出量化节能降碳效果，判断实际影响仍需后续数据。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网海口11月10日电 (记者 王子谦)记者10日从《海南省应对气候变化的政策与行动2026年度报告》白皮书新闻发布会上获悉，海南近年来加快提升建筑领域绿色低碳发展质量，目前绿色建筑实现全面推广，装配式建造“应建尽建”。",
+      "translations": {
+        "zh": {
+          "title": "海南推进城乡建设低碳转型 全面推广绿色建筑",
+          "highlight": "海南近年来加快提升建筑领域绿色低碳发展质量，目前绿色建筑实现全面推广，装配式建造“应建尽建”。",
+          "summary": "中新网报道，海南在《海南省应对气候变化的政策与行动2026年度报告》白皮书新闻发布会上介绍了建筑领域绿色低碳发展进展：绿色建筑已全面推广，装配式建造实行“应建尽建”。这条官方信息适合用来观察地方城乡建设低碳转型的政策落地信号。",
+          "failureAnalysis": "关键看点在于政策表述已从目标转向全面推广和“应建尽建”的执行要求；但已知信息未给出量化节能降碳效果，判断实际影响仍需后续数据。"
+        },
+        "en": {
+          "highlight": "Hainan is accelerating quality improvements in green, low-carbon building development, with green buildings now fully promoted and prefabricated construction required wherever applicable.",
+          "summary": "China News Service reported from a Haikou press conference on Hainan's 2026 climate policy and action report that the province has fully promoted green buildings and applies prefabricated construction wherever projects are eligible. The item is worth reading as an official signal of how local urban and rural construction is shifting toward low-carbon methods.",
+          "failureAnalysis": "The key takeaway is the shift from policy goals to full promotion and an “build wherever applicable” implementation rule; the provided information does not quantify energy or carbon savings, so the impact still needs follow-up data.",
+          "title": "Hainan Advances Low-Carbon Urban and Rural Construction, Fully Promotes Green Buildings"
+        }
+      }
+    },
+    {
+      "id": "news-350c991fc5ba4bc991d6c020578952c5",
+      "category": "international",
+      "title": "Nvidia hires major New York law firm to investigate Jensen Huang affair",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/ck1wvwwl3x0go?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-10T21:06:04.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "这一任命是在曝出黄仁勋与一名据信为中国间谍的女子有婚外情之后作出的。",
+      "summary": "BBC商业报道称，英伟达已聘请一家纽约大型律师事务所，调查黄仁勋的婚外情。报道提到，此举发生在黄仁勋与一名据信为中国间谍的女子发生婚外情的消息曝光之后。该事件涉及公司高管、外部律所调查与国家安全疑云，值得关注后续进展。",
+      "failureAnalysis": "关键看点在于，高管个人行为一旦牵涉外部调查和国家安全指控，就可能迅速升级为公司治理与声誉风险。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "The appointment was made after it emerged Jensen Huang had an affair with a woman believed to be a spy for China.",
+      "translations": {
+        "zh": {
+          "title": "英伟达聘请纽约大型律所调查黄仁勋婚外情",
+          "highlight": "这一任命是在曝出黄仁勋与一名据信为中国间谍的女子有婚外情之后作出的。",
+          "summary": "BBC商业报道称，英伟达已聘请一家纽约大型律师事务所，调查黄仁勋的婚外情。报道提到，此举发生在黄仁勋与一名据信为中国间谍的女子发生婚外情的消息曝光之后。该事件涉及公司高管、外部律所调查与国家安全疑云，值得关注后续进展。",
+          "failureAnalysis": "关键看点在于，高管个人行为一旦牵涉外部调查和国家安全指控，就可能迅速升级为公司治理与声誉风险。"
+        },
+        "en": {
+          "highlight": "The appointment was made after it emerged Jensen Huang had an affair with a woman believed to be a spy for China.",
+          "summary": "BBC Business reports that Nvidia has hired a major New York law firm to investigate an affair involving Jensen Huang. The move followed disclosures that Huang had an affair with a woman believed to be a spy for China. The case is worth watching because it combines executive conduct, an external legal inquiry and national-security concerns.",
+          "failureAnalysis": "The key takeaway is that an executive's personal conduct can quickly escalate into governance and reputational risk when it involves an external investigation and national-security allegations.",
+          "title": "Nvidia Hires Major New York Law Firm to Investigate Jensen Huang Affair"
+        }
+      }
+    },
+    {
+      "id": "news-8432f8a58aff4ebea92fffc6e7106cc4",
+      "category": "international",
+      "title": "Claude chatbot maker set for $1.3tn stock market debut despite 'catastrophic' AI warning",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/crpdgd723x2zo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-10T17:56:12.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "Claude聊天机器人背后的AI公司将以每股70至78美元发行股票，这一价格低于市场预期。",
+      "summary": "BBC Business报道，Claude聊天机器人背后的AI公司即将上市，股票发行价区间为每股70至78美元，低于此前预期。报道标题还提到，此次上市伴随对AI“灾难性”风险的警告，但公司仍推进1.3万亿美元级别的股市登场。对非技术管理者而言，值得关注的是市场如何给头部AI公司定价，以及风险警示与资本热情如何并存。",
+      "failureAnalysis": "关键看点不是发行价低于预期本身，而是头部AI公司仍能在风险警告中推进大规模上市；评估AI项目时，应同时看商业定价、市场预期与风险治理是否匹配。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "The AI company behind the Claude chatbot will offer its shares at between $70 and $78, which is lower than what was expected.",
+      "translations": {
+        "zh": {
+          "title": "Claude聊天机器人开发商拟以1.3万亿美元市值上市，发行价低于预期",
+          "highlight": "Claude聊天机器人背后的AI公司将以每股70至78美元发行股票，这一价格低于市场预期。",
+          "summary": "BBC Business报道，Claude聊天机器人背后的AI公司即将上市，股票发行价区间为每股70至78美元，低于此前预期。报道标题还提到，此次上市伴随对AI“灾难性”风险的警告，但公司仍推进1.3万亿美元级别的股市登场。对非技术管理者而言，值得关注的是市场如何给头部AI公司定价，以及风险警示与资本热情如何并存。",
+          "failureAnalysis": "关键看点不是发行价低于预期本身，而是头部AI公司仍能在风险警告中推进大规模上市；评估AI项目时，应同时看商业定价、市场预期与风险治理是否匹配。"
+        },
+        "en": {
+          "highlight": "The AI company behind the Claude chatbot will offer its shares at between $70 and $78, which is lower than what was expected.",
+          "summary": "BBC Business reports that the AI company behind the Claude chatbot is set for a stock market debut, with shares offered at $70 to $78, lower than expected. The headline also references a \"catastrophic\" AI warning even as the company proceeds with a $1.3tn market debut. For non-technical leaders, the key issue is how the market prices leading AI companies and how risk warnings coexist with capital enthusiasm.",
+          "failureAnalysis": "The key takeaway is not simply that the share price is below expectations, but that a leading AI company can still pursue a large listing amid risk warnings; when assessing AI projects, look at whether commercial pricing, market expectations, and risk governance are aligned.",
+          "title": "Claude chatbot maker plans $1.3tn market debut as share pricing falls short of expectations"
+        }
+      }
+    },
+    {
+      "id": "life-1c4f29e65a234c80a13901179bfcc662",
+      "category": "international",
+      "title": "Pablo Neruda on How to Hold Time",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/10/neruda-time/",
+      "publishedAt": "2026-11-10T16:56:27.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 2",
+      "highlight": "时间是一条卷走我的河，但我也是河；时间是一团吞噬我的火，但我也是火。",
+      "summary": "文章从博尔赫斯关于“时间是河也是火”的句子切入，描述多数人并非博尔赫斯，却在生产力崇拜中把每一分钟变成压在生命脉搏上的刀刃。它值得读，是因为它把时间焦虑放回文学与生命体验中，并提到我们的时间嵌套在我们的时代之中。",
+      "failureAnalysis": "关键提醒是：时间焦虑往往来自把每一分钟都工具化；读这类文章的价值，是暂时跳出效率视角，重新感受自己也是时间的一部分。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "“Time is a river that sweeps me along, but I am a river,” Borges wrote. “Time is a fire that consumes me, but I am the fire.” Most of us are not Borges. Most of us are drowning in bewilderment at where the time goes, burning with the urgency of being alive while waiting to start living, wandering the labyrinth of life with wayward presence, wishing that time ran differently as the cult of productivity turns each minute into a blade pressed against the vein of our transience.",
+      "translations": {
+        "zh": {
+          "title": "巴勃罗·聂鲁达：如何握住时间",
+          "highlight": "时间是一条卷走我的河，但我也是河；时间是一团吞噬我的火，但我也是火。",
+          "summary": "文章从博尔赫斯关于“时间是河也是火”的句子切入，描述多数人并非博尔赫斯，却在生产力崇拜中把每一分钟变成压在生命脉搏上的刀刃。它值得读，是因为它把时间焦虑放回文学与生命体验中，并提到我们的时间嵌套在我们的时代之中。",
+          "failureAnalysis": "关键提醒是：时间焦虑往往来自把每一分钟都工具化；读这类文章的价值，是暂时跳出效率视角，重新感受自己也是时间的一部分。"
+        },
+        "en": {
+          "highlight": "Time is a river that sweeps me along, but I am a river; time is a fire that consumes me, but I am the fire.",
+          "summary": "The piece begins with Borges’s lines on time as both river and fire, then describes most people as not Borges: bewildered by where time goes and pressed by a productivity culture that turns each minute into a blade. It is worth reading because it frames time anxiety through literature and life experience, noting that our time is nested within our times.",
+          "failureAnalysis": "The key takeaway is that time anxiety often comes from treating every minute as a tool; the value of such reading is to step back from efficiency and feel oneself as part of time.",
+          "title": "Pablo Neruda on How to Hold Time"
+        }
+      }
+    },
+    {
+      "id": "life-f1fdc83fdad846ba8dab3bf8121e3fbf",
+      "category": "international",
+      "title": "Passersby",
+      "source": "Psyche",
+      "url": "https://psyche.co/videos/a-grand-filmmaking-experiment-traces-intersecting-lives-in-los-angeles",
+      "publishedAt": "2026-11-10T11:01:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 0",
+      "highlight": "这部辽阔的洛杉矶肖像表明，城市的核心是形形色色的人，带着他们各自的怪癖与魅力。",
+      "summary": "这是 Psyche 上由 Sue Ding 与 Sarah Garrahan 执导的影像作品《路人》，以开阔视角描绘洛杉矶。它把镜头对准交错的路人生活，呈现人的怪癖与魅力，让人看到城市真正的核心。适合想从日常人物理解一座城市气质的读者观看。",
+      "failureAnalysis": "关键启示：城市的核心是人，观察路人的日常与个性，比只看地标更能理解一座城市。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "This expansive portrait of Los Angeles shows that the heart of a city is its people – with all their quirks and charms - Directed by Sue Ding and Sarah Garrahan Watch on Psyche",
+      "translations": {
+        "zh": {
+          "title": "路人：追踪洛杉矶交错人生的影像实验",
+          "highlight": "这部辽阔的洛杉矶肖像表明，城市的核心是形形色色的人，带着他们各自的怪癖与魅力。",
+          "summary": "这是 Psyche 上由 Sue Ding 与 Sarah Garrahan 执导的影像作品《路人》，以开阔视角描绘洛杉矶。它把镜头对准交错的路人生活，呈现人的怪癖与魅力，让人看到城市真正的核心。适合想从日常人物理解一座城市气质的读者观看。",
+          "failureAnalysis": "关键启示：城市的核心是人，观察路人的日常与个性，比只看地标更能理解一座城市。"
+        },
+        "en": {
+          "highlight": "This expansive portrait of Los Angeles shows that the heart of a city is its people – with all their quirks and charms.",
+          "summary": "This is a Psyche video directed by Sue Ding and Sarah Garrahan, offering an expansive portrait of Los Angeles. It traces intersecting passersby and highlights their quirks and charms, suggesting that people are the heart of a city. It is worth watching for a human-scale view of urban life.",
+          "failureAnalysis": "The key takeaway is that a city is best understood through the daily lives and personalities of its people, not only its landmarks or grand narratives.",
+          "title": "Passersby: A Filmmaking Experiment Tracing Intersecting Lives in Los Angeles"
+        }
+      }
+    },
+    {
+      "id": "paper-2611.12798",
+      "category": "paper",
+      "title": "Complementarity-Driven Dual-Teacher Hierarchical Alignment for Zero-Shot EEG-to-Image Retrieval",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2611.12798v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.12798",
+      "publishedAt": "2026-11-09T18:05:57.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "双教师层级对齐借助互补性信息，面向零样本脑电到图像检索，意在突破仅依赖CLIP族视觉模型的对齐局限。",
+      "summary": "论文聚焦零样本脑电到图像检索，指出与预训练视觉基础模型进行对比式对齐已成为主流范式。摘要提到现有方法通常只将脑电与CLIP族视觉模型对齐，未充分利用层级视觉信息。作者据此提出互补性驱动的双教师层级对齐框架。",
+      "failureAnalysis": "目前提供的摘要文本不完整，尚无法核验具体实验设置、数据规模与跨被试泛化结果，因此对方法有效性的判断仍受证据范围限制。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "1 Complementarity-Driven Dual-Teacher Hierarchical Alignment for Zero-Shot EEG-to-Image Retrieval Lukun Wu, Jie Li, Ziqi Ren, Ruiyang Xia, Yan Gao, and Xinbo Gao,Fellow, IEEE, Abstract—Decoding visual information from EEG is central to brain–computer interfaces and brain-inspired intelligence, and contrastive alignment with pretrained vision foundation models (VFMs) has become the dominant paradigm. However, existing methods align EEG solely with CLIP-family VFMs, leaving hier- archical visual information in neural responses under-exploited. To address this gap, we formulate a mechanism–paradigm correspondence view that links hierarchical visual processing (from appearance to semantics) to the complementary biases of cross-paradigm VFMs, with image-only models (e.g., DINO) and image–text models (e.g., CLIP) capturing distinct facets of this hierarchy.",
+      "translations": {
+        "zh": {
+          "title": "互补性驱动的双教师层级对齐用于零样本脑电到图像检索",
+          "highlight": "双教师层级对齐借助互补性信息，面向零样本脑电到图像检索，意在突破仅依赖CLIP族视觉模型的对齐局限。",
+          "summary": "论文聚焦零样本脑电到图像检索，指出与预训练视觉基础模型进行对比式对齐已成为主流范式。摘要提到现有方法通常只将脑电与CLIP族视觉模型对齐，未充分利用层级视觉信息。作者据此提出互补性驱动的双教师层级对齐框架。",
+          "failureAnalysis": "目前提供的摘要文本不完整，尚无法核验具体实验设置、数据规模与跨被试泛化结果，因此对方法有效性的判断仍受证据范围限制。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "Complementarity-Driven Dual-Teacher Hierarchical Alignment for Zero-Shot EEG-to-Image Retrieval",
+          "highlight": "The dual-teacher hierarchical alignment uses complementary information for zero-shot EEG-to-image retrieval, aiming to overcome alignment limits of CLIP-family vision models alone.",
+          "summary": "The paper addresses zero-shot EEG-to-image retrieval and notes that contrastive alignment with pretrained vision foundation models has become the dominant paradigm. Existing methods align EEG only with CLIP-family vision models, leaving hierarchical visual information underexplored. The proposed approach introduces complementarity-driven dual-teacher hierarchical alignment.",
+          "failureAnalysis": "The supplied abstract is incomplete, so experimental settings, dataset scale, and cross-subject generalization results cannot be verified; the evidence for effectiveness remains limited.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-hn-50407882",
+      "category": "ai",
+      "title": "Claude Code's \"Don't Ask Again\" exposes passwords in 1,122 public GitHub files",
+      "source": "Hacker News",
+      "url": "https://apiiro.com/blog/coding-agents-leaking-secrets-github-dont-ask-again",
+      "abstractUrl": null,
+      "publishedAt": "2026-11-07T20:45:32.0000000Z",
+      "scoreLabel": "624 points / 426 comments",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "HN discussion",
+          "kind": "secondary"
+        },
+        {
+          "label": "Expert analysis",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + HN discussion + Expert analysis",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + HN discussion + Expert analysis",
+      "summary": "文章围绕 Claude Code 的“Don't Ask Again”权限捷径，称已有 1,122 个公开 GitHub 文件因此暴露密码。它值得读，是因为把 AI 编码代理的便利性、默认权限与密钥泄露风险放在同一案例中讨论，并伴随 624 分、426 条评论的 HN 讨论热度。",
+      "failureAnalysis": "“不再询问”这类持久授权设计若缺少细粒度范围、过期机制和密钥访问审计，很容易把一次性便利变成长期泄露面；用户为省事会接受默认放行，安全团队又难在公开仓库扩散前发现。要降低风险，需要默认最小权限、对敏感路径和密钥模式做实时拦截，并承担误报、漏报与合规成本；否则一旦发生公开泄露，产品信任和采用率会先受损。",
+      "aiSelectionScore": 1476,
+      "highlight": "Claude Code 的“不再询问”权限选项，被指导致密码出现在 1,122 个公开 GitHub 文件中，引发安全担忧。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "HN candidate with public discussion metrics.",
+      "translations": {
+        "zh": {
+          "title": "Claude Code 的“不再询问”选项导致 1,122 个公开 GitHub 文件泄露密码",
+          "highlight": "Claude Code 的“不再询问”权限选项，被指导致密码出现在 1,122 个公开 GitHub 文件中，引发安全担忧。",
+          "summary": "文章围绕 Claude Code 的“Don't Ask Again”权限捷径，称已有 1,122 个公开 GitHub 文件因此暴露密码。它值得读，是因为把 AI 编码代理的便利性、默认权限与密钥泄露风险放在同一案例中讨论，并伴随 624 分、426 条评论的 HN 讨论热度。",
+          "failureAnalysis": "“不再询问”这类持久授权设计若缺少细粒度范围、过期机制和密钥访问审计，很容易把一次性便利变成长期泄露面；用户为省事会接受默认放行，安全团队又难在公开仓库扩散前发现。要降低风险，需要默认最小权限、对敏感路径和密钥模式做实时拦截，并承担误报、漏报与合规成本；否则一旦发生公开泄露，产品信任和采用率会先受损。"
+        },
+        "en": {
+          "highlight": "Claude Code’s “Don’t Ask Again” permission option has been linked to passwords appearing in 1,122 public GitHub files.",
+          "summary": "The item discusses Claude Code’s “Don’t Ask Again” shortcut and reports that 1,122 public GitHub files exposed passwords as a result. It is worth reading because it frames AI coding agents’ convenience, default permissions, and secret-leak risk in one concrete case, with strong Hacker News discussion metrics (624 points, 426 comments).",
+          "failureAnalysis": "Persistent “don’t ask again” permissions can turn convenience into a long-lived exposure surface unless they have narrow scope, expiry, secret-path blocking, and auditability. Without those engineering and compliance controls, users’ default acceptance and weak detection will undermine trust and adoption.",
+          "title": "Claude Code’s “Don’t Ask Again” exposes passwords in 1,122 public GitHub files"
+        }
+      }
+    }
+  ]
+}
