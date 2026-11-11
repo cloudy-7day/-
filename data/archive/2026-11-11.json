@@ -1,0 +1,327 @@
+{
+  "issueDate": "2026-11-11",
+  "updateStatus": "complete",
+  "contentFingerprint": "1ff9623c00f509783aa400293193797c8097604bc776b7c183ffbf8159391bc3",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-defb287a035b4e88b96efc9138e214a5",
+      "category": "domestic",
+      "title": "王沪宁会见古巴党和政府特使、古共中央政治局委员、外交部长罗德里格斯",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-11/10730549.shtml",
+      "publishedAt": "2026-11-11T14:00:26.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "中共中央政治局常委、全国政协主席王沪宁11日在北京会见古巴党和政府特使、古共中央政治局委员、外交部长罗德里格斯。",
+      "summary": "这条报道记录了中共中央政治局常委、全国政协主席王沪宁11日在北京会见古巴党和政府特使、古共中央政治局委员、外交部长罗德里格斯。由中新社发自北京的官方通稿，属于典型的国内时政外事会见消息。读它的价值在于了解中古两党两国高层公开交往的节点与规格，以及官方通稿在人物、身份、时间、地点上的固定表述方式。",
+      "failureAnalysis": "关键提示：这类会见通稿的可核实信息集中在“谁、以什么身份、在何时何地见了谁”，其用途是确认公开交往事实，而不是从中推断未披露的会谈内容。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社北京11月11日电 中共中央政治局常委、全国政协主席王沪宁11日在北京会见古巴党和政府特使、古共中央政治局委员、外交部长罗德里格斯。",
+      "translations": {
+        "zh": {
+          "title": "王沪宁会见古巴党和政府特使、古共中央政治局委员、外交部长罗德里格斯",
+          "highlight": "中共中央政治局常委、全国政协主席王沪宁11日在北京会见古巴党和政府特使、古共中央政治局委员、外交部长罗德里格斯。",
+          "summary": "这条报道记录了中共中央政治局常委、全国政协主席王沪宁11日在北京会见古巴党和政府特使、古共中央政治局委员、外交部长罗德里格斯。由中新社发自北京的官方通稿，属于典型的国内时政外事会见消息。读它的价值在于了解中古两党两国高层公开交往的节点与规格，以及官方通稿在人物、身份、时间、地点上的固定表述方式。",
+          "failureAnalysis": "关键提示：这类会见通稿的可核实信息集中在“谁、以什么身份、在何时何地见了谁”，其用途是确认公开交往事实，而不是从中推断未披露的会谈内容。"
+        },
+        "en": {
+          "highlight": "Wang Huning, member of the CPC Political Bureau Standing Committee and chairman of the CPPCC National Committee, met in Beijing on Nov 11 with Cuban Foreign Minister Rodriguez, special envoy of the Cuban Party and government.",
+          "summary": "The report records that Wang Huning, member of the CPC Political Bureau Standing Committee and chairman of the CPPCC National Committee, met in Beijing on November 11 with Bruno Rodriguez, special envoy of the Cuban Party and government, Political Bureau member of the Communist Party of Cuba Central Committee and foreign minister. It is a standard official dispatch from China News Service in Beijing on a domestic political and diplomatic meeting. It is worth reading to see the timing and protocol level of publicly reported high-level exchanges between the two parties and countries, and to notice the fixed official wording of names, titles, time and place.",
+          "failureAnalysis": "Key point: the verifiable content of such a meeting readout is who met whom, in what capacity, when and where; it confirms a public fact of exchange rather than revealing undisclosed details of the talks.",
+          "title": "Wang Huning Meets Cuban Party and Government Special Envoy, Foreign Minister Rodriguez"
+        }
+      }
+    },
+    {
+      "id": "news-d79314bacd614209a2ce48b4b55352bb",
+      "category": "domestic",
+      "title": "山西老年人口突破800万  围绕五大重点谋划“十五五”老龄工作布局",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-11/10730545.shtml",
+      "publishedAt": "2026-11-11T13:57:50.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "目前山西省老年人口突破800万，“十五五”时期是当地积极应对人口老龄化的重要窗口期。",
+      "summary": "中新网报道，山西省民政厅在“开局起步‘十五五’”主题新闻发布会上介绍，山西老年人口已突破800万，并将“十五五”视为积极应对人口老龄化的重要窗口期。标题信息显示，当地正围绕五大重点谋划老龄工作布局，适合关注地方养老政策与公共资源配置的人阅读。",
+      "failureAnalysis": "关键启示：老年人口规模变化会直接影响养老服务、社会保障和公共资源配置，“十五五”窗口期意味着相关工作需要提前布局。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网太原11月11日电 (刘小红 杨静)11日，在中共山西省委宣传部、山西省人民政府新闻办公室举行的“开局起步‘十五五’”系列主题新闻发布会上，针对山西老龄工作相关问题，山西省民政厅党组书记、厅长李建红表示，目前山西省老年人口突破800万，“十五五”时期是当地积极应对人口老龄化的重要窗口期。",
+      "translations": {
+        "zh": {
+          "title": "山西老年人口突破800万 “十五五”老龄工作布局谋划",
+          "highlight": "目前山西省老年人口突破800万，“十五五”时期是当地积极应对人口老龄化的重要窗口期。",
+          "summary": "中新网报道，山西省民政厅在“开局起步‘十五五’”主题新闻发布会上介绍，山西老年人口已突破800万，并将“十五五”视为积极应对人口老龄化的重要窗口期。标题信息显示，当地正围绕五大重点谋划老龄工作布局，适合关注地方养老政策与公共资源配置的人阅读。",
+          "failureAnalysis": "关键启示：老年人口规模变化会直接影响养老服务、社会保障和公共资源配置，“十五五”窗口期意味着相关工作需要提前布局。"
+        },
+        "en": {
+          "highlight": "Currently, Shanxi Province's elderly population has exceeded 8 million, and the '15th Five-Year Plan' period is an important window for actively responding to population aging.",
+          "summary": "China News Service reports that Shanxi's Civil Affairs Department said at a press conference on the start of the '15th Five-Year Plan' that the province's elderly population has exceeded 8 million, making this period an important window for responding to population aging. The title indicates that local aging work is being planned around five key priorities, making it relevant to readers interested in local elderly care policy and public resource allocation.",
+          "failureAnalysis": "Key takeaway: changes in the size of the elderly population directly affect elderly care, social security, and public resource allocation, so the '15th Five-Year Plan' window calls for advance planning.",
+          "title": "Shanxi's Elderly Population Exceeds 8 Million as It Plans Aging Work for the '15th Five-Year Plan'"
+        }
+      }
+    },
+    {
+      "id": "news-27ed693d87d9433f824e66d4f534aeac",
+      "category": "domestic",
+      "title": "山西民政收官“十四五”惠及184万民众  五大方向布局“十五五”民生工作",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-11/10730543.shtml",
+      "publishedAt": "2026-11-11T13:57:46.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "“十四五”期间，山西持续推进普惠性、基础性、兜底性民生建设，惠及困难民众184万人。",
+      "summary": "11月11日的新闻发布会上，山西省民政厅介绍了“十四五”民政事业发展情况：低保、特困、孤儿、残疾人等保障标准稳步提高，惠及困难民众184万人。发布会同步解读《山西省“十五五”民政事业发展规划》，明确养老服务、社会救助、特殊群体福利、社会事务、社会治理五个重点发力方向。该信息有助于了解地方民生保障的阶段性成效及下一阶段工作布局。",
+      "failureAnalysis": "可核验的公共影响集中在保障标准提高与覆盖184万困难民众，以及“十五五”五项工作方向的明确；后续成效仍取决于规划落地与年度执行。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网太原11月11日电 (刘小红 杨静)11日，在中共山西省委宣传部、山西省人民政府新闻办公室举行的“开局起步‘十五五’”系列主题新闻发布会上，山西省民政厅党组书记、厅长李建红介绍了全省民政事业发展情况。“十四五”期间，山西持续推进普惠性、基础性、兜底性民生建设，低保、特困、孤儿、残疾人等保障标准稳步提高，惠及困难民众184万人。发布会同步解读《山西省“十五五”民政事业发展规划》，明确五个重点发力方向，统筹推进养老服务、社会救助、特殊群体福利、社会事务、社会治理各项民政工作。",
+      "translations": {
+        "zh": {
+          "title": "山西民政“十四五”惠及184万民众，明确“十五五”五个发力方向",
+          "highlight": "“十四五”期间，山西持续推进普惠性、基础性、兜底性民生建设，惠及困难民众184万人。",
+          "summary": "11月11日的新闻发布会上，山西省民政厅介绍了“十四五”民政事业发展情况：低保、特困、孤儿、残疾人等保障标准稳步提高，惠及困难民众184万人。发布会同步解读《山西省“十五五”民政事业发展规划》，明确养老服务、社会救助、特殊群体福利、社会事务、社会治理五个重点发力方向。该信息有助于了解地方民生保障的阶段性成效及下一阶段工作布局。",
+          "failureAnalysis": "可核验的公共影响集中在保障标准提高与覆盖184万困难民众，以及“十五五”五项工作方向的明确；后续成效仍取决于规划落地与年度执行。"
+        },
+        "en": {
+          "highlight": "During the 14th Five-Year Plan period, Shanxi continued to advance inclusive, basic and safety-net livelihood programs, benefiting 1.84 million people in difficulty.",
+          "summary": "At a press conference on November 11, the Shanxi Provincial Department of Civil Affairs presented progress during the 14th Five-Year Plan: minimum living guarantee, extreme poverty, orphan and disability support standards rose steadily, benefiting 1.84 million people in difficulty. The event also interpreted the province’s 15th Five-Year Plan for civil affairs, identifying five priority directions: elderly care, social assistance, welfare for special groups, social affairs and social governance. It offers a concise view of local livelihood achievements and the next phase of planning.",
+          "failureAnalysis": "The verifiable public impact lies in higher support standards, coverage of 1.84 million people in difficulty, and five clearly defined work directions; future results will depend on implementation and annual execution.",
+          "title": "Shanxi Civil Affairs Reports 1.84 Million Beneficiaries in 14th Five-Year Plan, Sets Five Directions for 15th"
+        }
+      }
+    },
+    {
+      "id": "news-198dcec5563949c080f1da91fcb9f3e5",
+      "category": "international",
+      "title": "Russia and Ukraine agree to a prisoner exchange as talks end with no big breakthrough",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/11/11/g-s1-152954/russia-ukraine-war-talks",
+      "publishedAt": "2026-11-11T13:30:00.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "俄罗斯与乌克兰同意大规模交换战俘，美国斡旋的阿布扎比会谈促成了这一决定。",
+      "summary": "俄罗斯与乌克兰已同意大规模交换战俘，这是自2022年战争爆发以来最大的人道主义释放。相关决定由美国斡旋、在阿布扎比举行的会谈促成，但会谈结束时并未出现重大突破。值得关注的是，人道议题取得进展，但整体谈判成果仍然有限。",
+      "failureAnalysis": "可确认的进展集中在战俘交换这一人道议题，整体谈判并未出现重大突破；判断局势时应区分局部成果与全面和解。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Russia and Ukraine have agreed to a large exchange of prisoners of war. U.S.-mediated talks in Abu Dhabi led to this decision, marking the biggest humanitarian release since the war began in 2022.",
+      "translations": {
+        "zh": {
+          "title": "俄乌同意大规模交换战俘，阿布扎比会谈未取得重大突破",
+          "highlight": "俄罗斯与乌克兰同意大规模交换战俘，美国斡旋的阿布扎比会谈促成了这一决定。",
+          "summary": "俄罗斯与乌克兰已同意大规模交换战俘，这是自2022年战争爆发以来最大的人道主义释放。相关决定由美国斡旋、在阿布扎比举行的会谈促成，但会谈结束时并未出现重大突破。值得关注的是，人道议题取得进展，但整体谈判成果仍然有限。",
+          "failureAnalysis": "可确认的进展集中在战俘交换这一人道议题，整体谈判并未出现重大突破；判断局势时应区分局部成果与全面和解。"
+        },
+        "en": {
+          "highlight": "Russia and Ukraine have agreed to a large exchange of prisoners of war, facilitated by U.S.-mediated talks in Abu Dhabi.",
+          "summary": "Russia and Ukraine have agreed to a large exchange of prisoners of war, the biggest humanitarian release since the war began in 2022. The decision was reached through U.S.-mediated talks in Abu Dhabi, but the talks ended without a major breakthrough. The progress is notable on a humanitarian issue, while the broader negotiations remain limited.",
+          "failureAnalysis": "The confirmed progress is concentrated on the humanitarian issue of prisoner exchange, while the broader talks produced no major breakthrough; local gains should be distinguished from a comprehensive settlement.",
+          "title": "Russia and Ukraine agree to large prisoner exchange; Abu Dhabi talks end without major breakthrough"
+        }
+      }
+    },
+    {
+      "id": "news-ea9a9136c48f4f1c8ae4393117396cc1",
+      "category": "international",
+      "title": "US and rest of world must follow China’s lead on green energy, says John Kerry",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/environment/2026/nov/10/china-green-energy-john-kerry-cop31",
+      "publishedAt": "2026-11-10T12:08:23.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "美国前国务卿约翰·克里表示，中国在摆脱化石燃料方面领先世界，包括美国在内的其他国家现在必须跟进。",
+      "summary": "文章报道，克里在COP31开幕之际对《卫报》表示，多数国家“步履蹒跚”，而北京已“大幅加速”绿色能源转型。中国在2026年3月通过的五年规划中首次承诺“积极参与并引领全球气候治理”，COP31可能成为观察其是否付诸行动的首个窗口。这值得关注，因为它涉及中国在全球气候治理中的角色变化，以及对美国等国家的示范压力。",
+      "failureAnalysis": "关键看点是承诺能否转化为COP31上的具体行动；中国长期回避领导角色，这次表态的实际分量仍需观察。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Former US secretary of state says most nations are ‘stumbling along’ while Beijing has ‘hugely accelerated’ Cop31 live – latest updates China is leading the world in moving away from fossil fuels , and the rest of the globe – including the US – must now follow, the former US secretary of state John Kerry has told the Guardian, as Cop watchers wonder exactly how China is going to approach this year’s climate summit. As Cop31 opens – this year the climate conference is in Turkey – there is plenty of speculation about whether China will finally step into the leadership role that it has long avoided. In its latest “five-year plan” adopted in March 2026, China for the first time pledged to “actively participate in and lead global climate governance”.",
+      "translations": {
+        "zh": {
+          "title": "克里：美国及世界应追随中国绿色能源领导",
+          "highlight": "美国前国务卿约翰·克里表示，中国在摆脱化石燃料方面领先世界，包括美国在内的其他国家现在必须跟进。",
+          "summary": "文章报道，克里在COP31开幕之际对《卫报》表示，多数国家“步履蹒跚”，而北京已“大幅加速”绿色能源转型。中国在2026年3月通过的五年规划中首次承诺“积极参与并引领全球气候治理”，COP31可能成为观察其是否付诸行动的首个窗口。这值得关注，因为它涉及中国在全球气候治理中的角色变化，以及对美国等国家的示范压力。",
+          "failureAnalysis": "关键看点是承诺能否转化为COP31上的具体行动；中国长期回避领导角色，这次表态的实际分量仍需观察。"
+        },
+        "en": {
+          "highlight": "Former US secretary of state John Kerry says China is leading the world in moving away from fossil fuels, and others, including the US, must follow.",
+          "summary": "The article reports that John Kerry told the Guardian that most nations are “stumbling along” while Beijing has “hugely accelerated” its green energy transition as Cop31 opens. China’s latest five-year plan, adopted in March 2026, pledged for the first time to “actively participate in and lead global climate governance,” and Cop31 may offer the first signs of whether Beijing will act on that rhetoric. It is worth reading because it concerns China’s changing role in global climate governance and the pressure this creates for the US and others.",
+          "failureAnalysis": "The key question is whether the pledge will translate into concrete action at Cop31; China has long avoided a leadership role, so the practical weight of this statement still needs to be watched.",
+          "title": "Kerry: US and world should follow China's green energy lead"
+        }
+      }
+    },
+    {
+      "id": "life-3153de409731492d8d1c32a0b28e3bbc",
+      "category": "international",
+      "title": "Now Yourself: The Elusive Science of What the Present Moment Is Made of and How It Makes You Who You Are",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/10/jo-marchant-now/",
+      "publishedAt": "2026-11-10T19:05:37.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "无论世界已发生什么、将发生什么，唯有活着的此刻承载着兴奋的总和。",
+      "summary": "文章从默里尔·鲁凯泽与汉娜·阿伦特的句子出发，追问“现在”究竟由什么构成，以及它如何塑造我们是谁。适合想从人文与科学交叉视角重新理解当下的人阅读。",
+      "failureAnalysis": "关键启示是：“现在”并非理所当然的时间单位，而是值得重新审视的经验核心；理解它有助于把注意力从对过去与未来的焦虑中拉回可把握的当下。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "“Whatever has happened, whatever is going to happen in the world, it is the living moment that contains the sum of the excitement, this moment in which we touch life and all the energy of the past and future,” Muriel Rukeyser wrote in one of the greatest books of all time. “Fearlessness is what love seeks [which] exists only in the complete calm that can no longer be shaken by events expected of the future,” Hannah Arendt wrote in another of them, “hence the only valid tense is the present, the Now.” But upon closer inspection, now — this elementary… read article",
+      "translations": {
+        "zh": {
+          "title": "此刻的你：当下由什么构成，以及它如何塑造你",
+          "highlight": "无论世界已发生什么、将发生什么，唯有活着的此刻承载着兴奋的总和。",
+          "summary": "文章从默里尔·鲁凯泽与汉娜·阿伦特的句子出发，追问“现在”究竟由什么构成，以及它如何塑造我们是谁。适合想从人文与科学交叉视角重新理解当下的人阅读。",
+          "failureAnalysis": "关键启示是：“现在”并非理所当然的时间单位，而是值得重新审视的经验核心；理解它有助于把注意力从对过去与未来的焦虑中拉回可把握的当下。"
+        },
+        "en": {
+          "highlight": "Whatever has happened, whatever is going to happen in the world, it is the living moment that contains the sum of the excitement.",
+          "summary": "The article draws on Muriel Rukeyser and Hannah Arendt to ask what the present moment is made of and how it shapes who we are. It is worth reading for those interested in a humanistic, science-adjacent reflection on the meaning of “now.”",
+          "failureAnalysis": "The key takeaway is that “now” is not a given unit of time but a core of experience worth reexamining. Rethinking it can help shift attention from past and future anxiety to the present we can actually touch.",
+          "title": "Now Yourself: The Elusive Science of the Present Moment"
+        }
+      }
+    },
+    {
+      "id": "life-fe9d0f158ebf47cd8ec2eb2c1d5e20fb",
+      "category": "international",
+      "title": "Decoding Ediacaran fossils",
+      "source": "Aeon",
+      "url": "https://aeon.co/videos/how-a-palaeontologist-decodes-fossils-from-the-dawn-of-complex-life",
+      "publishedAt": "2026-11-11T11:01:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 0",
+      "highlight": "远古标本揭示动物如何在大约五亿年前开始移动，甚至呈现已知最早的“左右手性”例子。",
+      "summary": "这段 Aeon 视频聚焦古生物学家如何解读埃迪卡拉纪化石。已知内容显示，远古标本揭示了动物在大约五亿年前开始移动，并呈现已知最早的“左右手性”例子。它值得关注，因为它把复杂生命黎明期的行为线索压缩到化石证据中。",
+      "failureAnalysis": "关键启示：化石不只是静态遗骸，也能为动物运动与左右不对称的起源提供直接证据。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Ancient specimens reveal how animals began to move half a billion years ago – and even the first known example of ‘handedness’ - by Aeon Video Watch on Aeon",
+      "translations": {
+        "zh": {
+          "title": "解读埃迪卡拉纪化石",
+          "highlight": "远古标本揭示动物如何在大约五亿年前开始移动，甚至呈现已知最早的“左右手性”例子。",
+          "summary": "这段 Aeon 视频聚焦古生物学家如何解读埃迪卡拉纪化石。已知内容显示，远古标本揭示了动物在大约五亿年前开始移动，并呈现已知最早的“左右手性”例子。它值得关注，因为它把复杂生命黎明期的行为线索压缩到化石证据中。",
+          "failureAnalysis": "关键启示：化石不只是静态遗骸，也能为动物运动与左右不对称的起源提供直接证据。"
+        },
+        "en": {
+          "highlight": "Ancient specimens reveal how animals began to move half a billion years ago – and even the first known example of ‘handedness’.",
+          "summary": "This Aeon video looks at how a palaeontologist decodes Ediacaran fossils. The known content says ancient specimens reveal how animals began to move half a billion years ago and show the first known example of ‘handedness’. It is worth reading because it ties clues about behaviour at the dawn of complex life directly to fossil evidence.",
+          "failureAnalysis": "Key takeaway: fossils are not only static remains; they can offer direct evidence for the origins of animal movement and left-right asymmetry.",
+          "title": "Decoding Ediacaran Fossils"
+        }
+      }
+    },
+    {
+      "id": "paper-2611.14035",
+      "category": "paper",
+      "title": "ScaleBrain: A Scale-Consistent Framework for EEG Foundation Models",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2611.14035v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.14035",
+      "publishedAt": "2026-11-10T13:03:41.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "ScaleBrain面向脑电基础模型，强调尺度一致性，并关注固定长度分块带来的多尺度表征。",
+      "summary": "该文提出ScaleBrain，一个面向脑电基础模型的尺度一致框架。摘要将基于大规模无标注脑电语料预训练的基础模型视为BCI应用的重要范式，并提到固定长度分块所得多尺度表征可改善EEG表现。",
+      "failureAnalysis": "所给文本仅为摘要开头，未提供实验设置、跨受试者泛化、计算开销或临床部署验证，难以评估其在真实BCI场景中的稳健性。实际部署时需关注尺度一致性在个体差异、噪声和通道变化下是否仍能保持。多尺度表征若带来额外计算负担与延迟，也需在应用前验证。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "JOURNAL OF LATEX CLASS FILES, VOL. 8, AUGUST 2021 1 ScaleBrain: A Scale-Consistent Framework for EEG Foundation Models Minyu Zhou, Yajing Wu, Yongqiang Tang, Wang Jia and Wensheng Zhang Abstract—Foundation models pre-trained on large unlabeled electroencephalography (EEG) corpora have emerged as a trans- formative paradigm for Brain-Computer Interface (BCI) ap- plications. Recent EEG foundation models have shown that multi-scale representations derived from fixed-length patches can improve EEG representation learning.",
+      "translations": {
+        "zh": {
+          "title": "ScaleBrain：面向脑电基础模型的尺度一致框架",
+          "highlight": "ScaleBrain面向脑电基础模型，强调尺度一致性，并关注固定长度分块带来的多尺度表征。",
+          "summary": "该文提出ScaleBrain，一个面向脑电基础模型的尺度一致框架。摘要将基于大规模无标注脑电语料预训练的基础模型视为BCI应用的重要范式，并提到固定长度分块所得多尺度表征可改善EEG表现。",
+          "failureAnalysis": "所给文本仅为摘要开头，未提供实验设置、跨受试者泛化、计算开销或临床部署验证，难以评估其在真实BCI场景中的稳健性。实际部署时需关注尺度一致性在个体差异、噪声和通道变化下是否仍能保持。多尺度表征若带来额外计算负担与延迟，也需在应用前验证。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "ScaleBrain: A Scale-Consistent Framework for EEG Foundation Models",
+          "highlight": "ScaleBrain targets EEG foundation models with scale consistency, and the abstract notes multi-scale representations from fixed-length patches can improve EEG results.",
+          "summary": "The paper proposes ScaleBrain, a scale-consistent framework for EEG foundation models. The abstract frames large-scale unlabeled EEG pretraining as a transformative paradigm for BCI and notes that multi-scale representations from fixed-length patches can improve EEG performance.",
+          "failureAnalysis": "Only the opening abstract is supplied, with no experimental setup, cross-subject validation, compute cost, or clinical deployment evidence. Deployment risk therefore cannot be assessed, especially robustness under subject variability, noise, and channel changes. Scale consistency and any extra multi-scale computation would also need validation in real BCI settings.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-feed-492cc88da81945a4a1b4b29c442d5421",
+      "category": "ai",
+      "title": "aws-emulator",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Nov/11/aws-emulator/",
+      "abstractUrl": null,
+      "publishedAt": "2026-11-11T21:18:30.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [
+        {
+          "label": "Expert analysis",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "Expert analysis",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: Expert analysis",
+      "summary": "这篇文章介绍 AWS 官方推出的本地模拟器 aws-emulator，让开发者无需付费 API 密钥，即可针对本地克隆的多种服务运行测试。项目用 Rust 编写，由大量智能体协作完成，前三周就有 29,684 次提交，目前在 macOS 和 Windows 上仍需依赖 Docker。它值得关注，因为它可能降低云服务测试的成本与门槛，也展示了 agentic engineering 的规模化实践。",
+      "failureAnalysis": "关键限制是当前在 macOS 与 Windows 上仍需 Docker；作者希望未来提供单个二进制文件，方便集成到跨语言、跨平台的标准测试套件中。",
+      "aiSelectionScore": 100,
+      "highlight": "AWS 终于推出官方模拟器，可在本地克隆的多种服务上运行测试，无需配置付费 API 密钥。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "aws-emulator Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so. It's written in Rust by a huge swarm of agents - 29,684 commits in the first three weeks of the project. Swaminathan (Swami) Sivasubramanian wrote about how it came to be in a guest post on Werner Vogels' blog.",
+      "translations": {
+        "zh": {
+          "title": "AWS 推出官方本地模拟器",
+          "highlight": "AWS 终于推出官方模拟器，可在本地克隆的多种服务上运行测试，无需配置付费 API 密钥。",
+          "summary": "这篇文章介绍 AWS 官方推出的本地模拟器 aws-emulator，让开发者无需付费 API 密钥，即可针对本地克隆的多种服务运行测试。项目用 Rust 编写，由大量智能体协作完成，前三周就有 29,684 次提交，目前在 macOS 和 Windows 上仍需依赖 Docker。它值得关注，因为它可能降低云服务测试的成本与门槛，也展示了 agentic engineering 的规模化实践。",
+          "failureAnalysis": "关键限制是当前在 macOS 与 Windows 上仍需 Docker；作者希望未来提供单个二进制文件，方便集成到跨语言、跨平台的标准测试套件中。"
+        },
+        "en": {
+          "highlight": "Finally, an official emulator from AWS to run tests against a local clone of their many different services without having to provision a paid API key to do so.",
+          "summary": "The article covers aws-emulator, an official AWS tool that lets developers test against local clones of many services without a paid API key. It is written in Rust and was built by a large swarm of agents, with 29,684 commits in the first three weeks. It is worth reading because it could lower the cost and friction of cloud testing while showing agentic engineering at scale.",
+          "failureAnalysis": "A key practical constraint is that it currently requires Docker on macOS and Windows; the author hopes a future single binary will make it easier to use in cross-language, cross-platform test suites.",
+          "title": "AWS Launches an Official Local Emulator"
+        }
+      }
+    }
+  ]
+}
