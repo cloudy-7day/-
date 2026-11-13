@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-11-12",
+  "issueDate": "2026-11-13",
   "updateStatus": "complete",
-  "contentFingerprint": "f9c452a076086bb73cb25e2aa5658d0ade50237a2dff04e5b7a32be4697986c6",
+  "contentFingerprint": "8a8291f7f2cb5f793571c41797731f1858b660454ace8b666ef27ea83c91bb39",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,216 +10,216 @@
   ],
   "articles": [
     {
-      "id": "news-6bc55695f7284987b354b13242c72d2c",
+      "id": "news-ae734ff14658430ea838329fe5d457de",
       "category": "domestic",
-      "title": "内蒙古搭建起自贸试验区建设的“四梁八柱”",
+      "title": "新疆阿克苏地区库车市发生5.0级地震",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-14/10731870.shtml",
+      "publishedAt": "2026-11-13T16:34:38.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 4",
+      "highlight": "中国地震台网正式测定：11月14日00时17分新疆阿克苏地区库车市发生5.0级地震，震源深度20千米。",
+      "summary": "中国地震台网正式测定，11月14日00时17分在新疆阿克苏地区库车市发生5.0级地震，震源深度20千米。该信息来自中国地震台网微博，属于官方地震速报，适合快速了解地震发生的时间、地点和基本参数。",
+      "failureAnalysis": "本条为地震速报，已知信息仅包括时间、地点、震级和震源深度；伤亡与财产损失尚未在给定内容中披露，需等待后续权威通报。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网11月14日电 据中国地震台网微博消息，中国地震台网正式测定：11月14日00时17分在新疆阿克苏地区库车市(北纬42.22度，东经83.64度)发生5.0级地震，震源深度20千米。",
+      "translations": {
+        "zh": {
+          "title": "新疆阿克苏地区库车市发生5.0级地震",
+          "highlight": "中国地震台网正式测定：11月14日00时17分新疆阿克苏地区库车市发生5.0级地震，震源深度20千米。",
+          "summary": "中国地震台网正式测定，11月14日00时17分在新疆阿克苏地区库车市发生5.0级地震，震源深度20千米。该信息来自中国地震台网微博，属于官方地震速报，适合快速了解地震发生的时间、地点和基本参数。",
+          "failureAnalysis": "本条为地震速报，已知信息仅包括时间、地点、震级和震源深度；伤亡与财产损失尚未在给定内容中披露，需等待后续权威通报。"
+        },
+        "en": {
+          "highlight": "At 00:17 on November 14, a magnitude 5.0 earthquake struck Kuqa City in Aksu Prefecture, Xinjiang, at a depth of 20 kilometers.",
+          "summary": "The China Earthquake Networks Center officially determined that a magnitude 5.0 earthquake occurred in Kuqa City, Aksu Prefecture, Xinjiang, at 00:17 on November 14, with a focal depth of 20 kilometers. The information comes from the center's Weibo account and is an official earthquake bulletin for quickly understanding the time, location, and basic parameters.",
+          "failureAnalysis": "This is an earthquake bulletin; the provided information covers only time, location, magnitude, and depth, with no casualty or damage figures disclosed, so follow-up official updates are needed.",
+          "title": "Magnitude 5.0 earthquake strikes Kuqa City, Aksu Prefecture, Xinjiang"
+        }
+      }
+    },
+    {
+      "id": "news-95b08fb1f5f346c0b60cfb05c4b0e5ec",
+      "category": "domestic",
+      "title": "科技赋能储粮 七台河市勃利县31万吨智慧粮库即将投用",
       "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-12/10731210.shtml",
-      "publishedAt": "2026-11-12T14:00:33.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-13/10731794.shtml",
+      "publishedAt": "2026-11-13T13:42:28.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "经过7个月的拼搏努力，内蒙古已经搭建起自贸试验区建设的“四梁八柱”。",
-      "summary": "11月12日，内蒙古自治区政府新闻办举行发布会，自治区政府副主席苏和表示，经过7个月的努力，内蒙古已搭建起自贸试验区建设的“四梁八柱”。这条消息值得关注，是因为它以官方发布会的形式给出了自贸试验区制度框架建设的阶段进展信号。已知内容未展开具体政策清单、实施范围或量化成效，适合作为后续跟踪的起点。",
-      "failureAnalysis": "可验证的信息主要是发布会上的官方表述，具体政策清单、实施范围和量化成效尚未在已知内容中展开；阅读时应把“四梁八柱”理解为阶段性制度框架信号，而不是最终成效。",
+      "selectionReason": "Domestic priority: 3",
+      "highlight": "这座以智能化为核心的粮库总仓容31.17万吨，投用后将一改传统储粮模式，依托自动化管控、全流程智能调度",
+      "summary": "黑龙江省七台河市勃利县国有智慧粮食储备库项目已全面完工，总仓容31.17万吨。投用后将以自动化管控和全流程智能调度替代传统储粮模式，使粮食存得稳、管得精、调得快，为区域粮食安全提供硬件支撑。它值得关注，因为这是科技赋能粮食储备基础设施的一个具体落地案例。",
+      "failureAnalysis": "该项目的核心不是AI应用，而是储粮基础设施的智能化升级；可验证价值集中在提升仓储管理效率与区域粮食安全保障能力。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网呼和浩特11月12日电 (记者 李爱平)“经过7个月的拼搏努力，内蒙古已经搭建起自贸试验区建设的‘四梁八柱’。”11月12日下午，内蒙古自治区政府新闻办公室召开新闻发布会，内蒙古自治区政府副主席苏和作上述表示。",
+      "sourceExcerpt": "中新网七台河11月13日电(李奇晔 刘鹏)近日，黑龙江省七台河市勃利县国有智慧粮食储备库项目全面完工。这座以智能化为核心的粮库总仓容31.17万吨，投用后将一改传统储粮模式，依托自动化管控、全流程智能调度，让黑土地的粮食“存得稳、管得精、调得快”，为区域粮食安全筑牢硬件支撑。",
       "translations": {
         "zh": {
-          "title": "内蒙古称已搭建自贸试验区建设“四梁八柱”",
-          "highlight": "经过7个月的拼搏努力，内蒙古已经搭建起自贸试验区建设的“四梁八柱”。",
-          "summary": "11月12日，内蒙古自治区政府新闻办举行发布会，自治区政府副主席苏和表示，经过7个月的努力，内蒙古已搭建起自贸试验区建设的“四梁八柱”。这条消息值得关注，是因为它以官方发布会的形式给出了自贸试验区制度框架建设的阶段进展信号。已知内容未展开具体政策清单、实施范围或量化成效，适合作为后续跟踪的起点。",
-          "failureAnalysis": "可验证的信息主要是发布会上的官方表述，具体政策清单、实施范围和量化成效尚未在已知内容中展开；阅读时应把“四梁八柱”理解为阶段性制度框架信号，而不是最终成效。"
+          "title": "科技赋能储粮：勃利县31万吨智慧粮库即将投用",
+          "highlight": "这座以智能化为核心的粮库总仓容31.17万吨，投用后将一改传统储粮模式，依托自动化管控、全流程智能调度",
+          "summary": "黑龙江省七台河市勃利县国有智慧粮食储备库项目已全面完工，总仓容31.17万吨。投用后将以自动化管控和全流程智能调度替代传统储粮模式，使粮食存得稳、管得精、调得快，为区域粮食安全提供硬件支撑。它值得关注，因为这是科技赋能粮食储备基础设施的一个具体落地案例。",
+          "failureAnalysis": "该项目的核心不是AI应用，而是储粮基础设施的智能化升级；可验证价值集中在提升仓储管理效率与区域粮食安全保障能力。"
         },
         "en": {
-          "highlight": "After seven months of strenuous effort, Inner Mongolia has established the 'four beams and eight pillars' for building its pilot free trade zone.",
-          "summary": "At a press conference on November 12, Vice Chairman Su He of the Inner Mongolia Autonomous Region government said the region had, after seven months, put in place the 'four beams and eight pillars' for its pilot free trade zone. The known report is worth reading as an official progress signal on the institutional framework, though it does not yet detail the policy list, scope or measured results.",
-          "failureAnalysis": "The verifiable takeaway is an official stage-progress claim made at a press conference, not a final outcome; readers should treat 'four beams and eight pillars' as a signal of institutional framework building and wait for specific policies, scope and metrics.",
-          "title": "Inner Mongolia Says It Has Built the 'Four Beams and Eight Pillars' for Its Pilot Free Trade Zone"
+          "highlight": "With a total capacity of 311,700 tonnes, the smart grain depot will replace traditional storage with automated control and full-process intelligent scheduling.",
+          "summary": "The state-owned smart grain reserve depot in Boli County, Qitaihe, Heilongjiang, has been completed with a total capacity of 311,700 tonnes. Once operational, automated control and full-process intelligent scheduling are expected to replace traditional storage practices, helping grain be stored securely, managed precisely, and dispatched quickly while supporting regional food security. It is worth reading as a concrete example of technology upgrading grain-reserve infrastructure.",
+          "failureAnalysis": "This is not an AI application project; its practical value lies in intelligent infrastructure that can improve reserve-grain management efficiency and regional food-security support.",
+          "title": "Technology Empowers Grain Storage: Boli County's 311,700-Tonne Smart Grain Depot Nears Operation"
         }
       }
     },
     {
-      "id": "news-709a9014107a4e439caa2a2998edaec6",
+      "id": "news-626b4b854a4d47bfb908ee343adad492",
       "category": "domestic",
-      "title": "海南新组建空天集团 注册资金100亿元",
-      "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-12/10731206.shtml",
-      "publishedAt": "2026-11-12T13:56:39.0000000+00:00",
+      "title": "湖南冷水滩晚稻抢收忙 社会化烘干告别 “靠天晒谷”",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-13/10731762.shtml",
+      "publishedAt": "2026-11-13T13:42:26.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "海南省委、省政府已明确“以场带产”发展航天产业，新组建注册资金100亿元的海南空天集团。",
-      "summary": "中新网报道，海南省明确以“以场带产”发展航天产业，并新组建注册资金100亿元的海南空天集团。该集团将作为文昌航天城园区的投建运主体，推动火箭、卫星和信息产业链落地。对关注地方产业政策与航天园区开发的人，这是可核验的官方信号。",
-      "failureAnalysis": "关键看集团能否把园区投建运主体职责转化为产业链招商和项目落地，而不是只停留在平台组建与资本注册。",
+      "selectionReason": "Domestic priority: 3",
+      "highlight": "农户抢抓晴好天气，科学调度农机力量开展秋粮抢收，依托社会化烘干服务破解阴雨天气晒粮难题",
+      "summary": "报道显示，湖南永州冷水滩区晚稻进入成熟收获关键期，农户抢抓晴好天气并调度农机开展秋粮抢收。当地依托社会化烘干服务，破解阴雨天气下晒粮难题，全力保障秋粮颗粒归仓。其可读性在于呈现了农业社会化服务在抢收与烘干环节的实际支撑作用。",
+      "failureAnalysis": "可验证的公共影响是，社会化烘干服务为阴雨天气下的晚稻收获提供了替代性保障，降低“靠天晒谷”的被动性。关键点在于社会化烘干服务对阴雨天气晒粮难题的缓解作用；所给信息未展开具体覆盖范围与效果。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网海口11月12日(记者 王晓斌)记者从海南省新闻办12日举行的发布会获悉，海南省委、省政府已明确“以场带产”发展航天产业，新组建注册资金100亿元的海南空天集团。该集团将作为文昌航天城园区的投建运主体，推动火箭、卫星和信息产业链落地。",
+      "sourceExcerpt": "中新网永州11月13日电 (唐梦)眼下，湖南永州市冷水滩区晚稻进入成熟收获关键期，农户抢抓晴好天气，科学调度农机力量开展秋粮抢收，依托社会化烘干服务破解阴雨天气晒粮难题，全力保障秋粮颗粒归仓。",
       "translations": {
         "zh": {
-          "title": "海南新组建空天集团 注册资金100亿元",
-          "highlight": "海南省委、省政府已明确“以场带产”发展航天产业，新组建注册资金100亿元的海南空天集团。",
-          "summary": "中新网报道，海南省明确以“以场带产”发展航天产业，并新组建注册资金100亿元的海南空天集团。该集团将作为文昌航天城园区的投建运主体，推动火箭、卫星和信息产业链落地。对关注地方产业政策与航天园区开发的人，这是可核验的官方信号。",
-          "failureAnalysis": "关键看集团能否把园区投建运主体职责转化为产业链招商和项目落地，而不是只停留在平台组建与资本注册。"
+          "title": "湖南冷水滩晚稻抢收忙 社会化烘干告别“靠天晒谷”",
+          "highlight": "农户抢抓晴好天气，科学调度农机力量开展秋粮抢收，依托社会化烘干服务破解阴雨天气晒粮难题",
+          "summary": "报道显示，湖南永州冷水滩区晚稻进入成熟收获关键期，农户抢抓晴好天气并调度农机开展秋粮抢收。当地依托社会化烘干服务，破解阴雨天气下晒粮难题，全力保障秋粮颗粒归仓。其可读性在于呈现了农业社会化服务在抢收与烘干环节的实际支撑作用。",
+          "failureAnalysis": "可验证的公共影响是，社会化烘干服务为阴雨天气下的晚稻收获提供了替代性保障，降低“靠天晒谷”的被动性。关键点在于社会化烘干服务对阴雨天气晒粮难题的缓解作用；所给信息未展开具体覆盖范围与效果。"
         },
         "en": {
-          "highlight": "Hainan has adopted a 'spaceport-driven industry' strategy and established the Hainan Aerospace Group with RMB 10 billion in registered capital.",
-          "summary": "China News Service reports that Hainan province has set out to develop its aerospace industry through a 'spaceport-driven industry' approach and has newly established the Hainan Aerospace Group with RMB 10 billion in registered capital. The group will serve as the investment, construction and operation entity for the Wenchang Space City park, helping rocket, satellite and information industry chains land there. It is a verifiable official signal for readers tracking local industrial policy and aerospace park development.",
-          "failureAnalysis": "The key test is whether the group can turn its park investment, construction and operation role into industrial recruitment and project delivery, rather than stopping at platform creation and capital registration.",
-          "title": "Hainan Establishes New Aerospace Group with RMB 10 Billion Registered Capital"
+          "highlight": "Farmers are seizing fine weather and coordinating agricultural machinery for autumn grain harvesting, relying on socialized drying services to overcome the difficulty of drying grain in rainy weather.",
+          "summary": "The report says late rice in Lengshuitan District, Yongzhou, Hunan, has entered a critical maturity and harvest period, with farmers seizing fine weather and coordinating machinery to harvest autumn grain. By relying on socialized drying services, the area addresses the difficulty of drying grain during rainy weather and aims to ensure the grain is safely stored. It is worth reading as an example of agricultural social services playing a practical role in the harvest stage.",
+          "failureAnalysis": "The verifiable public impact is that socialized drying provides an alternative safeguard for late rice harvesting in rainy weather, reducing the passive reliance on sun-drying. The key point is the role of socialized drying in easing the grain-drying problem during rainy weather; the provided information does not detail coverage or measured results.",
+          "title": "Hunan's Lengshuitan Rushes Late Rice Harvest as Socialized Drying Ends Reliance on Sun-Drying"
         }
       }
     },
     {
-      "id": "news-04d45a2d687f4609b4583e9527ab9ea7",
-      "category": "domestic",
-      "title": "全国基层思政创新经验交流展示活动西安启幕",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-12/10731193.shtml",
-      "publishedAt": "2026-11-12T13:47:08.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "2026年全国基层思想政治工作创新经验交流展示活动在西安举办，集中展示基层思政守正创新的生动实践和丰硕成果。",
-      "summary": "活动于11月12日在西安举办，集中展示全国基层思想政治工作守正创新的实践与成果。这是一则官方活动动态，适合用来了解基层思政创新经验的集中展示与交流。",
-      "failureAnalysis": "这是一则官方活动报道，核心价值在于释放跨地区经验交流与集中展示的信号，而非效果评估。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "中新网西安11月12日电 (记者 张一辰 杨英琦)12日，2026年全国基层思想政治工作创新经验交流展示活动在西安举办，集中展示了全国基层思想政治工作守正创新的生动实践和丰硕成果。",
-      "translations": {
-        "zh": {
-          "title": "全国基层思政创新经验交流展示活动西安启幕",
-          "highlight": "2026年全国基层思想政治工作创新经验交流展示活动在西安举办，集中展示基层思政守正创新的生动实践和丰硕成果。",
-          "summary": "活动于11月12日在西安举办，集中展示全国基层思想政治工作守正创新的实践与成果。这是一则官方活动动态，适合用来了解基层思政创新经验的集中展示与交流。",
-          "failureAnalysis": "这是一则官方活动报道，核心价值在于释放跨地区经验交流与集中展示的信号，而非效果评估。"
-        },
-        "en": {
-          "highlight": "On November 12, the 2026 national exchange and showcase event for grassroots ideological and political work innovation was held in Xi'an, presenting practical achievements in innovation.",
-          "summary": "The event was held in Xi'an on November 12, 2026, and showcased innovative practices and achievements in grassroots ideological and political work across the country. It is worth reading as an official update on how such grassroots innovation experience is presented and exchanged.",
-          "failureAnalysis": "The item is an official event report rather than an evaluation study; its practical value lies in signaling a platform for cross-regional experience exchange.",
-          "title": "National Grassroots Ideological and Political Work Innovation Exchange Opens in Xi'an"
-        }
-      }
-    },
-    {
-      "id": "news-952dc53d01d048658503ff463b347d7b",
+      "id": "news-92d436b3850d4142a0ddd9af3def57db",
       "category": "international",
-      "title": "U.S. envoys meet with Putin in the Kremlin after Ukraine talks in Abu Dhabi",
-      "source": "NPR World",
-      "url": "https://www.npr.org/2026/11/12/nx-s1-6038809/us-envoys-meet-putin-russia-ukraine-war-talks",
-      "publishedAt": "2026-11-12T15:26:34.0000000+00:00",
+      "title": "Pressure grows on Trump's Commerce Secretary Lutnick in fallout from Nvidia scandal",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-13T19:53:57.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "库什纳与维特科夫赴克里姆林宫向普京通报，随后将飞往爱尔兰与乌克兰总统泽连斯基会谈。",
-      "summary": "美国特使贾里德·库什纳和史蒂夫·维特科夫前往克里姆林宫，向俄罗斯总统普京通报情况。此前相关乌克兰问题会谈在阿布扎比举行，两人随后还计划飞往爱尔兰与乌克兰总统泽连斯基会谈。这条消息值得关注，因为它显示美方正以“先见普京、再见泽连斯基”的穿梭方式直接向双方最高层传递信息。",
-      "failureAnalysis": "关键看点在于外交节奏：阿布扎比磋商之后立刻安排与俄乌两国领导人分别接触，说明美方在推动高层直接沟通；但已知信息未提及任何具体成果或条件，实际进展仍待后续会谈验证。",
+      "highlight": "斯科特·贝森特告诉CNBC，多个政府机构“数月来一直主张将Megaspeed列入实体清单”。",
+      "summary": "BBC Business报道，英伟达相关丑闻的余波使特朗普政府的商务部长卢特尼克面临更大压力。贝森特对CNBC称，多个政府机构数月来一直主张将Megaspeed列入实体清单，这使相关出口管制决策的时点与内部意见受到关注。",
+      "failureAnalysis": "关键结论是，机构内部对将Megaspeed列入实体清单早有倾向，外界关注点因此转向决策为何延迟以及责任归属。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Jared Kushner and Steve Witkoff went to the Kremlin to brief Russian President Vladimir Putin and are scheduled to fly later to Ireland for talks with Ukrainian President Volodymyr Zelenskyy.",
+      "sourceExcerpt": "Scott Bessent told CNBC that several government agencies \"were in favour of putting Megaspeed on the entity list for months\".",
       "translations": {
         "zh": {
-          "title": "美国特使在阿布扎比乌克兰会谈后赴克里姆林宫会见普京",
-          "highlight": "库什纳与维特科夫赴克里姆林宫向普京通报，随后将飞往爱尔兰与乌克兰总统泽连斯基会谈。",
-          "summary": "美国特使贾里德·库什纳和史蒂夫·维特科夫前往克里姆林宫，向俄罗斯总统普京通报情况。此前相关乌克兰问题会谈在阿布扎比举行，两人随后还计划飞往爱尔兰与乌克兰总统泽连斯基会谈。这条消息值得关注，因为它显示美方正以“先见普京、再见泽连斯基”的穿梭方式直接向双方最高层传递信息。",
-          "failureAnalysis": "关键看点在于外交节奏：阿布扎比磋商之后立刻安排与俄乌两国领导人分别接触，说明美方在推动高层直接沟通；但已知信息未提及任何具体成果或条件，实际进展仍待后续会谈验证。"
+          "title": "英伟达丑闻余波：卢特尼克面临的压力上升",
+          "highlight": "斯科特·贝森特告诉CNBC，多个政府机构“数月来一直主张将Megaspeed列入实体清单”。",
+          "summary": "BBC Business报道，英伟达相关丑闻的余波使特朗普政府的商务部长卢特尼克面临更大压力。贝森特对CNBC称，多个政府机构数月来一直主张将Megaspeed列入实体清单，这使相关出口管制决策的时点与内部意见受到关注。",
+          "failureAnalysis": "关键结论是，机构内部对将Megaspeed列入实体清单早有倾向，外界关注点因此转向决策为何延迟以及责任归属。"
         },
         "en": {
-          "highlight": "Jared Kushner and Steve Witkoff went to the Kremlin to brief Russian President Vladimir Putin and are scheduled to fly later to Ireland for talks with Ukrainian President Volodymyr Zelenskyy.",
-          "summary": "U.S. envoys Jared Kushner and Steve Witkoff traveled to the Kremlin to brief Russian President Vladimir Putin. The move follows Ukraine-related talks in Abu Dhabi, and the two are later scheduled to fly to Ireland for talks with Ukrainian President Volodymyr Zelenskyy. It is worth reading as a signal of shuttle diplomacy aimed at delivering messages directly to both sides' top leadership.",
-          "failureAnalysis": "The key point is the diplomatic sequencing: meeting Putin and then Zelenskyy right after the Abu Dhabi consultations suggests the U.S. is pushing for direct high-level communication, but no concrete outcomes or terms are disclosed, so real progress remains to be tested in the follow-up talks.",
-          "title": "U.S. envoys meet Putin in the Kremlin after Ukraine talks in Abu Dhabi"
+          "highlight": "Scott Bessent told CNBC that several government agencies \"were in favour of putting Megaspeed on the entity list for months\".",
+          "summary": "BBC Business reports that fallout from the Nvidia-related scandal is increasing pressure on Trump Commerce Secretary Lutnick. Bessent told CNBC that several government agencies had favoured placing Megaspeed on the entity list for months, drawing attention to the timing of export-control decisions and internal views.",
+          "failureAnalysis": "The key takeaway is that agencies had long favoured adding Megaspeed to the entity list, shifting attention to why the decision was delayed and who bears responsibility.",
+          "title": "Pressure Grows on Trump Commerce Secretary Lutnick in Nvidia Scandal Fallout"
         }
       }
     },
     {
-      "id": "news-87ecd7e3475e4b2f900e5e833dd3cce8",
+      "id": "news-d5aa7a48dd1249dfa5e51af9b491b179",
       "category": "international",
-      "title": "Who is Nvidia's interim CEO Colette Kress - and who could take over permanently?",
-      "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/cqgm37dv20e8o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-12T15:10:32.0000000+00:00",
+      "title": "What's Trump's strategy now with Iran? To keep things as they are",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are",
+      "publishedAt": "2026-11-13T19:02:04.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "首席财务官科莱特·克雷斯目前负责英伟达，但还有数位人选被视为潜在继任者。",
-      "summary": "BBC Business 报道称，英伟达目前由首席财务官科莱特·克雷斯临时负责，并列出几位可能正式接任的人选。对关注公司治理与高层接班安排的读者，这是一条简洁的线索。",
-      "failureAnalysis": "关键看点是英伟达正式接班人选尚未确定；现有信息只确认克雷斯暂时掌舵，其他人选仍在潜在继任者范围内。",
+      "highlight": "特朗普称，海湾阿拉伯盟友希望维持“现状”，而伊朗战事陷入僵局、中期选举迫使他把威胁动武转向经济施压。",
+      "summary": "文章讨论特朗普当前对伊朗的策略：在伊朗战事陷入僵局、中期选举压力下，他从威胁发动攻击转向经济施压，并把维持现状描述为海湾阿拉伯盟友的诉求。这有助于理解美国在中东冲突中的策略调整及其国内政治约束。",
+      "failureAnalysis": "关键点在于，特朗普对伊朗的策略更像是在压力下维持现状，而非升级军事行动；经济施压成为替代选项。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Chief financial officer Colette Kress in in charge of Nvidia for now, but several others are in the frame as potential successors.",
+      "sourceExcerpt": "Trump says \"status quo\" is what Gulf Arab allies want as Iran war hits stalemate and midterms force pivot from threats of attacks to economic pressure",
       "translations": {
         "zh": {
-          "title": "谁是英伟达临时CEO科莱特·克雷斯？谁可能正式接任？",
-          "highlight": "首席财务官科莱特·克雷斯目前负责英伟达，但还有数位人选被视为潜在继任者。",
-          "summary": "BBC Business 报道称，英伟达目前由首席财务官科莱特·克雷斯临时负责，并列出几位可能正式接任的人选。对关注公司治理与高层接班安排的读者，这是一条简洁的线索。",
-          "failureAnalysis": "关键看点是英伟达正式接班人选尚未确定；现有信息只确认克雷斯暂时掌舵，其他人选仍在潜在继任者范围内。"
+          "title": "特朗普对伊朗的新策略：维持现状",
+          "highlight": "特朗普称，海湾阿拉伯盟友希望维持“现状”，而伊朗战事陷入僵局、中期选举迫使他把威胁动武转向经济施压。",
+          "summary": "文章讨论特朗普当前对伊朗的策略：在伊朗战事陷入僵局、中期选举压力下，他从威胁发动攻击转向经济施压，并把维持现状描述为海湾阿拉伯盟友的诉求。这有助于理解美国在中东冲突中的策略调整及其国内政治约束。",
+          "failureAnalysis": "关键点在于，特朗普对伊朗的策略更像是在压力下维持现状，而非升级军事行动；经济施压成为替代选项。"
         },
         "en": {
-          "highlight": "Chief financial officer Colette Kress is in charge of Nvidia for now, but several others are in the frame as potential successors.",
-          "summary": "BBC Business reports that Nvidia is currently run on an interim basis by CFO Colette Kress and names several possible permanent successors. It is worth reading for a concise view of the company's leadership transition and succession questions.",
-          "failureAnalysis": "The key takeaway is that Nvidia's permanent succession remains open; the known information confirms Kress is in charge for now while other candidates remain in the frame.",
-          "title": "Who Is Nvidia's Interim CEO Colette Kress - and Who Could Succeed Her Permanently?"
+          "highlight": "Trump says \"status quo\" is what Gulf Arab allies want as Iran war hits stalemate and midterms force pivot from threats of attacks to economic pressure.",
+          "summary": "The article discusses Trump's current strategy toward Iran: with the Iran war at a stalemate and midterm pressures mounting, he shifts from threats of attack to economic pressure and describes maintaining the status quo as what Gulf Arab allies want. It helps explain the adjustment in U.S. strategy in the Middle East conflict and its domestic political constraints.",
+          "failureAnalysis": "The key takeaway is that Trump's Iran strategy looks more like preserving the status quo under pressure than escalating military action, with economic pressure serving as the alternative.",
+          "title": "Trump's Strategy on Iran Now: Keep Things as They Are"
         }
       }
     },
     {
-      "id": "life-b1b56a9ad4d24d4fb1cf5f7573f720eb",
+      "id": "life-805d0ae6bdb14137a55faeeee3fcd464",
       "category": "international",
-      "title": "Place, Personhood, and the Hippocampus: The Fascinating Science of Magnetism, Autonoeic Consciousness, and What Makes Us Who We Are",
+      "title": "Yes to Life, in Spite of Everything: Viktor Frankl’s Lost Lectures on Moving Beyond Optimism and Pessimism to Find the Deepest Source of Meaning",
       "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/11/12/wayfinding-m-r-oconnor/",
-      "publishedAt": "2026-11-12T14:46:08.0000000+00:00",
+      "url": "https://www.themarginalian.org/2026/11/13/yes-to-life-in-spite-of-everything-viktor-frankl/",
+      "publishedAt": "2026-11-13T19:49:03.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 4",
-      "highlight": "我们成长的地方常会影响我们感知与构想世界的方式，赋予我们赖以生活的隐喻，并塑造驱动我们的目标。",
-      "summary": "文章围绕地点与自我的关系，借助海马体、磁感与自传体意识等线索，讨论成长环境如何塑造我们的感知、隐喻与人生目标。它值得读，是因为把“地方如何成为我们的一部分”这一日常经验，连接到记忆与人格的科学解释上。",
-      "failureAnalysis": "关键启示：成长地点不只是背景，它会通过感知、语言隐喻与目标感参与塑造“我是谁”。",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "一切都取决于个体的人，无论志同道合者多么少；取决于每个人创造性地让生命意义在自身存在中成为现实。",
+      "summary": "该文围绕维克多·弗兰克尔的失落讲座，讨论人如何超越乐观与悲观，寻找生命意义的最深来源。文中强调，意义不取决于有多少志同道合者，而取决于每个个体在自己的存在中创造性地实现它。适合想从人本与存在主义角度理解韧性和生命意义的人阅读。",
+      "failureAnalysis": "关键启示：意义感的根基不在外部认同或情绪取向，而在每个人是否主动、创造性地把生命意义落实到自己身上。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "\"Often the places we grow up in... influence how we perceive and conceptualize the world, give us metaphors to live by, and shape the purpose that drives us.\"",
+      "sourceExcerpt": "\"Everything depends on the individual human being, regardless of how small a number of like-minded people there is... creatively making the meaning of life a reality in his or her own being.\"",
       "translations": {
         "zh": {
-          "title": "地点、人格与海马体：磁感、自传体意识与“我们是谁”的科学",
-          "highlight": "我们成长的地方常会影响我们感知与构想世界的方式，赋予我们赖以生活的隐喻，并塑造驱动我们的目标。",
-          "summary": "文章围绕地点与自我的关系，借助海马体、磁感与自传体意识等线索，讨论成长环境如何塑造我们的感知、隐喻与人生目标。它值得读，是因为把“地方如何成为我们的一部分”这一日常经验，连接到记忆与人格的科学解释上。",
-          "failureAnalysis": "关键启示：成长地点不只是背景，它会通过感知、语言隐喻与目标感参与塑造“我是谁”。"
+          "title": "对生命说“是”，尽管一切：维克多·弗兰克尔失落讲座谈超越乐观与悲观、寻找意义的最深源泉",
+          "highlight": "一切都取决于个体的人，无论志同道合者多么少；取决于每个人创造性地让生命意义在自身存在中成为现实。",
+          "summary": "该文围绕维克多·弗兰克尔的失落讲座，讨论人如何超越乐观与悲观，寻找生命意义的最深来源。文中强调，意义不取决于有多少志同道合者，而取决于每个个体在自己的存在中创造性地实现它。适合想从人本与存在主义角度理解韧性和生命意义的人阅读。",
+          "failureAnalysis": "关键启示：意义感的根基不在外部认同或情绪取向，而在每个人是否主动、创造性地把生命意义落实到自己身上。"
         },
         "en": {
-          "highlight": "Often the places we grow up in influence how we perceive and conceptualize the world, give us metaphors to live by, and shape the purpose that drives us.",
-          "summary": "Drawing on the hippocampus, magnetism, and autonoetic consciousness, the article explores how the places of childhood shape perception, guiding metaphors, and purpose. It is worth reading for connecting the everyday experience of place to scientific questions about memory and personhood.",
-          "failureAnalysis": "Key takeaway: the places we grow up in are not mere background; they help shape perception, metaphor, and purpose, and thus part of who we are.",
-          "title": "Place, Personhood, and the Hippocampus: The Science of Magnetism and Autonoetic Consciousness"
+          "highlight": "Everything depends on the individual: each person must creatively make the meaning of life a reality in his or her own being.",
+          "summary": "The article presents Viktor Frankl’s lost lectures on finding meaning beyond optimism and pessimism. It stresses that meaning depends not on how many like-minded people there are but on each person’s creative realization of meaning in his or her own being. It is worth reading for a humanistic perspective on resilience and purpose.",
+          "failureAnalysis": "Key takeaway: the foundation of meaning lies less in external approval or emotional outlook than in each person actively and creatively embodying meaning in their own life.",
+          "title": "Yes to Life, in Spite of Everything: Viktor Frankl’s Lost Lectures on Moving Beyond Optimism and Pessimism to Find the Deepest Source of Meaning"
         }
       }
     },
     {
-      "id": "life-065f7a7bdd9a4fd28dfef1220a2a9add",
+      "id": "life-7331454792434cfca111e1ccfd37ca18",
       "category": "international",
-      "title": "Eye on the mark",
-      "source": "Psyche",
-      "url": "https://psyche.co/portraits/the-ex-cop-on-a-mission-to-see-fortune-tellers-arrested",
-      "publishedAt": "2026-11-12T11:00:00.0000000+00:00",
+      "title": "Fugitive imagination",
+      "source": "Aeon",
+      "url": "https://aeon.co/essays/those-forced-to-cross-borders-are-imagining-a-radical-new-world",
+      "publishedAt": "2026-11-13T11:00:00.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 1",
-      "highlight": "退休纽约警察 Bob Nygaard 专门曝光那些把普通人的渴望变成脆弱、并从中牟利的算命师。",
-      "summary": "提供的摘要显示，退休纽约警察 Bob Nygaard 专门揭露算命师如何把普通人的渴望转化为可被利用的脆弱并从中获利。文章还追问是什么让他擅长识别这类套路，值得读在于它把算命话题落到欺诈、信任和人性需求上。",
-      "failureAnalysis": "关键要点：骗局常利用的是正常渴望与情感脆弱，而不只是轻信；理解这一点比嘲笑受害者更有助于防范。",
+      "highlight": "只要人们被拘禁、流离失所、噤声或被当作可弃之人，逃亡性的知识与想象便会涌现。",
+      "summary": "Aeon 的这篇文章由 Shahram Khosravi 撰写，关注被拘禁、流离失所、噤声或被弃置的人群，并指出在这些处境中会生成“逃亡性”的知识与想象。它值得读，是因为文章把边缘处境中的想象看作重新认识和构想世界的一种资源。",
+      "failureAnalysis": "关键提醒：理解流离失所者时，不应只看到剥夺与苦难，也要注意他们如何生成新的知识与想象。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Bob Nygaard, a retired New York policeman, exposes fortune-tellers who profit from turning ordinary human longing into vulnerability. What makes him so good at it? - by Shayla Love Read on Psyche",
+      "sourceExcerpt": "Wherever people are confined, displaced, silenced or made disposable, fugitive forms of knowledge and imagination emerge - by Shahram Khosravi Read on Aeon",
       "translations": {
         "zh": {
-          "title": "盯住目标：专门揭穿算命骗局的前警察",
-          "highlight": "退休纽约警察 Bob Nygaard 专门曝光那些把普通人的渴望变成脆弱、并从中牟利的算命师。",
-          "summary": "提供的摘要显示，退休纽约警察 Bob Nygaard 专门揭露算命师如何把普通人的渴望转化为可被利用的脆弱并从中获利。文章还追问是什么让他擅长识别这类套路，值得读在于它把算命话题落到欺诈、信任和人性需求上。",
-          "failureAnalysis": "关键要点：骗局常利用的是正常渴望与情感脆弱，而不只是轻信；理解这一点比嘲笑受害者更有助于防范。"
+          "title": "逃亡的想象力",
+          "highlight": "只要人们被拘禁、流离失所、噤声或被当作可弃之人，逃亡性的知识与想象便会涌现。",
+          "summary": "Aeon 的这篇文章由 Shahram Khosravi 撰写，关注被拘禁、流离失所、噤声或被弃置的人群，并指出在这些处境中会生成“逃亡性”的知识与想象。它值得读，是因为文章把边缘处境中的想象看作重新认识和构想世界的一种资源。",
+          "failureAnalysis": "关键提醒：理解流离失所者时，不应只看到剥夺与苦难，也要注意他们如何生成新的知识与想象。"
         },
         "en": {
-          "highlight": "Bob Nygaard, a retired New York policeman, exposes fortune-tellers who profit from turning ordinary human longing into vulnerability.",
-          "summary": "The available summary profiles Bob Nygaard, a retired New York policeman who exposes fortune-tellers that profit by turning ordinary human longing into vulnerability. It is worth reading because it treats fortune-telling as a question of fraud, trust, and human need, and asks what makes Nygaard so effective at spotting the pattern.",
-          "failureAnalysis": "Key takeaway: con artists often exploit normal longing and emotional vulnerability rather than simple gullibility, so understanding this is more useful for prevention than blaming victims.",
-          "title": "Eye on the Mark: The Ex-Cop Exposing Fortune-Teller Fraud"
+          "highlight": "Wherever people are confined, displaced, silenced or made disposable, fugitive forms of knowledge and imagination emerge.",
+          "summary": "This Aeon essay by Shahram Khosravi focuses on people who are confined, displaced, silenced or made disposable, arguing that fugitive forms of knowledge and imagination emerge in such conditions. It is worth reading because it treats imagination from marginal positions as a resource for rethinking and reimagining the world.",
+          "failureAnalysis": "Key takeaway: when understanding displaced people, look beyond deprivation and suffering to how they generate new knowledge and imagination.",
+          "title": "Fugitive Imagination"
         }
       }
     },
     {
-      "id": "paper-2611.10781",
+      "id": "paper-2611.15204",
       "category": "paper",
-      "title": "EEGFaceSem: An EEG Benchmark with Paired Generative Latents for Semantic Visual Modeling",
+      "title": "Alignment De-Identifies Without Aligning: A Congruence-Invariant Relational Gap in Cross-Subject Neural Representations",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2611.10781v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2611.10781",
-      "publishedAt": "2026-11-07T15:07:32.0000000Z",
+      "url": "https://arxiv.org/pdf/2611.15204v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.15204",
+      "publishedAt": "2026-11-11T08:59:54.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
       "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
@@ -238,17 +238,17 @@
         ],
         "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
       },
-      "highlight": "该基准名为 EEGFaceSem，标题指向语义视觉建模，并涉及配对生成潜变量。",
-      "summary": "EEGFaceSem 是论文标题给出的脑电基准，目标场景是语义视觉建模。标题还表明该基准包含配对生成潜变量，摘要开头仅说明脑电广泛用于测量大脑活动并服务脑机接口。所给文本未展开数据规模、任务设计或实验结果。",
-      "failureAnalysis": "可见证据主要是标题和摘要开头，缺少数据集规模、评价指标与基线结果，无法判断基准的有效性或泛化能力。就现有文本而言，只能确认其定位，不能据此得出性能结论。",
+      "highlight": "跨被试神经表征研究提出，对齐可去除标识信息，却留下同余不变的关系鸿沟。",
+      "summary": "该论文关注跨被试神经表征中的对齐问题，题名表明现有对齐可能只完成去标识化，而未实现真正的对齐。其提出的同余不变关系鸿沟为审视跨被试表征对齐的有效性提供了一个待验证的问题视角。",
+      "failureAnalysis": "提供的源文本主要是题名、作者与机构信息，缺少摘要、方法和实验细节，因此无法核验该关系鸿沟的具体定义与实证支持。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "EEGFaceSem: An EEG Benchmark with Paired Generative Latents for Semantic Visual Modeling Jun Ma University of Helsinki Helsinki, Finland jun.ma@helsinki.fi Michiel M. Spapé University of Macau Macau, China mspape@um.edu.mo Keith M. Davis III LUT University Lahti, Finland keith.davis@lut.fi Tuukka Ruotsalo University of Copenhagen Copenhagen, Denmark LUT University Lahti, Finland tr@di.ku.dk Abstract Electroencephalography (EEG) is widely used to measure brain activity for brain- computer interface applications for its non-invasive nature and high temporal resolution.",
+      "sourceExcerpt": "Journal of Machine Learning Research 1–23, 2026 Symmetry and Geometry in Neural Representations Alignment De-Identifies Without Aligning: A Congruence-Invariant Relational Gap in Cross-Subject Neural Representations Anna Notaroanna.notaro@student.uni-tuebingen.de University of T¨ ubingen, T¨ ubingen, Germany Konrad Zuse School of Excellence in Learning and Intelligent Systems (ELIZA), Germany Letizia Rossatoletro@dtu.dk Sadasivan Puthusserypadysapu@dtu.dk Department of Health Technology, Technical University of Denmark, Kongens Lyngby, Denmark Abstract In brain-computer interfaces (BCIs), inter-subject variability remains a major challenge that limits decoding performance across users. Subject-wise alignment is widely used to improve cross-subject transfer of neural decoders, yet it is typically evaluated only through decoding accuracy, which cannot determine whether aligned representations share greater task-related structure. We therefore distinguish two questions that accuracy conflates: whether alignment removes subject-specific information and whether it makes the rela- tional organization of task conditions more similar across individuals.",
       "translations": {
         "zh": {
-          "title": "EEGFaceSem：面向语义视觉建模的配对生成潜变量脑电基准",
-          "highlight": "该基准名为 EEGFaceSem，标题指向语义视觉建模，并涉及配对生成潜变量。",
-          "summary": "EEGFaceSem 是论文标题给出的脑电基准，目标场景是语义视觉建模。标题还表明该基准包含配对生成潜变量，摘要开头仅说明脑电广泛用于测量大脑活动并服务脑机接口。所给文本未展开数据规模、任务设计或实验结果。",
-          "failureAnalysis": "可见证据主要是标题和摘要开头，缺少数据集规模、评价指标与基线结果，无法判断基准的有效性或泛化能力。就现有文本而言，只能确认其定位，不能据此得出性能结论。",
+          "title": "对齐去标识化却未对齐：跨被试神经表征中的同余不变关系鸿沟",
+          "highlight": "跨被试神经表征研究提出，对齐可去除标识信息，却留下同余不变的关系鸿沟。",
+          "summary": "该论文关注跨被试神经表征中的对齐问题，题名表明现有对齐可能只完成去标识化，而未实现真正的对齐。其提出的同余不变关系鸿沟为审视跨被试表征对齐的有效性提供了一个待验证的问题视角。",
+          "failureAnalysis": "提供的源文本主要是题名、作者与机构信息，缺少摘要、方法和实验细节，因此无法核验该关系鸿沟的具体定义与实证支持。",
           "paperCard": {
             "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
             "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
@@ -263,10 +263,10 @@
           }
         },
         "en": {
-          "title": "EEGFaceSem: An EEG Benchmark with Paired Generative Latents for Semantic Visual Modeling",
-          "highlight": "EEGFaceSem is presented as an EEG benchmark for semantic visual modeling, with paired generative latents indicated in its title.",
-          "summary": "EEGFaceSem is an EEG benchmark named in the paper title, aimed at semantic visual modeling. The title also points to paired generative latents, while the available abstract opening only states that EEG is widely used to measure brain activity for brain-computer interfaces. The supplied text does not describe dataset scale, task design, or experimental results.",
-          "failureAnalysis": "The available evidence is limited to the title and the start of the abstract, with no dataset size, evaluation metrics, or baseline results, so the benchmark’s validity and generalization cannot be assessed. The supplied text supports only its stated positioning, not performance conclusions.",
+          "title": "Alignment De-Identifies Without Aligning: A Congruence-Invariant Relational Gap in Cross-Subject Neural Representations",
+          "highlight": "The paper's title argues that alignment can remove identifying information without truly aligning relational structure across subjects.",
+          "summary": "This work addresses alignment in cross-subject neural representations, with the title suggesting that de-identification may occur without genuine alignment. The proposed congruence-invariant relational gap frames a question for evaluating whether cross-subject alignment is actually achieved.",
+          "failureAnalysis": "The supplied source text contains mainly the title, authors, and affiliations, with no abstract, methods, or results, so the claimed gap cannot be empirically assessed.",
           "paperCard": {
             "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
             "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
@@ -283,47 +283,43 @@
       }
     },
     {
-      "id": "ai-github-1448722374",
+      "id": "ai-feed-c1a87c8e7c1e4d838223015a7433b23c",
       "category": "ai",
-      "title": "Arda313131882/aion-2-trainer-tool",
-      "source": "GitHub Search",
-      "url": "https://github.com/Arda313131882/aion-2-trainer-tool",
+      "title": "[AINews] Jensen Huang resigns after 33 years leading NVIDIA",
+      "source": "Latent Space",
+      "url": "https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/",
       "abstractUrl": null,
-      "publishedAt": "2026-11-06T20:34:15.0000000Z",
-      "scoreLabel": "GitHub 1199 stars",
-      "aiArticleType": "application_innovation",
+      "publishedAt": "2026-11-13T09:04:13.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
       "evidenceAnchors": [
         {
           "label": "GitHub",
           "kind": "primary"
-        },
-        {
-          "label": "Community signal",
-          "kind": "secondary"
         }
       ],
-      "evidenceLabel": "GitHub + Community signal",
+      "evidenceLabel": "GitHub",
       "hasPrimaryAnchor": true,
-      "requiresRiskAnalysis": true,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-      "summary": "这是一个获得 1199 星标、近期有公开活动的 GitHub 仓库，定位为 Aion 2 AI 提示词工程工具包，并提供独立桌面训练器安装方案。它的看点在于把提示词工程与桌面端训练器打包，可能降低本地用户的上手门槛；但现有信息仅来自仓库描述和热度信号，尚不足以判断实际功能与效果。",
-      "failureAnalysis": "该项目可能失败的原因在于：仅凭仓库描述无法验证提示词工程训练器是否解决真实高频需求，独立桌面安装也会增加分发、兼容性和更新维护成本。若缺少明确使用场景、可复现的效果数据和持续社区维护，1199 星标可能只是短期关注，难以转化为稳定用户价值。桌面工具还面临模型或 API 依赖、数据隐私与本地环境适配等工程约束。",
-      "aiSelectionScore": 1199,
-      "highlight": "Aion 2 AI 提示词工程工具包：独立桌面训练器安装配置，仓库获 1199 星标并近期活跃。",
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub",
+      "summary": "这条消息称，2026年11月12日，黄仁勋在领导英伟达33年后卸任，由Colette Kress担任临时CEO。它把问题引向开源生态与美国AI领导地位在过渡期会如何变化。对关注AI产业格局的读者，这是一个观察公司治理与行业权力交接的切口。",
+      "failureAnalysis": "关键要点是：这是一次高层交接，真正值得跟踪的是临时CEO安排如何影响英伟达的战略连续性，以及开源与美国AI领导地位的相关讨论。",
+      "aiSelectionScore": 100,
+      "highlight": "2026年11月12日，Colette Kress接任临时CEO；开源与美国AI领导地位将走向何方？",
       "summarySource": "deepseek",
-      "sourceExcerpt": "GitHub repository with 1199 stars and recent public activity. Description: Aion 2 AI Prompt Engineering Toolkit - Standalone Desktop Trainer Setup",
+      "sourceExcerpt": "November 12, 2026 — Colette Kress takes over as interim CEO. What happens to open source/American AI leadership?",
       "translations": {
         "zh": {
-          "title": "Aion 2 AI 提示词工程工具包：独立桌面训练器安装",
-          "highlight": "Aion 2 AI 提示词工程工具包：独立桌面训练器安装配置，仓库获 1199 星标并近期活跃。",
-          "summary": "这是一个获得 1199 星标、近期有公开活动的 GitHub 仓库，定位为 Aion 2 AI 提示词工程工具包，并提供独立桌面训练器安装方案。它的看点在于把提示词工程与桌面端训练器打包，可能降低本地用户的上手门槛；但现有信息仅来自仓库描述和热度信号，尚不足以判断实际功能与效果。",
-          "failureAnalysis": "该项目可能失败的原因在于：仅凭仓库描述无法验证提示词工程训练器是否解决真实高频需求，独立桌面安装也会增加分发、兼容性和更新维护成本。若缺少明确使用场景、可复现的效果数据和持续社区维护，1199 星标可能只是短期关注，难以转化为稳定用户价值。桌面工具还面临模型或 API 依赖、数据隐私与本地环境适配等工程约束。"
+          "title": "黄仁勋领导英伟达33年后卸任",
+          "highlight": "2026年11月12日，Colette Kress接任临时CEO；开源与美国AI领导地位将走向何方？",
+          "summary": "这条消息称，2026年11月12日，黄仁勋在领导英伟达33年后卸任，由Colette Kress担任临时CEO。它把问题引向开源生态与美国AI领导地位在过渡期会如何变化。对关注AI产业格局的读者，这是一个观察公司治理与行业权力交接的切口。",
+          "failureAnalysis": "关键要点是：这是一次高层交接，真正值得跟踪的是临时CEO安排如何影响英伟达的战略连续性，以及开源与美国AI领导地位的相关讨论。"
         },
         "en": {
-          "highlight": "A GitHub repository with 1,199 stars and recent public activity, described as a standalone desktop trainer setup for the Aion 2 AI prompt engineering toolkit.",
-          "summary": "This GitHub repository presents itself as an Aion 2 AI prompt engineering toolkit with a standalone desktop trainer setup, and it has 1,199 stars plus recent public activity. It is worth a look because packaging prompt engineering with a local desktop trainer could lower setup friction, but the available metadata does not show actual features, results, or maintenance quality.",
-          "failureAnalysis": "The project may struggle if the desktop trainer does not address a frequent, validated need, while standalone distribution adds compatibility, update, and support costs. Without clear use cases, reproducible results, and active maintenance, star growth may not translate into durable user value.",
-          "title": "Aion 2 AI Prompt Engineering Toolkit: Standalone Desktop Trainer Setup"
+          "highlight": "November 12, 2026 — Colette Kress takes over as interim CEO. What happens to open source/American AI leadership?",
+          "summary": "The item reports that on November 12, 2026, Jensen Huang resigned after 33 years leading NVIDIA, with Colette Kress taking over as interim CEO. It raises the question of what happens to open source and American AI leadership during the transition. It is worth reading as a signal for watching AI industry governance and leadership succession.",
+          "failureAnalysis": "The key takeaway is not to frame a leadership change as failure, but to track how the interim CEO arrangement affects NVIDIA’s strategic continuity and the open source/American AI leadership debate.",
+          "title": "Jensen Huang resigns after 33 years leading NVIDIA"
         }
       }
     }

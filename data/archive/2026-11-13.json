@@ -1,0 +1,327 @@
+{
+  "issueDate": "2026-11-13",
+  "updateStatus": "complete",
+  "contentFingerprint": "8a8291f7f2cb5f793571c41797731f1858b660454ace8b666ef27ea83c91bb39",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-ae734ff14658430ea838329fe5d457de",
+      "category": "domestic",
+      "title": "新疆阿克苏地区库车市发生5.0级地震",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-14/10731870.shtml",
+      "publishedAt": "2026-11-13T16:34:38.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 4",
+      "highlight": "中国地震台网正式测定：11月14日00时17分新疆阿克苏地区库车市发生5.0级地震，震源深度20千米。",
+      "summary": "中国地震台网正式测定，11月14日00时17分在新疆阿克苏地区库车市发生5.0级地震，震源深度20千米。该信息来自中国地震台网微博，属于官方地震速报，适合快速了解地震发生的时间、地点和基本参数。",
+      "failureAnalysis": "本条为地震速报，已知信息仅包括时间、地点、震级和震源深度；伤亡与财产损失尚未在给定内容中披露，需等待后续权威通报。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网11月14日电 据中国地震台网微博消息，中国地震台网正式测定：11月14日00时17分在新疆阿克苏地区库车市(北纬42.22度，东经83.64度)发生5.0级地震，震源深度20千米。",
+      "translations": {
+        "zh": {
+          "title": "新疆阿克苏地区库车市发生5.0级地震",
+          "highlight": "中国地震台网正式测定：11月14日00时17分新疆阿克苏地区库车市发生5.0级地震，震源深度20千米。",
+          "summary": "中国地震台网正式测定，11月14日00时17分在新疆阿克苏地区库车市发生5.0级地震，震源深度20千米。该信息来自中国地震台网微博，属于官方地震速报，适合快速了解地震发生的时间、地点和基本参数。",
+          "failureAnalysis": "本条为地震速报，已知信息仅包括时间、地点、震级和震源深度；伤亡与财产损失尚未在给定内容中披露，需等待后续权威通报。"
+        },
+        "en": {
+          "highlight": "At 00:17 on November 14, a magnitude 5.0 earthquake struck Kuqa City in Aksu Prefecture, Xinjiang, at a depth of 20 kilometers.",
+          "summary": "The China Earthquake Networks Center officially determined that a magnitude 5.0 earthquake occurred in Kuqa City, Aksu Prefecture, Xinjiang, at 00:17 on November 14, with a focal depth of 20 kilometers. The information comes from the center's Weibo account and is an official earthquake bulletin for quickly understanding the time, location, and basic parameters.",
+          "failureAnalysis": "This is an earthquake bulletin; the provided information covers only time, location, magnitude, and depth, with no casualty or damage figures disclosed, so follow-up official updates are needed.",
+          "title": "Magnitude 5.0 earthquake strikes Kuqa City, Aksu Prefecture, Xinjiang"
+        }
+      }
+    },
+    {
+      "id": "news-95b08fb1f5f346c0b60cfb05c4b0e5ec",
+      "category": "domestic",
+      "title": "科技赋能储粮 七台河市勃利县31万吨智慧粮库即将投用",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-13/10731794.shtml",
+      "publishedAt": "2026-11-13T13:42:28.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 3",
+      "highlight": "这座以智能化为核心的粮库总仓容31.17万吨，投用后将一改传统储粮模式，依托自动化管控、全流程智能调度",
+      "summary": "黑龙江省七台河市勃利县国有智慧粮食储备库项目已全面完工，总仓容31.17万吨。投用后将以自动化管控和全流程智能调度替代传统储粮模式，使粮食存得稳、管得精、调得快，为区域粮食安全提供硬件支撑。它值得关注，因为这是科技赋能粮食储备基础设施的一个具体落地案例。",
+      "failureAnalysis": "该项目的核心不是AI应用，而是储粮基础设施的智能化升级；可验证价值集中在提升仓储管理效率与区域粮食安全保障能力。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网七台河11月13日电(李奇晔 刘鹏)近日，黑龙江省七台河市勃利县国有智慧粮食储备库项目全面完工。这座以智能化为核心的粮库总仓容31.17万吨，投用后将一改传统储粮模式，依托自动化管控、全流程智能调度，让黑土地的粮食“存得稳、管得精、调得快”，为区域粮食安全筑牢硬件支撑。",
+      "translations": {
+        "zh": {
+          "title": "科技赋能储粮：勃利县31万吨智慧粮库即将投用",
+          "highlight": "这座以智能化为核心的粮库总仓容31.17万吨，投用后将一改传统储粮模式，依托自动化管控、全流程智能调度",
+          "summary": "黑龙江省七台河市勃利县国有智慧粮食储备库项目已全面完工，总仓容31.17万吨。投用后将以自动化管控和全流程智能调度替代传统储粮模式，使粮食存得稳、管得精、调得快，为区域粮食安全提供硬件支撑。它值得关注，因为这是科技赋能粮食储备基础设施的一个具体落地案例。",
+          "failureAnalysis": "该项目的核心不是AI应用，而是储粮基础设施的智能化升级；可验证价值集中在提升仓储管理效率与区域粮食安全保障能力。"
+        },
+        "en": {
+          "highlight": "With a total capacity of 311,700 tonnes, the smart grain depot will replace traditional storage with automated control and full-process intelligent scheduling.",
+          "summary": "The state-owned smart grain reserve depot in Boli County, Qitaihe, Heilongjiang, has been completed with a total capacity of 311,700 tonnes. Once operational, automated control and full-process intelligent scheduling are expected to replace traditional storage practices, helping grain be stored securely, managed precisely, and dispatched quickly while supporting regional food security. It is worth reading as a concrete example of technology upgrading grain-reserve infrastructure.",
+          "failureAnalysis": "This is not an AI application project; its practical value lies in intelligent infrastructure that can improve reserve-grain management efficiency and regional food-security support.",
+          "title": "Technology Empowers Grain Storage: Boli County's 311,700-Tonne Smart Grain Depot Nears Operation"
+        }
+      }
+    },
+    {
+      "id": "news-626b4b854a4d47bfb908ee343adad492",
+      "category": "domestic",
+      "title": "湖南冷水滩晚稻抢收忙 社会化烘干告别 “靠天晒谷”",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-13/10731762.shtml",
+      "publishedAt": "2026-11-13T13:42:26.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 3",
+      "highlight": "农户抢抓晴好天气，科学调度农机力量开展秋粮抢收，依托社会化烘干服务破解阴雨天气晒粮难题",
+      "summary": "报道显示，湖南永州冷水滩区晚稻进入成熟收获关键期，农户抢抓晴好天气并调度农机开展秋粮抢收。当地依托社会化烘干服务，破解阴雨天气下晒粮难题，全力保障秋粮颗粒归仓。其可读性在于呈现了农业社会化服务在抢收与烘干环节的实际支撑作用。",
+      "failureAnalysis": "可验证的公共影响是，社会化烘干服务为阴雨天气下的晚稻收获提供了替代性保障，降低“靠天晒谷”的被动性。关键点在于社会化烘干服务对阴雨天气晒粮难题的缓解作用；所给信息未展开具体覆盖范围与效果。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网永州11月13日电 (唐梦)眼下，湖南永州市冷水滩区晚稻进入成熟收获关键期，农户抢抓晴好天气，科学调度农机力量开展秋粮抢收，依托社会化烘干服务破解阴雨天气晒粮难题，全力保障秋粮颗粒归仓。",
+      "translations": {
+        "zh": {
+          "title": "湖南冷水滩晚稻抢收忙 社会化烘干告别“靠天晒谷”",
+          "highlight": "农户抢抓晴好天气，科学调度农机力量开展秋粮抢收，依托社会化烘干服务破解阴雨天气晒粮难题",
+          "summary": "报道显示，湖南永州冷水滩区晚稻进入成熟收获关键期，农户抢抓晴好天气并调度农机开展秋粮抢收。当地依托社会化烘干服务，破解阴雨天气下晒粮难题，全力保障秋粮颗粒归仓。其可读性在于呈现了农业社会化服务在抢收与烘干环节的实际支撑作用。",
+          "failureAnalysis": "可验证的公共影响是，社会化烘干服务为阴雨天气下的晚稻收获提供了替代性保障，降低“靠天晒谷”的被动性。关键点在于社会化烘干服务对阴雨天气晒粮难题的缓解作用；所给信息未展开具体覆盖范围与效果。"
+        },
+        "en": {
+          "highlight": "Farmers are seizing fine weather and coordinating agricultural machinery for autumn grain harvesting, relying on socialized drying services to overcome the difficulty of drying grain in rainy weather.",
+          "summary": "The report says late rice in Lengshuitan District, Yongzhou, Hunan, has entered a critical maturity and harvest period, with farmers seizing fine weather and coordinating machinery to harvest autumn grain. By relying on socialized drying services, the area addresses the difficulty of drying grain during rainy weather and aims to ensure the grain is safely stored. It is worth reading as an example of agricultural social services playing a practical role in the harvest stage.",
+          "failureAnalysis": "The verifiable public impact is that socialized drying provides an alternative safeguard for late rice harvesting in rainy weather, reducing the passive reliance on sun-drying. The key point is the role of socialized drying in easing the grain-drying problem during rainy weather; the provided information does not detail coverage or measured results.",
+          "title": "Hunan's Lengshuitan Rushes Late Rice Harvest as Socialized Drying Ends Reliance on Sun-Drying"
+        }
+      }
+    },
+    {
+      "id": "news-92d436b3850d4142a0ddd9af3def57db",
+      "category": "international",
+      "title": "Pressure grows on Trump's Commerce Secretary Lutnick in fallout from Nvidia scandal",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/cqvg2d1eg7zro?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-13T19:53:57.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "斯科特·贝森特告诉CNBC，多个政府机构“数月来一直主张将Megaspeed列入实体清单”。",
+      "summary": "BBC Business报道，英伟达相关丑闻的余波使特朗普政府的商务部长卢特尼克面临更大压力。贝森特对CNBC称，多个政府机构数月来一直主张将Megaspeed列入实体清单，这使相关出口管制决策的时点与内部意见受到关注。",
+      "failureAnalysis": "关键结论是，机构内部对将Megaspeed列入实体清单早有倾向，外界关注点因此转向决策为何延迟以及责任归属。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Scott Bessent told CNBC that several government agencies \"were in favour of putting Megaspeed on the entity list for months\".",
+      "translations": {
+        "zh": {
+          "title": "英伟达丑闻余波：卢特尼克面临的压力上升",
+          "highlight": "斯科特·贝森特告诉CNBC，多个政府机构“数月来一直主张将Megaspeed列入实体清单”。",
+          "summary": "BBC Business报道，英伟达相关丑闻的余波使特朗普政府的商务部长卢特尼克面临更大压力。贝森特对CNBC称，多个政府机构数月来一直主张将Megaspeed列入实体清单，这使相关出口管制决策的时点与内部意见受到关注。",
+          "failureAnalysis": "关键结论是，机构内部对将Megaspeed列入实体清单早有倾向，外界关注点因此转向决策为何延迟以及责任归属。"
+        },
+        "en": {
+          "highlight": "Scott Bessent told CNBC that several government agencies \"were in favour of putting Megaspeed on the entity list for months\".",
+          "summary": "BBC Business reports that fallout from the Nvidia-related scandal is increasing pressure on Trump Commerce Secretary Lutnick. Bessent told CNBC that several government agencies had favoured placing Megaspeed on the entity list for months, drawing attention to the timing of export-control decisions and internal views.",
+          "failureAnalysis": "The key takeaway is that agencies had long favoured adding Megaspeed to the entity list, shifting attention to why the decision was delayed and who bears responsibility.",
+          "title": "Pressure Grows on Trump Commerce Secretary Lutnick in Nvidia Scandal Fallout"
+        }
+      }
+    },
+    {
+      "id": "news-d5aa7a48dd1249dfa5e51af9b491b179",
+      "category": "international",
+      "title": "What's Trump's strategy now with Iran? To keep things as they are",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/11/13/g-s1-153578/whats-trumps-strategy-now-with-iran-to-keep-things-as-they-are",
+      "publishedAt": "2026-11-13T19:02:04.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "特朗普称，海湾阿拉伯盟友希望维持“现状”，而伊朗战事陷入僵局、中期选举迫使他把威胁动武转向经济施压。",
+      "summary": "文章讨论特朗普当前对伊朗的策略：在伊朗战事陷入僵局、中期选举压力下，他从威胁发动攻击转向经济施压，并把维持现状描述为海湾阿拉伯盟友的诉求。这有助于理解美国在中东冲突中的策略调整及其国内政治约束。",
+      "failureAnalysis": "关键点在于，特朗普对伊朗的策略更像是在压力下维持现状，而非升级军事行动；经济施压成为替代选项。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Trump says \"status quo\" is what Gulf Arab allies want as Iran war hits stalemate and midterms force pivot from threats of attacks to economic pressure",
+      "translations": {
+        "zh": {
+          "title": "特朗普对伊朗的新策略：维持现状",
+          "highlight": "特朗普称，海湾阿拉伯盟友希望维持“现状”，而伊朗战事陷入僵局、中期选举迫使他把威胁动武转向经济施压。",
+          "summary": "文章讨论特朗普当前对伊朗的策略：在伊朗战事陷入僵局、中期选举压力下，他从威胁发动攻击转向经济施压，并把维持现状描述为海湾阿拉伯盟友的诉求。这有助于理解美国在中东冲突中的策略调整及其国内政治约束。",
+          "failureAnalysis": "关键点在于，特朗普对伊朗的策略更像是在压力下维持现状，而非升级军事行动；经济施压成为替代选项。"
+        },
+        "en": {
+          "highlight": "Trump says \"status quo\" is what Gulf Arab allies want as Iran war hits stalemate and midterms force pivot from threats of attacks to economic pressure.",
+          "summary": "The article discusses Trump's current strategy toward Iran: with the Iran war at a stalemate and midterm pressures mounting, he shifts from threats of attack to economic pressure and describes maintaining the status quo as what Gulf Arab allies want. It helps explain the adjustment in U.S. strategy in the Middle East conflict and its domestic political constraints.",
+          "failureAnalysis": "The key takeaway is that Trump's Iran strategy looks more like preserving the status quo under pressure than escalating military action, with economic pressure serving as the alternative.",
+          "title": "Trump's Strategy on Iran Now: Keep Things as They Are"
+        }
+      }
+    },
+    {
+      "id": "life-805d0ae6bdb14137a55faeeee3fcd464",
+      "category": "international",
+      "title": "Yes to Life, in Spite of Everything: Viktor Frankl’s Lost Lectures on Moving Beyond Optimism and Pessimism to Find the Deepest Source of Meaning",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/13/yes-to-life-in-spite-of-everything-viktor-frankl/",
+      "publishedAt": "2026-11-13T19:49:03.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "一切都取决于个体的人，无论志同道合者多么少；取决于每个人创造性地让生命意义在自身存在中成为现实。",
+      "summary": "该文围绕维克多·弗兰克尔的失落讲座，讨论人如何超越乐观与悲观，寻找生命意义的最深来源。文中强调，意义不取决于有多少志同道合者，而取决于每个个体在自己的存在中创造性地实现它。适合想从人本与存在主义角度理解韧性和生命意义的人阅读。",
+      "failureAnalysis": "关键启示：意义感的根基不在外部认同或情绪取向，而在每个人是否主动、创造性地把生命意义落实到自己身上。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "\"Everything depends on the individual human being, regardless of how small a number of like-minded people there is... creatively making the meaning of life a reality in his or her own being.\"",
+      "translations": {
+        "zh": {
+          "title": "对生命说“是”，尽管一切：维克多·弗兰克尔失落讲座谈超越乐观与悲观、寻找意义的最深源泉",
+          "highlight": "一切都取决于个体的人，无论志同道合者多么少；取决于每个人创造性地让生命意义在自身存在中成为现实。",
+          "summary": "该文围绕维克多·弗兰克尔的失落讲座，讨论人如何超越乐观与悲观，寻找生命意义的最深来源。文中强调，意义不取决于有多少志同道合者，而取决于每个个体在自己的存在中创造性地实现它。适合想从人本与存在主义角度理解韧性和生命意义的人阅读。",
+          "failureAnalysis": "关键启示：意义感的根基不在外部认同或情绪取向，而在每个人是否主动、创造性地把生命意义落实到自己身上。"
+        },
+        "en": {
+          "highlight": "Everything depends on the individual: each person must creatively make the meaning of life a reality in his or her own being.",
+          "summary": "The article presents Viktor Frankl’s lost lectures on finding meaning beyond optimism and pessimism. It stresses that meaning depends not on how many like-minded people there are but on each person’s creative realization of meaning in his or her own being. It is worth reading for a humanistic perspective on resilience and purpose.",
+          "failureAnalysis": "Key takeaway: the foundation of meaning lies less in external approval or emotional outlook than in each person actively and creatively embodying meaning in their own life.",
+          "title": "Yes to Life, in Spite of Everything: Viktor Frankl’s Lost Lectures on Moving Beyond Optimism and Pessimism to Find the Deepest Source of Meaning"
+        }
+      }
+    },
+    {
+      "id": "life-7331454792434cfca111e1ccfd37ca18",
+      "category": "international",
+      "title": "Fugitive imagination",
+      "source": "Aeon",
+      "url": "https://aeon.co/essays/those-forced-to-cross-borders-are-imagining-a-radical-new-world",
+      "publishedAt": "2026-11-13T11:00:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "只要人们被拘禁、流离失所、噤声或被当作可弃之人，逃亡性的知识与想象便会涌现。",
+      "summary": "Aeon 的这篇文章由 Shahram Khosravi 撰写，关注被拘禁、流离失所、噤声或被弃置的人群，并指出在这些处境中会生成“逃亡性”的知识与想象。它值得读，是因为文章把边缘处境中的想象看作重新认识和构想世界的一种资源。",
+      "failureAnalysis": "关键提醒：理解流离失所者时，不应只看到剥夺与苦难，也要注意他们如何生成新的知识与想象。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Wherever people are confined, displaced, silenced or made disposable, fugitive forms of knowledge and imagination emerge - by Shahram Khosravi Read on Aeon",
+      "translations": {
+        "zh": {
+          "title": "逃亡的想象力",
+          "highlight": "只要人们被拘禁、流离失所、噤声或被当作可弃之人，逃亡性的知识与想象便会涌现。",
+          "summary": "Aeon 的这篇文章由 Shahram Khosravi 撰写，关注被拘禁、流离失所、噤声或被弃置的人群，并指出在这些处境中会生成“逃亡性”的知识与想象。它值得读，是因为文章把边缘处境中的想象看作重新认识和构想世界的一种资源。",
+          "failureAnalysis": "关键提醒：理解流离失所者时，不应只看到剥夺与苦难，也要注意他们如何生成新的知识与想象。"
+        },
+        "en": {
+          "highlight": "Wherever people are confined, displaced, silenced or made disposable, fugitive forms of knowledge and imagination emerge.",
+          "summary": "This Aeon essay by Shahram Khosravi focuses on people who are confined, displaced, silenced or made disposable, arguing that fugitive forms of knowledge and imagination emerge in such conditions. It is worth reading because it treats imagination from marginal positions as a resource for rethinking and reimagining the world.",
+          "failureAnalysis": "Key takeaway: when understanding displaced people, look beyond deprivation and suffering to how they generate new knowledge and imagination.",
+          "title": "Fugitive Imagination"
+        }
+      }
+    },
+    {
+      "id": "paper-2611.15204",
+      "category": "paper",
+      "title": "Alignment De-Identifies Without Aligning: A Congruence-Invariant Relational Gap in Cross-Subject Neural Representations",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2611.15204v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.15204",
+      "publishedAt": "2026-11-11T08:59:54.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "跨被试神经表征研究提出，对齐可去除标识信息，却留下同余不变的关系鸿沟。",
+      "summary": "该论文关注跨被试神经表征中的对齐问题，题名表明现有对齐可能只完成去标识化，而未实现真正的对齐。其提出的同余不变关系鸿沟为审视跨被试表征对齐的有效性提供了一个待验证的问题视角。",
+      "failureAnalysis": "提供的源文本主要是题名、作者与机构信息，缺少摘要、方法和实验细节，因此无法核验该关系鸿沟的具体定义与实证支持。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Journal of Machine Learning Research 1–23, 2026 Symmetry and Geometry in Neural Representations Alignment De-Identifies Without Aligning: A Congruence-Invariant Relational Gap in Cross-Subject Neural Representations Anna Notaroanna.notaro@student.uni-tuebingen.de University of T¨ ubingen, T¨ ubingen, Germany Konrad Zuse School of Excellence in Learning and Intelligent Systems (ELIZA), Germany Letizia Rossatoletro@dtu.dk Sadasivan Puthusserypadysapu@dtu.dk Department of Health Technology, Technical University of Denmark, Kongens Lyngby, Denmark Abstract In brain-computer interfaces (BCIs), inter-subject variability remains a major challenge that limits decoding performance across users. Subject-wise alignment is widely used to improve cross-subject transfer of neural decoders, yet it is typically evaluated only through decoding accuracy, which cannot determine whether aligned representations share greater task-related structure. We therefore distinguish two questions that accuracy conflates: whether alignment removes subject-specific information and whether it makes the rela- tional organization of task conditions more similar across individuals.",
+      "translations": {
+        "zh": {
+          "title": "对齐去标识化却未对齐：跨被试神经表征中的同余不变关系鸿沟",
+          "highlight": "跨被试神经表征研究提出，对齐可去除标识信息，却留下同余不变的关系鸿沟。",
+          "summary": "该论文关注跨被试神经表征中的对齐问题，题名表明现有对齐可能只完成去标识化，而未实现真正的对齐。其提出的同余不变关系鸿沟为审视跨被试表征对齐的有效性提供了一个待验证的问题视角。",
+          "failureAnalysis": "提供的源文本主要是题名、作者与机构信息，缺少摘要、方法和实验细节，因此无法核验该关系鸿沟的具体定义与实证支持。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "Alignment De-Identifies Without Aligning: A Congruence-Invariant Relational Gap in Cross-Subject Neural Representations",
+          "highlight": "The paper's title argues that alignment can remove identifying information without truly aligning relational structure across subjects.",
+          "summary": "This work addresses alignment in cross-subject neural representations, with the title suggesting that de-identification may occur without genuine alignment. The proposed congruence-invariant relational gap frames a question for evaluating whether cross-subject alignment is actually achieved.",
+          "failureAnalysis": "The supplied source text contains mainly the title, authors, and affiliations, with no abstract, methods, or results, so the claimed gap cannot be empirically assessed.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-feed-c1a87c8e7c1e4d838223015a7433b23c",
+      "category": "ai",
+      "title": "[AINews] Jensen Huang resigns after 33 years leading NVIDIA",
+      "source": "Latent Space",
+      "url": "https://latent.space/p/ainews-jensen-huang-resigns-after-33-years-leading-nvidia/",
+      "abstractUrl": null,
+      "publishedAt": "2026-11-13T09:04:13.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        }
+      ],
+      "evidenceLabel": "GitHub",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub",
+      "summary": "这条消息称，2026年11月12日，黄仁勋在领导英伟达33年后卸任，由Colette Kress担任临时CEO。它把问题引向开源生态与美国AI领导地位在过渡期会如何变化。对关注AI产业格局的读者，这是一个观察公司治理与行业权力交接的切口。",
+      "failureAnalysis": "关键要点是：这是一次高层交接，真正值得跟踪的是临时CEO安排如何影响英伟达的战略连续性，以及开源与美国AI领导地位的相关讨论。",
+      "aiSelectionScore": 100,
+      "highlight": "2026年11月12日，Colette Kress接任临时CEO；开源与美国AI领导地位将走向何方？",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "November 12, 2026 — Colette Kress takes over as interim CEO. What happens to open source/American AI leadership?",
+      "translations": {
+        "zh": {
+          "title": "黄仁勋领导英伟达33年后卸任",
+          "highlight": "2026年11月12日，Colette Kress接任临时CEO；开源与美国AI领导地位将走向何方？",
+          "summary": "这条消息称，2026年11月12日，黄仁勋在领导英伟达33年后卸任，由Colette Kress担任临时CEO。它把问题引向开源生态与美国AI领导地位在过渡期会如何变化。对关注AI产业格局的读者，这是一个观察公司治理与行业权力交接的切口。",
+          "failureAnalysis": "关键要点是：这是一次高层交接，真正值得跟踪的是临时CEO安排如何影响英伟达的战略连续性，以及开源与美国AI领导地位的相关讨论。"
+        },
+        "en": {
+          "highlight": "November 12, 2026 — Colette Kress takes over as interim CEO. What happens to open source/American AI leadership?",
+          "summary": "The item reports that on November 12, 2026, Jensen Huang resigned after 33 years leading NVIDIA, with Colette Kress taking over as interim CEO. It raises the question of what happens to open source and American AI leadership during the transition. It is worth reading as a signal for watching AI industry governance and leadership succession.",
+          "failureAnalysis": "The key takeaway is not to frame a leadership change as failure, but to track how the interim CEO arrangement affects NVIDIA’s strategic continuity and the open source/American AI leadership debate.",
+          "title": "Jensen Huang resigns after 33 years leading NVIDIA"
+        }
+      }
+    }
+  ]
+}
