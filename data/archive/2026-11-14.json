@@ -1,0 +1,302 @@
+{
+  "issueDate": "2026-11-14",
+  "updateStatus": "complete",
+  "contentFingerprint": "3ec42bffc9891589415ecf1255db7c2630ac93a49bb93e2627f0b7378c445f2e",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-1a1b0be72f4d410683ac5e38f4dbd933",
+      "category": "domestic",
+      "title": "文物“一张图”非遗“一本账” 云南“十五五”将加强文化遗产保护传承",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-14/10732179.shtml",
+      "publishedAt": "2026-11-14T13:19:25.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "云南印发文旅发展“十五五”规划，提出构建不可移动文物资源“一张图”、建立非遗资源总目录。",
+      "summary": "据中新网报道，云南省人民政府近日印发《云南省文化和旅游发展“十五五”规划》。规划提出加强文化遗产保护传承，构建不可移动文物资源“一张图”，并建立非遗资源总目录。该信息值得关注，因为它把文物保护和非遗管理具体化为资源图谱与总目录建设。",
+      "failureAnalysis": "可验证的要点是，云南将文物与非遗保护纳入“十五五”文旅规划，并强调资源清单化、图谱化管理；具体实施成效仍需以后续公开进展为准。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网昆明11月14日电 (罗婕)近日，云南省人民政府印发《云南省文化和旅游发展“十五五”规划》(以下简称《规划》)，该省将加强保护传承，构建不可移动文物资源“一张图”，建立非遗资源总目录。",
+      "translations": {
+        "zh": {
+          "title": "云南“十五五”规划提出文物“一张图”、非遗“一本账”",
+          "highlight": "云南印发文旅发展“十五五”规划，提出构建不可移动文物资源“一张图”、建立非遗资源总目录。",
+          "summary": "据中新网报道，云南省人民政府近日印发《云南省文化和旅游发展“十五五”规划》。规划提出加强文化遗产保护传承，构建不可移动文物资源“一张图”，并建立非遗资源总目录。该信息值得关注，因为它把文物保护和非遗管理具体化为资源图谱与总目录建设。",
+          "failureAnalysis": "可验证的要点是，云南将文物与非遗保护纳入“十五五”文旅规划，并强调资源清单化、图谱化管理；具体实施成效仍需以后续公开进展为准。"
+        },
+        "en": {
+          "highlight": "Yunnan issued a 15th Five-Year Plan cultural and tourism plan, proposing a 'one map' for immovable cultural relics and a master catalog of intangible cultural heritage resources.",
+          "summary": "China News Service reports that the Yunnan Provincial People's Government has issued the province's cultural and tourism development plan for the 15th Five-Year Plan period. The plan calls for strengthening cultural heritage protection and inheritance by building a 'one map' of immovable cultural relic resources and establishing a master catalog of intangible cultural heritage resources. It is worth reading because it turns heritage protection into specific resource-mapping and cataloging tasks.",
+          "failureAnalysis": "The verifiable takeaway is that Yunnan is incorporating cultural relic and intangible heritage protection into its 15th Five-Year cultural tourism plan, with an emphasis on resource mapping and cataloging; implementation results will depend on future public updates.",
+          "title": "Yunnan's 15th Five-Year Plan: 'One Map' for Cultural Relics, 'One Ledger' for Intangible Heritage"
+        }
+      }
+    },
+    {
+      "id": "news-c20f95a184994709a01faeefb07a3a87",
+      "category": "domestic",
+      "title": "“第一口的蜜——叶圣陶美育思想文献展” 亮相央美美术馆",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-14/10732124.shtml",
+      "publishedAt": "2026-11-14T12:23:36.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "“第一口的蜜——叶圣陶美育思想文献展”14日在中央美术学院美术馆开展，展期至11月29日。",
+      "summary": "“第一口的蜜——叶圣陶美育思想文献展”于11月14日在中央美术学院美术馆开展，展期至11月29日。可核实的信息集中在展览主题、地点与时间，适合关注叶圣陶美育思想及公共文化展览的读者了解基本信息。",
+      "failureAnalysis": "目前可核实信息仅覆盖展览主题、地点和展期，不宜据此推断展览规模或社会反响；阅读此类文化简讯时应把事实与评价分开。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网北京11月14日电 (记者 应妮)“第一口的蜜——叶圣陶美育思想文献展”14日在中央美术学院美术馆开展，展期至11月29日。",
+      "translations": {
+        "zh": {
+          "title": "“第一口的蜜”叶圣陶美育思想文献展亮相央美美术馆",
+          "highlight": "“第一口的蜜——叶圣陶美育思想文献展”14日在中央美术学院美术馆开展，展期至11月29日。",
+          "summary": "“第一口的蜜——叶圣陶美育思想文献展”于11月14日在中央美术学院美术馆开展，展期至11月29日。可核实的信息集中在展览主题、地点与时间，适合关注叶圣陶美育思想及公共文化展览的读者了解基本信息。",
+          "failureAnalysis": "目前可核实信息仅覆盖展览主题、地点和展期，不宜据此推断展览规模或社会反响；阅读此类文化简讯时应把事实与评价分开。"
+        },
+        "en": {
+          "highlight": "The exhibition “The First Taste of Honey: Ye Shengtao’s Aesthetic Education Thought Documents Exhibition” opened at the CAFA Art Museum on November 14 and runs through November 29.",
+          "summary": "The item reports that “The First Taste of Honey: Ye Shengtao’s Aesthetic Education Thought Documents Exhibition” opened at the CAFA Art Museum on November 14 and runs through November 29. Its verifiable value lies in the exhibition’s theme, venue, and dates, making it useful for readers tracking Ye Shengtao’s aesthetic education ideas and public cultural exhibitions.",
+          "failureAnalysis": "The verifiable information is limited to the exhibition’s theme, venue, and dates, so it should not be used to infer scale or public reception; keep facts separate from evaluation when reading such cultural briefs.",
+          "title": "“The First Taste of Honey” Ye Shengtao Aesthetic Education Documents Exhibition Opens at CAFA Art Museum"
+        }
+      }
+    },
+    {
+      "id": "news-1d3b8dd681e34df7ae0dd4fd7f154a94",
+      "category": "domestic",
+      "title": "APEC朋友圈丨中国无人机如何改变智利农田",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-14/10732203.shtml",
+      "publishedAt": "2026-11-14T14:35:00.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 3",
+      "highlight": "来自中国的无人机能够深入山区作业，不受泥泞地块限制，一定程度上破解了当地农业生产成本高、劳动力短缺的难题。",
+      "summary": "文章介绍，依托APEC合作平台，中国智慧农业技术进入智利，农用无人机适应山区和泥泞地块，帮助应对当地农业生产成本高、劳动力短缺的问题。无人机还催生“农业飞手”这一新职业，使普通农户能分享科技红利，体现出务实合作带来的公共影响。",
+      "failureAnalysis": "可验证的影响集中在作业适应性、成本与劳动力压力缓解，以及“农业飞手”新职业出现；具体覆盖规模和经济效益仍需更多数据支撑。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "依托APEC合作平台，中国智慧农业技术远渡重洋来到智利。作为全球地形最狭长的国家，智利南北绵延4352公里，复杂地貌给农耕带来不少挑战。来自中国的无人机能够深入山区作业，不受泥泞地块限制，一定程度上破解了当地农业生产成本高、劳动力短缺的难题。一架架农用无人机，不仅重塑当地传统农耕模式，还催生“农业飞手”这一新职业，让科技发展的红利直达普通农户，为亚太共同发展注入务实力量。",
+      "translations": {
+        "zh": {
+          "title": "APEC朋友圈丨中国无人机如何改变智利农田",
+          "highlight": "来自中国的无人机能够深入山区作业，不受泥泞地块限制，一定程度上破解了当地农业生产成本高、劳动力短缺的难题。",
+          "summary": "文章介绍，依托APEC合作平台，中国智慧农业技术进入智利，农用无人机适应山区和泥泞地块，帮助应对当地农业生产成本高、劳动力短缺的问题。无人机还催生“农业飞手”这一新职业，使普通农户能分享科技红利，体现出务实合作带来的公共影响。",
+          "failureAnalysis": "可验证的影响集中在作业适应性、成本与劳动力压力缓解，以及“农业飞手”新职业出现；具体覆盖规模和经济效益仍需更多数据支撑。"
+        },
+        "en": {
+          "highlight": "Chinese drones can operate deep in mountainous areas and are not limited by muddy plots, helping to address high agricultural production costs and labor shortages locally.",
+          "summary": "The article explains that, through the APEC cooperation platform, Chinese smart agriculture technology has reached Chile. Agricultural drones can work in mountainous and muddy terrain, helping address high production costs and labor shortages. The technology has also created a new occupation, “agricultural drone pilot,” allowing ordinary farmers to share in the benefits of technology and showing the practical public impact of cooperation.",
+          "failureAnalysis": "The verifiable impact centers on operational adaptability, easing cost and labor pressures, and the emergence of a new “agricultural drone pilot” occupation; more data are still needed on coverage and economic benefits.",
+          "title": "APEC Circle: How Chinese Drones Are Changing Chilean Farmland"
+        }
+      }
+    },
+    {
+      "id": "news-984b31e15fda4dfaa6d63f2d303e4410",
+      "category": "international",
+      "title": "Fuel crisis and protests pressure Chile's far-right president",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/11/14/nx-s1-6040144/chile-protests-fuel-kast-students",
+      "publishedAt": "2026-11-14T16:05:12.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "智利极右翼总统何塞·安东尼奥·卡斯特正面临不断高涨的公众愤怒，燃油价格上涨引发全国交通罢工和抗议。",
+      "summary": "这条国际新闻称，智利极右翼总统卡斯特因燃油价格上涨引发全国交通罢工和抗议，正承受日益增加的公众愤怒。它值得关注，因为燃料成本上升可能迅速转化为社会动荡和对政府的政治压力。",
+      "failureAnalysis": "关键点：燃油价格上涨可触发交通罢工与全国性抗议，并进一步放大对政府的政治压力。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Chile's far-right President José Antonio Kast is facing mounting public anger, as rising fuel prices trigger transport strikes and protests across the country.",
+      "translations": {
+        "zh": {
+          "title": "燃油危机与抗议施压智利极右翼总统",
+          "highlight": "智利极右翼总统何塞·安东尼奥·卡斯特正面临不断高涨的公众愤怒，燃油价格上涨引发全国交通罢工和抗议。",
+          "summary": "这条国际新闻称，智利极右翼总统卡斯特因燃油价格上涨引发全国交通罢工和抗议，正承受日益增加的公众愤怒。它值得关注，因为燃料成本上升可能迅速转化为社会动荡和对政府的政治压力。",
+          "failureAnalysis": "关键点：燃油价格上涨可触发交通罢工与全国性抗议，并进一步放大对政府的政治压力。"
+        },
+        "en": {
+          "highlight": "Chile's far-right President José Antonio Kast is facing mounting public anger, as rising fuel prices trigger transport strikes and protests across the country.",
+          "summary": "This international news item says Chile’s far-right President Kast is facing growing public anger as rising fuel prices trigger transport strikes and protests across the country. It is worth reading because higher fuel costs can quickly translate into social unrest and political pressure on the government.",
+          "failureAnalysis": "Key takeaway: rising fuel prices can quickly trigger transport strikes and nationwide protests, increasing political pressure on the government.",
+          "title": "Fuel Crisis and Protests Pressure Chile’s Far-Right President"
+        }
+      }
+    },
+    {
+      "id": "news-29c72b9a701947df9bc2381b027a5350",
+      "category": "international",
+      "title": "Nvidia CEO steps down. And, Sen. Chris Van Hollen to run for majority leader",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/11/13/g-s1-153532/up-first-newsletter-nvidia-jensen-huang-colette-kress-ukraine-russia-chris-van-hollen",
+      "publishedAt": "2026-11-13T12:07:12.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "英伟达首席财务官在黄仁勋卸任后获任临时首席执行官，参议员克里斯·范霍伦表示将挑战查克·舒默的多数党领袖职位。",
+      "summary": "NPR World 的这条快讯称，英伟达首席财务官在黄仁勋卸任CEO后获任临时CEO；同时，参议员克里斯·范霍伦表示将挑战查克·舒默的多数党领袖职位。它值得快速浏览，因为同一新闻周期内同时出现科技巨头高层变动与美国国会领导权竞争。",
+      "failureAnalysis": "关键点在于区分已确认的人事安排与尚待展开的政治竞争：英伟达已有临时CEO安排，而范霍伦对舒默的挑战仍需观察后续进展。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Nvidia's chief financial officer has been appointed interim CEO after Jensen Huang stepped down from the role. Chris Van Hollen says he will challenge Chuck Schumer for majority leader.",
+      "translations": {
+        "zh": {
+          "title": "英伟达CEO黄仁勋卸任，范霍伦将挑战舒默",
+          "highlight": "英伟达首席财务官在黄仁勋卸任后获任临时首席执行官，参议员克里斯·范霍伦表示将挑战查克·舒默的多数党领袖职位。",
+          "summary": "NPR World 的这条快讯称，英伟达首席财务官在黄仁勋卸任CEO后获任临时CEO；同时，参议员克里斯·范霍伦表示将挑战查克·舒默的多数党领袖职位。它值得快速浏览，因为同一新闻周期内同时出现科技巨头高层变动与美国国会领导权竞争。",
+          "failureAnalysis": "关键点在于区分已确认的人事安排与尚待展开的政治竞争：英伟达已有临时CEO安排，而范霍伦对舒默的挑战仍需观察后续进展。"
+        },
+        "en": {
+          "highlight": "Nvidia's chief financial officer has been appointed interim CEO after Jensen Huang stepped down from the role.",
+          "summary": "This NPR World news brief says Nvidia's CFO has become interim CEO after Jensen Huang stepped down, while Sen. Chris Van Hollen says he will challenge Chuck Schumer for majority leader. It is worth a quick read because a major tech leadership change and a U.S. congressional leadership contest appear in the same news cycle.",
+          "failureAnalysis": "The key point is to separate the confirmed interim CEO arrangement at Nvidia from the still-developing political challenge by Van Hollen to Schumer.",
+          "title": "Nvidia CEO Jensen Huang steps down; Van Hollen to challenge Schumer"
+        }
+      }
+    },
+    {
+      "id": "life-18a2f0a5778b487a98f89606e9a79ba3",
+      "category": "international",
+      "title": "Loving vs. Being in Love: Jane Welsh Carlyle on Navigating the Heart’s Contradictions",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/13/jane-welsh-carlyle-love/",
+      "publishedAt": "2026-11-13T17:00:37.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "激情如奔涌的激流，可能留下废墟与荒凉；我对你的爱却深沉平静，更像静河，所经之处带来清新与美。",
+      "summary": "所提供引文以激流与静河作对比，区分炽烈而可能带来破坏的激情，与深沉平静、能滋养沿途的爱。它值得读，是因为用文学化比喻提醒人辨认亲密关系中强烈感受与持久关怀的不同。",
+      "failureAnalysis": "关键启示：强烈情感未必等于可靠的爱；能持续滋养彼此的关系，往往更像平静而深长的河流。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "\"A passion, like the torrent in the violence of its course, might perhaps too, like the torrent, leave ruin and desolation behind... is deep and calm, more like the quiet river, which refreshes and beautifies where it flows.\"",
+      "translations": {
+        "zh": {
+          "title": "爱着与坠入爱河：简·威尔士·卡莱尔论心灵矛盾的驾驭",
+          "highlight": "激情如奔涌的激流，可能留下废墟与荒凉；我对你的爱却深沉平静，更像静河，所经之处带来清新与美。",
+          "summary": "所提供引文以激流与静河作对比，区分炽烈而可能带来破坏的激情，与深沉平静、能滋养沿途的爱。它值得读，是因为用文学化比喻提醒人辨认亲密关系中强烈感受与持久关怀的不同。",
+          "failureAnalysis": "关键启示：强烈情感未必等于可靠的爱；能持续滋养彼此的关系，往往更像平静而深长的河流。"
+        },
+        "en": {
+          "highlight": "Passion, like a torrent in the violence of its course, may leave ruin and desolation behind; my love for you is deep and calm, more like the quiet river, which refreshes and beautifies where it flows.",
+          "summary": "The provided quotation contrasts consuming passion, likened to a torrent that may leave ruin behind, with calm and deep love, likened to a quiet river that refreshes and beautifies. It is worth reading for its literary reminder to distinguish intensity from lasting care in intimate relationships.",
+          "failureAnalysis": "Key takeaway: intense feeling is not the same as reliable love; relationships that sustain both people often resemble a calm, deep river more than a destructive torrent.",
+          "title": "Loving vs. Being in Love: Jane Welsh Carlyle on Navigating the Heart’s Contradictions"
+        }
+      }
+    },
+    {
+      "id": "life-effe87fbb0cc47e1998f73b5dc1a83eb",
+      "category": "international",
+      "title": "The power of group thought",
+      "source": "Psyche",
+      "url": "https://psyche.co/videos/what-the-flight-paths-of-pigeons-tell-us-about-collective-intelligence",
+      "publishedAt": "2026-11-13T11:01:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 0",
+      "highlight": "信鸽的飞行路径能教我们什么是“加权民主”，以及群体是否比其组成部分的总和更聪明。",
+      "summary": "这段 Psyche 视频借助信鸽的飞行路径，讨论群体智慧与“加权民主”。它追问群体是否可能比各个组成部分的总和更聪明。对非技术读者来说，这是一个用自然案例理解集体决策机制的入口。",
+      "failureAnalysis": "关键启发：信鸽飞行路径提供了一个具体切入点，用来理解“加权民主”如何连接群体智慧与集体决策。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Are groups smarter than the sum of their parts? What homing pigeons’ flight paths can teach us about ‘weighted democracy’ - Video by The Well and the John Templeton Foundation Watch on Psyche",
+      "translations": {
+        "zh": {
+          "title": "群体思维的力量：信鸽飞行路径教我们什么",
+          "highlight": "信鸽的飞行路径能教我们什么是“加权民主”，以及群体是否比其组成部分的总和更聪明。",
+          "summary": "这段 Psyche 视频借助信鸽的飞行路径，讨论群体智慧与“加权民主”。它追问群体是否可能比各个组成部分的总和更聪明。对非技术读者来说，这是一个用自然案例理解集体决策机制的入口。",
+          "failureAnalysis": "关键启发：信鸽飞行路径提供了一个具体切入点，用来理解“加权民主”如何连接群体智慧与集体决策。"
+        },
+        "en": {
+          "highlight": "Homing pigeons’ flight paths can teach us about ‘weighted democracy’ and whether groups are smarter than the sum of their parts.",
+          "summary": "This Psyche video uses homing pigeons’ flight paths to discuss collective intelligence and ‘weighted democracy.’ It asks whether groups can be smarter than the sum of their parts. It offers a natural-world example for understanding collective decision-making.",
+          "failureAnalysis": "Key takeaway: pigeon flight paths provide a concrete lens for understanding how ‘weighted democracy’ connects group intelligence with collective decision-making.",
+          "title": "The Power of Group Thought: What Pigeon Flight Paths Teach Us About Weighted Democracy"
+        }
+      }
+    },
+    {
+      "id": "ai-feed-05ea91ab14244a389c8edb81e6fab1f6",
+      "category": "ai",
+      "title": "Open-source AI without Jensen",
+      "source": "Interconnects",
+      "url": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
+      "abstractUrl": null,
+      "publishedAt": "2026-11-14T12:23:15.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        }
+      ],
+      "evidenceLabel": "GitHub",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub",
+      "summary": "内容把开源 AI 的现状概括为“一次斩首”，并直言“到了重建的时候”。它值得读，是因为它提示开源 AI 的讨论可能正在转向重新搭建框架，而不是沿用既有路径。",
+      "failureAnalysis": "关键提醒：当原有格局被打破时，团队应重新审视开源 AI 的假设与路径，而不是继续套用旧框架。",
+      "aiSelectionScore": 100,
+      "highlight": "开源人工智能领域遭遇一次斩首；现在已到了重建的时候。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "A decapitation. It’s time to rebuild.",
+      "translations": {
+        "zh": {
+          "title": "没有 Jensen 的开源 AI：该重建了",
+          "highlight": "开源人工智能领域遭遇一次斩首；现在已到了重建的时候。",
+          "summary": "内容把开源 AI 的现状概括为“一次斩首”，并直言“到了重建的时候”。它值得读，是因为它提示开源 AI 的讨论可能正在转向重新搭建框架，而不是沿用既有路径。",
+          "failureAnalysis": "关键提醒：当原有格局被打破时，团队应重新审视开源 AI 的假设与路径，而不是继续套用旧框架。"
+        },
+        "en": {
+          "highlight": "Open-source AI has suffered a decapitation; it is now time to rebuild.",
+          "summary": "The piece frames the state of open-source AI as “a decapitation” and says plainly that it is time to rebuild. It is worth reading because it signals a possible shift in open-source AI discussions toward rebuilding the framework rather than continuing on the old path.",
+          "failureAnalysis": "Key takeaway: when the old landscape is broken, teams should revisit their assumptions and paths for open-source AI instead of reusing old frameworks.",
+          "title": "Open-source AI without Jensen: Time to Rebuild"
+        }
+      }
+    },
+    {
+      "id": "ai-github-1395995350",
+      "category": "ai",
+      "title": "strands-labs/strands-decider",
+      "source": "GitHub Search",
+      "url": "https://github.com/strands-labs/strands-decider",
+      "abstractUrl": null,
+      "publishedAt": "2026-09-29T16:36:38.0000000Z",
+      "scoreLabel": "GitHub 1183 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该 GitHub 仓库获得 1183 颗星并近期有公开活动，描述了一个面向智能体工作流的小型快速决策模型或系统模型。它用于在选项间做选择或按量表评分，声称比大语言模型更快，并为每次决策提供校准后的置信度。值得关注的是，它试图用更轻量的决策组件降低智能体流程中的延迟与调用成本，但当前信息仅来自仓库描述，尚不足以判断实际效果。",
+      "failureAnalysis": "真实智能体任务常需要开放式推理和上下文理解，专用小型决策器在边界场景、分布外输入和多步决策中可能不如通用大模型稳健，校准置信度也未必可靠。若接入现有智能体框架需要额外适配、监控和回退机制，工程复杂度可能抵消速度和成本优势。开源星标只能说明关注度，不能证明付费需求或生产环境验证；若缺少清晰的使用场景、基准评测和分发渠道，项目可能停留在演示层。",
+      "aiSelectionScore": 1183,
+      "highlight": "一个用于智能体工作流的小型快速决策模型，可在选项间选择或按量表评分，速度超过大语言模型，并给出校准置信度。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 1183 stars and recent public activity. Description: A small, fast decision model, or system one model, for agentic workflows. Pick between options or rate on a scale faster than an LLM, with a calibrated confidence on every decision.",
+      "translations": {
+        "zh": {
+          "title": "面向智能体工作流的小型快速决策模型",
+          "highlight": "一个用于智能体工作流的小型快速决策模型，可在选项间选择或按量表评分，速度超过大语言模型，并给出校准置信度。",
+          "summary": "该 GitHub 仓库获得 1183 颗星并近期有公开活动，描述了一个面向智能体工作流的小型快速决策模型或系统模型。它用于在选项间做选择或按量表评分，声称比大语言模型更快，并为每次决策提供校准后的置信度。值得关注的是，它试图用更轻量的决策组件降低智能体流程中的延迟与调用成本，但当前信息仅来自仓库描述，尚不足以判断实际效果。",
+          "failureAnalysis": "真实智能体任务常需要开放式推理和上下文理解，专用小型决策器在边界场景、分布外输入和多步决策中可能不如通用大模型稳健，校准置信度也未必可靠。若接入现有智能体框架需要额外适配、监控和回退机制，工程复杂度可能抵消速度和成本优势。开源星标只能说明关注度，不能证明付费需求或生产环境验证；若缺少清晰的使用场景、基准评测和分发渠道，项目可能停留在演示层。"
+        },
+        "en": {
+          "highlight": "A small, fast decision model for agentic workflows that picks between options or rates on a scale faster than an LLM, with calibrated confidence.",
+          "summary": "This GitHub repository has 1,183 stars and recent public activity, describing a small, fast decision model or system model for agentic workflows. It is meant to choose between options or rate on a scale faster than an LLM, with calibrated confidence on each decision. It is worth reading as a signal of interest in lightweight decision components that could reduce latency and LLM calls in agent pipelines, though the available information is only the repository description.",
+          "failureAnalysis": "Real agent tasks often need open-ended reasoning, so a narrow decider may be brittle on edge cases, out-of-distribution inputs, and multi-step decisions, and its calibrated confidence may not hold in production. Stars indicate attention, not validated demand; integration overhead, missing benchmarks, and unclear distribution could keep it at the demo stage.",
+          "title": "A Small, Fast Decision Model for Agentic Workflows"
+        }
+      }
+    }
+  ]
+}
