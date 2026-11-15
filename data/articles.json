@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-11-14",
+  "issueDate": "2026-11-15",
   "updateStatus": "complete",
-  "contentFingerprint": "3ec42bffc9891589415ecf1255db7c2630ac93a49bb93e2627f0b7378c445f2e",
+  "contentFingerprint": "1c3e706e2b1f4551c931e6372082def7d7d91012fe034ca02163a989df26abc6",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,258 +10,217 @@
   ],
   "articles": [
     {
-      "id": "news-1a1b0be72f4d410683ac5e38f4dbd933",
+      "id": "news-50198ab88a054d8a8120bfebbc679ab3",
       "category": "domestic",
-      "title": "文物“一张图”非遗“一本账” 云南“十五五”将加强文化遗产保护传承",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-14/10732179.shtml",
-      "publishedAt": "2026-11-14T13:19:25.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "云南印发文旅发展“十五五”规划，提出构建不可移动文物资源“一张图”、建立非遗资源总目录。",
-      "summary": "据中新网报道，云南省人民政府近日印发《云南省文化和旅游发展“十五五”规划》。规划提出加强文化遗产保护传承，构建不可移动文物资源“一张图”，并建立非遗资源总目录。该信息值得关注，因为它把文物保护和非遗管理具体化为资源图谱与总目录建设。",
-      "failureAnalysis": "可验证的要点是，云南将文物与非遗保护纳入“十五五”文旅规划，并强调资源清单化、图谱化管理；具体实施成效仍需以后续公开进展为准。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "中新网昆明11月14日电 (罗婕)近日，云南省人民政府印发《云南省文化和旅游发展“十五五”规划》(以下简称《规划》)，该省将加强保护传承，构建不可移动文物资源“一张图”，建立非遗资源总目录。",
-      "translations": {
-        "zh": {
-          "title": "云南“十五五”规划提出文物“一张图”、非遗“一本账”",
-          "highlight": "云南印发文旅发展“十五五”规划，提出构建不可移动文物资源“一张图”、建立非遗资源总目录。",
-          "summary": "据中新网报道，云南省人民政府近日印发《云南省文化和旅游发展“十五五”规划》。规划提出加强文化遗产保护传承，构建不可移动文物资源“一张图”，并建立非遗资源总目录。该信息值得关注，因为它把文物保护和非遗管理具体化为资源图谱与总目录建设。",
-          "failureAnalysis": "可验证的要点是，云南将文物与非遗保护纳入“十五五”文旅规划，并强调资源清单化、图谱化管理；具体实施成效仍需以后续公开进展为准。"
-        },
-        "en": {
-          "highlight": "Yunnan issued a 15th Five-Year Plan cultural and tourism plan, proposing a 'one map' for immovable cultural relics and a master catalog of intangible cultural heritage resources.",
-          "summary": "China News Service reports that the Yunnan Provincial People's Government has issued the province's cultural and tourism development plan for the 15th Five-Year Plan period. The plan calls for strengthening cultural heritage protection and inheritance by building a 'one map' of immovable cultural relic resources and establishing a master catalog of intangible cultural heritage resources. It is worth reading because it turns heritage protection into specific resource-mapping and cataloging tasks.",
-          "failureAnalysis": "The verifiable takeaway is that Yunnan is incorporating cultural relic and intangible heritage protection into its 15th Five-Year cultural tourism plan, with an emphasis on resource mapping and cataloging; implementation results will depend on future public updates.",
-          "title": "Yunnan's 15th Five-Year Plan: 'One Map' for Cultural Relics, 'One Ledger' for Intangible Heritage"
-        }
-      }
-    },
-    {
-      "id": "news-c20f95a184994709a01faeefb07a3a87",
-      "category": "domestic",
-      "title": "“第一口的蜜——叶圣陶美育思想文献展” 亮相央美美术馆",
-      "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-14/10732124.shtml",
-      "publishedAt": "2026-11-14T12:23:36.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "“第一口的蜜——叶圣陶美育思想文献展”14日在中央美术学院美术馆开展，展期至11月29日。",
-      "summary": "“第一口的蜜——叶圣陶美育思想文献展”于11月14日在中央美术学院美术馆开展，展期至11月29日。可核实的信息集中在展览主题、地点与时间，适合关注叶圣陶美育思想及公共文化展览的读者了解基本信息。",
-      "failureAnalysis": "目前可核实信息仅覆盖展览主题、地点和展期，不宜据此推断展览规模或社会反响；阅读此类文化简讯时应把事实与评价分开。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "中新网北京11月14日电 (记者 应妮)“第一口的蜜——叶圣陶美育思想文献展”14日在中央美术学院美术馆开展，展期至11月29日。",
-      "translations": {
-        "zh": {
-          "title": "“第一口的蜜”叶圣陶美育思想文献展亮相央美美术馆",
-          "highlight": "“第一口的蜜——叶圣陶美育思想文献展”14日在中央美术学院美术馆开展，展期至11月29日。",
-          "summary": "“第一口的蜜——叶圣陶美育思想文献展”于11月14日在中央美术学院美术馆开展，展期至11月29日。可核实的信息集中在展览主题、地点与时间，适合关注叶圣陶美育思想及公共文化展览的读者了解基本信息。",
-          "failureAnalysis": "目前可核实信息仅覆盖展览主题、地点和展期，不宜据此推断展览规模或社会反响；阅读此类文化简讯时应把事实与评价分开。"
-        },
-        "en": {
-          "highlight": "The exhibition “The First Taste of Honey: Ye Shengtao’s Aesthetic Education Thought Documents Exhibition” opened at the CAFA Art Museum on November 14 and runs through November 29.",
-          "summary": "The item reports that “The First Taste of Honey: Ye Shengtao’s Aesthetic Education Thought Documents Exhibition” opened at the CAFA Art Museum on November 14 and runs through November 29. Its verifiable value lies in the exhibition’s theme, venue, and dates, making it useful for readers tracking Ye Shengtao’s aesthetic education ideas and public cultural exhibitions.",
-          "failureAnalysis": "The verifiable information is limited to the exhibition’s theme, venue, and dates, so it should not be used to infer scale or public reception; keep facts separate from evaluation when reading such cultural briefs.",
-          "title": "“The First Taste of Honey” Ye Shengtao Aesthetic Education Documents Exhibition Opens at CAFA Art Museum"
-        }
-      }
-    },
-    {
-      "id": "news-1d3b8dd681e34df7ae0dd4fd7f154a94",
-      "category": "domestic",
-      "title": "APEC朋友圈丨中国无人机如何改变智利农田",
+      "title": "（深圳APEC）专访郑永年：西方唱衰中国经济毫无道理，商界知道动力在哪",
       "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-14/10732203.shtml",
-      "publishedAt": "2026-11-14T14:35:00.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-15/10732516.shtml",
+      "publishedAt": "2026-11-15T14:45:23.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 3",
-      "highlight": "来自中国的无人机能够深入山区作业，不受泥泞地块限制，一定程度上破解了当地农业生产成本高、劳动力短缺的难题。",
-      "summary": "文章介绍，依托APEC合作平台，中国智慧农业技术进入智利，农用无人机适应山区和泥泞地块，帮助应对当地农业生产成本高、劳动力短缺的问题。无人机还催生“农业飞手”这一新职业，使普通农户能分享科技红利，体现出务实合作带来的公共影响。",
-      "failureAnalysis": "可验证的影响集中在作业适应性、成本与劳动力压力缓解，以及“农业飞手”新职业出现；具体覆盖规模和经济效益仍需更多数据支撑。",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "二十世纪八九十年代以来就一直有人唱衰中国经济，但中国经济不仅没衰，反而跑得更快、走得也更稳。",
+      "summary": "文章报道郑永年在深圳接受中新社专访，回应外界唱衰中国经济的论调。他表示，自二十世纪八九十年代以来唱衰声音一直存在，但中国经济不仅没有衰退，反而跑得更快、走得更稳。专访还点出商界清楚经济动力所在，为理解相关舆论争论提供了受访者视角。",
+      "failureAnalysis": "关键要点是：判断经济走势不能停留在“唱衰”标签上，应结合长期表现和商界实际感受；引用专访时也要区分受访者观点与可独立验证的数据。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "依托APEC合作平台，中国智慧农业技术远渡重洋来到智利。作为全球地形最狭长的国家，智利南北绵延4352公里，复杂地貌给农耕带来不少挑战。来自中国的无人机能够深入山区作业，不受泥泞地块限制，一定程度上破解了当地农业生产成本高、劳动力短缺的难题。一架架农用无人机，不仅重塑当地传统农耕模式，还催生“农业飞手”这一新职业，让科技发展的红利直达普通农户，为亚太共同发展注入务实力量。",
+      "sourceExcerpt": "中新社深圳11月15日电 (记者 程景伟 郭军)“二十世纪八九十年代以来就一直有人唱衰中国经济，但中国经济不仅没衰，反而跑得更快、走得也更稳。”香港中文大学(深圳)公共政策学院院长、广州粤港澳大湾区研究院理事长郑永年15日在深圳接受中新社记者专访时称。",
       "translations": {
         "zh": {
-          "title": "APEC朋友圈丨中国无人机如何改变智利农田",
-          "highlight": "来自中国的无人机能够深入山区作业，不受泥泞地块限制，一定程度上破解了当地农业生产成本高、劳动力短缺的难题。",
-          "summary": "文章介绍，依托APEC合作平台，中国智慧农业技术进入智利，农用无人机适应山区和泥泞地块，帮助应对当地农业生产成本高、劳动力短缺的问题。无人机还催生“农业飞手”这一新职业，使普通农户能分享科技红利，体现出务实合作带来的公共影响。",
-          "failureAnalysis": "可验证的影响集中在作业适应性、成本与劳动力压力缓解，以及“农业飞手”新职业出现；具体覆盖规模和经济效益仍需更多数据支撑。"
+          "title": "深圳APEC专访郑永年：西方唱衰中国经济毫无道理，商界知道动力在哪",
+          "highlight": "二十世纪八九十年代以来就一直有人唱衰中国经济，但中国经济不仅没衰，反而跑得更快、走得也更稳。",
+          "summary": "文章报道郑永年在深圳接受中新社专访，回应外界唱衰中国经济的论调。他表示，自二十世纪八九十年代以来唱衰声音一直存在，但中国经济不仅没有衰退，反而跑得更快、走得更稳。专访还点出商界清楚经济动力所在，为理解相关舆论争论提供了受访者视角。",
+          "failureAnalysis": "关键要点是：判断经济走势不能停留在“唱衰”标签上，应结合长期表现和商界实际感受；引用专访时也要区分受访者观点与可独立验证的数据。"
         },
         "en": {
-          "highlight": "Chinese drones can operate deep in mountainous areas and are not limited by muddy plots, helping to address high agricultural production costs and labor shortages locally.",
-          "summary": "The article explains that, through the APEC cooperation platform, Chinese smart agriculture technology has reached Chile. Agricultural drones can work in mountainous and muddy terrain, helping address high production costs and labor shortages. The technology has also created a new occupation, “agricultural drone pilot,” allowing ordinary farmers to share in the benefits of technology and showing the practical public impact of cooperation.",
-          "failureAnalysis": "The verifiable impact centers on operational adaptability, easing cost and labor pressures, and the emergence of a new “agricultural drone pilot” occupation; more data are still needed on coverage and economic benefits.",
-          "title": "APEC Circle: How Chinese Drones Are Changing Chilean Farmland"
+          "highlight": "Since the 1980s and 1990s, people have been predicting China's economic decline, yet China's economy has not only avoided decline but run faster and steadier.",
+          "summary": "The article reports an interview with Zheng Yongnian in Shenzhen, responding to outside claims that China's economy is declining. He says such predictions have persisted since the 1980s and 1990s, but China's economy has not declined and has instead grown faster and more steadily. The interview also notes that business understands where the economic momentum lies, offering the interviewee's perspective on the debate.",
+          "failureAnalysis": "The key takeaway is to judge economic trends with long-term performance and business sentiment rather than rhetoric labels; when citing such interviews, distinguish the interviewee's views from independently verifiable data.",
+          "title": "Shenzhen APEC Interview with Zheng Yongnian: Western 'China collapse' rhetoric is groundless; business knows where the momentum lies"
         }
       }
     },
     {
-      "id": "news-984b31e15fda4dfaa6d63f2d303e4410",
+      "id": "news-9e1706d264c84ded92fb301b508ac0e8",
+      "category": "domestic",
+      "title": "云南提出建设RCEP国际教育合作区",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-15/10732492.shtml",
+      "publishedAt": "2026-11-15T13:10:06.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "云南省人民政府印发教育发展“十五五”规划，提出建设RCEP国际教育合作区。",
+      "summary": "文章称，云南省人民政府近日印发《云南省教育发展“十五五”规划》，其中提出建设区域全面经济伙伴关系协定（RCEP）国际教育合作区。目前可核验的公开信息主要在政策提出层面，具体合作机制、实施范围和推进安排仍需后续文件说明。对关注教育开放与区域合作的人来说，这一政策信号值得跟踪。",
+      "failureAnalysis": "关键看点在于政策信号：云南把RCEP国际教育合作纳入“十五五”教育规划。由于公开细节有限，判断实际影响应等待实施细则、资金和项目安排。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网昆明11月15日电 (记者 缪超)近日，云南省人民政府印发《云南省教育发展“十五五”规划》，提出建设区域全面经济伙伴关系协定(RCEP)国际教育合作区。",
+      "translations": {
+        "zh": {
+          "title": "云南提出建设RCEP国际教育合作区",
+          "highlight": "云南省人民政府印发教育发展“十五五”规划，提出建设RCEP国际教育合作区。",
+          "summary": "文章称，云南省人民政府近日印发《云南省教育发展“十五五”规划》，其中提出建设区域全面经济伙伴关系协定（RCEP）国际教育合作区。目前可核验的公开信息主要在政策提出层面，具体合作机制、实施范围和推进安排仍需后续文件说明。对关注教育开放与区域合作的人来说，这一政策信号值得跟踪。",
+          "failureAnalysis": "关键看点在于政策信号：云南把RCEP国际教育合作纳入“十五五”教育规划。由于公开细节有限，判断实际影响应等待实施细则、资金和项目安排。"
+        },
+        "en": {
+          "highlight": "The Yunnan Provincial People's Government issued its education development plan for the 15th Five-Year Plan period, proposing an RCEP international education cooperation zone.",
+          "summary": "The article reports that Yunnan issued its education development plan for the 15th Five-Year Plan period and proposed building an RCEP international education cooperation zone. Verifiable public information currently centers on the policy proposal; specific mechanisms, scope, and implementation arrangements still need follow-up documents. It is worth tracking for those interested in education opening and regional cooperation.",
+          "failureAnalysis": "The key takeaway is the policy signal: Yunnan has included RCEP international education cooperation in its 15th Five-Year Plan for education. With limited public details, judgments about practical impact should wait for implementation rules, funding, and project arrangements.",
+          "title": "Yunnan Proposes RCEP International Education Cooperation Zone"
+        }
+      }
+    },
+    {
+      "id": "news-3410576e033c4c0a98b87eb6b122eac2",
+      "category": "domestic",
+      "title": "旱情叠加超强厄尔尼诺 云南提前启动2027年度森林草原防火期",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-15/10732497.shtml",
+      "publishedAt": "2026-11-15T13:09:18.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "今冬明春预计持续高温少雨，林下可燃物富集、野外生产用火增多，火险等级将持续走高",
+      "summary": "文章称，9月1日以来云南平均降水仅79.4毫米，较常年同期偏少64.3%，叠加超强厄尔尼诺影响，今冬明春预计持续高温少雨。经省政府批准，云南自2026年11月15日起进入2027年度森林草原防火期，面临林下可燃物富集、野外生产用火增多和火险等级走高等挑战。其公共影响在于防火期提前启动，需关注干旱与厄尔尼诺下的森林草原火险。",
+      "failureAnalysis": "关键点在于，提前启动防火期是对降水显著偏少和超强厄尔尼诺叠加影响的预防性响应，公众需关注火险预警并减少违规野外用火。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网昆明11月15日电 (时文枝)云南省森林草原防灭火指挥部15日消息，9月1日以来，该省平均降水仅79.4毫米，较常年同期偏少64.3%，叠加超强厄尔尼诺现象影响，今冬明春预计持续高温少雨，林下可燃物富集、野外生产用火增多，火险等级将持续走高，森林草原防灭火工作面临前所未有的严峻挑战。经云南省人民政府批准，2026年11月15日起，该省正式进入2027年度森林草原防火期。",
+      "translations": {
+        "zh": {
+          "title": "云南提前启动2027年度森林草原防火期",
+          "highlight": "今冬明春预计持续高温少雨，林下可燃物富集、野外生产用火增多，火险等级将持续走高",
+          "summary": "文章称，9月1日以来云南平均降水仅79.4毫米，较常年同期偏少64.3%，叠加超强厄尔尼诺影响，今冬明春预计持续高温少雨。经省政府批准，云南自2026年11月15日起进入2027年度森林草原防火期，面临林下可燃物富集、野外生产用火增多和火险等级走高等挑战。其公共影响在于防火期提前启动，需关注干旱与厄尔尼诺下的森林草原火险。",
+          "failureAnalysis": "关键点在于，提前启动防火期是对降水显著偏少和超强厄尔尼诺叠加影响的预防性响应，公众需关注火险预警并减少违规野外用火。"
+        },
+        "en": {
+          "highlight": "This winter and next spring are expected to remain hot and dry, with accumulated combustible material and more outdoor production fires, keeping fire risk rising.",
+          "summary": "The article says Yunnan has received only 79.4 mm of average precipitation since September 1, 64.3% below the normal for the same period, while a super El Niño is expected to bring continued hot and dry weather. Approved by the provincial government, Yunnan entered its 2027 forest and grassland fire prevention period on November 15, 2026, facing combustible buildup, more outdoor production fires and rising fire risk. The public impact is an earlier fire prevention period and the need to watch drought- and El Niño-related fire risks.",
+          "failureAnalysis": "The key takeaway is that the early fire prevention period is a preventive response to sharply below-normal rainfall and a super El Niño, so the public should heed fire-risk warnings and limit illegal outdoor burning.",
+          "title": "Yunnan Starts 2027 Forest and Grassland Fire Prevention Period Early"
+        }
+      }
+    },
+    {
+      "id": "news-d53a6ad7a8f040dda723f97bd412037b",
       "category": "international",
-      "title": "Fuel crisis and protests pressure Chile's far-right president",
-      "source": "NPR World",
-      "url": "https://www.npr.org/2026/11/14/nx-s1-6040144/chile-protests-fuel-kast-students",
-      "publishedAt": "2026-11-14T16:05:12.0000000+00:00",
+      "title": "Minister backs legal right to job support for young people",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/cqr7gn1zmlj1o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-15T13:06:15.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "智利极右翼总统何塞·安东尼奥·卡斯特正面临不断高涨的公众愤怒，燃油价格上涨引发全国交通罢工和抗议。",
-      "summary": "这条国际新闻称，智利极右翼总统卡斯特因燃油价格上涨引发全国交通罢工和抗议，正承受日益增加的公众愤怒。它值得关注，因为燃料成本上升可能迅速转化为社会动荡和对政府的政治压力。",
-      "failureAnalysis": "关键点：燃油价格上涨可触发交通罢工与全国性抗议，并进一步放大对政府的政治压力。",
+      "highlight": "英国就业与养老金大臣表示，目前为年轻人提供的支持力度过于含糊。",
+      "summary": "英国就业与养老金大臣支持将年轻人获得就业支持设为法定权利。其理由是，目前提供的支持力度过于含糊，需要更明确、可执行的安排。对关注国际就业政策的人来说，这提供了一个观察支持承诺如何转为法律责任的信号。",
+      "failureAnalysis": "关键看点是：把就业支持写成法律权利会提高政策可执行性，但支持标准、覆盖范围和资金安排仍需细化。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Chile's far-right President José Antonio Kast is facing mounting public anger, as rising fuel prices trigger transport strikes and protests across the country.",
+      "sourceExcerpt": "The work and pensions secretary said the level of support currently on offer was too vague.",
       "translations": {
         "zh": {
-          "title": "燃油危机与抗议施压智利极右翼总统",
-          "highlight": "智利极右翼总统何塞·安东尼奥·卡斯特正面临不断高涨的公众愤怒，燃油价格上涨引发全国交通罢工和抗议。",
-          "summary": "这条国际新闻称，智利极右翼总统卡斯特因燃油价格上涨引发全国交通罢工和抗议，正承受日益增加的公众愤怒。它值得关注，因为燃料成本上升可能迅速转化为社会动荡和对政府的政治压力。",
-          "failureAnalysis": "关键点：燃油价格上涨可触发交通罢工与全国性抗议，并进一步放大对政府的政治压力。"
+          "title": "英国就业与养老金大臣支持年轻人获得就业支持的法律权利",
+          "highlight": "英国就业与养老金大臣表示，目前为年轻人提供的支持力度过于含糊。",
+          "summary": "英国就业与养老金大臣支持将年轻人获得就业支持设为法定权利。其理由是，目前提供的支持力度过于含糊，需要更明确、可执行的安排。对关注国际就业政策的人来说，这提供了一个观察支持承诺如何转为法律责任的信号。",
+          "failureAnalysis": "关键看点是：把就业支持写成法律权利会提高政策可执行性，但支持标准、覆盖范围和资金安排仍需细化。"
         },
         "en": {
-          "highlight": "Chile's far-right President José Antonio Kast is facing mounting public anger, as rising fuel prices trigger transport strikes and protests across the country.",
-          "summary": "This international news item says Chile’s far-right President Kast is facing growing public anger as rising fuel prices trigger transport strikes and protests across the country. It is worth reading because higher fuel costs can quickly translate into social unrest and political pressure on the government.",
-          "failureAnalysis": "Key takeaway: rising fuel prices can quickly trigger transport strikes and nationwide protests, increasing political pressure on the government.",
-          "title": "Fuel Crisis and Protests Pressure Chile’s Far-Right President"
+          "highlight": "The work and pensions secretary said the level of support currently on offer was too vague.",
+          "summary": "The UK work and pensions secretary backs a legal right for young people to receive job support. The minister said the level of support currently on offer is too vague, suggesting clearer and more enforceable arrangements are needed. It is worth noting as a signal of how employment support commitments may be turned into legal duties.",
+          "failureAnalysis": "The key takeaway is that making job support a legal right could improve enforceability, but the standards, coverage and funding still need to be specified.",
+          "title": "UK minister backs legal right to job support for young people"
         }
       }
     },
     {
-      "id": "news-29c72b9a701947df9bc2381b027a5350",
+      "id": "news-eb6003a997f8414baa74deee98702757",
       "category": "international",
-      "title": "Nvidia CEO steps down. And, Sen. Chris Van Hollen to run for majority leader",
-      "source": "NPR World",
-      "url": "https://www.npr.org/2026/11/13/g-s1-153532/up-first-newsletter-nvidia-jensen-huang-colette-kress-ukraine-russia-chris-van-hollen",
-      "publishedAt": "2026-11-13T12:07:12.0000000+00:00",
+      "title": "World leaders head to Asia for back-to-back diplomatic summits",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/15/asia-diplomatic-summits-trump-xi-putin-apec-asean",
+      "publishedAt": "2026-11-15T04:00:02.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "英伟达首席财务官在黄仁勋卸任后获任临时首席执行官，参议员克里斯·范霍伦表示将挑战查克·舒默的多数党领袖职位。",
-      "summary": "NPR World 的这条快讯称，英伟达首席财务官在黄仁勋卸任CEO后获任临时CEO；同时，参议员克里斯·范霍伦表示将挑战查克·舒默的多数党领袖职位。它值得快速浏览，因为同一新闻周期内同时出现科技巨头高层变动与美国国会领导权竞争。",
-      "failureAnalysis": "关键点在于区分已确认的人事安排与尚待展开的政治竞争：英伟达已有临时CEO安排，而范霍伦对舒默的挑战仍需观察后续进展。",
+      "highlight": "北京将在深圳迎来特朗普出席亚太经合组织领导人会议，并因此占据主场优势；会议在美国中期选举结束两周后举行。",
+      "summary": "文章称，本周多国领导人将飞往亚洲参加接连举行的高级别峰会，贸易、科技与地区安全将成为重点，背景是中美两大国的影响力角逐。北京将在深圳主办APEC领导人会议并接待特朗普，会议在美国中期选举后两周开始，值得关注其释放的外交与经济信号。",
+      "failureAnalysis": "关键看点是中美在贸易、科技与地区安全议题上的影响力较量将如何在亚洲峰会上展开，以及东道主优势可能带来的议程设置权。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Nvidia's chief financial officer has been appointed interim CEO after Jensen Huang stepped down from the role. Chris Van Hollen says he will challenge Chuck Schumer for majority leader.",
+      "sourceExcerpt": "Tussle for influence as trade, tech and regional security to take centre stage in China, Philippines and Cambodia meetings World leaders will fly in to Asia for back-to-back high-level summits this week against the backdrop of the tussle for influence between the superpowers China and the US. Beijing will have the home advantage when it welcomes Donald Trump to its southern technology hub of Shenzhen for the Asia-Pacific Economic Cooperation (Apec) leaders’ meeting. It starts two weeks after the US leader lost midterm elections .",
       "translations": {
         "zh": {
-          "title": "英伟达CEO黄仁勋卸任，范霍伦将挑战舒默",
-          "highlight": "英伟达首席财务官在黄仁勋卸任后获任临时首席执行官，参议员克里斯·范霍伦表示将挑战查克·舒默的多数党领袖职位。",
-          "summary": "NPR World 的这条快讯称，英伟达首席财务官在黄仁勋卸任CEO后获任临时CEO；同时，参议员克里斯·范霍伦表示将挑战查克·舒默的多数党领袖职位。它值得快速浏览，因为同一新闻周期内同时出现科技巨头高层变动与美国国会领导权竞争。",
-          "failureAnalysis": "关键点在于区分已确认的人事安排与尚待展开的政治竞争：英伟达已有临时CEO安排，而范霍伦对舒默的挑战仍需观察后续进展。"
+          "title": "世界领导人齐聚亚洲参加连续外交峰会",
+          "highlight": "北京将在深圳迎来特朗普出席亚太经合组织领导人会议，并因此占据主场优势；会议在美国中期选举结束两周后举行。",
+          "summary": "文章称，本周多国领导人将飞往亚洲参加接连举行的高级别峰会，贸易、科技与地区安全将成为重点，背景是中美两大国的影响力角逐。北京将在深圳主办APEC领导人会议并接待特朗普，会议在美国中期选举后两周开始，值得关注其释放的外交与经济信号。",
+          "failureAnalysis": "关键看点是中美在贸易、科技与地区安全议题上的影响力较量将如何在亚洲峰会上展开，以及东道主优势可能带来的议程设置权。"
         },
         "en": {
-          "highlight": "Nvidia's chief financial officer has been appointed interim CEO after Jensen Huang stepped down from the role.",
-          "summary": "This NPR World news brief says Nvidia's CFO has become interim CEO after Jensen Huang stepped down, while Sen. Chris Van Hollen says he will challenge Chuck Schumer for majority leader. It is worth a quick read because a major tech leadership change and a U.S. congressional leadership contest appear in the same news cycle.",
-          "failureAnalysis": "The key point is to separate the confirmed interim CEO arrangement at Nvidia from the still-developing political challenge by Van Hollen to Schumer.",
-          "title": "Nvidia CEO Jensen Huang steps down; Van Hollen to challenge Schumer"
+          "highlight": "Beijing will have the home advantage when it welcomes Donald Trump to Shenzhen for the Apec leaders’ meeting, which starts two weeks after the US midterms.",
+          "summary": "The article says world leaders will fly to Asia this week for back-to-back high-level summits, with trade, technology and regional security set to take centre stage amid the tussle for influence between China and the US. Beijing will host the Apec leaders’ meeting in Shenzhen and welcome Donald Trump, with the meeting starting two weeks after the US midterm elections, making it worth watching for diplomatic and economic signals.",
+          "failureAnalysis": "The key point is how the China-US contest over trade, technology and regional security plays out at the Asia summits, and how host advantage may shape the agenda.",
+          "title": "World leaders head to Asia for back-to-back diplomatic summits"
         }
       }
     },
     {
-      "id": "life-18a2f0a5778b487a98f89606e9a79ba3",
+      "id": "life-b5cafe6345f647789163cac217f33df9",
       "category": "international",
-      "title": "Loving vs. Being in Love: Jane Welsh Carlyle on Navigating the Heart’s Contradictions",
+      "title": "Embrace Your Obsessions: Susan Orlean on the Antidote to the Meaninglessness of Life",
       "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/11/13/jane-welsh-carlyle-love/",
-      "publishedAt": "2026-11-13T17:00:37.0000000+00:00",
+      "url": "https://www.themarginalian.org/2026/11/14/susan-orlean-orchid-thief/",
+      "publishedAt": "2026-11-14T14:31:26.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "激情如奔涌的激流，可能留下废墟与荒凉；我对你的爱却深沉平静，更像静河，所经之处带来清新与美。",
-      "summary": "所提供引文以激流与静河作对比，区分炽烈而可能带来破坏的激情，与深沉平静、能滋养沿途的爱。它值得读，是因为用文学化比喻提醒人辨认亲密关系中强烈感受与持久关怀的不同。",
-      "failureAnalysis": "关键启示：强烈情感未必等于可靠的爱；能持续滋养彼此的关系，往往更像平静而深长的河流。",
+      "highlight": "每一部伟大的书，无论题材、体裁或风格，都只关乎一件事：什么赋予我们渺小短暂的生命以意义。",
+      "summary": "文章围绕苏珊·奥尔琳的写作与痴迷展开，指出伟大的书最终都在追问什么赋予短暂生命以意义，而答案在于我们如何关注生活。它提醒读者，对微小而独特之物的专注，是把爱转化为意义的支点，因此值得一读。",
+      "failureAnalysis": "关键启发是：意义未必来自宏大目标，而来自对具体、微小事物的持续关注；痴迷若被安放为专注，就能削弱恐惧与痛苦。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "\"A passion, like the torrent in the violence of its course, might perhaps too, like the torrent, leave ruin and desolation behind... is deep and calm, more like the quiet river, which refreshes and beautifies where it flows.\"",
+      "sourceExcerpt": "Every great book, whatever its subject or genre or style, is about one thing only: the eternal question of what gives meaning to our tiny, transient lives. And every answer given, however faintly whispered, points to one thing only: the quality of attention we pay to those lives. If attention is the lever of love, the particular — the sacred specificity of something small and singular, something easy to overlook — is its fulcrum.",
       "translations": {
         "zh": {
-          "title": "爱着与坠入爱河：简·威尔士·卡莱尔论心灵矛盾的驾驭",
-          "highlight": "激情如奔涌的激流，可能留下废墟与荒凉；我对你的爱却深沉平静，更像静河，所经之处带来清新与美。",
-          "summary": "所提供引文以激流与静河作对比，区分炽烈而可能带来破坏的激情，与深沉平静、能滋养沿途的爱。它值得读，是因为用文学化比喻提醒人辨认亲密关系中强烈感受与持久关怀的不同。",
-          "failureAnalysis": "关键启示：强烈情感未必等于可靠的爱；能持续滋养彼此的关系，往往更像平静而深长的河流。"
+          "title": "拥抱你的痴迷：苏珊·奥尔琳谈生命无意义的解药",
+          "highlight": "每一部伟大的书，无论题材、体裁或风格，都只关乎一件事：什么赋予我们渺小短暂的生命以意义。",
+          "summary": "文章围绕苏珊·奥尔琳的写作与痴迷展开，指出伟大的书最终都在追问什么赋予短暂生命以意义，而答案在于我们如何关注生活。它提醒读者，对微小而独特之物的专注，是把爱转化为意义的支点，因此值得一读。",
+          "failureAnalysis": "关键启发是：意义未必来自宏大目标，而来自对具体、微小事物的持续关注；痴迷若被安放为专注，就能削弱恐惧与痛苦。"
         },
         "en": {
-          "highlight": "Passion, like a torrent in the violence of its course, may leave ruin and desolation behind; my love for you is deep and calm, more like the quiet river, which refreshes and beautifies where it flows.",
-          "summary": "The provided quotation contrasts consuming passion, likened to a torrent that may leave ruin behind, with calm and deep love, likened to a quiet river that refreshes and beautifies. It is worth reading for its literary reminder to distinguish intensity from lasting care in intimate relationships.",
-          "failureAnalysis": "Key takeaway: intense feeling is not the same as reliable love; relationships that sustain both people often resemble a calm, deep river more than a destructive torrent.",
-          "title": "Loving vs. Being in Love: Jane Welsh Carlyle on Navigating the Heart’s Contradictions"
+          "highlight": "Every great book, whatever its subject or genre or style, is about one thing only: what gives meaning to our tiny, transient lives.",
+          "summary": "Drawing on Susan Orlean’s writing and sense of obsession, the piece argues that great books ultimately ask what gives meaning to our brief lives, and that the answer lies in the quality of attention we give them. It is worth reading as a reminder that focused attention to small, singular things can turn love into meaning.",
+          "failureAnalysis": "The key takeaway is that meaning often comes not from grand goals but from sustained attention to the specific and the small; obsession, when channeled as focus, can blunt fear and pain.",
+          "title": "Embrace Your Obsessions: Susan Orlean on the Antidote to Life’s Meaninglessness"
         }
       }
     },
     {
-      "id": "life-effe87fbb0cc47e1998f73b5dc1a83eb",
+      "id": "life-ca86030ced0b44d2a13134b2bd148af2",
       "category": "international",
-      "title": "The power of group thought",
+      "title": "My friend, my witness",
       "source": "Psyche",
-      "url": "https://psyche.co/videos/what-the-flight-paths-of-pigeons-tell-us-about-collective-intelligence",
-      "publishedAt": "2026-11-13T11:01:00.0000000+00:00",
+      "url": "https://psyche.co/turning-points/what-does-motherhood-look-like-without-my-best-friend",
+      "publishedAt": "2026-11-13T11:00:00.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 0",
-      "highlight": "信鸽的飞行路径能教我们什么是“加权民主”，以及群体是否比其组成部分的总和更聪明。",
-      "summary": "这段 Psyche 视频借助信鸽的飞行路径，讨论群体智慧与“加权民主”。它追问群体是否可能比各个组成部分的总和更聪明。对非技术读者来说，这是一个用自然案例理解集体决策机制的入口。",
-      "failureAnalysis": "关键启发：信鸽飞行路径提供了一个具体切入点，用来理解“加权民主”如何连接群体智慧与集体决策。",
+      "highlight": "正当母职开始撼动我存在的根基时，我失去了最好的朋友。",
+      "summary": "这篇文章以第一人称讲述作者在初为人母、自我根基被动摇之际失去挚友的经历。它把母职与友谊、失去与见证放在一起，适合想理解人生转折中情感支持的人阅读。",
+      "failureAnalysis": "关键提醒是：重大人生转折常与私人失去交织，理解这种交叠比给出简单解决方案更重要。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Are groups smarter than the sum of their parts? What homing pigeons’ flight paths can teach us about ‘weighted democracy’ - Video by The Well and the John Templeton Foundation Watch on Psyche",
+      "sourceExcerpt": "I lost my best friend just as motherhood began shaking the very roots of my being - by Ashwaq Masoodi Read on Psyche",
       "translations": {
         "zh": {
-          "title": "群体思维的力量：信鸽飞行路径教我们什么",
-          "highlight": "信鸽的飞行路径能教我们什么是“加权民主”，以及群体是否比其组成部分的总和更聪明。",
-          "summary": "这段 Psyche 视频借助信鸽的飞行路径，讨论群体智慧与“加权民主”。它追问群体是否可能比各个组成部分的总和更聪明。对非技术读者来说，这是一个用自然案例理解集体决策机制的入口。",
-          "failureAnalysis": "关键启发：信鸽飞行路径提供了一个具体切入点，用来理解“加权民主”如何连接群体智慧与集体决策。"
+          "title": "当母职撼动我存在之根时，我失去了挚友",
+          "highlight": "正当母职开始撼动我存在的根基时，我失去了最好的朋友。",
+          "summary": "这篇文章以第一人称讲述作者在初为人母、自我根基被动摇之际失去挚友的经历。它把母职与友谊、失去与见证放在一起，适合想理解人生转折中情感支持的人阅读。",
+          "failureAnalysis": "关键提醒是：重大人生转折常与私人失去交织，理解这种交叠比给出简单解决方案更重要。"
         },
         "en": {
-          "highlight": "Homing pigeons’ flight paths can teach us about ‘weighted democracy’ and whether groups are smarter than the sum of their parts.",
-          "summary": "This Psyche video uses homing pigeons’ flight paths to discuss collective intelligence and ‘weighted democracy.’ It asks whether groups can be smarter than the sum of their parts. It offers a natural-world example for understanding collective decision-making.",
-          "failureAnalysis": "Key takeaway: pigeon flight paths provide a concrete lens for understanding how ‘weighted democracy’ connects group intelligence with collective decision-making.",
-          "title": "The Power of Group Thought: What Pigeon Flight Paths Teach Us About Weighted Democracy"
+          "highlight": "I lost my best friend just as motherhood began shaking the very roots of my being.",
+          "summary": "In a first-person account, Ashwaq Masoodi describes losing her best friend at the moment motherhood began to unsettle the foundations of her self. The piece connects motherhood, friendship, loss, and witness, making it worth reading for anyone thinking about emotional support during life transitions.",
+          "failureAnalysis": "The key takeaway is that major life transitions often overlap with private loss; recognizing that overlap matters more than rushing to simple solutions.",
+          "title": "My Friend, My Witness: Losing My Best Friend as Motherhood Began"
         }
       }
     },
     {
-      "id": "ai-feed-05ea91ab14244a389c8edb81e6fab1f6",
+      "id": "ai-github-1448515937",
       "category": "ai",
-      "title": "Open-source AI without Jensen",
-      "source": "Interconnects",
-      "url": "https://www.interconnects.ai/p/open-source-ai-without-jensen",
-      "abstractUrl": null,
-      "publishedAt": "2026-11-14T12:23:15.0000000Z",
-      "scoreLabel": "Curated engineering feed",
-      "aiArticleType": "concept_explanation",
-      "evidenceAnchors": [
-        {
-          "label": "GitHub",
-          "kind": "primary"
-        }
-      ],
-      "evidenceLabel": "GitHub",
-      "hasPrimaryAnchor": true,
-      "requiresRiskAnalysis": false,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub",
-      "summary": "内容把开源 AI 的现状概括为“一次斩首”，并直言“到了重建的时候”。它值得读，是因为它提示开源 AI 的讨论可能正在转向重新搭建框架，而不是沿用既有路径。",
-      "failureAnalysis": "关键提醒：当原有格局被打破时，团队应重新审视开源 AI 的假设与路径，而不是继续套用旧框架。",
-      "aiSelectionScore": 100,
-      "highlight": "开源人工智能领域遭遇一次斩首；现在已到了重建的时候。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "A decapitation. It’s time to rebuild.",
-      "translations": {
-        "zh": {
-          "title": "没有 Jensen 的开源 AI：该重建了",
-          "highlight": "开源人工智能领域遭遇一次斩首；现在已到了重建的时候。",
-          "summary": "内容把开源 AI 的现状概括为“一次斩首”，并直言“到了重建的时候”。它值得读，是因为它提示开源 AI 的讨论可能正在转向重新搭建框架，而不是沿用既有路径。",
-          "failureAnalysis": "关键提醒：当原有格局被打破时，团队应重新审视开源 AI 的假设与路径，而不是继续套用旧框架。"
-        },
-        "en": {
-          "highlight": "Open-source AI has suffered a decapitation; it is now time to rebuild.",
-          "summary": "The piece frames the state of open-source AI as “a decapitation” and says plainly that it is time to rebuild. It is worth reading because it signals a possible shift in open-source AI discussions toward rebuilding the framework rather than continuing on the old path.",
-          "failureAnalysis": "Key takeaway: when the old landscape is broken, teams should revisit their assumptions and paths for open-source AI instead of reusing old frameworks.",
-          "title": "Open-source AI without Jensen: Time to Rebuild"
-        }
-      }
-    },
-    {
-      "id": "ai-github-1395995350",
-      "category": "ai",
-      "title": "strands-labs/strands-decider",
+      "title": "DIYgod/pinky",
       "source": "GitHub Search",
-      "url": "https://github.com/strands-labs/strands-decider",
+      "url": "https://github.com/DIYgod/pinky",
       "abstractUrl": null,
-      "publishedAt": "2026-09-29T16:36:38.0000000Z",
-      "scoreLabel": "GitHub 1183 stars",
+      "publishedAt": "2026-11-06T16:53:14.0000000Z",
+      "scoreLabel": "GitHub 2209 stars",
       "aiArticleType": "application_innovation",
       "evidenceAnchors": [
         {
@@ -277,24 +236,69 @@
       "hasPrimaryAnchor": true,
       "requiresRiskAnalysis": true,
       "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-      "summary": "该 GitHub 仓库获得 1183 颗星并近期有公开活动，描述了一个面向智能体工作流的小型快速决策模型或系统模型。它用于在选项间做选择或按量表评分，声称比大语言模型更快，并为每次决策提供校准后的置信度。值得关注的是，它试图用更轻量的决策组件降低智能体流程中的延迟与调用成本，但当前信息仅来自仓库描述，尚不足以判断实际效果。",
-      "failureAnalysis": "真实智能体任务常需要开放式推理和上下文理解，专用小型决策器在边界场景、分布外输入和多步决策中可能不如通用大模型稳健，校准置信度也未必可靠。若接入现有智能体框架需要额外适配、监控和回退机制，工程复杂度可能抵消速度和成本优势。开源星标只能说明关注度，不能证明付费需求或生产环境验证；若缺少清晰的使用场景、基准评测和分发渠道，项目可能停留在演示层。",
-      "aiSelectionScore": 1183,
-      "highlight": "一个用于智能体工作流的小型快速决策模型，可在选项间选择或按量表评分，速度超过大语言模型，并给出校准置信度。",
+      "summary": "Pinky 是一个已有 2209 stars 的 GitHub 项目，目标是让 AI 在人类监督下使用 iPhone 或 Android 手机。它允许 macOS、Windows 或 Linux 上的任意 MCP 智能体，或手机上的 Pinky 本身直接操作手机。值得关注的是它把手机端执行与人类确认结合起来，展示了 AI 代理落地到真实设备的一条路径。",
+      "failureAnalysis": "手机自动化高度依赖系统权限、无障碍或自动化接口和厂商政策，iOS 尤其受限，跨设备兼容与稳定性会推高工程成本。让 AI 直接操作手机涉及隐私、支付和账号安全；人类确认过频会损失效率，过少又会放大风险。2209 stars 只能说明早期关注，不能证明留存和付费需求；若 MCP 生态和杀手级场景不足，项目可能停留在开发者玩具。",
+      "aiSelectionScore": 2209,
+      "highlight": "让 AI 在人类监督下使用 iPhone 或 Android 手机，桌面端 MCP 智能体或 Pinky 本身可直接操作手机。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "GitHub repository with 1183 stars and recent public activity. Description: A small, fast decision model, or system one model, for agentic workflows. Pick between options or rate on a scale faster than an LLM, with a calibrated confidence on every decision.",
+      "sourceExcerpt": "GitHub repository with 2209 stars and recent public activity. Description: Let AI use your iPhone or Android phone, with you in the loop: any MCP agent from macOS, Windows or Linux, or Pinky itself, right on the phone.",
       "translations": {
         "zh": {
-          "title": "面向智能体工作流的小型快速决策模型",
-          "highlight": "一个用于智能体工作流的小型快速决策模型，可在选项间选择或按量表评分，速度超过大语言模型，并给出校准置信度。",
-          "summary": "该 GitHub 仓库获得 1183 颗星并近期有公开活动，描述了一个面向智能体工作流的小型快速决策模型或系统模型。它用于在选项间做选择或按量表评分，声称比大语言模型更快，并为每次决策提供校准后的置信度。值得关注的是，它试图用更轻量的决策组件降低智能体流程中的延迟与调用成本，但当前信息仅来自仓库描述，尚不足以判断实际效果。",
-          "failureAnalysis": "真实智能体任务常需要开放式推理和上下文理解，专用小型决策器在边界场景、分布外输入和多步决策中可能不如通用大模型稳健，校准置信度也未必可靠。若接入现有智能体框架需要额外适配、监控和回退机制，工程复杂度可能抵消速度和成本优势。开源星标只能说明关注度，不能证明付费需求或生产环境验证；若缺少清晰的使用场景、基准评测和分发渠道，项目可能停留在演示层。"
+          "title": "Pinky：让 AI 在你监督下使用手机",
+          "highlight": "让 AI 在人类监督下使用 iPhone 或 Android 手机，桌面端 MCP 智能体或 Pinky 本身可直接操作手机。",
+          "summary": "Pinky 是一个已有 2209 stars 的 GitHub 项目，目标是让 AI 在人类监督下使用 iPhone 或 Android 手机。它允许 macOS、Windows 或 Linux 上的任意 MCP 智能体，或手机上的 Pinky 本身直接操作手机。值得关注的是它把手机端执行与人类确认结合起来，展示了 AI 代理落地到真实设备的一条路径。",
+          "failureAnalysis": "手机自动化高度依赖系统权限、无障碍或自动化接口和厂商政策，iOS 尤其受限，跨设备兼容与稳定性会推高工程成本。让 AI 直接操作手机涉及隐私、支付和账号安全；人类确认过频会损失效率，过少又会放大风险。2209 stars 只能说明早期关注，不能证明留存和付费需求；若 MCP 生态和杀手级场景不足，项目可能停留在开发者玩具。"
         },
         "en": {
-          "highlight": "A small, fast decision model for agentic workflows that picks between options or rates on a scale faster than an LLM, with calibrated confidence.",
-          "summary": "This GitHub repository has 1,183 stars and recent public activity, describing a small, fast decision model or system model for agentic workflows. It is meant to choose between options or rate on a scale faster than an LLM, with calibrated confidence on each decision. It is worth reading as a signal of interest in lightweight decision components that could reduce latency and LLM calls in agent pipelines, though the available information is only the repository description.",
-          "failureAnalysis": "Real agent tasks often need open-ended reasoning, so a narrow decider may be brittle on edge cases, out-of-distribution inputs, and multi-step decisions, and its calibrated confidence may not hold in production. Stars indicate attention, not validated demand; integration overhead, missing benchmarks, and unclear distribution could keep it at the demo stage.",
-          "title": "A Small, Fast Decision Model for Agentic Workflows"
+          "highlight": "Let AI use your iPhone or Android phone, with you in the loop: any MCP agent from macOS, Windows or Linux, or Pinky itself, right on the phone.",
+          "summary": "This GitHub repository, with 2,209 stars, aims to let AI operate an iPhone or Android phone while keeping the user in the loop. It can connect MCP agents from macOS, Windows, or Linux, or run Pinky itself on the phone. It is worth reading as an early example of phone-based agent execution and human oversight.",
+          "failureAnalysis": "Phone automation is constrained by OS permissions, app-store policies, device compatibility, and privacy/security risks; human confirmation can also add friction. The star count shows early attention, not proven retention or willingness to pay.",
+          "title": "Pinky: Let AI Use Your Phone With You in the Loop"
+        }
+      }
+    },
+    {
+      "id": "ai-hn-50284255",
+      "category": "ai",
+      "title": "Claude Code regularly sends each background agent’s transcript to its model",
+      "source": "Hacker News",
+      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-29T03:33:42.0000000Z",
+      "scoreLabel": "591 points / 236 comments",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "HN discussion",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + HN discussion",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + HN discussion",
+      "summary": "该条目聚焦 Claude Code 的一项运行机制：后台智能体的对话记录会被定期发送给模型。该条目在 Hacker News 获得 591 分和 236 条评论，表明 AI 编程代理在隐私、成本和可观测性上的工程细节值得关注。",
+      "failureAnalysis": "这种做法可能因对话记录包含代码、密钥和用户数据而触发隐私与合规风险，企业部署会尤其谨慎。定期上传完整转录也会带来 token 成本和上下文窗口压力，并可能拖慢后台任务。若缺少可配置的脱敏、保留期限和审计能力，工程团队很难把它当作默认方案。",
+      "aiSelectionScore": 1063,
+      "highlight": "Claude Code 会定期把每个后台智能体的完整对话记录发送给其模型。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "HN candidate with public discussion metrics.",
+      "translations": {
+        "zh": {
+          "title": "Claude Code 定期将后台智能体对话记录发送给模型",
+          "highlight": "Claude Code 会定期把每个后台智能体的完整对话记录发送给其模型。",
+          "summary": "该条目聚焦 Claude Code 的一项运行机制：后台智能体的对话记录会被定期发送给模型。该条目在 Hacker News 获得 591 分和 236 条评论，表明 AI 编程代理在隐私、成本和可观测性上的工程细节值得关注。",
+          "failureAnalysis": "这种做法可能因对话记录包含代码、密钥和用户数据而触发隐私与合规风险，企业部署会尤其谨慎。定期上传完整转录也会带来 token 成本和上下文窗口压力，并可能拖慢后台任务。若缺少可配置的脱敏、保留期限和审计能力，工程团队很难把它当作默认方案。"
+        },
+        "en": {
+          "highlight": "Claude Code regularly sends each background agent’s transcript to its model for processing.",
+          "summary": "The item highlights a mechanism in Claude Code: background agents’ transcripts are sent to the model on a regular basis. Its 591 points and 236 comments on Hacker News suggest practical interest in the privacy, cost, and observability trade-offs of AI coding agents.",
+          "failureAnalysis": "Sending full transcripts can expose code, secrets, and user data, creating privacy and compliance risks. It also adds token cost and context-window pressure, so teams need configurable redaction, retention, and audit controls before adopting it by default.",
+          "title": "Claude Code Regularly Sends Each Background Agent’s Transcript to Its Model"
         }
       }
     }
