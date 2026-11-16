@@ -1,0 +1,306 @@
+{
+  "issueDate": "2026-11-16",
+  "updateStatus": "complete",
+  "contentFingerprint": "ff1c3f30231cb7de9527533da27af427bffc1078176a10053867b2cc75346240",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-cb268406609549618bf13a4b98a20025",
+      "category": "domestic",
+      "title": "跨省揽才、政策托底 今年“秋招”已提供超550万个岗位",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-16/10733106.shtml",
+      "publishedAt": "2026-11-16T13:50:54.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "截至目前，各地共举办一万多场招聘会，26.4万家用人单位提供了551.5万个岗位。",
+      "summary": "报道聚焦2026年全国城市联合招聘高校毕业生秋季专场活动，介绍当前各地招聘会的举办规模和岗位供给情况。人社部数据显示，各地已举办一万多场招聘会，26.4万家用人单位提供551.5万个岗位。这组官方数据有助于观察今年秋招的组织力度，以及跨省揽才、政策托底对高校毕业生就业的支撑。",
+      "failureAnalysis": "可核实的关键是招聘活动密度、用人单位数量和岗位供给规模；阅读时应区分岗位数、用人单位数与最终签约结果。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "眼下，2026年全国城市联合招聘高校毕业生秋季专场活动正在进行。记者从人力资源社会保障部了解到，截至目前，各地共举办一万多场招聘会，26.4万家用人单位提供了551.5万个岗位。",
+      "translations": {
+        "zh": {
+          "title": "跨省揽才、政策托底：今年“秋招”已提供超550万个岗位",
+          "highlight": "截至目前，各地共举办一万多场招聘会，26.4万家用人单位提供了551.5万个岗位。",
+          "summary": "报道聚焦2026年全国城市联合招聘高校毕业生秋季专场活动，介绍当前各地招聘会的举办规模和岗位供给情况。人社部数据显示，各地已举办一万多场招聘会，26.4万家用人单位提供551.5万个岗位。这组官方数据有助于观察今年秋招的组织力度，以及跨省揽才、政策托底对高校毕业生就业的支撑。",
+          "failureAnalysis": "可核实的关键是招聘活动密度、用人单位数量和岗位供给规模；阅读时应区分岗位数、用人单位数与最终签约结果。"
+        },
+        "en": {
+          "highlight": "As of now, more than 10,000 job fairs have been held across the country, with 264,000 employers offering 5.515 million positions.",
+          "summary": "The report focuses on the 2026 national city joint recruitment campaign for college graduates, describing the scale of autumn job fairs and the supply of positions. Data from the Ministry of Human Resources and Social Security shows that more than 10,000 job fairs have been held, with 264,000 employers offering 5.515 million positions. The official figures help show the organizing intensity of this year's autumn recruitment and the support from cross-province talent recruitment and policy measures.",
+          "failureAnalysis": "The verifiable points are the density of recruitment events, the number of employers and the scale of position supply; readers should distinguish these figures from final hiring or signing outcomes.",
+          "title": "Cross-province recruitment and policy support: this year's autumn hiring has offered over 5.5 million positions"
+        }
+      }
+    },
+    {
+      "id": "news-cef0d823f4ab4b39bad274bf8b4a8f53",
+      "category": "domestic",
+      "title": "北京大学张海滨：中国日益成为全球气候治理引领者",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-16/10733120.shtml",
+      "publishedAt": "2026-11-16T14:07:27.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 3",
+      "highlight": "中国正日益成为全球气候治理中积极而重要的参与者、贡献者和引领者，并持续为世界提供更多全球公共产品。",
+      "summary": "在COP31期间，北京大学张海滨表示，中国在全球气候治理中的角色不断提升，国内推动可再生能源转型，并面向全球南方开展国际合作。文章呈现了官方会议场合的公开表态，有助于理解中国气候外交的叙事和全球公共产品供给方向。",
+      "failureAnalysis": "关键点在于区分公开表态与可核验的政策落地：引领者角色需结合后续国际合作和公共产品供给来观察。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网土耳其安塔利亚11月16日电 (记者 魏园 陈溯)《联合国气候变化框架公约》第三十一次缔约方大会(COP31)正在土耳其安塔利亚举行。北京大学碳中和研究院副院长、北大博雅特聘教授、国家气候变化专家委员会委员张海滨在大会期间表示，中国正日益成为全球气候治理中积极而重要的参与者、贡献者和引领者，在国内引领可再生能源转型的同时，积极推动面向全球南方的国际合作，并将持续为世界提供更多全球公共产品。",
+      "translations": {
+        "zh": {
+          "title": "北大学者：中国日益成为全球气候治理引领者",
+          "highlight": "中国正日益成为全球气候治理中积极而重要的参与者、贡献者和引领者，并持续为世界提供更多全球公共产品。",
+          "summary": "在COP31期间，北京大学张海滨表示，中国在全球气候治理中的角色不断提升，国内推动可再生能源转型，并面向全球南方开展国际合作。文章呈现了官方会议场合的公开表态，有助于理解中国气候外交的叙事和全球公共产品供给方向。",
+          "failureAnalysis": "关键点在于区分公开表态与可核验的政策落地：引领者角色需结合后续国际合作和公共产品供给来观察。"
+        },
+        "en": {
+          "highlight": "China is increasingly becoming an active and important participant, contributor and leader in global climate governance, while continuing to provide more global public goods to the world.",
+          "summary": "At COP31, Zhang Haibin of Peking University said China's role in global climate governance is rising, with domestic renewable energy transition and international cooperation with the Global South. The remarks are worth reading for understanding China's climate diplomacy narrative and its direction on providing global public goods.",
+          "failureAnalysis": "The key is to distinguish public statements from verifiable policy delivery: the leadership role should be observed through follow-up international cooperation and actual provision of global public goods.",
+          "title": "Peking University Scholar: China Is Increasingly Becoming a Leader in Global Climate Governance"
+        }
+      }
+    },
+    {
+      "id": "news-f650f6739828483585e20371ac9311d9",
+      "category": "domestic",
+      "title": "宠物消费市场稳步扩容 专家共话规范产业发展新路径",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-16/10733089.shtml",
+      "publishedAt": "2026-11-16T13:27:13.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 3",
+      "highlight": "与会者围绕宠物产业发展趋势、消费需求变化、供给质量等议题进行深入交流。",
+      "summary": "文章报道，宠物市场与产业发展研讨会暨《中国宠物产业发展观察与研究(2026)》研究成果交流会16日在北京举行。会议由全国城市工业品贸易中心联合会宠物产业工作委员会主办，与会者围绕产业趋势、消费需求变化和供给质量展开交流。可据此观察宠物消费市场扩容背景下，行业对规范发展路径的公共讨论。",
+      "failureAnalysis": "可核验的公共影响主要是一场行业研讨会和研究成果交流，释放了关注宠物产业规范与供给质量的信号；具体政策或市场数据尚未在已知内容中披露。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网北京11月16日电 (邸子瀛)宠物市场与产业发展研讨会暨《中国宠物产业发展观察与研究(2026)》研究成果交流会16日在京举行。该会议由全国城市工业品贸易中心联合会宠物产业工作委员会主办，与会者围绕宠物产业发展趋势、消费需求变化、供给质量等议题进行深入交流。",
+      "translations": {
+        "zh": {
+          "title": "宠物消费市场稳步扩容 专家共话规范产业发展新路径",
+          "highlight": "与会者围绕宠物产业发展趋势、消费需求变化、供给质量等议题进行深入交流。",
+          "summary": "文章报道，宠物市场与产业发展研讨会暨《中国宠物产业发展观察与研究(2026)》研究成果交流会16日在北京举行。会议由全国城市工业品贸易中心联合会宠物产业工作委员会主办，与会者围绕产业趋势、消费需求变化和供给质量展开交流。可据此观察宠物消费市场扩容背景下，行业对规范发展路径的公共讨论。",
+          "failureAnalysis": "可核验的公共影响主要是一场行业研讨会和研究成果交流，释放了关注宠物产业规范与供给质量的信号；具体政策或市场数据尚未在已知内容中披露。"
+        },
+        "en": {
+          "highlight": "Attendees conducted in-depth exchanges on pet industry development trends, changes in consumer demand, and supply quality.",
+          "summary": "The article reports that the Pet Market and Industry Development Seminar and the research exchange for China Pet Industry Development Observation and Research (2026) were held in Beijing on November 16. Hosted by the Pet Industry Working Committee of the China National Urban Industrial Products Trade Center Federation, participants discussed industry trends, changing consumer demand, and supply quality. It offers a public view of industry discussions on regulated development as the pet consumption market expands.",
+          "failureAnalysis": "The verifiable public impact is mainly an industry seminar and research exchange signaling attention to regulation and supply quality in the pet industry; specific policies or market data are not disclosed in the known content.",
+          "title": "Pet Consumption Market Expands Steadily as Experts Discuss New Paths for Regulated Industry Development"
+        }
+      }
+    },
+    {
+      "id": "news-2fb1793a6ebd4121abdd4e1c512bc4e5",
+      "category": "international",
+      "title": "Five EU states announce plans for immigration ‘return hubs’ in Rwanda",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda",
+      "publishedAt": "2026-11-16T16:21:40.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "五个欧盟成员国宣布计划在卢旺达为无权留在欧洲的人设立一个离岸中心，这是一项预计将面临法律挑战的试点计划。",
+      "summary": "德国、奥地利、荷兰、丹麦和希腊成为首批寻求使用欧盟新达成的遣返法的国家，计划在卢旺达设立遣返中心，接收已用尽上诉途径、无权留在欧洲的人。该试点预计将面临法律挑战，并已被批评为“严重的道德失败”。这则国际新闻值得关注，因为它展示了欧盟遣返政策向境外外包的最新动向。",
+      "failureAnalysis": "关键看点在于：欧盟新遣返法首次被五国用于将遣返安排外包到第三国，法律挑战与道德争议将决定该试点能否持续。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Germany, Austria, Netherlands, Denmark and Greece likely to face challenges to policy criticised as ‘grave moral failing’ Five EU member states have announced plans to set up an offshore centre in Rwanda for people with no legal right to stay in Europe, in a pilot scheme that is expected to face legal challenges and has been denounced as “a grave moral failing”. The five countries – Germany, Austria, the Netherlands, Denmark and Greece – are the first to seek to use the EU’s newly agreed returns law that allows people who have exhausted all avenues of appeal against their removal from Europe to be sent to a third country.",
+      "translations": {
+        "zh": {
+          "title": "五个欧盟国家宣布计划在卢旺达设立移民“遣返中心”",
+          "highlight": "五个欧盟成员国宣布计划在卢旺达为无权留在欧洲的人设立一个离岸中心，这是一项预计将面临法律挑战的试点计划。",
+          "summary": "德国、奥地利、荷兰、丹麦和希腊成为首批寻求使用欧盟新达成的遣返法的国家，计划在卢旺达设立遣返中心，接收已用尽上诉途径、无权留在欧洲的人。该试点预计将面临法律挑战，并已被批评为“严重的道德失败”。这则国际新闻值得关注，因为它展示了欧盟遣返政策向境外外包的最新动向。",
+          "failureAnalysis": "关键看点在于：欧盟新遣返法首次被五国用于将遣返安排外包到第三国，法律挑战与道德争议将决定该试点能否持续。"
+        },
+        "en": {
+          "highlight": "Five EU member states have announced plans to set up an offshore centre in Rwanda for people with no legal right to stay in Europe.",
+          "summary": "Germany, Austria, the Netherlands, Denmark and Greece are the first EU countries to seek to use the bloc's newly agreed returns law to send people who have exhausted appeals to a third country. The pilot scheme in Rwanda is expected to face legal challenges and has been criticised as 'a grave moral failing'. It is worth reading because it shows the latest move to outsource EU return policy.",
+          "failureAnalysis": "The key takeaway is that five EU states are testing the new returns law by outsourcing removal arrangements to a third country, with legal and moral disputes likely to shape whether the pilot can proceed.",
+          "title": "Five EU States Plan Immigration 'Return Hubs' in Rwanda"
+        }
+      }
+    },
+    {
+      "id": "news-18227d3da45a460293fc2e7a93ccd690",
+      "category": "international",
+      "title": "Faisal Islam: What's in the Brexit reset food deal and are there trade-offs?",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy4l8nl42wo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-16T15:40:16.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "欧盟部长哈米什·法尔科纳坚称，作为新协议的一部分，英国将对政策拥有一定影响力。",
+      "summary": "BBC Business 的报道聚焦英国脱欧后重置食品协议的内容及其可能涉及的取舍，并引用欧盟部长哈米什·法尔科纳的表态。报道称，作为新协议的一部分，英国将对政策拥有一定影响力。对关注国际贸易的读者来说，值得留意协议如何表述影响力与取舍。",
+      "failureAnalysis": "关键看点在于：新协议下的政策影响力并非单方面决定，英国能施加多少影响将取决于具体条款与取舍。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "EU minister Hamish Falconer insists Britain would have some influence on policy as part of a new deal.",
+      "translations": {
+        "zh": {
+          "title": "脱欧重置食品协议：英国能否影响政策？",
+          "highlight": "欧盟部长哈米什·法尔科纳坚称，作为新协议的一部分，英国将对政策拥有一定影响力。",
+          "summary": "BBC Business 的报道聚焦英国脱欧后重置食品协议的内容及其可能涉及的取舍，并引用欧盟部长哈米什·法尔科纳的表态。报道称，作为新协议的一部分，英国将对政策拥有一定影响力。对关注国际贸易的读者来说，值得留意协议如何表述影响力与取舍。",
+          "failureAnalysis": "关键看点在于：新协议下的政策影响力并非单方面决定，英国能施加多少影响将取决于具体条款与取舍。"
+        },
+        "en": {
+          "highlight": "EU minister Hamish Falconer insists that Britain would have some influence on policy as part of a new deal.",
+          "summary": "A BBC Business report examines what is in the Brexit reset food deal and what trade-offs it may involve. It cites EU minister Hamish Falconer saying Britain would have some influence on policy under the new deal. It is worth reading for how influence and trade-offs are framed in a post-Brexit agreement.",
+          "failureAnalysis": "The key point is that policy influence under the new deal is not unilateral; how much influence Britain has will depend on the specific terms and trade-offs.",
+          "title": "Brexit Reset Food Deal: Can Britain Influence Policy?"
+        }
+      }
+    },
+    {
+      "id": "life-eac2e2df35c448d1b302f0d7439e6bab",
+      "category": "international",
+      "title": "The Four Buddhist Mantras for Turning Fear into Love",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/14/thich-nhat-hanh-fear-love/",
+      "publishedAt": "2026-11-15T04:05:03.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 4",
+      "highlight": "当你爱一个人时，你能给予那个人最好的东西，就是你的在场。",
+      "summary": "文章围绕四句佛家箴言，讨论如何把恐惧转化为爱；已知核心提醒是：爱一个人时，最好的给予是专注地在场。它值得一读，因为这句话把抽象的关系原则压缩成日常可实践的提醒。",
+      "failureAnalysis": "关键提醒：把爱落到具体关系里，先从高质量的在场上做起，而不是只停留在表达上。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "\"When you love someone, the best thing you can offer that person is your presence.\"",
+      "translations": {
+        "zh": {
+          "title": "把恐惧化为爱的四句佛家箴言",
+          "highlight": "当你爱一个人时，你能给予那个人最好的东西，就是你的在场。",
+          "summary": "文章围绕四句佛家箴言，讨论如何把恐惧转化为爱；已知核心提醒是：爱一个人时，最好的给予是专注地在场。它值得一读，因为这句话把抽象的关系原则压缩成日常可实践的提醒。",
+          "failureAnalysis": "关键提醒：把爱落到具体关系里，先从高质量的在场上做起，而不是只停留在表达上。"
+        },
+        "en": {
+          "highlight": "When you love someone, the best thing you can offer that person is your presence.",
+          "summary": "The article frames four Buddhist mantras for turning fear into love, with its known core reminder being that presence is the best thing one can offer someone you love. It is worth reading because it turns an abstract relationship principle into a simple, practical reminder.",
+          "failureAnalysis": "Key takeaway: in close relationships, start with attentive presence rather than relying only on words.",
+          "title": "The Four Buddhist Mantras for Turning Fear into Love"
+        }
+      }
+    },
+    {
+      "id": "life-44cbc5d6fe45410ea211aaa12cbae517",
+      "category": "international",
+      "title": "App+1｜不卡带：给你爱听的「老调」，配点记忆中的风味",
+      "source": "少数派 sspai",
+      "url": "https://sspai.com/post/119012",
+      "publishedAt": "2026-11-16T02:52:11.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "这款媒体播放器能切换老设备音质，让爱听的老调配上一点记忆中的风味。",
+      "summary": "少数派 App+1 介绍了一款媒体播放器，它支持切换老设备的音质，让老歌呈现熟悉的年代听感。对喜欢怀旧音色或想按记忆调校听感的人来说，这种音质切换本身就是产品的核心卖点。",
+      "failureAnalysis": "关键在于，不要只追求更保真的参数，更要让同一首歌按用户记忆中的设备风味呈现；音质切换也可以成为明确的体验设计。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "能切换老设备音质的媒体播放器。 查看全文",
+      "translations": {
+        "zh": {
+          "title": "App+1｜不卡带：给爱听的「老调」配上记忆中的风味",
+          "highlight": "这款媒体播放器能切换老设备音质，让爱听的老调配上一点记忆中的风味。",
+          "summary": "少数派 App+1 介绍了一款媒体播放器，它支持切换老设备的音质，让老歌呈现熟悉的年代听感。对喜欢怀旧音色或想按记忆调校听感的人来说，这种音质切换本身就是产品的核心卖点。",
+          "failureAnalysis": "关键在于，不要只追求更保真的参数，更要让同一首歌按用户记忆中的设备风味呈现；音质切换也可以成为明确的体验设计。"
+        },
+        "en": {
+          "highlight": "A media player that can switch to the sound quality of old devices, giving familiar old tunes a touch of remembered flavor.",
+          "summary": "The sspai App+1 item features a media player whose main feature is switching to the sound quality of old devices, so old songs can carry a familiar period listening feel. It is worth reading for people interested in nostalgic sound or tuning playback to match their memory.",
+          "failureAnalysis": "The key is not merely higher-fidelity parameters but presenting the same song with the device flavor a user remembers; sound-quality switching can itself be a deliberate experience design.",
+          "title": "App+1 | No Cassette: A Player for Old Tunes with a Nostalgic Flavor"
+        }
+      }
+    },
+    {
+      "id": "ai-github-1434724807",
+      "category": "ai",
+      "title": "vercel-labs/ui",
+      "source": "GitHub Search",
+      "url": "https://github.com/vercel-labs/ui",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-26T17:39:27.0000000Z",
+      "scoreLabel": "GitHub 5288 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该仓库是 Vercel Labs 的 UI 项目，定位为供智能体构建下一代用户界面的行为库，目前在 GitHub 获得 5288 颗星并有近期公开活动。它值得关注，因为它聚焦智能体构建界面所需的行为层，而高星数量和近期活动提供了开发者兴趣的公开信号。",
+      "failureAnalysis": "该项目可能失败的首要风险是需求尚未被验证：智能体构建下一代界面听起来前沿，但真实生产场景是否愿意采用仍缺少证据，星标不能等同于付费或长期使用。工程上，行为库需要与不同模型、框架和现有前端栈稳定集成，可靠性和可调试性不足会拖慢落地。分发还受 Vercel 生态绑定影响，若不能跨平台形成标准，容易被更通用的方案替代。",
+      "aiSelectionScore": 5288,
+      "highlight": "一套供智能体构建下一代用户界面的行为库，在 GitHub 获得 5288 颗星，近期仍有公开活动。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 5288 stars and recent public activity. Description: A library of behaviors for agents to build the next generation of user interfaces.",
+      "translations": {
+        "zh": {
+          "title": "Vercel Labs UI：面向智能体的下一代界面行为库",
+          "highlight": "一套供智能体构建下一代用户界面的行为库，在 GitHub 获得 5288 颗星，近期仍有公开活动。",
+          "summary": "该仓库是 Vercel Labs 的 UI 项目，定位为供智能体构建下一代用户界面的行为库，目前在 GitHub 获得 5288 颗星并有近期公开活动。它值得关注，因为它聚焦智能体构建界面所需的行为层，而高星数量和近期活动提供了开发者兴趣的公开信号。",
+          "failureAnalysis": "该项目可能失败的首要风险是需求尚未被验证：智能体构建下一代界面听起来前沿，但真实生产场景是否愿意采用仍缺少证据，星标不能等同于付费或长期使用。工程上，行为库需要与不同模型、框架和现有前端栈稳定集成，可靠性和可调试性不足会拖慢落地。分发还受 Vercel 生态绑定影响，若不能跨平台形成标准，容易被更通用的方案替代。"
+        },
+        "en": {
+          "highlight": "A library of behaviors for agents to build the next generation of user interfaces.",
+          "summary": "The repository is a Vercel Labs UI project positioned as a behavior library for agents to build next-generation user interfaces. It has 5,288 GitHub stars and recent public activity, making it worth reading as a signal of developer interest in agent-driven UI building.",
+          "failureAnalysis": "The main risk is unproven demand: stars do not show that teams will adopt agent-built interfaces in production. Engineering integration, reliability, and dependence on the Vercel ecosystem will determine whether it becomes a standard or remains a demo-oriented library.",
+          "title": "Vercel Labs UI: A Behavior Library for Agent-Built Next-Generation Interfaces"
+        }
+      }
+    },
+    {
+      "id": "ai-github-1455416555",
+      "category": "ai",
+      "title": "hitkeeen/blender-ai-mcp-addon",
+      "source": "GitHub Search",
+      "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
+      "abstractUrl": null,
+      "publishedAt": "2026-11-12T14:32:15.0000000Z",
+      "scoreLabel": "GitHub 2176 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该项目是一个面向 Blender 的 AI 插件和 MCP 服务器，提供可视化聊天、场景工具与多智能体工作流，并通过 bpy Python 脚本与 Blender 场景交互。它支持 ChatGPT/GPT、Claude、Gemini、Ollama、OpenCode 等多种模型，凭借 2176 星和近期公开活动受到关注。对非技术读者而言，它可作为观察 AI 如何借助插件与 MCP 协议进入专业 3D 软件、提升创作效率的样本。",
+      "failureAnalysis": "风险首先在于工程稳定性：Blender 版本、插件接口、bpy 脚本和 MCP 协议都需要持续适配，任何一环变化都可能让工作流失效。其次，依赖外部或本地大模型会带来延迟、成本与输出不确定性，多智能体工作流还可能增加调试和安全面。若要被专业 3D 团队采用，还需证明真实生产场景中的可控性、权限隔离与结果可复现性，而不只是仓库热度和功能列表。",
+      "aiSelectionScore": 2176,
+      "highlight": "面向 Blender 的 AI 助手与 MCP 服务器，提供可视化聊天、场景工具和多智能体工作流。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 2176 stars and recent public activity. Description: AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode.",
+      "translations": {
+        "zh": {
+          "title": "Blender AI MCP 插件：可视化聊天与多智能体 3D 工作流",
+          "highlight": "面向 Blender 的 AI 助手与 MCP 服务器，提供可视化聊天、场景工具和多智能体工作流。",
+          "summary": "该项目是一个面向 Blender 的 AI 插件和 MCP 服务器，提供可视化聊天、场景工具与多智能体工作流，并通过 bpy Python 脚本与 Blender 场景交互。它支持 ChatGPT/GPT、Claude、Gemini、Ollama、OpenCode 等多种模型，凭借 2176 星和近期公开活动受到关注。对非技术读者而言，它可作为观察 AI 如何借助插件与 MCP 协议进入专业 3D 软件、提升创作效率的样本。",
+          "failureAnalysis": "风险首先在于工程稳定性：Blender 版本、插件接口、bpy 脚本和 MCP 协议都需要持续适配，任何一环变化都可能让工作流失效。其次，依赖外部或本地大模型会带来延迟、成本与输出不确定性，多智能体工作流还可能增加调试和安全面。若要被专业 3D 团队采用，还需证明真实生产场景中的可控性、权限隔离与结果可复现性，而不只是仓库热度和功能列表。"
+        },
+        "en": {
+          "highlight": "An AI assistant and MCP server for Blender, offering visual chat, scene tools, and multi-agent workflows.",
+          "summary": "This GitHub project is a Blender AI addon and MCP server that provides visual chat, scene tools, multi-agent workflows, and bpy Python scripting for 3D work. It supports ChatGPT/GPT, Claude, Gemini, Ollama, and OpenCode, and has attracted attention with 2,176 stars and recent public activity. It is worth reading as an example of how AI copilots and the MCP protocol are being integrated into professional 3D software.",
+          "failureAnalysis": "The main risks are engineering fragility across Blender versions, bpy scripting, and MCP changes, plus latency, cost, and unpredictable output from external or local models. Professional 3D adoption will depend less on star count than on controllability, permission isolation, reproducibility, and proven production value.",
+          "title": "Blender AI MCP Addon: Visual Chat and Multi-Agent Workflows for 3D Creation"
+        }
+      }
+    }
+  ]
+}

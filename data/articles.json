@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-11-15",
+  "issueDate": "2026-11-16",
   "updateStatus": "complete",
-  "contentFingerprint": "1c3e706e2b1f4551c931e6372082def7d7d91012fe034ca02163a989df26abc6",
+  "contentFingerprint": "ff1c3f30231cb7de9527533da27af427bffc1078176a10053867b2cc75346240",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,217 +10,217 @@
   ],
   "articles": [
     {
-      "id": "news-50198ab88a054d8a8120bfebbc679ab3",
+      "id": "news-cb268406609549618bf13a4b98a20025",
       "category": "domestic",
-      "title": "（深圳APEC）专访郑永年：西方唱衰中国经济毫无道理，商界知道动力在哪",
+      "title": "跨省揽才、政策托底 今年“秋招”已提供超550万个岗位",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-16/10733106.shtml",
+      "publishedAt": "2026-11-16T13:50:54.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "截至目前，各地共举办一万多场招聘会，26.4万家用人单位提供了551.5万个岗位。",
+      "summary": "报道聚焦2026年全国城市联合招聘高校毕业生秋季专场活动，介绍当前各地招聘会的举办规模和岗位供给情况。人社部数据显示，各地已举办一万多场招聘会，26.4万家用人单位提供551.5万个岗位。这组官方数据有助于观察今年秋招的组织力度，以及跨省揽才、政策托底对高校毕业生就业的支撑。",
+      "failureAnalysis": "可核实的关键是招聘活动密度、用人单位数量和岗位供给规模；阅读时应区分岗位数、用人单位数与最终签约结果。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "眼下，2026年全国城市联合招聘高校毕业生秋季专场活动正在进行。记者从人力资源社会保障部了解到，截至目前，各地共举办一万多场招聘会，26.4万家用人单位提供了551.5万个岗位。",
+      "translations": {
+        "zh": {
+          "title": "跨省揽才、政策托底：今年“秋招”已提供超550万个岗位",
+          "highlight": "截至目前，各地共举办一万多场招聘会，26.4万家用人单位提供了551.5万个岗位。",
+          "summary": "报道聚焦2026年全国城市联合招聘高校毕业生秋季专场活动，介绍当前各地招聘会的举办规模和岗位供给情况。人社部数据显示，各地已举办一万多场招聘会，26.4万家用人单位提供551.5万个岗位。这组官方数据有助于观察今年秋招的组织力度，以及跨省揽才、政策托底对高校毕业生就业的支撑。",
+          "failureAnalysis": "可核实的关键是招聘活动密度、用人单位数量和岗位供给规模；阅读时应区分岗位数、用人单位数与最终签约结果。"
+        },
+        "en": {
+          "highlight": "As of now, more than 10,000 job fairs have been held across the country, with 264,000 employers offering 5.515 million positions.",
+          "summary": "The report focuses on the 2026 national city joint recruitment campaign for college graduates, describing the scale of autumn job fairs and the supply of positions. Data from the Ministry of Human Resources and Social Security shows that more than 10,000 job fairs have been held, with 264,000 employers offering 5.515 million positions. The official figures help show the organizing intensity of this year's autumn recruitment and the support from cross-province talent recruitment and policy measures.",
+          "failureAnalysis": "The verifiable points are the density of recruitment events, the number of employers and the scale of position supply; readers should distinguish these figures from final hiring or signing outcomes.",
+          "title": "Cross-province recruitment and policy support: this year's autumn hiring has offered over 5.5 million positions"
+        }
+      }
+    },
+    {
+      "id": "news-cef0d823f4ab4b39bad274bf8b4a8f53",
+      "category": "domestic",
+      "title": "北京大学张海滨：中国日益成为全球气候治理引领者",
       "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-15/10732516.shtml",
-      "publishedAt": "2026-11-15T14:45:23.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-16/10733120.shtml",
+      "publishedAt": "2026-11-16T14:07:27.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "二十世纪八九十年代以来就一直有人唱衰中国经济，但中国经济不仅没衰，反而跑得更快、走得也更稳。",
-      "summary": "文章报道郑永年在深圳接受中新社专访，回应外界唱衰中国经济的论调。他表示，自二十世纪八九十年代以来唱衰声音一直存在，但中国经济不仅没有衰退，反而跑得更快、走得更稳。专访还点出商界清楚经济动力所在，为理解相关舆论争论提供了受访者视角。",
-      "failureAnalysis": "关键要点是：判断经济走势不能停留在“唱衰”标签上，应结合长期表现和商界实际感受；引用专访时也要区分受访者观点与可独立验证的数据。",
+      "selectionReason": "Domestic priority: 3",
+      "highlight": "中国正日益成为全球气候治理中积极而重要的参与者、贡献者和引领者，并持续为世界提供更多全球公共产品。",
+      "summary": "在COP31期间，北京大学张海滨表示，中国在全球气候治理中的角色不断提升，国内推动可再生能源转型，并面向全球南方开展国际合作。文章呈现了官方会议场合的公开表态，有助于理解中国气候外交的叙事和全球公共产品供给方向。",
+      "failureAnalysis": "关键点在于区分公开表态与可核验的政策落地：引领者角色需结合后续国际合作和公共产品供给来观察。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社深圳11月15日电 (记者 程景伟 郭军)“二十世纪八九十年代以来就一直有人唱衰中国经济，但中国经济不仅没衰，反而跑得更快、走得也更稳。”香港中文大学(深圳)公共政策学院院长、广州粤港澳大湾区研究院理事长郑永年15日在深圳接受中新社记者专访时称。",
+      "sourceExcerpt": "中新网土耳其安塔利亚11月16日电 (记者 魏园 陈溯)《联合国气候变化框架公约》第三十一次缔约方大会(COP31)正在土耳其安塔利亚举行。北京大学碳中和研究院副院长、北大博雅特聘教授、国家气候变化专家委员会委员张海滨在大会期间表示，中国正日益成为全球气候治理中积极而重要的参与者、贡献者和引领者，在国内引领可再生能源转型的同时，积极推动面向全球南方的国际合作，并将持续为世界提供更多全球公共产品。",
       "translations": {
         "zh": {
-          "title": "深圳APEC专访郑永年：西方唱衰中国经济毫无道理，商界知道动力在哪",
-          "highlight": "二十世纪八九十年代以来就一直有人唱衰中国经济，但中国经济不仅没衰，反而跑得更快、走得也更稳。",
-          "summary": "文章报道郑永年在深圳接受中新社专访，回应外界唱衰中国经济的论调。他表示，自二十世纪八九十年代以来唱衰声音一直存在，但中国经济不仅没有衰退，反而跑得更快、走得更稳。专访还点出商界清楚经济动力所在，为理解相关舆论争论提供了受访者视角。",
-          "failureAnalysis": "关键要点是：判断经济走势不能停留在“唱衰”标签上，应结合长期表现和商界实际感受；引用专访时也要区分受访者观点与可独立验证的数据。"
+          "title": "北大学者：中国日益成为全球气候治理引领者",
+          "highlight": "中国正日益成为全球气候治理中积极而重要的参与者、贡献者和引领者，并持续为世界提供更多全球公共产品。",
+          "summary": "在COP31期间，北京大学张海滨表示，中国在全球气候治理中的角色不断提升，国内推动可再生能源转型，并面向全球南方开展国际合作。文章呈现了官方会议场合的公开表态，有助于理解中国气候外交的叙事和全球公共产品供给方向。",
+          "failureAnalysis": "关键点在于区分公开表态与可核验的政策落地：引领者角色需结合后续国际合作和公共产品供给来观察。"
         },
         "en": {
-          "highlight": "Since the 1980s and 1990s, people have been predicting China's economic decline, yet China's economy has not only avoided decline but run faster and steadier.",
-          "summary": "The article reports an interview with Zheng Yongnian in Shenzhen, responding to outside claims that China's economy is declining. He says such predictions have persisted since the 1980s and 1990s, but China's economy has not declined and has instead grown faster and more steadily. The interview also notes that business understands where the economic momentum lies, offering the interviewee's perspective on the debate.",
-          "failureAnalysis": "The key takeaway is to judge economic trends with long-term performance and business sentiment rather than rhetoric labels; when citing such interviews, distinguish the interviewee's views from independently verifiable data.",
-          "title": "Shenzhen APEC Interview with Zheng Yongnian: Western 'China collapse' rhetoric is groundless; business knows where the momentum lies"
+          "highlight": "China is increasingly becoming an active and important participant, contributor and leader in global climate governance, while continuing to provide more global public goods to the world.",
+          "summary": "At COP31, Zhang Haibin of Peking University said China's role in global climate governance is rising, with domestic renewable energy transition and international cooperation with the Global South. The remarks are worth reading for understanding China's climate diplomacy narrative and its direction on providing global public goods.",
+          "failureAnalysis": "The key is to distinguish public statements from verifiable policy delivery: the leadership role should be observed through follow-up international cooperation and actual provision of global public goods.",
+          "title": "Peking University Scholar: China Is Increasingly Becoming a Leader in Global Climate Governance"
         }
       }
     },
     {
-      "id": "news-9e1706d264c84ded92fb301b508ac0e8",
+      "id": "news-f650f6739828483585e20371ac9311d9",
       "category": "domestic",
-      "title": "云南提出建设RCEP国际教育合作区",
+      "title": "宠物消费市场稳步扩容 专家共话规范产业发展新路径",
       "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-15/10732492.shtml",
-      "publishedAt": "2026-11-15T13:10:06.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-16/10733089.shtml",
+      "publishedAt": "2026-11-16T13:27:13.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "云南省人民政府印发教育发展“十五五”规划，提出建设RCEP国际教育合作区。",
-      "summary": "文章称，云南省人民政府近日印发《云南省教育发展“十五五”规划》，其中提出建设区域全面经济伙伴关系协定（RCEP）国际教育合作区。目前可核验的公开信息主要在政策提出层面，具体合作机制、实施范围和推进安排仍需后续文件说明。对关注教育开放与区域合作的人来说，这一政策信号值得跟踪。",
-      "failureAnalysis": "关键看点在于政策信号：云南把RCEP国际教育合作纳入“十五五”教育规划。由于公开细节有限，判断实际影响应等待实施细则、资金和项目安排。",
+      "selectionReason": "Domestic priority: 3",
+      "highlight": "与会者围绕宠物产业发展趋势、消费需求变化、供给质量等议题进行深入交流。",
+      "summary": "文章报道，宠物市场与产业发展研讨会暨《中国宠物产业发展观察与研究(2026)》研究成果交流会16日在北京举行。会议由全国城市工业品贸易中心联合会宠物产业工作委员会主办，与会者围绕产业趋势、消费需求变化和供给质量展开交流。可据此观察宠物消费市场扩容背景下，行业对规范发展路径的公共讨论。",
+      "failureAnalysis": "可核验的公共影响主要是一场行业研讨会和研究成果交流，释放了关注宠物产业规范与供给质量的信号；具体政策或市场数据尚未在已知内容中披露。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网昆明11月15日电 (记者 缪超)近日，云南省人民政府印发《云南省教育发展“十五五”规划》，提出建设区域全面经济伙伴关系协定(RCEP)国际教育合作区。",
+      "sourceExcerpt": "中新网北京11月16日电 (邸子瀛)宠物市场与产业发展研讨会暨《中国宠物产业发展观察与研究(2026)》研究成果交流会16日在京举行。该会议由全国城市工业品贸易中心联合会宠物产业工作委员会主办，与会者围绕宠物产业发展趋势、消费需求变化、供给质量等议题进行深入交流。",
       "translations": {
         "zh": {
-          "title": "云南提出建设RCEP国际教育合作区",
-          "highlight": "云南省人民政府印发教育发展“十五五”规划，提出建设RCEP国际教育合作区。",
-          "summary": "文章称，云南省人民政府近日印发《云南省教育发展“十五五”规划》，其中提出建设区域全面经济伙伴关系协定（RCEP）国际教育合作区。目前可核验的公开信息主要在政策提出层面，具体合作机制、实施范围和推进安排仍需后续文件说明。对关注教育开放与区域合作的人来说，这一政策信号值得跟踪。",
-          "failureAnalysis": "关键看点在于政策信号：云南把RCEP国际教育合作纳入“十五五”教育规划。由于公开细节有限，判断实际影响应等待实施细则、资金和项目安排。"
+          "title": "宠物消费市场稳步扩容 专家共话规范产业发展新路径",
+          "highlight": "与会者围绕宠物产业发展趋势、消费需求变化、供给质量等议题进行深入交流。",
+          "summary": "文章报道，宠物市场与产业发展研讨会暨《中国宠物产业发展观察与研究(2026)》研究成果交流会16日在北京举行。会议由全国城市工业品贸易中心联合会宠物产业工作委员会主办，与会者围绕产业趋势、消费需求变化和供给质量展开交流。可据此观察宠物消费市场扩容背景下，行业对规范发展路径的公共讨论。",
+          "failureAnalysis": "可核验的公共影响主要是一场行业研讨会和研究成果交流，释放了关注宠物产业规范与供给质量的信号；具体政策或市场数据尚未在已知内容中披露。"
         },
         "en": {
-          "highlight": "The Yunnan Provincial People's Government issued its education development plan for the 15th Five-Year Plan period, proposing an RCEP international education cooperation zone.",
-          "summary": "The article reports that Yunnan issued its education development plan for the 15th Five-Year Plan period and proposed building an RCEP international education cooperation zone. Verifiable public information currently centers on the policy proposal; specific mechanisms, scope, and implementation arrangements still need follow-up documents. It is worth tracking for those interested in education opening and regional cooperation.",
-          "failureAnalysis": "The key takeaway is the policy signal: Yunnan has included RCEP international education cooperation in its 15th Five-Year Plan for education. With limited public details, judgments about practical impact should wait for implementation rules, funding, and project arrangements.",
-          "title": "Yunnan Proposes RCEP International Education Cooperation Zone"
+          "highlight": "Attendees conducted in-depth exchanges on pet industry development trends, changes in consumer demand, and supply quality.",
+          "summary": "The article reports that the Pet Market and Industry Development Seminar and the research exchange for China Pet Industry Development Observation and Research (2026) were held in Beijing on November 16. Hosted by the Pet Industry Working Committee of the China National Urban Industrial Products Trade Center Federation, participants discussed industry trends, changing consumer demand, and supply quality. It offers a public view of industry discussions on regulated development as the pet consumption market expands.",
+          "failureAnalysis": "The verifiable public impact is mainly an industry seminar and research exchange signaling attention to regulation and supply quality in the pet industry; specific policies or market data are not disclosed in the known content.",
+          "title": "Pet Consumption Market Expands Steadily as Experts Discuss New Paths for Regulated Industry Development"
         }
       }
     },
     {
-      "id": "news-3410576e033c4c0a98b87eb6b122eac2",
-      "category": "domestic",
-      "title": "旱情叠加超强厄尔尼诺 云南提前启动2027年度森林草原防火期",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-15/10732497.shtml",
-      "publishedAt": "2026-11-15T13:09:18.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "今冬明春预计持续高温少雨，林下可燃物富集、野外生产用火增多，火险等级将持续走高",
-      "summary": "文章称，9月1日以来云南平均降水仅79.4毫米，较常年同期偏少64.3%，叠加超强厄尔尼诺影响，今冬明春预计持续高温少雨。经省政府批准，云南自2026年11月15日起进入2027年度森林草原防火期，面临林下可燃物富集、野外生产用火增多和火险等级走高等挑战。其公共影响在于防火期提前启动，需关注干旱与厄尔尼诺下的森林草原火险。",
-      "failureAnalysis": "关键点在于，提前启动防火期是对降水显著偏少和超强厄尔尼诺叠加影响的预防性响应，公众需关注火险预警并减少违规野外用火。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "中新网昆明11月15日电 (时文枝)云南省森林草原防灭火指挥部15日消息，9月1日以来，该省平均降水仅79.4毫米，较常年同期偏少64.3%，叠加超强厄尔尼诺现象影响，今冬明春预计持续高温少雨，林下可燃物富集、野外生产用火增多，火险等级将持续走高，森林草原防灭火工作面临前所未有的严峻挑战。经云南省人民政府批准，2026年11月15日起，该省正式进入2027年度森林草原防火期。",
-      "translations": {
-        "zh": {
-          "title": "云南提前启动2027年度森林草原防火期",
-          "highlight": "今冬明春预计持续高温少雨，林下可燃物富集、野外生产用火增多，火险等级将持续走高",
-          "summary": "文章称，9月1日以来云南平均降水仅79.4毫米，较常年同期偏少64.3%，叠加超强厄尔尼诺影响，今冬明春预计持续高温少雨。经省政府批准，云南自2026年11月15日起进入2027年度森林草原防火期，面临林下可燃物富集、野外生产用火增多和火险等级走高等挑战。其公共影响在于防火期提前启动，需关注干旱与厄尔尼诺下的森林草原火险。",
-          "failureAnalysis": "关键点在于，提前启动防火期是对降水显著偏少和超强厄尔尼诺叠加影响的预防性响应，公众需关注火险预警并减少违规野外用火。"
-        },
-        "en": {
-          "highlight": "This winter and next spring are expected to remain hot and dry, with accumulated combustible material and more outdoor production fires, keeping fire risk rising.",
-          "summary": "The article says Yunnan has received only 79.4 mm of average precipitation since September 1, 64.3% below the normal for the same period, while a super El Niño is expected to bring continued hot and dry weather. Approved by the provincial government, Yunnan entered its 2027 forest and grassland fire prevention period on November 15, 2026, facing combustible buildup, more outdoor production fires and rising fire risk. The public impact is an earlier fire prevention period and the need to watch drought- and El Niño-related fire risks.",
-          "failureAnalysis": "The key takeaway is that the early fire prevention period is a preventive response to sharply below-normal rainfall and a super El Niño, so the public should heed fire-risk warnings and limit illegal outdoor burning.",
-          "title": "Yunnan Starts 2027 Forest and Grassland Fire Prevention Period Early"
-        }
-      }
-    },
-    {
-      "id": "news-d53a6ad7a8f040dda723f97bd412037b",
+      "id": "news-2fb1793a6ebd4121abdd4e1c512bc4e5",
       "category": "international",
-      "title": "Minister backs legal right to job support for young people",
-      "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/cqr7gn1zmlj1o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-15T13:06:15.0000000+00:00",
+      "title": "Five EU states announce plans for immigration ‘return hubs’ in Rwanda",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda",
+      "publishedAt": "2026-11-16T16:21:40.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "英国就业与养老金大臣表示，目前为年轻人提供的支持力度过于含糊。",
-      "summary": "英国就业与养老金大臣支持将年轻人获得就业支持设为法定权利。其理由是，目前提供的支持力度过于含糊，需要更明确、可执行的安排。对关注国际就业政策的人来说，这提供了一个观察支持承诺如何转为法律责任的信号。",
-      "failureAnalysis": "关键看点是：把就业支持写成法律权利会提高政策可执行性，但支持标准、覆盖范围和资金安排仍需细化。",
+      "highlight": "五个欧盟成员国宣布计划在卢旺达为无权留在欧洲的人设立一个离岸中心，这是一项预计将面临法律挑战的试点计划。",
+      "summary": "德国、奥地利、荷兰、丹麦和希腊成为首批寻求使用欧盟新达成的遣返法的国家，计划在卢旺达设立遣返中心，接收已用尽上诉途径、无权留在欧洲的人。该试点预计将面临法律挑战，并已被批评为“严重的道德失败”。这则国际新闻值得关注，因为它展示了欧盟遣返政策向境外外包的最新动向。",
+      "failureAnalysis": "关键看点在于：欧盟新遣返法首次被五国用于将遣返安排外包到第三国，法律挑战与道德争议将决定该试点能否持续。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "The work and pensions secretary said the level of support currently on offer was too vague.",
+      "sourceExcerpt": "Germany, Austria, Netherlands, Denmark and Greece likely to face challenges to policy criticised as ‘grave moral failing’ Five EU member states have announced plans to set up an offshore centre in Rwanda for people with no legal right to stay in Europe, in a pilot scheme that is expected to face legal challenges and has been denounced as “a grave moral failing”. The five countries – Germany, Austria, the Netherlands, Denmark and Greece – are the first to seek to use the EU’s newly agreed returns law that allows people who have exhausted all avenues of appeal against their removal from Europe to be sent to a third country.",
       "translations": {
         "zh": {
-          "title": "英国就业与养老金大臣支持年轻人获得就业支持的法律权利",
-          "highlight": "英国就业与养老金大臣表示，目前为年轻人提供的支持力度过于含糊。",
-          "summary": "英国就业与养老金大臣支持将年轻人获得就业支持设为法定权利。其理由是，目前提供的支持力度过于含糊，需要更明确、可执行的安排。对关注国际就业政策的人来说，这提供了一个观察支持承诺如何转为法律责任的信号。",
-          "failureAnalysis": "关键看点是：把就业支持写成法律权利会提高政策可执行性，但支持标准、覆盖范围和资金安排仍需细化。"
+          "title": "五个欧盟国家宣布计划在卢旺达设立移民“遣返中心”",
+          "highlight": "五个欧盟成员国宣布计划在卢旺达为无权留在欧洲的人设立一个离岸中心，这是一项预计将面临法律挑战的试点计划。",
+          "summary": "德国、奥地利、荷兰、丹麦和希腊成为首批寻求使用欧盟新达成的遣返法的国家，计划在卢旺达设立遣返中心，接收已用尽上诉途径、无权留在欧洲的人。该试点预计将面临法律挑战，并已被批评为“严重的道德失败”。这则国际新闻值得关注，因为它展示了欧盟遣返政策向境外外包的最新动向。",
+          "failureAnalysis": "关键看点在于：欧盟新遣返法首次被五国用于将遣返安排外包到第三国，法律挑战与道德争议将决定该试点能否持续。"
         },
         "en": {
-          "highlight": "The work and pensions secretary said the level of support currently on offer was too vague.",
-          "summary": "The UK work and pensions secretary backs a legal right for young people to receive job support. The minister said the level of support currently on offer is too vague, suggesting clearer and more enforceable arrangements are needed. It is worth noting as a signal of how employment support commitments may be turned into legal duties.",
-          "failureAnalysis": "The key takeaway is that making job support a legal right could improve enforceability, but the standards, coverage and funding still need to be specified.",
-          "title": "UK minister backs legal right to job support for young people"
+          "highlight": "Five EU member states have announced plans to set up an offshore centre in Rwanda for people with no legal right to stay in Europe.",
+          "summary": "Germany, Austria, the Netherlands, Denmark and Greece are the first EU countries to seek to use the bloc's newly agreed returns law to send people who have exhausted appeals to a third country. The pilot scheme in Rwanda is expected to face legal challenges and has been criticised as 'a grave moral failing'. It is worth reading because it shows the latest move to outsource EU return policy.",
+          "failureAnalysis": "The key takeaway is that five EU states are testing the new returns law by outsourcing removal arrangements to a third country, with legal and moral disputes likely to shape whether the pilot can proceed.",
+          "title": "Five EU States Plan Immigration 'Return Hubs' in Rwanda"
         }
       }
     },
     {
-      "id": "news-eb6003a997f8414baa74deee98702757",
+      "id": "news-18227d3da45a460293fc2e7a93ccd690",
       "category": "international",
-      "title": "World leaders head to Asia for back-to-back diplomatic summits",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/nov/15/asia-diplomatic-summits-trump-xi-putin-apec-asean",
-      "publishedAt": "2026-11-15T04:00:02.0000000+00:00",
+      "title": "Faisal Islam: What's in the Brexit reset food deal and are there trade-offs?",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/c6wy4l8nl42wo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-16T15:40:16.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "北京将在深圳迎来特朗普出席亚太经合组织领导人会议，并因此占据主场优势；会议在美国中期选举结束两周后举行。",
-      "summary": "文章称，本周多国领导人将飞往亚洲参加接连举行的高级别峰会，贸易、科技与地区安全将成为重点，背景是中美两大国的影响力角逐。北京将在深圳主办APEC领导人会议并接待特朗普，会议在美国中期选举后两周开始，值得关注其释放的外交与经济信号。",
-      "failureAnalysis": "关键看点是中美在贸易、科技与地区安全议题上的影响力较量将如何在亚洲峰会上展开，以及东道主优势可能带来的议程设置权。",
+      "highlight": "欧盟部长哈米什·法尔科纳坚称，作为新协议的一部分，英国将对政策拥有一定影响力。",
+      "summary": "BBC Business 的报道聚焦英国脱欧后重置食品协议的内容及其可能涉及的取舍，并引用欧盟部长哈米什·法尔科纳的表态。报道称，作为新协议的一部分，英国将对政策拥有一定影响力。对关注国际贸易的读者来说，值得留意协议如何表述影响力与取舍。",
+      "failureAnalysis": "关键看点在于：新协议下的政策影响力并非单方面决定，英国能施加多少影响将取决于具体条款与取舍。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Tussle for influence as trade, tech and regional security to take centre stage in China, Philippines and Cambodia meetings World leaders will fly in to Asia for back-to-back high-level summits this week against the backdrop of the tussle for influence between the superpowers China and the US. Beijing will have the home advantage when it welcomes Donald Trump to its southern technology hub of Shenzhen for the Asia-Pacific Economic Cooperation (Apec) leaders’ meeting. It starts two weeks after the US leader lost midterm elections .",
+      "sourceExcerpt": "EU minister Hamish Falconer insists Britain would have some influence on policy as part of a new deal.",
       "translations": {
         "zh": {
-          "title": "世界领导人齐聚亚洲参加连续外交峰会",
-          "highlight": "北京将在深圳迎来特朗普出席亚太经合组织领导人会议，并因此占据主场优势；会议在美国中期选举结束两周后举行。",
-          "summary": "文章称，本周多国领导人将飞往亚洲参加接连举行的高级别峰会，贸易、科技与地区安全将成为重点，背景是中美两大国的影响力角逐。北京将在深圳主办APEC领导人会议并接待特朗普，会议在美国中期选举后两周开始，值得关注其释放的外交与经济信号。",
-          "failureAnalysis": "关键看点是中美在贸易、科技与地区安全议题上的影响力较量将如何在亚洲峰会上展开，以及东道主优势可能带来的议程设置权。"
+          "title": "脱欧重置食品协议：英国能否影响政策？",
+          "highlight": "欧盟部长哈米什·法尔科纳坚称，作为新协议的一部分，英国将对政策拥有一定影响力。",
+          "summary": "BBC Business 的报道聚焦英国脱欧后重置食品协议的内容及其可能涉及的取舍，并引用欧盟部长哈米什·法尔科纳的表态。报道称，作为新协议的一部分，英国将对政策拥有一定影响力。对关注国际贸易的读者来说，值得留意协议如何表述影响力与取舍。",
+          "failureAnalysis": "关键看点在于：新协议下的政策影响力并非单方面决定，英国能施加多少影响将取决于具体条款与取舍。"
         },
         "en": {
-          "highlight": "Beijing will have the home advantage when it welcomes Donald Trump to Shenzhen for the Apec leaders’ meeting, which starts two weeks after the US midterms.",
-          "summary": "The article says world leaders will fly to Asia this week for back-to-back high-level summits, with trade, technology and regional security set to take centre stage amid the tussle for influence between China and the US. Beijing will host the Apec leaders’ meeting in Shenzhen and welcome Donald Trump, with the meeting starting two weeks after the US midterm elections, making it worth watching for diplomatic and economic signals.",
-          "failureAnalysis": "The key point is how the China-US contest over trade, technology and regional security plays out at the Asia summits, and how host advantage may shape the agenda.",
-          "title": "World leaders head to Asia for back-to-back diplomatic summits"
+          "highlight": "EU minister Hamish Falconer insists that Britain would have some influence on policy as part of a new deal.",
+          "summary": "A BBC Business report examines what is in the Brexit reset food deal and what trade-offs it may involve. It cites EU minister Hamish Falconer saying Britain would have some influence on policy under the new deal. It is worth reading for how influence and trade-offs are framed in a post-Brexit agreement.",
+          "failureAnalysis": "The key point is that policy influence under the new deal is not unilateral; how much influence Britain has will depend on the specific terms and trade-offs.",
+          "title": "Brexit Reset Food Deal: Can Britain Influence Policy?"
         }
       }
     },
     {
-      "id": "life-b5cafe6345f647789163cac217f33df9",
+      "id": "life-eac2e2df35c448d1b302f0d7439e6bab",
       "category": "international",
-      "title": "Embrace Your Obsessions: Susan Orlean on the Antidote to the Meaninglessness of Life",
+      "title": "The Four Buddhist Mantras for Turning Fear into Love",
       "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/11/14/susan-orlean-orchid-thief/",
-      "publishedAt": "2026-11-14T14:31:26.0000000+00:00",
+      "url": "https://www.themarginalian.org/2026/11/14/thich-nhat-hanh-fear-love/",
+      "publishedAt": "2026-11-15T04:05:03.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 4",
+      "highlight": "当你爱一个人时，你能给予那个人最好的东西，就是你的在场。",
+      "summary": "文章围绕四句佛家箴言，讨论如何把恐惧转化为爱；已知核心提醒是：爱一个人时，最好的给予是专注地在场。它值得一读，因为这句话把抽象的关系原则压缩成日常可实践的提醒。",
+      "failureAnalysis": "关键提醒：把爱落到具体关系里，先从高质量的在场上做起，而不是只停留在表达上。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "\"When you love someone, the best thing you can offer that person is your presence.\"",
+      "translations": {
+        "zh": {
+          "title": "把恐惧化为爱的四句佛家箴言",
+          "highlight": "当你爱一个人时，你能给予那个人最好的东西，就是你的在场。",
+          "summary": "文章围绕四句佛家箴言，讨论如何把恐惧转化为爱；已知核心提醒是：爱一个人时，最好的给予是专注地在场。它值得一读，因为这句话把抽象的关系原则压缩成日常可实践的提醒。",
+          "failureAnalysis": "关键提醒：把爱落到具体关系里，先从高质量的在场上做起，而不是只停留在表达上。"
+        },
+        "en": {
+          "highlight": "When you love someone, the best thing you can offer that person is your presence.",
+          "summary": "The article frames four Buddhist mantras for turning fear into love, with its known core reminder being that presence is the best thing one can offer someone you love. It is worth reading because it turns an abstract relationship principle into a simple, practical reminder.",
+          "failureAnalysis": "Key takeaway: in close relationships, start with attentive presence rather than relying only on words.",
+          "title": "The Four Buddhist Mantras for Turning Fear into Love"
+        }
+      }
+    },
+    {
+      "id": "life-44cbc5d6fe45410ea211aaa12cbae517",
+      "category": "international",
+      "title": "App+1｜不卡带：给你爱听的「老调」，配点记忆中的风味",
+      "source": "少数派 sspai",
+      "url": "https://sspai.com/post/119012",
+      "publishedAt": "2026-11-16T02:52:11.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "每一部伟大的书，无论题材、体裁或风格，都只关乎一件事：什么赋予我们渺小短暂的生命以意义。",
-      "summary": "文章围绕苏珊·奥尔琳的写作与痴迷展开，指出伟大的书最终都在追问什么赋予短暂生命以意义，而答案在于我们如何关注生活。它提醒读者，对微小而独特之物的专注，是把爱转化为意义的支点，因此值得一读。",
-      "failureAnalysis": "关键启发是：意义未必来自宏大目标，而来自对具体、微小事物的持续关注；痴迷若被安放为专注，就能削弱恐惧与痛苦。",
+      "highlight": "这款媒体播放器能切换老设备音质，让爱听的老调配上一点记忆中的风味。",
+      "summary": "少数派 App+1 介绍了一款媒体播放器，它支持切换老设备的音质，让老歌呈现熟悉的年代听感。对喜欢怀旧音色或想按记忆调校听感的人来说，这种音质切换本身就是产品的核心卖点。",
+      "failureAnalysis": "关键在于，不要只追求更保真的参数，更要让同一首歌按用户记忆中的设备风味呈现；音质切换也可以成为明确的体验设计。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Every great book, whatever its subject or genre or style, is about one thing only: the eternal question of what gives meaning to our tiny, transient lives. And every answer given, however faintly whispered, points to one thing only: the quality of attention we pay to those lives. If attention is the lever of love, the particular — the sacred specificity of something small and singular, something easy to overlook — is its fulcrum.",
+      "sourceExcerpt": "能切换老设备音质的媒体播放器。 查看全文",
       "translations": {
         "zh": {
-          "title": "拥抱你的痴迷：苏珊·奥尔琳谈生命无意义的解药",
-          "highlight": "每一部伟大的书，无论题材、体裁或风格，都只关乎一件事：什么赋予我们渺小短暂的生命以意义。",
-          "summary": "文章围绕苏珊·奥尔琳的写作与痴迷展开，指出伟大的书最终都在追问什么赋予短暂生命以意义，而答案在于我们如何关注生活。它提醒读者，对微小而独特之物的专注，是把爱转化为意义的支点，因此值得一读。",
-          "failureAnalysis": "关键启发是：意义未必来自宏大目标，而来自对具体、微小事物的持续关注；痴迷若被安放为专注，就能削弱恐惧与痛苦。"
+          "title": "App+1｜不卡带：给爱听的「老调」配上记忆中的风味",
+          "highlight": "这款媒体播放器能切换老设备音质，让爱听的老调配上一点记忆中的风味。",
+          "summary": "少数派 App+1 介绍了一款媒体播放器，它支持切换老设备的音质，让老歌呈现熟悉的年代听感。对喜欢怀旧音色或想按记忆调校听感的人来说，这种音质切换本身就是产品的核心卖点。",
+          "failureAnalysis": "关键在于，不要只追求更保真的参数，更要让同一首歌按用户记忆中的设备风味呈现；音质切换也可以成为明确的体验设计。"
         },
         "en": {
-          "highlight": "Every great book, whatever its subject or genre or style, is about one thing only: what gives meaning to our tiny, transient lives.",
-          "summary": "Drawing on Susan Orlean’s writing and sense of obsession, the piece argues that great books ultimately ask what gives meaning to our brief lives, and that the answer lies in the quality of attention we give them. It is worth reading as a reminder that focused attention to small, singular things can turn love into meaning.",
-          "failureAnalysis": "The key takeaway is that meaning often comes not from grand goals but from sustained attention to the specific and the small; obsession, when channeled as focus, can blunt fear and pain.",
-          "title": "Embrace Your Obsessions: Susan Orlean on the Antidote to Life’s Meaninglessness"
+          "highlight": "A media player that can switch to the sound quality of old devices, giving familiar old tunes a touch of remembered flavor.",
+          "summary": "The sspai App+1 item features a media player whose main feature is switching to the sound quality of old devices, so old songs can carry a familiar period listening feel. It is worth reading for people interested in nostalgic sound or tuning playback to match their memory.",
+          "failureAnalysis": "The key is not merely higher-fidelity parameters but presenting the same song with the device flavor a user remembers; sound-quality switching can itself be a deliberate experience design.",
+          "title": "App+1 | No Cassette: A Player for Old Tunes with a Nostalgic Flavor"
         }
       }
     },
     {
-      "id": "life-ca86030ced0b44d2a13134b2bd148af2",
-      "category": "international",
-      "title": "My friend, my witness",
-      "source": "Psyche",
-      "url": "https://psyche.co/turning-points/what-does-motherhood-look-like-without-my-best-friend",
-      "publishedAt": "2026-11-13T11:00:00.0000000+00:00",
-      "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 0",
-      "highlight": "正当母职开始撼动我存在的根基时，我失去了最好的朋友。",
-      "summary": "这篇文章以第一人称讲述作者在初为人母、自我根基被动摇之际失去挚友的经历。它把母职与友谊、失去与见证放在一起，适合想理解人生转折中情感支持的人阅读。",
-      "failureAnalysis": "关键提醒是：重大人生转折常与私人失去交织，理解这种交叠比给出简单解决方案更重要。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "I lost my best friend just as motherhood began shaking the very roots of my being - by Ashwaq Masoodi Read on Psyche",
-      "translations": {
-        "zh": {
-          "title": "当母职撼动我存在之根时，我失去了挚友",
-          "highlight": "正当母职开始撼动我存在的根基时，我失去了最好的朋友。",
-          "summary": "这篇文章以第一人称讲述作者在初为人母、自我根基被动摇之际失去挚友的经历。它把母职与友谊、失去与见证放在一起，适合想理解人生转折中情感支持的人阅读。",
-          "failureAnalysis": "关键提醒是：重大人生转折常与私人失去交织，理解这种交叠比给出简单解决方案更重要。"
-        },
-        "en": {
-          "highlight": "I lost my best friend just as motherhood began shaking the very roots of my being.",
-          "summary": "In a first-person account, Ashwaq Masoodi describes losing her best friend at the moment motherhood began to unsettle the foundations of her self. The piece connects motherhood, friendship, loss, and witness, making it worth reading for anyone thinking about emotional support during life transitions.",
-          "failureAnalysis": "The key takeaway is that major life transitions often overlap with private loss; recognizing that overlap matters more than rushing to simple solutions.",
-          "title": "My Friend, My Witness: Losing My Best Friend as Motherhood Began"
-        }
-      }
-    },
-    {
-      "id": "ai-github-1448515937",
+      "id": "ai-github-1434724807",
       "category": "ai",
-      "title": "DIYgod/pinky",
+      "title": "vercel-labs/ui",
       "source": "GitHub Search",
-      "url": "https://github.com/DIYgod/pinky",
+      "url": "https://github.com/vercel-labs/ui",
       "abstractUrl": null,
-      "publishedAt": "2026-11-06T16:53:14.0000000Z",
-      "scoreLabel": "GitHub 2209 stars",
+      "publishedAt": "2026-10-26T17:39:27.0000000Z",
+      "scoreLabel": "GitHub 5288 stars",
       "aiArticleType": "application_innovation",
       "evidenceAnchors": [
         {
@@ -236,36 +236,36 @@
       "hasPrimaryAnchor": true,
       "requiresRiskAnalysis": true,
       "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-      "summary": "Pinky 是一个已有 2209 stars 的 GitHub 项目，目标是让 AI 在人类监督下使用 iPhone 或 Android 手机。它允许 macOS、Windows 或 Linux 上的任意 MCP 智能体，或手机上的 Pinky 本身直接操作手机。值得关注的是它把手机端执行与人类确认结合起来，展示了 AI 代理落地到真实设备的一条路径。",
-      "failureAnalysis": "手机自动化高度依赖系统权限、无障碍或自动化接口和厂商政策，iOS 尤其受限，跨设备兼容与稳定性会推高工程成本。让 AI 直接操作手机涉及隐私、支付和账号安全；人类确认过频会损失效率，过少又会放大风险。2209 stars 只能说明早期关注，不能证明留存和付费需求；若 MCP 生态和杀手级场景不足，项目可能停留在开发者玩具。",
-      "aiSelectionScore": 2209,
-      "highlight": "让 AI 在人类监督下使用 iPhone 或 Android 手机，桌面端 MCP 智能体或 Pinky 本身可直接操作手机。",
+      "summary": "该仓库是 Vercel Labs 的 UI 项目，定位为供智能体构建下一代用户界面的行为库，目前在 GitHub 获得 5288 颗星并有近期公开活动。它值得关注，因为它聚焦智能体构建界面所需的行为层，而高星数量和近期活动提供了开发者兴趣的公开信号。",
+      "failureAnalysis": "该项目可能失败的首要风险是需求尚未被验证：智能体构建下一代界面听起来前沿，但真实生产场景是否愿意采用仍缺少证据，星标不能等同于付费或长期使用。工程上，行为库需要与不同模型、框架和现有前端栈稳定集成，可靠性和可调试性不足会拖慢落地。分发还受 Vercel 生态绑定影响，若不能跨平台形成标准，容易被更通用的方案替代。",
+      "aiSelectionScore": 5288,
+      "highlight": "一套供智能体构建下一代用户界面的行为库，在 GitHub 获得 5288 颗星，近期仍有公开活动。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "GitHub repository with 2209 stars and recent public activity. Description: Let AI use your iPhone or Android phone, with you in the loop: any MCP agent from macOS, Windows or Linux, or Pinky itself, right on the phone.",
+      "sourceExcerpt": "GitHub repository with 5288 stars and recent public activity. Description: A library of behaviors for agents to build the next generation of user interfaces.",
       "translations": {
         "zh": {
-          "title": "Pinky：让 AI 在你监督下使用手机",
-          "highlight": "让 AI 在人类监督下使用 iPhone 或 Android 手机，桌面端 MCP 智能体或 Pinky 本身可直接操作手机。",
-          "summary": "Pinky 是一个已有 2209 stars 的 GitHub 项目，目标是让 AI 在人类监督下使用 iPhone 或 Android 手机。它允许 macOS、Windows 或 Linux 上的任意 MCP 智能体，或手机上的 Pinky 本身直接操作手机。值得关注的是它把手机端执行与人类确认结合起来，展示了 AI 代理落地到真实设备的一条路径。",
-          "failureAnalysis": "手机自动化高度依赖系统权限、无障碍或自动化接口和厂商政策，iOS 尤其受限，跨设备兼容与稳定性会推高工程成本。让 AI 直接操作手机涉及隐私、支付和账号安全；人类确认过频会损失效率，过少又会放大风险。2209 stars 只能说明早期关注，不能证明留存和付费需求；若 MCP 生态和杀手级场景不足，项目可能停留在开发者玩具。"
+          "title": "Vercel Labs UI：面向智能体的下一代界面行为库",
+          "highlight": "一套供智能体构建下一代用户界面的行为库，在 GitHub 获得 5288 颗星，近期仍有公开活动。",
+          "summary": "该仓库是 Vercel Labs 的 UI 项目，定位为供智能体构建下一代用户界面的行为库，目前在 GitHub 获得 5288 颗星并有近期公开活动。它值得关注，因为它聚焦智能体构建界面所需的行为层，而高星数量和近期活动提供了开发者兴趣的公开信号。",
+          "failureAnalysis": "该项目可能失败的首要风险是需求尚未被验证：智能体构建下一代界面听起来前沿，但真实生产场景是否愿意采用仍缺少证据，星标不能等同于付费或长期使用。工程上，行为库需要与不同模型、框架和现有前端栈稳定集成，可靠性和可调试性不足会拖慢落地。分发还受 Vercel 生态绑定影响，若不能跨平台形成标准，容易被更通用的方案替代。"
         },
         "en": {
-          "highlight": "Let AI use your iPhone or Android phone, with you in the loop: any MCP agent from macOS, Windows or Linux, or Pinky itself, right on the phone.",
-          "summary": "This GitHub repository, with 2,209 stars, aims to let AI operate an iPhone or Android phone while keeping the user in the loop. It can connect MCP agents from macOS, Windows, or Linux, or run Pinky itself on the phone. It is worth reading as an early example of phone-based agent execution and human oversight.",
-          "failureAnalysis": "Phone automation is constrained by OS permissions, app-store policies, device compatibility, and privacy/security risks; human confirmation can also add friction. The star count shows early attention, not proven retention or willingness to pay.",
-          "title": "Pinky: Let AI Use Your Phone With You in the Loop"
+          "highlight": "A library of behaviors for agents to build the next generation of user interfaces.",
+          "summary": "The repository is a Vercel Labs UI project positioned as a behavior library for agents to build next-generation user interfaces. It has 5,288 GitHub stars and recent public activity, making it worth reading as a signal of developer interest in agent-driven UI building.",
+          "failureAnalysis": "The main risk is unproven demand: stars do not show that teams will adopt agent-built interfaces in production. Engineering integration, reliability, and dependence on the Vercel ecosystem will determine whether it becomes a standard or remains a demo-oriented library.",
+          "title": "Vercel Labs UI: A Behavior Library for Agent-Built Next-Generation Interfaces"
         }
       }
     },
     {
-      "id": "ai-hn-50284255",
+      "id": "ai-github-1455416555",
       "category": "ai",
-      "title": "Claude Code regularly sends each background agent’s transcript to its model",
-      "source": "Hacker News",
-      "url": "https://gist.github.com/flamerix-ai/c3905705cc4205e5de3011fa2e74efce",
+      "title": "hitkeeen/blender-ai-mcp-addon",
+      "source": "GitHub Search",
+      "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
       "abstractUrl": null,
-      "publishedAt": "2026-10-29T03:33:42.0000000Z",
-      "scoreLabel": "591 points / 236 comments",
+      "publishedAt": "2026-11-12T14:32:15.0000000Z",
+      "scoreLabel": "GitHub 2176 stars",
       "aiArticleType": "application_innovation",
       "evidenceAnchors": [
         {
@@ -273,32 +273,32 @@
           "kind": "primary"
         },
         {
-          "label": "HN discussion",
+          "label": "Community signal",
           "kind": "secondary"
         }
       ],
-      "evidenceLabel": "GitHub + HN discussion",
+      "evidenceLabel": "GitHub + Community signal",
       "hasPrimaryAnchor": true,
       "requiresRiskAnalysis": true,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + HN discussion",
-      "summary": "该条目聚焦 Claude Code 的一项运行机制：后台智能体的对话记录会被定期发送给模型。该条目在 Hacker News 获得 591 分和 236 条评论，表明 AI 编程代理在隐私、成本和可观测性上的工程细节值得关注。",
-      "failureAnalysis": "这种做法可能因对话记录包含代码、密钥和用户数据而触发隐私与合规风险，企业部署会尤其谨慎。定期上传完整转录也会带来 token 成本和上下文窗口压力，并可能拖慢后台任务。若缺少可配置的脱敏、保留期限和审计能力，工程团队很难把它当作默认方案。",
-      "aiSelectionScore": 1063,
-      "highlight": "Claude Code 会定期把每个后台智能体的完整对话记录发送给其模型。",
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该项目是一个面向 Blender 的 AI 插件和 MCP 服务器，提供可视化聊天、场景工具与多智能体工作流，并通过 bpy Python 脚本与 Blender 场景交互。它支持 ChatGPT/GPT、Claude、Gemini、Ollama、OpenCode 等多种模型，凭借 2176 星和近期公开活动受到关注。对非技术读者而言，它可作为观察 AI 如何借助插件与 MCP 协议进入专业 3D 软件、提升创作效率的样本。",
+      "failureAnalysis": "风险首先在于工程稳定性：Blender 版本、插件接口、bpy 脚本和 MCP 协议都需要持续适配，任何一环变化都可能让工作流失效。其次，依赖外部或本地大模型会带来延迟、成本与输出不确定性，多智能体工作流还可能增加调试和安全面。若要被专业 3D 团队采用，还需证明真实生产场景中的可控性、权限隔离与结果可复现性，而不只是仓库热度和功能列表。",
+      "aiSelectionScore": 2176,
+      "highlight": "面向 Blender 的 AI 助手与 MCP 服务器，提供可视化聊天、场景工具和多智能体工作流。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "HN candidate with public discussion metrics.",
+      "sourceExcerpt": "GitHub repository with 2176 stars and recent public activity. Description: AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode.",
       "translations": {
         "zh": {
-          "title": "Claude Code 定期将后台智能体对话记录发送给模型",
-          "highlight": "Claude Code 会定期把每个后台智能体的完整对话记录发送给其模型。",
-          "summary": "该条目聚焦 Claude Code 的一项运行机制：后台智能体的对话记录会被定期发送给模型。该条目在 Hacker News 获得 591 分和 236 条评论，表明 AI 编程代理在隐私、成本和可观测性上的工程细节值得关注。",
-          "failureAnalysis": "这种做法可能因对话记录包含代码、密钥和用户数据而触发隐私与合规风险，企业部署会尤其谨慎。定期上传完整转录也会带来 token 成本和上下文窗口压力，并可能拖慢后台任务。若缺少可配置的脱敏、保留期限和审计能力，工程团队很难把它当作默认方案。"
+          "title": "Blender AI MCP 插件：可视化聊天与多智能体 3D 工作流",
+          "highlight": "面向 Blender 的 AI 助手与 MCP 服务器，提供可视化聊天、场景工具和多智能体工作流。",
+          "summary": "该项目是一个面向 Blender 的 AI 插件和 MCP 服务器，提供可视化聊天、场景工具与多智能体工作流，并通过 bpy Python 脚本与 Blender 场景交互。它支持 ChatGPT/GPT、Claude、Gemini、Ollama、OpenCode 等多种模型，凭借 2176 星和近期公开活动受到关注。对非技术读者而言，它可作为观察 AI 如何借助插件与 MCP 协议进入专业 3D 软件、提升创作效率的样本。",
+          "failureAnalysis": "风险首先在于工程稳定性：Blender 版本、插件接口、bpy 脚本和 MCP 协议都需要持续适配，任何一环变化都可能让工作流失效。其次，依赖外部或本地大模型会带来延迟、成本与输出不确定性，多智能体工作流还可能增加调试和安全面。若要被专业 3D 团队采用，还需证明真实生产场景中的可控性、权限隔离与结果可复现性，而不只是仓库热度和功能列表。"
         },
         "en": {
-          "highlight": "Claude Code regularly sends each background agent’s transcript to its model for processing.",
-          "summary": "The item highlights a mechanism in Claude Code: background agents’ transcripts are sent to the model on a regular basis. Its 591 points and 236 comments on Hacker News suggest practical interest in the privacy, cost, and observability trade-offs of AI coding agents.",
-          "failureAnalysis": "Sending full transcripts can expose code, secrets, and user data, creating privacy and compliance risks. It also adds token cost and context-window pressure, so teams need configurable redaction, retention, and audit controls before adopting it by default.",
-          "title": "Claude Code Regularly Sends Each Background Agent’s Transcript to Its Model"
+          "highlight": "An AI assistant and MCP server for Blender, offering visual chat, scene tools, and multi-agent workflows.",
+          "summary": "This GitHub project is a Blender AI addon and MCP server that provides visual chat, scene tools, multi-agent workflows, and bpy Python scripting for 3D work. It supports ChatGPT/GPT, Claude, Gemini, Ollama, and OpenCode, and has attracted attention with 2,176 stars and recent public activity. It is worth reading as an example of how AI copilots and the MCP protocol are being integrated into professional 3D software.",
+          "failureAnalysis": "The main risks are engineering fragility across Blender versions, bpy scripting, and MCP changes, plus latency, cost, and unpredictable output from external or local models. Professional 3D adoption will depend less on star count than on controllability, permission isolation, reproducibility, and proven production value.",
+          "title": "Blender AI MCP Addon: Visual Chat and Multi-Agent Workflows for 3D Creation"
         }
       }
     }
