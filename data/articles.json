@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-11-16",
+  "issueDate": "2026-11-17",
   "updateStatus": "complete",
-  "contentFingerprint": "ff1c3f30231cb7de9527533da27af427bffc1078176a10053867b2cc75346240",
+  "contentFingerprint": "3499051a3b9dd06fba96535d51803592a277d51e04e5b83a136cb0ef06e960a8",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,295 +10,316 @@
   ],
   "articles": [
     {
-      "id": "news-cb268406609549618bf13a4b98a20025",
+      "id": "news-6443e4c78d84409f96a536e2afa8debd",
       "category": "domestic",
-      "title": "跨省揽才、政策托底 今年“秋招”已提供超550万个岗位",
-      "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-16/10733106.shtml",
-      "publishedAt": "2026-11-16T13:50:54.0000000+00:00",
+      "title": "聚焦APEC｜俄罗斯总统普京抵达深圳 蔡奇前往机场迎接",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-18/10733815.shtml",
+      "publishedAt": "2026-11-17T18:13:56.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "截至目前，各地共举办一万多场招聘会，26.4万家用人单位提供了551.5万个岗位。",
-      "summary": "报道聚焦2026年全国城市联合招聘高校毕业生秋季专场活动，介绍当前各地招聘会的举办规模和岗位供给情况。人社部数据显示，各地已举办一万多场招聘会，26.4万家用人单位提供551.5万个岗位。这组官方数据有助于观察今年秋招的组织力度，以及跨省揽才、政策托底对高校毕业生就业的支撑。",
-      "failureAnalysis": "可核实的关键是招聘活动密度、用人单位数量和岗位供给规模；阅读时应区分岗位数、用人单位数与最终签约结果。",
+      "highlight": "俄罗斯总统普京11月18日凌晨乘专机抵达深圳，出席亚太经合组织第三十三次领导人非正式会议。",
+      "summary": "报道称，普京于11月18日凌晨乘专机抵达深圳，出席亚太经合组织第三十三次领导人非正式会议，蔡奇前往机场迎接。消息来自新华社，属于APEC重要外事活动节点，值得关注官方披露的抵达时间、会议名称和迎接安排。",
+      "failureAnalysis": "本条为官方外事消息，核心价值在于确认会议出席与迎接安排；解读时应以官方发布为准，不宜延伸未经披露的议程。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "眼下，2026年全国城市联合招聘高校毕业生秋季专场活动正在进行。记者从人力资源社会保障部了解到，截至目前，各地共举办一万多场招聘会，26.4万家用人单位提供了551.5万个岗位。",
+      "sourceExcerpt": "新华社深圳11月18日电(记者赵瀚泽、周颖)俄罗斯总统普京11月18日凌晨乘专机抵达深圳，出席亚太经合组织第三十三次领导人非正式会议。中共中央政治局常委、中央书记处书记蔡奇前往机场迎接。(完）",
       "translations": {
         "zh": {
-          "title": "跨省揽才、政策托底：今年“秋招”已提供超550万个岗位",
-          "highlight": "截至目前，各地共举办一万多场招聘会，26.4万家用人单位提供了551.5万个岗位。",
-          "summary": "报道聚焦2026年全国城市联合招聘高校毕业生秋季专场活动，介绍当前各地招聘会的举办规模和岗位供给情况。人社部数据显示，各地已举办一万多场招聘会，26.4万家用人单位提供551.5万个岗位。这组官方数据有助于观察今年秋招的组织力度，以及跨省揽才、政策托底对高校毕业生就业的支撑。",
-          "failureAnalysis": "可核实的关键是招聘活动密度、用人单位数量和岗位供给规模；阅读时应区分岗位数、用人单位数与最终签约结果。"
+          "title": "聚焦APEC｜普京抵达深圳 蔡奇到机场迎接",
+          "highlight": "俄罗斯总统普京11月18日凌晨乘专机抵达深圳，出席亚太经合组织第三十三次领导人非正式会议。",
+          "summary": "报道称，普京于11月18日凌晨乘专机抵达深圳，出席亚太经合组织第三十三次领导人非正式会议，蔡奇前往机场迎接。消息来自新华社，属于APEC重要外事活动节点，值得关注官方披露的抵达时间、会议名称和迎接安排。",
+          "failureAnalysis": "本条为官方外事消息，核心价值在于确认会议出席与迎接安排；解读时应以官方发布为准，不宜延伸未经披露的议程。"
         },
         "en": {
-          "highlight": "As of now, more than 10,000 job fairs have been held across the country, with 264,000 employers offering 5.515 million positions.",
-          "summary": "The report focuses on the 2026 national city joint recruitment campaign for college graduates, describing the scale of autumn job fairs and the supply of positions. Data from the Ministry of Human Resources and Social Security shows that more than 10,000 job fairs have been held, with 264,000 employers offering 5.515 million positions. The official figures help show the organizing intensity of this year's autumn recruitment and the support from cross-province talent recruitment and policy measures.",
-          "failureAnalysis": "The verifiable points are the density of recruitment events, the number of employers and the scale of position supply; readers should distinguish these figures from final hiring or signing outcomes.",
-          "title": "Cross-province recruitment and policy support: this year's autumn hiring has offered over 5.5 million positions"
+          "highlight": "Russian President Vladimir Putin arrived in Shenzhen by special plane in the early hours of November 18 to attend the 33rd APEC Economic Leaders' Meeting.",
+          "summary": "The report says Putin arrived in Shenzhen early on November 18 by special plane for the 33rd APEC Economic Leaders' Meeting, with Cai Qi greeting him at the airport. As an official Xinhua dispatch on a major diplomatic event, it is worth reading for the confirmed arrival, meeting name, and reception arrangements.",
+          "failureAnalysis": "This is an official foreign-affairs item; its value lies in confirming attendance and reception arrangements, and interpretation should stay within official disclosures rather than infer unannounced agenda.",
+          "title": "Focus on APEC: Putin Arrives in Shenzhen; Cai Qi Welcomes Him at Airport"
         }
       }
     },
     {
-      "id": "news-cef0d823f4ab4b39bad274bf8b4a8f53",
+      "id": "news-20e3d0d431b6430990628fef76c982e1",
       "category": "domestic",
-      "title": "北京大学张海滨：中国日益成为全球气候治理引领者",
-      "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-16/10733120.shtml",
-      "publishedAt": "2026-11-16T14:07:27.0000000+00:00",
+      "title": "王毅会见加拿大外长阿南德",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-17/10733794.shtml",
+      "publishedAt": "2026-11-17T15:47:26.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 3",
-      "highlight": "中国正日益成为全球气候治理中积极而重要的参与者、贡献者和引领者，并持续为世界提供更多全球公共产品。",
-      "summary": "在COP31期间，北京大学张海滨表示，中国在全球气候治理中的角色不断提升，国内推动可再生能源转型，并面向全球南方开展国际合作。文章呈现了官方会议场合的公开表态，有助于理解中国气候外交的叙事和全球公共产品供给方向。",
-      "failureAnalysis": "关键点在于区分公开表态与可核验的政策落地：引领者角色需结合后续国际合作和公共产品供给来观察。",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "2026年11月17日，中共中央政治局委员、外交部长王毅在深圳会见加拿大外长阿南德。",
+      "summary": "报道提供的信息限于会见时间、地点及双方身份，未披露会谈议题或成果。作为官方RSS来源的国内时政消息，其公开影响主要是提供中加外长在深圳会见的可核实事实，便于跟踪双方公开互动。",
+      "failureAnalysis": "可核实信息仅限公开会见事实，不宜据此推断双边关系走向；阅读时应以官方后续通报补充议题与成果。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网土耳其安塔利亚11月16日电 (记者 魏园 陈溯)《联合国气候变化框架公约》第三十一次缔约方大会(COP31)正在土耳其安塔利亚举行。北京大学碳中和研究院副院长、北大博雅特聘教授、国家气候变化专家委员会委员张海滨在大会期间表示，中国正日益成为全球气候治理中积极而重要的参与者、贡献者和引领者，在国内引领可再生能源转型的同时，积极推动面向全球南方的国际合作，并将持续为世界提供更多全球公共产品。",
+      "sourceExcerpt": "2026年11月17日，中共中央政治局委员、外交部长王毅在深圳会见加拿大外长阿南德。",
       "translations": {
         "zh": {
-          "title": "北大学者：中国日益成为全球气候治理引领者",
-          "highlight": "中国正日益成为全球气候治理中积极而重要的参与者、贡献者和引领者，并持续为世界提供更多全球公共产品。",
-          "summary": "在COP31期间，北京大学张海滨表示，中国在全球气候治理中的角色不断提升，国内推动可再生能源转型，并面向全球南方开展国际合作。文章呈现了官方会议场合的公开表态，有助于理解中国气候外交的叙事和全球公共产品供给方向。",
-          "failureAnalysis": "关键点在于区分公开表态与可核验的政策落地：引领者角色需结合后续国际合作和公共产品供给来观察。"
+          "title": "王毅在深圳会见加拿大外长阿南德",
+          "highlight": "2026年11月17日，中共中央政治局委员、外交部长王毅在深圳会见加拿大外长阿南德。",
+          "summary": "报道提供的信息限于会见时间、地点及双方身份，未披露会谈议题或成果。作为官方RSS来源的国内时政消息，其公开影响主要是提供中加外长在深圳会见的可核实事实，便于跟踪双方公开互动。",
+          "failureAnalysis": "可核实信息仅限公开会见事实，不宜据此推断双边关系走向；阅读时应以官方后续通报补充议题与成果。"
         },
         "en": {
-          "highlight": "China is increasingly becoming an active and important participant, contributor and leader in global climate governance, while continuing to provide more global public goods to the world.",
-          "summary": "At COP31, Zhang Haibin of Peking University said China's role in global climate governance is rising, with domestic renewable energy transition and international cooperation with the Global South. The remarks are worth reading for understanding China's climate diplomacy narrative and its direction on providing global public goods.",
-          "failureAnalysis": "The key is to distinguish public statements from verifiable policy delivery: the leadership role should be observed through follow-up international cooperation and actual provision of global public goods.",
-          "title": "Peking University Scholar: China Is Increasingly Becoming a Leader in Global Climate Governance"
+          "highlight": "On November 17, 2026, Wang Yi, member of the Political Bureau of the CPC Central Committee and Foreign Minister, met with Canadian Foreign Minister Anita Anand in Shenzhen.",
+          "summary": "The report provides only the time, place, and identities of the officials at the meeting, without disclosing the agenda or outcomes. As an official RSS domestic news item, its public value is to provide a verifiable fact of China-Canada foreign-minister-level interaction in Shenzhen for tracking publicly reported exchanges.",
+          "failureAnalysis": "The verifiable public information is limited to the fact of the meeting, so it should not be used to infer the direction of bilateral relations. Readers should rely on subsequent official readouts for agenda and outcomes.",
+          "title": "Wang Yi Meets Canadian Foreign Minister Anita Anand in Shenzhen"
         }
       }
     },
     {
-      "id": "news-f650f6739828483585e20371ac9311d9",
+      "id": "news-d51e5333dac84e92ac35dc5182c8527f",
       "category": "domestic",
-      "title": "宠物消费市场稳步扩容 专家共话规范产业发展新路径",
+      "title": "21条硬核措施 云南省七部门联合推进“电动云南”建设",
       "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-16/10733089.shtml",
-      "publishedAt": "2026-11-16T13:27:13.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-17/10733778.shtml",
+      "publishedAt": "2026-11-17T13:59:54.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 3",
-      "highlight": "与会者围绕宠物产业发展趋势、消费需求变化、供给质量等议题进行深入交流。",
-      "summary": "文章报道，宠物市场与产业发展研讨会暨《中国宠物产业发展观察与研究(2026)》研究成果交流会16日在北京举行。会议由全国城市工业品贸易中心联合会宠物产业工作委员会主办，与会者围绕产业趋势、消费需求变化和供给质量展开交流。可据此观察宠物消费市场扩容背景下，行业对规范发展路径的公共讨论。",
-      "failureAnalysis": "可核验的公共影响主要是一场行业研讨会和研究成果交流，释放了关注宠物产业规范与供给质量的信号；具体政策或市场数据尚未在已知内容中披露。",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "云南七部门联合印发“电动云南”建设实施意见，从推广应用、服务保障、场景拓展、产业链补强四个维度出台系列举措。",
+      "summary": "文章称，云南依托清洁能源优势，由七部门联合印发2026—2028年“电动云南”建设实施意见，围绕推广应用、服务保障、场景拓展、产业链补强出台系列举措，政策有效期至2028年12月31日。对非技术读者而言，它有助于理解地方政府如何把能源禀赋转化为电动化推广和产业链补强的组合政策。",
+      "failureAnalysis": "可把它视为观察地方电动化政策落地方式的样本：政策目标明确、覆盖维度较全，但实际成效仍取决于后续执行与配套细则。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网北京11月16日电 (邸子瀛)宠物市场与产业发展研讨会暨《中国宠物产业发展观察与研究(2026)》研究成果交流会16日在京举行。该会议由全国城市工业品贸易中心联合会宠物产业工作委员会主办，与会者围绕宠物产业发展趋势、消费需求变化、供给质量等议题进行深入交流。",
+      "sourceExcerpt": "中新网昆明11月17日电 (记者 杜潇潇)依托清洁能源优势，云南七部门近日联合印发《全面推进“电动云南”建设的实施意见(2026—2028年)》，从推广应用、服务保障、场景拓展、产业链补强四个维度出台系列举措，助力生态文明建设排头兵创建，政策有效期至2028年12月31日。",
       "translations": {
         "zh": {
-          "title": "宠物消费市场稳步扩容 专家共话规范产业发展新路径",
-          "highlight": "与会者围绕宠物产业发展趋势、消费需求变化、供给质量等议题进行深入交流。",
-          "summary": "文章报道，宠物市场与产业发展研讨会暨《中国宠物产业发展观察与研究(2026)》研究成果交流会16日在北京举行。会议由全国城市工业品贸易中心联合会宠物产业工作委员会主办，与会者围绕产业趋势、消费需求变化和供给质量展开交流。可据此观察宠物消费市场扩容背景下，行业对规范发展路径的公共讨论。",
-          "failureAnalysis": "可核验的公共影响主要是一场行业研讨会和研究成果交流，释放了关注宠物产业规范与供给质量的信号；具体政策或市场数据尚未在已知内容中披露。"
+          "title": "云南七部门联合推进“电动云南”建设，出台21条措施",
+          "highlight": "云南七部门联合印发“电动云南”建设实施意见，从推广应用、服务保障、场景拓展、产业链补强四个维度出台系列举措。",
+          "summary": "文章称，云南依托清洁能源优势，由七部门联合印发2026—2028年“电动云南”建设实施意见，围绕推广应用、服务保障、场景拓展、产业链补强出台系列举措，政策有效期至2028年12月31日。对非技术读者而言，它有助于理解地方政府如何把能源禀赋转化为电动化推广和产业链补强的组合政策。",
+          "failureAnalysis": "可把它视为观察地方电动化政策落地方式的样本：政策目标明确、覆盖维度较全，但实际成效仍取决于后续执行与配套细则。"
         },
         "en": {
-          "highlight": "Attendees conducted in-depth exchanges on pet industry development trends, changes in consumer demand, and supply quality.",
-          "summary": "The article reports that the Pet Market and Industry Development Seminar and the research exchange for China Pet Industry Development Observation and Research (2026) were held in Beijing on November 16. Hosted by the Pet Industry Working Committee of the China National Urban Industrial Products Trade Center Federation, participants discussed industry trends, changing consumer demand, and supply quality. It offers a public view of industry discussions on regulated development as the pet consumption market expands.",
-          "failureAnalysis": "The verifiable public impact is mainly an industry seminar and research exchange signaling attention to regulation and supply quality in the pet industry; specific policies or market data are not disclosed in the known content.",
-          "title": "Pet Consumption Market Expands Steadily as Experts Discuss New Paths for Regulated Industry Development"
+          "highlight": "Seven Yunnan departments jointly issued the 2026–2028 implementation opinion for 'Electric Yunnan,' covering application promotion, service support, scenario expansion, and industrial-chain reinforcement.",
+          "summary": "The article says Yunnan, leveraging its clean-energy advantages, has issued a 2026–2028 implementation opinion for 'Electric Yunnan' through seven departments, with measures across application promotion, service support, scenario expansion, and industrial-chain reinforcement; the policy is valid until December 31, 2028. For a non-technical reader, it helps explain how a local government can turn energy endowments into a combined policy package for electrification and industrial-chain strengthening.",
+          "failureAnalysis": "It can serve as a sample for observing how local electrification policies are implemented: the goals are clear and the coverage is broad, but actual results still depend on follow-up execution and supporting rules.",
+          "title": "Yunnan's Seven Departments Jointly Advance 'Electric Yunnan' with 21 Measures"
         }
       }
     },
     {
-      "id": "news-2fb1793a6ebd4121abdd4e1c512bc4e5",
+      "id": "news-a3c927c19e3a494dbd69e56c0d28fa7e",
       "category": "international",
-      "title": "Five EU states announce plans for immigration ‘return hubs’ in Rwanda",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/nov/16/eu-states-immigration-return-hubs-rwanda",
-      "publishedAt": "2026-11-16T16:21:40.0000000+00:00",
+      "title": "Xi said China would welcome American students for exchanges. What's the reality?",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/11/17/nx-s1-6026589/xi-said-china-would-welcome-american-students-for-exchanges-whats-the-reality",
+      "publishedAt": "2026-11-17T22:41:53.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "五个欧盟成员国宣布计划在卢旺达为无权留在欧洲的人设立一个离岸中心，这是一项预计将面临法律挑战的试点计划。",
-      "summary": "德国、奥地利、荷兰、丹麦和希腊成为首批寻求使用欧盟新达成的遣返法的国家，计划在卢旺达设立遣返中心，接收已用尽上诉途径、无权留在欧洲的人。该试点预计将面临法律挑战，并已被批评为“严重的道德失败”。这则国际新闻值得关注，因为它展示了欧盟遣返政策向境外外包的最新动向。",
-      "failureAnalysis": "关键看点在于：欧盟新遣返法首次被五国用于将遣返安排外包到第三国，法律挑战与道德争议将决定该试点能否持续。",
+      "highlight": "在上次九月峰会上，习近平表示将欢迎10万名美国学生来华交流。",
+      "summary": "这篇国际报道关注习近平关于欢迎美国学生来华交流的表态与现实情况。文章提到，特朗普与习近平将在深圳会晤，而上一次九月峰会上习近平曾表示欢迎10万名美国学生。值得读的是，它把高层外交表态与交流能否实际扩大并置，帮助判断政策信号的落地程度。",
+      "failureAnalysis": "关键看点是把高层会晤中的欢迎表态与交流能否实际扩大区分开；对非技术管理者而言，判断政策信号要看后续具体安排，而不是只看峰会上的数字表态。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Germany, Austria, Netherlands, Denmark and Greece likely to face challenges to policy criticised as ‘grave moral failing’ Five EU member states have announced plans to set up an offshore centre in Rwanda for people with no legal right to stay in Europe, in a pilot scheme that is expected to face legal challenges and has been denounced as “a grave moral failing”. The five countries – Germany, Austria, the Netherlands, Denmark and Greece – are the first to seek to use the EU’s newly agreed returns law that allows people who have exhausted all avenues of appeal against their removal from Europe to be sent to a third country.",
+      "sourceExcerpt": "President Trump and China's leader Xi Jinping are due to meet in the Chinese city of Shenzhen. At their last summit in September, Xi said he will welcome 100,000 American students for exchanges.",
       "translations": {
         "zh": {
-          "title": "五个欧盟国家宣布计划在卢旺达设立移民“遣返中心”",
-          "highlight": "五个欧盟成员国宣布计划在卢旺达为无权留在欧洲的人设立一个离岸中心，这是一项预计将面临法律挑战的试点计划。",
-          "summary": "德国、奥地利、荷兰、丹麦和希腊成为首批寻求使用欧盟新达成的遣返法的国家，计划在卢旺达设立遣返中心，接收已用尽上诉途径、无权留在欧洲的人。该试点预计将面临法律挑战，并已被批评为“严重的道德失败”。这则国际新闻值得关注，因为它展示了欧盟遣返政策向境外外包的最新动向。",
-          "failureAnalysis": "关键看点在于：欧盟新遣返法首次被五国用于将遣返安排外包到第三国，法律挑战与道德争议将决定该试点能否持续。"
+          "title": "习近平称中国欢迎美国学生交流，现实如何？",
+          "highlight": "在上次九月峰会上，习近平表示将欢迎10万名美国学生来华交流。",
+          "summary": "这篇国际报道关注习近平关于欢迎美国学生来华交流的表态与现实情况。文章提到，特朗普与习近平将在深圳会晤，而上一次九月峰会上习近平曾表示欢迎10万名美国学生。值得读的是，它把高层外交表态与交流能否实际扩大并置，帮助判断政策信号的落地程度。",
+          "failureAnalysis": "关键看点是把高层会晤中的欢迎表态与交流能否实际扩大区分开；对非技术管理者而言，判断政策信号要看后续具体安排，而不是只看峰会上的数字表态。"
         },
         "en": {
-          "highlight": "Five EU member states have announced plans to set up an offshore centre in Rwanda for people with no legal right to stay in Europe.",
-          "summary": "Germany, Austria, the Netherlands, Denmark and Greece are the first EU countries to seek to use the bloc's newly agreed returns law to send people who have exhausted appeals to a third country. The pilot scheme in Rwanda is expected to face legal challenges and has been criticised as 'a grave moral failing'. It is worth reading because it shows the latest move to outsource EU return policy.",
-          "failureAnalysis": "The key takeaway is that five EU states are testing the new returns law by outsourcing removal arrangements to a third country, with legal and moral disputes likely to shape whether the pilot can proceed.",
-          "title": "Five EU States Plan Immigration 'Return Hubs' in Rwanda"
+          "highlight": "At their last summit in September, Xi Jinping said he would welcome 100,000 American students for exchanges.",
+          "summary": "This international report examines Xi Jinping's statement that China would welcome American students for exchanges and the reality behind it. It notes that Trump and Xi are due to meet in Shenzhen, after Xi said at their September summit that he would welcome 100,000 American students. It is worth reading because it places a high-level diplomatic signal alongside the question of whether exchanges will actually expand.",
+          "failureAnalysis": "The key point is to distinguish a welcoming statement at a summit from whether exchanges actually expand; for a non-technical manager, judging a policy signal requires looking at follow-up arrangements, not just the headline number.",
+          "title": "Xi Said China Would Welcome American Students. What Is the Reality?"
         }
       }
     },
     {
-      "id": "news-18227d3da45a460293fc2e7a93ccd690",
+      "id": "news-e3161baa7a494cdd977dddbc2213416a",
       "category": "international",
-      "title": "Faisal Islam: What's in the Brexit reset food deal and are there trade-offs?",
-      "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/c6wy4l8nl42wo?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-16T15:40:16.0000000+00:00",
+      "title": "Caribbean nations fear economic impact of shuttering citizenship program after EU threats",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/17/st-kitts-nevis-citizenship-investment",
+      "publishedAt": "2026-11-17T21:49:29.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "欧盟部长哈米什·法尔科纳坚称，作为新协议的一部分，英国将对政策拥有一定影响力。",
-      "summary": "BBC Business 的报道聚焦英国脱欧后重置食品协议的内容及其可能涉及的取舍，并引用欧盟部长哈米什·法尔科纳的表态。报道称，作为新协议的一部分，英国将对政策拥有一定影响力。对关注国际贸易的读者来说，值得留意协议如何表述影响力与取舍。",
-      "failureAnalysis": "关键看点在于：新协议下的政策影响力并非单方面决定，英国能施加多少影响将取决于具体条款与取舍。",
+      "highlight": "圣基茨和尼维斯总理宣布将逐步终止投资入籍计划，此前欧盟威胁取消免签待遇。",
+      "summary": "圣基茨和尼维斯在欧盟威胁取消免签待遇后，决定逐步终止以投资换取公民身份的项目。尼维斯总理警告，该项目收入对当地经济和扶助有需要人群至关重要。这则国际新闻值得关注，因为它显示小国护照计划在外部合规压力下的取舍。",
+      "failureAnalysis": "关键取舍在于：投资入籍带来的财政收入，与欧盟免签待遇及合规风险直接冲突；外部压力会迅速改变小国的重要经济来源。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "EU minister Hamish Falconer insists Britain would have some influence on policy as part of a new deal.",
+      "sourceExcerpt": "St Kitts and Nevis to wind down citizenship-by-investment program after EU warns of end to visa-free access The decision by St Kitts and Nevis to end a lucrative programme offering citizenship to wealthy foreigners in exchange for investment threatens its economy and ability to support people in need, the premier of the island of Nevis has warned. On Friday, Terrance Drew, the prime minister of the twin-island Caribbean nation, announced he would wind down the citizenship-by-investment (CBI) programme, after the European Union threatened to end visa-free access for St Kitts and Nevis.",
       "translations": {
         "zh": {
-          "title": "脱欧重置食品协议：英国能否影响政策？",
-          "highlight": "欧盟部长哈米什·法尔科纳坚称，作为新协议的一部分，英国将对政策拥有一定影响力。",
-          "summary": "BBC Business 的报道聚焦英国脱欧后重置食品协议的内容及其可能涉及的取舍，并引用欧盟部长哈米什·法尔科纳的表态。报道称，作为新协议的一部分，英国将对政策拥有一定影响力。对关注国际贸易的读者来说，值得留意协议如何表述影响力与取舍。",
-          "failureAnalysis": "关键看点在于：新协议下的政策影响力并非单方面决定，英国能施加多少影响将取决于具体条款与取舍。"
+          "title": "圣基茨和尼维斯因欧盟威胁终止投资入籍计划，加勒比国家担忧经济冲击",
+          "highlight": "圣基茨和尼维斯总理宣布将逐步终止投资入籍计划，此前欧盟威胁取消免签待遇。",
+          "summary": "圣基茨和尼维斯在欧盟威胁取消免签待遇后，决定逐步终止以投资换取公民身份的项目。尼维斯总理警告，该项目收入对当地经济和扶助有需要人群至关重要。这则国际新闻值得关注，因为它显示小国护照计划在外部合规压力下的取舍。",
+          "failureAnalysis": "关键取舍在于：投资入籍带来的财政收入，与欧盟免签待遇及合规风险直接冲突；外部压力会迅速改变小国的重要经济来源。"
         },
         "en": {
-          "highlight": "EU minister Hamish Falconer insists that Britain would have some influence on policy as part of a new deal.",
-          "summary": "A BBC Business report examines what is in the Brexit reset food deal and what trade-offs it may involve. It cites EU minister Hamish Falconer saying Britain would have some influence on policy under the new deal. It is worth reading for how influence and trade-offs are framed in a post-Brexit agreement.",
-          "failureAnalysis": "The key point is that policy influence under the new deal is not unilateral; how much influence Britain has will depend on the specific terms and trade-offs.",
-          "title": "Brexit Reset Food Deal: Can Britain Influence Policy?"
+          "highlight": "St Kitts and Nevis will wind down its citizenship-by-investment programme after the EU threatened to end visa-free access.",
+          "summary": "St Kitts and Nevis is winding down a programme that grants citizenship to wealthy foreign investors. The premier of Nevis warned that the resulting loss of revenue threatens the economy and support for people in need. It matters because it shows how external compliance pressure can force small states to give up a lucrative passport scheme.",
+          "failureAnalysis": "The key trade-off is between revenue from citizenship-by-investment and the risk to EU visa-free access; external pressure can quickly alter a small state’s key income source.",
+          "title": "Caribbean Nations Fear Economic Impact as St Kitts and Nevis Shuts Citizenship Program After EU Threats"
         }
       }
     },
     {
-      "id": "life-eac2e2df35c448d1b302f0d7439e6bab",
+      "id": "life-188c0ab03eb346319803db5484038674",
       "category": "international",
-      "title": "The Four Buddhist Mantras for Turning Fear into Love",
+      "title": "Love Anyway",
       "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/11/14/thich-nhat-hanh-fear-love/",
-      "publishedAt": "2026-11-15T04:05:03.0000000+00:00",
-      "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 4",
-      "highlight": "当你爱一个人时，你能给予那个人最好的东西，就是你的在场。",
-      "summary": "文章围绕四句佛家箴言，讨论如何把恐惧转化为爱；已知核心提醒是：爱一个人时，最好的给予是专注地在场。它值得一读，因为这句话把抽象的关系原则压缩成日常可实践的提醒。",
-      "failureAnalysis": "关键提醒：把爱落到具体关系里，先从高质量的在场上做起，而不是只停留在表达上。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "\"When you love someone, the best thing you can offer that person is your presence.\"",
-      "translations": {
-        "zh": {
-          "title": "把恐惧化为爱的四句佛家箴言",
-          "highlight": "当你爱一个人时，你能给予那个人最好的东西，就是你的在场。",
-          "summary": "文章围绕四句佛家箴言，讨论如何把恐惧转化为爱；已知核心提醒是：爱一个人时，最好的给予是专注地在场。它值得一读，因为这句话把抽象的关系原则压缩成日常可实践的提醒。",
-          "failureAnalysis": "关键提醒：把爱落到具体关系里，先从高质量的在场上做起，而不是只停留在表达上。"
-        },
-        "en": {
-          "highlight": "When you love someone, the best thing you can offer that person is your presence.",
-          "summary": "The article frames four Buddhist mantras for turning fear into love, with its known core reminder being that presence is the best thing one can offer someone you love. It is worth reading because it turns an abstract relationship principle into a simple, practical reminder.",
-          "failureAnalysis": "Key takeaway: in close relationships, start with attentive presence rather than relying only on words.",
-          "title": "The Four Buddhist Mantras for Turning Fear into Love"
-        }
-      }
-    },
-    {
-      "id": "life-44cbc5d6fe45410ea211aaa12cbae517",
-      "category": "international",
-      "title": "App+1｜不卡带：给你爱听的「老调」，配点记忆中的风味",
-      "source": "少数派 sspai",
-      "url": "https://sspai.com/post/119012",
-      "publishedAt": "2026-11-16T02:52:11.0000000+00:00",
+      "url": "https://www.themarginalian.org/2026/11/15/love-anyway/",
+      "publishedAt": "2026-11-15T15:30:57.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "这款媒体播放器能切换老设备音质，让爱听的老调配上一点记忆中的风味。",
-      "summary": "少数派 App+1 介绍了一款媒体播放器，它支持切换老设备的音质，让老歌呈现熟悉的年代听感。对喜欢怀旧音色或想按记忆调校听感的人来说，这种音质切换本身就是产品的核心卖点。",
-      "failureAnalysis": "关键在于，不要只追求更保真的参数，更要让同一首歌按用户记忆中的设备风味呈现；音质切换也可以成为明确的体验设计。",
+      "highlight": "明知生命的代价是死亡、爱的代价是失去，你仍凝望金色午后落在一张深爱的脸上，并依然去爱。",
+      "summary": "文章从“爱即便终将失去仍值得付出”的命题出发，借路易丝·厄德里奇《彩绘鼓》的段落，讨论生命必朽与爱的短暂如何并存。它值得读，是因为把死亡的必然与爱的选择放在同一视野中，提醒人仍可在有限中投入地去爱。",
+      "failureAnalysis": "核心提醒是：爱的价值并不取决于它能否永久留存，而在于明知会失去仍选择去爱；这是一种清醒而非天真的生活态度。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "能切换老设备音质的媒体播放器。 查看全文",
+      "sourceExcerpt": "You know that the price of life is death, that the price of love is loss, and still you watch the golden afternoon light fall on a face you love, knowing that the light will soon fade, knowing that the loving face too will one day fade to indifference or bone, and you love anyway — because life is transient but possible, because love alone bridges the impossible and the eternal. I think about this and a passage from Louise Erdrich’s 2005 novel The Painted Drum (public library) flits across the sky of my mind: Life will break you.",
       "translations": {
         "zh": {
-          "title": "App+1｜不卡带：给爱听的「老调」配上记忆中的风味",
-          "highlight": "这款媒体播放器能切换老设备音质，让爱听的老调配上一点记忆中的风味。",
-          "summary": "少数派 App+1 介绍了一款媒体播放器，它支持切换老设备的音质，让老歌呈现熟悉的年代听感。对喜欢怀旧音色或想按记忆调校听感的人来说，这种音质切换本身就是产品的核心卖点。",
-          "failureAnalysis": "关键在于，不要只追求更保真的参数，更要让同一首歌按用户记忆中的设备风味呈现；音质切换也可以成为明确的体验设计。"
+          "title": "依然去爱",
+          "highlight": "明知生命的代价是死亡、爱的代价是失去，你仍凝望金色午后落在一张深爱的脸上，并依然去爱。",
+          "summary": "文章从“爱即便终将失去仍值得付出”的命题出发，借路易丝·厄德里奇《彩绘鼓》的段落，讨论生命必朽与爱的短暂如何并存。它值得读，是因为把死亡的必然与爱的选择放在同一视野中，提醒人仍可在有限中投入地去爱。",
+          "failureAnalysis": "核心提醒是：爱的价值并不取决于它能否永久留存，而在于明知会失去仍选择去爱；这是一种清醒而非天真的生活态度。"
         },
         "en": {
-          "highlight": "A media player that can switch to the sound quality of old devices, giving familiar old tunes a touch of remembered flavor.",
-          "summary": "The sspai App+1 item features a media player whose main feature is switching to the sound quality of old devices, so old songs can carry a familiar period listening feel. It is worth reading for people interested in nostalgic sound or tuning playback to match their memory.",
-          "failureAnalysis": "The key is not merely higher-fidelity parameters but presenting the same song with the device flavor a user remembers; sound-quality switching can itself be a deliberate experience design.",
-          "title": "App+1 | No Cassette: A Player for Old Tunes with a Nostalgic Flavor"
+          "highlight": "You know that the price of life is death, that the price of love is loss, and still you watch the golden afternoon light fall on a face you love.",
+          "summary": "The piece reflects on the fact that life ends in death and love in loss, yet we still choose to love what is transient. Drawing on a passage from Louise Erdrich’s The Painted Drum, it is worth reading for its clear-eyed reminder that finitude does not make love pointless.",
+          "failureAnalysis": "The key takeaway is that love’s value does not depend on permanence; it lies in choosing to love while knowing loss is inevitable—a clear-eyed rather than naive stance.",
+          "title": "Love Anyway"
         }
       }
     },
     {
-      "id": "ai-github-1434724807",
-      "category": "ai",
-      "title": "vercel-labs/ui",
-      "source": "GitHub Search",
-      "url": "https://github.com/vercel-labs/ui",
-      "abstractUrl": null,
-      "publishedAt": "2026-10-26T17:39:27.0000000Z",
-      "scoreLabel": "GitHub 5288 stars",
-      "aiArticleType": "application_innovation",
-      "evidenceAnchors": [
-        {
-          "label": "GitHub",
-          "kind": "primary"
-        },
-        {
-          "label": "Community signal",
-          "kind": "secondary"
-        }
-      ],
-      "evidenceLabel": "GitHub + Community signal",
-      "hasPrimaryAnchor": true,
-      "requiresRiskAnalysis": true,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-      "summary": "该仓库是 Vercel Labs 的 UI 项目，定位为供智能体构建下一代用户界面的行为库，目前在 GitHub 获得 5288 颗星并有近期公开活动。它值得关注，因为它聚焦智能体构建界面所需的行为层，而高星数量和近期活动提供了开发者兴趣的公开信号。",
-      "failureAnalysis": "该项目可能失败的首要风险是需求尚未被验证：智能体构建下一代界面听起来前沿，但真实生产场景是否愿意采用仍缺少证据，星标不能等同于付费或长期使用。工程上，行为库需要与不同模型、框架和现有前端栈稳定集成，可靠性和可调试性不足会拖慢落地。分发还受 Vercel 生态绑定影响，若不能跨平台形成标准，容易被更通用的方案替代。",
-      "aiSelectionScore": 5288,
-      "highlight": "一套供智能体构建下一代用户界面的行为库，在 GitHub 获得 5288 颗星，近期仍有公开活动。",
+      "id": "life-79835c1e8d604d7fbb5fc6815b320cde",
+      "category": "international",
+      "title": "Catwalks and crackdowns",
+      "source": "Aeon",
+      "url": "https://aeon.co/essays/its-not-political-the-young-fashionistas-of-tehran",
+      "publishedAt": "2026-11-17T11:00:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "德黑兰女性正按自己的选择穿衣，以大到无法阻止的人数改变社会，这被称为“在场艺术”。",
+      "summary": "这篇 Aeon 文章讲述德黑兰年轻女性如何通过自主选择穿着参与社会改变，规模大到难以压制。作者帕里萨·霍什纳米将其称为“在场艺术”，值得从日常生活与公共空间的角度理解社会变化。",
+      "failureAnalysis": "关键启示是：社会变迁未必总以正式抗争出现，日常选择在数量足够大时也能形成不可忽视的公共力量。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "GitHub repository with 5288 stars and recent public activity. Description: A library of behaviors for agents to build the next generation of user interfaces.",
+      "sourceExcerpt": "Women in Tehran are changing society by dressing as they choose, in numbers too large to stop. This is the ‘art of presence’ - by Parisa Khoshnami Read on Aeon",
       "translations": {
         "zh": {
-          "title": "Vercel Labs UI：面向智能体的下一代界面行为库",
-          "highlight": "一套供智能体构建下一代用户界面的行为库，在 GitHub 获得 5288 颗星，近期仍有公开活动。",
-          "summary": "该仓库是 Vercel Labs 的 UI 项目，定位为供智能体构建下一代用户界面的行为库，目前在 GitHub 获得 5288 颗星并有近期公开活动。它值得关注，因为它聚焦智能体构建界面所需的行为层，而高星数量和近期活动提供了开发者兴趣的公开信号。",
-          "failureAnalysis": "该项目可能失败的首要风险是需求尚未被验证：智能体构建下一代界面听起来前沿，但真实生产场景是否愿意采用仍缺少证据，星标不能等同于付费或长期使用。工程上，行为库需要与不同模型、框架和现有前端栈稳定集成，可靠性和可调试性不足会拖慢落地。分发还受 Vercel 生态绑定影响，若不能跨平台形成标准，容易被更通用的方案替代。"
+          "title": "T台与镇压：德黑兰女性用穿着改变社会",
+          "highlight": "德黑兰女性正按自己的选择穿衣，以大到无法阻止的人数改变社会，这被称为“在场艺术”。",
+          "summary": "这篇 Aeon 文章讲述德黑兰年轻女性如何通过自主选择穿着参与社会改变，规模大到难以压制。作者帕里萨·霍什纳米将其称为“在场艺术”，值得从日常生活与公共空间的角度理解社会变化。",
+          "failureAnalysis": "关键启示是：社会变迁未必总以正式抗争出现，日常选择在数量足够大时也能形成不可忽视的公共力量。"
         },
         "en": {
-          "highlight": "A library of behaviors for agents to build the next generation of user interfaces.",
-          "summary": "The repository is a Vercel Labs UI project positioned as a behavior library for agents to build next-generation user interfaces. It has 5,288 GitHub stars and recent public activity, making it worth reading as a signal of developer interest in agent-driven UI building.",
-          "failureAnalysis": "The main risk is unproven demand: stars do not show that teams will adopt agent-built interfaces in production. Engineering integration, reliability, and dependence on the Vercel ecosystem will determine whether it becomes a standard or remains a demo-oriented library.",
-          "title": "Vercel Labs UI: A Behavior Library for Agent-Built Next-Generation Interfaces"
+          "highlight": "Women in Tehran are changing society by dressing as they choose, in numbers too large to stop.",
+          "summary": "This Aeon essay, by Parisa Khoshnami, describes how young women in Tehran are changing society by dressing as they choose, at a scale too large to stop. It frames this as the “art of presence,” making it worth reading for a grounded view of everyday life and social change.",
+          "failureAnalysis": "The key takeaway is that social change does not always arrive through formal protest; everyday choices, repeated at scale, can become a public force that is hard to suppress.",
+          "title": "Catwalks and Crackdowns: Tehran’s Women Dress on Their Own Terms"
         }
       }
     },
     {
-      "id": "ai-github-1455416555",
+      "id": "paper-2611.21399",
+      "category": "paper",
+      "title": "MegNIST, A Benchmark for Non-Invasive Inner Speech Decoding",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2611.21399v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.21399",
+      "publishedAt": "2026-11-16T16:52:25.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "MegNIST 是面向非侵入式内语解码的基准数据集，用于开发与评估机器学习方法。",
+      "summary": "该数据集面向非侵入式内语解码，旨在为机器学习方法提供开发与评估基准。作者来自牛津大学工程科学系、OHBA与Jesus College，但现有来源仅含标题、作者机构与摘要开头。",
+      "failureAnalysis": "可用文本仅含标题和摘要开头，缺少数据构成、评测协议与基线结果，无法据此评估该基准的实际有效性。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "MegNIST, A Benchmark for Non-Invasive Inner Speech Decoding Teyun Kwon1, Pratik Somaiya 1, Gereon Elvers 1, Francesco Mantegna 1, Anna Camera 2, Sven Braeutigam 2, Mark Woolrich 2, Oiwi Parker Jones 1,3 1PNPL , Department of Engineering Science, University of Oxford, UK 2OHBA, Wellcome Centre for Integrative Neuroimaging, University of Oxford, UK 3Jesus College, University of Oxford, UK oiwi@robots.ox.ac.uk Abstract MegNIST is a benchmark dataset for developing and evaluating machine learning methods for inner speech decoding from magnetoencephalography (MEG). The dataset comprises 12,000 trials of a single participant imagining speaking the digits zero through nine, recorded across four sessions. Each trial contains 306-channel MEG recordings sampled at 250 Hz, preprocessed using signal space separation, filtering, and downsampling.",
+      "translations": {
+        "zh": {
+          "title": "MegNIST：非侵入式内语解码基准数据集",
+          "highlight": "MegNIST 是面向非侵入式内语解码的基准数据集，用于开发与评估机器学习方法。",
+          "summary": "该数据集面向非侵入式内语解码，旨在为机器学习方法提供开发与评估基准。作者来自牛津大学工程科学系、OHBA与Jesus College，但现有来源仅含标题、作者机构与摘要开头。",
+          "failureAnalysis": "可用文本仅含标题和摘要开头，缺少数据构成、评测协议与基线结果，无法据此评估该基准的实际有效性。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "MegNIST: A Benchmark for Non-Invasive Inner Speech Decoding",
+          "highlight": "MegNIST is a benchmark dataset for developing and evaluating machine learning methods for non-invasive inner speech decoding.",
+          "summary": "The dataset is presented as a benchmark for developing and evaluating machine learning methods for non-invasive inner speech decoding. The supplied source gives the title, author affiliations, and only the opening of the abstract, so details on data composition and evaluation are unavailable.",
+          "failureAnalysis": "Only the title and the start of the abstract are available, with no data composition, evaluation protocol, or baseline results; the benchmark's practical validity cannot be assessed from the supplied text.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-feed-3bfb2f6366f8455b97e28d83dd02567e",
       "category": "ai",
-      "title": "hitkeeen/blender-ai-mcp-addon",
-      "source": "GitHub Search",
-      "url": "https://github.com/hitkeeen/blender-ai-mcp-addon",
+      "title": "External sandboxes for coding agents",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
       "abstractUrl": null,
-      "publishedAt": "2026-11-12T14:32:15.0000000Z",
-      "scoreLabel": "GitHub 2176 stars",
-      "aiArticleType": "application_innovation",
+      "publishedAt": "2026-11-17T22:52:29.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
       "evidenceAnchors": [
         {
-          "label": "GitHub",
-          "kind": "primary"
-        },
-        {
-          "label": "Community signal",
+          "label": "Expert analysis",
           "kind": "secondary"
         }
       ],
-      "evidenceLabel": "GitHub + Community signal",
-      "hasPrimaryAnchor": true,
-      "requiresRiskAnalysis": true,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-      "summary": "该项目是一个面向 Blender 的 AI 插件和 MCP 服务器，提供可视化聊天、场景工具与多智能体工作流，并通过 bpy Python 脚本与 Blender 场景交互。它支持 ChatGPT/GPT、Claude、Gemini、Ollama、OpenCode 等多种模型，凭借 2176 星和近期公开活动受到关注。对非技术读者而言，它可作为观察 AI 如何借助插件与 MCP 协议进入专业 3D 软件、提升创作效率的样本。",
-      "failureAnalysis": "风险首先在于工程稳定性：Blender 版本、插件接口、bpy 脚本和 MCP 协议都需要持续适配，任何一环变化都可能让工作流失效。其次，依赖外部或本地大模型会带来延迟、成本与输出不确定性，多智能体工作流还可能增加调试和安全面。若要被专业 3D 团队采用，还需证明真实生产场景中的可控性、权限隔离与结果可复现性，而不只是仓库热度和功能列表。",
-      "aiSelectionScore": 2176,
-      "highlight": "面向 Blender 的 AI 助手与 MCP 服务器，提供可视化聊天、场景工具和多智能体工作流。",
+      "evidenceLabel": "Expert analysis",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: Expert analysis",
+      "summary": "Simon Willison 与 Prime Radiant 合作介绍外部沙箱模式：代理在沙箱外运行，需执行的代码被送进独立沙箱。团队发布了基于 v86、Apple Containers 和 Quicksand 的三种服务实现，并提供统一的 localhost API、HTTP/HTTPS 允许列表代理和凭据替换机制。对希望安全试用本地模型、降低提示注入造成破坏风险的非技术读者，这有助于理解“隔离执行”为何是代理安全的关键边界。",
+      "failureAnalysis": "关键不在于让模型永不犯错，而在于用沙箱限制错误可造成的实际影响；允许列表和凭据替换进一步缩小网络与密钥暴露面。",
+      "aiSelectionScore": 100,
+      "highlight": "外部沙箱模式让代理执行的代码运行在专用沙箱内，而代理本身留在沙箱之外。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "GitHub repository with 2176 stars and recent public activity. Description: AI assistant and MCP server for Blender: visual chat, scene tools, multi-agent workflows. Works with ChatGPT/GPT, Claude, Gemini, Ollama, OpenCode.",
+      "sourceExcerpt": "External sandboxes for coding agents I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine. I worked on this project with Prime Radiant , the AI research lab behind Superpowers and other projects . My post on the Prime Radiant blog introduces the external sandbox pattern, where code executed by the agent runs inside a dedicated sandbox while the agent itself lives outside of that sandbox.",
       "translations": {
         "zh": {
-          "title": "Blender AI MCP 插件：可视化聊天与多智能体 3D 工作流",
-          "highlight": "面向 Blender 的 AI 助手与 MCP 服务器，提供可视化聊天、场景工具和多智能体工作流。",
-          "summary": "该项目是一个面向 Blender 的 AI 插件和 MCP 服务器，提供可视化聊天、场景工具与多智能体工作流，并通过 bpy Python 脚本与 Blender 场景交互。它支持 ChatGPT/GPT、Claude、Gemini、Ollama、OpenCode 等多种模型，凭借 2176 星和近期公开活动受到关注。对非技术读者而言，它可作为观察 AI 如何借助插件与 MCP 协议进入专业 3D 软件、提升创作效率的样本。",
-          "failureAnalysis": "风险首先在于工程稳定性：Blender 版本、插件接口、bpy 脚本和 MCP 协议都需要持续适配，任何一环变化都可能让工作流失效。其次，依赖外部或本地大模型会带来延迟、成本与输出不确定性，多智能体工作流还可能增加调试和安全面。若要被专业 3D 团队采用，还需证明真实生产场景中的可控性、权限隔离与结果可复现性，而不只是仓库热度和功能列表。"
+          "title": "编码代理的外部沙箱方案",
+          "highlight": "外部沙箱模式让代理执行的代码运行在专用沙箱内，而代理本身留在沙箱之外。",
+          "summary": "Simon Willison 与 Prime Radiant 合作介绍外部沙箱模式：代理在沙箱外运行，需执行的代码被送进独立沙箱。团队发布了基于 v86、Apple Containers 和 Quicksand 的三种服务实现，并提供统一的 localhost API、HTTP/HTTPS 允许列表代理和凭据替换机制。对希望安全试用本地模型、降低提示注入造成破坏风险的非技术读者，这有助于理解“隔离执行”为何是代理安全的关键边界。",
+          "failureAnalysis": "关键不在于让模型永不犯错，而在于用沙箱限制错误可造成的实际影响；允许列表和凭据替换进一步缩小网络与密钥暴露面。"
         },
         "en": {
-          "highlight": "An AI assistant and MCP server for Blender, offering visual chat, scene tools, and multi-agent workflows.",
-          "summary": "This GitHub project is a Blender AI addon and MCP server that provides visual chat, scene tools, multi-agent workflows, and bpy Python scripting for 3D work. It supports ChatGPT/GPT, Claude, Gemini, Ollama, and OpenCode, and has attracted attention with 2,176 stars and recent public activity. It is worth reading as an example of how AI copilots and the MCP protocol are being integrated into professional 3D software.",
-          "failureAnalysis": "The main risks are engineering fragility across Blender versions, bpy scripting, and MCP changes, plus latency, cost, and unpredictable output from external or local models. Professional 3D adoption will depend less on star count than on controllability, permission isolation, reproducibility, and proven production value.",
-          "title": "Blender AI MCP Addon: Visual Chat and Multi-Agent Workflows for 3D Creation"
+          "highlight": "The external sandbox pattern runs agent-executed code inside a dedicated sandbox while the agent itself lives outside that sandbox.",
+          "summary": "Simon Willison and Prime Radiant introduce an external sandbox pattern in which the agent runs outside a dedicated sandbox while its code executes inside it. They released three implementations—v86, Apple Containers, and Quicksand—with a shared localhost API, an HTTP/HTTPS allow-list proxy, and credential replacement. It is worth reading for a concrete way to test local models with less risk from mistakes or prompt injection.",
+          "failureAnalysis": "The key is not making the model infallible but limiting the real-world impact of its mistakes through isolation; allow-lists and credential replacement further reduce network and secret exposure.",
+          "title": "External Sandboxes for Coding Agents"
         }
       }
     }

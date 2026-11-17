@@ -1,0 +1,327 @@
+{
+  "issueDate": "2026-11-17",
+  "updateStatus": "complete",
+  "contentFingerprint": "3499051a3b9dd06fba96535d51803592a277d51e04e5b83a136cb0ef06e960a8",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-6443e4c78d84409f96a536e2afa8debd",
+      "category": "domestic",
+      "title": "聚焦APEC｜俄罗斯总统普京抵达深圳 蔡奇前往机场迎接",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-18/10733815.shtml",
+      "publishedAt": "2026-11-17T18:13:56.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "俄罗斯总统普京11月18日凌晨乘专机抵达深圳，出席亚太经合组织第三十三次领导人非正式会议。",
+      "summary": "报道称，普京于11月18日凌晨乘专机抵达深圳，出席亚太经合组织第三十三次领导人非正式会议，蔡奇前往机场迎接。消息来自新华社，属于APEC重要外事活动节点，值得关注官方披露的抵达时间、会议名称和迎接安排。",
+      "failureAnalysis": "本条为官方外事消息，核心价值在于确认会议出席与迎接安排；解读时应以官方发布为准，不宜延伸未经披露的议程。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "新华社深圳11月18日电(记者赵瀚泽、周颖)俄罗斯总统普京11月18日凌晨乘专机抵达深圳，出席亚太经合组织第三十三次领导人非正式会议。中共中央政治局常委、中央书记处书记蔡奇前往机场迎接。(完）",
+      "translations": {
+        "zh": {
+          "title": "聚焦APEC｜普京抵达深圳 蔡奇到机场迎接",
+          "highlight": "俄罗斯总统普京11月18日凌晨乘专机抵达深圳，出席亚太经合组织第三十三次领导人非正式会议。",
+          "summary": "报道称，普京于11月18日凌晨乘专机抵达深圳，出席亚太经合组织第三十三次领导人非正式会议，蔡奇前往机场迎接。消息来自新华社，属于APEC重要外事活动节点，值得关注官方披露的抵达时间、会议名称和迎接安排。",
+          "failureAnalysis": "本条为官方外事消息，核心价值在于确认会议出席与迎接安排；解读时应以官方发布为准，不宜延伸未经披露的议程。"
+        },
+        "en": {
+          "highlight": "Russian President Vladimir Putin arrived in Shenzhen by special plane in the early hours of November 18 to attend the 33rd APEC Economic Leaders' Meeting.",
+          "summary": "The report says Putin arrived in Shenzhen early on November 18 by special plane for the 33rd APEC Economic Leaders' Meeting, with Cai Qi greeting him at the airport. As an official Xinhua dispatch on a major diplomatic event, it is worth reading for the confirmed arrival, meeting name, and reception arrangements.",
+          "failureAnalysis": "This is an official foreign-affairs item; its value lies in confirming attendance and reception arrangements, and interpretation should stay within official disclosures rather than infer unannounced agenda.",
+          "title": "Focus on APEC: Putin Arrives in Shenzhen; Cai Qi Welcomes Him at Airport"
+        }
+      }
+    },
+    {
+      "id": "news-20e3d0d431b6430990628fef76c982e1",
+      "category": "domestic",
+      "title": "王毅会见加拿大外长阿南德",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-17/10733794.shtml",
+      "publishedAt": "2026-11-17T15:47:26.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "2026年11月17日，中共中央政治局委员、外交部长王毅在深圳会见加拿大外长阿南德。",
+      "summary": "报道提供的信息限于会见时间、地点及双方身份，未披露会谈议题或成果。作为官方RSS来源的国内时政消息，其公开影响主要是提供中加外长在深圳会见的可核实事实，便于跟踪双方公开互动。",
+      "failureAnalysis": "可核实信息仅限公开会见事实，不宜据此推断双边关系走向；阅读时应以官方后续通报补充议题与成果。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "2026年11月17日，中共中央政治局委员、外交部长王毅在深圳会见加拿大外长阿南德。",
+      "translations": {
+        "zh": {
+          "title": "王毅在深圳会见加拿大外长阿南德",
+          "highlight": "2026年11月17日，中共中央政治局委员、外交部长王毅在深圳会见加拿大外长阿南德。",
+          "summary": "报道提供的信息限于会见时间、地点及双方身份，未披露会谈议题或成果。作为官方RSS来源的国内时政消息，其公开影响主要是提供中加外长在深圳会见的可核实事实，便于跟踪双方公开互动。",
+          "failureAnalysis": "可核实信息仅限公开会见事实，不宜据此推断双边关系走向；阅读时应以官方后续通报补充议题与成果。"
+        },
+        "en": {
+          "highlight": "On November 17, 2026, Wang Yi, member of the Political Bureau of the CPC Central Committee and Foreign Minister, met with Canadian Foreign Minister Anita Anand in Shenzhen.",
+          "summary": "The report provides only the time, place, and identities of the officials at the meeting, without disclosing the agenda or outcomes. As an official RSS domestic news item, its public value is to provide a verifiable fact of China-Canada foreign-minister-level interaction in Shenzhen for tracking publicly reported exchanges.",
+          "failureAnalysis": "The verifiable public information is limited to the fact of the meeting, so it should not be used to infer the direction of bilateral relations. Readers should rely on subsequent official readouts for agenda and outcomes.",
+          "title": "Wang Yi Meets Canadian Foreign Minister Anita Anand in Shenzhen"
+        }
+      }
+    },
+    {
+      "id": "news-d51e5333dac84e92ac35dc5182c8527f",
+      "category": "domestic",
+      "title": "21条硬核措施 云南省七部门联合推进“电动云南”建设",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-17/10733778.shtml",
+      "publishedAt": "2026-11-17T13:59:54.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "云南七部门联合印发“电动云南”建设实施意见，从推广应用、服务保障、场景拓展、产业链补强四个维度出台系列举措。",
+      "summary": "文章称，云南依托清洁能源优势，由七部门联合印发2026—2028年“电动云南”建设实施意见，围绕推广应用、服务保障、场景拓展、产业链补强出台系列举措，政策有效期至2028年12月31日。对非技术读者而言，它有助于理解地方政府如何把能源禀赋转化为电动化推广和产业链补强的组合政策。",
+      "failureAnalysis": "可把它视为观察地方电动化政策落地方式的样本：政策目标明确、覆盖维度较全，但实际成效仍取决于后续执行与配套细则。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网昆明11月17日电 (记者 杜潇潇)依托清洁能源优势，云南七部门近日联合印发《全面推进“电动云南”建设的实施意见(2026—2028年)》，从推广应用、服务保障、场景拓展、产业链补强四个维度出台系列举措，助力生态文明建设排头兵创建，政策有效期至2028年12月31日。",
+      "translations": {
+        "zh": {
+          "title": "云南七部门联合推进“电动云南”建设，出台21条措施",
+          "highlight": "云南七部门联合印发“电动云南”建设实施意见，从推广应用、服务保障、场景拓展、产业链补强四个维度出台系列举措。",
+          "summary": "文章称，云南依托清洁能源优势，由七部门联合印发2026—2028年“电动云南”建设实施意见，围绕推广应用、服务保障、场景拓展、产业链补强出台系列举措，政策有效期至2028年12月31日。对非技术读者而言，它有助于理解地方政府如何把能源禀赋转化为电动化推广和产业链补强的组合政策。",
+          "failureAnalysis": "可把它视为观察地方电动化政策落地方式的样本：政策目标明确、覆盖维度较全，但实际成效仍取决于后续执行与配套细则。"
+        },
+        "en": {
+          "highlight": "Seven Yunnan departments jointly issued the 2026–2028 implementation opinion for 'Electric Yunnan,' covering application promotion, service support, scenario expansion, and industrial-chain reinforcement.",
+          "summary": "The article says Yunnan, leveraging its clean-energy advantages, has issued a 2026–2028 implementation opinion for 'Electric Yunnan' through seven departments, with measures across application promotion, service support, scenario expansion, and industrial-chain reinforcement; the policy is valid until December 31, 2028. For a non-technical reader, it helps explain how a local government can turn energy endowments into a combined policy package for electrification and industrial-chain strengthening.",
+          "failureAnalysis": "It can serve as a sample for observing how local electrification policies are implemented: the goals are clear and the coverage is broad, but actual results still depend on follow-up execution and supporting rules.",
+          "title": "Yunnan's Seven Departments Jointly Advance 'Electric Yunnan' with 21 Measures"
+        }
+      }
+    },
+    {
+      "id": "news-a3c927c19e3a494dbd69e56c0d28fa7e",
+      "category": "international",
+      "title": "Xi said China would welcome American students for exchanges. What's the reality?",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/11/17/nx-s1-6026589/xi-said-china-would-welcome-american-students-for-exchanges-whats-the-reality",
+      "publishedAt": "2026-11-17T22:41:53.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "在上次九月峰会上，习近平表示将欢迎10万名美国学生来华交流。",
+      "summary": "这篇国际报道关注习近平关于欢迎美国学生来华交流的表态与现实情况。文章提到，特朗普与习近平将在深圳会晤，而上一次九月峰会上习近平曾表示欢迎10万名美国学生。值得读的是，它把高层外交表态与交流能否实际扩大并置，帮助判断政策信号的落地程度。",
+      "failureAnalysis": "关键看点是把高层会晤中的欢迎表态与交流能否实际扩大区分开；对非技术管理者而言，判断政策信号要看后续具体安排，而不是只看峰会上的数字表态。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "President Trump and China's leader Xi Jinping are due to meet in the Chinese city of Shenzhen. At their last summit in September, Xi said he will welcome 100,000 American students for exchanges.",
+      "translations": {
+        "zh": {
+          "title": "习近平称中国欢迎美国学生交流，现实如何？",
+          "highlight": "在上次九月峰会上，习近平表示将欢迎10万名美国学生来华交流。",
+          "summary": "这篇国际报道关注习近平关于欢迎美国学生来华交流的表态与现实情况。文章提到，特朗普与习近平将在深圳会晤，而上一次九月峰会上习近平曾表示欢迎10万名美国学生。值得读的是，它把高层外交表态与交流能否实际扩大并置，帮助判断政策信号的落地程度。",
+          "failureAnalysis": "关键看点是把高层会晤中的欢迎表态与交流能否实际扩大区分开；对非技术管理者而言，判断政策信号要看后续具体安排，而不是只看峰会上的数字表态。"
+        },
+        "en": {
+          "highlight": "At their last summit in September, Xi Jinping said he would welcome 100,000 American students for exchanges.",
+          "summary": "This international report examines Xi Jinping's statement that China would welcome American students for exchanges and the reality behind it. It notes that Trump and Xi are due to meet in Shenzhen, after Xi said at their September summit that he would welcome 100,000 American students. It is worth reading because it places a high-level diplomatic signal alongside the question of whether exchanges will actually expand.",
+          "failureAnalysis": "The key point is to distinguish a welcoming statement at a summit from whether exchanges actually expand; for a non-technical manager, judging a policy signal requires looking at follow-up arrangements, not just the headline number.",
+          "title": "Xi Said China Would Welcome American Students. What Is the Reality?"
+        }
+      }
+    },
+    {
+      "id": "news-e3161baa7a494cdd977dddbc2213416a",
+      "category": "international",
+      "title": "Caribbean nations fear economic impact of shuttering citizenship program after EU threats",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/17/st-kitts-nevis-citizenship-investment",
+      "publishedAt": "2026-11-17T21:49:29.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "圣基茨和尼维斯总理宣布将逐步终止投资入籍计划，此前欧盟威胁取消免签待遇。",
+      "summary": "圣基茨和尼维斯在欧盟威胁取消免签待遇后，决定逐步终止以投资换取公民身份的项目。尼维斯总理警告，该项目收入对当地经济和扶助有需要人群至关重要。这则国际新闻值得关注，因为它显示小国护照计划在外部合规压力下的取舍。",
+      "failureAnalysis": "关键取舍在于：投资入籍带来的财政收入，与欧盟免签待遇及合规风险直接冲突；外部压力会迅速改变小国的重要经济来源。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "St Kitts and Nevis to wind down citizenship-by-investment program after EU warns of end to visa-free access The decision by St Kitts and Nevis to end a lucrative programme offering citizenship to wealthy foreigners in exchange for investment threatens its economy and ability to support people in need, the premier of the island of Nevis has warned. On Friday, Terrance Drew, the prime minister of the twin-island Caribbean nation, announced he would wind down the citizenship-by-investment (CBI) programme, after the European Union threatened to end visa-free access for St Kitts and Nevis.",
+      "translations": {
+        "zh": {
+          "title": "圣基茨和尼维斯因欧盟威胁终止投资入籍计划，加勒比国家担忧经济冲击",
+          "highlight": "圣基茨和尼维斯总理宣布将逐步终止投资入籍计划，此前欧盟威胁取消免签待遇。",
+          "summary": "圣基茨和尼维斯在欧盟威胁取消免签待遇后，决定逐步终止以投资换取公民身份的项目。尼维斯总理警告，该项目收入对当地经济和扶助有需要人群至关重要。这则国际新闻值得关注，因为它显示小国护照计划在外部合规压力下的取舍。",
+          "failureAnalysis": "关键取舍在于：投资入籍带来的财政收入，与欧盟免签待遇及合规风险直接冲突；外部压力会迅速改变小国的重要经济来源。"
+        },
+        "en": {
+          "highlight": "St Kitts and Nevis will wind down its citizenship-by-investment programme after the EU threatened to end visa-free access.",
+          "summary": "St Kitts and Nevis is winding down a programme that grants citizenship to wealthy foreign investors. The premier of Nevis warned that the resulting loss of revenue threatens the economy and support for people in need. It matters because it shows how external compliance pressure can force small states to give up a lucrative passport scheme.",
+          "failureAnalysis": "The key trade-off is between revenue from citizenship-by-investment and the risk to EU visa-free access; external pressure can quickly alter a small state’s key income source.",
+          "title": "Caribbean Nations Fear Economic Impact as St Kitts and Nevis Shuts Citizenship Program After EU Threats"
+        }
+      }
+    },
+    {
+      "id": "life-188c0ab03eb346319803db5484038674",
+      "category": "international",
+      "title": "Love Anyway",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/15/love-anyway/",
+      "publishedAt": "2026-11-15T15:30:57.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "明知生命的代价是死亡、爱的代价是失去，你仍凝望金色午后落在一张深爱的脸上，并依然去爱。",
+      "summary": "文章从“爱即便终将失去仍值得付出”的命题出发，借路易丝·厄德里奇《彩绘鼓》的段落，讨论生命必朽与爱的短暂如何并存。它值得读，是因为把死亡的必然与爱的选择放在同一视野中，提醒人仍可在有限中投入地去爱。",
+      "failureAnalysis": "核心提醒是：爱的价值并不取决于它能否永久留存，而在于明知会失去仍选择去爱；这是一种清醒而非天真的生活态度。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "You know that the price of life is death, that the price of love is loss, and still you watch the golden afternoon light fall on a face you love, knowing that the light will soon fade, knowing that the loving face too will one day fade to indifference or bone, and you love anyway — because life is transient but possible, because love alone bridges the impossible and the eternal. I think about this and a passage from Louise Erdrich’s 2005 novel The Painted Drum (public library) flits across the sky of my mind: Life will break you.",
+      "translations": {
+        "zh": {
+          "title": "依然去爱",
+          "highlight": "明知生命的代价是死亡、爱的代价是失去，你仍凝望金色午后落在一张深爱的脸上，并依然去爱。",
+          "summary": "文章从“爱即便终将失去仍值得付出”的命题出发，借路易丝·厄德里奇《彩绘鼓》的段落，讨论生命必朽与爱的短暂如何并存。它值得读，是因为把死亡的必然与爱的选择放在同一视野中，提醒人仍可在有限中投入地去爱。",
+          "failureAnalysis": "核心提醒是：爱的价值并不取决于它能否永久留存，而在于明知会失去仍选择去爱；这是一种清醒而非天真的生活态度。"
+        },
+        "en": {
+          "highlight": "You know that the price of life is death, that the price of love is loss, and still you watch the golden afternoon light fall on a face you love.",
+          "summary": "The piece reflects on the fact that life ends in death and love in loss, yet we still choose to love what is transient. Drawing on a passage from Louise Erdrich’s The Painted Drum, it is worth reading for its clear-eyed reminder that finitude does not make love pointless.",
+          "failureAnalysis": "The key takeaway is that love’s value does not depend on permanence; it lies in choosing to love while knowing loss is inevitable—a clear-eyed rather than naive stance.",
+          "title": "Love Anyway"
+        }
+      }
+    },
+    {
+      "id": "life-79835c1e8d604d7fbb5fc6815b320cde",
+      "category": "international",
+      "title": "Catwalks and crackdowns",
+      "source": "Aeon",
+      "url": "https://aeon.co/essays/its-not-political-the-young-fashionistas-of-tehran",
+      "publishedAt": "2026-11-17T11:00:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "德黑兰女性正按自己的选择穿衣，以大到无法阻止的人数改变社会，这被称为“在场艺术”。",
+      "summary": "这篇 Aeon 文章讲述德黑兰年轻女性如何通过自主选择穿着参与社会改变，规模大到难以压制。作者帕里萨·霍什纳米将其称为“在场艺术”，值得从日常生活与公共空间的角度理解社会变化。",
+      "failureAnalysis": "关键启示是：社会变迁未必总以正式抗争出现，日常选择在数量足够大时也能形成不可忽视的公共力量。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Women in Tehran are changing society by dressing as they choose, in numbers too large to stop. This is the ‘art of presence’ - by Parisa Khoshnami Read on Aeon",
+      "translations": {
+        "zh": {
+          "title": "T台与镇压：德黑兰女性用穿着改变社会",
+          "highlight": "德黑兰女性正按自己的选择穿衣，以大到无法阻止的人数改变社会，这被称为“在场艺术”。",
+          "summary": "这篇 Aeon 文章讲述德黑兰年轻女性如何通过自主选择穿着参与社会改变，规模大到难以压制。作者帕里萨·霍什纳米将其称为“在场艺术”，值得从日常生活与公共空间的角度理解社会变化。",
+          "failureAnalysis": "关键启示是：社会变迁未必总以正式抗争出现，日常选择在数量足够大时也能形成不可忽视的公共力量。"
+        },
+        "en": {
+          "highlight": "Women in Tehran are changing society by dressing as they choose, in numbers too large to stop.",
+          "summary": "This Aeon essay, by Parisa Khoshnami, describes how young women in Tehran are changing society by dressing as they choose, at a scale too large to stop. It frames this as the “art of presence,” making it worth reading for a grounded view of everyday life and social change.",
+          "failureAnalysis": "The key takeaway is that social change does not always arrive through formal protest; everyday choices, repeated at scale, can become a public force that is hard to suppress.",
+          "title": "Catwalks and Crackdowns: Tehran’s Women Dress on Their Own Terms"
+        }
+      }
+    },
+    {
+      "id": "paper-2611.21399",
+      "category": "paper",
+      "title": "MegNIST, A Benchmark for Non-Invasive Inner Speech Decoding",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2611.21399v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.21399",
+      "publishedAt": "2026-11-16T16:52:25.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "MegNIST 是面向非侵入式内语解码的基准数据集，用于开发与评估机器学习方法。",
+      "summary": "该数据集面向非侵入式内语解码，旨在为机器学习方法提供开发与评估基准。作者来自牛津大学工程科学系、OHBA与Jesus College，但现有来源仅含标题、作者机构与摘要开头。",
+      "failureAnalysis": "可用文本仅含标题和摘要开头，缺少数据构成、评测协议与基线结果，无法据此评估该基准的实际有效性。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "MegNIST, A Benchmark for Non-Invasive Inner Speech Decoding Teyun Kwon1, Pratik Somaiya 1, Gereon Elvers 1, Francesco Mantegna 1, Anna Camera 2, Sven Braeutigam 2, Mark Woolrich 2, Oiwi Parker Jones 1,3 1PNPL , Department of Engineering Science, University of Oxford, UK 2OHBA, Wellcome Centre for Integrative Neuroimaging, University of Oxford, UK 3Jesus College, University of Oxford, UK oiwi@robots.ox.ac.uk Abstract MegNIST is a benchmark dataset for developing and evaluating machine learning methods for inner speech decoding from magnetoencephalography (MEG). The dataset comprises 12,000 trials of a single participant imagining speaking the digits zero through nine, recorded across four sessions. Each trial contains 306-channel MEG recordings sampled at 250 Hz, preprocessed using signal space separation, filtering, and downsampling.",
+      "translations": {
+        "zh": {
+          "title": "MegNIST：非侵入式内语解码基准数据集",
+          "highlight": "MegNIST 是面向非侵入式内语解码的基准数据集，用于开发与评估机器学习方法。",
+          "summary": "该数据集面向非侵入式内语解码，旨在为机器学习方法提供开发与评估基准。作者来自牛津大学工程科学系、OHBA与Jesus College，但现有来源仅含标题、作者机构与摘要开头。",
+          "failureAnalysis": "可用文本仅含标题和摘要开头，缺少数据构成、评测协议与基线结果，无法据此评估该基准的实际有效性。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "MegNIST: A Benchmark for Non-Invasive Inner Speech Decoding",
+          "highlight": "MegNIST is a benchmark dataset for developing and evaluating machine learning methods for non-invasive inner speech decoding.",
+          "summary": "The dataset is presented as a benchmark for developing and evaluating machine learning methods for non-invasive inner speech decoding. The supplied source gives the title, author affiliations, and only the opening of the abstract, so details on data composition and evaluation are unavailable.",
+          "failureAnalysis": "Only the title and the start of the abstract are available, with no data composition, evaluation protocol, or baseline results; the benchmark's practical validity cannot be assessed from the supplied text.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-feed-3bfb2f6366f8455b97e28d83dd02567e",
+      "category": "ai",
+      "title": "External sandboxes for coding agents",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Nov/17/external-sandboxes-for-coding-agents/",
+      "abstractUrl": null,
+      "publishedAt": "2026-11-17T22:52:29.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [
+        {
+          "label": "Expert analysis",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "Expert analysis",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: Expert analysis",
+      "summary": "Simon Willison 与 Prime Radiant 合作介绍外部沙箱模式：代理在沙箱外运行，需执行的代码被送进独立沙箱。团队发布了基于 v86、Apple Containers 和 Quicksand 的三种服务实现，并提供统一的 localhost API、HTTP/HTTPS 允许列表代理和凭据替换机制。对希望安全试用本地模型、降低提示注入造成破坏风险的非技术读者，这有助于理解“隔离执行”为何是代理安全的关键边界。",
+      "failureAnalysis": "关键不在于让模型永不犯错，而在于用沙箱限制错误可造成的实际影响；允许列表和凭据替换进一步缩小网络与密钥暴露面。",
+      "aiSelectionScore": 100,
+      "highlight": "外部沙箱模式让代理执行的代码运行在专用沙箱内，而代理本身留在沙箱之外。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "External sandboxes for coding agents I've been exploring new ways to sandbox code that is executed by agents, with a focus on making it safer to try out local models without worrying that a mistake or prompt injection attack might cause them to take damaging actions on a machine. I worked on this project with Prime Radiant , the AI research lab behind Superpowers and other projects . My post on the Prime Radiant blog introduces the external sandbox pattern, where code executed by the agent runs inside a dedicated sandbox while the agent itself lives outside of that sandbox.",
+      "translations": {
+        "zh": {
+          "title": "编码代理的外部沙箱方案",
+          "highlight": "外部沙箱模式让代理执行的代码运行在专用沙箱内，而代理本身留在沙箱之外。",
+          "summary": "Simon Willison 与 Prime Radiant 合作介绍外部沙箱模式：代理在沙箱外运行，需执行的代码被送进独立沙箱。团队发布了基于 v86、Apple Containers 和 Quicksand 的三种服务实现，并提供统一的 localhost API、HTTP/HTTPS 允许列表代理和凭据替换机制。对希望安全试用本地模型、降低提示注入造成破坏风险的非技术读者，这有助于理解“隔离执行”为何是代理安全的关键边界。",
+          "failureAnalysis": "关键不在于让模型永不犯错，而在于用沙箱限制错误可造成的实际影响；允许列表和凭据替换进一步缩小网络与密钥暴露面。"
+        },
+        "en": {
+          "highlight": "The external sandbox pattern runs agent-executed code inside a dedicated sandbox while the agent itself lives outside that sandbox.",
+          "summary": "Simon Willison and Prime Radiant introduce an external sandbox pattern in which the agent runs outside a dedicated sandbox while its code executes inside it. They released three implementations—v86, Apple Containers, and Quicksand—with a shared localhost API, an HTTP/HTTPS allow-list proxy, and credential replacement. It is worth reading for a concrete way to test local models with less risk from mistakes or prompt injection.",
+          "failureAnalysis": "The key is not making the model infallible but limiting the real-world impact of its mistakes through isolation; allow-lists and credential replacement further reduce network and secret exposure.",
+          "title": "External Sandboxes for Coding Agents"
+        }
+      }
+    }
+  ]
+}
