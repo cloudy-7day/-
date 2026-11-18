@@ -1,0 +1,331 @@
+{
+  "issueDate": "2026-11-18",
+  "updateStatus": "complete",
+  "contentFingerprint": "94b93ddef2709159abfe3276e53fd51d3b3e38776de1c7759e183b74e6f638c5",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-3696f37b8623455cba869daf0f1ae215",
+      "category": "domestic",
+      "title": "开局起步“十五五” 黑龙江今年重点建设10所高水平大学",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-18/10734349.shtml",
+      "publishedAt": "2026-11-18T13:34:51.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "黑龙江举行“开局起步‘十五五’”系列主题新闻发布会，介绍高质量教育体系建设情况。",
+      "summary": "中新网报道，11月18日黑龙江举行“开局起步‘十五五’”系列主题新闻发布会，介绍高质量教育体系建设情况。标题显示黑龙江今年重点建设10所高水平大学。该信息来自官方发布渠道，可作为观察地方高教资源配置与“十五五”教育起步的公开信号。",
+      "failureAnalysis": "这不是AI应用项目，重点应看官方发布会释放的高教建设信号；具体名单与措施需以完整发布内容为准。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网哈尔滨11月18日电 (韩雪)11月18日，黑龙江省委宣传部、省政府新闻办举行“开局起步‘十五五’奋力谱写中国式现代化黑龙江新篇章”系列主题新闻发布会，介绍高质量教育体系建设情况。",
+      "translations": {
+        "zh": {
+          "title": "黑龙江今年重点建设10所高水平大学",
+          "highlight": "黑龙江举行“开局起步‘十五五’”系列主题新闻发布会，介绍高质量教育体系建设情况。",
+          "summary": "中新网报道，11月18日黑龙江举行“开局起步‘十五五’”系列主题新闻发布会，介绍高质量教育体系建设情况。标题显示黑龙江今年重点建设10所高水平大学。该信息来自官方发布渠道，可作为观察地方高教资源配置与“十五五”教育起步的公开信号。",
+          "failureAnalysis": "这不是AI应用项目，重点应看官方发布会释放的高教建设信号；具体名单与措施需以完整发布内容为准。"
+        },
+        "en": {
+          "highlight": "Heilongjiang held a series of themed press conferences on launching the 15th Five-Year Plan, briefing on high-quality education system development.",
+          "summary": "China News Service reports that on November 18 Heilongjiang held a themed press conference under the banner of launching the 15th Five-Year Plan, introducing high-quality education system development. The headline says the province will focus this year on building 10 high-level universities. As an official-release item, it is worth reading for signals on local higher-education resource allocation at the start of the 15th Five-Year Plan.",
+          "failureAnalysis": "This is not an AI application project, so no failure analysis is needed; the verifiable takeaway is the official education-policy signal, while specific lists and measures require the full release.",
+          "title": "Heilongjiang to Focus on Building 10 High-Level Universities This Year"
+        }
+      }
+    },
+    {
+      "id": "news-1828b36bf8b94bf5a7c06a99a60c185c",
+      "category": "domestic",
+      "title": "托起困境儿童的明天 重庆“十五五”把关爱送到 “家门口”",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-18/10734365.shtml",
+      "publishedAt": "2026-11-18T13:15:36.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "“十五五”期间，重庆市儿童福利工作将由“保基本、兜底线”向“提质效、促发展”转型升级。",
+      "summary": "中新网从重庆市民政事业发展“十五五”规划解读发布会上获悉，重庆儿童福利工作将向“提质效、促发展”转型升级。对困境儿童及其家庭而言，规划明确三个直观变化：保障更精准、关爱更可及、服务更便捷。这值得关注，因为它展示了地方民政规划如何把儿童关爱落到“家门口”。",
+      "failureAnalysis": "可验证的公共影响是儿童福利工作定位升级，并明确面向困境儿童家庭的三个变化方向。后续关键在于这些方向如何转化为基层可执行、可核验的服务安排。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网重庆11月18日电 (马佳欣)11月18日，“开局起步十五五·建设现代化新重庆”——《重庆市民政事业发展“十五五”规划(2026—2030年)》解读新闻发布会在重庆市政府新闻办举行。中新网从会上获悉，“十五五”期间，重庆市儿童福利工作将由“保基本、兜底线”向“提质效、促发展”转型升级。对困境儿童及其家庭而言，最直观的新变化有三个：保障更精准、关爱更可及、服务更便捷。",
+      "translations": {
+        "zh": {
+          "title": "托起困境儿童的明天 重庆“十五五”把关爱送到“家门口”",
+          "highlight": "“十五五”期间，重庆市儿童福利工作将由“保基本、兜底线”向“提质效、促发展”转型升级。",
+          "summary": "中新网从重庆市民政事业发展“十五五”规划解读发布会上获悉，重庆儿童福利工作将向“提质效、促发展”转型升级。对困境儿童及其家庭而言，规划明确三个直观变化：保障更精准、关爱更可及、服务更便捷。这值得关注，因为它展示了地方民政规划如何把儿童关爱落到“家门口”。",
+          "failureAnalysis": "可验证的公共影响是儿童福利工作定位升级，并明确面向困境儿童家庭的三个变化方向。后续关键在于这些方向如何转化为基层可执行、可核验的服务安排。"
+        },
+        "en": {
+          "highlight": "During the 15th Five-Year Plan period, Chongqing’s child welfare work will shift from guaranteeing basic needs and bottom-line coverage to improving quality, effectiveness, and development.",
+          "summary": "The article reports that, according to a briefing on Chongqing’s civil affairs plan for the 15th Five-Year Plan period, the city’s child welfare work will shift toward improving quality, effectiveness, and development. For children in difficulty and their families, the plan identifies three direct changes: more precise support, more accessible care, and more convenient services. It is worth reading because it shows how a local civil affairs plan aims to bring child welfare services to the “doorstep.”",
+          "failureAnalysis": "The verifiable public impact is an upgraded positioning of child welfare work and three stated directions for children in difficulty and their families. The key constraint is how these directions will be turned into executable and verifiable service arrangements at the grassroots level.",
+          "title": "Chongqing’s 15th Five-Year Plan Brings Care for Children in Difficulty to the “Doorstep”"
+        }
+      }
+    },
+    {
+      "id": "news-bf0ef35cba9e4f1986cb81d0a4a3143f",
+      "category": "domestic",
+      "title": "甘肃定西应急执法人：13载守红线 “刚柔并济”护民安",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-18/10734370.shtml",
+      "publishedAt": "2026-11-18T13:37:53.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 4",
+      "highlight": "141起处罚案件、186次应急处置、317件信访、500余次普法帮扶，记录安文伟13年一线执法路。",
+      "summary": "报道用141起处罚案件、186次应急处置、317件民众信访和500余次普法帮扶等数字，呈现安文伟13年扎根基层的应急执法工作。她直面多领域安全风险，在严格执法与纾解民忧之间保持平衡，守护辖区平安。读者可据此了解基层应急执法者的实际工作量和公共安全价值。",
+      "failureAnalysis": "可验证的公共影响来自公开报道中的案件、处置、信访和普法数据，体现基层应急执法在风险防控与民意回应上的双重作用。阅读时应把这些数字视为报道披露的工作记录，而非独立审计结果。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网兰州11月18日电 (戴文昌)141起处罚案件、186次应急处置、317件民众信访、500余次普法帮扶，几组数字，记录着甘肃定西市安定区应急管理综合行政执法队副队长安文伟13年一线执法路。在基层辖区，她直面多领域安全风险，贴心纾解民忧，刚柔并济守护一方平安。",
+      "translations": {
+        "zh": {
+          "title": "甘肃定西安文伟13年应急执法守护民安",
+          "highlight": "141起处罚案件、186次应急处置、317件信访、500余次普法帮扶，记录安文伟13年一线执法路。",
+          "summary": "报道用141起处罚案件、186次应急处置、317件民众信访和500余次普法帮扶等数字，呈现安文伟13年扎根基层的应急执法工作。她直面多领域安全风险，在严格执法与纾解民忧之间保持平衡，守护辖区平安。读者可据此了解基层应急执法者的实际工作量和公共安全价值。",
+          "failureAnalysis": "可验证的公共影响来自公开报道中的案件、处置、信访和普法数据，体现基层应急执法在风险防控与民意回应上的双重作用。阅读时应把这些数字视为报道披露的工作记录，而非独立审计结果。"
+        },
+        "en": {
+          "highlight": "141 penalty cases, 186 emergency responses, 317 public petitions and over 500 legal-aid visits trace An Wenwei’s 13 years on the frontline.",
+          "summary": "Using figures such as 141 penalty cases, 186 emergency responses, 317 public petitions and more than 500 legal-aid visits, the report profiles An Wenwei’s 13 years of grassroots emergency law enforcement in Dingxi, Gansu. It shows how she confronts multi-sector safety risks while balancing strict enforcement with responding to residents’ concerns, offering a concrete view of frontline public-safety work.",
+          "failureAnalysis": "The public impact is verifiable through the reported caseload, emergency-response, petition and legal-aid figures, which illustrate frontline risk control and public engagement. These numbers should be read as reported work records rather than independently audited results.",
+          "title": "Gansu Dingxi Emergency Law Enforcer Marks 13 Years of Firm and Flexible Public Safety Work"
+        }
+      }
+    },
+    {
+      "id": "news-5f8af9d9201a4cb9b3743aa209e9b47d",
+      "category": "international",
+      "title": "Hegseth uses Venezuela visit to boast of Maduro’s capture by US military",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/18/pete-hegseth-venezuela-nicolas-maduro-military",
+      "publishedAt": "2026-11-18T20:24:19.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "赫格塞思称，美军抓获马杜罗是“拉丁美洲历史上最精密的一次军事行动”。",
+      "summary": "美国国防部长赫格塞思首次访问委内瑞拉，并在行程中高调宣扬美军于1月3日凌晨由“三角洲”部队抓走前总统马杜罗的行动。报道指出，这一争议性的越境抓捕意外促成了华盛顿与执政自1999年的“查韦斯派”政权之间的缓和。这条新闻值得一读，因为它展示了武力行动与后续政治结果之间出人意料的落差。",
+      "failureAnalysis": "关键看点在于：一次单方面的军事抓捕并未导向预期的对抗升级，反而撬动了美委关系的意外缓和；因此判断此类行动时，不能只看战术层面的成功，还要看它在政治上会引发哪些连锁反应。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Defense secretary asserts US dominance on trip that would have seemed ‘impossible, almost unbelievable’ a year ago Pete Hegseth has used his first visit to Venezuela since US special forces abducted its former president, Nicolás Maduro, to boast of the dictator’s capture during what he called “the single most sophisticated military operation in the history of Latin America”. Maduro was controversially seized by Delta Force operatives in the early hours of 3 January, setting in motion an improbable rapprochement between Washington and Venezuela’s anti-imperialist “Chavista” regime, which has ruled since 1999.",
+      "translations": {
+        "zh": {
+          "title": "赫格塞思借访问委内瑞拉之机，宣扬美军抓捕马杜罗",
+          "highlight": "赫格塞思称，美军抓获马杜罗是“拉丁美洲历史上最精密的一次军事行动”。",
+          "summary": "美国国防部长赫格塞思首次访问委内瑞拉，并在行程中高调宣扬美军于1月3日凌晨由“三角洲”部队抓走前总统马杜罗的行动。报道指出，这一争议性的越境抓捕意外促成了华盛顿与执政自1999年的“查韦斯派”政权之间的缓和。这条新闻值得一读，因为它展示了武力行动与后续政治结果之间出人意料的落差。",
+          "failureAnalysis": "关键看点在于：一次单方面的军事抓捕并未导向预期的对抗升级，反而撬动了美委关系的意外缓和；因此判断此类行动时，不能只看战术层面的成功，还要看它在政治上会引发哪些连锁反应。"
+        },
+        "en": {
+          "highlight": "Hegseth called the capture of Maduro \"the single most sophisticated military operation in the history of Latin America.\"",
+          "summary": "US Defense Secretary Pete Hegseth made his first trip to Venezuela and used it to tout the Delta Force operation that seized former president Nicolás Maduro in the early hours of 3 January. The controversial abduction unexpectedly set in motion a rapprochement between Washington and the Chavista regime that has ruled since 1999. It is worth reading because it shows how a military action can produce political consequences quite different from what was expected.",
+          "failureAnalysis": "The key takeaway is that a unilateral military capture did not escalate confrontation but instead opened an unexpected opening with Caracas, so tactical success should not be mistaken for predictable political outcomes.",
+          "title": "Hegseth Uses Venezuela Visit to Boast of Maduro's Capture by US Forces"
+        }
+      }
+    },
+    {
+      "id": "news-1e7dc9381e5e46f4a82cf6c368a562bf",
+      "category": "international",
+      "title": "Apec summit as it happened: Xi welcomes Trump on China visit as Putin claims Europe in ‘humiliating decline’",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/live/2026/nov/18/apec-summit-live-updates-xi-putin-trump-world-leaders-gather-in-china",
+      "publishedAt": "2026-11-18T17:48:24.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "不在谈判桌旁，你或你的价值观就可能被列入菜单，面临被瓜分的风险。",
+      "summary": "这篇《卫报》直播报道聚焦深圳APEC峰会期间习近平欢迎特朗普访华、普京称欧洲陷入“屈辱性衰退”，并引述分析担忧特朗普、习近平与普京的会晤可能像雅尔塔一样带来大国交易。文章值得读在于它把峰会外交姿态与乌克兰、东欧和波罗的海国家、台湾、伊朗等被排除者的风险联系起来，提醒读者关注谁在桌旁、谁可能被“菜单化”。",
+      "failureAnalysis": "关键不在峰会辞令，而在谈判桌的席位分配：未被纳入大国协商的一方，其利益和价值观可能成为交易筹码。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "This blog is now closed, you can read more on this story here Yalta became a byword for betrayal. Will Trump, Xi and Putin enact another carve-up? That is the question the Guardian’s diplomatic correspondent Patrick Wintour seeks to address in his piece about the expected, Putin, Trump and Xi, meeting at Apec on Thursday.",
+      "translations": {
+        "zh": {
+          "title": "APEC峰会现场：习近平欢迎特朗普访华，普京称欧洲陷入“屈辱性衰退”",
+          "highlight": "不在谈判桌旁，你或你的价值观就可能被列入菜单，面临被瓜分的风险。",
+          "summary": "这篇《卫报》直播报道聚焦深圳APEC峰会期间习近平欢迎特朗普访华、普京称欧洲陷入“屈辱性衰退”，并引述分析担忧特朗普、习近平与普京的会晤可能像雅尔塔一样带来大国交易。文章值得读在于它把峰会外交姿态与乌克兰、东欧和波罗的海国家、台湾、伊朗等被排除者的风险联系起来，提醒读者关注谁在桌旁、谁可能被“菜单化”。",
+          "failureAnalysis": "关键不在峰会辞令，而在谈判桌的席位分配：未被纳入大国协商的一方，其利益和价值观可能成为交易筹码。"
+        },
+        "en": {
+          "highlight": "If you are not around the table, the risk is that you, or your values, are on the menu and about to be carved up.",
+          "summary": "This Guardian live report covers the APEC summit in Shenzhen, where Xi welcomes Trump on a China visit and Putin claims Europe is in ‘humiliating decline.’ It highlights Patrick Wintour’s warning that a Trump-Xi-Putin meeting could produce a Yalta-style carve-up, leaving excluded parties such as Ukraine, eastern Europe and the Baltics, Taiwan and Iran exposed. It is worth reading for its focus on who gets a seat at the table and whose interests may become bargaining chips.",
+          "failureAnalysis": "The key takeaway is that summit optics matter less than who is included in great-power bargaining: parties left outside the room risk having their interests and values traded away.",
+          "title": "APEC Summit Live: Xi Welcomes Trump on China Visit as Putin Says Europe in ‘Humiliating Decline’"
+        }
+      }
+    },
+    {
+      "id": "life-67bc5a1a4f1a4a0c9c6e4f20df211e88",
+      "category": "international",
+      "title": "Make Learning Permanent",
+      "source": "Scott H Young",
+      "url": "https://www.scotthyoung.com/blog/2026/11/18/make-learning-permanent/",
+      "publishedAt": "2026-11-18T17:31:51.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "如果今天让你重考高中某门课的期末试卷，你还能及格吗？",
+      "summary": "文章从高中期末考试的记忆切入，提到 Harry Bahrick 和 Lynda Hall 一项询问近两千人的著名研究。已知开头显示，多数人预期离开学校几年后知识会明显遗忘；文章由此讨论如何让学习更持久。它值得读，是因为它把“学过”与“长期记住”区分开来。",
+      "failureAnalysis": "关键提醒：能通过考试不等于长期掌握；判断学习效果，应看离开课堂几年后还能保留多少。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "How much can you remember from your high school classes? If I gave you one of your final exams today, could you still pass it? In their now-famous study, Harry Bahrick and Lynda Hall asked this question of nearly two thousand people.",
+      "translations": {
+        "zh": {
+          "title": "让学习真正持久",
+          "highlight": "如果今天让你重考高中某门课的期末试卷，你还能及格吗？",
+          "summary": "文章从高中期末考试的记忆切入，提到 Harry Bahrick 和 Lynda Hall 一项询问近两千人的著名研究。已知开头显示，多数人预期离开学校几年后知识会明显遗忘；文章由此讨论如何让学习更持久。它值得读，是因为它把“学过”与“长期记住”区分开来。",
+          "failureAnalysis": "关键提醒：能通过考试不等于长期掌握；判断学习效果，应看离开课堂几年后还能保留多少。"
+        },
+        "en": {
+          "highlight": "If I gave you one of your high-school final exams today, could you still pass it?",
+          "summary": "The article opens with the memory of high-school final exams and cites a famous study by Harry Bahrick and Lynda Hall that asked nearly two thousand people this question. The known opening suggests most people expect substantial forgetting a few years after leaving school, and the article discusses how to make learning more permanent. It is worth reading because it separates having studied something from retaining it long term.",
+          "failureAnalysis": "Key takeaway: passing an exam is not the same as long-term mastery; judge learning by how much remains years after leaving the classroom.",
+          "title": "Make Learning Permanent"
+        }
+      }
+    },
+    {
+      "id": "life-3b96b05b624945af8b8f561cfbc19074",
+      "category": "international",
+      "title": "Dreams of birds",
+      "source": "Aeon",
+      "url": "https://aeon.co/videos/a-physicists-audacious-plan-to-teach-birds-long-lost-songs",
+      "publishedAt": "2026-11-18T11:01:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 0",
+      "highlight": "当鸟类数量下降时，某些鸣唱可能永远消失；一位物理学家正试图复活这些失落的旋律。",
+      "summary": "Aeon 的一段视频关注鸟类种群减少带来的另一种损失：某些鸣唱可能永远消失。一位物理学家正尝试复原这些失落的旋律，让人们看到鸟类保护也包括保存它们的声音。",
+      "failureAnalysis": "关键启示是：物种减少不仅意味着数量下降，也可能让独有的鸣唱永久失传；保存这些声音需要长期记录与干预。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "When bird populations decline, certain songs may be lost forever. One physicist’s mission is to revive lost melodies - by Aeon Video Watch on Aeon",
+      "translations": {
+        "zh": {
+          "title": "鸟之梦：复活失落的鸣唱",
+          "highlight": "当鸟类数量下降时，某些鸣唱可能永远消失；一位物理学家正试图复活这些失落的旋律。",
+          "summary": "Aeon 的一段视频关注鸟类种群减少带来的另一种损失：某些鸣唱可能永远消失。一位物理学家正尝试复原这些失落的旋律，让人们看到鸟类保护也包括保存它们的声音。",
+          "failureAnalysis": "关键启示是：物种减少不仅意味着数量下降，也可能让独有的鸣唱永久失传；保存这些声音需要长期记录与干预。"
+        },
+        "en": {
+          "highlight": "When bird populations decline, certain songs may be lost forever; one physicist’s mission is to revive those lost melodies.",
+          "summary": "An Aeon video focuses on another kind of loss caused by declining bird populations: certain songs may disappear forever. A physicist is trying to revive these lost melodies, showing that bird conservation can also mean preserving their sounds.",
+          "failureAnalysis": "The key takeaway is that species decline is not only about fewer birds; it can also mean the permanent loss of unique songs, and preserving them requires long-term recording and intervention.",
+          "title": "Dreams of Birds: Reviving Lost Songs"
+        }
+      }
+    },
+    {
+      "id": "paper-2611.22700",
+      "category": "paper",
+      "title": "EM-SDTrack: Efficient Multi-Scale Spike-driven Tracking for Event Cameras",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2611.22700v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.22700",
+      "publishedAt": "2026-11-17T12:46:10.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic ai; quality signal passed; application scenario is clear.",
+      "paperTopic": "ai",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 ai 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "SNN：模仿神经脉冲时序的神经网络。"
+        ],
+        "whySelected": "Open full-text paper; topic ai; quality signal passed; application scenario is clear."
+      },
+      "highlight": "EM-SDTrack 面向事件相机，提出多尺度脉冲驱动的高效目标跟踪方法，强调事件驱动与效率。",
+      "summary": "该论文题目显示其研究面向事件相机的多尺度脉冲驱动跟踪，旨在兼顾事件驱动特性与效率。来源仅给出标题、作者信息和摘要开头，尚未提供完整方法、实验设置与结果，因此其实际贡献仍需依据全文判断。",
+      "failureAnalysis": "当前可用文本仅有标题和摘要首句，缺少完整方法、数据集与定量结果，无法据此评估跟踪精度、效率提升及泛化能力。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "EM-SDTrack: Efficient Multi-Scale Spike-driven Tracking for Event Cameras Yimeng Shan1,2, Haodi Wu1, Wei Zheng1, Xiaowei Ye3, Shuai Wang1,2, Yu Liang1,2, Wei Hua3, Chenxiao Dou3, Malu Zhang†1,2 1University of Electronic Science and Technology of China, China 2Shenzhen Loop Area Institute, China 3China Nanhu Academy of Electronics and Information Technology, China yimengshan2001@gmail.com Code:https://github.com/YmShan/EM-SDTrack Abstract Event-driven spiking neural networks (SNNs) match the sparse spatiotemporal output of event cameras, making spike-driven trackers highly attractive for neuromorphic edge deployment. However, events reveal a target only through their spatial distribution, whose extent varies more than tenfold within one sequence. Event tracking therefore demands multi-scale representation, which existing spike- driven trackers lack.",
+      "translations": {
+        "zh": {
+          "title": "EM-SDTrack：面向事件相机的高效多尺度脉冲驱动跟踪",
+          "highlight": "EM-SDTrack 面向事件相机，提出多尺度脉冲驱动的高效目标跟踪方法，强调事件驱动与效率。",
+          "summary": "该论文题目显示其研究面向事件相机的多尺度脉冲驱动跟踪，旨在兼顾事件驱动特性与效率。来源仅给出标题、作者信息和摘要开头，尚未提供完整方法、实验设置与结果，因此其实际贡献仍需依据全文判断。",
+          "failureAnalysis": "当前可用文本仅有标题和摘要首句，缺少完整方法、数据集与定量结果，无法据此评估跟踪精度、效率提升及泛化能力。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 ai 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "SNN：模仿神经脉冲时序的神经网络。"
+            ],
+            "whySelected": "Open full-text paper; topic ai; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "EM-SDTrack: Efficient Multi-Scale Spike-driven Tracking for Event Cameras",
+          "highlight": "EM-SDTrack targets event cameras with a multi-scale, spike-driven tracking design that emphasizes event-driven processing and efficiency.",
+          "summary": "The item is a paper titled EM-SDTrack: Efficient Multi-Scale Spike-driven Tracking for Event Cameras. The supplied text identifies the authors and affiliations and begins an abstract on event-driven spiking neural networks, but it does not provide the full method or results. Its importance therefore cannot be assessed beyond the stated focus on efficient multi-scale spike-driven tracking.",
+          "failureAnalysis": "Only the title, author information, and the opening of the abstract are available, so there is no evidence to evaluate tracking accuracy, efficiency gains, datasets, or generalization.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "SNN：模仿神经脉冲时序的神经网络。"
+            ],
+            "whySelected": "Open full-text paper; topic ai; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-github-1403307052",
+      "category": "ai",
+      "title": "jiwoochris/artex-global",
+      "source": "GitHub Search",
+      "url": "https://github.com/jiwoochris/artex-global",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-03T14:49:48.0000000Z",
+      "scoreLabel": "GitHub 3963 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该 GitHub 仓库是 ARTEX 的全球版，定位为大语言模型驱动的多智能体自主渗透测试框架，默认英文并支持韩文、中文、西班牙文和日文切换。它仅面向授权、防御与检测用途，上游为 Autumn-27/ARTEX，采用 AGPL-3.0 许可。当前约 3963 星，适合用来观察 LLM 多智能体在安全测试中的工程化边界与合规风险。",
+      "failureAnalysis": "自主渗透测试属于高风险双用途能力，若授权边界、审计日志和滥用防护不严，会带来法律与合规风险。多智能体自动规划可能产生误报、破坏性操作或难以复现的结果，真实客户环境验证成本高。LLM 调用成本和长任务可靠性也会限制规模化部署；3963 星只说明关注度，不等于商业需求或安全效果已被验证。",
+      "aiSelectionScore": 3963,
+      "highlight": "ARTEX 全球版是一个大语言模型多智能体自主渗透测试框架，仅限授权防御与检测用途。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 3963 stars and recent public activity. Description: Global edition of ARTEX — an LLM multi-agent autonomous penetration-testing framework. English default, switchable to Korean/Chinese/Spanish/Japanese.",
+      "translations": {
+        "zh": {
+          "title": "ARTEX 全球版：LLM 多智能体自主渗透测试框架",
+          "highlight": "ARTEX 全球版是一个大语言模型多智能体自主渗透测试框架，仅限授权防御与检测用途。",
+          "summary": "该 GitHub 仓库是 ARTEX 的全球版，定位为大语言模型驱动的多智能体自主渗透测试框架，默认英文并支持韩文、中文、西班牙文和日文切换。它仅面向授权、防御与检测用途，上游为 Autumn-27/ARTEX，采用 AGPL-3.0 许可。当前约 3963 星，适合用来观察 LLM 多智能体在安全测试中的工程化边界与合规风险。",
+          "failureAnalysis": "自主渗透测试属于高风险双用途能力，若授权边界、审计日志和滥用防护不严，会带来法律与合规风险。多智能体自动规划可能产生误报、破坏性操作或难以复现的结果，真实客户环境验证成本高。LLM 调用成本和长任务可靠性也会限制规模化部署；3963 星只说明关注度，不等于商业需求或安全效果已被验证。"
+        },
+        "en": {
+          "highlight": "ARTEX Global is an LLM multi-agent autonomous penetration-testing framework, intended only for authorized defensive and detection use.",
+          "summary": "This GitHub repository is the global edition of ARTEX, positioned as an LLM-driven multi-agent autonomous penetration-testing framework; it defaults to English and can switch among Korean, Chinese, Spanish, and Japanese. It is restricted to authorized, defensive, and detection use, with upstream Autumn-27/ARTEX under AGPL-3.0. Its roughly 3,963 stars make it worth reading as a signal of how LLM agents are being applied to security testing, but not as proof of validated security outcomes.",
+          "failureAnalysis": "Autonomous penetration testing is a high-risk dual-use capability: weak authorization boundaries, audit logs, or abuse controls create legal and compliance exposure. Multi-agent planning can produce false positives, destructive actions, or hard-to-reproduce results, while real-environment validation and LLM inference costs limit scale; stars indicate attention, not commercial demand or proven security impact.",
+          "title": "ARTEX Global: An LLM Multi-Agent Autonomous Penetration-Testing Framework"
+        }
+      }
+    }
+  ]
+}
