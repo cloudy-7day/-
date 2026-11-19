@@ -1,0 +1,331 @@
+{
+  "issueDate": "2026-11-19",
+  "updateStatus": "complete",
+  "contentFingerprint": "0702c33cf24aeec7e70808f64bee21b4d8928eccc48d37892c2a5fa7c44415f5",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-33a1d9f077c34fd48570673648aed07d",
+      "category": "domestic",
+      "title": "学者：中美建构建设性战略稳定关系 不支持“台独”表态具积极意义",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-19/10734968.shtml",
+      "publishedAt": "2026-11-19T14:50:08.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "相关对话反映出双方建构中美建设性战略稳定关系的积极意愿，美方表态释放出对台政策更趋审慎的信号。",
+      "summary": "文章围绕中美元首19日深圳会晤涉台表述，引述多位学者观点，认为对话体现双方建构建设性战略稳定关系的积极意愿，美方表态释放对台政策更趋审慎的信号。报道并提到，不支持“台独”的表态具有积极意义。对关注中美关系与涉台政策走向的读者，这是一则可核对官方表态与学者解读的国内时政信息。",
+      "failureAnalysis": "关键看点在于：涉台表述被学者解读为美方政策更趋审慎，但报道所给信息集中于会晤当日学者受访观点，后续政策走向仍需看更多公开信息。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社北京11月19日电 (记者 张杨彬 刘大炜)围绕中美元首19日深圳会晤涉台表述，多位学者当天接受中新社采访时指出，相关对话反映出双方建构中美建设性战略稳定关系的积极意愿，美方表态释放出对台政策更趋审慎的信号。",
+      "translations": {
+        "zh": {
+          "title": "学者：中美建构建设性战略稳定关系 不支持“台独”表态具积极意义",
+          "highlight": "相关对话反映出双方建构中美建设性战略稳定关系的积极意愿，美方表态释放出对台政策更趋审慎的信号。",
+          "summary": "文章围绕中美元首19日深圳会晤涉台表述，引述多位学者观点，认为对话体现双方建构建设性战略稳定关系的积极意愿，美方表态释放对台政策更趋审慎的信号。报道并提到，不支持“台独”的表态具有积极意义。对关注中美关系与涉台政策走向的读者，这是一则可核对官方表态与学者解读的国内时政信息。",
+          "failureAnalysis": "关键看点在于：涉台表述被学者解读为美方政策更趋审慎，但报道所给信息集中于会晤当日学者受访观点，后续政策走向仍需看更多公开信息。"
+        },
+        "en": {
+          "highlight": "The dialogue reflects both sides' willingness to build a constructive strategic stability relationship, and the U.S. statement signals a more cautious Taiwan policy.",
+          "summary": "The article reports on scholars' comments after the November 19 Shenzhen meeting between the Chinese and U.S. presidents, focusing on Taiwan-related remarks. They say the dialogue shows willingness to build a constructive strategic stability relationship and that the U.S. statement signals a more cautious Taiwan policy. The report also notes that a statement not supporting 'Taiwan independence' is positive.",
+          "failureAnalysis": "The key takeaway is that the Taiwan-related remarks are interpreted as a more cautious U.S. signal, but the provided report is limited to scholars' immediate comments on the meeting.",
+          "title": "Scholars: China-U.S. Constructive Strategic Stability; U.S. Statement Against 'Taiwan Independence' Is Positive"
+        }
+      }
+    },
+    {
+      "id": "news-0439aeafd95546509ef7d6119c2ad168",
+      "category": "domestic",
+      "title": "四川推出25项举措提升大小凉山公共法律服务 慢火车成为“流动法治课堂”",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-19/10734963.shtml",
+      "publishedAt": "2026-11-19T14:37:31.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "四川省司法厅今年启动“法治蜀光”支持大小凉山做强公共法律服务三年行动，配套25项举措。",
+      "summary": "报道称，四川省司法厅今年启动了“法治蜀光”三年行动，支持大小凉山做强公共法律服务，并配套25项举措。11月19日，四川省政府新闻办在老成昆线西昌站举行第八期《发言人在现场》新闻发布活动，介绍相关部署及慢火车普法实践。这条新闻值得关注，因为它展示了公共法律服务向偏远民族地区下沉的具体做法和发布场景。",
+      "failureAnalysis": "把法律服务送到偏远地区，关键不只在于举措数量，更在于能否借助慢火车这类既有场景，使服务常态化并真正触达群众。25项举措的实际成效，还需要后续可核验的落地数据来支撑。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网西昌11月19日电 (程兆)四川省司法厅今年启动“法治蜀光”支持大小凉山做强公共法律服务三年行动，配套25项举措。19日，四川省人民政府新闻办公室在老成昆线西昌站举行第八期《发言人在现场》新闻发布活动，介绍相关部署及慢火车普法实践。",
+      "translations": {
+        "zh": {
+          "title": "四川推出25项举措提升大小凉山公共法律服务，慢火车成为“流动法治课堂”",
+          "highlight": "四川省司法厅今年启动“法治蜀光”支持大小凉山做强公共法律服务三年行动，配套25项举措。",
+          "summary": "报道称，四川省司法厅今年启动了“法治蜀光”三年行动，支持大小凉山做强公共法律服务，并配套25项举措。11月19日，四川省政府新闻办在老成昆线西昌站举行第八期《发言人在现场》新闻发布活动，介绍相关部署及慢火车普法实践。这条新闻值得关注，因为它展示了公共法律服务向偏远民族地区下沉的具体做法和发布场景。",
+          "failureAnalysis": "把法律服务送到偏远地区，关键不只在于举措数量，更在于能否借助慢火车这类既有场景，使服务常态化并真正触达群众。25项举措的实际成效，还需要后续可核验的落地数据来支撑。"
+        },
+        "en": {
+          "highlight": "Sichuan's Justice Department this year launched a three-year 'Rule of Law Shuguang' action to strengthen public legal services in the Greater and Lesser Liangshan regions, backed by 25 supporting measures.",
+          "summary": "The report says Sichuan's Justice Department this year began a three-year 'Rule of Law Shuguang' initiative to strengthen public legal services in the Greater and Lesser Liangshan regions, with 25 supporting measures. On Nov 19, the provincial government information office held the eighth 'Spokespersons on Site' press event at Xichang station on the old Chengdu-Kunming line to present the deployment and slow-train legal education practice. It is worth reading as a concrete case of pushing public legal services down to remote ethnic regions.",
+          "failureAnalysis": "Delivering legal services to remote areas depends less on the number of measures than on using existing settings like slow trains to make services routine and reachable. The real effect of the 25 measures still needs verifiable follow-up data.",
+          "title": "Sichuan launches 25 measures to improve public legal services in the Greater and Lesser Liangshan regions, with slow trains becoming 'mobile rule-of-law classrooms'"
+        }
+      }
+    },
+    {
+      "id": "news-a9fcb4549fef46b9ae8cf1eb5f864cb6",
+      "category": "domestic",
+      "title": "重庆大渡口：力争到2030年具身智能产业规模突破100亿元",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-19/10734917.shtml",
+      "publishedAt": "2026-11-19T13:21:39.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "大渡口区将具身智能作为未来产业主攻方向，从完善产业链、强化载体保障、拓宽应用场景、夯实要素保障四方面发力。",
+      "summary": "文章报道重庆市大渡口区在“十五五”新闻发布会上提出，将具身智能作为未来产业主攻方向，并从产业链、载体、应用场景和要素保障四方面推进。目标到2030年力争具身智能产业规模突破100亿元。这体现了地方对未来产业的明确规划和产业规模目标，值得关注区域产业政策信号。",
+      "failureAnalysis": "关键看点在于地方政府以产业链、载体、场景和要素保障的组合方式推进具身智能产业化，而不只是单点技术突破。100亿元是力争目标，后续仍需观察项目落地与产业生态形成情况。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网重庆11月19日电 (杨梦逸)19日，重庆市政府新闻办举行“开局起步十五五·建设现代化新重庆”系列主题新闻发布会。重庆市大渡口区政府副区长刘理国表示，面向“十五五”，大渡口区将具身智能作为未来产业主攻方向，重点从完善产业链、强化载体保障、拓宽应用场景、夯实要素保障四个方面下功夫，到2030年，力争具身智能产业规模突破100亿元。",
+      "translations": {
+        "zh": {
+          "title": "重庆大渡口：力争到2030年具身智能产业规模突破100亿元",
+          "highlight": "大渡口区将具身智能作为未来产业主攻方向，从完善产业链、强化载体保障、拓宽应用场景、夯实要素保障四方面发力。",
+          "summary": "文章报道重庆市大渡口区在“十五五”新闻发布会上提出，将具身智能作为未来产业主攻方向，并从产业链、载体、应用场景和要素保障四方面推进。目标到2030年力争具身智能产业规模突破100亿元。这体现了地方对未来产业的明确规划和产业规模目标，值得关注区域产业政策信号。",
+          "failureAnalysis": "关键看点在于地方政府以产业链、载体、场景和要素保障的组合方式推进具身智能产业化，而不只是单点技术突破。100亿元是力争目标，后续仍需观察项目落地与产业生态形成情况。"
+        },
+        "en": {
+          "highlight": "Dadukou District will take embodied intelligence as a main direction for future industries, focusing on improving the industrial chain, strengthening carrier support, expanding application scenarios, and consolidating factor guarantees.",
+          "summary": "The article reports that Chongqing's Dadukou District announced at a 15th Five-Year Plan press conference that it will make embodied intelligence a main direction for future industries, advancing it through the industrial chain, carriers, application scenarios, and factor guarantees. It aims to strive for the embodied intelligence industry scale to exceed 10 billion yuan by 2030. This is worth reading as a signal of local industrial policy and regional planning for future industries.",
+          "failureAnalysis": "The key takeaway is a local government's combined push across the industrial chain, carriers, scenarios, and production factors rather than a single technology breakthrough. The 10 billion yuan figure is a striving target, so project implementation and ecosystem formation remain to be observed.",
+          "title": "Chongqing Dadukou: Striving for Embodied Intelligence Industry Scale to Exceed 10 Billion Yuan by 2030"
+        }
+      }
+    },
+    {
+      "id": "news-0ee2cd513e344993b78a96dc342d35d1",
+      "category": "international",
+      "title": "China, Russia and US agree peace declaration with no mention of Ukraine and Iran wars",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/19/china-russia-us-agree-peace-statement-no-mention-ukraine-iran-wars",
+      "publishedAt": "2026-11-19T17:13:23.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "中俄美称在史无前例的三边峰会后同意一份和平声明，但声明未提及由其中两个参与者造成的乌克兰和伊朗战争。",
+      "summary": "文章称，中俄美在史无前例的三边峰会后同意一份和平声明，并列出了联合国改革、增加石油供应和保护外交豁免等优先事项。声明没有提及乌克兰和伊朗战争，而这两场战争由参会方中的两个国家造成。值得读的是，它呈现了大国在公开声明中如何选择措辞和议题边界。",
+      "failureAnalysis": "关键看点是声明列出的优先事项与它回避的战争议题之间的对照，这比措辞本身更能说明峰会的实际关注点。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Xi, Putin and Trump outline priorities that include UN reform, boosting oil supplies and ‘protection of diplomatic immunity’ China, Russia and the US say they have agreed a peace statement after an unprecedented trilateral summit, but the declaration made no mention of the wars in Ukraine and Iran caused by two of the participants. The declaration on Thursday also outlined a set of priorities that included changing the UN, boosting oil supplies and what it said was the protection of diplomatic immunity.",
+      "translations": {
+        "zh": {
+          "title": "中美俄同意和平声明，未提及乌克兰与伊朗战争",
+          "highlight": "中俄美称在史无前例的三边峰会后同意一份和平声明，但声明未提及由其中两个参与者造成的乌克兰和伊朗战争。",
+          "summary": "文章称，中俄美在史无前例的三边峰会后同意一份和平声明，并列出了联合国改革、增加石油供应和保护外交豁免等优先事项。声明没有提及乌克兰和伊朗战争，而这两场战争由参会方中的两个国家造成。值得读的是，它呈现了大国在公开声明中如何选择措辞和议题边界。",
+          "failureAnalysis": "关键看点是声明列出的优先事项与它回避的战争议题之间的对照，这比措辞本身更能说明峰会的实际关注点。"
+        },
+        "en": {
+          "highlight": "China, Russia and the US agreed a peace statement after an unprecedented trilateral summit, but it did not mention the Ukraine and Iran wars caused by two participants.",
+          "summary": "The article says China, Russia and the US agreed a peace statement after an unprecedented trilateral summit, listing priorities such as UN reform, boosting oil supplies and protecting diplomatic immunity. The declaration did not mention the wars in Ukraine and Iran, which were caused by two of the participants. It is worth reading for how major powers frame a joint statement and which issues they leave out.",
+          "failureAnalysis": "The key takeaway is the contrast between the declaration's listed priorities and the wars it omitted, which signals the summit's practical focus and diplomatic limits.",
+          "title": "China, Russia and US agree peace declaration without mentioning Ukraine and Iran wars"
+        }
+      }
+    },
+    {
+      "id": "news-0f4debf319264649852b8fb11c0083e6",
+      "category": "international",
+      "title": "Anthropic becomes one of world's most valuable public companies in stock market debut",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/c3x29ggenz12o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-19T21:38:42.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "Anthropic成为首家公开上市的纯AI公司，这为整个行业带来一场考验。",
+      "summary": "BBC Business报道，Anthropic在股市首次亮相后，成为全球市值最高的上市公司之一。它是首家纯AI公司公开上市，因此其市场表现被视为对整个AI行业的一次检验。",
+      "failureAnalysis": "关键看点是：纯AI公司首次接受公开市场定价，行业估值与商业模式将由此获得一个现实参照。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Anthropic is the first purely AI company to be publicly listed, creating a test for the entire industry.",
+      "translations": {
+        "zh": {
+          "title": "Anthropic上市首日跻身全球市值最高上市公司之列",
+          "highlight": "Anthropic成为首家公开上市的纯AI公司，这为整个行业带来一场考验。",
+          "summary": "BBC Business报道，Anthropic在股市首次亮相后，成为全球市值最高的上市公司之一。它是首家纯AI公司公开上市，因此其市场表现被视为对整个AI行业的一次检验。",
+          "failureAnalysis": "关键看点是：纯AI公司首次接受公开市场定价，行业估值与商业模式将由此获得一个现实参照。"
+        },
+        "en": {
+          "highlight": "Anthropic is the first purely AI company to be publicly listed, creating a test for the entire industry.",
+          "summary": "BBC Business reports that Anthropic became one of the world’s most valuable public companies after its stock market debut. As the first purely AI company to be publicly listed, its performance is seen as a test for the entire industry.",
+          "failureAnalysis": "The key takeaway is that a pure AI company is now subject to public-market pricing, giving the industry a real-world reference for valuation and business model.",
+          "title": "Anthropic Becomes One of the World’s Most Valuable Public Companies in Stock Market Debut"
+        }
+      }
+    },
+    {
+      "id": "life-1c033b99fcbd4076ac4befecf882f699",
+      "category": "international",
+      "title": "Bing Gordon: Learning From Bezos, Jobs, and Spielberg",
+      "source": "Farnam Street",
+      "url": "https://fs.blog/knowledge-project-podcast/bing-gordon/",
+      "publishedAt": "2026-11-19T10:55:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "他曾担任亚马逊董事十余年，这个席位源于他向贝索斯提出五个想法，第一个就是亚马逊Prime。",
+      "summary": "文章聚焦Bing Gordon的经历：他是EA前首席创意官、Kleiner Perkins合伙人，并在亚马逊董事会任职十余年。这个董事席位来自他向杰夫·贝索斯提出的五个想法，其中第一个是亚马逊Prime。可借此观察顶级创始人与创意高管的决策和影响方式。",
+      "failureAnalysis": "进入核心圈层往往不靠头衔，而靠提出对业务有实质价值的具体想法；先给出可执行的创意，再争取影响力。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Bing Gordon is the former Chief Creative Officer of Electronic Arts and a partner at Kleiner Perkins. He served on Amazon’s board for more than a decade, a seat he earned after giving Jeff Bezos five ideas. The first was Amazon Prime.",
+      "translations": {
+        "zh": {
+          "title": "Bing Gordon：从贝索斯、乔布斯与斯皮尔伯格身上学习",
+          "highlight": "他曾担任亚马逊董事十余年，这个席位源于他向贝索斯提出五个想法，第一个就是亚马逊Prime。",
+          "summary": "文章聚焦Bing Gordon的经历：他是EA前首席创意官、Kleiner Perkins合伙人，并在亚马逊董事会任职十余年。这个董事席位来自他向杰夫·贝索斯提出的五个想法，其中第一个是亚马逊Prime。可借此观察顶级创始人与创意高管的决策和影响方式。",
+          "failureAnalysis": "进入核心圈层往往不靠头衔，而靠提出对业务有实质价值的具体想法；先给出可执行的创意，再争取影响力。"
+        },
+        "en": {
+          "highlight": "He served on Amazon’s board for more than a decade, a seat he earned after giving Jeff Bezos five ideas—the first was Amazon Prime.",
+          "summary": "The item focuses on Bing Gordon, former Chief Creative Officer of Electronic Arts and a partner at Kleiner Perkins, who served on Amazon’s board for more than a decade. He earned that board seat after giving Jeff Bezos five ideas, the first of which was Amazon Prime. It offers a lens on how top founders and creative executives make decisions and gain influence.",
+          "failureAnalysis": "Access to senior circles often comes from concrete ideas that materially help the business, not from titles alone; offering executable value first can earn influence.",
+          "title": "Bing Gordon: Learning From Bezos, Jobs, and Spielberg"
+        }
+      }
+    },
+    {
+      "id": "life-af28cbf8a32f4c34902b5e119ee5f157",
+      "category": "international",
+      "title": "At least it remembers",
+      "source": "Aeon",
+      "url": "https://aeon.co/essays/what-would-parenting-by-ai-look-like",
+      "publishedAt": "2026-11-19T11:00:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "对一些人来说，AI是他们唯一稳定的陪伴——这才是真正的担忧。",
+      "summary": "文章讨论父母对AI影响孩子的恐惧，但也指出对部分人而言，AI反而是他们唯一稳定的陪伴。作者Tom Wooldridge认为，真正值得担忧的不是AI会对孩子做什么，而是这种稳定陪伴的缺失与替代。文章值得读，因为它把焦点从技术恐慌转向关系与陪伴的现实。",
+      "failureAnalysis": "关键提醒是：讨论AI育儿时，别只盯着技术风险，也要看见一些家庭缺乏稳定陪伴的现实。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Parents fear what AI will do to children. But for some, it’s the only steady presence they have – and that’s the real worry - by Tom Wooldridge Read on Aeon",
+      "translations": {
+        "zh": {
+          "title": "至少它还记得：AI陪伴背后的真正担忧",
+          "highlight": "对一些人来说，AI是他们唯一稳定的陪伴——这才是真正的担忧。",
+          "summary": "文章讨论父母对AI影响孩子的恐惧，但也指出对部分人而言，AI反而是他们唯一稳定的陪伴。作者Tom Wooldridge认为，真正值得担忧的不是AI会对孩子做什么，而是这种稳定陪伴的缺失与替代。文章值得读，因为它把焦点从技术恐慌转向关系与陪伴的现实。",
+          "failureAnalysis": "关键提醒是：讨论AI育儿时，别只盯着技术风险，也要看见一些家庭缺乏稳定陪伴的现实。"
+        },
+        "en": {
+          "highlight": "For some, it is the only steady presence they have—and that is the real worry.",
+          "summary": "The essay examines parents’ fears about what AI will do to children, while noting that for some, AI is the only steady presence they have. Tom Wooldridge argues that this dependence, rather than the technology alone, is the real concern. It is worth reading because it shifts the focus from tech panic to the reality of care and companionship.",
+          "failureAnalysis": "The key takeaway is to look beyond technical risk when discussing AI parenting and recognize the lack of steady companionship in some families.",
+          "title": "At Least It Remembers: The Real Worry Behind AI Companionship"
+        }
+      }
+    },
+    {
+      "id": "paper-2611.24206",
+      "category": "paper",
+      "title": "GALA: Gallery-Level Alignment for Real-Life Vision Decoding from EEG",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2611.24206v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.24206",
+      "publishedAt": "2026-11-18T10:40:59.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "GALA聚焦真实生活脑电视觉解码，针对被试内表现强而现有方法仍失败的问题提出图库级对齐。",
+      "summary": "该论文提出GALA，将图库级对齐用于从EEG解码真实生活视觉体验。摘要称EEG视觉解码在被试内设置中表现较强，而现有方法仍有失败，因此该工作关注更接近真实生活的图库级解码场景。所给摘要文本在“fail to ge”处截断，具体方法、数据和结论尚无法核实。",
+      "failureAnalysis": "可用摘要仅到“current methods fail to ge”便截断，未提供GALA的具体方法、实验设置或量化结果；因此无法判断其是否真正改善真实生活EEG解码。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GALA: Gallery-Level Alignment for Real-Life Vision Decoding from EEG Philippe Forest1 Giulia Lioi1 Mai Quyen Pham1 Alix Lamouroux2 Adrien Merlini1 Javen Shi3 1IMT Atlantique, France 2Center for Mind/Brain Sciences (CIMeC), University of Trento, Italy 3Australian Institute for Machine Learning, University of Adelaide, Australia Abstract Neural decoding of visual experience from electroen- cephalography (EEG) has achieved strong performance in intra-subject settings, but current methods fail to generalize across individuals: on the standard 200-way benchmark THINGS-EEG-2, top-1 accuracy drops from above 80% within subjects to about 32% for an unseen subject. Adapting a pre-trained encoder to new subjects and sessions typically requires labeled data, a bottleneck whose collection time severely limits practical device deployment. In a practi- cal Brain-Computer Interface (BCI), however, the possible outcomes are known in advance and form a gallery of can- didates, and the unlabeled EEG of the user accumulates as soon as the device is used.",
+      "translations": {
+        "zh": {
+          "title": "GALA：面向真实生活EEG视觉解码的图库级对齐",
+          "highlight": "GALA聚焦真实生活脑电视觉解码，针对被试内表现强而现有方法仍失败的问题提出图库级对齐。",
+          "summary": "该论文提出GALA，将图库级对齐用于从EEG解码真实生活视觉体验。摘要称EEG视觉解码在被试内设置中表现较强，而现有方法仍有失败，因此该工作关注更接近真实生活的图库级解码场景。所给摘要文本在“fail to ge”处截断，具体方法、数据和结论尚无法核实。",
+          "failureAnalysis": "可用摘要仅到“current methods fail to ge”便截断，未提供GALA的具体方法、实验设置或量化结果；因此无法判断其是否真正改善真实生活EEG解码。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "GALA: Gallery-Level Alignment for Real-Life Vision Decoding from EEG",
+          "highlight": "GALA targets real-life EEG vision decoding, addressing strong intra-subject performance alongside current methods that still fail.",
+          "summary": "The paper proposes GALA, applying gallery-level alignment to decode real-life visual experience from EEG. The abstract reports strong intra-subject EEG decoding but says current methods still fail, so the work focuses on a gallery-level setting closer to real life. The supplied abstract is truncated at “fail to ge,” so the methods, data, and conclusions cannot be verified.",
+          "failureAnalysis": "The available abstract ends at “current methods fail to ge,” with no details on GALA’s method, experimental setup, or quantitative results. It is therefore impossible to judge whether GALA improves real-life EEG decoding.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-github-1437869585",
+      "category": "ai",
+      "title": "mdiri-ai/SoduWork",
+      "source": "GitHub Search",
+      "url": "https://github.com/mdiri-ai/SoduWork",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-29T02:43:14.0000000Z",
+      "scoreLabel": "GitHub 4145 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "SoduWork 是 GitHub 上一个获得 4145 stars 的开源项目，定位为团队及其 AI 智能体的“AI 原生引擎”，强调多运行框架、多智能体与自托管能力。它值得关注是因为它瞄准的是企业级智能体落地的组织与编排层，而非单一模型能力，自托管也回应了数据合规诉求。但仓库公开信息仅有描述与热度，产品成熟度与真实使用价值仍需进一步验证。",
+      "failureAnalysis": "多智能体编排赛道竞争激烈，LangGraph、AutoGen 等开源方案已占据开发者心智，仅靠“AI 原生引擎”的定位难以形成清晰差异化。自托管虽然迎合合规需求，却把部署、运维与模型接入成本转移给客户，容易在缺少成熟文档与生态时流失试用者。4145 stars 属于早期热度信号，若无法证明具体场景下的效率提升与稳定收益，项目可能停留在演示阶段而难以形成付费或长期贡献。",
+      "aiSelectionScore": 4145,
+      "highlight": "面向团队及其智能体的 AI 原生引擎，支持多种运行框架（multi-harness）、多智能体协作与自托管部署。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 4145 stars and recent public activity. Description: The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+      "translations": {
+        "zh": {
+          "title": "SoduWork：面向团队与智能体的 AI 原生自托管引擎",
+          "highlight": "面向团队及其智能体的 AI 原生引擎，支持多种运行框架（multi-harness）、多智能体协作与自托管部署。",
+          "summary": "SoduWork 是 GitHub 上一个获得 4145 stars 的开源项目，定位为团队及其 AI 智能体的“AI 原生引擎”，强调多运行框架、多智能体与自托管能力。它值得关注是因为它瞄准的是企业级智能体落地的组织与编排层，而非单一模型能力，自托管也回应了数据合规诉求。但仓库公开信息仅有描述与热度，产品成熟度与真实使用价值仍需进一步验证。",
+          "failureAnalysis": "多智能体编排赛道竞争激烈，LangGraph、AutoGen 等开源方案已占据开发者心智，仅靠“AI 原生引擎”的定位难以形成清晰差异化。自托管虽然迎合合规需求，却把部署、运维与模型接入成本转移给客户，容易在缺少成熟文档与生态时流失试用者。4145 stars 属于早期热度信号，若无法证明具体场景下的效率提升与稳定收益，项目可能停留在演示阶段而难以形成付费或长期贡献。"
+        },
+        "en": {
+          "highlight": "An AI-native engine for teams and their agents, offering multi-harness, multi-agent, and self-hosted deployment.",
+          "summary": "SoduWork is a GitHub project with 4,145 stars positioned as an AI-native engine for teams and their agents, emphasizing multi-harness support, multi-agent collaboration, and self-hosting. It is worth watching because it targets the orchestration layer for enterprise agent adoption rather than raw model capability, and self-hosting addresses data-compliance concerns. However, only the repository description and popularity signal are known, so maturity and real-world value remain unverified.",
+          "failureAnalysis": "The multi-agent orchestration space is crowded with established open-source options, and self-hosting shifts deployment and operations costs onto customers; without clear differentiation, strong documentation, and proof of measurable efficiency gains, the project may remain a demo rather than an adopted product.",
+          "title": "SoduWork: an AI-native, self-hosted engine for teams and their agents"
+        }
+      }
+    }
+  ]
+}
