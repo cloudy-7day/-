@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-11-19",
+  "issueDate": "2026-11-20",
   "updateStatus": "complete",
-  "contentFingerprint": "0702c33cf24aeec7e70808f64bee21b4d8928eccc48d37892c2a5fa7c44415f5",
+  "contentFingerprint": "7c1f57c5893906fbe611ab034aa480dd30b2201041f5db8756b94e7f6d32cb21",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,216 +10,216 @@
   ],
   "articles": [
     {
-      "id": "news-33a1d9f077c34fd48570673648aed07d",
+      "id": "news-440f223d689b4d41b8f50c251a4a012c",
       "category": "domestic",
-      "title": "学者：中美建构建设性战略稳定关系 不支持“台独”表态具积极意义",
+      "title": "第三届兰花奖颁奖典礼在北京举行 10位国际友人获奖",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-19/10734968.shtml",
-      "publishedAt": "2026-11-19T14:50:08.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-20/10735574.shtml",
+      "publishedAt": "2026-11-20T14:03:02.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "相关对话反映出双方建构中美建设性战略稳定关系的积极意愿，美方表态释放出对台政策更趋审慎的信号。",
-      "summary": "文章围绕中美元首19日深圳会晤涉台表述，引述多位学者观点，认为对话体现双方建构建设性战略稳定关系的积极意愿，美方表态释放对台政策更趋审慎的信号。报道并提到，不支持“台独”的表态具有积极意义。对关注中美关系与涉台政策走向的读者，这是一则可核对官方表态与学者解读的国内时政信息。",
-      "failureAnalysis": "关键看点在于：涉台表述被学者解读为美方政策更趋审慎，但报道所给信息集中于会晤当日学者受访观点，后续政策走向仍需看更多公开信息。",
+      "highlight": "第三届兰花奖颁奖典礼11月20日在北京举行，中共中央政治局委员、中央宣传部部长李书磊出席并致辞。",
+      "summary": "报道显示，第三届兰花奖颁奖典礼于11月20日在北京举行，10位国际友人获奖，李书磊出席并致辞。公开信息可核实的是典礼举行、颁奖对象数量以及中宣部部长出席致辞；报道未给出获奖者名单、评选标准或后续交流安排。",
+      "failureAnalysis": "可核实的公共影响集中在官方出席与颁奖事实，信息量有限；阅读时应区分仪式性报道与尚未被材料证明的更大影响。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社北京11月19日电 (记者 张杨彬 刘大炜)围绕中美元首19日深圳会晤涉台表述，多位学者当天接受中新社采访时指出，相关对话反映出双方建构中美建设性战略稳定关系的积极意愿，美方表态释放出对台政策更趋审慎的信号。",
+      "sourceExcerpt": "中新社北京11月20日电 第三届兰花奖颁奖典礼11月20日在北京举行。中共中央政治局委员、中央宣传部部长李书磊出席并致辞。",
       "translations": {
         "zh": {
-          "title": "学者：中美建构建设性战略稳定关系 不支持“台独”表态具积极意义",
-          "highlight": "相关对话反映出双方建构中美建设性战略稳定关系的积极意愿，美方表态释放出对台政策更趋审慎的信号。",
-          "summary": "文章围绕中美元首19日深圳会晤涉台表述，引述多位学者观点，认为对话体现双方建构建设性战略稳定关系的积极意愿，美方表态释放对台政策更趋审慎的信号。报道并提到，不支持“台独”的表态具有积极意义。对关注中美关系与涉台政策走向的读者，这是一则可核对官方表态与学者解读的国内时政信息。",
-          "failureAnalysis": "关键看点在于：涉台表述被学者解读为美方政策更趋审慎，但报道所给信息集中于会晤当日学者受访观点，后续政策走向仍需看更多公开信息。"
+          "title": "第三届兰花奖颁奖典礼在北京举行，10位国际友人获奖",
+          "highlight": "第三届兰花奖颁奖典礼11月20日在北京举行，中共中央政治局委员、中央宣传部部长李书磊出席并致辞。",
+          "summary": "报道显示，第三届兰花奖颁奖典礼于11月20日在北京举行，10位国际友人获奖，李书磊出席并致辞。公开信息可核实的是典礼举行、颁奖对象数量以及中宣部部长出席致辞；报道未给出获奖者名单、评选标准或后续交流安排。",
+          "failureAnalysis": "可核实的公共影响集中在官方出席与颁奖事实，信息量有限；阅读时应区分仪式性报道与尚未被材料证明的更大影响。"
         },
         "en": {
-          "highlight": "The dialogue reflects both sides' willingness to build a constructive strategic stability relationship, and the U.S. statement signals a more cautious Taiwan policy.",
-          "summary": "The article reports on scholars' comments after the November 19 Shenzhen meeting between the Chinese and U.S. presidents, focusing on Taiwan-related remarks. They say the dialogue shows willingness to build a constructive strategic stability relationship and that the U.S. statement signals a more cautious Taiwan policy. The report also notes that a statement not supporting 'Taiwan independence' is positive.",
-          "failureAnalysis": "The key takeaway is that the Taiwan-related remarks are interpreted as a more cautious U.S. signal, but the provided report is limited to scholars' immediate comments on the meeting.",
-          "title": "Scholars: China-U.S. Constructive Strategic Stability; U.S. Statement Against 'Taiwan Independence' Is Positive"
+          "highlight": "The third Orchid Award ceremony was held in Beijing on November 20, and senior official Li Shulei attended and delivered remarks.",
+          "summary": "The report says the third Orchid Award ceremony took place in Beijing on November 20, with 10 international friends receiving awards and Li Shulei attending and speaking. It is worth reading as an official record of a cultural-exchange event, though the known excerpt does not list the winners or detail follow-up activities.",
+          "failureAnalysis": "The verifiable public impact is limited to the ceremony, the awards to 10 international friends, and the senior official’s attendance and remarks. Readers should separate ceremonial facts from any broader impact that the excerpt does not substantiate.",
+          "title": "Third Orchid Award Ceremony Held in Beijing, 10 International Friends Honored"
         }
       }
     },
     {
-      "id": "news-0439aeafd95546509ef7d6119c2ad168",
+      "id": "news-42d8a4fb587f492fad79403e237b4594",
       "category": "domestic",
-      "title": "四川推出25项举措提升大小凉山公共法律服务 慢火车成为“流动法治课堂”",
-      "source": "中国新闻网社会",
-      "url": "https://www.chinanews.com.cn/sh/2026/11-19/10734963.shtml",
-      "publishedAt": "2026-11-19T14:37:31.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "四川省司法厅今年启动“法治蜀光”支持大小凉山做强公共法律服务三年行动，配套25项举措。",
-      "summary": "报道称，四川省司法厅今年启动了“法治蜀光”三年行动，支持大小凉山做强公共法律服务，并配套25项举措。11月19日，四川省政府新闻办在老成昆线西昌站举行第八期《发言人在现场》新闻发布活动，介绍相关部署及慢火车普法实践。这条新闻值得关注，因为它展示了公共法律服务向偏远民族地区下沉的具体做法和发布场景。",
-      "failureAnalysis": "把法律服务送到偏远地区，关键不只在于举措数量，更在于能否借助慢火车这类既有场景，使服务常态化并真正触达群众。25项举措的实际成效，还需要后续可核验的落地数据来支撑。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "中新网西昌11月19日电 (程兆)四川省司法厅今年启动“法治蜀光”支持大小凉山做强公共法律服务三年行动，配套25项举措。19日，四川省人民政府新闻办公室在老成昆线西昌站举行第八期《发言人在现场》新闻发布活动，介绍相关部署及慢火车普法实践。",
-      "translations": {
-        "zh": {
-          "title": "四川推出25项举措提升大小凉山公共法律服务，慢火车成为“流动法治课堂”",
-          "highlight": "四川省司法厅今年启动“法治蜀光”支持大小凉山做强公共法律服务三年行动，配套25项举措。",
-          "summary": "报道称，四川省司法厅今年启动了“法治蜀光”三年行动，支持大小凉山做强公共法律服务，并配套25项举措。11月19日，四川省政府新闻办在老成昆线西昌站举行第八期《发言人在现场》新闻发布活动，介绍相关部署及慢火车普法实践。这条新闻值得关注，因为它展示了公共法律服务向偏远民族地区下沉的具体做法和发布场景。",
-          "failureAnalysis": "把法律服务送到偏远地区，关键不只在于举措数量，更在于能否借助慢火车这类既有场景，使服务常态化并真正触达群众。25项举措的实际成效，还需要后续可核验的落地数据来支撑。"
-        },
-        "en": {
-          "highlight": "Sichuan's Justice Department this year launched a three-year 'Rule of Law Shuguang' action to strengthen public legal services in the Greater and Lesser Liangshan regions, backed by 25 supporting measures.",
-          "summary": "The report says Sichuan's Justice Department this year began a three-year 'Rule of Law Shuguang' initiative to strengthen public legal services in the Greater and Lesser Liangshan regions, with 25 supporting measures. On Nov 19, the provincial government information office held the eighth 'Spokespersons on Site' press event at Xichang station on the old Chengdu-Kunming line to present the deployment and slow-train legal education practice. It is worth reading as a concrete case of pushing public legal services down to remote ethnic regions.",
-          "failureAnalysis": "Delivering legal services to remote areas depends less on the number of measures than on using existing settings like slow trains to make services routine and reachable. The real effect of the 25 measures still needs verifiable follow-up data.",
-          "title": "Sichuan launches 25 measures to improve public legal services in the Greater and Lesser Liangshan regions, with slow trains becoming 'mobile rule-of-law classrooms'"
-        }
-      }
-    },
-    {
-      "id": "news-a9fcb4549fef46b9ae8cf1eb5f864cb6",
-      "category": "domestic",
-      "title": "重庆大渡口：力争到2030年具身智能产业规模突破100亿元",
+      "title": "能源大市山西朔州：煤炭由燃料变原料 新能源装机瞄准1800万千瓦",
       "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-19/10734917.shtml",
-      "publishedAt": "2026-11-19T13:21:39.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-20/10735562.shtml",
+      "publishedAt": "2026-11-20T13:56:53.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "大渡口区将具身智能作为未来产业主攻方向，从完善产业链、强化载体保障、拓宽应用场景、夯实要素保障四方面发力。",
-      "summary": "文章报道重庆市大渡口区在“十五五”新闻发布会上提出，将具身智能作为未来产业主攻方向，并从产业链、载体、应用场景和要素保障四方面推进。目标到2030年力争具身智能产业规模突破100亿元。这体现了地方对未来产业的明确规划和产业规模目标，值得关注区域产业政策信号。",
-      "failureAnalysis": "关键看点在于地方政府以产业链、载体、场景和要素保障的组合方式推进具身智能产业化，而不只是单点技术突破。100亿元是力争目标，后续仍需观察项目落地与产业生态形成情况。",
+      "highlight": "朔州将加快构建新型能源体系和现代化产业体系，努力蹚出资源型经济转型发展的朔州路径。",
+      "summary": "中新网报道，山西朔州在“十五五”开局起步发布会上表示，将加快构建新型能源体系和现代化产业体系，探索资源型经济转型路径。标题显示，其方向包括推动煤炭由燃料向原料转变，以及新能源装机瞄准1800万千瓦。这值得关注，因为这是官方信源披露的资源型城市能源坐标与产业体系调整信号。",
+      "failureAnalysis": "关键看点是资源型城市将能源转型纳入“十五五”规划，并以煤炭原料化、新能源装机目标给出可核验的政策坐标。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网重庆11月19日电 (杨梦逸)19日，重庆市政府新闻办举行“开局起步十五五·建设现代化新重庆”系列主题新闻发布会。重庆市大渡口区政府副区长刘理国表示，面向“十五五”，大渡口区将具身智能作为未来产业主攻方向，重点从完善产业链、强化载体保障、拓宽应用场景、夯实要素保障四个方面下功夫，到2030年，力争具身智能产业规模突破100亿元。",
+      "sourceExcerpt": "中新网太原11月20日电 (记者 李庭耀 杨静)山西朔州，一座因煤而兴的能源大市，正在“十五五”规划中重新定义自己的能源坐标。11月20日，中共山西省委宣传部、山西省人民政府新闻办公室举行开局起步“十五五”系列主题新闻发布会，朔州市委副书记、市长吴秀玲表示，朔州将加快构建新型能源体系和现代化产业体系，努力蹚出资源型经济转型发展的朔州路径。",
       "translations": {
         "zh": {
-          "title": "重庆大渡口：力争到2030年具身智能产业规模突破100亿元",
-          "highlight": "大渡口区将具身智能作为未来产业主攻方向，从完善产业链、强化载体保障、拓宽应用场景、夯实要素保障四方面发力。",
-          "summary": "文章报道重庆市大渡口区在“十五五”新闻发布会上提出，将具身智能作为未来产业主攻方向，并从产业链、载体、应用场景和要素保障四方面推进。目标到2030年力争具身智能产业规模突破100亿元。这体现了地方对未来产业的明确规划和产业规模目标，值得关注区域产业政策信号。",
-          "failureAnalysis": "关键看点在于地方政府以产业链、载体、场景和要素保障的组合方式推进具身智能产业化，而不只是单点技术突破。100亿元是力争目标，后续仍需观察项目落地与产业生态形成情况。"
+          "title": "能源大市山西朔州：煤炭由燃料变原料，新能源装机瞄准1800万千瓦",
+          "highlight": "朔州将加快构建新型能源体系和现代化产业体系，努力蹚出资源型经济转型发展的朔州路径。",
+          "summary": "中新网报道，山西朔州在“十五五”开局起步发布会上表示，将加快构建新型能源体系和现代化产业体系，探索资源型经济转型路径。标题显示，其方向包括推动煤炭由燃料向原料转变，以及新能源装机瞄准1800万千瓦。这值得关注，因为这是官方信源披露的资源型城市能源坐标与产业体系调整信号。",
+          "failureAnalysis": "关键看点是资源型城市将能源转型纳入“十五五”规划，并以煤炭原料化、新能源装机目标给出可核验的政策坐标。"
         },
         "en": {
-          "highlight": "Dadukou District will take embodied intelligence as a main direction for future industries, focusing on improving the industrial chain, strengthening carrier support, expanding application scenarios, and consolidating factor guarantees.",
-          "summary": "The article reports that Chongqing's Dadukou District announced at a 15th Five-Year Plan press conference that it will make embodied intelligence a main direction for future industries, advancing it through the industrial chain, carriers, application scenarios, and factor guarantees. It aims to strive for the embodied intelligence industry scale to exceed 10 billion yuan by 2030. This is worth reading as a signal of local industrial policy and regional planning for future industries.",
-          "failureAnalysis": "The key takeaway is a local government's combined push across the industrial chain, carriers, scenarios, and production factors rather than a single technology breakthrough. The 10 billion yuan figure is a striving target, so project implementation and ecosystem formation remain to be observed.",
-          "title": "Chongqing Dadukou: Striving for Embodied Intelligence Industry Scale to Exceed 10 Billion Yuan by 2030"
+          "highlight": "Shuozhou will accelerate the building of a new energy system and a modern industrial system, and strive to carve out a Shuozhou path for resource-based economic transformation.",
+          "summary": "China News Service reports that Shuozhou, a coal-based energy city in Shanxi, said at a Nov. 20 press conference on the 15th Five-Year Plan that it will speed up building a new energy system and a modern industrial system and explore a path for resource-based economic transformation. The headline indicates directions including turning coal from fuel into feedstock and targeting 18 million kilowatts of new-energy installed capacity. It is worth reading as an official-source signal of how a resource-dependent city is resetting its energy and industrial coordinates.",
+          "failureAnalysis": "The key takeaway is that a resource-based city is putting energy transition into its 15th Five-Year Plan, with coal feedstock conversion and a new-energy capacity target providing checkable policy markers.",
+          "title": "Energy city Shuozhou in Shanxi: coal shifts from fuel to feedstock as new-energy capacity targets 18 million kW"
         }
       }
     },
     {
-      "id": "news-0ee2cd513e344993b78a96dc342d35d1",
+      "id": "news-2f2e3f43eb0b4de4880cd01fd9784a7b",
+      "category": "domestic",
+      "title": "海南自贸港封关近一年 制度集成创新为发展注入新动能",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-20/10735543.shtml",
+      "publishedAt": "2026-11-20T13:35:52.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "会上发布的7项案例，集中展现海南在封关运作、政策落地转化、产业提质升级、营商环境优化等领域的创新举措。",
+      "summary": "文章称，海南自由贸易港第24批制度集成创新案例在海口发布，共7项，聚焦保障封关运作、政策落地转化、产业提质升级、营商环境优化、要素高效保障等重点领域。对关注海南自贸港封关运作进展和制度创新的人来说，这提供了官方发布的最新案例线索。",
+      "failureAnalysis": "可核验的公共影响主要来自官方发布的7项案例，具体效果仍需看后续落地情况。评估时应关注制度集成创新如何服务封关运作，而非只看案例数量。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网海口11月20日电(记者 王子谦)海南自由贸易港制度集成创新案例(第24批)新闻发布会20日在海口举行，会上发布的7项案例，集中展现了海南在保障封关运作、政策落地转化、产业提质升级、营商环境优化、要素高效保障等重点领域的创新举措。",
+      "translations": {
+        "zh": {
+          "title": "海南自贸港封关近一年：第24批制度集成创新案例发布",
+          "highlight": "会上发布的7项案例，集中展现海南在封关运作、政策落地转化、产业提质升级、营商环境优化等领域的创新举措。",
+          "summary": "文章称，海南自由贸易港第24批制度集成创新案例在海口发布，共7项，聚焦保障封关运作、政策落地转化、产业提质升级、营商环境优化、要素高效保障等重点领域。对关注海南自贸港封关运作进展和制度创新的人来说，这提供了官方发布的最新案例线索。",
+          "failureAnalysis": "可核验的公共影响主要来自官方发布的7项案例，具体效果仍需看后续落地情况。评估时应关注制度集成创新如何服务封关运作，而非只看案例数量。"
+        },
+        "en": {
+          "highlight": "The seven cases released at the meeting highlight Hainan’s innovations in ensuring customs closure, policy implementation, industrial upgrading, and business-environment improvement.",
+          "summary": "The article reports that Hainan released the 24th batch of institutional integration innovation cases, including seven cases focused on supporting customs closure operations, policy implementation, industrial upgrading, business environment optimization, and efficient factor guarantees. It is worth reading for a concise official update on the free trade port’s institutional innovation priorities.",
+          "failureAnalysis": "The verifiable public impact is the release of seven official cases; practical results will depend on how they are implemented.",
+          "title": "Hainan Free Trade Port Releases 24th Batch of Institutional Innovation Cases as Customs Closure Nears"
+        }
+      }
+    },
+    {
+      "id": "news-62519a92ff9f43ff84142648aee55af2",
       "category": "international",
-      "title": "China, Russia and US agree peace declaration with no mention of Ukraine and Iran wars",
+      "title": "Trump threatens ‘tremendous penalties’ on US tech firms that build datacenters abroad",
       "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/nov/19/china-russia-us-agree-peace-statement-no-mention-ukraine-iran-wars",
-      "publishedAt": "2026-11-19T17:13:23.0000000+00:00",
+      "url": "https://www.theguardian.com/us-news/2026/nov/20/trump-datacenters-white-house",
+      "publishedAt": "2026-11-20T21:47:41.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "中俄美称在史无前例的三边峰会后同意一份和平声明，但声明未提及由其中两个参与者造成的乌克兰和伊朗战争。",
-      "summary": "文章称，中俄美在史无前例的三边峰会后同意一份和平声明，并列出了联合国改革、增加石油供应和保护外交豁免等优先事项。声明没有提及乌克兰和伊朗战争，而这两场战争由参会方中的两个国家造成。值得读的是，它呈现了大国在公开声明中如何选择措辞和议题边界。",
-      "failureAnalysis": "关键看点是声明列出的优先事项与它回避的战争议题之间的对照，这比措辞本身更能说明峰会的实际关注点。",
+      "highlight": "特朗普威胁将对在海外建设数据中心的美国科技公司施加“巨额惩罚”，但未提供细节，并称尚未告知自己的官员。",
+      "summary": "文章报道，特朗普在白宫记者会上威胁对在海外建设数据中心的美国科技公司施加“巨额惩罚”，但没有说明具体措施，并称尚未告知政府官员。记者会还涉及伊朗“脏弹”情报、他与普京和习近平的关系，以及为副总统万斯把共和党中期选举失利归因于伊朗战争的说法辩护。读者可借此了解美国科技与数据中心政策可能面临的政治不确定性。",
+      "failureAnalysis": "关键点：这类政策信号目前只有口头威胁、缺少执行细节，企业应关注后续规则，而不是先假定成本一定发生。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Xi, Putin and Trump outline priorities that include UN reform, boosting oil supplies and ‘protection of diplomatic immunity’ China, Russia and the US say they have agreed a peace statement after an unprecedented trilateral summit, but the declaration made no mention of the wars in Ukraine and Iran caused by two of the participants. The declaration on Thursday also outlined a set of priorities that included changing the UN, boosting oil supplies and what it said was the protection of diplomatic immunity.",
+      "sourceExcerpt": "President gives wide-ranging White House press conference and says he has ‘fantastic relationships’ with Putin and Xi Donald Trump threatened on Friday to impose “tremendous penalties” on American tech companies that build datacenters outside the US, though he gave no details and told reporters he had not yet informed his own officials about the plan. In a discursive press conference from the White House briefing room, Trump also said he would “look into” the report that Iran had been planning to possibly detonate a “dirty bomb” in Washington DC, and backed JD Vance over comments the vice-president made blaming Republican midterm losses on the Iran war.",
       "translations": {
         "zh": {
-          "title": "中美俄同意和平声明，未提及乌克兰与伊朗战争",
-          "highlight": "中俄美称在史无前例的三边峰会后同意一份和平声明，但声明未提及由其中两个参与者造成的乌克兰和伊朗战争。",
-          "summary": "文章称，中俄美在史无前例的三边峰会后同意一份和平声明，并列出了联合国改革、增加石油供应和保护外交豁免等优先事项。声明没有提及乌克兰和伊朗战争，而这两场战争由参会方中的两个国家造成。值得读的是，它呈现了大国在公开声明中如何选择措辞和议题边界。",
-          "failureAnalysis": "关键看点是声明列出的优先事项与它回避的战争议题之间的对照，这比措辞本身更能说明峰会的实际关注点。"
+          "title": "特朗普威胁对海外建数据中心的美国科技公司实施“巨额惩罚”",
+          "highlight": "特朗普威胁将对在海外建设数据中心的美国科技公司施加“巨额惩罚”，但未提供细节，并称尚未告知自己的官员。",
+          "summary": "文章报道，特朗普在白宫记者会上威胁对在海外建设数据中心的美国科技公司施加“巨额惩罚”，但没有说明具体措施，并称尚未告知政府官员。记者会还涉及伊朗“脏弹”情报、他与普京和习近平的关系，以及为副总统万斯把共和党中期选举失利归因于伊朗战争的说法辩护。读者可借此了解美国科技与数据中心政策可能面临的政治不确定性。",
+          "failureAnalysis": "关键点：这类政策信号目前只有口头威胁、缺少执行细节，企业应关注后续规则，而不是先假定成本一定发生。"
         },
         "en": {
-          "highlight": "China, Russia and the US agreed a peace statement after an unprecedented trilateral summit, but it did not mention the Ukraine and Iran wars caused by two participants.",
-          "summary": "The article says China, Russia and the US agreed a peace statement after an unprecedented trilateral summit, listing priorities such as UN reform, boosting oil supplies and protecting diplomatic immunity. The declaration did not mention the wars in Ukraine and Iran, which were caused by two of the participants. It is worth reading for how major powers frame a joint statement and which issues they leave out.",
-          "failureAnalysis": "The key takeaway is the contrast between the declaration's listed priorities and the wars it omitted, which signals the summit's practical focus and diplomatic limits.",
-          "title": "China, Russia and US agree peace declaration without mentioning Ukraine and Iran wars"
+          "highlight": "Trump threatened “tremendous penalties” on US tech firms building datacenters abroad, but gave no details and said he had not informed officials.",
+          "summary": "The article reports that Trump threatened “tremendous penalties” on American tech companies that build datacenters outside the US, without giving details and saying he had not yet informed his officials. At a wide-ranging White House press conference, he also addressed an Iran “dirty bomb” report, his relationships with Putin and Xi, and backed JD Vance over blaming Republican midterm losses on the Iran war. It is worth reading for a view of the political uncertainty around US tech and datacenter policy.",
+          "failureAnalysis": "Key takeaway: the threat is currently a verbal policy signal with no implementation details, so companies should watch follow-up rules rather than assume immediate costs.",
+          "title": "Trump Threatens ‘Tremendous Penalties’ on US Tech Firms Building Datacenters Abroad"
         }
       }
     },
     {
-      "id": "news-0f4debf319264649852b8fb11c0083e6",
+      "id": "news-d1fe5713ef8a4a25a76c74b52095756d",
       "category": "international",
-      "title": "Anthropic becomes one of world's most valuable public companies in stock market debut",
-      "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/c3x29ggenz12o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-19T21:38:42.0000000+00:00",
+      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
+      "publishedAt": "2026-11-20T21:38:17.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "Anthropic成为首家公开上市的纯AI公司，这为整个行业带来一场考验。",
-      "summary": "BBC Business报道，Anthropic在股市首次亮相后，成为全球市值最高的上市公司之一。它是首家纯AI公司公开上市，因此其市场表现被视为对整个AI行业的一次检验。",
-      "failureAnalysis": "关键看点是：纯AI公司首次接受公开市场定价，行业估值与商业模式将由此获得一个现实参照。",
+      "highlight": "Anthropic创纪录的IPO未能阻止全球AI相关公司抛售，纳斯达克本周市值蒸发约4万亿美元。",
+      "summary": "报道显示，Anthropic上市第二天股价下跌，叠加AI相关公司遭抛售，纳斯达克综合指数抹去2026年全部涨幅，并较1月1日下跌5%；道指和标普500进入回调区间。报道还称纳斯达克本周市值蒸发约4万亿美元，投资者质疑投入AI建设的巨额资金能否得到回报。这有助于理解AI概念股回调如何从个股扩散到更广泛市场。",
+      "failureAnalysis": "关键要点：AI相关股票的集中抛售可迅速传导至大盘，即使有明星IPO也难以托住市场；投资者正在重新审视AI基础设施投入的回报。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Anthropic is the first purely AI company to be publicly listed, creating a test for the entire industry.",
+      "sourceExcerpt": "The Nasdaq lost trillions in value, with the AI startup’s IPO failing to buoy it as investors question huge sums being poured into AI buildout Who are Anthropic’s seven co-founders, now worth $180bn? As Anthropic’s stock dropped during its second day of trading, the wider stock market dipped with it. On Friday, the Nasdaq Composite erased all its gains for 2026 and closed down 5% from its value on 1 January.",
       "translations": {
         "zh": {
-          "title": "Anthropic上市首日跻身全球市值最高上市公司之列",
-          "highlight": "Anthropic成为首家公开上市的纯AI公司，这为整个行业带来一场考验。",
-          "summary": "BBC Business报道，Anthropic在股市首次亮相后，成为全球市值最高的上市公司之一。它是首家纯AI公司公开上市，因此其市场表现被视为对整个AI行业的一次检验。",
-          "failureAnalysis": "关键看点是：纯AI公司首次接受公开市场定价，行业估值与商业模式将由此获得一个现实参照。"
+          "title": "AI抛售拖累Anthropic上市次日交易 纳斯达克回吐2026年全部涨幅",
+          "highlight": "Anthropic创纪录的IPO未能阻止全球AI相关公司抛售，纳斯达克本周市值蒸发约4万亿美元。",
+          "summary": "报道显示，Anthropic上市第二天股价下跌，叠加AI相关公司遭抛售，纳斯达克综合指数抹去2026年全部涨幅，并较1月1日下跌5%；道指和标普500进入回调区间。报道还称纳斯达克本周市值蒸发约4万亿美元，投资者质疑投入AI建设的巨额资金能否得到回报。这有助于理解AI概念股回调如何从个股扩散到更广泛市场。",
+          "failureAnalysis": "关键要点：AI相关股票的集中抛售可迅速传导至大盘，即使有明星IPO也难以托住市场；投资者正在重新审视AI基础设施投入的回报。"
         },
         "en": {
-          "highlight": "Anthropic is the first purely AI company to be publicly listed, creating a test for the entire industry.",
-          "summary": "BBC Business reports that Anthropic became one of the world’s most valuable public companies after its stock market debut. As the first purely AI company to be publicly listed, its performance is seen as a test for the entire industry.",
-          "failureAnalysis": "The key takeaway is that a pure AI company is now subject to public-market pricing, giving the industry a real-world reference for valuation and business model.",
-          "title": "Anthropic Becomes One of the World’s Most Valuable Public Companies in Stock Market Debut"
+          "highlight": "Anthropic’s record-breaking IPO failed to stem a global sell-off in AI-linked companies, and the tech-heavy Nasdaq erased some $4tn in market value this week.",
+          "summary": "The report says Anthropic’s stock fell on its second trading day, and a broader sell-off in AI-linked companies pushed the Nasdaq Composite to erase all of its 2026 gains and close 5% below its 1 January value. The Dow and S&P 500 closed in correction territory, while the Nasdaq shed about $4tn in market value this week as investors questioned the huge sums being poured into AI buildout. It is worth reading for a view of how AI-related market stress can spread from a single IPO to the wider market.",
+          "failureAnalysis": "The key takeaway is that a concentrated sell-off in AI-related stocks can quickly spill over into the broader market, and even a high-profile IPO may not stabilize sentiment while investors reassess returns on AI infrastructure spending.",
+          "title": "Nasdaq Erases All 2026 Gains as AI Sell-Off Weighs on Anthropic’s Second Trading Day"
         }
       }
     },
     {
-      "id": "life-1c033b99fcbd4076ac4befecf882f699",
+      "id": "life-0c70857799524066a9414ffd4e64716a",
       "category": "international",
-      "title": "Bing Gordon: Learning From Bezos, Jobs, and Spielberg",
-      "source": "Farnam Street",
-      "url": "https://fs.blog/knowledge-project-podcast/bing-gordon/",
-      "publishedAt": "2026-11-19T10:55:00.0000000+00:00",
+      "title": "This Note-Taking Pebble Ring Is so Simple, and I Love It",
+      "source": "Lifehacker",
+      "url": "https://lifehacker.com/tech/pebbles-index-01-ring-is-simple-but-great?utm_medium=RSS",
+      "publishedAt": "2026-11-20T16:15:16.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 3",
-      "highlight": "他曾担任亚马逊董事十余年，这个席位源于他向贝索斯提出五个想法，第一个就是亚马逊Prime。",
-      "summary": "文章聚焦Bing Gordon的经历：他是EA前首席创意官、Kleiner Perkins合伙人，并在亚马逊董事会任职十余年。这个董事席位来自他向杰夫·贝索斯提出的五个想法，其中第一个是亚马逊Prime。可借此观察顶级创始人与创意高管的决策和影响方式。",
-      "failureAnalysis": "进入核心圈层往往不靠头衔，而靠提出对业务有实质价值的具体想法；先给出可执行的创意，再争取影响力。",
+      "highlight": "它只承担一项功能，却把这一项功能做得非常简单而出色。",
+      "summary": "这篇来自 Lifehacker 的文章讨论一款用于记笔记的 Pebble 戒指，重点强调它的简单和好用。作者的核心评价是：它只做一件事，却把这件事做得很好。对非技术读者来说，值得关注的是产品如何用单一功能体现取舍与体验。",
+      "failureAnalysis": "关键启示：产品不必堆叠功能；把单一核心任务做到简单、稳定、好用，也能形成明确价值。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Bing Gordon is the former Chief Creative Officer of Electronic Arts and a partner at Kleiner Perkins. He served on Amazon’s board for more than a decade, a seat he earned after giving Jeff Bezos five ideas. The first was Amazon Prime.",
+      "sourceExcerpt": "It has one job, but it does it so well.",
       "translations": {
         "zh": {
-          "title": "Bing Gordon：从贝索斯、乔布斯与斯皮尔伯格身上学习",
-          "highlight": "他曾担任亚马逊董事十余年，这个席位源于他向贝索斯提出五个想法，第一个就是亚马逊Prime。",
-          "summary": "文章聚焦Bing Gordon的经历：他是EA前首席创意官、Kleiner Perkins合伙人，并在亚马逊董事会任职十余年。这个董事席位来自他向杰夫·贝索斯提出的五个想法，其中第一个是亚马逊Prime。可借此观察顶级创始人与创意高管的决策和影响方式。",
-          "failureAnalysis": "进入核心圈层往往不靠头衔，而靠提出对业务有实质价值的具体想法；先给出可执行的创意，再争取影响力。"
+          "title": "这款记笔记的 Pebble 戒指很简单，我却很喜欢它",
+          "highlight": "它只承担一项功能，却把这一项功能做得非常简单而出色。",
+          "summary": "这篇来自 Lifehacker 的文章讨论一款用于记笔记的 Pebble 戒指，重点强调它的简单和好用。作者的核心评价是：它只做一件事，却把这件事做得很好。对非技术读者来说，值得关注的是产品如何用单一功能体现取舍与体验。",
+          "failureAnalysis": "关键启示：产品不必堆叠功能；把单一核心任务做到简单、稳定、好用，也能形成明确价值。"
         },
         "en": {
-          "highlight": "He served on Amazon’s board for more than a decade, a seat he earned after giving Jeff Bezos five ideas—the first was Amazon Prime.",
-          "summary": "The item focuses on Bing Gordon, former Chief Creative Officer of Electronic Arts and a partner at Kleiner Perkins, who served on Amazon’s board for more than a decade. He earned that board seat after giving Jeff Bezos five ideas, the first of which was Amazon Prime. It offers a lens on how top founders and creative executives make decisions and gain influence.",
-          "failureAnalysis": "Access to senior circles often comes from concrete ideas that materially help the business, not from titles alone; offering executable value first can earn influence.",
-          "title": "Bing Gordon: Learning From Bezos, Jobs, and Spielberg"
+          "highlight": "The note-taking Pebble ring has one job, but it does it so well.",
+          "summary": "This Lifehacker article discusses a note-taking Pebble ring and emphasizes its simplicity and usefulness. Its core point is that the device has one job but does it very well. It is worth reading as a reminder that focused, simple products can be compelling.",
+          "failureAnalysis": "The takeaway: products do not need endless features; doing one core task simply and reliably can create clear value.",
+          "title": "This Note-Taking Pebble Ring Is Simple, and I Love It"
         }
       }
     },
     {
-      "id": "life-af28cbf8a32f4c34902b5e119ee5f157",
+      "id": "life-4de7d9803bda4f7ebe0819b6c5a76d27",
       "category": "international",
-      "title": "At least it remembers",
-      "source": "Aeon",
-      "url": "https://aeon.co/essays/what-would-parenting-by-ai-look-like",
-      "publishedAt": "2026-11-19T11:00:00.0000000+00:00",
+      "title": "Legendary Cellist Pablo Casals, at Age 93, on Creative Vitality and How Working with Love Prolongs Your Life",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/19/pablo-casals-work-age/",
+      "publishedAt": "2026-11-19T19:07:03.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 1",
-      "highlight": "对一些人来说，AI是他们唯一稳定的陪伴——这才是真正的担忧。",
-      "summary": "文章讨论父母对AI影响孩子的恐惧，但也指出对部分人而言，AI反而是他们唯一稳定的陪伴。作者Tom Wooldridge认为，真正值得担忧的不是AI会对孩子做什么，而是这种稳定陪伴的缺失与替代。文章值得读，因为它把焦点从技术恐慌转向关系与陪伴的现实。",
-      "failureAnalysis": "关键提醒是：讨论AI育儿时，别只盯着技术风险，也要看见一些家庭缺乏稳定陪伴的现实。",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "工作且从不无聊的人永远不会老；对有价值之事的投入与兴趣，是年龄的最佳解药。",
+      "summary": "文章以93岁的传奇大提琴家帕布罗·卡萨尔斯为线索，讨论创作活力与年龄的关系。其核心说法是，持续工作且不感到无聊的人不会被年龄定义，对有价值事物的兴趣能让人保持生命力。对非技术读者而言，这提供了关于工作意义、好奇心与终身投入的简洁提醒。",
+      "failureAnalysis": "关键启示：让人保持活力的不是忙碌本身，而是对有价值之事持续的兴趣与投入；管理者可据此关注工作的意义感和好奇心，而不只盯短期产出。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Parents fear what AI will do to children. But for some, it’s the only steady presence they have – and that’s the real worry - by Tom Wooldridge Read on Aeon",
+      "sourceExcerpt": "\"The man who works and is never bored is never old. Work and interest in worthwhile things are the best remedy for age.\"",
       "translations": {
         "zh": {
-          "title": "至少它还记得：AI陪伴背后的真正担忧",
-          "highlight": "对一些人来说，AI是他们唯一稳定的陪伴——这才是真正的担忧。",
-          "summary": "文章讨论父母对AI影响孩子的恐惧，但也指出对部分人而言，AI反而是他们唯一稳定的陪伴。作者Tom Wooldridge认为，真正值得担忧的不是AI会对孩子做什么，而是这种稳定陪伴的缺失与替代。文章值得读，因为它把焦点从技术恐慌转向关系与陪伴的现实。",
-          "failureAnalysis": "关键提醒是：讨论AI育儿时，别只盯着技术风险，也要看见一些家庭缺乏稳定陪伴的现实。"
+          "title": "传奇大提琴家帕布罗·卡萨尔斯93岁谈创作活力：用爱工作如何延长生命",
+          "highlight": "工作且从不无聊的人永远不会老；对有价值之事的投入与兴趣，是年龄的最佳解药。",
+          "summary": "文章以93岁的传奇大提琴家帕布罗·卡萨尔斯为线索，讨论创作活力与年龄的关系。其核心说法是，持续工作且不感到无聊的人不会被年龄定义，对有价值事物的兴趣能让人保持生命力。对非技术读者而言，这提供了关于工作意义、好奇心与终身投入的简洁提醒。",
+          "failureAnalysis": "关键启示：让人保持活力的不是忙碌本身，而是对有价值之事持续的兴趣与投入；管理者可据此关注工作的意义感和好奇心，而不只盯短期产出。"
         },
         "en": {
-          "highlight": "For some, it is the only steady presence they have—and that is the real worry.",
-          "summary": "The essay examines parents’ fears about what AI will do to children, while noting that for some, AI is the only steady presence they have. Tom Wooldridge argues that this dependence, rather than the technology alone, is the real concern. It is worth reading because it shifts the focus from tech panic to the reality of care and companionship.",
-          "failureAnalysis": "The key takeaway is to look beyond technical risk when discussing AI parenting and recognize the lack of steady companionship in some families.",
-          "title": "At Least It Remembers: The Real Worry Behind AI Companionship"
+          "highlight": "The man who works and is never bored is never old. Work and interest in worthwhile things are the best remedy for age.",
+          "summary": "The article uses legendary cellist Pablo Casals at age 93 to reflect on creative vitality and aging. Its central claim is that people who keep working without boredom do not feel old, and that interest in worthwhile things is a remedy for age. It is worth reading as a short reminder about meaning, curiosity, and sustained engagement in work.",
+          "failureAnalysis": "The key takeaway is that vitality comes less from busyness than from sustained interest in worthwhile work; managers should pay attention to meaning and curiosity, not only short-term output.",
+          "title": "Pablo Casals at 93 on Creative Vitality and How Working with Love Prolongs Life"
         }
       }
     },
     {
-      "id": "paper-2611.24206",
+      "id": "paper-2611.24163",
       "category": "paper",
-      "title": "GALA: Gallery-Level Alignment for Real-Life Vision Decoding from EEG",
+      "title": "Stabilizing Neural-to-Image Retrieval with Frequency-Domain Priors and Adaptive Supervision",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2611.24206v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2611.24206",
-      "publishedAt": "2026-11-18T10:40:59.0000000Z",
+      "url": "https://arxiv.org/pdf/2611.24163v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.24163",
+      "publishedAt": "2026-11-18T10:06:13.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
       "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
@@ -238,17 +238,17 @@
         ],
         "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
       },
-      "highlight": "GALA聚焦真实生活脑电视觉解码，针对被试内表现强而现有方法仍失败的问题提出图库级对齐。",
-      "summary": "该论文提出GALA，将图库级对齐用于从EEG解码真实生活视觉体验。摘要称EEG视觉解码在被试内设置中表现较强，而现有方法仍有失败，因此该工作关注更接近真实生活的图库级解码场景。所给摘要文本在“fail to ge”处截断，具体方法、数据和结论尚无法核实。",
-      "failureAnalysis": "可用摘要仅到“current methods fail to ge”便截断，未提供GALA的具体方法、实验设置或量化结果；因此无法判断其是否真正改善真实生活EEG解码。",
+      "highlight": "从脑活动推断所见视觉刺激的视觉神经解码，正通过频域先验与自适应监督提升神经到图像检索的稳定性。",
+      "summary": "论文面向视觉神经解码，目标是从大脑活动推断受试者感知的视觉刺激。作者提出频域先验与自适应监督，以稳定神经到图像检索。摘要提到预训练视觉-语言模型的进展，但所给文本尚未展开实验与结果。",
+      "failureAnalysis": "所给文本仅为摘要开头，未提供数据集、基线、量化结果或消融实验，因此无法判断频域先验与自适应监督的实际增益与泛化边界。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "GALA: Gallery-Level Alignment for Real-Life Vision Decoding from EEG Philippe Forest1 Giulia Lioi1 Mai Quyen Pham1 Alix Lamouroux2 Adrien Merlini1 Javen Shi3 1IMT Atlantique, France 2Center for Mind/Brain Sciences (CIMeC), University of Trento, Italy 3Australian Institute for Machine Learning, University of Adelaide, Australia Abstract Neural decoding of visual experience from electroen- cephalography (EEG) has achieved strong performance in intra-subject settings, but current methods fail to generalize across individuals: on the standard 200-way benchmark THINGS-EEG-2, top-1 accuracy drops from above 80% within subjects to about 32% for an unseen subject. Adapting a pre-trained encoder to new subjects and sessions typically requires labeled data, a bottleneck whose collection time severely limits practical device deployment. In a practi- cal Brain-Computer Interface (BCI), however, the possible outcomes are known in advance and form a gallery of can- didates, and the unlabeled EEG of the user accumulates as soon as the device is used.",
+      "sourceExcerpt": "1 Stabilizing Neural-to-Image Retrieval with Frequency-Domain Priors and Adaptive Supervision YaoYang Liu, ZhuoShi Tang, Haopeng Lai, Weijun Sun*, Xiaozhao Fang*, Jie Wen, Fellow, IEEE Abstract—Visual neural decoding aims to infer perceived visual stimuli from brain activity, offering important insights into human visual cognition while enabling transformative applica- tions in brain computer interfaces and artificial intelligence. Recent advances in pretrained vision-language models have provided a semantically rich representation space for this task. However, reliable alignment between EEG/MEG signals and visual embeddings remains challenging because neural responses are noisy, highly variable across trials, and subject dependent.",
       "translations": {
         "zh": {
-          "title": "GALA：面向真实生活EEG视觉解码的图库级对齐",
-          "highlight": "GALA聚焦真实生活脑电视觉解码，针对被试内表现强而现有方法仍失败的问题提出图库级对齐。",
-          "summary": "该论文提出GALA，将图库级对齐用于从EEG解码真实生活视觉体验。摘要称EEG视觉解码在被试内设置中表现较强，而现有方法仍有失败，因此该工作关注更接近真实生活的图库级解码场景。所给摘要文本在“fail to ge”处截断，具体方法、数据和结论尚无法核实。",
-          "failureAnalysis": "可用摘要仅到“current methods fail to ge”便截断，未提供GALA的具体方法、实验设置或量化结果；因此无法判断其是否真正改善真实生活EEG解码。",
+          "title": "频域先验与自适应监督稳定神经到图像检索",
+          "highlight": "从脑活动推断所见视觉刺激的视觉神经解码，正通过频域先验与自适应监督提升神经到图像检索的稳定性。",
+          "summary": "论文面向视觉神经解码，目标是从大脑活动推断受试者感知的视觉刺激。作者提出频域先验与自适应监督，以稳定神经到图像检索。摘要提到预训练视觉-语言模型的进展，但所给文本尚未展开实验与结果。",
+          "failureAnalysis": "所给文本仅为摘要开头，未提供数据集、基线、量化结果或消融实验，因此无法判断频域先验与自适应监督的实际增益与泛化边界。",
           "paperCard": {
             "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
             "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
@@ -263,10 +263,10 @@
           }
         },
         "en": {
-          "title": "GALA: Gallery-Level Alignment for Real-Life Vision Decoding from EEG",
-          "highlight": "GALA targets real-life EEG vision decoding, addressing strong intra-subject performance alongside current methods that still fail.",
-          "summary": "The paper proposes GALA, applying gallery-level alignment to decode real-life visual experience from EEG. The abstract reports strong intra-subject EEG decoding but says current methods still fail, so the work focuses on a gallery-level setting closer to real life. The supplied abstract is truncated at “fail to ge,” so the methods, data, and conclusions cannot be verified.",
-          "failureAnalysis": "The available abstract ends at “current methods fail to ge,” with no details on GALA’s method, experimental setup, or quantitative results. It is therefore impossible to judge whether GALA improves real-life EEG decoding.",
+          "title": "Stabilizing Neural-to-Image Retrieval with Frequency-Domain Priors and Adaptive Supervision",
+          "highlight": "The study addresses visual neural decoding from brain activity, using frequency-domain priors and adaptive supervision to stabilize neural-to-image retrieval.",
+          "summary": "The paper targets visual neural decoding, aiming to infer perceived visual stimuli from brain activity. It proposes frequency-domain priors and adaptive supervision to stabilize neural-to-image retrieval. The supplied abstract also mentions advances in pretrained vision-language models but does not provide experimental details or results.",
+          "failureAnalysis": "The supplied text is only the opening of an abstract and gives no datasets, baselines, quantitative results, or ablations, so the actual gains and generalization limits of the proposed method cannot be assessed.",
           "paperCard": {
             "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
             "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
@@ -283,47 +283,38 @@
       }
     },
     {
-      "id": "ai-github-1437869585",
+      "id": "ai-feed-c91c3d7d684145d7ae9a72aed5c99f55",
       "category": "ai",
-      "title": "mdiri-ai/SoduWork",
-      "source": "GitHub Search",
-      "url": "https://github.com/mdiri-ai/SoduWork",
+      "title": "The War Against Slop and an Emerging Weapon to Fight it: Formal Verification",
+      "source": "Latent Space",
+      "url": "https://latent.space/p/formal-verification/",
       "abstractUrl": null,
-      "publishedAt": "2026-10-29T02:43:14.0000000Z",
-      "scoreLabel": "GitHub 4145 stars",
-      "aiArticleType": "application_innovation",
-      "evidenceAnchors": [
-        {
-          "label": "GitHub",
-          "kind": "primary"
-        },
-        {
-          "label": "Community signal",
-          "kind": "secondary"
-        }
-      ],
-      "evidenceLabel": "GitHub + Community signal",
-      "hasPrimaryAnchor": true,
-      "requiresRiskAnalysis": true,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-      "summary": "SoduWork 是 GitHub 上一个获得 4145 stars 的开源项目，定位为团队及其 AI 智能体的“AI 原生引擎”，强调多运行框架、多智能体与自托管能力。它值得关注是因为它瞄准的是企业级智能体落地的组织与编排层，而非单一模型能力，自托管也回应了数据合规诉求。但仓库公开信息仅有描述与热度，产品成熟度与真实使用价值仍需进一步验证。",
-      "failureAnalysis": "多智能体编排赛道竞争激烈，LangGraph、AutoGen 等开源方案已占据开发者心智，仅靠“AI 原生引擎”的定位难以形成清晰差异化。自托管虽然迎合合规需求，却把部署、运维与模型接入成本转移给客户，容易在缺少成熟文档与生态时流失试用者。4145 stars 属于早期热度信号，若无法证明具体场景下的效率提升与稳定收益，项目可能停留在演示阶段而难以形成付费或长期贡献。",
-      "aiSelectionScore": 4145,
-      "highlight": "面向团队及其智能体的 AI 原生引擎，支持多种运行框架（multi-harness）、多智能体协作与自托管部署。",
+      "publishedAt": "2026-11-20T21:18:41.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [],
+      "evidenceLabel": "No clear evidence",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
+      "summary": "文章讨论形式化验证：用数学方法证明软件符合规格，过去依赖专家手工完成。随着 AI 与 Lean 结合，证明过程正被部分自动化，这可能改变软件质量的保障方式。对非技术管理者而言，它提供了一个判断高风险软件是否值得投入更高验证成本的视角。",
+      "failureAnalysis": "关键要点是：形式化验证的价值在于把正确性变成可检查的证明，但引入 AI 自动化并不自动等于零成本或零风险。管理者应关注适用场景、工具成熟度和团队能力，而不是把它当作万能质量保证。",
+      "aiSelectionScore": 100,
+      "highlight": "用数学证明软件正确，传统上需要专家投入；如今 AI 与 Lean 正在帮助自动化这一过程。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "GitHub repository with 4145 stars and recent public activity. Description: The AI-native engine for teams and their agents. Multi-harness, multi-agent, self-hosted.",
+      "sourceExcerpt": "Proving software correct with math has traditionally required specialist work. Now AI and Lean are helping automate the process.",
       "translations": {
         "zh": {
-          "title": "SoduWork：面向团队与智能体的 AI 原生自托管引擎",
-          "highlight": "面向团队及其智能体的 AI 原生引擎，支持多种运行框架（multi-harness）、多智能体协作与自托管部署。",
-          "summary": "SoduWork 是 GitHub 上一个获得 4145 stars 的开源项目，定位为团队及其 AI 智能体的“AI 原生引擎”，强调多运行框架、多智能体与自托管能力。它值得关注是因为它瞄准的是企业级智能体落地的组织与编排层，而非单一模型能力，自托管也回应了数据合规诉求。但仓库公开信息仅有描述与热度，产品成熟度与真实使用价值仍需进一步验证。",
-          "failureAnalysis": "多智能体编排赛道竞争激烈，LangGraph、AutoGen 等开源方案已占据开发者心智，仅靠“AI 原生引擎”的定位难以形成清晰差异化。自托管虽然迎合合规需求，却把部署、运维与模型接入成本转移给客户，容易在缺少成熟文档与生态时流失试用者。4145 stars 属于早期热度信号，若无法证明具体场景下的效率提升与稳定收益，项目可能停留在演示阶段而难以形成付费或长期贡献。"
+          "title": "对抗低质软件之战：形式化验证成为新武器",
+          "highlight": "用数学证明软件正确，传统上需要专家投入；如今 AI 与 Lean 正在帮助自动化这一过程。",
+          "summary": "文章讨论形式化验证：用数学方法证明软件符合规格，过去依赖专家手工完成。随着 AI 与 Lean 结合，证明过程正被部分自动化，这可能改变软件质量的保障方式。对非技术管理者而言，它提供了一个判断高风险软件是否值得投入更高验证成本的视角。",
+          "failureAnalysis": "关键要点是：形式化验证的价值在于把正确性变成可检查的证明，但引入 AI 自动化并不自动等于零成本或零风险。管理者应关注适用场景、工具成熟度和团队能力，而不是把它当作万能质量保证。"
         },
         "en": {
-          "highlight": "An AI-native engine for teams and their agents, offering multi-harness, multi-agent, and self-hosted deployment.",
-          "summary": "SoduWork is a GitHub project with 4,145 stars positioned as an AI-native engine for teams and their agents, emphasizing multi-harness support, multi-agent collaboration, and self-hosting. It is worth watching because it targets the orchestration layer for enterprise agent adoption rather than raw model capability, and self-hosting addresses data-compliance concerns. However, only the repository description and popularity signal are known, so maturity and real-world value remain unverified.",
-          "failureAnalysis": "The multi-agent orchestration space is crowded with established open-source options, and self-hosting shifts deployment and operations costs onto customers; without clear differentiation, strong documentation, and proof of measurable efficiency gains, the project may remain a demo rather than an adopted product.",
-          "title": "SoduWork: an AI-native, self-hosted engine for teams and their agents"
+          "highlight": "Proving software correct with math traditionally required specialist work; now AI and Lean are helping automate the process.",
+          "summary": "The article discusses formal verification: using mathematical methods to prove software meets its specifications, a task that historically depended on specialists. With AI and Lean, parts of the proof process are being automated, potentially changing how software quality is assured. For non-technical leaders, it offers a lens for judging when high-risk software justifies the higher cost of stronger verification.",
+          "failureAnalysis": "The key takeaway is that formal verification turns correctness into checkable proofs, but AI automation does not automatically make it free or risk-free. Leaders should examine the use cases, tool maturity, and team capabilities rather than treating it as a universal quality guarantee.",
+          "title": "The War Against Slop and Formal Verification as an Emerging Weapon"
         }
       }
     }
