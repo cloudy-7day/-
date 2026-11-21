@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-11-20",
+  "issueDate": "2026-11-21",
   "updateStatus": "complete",
-  "contentFingerprint": "7c1f57c5893906fbe611ab034aa480dd30b2201041f5db8756b94e7f6d32cb21",
+  "contentFingerprint": "da0e82310436fe1b2b8d58dfc913653cab1c5abcff55460699cf480b2a155567",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,216 +10,216 @@
   ],
   "articles": [
     {
-      "id": "news-440f223d689b4d41b8f50c251a4a012c",
+      "id": "news-1825b2d4c0e44f39ae791e015ad7f668",
       "category": "domestic",
-      "title": "第三届兰花奖颁奖典礼在北京举行 10位国际友人获奖",
+      "title": "习近平新时代中国特色社会主义思想海外研究国际论坛（2026）在北京举行 李书磊出席开幕式并发表主旨演讲",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-20/10735574.shtml",
-      "publishedAt": "2026-11-20T14:03:02.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-21/10735898.shtml",
+      "publishedAt": "2026-11-21T13:11:12.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "第三届兰花奖颁奖典礼11月20日在北京举行，中共中央政治局委员、中央宣传部部长李书磊出席并致辞。",
-      "summary": "报道显示，第三届兰花奖颁奖典礼于11月20日在北京举行，10位国际友人获奖，李书磊出席并致辞。公开信息可核实的是典礼举行、颁奖对象数量以及中宣部部长出席致辞；报道未给出获奖者名单、评选标准或后续交流安排。",
-      "failureAnalysis": "可核实的公共影响集中在官方出席与颁奖事实，信息量有限；阅读时应区分仪式性报道与尚未被材料证明的更大影响。",
+      "highlight": "习近平新时代中国特色社会主义思想海外研究国际论坛（2026）21日在北京开幕，李书磊出席开幕式并发表主旨演讲。",
+      "summary": "据中国新闻网国内报道，该论坛于11月21日在北京开幕。中共中央政治局委员、中宣部部长李书磊出席开幕式并发表主旨演讲。这条消息可用于了解这一官方国际学术交流活动的公开安排与议题方向。",
+      "failureAnalysis": "现有信息仅覆盖论坛开幕和主旨演讲，尚不足以判断具体成果或后续影响；阅读价值在于确认公开事件与出席层级，后续可关注官方发布的会议内容。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社北京11月20日电 第三届兰花奖颁奖典礼11月20日在北京举行。中共中央政治局委员、中央宣传部部长李书磊出席并致辞。",
+      "sourceExcerpt": "新华社北京11月21日电 习近平新时代中国特色社会主义思想海外研究国际论坛(2026)21日在北京开幕。中共中央政治局委员、中宣部部长李书磊出席开幕式并发表主旨演讲。",
       "translations": {
         "zh": {
-          "title": "第三届兰花奖颁奖典礼在北京举行，10位国际友人获奖",
-          "highlight": "第三届兰花奖颁奖典礼11月20日在北京举行，中共中央政治局委员、中央宣传部部长李书磊出席并致辞。",
-          "summary": "报道显示，第三届兰花奖颁奖典礼于11月20日在北京举行，10位国际友人获奖，李书磊出席并致辞。公开信息可核实的是典礼举行、颁奖对象数量以及中宣部部长出席致辞；报道未给出获奖者名单、评选标准或后续交流安排。",
-          "failureAnalysis": "可核实的公共影响集中在官方出席与颁奖事实，信息量有限；阅读时应区分仪式性报道与尚未被材料证明的更大影响。"
+          "title": "习近平新时代中国特色社会主义思想海外研究国际论坛（2026）在北京举行，李书磊出席开幕式并发表主旨演讲",
+          "highlight": "习近平新时代中国特色社会主义思想海外研究国际论坛（2026）21日在北京开幕，李书磊出席开幕式并发表主旨演讲。",
+          "summary": "据中国新闻网国内报道，该论坛于11月21日在北京开幕。中共中央政治局委员、中宣部部长李书磊出席开幕式并发表主旨演讲。这条消息可用于了解这一官方国际学术交流活动的公开安排与议题方向。",
+          "failureAnalysis": "现有信息仅覆盖论坛开幕和主旨演讲，尚不足以判断具体成果或后续影响；阅读价值在于确认公开事件与出席层级，后续可关注官方发布的会议内容。"
         },
         "en": {
-          "highlight": "The third Orchid Award ceremony was held in Beijing on November 20, and senior official Li Shulei attended and delivered remarks.",
-          "summary": "The report says the third Orchid Award ceremony took place in Beijing on November 20, with 10 international friends receiving awards and Li Shulei attending and speaking. It is worth reading as an official record of a cultural-exchange event, though the known excerpt does not list the winners or detail follow-up activities.",
-          "failureAnalysis": "The verifiable public impact is limited to the ceremony, the awards to 10 international friends, and the senior official’s attendance and remarks. Readers should separate ceremonial facts from any broader impact that the excerpt does not substantiate.",
-          "title": "Third Orchid Award Ceremony Held in Beijing, 10 International Friends Honored"
+          "highlight": "The 2026 international forum on overseas research into Xi Jinping Thought on Socialism with Chinese Characteristics for a New Era opened in Beijing; Li Shulei delivered a keynote speech.",
+          "summary": "According to China News Service's domestic report, the forum opened in Beijing on November 21. Li Shulei, a member of the CPC Central Committee Political Bureau and head of the Publicity Department, attended the opening ceremony and delivered a keynote speech. The item is worth reading as a public record of an official international academic exchange event.",
+          "failureAnalysis": "The available information covers only the opening and keynote speech, so it is not enough to assess specific outcomes or later impact. Its practical value lies in confirming the public event and level of attendance, with follow-up official releases needed for substantive details.",
+          "title": "International Forum on Overseas Research on Xi Jinping Thought on Socialism with Chinese Characteristics for a New Era (2026) Opens in Beijing"
         }
       }
     },
     {
-      "id": "news-42d8a4fb587f492fad79403e237b4594",
+      "id": "news-3be955906878428b967852f5c6979296",
       "category": "domestic",
-      "title": "能源大市山西朔州：煤炭由燃料变原料 新能源装机瞄准1800万千瓦",
-      "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-20/10735562.shtml",
-      "publishedAt": "2026-11-20T13:56:53.0000000+00:00",
+      "title": "ESG传播，不能止于一纸报告",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-21/10735878.shtml",
+      "publishedAt": "2026-11-21T12:34:50.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "朔州将加快构建新型能源体系和现代化产业体系，努力蹚出资源型经济转型发展的朔州路径。",
-      "summary": "中新网报道，山西朔州在“十五五”开局起步发布会上表示，将加快构建新型能源体系和现代化产业体系，探索资源型经济转型路径。标题显示，其方向包括推动煤炭由燃料向原料转变，以及新能源装机瞄准1800万千瓦。这值得关注，因为这是官方信源披露的资源型城市能源坐标与产业体系调整信号。",
-      "failureAnalysis": "关键看点是资源型城市将能源转型纳入“十五五”规划，并以煤炭原料化、新能源装机目标给出可核验的政策坐标。",
+      "selectionReason": "Domestic priority: 4",
+      "highlight": "企业的绿色低碳实践，不只体现在自身生产环节，也延伸至供应链的一颗螺丝、一道加工工艺乃至生产用电。",
+      "summary": "文章以一台风机由上万个零部件组成为切入点，引述运达风电原董事长高玲的观点：企业绿色低碳实践不仅发生在自身生产环节，也延伸到供应链的螺丝、加工工艺和生产用电。它值得读的地方在于提示ESG传播不能只停留在报告层面，而要用供应链等更细颗粒度的实践支撑表达。",
+      "failureAnalysis": "关键点在于，ESG传播的可信度取决于供应链等细节能否被持续披露和验证；只靠一份报告很难承载完整叙事。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网太原11月20日电 (记者 李庭耀 杨静)山西朔州，一座因煤而兴的能源大市，正在“十五五”规划中重新定义自己的能源坐标。11月20日，中共山西省委宣传部、山西省人民政府新闻办公室举行开局起步“十五五”系列主题新闻发布会，朔州市委副书记、市长吴秀玲表示，朔州将加快构建新型能源体系和现代化产业体系，努力蹚出资源型经济转型发展的朔州路径。",
+      "sourceExcerpt": "中新网杭州11月21日电 (钱晨菲)一台风机由上万个零部件组成，在运达风电原董事长高玲看来，企业的绿色低碳实践，不只体现在自身生产环节，也延伸至供应链的一颗螺丝、一道加工工艺乃至生产用电。",
       "translations": {
         "zh": {
-          "title": "能源大市山西朔州：煤炭由燃料变原料，新能源装机瞄准1800万千瓦",
-          "highlight": "朔州将加快构建新型能源体系和现代化产业体系，努力蹚出资源型经济转型发展的朔州路径。",
-          "summary": "中新网报道，山西朔州在“十五五”开局起步发布会上表示，将加快构建新型能源体系和现代化产业体系，探索资源型经济转型路径。标题显示，其方向包括推动煤炭由燃料向原料转变，以及新能源装机瞄准1800万千瓦。这值得关注，因为这是官方信源披露的资源型城市能源坐标与产业体系调整信号。",
-          "failureAnalysis": "关键看点是资源型城市将能源转型纳入“十五五”规划，并以煤炭原料化、新能源装机目标给出可核验的政策坐标。"
+          "title": "ESG传播，不能止于一纸报告",
+          "highlight": "企业的绿色低碳实践，不只体现在自身生产环节，也延伸至供应链的一颗螺丝、一道加工工艺乃至生产用电。",
+          "summary": "文章以一台风机由上万个零部件组成为切入点，引述运达风电原董事长高玲的观点：企业绿色低碳实践不仅发生在自身生产环节，也延伸到供应链的螺丝、加工工艺和生产用电。它值得读的地方在于提示ESG传播不能只停留在报告层面，而要用供应链等更细颗粒度的实践支撑表达。",
+          "failureAnalysis": "关键点在于，ESG传播的可信度取决于供应链等细节能否被持续披露和验证；只靠一份报告很难承载完整叙事。"
         },
         "en": {
-          "highlight": "Shuozhou will accelerate the building of a new energy system and a modern industrial system, and strive to carve out a Shuozhou path for resource-based economic transformation.",
-          "summary": "China News Service reports that Shuozhou, a coal-based energy city in Shanxi, said at a Nov. 20 press conference on the 15th Five-Year Plan that it will speed up building a new energy system and a modern industrial system and explore a path for resource-based economic transformation. The headline indicates directions including turning coal from fuel into feedstock and targeting 18 million kilowatts of new-energy installed capacity. It is worth reading as an official-source signal of how a resource-dependent city is resetting its energy and industrial coordinates.",
-          "failureAnalysis": "The key takeaway is that a resource-based city is putting energy transition into its 15th Five-Year Plan, with coal feedstock conversion and a new-energy capacity target providing checkable policy markers.",
-          "title": "Energy city Shuozhou in Shanxi: coal shifts from fuel to feedstock as new-energy capacity targets 18 million kW"
+          "highlight": "Corporate green and low-carbon practices are not confined to a company’s own production; they extend to a single screw, a processing step and even electricity use in the supply chain.",
+          "summary": "Using a wind turbine made of tens of thousands of parts as an entry point, the article cites former Windey chairman Gao Ling’s view that corporate green and low-carbon practices go beyond a company’s own production and reach supply-chain details such as screws, processing steps and electricity use. It is worth reading because it suggests ESG communication should not remain at the report level but be supported by finer-grained supply-chain practices.",
+          "failureAnalysis": "The key point is that the credibility of ESG communication depends on whether supply-chain details can be continuously disclosed and verified; a single report can hardly carry the full narrative.",
+          "title": "ESG Communication Cannot Stop at a Report"
         }
       }
     },
     {
-      "id": "news-2f2e3f43eb0b4de4880cd01fd9784a7b",
+      "id": "news-83964a1bccde4670aeccf060a3e425ac",
       "category": "domestic",
-      "title": "海南自贸港封关近一年 制度集成创新为发展注入新动能",
-      "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-20/10735543.shtml",
-      "publishedAt": "2026-11-20T13:35:52.0000000+00:00",
+      "title": "第七届世界海洋生物多样性大会在比利时举行",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-21/10735916.shtml",
+      "publishedAt": "2026-11-21T13:52:52.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "会上发布的7项案例，集中展现海南在封关运作、政策落地转化、产业提质升级、营商环境优化等领域的创新举措。",
-      "summary": "文章称，海南自由贸易港第24批制度集成创新案例在海口发布，共7项，聚焦保障封关运作、政策落地转化、产业提质升级、营商环境优化、要素高效保障等重点领域。对关注海南自贸港封关运作进展和制度创新的人来说，这提供了官方发布的最新案例线索。",
-      "failureAnalysis": "可核验的公共影响主要来自官方发布的7项案例，具体效果仍需看后续落地情况。评估时应关注制度集成创新如何服务封关运作，而非只看案例数量。",
+      "selectionReason": "Domestic priority: 3",
+      "highlight": "大会于11月17日至20日在比利时布鲁日举行，围绕全球海洋生物现状、建立“数字海洋”体系等展开研讨。",
+      "summary": "中国新闻网报道，第七届世界海洋生物多样性大会于11月17日至20日在比利时西北部城市布鲁日举行，研讨议题包括全球海洋生物现状和“数字海洋”体系建设。中国南海研究院和厦门大学派代表参会。可核查的公开信息是会议的时间、地点、议题和中方参会机构，因此这条消息可作为观察中国参与全球海洋治理的公开信号。",
+      "failureAnalysis": "这条公开信息只覆盖了会期、地点、议题和参会机构，未披露具体成果或数据，信息量有限，判断其实际影响还需等待后续官方发布。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网海口11月20日电(记者 王子谦)海南自由贸易港制度集成创新案例(第24批)新闻发布会20日在海口举行，会上发布的7项案例，集中展现了海南在保障封关运作、政策落地转化、产业提质升级、营商环境优化、要素高效保障等重点领域的创新举措。",
+      "sourceExcerpt": "中新社比利时布鲁日11月21日电 (记者 德永健)第七届世界海洋生物多样性大会于11月17日至20日在比利时西北部城市布鲁日举行，围绕全球海洋生物现状、建立“数字海洋”体系等展开研讨。中国南海研究院和厦门大学派代表参会。",
       "translations": {
         "zh": {
-          "title": "海南自贸港封关近一年：第24批制度集成创新案例发布",
-          "highlight": "会上发布的7项案例，集中展现海南在封关运作、政策落地转化、产业提质升级、营商环境优化等领域的创新举措。",
-          "summary": "文章称，海南自由贸易港第24批制度集成创新案例在海口发布，共7项，聚焦保障封关运作、政策落地转化、产业提质升级、营商环境优化、要素高效保障等重点领域。对关注海南自贸港封关运作进展和制度创新的人来说，这提供了官方发布的最新案例线索。",
-          "failureAnalysis": "可核验的公共影响主要来自官方发布的7项案例，具体效果仍需看后续落地情况。评估时应关注制度集成创新如何服务封关运作，而非只看案例数量。"
+          "title": "第七届世界海洋生物多样性大会在比利时布鲁日举行",
+          "highlight": "大会于11月17日至20日在比利时布鲁日举行，围绕全球海洋生物现状、建立“数字海洋”体系等展开研讨。",
+          "summary": "中国新闻网报道，第七届世界海洋生物多样性大会于11月17日至20日在比利时西北部城市布鲁日举行，研讨议题包括全球海洋生物现状和“数字海洋”体系建设。中国南海研究院和厦门大学派代表参会。可核查的公开信息是会议的时间、地点、议题和中方参会机构，因此这条消息可作为观察中国参与全球海洋治理的公开信号。",
+          "failureAnalysis": "这条公开信息只覆盖了会期、地点、议题和参会机构，未披露具体成果或数据，信息量有限，判断其实际影响还需等待后续官方发布。"
         },
         "en": {
-          "highlight": "The seven cases released at the meeting highlight Hainan’s innovations in ensuring customs closure, policy implementation, industrial upgrading, and business-environment improvement.",
-          "summary": "The article reports that Hainan released the 24th batch of institutional integration innovation cases, including seven cases focused on supporting customs closure operations, policy implementation, industrial upgrading, business environment optimization, and efficient factor guarantees. It is worth reading for a concise official update on the free trade port’s institutional innovation priorities.",
-          "failureAnalysis": "The verifiable public impact is the release of seven official cases; practical results will depend on how they are implemented.",
-          "title": "Hainan Free Trade Port Releases 24th Batch of Institutional Innovation Cases as Customs Closure Nears"
+          "highlight": "The conference ran from November 17 to 20 in Bruges, Belgium, with discussions on the state of global marine biodiversity and building a “digital ocean” system.",
+          "summary": "China News Service reports that the Seventh World Conference on Marine Biodiversity took place from November 17 to 20 in Bruges, in northwestern Belgium, covering topics such as the current state of global marine life and the building of a “digital ocean” system. Representatives from the Chinese Academy of South China Sea Studies and Xiamen University attended. The verifiable facts are the dates, venue, agenda topics and the Chinese participating institutions, making this a public signal of China's engagement in global ocean governance.",
+          "failureAnalysis": "The public information covers only dates, venue, agenda topics and participating institutions, with no concrete outcomes or data disclosed, so its practical impact cannot yet be assessed and will depend on follow-up official releases.",
+          "title": "Seventh World Conference on Marine Biodiversity Held in Bruges, Belgium"
         }
       }
     },
     {
-      "id": "news-62519a92ff9f43ff84142648aee55af2",
+      "id": "news-3d74fae96d3546f6b93a05f677fe6d8d",
       "category": "international",
-      "title": "Trump threatens ‘tremendous penalties’ on US tech firms that build datacenters abroad",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/us-news/2026/nov/20/trump-datacenters-white-house",
-      "publishedAt": "2026-11-20T21:47:41.0000000+00:00",
+      "title": "Killer robots: U.N. talks fall short of hopes for legally binding rules",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/11/21/nx-s1-6047916/killer-robots-un-drones",
+      "publishedAt": "2026-11-21T14:18:17.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "特朗普威胁将对在海外建设数据中心的美国科技公司施加“巨额惩罚”，但未提供细节，并称尚未告知自己的官员。",
-      "summary": "文章报道，特朗普在白宫记者会上威胁对在海外建设数据中心的美国科技公司施加“巨额惩罚”，但没有说明具体措施，并称尚未告知政府官员。记者会还涉及伊朗“脏弹”情报、他与普京和习近平的关系，以及为副总统万斯把共和党中期选举失利归因于伊朗战争的说法辩护。读者可借此了解美国科技与数据中心政策可能面临的政治不确定性。",
-      "failureAnalysis": "关键点：这类政策信号目前只有口头威胁、缺少执行细节，企业应关注后续规则，而不是先假定成本一定发生。",
+      "highlight": "日内瓦联合国谈判未能就自主武器达成具有约束力的规则，人道组织警告军事AI进展远快于外交。",
+      "summary": "报道指出，日内瓦联合国谈判未能为自主武器制定具有法律约束力的规则。人道组织警告，军事人工智能的发展速度已远超外交进程，这一治理缺口值得关注。",
+      "failureAnalysis": "关键要点：自主武器治理的外交进展落后于军事AI发展，具有约束力的国际规则仍未形成。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "President gives wide-ranging White House press conference and says he has ‘fantastic relationships’ with Putin and Xi Donald Trump threatened on Friday to impose “tremendous penalties” on American tech companies that build datacenters outside the US, though he gave no details and told reporters he had not yet informed his own officials about the plan. In a discursive press conference from the White House briefing room, Trump also said he would “look into” the report that Iran had been planning to possibly detonate a “dirty bomb” in Washington DC, and backed JD Vance over comments the vice-president made blaming Republican midterm losses on the Iran war.",
+      "sourceExcerpt": "talks in Geneva have failed to deliver binding rules on autonomous weapons, as humanitarian groups warn that military AI is advancing far faster than diplomacy.",
       "translations": {
         "zh": {
-          "title": "特朗普威胁对海外建数据中心的美国科技公司实施“巨额惩罚”",
-          "highlight": "特朗普威胁将对在海外建设数据中心的美国科技公司施加“巨额惩罚”，但未提供细节，并称尚未告知自己的官员。",
-          "summary": "文章报道，特朗普在白宫记者会上威胁对在海外建设数据中心的美国科技公司施加“巨额惩罚”，但没有说明具体措施，并称尚未告知政府官员。记者会还涉及伊朗“脏弹”情报、他与普京和习近平的关系，以及为副总统万斯把共和党中期选举失利归因于伊朗战争的说法辩护。读者可借此了解美国科技与数据中心政策可能面临的政治不确定性。",
-          "failureAnalysis": "关键点：这类政策信号目前只有口头威胁、缺少执行细节，企业应关注后续规则，而不是先假定成本一定发生。"
+          "title": "杀手机器人：联合国谈判未达成具约束力规则",
+          "highlight": "日内瓦联合国谈判未能就自主武器达成具有约束力的规则，人道组织警告军事AI进展远快于外交。",
+          "summary": "报道指出，日内瓦联合国谈判未能为自主武器制定具有法律约束力的规则。人道组织警告，军事人工智能的发展速度已远超外交进程，这一治理缺口值得关注。",
+          "failureAnalysis": "关键要点：自主武器治理的外交进展落后于军事AI发展，具有约束力的国际规则仍未形成。"
         },
         "en": {
-          "highlight": "Trump threatened “tremendous penalties” on US tech firms building datacenters abroad, but gave no details and said he had not informed officials.",
-          "summary": "The article reports that Trump threatened “tremendous penalties” on American tech companies that build datacenters outside the US, without giving details and saying he had not yet informed his officials. At a wide-ranging White House press conference, he also addressed an Iran “dirty bomb” report, his relationships with Putin and Xi, and backed JD Vance over blaming Republican midterm losses on the Iran war. It is worth reading for a view of the political uncertainty around US tech and datacenter policy.",
-          "failureAnalysis": "Key takeaway: the threat is currently a verbal policy signal with no implementation details, so companies should watch follow-up rules rather than assume immediate costs.",
-          "title": "Trump Threatens ‘Tremendous Penalties’ on US Tech Firms Building Datacenters Abroad"
+          "highlight": "U.N. talks in Geneva have failed to deliver binding rules on autonomous weapons, as humanitarian groups warn that military AI is advancing far faster than diplomacy.",
+          "summary": "The article reports that U.N. talks in Geneva did not produce binding rules for autonomous weapons. Humanitarian groups warn that military AI is advancing much faster than diplomacy, making the governance gap a pressing international issue.",
+          "failureAnalysis": "Key takeaway: diplomacy on autonomous weapons is lagging behind military AI, and binding international rules remain absent.",
+          "title": "Killer Robots: U.N. Talks Fall Short of Binding Rules"
         }
       }
     },
     {
-      "id": "news-d1fe5713ef8a4a25a76c74b52095756d",
+      "id": "news-aeed7f11018942de98c70f6d0aaac2a5",
       "category": "international",
-      "title": "Nasdaq erases all 2026 gains as AI sell-off dampens Anthropic’s second day of trading",
+      "title": "China commits to low-carbon electrification and help for others to improve",
       "source": "The Guardian World",
-      "url": "https://www.theguardian.com/business/2026/nov/20/global-stock-markets-slump-anthropic-ipo-ai-sell-off",
-      "publishedAt": "2026-11-20T21:38:17.0000000+00:00",
+      "url": "https://www.theguardian.com/environment/2026/nov/21/china-commits-low-carbon-electrification-help-others-improve",
+      "publishedAt": "2026-11-21T09:47:57.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "Anthropic创纪录的IPO未能阻止全球AI相关公司抛售，纳斯达克本周市值蒸发约4万亿美元。",
-      "summary": "报道显示，Anthropic上市第二天股价下跌，叠加AI相关公司遭抛售，纳斯达克综合指数抹去2026年全部涨幅，并较1月1日下跌5%；道指和标普500进入回调区间。报道还称纳斯达克本周市值蒸发约4万亿美元，投资者质疑投入AI建设的巨额资金能否得到回报。这有助于理解AI概念股回调如何从个股扩散到更广泛市场。",
-      "failureAnalysis": "关键要点：AI相关股票的集中抛售可迅速传导至大盘，即使有明星IPO也难以托住市场；投资者正在重新审视AI基础设施投入的回报。",
+      "highlight": "王毅表示：终端电气化方向非常明确，我们可以在使电力来源清洁的同时沿此方向前进。",
+      "summary": "在Cop31气候峰会上，中国代表团高级成员王毅表示，中国正推动以低碳能源加速经济电气化，并愿意帮助其他国家这样做。会议敦促各国承诺到2035年将35%的能源来自电力。该表态值得关注，因为它把电气化与电力清洁化并列，作为中国气候行动和对外合作的方向。",
+      "failureAnalysis": "关键点在于，电气化本身不是终点，只有同时推进电力来源清洁化，低碳转型才成立。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "The Nasdaq lost trillions in value, with the AI startup’s IPO failing to buoy it as investors question huge sums being poured into AI buildout Who are Anthropic’s seven co-founders, now worth $180bn? As Anthropic’s stock dropped during its second day of trading, the wider stock market dipped with it. On Friday, the Nasdaq Composite erased all its gains for 2026 and closed down 5% from its value on 1 January.",
+      "sourceExcerpt": "Exclusive: Countries at Cop31 are being urged to commit to deriving 35% of their energy from electricity by 2035 Cop31 live – latest updates China is pushing for rapid electrification of its economy using low-carbon energy and will help other countries do the same, a senior member of the Chinese delegation at the Cop31 UN climate summit has said. Wang Yi, a professor of energy and environment policy at the Chinese Academy of Sciences and a senior adviser to China’s government, said: “End-use electrification is a very clear direction. We can follow this direction while making the source of electricity clean.",
       "translations": {
         "zh": {
-          "title": "AI抛售拖累Anthropic上市次日交易 纳斯达克回吐2026年全部涨幅",
-          "highlight": "Anthropic创纪录的IPO未能阻止全球AI相关公司抛售，纳斯达克本周市值蒸发约4万亿美元。",
-          "summary": "报道显示，Anthropic上市第二天股价下跌，叠加AI相关公司遭抛售，纳斯达克综合指数抹去2026年全部涨幅，并较1月1日下跌5%；道指和标普500进入回调区间。报道还称纳斯达克本周市值蒸发约4万亿美元，投资者质疑投入AI建设的巨额资金能否得到回报。这有助于理解AI概念股回调如何从个股扩散到更广泛市场。",
-          "failureAnalysis": "关键要点：AI相关股票的集中抛售可迅速传导至大盘，即使有明星IPO也难以托住市场；投资者正在重新审视AI基础设施投入的回报。"
+          "title": "中国承诺推进低碳电气化并帮助他国改进",
+          "highlight": "王毅表示：终端电气化方向非常明确，我们可以在使电力来源清洁的同时沿此方向前进。",
+          "summary": "在Cop31气候峰会上，中国代表团高级成员王毅表示，中国正推动以低碳能源加速经济电气化，并愿意帮助其他国家这样做。会议敦促各国承诺到2035年将35%的能源来自电力。该表态值得关注，因为它把电气化与电力清洁化并列，作为中国气候行动和对外合作的方向。",
+          "failureAnalysis": "关键点在于，电气化本身不是终点，只有同时推进电力来源清洁化，低碳转型才成立。"
         },
         "en": {
-          "highlight": "Anthropic’s record-breaking IPO failed to stem a global sell-off in AI-linked companies, and the tech-heavy Nasdaq erased some $4tn in market value this week.",
-          "summary": "The report says Anthropic’s stock fell on its second trading day, and a broader sell-off in AI-linked companies pushed the Nasdaq Composite to erase all of its 2026 gains and close 5% below its 1 January value. The Dow and S&P 500 closed in correction territory, while the Nasdaq shed about $4tn in market value this week as investors questioned the huge sums being poured into AI buildout. It is worth reading for a view of how AI-related market stress can spread from a single IPO to the wider market.",
-          "failureAnalysis": "The key takeaway is that a concentrated sell-off in AI-related stocks can quickly spill over into the broader market, and even a high-profile IPO may not stabilize sentiment while investors reassess returns on AI infrastructure spending.",
-          "title": "Nasdaq Erases All 2026 Gains as AI Sell-Off Weighs on Anthropic’s Second Trading Day"
+          "highlight": "Wang Yi said: “End-use electrification is a very clear direction. We can follow this direction while making the source of electricity clean.”",
+          "summary": "At the Cop31 climate summit, Wang Yi, a senior member of China’s delegation, said China is pushing to electrify its economy rapidly using low-carbon energy and will help other countries do the same. Countries at Cop31 are being urged to commit to deriving 35% of their energy from electricity by 2035. The statement is worth reading because it links electrification with cleaning the power supply as a direction for China’s climate action and international cooperation.",
+          "failureAnalysis": "The key takeaway is that electrification alone is not the endpoint; low-carbon transition only holds if the source of electricity is also made clean.",
+          "title": "China commits to low-carbon electrification and helping others improve"
         }
       }
     },
     {
-      "id": "life-0c70857799524066a9414ffd4e64716a",
+      "id": "life-b8c352f8e60944b4b07bdbf4d54d165f",
       "category": "international",
-      "title": "This Note-Taking Pebble Ring Is so Simple, and I Love It",
-      "source": "Lifehacker",
-      "url": "https://lifehacker.com/tech/pebbles-index-01-ring-is-simple-but-great?utm_medium=RSS",
-      "publishedAt": "2026-11-20T16:15:16.0000000+00:00",
-      "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 3",
-      "highlight": "它只承担一项功能，却把这一项功能做得非常简单而出色。",
-      "summary": "这篇来自 Lifehacker 的文章讨论一款用于记笔记的 Pebble 戒指，重点强调它的简单和好用。作者的核心评价是：它只做一件事，却把这件事做得很好。对非技术读者来说，值得关注的是产品如何用单一功能体现取舍与体验。",
-      "failureAnalysis": "关键启示：产品不必堆叠功能；把单一核心任务做到简单、稳定、好用，也能形成明确价值。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "It has one job, but it does it so well.",
-      "translations": {
-        "zh": {
-          "title": "这款记笔记的 Pebble 戒指很简单，我却很喜欢它",
-          "highlight": "它只承担一项功能，却把这一项功能做得非常简单而出色。",
-          "summary": "这篇来自 Lifehacker 的文章讨论一款用于记笔记的 Pebble 戒指，重点强调它的简单和好用。作者的核心评价是：它只做一件事，却把这件事做得很好。对非技术读者来说，值得关注的是产品如何用单一功能体现取舍与体验。",
-          "failureAnalysis": "关键启示：产品不必堆叠功能；把单一核心任务做到简单、稳定、好用，也能形成明确价值。"
-        },
-        "en": {
-          "highlight": "The note-taking Pebble ring has one job, but it does it so well.",
-          "summary": "This Lifehacker article discusses a note-taking Pebble ring and emphasizes its simplicity and usefulness. Its core point is that the device has one job but does it very well. It is worth reading as a reminder that focused, simple products can be compelling.",
-          "failureAnalysis": "The takeaway: products do not need endless features; doing one core task simply and reliably can create clear value.",
-          "title": "This Note-Taking Pebble Ring Is Simple, and I Love It"
-        }
-      }
-    },
-    {
-      "id": "life-4de7d9803bda4f7ebe0819b6c5a76d27",
-      "category": "international",
-      "title": "Legendary Cellist Pablo Casals, at Age 93, on Creative Vitality and How Working with Love Prolongs Your Life",
+      "title": "The Relief of Rock Bottom: George Orwell and the Secret Springboard of Success",
       "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/11/19/pablo-casals-work-age/",
-      "publishedAt": "2026-11-19T19:07:03.0000000+00:00",
+      "url": "https://www.themarginalian.org/2026/11/20/rock-bottom/",
+      "publishedAt": "2026-11-20T19:50:52.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 3",
-      "highlight": "工作且从不无聊的人永远不会老；对有价值之事的投入与兴趣，是年龄的最佳解药。",
-      "summary": "文章以93岁的传奇大提琴家帕布罗·卡萨尔斯为线索，讨论创作活力与年龄的关系。其核心说法是，持续工作且不感到无聊的人不会被年龄定义，对有价值事物的兴趣能让人保持生命力。对非技术读者而言，这提供了关于工作意义、好奇心与终身投入的简洁提醒。",
-      "failureAnalysis": "关键启示：让人保持活力的不是忙碌本身，而是对有价值之事持续的兴趣与投入；管理者可据此关注工作的意义感和好奇心，而不只盯短期产出。",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "没有什么能保护你免受其害——金钱、爱、完美的健康都不行，因为凡是充分活过的人生，它都不放过。",
+      "summary": "文章从人人都会撞墙、崩溃并抵达谷底说起，指出金钱、爱与健康都无法让人免于这一经历。它借乔治·奥威尔的文字，提示谷底之后可能发生某种非凡之事，并把触底看作成功的隐秘跳板。适合想重新理解挫折与人生低谷的读者。",
+      "failureAnalysis": "触底并非只属于失败者，而是充分活过的人生难以回避的一部分；真正的看点在于，谷底之后可能出现意想不到的转折。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "\"The man who works and is never bored is never old. Work and interest in worthwhile things are the best remedy for age.\"",
+      "sourceExcerpt": "It happens to everyone — to kings and paupers, to astronauts and poets. Nothing will protect you from it — not money, not love, not perfect health — for it spares no life that is fully lived, not the sunniest or the most privileged or the best planned. It begins with the wall — the one you hit over and over and over, not breaking through.",
       "translations": {
         "zh": {
-          "title": "传奇大提琴家帕布罗·卡萨尔斯93岁谈创作活力：用爱工作如何延长生命",
-          "highlight": "工作且从不无聊的人永远不会老；对有价值之事的投入与兴趣，是年龄的最佳解药。",
-          "summary": "文章以93岁的传奇大提琴家帕布罗·卡萨尔斯为线索，讨论创作活力与年龄的关系。其核心说法是，持续工作且不感到无聊的人不会被年龄定义，对有价值事物的兴趣能让人保持生命力。对非技术读者而言，这提供了关于工作意义、好奇心与终身投入的简洁提醒。",
-          "failureAnalysis": "关键启示：让人保持活力的不是忙碌本身，而是对有价值之事持续的兴趣与投入；管理者可据此关注工作的意义感和好奇心，而不只盯短期产出。"
+          "title": "触底后的解脱：乔治·奥威尔与成功的隐秘跳板",
+          "highlight": "没有什么能保护你免受其害——金钱、爱、完美的健康都不行，因为凡是充分活过的人生，它都不放过。",
+          "summary": "文章从人人都会撞墙、崩溃并抵达谷底说起，指出金钱、爱与健康都无法让人免于这一经历。它借乔治·奥威尔的文字，提示谷底之后可能发生某种非凡之事，并把触底看作成功的隐秘跳板。适合想重新理解挫折与人生低谷的读者。",
+          "failureAnalysis": "触底并非只属于失败者，而是充分活过的人生难以回避的一部分；真正的看点在于，谷底之后可能出现意想不到的转折。"
         },
         "en": {
-          "highlight": "The man who works and is never bored is never old. Work and interest in worthwhile things are the best remedy for age.",
-          "summary": "The article uses legendary cellist Pablo Casals at age 93 to reflect on creative vitality and aging. Its central claim is that people who keep working without boredom do not feel old, and that interest in worthwhile things is a remedy for age. It is worth reading as a short reminder about meaning, curiosity, and sustained engagement in work.",
-          "failureAnalysis": "The key takeaway is that vitality comes less from busyness than from sustained interest in worthwhile work; managers should pay attention to meaning and curiosity, not only short-term output.",
-          "title": "Pablo Casals at 93 on Creative Vitality and How Working with Love Prolongs Life"
+          "highlight": "Nothing will protect you from it — not money, not love, not perfect health — for it spares no life that is fully lived.",
+          "summary": "The article begins with the universal experience of hitting a wall, collapsing, and reaching the bottom—a fate that money, love, and perfect health cannot prevent. Drawing on George Orwell, it suggests that something extraordinary can happen after rock bottom and frames it as a secret springboard of success. It is worth reading for a reframing of setbacks and life's low points.",
+          "failureAnalysis": "Rock bottom is not reserved for failures; it is hard to avoid in a fully lived life, and the key point is that an unexpected turn may follow.",
+          "title": "The Relief of Rock Bottom: George Orwell and the Secret Springboard of Success"
         }
       }
     },
     {
-      "id": "paper-2611.24163",
+      "id": "life-2d4e0e44e7f64fd59e6cf3b0af73e2e2",
+      "category": "international",
+      "title": "My grandmother was a seal",
+      "source": "Aeon",
+      "url": "https://aeon.co/essays/do-you-have-a-selkie-or-a-seal-in-the-family",
+      "publishedAt": "2026-11-20T11:00:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 0",
+      "highlight": "许多爱尔兰家庭相信自己是海豹仙的后裔，这些故事揭示了人类与自然亲缘关系中的暴力与悲伤。",
+      "summary": "文章借“我的祖母是一只海豹”这一家族记忆，讲述爱尔兰家庭自认海豹仙后裔的传说。它把这些故事放回人与自然的亲缘关系中，呈现其中的暴力与悲伤，适合想理解民间叙事如何表达生态伦理的读者。",
+      "failureAnalysis": "关键提醒：民间传说不是单纯的奇观，它在讲人与自然的亲缘、伤害与丧失；理解这类叙事，有助于看见生态议题背后的情感与伦理。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Many Irish families believed they descended from selkies. Their stories reveal the violence and grief in our kinship with nature - by Jordan Lee Borgman Read on Aeon",
+      "translations": {
+        "zh": {
+          "title": "我的祖母是一只海豹：爱尔兰家庭的海豹仙传说",
+          "highlight": "许多爱尔兰家庭相信自己是海豹仙的后裔，这些故事揭示了人类与自然亲缘关系中的暴力与悲伤。",
+          "summary": "文章借“我的祖母是一只海豹”这一家族记忆，讲述爱尔兰家庭自认海豹仙后裔的传说。它把这些故事放回人与自然的亲缘关系中，呈现其中的暴力与悲伤，适合想理解民间叙事如何表达生态伦理的读者。",
+          "failureAnalysis": "关键提醒：民间传说不是单纯的奇观，它在讲人与自然的亲缘、伤害与丧失；理解这类叙事，有助于看见生态议题背后的情感与伦理。"
+        },
+        "en": {
+          "highlight": "Many Irish families believed they were descended from selkies, and their stories reveal the violence and grief in our kinship with nature.",
+          "summary": "Drawing on the family memory that “my grandmother was a seal,” the essay recounts Irish families who believed they descended from selkies. It places these stories within human kinship with nature, showing the violence and grief they carry, and is worth reading for how folk narrative frames ecological ethics.",
+          "failureAnalysis": "The key point is that folk tales are not mere curiosities: they articulate kinship, harm, and loss between humans and nature, helping readers see the emotions and ethics behind ecological issues.",
+          "title": "My Grandmother Was a Seal: Irish Families and the Selkie Legend"
+        }
+      }
+    },
+    {
+      "id": "paper-2611.21032v2",
       "category": "paper",
-      "title": "Stabilizing Neural-to-Image Retrieval with Frequency-Domain Priors and Adaptive Supervision",
+      "title": "EE-Motion: An EEG-based Web Architecture for Live Affective Music Recommendation",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2611.24163v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2611.24163",
-      "publishedAt": "2026-11-18T10:06:13.0000000Z",
+      "url": "https://arxiv.org/pdf/2611.21032v2.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.21032",
+      "publishedAt": "2026-11-16T12:52:08.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
       "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
@@ -238,17 +238,17 @@
         ],
         "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
       },
-      "highlight": "从脑活动推断所见视觉刺激的视觉神经解码，正通过频域先验与自适应监督提升神经到图像检索的稳定性。",
-      "summary": "论文面向视觉神经解码，目标是从大脑活动推断受试者感知的视觉刺激。作者提出频域先验与自适应监督，以稳定神经到图像检索。摘要提到预训练视觉-语言模型的进展，但所给文本尚未展开实验与结果。",
-      "failureAnalysis": "所给文本仅为摘要开头，未提供数据集、基线、量化结果或消融实验，因此无法判断频域先验与自适应监督的实际增益与泛化边界。",
+      "highlight": "该研究提出EE-Motion，一种基于脑电信号的网页架构，用于实时情感音乐推荐。",
+      "summary": "论文标题与摘要片段显示，EE-Motion将脑电信号与网页架构结合，面向实时情感音乐推荐场景。现有公开文本仅给出架构定位和音乐与情绪关联的背景，尚不足以判断推荐效果与系统可用性。其意义在于探索生理信号驱动的在线音乐推荐路径。",
+      "failureAnalysis": "现有来源仅包含标题、作者和摘要开头，缺少方法细节、实验设置与结果，因而无法评估EE-Motion的实时性、推荐准确性和实际可用性。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "1 Stabilizing Neural-to-Image Retrieval with Frequency-Domain Priors and Adaptive Supervision YaoYang Liu, ZhuoShi Tang, Haopeng Lai, Weijun Sun*, Xiaozhao Fang*, Jie Wen, Fellow, IEEE Abstract—Visual neural decoding aims to infer perceived visual stimuli from brain activity, offering important insights into human visual cognition while enabling transformative applica- tions in brain computer interfaces and artificial intelligence. Recent advances in pretrained vision-language models have provided a semantically rich representation space for this task. However, reliable alignment between EEG/MEG signals and visual embeddings remains challenging because neural responses are noisy, highly variable across trials, and subject dependent.",
+      "sourceExcerpt": "EE-Motion: An EEG-based Web Architecture for Live Affective Music Recommendation Sabino Roccotelli∗ Politecnico di Bari Bari, Italy Potito Aghilar∗ Politecnico di Bari Bari, Italy Vito Walter Anelli∗ Politecnico di Bari Bari, Italy Alejandro Bellogín Univ. Autónoma de Madrid Madrid, Spain Tommaso Colafiglio Politecnico di Bari Bari, Italy Michelantonio Trizio Wideverse Bari, Italy Tommaso Di Noia Politecnico di Bari Bari, Italy Abstract Music listening is intrinsically tied to emotion, which drifts continu- ously within a single session. Although modern browsers interface with wearable brain-computer interfaces, recommendation systems remain structured around discrete logs and lack the infrastruc- ture to integrate continuous physiological signals.",
       "translations": {
         "zh": {
-          "title": "频域先验与自适应监督稳定神经到图像检索",
-          "highlight": "从脑活动推断所见视觉刺激的视觉神经解码，正通过频域先验与自适应监督提升神经到图像检索的稳定性。",
-          "summary": "论文面向视觉神经解码，目标是从大脑活动推断受试者感知的视觉刺激。作者提出频域先验与自适应监督，以稳定神经到图像检索。摘要提到预训练视觉-语言模型的进展，但所给文本尚未展开实验与结果。",
-          "failureAnalysis": "所给文本仅为摘要开头，未提供数据集、基线、量化结果或消融实验，因此无法判断频域先验与自适应监督的实际增益与泛化边界。",
+          "title": "EE-Motion：基于脑电的实时情感音乐推荐网页架构",
+          "highlight": "该研究提出EE-Motion，一种基于脑电信号的网页架构，用于实时情感音乐推荐。",
+          "summary": "论文标题与摘要片段显示，EE-Motion将脑电信号与网页架构结合，面向实时情感音乐推荐场景。现有公开文本仅给出架构定位和音乐与情绪关联的背景，尚不足以判断推荐效果与系统可用性。其意义在于探索生理信号驱动的在线音乐推荐路径。",
+          "failureAnalysis": "现有来源仅包含标题、作者和摘要开头，缺少方法细节、实验设置与结果，因而无法评估EE-Motion的实时性、推荐准确性和实际可用性。",
           "paperCard": {
             "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
             "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
@@ -263,10 +263,10 @@
           }
         },
         "en": {
-          "title": "Stabilizing Neural-to-Image Retrieval with Frequency-Domain Priors and Adaptive Supervision",
-          "highlight": "The study addresses visual neural decoding from brain activity, using frequency-domain priors and adaptive supervision to stabilize neural-to-image retrieval.",
-          "summary": "The paper targets visual neural decoding, aiming to infer perceived visual stimuli from brain activity. It proposes frequency-domain priors and adaptive supervision to stabilize neural-to-image retrieval. The supplied abstract also mentions advances in pretrained vision-language models but does not provide experimental details or results.",
-          "failureAnalysis": "The supplied text is only the opening of an abstract and gives no datasets, baselines, quantitative results, or ablations, so the actual gains and generalization limits of the proposed method cannot be assessed.",
+          "title": "EE-Motion: An EEG-based Web Architecture for Live Affective Music Recommendation",
+          "highlight": "The work presents EE-Motion, an EEG-based web architecture designed for live affective music recommendation.",
+          "summary": "The supplied title and abstract fragment indicate that EE-Motion combines EEG signals with a web architecture for live affective music recommendation. The excerpt only states the background link between music listening and emotion, so evidence on recommendation performance and system usability is limited. Its relevance lies in exploring physiological-signal-driven online music recommendation.",
+          "failureAnalysis": "The available source contains only the title, authors, and the opening of the abstract, lacking method details, experimental setup, and results; therefore, the real-time performance, recommendation accuracy, and practical usability of EE-Motion cannot be assessed.",
           "paperCard": {
             "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
             "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
@@ -283,13 +283,13 @@
       }
     },
     {
-      "id": "ai-feed-c91c3d7d684145d7ae9a72aed5c99f55",
+      "id": "ai-feed-11ba3240644044d9a424ee67a560d1a9",
       "category": "ai",
-      "title": "The War Against Slop and an Emerging Weapon to Fight it: Formal Verification",
+      "title": "[AINews] Riemann Hypothesis proved...twice independently",
       "source": "Latent Space",
-      "url": "https://latent.space/p/formal-verification/",
+      "url": "https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/",
       "abstractUrl": null,
-      "publishedAt": "2026-11-20T21:18:41.0000000Z",
+      "publishedAt": "2026-11-21T05:02:13.0000000Z",
       "scoreLabel": "Curated engineering feed",
       "aiArticleType": "concept_explanation",
       "evidenceAnchors": [],
@@ -297,24 +297,24 @@
       "hasPrimaryAnchor": false,
       "requiresRiskAnalysis": false,
       "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
-      "summary": "文章讨论形式化验证：用数学方法证明软件符合规格，过去依赖专家手工完成。随着 AI 与 Lean 结合，证明过程正被部分自动化，这可能改变软件质量的保障方式。对非技术管理者而言，它提供了一个判断高风险软件是否值得投入更高验证成本的视角。",
-      "failureAnalysis": "关键要点是：形式化验证的价值在于把正确性变成可检查的证明，但引入 AI 自动化并不自动等于零成本或零风险。管理者应关注适用场景、工具成熟度和团队能力，而不是把它当作万能质量保证。",
+      "summary": "这条 AINews 条目标注日期为 2026 年 11 月 20 日，标题称黎曼猜想被两次独立证明。它值得关注，因为黎曼猜想是数学核心难题，而 AI 新闻语境提示这可能涉及 AI 与数学证明；但仅凭标题无法判断证明是否成立。",
+      "failureAnalysis": "关键是把“AI 突破”标题拆成可验证证据：谁给出证明、如何验证、能否复现，以及 AI 具体贡献了什么。",
       "aiSelectionScore": 100,
-      "highlight": "用数学证明软件正确，传统上需要专家投入；如今 AI 与 Lean 正在帮助自动化这一过程。",
+      "highlight": "一则 AI 新闻标题称：黎曼猜想已被证明，而且是两次相互独立的证明。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Proving software correct with math has traditionally required specialist work. Now AI and Lean are helping automate the process.",
+      "sourceExcerpt": "November 20 2026 —",
       "translations": {
         "zh": {
-          "title": "对抗低质软件之战：形式化验证成为新武器",
-          "highlight": "用数学证明软件正确，传统上需要专家投入；如今 AI 与 Lean 正在帮助自动化这一过程。",
-          "summary": "文章讨论形式化验证：用数学方法证明软件符合规格，过去依赖专家手工完成。随着 AI 与 Lean 结合，证明过程正被部分自动化，这可能改变软件质量的保障方式。对非技术管理者而言，它提供了一个判断高风险软件是否值得投入更高验证成本的视角。",
-          "failureAnalysis": "关键要点是：形式化验证的价值在于把正确性变成可检查的证明，但引入 AI 自动化并不自动等于零成本或零风险。管理者应关注适用场景、工具成熟度和团队能力，而不是把它当作万能质量保证。"
+          "title": "黎曼猜想据称被两次独立证明",
+          "highlight": "一则 AI 新闻标题称：黎曼猜想已被证明，而且是两次相互独立的证明。",
+          "summary": "这条 AINews 条目标注日期为 2026 年 11 月 20 日，标题称黎曼猜想被两次独立证明。它值得关注，因为黎曼猜想是数学核心难题，而 AI 新闻语境提示这可能涉及 AI 与数学证明；但仅凭标题无法判断证明是否成立。",
+          "failureAnalysis": "关键是把“AI 突破”标题拆成可验证证据：谁给出证明、如何验证、能否复现，以及 AI 具体贡献了什么。"
         },
         "en": {
-          "highlight": "Proving software correct with math traditionally required specialist work; now AI and Lean are helping automate the process.",
-          "summary": "The article discusses formal verification: using mathematical methods to prove software meets its specifications, a task that historically depended on specialists. With AI and Lean, parts of the proof process are being automated, potentially changing how software quality is assured. For non-technical leaders, it offers a lens for judging when high-risk software justifies the higher cost of stronger verification.",
-          "failureAnalysis": "The key takeaway is that formal verification turns correctness into checkable proofs, but AI automation does not automatically make it free or risk-free. Leaders should examine the use cases, tool maturity, and team capabilities rather than treating it as a universal quality guarantee.",
-          "title": "The War Against Slop and Formal Verification as an Emerging Weapon"
+          "highlight": "An AI news headline claims the Riemann Hypothesis has been proved, and that the proof was achieved twice independently.",
+          "summary": "This AINews item is dated November 20, 2026, and its title says the Riemann Hypothesis was proved twice independently. It is worth reading because the Riemann Hypothesis is a central mathematical problem, and the AI-news framing suggests a possible AI-related proof claim; the title alone does not establish that the proof is valid.",
+          "failureAnalysis": "The practical takeaway is to separate an AI headline from evidence: ask who supplied the proof, how it was verified, whether it can be reproduced, and what role AI actually played.",
+          "title": "Riemann Hypothesis Reportedly Proved Twice Independently"
         }
       }
     }
