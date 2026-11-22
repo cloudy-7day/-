@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-11-21",
+  "issueDate": "2026-11-22",
   "updateStatus": "complete",
-  "contentFingerprint": "da0e82310436fe1b2b8d58dfc913653cab1c5abcff55460699cf480b2a155567",
+  "contentFingerprint": "3401d08fecdfbd2743a667e6a28cd7ad39c94926b50b3cdef4015a44b433e381",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,216 +10,216 @@
   ],
   "articles": [
     {
-      "id": "news-1825b2d4c0e44f39ae791e015ad7f668",
+      "id": "news-28af23db5ead4e98887573e13be1130c",
       "category": "domestic",
-      "title": "习近平新时代中国特色社会主义思想海外研究国际论坛（2026）在北京举行 李书磊出席开幕式并发表主旨演讲",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-21/10735898.shtml",
-      "publishedAt": "2026-11-21T13:11:12.0000000+00:00",
+      "title": "创14个月新低 国际金价走势与地缘政治局势变化有何关联？",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-22/10736215.shtml",
+      "publishedAt": "2026-11-22T15:13:49.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "习近平新时代中国特色社会主义思想海外研究国际论坛（2026）21日在北京开幕，李书磊出席开幕式并发表主旨演讲。",
-      "summary": "据中国新闻网国内报道，该论坛于11月21日在北京开幕。中共中央政治局委员、中宣部部长李书磊出席开幕式并发表主旨演讲。这条消息可用于了解这一官方国际学术交流活动的公开安排与议题方向。",
-      "failureAnalysis": "现有信息仅覆盖论坛开幕和主旨演讲，尚不足以判断具体成果或后续影响；阅读价值在于确认公开事件与出席层级，后续可关注官方发布的会议内容。",
+      "highlight": "黄金单周跌幅达8.9%，3800、3700、3600美元关口接连失守，最低触及3502美元，创14个月新低。",
+      "summary": "报道显示，本周国际现货黄金单周跌幅达8.9%，每盎司3800、3700、3600美元关口接连失守，最低触及3502美元，创14个月新低。标题进一步追问这轮走势与地缘政治局势变化有何关联，但已知信息主要是价格事实，因此正文如何说明两者之间的因果机制值得关注。",
+      "failureAnalysis": "短期看，金价大幅回撤、关口失守和14个月新低都是可直接核验的市场事实；标题中的地缘政治关联仍需正文论证，不宜仅凭价格下跌反推单一原因。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "新华社北京11月21日电 习近平新时代中国特色社会主义思想海外研究国际论坛(2026)21日在北京开幕。中共中央政治局委员、中宣部部长李书磊出席开幕式并发表主旨演讲。",
+      "sourceExcerpt": "本周，国际金价出现连续下跌。国际现货黄金单周跌幅达8.9%，每盎司3800美元、3700美元、3600美元关口接连失守，现货黄金最低触及每盎司3502美元，创14个月新低。",
       "translations": {
         "zh": {
-          "title": "习近平新时代中国特色社会主义思想海外研究国际论坛（2026）在北京举行，李书磊出席开幕式并发表主旨演讲",
-          "highlight": "习近平新时代中国特色社会主义思想海外研究国际论坛（2026）21日在北京开幕，李书磊出席开幕式并发表主旨演讲。",
-          "summary": "据中国新闻网国内报道，该论坛于11月21日在北京开幕。中共中央政治局委员、中宣部部长李书磊出席开幕式并发表主旨演讲。这条消息可用于了解这一官方国际学术交流活动的公开安排与议题方向。",
-          "failureAnalysis": "现有信息仅覆盖论坛开幕和主旨演讲，尚不足以判断具体成果或后续影响；阅读价值在于确认公开事件与出席层级，后续可关注官方发布的会议内容。"
+          "title": "国际金价单周跌8.9% 创14个月新低",
+          "highlight": "黄金单周跌幅达8.9%，3800、3700、3600美元关口接连失守，最低触及3502美元，创14个月新低。",
+          "summary": "报道显示，本周国际现货黄金单周跌幅达8.9%，每盎司3800、3700、3600美元关口接连失守，最低触及3502美元，创14个月新低。标题进一步追问这轮走势与地缘政治局势变化有何关联，但已知信息主要是价格事实，因此正文如何说明两者之间的因果机制值得关注。",
+          "failureAnalysis": "短期看，金价大幅回撤、关口失守和14个月新低都是可直接核验的市场事实；标题中的地缘政治关联仍需正文论证，不宜仅凭价格下跌反推单一原因。"
         },
         "en": {
-          "highlight": "The 2026 international forum on overseas research into Xi Jinping Thought on Socialism with Chinese Characteristics for a New Era opened in Beijing; Li Shulei delivered a keynote speech.",
-          "summary": "According to China News Service's domestic report, the forum opened in Beijing on November 21. Li Shulei, a member of the CPC Central Committee Political Bureau and head of the Publicity Department, attended the opening ceremony and delivered a keynote speech. The item is worth reading as a public record of an official international academic exchange event.",
-          "failureAnalysis": "The available information covers only the opening and keynote speech, so it is not enough to assess specific outcomes or later impact. Its practical value lies in confirming the public event and level of attendance, with follow-up official releases needed for substantive details.",
-          "title": "International Forum on Overseas Research on Xi Jinping Thought on Socialism with Chinese Characteristics for a New Era (2026) Opens in Beijing"
+          "highlight": "Spot gold fell 8.9% for the week, losing the $3,800, $3,700 and $3,600 levels and touching $3,502 an ounce, a 14-month low.",
+          "summary": "The report says international spot gold fell 8.9% this week, breaking through $3,800, $3,700 and $3,600 an ounce and touching a low of $3,502, a 14-month low. Its headline asks how the move relates to changes in the geopolitical situation, but the known content focuses on price facts; the article is worth reading for its explanation of the link.",
+          "failureAnalysis": "The sharp weekly drop, broken price levels and 14-month low are directly verifiable market facts; the geopolitical link in the headline still needs argument in the full text and should not be inferred from price moves alone.",
+          "title": "International Gold Price Falls 8.9% in a Week, Hitting 14-Month Low"
         }
       }
     },
     {
-      "id": "news-3be955906878428b967852f5c6979296",
+      "id": "news-e390c0a6108a476194c7af6da1c274a2",
       "category": "domestic",
-      "title": "ESG传播，不能止于一纸报告",
+      "title": "2026森林合作伙伴关系政策对话首次落地中国",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-21/10735878.shtml",
-      "publishedAt": "2026-11-21T12:34:50.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-22/10736119.shtml",
+      "publishedAt": "2026-11-22T10:12:00.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 4",
-      "highlight": "企业的绿色低碳实践，不只体现在自身生产环节，也延伸至供应链的一颗螺丝、一道加工工艺乃至生产用电。",
-      "summary": "文章以一台风机由上万个零部件组成为切入点，引述运达风电原董事长高玲的观点：企业绿色低碳实践不仅发生在自身生产环节，也延伸到供应链的螺丝、加工工艺和生产用电。它值得读的地方在于提示ESG传播不能只停留在报告层面，而要用供应链等更细颗粒度的实践支撑表达。",
-      "failureAnalysis": "关键点在于，ESG传播的可信度取决于供应链等细节能否被持续披露和验证；只靠一份报告很难承载完整叙事。",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "2026森林合作伙伴关系政策对话21日在广西南宁举行，这是该对话活动首次落地中国。",
+      "summary": "报道显示，2026森林合作伙伴关系政策对话于11月21日在广西南宁举行，这也是该对话活动首次在中国举办。与会代表围绕构建可持续林业产业、提升林业产业的资源基础等全球性议题深入研讨。值得关注的是，它提供了一个观察全球林业治理议题如何与中国本地场景对接的窗口。",
+      "failureAnalysis": "可以核实的公共影响目前限于会议落地中国及其议题范围；具体成果、承诺或后续机制未在已知内容中披露，评估其实际影响需等待成果文件或后续报道。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网杭州11月21日电 (钱晨菲)一台风机由上万个零部件组成，在运达风电原董事长高玲看来，企业的绿色低碳实践，不只体现在自身生产环节，也延伸至供应链的一颗螺丝、一道加工工艺乃至生产用电。",
+      "sourceExcerpt": "中新网南宁11月22日电(黄令妍)2026森林合作伙伴关系政策对话21日在广西南宁举行。这是该对话活动首次落地中国，与会代表围绕构建可持续林业产业、提升林业产业的资源基础等全球性议题深入研讨。",
       "translations": {
         "zh": {
-          "title": "ESG传播，不能止于一纸报告",
-          "highlight": "企业的绿色低碳实践，不只体现在自身生产环节，也延伸至供应链的一颗螺丝、一道加工工艺乃至生产用电。",
-          "summary": "文章以一台风机由上万个零部件组成为切入点，引述运达风电原董事长高玲的观点：企业绿色低碳实践不仅发生在自身生产环节，也延伸到供应链的螺丝、加工工艺和生产用电。它值得读的地方在于提示ESG传播不能只停留在报告层面，而要用供应链等更细颗粒度的实践支撑表达。",
-          "failureAnalysis": "关键点在于，ESG传播的可信度取决于供应链等细节能否被持续披露和验证；只靠一份报告很难承载完整叙事。"
+          "title": "2026森林合作伙伴关系政策对话首次落地中国",
+          "highlight": "2026森林合作伙伴关系政策对话21日在广西南宁举行，这是该对话活动首次落地中国。",
+          "summary": "报道显示，2026森林合作伙伴关系政策对话于11月21日在广西南宁举行，这也是该对话活动首次在中国举办。与会代表围绕构建可持续林业产业、提升林业产业的资源基础等全球性议题深入研讨。值得关注的是，它提供了一个观察全球林业治理议题如何与中国本地场景对接的窗口。",
+          "failureAnalysis": "可以核实的公共影响目前限于会议落地中国及其议题范围；具体成果、承诺或后续机制未在已知内容中披露，评估其实际影响需等待成果文件或后续报道。"
         },
         "en": {
-          "highlight": "Corporate green and low-carbon practices are not confined to a company’s own production; they extend to a single screw, a processing step and even electricity use in the supply chain.",
-          "summary": "Using a wind turbine made of tens of thousands of parts as an entry point, the article cites former Windey chairman Gao Ling’s view that corporate green and low-carbon practices go beyond a company’s own production and reach supply-chain details such as screws, processing steps and electricity use. It is worth reading because it suggests ESG communication should not remain at the report level but be supported by finer-grained supply-chain practices.",
-          "failureAnalysis": "The key point is that the credibility of ESG communication depends on whether supply-chain details can be continuously disclosed and verified; a single report can hardly carry the full narrative.",
-          "title": "ESG Communication Cannot Stop at a Report"
+          "highlight": "The 2026 Forest Partnerships Policy Dialogue was held on November 21 in Nanning, Guangxi, marking the first time the event has taken place in China.",
+          "summary": "The report says the 2026 Forest Partnerships Policy Dialogue took place on November 21 in Nanning, Guangxi, the first time this dialogue has been held in China. Participants discussed global issues including building a sustainable forestry industry and strengthening the resource base of the forestry sector. It is worth reading as a window into how global forest-governance topics connect with a Chinese local setting.",
+          "failureAnalysis": "The verifiable public impact so far is limited to the meeting being hosted in China and its agenda; specific outcomes, commitments, or follow-up mechanisms are not disclosed in the available content, so assessing real impact requires the outcome documents or later reporting.",
+          "title": "2026 Forest Partnerships Policy Dialogue Held in China for the First Time"
         }
       }
     },
     {
-      "id": "news-83964a1bccde4670aeccf060a3e425ac",
+      "id": "news-693f6227f6ec422fb02020eebb5c0d9d",
       "category": "domestic",
-      "title": "第七届世界海洋生物多样性大会在比利时举行",
+      "title": "行贿犯罪嫌疑人刘贤志被遣返回国",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-21/10735916.shtml",
-      "publishedAt": "2026-11-21T13:52:52.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-22/10736121.shtml",
+      "publishedAt": "2026-11-22T10:05:54.0000000+00:00",
       "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 3",
-      "highlight": "大会于11月17日至20日在比利时布鲁日举行，围绕全球海洋生物现状、建立“数字海洋”体系等展开研讨。",
-      "summary": "中国新闻网报道，第七届世界海洋生物多样性大会于11月17日至20日在比利时西北部城市布鲁日举行，研讨议题包括全球海洋生物现状和“数字海洋”体系建设。中国南海研究院和厦门大学派代表参会。可核查的公开信息是会议的时间、地点、议题和中方参会机构，因此这条消息可作为观察中国参与全球海洋治理的公开信号。",
-      "failureAnalysis": "这条公开信息只覆盖了会期、地点、议题和参会机构，未披露具体成果或数据，信息量有限，判断其实际影响还需等待后续官方发布。",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "经与有关国家反腐败机构密切合作，外逃行贿犯罪嫌疑人刘贤志在境外落网并被遣返回国。",
+      "summary": "文章称，在中央反腐败协调小组国际追逃追赃工作办公室统筹协调下，经与有关国家反腐败机构合作，外逃行贿犯罪嫌疑人刘贤志在境外落网并被遣返回国。该消息来自中央纪委国家监委网站，经中国新闻网国内频道发布，可作为观察中国国际追逃追赃与反腐败协作动态的公开信息。",
+      "failureAnalysis": "可验证的要点是：官方通报确认刘贤志在境外落网并被遣返，体现跨部门统筹与跨国反腐败协作取得进展；具体案情和后续处理仍应以权威发布为准。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社比利时布鲁日11月21日电 (记者 德永健)第七届世界海洋生物多样性大会于11月17日至20日在比利时西北部城市布鲁日举行，围绕全球海洋生物现状、建立“数字海洋”体系等展开研讨。中国南海研究院和厦门大学派代表参会。",
+      "sourceExcerpt": "中新网11月22日电 据中央纪委国家监委网站消息，近日，在中央反腐败协调小组国际追逃追赃工作办公室统筹协调下，经与有关国家反腐败机构密切合作，外逃行贿犯罪嫌疑人刘贤志在境外落网并被遣返回国。",
       "translations": {
         "zh": {
-          "title": "第七届世界海洋生物多样性大会在比利时布鲁日举行",
-          "highlight": "大会于11月17日至20日在比利时布鲁日举行，围绕全球海洋生物现状、建立“数字海洋”体系等展开研讨。",
-          "summary": "中国新闻网报道，第七届世界海洋生物多样性大会于11月17日至20日在比利时西北部城市布鲁日举行，研讨议题包括全球海洋生物现状和“数字海洋”体系建设。中国南海研究院和厦门大学派代表参会。可核查的公开信息是会议的时间、地点、议题和中方参会机构，因此这条消息可作为观察中国参与全球海洋治理的公开信号。",
-          "failureAnalysis": "这条公开信息只覆盖了会期、地点、议题和参会机构，未披露具体成果或数据，信息量有限，判断其实际影响还需等待后续官方发布。"
+          "title": "行贿犯罪嫌疑人刘贤志被遣返回国",
+          "highlight": "经与有关国家反腐败机构密切合作，外逃行贿犯罪嫌疑人刘贤志在境外落网并被遣返回国。",
+          "summary": "文章称，在中央反腐败协调小组国际追逃追赃工作办公室统筹协调下，经与有关国家反腐败机构合作，外逃行贿犯罪嫌疑人刘贤志在境外落网并被遣返回国。该消息来自中央纪委国家监委网站，经中国新闻网国内频道发布，可作为观察中国国际追逃追赃与反腐败协作动态的公开信息。",
+          "failureAnalysis": "可验证的要点是：官方通报确认刘贤志在境外落网并被遣返，体现跨部门统筹与跨国反腐败协作取得进展；具体案情和后续处理仍应以权威发布为准。"
         },
         "en": {
-          "highlight": "The conference ran from November 17 to 20 in Bruges, Belgium, with discussions on the state of global marine biodiversity and building a “digital ocean” system.",
-          "summary": "China News Service reports that the Seventh World Conference on Marine Biodiversity took place from November 17 to 20 in Bruges, in northwestern Belgium, covering topics such as the current state of global marine life and the building of a “digital ocean” system. Representatives from the Chinese Academy of South China Sea Studies and Xiamen University attended. The verifiable facts are the dates, venue, agenda topics and the Chinese participating institutions, making this a public signal of China's engagement in global ocean governance.",
-          "failureAnalysis": "The public information covers only dates, venue, agenda topics and participating institutions, with no concrete outcomes or data disclosed, so its practical impact cannot yet be assessed and will depend on follow-up official releases.",
-          "title": "Seventh World Conference on Marine Biodiversity Held in Bruges, Belgium"
+          "highlight": "Through cooperation with foreign anti-corruption agencies, Liu Xianzhi, a fugitive bribery suspect, was apprehended overseas and repatriated to China.",
+          "summary": "The report says that under central coordination and with cooperation from relevant countries' anti-corruption agencies, Liu Xianzhi, a fugitive suspect in a bribery case, was arrested overseas and repatriated. The item comes from the Central Commission for Discipline Inspection and National Supervisory Commission website via China News Service's domestic channel, making it a verifiable public signal on cross-border anti-corruption cooperation.",
+          "failureAnalysis": "The key takeaway is that the official notice confirms the overseas arrest and repatriation, reflecting progress in cross-border anti-corruption coordination; further case details should be checked against authoritative releases.",
+          "title": "Liu Xianzhi, Suspect in Bribery Case, Repatriated to China"
         }
       }
     },
     {
-      "id": "news-3d74fae96d3546f6b93a05f677fe6d8d",
+      "id": "news-9e39d8f56cf24f4c8c20a39afb72af7e",
       "category": "international",
-      "title": "Killer robots: U.N. talks fall short of hopes for legally binding rules",
-      "source": "NPR World",
-      "url": "https://www.npr.org/2026/11/21/nx-s1-6047916/killer-robots-un-drones",
-      "publishedAt": "2026-11-21T14:18:17.0000000+00:00",
+      "title": "South Korean minister quits after AI cheating scandal engulfs university exams",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams",
+      "publishedAt": "2026-11-22T12:12:07.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "日内瓦联合国谈判未能就自主武器达成具有约束力的规则，人道组织警告军事AI进展远快于外交。",
-      "summary": "报道指出，日内瓦联合国谈判未能为自主武器制定具有法律约束力的规则。人道组织警告，军事人工智能的发展速度已远超外交进程，这一治理缺口值得关注。",
-      "failureAnalysis": "关键要点：自主武器治理的外交进展落后于军事AI发展，具有约束力的国际规则仍未形成。",
+      "highlight": "韩国教育部长在关键大学入学考试前夕爆发的AI辅助作弊丑闻后辞职。",
+      "summary": "韩国教育部长在关键大学入学考试前夕爆发的AI辅助作弊丑闻后辞职。此前，一名全国税务会计考试最高分考生承认使用微型摄像头和智能手机取得近满分，而韩国大学入学考试“修能”在四天后举行。教育部长崔教镇表示自己“未能充分准备”，事件凸显高利害考试中AI作弊带来的监管与政治压力。",
+      "failureAnalysis": "高利害考试中的AI作弊会迅速转化为监管与政治压力，相关方需提前准备，而非在事件发生后临场补漏。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "talks in Geneva have failed to deliver binding rules on autonomous weapons, as humanitarian groups warn that military AI is advancing far faster than diplomacy.",
+      "sourceExcerpt": "Choi Kyo-jin says he ‘failed to prepare adequately’ for entrance exams following last-minute scramble to tighten measures South Korea’s education minister has resigned after an AI-assisted cheating scandal that erupted in the lead-up to key university entrance exams last week. The country has been gripped by fears of AI-assisted exam cheating since last Sunday, when the top scorer in a national tax accountancy exam confessed to using a miniature camera and smartphone to achieve a near-perfect score, just four days before the crucial university entrance exam, known as the suneung .",
       "translations": {
         "zh": {
-          "title": "杀手机器人：联合国谈判未达成具约束力规则",
-          "highlight": "日内瓦联合国谈判未能就自主武器达成具有约束力的规则，人道组织警告军事AI进展远快于外交。",
-          "summary": "报道指出，日内瓦联合国谈判未能为自主武器制定具有法律约束力的规则。人道组织警告，军事人工智能的发展速度已远超外交进程，这一治理缺口值得关注。",
-          "failureAnalysis": "关键要点：自主武器治理的外交进展落后于军事AI发展，具有约束力的国际规则仍未形成。"
+          "title": "韩国教育部长在AI作弊丑闻席卷大学入学考试后辞职",
+          "highlight": "韩国教育部长在关键大学入学考试前夕爆发的AI辅助作弊丑闻后辞职。",
+          "summary": "韩国教育部长在关键大学入学考试前夕爆发的AI辅助作弊丑闻后辞职。此前，一名全国税务会计考试最高分考生承认使用微型摄像头和智能手机取得近满分，而韩国大学入学考试“修能”在四天后举行。教育部长崔教镇表示自己“未能充分准备”，事件凸显高利害考试中AI作弊带来的监管与政治压力。",
+          "failureAnalysis": "高利害考试中的AI作弊会迅速转化为监管与政治压力，相关方需提前准备，而非在事件发生后临场补漏。"
         },
         "en": {
-          "highlight": "U.N. talks in Geneva have failed to deliver binding rules on autonomous weapons, as humanitarian groups warn that military AI is advancing far faster than diplomacy.",
-          "summary": "The article reports that U.N. talks in Geneva did not produce binding rules for autonomous weapons. Humanitarian groups warn that military AI is advancing much faster than diplomacy, making the governance gap a pressing international issue.",
-          "failureAnalysis": "Key takeaway: diplomacy on autonomous weapons is lagging behind military AI, and binding international rules remain absent.",
-          "title": "Killer Robots: U.N. Talks Fall Short of Binding Rules"
+          "highlight": "South Korea’s education minister has resigned after an AI-assisted cheating scandal that erupted in the lead-up to key university entrance exams last week.",
+          "summary": "South Korea’s education minister resigned after an AI-assisted cheating scandal erupted before key university entrance exams. The scandal was triggered when the top scorer in a national tax accountancy exam confessed to using a miniature camera and smartphone four days before the suneung exam. The minister said he had failed to prepare adequately, highlighting the regulatory and political pressure AI cheating creates in high-stakes exams.",
+          "failureAnalysis": "AI-enabled cheating in high-stakes exams can quickly become regulatory and political pressure, so preparation must come before last-minute scrambles.",
+          "title": "South Korea’s Education Minister Resigns After AI Cheating Scandal Engulfs University Exams"
         }
       }
     },
     {
-      "id": "news-aeed7f11018942de98c70f6d0aaac2a5",
+      "id": "news-6914a018498e4a7faa39788289f2c52c",
       "category": "international",
-      "title": "China commits to low-carbon electrification and help for others to improve",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/environment/2026/nov/21/china-commits-low-carbon-electrification-help-others-improve",
-      "publishedAt": "2026-11-21T09:47:57.0000000+00:00",
+      "title": "Centrica boss says he is 'hugely concerned' over impact of soaring energy bills",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/c6jre7gpdw13o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-22T13:50:21.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "王毅表示：终端电气化方向非常明确，我们可以在使电力来源清洁的同时沿此方向前进。",
-      "summary": "在Cop31气候峰会上，中国代表团高级成员王毅表示，中国正推动以低碳能源加速经济电气化，并愿意帮助其他国家这样做。会议敦促各国承诺到2035年将35%的能源来自电力。该表态值得关注，因为它把电气化与电力清洁化并列，作为中国气候行动和对外合作的方向。",
-      "failureAnalysis": "关键点在于，电气化本身不是终点，只有同时推进电力来源清洁化，低碳转型才成立。",
+      "highlight": "Chris O’Shea表示，新年能源价格跳涨后，无力或不愿支付能源账单的人数将会增加。",
+      "summary": "BBC Business报道，Centrica负责人Chris O’Shea对能源账单飙升造成的影响表示极度担忧。他指出，新年价格上调后，无力或不愿付费的群体可能扩大。这一表态值得关注，因为它把能源价格变化与居民支付压力和欠费风险直接联系起来。",
+      "failureAnalysis": "关键信号是：能源价格在新年跳涨可能扩大付不起或不愿付账单的人群，相关风险不只在于价格本身，也在于居民支付能力与支付意愿的变化。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Exclusive: Countries at Cop31 are being urged to commit to deriving 35% of their energy from electricity by 2035 Cop31 live – latest updates China is pushing for rapid electrification of its economy using low-carbon energy and will help other countries do the same, a senior member of the Chinese delegation at the Cop31 UN climate summit has said. Wang Yi, a professor of energy and environment policy at the Chinese Academy of Sciences and a senior adviser to China’s government, said: “End-use electrification is a very clear direction. We can follow this direction while making the source of electricity clean.",
+      "sourceExcerpt": "Chris O'Shea says the number of people unable or unwilling to pay their energy bills will increase when prices jump in the new year.",
       "translations": {
         "zh": {
-          "title": "中国承诺推进低碳电气化并帮助他国改进",
-          "highlight": "王毅表示：终端电气化方向非常明确，我们可以在使电力来源清洁的同时沿此方向前进。",
-          "summary": "在Cop31气候峰会上，中国代表团高级成员王毅表示，中国正推动以低碳能源加速经济电气化，并愿意帮助其他国家这样做。会议敦促各国承诺到2035年将35%的能源来自电力。该表态值得关注，因为它把电气化与电力清洁化并列，作为中国气候行动和对外合作的方向。",
-          "failureAnalysis": "关键点在于，电气化本身不是终点，只有同时推进电力来源清洁化，低碳转型才成立。"
+          "title": "Centrica负责人称对能源账单飙升的影响“极度担忧”",
+          "highlight": "Chris O’Shea表示，新年能源价格跳涨后，无力或不愿支付能源账单的人数将会增加。",
+          "summary": "BBC Business报道，Centrica负责人Chris O’Shea对能源账单飙升造成的影响表示极度担忧。他指出，新年价格上调后，无力或不愿付费的群体可能扩大。这一表态值得关注，因为它把能源价格变化与居民支付压力和欠费风险直接联系起来。",
+          "failureAnalysis": "关键信号是：能源价格在新年跳涨可能扩大付不起或不愿付账单的人群，相关风险不只在于价格本身，也在于居民支付能力与支付意愿的变化。"
         },
         "en": {
-          "highlight": "Wang Yi said: “End-use electrification is a very clear direction. We can follow this direction while making the source of electricity clean.”",
-          "summary": "At the Cop31 climate summit, Wang Yi, a senior member of China’s delegation, said China is pushing to electrify its economy rapidly using low-carbon energy and will help other countries do the same. Countries at Cop31 are being urged to commit to deriving 35% of their energy from electricity by 2035. The statement is worth reading because it links electrification with cleaning the power supply as a direction for China’s climate action and international cooperation.",
-          "failureAnalysis": "The key takeaway is that electrification alone is not the endpoint; low-carbon transition only holds if the source of electricity is also made clean.",
-          "title": "China commits to low-carbon electrification and helping others improve"
+          "highlight": "Chris O’Shea says the number of people unable or unwilling to pay their energy bills will increase when prices jump in the new year.",
+          "summary": "BBC Business reports that Centrica boss Chris O’Shea is hugely concerned about the impact of soaring energy bills. He says the number of people unable or unwilling to pay their energy bills will rise when prices jump in the new year. The remark is worth reading because it links energy price changes directly to household payment pressure and arrears risk.",
+          "failureAnalysis": "The key takeaway is that a new-year energy price jump may widen the group of people who cannot or will not pay their bills; the risk is not only the price level but also households’ ability and willingness to pay.",
+          "title": "Centrica boss says he is 'hugely concerned' over impact of soaring energy bills"
         }
       }
     },
     {
-      "id": "life-b8c352f8e60944b4b07bdbf4d54d165f",
+      "id": "life-b0d02669764b448bb77a1438643531d4",
       "category": "international",
-      "title": "The Relief of Rock Bottom: George Orwell and the Secret Springboard of Success",
+      "title": "The Only Three Distinctions Between People",
       "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/11/20/rock-bottom/",
-      "publishedAt": "2026-11-20T19:50:52.0000000+00:00",
+      "url": "https://www.themarginalian.org/2026/11/21/nathaniel-hawthorne-classification/",
+      "publishedAt": "2026-11-22T02:37:53.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 1",
-      "highlight": "没有什么能保护你免受其害——金钱、爱、完美的健康都不行，因为凡是充分活过的人生，它都不放过。",
-      "summary": "文章从人人都会撞墙、崩溃并抵达谷底说起，指出金钱、爱与健康都无法让人免于这一经历。它借乔治·奥威尔的文字，提示谷底之后可能发生某种非凡之事，并把触底看作成功的隐秘跳板。适合想重新理解挫折与人生低谷的读者。",
-      "failureAnalysis": "触底并非只属于失败者，而是充分活过的人生难以回避的一部分；真正的看点在于，谷底之后可能出现意想不到的转折。",
+      "highlight": "我们的认知遗产，是一种不安的渴望：要弄清事物如何彼此相连、各自归于何处。",
+      "summary": "文章从意识如何从混沌中筛出相关之物、把世界解析为概念谈起，指出人类天生渴望理解事物如何连贯、如何归类，并用法律、标签、层级和类别赋予其形状。这种分类本能曾带来音乐、行星运动定律和民主，也潜藏在各种“主义”之下。它值得读，是因为它提醒我们：分类既是认知工具，也可能成为遮蔽复杂性的框架。",
+      "failureAnalysis": "关键启示：分类本能能创造秩序，也会把复杂世界简化成标签；做判断时要区分工具性分类与真实结构。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "It happens to everyone — to kings and paupers, to astronauts and poets. Nothing will protect you from it — not money, not love, not perfect health — for it spares no life that is fully lived, not the sunniest or the most privileged or the best planned. It begins with the wall — the one you hit over and over and over, not breaking through.",
+      "sourceExcerpt": "It may be that consciousness evolved to sieve the relevant from the incomprehensible allness of all there is, to parse the world into concepts and find an organizing principle for the chaos of them. Our cognitive inheritance is a restless yearning to fathom how things cohere and where they belong, a yearning we have given shape to in laws and labels, weights and balances, hierarchies and categories. It has served us well, this instinct to categorize in order to contain, giving us music, the laws of planetary motion, and democracy.",
       "translations": {
         "zh": {
-          "title": "触底后的解脱：乔治·奥威尔与成功的隐秘跳板",
-          "highlight": "没有什么能保护你免受其害——金钱、爱、完美的健康都不行，因为凡是充分活过的人生，它都不放过。",
-          "summary": "文章从人人都会撞墙、崩溃并抵达谷底说起，指出金钱、爱与健康都无法让人免于这一经历。它借乔治·奥威尔的文字，提示谷底之后可能发生某种非凡之事，并把触底看作成功的隐秘跳板。适合想重新理解挫折与人生低谷的读者。",
-          "failureAnalysis": "触底并非只属于失败者，而是充分活过的人生难以回避的一部分；真正的看点在于，谷底之后可能出现意想不到的转折。"
+          "title": "人与人之间仅有的三种区分",
+          "highlight": "我们的认知遗产，是一种不安的渴望：要弄清事物如何彼此相连、各自归于何处。",
+          "summary": "文章从意识如何从混沌中筛出相关之物、把世界解析为概念谈起，指出人类天生渴望理解事物如何连贯、如何归类，并用法律、标签、层级和类别赋予其形状。这种分类本能曾带来音乐、行星运动定律和民主，也潜藏在各种“主义”之下。它值得读，是因为它提醒我们：分类既是认知工具，也可能成为遮蔽复杂性的框架。",
+          "failureAnalysis": "关键启示：分类本能能创造秩序，也会把复杂世界简化成标签；做判断时要区分工具性分类与真实结构。"
         },
         "en": {
-          "highlight": "Nothing will protect you from it — not money, not love, not perfect health — for it spares no life that is fully lived.",
-          "summary": "The article begins with the universal experience of hitting a wall, collapsing, and reaching the bottom—a fate that money, love, and perfect health cannot prevent. Drawing on George Orwell, it suggests that something extraordinary can happen after rock bottom and frames it as a secret springboard of success. It is worth reading for a reframing of setbacks and life's low points.",
-          "failureAnalysis": "Rock bottom is not reserved for failures; it is hard to avoid in a fully lived life, and the key point is that an unexpected turn may follow.",
-          "title": "The Relief of Rock Bottom: George Orwell and the Secret Springboard of Success"
+          "highlight": "It has served us well, this instinct to categorize in order to contain, giving us music, the laws of planetary motion, and democracy.",
+          "summary": "The article begins with how consciousness sieves the relevant from chaos and parses the world into concepts, arguing that humans have a restless yearning to understand how things cohere and where they belong. That instinct has given shape to laws, labels, hierarchies, and categories, and it has yielded music, planetary laws, and democracy while also pulsating beneath every ism. It is worth reading because it reminds us that classification is both a cognitive tool and a possible frame that obscures complexity.",
+          "failureAnalysis": "The key takeaway: the instinct to categorize creates order but can also reduce a complex world to labels; distinguish instrumental classification from real structure when making judgments.",
+          "title": "The Only Three Distinctions Between People"
         }
       }
     },
     {
-      "id": "life-2d4e0e44e7f64fd59e6cf3b0af73e2e2",
+      "id": "life-3a3c53f48d1545ca9124e91350f51eee",
       "category": "international",
-      "title": "My grandmother was a seal",
-      "source": "Aeon",
-      "url": "https://aeon.co/essays/do-you-have-a-selkie-or-a-seal-in-the-family",
+      "title": "The end of Xanadu",
+      "source": "Psyche",
+      "url": "https://psyche.co/turning-points/the-house-my-father-built-was-resilient-and-rickety-like-him",
       "publishedAt": "2026-11-20T11:00:00.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 0",
-      "highlight": "许多爱尔兰家庭相信自己是海豹仙的后裔，这些故事揭示了人类与自然亲缘关系中的暴力与悲伤。",
-      "summary": "文章借“我的祖母是一只海豹”这一家族记忆，讲述爱尔兰家庭自认海豹仙后裔的传说。它把这些故事放回人与自然的亲缘关系中，呈现其中的暴力与悲伤，适合想理解民间叙事如何表达生态伦理的读者。",
-      "failureAnalysis": "关键提醒：民间传说不是单纯的奇观，它在讲人与自然的亲缘、伤害与丧失；理解这类叙事，有助于看见生态议题背后的情感与伦理。",
+      "highlight": "父亲建造的房子让我学会预料灾难；看着它被拆毁，反而是一种解脱。",
+      "summary": "这篇 Psyche 文章写父亲建造的房子，它像父亲一样既有韧性又摇摇欲坠。房子让作者习惯预期灾难，而看它倒下成为情感上的释放。适合想理解家庭记忆、失去与放下如何交织的读者。",
+      "failureAnalysis": "关键启示：家既是庇护，也可能承载长期的不安；直面它的消失，有时反而让人得以放下。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Many Irish families believed they descended from selkies. Their stories reveal the violence and grief in our kinship with nature - by Jordan Lee Borgman Read on Aeon",
+      "sourceExcerpt": "The house my father built taught me to expect disaster. Seeing it come down was a release - by Henrick Karoliszyn Read on Psyche",
       "translations": {
         "zh": {
-          "title": "我的祖母是一只海豹：爱尔兰家庭的海豹仙传说",
-          "highlight": "许多爱尔兰家庭相信自己是海豹仙的后裔，这些故事揭示了人类与自然亲缘关系中的暴力与悲伤。",
-          "summary": "文章借“我的祖母是一只海豹”这一家族记忆，讲述爱尔兰家庭自认海豹仙后裔的传说。它把这些故事放回人与自然的亲缘关系中，呈现其中的暴力与悲伤，适合想理解民间叙事如何表达生态伦理的读者。",
-          "failureAnalysis": "关键提醒：民间传说不是单纯的奇观，它在讲人与自然的亲缘、伤害与丧失；理解这类叙事，有助于看见生态议题背后的情感与伦理。"
+          "title": "仙那度的终结：父亲建造的房子",
+          "highlight": "父亲建造的房子让我学会预料灾难；看着它被拆毁，反而是一种解脱。",
+          "summary": "这篇 Psyche 文章写父亲建造的房子，它像父亲一样既有韧性又摇摇欲坠。房子让作者习惯预期灾难，而看它倒下成为情感上的释放。适合想理解家庭记忆、失去与放下如何交织的读者。",
+          "failureAnalysis": "关键启示：家既是庇护，也可能承载长期的不安；直面它的消失，有时反而让人得以放下。"
         },
         "en": {
-          "highlight": "Many Irish families believed they were descended from selkies, and their stories reveal the violence and grief in our kinship with nature.",
-          "summary": "Drawing on the family memory that “my grandmother was a seal,” the essay recounts Irish families who believed they descended from selkies. It places these stories within human kinship with nature, showing the violence and grief they carry, and is worth reading for how folk narrative frames ecological ethics.",
-          "failureAnalysis": "The key point is that folk tales are not mere curiosities: they articulate kinship, harm, and loss between humans and nature, helping readers see the emotions and ethics behind ecological issues.",
-          "title": "My Grandmother Was a Seal: Irish Families and the Selkie Legend"
+          "highlight": "The house my father built taught me to expect disaster. Seeing it come down was a release.",
+          "summary": "This Psyche piece uses the house Henrick Karoliszyn’s father built—resilient and rickety like him—to reflect on family memory. The house taught the author to expect disaster, and watching it come down brought a sense of release. It is worth reading for a personal view of loss and letting go.",
+          "failureAnalysis": "The key takeaway is that a home can shelter us while also carrying long-held dread; confronting its loss can sometimes bring emotional release.",
+          "title": "The End of Xanadu: The House My Father Built"
         }
       }
     },
     {
-      "id": "paper-2611.21032v2",
+      "id": "paper-2611.20853",
       "category": "paper",
-      "title": "EE-Motion: An EEG-based Web Architecture for Live Affective Music Recommendation",
+      "title": "Motor Imagery Classification Using Hybrid Cross-Subject Class Mixup and Selective Attention",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2611.21032v2.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2611.21032",
-      "publishedAt": "2026-11-16T12:52:08.0000000Z",
+      "url": "https://arxiv.org/pdf/2611.20853v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.20853",
+      "publishedAt": "2026-11-16T10:26:32.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
       "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
@@ -238,17 +238,17 @@
         ],
         "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
       },
-      "highlight": "该研究提出EE-Motion，一种基于脑电信号的网页架构，用于实时情感音乐推荐。",
-      "summary": "论文标题与摘要片段显示，EE-Motion将脑电信号与网页架构结合，面向实时情感音乐推荐场景。现有公开文本仅给出架构定位和音乐与情绪关联的背景，尚不足以判断推荐效果与系统可用性。其意义在于探索生理信号驱动的在线音乐推荐路径。",
-      "failureAnalysis": "现有来源仅包含标题、作者和摘要开头，缺少方法细节、实验设置与结果，因而无法评估EE-Motion的实时性、推荐准确性和实际可用性。",
+      "highlight": "该研究面向运动想象脑机接口，结合EEG与fNIRS信号，并采用跨被试类别混合与选择性注意力进行分类。",
+      "summary": "该文关注运动想象脑机接口中的分类问题，方法涉及EEG与fNIRS的混合信号。标题显示其采用跨被试类别混合与选择性注意力。提供的摘要文本在背景处截断，尚无法判断分类性能与泛化证据。",
+      "failureAnalysis": "提供的材料仅含标题和摘要开头，未给出实验设置、受试者规模或分类结果，因此无法评估跨被试泛化与实用可靠性。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "EE-Motion: An EEG-based Web Architecture for Live Affective Music Recommendation Sabino Roccotelli∗ Politecnico di Bari Bari, Italy Potito Aghilar∗ Politecnico di Bari Bari, Italy Vito Walter Anelli∗ Politecnico di Bari Bari, Italy Alejandro Bellogín Univ. Autónoma de Madrid Madrid, Spain Tommaso Colafiglio Politecnico di Bari Bari, Italy Michelantonio Trizio Wideverse Bari, Italy Tommaso Di Noia Politecnico di Bari Bari, Italy Abstract Music listening is intrinsically tied to emotion, which drifts continu- ously within a single session. Although modern browsers interface with wearable brain-computer interfaces, recommendation systems remain structured around discrete logs and lack the infrastruc- ture to integrate continuous physiological signals.",
+      "sourceExcerpt": "Motor Imagery Classification Using Hybrid Cross-Subject Class Mixup and Selective Attention Jiwon Kim∗ Yonsei University Republic of Korea Chae-Won Lee∗ Yonsei University Republic of Korea Jong-Seok Lee Yonsei University Republic of Korea Abstract Motor imagery (MI) enables a brain–computer interface (BCI) to decode movement intentions without overt movement. Hybrid electroencephalography (EEG) and functional near-infrared spec- troscopy (fNIRS) classification combines complementary signals, but inter-subject variability and the design of information exchange between modalities affect generalization to new subjects. We pro- pose a framework that combines Cross-Subject Class Mixup (CSCM) with Selective Attention.",
       "translations": {
         "zh": {
-          "title": "EE-Motion：基于脑电的实时情感音乐推荐网页架构",
-          "highlight": "该研究提出EE-Motion，一种基于脑电信号的网页架构，用于实时情感音乐推荐。",
-          "summary": "论文标题与摘要片段显示，EE-Motion将脑电信号与网页架构结合，面向实时情感音乐推荐场景。现有公开文本仅给出架构定位和音乐与情绪关联的背景，尚不足以判断推荐效果与系统可用性。其意义在于探索生理信号驱动的在线音乐推荐路径。",
-          "failureAnalysis": "现有来源仅包含标题、作者和摘要开头，缺少方法细节、实验设置与结果，因而无法评估EE-Motion的实时性、推荐准确性和实际可用性。",
+          "title": "混合EEG-fNIRS运动想象分类中的跨被试类别混合与选择性注意力",
+          "highlight": "该研究面向运动想象脑机接口，结合EEG与fNIRS信号，并采用跨被试类别混合与选择性注意力进行分类。",
+          "summary": "该文关注运动想象脑机接口中的分类问题，方法涉及EEG与fNIRS的混合信号。标题显示其采用跨被试类别混合与选择性注意力。提供的摘要文本在背景处截断，尚无法判断分类性能与泛化证据。",
+          "failureAnalysis": "提供的材料仅含标题和摘要开头，未给出实验设置、受试者规模或分类结果，因此无法评估跨被试泛化与实用可靠性。",
           "paperCard": {
             "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
             "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
@@ -263,10 +263,10 @@
           }
         },
         "en": {
-          "title": "EE-Motion: An EEG-based Web Architecture for Live Affective Music Recommendation",
-          "highlight": "The work presents EE-Motion, an EEG-based web architecture designed for live affective music recommendation.",
-          "summary": "The supplied title and abstract fragment indicate that EE-Motion combines EEG signals with a web architecture for live affective music recommendation. The excerpt only states the background link between music listening and emotion, so evidence on recommendation performance and system usability is limited. Its relevance lies in exploring physiological-signal-driven online music recommendation.",
-          "failureAnalysis": "The available source contains only the title, authors, and the opening of the abstract, lacking method details, experimental setup, and results; therefore, the real-time performance, recommendation accuracy, and practical usability of EE-Motion cannot be assessed.",
+          "title": "Motor Imagery Classification Using Hybrid Cross-Subject Class Mixup and Selective Attention",
+          "highlight": "The study targets motor imagery brain–computer interfaces by combining EEG and fNIRS signals with cross-subject class mixup and selective attention.",
+          "summary": "The paper addresses motor imagery classification for brain–computer interfaces using hybrid EEG and fNIRS signals. Its title indicates cross-subject class mixup and selective attention as the classification approach. The supplied abstract is truncated before results, so performance and generalization cannot be assessed.",
+          "failureAnalysis": "The provided source contains only the title and the beginning of the abstract, with no experimental setup, subject counts, or classification results, so cross-subject generalization and practical readiness remain unevaluated.",
           "paperCard": {
             "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
             "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
@@ -283,38 +283,47 @@
       }
     },
     {
-      "id": "ai-feed-11ba3240644044d9a424ee67a560d1a9",
+      "id": "ai-github-1453132706",
       "category": "ai",
-      "title": "[AINews] Riemann Hypothesis proved...twice independently",
-      "source": "Latent Space",
-      "url": "https://latent.space/p/ainews-riemann-hypothesis-proved-twice-independently/",
+      "title": "FrigadeHQ/yogurt",
+      "source": "GitHub Search",
+      "url": "https://github.com/FrigadeHQ/yogurt",
       "abstractUrl": null,
-      "publishedAt": "2026-11-21T05:02:13.0000000Z",
-      "scoreLabel": "Curated engineering feed",
-      "aiArticleType": "concept_explanation",
-      "evidenceAnchors": [],
-      "evidenceLabel": "No clear evidence",
-      "hasPrimaryAnchor": false,
-      "requiresRiskAnalysis": false,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
-      "summary": "这条 AINews 条目标注日期为 2026 年 11 月 20 日，标题称黎曼猜想被两次独立证明。它值得关注，因为黎曼猜想是数学核心难题，而 AI 新闻语境提示这可能涉及 AI 与数学证明；但仅凭标题无法判断证明是否成立。",
-      "failureAnalysis": "关键是把“AI 突破”标题拆成可验证证据：谁给出证明、如何验证、能否复现，以及 AI 具体贡献了什么。",
-      "aiSelectionScore": 100,
-      "highlight": "一则 AI 新闻标题称：黎曼猜想已被证明，而且是两次相互独立的证明。",
+      "publishedAt": "2026-11-10T20:01:01.0000000Z",
+      "scoreLabel": "GitHub 2962 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该项目是 GitHub 上获得 2962 stars 的开源 AI 会议纪要应用，强调会议内容留在本机、不使用会议机器人，并支持 Mac、Windows 和 Linux。它把自己定位为 Granola、Otter 和 Fireflies 的替代品，值得关注的是其“隐私优先、跨平台、免费开源”的产品取舍。",
+      "failureAnalysis": "最大风险在需求与分发：会议纪要已是拥挤赛道，Otter、Fireflies 等已有品牌和集成优势，开源免费本身不保证获客。其次，本地 AI 意味着对设备算力、安装包体积和跨平台工程维护要求更高，且免费开源需要可持续的维护与商业模式。隐私卖点还必须经得起安全审计与合规说明，否则难以转化为企业采购。",
+      "aiSelectionScore": 2962,
+      "highlight": "私有 AI 会议纪要保留在你的电脑上，无需会议机器人，面向 Mac、Windows 和 Linux 免费开源。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "November 20 2026 —",
+      "sourceExcerpt": "GitHub repository with 2962 stars and recent public activity. Description: Private AI meeting notes that stay on your computer. Free and open source for Mac, Windows and Linux.",
       "translations": {
         "zh": {
-          "title": "黎曼猜想据称被两次独立证明",
-          "highlight": "一则 AI 新闻标题称：黎曼猜想已被证明，而且是两次相互独立的证明。",
-          "summary": "这条 AINews 条目标注日期为 2026 年 11 月 20 日，标题称黎曼猜想被两次独立证明。它值得关注，因为黎曼猜想是数学核心难题，而 AI 新闻语境提示这可能涉及 AI 与数学证明；但仅凭标题无法判断证明是否成立。",
-          "failureAnalysis": "关键是把“AI 突破”标题拆成可验证证据：谁给出证明、如何验证、能否复现，以及 AI 具体贡献了什么。"
+          "title": "Yogurt：把 AI 会议纪要留在本地的开源工具",
+          "highlight": "私有 AI 会议纪要保留在你的电脑上，无需会议机器人，面向 Mac、Windows 和 Linux 免费开源。",
+          "summary": "该项目是 GitHub 上获得 2962 stars 的开源 AI 会议纪要应用，强调会议内容留在本机、不使用会议机器人，并支持 Mac、Windows 和 Linux。它把自己定位为 Granola、Otter 和 Fireflies 的替代品，值得关注的是其“隐私优先、跨平台、免费开源”的产品取舍。",
+          "failureAnalysis": "最大风险在需求与分发：会议纪要已是拥挤赛道，Otter、Fireflies 等已有品牌和集成优势，开源免费本身不保证获客。其次，本地 AI 意味着对设备算力、安装包体积和跨平台工程维护要求更高，且免费开源需要可持续的维护与商业模式。隐私卖点还必须经得起安全审计与合规说明，否则难以转化为企业采购。"
         },
         "en": {
-          "highlight": "An AI news headline claims the Riemann Hypothesis has been proved, and that the proof was achieved twice independently.",
-          "summary": "This AINews item is dated November 20, 2026, and its title says the Riemann Hypothesis was proved twice independently. It is worth reading because the Riemann Hypothesis is a central mathematical problem, and the AI-news framing suggests a possible AI-related proof claim; the title alone does not establish that the proof is valid.",
-          "failureAnalysis": "The practical takeaway is to separate an AI headline from evidence: ask who supplied the proof, how it was verified, whether it can be reproduced, and what role AI actually played.",
-          "title": "Riemann Hypothesis Reportedly Proved Twice Independently"
+          "highlight": "Private AI meeting notes stay on your computer without a meeting bot, and the project is free and open source for Mac, Windows and Linux.",
+          "summary": "This is an open-source AI meeting-notes project with 2,962 GitHub stars that emphasizes keeping meeting content on the local computer, avoiding meeting bots, and supporting Mac, Windows and Linux. It positions itself as an alternative to Granola, Otter and Fireflies, making its privacy-first, cross-platform, free and open-source trade-offs worth examining.",
+          "failureAnalysis": "The main risks are crowded demand and distribution, since established meeting-note products already have brand and integration advantages. Local AI also raises device-performance, packaging and cross-platform maintenance costs, while a free open-source project still needs a sustainable maintenance and business model.",
+          "title": "Yogurt: an open-source tool that keeps AI meeting notes local"
         }
       }
     }
