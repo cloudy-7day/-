@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-11-22",
+  "issueDate": "2026-11-23",
   "updateStatus": "complete",
-  "contentFingerprint": "3401d08fecdfbd2743a667e6a28cd7ad39c94926b50b3cdef4015a44b433e381",
+  "contentFingerprint": "64cfe1151a576db26c0cf3c6b3d8a3a4242a17287818b2e30596a297f5cc35cb",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,216 +10,216 @@
   ],
   "articles": [
     {
-      "id": "news-28af23db5ead4e98887573e13be1130c",
+      "id": "news-bc6e2168c8984f959fd2d67d85fb0ece",
       "category": "domestic",
-      "title": "创14个月新低 国际金价走势与地缘政治局势变化有何关联？",
-      "source": "中国新闻网财经",
-      "url": "https://www.chinanews.com.cn/cj/2026/11-22/10736215.shtml",
-      "publishedAt": "2026-11-22T15:13:49.0000000+00:00",
-      "scoreLabel": "Official RSS source",
-      "selectionReason": "Domestic priority: 5",
-      "highlight": "黄金单周跌幅达8.9%，3800、3700、3600美元关口接连失守，最低触及3502美元，创14个月新低。",
-      "summary": "报道显示，本周国际现货黄金单周跌幅达8.9%，每盎司3800、3700、3600美元关口接连失守，最低触及3502美元，创14个月新低。标题进一步追问这轮走势与地缘政治局势变化有何关联，但已知信息主要是价格事实，因此正文如何说明两者之间的因果机制值得关注。",
-      "failureAnalysis": "短期看，金价大幅回撤、关口失守和14个月新低都是可直接核验的市场事实；标题中的地缘政治关联仍需正文论证，不宜仅凭价格下跌反推单一原因。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "本周，国际金价出现连续下跌。国际现货黄金单周跌幅达8.9%，每盎司3800美元、3700美元、3600美元关口接连失守，现货黄金最低触及每盎司3502美元，创14个月新低。",
-      "translations": {
-        "zh": {
-          "title": "国际金价单周跌8.9% 创14个月新低",
-          "highlight": "黄金单周跌幅达8.9%，3800、3700、3600美元关口接连失守，最低触及3502美元，创14个月新低。",
-          "summary": "报道显示，本周国际现货黄金单周跌幅达8.9%，每盎司3800、3700、3600美元关口接连失守，最低触及3502美元，创14个月新低。标题进一步追问这轮走势与地缘政治局势变化有何关联，但已知信息主要是价格事实，因此正文如何说明两者之间的因果机制值得关注。",
-          "failureAnalysis": "短期看，金价大幅回撤、关口失守和14个月新低都是可直接核验的市场事实；标题中的地缘政治关联仍需正文论证，不宜仅凭价格下跌反推单一原因。"
-        },
-        "en": {
-          "highlight": "Spot gold fell 8.9% for the week, losing the $3,800, $3,700 and $3,600 levels and touching $3,502 an ounce, a 14-month low.",
-          "summary": "The report says international spot gold fell 8.9% this week, breaking through $3,800, $3,700 and $3,600 an ounce and touching a low of $3,502, a 14-month low. Its headline asks how the move relates to changes in the geopolitical situation, but the known content focuses on price facts; the article is worth reading for its explanation of the link.",
-          "failureAnalysis": "The sharp weekly drop, broken price levels and 14-month low are directly verifiable market facts; the geopolitical link in the headline still needs argument in the full text and should not be inferred from price moves alone.",
-          "title": "International Gold Price Falls 8.9% in a Week, Hitting 14-Month Low"
-        }
-      }
-    },
-    {
-      "id": "news-e390c0a6108a476194c7af6da1c274a2",
-      "category": "domestic",
-      "title": "2026森林合作伙伴关系政策对话首次落地中国",
+      "title": "丁薛祥会见新加坡国务资政李显龙",
       "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-22/10736119.shtml",
-      "publishedAt": "2026-11-22T10:12:00.0000000+00:00",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-24/10736772.shtml",
+      "publishedAt": "2026-11-24T01:38:17.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "2026森林合作伙伴关系政策对话21日在广西南宁举行，这是该对话活动首次落地中国。",
-      "summary": "报道显示，2026森林合作伙伴关系政策对话于11月21日在广西南宁举行，这也是该对话活动首次在中国举办。与会代表围绕构建可持续林业产业、提升林业产业的资源基础等全球性议题深入研讨。值得关注的是，它提供了一个观察全球林业治理议题如何与中国本地场景对接的窗口。",
-      "failureAnalysis": "可以核实的公共影响目前限于会议落地中国及其议题范围；具体成果、承诺或后续机制未在已知内容中披露，评估其实际影响需等待成果文件或后续报道。",
+      "highlight": "11月23日，中共中央政治局常委、国务院副总理丁薛祥在新加坡会见新加坡国务资政李显龙。",
+      "summary": "这是一条中新社11月24日发自北京的短讯，只交代了会见的两个基本要素：11月23日、地点在新加坡，中方是中共中央政治局常委、国务院副总理丁薛祥，新方是国务资政李显龙。它属于官方渠道发布的国内时政动态，可用于确认中新高层交往在此时点确实发生。值得读的地方在于它是权威一手信源，适合作为追踪后续中新合作议题的时间锚点。",
+      "failureAnalysis": "这条通稿只覆盖“谁、在哪、见了谁”，没有涉及会谈内容或成果，因此能确认的公共影响仅限于高层交往事实本身，不宜据此推断政策走向；后续应看是否有更详细的会见稿或联合表述。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网南宁11月22日电(黄令妍)2026森林合作伙伴关系政策对话21日在广西南宁举行。这是该对话活动首次落地中国，与会代表围绕构建可持续林业产业、提升林业产业的资源基础等全球性议题深入研讨。",
+      "sourceExcerpt": "中新社北京11月24日电 11月23日，中共中央政治局常委、国务院副总理丁薛祥在新加坡会见新加坡国务资政李显龙。",
       "translations": {
         "zh": {
-          "title": "2026森林合作伙伴关系政策对话首次落地中国",
-          "highlight": "2026森林合作伙伴关系政策对话21日在广西南宁举行，这是该对话活动首次落地中国。",
-          "summary": "报道显示，2026森林合作伙伴关系政策对话于11月21日在广西南宁举行，这也是该对话活动首次在中国举办。与会代表围绕构建可持续林业产业、提升林业产业的资源基础等全球性议题深入研讨。值得关注的是，它提供了一个观察全球林业治理议题如何与中国本地场景对接的窗口。",
-          "failureAnalysis": "可以核实的公共影响目前限于会议落地中国及其议题范围；具体成果、承诺或后续机制未在已知内容中披露，评估其实际影响需等待成果文件或后续报道。"
+          "title": "丁薛祥在新加坡会见新加坡国务资政李显龙",
+          "highlight": "11月23日，中共中央政治局常委、国务院副总理丁薛祥在新加坡会见新加坡国务资政李显龙。",
+          "summary": "这是一条中新社11月24日发自北京的短讯，只交代了会见的两个基本要素：11月23日、地点在新加坡，中方是中共中央政治局常委、国务院副总理丁薛祥，新方是国务资政李显龙。它属于官方渠道发布的国内时政动态，可用于确认中新高层交往在此时点确实发生。值得读的地方在于它是权威一手信源，适合作为追踪后续中新合作议题的时间锚点。",
+          "failureAnalysis": "这条通稿只覆盖“谁、在哪、见了谁”，没有涉及会谈内容或成果，因此能确认的公共影响仅限于高层交往事实本身，不宜据此推断政策走向；后续应看是否有更详细的会见稿或联合表述。"
         },
         "en": {
-          "highlight": "The 2026 Forest Partnerships Policy Dialogue was held on November 21 in Nanning, Guangxi, marking the first time the event has taken place in China.",
-          "summary": "The report says the 2026 Forest Partnerships Policy Dialogue took place on November 21 in Nanning, Guangxi, the first time this dialogue has been held in China. Participants discussed global issues including building a sustainable forestry industry and strengthening the resource base of the forestry sector. It is worth reading as a window into how global forest-governance topics connect with a Chinese local setting.",
-          "failureAnalysis": "The verifiable public impact so far is limited to the meeting being hosted in China and its agenda; specific outcomes, commitments, or follow-up mechanisms are not disclosed in the available content, so assessing real impact requires the outcome documents or later reporting.",
-          "title": "2026 Forest Partnerships Policy Dialogue Held in China for the First Time"
+          "highlight": "On November 23, Ding Xuexiang, member of the CPC Central Committee Political Bureau Standing Committee and Vice Premier of the State Council, met Singapore Senior Minister Lee Hsien Loong in Singapore.",
+          "summary": "This is a short China News Service dispatch dated November 24 from Beijing; it states only that on November 23, in Singapore, Chinese Vice Premier Ding Xuexiang met Singapore Senior Minister Lee Hsien Loong, identifying both sides by their official titles. As an official RSS item on domestic politics, it can be used to confirm that this high-level China-Singapore contact took place at this point in time. Its value lies in being an authoritative primary source to anchor follow-up tracking of China-Singapore cooperation topics.",
+          "failureAnalysis": "The dispatch covers only who met whom and where, with no details on the substance or outcomes of the talks, so the verifiable public impact is limited to the fact of high-level contact; readers should watch for a fuller readout or joint statements before drawing conclusions about policy direction.",
+          "title": "Ding Xuexiang Meets Singapore Senior Minister Lee Hsien Loong"
         }
       }
     },
     {
-      "id": "news-693f6227f6ec422fb02020eebb5c0d9d",
+      "id": "news-dbe281e6ecf04378918376625f1b45f9",
       "category": "domestic",
-      "title": "行贿犯罪嫌疑人刘贤志被遣返回国",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-22/10736121.shtml",
-      "publishedAt": "2026-11-22T10:05:54.0000000+00:00",
+      "title": "冷空气影响持续 四川云南西藏等地有雨雪天气",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-24/10736770.shtml",
+      "publishedAt": "2026-11-24T01:24:19.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "经与有关国家反腐败机构密切合作，外逃行贿犯罪嫌疑人刘贤志在境外落网并被遣返回国。",
-      "summary": "文章称，在中央反腐败协调小组国际追逃追赃工作办公室统筹协调下，经与有关国家反腐败机构合作，外逃行贿犯罪嫌疑人刘贤志在境外落网并被遣返回国。该消息来自中央纪委国家监委网站，经中国新闻网国内频道发布，可作为观察中国国际追逃追赃与反腐败协作动态的公开信息。",
-      "failureAnalysis": "可验证的要点是：官方通报确认刘贤志在境外落网并被遣返，体现跨部门统筹与跨国反腐败协作取得进展；具体案情和后续处理仍应以权威发布为准。",
+      "highlight": "24日早晨，东北地区及山东、江苏、安徽等地部分地区出现6～10℃降温，局地降幅超过13℃。",
+      "summary": "文章根据中央气象台信息，梳理11月23日至24日冷空气东移南下对中东部的影响：多地出现7～9级阵风，局地超过10级，并伴随6～10℃降温，局地降幅超过13℃。同期，内蒙古东部、东北部分地区有小雪或雨夹雪，四川西部、西藏东部有中到大雪或雨夹雪，江南、华南部分地区有中到大雨、局地暴雨。这有助于公众了解降温、大风和雨雪天气的覆盖范围与出行风险。",
+      "failureAnalysis": "可核实的影响集中在大风、降温和局地雨雪，公众需关注气象预警，并防范出行和农业风险。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新网11月22日电 据中央纪委国家监委网站消息，近日，在中央反腐败协调小组国际追逃追赃工作办公室统筹协调下，经与有关国家反腐败机构密切合作，外逃行贿犯罪嫌疑人刘贤志在境外落网并被遣返回国。",
+      "sourceExcerpt": "中新网11月24日电 据中央气象台网站消息，昨日(23日)，冷空气东移南下影响我国中东部地区，带来大风降温天气，气象监测显示，内蒙古中东部、吉林西部、辽宁西部、山西北部、河北北部、北京等地部分地区出现7～9级阵风，局地超过10级；24日早晨，东北地区及山东、江苏、安徽等地部分地区出现6～10℃降温，局地降幅超过13℃。此外，昨日，内蒙古东部、黑龙江、吉林东部、辽宁东部等地出现小雪或雨夹雪，四川西部、西藏东部出现中到大雪或雨夹雪；江南、华南等地部分地区出现中到大雨，局地暴雨。",
       "translations": {
         "zh": {
-          "title": "行贿犯罪嫌疑人刘贤志被遣返回国",
-          "highlight": "经与有关国家反腐败机构密切合作，外逃行贿犯罪嫌疑人刘贤志在境外落网并被遣返回国。",
-          "summary": "文章称，在中央反腐败协调小组国际追逃追赃工作办公室统筹协调下，经与有关国家反腐败机构合作，外逃行贿犯罪嫌疑人刘贤志在境外落网并被遣返回国。该消息来自中央纪委国家监委网站，经中国新闻网国内频道发布，可作为观察中国国际追逃追赃与反腐败协作动态的公开信息。",
-          "failureAnalysis": "可验证的要点是：官方通报确认刘贤志在境外落网并被遣返，体现跨部门统筹与跨国反腐败协作取得进展；具体案情和后续处理仍应以权威发布为准。"
+          "title": "冷空气影响持续：中东部大风降温 川滇藏等地有雨雪",
+          "highlight": "24日早晨，东北地区及山东、江苏、安徽等地部分地区出现6～10℃降温，局地降幅超过13℃。",
+          "summary": "文章根据中央气象台信息，梳理11月23日至24日冷空气东移南下对中东部的影响：多地出现7～9级阵风，局地超过10级，并伴随6～10℃降温，局地降幅超过13℃。同期，内蒙古东部、东北部分地区有小雪或雨夹雪，四川西部、西藏东部有中到大雪或雨夹雪，江南、华南部分地区有中到大雨、局地暴雨。这有助于公众了解降温、大风和雨雪天气的覆盖范围与出行风险。",
+          "failureAnalysis": "可核实的影响集中在大风、降温和局地雨雪，公众需关注气象预警，并防范出行和农业风险。"
         },
         "en": {
-          "highlight": "Through cooperation with foreign anti-corruption agencies, Liu Xianzhi, a fugitive bribery suspect, was apprehended overseas and repatriated to China.",
-          "summary": "The report says that under central coordination and with cooperation from relevant countries' anti-corruption agencies, Liu Xianzhi, a fugitive suspect in a bribery case, was arrested overseas and repatriated. The item comes from the Central Commission for Discipline Inspection and National Supervisory Commission website via China News Service's domestic channel, making it a verifiable public signal on cross-border anti-corruption cooperation.",
-          "failureAnalysis": "The key takeaway is that the official notice confirms the overseas arrest and repatriation, reflecting progress in cross-border anti-corruption coordination; further case details should be checked against authoritative releases.",
-          "title": "Liu Xianzhi, Suspect in Bribery Case, Repatriated to China"
+          "highlight": "On the morning of the 24th, parts of Northeast China as well as Shandong, Jiangsu and Anhui saw temperatures drop by 6–10°C, with local drops exceeding 13°C.",
+          "summary": "Citing the Central Meteorological Observatory, the article reviews the cold air that moved east and south across central and eastern China on November 23–24, bringing 7–9-level gusts, locally above 10, and temperature drops of 6–10°C, with local drops exceeding 13°C. It also notes light snow or sleet in parts of eastern Inner Mongolia and Northeast China, moderate to heavy snow or sleet in western Sichuan and eastern Tibet, and moderate to heavy rain, locally torrential, in parts of Jiangnan and South China. This helps the public understand the scope of cooling, strong winds and rain-snow weather and related travel risks.",
+          "failureAnalysis": "The verifiable impact is concentrated in strong winds, cooling and localized rain and snow; the public should follow weather warnings and guard against travel and agricultural risks.",
+          "title": "Cold Air Continues to Affect China: Strong Winds and Cooling in Central and Eastern Regions, Rain and Snow in Sichuan, Yunnan and Tibet"
         }
       }
     },
     {
-      "id": "news-9e39d8f56cf24f4c8c20a39afb72af7e",
+      "id": "news-25f7b8cb134c4c9289e1c9a5f4ce0afc",
+      "category": "domestic",
+      "title": "广西十年整治河湖“四乱”问题逾1.7万个 水生态环境质量稳定向好",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-23/10736669.shtml",
+      "publishedAt": "2026-11-23T13:04:54.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "广西2.4万余名河湖长认领责任河湖，累计排查疑似问题图斑8.4万余个，整治“四乱”问题1.7万余个。",
+      "summary": "内容基于广西新闻发布会介绍河长制推行十周年成效：2.4万余名河湖长认领责任河湖，累计排查疑似问题图斑8.4万余个，整治“四乱”问题1.7万余个。值得关注的是，这组数据呈现了河湖治理从责任覆盖到问题排查整治的公开进展，并指向水生态环境质量稳定向好。",
+      "failureAnalysis": "关键看点是河湖长责任覆盖与问题图斑排查、整治数量之间的闭环；公开数据提供了观察治理投入与执行效果的量化入口。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网南宁11月23日电(陈秋霞 周立梅)今年是全面推行河长制十周年。广西壮族自治区人民政府新闻办公室23日召开新闻发布会介绍，十年来，广西2.4万余名河湖长认领责任河湖，累计排查河湖疑似问题图斑8.4万余个，整治“四乱”问题1.7万余个。",
+      "translations": {
+        "zh": {
+          "title": "广西十年整治河湖“四乱”问题逾1.7万个，水生态环境质量稳定向好",
+          "highlight": "广西2.4万余名河湖长认领责任河湖，累计排查疑似问题图斑8.4万余个，整治“四乱”问题1.7万余个。",
+          "summary": "内容基于广西新闻发布会介绍河长制推行十周年成效：2.4万余名河湖长认领责任河湖，累计排查疑似问题图斑8.4万余个，整治“四乱”问题1.7万余个。值得关注的是，这组数据呈现了河湖治理从责任覆盖到问题排查整治的公开进展，并指向水生态环境质量稳定向好。",
+          "failureAnalysis": "关键看点是河湖长责任覆盖与问题图斑排查、整治数量之间的闭环；公开数据提供了观察治理投入与执行效果的量化入口。"
+        },
+        "en": {
+          "highlight": "In ten years, over 24,000 Guangxi river and lake chiefs investigated more than 84,000 suspected problem spots and rectified over 17,000 'four disorders' issues.",
+          "summary": "The item covers a Guangxi press conference marking ten years of the river chief system, citing 24,000-plus river and lake chiefs, 84,000-plus suspected problem image spots investigated, and 17,000-plus 'four disorders' issues rectified. It is worth reading as a public, quantified snapshot of how river and lake governance responsibilities and rectification efforts are being reported, with the stated direction of stable improvement in water ecology.",
+          "failureAnalysis": "The key takeaway is the reported link between responsibility coverage, problem detection, and rectification; the disclosed figures offer a quantitative window into governance inputs and implementation.",
+          "title": "Guangxi Rectifies Over 17,000 'Four Disorders' River and Lake Issues in a Decade as Water Ecology Improves"
+        }
+      }
+    },
+    {
+      "id": "news-b5a2013b146f402088889401a74b88b7",
       "category": "international",
-      "title": "South Korean minister quits after AI cheating scandal engulfs university exams",
-      "source": "The Guardian World",
-      "url": "https://www.theguardian.com/world/2026/nov/22/south-korea-education-minister-resigns-after-ai-cheating-scandal-engulfs-university-exams",
-      "publishedAt": "2026-11-22T12:12:07.0000000+00:00",
+      "title": "Pip assessments need 'fundamental overhaul', report to say",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/cvlyj3rn201xo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-23T17:59:55.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "韩国教育部长在关键大学入学考试前夕爆发的AI辅助作弊丑闻后辞职。",
-      "summary": "韩国教育部长在关键大学入学考试前夕爆发的AI辅助作弊丑闻后辞职。此前，一名全国税务会计考试最高分考生承认使用微型摄像头和智能手机取得近满分，而韩国大学入学考试“修能”在四天后举行。教育部长崔教镇表示自己“未能充分准备”，事件凸显高利害考试中AI作弊带来的监管与政治压力。",
-      "failureAnalysis": "高利害考试中的AI作弊会迅速转化为监管与政治压力，相关方需提前准备，而非在事件发生后临场补漏。",
+      "highlight": "英国残障事务大臣斯蒂芬·蒂姆斯爵士表示，他将建议对个人独立支付进行重大改革。",
+      "summary": "BBC Business 报道称，一份报告将呼吁对个人独立支付（PIP）评估进行“根本性改革”。英国残障事务大臣斯蒂芬·蒂姆斯爵士表示，他会建议对该支付项目作重大改革。这值得关注，因为它释放了英国福利与残障人士政策可能调整的信号。",
+      "failureAnalysis": "关键看点是PIP评估体系可能面临结构性调整，而非小修小补；后续应关注改革建议能否落地为具体政策。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Choi Kyo-jin says he ‘failed to prepare adequately’ for entrance exams following last-minute scramble to tighten measures South Korea’s education minister has resigned after an AI-assisted cheating scandal that erupted in the lead-up to key university entrance exams last week. The country has been gripped by fears of AI-assisted exam cheating since last Sunday, when the top scorer in a national tax accountancy exam confessed to using a miniature camera and smartphone to achieve a near-perfect score, just four days before the crucial university entrance exam, known as the suneung .",
+      "sourceExcerpt": "Disability Minister Sir Stephen Timms says he will recommend major reforms to the personal independence payment.",
       "translations": {
         "zh": {
-          "title": "韩国教育部长在AI作弊丑闻席卷大学入学考试后辞职",
-          "highlight": "韩国教育部长在关键大学入学考试前夕爆发的AI辅助作弊丑闻后辞职。",
-          "summary": "韩国教育部长在关键大学入学考试前夕爆发的AI辅助作弊丑闻后辞职。此前，一名全国税务会计考试最高分考生承认使用微型摄像头和智能手机取得近满分，而韩国大学入学考试“修能”在四天后举行。教育部长崔教镇表示自己“未能充分准备”，事件凸显高利害考试中AI作弊带来的监管与政治压力。",
-          "failureAnalysis": "高利害考试中的AI作弊会迅速转化为监管与政治压力，相关方需提前准备，而非在事件发生后临场补漏。"
+          "title": "报告称PIP评估需要“根本性改革”",
+          "highlight": "英国残障事务大臣斯蒂芬·蒂姆斯爵士表示，他将建议对个人独立支付进行重大改革。",
+          "summary": "BBC Business 报道称，一份报告将呼吁对个人独立支付（PIP）评估进行“根本性改革”。英国残障事务大臣斯蒂芬·蒂姆斯爵士表示，他会建议对该支付项目作重大改革。这值得关注，因为它释放了英国福利与残障人士政策可能调整的信号。",
+          "failureAnalysis": "关键看点是PIP评估体系可能面临结构性调整，而非小修小补；后续应关注改革建议能否落地为具体政策。"
         },
         "en": {
-          "highlight": "South Korea’s education minister has resigned after an AI-assisted cheating scandal that erupted in the lead-up to key university entrance exams last week.",
-          "summary": "South Korea’s education minister resigned after an AI-assisted cheating scandal erupted before key university entrance exams. The scandal was triggered when the top scorer in a national tax accountancy exam confessed to using a miniature camera and smartphone four days before the suneung exam. The minister said he had failed to prepare adequately, highlighting the regulatory and political pressure AI cheating creates in high-stakes exams.",
-          "failureAnalysis": "AI-enabled cheating in high-stakes exams can quickly become regulatory and political pressure, so preparation must come before last-minute scrambles.",
-          "title": "South Korea’s Education Minister Resigns After AI Cheating Scandal Engulfs University Exams"
+          "highlight": "Disability Minister Sir Stephen Timms says he will recommend major reforms to the personal independence payment.",
+          "summary": "BBC Business reports that a report will call for a 'fundamental overhaul' of Personal Independence Payment (PIP) assessments. Disability Minister Sir Stephen Timms says he will recommend major reforms to the payment. It is worth reading as a signal of possible changes in UK welfare and disability policy.",
+          "failureAnalysis": "The key signal is that the PIP assessment system may face structural change rather than minor adjustments; watch whether the recommendations turn into concrete policy.",
+          "title": "Report to Say PIP Assessments Need 'Fundamental Overhaul'"
         }
       }
     },
     {
-      "id": "news-6914a018498e4a7faa39788289f2c52c",
+      "id": "news-6bd59f903bf74011ade2b8c46ab91b18",
       "category": "international",
-      "title": "Centrica boss says he is 'hugely concerned' over impact of soaring energy bills",
+      "title": "Nvidia reinstates CEO Jensen Huang after affair with alleged spy as Trump says 'I made the deal'",
       "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/c6jre7gpdw13o?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-22T13:50:21.0000000+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cq5y1k8ez407o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-24T01:11:54.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "Chris O’Shea表示，新年能源价格跳涨后，无力或不愿支付能源账单的人数将会增加。",
-      "summary": "BBC Business报道，Centrica负责人Chris O’Shea对能源账单飙升造成的影响表示极度担忧。他指出，新年价格上调后，无力或不愿付费的群体可能扩大。这一表态值得关注，因为它把能源价格变化与居民支付压力和欠费风险直接联系起来。",
-      "failureAnalysis": "关键信号是：能源价格在新年跳涨可能扩大付不起或不愿付账单的人群，相关风险不只在于价格本身，也在于居民支付能力与支付意愿的变化。",
+      "highlight": "英伟达曾面临特朗普要求重新任命黄仁勋的压力，黄仁勋回归助推公司市值增加1万亿美元。",
+      "summary": "BBC Business报道称，英伟达在涉及疑似间谍的绯闻后重新任命黄仁勋为CEO，特朗普则称“是我促成的交易”。已知信息显示，英伟达曾面临特朗普要求重新任命黄仁勋的压力，黄仁勋回归助推公司市值增加1万亿美元。这条国际新闻值得关注，因为它把企业高层任命、政治压力与市值影响放在同一事件中。",
+      "failureAnalysis": "关键看点不是绯闻本身，而是政治压力如何影响企业高层任命，并迅速传导到市值。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Chris O'Shea says the number of people unable or unwilling to pay their energy bills will increase when prices jump in the new year.",
+      "sourceExcerpt": "Nvidia had come under pressure from President Trump to reappoint Huang, whose comeback helped add $1tn to the company's stock value.",
       "translations": {
         "zh": {
-          "title": "Centrica负责人称对能源账单飙升的影响“极度担忧”",
-          "highlight": "Chris O’Shea表示，新年能源价格跳涨后，无力或不愿支付能源账单的人数将会增加。",
-          "summary": "BBC Business报道，Centrica负责人Chris O’Shea对能源账单飙升造成的影响表示极度担忧。他指出，新年价格上调后，无力或不愿付费的群体可能扩大。这一表态值得关注，因为它把能源价格变化与居民支付压力和欠费风险直接联系起来。",
-          "failureAnalysis": "关键信号是：能源价格在新年跳涨可能扩大付不起或不愿付账单的人群，相关风险不只在于价格本身，也在于居民支付能力与支付意愿的变化。"
+          "title": "英伟达在涉疑似间谍绯闻后重新任命黄仁勋，特朗普称“是我促成的交易”",
+          "highlight": "英伟达曾面临特朗普要求重新任命黄仁勋的压力，黄仁勋回归助推公司市值增加1万亿美元。",
+          "summary": "BBC Business报道称，英伟达在涉及疑似间谍的绯闻后重新任命黄仁勋为CEO，特朗普则称“是我促成的交易”。已知信息显示，英伟达曾面临特朗普要求重新任命黄仁勋的压力，黄仁勋回归助推公司市值增加1万亿美元。这条国际新闻值得关注，因为它把企业高层任命、政治压力与市值影响放在同一事件中。",
+          "failureAnalysis": "关键看点不是绯闻本身，而是政治压力如何影响企业高层任命，并迅速传导到市值。"
         },
         "en": {
-          "highlight": "Chris O’Shea says the number of people unable or unwilling to pay their energy bills will increase when prices jump in the new year.",
-          "summary": "BBC Business reports that Centrica boss Chris O’Shea is hugely concerned about the impact of soaring energy bills. He says the number of people unable or unwilling to pay their energy bills will rise when prices jump in the new year. The remark is worth reading because it links energy price changes directly to household payment pressure and arrears risk.",
-          "failureAnalysis": "The key takeaway is that a new-year energy price jump may widen the group of people who cannot or will not pay their bills; the risk is not only the price level but also households’ ability and willingness to pay.",
-          "title": "Centrica boss says he is 'hugely concerned' over impact of soaring energy bills"
+          "highlight": "Nvidia had come under pressure from President Trump to reappoint Huang, whose comeback helped add $1 trillion to the company's stock value.",
+          "summary": "BBC Business reports that Nvidia reinstated Jensen Huang as CEO after an affair involving an alleged spy, with Trump saying “I made the deal.” Known content says Nvidia faced pressure from Trump to reappoint Huang, and his comeback helped add $1 trillion to the company’s stock value. It is worth reading because it links corporate leadership, political pressure, and market value in one event.",
+          "failureAnalysis": "The key takeaway is not the scandal itself but how political pressure can shape corporate leadership decisions and quickly affect market value.",
+          "title": "Nvidia Reinstates CEO Jensen Huang After Alleged Spy Affair, Trump Says ‘I Made the Deal’"
         }
       }
     },
     {
-      "id": "life-b0d02669764b448bb77a1438643531d4",
+      "id": "life-457ebfa869084098925cf9f9855684b6",
       "category": "international",
-      "title": "The Only Three Distinctions Between People",
-      "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/11/21/nathaniel-hawthorne-classification/",
-      "publishedAt": "2026-11-22T02:37:53.0000000+00:00",
+      "title": "Learning to leave",
+      "source": "Psyche",
+      "url": "https://psyche.co/turning-points/my-dog-had-separation-anxiety-i-had-ptsd-how-did-we-cope",
+      "publishedAt": "2026-11-23T11:00:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 3",
+      "highlight": "我的狗因分离焦虑把我困在家中；为了帮它，我必须先面对自己对“离开”的恐惧。",
+      "summary": "这是 Psyche 刊出的一篇第一人称文章，作者 Tracy Strauss 讲述自己因狗的分离焦虑而长期无法出门，而在帮助狗的过程中，她不得不直面自身对离开的恐惧与创伤。文章把“离开”当作一种需要练习的生活能力，适合关心中人与宠物情绪如何彼此影响，以及如何面对恐惧的读者。",
+      "failureAnalysis": "关键点：帮助他人或宠物时，我们常被迫先处理自己的恐惧；“离开”可以当作一项可练习的能力，不必当成一次性的意志考验。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "My dog’s separation anxiety kept me housebound. To help him, I had to face my own fears of leaving - by Tracy Strauss Read on Psyche",
+      "translations": {
+        "zh": {
+          "title": "学会离开：狗的分离焦虑让我直面自己的恐惧",
+          "highlight": "我的狗因分离焦虑把我困在家中；为了帮它，我必须先面对自己对“离开”的恐惧。",
+          "summary": "这是 Psyche 刊出的一篇第一人称文章，作者 Tracy Strauss 讲述自己因狗的分离焦虑而长期无法出门，而在帮助狗的过程中，她不得不直面自身对离开的恐惧与创伤。文章把“离开”当作一种需要练习的生活能力，适合关心中人与宠物情绪如何彼此影响，以及如何面对恐惧的读者。",
+          "failureAnalysis": "关键点：帮助他人或宠物时，我们常被迫先处理自己的恐惧；“离开”可以当作一项可练习的能力，不必当成一次性的意志考验。"
+        },
+        "en": {
+          "highlight": "My dog's separation anxiety kept me housebound, and to help him I had to face my own fears of leaving.",
+          "summary": "In this first-person piece for Psyche, Tracy Strauss describes being unable to leave home because of her dog's separation anxiety, and how helping him forced her to confront her own fear of leaving and her PTSD. It treats leaving as a life skill to be practiced, and is worth reading for anyone interested in how human and animal emotions mirror each other.",
+          "failureAnalysis": "Key takeaway: helping another being often requires us to face our own fear first, and leaving is better treated as a practiceable skill than a one-off test of will.",
+          "title": "Learning to leave: my dog's separation anxiety forced me to face my own fear"
+        }
+      }
+    },
+    {
+      "id": "life-53c7310f2be44663ab3ee927f732b026",
+      "category": "international",
+      "title": "Gretchen Rubin’s Gifts for Second Semester College Students",
+      "source": "Gretchen Rubin",
+      "url": "https://gretchenrubin.com/articles/gretchen-rubins-gifts-for-second-semester-college-students/",
+      "publishedAt": "2026-11-22T10:37:07.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
       "selectionReason": "Life-skills match score: 1",
-      "highlight": "我们的认知遗产，是一种不安的渴望：要弄清事物如何彼此相连、各自归于何处。",
-      "summary": "文章从意识如何从混沌中筛出相关之物、把世界解析为概念谈起，指出人类天生渴望理解事物如何连贯、如何归类，并用法律、标签、层级和类别赋予其形状。这种分类本能曾带来音乐、行星运动定律和民主，也潜藏在各种“主义”之下。它值得读，是因为它提醒我们：分类既是认知工具，也可能成为遮蔽复杂性的框架。",
-      "failureAnalysis": "关键启示：分类本能能创造秩序，也会把复杂世界简化成标签；做判断时要区分工具性分类与真实结构。",
+      "highlight": "寒假是大学生返校前补充用品的良机，她据此推荐了一些有趣又实用的礼物。",
+      "summary": "文章抓住寒假返校前补充用品的时机，推荐适合大学生的有趣且实用的礼物。作者说明这些产品是她自己喜爱的，并披露部分链接为联盟链接，购买可能带来佣金。对想给学生挑礼物的人有参考价值，也提醒读者留意推荐中的商业披露。",
+      "failureAnalysis": "关键提醒是：可把礼物清单当作参考，同时注意作者已披露的联盟佣金关系，按实际需求独立判断。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "It may be that consciousness evolved to sieve the relevant from the incomprehensible allness of all there is, to parse the world into concepts and find an organizing principle for the chaos of them. Our cognitive inheritance is a restless yearning to fathom how things cohere and where they belong, a yearning we have given shape to in laws and labels, weights and balances, hierarchies and categories. It has served us well, this instinct to categorize in order to contain, giving us music, the laws of planetary motion, and democracy.",
+      "sourceExcerpt": "Winter break is a great chance to restock a college student’s supplies before they return to campus. Here are my recommendations for some fun and practical gifts. This post includes products that I love myself.",
       "translations": {
         "zh": {
-          "title": "人与人之间仅有的三种区分",
-          "highlight": "我们的认知遗产，是一种不安的渴望：要弄清事物如何彼此相连、各自归于何处。",
-          "summary": "文章从意识如何从混沌中筛出相关之物、把世界解析为概念谈起，指出人类天生渴望理解事物如何连贯、如何归类，并用法律、标签、层级和类别赋予其形状。这种分类本能曾带来音乐、行星运动定律和民主，也潜藏在各种“主义”之下。它值得读，是因为它提醒我们：分类既是认知工具，也可能成为遮蔽复杂性的框架。",
-          "failureAnalysis": "关键启示：分类本能能创造秩序，也会把复杂世界简化成标签；做判断时要区分工具性分类与真实结构。"
+          "title": "Gretchen Rubin 给第二学期大学生的礼物推荐",
+          "highlight": "寒假是大学生返校前补充用品的良机，她据此推荐了一些有趣又实用的礼物。",
+          "summary": "文章抓住寒假返校前补充用品的时机，推荐适合大学生的有趣且实用的礼物。作者说明这些产品是她自己喜爱的，并披露部分链接为联盟链接，购买可能带来佣金。对想给学生挑礼物的人有参考价值，也提醒读者留意推荐中的商业披露。",
+          "failureAnalysis": "关键提醒是：可把礼物清单当作参考，同时注意作者已披露的联盟佣金关系，按实际需求独立判断。"
         },
         "en": {
-          "highlight": "It has served us well, this instinct to categorize in order to contain, giving us music, the laws of planetary motion, and democracy.",
-          "summary": "The article begins with how consciousness sieves the relevant from chaos and parses the world into concepts, arguing that humans have a restless yearning to understand how things cohere and where they belong. That instinct has given shape to laws, labels, hierarchies, and categories, and it has yielded music, planetary laws, and democracy while also pulsating beneath every ism. It is worth reading because it reminds us that classification is both a cognitive tool and a possible frame that obscures complexity.",
-          "failureAnalysis": "The key takeaway: the instinct to categorize creates order but can also reduce a complex world to labels; distinguish instrumental classification from real structure when making judgments.",
-          "title": "The Only Three Distinctions Between People"
+          "highlight": "Winter break is a great chance to restock a college student’s supplies before they return to campus.",
+          "summary": "The article uses the winter-break restocking moment to recommend fun and practical gifts for college students. Rubin says the products are ones she loves herself and discloses that some links are affiliate links that may earn her a commission. It is a direct reference for gift-givers, with a clear commercial disclosure.",
+          "failureAnalysis": "The key takeaway is to use the gift list as a reference while noting the disclosed affiliate commission relationship and judging purchases against actual needs.",
+          "title": "Gretchen Rubin’s Gifts for Second Semester College Students"
         }
       }
     },
     {
-      "id": "life-3a3c53f48d1545ca9124e91350f51eee",
-      "category": "international",
-      "title": "The end of Xanadu",
-      "source": "Psyche",
-      "url": "https://psyche.co/turning-points/the-house-my-father-built-was-resilient-and-rickety-like-him",
-      "publishedAt": "2026-11-20T11:00:00.0000000+00:00",
-      "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 0",
-      "highlight": "父亲建造的房子让我学会预料灾难；看着它被拆毁，反而是一种解脱。",
-      "summary": "这篇 Psyche 文章写父亲建造的房子，它像父亲一样既有韧性又摇摇欲坠。房子让作者习惯预期灾难，而看它倒下成为情感上的释放。适合想理解家庭记忆、失去与放下如何交织的读者。",
-      "failureAnalysis": "关键启示：家既是庇护，也可能承载长期的不安；直面它的消失，有时反而让人得以放下。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "The house my father built taught me to expect disaster. Seeing it come down was a release - by Henrick Karoliszyn Read on Psyche",
-      "translations": {
-        "zh": {
-          "title": "仙那度的终结：父亲建造的房子",
-          "highlight": "父亲建造的房子让我学会预料灾难；看着它被拆毁，反而是一种解脱。",
-          "summary": "这篇 Psyche 文章写父亲建造的房子，它像父亲一样既有韧性又摇摇欲坠。房子让作者习惯预期灾难，而看它倒下成为情感上的释放。适合想理解家庭记忆、失去与放下如何交织的读者。",
-          "failureAnalysis": "关键启示：家既是庇护，也可能承载长期的不安；直面它的消失，有时反而让人得以放下。"
-        },
-        "en": {
-          "highlight": "The house my father built taught me to expect disaster. Seeing it come down was a release.",
-          "summary": "This Psyche piece uses the house Henrick Karoliszyn’s father built—resilient and rickety like him—to reflect on family memory. The house taught the author to expect disaster, and watching it come down brought a sense of release. It is worth reading for a personal view of loss and letting go.",
-          "failureAnalysis": "The key takeaway is that a home can shelter us while also carrying long-held dread; confronting its loss can sometimes bring emotional release.",
-          "title": "The End of Xanadu: The House My Father Built"
-        }
-      }
-    },
-    {
-      "id": "paper-2611.20853",
+      "id": "paper-2611.27029",
       "category": "paper",
-      "title": "Motor Imagery Classification Using Hybrid Cross-Subject Class Mixup and Selective Attention",
+      "title": "Mind World Models: Joint Learning of Motor EEG Representations and Action-Conditioned World Dynamics",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2611.20853v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2611.20853",
-      "publishedAt": "2026-11-16T10:26:32.0000000Z",
+      "url": "https://arxiv.org/pdf/2611.27029v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.27029",
+      "publishedAt": "2026-11-20T03:00:38.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
       "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
@@ -234,21 +234,22 @@
         "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
         "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
         "technicalTerms": [
-          "EEG：把大脑电信号当作输入数据。"
+          "EEG：把大脑电信号当作输入数据。",
+          "CNN：擅长从信号或图像里提取局部特征的神经网络。"
         ],
         "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
       },
-      "highlight": "该研究面向运动想象脑机接口，结合EEG与fNIRS信号，并采用跨被试类别混合与选择性注意力进行分类。",
-      "summary": "该文关注运动想象脑机接口中的分类问题，方法涉及EEG与fNIRS的混合信号。标题显示其采用跨被试类别混合与选择性注意力。提供的摘要文本在背景处截断，尚无法判断分类性能与泛化证据。",
-      "failureAnalysis": "提供的材料仅含标题和摘要开头，未给出实验设置、受试者规模或分类结果，因此无法评估跨被试泛化与实用可靠性。",
+      "highlight": "运动脑电解码的非侵入式脑机接口方法，正尝试把运动表征学习与动作条件世界动态联合建模。",
+      "summary": "论文关注从脑电图进行运动解码，以支持非侵入式脑机接口。现有方法要么依赖成本较高的提示试次和粗粒度类别标签，要么采用未直接刻画运动相关动态的预训练目标。标题显示其尝试将运动脑电表征与动作条件世界动态放在同一框架中联合学习。",
+      "failureAnalysis": "来源文本仅为摘要片段，未提供实验设置、数据集和量化结果，无法判断联合建模相对基线的实际增益。就现有信息看，关键限制在于需要验证该目标是否真正改善运动解码，而非仅增加模型复杂度。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Motor Imagery Classification Using Hybrid Cross-Subject Class Mixup and Selective Attention Jiwon Kim∗ Yonsei University Republic of Korea Chae-Won Lee∗ Yonsei University Republic of Korea Jong-Seok Lee Yonsei University Republic of Korea Abstract Motor imagery (MI) enables a brain–computer interface (BCI) to decode movement intentions without overt movement. Hybrid electroencephalography (EEG) and functional near-infrared spec- troscopy (fNIRS) classification combines complementary signals, but inter-subject variability and the design of information exchange between modalities affect generalization to new subjects. We pro- pose a framework that combines Cross-Subject Class Mixup (CSCM) with Selective Attention.",
+      "sourceExcerpt": "MINDWORLDMODELS: JOINTLEARNING OFMOTOR EEG REPRESENTATIONS ANDACTION-CONDITIONED WORLDDYNAMICS Weikang Qiu Yale University Zheng Huang Dartmouth College Tinglin Huang Yale University Yujun Yan Dartmouth College Rex Ying Yale University ABSTRACT Motor decoding from electroencephalography (EEG) supports non-invasive brain–computer interfaces, yet existing methods either rely on costly cue-based trials and coarse categorical labels or use pretraining objectives that do not di- rectly capture how movement unfolds, limiting their ability to learn transferable motor representations. To this end, we propose the Mind World Model (MWM), a framework that learns motor EEG representations from scalable naturalistic EEG and egocentric video without action annotations. MWM treats EEG observed up to the current frame as the latent action of a world model: a mind model en- codes the EEG, and a world model uses it to predict the representation of a future frame, yielding a movement-grounded pretraining objective.",
       "translations": {
         "zh": {
-          "title": "混合EEG-fNIRS运动想象分类中的跨被试类别混合与选择性注意力",
-          "highlight": "该研究面向运动想象脑机接口，结合EEG与fNIRS信号，并采用跨被试类别混合与选择性注意力进行分类。",
-          "summary": "该文关注运动想象脑机接口中的分类问题，方法涉及EEG与fNIRS的混合信号。标题显示其采用跨被试类别混合与选择性注意力。提供的摘要文本在背景处截断，尚无法判断分类性能与泛化证据。",
-          "failureAnalysis": "提供的材料仅含标题和摘要开头，未给出实验设置、受试者规模或分类结果，因此无法评估跨被试泛化与实用可靠性。",
+          "title": "心智世界模型：运动脑电表征与动作条件世界动态的联合学习",
+          "highlight": "运动脑电解码的非侵入式脑机接口方法，正尝试把运动表征学习与动作条件世界动态联合建模。",
+          "summary": "论文关注从脑电图进行运动解码，以支持非侵入式脑机接口。现有方法要么依赖成本较高的提示试次和粗粒度类别标签，要么采用未直接刻画运动相关动态的预训练目标。标题显示其尝试将运动脑电表征与动作条件世界动态放在同一框架中联合学习。",
+          "failureAnalysis": "来源文本仅为摘要片段，未提供实验设置、数据集和量化结果，无法判断联合建模相对基线的实际增益。就现有信息看，关键限制在于需要验证该目标是否真正改善运动解码，而非仅增加模型复杂度。",
           "paperCard": {
             "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
             "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
@@ -257,16 +258,17 @@
             "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
             "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
+              "EEG：把大脑电信号当作输入数据。",
+              "CNN：擅长从信号或图像里提取局部特征的神经网络。"
             ],
             "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
         },
         "en": {
-          "title": "Motor Imagery Classification Using Hybrid Cross-Subject Class Mixup and Selective Attention",
-          "highlight": "The study targets motor imagery brain–computer interfaces by combining EEG and fNIRS signals with cross-subject class mixup and selective attention.",
-          "summary": "The paper addresses motor imagery classification for brain–computer interfaces using hybrid EEG and fNIRS signals. Its title indicates cross-subject class mixup and selective attention as the classification approach. The supplied abstract is truncated before results, so performance and generalization cannot be assessed.",
-          "failureAnalysis": "The provided source contains only the title and the beginning of the abstract, with no experimental setup, subject counts, or classification results, so cross-subject generalization and practical readiness remain unevaluated.",
+          "title": "Mind World Models: Joint Learning of Motor EEG Representations and Action-Conditioned World Dynamics",
+          "highlight": "Motor EEG decoding for non-invasive brain–computer interfaces is being framed as joint learning of motor representations and action-conditioned world dynamics.",
+          "summary": "The paper targets motor decoding from EEG to support non-invasive brain–computer interfaces. It notes that existing methods either rely on costly cue-based trials and coarse categorical labels or use pretraining objectives that do not directly capture motor-related dynamics. The title indicates an attempt to jointly learn motor EEG representations and action-conditioned world dynamics.",
+          "failureAnalysis": "The supplied text is only a partial abstract and gives no datasets, experimental setup, or quantitative results, so the actual gain over baselines cannot be assessed. The key open issue is whether the joint objective improves motor decoding rather than merely adding model complexity.",
           "paperCard": {
             "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
             "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
@@ -275,7 +277,8 @@
             "implementation": "Implementation: check the input data, core model or device, and validation results.",
             "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
             "technicalTerms": [
-              "EEG：把大脑电信号当作输入数据。"
+              "EEG：把大脑电信号当作输入数据。",
+              "CNN：擅长从信号或图像里提取局部特征的神经网络。"
             ],
             "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
@@ -283,14 +286,14 @@
       }
     },
     {
-      "id": "ai-github-1453132706",
+      "id": "ai-github-1410961834",
       "category": "ai",
-      "title": "FrigadeHQ/yogurt",
+      "title": "BaaRai/ARTEX",
       "source": "GitHub Search",
-      "url": "https://github.com/FrigadeHQ/yogurt",
+      "url": "https://github.com/BaaRai/ARTEX",
       "abstractUrl": null,
-      "publishedAt": "2026-11-10T20:01:01.0000000Z",
-      "scoreLabel": "GitHub 2962 stars",
+      "publishedAt": "2026-10-08T21:14:39.0000000Z",
+      "scoreLabel": "GitHub 17828 stars",
       "aiArticleType": "application_innovation",
       "evidenceAnchors": [
         {
@@ -306,24 +309,24 @@
       "hasPrimaryAnchor": true,
       "requiresRiskAnalysis": true,
       "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
-      "summary": "该项目是 GitHub 上获得 2962 stars 的开源 AI 会议纪要应用，强调会议内容留在本机、不使用会议机器人，并支持 Mac、Windows 和 Linux。它把自己定位为 Granola、Otter 和 Fireflies 的替代品，值得关注的是其“隐私优先、跨平台、免费开源”的产品取舍。",
-      "failureAnalysis": "最大风险在需求与分发：会议纪要已是拥挤赛道，Otter、Fireflies 等已有品牌和集成优势，开源免费本身不保证获客。其次，本地 AI 意味着对设备算力、安装包体积和跨平台工程维护要求更高，且免费开源需要可持续的维护与商业模式。隐私卖点还必须经得起安全审计与合规说明，否则难以转化为企业采购。",
-      "aiSelectionScore": 2962,
-      "highlight": "私有 AI 会议纪要保留在你的电脑上，无需会议机器人，面向 Mac、Windows 和 Linux 免费开源。",
+      "summary": "该 GitHub 仓库获得 17828 stars，近期有公开活动，描述为 AI 自主渗透测试系统。它值得关注，因为高关注度显示 AI 驱动安全测试正受到开发者社区注意，且其上游项目与 AGPL-3.0 许可证会影响后续采用。",
+      "failureAnalysis": "自主渗透测试直接触及授权、合规与责任边界，若缺少严格授权确认、审计日志和权限隔离，可能带来法律与安全风险。真实渗透场景对误报、漏报和可复现性要求高，AI 代理的可靠性需要长期验证。高星数不等于生产可用，AGPL-3.0 也可能限制商业集成，安全团队对自动化攻击工具的信任建立会更慢。",
+      "aiSelectionScore": 17828,
+      "highlight": "ARTEX 是 AI 自主渗透测试系统，上游为 Autumn-27/ARTEX，采用 AGPL-3.0 许可证。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "GitHub repository with 2962 stars and recent public activity. Description: Private AI meeting notes that stay on your computer. Free and open source for Mac, Windows and Linux.",
+      "sourceExcerpt": "GitHub repository with 17828 stars and recent public activity. Description: ARTEX - AI autonomous penetration testing system (English translation; upstream: Autumn-27/ARTEX, AGPL-3.0)",
       "translations": {
         "zh": {
-          "title": "Yogurt：把 AI 会议纪要留在本地的开源工具",
-          "highlight": "私有 AI 会议纪要保留在你的电脑上，无需会议机器人，面向 Mac、Windows 和 Linux 免费开源。",
-          "summary": "该项目是 GitHub 上获得 2962 stars 的开源 AI 会议纪要应用，强调会议内容留在本机、不使用会议机器人，并支持 Mac、Windows 和 Linux。它把自己定位为 Granola、Otter 和 Fireflies 的替代品，值得关注的是其“隐私优先、跨平台、免费开源”的产品取舍。",
-          "failureAnalysis": "最大风险在需求与分发：会议纪要已是拥挤赛道，Otter、Fireflies 等已有品牌和集成优势，开源免费本身不保证获客。其次，本地 AI 意味着对设备算力、安装包体积和跨平台工程维护要求更高，且免费开源需要可持续的维护与商业模式。隐私卖点还必须经得起安全审计与合规说明，否则难以转化为企业采购。"
+          "title": "ARTEX：AI 自主渗透测试系统",
+          "highlight": "ARTEX 是 AI 自主渗透测试系统，上游为 Autumn-27/ARTEX，采用 AGPL-3.0 许可证。",
+          "summary": "该 GitHub 仓库获得 17828 stars，近期有公开活动，描述为 AI 自主渗透测试系统。它值得关注，因为高关注度显示 AI 驱动安全测试正受到开发者社区注意，且其上游项目与 AGPL-3.0 许可证会影响后续采用。",
+          "failureAnalysis": "自主渗透测试直接触及授权、合规与责任边界，若缺少严格授权确认、审计日志和权限隔离，可能带来法律与安全风险。真实渗透场景对误报、漏报和可复现性要求高，AI 代理的可靠性需要长期验证。高星数不等于生产可用，AGPL-3.0 也可能限制商业集成，安全团队对自动化攻击工具的信任建立会更慢。"
         },
         "en": {
-          "highlight": "Private AI meeting notes stay on your computer without a meeting bot, and the project is free and open source for Mac, Windows and Linux.",
-          "summary": "This is an open-source AI meeting-notes project with 2,962 GitHub stars that emphasizes keeping meeting content on the local computer, avoiding meeting bots, and supporting Mac, Windows and Linux. It positions itself as an alternative to Granola, Otter and Fireflies, making its privacy-first, cross-platform, free and open-source trade-offs worth examining.",
-          "failureAnalysis": "The main risks are crowded demand and distribution, since established meeting-note products already have brand and integration advantages. Local AI also raises device-performance, packaging and cross-platform maintenance costs, while a free open-source project still needs a sustainable maintenance and business model.",
-          "title": "Yogurt: an open-source tool that keeps AI meeting notes local"
+          "highlight": "ARTEX is an AI autonomous penetration testing system; its upstream is Autumn-27/ARTEX and it uses the AGPL-3.0 license.",
+          "summary": "The GitHub repository has 17,828 stars and recent public activity, and is described as an AI autonomous penetration testing system. It is worth reading because the high attention signals interest in AI-driven security testing, while the upstream project and AGPL-3.0 license affect how it can be adopted.",
+          "failureAnalysis": "Autonomous penetration testing raises authorization, compliance, and liability risks, so it needs strict permission checks, audit logs, and isolation before real-world use. High stars do not prove production reliability, and AGPL-3.0 licensing plus security teams' trust concerns may slow commercial adoption.",
+          "title": "ARTEX: AI Autonomous Penetration Testing System"
         }
       }
     }
