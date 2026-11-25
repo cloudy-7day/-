@@ -1,0 +1,348 @@
+{
+  "issueDate": "2026-11-25",
+  "updateStatus": "complete",
+  "contentFingerprint": "bb78d4645b4c3d70a7d3a24da019a1790073cd65c3bb860deec1f88b8648e652",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-fc63ecba771349d2b74d80973902e6d9",
+      "category": "domestic",
+      "title": "中方呼吁申办《海洋生物多样性协定》秘书处相关国家友好合作、合理竞争",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-25/10737835.shtml",
+      "publishedAt": "2026-11-25T14:03:32.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "有关国家不应把《协定》政治化，要在相关规则的前提下，友好合作、合理竞争，共同为海洋治理与发展作出贡献。",
+      "summary": "中新社报道，中国外交部申办《海洋生物多样性协定》秘书处特使易先良在北京表示，有关国家不应把《协定》政治化。可核实的公开信息主要是这一官方表态：相关国家应在规则前提下友好合作、合理竞争，共同推动海洋治理与发展。这有助于理解中方围绕秘书处申办释放的合作姿态与规则立场。",
+      "failureAnalysis": "关键看点在于，秘书处申办不仅涉及机构安排，也涉及国际规则与政治化风险；中方表态强调合作和竞争都应在规则框架内进行。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社北京11月25日电 (记者 周昕)中国外交部申办《海洋生物多样性协定》(以下简称《协定》)秘书处特使易先良25日在北京表示，有关国家不应把《协定》政治化，要在相关规则的前提下，友好合作、合理竞争，共同为海洋治理与发展作出贡献。",
+      "translations": {
+        "zh": {
+          "title": "中方呼吁《海洋生物多样性协定》秘书处申办相关国家友好合作、合理竞争",
+          "highlight": "有关国家不应把《协定》政治化，要在相关规则的前提下，友好合作、合理竞争，共同为海洋治理与发展作出贡献。",
+          "summary": "中新社报道，中国外交部申办《海洋生物多样性协定》秘书处特使易先良在北京表示，有关国家不应把《协定》政治化。可核实的公开信息主要是这一官方表态：相关国家应在规则前提下友好合作、合理竞争，共同推动海洋治理与发展。这有助于理解中方围绕秘书处申办释放的合作姿态与规则立场。",
+          "failureAnalysis": "关键看点在于，秘书处申办不仅涉及机构安排，也涉及国际规则与政治化风险；中方表态强调合作和竞争都应在规则框架内进行。"
+        },
+        "en": {
+          "highlight": "Countries should not politicize the Agreement and should engage in friendly cooperation and fair competition under relevant rules to contribute to ocean governance and development.",
+          "summary": "China News Service reported that Yi Xianliang, China's special envoy for bidding to host the secretariat of the BBNJ Agreement, said in Beijing that relevant countries should not politicize the Agreement. The verifiable public information is mainly this official statement: countries should pursue friendly cooperation and fair competition under the rules and jointly contribute to ocean governance and development. This helps explain China's cooperative posture and rules-based position regarding the secretariat bid.",
+          "failureAnalysis": "The key point is that the secretariat bid involves not only institutional arrangements but also international rules and risks of politicization; China's statement stresses that cooperation and competition should both take place within the rules framework.",
+          "title": "China Calls for Friendly Cooperation and Fair Competition Among Countries Involved in Bidding for the Secretariat of the BBNJ Agreement"
+        }
+      }
+    },
+    {
+      "id": "news-8068b1da002c4c99a22a791ff3276702",
+      "category": "domestic",
+      "title": "王毅同荷兰外交大臣贝伦德森会谈",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-25/10737829.shtml",
+      "publishedAt": "2026-11-25T13:49:56.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "11月25日，中共中央政治局委员、外交部长王毅在北京同荷兰外交大臣贝伦德森举行会谈。",
+      "summary": "报道确认了会谈的时间、地点和人物：11月25日，王毅在北京同荷兰外交大臣贝伦德森举行会谈。作为官方RSS来源的国内新闻，其可核验价值在于确认中荷外长举行了面对面外交活动；报道未披露议题与成果，后续影响需以官方通稿为准。",
+      "failureAnalysis": "对非技术决策者而言，这条信息的可靠结论仅限于中荷外长在北京举行会谈；在缺少议题和成果细节时，不宜过度解读双边关系变化。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社北京11月25日电 11月25日，中共中央政治局委员、外交部长王毅在北京同荷兰外交大臣贝伦德森举行会谈。",
+      "translations": {
+        "zh": {
+          "title": "王毅在北京同荷兰外交大臣贝伦德森会谈",
+          "highlight": "11月25日，中共中央政治局委员、外交部长王毅在北京同荷兰外交大臣贝伦德森举行会谈。",
+          "summary": "报道确认了会谈的时间、地点和人物：11月25日，王毅在北京同荷兰外交大臣贝伦德森举行会谈。作为官方RSS来源的国内新闻，其可核验价值在于确认中荷外长举行了面对面外交活动；报道未披露议题与成果，后续影响需以官方通稿为准。",
+          "failureAnalysis": "对非技术决策者而言，这条信息的可靠结论仅限于中荷外长在北京举行会谈；在缺少议题和成果细节时，不宜过度解读双边关系变化。"
+        },
+        "en": {
+          "highlight": "On November 25, Wang Yi, member of the Political Bureau of the CPC Central Committee and Foreign Minister, held talks in Beijing with Dutch Foreign Minister Berendsen.",
+          "summary": "The report confirms the time, place, and participants: on November 25, Wang Yi held talks in Beijing with Dutch Foreign Minister Berendsen. As an official RSS domestic news item, its verifiable value is confirming a face-to-face diplomatic meeting between the Chinese and Dutch foreign ministers; the report does not disclose the agenda or outcomes, so subsequent impact should be judged by official readouts.",
+          "failureAnalysis": "For a non-technical decision-maker, the reliable takeaway is limited to the confirmed meeting in Beijing; without agenda and outcome details, it is inappropriate to overinterpret changes in bilateral relations.",
+          "title": "Wang Yi Holds Talks with Dutch Foreign Minister Berendsen in Beijing"
+        }
+      }
+    },
+    {
+      "id": "news-c98d982738ab4fd9bfd8e70cacc170ed",
+      "category": "domestic",
+      "title": "中荷外长共识声明",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-25/10737833.shtml",
+      "publishedAt": "2026-11-25T13:49:21.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "2026年11月25日，王毅在北京同荷兰外交大臣贝伦德森举行会谈，就中荷关系等共同关心的问题深入交流。",
+      "summary": "该报道称，2026年11月25日，王毅在北京同荷兰外交大臣贝伦德森举行会谈，就中荷关系等共同关心的问题深入交流。已知公开信息主要确认了会谈时间、地点、人物和议题范围，具体成果与公开影响仍需参考双方后续正式发布。对于关注中荷外交与双边关系走向的读者，这是一条来自官方信源的基础动态。",
+      "failureAnalysis": "当前可核实的信息集中在会谈本身和议题范围，具体共识与成果尚需以双方正式声明为准。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "2026年11月25日，中共中央政治局委员、外交部长王毅在北京同荷兰外交大臣贝伦德森举行会谈，就中荷关系等共同关心的问题深入交流。",
+      "translations": {
+        "zh": {
+          "title": "中荷外长举行会谈 就共同关心问题深入交流",
+          "highlight": "2026年11月25日，王毅在北京同荷兰外交大臣贝伦德森举行会谈，就中荷关系等共同关心的问题深入交流。",
+          "summary": "该报道称，2026年11月25日，王毅在北京同荷兰外交大臣贝伦德森举行会谈，就中荷关系等共同关心的问题深入交流。已知公开信息主要确认了会谈时间、地点、人物和议题范围，具体成果与公开影响仍需参考双方后续正式发布。对于关注中荷外交与双边关系走向的读者，这是一条来自官方信源的基础动态。",
+          "failureAnalysis": "当前可核实的信息集中在会谈本身和议题范围，具体共识与成果尚需以双方正式声明为准。"
+        },
+        "en": {
+          "highlight": "On November 25, 2026, Wang Yi held talks in Beijing with Dutch Foreign Minister Berendsen, exchanging views on China-Netherlands relations and issues of mutual concern.",
+          "summary": "The report says that on November 25, 2026, Wang Yi held talks in Beijing with Dutch Foreign Minister Berendsen and exchanged views on China-Netherlands relations and issues of mutual concern. The available public information mainly confirms the meeting's time, place, participants, and broad agenda; specific outcomes and public impact require official follow-up statements. It is worth reading as an official-source update for those tracking China-Netherlands diplomacy.",
+          "failureAnalysis": "The verifiable information is limited to the meeting itself and its broad agenda; specific consensus and outcomes should be judged against formal statements from both sides.",
+          "title": "China-Netherlands Foreign Ministers Hold Talks on Issues of Mutual Concern"
+        }
+      }
+    },
+    {
+      "id": "news-3a02cb68fc1a4dc7942d77cdcde307e6",
+      "category": "international",
+      "title": "China investigates Politburo member and Shanghai party chief Chen Jining",
+      "source": "NPR World",
+      "url": "https://www.npr.org/2026/11/25/nx-s1-6053801/china-investigation-politburo-shanghai-party",
+      "publishedAt": "2026-11-25T09:44:13.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "这位政治局委员是习近平长期反腐运动中最新被查的高级官员，该运动在范围与深度上都未见放松迹象。",
+      "summary": "NPR世界频道报道，中国对政治局委员、上海市委书记陈吉宁展开调查。报道将其置于习近平持续推进的反腐败运动背景下，指出这场运动在覆盖范围和力度上都没有放缓的迹象。关注这一动向，有助于判断中国高层人事与政治纪律审查的节奏。",
+      "failureAnalysis": "核心看点在于：落马官员的级别已触及政治局层，说明反腐运动的边界仍在向上延伸，观察中国政情时应把高层人事变动与反腐节奏放在一起看。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "The Politburo member is the latest senior official targeted in President Xi Jinping's long-running anti-corruption campaign, which has shown no signs of letting up in scope or depth.",
+      "translations": {
+        "zh": {
+          "title": "中国调查政治局委员、上海市委书记陈吉宁",
+          "highlight": "这位政治局委员是习近平长期反腐运动中最新被查的高级官员，该运动在范围与深度上都未见放松迹象。",
+          "summary": "NPR世界频道报道，中国对政治局委员、上海市委书记陈吉宁展开调查。报道将其置于习近平持续推进的反腐败运动背景下，指出这场运动在覆盖范围和力度上都没有放缓的迹象。关注这一动向，有助于判断中国高层人事与政治纪律审查的节奏。",
+          "failureAnalysis": "核心看点在于：落马官员的级别已触及政治局层，说明反腐运动的边界仍在向上延伸，观察中国政情时应把高层人事变动与反腐节奏放在一起看。"
+        },
+        "en": {
+          "highlight": "The Politburo member is the latest senior official targeted in President Xi Jinping's long-running anti-corruption campaign, which has shown no signs of letting up in scope or depth.",
+          "summary": "NPR World reports that China has opened an investigation into Politburo member and Shanghai party secretary Chen Jining. The report frames the case within Xi Jinping's sustained anti-corruption campaign, which it says shows no sign of slowing in either scope or intensity. Watching this case helps gauge the pace of high-level personnel and discipline reviews in China.",
+          "failureAnalysis": "The key point: with a Politburo-level figure now under investigation, the campaign's reach is still extending upward, so elite personnel shifts and anti-corruption tempo should be read together.",
+          "title": "China investigates Politburo member and Shanghai party chief Chen Jining"
+        }
+      }
+    },
+    {
+      "id": "news-231bc4a6246f4bdd92dff7dc7ac2856d",
+      "category": "international",
+      "title": "US stocks fall further as fears over AI intensify",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-25T21:43:18.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "美国三大主要股指早盘齐跌，以科技股为主的纳斯达克指数下跌近4%。",
+      "summary": "报道显示，围绕人工智能的担忧升温之际，美国股市进一步走低。三大主要股指早盘均下跌，其中科技股占比高的纳斯达克指数跌幅接近4%。这有助于快速把握市场情绪与AI相关板块波动之间的关系。",
+      "failureAnalysis": "关键信号是AI担忧正在影响市场风险偏好，科技股集中的纳斯达克对情绪变化更敏感。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "All three main US indexes were down in early trading, with the tech-dominated Nasdaq down almost 4%.",
+      "translations": {
+        "zh": {
+          "title": "美股进一步下跌，AI担忧升温",
+          "highlight": "美国三大主要股指早盘齐跌，以科技股为主的纳斯达克指数下跌近4%。",
+          "summary": "报道显示，围绕人工智能的担忧升温之际，美国股市进一步走低。三大主要股指早盘均下跌，其中科技股占比高的纳斯达克指数跌幅接近4%。这有助于快速把握市场情绪与AI相关板块波动之间的关系。",
+          "failureAnalysis": "关键信号是AI担忧正在影响市场风险偏好，科技股集中的纳斯达克对情绪变化更敏感。"
+        },
+        "en": {
+          "highlight": "All three main US indexes were down in early trading, with the tech-dominated Nasdaq down almost 4%.",
+          "summary": "The report indicates that US stocks fell further as concerns about artificial intelligence intensified. All three main indexes were down in early trading, with the tech-heavy Nasdaq falling nearly 4%. This helps quickly grasp the link between market sentiment and volatility in AI-related sectors.",
+          "failureAnalysis": "The key signal is that AI concerns are affecting market risk appetite, and the tech-concentrated Nasdaq is more sensitive to shifts in sentiment.",
+          "title": "US stocks fall further as AI fears intensify"
+        }
+      }
+    },
+    {
+      "id": "life-39af2650d269436fa660158d5bd1143c",
+      "category": "international",
+      "title": "Silence and Love",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/24/silence-and-love/",
+      "publishedAt": "2026-11-24T22:02:53.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 5",
+      "highlight": "音乐是沉默之手，捧住活着的感觉，举到唇边品尝；正是沉默的触碰，区分了音乐与噪音。",
+      "summary": "文章把音乐比作沉默之手：音调之间刻意的间隙、声音洪流中的静点，才让声音成为音乐。它借凯鲁亚克的话提醒人聆听世界幻象之内的沉默，从而记起被遗忘的功课。适合作为一则关于留白、倾听与感受力的短思。",
+      "failureAnalysis": "关键在于保留刻意的间隙，而不是填满每一刻；沉默让感受被听见，是一种结构，而非需要消除的空白。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Music is the hand of silence cupped to hold the feeling of being alive, lifted to the lips and tasted. What differentiates music from noise is the touch of silence — the deliberate interstices between the tones, the still points in the rush of sound. As in music, so in life: “Listen to the silence inside the illusion of the world,” Jack Kerouac wrote to his first wife turned lifelong friend in reckoning with the meaning of life, “and you will remember the lesson you forgot.” Silence is the listening presence through which you hear the music of your own… read article",
+      "translations": {
+        "zh": {
+          "title": "沉默与爱：音乐中的留白",
+          "highlight": "音乐是沉默之手，捧住活着的感觉，举到唇边品尝；正是沉默的触碰，区分了音乐与噪音。",
+          "summary": "文章把音乐比作沉默之手：音调之间刻意的间隙、声音洪流中的静点，才让声音成为音乐。它借凯鲁亚克的话提醒人聆听世界幻象之内的沉默，从而记起被遗忘的功课。适合作为一则关于留白、倾听与感受力的短思。",
+          "failureAnalysis": "关键在于保留刻意的间隙，而不是填满每一刻；沉默让感受被听见，是一种结构，而非需要消除的空白。"
+        },
+        "en": {
+          "highlight": "What differentiates music from noise is the touch of silence — the deliberate interstices between the tones, the still points in the rush of sound.",
+          "summary": "Drawing an analogy between music and life, the piece presents silence as the listening presence that lets feeling and one’s own music be heard. It invokes Kerouac’s advice to listen to the silence inside the illusion of the world. It is worth reading as a short reflection on attention, spacing, and aliveness.",
+          "failureAnalysis": "The practical takeaway is to leave deliberate intervals rather than fill every moment; silence is a structure that lets feeling be heard, not a blank to eliminate.",
+          "title": "Silence and Love: The Intervals That Make Music"
+        }
+      }
+    },
+    {
+      "id": "life-7a373b4a6e5e43bbab95d9476a4bc1d3",
+      "category": "international",
+      "title": "The passing",
+      "source": "Aeon",
+      "url": "https://aeon.co/videos/a-veterinarian-helps-cindy-say-goodbye-to-fiona-her-17-year-old-dog",
+      "publishedAt": "2026-11-25T11:01:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 0",
+      "highlight": "一位兽医以同情与关怀，帮助辛迪向她深爱的17岁老狗菲奥娜温柔道别。",
+      "summary": "这是Aeon的一段视频：兽医协助主人辛迪陪伴17岁的老狗菲奥娜走完最后时刻。它呈现了宠物临终告别中的专业照护与情感重量，适合关注生命教育和照护伦理的读者。",
+      "failureAnalysis": "关键点是：临终告别不只是医疗处置，更是需要被看见和安放的情感过程。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "With compassion and care, a veterinarian helps Cindy say a tender final goodbye to her beloved elderly dog, Fiona - by Aeon Video Watch on Aeon",
+      "translations": {
+        "zh": {
+          "title": "告别时刻：兽医帮助辛迪送别17岁爱犬菲奥娜",
+          "highlight": "一位兽医以同情与关怀，帮助辛迪向她深爱的17岁老狗菲奥娜温柔道别。",
+          "summary": "这是Aeon的一段视频：兽医协助主人辛迪陪伴17岁的老狗菲奥娜走完最后时刻。它呈现了宠物临终告别中的专业照护与情感重量，适合关注生命教育和照护伦理的读者。",
+          "failureAnalysis": "关键点是：临终告别不只是医疗处置，更是需要被看见和安放的情感过程。"
+        },
+        "en": {
+          "highlight": "With compassion and care, a veterinarian helps Cindy say a tender final goodbye to her beloved elderly dog, Fiona.",
+          "summary": "This Aeon video shows a veterinarian helping Cindy say a tender final goodbye to Fiona, her 17-year-old dog. It captures the professional care and emotional weight of end-of-life farewells for pets, making it relevant to readers interested in life education and care ethics.",
+          "failureAnalysis": "The key takeaway is that a final goodbye is not only a medical procedure but also an emotional process that needs to be witnessed and held with care.",
+          "title": "The Passing: Saying Goodbye to Fiona"
+        }
+      }
+    },
+    {
+      "id": "paper-2611.31989",
+      "category": "paper",
+      "title": "Reconstructing Natural Images from Brain Activity during Natural Vision",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2611.31989v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.31989",
+      "publishedAt": "2026-11-24T05:43:00.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的是“逆向看大脑”：已知神经元放电，能否反推出人（猴）当时看到的画面。过去这类实验要求被试盯住屏幕不动，而现实中灵长类每秒钟要跳2–3次眼，神经活动也随之变化，所以旧方法回避了自然观看这个真实条件。另一个现实动机是视觉修复植入（如植入V1或LGN的电极）只能记录极少数神经元，且每个神经元只覆盖视野中很小的一块，需要回答“只用很少的神经元是否够用”。",
+        "method": "把整个观看过程切成许多100毫秒的小片段：每片段知道眼睛看在哪里，就取该位置对应的一小块图像，和同一时段的神经元放电配对，训练一个“放电→小块图像”的解码器。再把所有片段解出的小块按眼动位置拼成一张带空洞的拼图，最后用图像先验去噪、补洞，得到完整场景。先验从最简单的1/f（自然图像低频强、高频弱）一直升级到深度学习模型和扩散模型。",
+        "difference": "第一，允许自由观看：把跨眼动、跨试次、跨实验场次的信息累加，而不是要求盯住不动。第二，第一次从灵长类LGN（外侧膝状体）重建图像，并且是第一批彩色重建。第三，第一次在同一框架下系统比较fMRI、EEG、MEG和电生理这几种记录方式的重建效果。",
+        "innovation": "把“神经证据的累积量”“眼动追踪的准确度”“图像先验的选择”三个因素拆开量化，证明三者共同决定重建质量；其中“微小眼动也必须被追踪”是过去被忽略的一点。同时把脉冲活动与注视位置一起切成token送进Transformer，再用扩散模型生成完整场景。",
+        "implementation": "实验用5只猴子：2只绒猴看27张灰度照片、用多电极阵列记录V1；2只猕猴看70张彩色照片、用Neuropixels探针记录LGN（每场次还有小Gabor目标要求注视以换奖励）。共94个场次、约23452个神经元单元，每次约250个单元，尖峰与眼位按120Hz（8.3毫秒）分箱。路线一：岭回归（ridge regression）解码局部小块，按可靠性加权拼图，再用1/f先验解一个带权的最小二乘问题（共轭梯度求解）来去噪补洞。路线二：把尖峰与注视坐标切成256维token，经自注意力得到局部与全局上下文，再由Transformer输出图像块、扩散模型负责生成与补全。",
+        "applications": "短期是视觉神经科学的实验工具：用重建效果反过来检验“大脑的自然图像先验”是什么。长期指向视觉修复的脑机接口：在只能记录几百个神经元、感受野只覆盖一小块视野的严苛条件下，先把信号拼起来再补全，评估植入电极实际“让人看到什么”。也可用于评估不同脑记录模态在做解码任务时的性价比。",
+        "technicalTerms": [
+          "感受野（RF）：一个神经元“负责看”的视野里那一小块区域。",
+          "V1：初级视皮层，大致相当于大脑里的边缘检测器。",
+          "LGN：外侧膝状体，视网膜到皮层的中转站，本文首次在此做图像重建。",
+          "尖峰：神经元放电事件，本文把它按时间分箱计数当作输入。",
+          "岭回归：一种带正则化的线性回归，用来从放电预测小图像块。",
+          "1/f先验：自然图像的统计规律——低频成分强、高频成分弱，用它去噪和填补空白。",
+          "Transformer：靠自注意力处理序列的神经网络，这里把放电和注视点当作token序列。",
+          "扩散模型：从噪声逐步去噪生成图像的生成模型，负责生成逼真细节。",
+          "fMRI/EEG/MEG：分别是功能磁共振、脑电、脑磁，空间或时间分辨率各有取舍的记录方式。"
+        ]
+      },
+      "highlight": "我们的方法在从脑活动重建自然图像上，跨fMRI、EEG、MEG与电生理记录模态创下新的最优表现。",
+      "summary": "这篇论文研究如何用猴子看图片时记录到的神经信号，把猴子看到的自然图像还原出来；关键在于允许眼睛自由移动，而不是像过去那样要求被试盯住不动。它把线性方法与现代生成模型放在一起比较，并量化了需要多少神经证据、眼动追踪要多准，因此值得作为理解“脑解码”现状的一个清晰样本。",
+      "failureAnalysis": "重建质量高度依赖眼动追踪精度和所选图像先验；实验只涉及5只猴子、27张灰度图和70张彩色图，跨个体与跨刺激的泛化能力尚未验证。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Reconstructing Natural Images from Brain Activity during Natural Vision Tejasvi Kothapalli1,∗ Ryan Ressmeyer2,∗ Declan Rowley3,∗ Gregory D. Horwitz2 Jude Mitchell4 Alexander C. Huk3 Bruno Olshausen1 Jacob Yates1 1UC Berkeley 2University of Washington 3UCLA 4University of Rochester ∗Equal contribution Photograph Transformer Diffusion Marmoset V1 · grayscale Photograph Ridge + 1/f Transformer Diffusion Macaque LGN · color Photograph Ridge + 1/f Transformer Diffusion Figure 1.",
+      "translations": {
+        "zh": {
+          "title": "在自由观看时从大脑活动中重建自然图像",
+          "highlight": "我们的方法在从脑活动重建自然图像上，跨fMRI、EEG、MEG与电生理记录模态创下新的最优表现。",
+          "summary": "这篇论文研究如何用猴子看图片时记录到的神经信号，把猴子看到的自然图像还原出来；关键在于允许眼睛自由移动，而不是像过去那样要求被试盯住不动。它把线性方法与现代生成模型放在一起比较，并量化了需要多少神经证据、眼动追踪要多准，因此值得作为理解“脑解码”现状的一个清晰样本。",
+          "failureAnalysis": "重建质量高度依赖眼动追踪精度和所选图像先验；实验只涉及5只猴子、27张灰度图和70张彩色图，跨个体与跨刺激的泛化能力尚未验证。",
+          "paperCard": {
+            "problem": "解决的是“逆向看大脑”：已知神经元放电，能否反推出人（猴）当时看到的画面。过去这类实验要求被试盯住屏幕不动，而现实中灵长类每秒钟要跳2–3次眼，神经活动也随之变化，所以旧方法回避了自然观看这个真实条件。另一个现实动机是视觉修复植入（如植入V1或LGN的电极）只能记录极少数神经元，且每个神经元只覆盖视野中很小的一块，需要回答“只用很少的神经元是否够用”。",
+            "method": "把整个观看过程切成许多100毫秒的小片段：每片段知道眼睛看在哪里，就取该位置对应的一小块图像，和同一时段的神经元放电配对，训练一个“放电→小块图像”的解码器。再把所有片段解出的小块按眼动位置拼成一张带空洞的拼图，最后用图像先验去噪、补洞，得到完整场景。先验从最简单的1/f（自然图像低频强、高频弱）一直升级到深度学习模型和扩散模型。",
+            "difference": "第一，允许自由观看：把跨眼动、跨试次、跨实验场次的信息累加，而不是要求盯住不动。第二，第一次从灵长类LGN（外侧膝状体）重建图像，并且是第一批彩色重建。第三，第一次在同一框架下系统比较fMRI、EEG、MEG和电生理这几种记录方式的重建效果。",
+            "innovation": "把“神经证据的累积量”“眼动追踪的准确度”“图像先验的选择”三个因素拆开量化，证明三者共同决定重建质量；其中“微小眼动也必须被追踪”是过去被忽略的一点。同时把脉冲活动与注视位置一起切成token送进Transformer，再用扩散模型生成完整场景。",
+            "implementation": "实验用5只猴子：2只绒猴看27张灰度照片、用多电极阵列记录V1；2只猕猴看70张彩色照片、用Neuropixels探针记录LGN（每场次还有小Gabor目标要求注视以换奖励）。共94个场次、约23452个神经元单元，每次约250个单元，尖峰与眼位按120Hz（8.3毫秒）分箱。路线一：岭回归（ridge regression）解码局部小块，按可靠性加权拼图，再用1/f先验解一个带权的最小二乘问题（共轭梯度求解）来去噪补洞。路线二：把尖峰与注视坐标切成256维token，经自注意力得到局部与全局上下文，再由Transformer输出图像块、扩散模型负责生成与补全。",
+            "applications": "短期是视觉神经科学的实验工具：用重建效果反过来检验“大脑的自然图像先验”是什么。长期指向视觉修复的脑机接口：在只能记录几百个神经元、感受野只覆盖一小块视野的严苛条件下，先把信号拼起来再补全，评估植入电极实际“让人看到什么”。也可用于评估不同脑记录模态在做解码任务时的性价比。",
+            "technicalTerms": [
+              "感受野（RF）：一个神经元“负责看”的视野里那一小块区域。",
+              "V1：初级视皮层，大致相当于大脑里的边缘检测器。",
+              "LGN：外侧膝状体，视网膜到皮层的中转站，本文首次在此做图像重建。",
+              "尖峰：神经元放电事件，本文把它按时间分箱计数当作输入。",
+              "岭回归：一种带正则化的线性回归，用来从放电预测小图像块。",
+              "1/f先验：自然图像的统计规律——低频成分强、高频成分弱，用它去噪和填补空白。",
+              "Transformer：靠自注意力处理序列的神经网络，这里把放电和注视点当作token序列。",
+              "扩散模型：从噪声逐步去噪生成图像的生成模型，负责生成逼真细节。",
+              "fMRI/EEG/MEG：分别是功能磁共振、脑电、脑磁，空间或时间分辨率各有取舍的记录方式。"
+            ]
+          }
+        },
+        "en": {
+          "highlight": "Our method sets a new state-of-the-art performance in reconstructing natural images from brain activity, across fMRI, EEG, MEG and electrophysiology.",
+          "summary": "The paper asks whether the picture a monkey is looking at can be recovered from recorded neural activity — while the eyes move freely, not while gaze is held still. It compares a simple linear decoder with a modern transformer-plus-diffusion pipeline and quantifies how much neural evidence, eye-tracking accuracy, and image prior each contribute, making it a clear snapshot of where brain decoding stands.",
+          "failureAnalysis": "Reconstruction quality depends heavily on eye-tracking accuracy and the chosen image prior, and the study covers only five monkeys with 27 grayscale and 70 color photographs, so generalization across animals and stimuli remains untested.",
+          "title": "Reconstructing Natural Images from Brain Activity during Free Viewing",
+          "paperCard": {
+            "problem": "It tackles the decoding direction of vision: given spike trains, can we recover the image that was seen? Earlier work demanded fixation, even though primates saccade two to three times per second and their visual activity changes accordingly. A practical motivation is vision-restoration implants in V1 or LGN, which record only a few hundred neurons, each covering a tiny patch of the visual field.",
+            "method": "Recordings are cut into 100-ms windows; because gaze is tracked, each window yields a paired example of spike counts and the small image patch under the receptive fields. A decoder maps spikes to that patch, patches are placed at their gaze-determined positions to form a mosaic, and an image prior fills the gaps and removes noise.",
+            "difference": "It decodes during free viewing by pooling evidence across eye movements, trials and sessions; it is the first reconstruction from primate LGN, and among the first color reconstructions; and it compares fMRI, EEG, MEG and electrophysiology within one framework.",
+            "innovation": "It separates and quantifies three determinants of reconstruction quality — accumulated neural evidence, eye-tracking accuracy, and choice of image prior — and shows that even tiny fixational eye movements must be tracked. Spikes and gaze are tokenized and fed to a transformer plus diffusion model.",
+            "implementation": "Five monkeys: two marmosets viewing 27 grayscale photos with V1 arrays, two macaques viewing 70 color photos with Neuropixels probes in LGN. In total 94 sessions and 23,452 units, about 250 per session, with spikes and eye position binned at 120 Hz. Path one uses ridge regression per session, reliability-weighted patch mosaicking, and a 1/f-prior least-squares fill solved with conjugate gradients. Path two tokenizes spikes and gaze into 256-d tokens, applies self-attention for local and global context, and uses a transformer patch head with a diffusion model to render the scene.",
+            "applications": "Near term, a tool for visual neuroscience that tests hypotheses about the brain's natural-image prior; longer term, a route for visual prosthetics that must operate from severely subsampled populations, and a way to compare recording modalities for decoding.",
+            "technicalTerms": [
+              "receptive field: the small region of the visual field a neuron responds to",
+              "V1: primary visual cortex, roughly the brain's edge detector",
+              "LGN: lateral geniculate nucleus, the relay between retina and cortex",
+              "spikes: neuronal firing events, counted in time bins here",
+              "ridge regression: regularized linear regression used to predict image patches",
+              "1/f prior: the statistic that natural images have more low- than high-frequency power",
+              "transformer: attention-based network that processes spike and gaze tokens",
+              "diffusion model: generative model that produces images by iterative denoising",
+              "fMRI/EEG/MEG: functional magnetic resonance, electroencephalography, magnetoencephalography"
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-feed-2b245baf1b594d99a3a7c729ca10b06c",
+      "category": "ai",
+      "title": "Quoting Scott Aaronson",
+      "source": "Simon Willison",
+      "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+      "abstractUrl": null,
+      "publishedAt": "2026-11-25T23:26:32.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "Community signal",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: Community signal",
+      "summary": "这段话把大语言模型对数学研究的潜在影响，比作显微镜和望远镜带来的观测能力跃迁：我们或将看到复杂度理论乃至更广阔数学真理中一整块此前模糊不清的新大陆。值得读，是因为它提供了一个理解 AI 与数学关系的宏观视角，而非具体技术结论。",
+      "failureAnalysis": "关键不在于 AI 自动解决某个问题，而在于它可能整体提升人类探索数学真理的分辨率；这更像认知工具的跃迁，而非一次性答案生成。",
+      "aiSelectionScore": 100,
+      "highlight": "我们现在明显将获得的，不是零散的复杂性难题答案，而是一整块数学真理的新大陆，过去只能透过迷雾隐约看见。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "It’s now obvious that we’ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we’d previously only glimpsed through fog. Picture van Leeuwenhoek first training a microscope on pondwater, or Galileo first training his telescope on the stars. That might give you some idea of how our resolution into the complexity-theoretic universe, and the whole universe of mathematical truth beyond it, has now improved.",
+      "translations": {
+        "zh": {
+          "title": "斯科特·阿伦森：数学真理的新大陆",
+          "highlight": "我们现在明显将获得的，不是零散的复杂性难题答案，而是一整块数学真理的新大陆，过去只能透过迷雾隐约看见。",
+          "summary": "这段话把大语言模型对数学研究的潜在影响，比作显微镜和望远镜带来的观测能力跃迁：我们或将看到复杂度理论乃至更广阔数学真理中一整块此前模糊不清的新大陆。值得读，是因为它提供了一个理解 AI 与数学关系的宏观视角，而非具体技术结论。",
+          "failureAnalysis": "关键不在于 AI 自动解决某个问题，而在于它可能整体提升人类探索数学真理的分辨率；这更像认知工具的跃迁，而非一次性答案生成。"
+        },
+        "en": {
+          "highlight": "We’ll be getting not one-off solutions to complexity questions, but a whole new continent of mathematical truth.",
+          "summary": "The quote says LLMs may do more than answer isolated complexity questions: they could open up a whole new continent of mathematical truth previously seen only through fog. It is worth reading as a big-picture claim about AI as a new instrument for mathematical discovery, not as a technical result.",
+          "failureAnalysis": "The key point is not one-off problem solving but a possible leap in humanity’s resolution into mathematical truth—more like a new scientific instrument than an answer machine.",
+          "title": "Scott Aaronson on a New Continent of Mathematical Truth"
+        }
+      }
+    }
+  ]
+}
