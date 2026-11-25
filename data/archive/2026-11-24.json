@@ -1,0 +1,331 @@
+{
+  "issueDate": "2026-11-24",
+  "updateStatus": "complete",
+  "contentFingerprint": "62ed05629d1b0f50b14775f858d50c5912ca7e4bc071310db7dd736366b6e3d5",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-ac3c4d6f28f34133b432c3d1ba9a90f9",
+      "category": "domestic",
+      "title": "王毅同英国外交大臣米利班德通电话",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-24/10737270.shtml",
+      "publishedAt": "2026-11-24T15:00:19.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "2026年11月24日，中共中央政治局委员、外交部长王毅应约同英国外交大臣米利班德通电话。",
+      "summary": "中国新闻网国内报道称，2026年11月24日，王毅应约同英国外交大臣米利班德通电话。已披露内容仅确认通话发生及双方身份，未说明具体议题或成果。该信息可用于观察中英高层外交沟通动向，但细节应以官方后续发布为准。",
+      "failureAnalysis": "目前可核实的信息仅是通话事实，具体议题和成果尚需官方进一步披露；解读时应避免超出已知内容。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "2026年11月24日，中共中央政治局委员、外交部长王毅应约同英国外交大臣米利班德通电话。",
+      "translations": {
+        "zh": {
+          "title": "王毅应约同英国外交大臣米利班德通电话",
+          "highlight": "2026年11月24日，中共中央政治局委员、外交部长王毅应约同英国外交大臣米利班德通电话。",
+          "summary": "中国新闻网国内报道称，2026年11月24日，王毅应约同英国外交大臣米利班德通电话。已披露内容仅确认通话发生及双方身份，未说明具体议题或成果。该信息可用于观察中英高层外交沟通动向，但细节应以官方后续发布为准。",
+          "failureAnalysis": "目前可核实的信息仅是通话事实，具体议题和成果尚需官方进一步披露；解读时应避免超出已知内容。"
+        },
+        "en": {
+          "highlight": "On November 24, 2026, Wang Yi, member of the Political Bureau of the CPC Central Committee and Foreign Minister, took a phone call from UK Foreign Secretary Miliband.",
+          "summary": "China News Service's domestic news reports that Wang Yi spoke by phone with UK Foreign Secretary Miliband on November 24, 2026. The disclosed information confirms only the call and the participants, without specifying topics or outcomes. It is worth noting as a signal of high-level China-UK diplomatic communication, while details should be checked against subsequent official releases.",
+          "failureAnalysis": "The verifiable information is limited to the fact of the call; specific topics and outcomes require further official disclosure, so interpretation should not go beyond the known content.",
+          "title": "Wang Yi Speaks by Phone with UK Foreign Secretary Miliband"
+        }
+      }
+    },
+    {
+      "id": "news-78e35ce93fdb4d75bc49fcdb4f15a6f2",
+      "category": "domestic",
+      "title": "哈尔滨市宾县：整合冰雪、温泉、民俗优质资源 培育三大特色冰雪体验",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-24/10737264.shtml",
+      "publishedAt": "2026-11-24T14:04:40.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "哈尔滨市宾县深度整合冰雪、温泉、民俗优质资源，精心培育三大特色冰雪体验，配套文体旅系列活动。",
+      "summary": "文章报道，哈尔滨市宾县在2026—2027年哈尔滨冰雪季新闻发布会（第二场）上介绍，将深度整合冰雪、温泉、民俗优质资源，培育三大特色冰雪体验并配套文体旅系列活动。其看点是围绕冬日冰雪新场景、新业态、新玩法做资源整合与产品供给，属于地方冰雪旅游供给侧的公开信息。",
+      "failureAnalysis": "可验证的信息集中在资源整合与活动配套，尚不能据此判断实际客流、收入或体验效果；阅读时应区分规划发布与落地成效。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网哈尔滨11月24日电 (李香梅 刘锡菊)24日，记者从哈尔滨市人民政府新闻办公室主办的“约会哈尔滨冰雪暖世界”2026—2027年哈尔滨冰雪季系列新闻发布会(第二场)上获悉，这个冬季，哈尔滨市宾县深度整合冰雪、温泉、民俗优质资源，精心培育三大特色冰雪体验，配套文体旅系列活动，全力开发冬日冰雪新场景、新业态、新玩法。",
+      "translations": {
+        "zh": {
+          "title": "哈尔滨宾县整合冰雪温泉民俗资源培育三大特色冰雪体验",
+          "highlight": "哈尔滨市宾县深度整合冰雪、温泉、民俗优质资源，精心培育三大特色冰雪体验，配套文体旅系列活动。",
+          "summary": "文章报道，哈尔滨市宾县在2026—2027年哈尔滨冰雪季新闻发布会（第二场）上介绍，将深度整合冰雪、温泉、民俗优质资源，培育三大特色冰雪体验并配套文体旅系列活动。其看点是围绕冬日冰雪新场景、新业态、新玩法做资源整合与产品供给，属于地方冰雪旅游供给侧的公开信息。",
+          "failureAnalysis": "可验证的信息集中在资源整合与活动配套，尚不能据此判断实际客流、收入或体验效果；阅读时应区分规划发布与落地成效。"
+        },
+        "en": {
+          "highlight": "Bin County in Harbin will deeply integrate quality ice-snow, hot spring and folk resources, carefully cultivate three featured ice-snow experiences, and support them with cultural, sports and tourism activities.",
+          "summary": "The article reports that Bin County, Harbin, announced at the second press conference of the 2026–2027 Harbin Ice-Snow Season that it will integrate ice-snow, hot spring and folk resources and offer three featured winter experiences with supporting cultural, sports and tourism activities. It is worth reading as a public update on local winter tourism supply and how resources are being packaged into new winter scenes, formats and activities.",
+          "failureAnalysis": "The available information is mainly a planning and resource-integration announcement, so actual visitor numbers, revenue and experience outcomes still require later data for verification.",
+          "title": "Harbin's Bin County Integrates Ice-Snow, Hot Spring and Folk Resources to Cultivate Three Featured Winter Experiences"
+        }
+      }
+    },
+    {
+      "id": "news-f24ac37669c14ae38793a965610ba049",
+      "category": "domestic",
+      "title": "大雁塔逐步回正 陕西推进黄河“水脉”“文脉”协同保护",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-24/10737265.shtml",
+      "publishedAt": "2026-11-24T14:01:09.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "陕西省水利厅厅长郑维国介绍，大雁塔逐步由原来的倾斜回正，富平温泉河干涸约40年现在开始复涌。",
+      "summary": "中国新闻网社会报道，陕西省政府新闻办发布会上介绍，大雁塔逐步由原来的倾斜回正，富平温泉河干涸约40年现在开始复涌，黄河流域地下水超采区面积压减至907平方公里。报道将具体水文变化与陕西落实最严格水资源管理制度、推进黄河“水脉”“文脉”协同保护联系起来。读者可据此观察地方水资源治理和文化遗产保护的可核查进展。",
+      "failureAnalysis": "可核查的要点是，地方水资源治理成效被落在具体变化和量化指标上；但仅凭发布会摘要，仍不足以判断治理的长期效果。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社西安11月24日电 (记者 阿琳娜)“大雁塔逐步由原来的倾斜回正，富平温泉河干涸约40年现在开始复涌。”陕西省水利厅厅长郑维国24日在陕西省政府新闻办举办的新闻发布会上介绍，该省落实最严格水资源管理制度，黄河流域地下水超采区面积压减至907平方公里。",
+      "translations": {
+        "zh": {
+          "title": "大雁塔逐步回正 陕西推进黄河“水脉”“文脉”协同保护",
+          "highlight": "陕西省水利厅厅长郑维国介绍，大雁塔逐步由原来的倾斜回正，富平温泉河干涸约40年现在开始复涌。",
+          "summary": "中国新闻网社会报道，陕西省政府新闻办发布会上介绍，大雁塔逐步由原来的倾斜回正，富平温泉河干涸约40年现在开始复涌，黄河流域地下水超采区面积压减至907平方公里。报道将具体水文变化与陕西落实最严格水资源管理制度、推进黄河“水脉”“文脉”协同保护联系起来。读者可据此观察地方水资源治理和文化遗产保护的可核查进展。",
+          "failureAnalysis": "可核查的要点是，地方水资源治理成效被落在具体变化和量化指标上；但仅凭发布会摘要，仍不足以判断治理的长期效果。"
+        },
+        "en": {
+          "highlight": "Shaanxi water resources chief Zheng Weiguo said the Giant Wild Goose Pagoda is gradually straightening and the Fuping Hot Spring River is flowing again after about 40 dry years.",
+          "summary": "A China News Service social report describes a Shaanxi provincial press conference where officials said the Giant Wild Goose Pagoda is gradually returning from its tilt and the Fuping Hot Spring River has begun flowing again after about 40 years of drying up. The report also says the area of groundwater overexploitation in the Yellow River basin has been reduced to 907 square kilometers under stricter water resource management. It is worth reading as a concrete update on local water governance and cultural heritage protection.",
+          "failureAnalysis": "The verifiable takeaway is that local water-resource governance is being presented through specific, observable changes and a quantitative indicator; the press-conference excerpt alone does not establish long-term results.",
+          "title": "Giant Wild Goose Pagoda Gradually Straightens as Shaanxi Promotes Coordinated Protection of Yellow River Water and Cultural Heritage"
+        }
+      }
+    },
+    {
+      "id": "news-5f95cd9561fe418bb753daa43c00656f",
+      "category": "international",
+      "title": "US attorney general dodges questions about Nvidia investigation",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/crpdw1qx7jgxo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-24T21:19:42.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "英伟达股价下跌7%，因议员要求就特朗普总统介入黄仁勋复职一事作出回答。",
+      "summary": "美国司法部长在英伟达调查相关问题上避答，议员则追问特朗普总统在黄仁勋复职中的角色。已知信息显示，英伟达股价下跌7%。这件事值得关注，因为它体现政治与监管风险会如何影响大型科技公司。",
+      "failureAnalysis": "关键要点是：围绕英伟达调查的政治追问已传导到市场，7%的股价下跌显示监管与政治风险会被快速定价。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Nvidia's share price have fallen 7% as lawmakers demand answers about President Donald Trump's involvement in Huang's reinstatement.",
+      "translations": {
+        "zh": {
+          "title": "美国司法部长回避英伟达调查提问",
+          "highlight": "英伟达股价下跌7%，因议员要求就特朗普总统介入黄仁勋复职一事作出回答。",
+          "summary": "美国司法部长在英伟达调查相关问题上避答，议员则追问特朗普总统在黄仁勋复职中的角色。已知信息显示，英伟达股价下跌7%。这件事值得关注，因为它体现政治与监管风险会如何影响大型科技公司。",
+          "failureAnalysis": "关键要点是：围绕英伟达调查的政治追问已传导到市场，7%的股价下跌显示监管与政治风险会被快速定价。"
+        },
+        "en": {
+          "highlight": "Nvidia's share price have fallen 7% as lawmakers demand answers about President Donald Trump's involvement in Huang's reinstatement.",
+          "summary": "The item says the US attorney general avoided questions about the Nvidia investigation. Lawmakers are pressing for answers on President Donald Trump’s involvement in Huang’s reinstatement, and Nvidia shares fell 7%. It is worth reading because it shows how political and regulatory scrutiny can quickly affect a major tech company.",
+          "failureAnalysis": "The key takeaway is that political and regulatory scrutiny around Nvidia is already visible in the market, with a 7% share-price drop.",
+          "title": "US attorney general dodges questions about Nvidia investigation"
+        }
+      }
+    },
+    {
+      "id": "news-a753715dc4d9482c9c8068491c24e973",
+      "category": "international",
+      "title": "Huawei found guilty of stealing trade secrets but acquitted of racketeering",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/cmy49ngydqzpo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-24T22:24:23.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "华为被判窃取商业机密罪名成立，但敲诈勒索罪名不成立，该裁决源自纽约一场持续数月的审判。",
+      "summary": "BBC Business 报道，纽约一场持续数月的审判结束后，华为被判窃取商业机密罪名成立，但敲诈勒索指控不成立。这条新闻值得关注，因为它同时涉及知识产权纠纷、跨境法律程序，以及大型科技公司面临的合规与声誉风险，而且裁决结果是“部分成立、部分不成立”。",
+      "failureAnalysis": "关键要点：读这类法律新闻时，要分清具体罪名与整体观感：成立的是窃取商业机密，不成立的是敲诈勒索，两者不能互相替代。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "The verdict follows a months-long trial in New York.",
+      "translations": {
+        "zh": {
+          "title": "华为被判窃取商业机密罪名成立，但敲诈勒索指控不成立",
+          "highlight": "华为被判窃取商业机密罪名成立，但敲诈勒索罪名不成立，该裁决源自纽约一场持续数月的审判。",
+          "summary": "BBC Business 报道，纽约一场持续数月的审判结束后，华为被判窃取商业机密罪名成立，但敲诈勒索指控不成立。这条新闻值得关注，因为它同时涉及知识产权纠纷、跨境法律程序，以及大型科技公司面临的合规与声誉风险，而且裁决结果是“部分成立、部分不成立”。",
+          "failureAnalysis": "关键要点：读这类法律新闻时，要分清具体罪名与整体观感：成立的是窃取商业机密，不成立的是敲诈勒索，两者不能互相替代。"
+        },
+        "en": {
+          "highlight": "Huawei was found guilty of stealing trade secrets but acquitted of racketeering, following a months-long trial in New York.",
+          "summary": "BBC Business reports that after a months-long trial in New York, Huawei was found guilty of stealing trade secrets but acquitted of racketeering. It is worth reading because it touches on intellectual property disputes, cross-border legal proceedings and the compliance and reputational risks facing large technology companies, with a split verdict.",
+          "failureAnalysis": "Key takeaway: in legal news, separate each specific charge from the overall impression: the theft-of-trade-secrets charge was upheld, while the racketeering charge was not, and one does not substitute for the other.",
+          "title": "Huawei found guilty of stealing trade secrets but acquitted of racketeering"
+        }
+      }
+    },
+    {
+      "id": "life-e4bcb2b55e514737bf2a4a6bad304f4c",
+      "category": "international",
+      "title": "Heart, the Heretic: The Forgotten Visionary Jane Ellen Harrison on Critical Thinking, Emotional Imagination, and How to Fix the World",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/23/jane-ellen-harrison-heresy-and-humanity/",
+      "publishedAt": "2026-11-23T22:58:00.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 4",
+      "highlight": "若要成为真正的异端，我们不只需要新的头脑，更需要新的心，尤其是由更广大的同情与更敏锐的感受所孕育的情感想象力。",
+      "summary": "文章聚焦维多利亚时代学者简·艾伦·哈里森，她被主流遗忘，却提出一种更完整的革新观：真正的异端精神不只更换头脑，更要更换心，并孕育新的情感想象力。文章的核心线索是：这种情感想象力来自被扩大的同情心与更敏锐的感受习惯。对关心批判性思维与世界如何变好的人，这提供了一个常被忽略的视角。",
+      "failureAnalysis": "关键启示：只升级头脑的批判性思维容易变成冷硬的立场之争；真正推动改变的，是同时扩展“感受他人处境”的能力。可迁移的提醒是：判断力来自理性与同情、感受力的共同训练。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "\"If we are to be true and worthy heretics, we need not only new heads, but new hearts, and, most of all, that new emotional imagination... begotten of enlarged sympathies and a more sensitive habit of feeling.\"",
+      "translations": {
+        "zh": {
+          "title": "心之异端：被遗忘的先知简·艾伦·哈里森谈批判性思维、情感想象力与如何修补世界",
+          "highlight": "若要成为真正的异端，我们不只需要新的头脑，更需要新的心，尤其是由更广大的同情与更敏锐的感受所孕育的情感想象力。",
+          "summary": "文章聚焦维多利亚时代学者简·艾伦·哈里森，她被主流遗忘，却提出一种更完整的革新观：真正的异端精神不只更换头脑，更要更换心，并孕育新的情感想象力。文章的核心线索是：这种情感想象力来自被扩大的同情心与更敏锐的感受习惯。对关心批判性思维与世界如何变好的人，这提供了一个常被忽略的视角。",
+          "failureAnalysis": "关键启示：只升级头脑的批判性思维容易变成冷硬的立场之争；真正推动改变的，是同时扩展“感受他人处境”的能力。可迁移的提醒是：判断力来自理性与同情、感受力的共同训练。"
+        },
+        "en": {
+          "highlight": "If we are to be true and worthy heretics, we need not only new heads, but new hearts, and, most of all, that new emotional imagination.",
+          "summary": "The piece revisits Jane Ellen Harrison, a visionary who was largely forgotten, and her claim that real heresy requires not just new heads but new hearts and a new emotional imagination. That imagination, she argues, is begotten of enlarged sympathies and a more sensitive habit of feeling. It is worth reading as a counterweight to purely intellectual notions of critical thinking and of fixing the world.",
+          "failureAnalysis": "Key takeaway: critical thinking that upgrades only the head easily hardens into cold positional argument; real change also requires expanding the capacity to feel other people's situations. Judgment grows from training reason together with sympathy and sensitivity.",
+          "title": "Heart, the Heretic: The Forgotten Visionary Jane Ellen Harrison on Critical Thinking and Emotional Imagination"
+        }
+      }
+    },
+    {
+      "id": "life-e316eab87a2e47d5915455fa7b8a5aa0",
+      "category": "international",
+      "title": "How to be happier in 2027, and the Question Everyone Forgets to Ask",
+      "source": "Gretchen Rubin",
+      "url": "https://gretchenrubin.com/articles/how-to-be-happier/",
+      "publishedAt": "2026-11-24T18:56:48.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 1",
+      "highlight": "研究表明，我们并不总是擅长预测什么会让自己幸福；人们常高估外部成就或物质收获带来的提升。",
+      "summary": "这篇短文从新年带来的反思与重置切入，讨论如何提升幸福感。它提到研究显示，人们往往不擅长预测什么会让自己幸福，并容易高估外部成就或物质收益的作用。适合用来提醒自己校准对幸福的预期。",
+      "failureAnalysis": "关键提醒是：与其把幸福押在外部成就和物质收益上，不如先检查自己对幸福来源的预测是否可靠。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "The start of a new year brings fresh possibilities—a chance to reflect, reset, and focus on what matters most. When it comes to happiness, however, research shows that we’re not always good at predicting what will make us happy. Studies have found that people often overestimate how much external achievements or material gains will boost […] The post How to be happier in 2027, and the Question Everyone Forgets to Ask appeared first on Gretchen Rubin .",
+      "translations": {
+        "zh": {
+          "title": "如何在2027年更幸福，以及那个常被忽略的问题",
+          "highlight": "研究表明，我们并不总是擅长预测什么会让自己幸福；人们常高估外部成就或物质收获带来的提升。",
+          "summary": "这篇短文从新年带来的反思与重置切入，讨论如何提升幸福感。它提到研究显示，人们往往不擅长预测什么会让自己幸福，并容易高估外部成就或物质收益的作用。适合用来提醒自己校准对幸福的预期。",
+          "failureAnalysis": "关键提醒是：与其把幸福押在外部成就和物质收益上，不如先检查自己对幸福来源的预测是否可靠。"
+        },
+        "en": {
+          "highlight": "Research shows that we’re not always good at predicting what will make us happy.",
+          "summary": "This short article uses the new year as a prompt to reflect, reset, and think about happiness. It notes that research shows people are often poor at predicting what will make them happy and tend to overestimate external achievements or material gains. It is worth reading as a reminder to recalibrate expectations about happiness.",
+          "failureAnalysis": "The key takeaway: rather than betting happiness on external achievements and material gains, first check whether your predictions about the sources of happiness are reliable.",
+          "title": "How to Be Happier in 2027, and the Question Everyone Forgets to Ask"
+        }
+      }
+    },
+    {
+      "id": "paper-2611.31171",
+      "category": "paper",
+      "title": "EEG Decoding in Context: A Framework for Tuning-Free EEG Foundation Models",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2611.31171v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.31171",
+      "publishedAt": "2026-11-23T18:30:53.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "脑电解码是通向通信、康复、认知评估与神经监测等脑机接口应用的关键路径。",
+      "summary": "该文提出一个面向脑电基础模型的免调参框架，主题是在上下文中进行脑电解码。来源仅给出摘要开头，说明脑电解码在通信、康复、认知评估和神经监测中的中心作用，但未提供方法细节或实验结论。",
+      "failureAnalysis": "可核查文本仅为标题、作者信息和摘要首句，缺少数据、基线、评估指标与结果，无法判断框架的有效性或泛化能力。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "EEG DECODING INCONTEXT: A FRAMEWORK FOR TUNING-FREEEEG FOUNDATIONMODELS Hao-Run Cai1 Si-Yang Liu1 Han-Jia Ye1 Hairong Zheng2 1National Key Laboratory for Novel Software Technology, Nanjing University 2Institute of Brain-Machine Interface, Nanjing University {caihr,liusy,yehj}@lamda.nju.edu.cn hr.zheng@nju.edu.cn ABSTRACT Electroencephalography (EEG) decoding is a central route toward brain–computer interfaces for communication, rehabilitation, cognitive assessment, and neurological monitoring. Recent EEG foundation models have substantially advanced reusable signal representations, but their downstream use still typically requires a task-specific decoder, gradient-based adaptation, and validation-driven model selection. We investigate a complementary foundation-model paradigm based on in-context learning: labeled EEG recordings define the decoding task as context, and new recordings are predicted without updating model parameters.",
+      "translations": {
+        "zh": {
+          "title": "上下文中的脑电解码：免调参脑电基础模型框架",
+          "highlight": "脑电解码是通向通信、康复、认知评估与神经监测等脑机接口应用的关键路径。",
+          "summary": "该文提出一个面向脑电基础模型的免调参框架，主题是在上下文中进行脑电解码。来源仅给出摘要开头，说明脑电解码在通信、康复、认知评估和神经监测中的中心作用，但未提供方法细节或实验结论。",
+          "failureAnalysis": "可核查文本仅为标题、作者信息和摘要首句，缺少数据、基线、评估指标与结果，无法判断框架的有效性或泛化能力。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "EEG Decoding in Context: A Framework for Tuning-Free EEG Foundation Models",
+          "highlight": "EEG decoding is a central route toward brain–computer interfaces for communication, rehabilitation, cognitive assessment, and neurological monitoring.",
+          "summary": "The work presents a tuning-free framework for EEG foundation models, framed around decoding in context. The supplied abstract opening identifies EEG decoding as central to brain–computer interfaces for communication, rehabilitation, cognitive assessment, and neurological monitoring, but provides no method details or experimental findings.",
+          "failureAnalysis": "The available text is limited to the title, author information, and the opening of the abstract; without data, baselines, metrics, or results, the framework's effectiveness and generalization cannot be assessed.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-github-1349328247",
+      "category": "ai",
+      "title": "AhmadHassan-BTed/Jantt",
+      "source": "GitHub Search",
+      "url": "https://github.com/AhmadHassan-BTed/Jantt",
+      "abstractUrl": null,
+      "publishedAt": "2026-08-28T07:32:35.0000000Z",
+      "scoreLabel": "GitHub 6241 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该仓库提供免代码的交互式甘特图工具，内置BYOK AI Copilot（支持10家服务商和Ollama）、免费云房间、工作日历CPM、6种视图，并提供React、Vue、Svelte、Python以及MCP集成。它获得6241星且有近期公开活动，适合观察AI如何嵌入传统项目管理工具，以及多框架分发和免费模式能否形成真实采用。",
+      "failureAnalysis": "甘特图与项目管理是成熟且竞争激烈的市场，永久免费加BYOK会降低付费意愿，但云房间、模型调用体验和持续维护仍有成本。AI Copilot依赖用户自备密钥和底层模型质量，若不能显著减少排期与依赖梳理工作量，用户可能只把它当普通甘特图。多框架、多视图和MCP扩大工程面与测试负担，可能拖慢迭代；企业协作还涉及权限、数据合规和审计，免费云房间若缺乏这些能力，难进入付费组织。",
+      "aiSelectionScore": 6241,
+      "highlight": "用AI创建交互式甘特图，无需写代码且永久免费，内置支持10家服务商与Ollama的BYOK AI Copilot。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 6241 stars and recent public activity. Description: Create interactive Gantt charts with AI : no code required, free forever. Built-in BYOK AI Copilot (10 providers + Ollama), free cloud rooms, working-calendar CPM, 6 views, React/Vue/Svelte/Python/MCP.",
+      "translations": {
+        "zh": {
+          "title": "Jantt：用AI免代码创建交互式甘特图",
+          "highlight": "用AI创建交互式甘特图，无需写代码且永久免费，内置支持10家服务商与Ollama的BYOK AI Copilot。",
+          "summary": "该仓库提供免代码的交互式甘特图工具，内置BYOK AI Copilot（支持10家服务商和Ollama）、免费云房间、工作日历CPM、6种视图，并提供React、Vue、Svelte、Python以及MCP集成。它获得6241星且有近期公开活动，适合观察AI如何嵌入传统项目管理工具，以及多框架分发和免费模式能否形成真实采用。",
+          "failureAnalysis": "甘特图与项目管理是成熟且竞争激烈的市场，永久免费加BYOK会降低付费意愿，但云房间、模型调用体验和持续维护仍有成本。AI Copilot依赖用户自备密钥和底层模型质量，若不能显著减少排期与依赖梳理工作量，用户可能只把它当普通甘特图。多框架、多视图和MCP扩大工程面与测试负担，可能拖慢迭代；企业协作还涉及权限、数据合规和审计，免费云房间若缺乏这些能力，难进入付费组织。"
+        },
+        "en": {
+          "highlight": "Create interactive Gantt charts with AI—no code required, free forever, with a built-in BYOK AI Copilot supporting 10 providers plus Ollama.",
+          "summary": "The repository offers a no-code interactive Gantt chart tool with a BYOK AI Copilot (10 providers plus Ollama), free cloud rooms, working-calendar CPM, six views, and integrations for React, Vue, Svelte, Python, and MCP. With 6,241 stars and recent public activity, it is worth watching as an example of AI being embedded into a mature project-management workflow, and as a test of whether a free, multi-framework distribution model can drive real adoption.",
+          "failureAnalysis": "Gantt and project-management tools are a crowded market, and 'free forever' plus BYOK may weaken willingness to pay while cloud rooms and maintenance still create costs. The AI copilot depends on users bringing keys and on model quality; unless it materially reduces scheduling and dependency work, it risks being treated as an ordinary Gantt tool, and enterprise permissions, compliance, and auditing remain adoption barriers.",
+          "title": "Jantt: Create Interactive Gantt Charts with AI, No Code Required"
+        }
+      }
+    }
+  ]
+}
