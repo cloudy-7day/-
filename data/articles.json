@@ -1,7 +1,7 @@
 {
-  "issueDate": "2026-11-25",
+  "issueDate": "2026-11-26",
   "updateStatus": "complete",
-  "contentFingerprint": "bb78d4645b4c3d70a7d3a24da019a1790073cd65c3bb860deec1f88b8648e652",
+  "contentFingerprint": "3806b676eb2f09b76f08e23d1d28258f57d2bb8354829b06331a2cceb97d641f",
   "notes": [
     "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
     "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
@@ -10,216 +10,187 @@
   ],
   "articles": [
     {
-      "id": "news-fc63ecba771349d2b74d80973902e6d9",
+      "id": "news-b933ca5ebf324184b275851a96210db1",
       "category": "domestic",
-      "title": "中方呼吁申办《海洋生物多样性协定》秘书处相关国家友好合作、合理竞争",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-25/10737835.shtml",
-      "publishedAt": "2026-11-25T14:03:32.0000000+00:00",
+      "title": "四大商业银行已与上市公司签订股票回购增持贷款合同超6000亿元",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-26/10738467.shtml",
+      "publishedAt": "2026-11-26T14:37:09.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "有关国家不应把《协定》政治化，要在相关规则的前提下，友好合作、合理竞争，共同为海洋治理与发展作出贡献。",
-      "summary": "中新社报道，中国外交部申办《海洋生物多样性协定》秘书处特使易先良在北京表示，有关国家不应把《协定》政治化。可核实的公开信息主要是这一官方表态：相关国家应在规则前提下友好合作、合理竞争，共同推动海洋治理与发展。这有助于理解中方围绕秘书处申办释放的合作姿态与规则立场。",
-      "failureAnalysis": "关键看点在于，秘书处申办不仅涉及机构安排，也涉及国际规则与政治化风险；中方表态强调合作和竞争都应在规则框架内进行。",
+      "highlight": "目前，四大商业银行已签订上市公司股票回购增持贷款合同超6000亿元。",
+      "summary": "文章报道，央行等部门将股票回购增持再贷款政策转为长期制度性安排并下调再贷款利率后，工行、农行、中行、建行等迅速加大投放。四大商业银行已签订相关贷款合同超6000亿元，显示政策落地和资金支持上市公司的公开进展。这可作为观察金融政策如何转化为银行信贷投放的公开案例。",
+      "failureAnalysis": "关键看点是政策从阶段性安排转为长期制度后，银行投放规模迅速扩大；公开信息显示的是合同签订额，不等同于实际投放或企业最终使用效果。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社北京11月25日电 (记者 周昕)中国外交部申办《海洋生物多样性协定》(以下简称《协定》)秘书处特使易先良25日在北京表示，有关国家不应把《协定》政治化，要在相关规则的前提下，友好合作、合理竞争，共同为海洋治理与发展作出贡献。",
+      "sourceExcerpt": "记者今天(26日)从工商银行等商业银行了解到，在中国人民银行近日会同金融监管总局、中国证监会等部门明确将股票回购增持再贷款政策由阶段性安排转为长期制度性安排，并进一步下调再贷款利率之后，工商银行、农业银行、中国银行、建设银行等多家银行迅速落实有关部署，加大股票回购增持贷款投放力度。目前，四大商业银行已签订上市公司股票回购增持贷款合同超6000亿元。",
       "translations": {
         "zh": {
-          "title": "中方呼吁《海洋生物多样性协定》秘书处申办相关国家友好合作、合理竞争",
-          "highlight": "有关国家不应把《协定》政治化，要在相关规则的前提下，友好合作、合理竞争，共同为海洋治理与发展作出贡献。",
-          "summary": "中新社报道，中国外交部申办《海洋生物多样性协定》秘书处特使易先良在北京表示，有关国家不应把《协定》政治化。可核实的公开信息主要是这一官方表态：相关国家应在规则前提下友好合作、合理竞争，共同推动海洋治理与发展。这有助于理解中方围绕秘书处申办释放的合作姿态与规则立场。",
-          "failureAnalysis": "关键看点在于，秘书处申办不仅涉及机构安排，也涉及国际规则与政治化风险；中方表态强调合作和竞争都应在规则框架内进行。"
+          "title": "四大商业银行股票回购增持贷款合同超6000亿元",
+          "highlight": "目前，四大商业银行已签订上市公司股票回购增持贷款合同超6000亿元。",
+          "summary": "文章报道，央行等部门将股票回购增持再贷款政策转为长期制度性安排并下调再贷款利率后，工行、农行、中行、建行等迅速加大投放。四大商业银行已签订相关贷款合同超6000亿元，显示政策落地和资金支持上市公司的公开进展。这可作为观察金融政策如何转化为银行信贷投放的公开案例。",
+          "failureAnalysis": "关键看点是政策从阶段性安排转为长期制度后，银行投放规模迅速扩大；公开信息显示的是合同签订额，不等同于实际投放或企业最终使用效果。"
         },
         "en": {
-          "highlight": "Countries should not politicize the Agreement and should engage in friendly cooperation and fair competition under relevant rules to contribute to ocean governance and development.",
-          "summary": "China News Service reported that Yi Xianliang, China's special envoy for bidding to host the secretariat of the BBNJ Agreement, said in Beijing that relevant countries should not politicize the Agreement. The verifiable public information is mainly this official statement: countries should pursue friendly cooperation and fair competition under the rules and jointly contribute to ocean governance and development. This helps explain China's cooperative posture and rules-based position regarding the secretariat bid.",
-          "failureAnalysis": "The key point is that the secretariat bid involves not only institutional arrangements but also international rules and risks of politicization; China's statement stresses that cooperation and competition should both take place within the rules framework.",
-          "title": "China Calls for Friendly Cooperation and Fair Competition Among Countries Involved in Bidding for the Secretariat of the BBNJ Agreement"
+          "highlight": "Currently, the four major commercial banks have signed loan contracts exceeding RMB 600 billion for listed companies' stock buybacks and share increases.",
+          "summary": "The article reports that after the central bank and other regulators made the relending policy for stock buybacks and share increases a long-term institutional arrangement and lowered the relending rate, major banks such as ICBC, Agricultural Bank of China, Bank of China and China Construction Bank moved quickly to increase lending. The four major commercial banks have signed more than RMB 600 billion in related loan contracts, offering a public signal of policy implementation and financial support for listed companies. It is worth reading as a concrete example of how financial policy translates into bank credit.",
+          "failureAnalysis": "The key takeaway is that long-term institutionalization of the policy was followed by rapid expansion in bank lending; the disclosed figure is contracted amount, not necessarily disbursed funds or final corporate use.",
+          "title": "Four Major Chinese Banks Sign Over RMB 600 Billion in Share Buyback and Increase Loan Contracts"
         }
       }
     },
     {
-      "id": "news-8068b1da002c4c99a22a791ff3276702",
+      "id": "news-b04d81e989974f789efa748817c73585",
       "category": "domestic",
-      "title": "王毅同荷兰外交大臣贝伦德森会谈",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-25/10737829.shtml",
-      "publishedAt": "2026-11-25T13:49:56.0000000+00:00",
+      "title": "黑龙江三部地方性法规明年起陆续施行",
+      "source": "中国新闻网社会",
+      "url": "https://www.chinanews.com.cn/sh/2026/11-26/10738461.shtml",
+      "publishedAt": "2026-11-26T13:59:57.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "11月25日，中共中央政治局委员、外交部长王毅在北京同荷兰外交大臣贝伦德森举行会谈。",
-      "summary": "报道确认了会谈的时间、地点和人物：11月25日，王毅在北京同荷兰外交大臣贝伦德森举行会谈。作为官方RSS来源的国内新闻，其可核验价值在于确认中荷外长举行了面对面外交活动；报道未披露议题与成果，后续影响需以官方通稿为准。",
-      "failureAnalysis": "对非技术决策者而言，这条信息的可靠结论仅限于中荷外长在北京举行会谈；在缺少议题和成果细节时，不宜过度解读双边关系变化。",
+      "highlight": "会议表决通过无线电管理、职业教育、森林草原防灭火三部地方性法规，均自2027年起陆续施行。",
+      "summary": "中新网报道，黑龙江省十四届人大常委会第三十一次会议于11月26日表决通过三部地方性法规，分别涉及无线电管理、职业教育和森林草原防灭火。三部法规均自2027年起陆续施行，意味着相关领域的管理规则将在未来几年内逐步落地。对关注地方治理与企业合规的读者而言，这份时间表值得留意。",
+      "failureAnalysis": "关键信息不在于立法本身，而在于“2027年起陆续施行”的时间安排：真正的变化要看后续配套细则和具体生效日期，而不是通过当天。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "中新社北京11月25日电 11月25日，中共中央政治局委员、外交部长王毅在北京同荷兰外交大臣贝伦德森举行会谈。",
+      "sourceExcerpt": "中新网哈尔滨11月26日电 (韩雪)26日，黑龙江省十四届人大常委会第三十一次会议表决通过《黑龙江省无线电管理条例》《黑龙江省职业教育条例》《黑龙江省森林草原防灭火条例》三部地方性法规，三部法规均自2027年起陆续施行。",
       "translations": {
         "zh": {
-          "title": "王毅在北京同荷兰外交大臣贝伦德森会谈",
-          "highlight": "11月25日，中共中央政治局委员、外交部长王毅在北京同荷兰外交大臣贝伦德森举行会谈。",
-          "summary": "报道确认了会谈的时间、地点和人物：11月25日，王毅在北京同荷兰外交大臣贝伦德森举行会谈。作为官方RSS来源的国内新闻，其可核验价值在于确认中荷外长举行了面对面外交活动；报道未披露议题与成果，后续影响需以官方通稿为准。",
-          "failureAnalysis": "对非技术决策者而言，这条信息的可靠结论仅限于中荷外长在北京举行会谈；在缺少议题和成果细节时，不宜过度解读双边关系变化。"
+          "title": "黑龙江通过无线电管理、职业教育、森林草原防灭火三部地方性法规，2027年起陆续施行",
+          "highlight": "会议表决通过无线电管理、职业教育、森林草原防灭火三部地方性法规，均自2027年起陆续施行。",
+          "summary": "中新网报道，黑龙江省十四届人大常委会第三十一次会议于11月26日表决通过三部地方性法规，分别涉及无线电管理、职业教育和森林草原防灭火。三部法规均自2027年起陆续施行，意味着相关领域的管理规则将在未来几年内逐步落地。对关注地方治理与企业合规的读者而言，这份时间表值得留意。",
+          "failureAnalysis": "关键信息不在于立法本身，而在于“2027年起陆续施行”的时间安排：真正的变化要看后续配套细则和具体生效日期，而不是通过当天。"
         },
         "en": {
-          "highlight": "On November 25, Wang Yi, member of the Political Bureau of the CPC Central Committee and Foreign Minister, held talks in Beijing with Dutch Foreign Minister Berendsen.",
-          "summary": "The report confirms the time, place, and participants: on November 25, Wang Yi held talks in Beijing with Dutch Foreign Minister Berendsen. As an official RSS domestic news item, its verifiable value is confirming a face-to-face diplomatic meeting between the Chinese and Dutch foreign ministers; the report does not disclose the agenda or outcomes, so subsequent impact should be judged by official readouts.",
-          "failureAnalysis": "For a non-technical decision-maker, the reliable takeaway is limited to the confirmed meeting in Beijing; without agenda and outcome details, it is inappropriate to overinterpret changes in bilateral relations.",
-          "title": "Wang Yi Holds Talks with Dutch Foreign Minister Berendsen in Beijing"
+          "highlight": "The session voted to pass three local regulations covering radio management, vocational education, and forest and grassland fire prevention, all taking effect progressively from 2027.",
+          "summary": "China News Service reports that the Standing Committee of the 14th Heilongjiang Provincial People's Congress approved three local regulations at its 31st session on November 26, covering radio management, vocational education, and forest-grassland fire prevention. All three take effect progressively starting in 2027, meaning the rules will roll out over the coming years. Readers tracking local governance and corporate compliance should note this timetable.",
+          "failureAnalysis": "The key point is not the legislation itself but the timing: implementation begins progressively in 2027, so the real change depends on supporting rules and specific effective dates rather than the day of passage.",
+          "title": "Heilongjiang Passes Local Regulations on Radio Management, Vocational Education, and Forest-Grassland Fire Prevention"
         }
       }
     },
     {
-      "id": "news-c98d982738ab4fd9bfd8e70cacc170ed",
+      "id": "news-b31e7e8bb6f24cb59ab0a6d6f6b60dd1",
       "category": "domestic",
-      "title": "中荷外长共识声明",
-      "source": "中国新闻网国内",
-      "url": "https://www.chinanews.com.cn/gn/2026/11-25/10737833.shtml",
-      "publishedAt": "2026-11-25T13:49:21.0000000+00:00",
+      "title": "黑龙江省工商联十二届八次常委会议召开",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-26/10738459.shtml",
+      "publishedAt": "2026-11-26T13:59:51.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "Domestic priority: 5",
-      "highlight": "2026年11月25日，王毅在北京同荷兰外交大臣贝伦德森举行会谈，就中荷关系等共同关心的问题深入交流。",
-      "summary": "该报道称，2026年11月25日，王毅在北京同荷兰外交大臣贝伦德森举行会谈，就中荷关系等共同关心的问题深入交流。已知公开信息主要确认了会谈时间、地点、人物和议题范围，具体成果与公开影响仍需参考双方后续正式发布。对于关注中荷外交与双边关系走向的读者，这是一条来自官方信源的基础动态。",
-      "failureAnalysis": "当前可核实的信息集中在会谈本身和议题范围，具体共识与成果尚需以双方正式声明为准。",
+      "highlight": "26日，黑龙江省工商联十二届八次常委会议在哈尔滨召开，省政府副省长、省工商联主席韩圣健出席会议并讲话。",
+      "summary": "中新网报道，黑龙江省工商联十二届八次常委会议于11月26日在哈尔滨召开，由省委统战部副部长、省工商联党组书记夏天主持。副省长、省工商联主席韩圣健出席会议并讲话。该信息来自官方媒体渠道，可作为观察黑龙江省工商联近期组织运作与政企沟通节奏的公开信号。",
+      "failureAnalysis": "已知内容属于会议程序性报道，仅披露时间、地点、主持人、讲话人，未涉及具体议题与政策举措；要评估其实际影响，需等待会议通稿或后续配套文件。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "2026年11月25日，中共中央政治局委员、外交部长王毅在北京同荷兰外交大臣贝伦德森举行会谈，就中荷关系等共同关心的问题深入交流。",
+      "sourceExcerpt": "中新网哈尔滨11月26日电 (韩雪)26日，黑龙江省工商联十二届八次常委会议在哈尔滨召开。黑龙江省政府副省长、省工商联主席韩圣健出席会议并讲话。省委统战部副部长、省工商联党组书记夏天主持会议。",
       "translations": {
         "zh": {
-          "title": "中荷外长举行会谈 就共同关心问题深入交流",
-          "highlight": "2026年11月25日，王毅在北京同荷兰外交大臣贝伦德森举行会谈，就中荷关系等共同关心的问题深入交流。",
-          "summary": "该报道称，2026年11月25日，王毅在北京同荷兰外交大臣贝伦德森举行会谈，就中荷关系等共同关心的问题深入交流。已知公开信息主要确认了会谈时间、地点、人物和议题范围，具体成果与公开影响仍需参考双方后续正式发布。对于关注中荷外交与双边关系走向的读者，这是一条来自官方信源的基础动态。",
-          "failureAnalysis": "当前可核实的信息集中在会谈本身和议题范围，具体共识与成果尚需以双方正式声明为准。"
+          "title": "黑龙江省工商联十二届八次常委会议在哈尔滨召开",
+          "highlight": "26日，黑龙江省工商联十二届八次常委会议在哈尔滨召开，省政府副省长、省工商联主席韩圣健出席会议并讲话。",
+          "summary": "中新网报道，黑龙江省工商联十二届八次常委会议于11月26日在哈尔滨召开，由省委统战部副部长、省工商联党组书记夏天主持。副省长、省工商联主席韩圣健出席会议并讲话。该信息来自官方媒体渠道，可作为观察黑龙江省工商联近期组织运作与政企沟通节奏的公开信号。",
+          "failureAnalysis": "已知内容属于会议程序性报道，仅披露时间、地点、主持人、讲话人，未涉及具体议题与政策举措；要评估其实际影响，需等待会议通稿或后续配套文件。"
         },
         "en": {
-          "highlight": "On November 25, 2026, Wang Yi held talks in Beijing with Dutch Foreign Minister Berendsen, exchanging views on China-Netherlands relations and issues of mutual concern.",
-          "summary": "The report says that on November 25, 2026, Wang Yi held talks in Beijing with Dutch Foreign Minister Berendsen and exchanged views on China-Netherlands relations and issues of mutual concern. The available public information mainly confirms the meeting's time, place, participants, and broad agenda; specific outcomes and public impact require official follow-up statements. It is worth reading as an official-source update for those tracking China-Netherlands diplomacy.",
-          "failureAnalysis": "The verifiable information is limited to the meeting itself and its broad agenda; specific consensus and outcomes should be judged against formal statements from both sides.",
-          "title": "China-Netherlands Foreign Ministers Hold Talks on Issues of Mutual Concern"
+          "highlight": "On the 26th, the 8th standing committee meeting of the 12th Heilongjiang Provincial Federation of Industry and Commerce was held in Harbin, with Vice Governor and Federation Chairman Han Shengjian attending and delivering remarks.",
+          "summary": "China News Service reports that the 8th standing committee meeting of the 12th Heilongjiang Provincial Federation of Industry and Commerce convened in Harbin on November 26, chaired by Xia Tian, deputy head of the Provincial Party Committee's United Front Work Department and party secretary of the federation. Vice Governor and federation chairman Han Shengjian attended and spoke. Coming from an official media channel, the item serves as a public signal of the federation's recent organizational activity and government-business communication rhythm.",
+          "failureAnalysis": "The known content is procedural meeting coverage, disclosing only the time, place, chair and speaker without specific agenda items or policy measures; assessing actual impact requires the official readout or follow-up documents.",
+          "title": "Heilongjiang Provincial Federation of Industry and Commerce Holds 12th Session's 8th Standing Committee Meeting"
         }
       }
     },
     {
-      "id": "news-3a02cb68fc1a4dc7942d77cdcde307e6",
+      "id": "news-d3168b2925374402ac473367f992bd71",
       "category": "international",
-      "title": "China investigates Politburo member and Shanghai party chief Chen Jining",
-      "source": "NPR World",
-      "url": "https://www.npr.org/2026/11/25/nx-s1-6053801/china-investigation-politburo-shanghai-party",
-      "publishedAt": "2026-11-25T09:44:13.0000000+00:00",
+      "title": "‘I’m no longer a UAE official’: UN hopeful Lana Nusseibeh tries to shake off Sudan record",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/26/lana-nusseibeh-uae-sudan-un-secretary-general",
+      "publishedAt": "2026-11-26T12:37:42.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: politics",
-      "highlight": "这位政治局委员是习近平长期反腐运动中最新被查的高级官员，该运动在范围与深度上都未见放松迹象。",
-      "summary": "NPR世界频道报道，中国对政治局委员、上海市委书记陈吉宁展开调查。报道将其置于习近平持续推进的反腐败运动背景下，指出这场运动在覆盖范围和力度上都没有放缓的迹象。关注这一动向，有助于判断中国高层人事与政治纪律审查的节奏。",
-      "failureAnalysis": "核心看点在于：落马官员的级别已触及政治局层，说明反腐运动的边界仍在向上延伸，观察中国政情时应把高层人事变动与反腐节奏放在一起看。",
+      "highlight": "这位获美俄支持的联合国秘书长候选人正展开魅力攻势，但她能否克服伦敦对其竞选的阻力？",
+      "summary": "文章聚焦拉娜·努赛贝本周在英国的活动：她试图把自己塑造成未来的联合国秘书长人选，并转移外界对她阿联酋外交官任内苏丹记录的关注。报道提到她否认阿联酋曾向被控战争罪和种族灭绝的苏丹民兵提供武装，并称这是一项高风险策略，包括会见部长、议员、学者以及举办公开活动。其看点在于，国际组织高层竞选如何受到候选人既往外交立场与地缘政治争议的牵制。",
+      "failureAnalysis": "关键取舍在于：国际职位竞选不仅是能力展示，更是对候选人过往外交记录的政治审查；转移焦点未必能消除盟友的保留意见。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "The Politburo member is the latest senior official targeted in President Xi Jinping's long-running anti-corruption campaign, which has shown no signs of letting up in scope or depth.",
+      "sourceExcerpt": "The US and Russia’s candidate for secretary general is on a charm offensive. Can she overcome London’s resistance to her bid? Lana Nusseibeh is in Britain this week, attempting to present herself as a potential future UN secretary general, and shift the focus from her past as a United Arab Emirates diplomat who denied the country’s role in arming a militia accused of war crimes and genocide in Sudan’s four-year civil war.",
       "translations": {
         "zh": {
-          "title": "中国调查政治局委员、上海市委书记陈吉宁",
-          "highlight": "这位政治局委员是习近平长期反腐运动中最新被查的高级官员，该运动在范围与深度上都未见放松迹象。",
-          "summary": "NPR世界频道报道，中国对政治局委员、上海市委书记陈吉宁展开调查。报道将其置于习近平持续推进的反腐败运动背景下，指出这场运动在覆盖范围和力度上都没有放缓的迹象。关注这一动向，有助于判断中国高层人事与政治纪律审查的节奏。",
-          "failureAnalysis": "核心看点在于：落马官员的级别已触及政治局层，说明反腐运动的边界仍在向上延伸，观察中国政情时应把高层人事变动与反腐节奏放在一起看。"
+          "title": "“我不再是阿联酋官员”：联合国秘书长人选努赛贝试图摆脱苏丹记录",
+          "highlight": "这位获美俄支持的联合国秘书长候选人正展开魅力攻势，但她能否克服伦敦对其竞选的阻力？",
+          "summary": "文章聚焦拉娜·努赛贝本周在英国的活动：她试图把自己塑造成未来的联合国秘书长人选，并转移外界对她阿联酋外交官任内苏丹记录的关注。报道提到她否认阿联酋曾向被控战争罪和种族灭绝的苏丹民兵提供武装，并称这是一项高风险策略，包括会见部长、议员、学者以及举办公开活动。其看点在于，国际组织高层竞选如何受到候选人既往外交立场与地缘政治争议的牵制。",
+          "failureAnalysis": "关键取舍在于：国际职位竞选不仅是能力展示，更是对候选人过往外交记录的政治审查；转移焦点未必能消除盟友的保留意见。"
         },
         "en": {
-          "highlight": "The Politburo member is the latest senior official targeted in President Xi Jinping's long-running anti-corruption campaign, which has shown no signs of letting up in scope or depth.",
-          "summary": "NPR World reports that China has opened an investigation into Politburo member and Shanghai party secretary Chen Jining. The report frames the case within Xi Jinping's sustained anti-corruption campaign, which it says shows no sign of slowing in either scope or intensity. Watching this case helps gauge the pace of high-level personnel and discipline reviews in China.",
-          "failureAnalysis": "The key point: with a Politburo-level figure now under investigation, the campaign's reach is still extending upward, so elite personnel shifts and anti-corruption tempo should be read together.",
-          "title": "China investigates Politburo member and Shanghai party chief Chen Jining"
+          "highlight": "The US- and Russia-backed candidate for UN secretary general is on a charm offensive, but can she overcome London’s resistance to her bid?",
+          "summary": "The article focuses on Lana Nusseibeh’s visit to Britain this week as she tries to present herself as a future UN secretary general and shift attention from her record as a UAE diplomat during Sudan’s civil war. It notes that she denied the UAE’s role in arming a militia accused of war crimes and genocide, and describes her charm offensive—meeting ministers, MPs, academics and holding a public event—as a high-risk strategy. It is worth reading for how a senior international appointment can be shaped by a candidate’s past diplomatic positions and geopolitical controversies.",
+          "failureAnalysis": "The key takeaway is that a senior international candidacy is also a political audit of the candidate’s past diplomatic record; reframing the message may not remove allies’ reservations.",
+          "title": "‘I’m no longer a UAE official’: UN hopeful Lana Nusseibeh tries to shake off Sudan record"
         }
       }
     },
     {
-      "id": "news-231bc4a6246f4bdd92dff7dc7ac2856d",
+      "id": "news-7cc467a8865e46dc8a4a1d16dcb27211",
       "category": "international",
-      "title": "US stocks fall further as fears over AI intensify",
+      "title": "Asia made a big AI bet on Nvidia. What happens now?",
       "source": "BBC Business",
-      "url": "https://www.bbc.co.uk/news/articles/cq0md8g14zryo?at_medium=RSS&at_campaign=rss",
-      "publishedAt": "2026-11-25T21:43:18.0000000+00:00",
+      "url": "https://www.bbc.co.uk/news/articles/cqevr4lnd1nxo?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-26T23:08:12.0000000+00:00",
       "scoreLabel": "Official RSS source",
       "selectionReason": "International class: finance",
-      "highlight": "美国三大主要股指早盘齐跌，以科技股为主的纳斯达克指数下跌近4%。",
-      "summary": "报道显示，围绕人工智能的担忧升温之际，美国股市进一步走低。三大主要股指早盘均下跌，其中科技股占比高的纳斯达克指数跌幅接近4%。这有助于快速把握市场情绪与AI相关板块波动之间的关系。",
-      "failureAnalysis": "关键信号是AI担忧正在影响市场风险偏好，科技股集中的纳斯达克对情绪变化更敏感。",
+      "highlight": "黄仁勋出人意料地重新出任英伟达CEO后，亚洲股市经历了过山车般的剧烈波动。",
+      "summary": "这则BBC商业报道关注亚洲市场对英伟达AI前景的重大押注，并提到黄仁勋出人意料地重新出任CEO后，亚洲股市出现剧烈震荡。它值得关注，是因为一则关于英伟达领导层的突发消息，就足以牵动亚洲股市情绪。",
+      "failureAnalysis": "关键要点是，亚洲对英伟达的AI押注使区域股市对黄仁勋回归这类突发消息高度敏感。观察这一事件时，应区分短期市场波动与AI投资的长期叙事。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "All three main US indexes were down in early trading, with the tech-dominated Nasdaq down almost 4%.",
+      "sourceExcerpt": "Asian stocks have been on a rollercoaster ride after Jensen Huang's shock return as Nvidia CEO.",
       "translations": {
         "zh": {
-          "title": "美股进一步下跌，AI担忧升温",
-          "highlight": "美国三大主要股指早盘齐跌，以科技股为主的纳斯达克指数下跌近4%。",
-          "summary": "报道显示，围绕人工智能的担忧升温之际，美国股市进一步走低。三大主要股指早盘均下跌，其中科技股占比高的纳斯达克指数跌幅接近4%。这有助于快速把握市场情绪与AI相关板块波动之间的关系。",
-          "failureAnalysis": "关键信号是AI担忧正在影响市场风险偏好，科技股集中的纳斯达克对情绪变化更敏感。"
+          "title": "亚洲在英伟达AI上押下重注，接下来会怎样？",
+          "highlight": "黄仁勋出人意料地重新出任英伟达CEO后，亚洲股市经历了过山车般的剧烈波动。",
+          "summary": "这则BBC商业报道关注亚洲市场对英伟达AI前景的重大押注，并提到黄仁勋出人意料地重新出任CEO后，亚洲股市出现剧烈震荡。它值得关注，是因为一则关于英伟达领导层的突发消息，就足以牵动亚洲股市情绪。",
+          "failureAnalysis": "关键要点是，亚洲对英伟达的AI押注使区域股市对黄仁勋回归这类突发消息高度敏感。观察这一事件时，应区分短期市场波动与AI投资的长期叙事。"
         },
         "en": {
-          "highlight": "All three main US indexes were down in early trading, with the tech-dominated Nasdaq down almost 4%.",
-          "summary": "The report indicates that US stocks fell further as concerns about artificial intelligence intensified. All three main indexes were down in early trading, with the tech-heavy Nasdaq falling nearly 4%. This helps quickly grasp the link between market sentiment and volatility in AI-related sectors.",
-          "failureAnalysis": "The key signal is that AI concerns are affecting market risk appetite, and the tech-concentrated Nasdaq is more sensitive to shifts in sentiment.",
-          "title": "US stocks fall further as AI fears intensify"
+          "highlight": "Asian stocks have been on a rollercoaster ride after Jensen Huang's shock return as Nvidia CEO.",
+          "summary": "This BBC Business report focuses on Asia's major AI bet on Nvidia and notes that Asian stocks swung sharply after Jensen Huang's surprise return as CEO. It is worth reading because a sudden leadership development at Nvidia was enough to move market sentiment in Asia.",
+          "failureAnalysis": "The key takeaway is that Asia's AI bet on Nvidia makes regional stocks highly sensitive to shocks such as Jensen Huang's return. Observers should separate short-term market swings from the longer-term AI investment story.",
+          "title": "Asia Made a Big AI Bet on Nvidia. What Happens Now?"
         }
       }
     },
     {
-      "id": "life-39af2650d269436fa660158d5bd1143c",
+      "id": "life-01a863d6e3004973aa75f03205e71112",
       "category": "international",
-      "title": "Silence and Love",
+      "title": "How to Love the World More: Artist and Poet Rachel Hébert’s Breathtaking Catalogue of Gratitudes",
       "source": "The Marginalian",
-      "url": "https://www.themarginalian.org/2026/11/24/silence-and-love/",
-      "publishedAt": "2026-11-24T22:02:53.0000000+00:00",
+      "url": "https://www.themarginalian.org/2026/11/25/rachel-hebert-thanks/",
+      "publishedAt": "2026-11-26T02:29:10.0000000+00:00",
       "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 5",
-      "highlight": "音乐是沉默之手，捧住活着的感觉，举到唇边品尝；正是沉默的触碰，区分了音乐与噪音。",
-      "summary": "文章把音乐比作沉默之手：音调之间刻意的间隙、声音洪流中的静点，才让声音成为音乐。它借凯鲁亚克的话提醒人聆听世界幻象之内的沉默，从而记起被遗忘的功课。适合作为一则关于留白、倾听与感受力的短思。",
-      "failureAnalysis": "关键在于保留刻意的间隙，而不是填满每一刻；沉默让感受被听见，是一种结构，而非需要消除的空白。",
+      "selectionReason": "Life-skills match score: 4",
+      "highlight": "若我们足够专注而慷慨地留意，总会以喜悦得到回报，那是通往世界之门的把手。",
+      "summary": "文章以艺术家兼诗人雷切尔·埃贝尔的感恩作品为引，谈论生命既明亮易逝又坚硬闪烁的不可思议。它指出，我们明知这一切难得，却仍反复选择住在抱怨的笼子里。值得读，因为它提醒人：专注而慷慨地留意，会以喜悦回报我们，也成为通往世界之门的把手。",
+      "failureAnalysis": "关键不是否认生活的不如愿，而是练习把注意力从抱怨移向感恩。这种注意力的转向，本身就是重新学会爱世界的能力。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Music is the hand of silence cupped to hold the feeling of being alive, lifted to the lips and tasted. What differentiates music from noise is the touch of silence — the deliberate interstices between the tones, the still points in the rush of sound. As in music, so in life: “Listen to the silence inside the illusion of the world,” Jack Kerouac wrote to his first wife turned lifelong friend in reckoning with the meaning of life, “and you will remember the lesson you forgot.” Silence is the listening presence through which you hear the music of your own… read article",
+      "sourceExcerpt": "Here we are, living these lives bright and perishable as a poppy, hard and shimmering as obsidian. We know that they are entirely improbable, that we bless that bright improbability with each flash of gratitude for it all, that if we pay attention closely and generously enough we are always repaid in gladness, that it is the handle of the door to the world. And yet over and over we choose to live in the cage of complaint, too preoccupied with how the will of life betrayed our wishes, the wanting monster always growling in the other corner of the… read article",
       "translations": {
         "zh": {
-          "title": "沉默与爱：音乐中的留白",
-          "highlight": "音乐是沉默之手，捧住活着的感觉，举到唇边品尝；正是沉默的触碰，区分了音乐与噪音。",
-          "summary": "文章把音乐比作沉默之手：音调之间刻意的间隙、声音洪流中的静点，才让声音成为音乐。它借凯鲁亚克的话提醒人聆听世界幻象之内的沉默，从而记起被遗忘的功课。适合作为一则关于留白、倾听与感受力的短思。",
-          "failureAnalysis": "关键在于保留刻意的间隙，而不是填满每一刻；沉默让感受被听见，是一种结构，而非需要消除的空白。"
+          "title": "如何更爱世界：艺术家兼诗人雷切尔·埃贝尔的感恩清单",
+          "highlight": "若我们足够专注而慷慨地留意，总会以喜悦得到回报，那是通往世界之门的把手。",
+          "summary": "文章以艺术家兼诗人雷切尔·埃贝尔的感恩作品为引，谈论生命既明亮易逝又坚硬闪烁的不可思议。它指出，我们明知这一切难得，却仍反复选择住在抱怨的笼子里。值得读，因为它提醒人：专注而慷慨地留意，会以喜悦回报我们，也成为通往世界之门的把手。",
+          "failureAnalysis": "关键不是否认生活的不如愿，而是练习把注意力从抱怨移向感恩。这种注意力的转向，本身就是重新学会爱世界的能力。"
         },
         "en": {
-          "highlight": "What differentiates music from noise is the touch of silence — the deliberate interstices between the tones, the still points in the rush of sound.",
-          "summary": "Drawing an analogy between music and life, the piece presents silence as the listening presence that lets feeling and one’s own music be heard. It invokes Kerouac’s advice to listen to the silence inside the illusion of the world. It is worth reading as a short reflection on attention, spacing, and aliveness.",
-          "failureAnalysis": "The practical takeaway is to leave deliberate intervals rather than fill every moment; silence is a structure that lets feeling be heard, not a blank to eliminate.",
-          "title": "Silence and Love: The Intervals That Make Music"
+          "highlight": "If we pay attention closely and generously enough, we are always repaid in gladness; it is the handle of the door to the world.",
+          "summary": "Drawing on artist and poet Rachel Hébert’s catalogue of gratitudes, the piece reflects on lives that are bright and perishable as a poppy and hard and shimmering as obsidian. It argues that gratitude for life’s bright improbability can pull us out of the cage of complaint and return us to gladness. It is worth reading as a reminder that generous attention is a door back into love for the world.",
+          "failureAnalysis": "The practical takeaway is not to deny life’s disappointments but to practice redirecting attention from complaint toward gratitude. That shift in attention is itself a way of relearning how to love the world.",
+          "title": "How to Love the World More: Artist-Poet Rachel Hébert’s Catalogue of Gratitudes"
         }
       }
     },
     {
-      "id": "life-7a373b4a6e5e43bbab95d9476a4bc1d3",
-      "category": "international",
-      "title": "The passing",
-      "source": "Aeon",
-      "url": "https://aeon.co/videos/a-veterinarian-helps-cindy-say-goodbye-to-fiona-her-17-year-old-dog",
-      "publishedAt": "2026-11-25T11:01:00.0000000+00:00",
-      "scoreLabel": "Life-skills RSS source",
-      "selectionReason": "Life-skills match score: 0",
-      "highlight": "一位兽医以同情与关怀，帮助辛迪向她深爱的17岁老狗菲奥娜温柔道别。",
-      "summary": "这是Aeon的一段视频：兽医协助主人辛迪陪伴17岁的老狗菲奥娜走完最后时刻。它呈现了宠物临终告别中的专业照护与情感重量，适合关注生命教育和照护伦理的读者。",
-      "failureAnalysis": "关键点是：临终告别不只是医疗处置，更是需要被看见和安放的情感过程。",
-      "summarySource": "deepseek",
-      "sourceExcerpt": "With compassion and care, a veterinarian helps Cindy say a tender final goodbye to her beloved elderly dog, Fiona - by Aeon Video Watch on Aeon",
-      "translations": {
-        "zh": {
-          "title": "告别时刻：兽医帮助辛迪送别17岁爱犬菲奥娜",
-          "highlight": "一位兽医以同情与关怀，帮助辛迪向她深爱的17岁老狗菲奥娜温柔道别。",
-          "summary": "这是Aeon的一段视频：兽医协助主人辛迪陪伴17岁的老狗菲奥娜走完最后时刻。它呈现了宠物临终告别中的专业照护与情感重量，适合关注生命教育和照护伦理的读者。",
-          "failureAnalysis": "关键点是：临终告别不只是医疗处置，更是需要被看见和安放的情感过程。"
-        },
-        "en": {
-          "highlight": "With compassion and care, a veterinarian helps Cindy say a tender final goodbye to her beloved elderly dog, Fiona.",
-          "summary": "This Aeon video shows a veterinarian helping Cindy say a tender final goodbye to Fiona, her 17-year-old dog. It captures the professional care and emotional weight of end-of-life farewells for pets, making it relevant to readers interested in life education and care ethics.",
-          "failureAnalysis": "The key takeaway is that a final goodbye is not only a medical procedure but also an emotional process that needs to be witnessed and held with care.",
-          "title": "The Passing: Saying Goodbye to Fiona"
-        }
-      }
-    },
-    {
-      "id": "paper-2611.31989",
+      "id": "paper-2611.29457",
       "category": "paper",
-      "title": "Reconstructing Natural Images from Brain Activity during Natural Vision",
+      "title": "MAS-BIT: A Multi-Agent System for End-to-End BraIn-to-Text Decoding",
       "source": "arXiv",
-      "url": "https://arxiv.org/pdf/2611.31989v1.pdf",
-      "abstractUrl": "https://arxiv.org/abs/2611.31989",
-      "publishedAt": "2026-11-24T05:43:00.0000000Z",
+      "url": "https://arxiv.org/pdf/2611.29457v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.29457",
+      "publishedAt": "2026-11-22T12:55:45.0000000Z",
       "scoreLabel": "Quality 28/100 + topic fit 30/30",
       "recommendationScore": 83,
       "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
@@ -227,120 +198,173 @@
       "qualityScore": 28,
       "readabilityStatus": "open",
       "paperCard": {
-        "problem": "解决的是“逆向看大脑”：已知神经元放电，能否反推出人（猴）当时看到的画面。过去这类实验要求被试盯住屏幕不动，而现实中灵长类每秒钟要跳2–3次眼，神经活动也随之变化，所以旧方法回避了自然观看这个真实条件。另一个现实动机是视觉修复植入（如植入V1或LGN的电极）只能记录极少数神经元，且每个神经元只覆盖视野中很小的一块，需要回答“只用很少的神经元是否够用”。",
-        "method": "把整个观看过程切成许多100毫秒的小片段：每片段知道眼睛看在哪里，就取该位置对应的一小块图像，和同一时段的神经元放电配对，训练一个“放电→小块图像”的解码器。再把所有片段解出的小块按眼动位置拼成一张带空洞的拼图，最后用图像先验去噪、补洞，得到完整场景。先验从最简单的1/f（自然图像低频强、高频弱）一直升级到深度学习模型和扩散模型。",
-        "difference": "第一，允许自由观看：把跨眼动、跨试次、跨实验场次的信息累加，而不是要求盯住不动。第二，第一次从灵长类LGN（外侧膝状体）重建图像，并且是第一批彩色重建。第三，第一次在同一框架下系统比较fMRI、EEG、MEG和电生理这几种记录方式的重建效果。",
-        "innovation": "把“神经证据的累积量”“眼动追踪的准确度”“图像先验的选择”三个因素拆开量化，证明三者共同决定重建质量；其中“微小眼动也必须被追踪”是过去被忽略的一点。同时把脉冲活动与注视位置一起切成token送进Transformer，再用扩散模型生成完整场景。",
-        "implementation": "实验用5只猴子：2只绒猴看27张灰度照片、用多电极阵列记录V1；2只猕猴看70张彩色照片、用Neuropixels探针记录LGN（每场次还有小Gabor目标要求注视以换奖励）。共94个场次、约23452个神经元单元，每次约250个单元，尖峰与眼位按120Hz（8.3毫秒）分箱。路线一：岭回归（ridge regression）解码局部小块，按可靠性加权拼图，再用1/f先验解一个带权的最小二乘问题（共轭梯度求解）来去噪补洞。路线二：把尖峰与注视坐标切成256维token，经自注意力得到局部与全局上下文，再由Transformer输出图像块、扩散模型负责生成与补全。",
-        "applications": "短期是视觉神经科学的实验工具：用重建效果反过来检验“大脑的自然图像先验”是什么。长期指向视觉修复的脑机接口：在只能记录几百个神经元、感受野只覆盖一小块视野的严苛条件下，先把信号拼起来再补全，评估植入电极实际“让人看到什么”。也可用于评估不同脑记录模态在做解码任务时的性价比。",
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
         "technicalTerms": [
-          "感受野（RF）：一个神经元“负责看”的视野里那一小块区域。",
-          "V1：初级视皮层，大致相当于大脑里的边缘检测器。",
-          "LGN：外侧膝状体，视网膜到皮层的中转站，本文首次在此做图像重建。",
-          "尖峰：神经元放电事件，本文把它按时间分箱计数当作输入。",
-          "岭回归：一种带正则化的线性回归，用来从放电预测小图像块。",
-          "1/f先验：自然图像的统计规律——低频成分强、高频成分弱，用它去噪和填补空白。",
-          "Transformer：靠自注意力处理序列的神经网络，这里把放电和注视点当作token序列。",
-          "扩散模型：从噪声逐步去噪生成图像的生成模型，负责生成逼真细节。",
-          "fMRI/EEG/MEG：分别是功能磁共振、脑电、脑磁，空间或时间分辨率各有取舍的记录方式。"
-        ]
+          "LoRA：用较小参数改造大模型的轻量适配方法。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
       },
-      "highlight": "我们的方法在从脑活动重建自然图像上，跨fMRI、EEG、MEG与电生理记录模态创下新的最优表现。",
-      "summary": "这篇论文研究如何用猴子看图片时记录到的神经信号，把猴子看到的自然图像还原出来；关键在于允许眼睛自由移动，而不是像过去那样要求被试盯住不动。它把线性方法与现代生成模型放在一起比较，并量化了需要多少神经证据、眼动追踪要多准，因此值得作为理解“脑解码”现状的一个清晰样本。",
-      "failureAnalysis": "重建质量高度依赖眼动追踪精度和所选图像先验；实验只涉及5只猴子、27张灰度图和70张彩色图，跨个体与跨刺激的泛化能力尚未验证。",
+      "highlight": "语音脑机接口旨在通过将神经活动转译为文本恢复交流，但端到端解码器的准确率历来落后于级联系统。",
+      "summary": "该预印本提出 MAS-BIT，面向语音脑机接口的端到端脑到文本解码，采用多智能体系统。摘要指出端到端解码器的准确率长期不及级联方案，因此该系统试图缩小这一差距。现有摘录仅给出研究动机与系统开头，尚不足以判断其性能。",
+      "failureAnalysis": "所给文本只有标题、作者和摘要开头，缺少方法细节、数据集与量化结果，无法据此评估其相对级联系统的准确率提升。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "Reconstructing Natural Images from Brain Activity during Natural Vision Tejasvi Kothapalli1,∗ Ryan Ressmeyer2,∗ Declan Rowley3,∗ Gregory D. Horwitz2 Jude Mitchell4 Alexander C. Huk3 Bruno Olshausen1 Jacob Yates1 1UC Berkeley 2University of Washington 3UCLA 4University of Rochester ∗Equal contribution Photograph Transformer Diffusion Marmoset V1 · grayscale Photograph Ridge + 1/f Transformer Diffusion Macaque LGN · color Photograph Ridge + 1/f Transformer Diffusion Figure 1.",
+      "sourceExcerpt": "Preprint MAS-BIT: A MULTI-AGENTSYSTEM FOREND-TO- ENDBRAIN-TO-TEXTDECODING Xinjie Zhang1,∗ Linyang He1,∗,† Yizi Zhang2 Yuesheng Ma1 Nima Mesgarani1 1Columbia University 2Stanford University ∗Equal Contribution †Project Lead {xinjie.zhang, linyang.he}@columbia.edu nima@ee.columbia.edu ABSTRACT Speech brain-computer interfaces aim to restore communication by translating neural activity into text, yet end-to-end decoders have historically trailed cas- caded systems in accuracy. We introduce a Multi-Agent System for BraIn-to-Text (MAS-BIT), the first multi-agent framework for end-to-end brain-to-text decod- ing from intracortical recordings. MAS-BIT coordinates three specialized agents: a neural agent that interprets continuous neural representations, a phonetic agent that decodes soft phoneme posteriors, and an arbitration agent that integrates their complementary evidence with direct access to neural representations to generate the final transcription.",
       "translations": {
         "zh": {
-          "title": "在自由观看时从大脑活动中重建自然图像",
-          "highlight": "我们的方法在从脑活动重建自然图像上，跨fMRI、EEG、MEG与电生理记录模态创下新的最优表现。",
-          "summary": "这篇论文研究如何用猴子看图片时记录到的神经信号，把猴子看到的自然图像还原出来；关键在于允许眼睛自由移动，而不是像过去那样要求被试盯住不动。它把线性方法与现代生成模型放在一起比较，并量化了需要多少神经证据、眼动追踪要多准，因此值得作为理解“脑解码”现状的一个清晰样本。",
-          "failureAnalysis": "重建质量高度依赖眼动追踪精度和所选图像先验；实验只涉及5只猴子、27张灰度图和70张彩色图，跨个体与跨刺激的泛化能力尚未验证。",
+          "title": "MAS-BIT：端到端脑到文本解码的多智能体系统",
+          "highlight": "语音脑机接口旨在通过将神经活动转译为文本恢复交流，但端到端解码器的准确率历来落后于级联系统。",
+          "summary": "该预印本提出 MAS-BIT，面向语音脑机接口的端到端脑到文本解码，采用多智能体系统。摘要指出端到端解码器的准确率长期不及级联方案，因此该系统试图缩小这一差距。现有摘录仅给出研究动机与系统开头，尚不足以判断其性能。",
+          "failureAnalysis": "所给文本只有标题、作者和摘要开头，缺少方法细节、数据集与量化结果，无法据此评估其相对级联系统的准确率提升。",
           "paperCard": {
-            "problem": "解决的是“逆向看大脑”：已知神经元放电，能否反推出人（猴）当时看到的画面。过去这类实验要求被试盯住屏幕不动，而现实中灵长类每秒钟要跳2–3次眼，神经活动也随之变化，所以旧方法回避了自然观看这个真实条件。另一个现实动机是视觉修复植入（如植入V1或LGN的电极）只能记录极少数神经元，且每个神经元只覆盖视野中很小的一块，需要回答“只用很少的神经元是否够用”。",
-            "method": "把整个观看过程切成许多100毫秒的小片段：每片段知道眼睛看在哪里，就取该位置对应的一小块图像，和同一时段的神经元放电配对，训练一个“放电→小块图像”的解码器。再把所有片段解出的小块按眼动位置拼成一张带空洞的拼图，最后用图像先验去噪、补洞，得到完整场景。先验从最简单的1/f（自然图像低频强、高频弱）一直升级到深度学习模型和扩散模型。",
-            "difference": "第一，允许自由观看：把跨眼动、跨试次、跨实验场次的信息累加，而不是要求盯住不动。第二，第一次从灵长类LGN（外侧膝状体）重建图像，并且是第一批彩色重建。第三，第一次在同一框架下系统比较fMRI、EEG、MEG和电生理这几种记录方式的重建效果。",
-            "innovation": "把“神经证据的累积量”“眼动追踪的准确度”“图像先验的选择”三个因素拆开量化，证明三者共同决定重建质量；其中“微小眼动也必须被追踪”是过去被忽略的一点。同时把脉冲活动与注视位置一起切成token送进Transformer，再用扩散模型生成完整场景。",
-            "implementation": "实验用5只猴子：2只绒猴看27张灰度照片、用多电极阵列记录V1；2只猕猴看70张彩色照片、用Neuropixels探针记录LGN（每场次还有小Gabor目标要求注视以换奖励）。共94个场次、约23452个神经元单元，每次约250个单元，尖峰与眼位按120Hz（8.3毫秒）分箱。路线一：岭回归（ridge regression）解码局部小块，按可靠性加权拼图，再用1/f先验解一个带权的最小二乘问题（共轭梯度求解）来去噪补洞。路线二：把尖峰与注视坐标切成256维token，经自注意力得到局部与全局上下文，再由Transformer输出图像块、扩散模型负责生成与补全。",
-            "applications": "短期是视觉神经科学的实验工具：用重建效果反过来检验“大脑的自然图像先验”是什么。长期指向视觉修复的脑机接口：在只能记录几百个神经元、感受野只覆盖一小块视野的严苛条件下，先把信号拼起来再补全，评估植入电极实际“让人看到什么”。也可用于评估不同脑记录模态在做解码任务时的性价比。",
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
             "technicalTerms": [
-              "感受野（RF）：一个神经元“负责看”的视野里那一小块区域。",
-              "V1：初级视皮层，大致相当于大脑里的边缘检测器。",
-              "LGN：外侧膝状体，视网膜到皮层的中转站，本文首次在此做图像重建。",
-              "尖峰：神经元放电事件，本文把它按时间分箱计数当作输入。",
-              "岭回归：一种带正则化的线性回归，用来从放电预测小图像块。",
-              "1/f先验：自然图像的统计规律——低频成分强、高频成分弱，用它去噪和填补空白。",
-              "Transformer：靠自注意力处理序列的神经网络，这里把放电和注视点当作token序列。",
-              "扩散模型：从噪声逐步去噪生成图像的生成模型，负责生成逼真细节。",
-              "fMRI/EEG/MEG：分别是功能磁共振、脑电、脑磁，空间或时间分辨率各有取舍的记录方式。"
-            ]
+              "LoRA：用较小参数改造大模型的轻量适配方法。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
         },
         "en": {
-          "highlight": "Our method sets a new state-of-the-art performance in reconstructing natural images from brain activity, across fMRI, EEG, MEG and electrophysiology.",
-          "summary": "The paper asks whether the picture a monkey is looking at can be recovered from recorded neural activity — while the eyes move freely, not while gaze is held still. It compares a simple linear decoder with a modern transformer-plus-diffusion pipeline and quantifies how much neural evidence, eye-tracking accuracy, and image prior each contribute, making it a clear snapshot of where brain decoding stands.",
-          "failureAnalysis": "Reconstruction quality depends heavily on eye-tracking accuracy and the chosen image prior, and the study covers only five monkeys with 27 grayscale and 70 color photographs, so generalization across animals and stimuli remains untested.",
-          "title": "Reconstructing Natural Images from Brain Activity during Free Viewing",
+          "title": "MAS-BIT: A Multi-Agent System for End-to-End Brain-to-Text Decoding",
+          "highlight": "Speech brain-computer interfaces aim to restore communication by translating neural activity into text, but end-to-end decoders have historically trailed cascaded systems in accuracy.",
+          "summary": "This preprint introduces MAS-BIT, a multi-agent system for end-to-end brain-to-text decoding in speech brain-computer interfaces. It notes that end-to-end decoders have historically lagged cascaded systems in accuracy, framing the work as an attempt to close that gap. The provided excerpt contains only the motivation and the start of the abstract, so performance claims cannot yet be assessed.",
+          "failureAnalysis": "The supplied text is limited to the title, authors, and the opening of the abstract; it lacks method details, datasets, and quantitative results, so the claimed accuracy relative to cascaded systems cannot be evaluated.",
           "paperCard": {
-            "problem": "It tackles the decoding direction of vision: given spike trains, can we recover the image that was seen? Earlier work demanded fixation, even though primates saccade two to three times per second and their visual activity changes accordingly. A practical motivation is vision-restoration implants in V1 or LGN, which record only a few hundred neurons, each covering a tiny patch of the visual field.",
-            "method": "Recordings are cut into 100-ms windows; because gaze is tracked, each window yields a paired example of spike counts and the small image patch under the receptive fields. A decoder maps spikes to that patch, patches are placed at their gaze-determined positions to form a mosaic, and an image prior fills the gaps and removes noise.",
-            "difference": "It decodes during free viewing by pooling evidence across eye movements, trials and sessions; it is the first reconstruction from primate LGN, and among the first color reconstructions; and it compares fMRI, EEG, MEG and electrophysiology within one framework.",
-            "innovation": "It separates and quantifies three determinants of reconstruction quality — accumulated neural evidence, eye-tracking accuracy, and choice of image prior — and shows that even tiny fixational eye movements must be tracked. Spikes and gaze are tokenized and fed to a transformer plus diffusion model.",
-            "implementation": "Five monkeys: two marmosets viewing 27 grayscale photos with V1 arrays, two macaques viewing 70 color photos with Neuropixels probes in LGN. In total 94 sessions and 23,452 units, about 250 per session, with spikes and eye position binned at 120 Hz. Path one uses ridge regression per session, reliability-weighted patch mosaicking, and a 1/f-prior least-squares fill solved with conjugate gradients. Path two tokenizes spikes and gaze into 256-d tokens, applies self-attention for local and global context, and uses a transformer patch head with a diffusion model to render the scene.",
-            "applications": "Near term, a tool for visual neuroscience that tests hypotheses about the brain's natural-image prior; longer term, a route for visual prosthetics that must operate from severely subsampled populations, and a way to compare recording modalities for decoding.",
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
             "technicalTerms": [
-              "receptive field: the small region of the visual field a neuron responds to",
-              "V1: primary visual cortex, roughly the brain's edge detector",
-              "LGN: lateral geniculate nucleus, the relay between retina and cortex",
-              "spikes: neuronal firing events, counted in time bins here",
-              "ridge regression: regularized linear regression used to predict image patches",
-              "1/f prior: the statistic that natural images have more low- than high-frequency power",
-              "transformer: attention-based network that processes spike and gaze tokens",
-              "diffusion model: generative model that produces images by iterative denoising",
-              "fMRI/EEG/MEG: functional magnetic resonance, electroencephalography, magnetoencephalography"
-            ]
+              "LoRA：用较小参数改造大模型的轻量适配方法。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
           }
         }
       }
     },
     {
-      "id": "ai-feed-2b245baf1b594d99a3a7c729ca10b06c",
+      "id": "paper-2611.19332",
+      "category": "paper",
+      "title": "NI-ACT: A Neural Intent Interface for Brain-Embodied Manipulation",
+      "source": "arXiv",
+      "url": "https://arxiv.org/pdf/2611.19332v1.pdf",
+      "abstractUrl": "https://arxiv.org/abs/2611.19332",
+      "publishedAt": "2026-11-14T10:57:36.0000000Z",
+      "scoreLabel": "Quality 28/100 + topic fit 30/30",
+      "recommendationScore": 83,
+      "selectionReason": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear.",
+      "paperTopic": "brain_computer_interface",
+      "qualityScore": 28,
+      "readabilityStatus": "open",
+      "paperCard": {
+        "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+        "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+        "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+        "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+        "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+        "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+        "technicalTerms": [
+          "EEG：把大脑电信号当作输入数据。"
+        ],
+        "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+      },
+      "highlight": "皮层内脑机接口可驱动机械臂，但用户仍处于快速感觉运动回路中，每次接近、修正和抓取都需由神经信号指定。",
+      "summary": "该预印本提出 NI-ACT，一种面向脑控具身操作的神经意图接口。摘要指出皮层内脑机接口虽能驱动机械臂，却使用户持续承担逐次感觉运动控制。其标题和摘要开头暗示目标是让操作更多由神经意图驱动，而非持续逐次控制；摘录未展开方法与验证。",
+      "failureAnalysis": "所给文本仅含标题、作者和摘要开头，缺少系统架构、实验任务与量化指标，无法判断该接口在实际脑控操作中的效果与泛化能力。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "NI-ACT: A Neural Intent Interface for Brain-Embodied Manipulation Yinghao Li 1, WeiHsien Lee 2, Zeyu Zhang 1,3, Canyang Zhao 1, Ke Fang 1, Xing Li 2, and Bing Liu∗1,2 1Institute of Automation, Chinese Academy of Sciences, Beijing, China 2MindTrix 3University of Chinese Academy of Sciences, Beijing, China Abstract Intracortical brain–computer interfaces can drive robotic arms, but they keep the user inside the fast sensorimotor loop: every approach, correction, and grasp must be neurally specified. Whether intracortical population activity can instead serve as a task-level condition for a learned embodied policy—without symbolic commands or hand-designed skill libraries—remains unknown. NI-ACT addresses this question with a hierarchical brain–embodied framework: a brief motor-cortical signal is read once as a persistent intent, and a visuomotor policy then closes the perception–action loop from vision and proprioception.",
+      "translations": {
+        "zh": {
+          "title": "NI-ACT：用于脑控具身操作的神经意图接口",
+          "highlight": "皮层内脑机接口可驱动机械臂，但用户仍处于快速感觉运动回路中，每次接近、修正和抓取都需由神经信号指定。",
+          "summary": "该预印本提出 NI-ACT，一种面向脑控具身操作的神经意图接口。摘要指出皮层内脑机接口虽能驱动机械臂，却使用户持续承担逐次感觉运动控制。其标题和摘要开头暗示目标是让操作更多由神经意图驱动，而非持续逐次控制；摘录未展开方法与验证。",
+          "failureAnalysis": "所给文本仅含标题、作者和摘要开头，缺少系统架构、实验任务与量化指标，无法判断该接口在实际脑控操作中的效果与泛化能力。",
+          "paperCard": {
+            "problem": "解决的问题：这篇论文试图把 brain_computer_interface 方向的研究推进到更可用的场景。",
+            "method": "解决方式：基于完整可读内容，概括它用什么模型、材料或系统流程解决问题。",
+            "difference": "不同之处：重点看它是否比旧方法更稳定、更便宜、更准确或更容易部署。",
+            "innovation": "创新点：把技术改进和真实应用目标连接起来，而不是只停留在理论指标。",
+            "implementation": "具体实现：先看输入数据，再看核心模型或装置，最后看实验验证结果。",
+            "applications": "应用途径：优先关注医疗辅助、工业系统、智能硬件、能源设备等可落地方向。",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        },
+        "en": {
+          "title": "NI-ACT: A Neural Intent Interface for Brain-Embodied Manipulation",
+          "highlight": "Intracortical brain-computer interfaces can drive robotic arms, but they keep the user inside the fast sensorimotor loop, requiring neural specification of every approach, correction, and grasp.",
+          "summary": "This preprint introduces NI-ACT, a neural intent interface for brain-embodied manipulation. The abstract notes that intracortical brain-computer interfaces can drive robotic arms but keep the user in a fast sensorimotor loop in which every approach, correction, and grasp must be neurally specified. The excerpt does not detail the method or validation.",
+          "failureAnalysis": "The supplied text contains only the title, authors, and the start of the abstract; without system architecture, experimental tasks, or quantitative metrics, its effectiveness and generalization in real brain-controlled manipulation cannot be judged.",
+          "paperCard": {
+            "problem": "Problem: use the paper card to identify the practical problem before judging the technique.",
+            "method": "Method: read the model, material, device, or system workflow as the proposed solution.",
+            "difference": "Difference: compare whether it is more stable, cheaper, more accurate, or easier to deploy than older methods.",
+            "innovation": "Innovation: focus on the link between the technical change and a real application goal.",
+            "implementation": "Implementation: check the input data, core model or device, and validation results.",
+            "applications": "Applications: look for realistic use in healthcare, industrial systems, smart hardware, or energy devices.",
+            "technicalTerms": [
+              "EEG：把大脑电信号当作输入数据。"
+            ],
+            "whySelected": "Open full-text paper; topic brain_computer_interface; quality signal passed; application scenario is clear."
+          }
+        }
+      }
+    },
+    {
+      "id": "ai-github-1410018718",
       "category": "ai",
-      "title": "Quoting Scott Aaronson",
-      "source": "Simon Willison",
-      "url": "https://simonwillison.net/2026/Nov/25/scott-aaronson/",
+      "title": "lmy414/ai-chan-sheets",
+      "source": "GitHub Search",
+      "url": "https://github.com/lmy414/ai-chan-sheets",
       "abstractUrl": null,
-      "publishedAt": "2026-11-25T23:26:32.0000000Z",
-      "scoreLabel": "Curated engineering feed",
-      "aiArticleType": "concept_explanation",
+      "publishedAt": "2026-10-08T08:51:13.0000000Z",
+      "scoreLabel": "GitHub 749 stars",
+      "aiArticleType": "application_innovation",
       "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
         {
           "label": "Community signal",
           "kind": "secondary"
         }
       ],
-      "evidenceLabel": "Community signal",
-      "hasPrimaryAnchor": false,
-      "requiresRiskAnalysis": false,
-      "selectionReason": "AI source passed freshness and evidence-chain gate: Community signal",
-      "summary": "这段话把大语言模型对数学研究的潜在影响，比作显微镜和望远镜带来的观测能力跃迁：我们或将看到复杂度理论乃至更广阔数学真理中一整块此前模糊不清的新大陆。值得读，是因为它提供了一个理解 AI 与数学关系的宏观视角，而非具体技术结论。",
-      "failureAnalysis": "关键不在于 AI 自动解决某个问题，而在于它可能整体提升人类探索数学真理的分辨率；这更像认知工具的跃迁，而非一次性答案生成。",
-      "aiSelectionScore": 100,
-      "highlight": "我们现在明显将获得的，不是零散的复杂性难题答案，而是一整块数学真理的新大陆，过去只能透过迷雾隐约看见。",
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该 GitHub 项目基于 ZipZipPipe（胖次狐）的 AI 娘立绘，把横版完整设定图拆成三视图、表情、服装、道具等独立素材，尝试推定补全侧背面，再用原生像素 1:1 拼接。仓库获得 749 stars 且有近期公开活动，说明角色设定图资产化与补全流程受到一定关注。它采用 CC BY-NC-SA 4.0 非商业许可，适合观察 AI 辅助美术生产链中的素材拆解、补全和复用。",
+      "failureAnalysis": "该项目的非商业 CC BY-NC-SA 许可证，以及它基于 ZipZipPipe（胖次狐）立绘进行二次创作的性质，会限制商业采用，并带来署名、衍生作品和角色 IP 风险。需求侧偏小众：三视图和侧背面补全多服务于同人立绘或游戏美术前期，付费意愿和通用性有限。工程上，侧背面推定补全与原生像素 1:1 拼接容易在透视、比例、像素对齐和风格一致性上出错，人工返修成本可能高于直接绘制。仅有 749 stars 和公开活动，不能证明规模化分发或可持续维护。",
+      "aiSelectionScore": 749,
+      "highlight": "把 AI 娘立绘拆解为三视图、表情、服装和道具独立素材，推定补全侧背面，并以原生像素 1:1 拼接。",
       "summarySource": "deepseek",
-      "sourceExcerpt": "It’s now obvious that we’ll be getting, not one-off solutions to this or that complexity question, but a whole new continent of mathematical truth, one that we’d previously only glimpsed through fog. Picture van Leeuwenhoek first training a microscope on pondwater, or Galileo first training his telescope on the stars. That might give you some idea of how our resolution into the complexity-theoretic universe, and the whole universe of mathematical truth beyond it, has now improved.",
+      "sourceExcerpt": "GitHub repository with 749 stars and recent public activity. Description: 基于 ZipZipPipe（胖次狐）AI 娘立绘的横版完整设定图补全：拆解为三视图/表情/服装/道具独立素材，推定补全侧背面，原生像素 1:1 拼接。CC BY-NC-SA 4.0 非商业。",
       "translations": {
         "zh": {
-          "title": "斯科特·阿伦森：数学真理的新大陆",
-          "highlight": "我们现在明显将获得的，不是零散的复杂性难题答案，而是一整块数学真理的新大陆，过去只能透过迷雾隐约看见。",
-          "summary": "这段话把大语言模型对数学研究的潜在影响，比作显微镜和望远镜带来的观测能力跃迁：我们或将看到复杂度理论乃至更广阔数学真理中一整块此前模糊不清的新大陆。值得读，是因为它提供了一个理解 AI 与数学关系的宏观视角，而非具体技术结论。",
-          "failureAnalysis": "关键不在于 AI 自动解决某个问题，而在于它可能整体提升人类探索数学真理的分辨率；这更像认知工具的跃迁，而非一次性答案生成。"
+          "title": "基于 ZipZipPipe 的 AI 娘立绘设定图拆解与补全",
+          "highlight": "把 AI 娘立绘拆解为三视图、表情、服装和道具独立素材，推定补全侧背面，并以原生像素 1:1 拼接。",
+          "summary": "该 GitHub 项目基于 ZipZipPipe（胖次狐）的 AI 娘立绘，把横版完整设定图拆成三视图、表情、服装、道具等独立素材，尝试推定补全侧背面，再用原生像素 1:1 拼接。仓库获得 749 stars 且有近期公开活动，说明角色设定图资产化与补全流程受到一定关注。它采用 CC BY-NC-SA 4.0 非商业许可，适合观察 AI 辅助美术生产链中的素材拆解、补全和复用。",
+          "failureAnalysis": "该项目的非商业 CC BY-NC-SA 许可证，以及它基于 ZipZipPipe（胖次狐）立绘进行二次创作的性质，会限制商业采用，并带来署名、衍生作品和角色 IP 风险。需求侧偏小众：三视图和侧背面补全多服务于同人立绘或游戏美术前期，付费意愿和通用性有限。工程上，侧背面推定补全与原生像素 1:1 拼接容易在透视、比例、像素对齐和风格一致性上出错，人工返修成本可能高于直接绘制。仅有 749 stars 和公开活动，不能证明规模化分发或可持续维护。"
         },
         "en": {
-          "highlight": "We’ll be getting not one-off solutions to complexity questions, but a whole new continent of mathematical truth.",
-          "summary": "The quote says LLMs may do more than answer isolated complexity questions: they could open up a whole new continent of mathematical truth previously seen only through fog. It is worth reading as a big-picture claim about AI as a new instrument for mathematical discovery, not as a technical result.",
-          "failureAnalysis": "The key point is not one-off problem solving but a possible leap in humanity’s resolution into mathematical truth—more like a new scientific instrument than an answer machine.",
-          "title": "Scott Aaronson on a New Continent of Mathematical Truth"
+          "highlight": "Decompose an AI character illustration into three-view, expression, clothing, and prop assets, infer side and back views, and stitch them at native 1:1 pixels.",
+          "summary": "This GitHub repository builds on ZipZipPipe's AI character illustrations, splitting a full horizontal character sheet into separate three-view, expression, clothing, and prop assets, then attempting to infer side and back views and stitch them at native 1:1 pixels. With 749 stars and recent public activity, it is worth reading as an open-source example of asset decomposition, completion, and reuse in AI-assisted art workflows. It is released under a non-commercial CC BY-NC-SA 4.0 license.",
+          "failureAnalysis": "The non-commercial CC BY-NC-SA license and derivative-work basis create IP and attribution constraints, while side/back inference and pixel-perfect stitching can require costly manual correction for a niche demand. GitHub stars alone do not prove sustainable distribution or maintenance.",
+          "title": "AI Character Sheet Decomposition and Pixel-Stitched Completion Based on ZipZipPipe"
         }
       }
     }
