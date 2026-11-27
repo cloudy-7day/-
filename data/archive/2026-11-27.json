@@ -1,0 +1,317 @@
+{
+  "issueDate": "2026-11-27",
+  "updateStatus": "complete",
+  "contentFingerprint": "3d59f1ad75538e58e6a59ff22d2b8b2fbcccd4d492d1958dafae78d049885138",
+  "notes": [
+    "Real news view counts are usually not public; this version uses open RSS sources and avoids paywalled links.",
+    "Add comma-separated RSS URLs to NEWS_FEED_URLS in .env.local to include TLDR-style newsletters or other readable feeds.",
+    "AI items must pass freshness and evidence-chain gates; application items need at least two anchors with one primary anchor.",
+    "First-read summaries and AI application risk analysis use DeepSeek only, not GPT; traceable source extracts are used when DeepSeek is unavailable."
+  ],
+  "articles": [
+    {
+      "id": "news-7b3500b1cce243f69530190c3db45c09",
+      "category": "domestic",
+      "title": "宁夏前十月国内游客接待量突破1亿人次",
+      "source": "中国新闻网财经",
+      "url": "https://www.chinanews.com.cn/cj/2026/11-27/10739066.shtml",
+      "publishedAt": "2026-11-27T13:53:21.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 5",
+      "highlight": "持续深化的政策引导、不断焕新的文旅业态与线上流量赋能，共同推动宁夏文旅市场稳步升温。",
+      "summary": "据中新网11月27日报道，宁夏回族自治区文化和旅游厅披露，今年1至10月宁夏累计接待国内游客突破1亿人次。报道将市场升温归因于政策引导、文旅业态更新和线上流量赋能，可作为观察国内区域文旅消费走势的公开数据点。",
+      "failureAnalysis": "核心可核实信息是接待量突破1亿人次，但已知内容未给出同比增速、客源结构和旅游收入，解读时需区分“人次”与“消费额”。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新网银川11月27日电(记者 于晶)27日，记者从宁夏回族自治区文化和旅游厅获悉，今年1至10月，宁夏累计接待国内游客突破1亿人次。持续深化的政策引导、不断焕新的文旅业态与线上流量赋能，共同推动宁夏文旅市场稳步升温。",
+      "translations": {
+        "zh": {
+          "title": "宁夏前十月国内游客接待量突破1亿人次",
+          "highlight": "持续深化的政策引导、不断焕新的文旅业态与线上流量赋能，共同推动宁夏文旅市场稳步升温。",
+          "summary": "据中新网11月27日报道，宁夏回族自治区文化和旅游厅披露，今年1至10月宁夏累计接待国内游客突破1亿人次。报道将市场升温归因于政策引导、文旅业态更新和线上流量赋能，可作为观察国内区域文旅消费走势的公开数据点。",
+          "failureAnalysis": "核心可核实信息是接待量突破1亿人次，但已知内容未给出同比增速、客源结构和旅游收入，解读时需区分“人次”与“消费额”。"
+        },
+        "en": {
+          "highlight": "Deepening policy guidance, continuously renewed cultural tourism offerings, and online traffic empowerment are jointly driving Ningxia's cultural tourism market to warm up steadily.",
+          "summary": "China News Service reported on November 27 that Ningxia's culture and tourism department said the region received more than 100 million domestic tourists from January to October this year. The report attributes the market's warming to policy guidance, renewed tourism offerings, and online traffic, making it a public data point for observing regional cultural tourism consumption in China.",
+          "failureAnalysis": "The key verifiable fact is that tourist receptions exceeded 100 million, but the known content does not provide year-on-year growth, source-market structure, or tourism revenue, so visitor numbers should be distinguished from spending.",
+          "title": "Ningxia's Domestic Tourist Receptions Exceed 100 Million in First Ten Months"
+        }
+      }
+    },
+    {
+      "id": "news-91e801fd586343f2ad3c5f7c077e810c",
+      "category": "domestic",
+      "title": "中国成功发射遥感五十号04星",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-27/10739085.shtml",
+      "publishedAt": "2026-11-27T14:33:17.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 3",
+      "highlight": "中国在太原卫星发射中心使用长征六号改运载火箭，将遥感五十号04星发射升空，卫星顺利进入预定轨道。",
+      "summary": "据中国航天科技集团消息，11月27日21时05分，中国在太原卫星发射中心用长征六号改运载火箭成功发射遥感五十号04星，卫星进入预定轨道。该消息来自官方RSS源，核心信息是发射任务圆满成功；其价值在于记录一次可核验的航天发射进展。",
+      "failureAnalysis": "可核验的结论是发射任务圆满成功，卫星已进入预定轨道；解读时应区分官方通报与后续任务细节。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社北京11月27日电 (记者 马帅莎)据中国航天科技集团消息，北京时间11月27日21时05分，中国在太原卫星发射中心使用长征六号改运载火箭，将遥感五十号04星发射升空，卫星顺利进入预定轨道，发射任务取得圆满成功。",
+      "translations": {
+        "zh": {
+          "title": "中国成功发射遥感五十号04星",
+          "highlight": "中国在太原卫星发射中心使用长征六号改运载火箭，将遥感五十号04星发射升空，卫星顺利进入预定轨道。",
+          "summary": "据中国航天科技集团消息，11月27日21时05分，中国在太原卫星发射中心用长征六号改运载火箭成功发射遥感五十号04星，卫星进入预定轨道。该消息来自官方RSS源，核心信息是发射任务圆满成功；其价值在于记录一次可核验的航天发射进展。",
+          "failureAnalysis": "可核验的结论是发射任务圆满成功，卫星已进入预定轨道；解读时应区分官方通报与后续任务细节。"
+        },
+        "en": {
+          "highlight": "At 21:05 Beijing time on November 27, China used a Long March 6A rocket at the Taiyuan Satellite Launch Center to send the Yaogan-50 04 satellite into its planned orbit.",
+          "summary": "According to the China Aerospace Science and Technology Corporation, China launched the Yaogan-50 04 satellite at 21:05 on November 27 from the Taiyuan Satellite Launch Center using a Long March 6A rocket, and the satellite entered its planned orbit. The item comes from an official RSS source and records a verifiable, successful space launch.",
+          "failureAnalysis": "The verifiable takeaway is that the launch mission was a complete success and the satellite reached its planned orbit; official notices should be distinguished from follow-up mission details.",
+          "title": "China Successfully Launches Yaogan-50 04 Satellite"
+        }
+      }
+    },
+    {
+      "id": "news-951a75a3ef08478e957d511ff2390f0b",
+      "category": "domestic",
+      "title": "从在轨测试到开放服务 北京太空算力“朋友圈”扩容",
+      "source": "中国新闻网国内",
+      "url": "https://www.chinanews.com.cn/gn/2026/11-27/10739083.shtml",
+      "publishedAt": "2026-11-27T13:57:53.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "Domestic priority: 3",
+      "highlight": "在轨技术试验平台上线，面向商业航天和人工智能领域提供模型训练推理、载荷在轨验证等试验机会。",
+      "summary": "2026太空数据中心建设工作推进大会27日在北京举办，会上宣布太空数据中心在轨技术试验平台上线运行。该平台面向全国商业航天和人工智能领域，提供模型训练推理、载荷在轨验证等试验机会，为更多创新主体开展太空算力应用提供公共基础设施。",
+      "failureAnalysis": "可核验的公共影响是新增一个面向商业航天和人工智能的在轨试验与太空算力公共基础设施入口；其实际效果仍取决于后续服务开放范围与试验机会的落地情况。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "中新社北京11月27日电 (记者 陈杭)2026太空数据中心建设工作推进大会27日在北京举办。会上宣布，太空数据中心在轨技术试验平台上线运行，将面向全国商业航天和人工智能领域，提供模型训练推理、载荷在轨验证等试验机会，为更多创新主体开展太空算力应用提供公共基础设施。",
+      "translations": {
+        "zh": {
+          "title": "北京太空算力“朋友圈”扩容：在轨试验平台上线",
+          "highlight": "在轨技术试验平台上线，面向商业航天和人工智能领域提供模型训练推理、载荷在轨验证等试验机会。",
+          "summary": "2026太空数据中心建设工作推进大会27日在北京举办，会上宣布太空数据中心在轨技术试验平台上线运行。该平台面向全国商业航天和人工智能领域，提供模型训练推理、载荷在轨验证等试验机会，为更多创新主体开展太空算力应用提供公共基础设施。",
+          "failureAnalysis": "可核验的公共影响是新增一个面向商业航天和人工智能的在轨试验与太空算力公共基础设施入口；其实际效果仍取决于后续服务开放范围与试验机会的落地情况。"
+        },
+        "en": {
+          "highlight": "The space data center's in-orbit technology test platform is now operational, offering model training and inference, payload in-orbit verification and other test opportunities to commercial space and AI sectors nationwide.",
+          "summary": "The 2026 Space Data Center Construction Work Promotion Conference was held in Beijing on Nov 27, where the in-orbit technology test platform was announced as operational. It will provide public infrastructure for commercial space and AI innovators to conduct model training and inference, payload in-orbit verification and other experiments. It is worth reading as a verifiable signal of China's push to open space-computing test resources.",
+          "failureAnalysis": "The verifiable public impact is a new shared entry point for in-orbit testing and space-computing applications; practical value will depend on how openly the platform's services and test slots are actually offered.",
+          "title": "Beijing's Space Computing \"Circle of Friends\" Expands as In-Orbit Test Platform Launches"
+        }
+      }
+    },
+    {
+      "id": "news-ca8b0a89d77642daa4f76444d43cfcee",
+      "category": "international",
+      "title": "Canada’s top court upholds Quebec law barring public sector workers from wearing religious symbols",
+      "source": "The Guardian World",
+      "url": "https://www.theguardian.com/world/2026/nov/27/canadas-top-court-upholds-quebec-law-barring-public-sector-workers-from-wearing-religious-symbols",
+      "publishedAt": "2026-11-27T16:13:07.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: politics",
+      "highlight": "加拿大最高法院以6比1裁定，魁北克可让第21号法案免受多数侵犯宪章权利的司法挑战。",
+      "summary": "加拿大最高法院以6比1多数基本维持魁北克第21号法案，该法禁止公共部门工作人员佩戴显眼宗教标志。裁决允许魁北克援引权利但书，使法案免受大多数基于宪章权利的挑战。此案凸显少数群体权利与政府凌驾这些权利的权力之间的紧张关系，因此受到密切关注。",
+      "failureAnalysis": "关键看点是权利但书如何让立法机关在多数情况下压过宪章权利，而非只评判世俗主义政策本身。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Closely watched decision exposes tensions between minority rights and the power of government to override those rights Canada’s top court has largely upheld a controversial secularism law in the province of Quebec barring public sector workers from wearing conspicuous religious symbols, in a closely watched decision that exposes the tensions between minority rights and the power of government to override those rights. In a 6-1 ruling released on Friday morning , the supreme court found Quebec was permitted to shield the law, Bill 21, from most court challenges on the grounds that it violated charter rights.",
+      "translations": {
+        "zh": {
+          "title": "加拿大最高法院基本维持魁北克世俗法律，限制公职人员佩戴显眼宗教标志",
+          "highlight": "加拿大最高法院以6比1裁定，魁北克可让第21号法案免受多数侵犯宪章权利的司法挑战。",
+          "summary": "加拿大最高法院以6比1多数基本维持魁北克第21号法案，该法禁止公共部门工作人员佩戴显眼宗教标志。裁决允许魁北克援引权利但书，使法案免受大多数基于宪章权利的挑战。此案凸显少数群体权利与政府凌驾这些权利的权力之间的紧张关系，因此受到密切关注。",
+          "failureAnalysis": "关键看点是权利但书如何让立法机关在多数情况下压过宪章权利，而非只评判世俗主义政策本身。"
+        },
+        "en": {
+          "highlight": "In a 6-1 ruling, Canada’s top court found Quebec could shield Bill 21 from most court challenges on grounds it violated charter rights.",
+          "summary": "Canada’s Supreme Court largely upheld Quebec’s Bill 21, which bars public sector workers from wearing conspicuous religious symbols, in a 6-1 ruling. The decision allowed Quebec to use the notwithstanding clause to shield the law from most charter-rights challenges. The case highlights tensions between minority rights and government power to override those rights, making it closely watched.",
+          "failureAnalysis": "The key point is how a rights override can let legislators prevail over charter rights in most cases, rather than a simple verdict on secularism policy itself.",
+          "title": "Canada’s top court largely upholds Quebec secularism law limiting religious symbols for public workers"
+        }
+      }
+    },
+    {
+      "id": "news-5cf6434788ec4c89a736d80edb8a5c10",
+      "category": "international",
+      "title": "Faisal Islam: Why Trump's new tariffs are less of a threat",
+      "source": "BBC Business",
+      "url": "https://www.bbc.co.uk/news/articles/c6r7g4e3yep1o?at_medium=RSS&at_campaign=rss",
+      "publishedAt": "2026-11-26T19:55:58.0000000+00:00",
+      "scoreLabel": "Official RSS source",
+      "selectionReason": "International class: finance",
+      "highlight": "其他国家已因特朗普的第一轮关税调整贸易路线，如今它们正把目光投向特朗普任期之后。",
+      "summary": "BBC Business 的这篇分析聚焦特朗普新一轮关税为何被视为威胁较小。此前其他国家已因第一轮关税重新安排贸易路线，现在正着眼于特朗普任期之后。值得读在于从国际反应与长期布局理解关税影响。",
+      "failureAnalysis": "关键点：评估关税威胁不能只看税率，还要看贸易伙伴是否已调整路线并把目光放到更长期。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "Other countries have rerouted trade in response to his first tariff salvo, now they are looking beyond Trump's tenure.",
+      "translations": {
+        "zh": {
+          "title": "特朗普新关税为何威胁较小",
+          "highlight": "其他国家已因特朗普的第一轮关税调整贸易路线，如今它们正把目光投向特朗普任期之后。",
+          "summary": "BBC Business 的这篇分析聚焦特朗普新一轮关税为何被视为威胁较小。此前其他国家已因第一轮关税重新安排贸易路线，现在正着眼于特朗普任期之后。值得读在于从国际反应与长期布局理解关税影响。",
+          "failureAnalysis": "关键点：评估关税威胁不能只看税率，还要看贸易伙伴是否已调整路线并把目光放到更长期。"
+        },
+        "en": {
+          "highlight": "Other countries have rerouted trade in response to his first tariff salvo, now they are looking beyond Trump's tenure.",
+          "summary": "This BBC Business analysis focuses on why Trump's new tariffs are seen as less of a threat. Other countries had already rerouted trade after his first tariff salvo and are now looking beyond Trump's tenure. It is worth reading for understanding tariff effects through international responses and longer-term positioning.",
+          "failureAnalysis": "Key takeaway: assessing a tariff threat requires looking beyond rates to whether trading partners have already adjusted routes and shifted to a longer-term view.",
+          "title": "Why Trump's new tariffs are less of a threat"
+        }
+      }
+    },
+    {
+      "id": "life-612bc8fadd724c87ab59bc7e675a128a",
+      "category": "international",
+      "title": "The Third Thing: Poet Donald Hall on the Secret to Lasting Love",
+      "source": "The Marginalian",
+      "url": "https://www.themarginalian.org/2026/11/26/donald-hall-the-third-thing/",
+      "publishedAt": "2026-11-26T17:33:39.0000000+00:00",
+      "scoreLabel": "Life-skills RSS source",
+      "selectionReason": "Life-skills match score: 4",
+      "highlight": "第三件事物对婚姻至关重要——物品、实践、习惯、艺术、制度、游戏或人，都能提供共同狂喜或满足的场所。",
+      "summary": "文章围绕诗人唐纳德·霍尔关于持久爱情的观点展开，核心是“第三件事物”：夫妻共同投入的对象或实践，能为关系提供共享的喜悦与满足。它值得读，是因为这个比喻简短却实用，能帮助非技术读者理解亲密关系需要共同支点，而不是只靠两个人彼此凝视。",
+      "failureAnalysis": "关键启发：稳定的关系往往需要一个双方都能共同投入的“第三件事物”，它可以是习惯、艺术、游戏或共同目标。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "\"Third things are essential to marriages, objects or practices or habits or arts or institutions or games or human beings that provide a site of joint rapture or contentment.\"",
+      "translations": {
+        "zh": {
+          "title": "第三件事物：诗人唐纳德·霍尔谈持久爱情的秘诀",
+          "highlight": "第三件事物对婚姻至关重要——物品、实践、习惯、艺术、制度、游戏或人，都能提供共同狂喜或满足的场所。",
+          "summary": "文章围绕诗人唐纳德·霍尔关于持久爱情的观点展开，核心是“第三件事物”：夫妻共同投入的对象或实践，能为关系提供共享的喜悦与满足。它值得读，是因为这个比喻简短却实用，能帮助非技术读者理解亲密关系需要共同支点，而不是只靠两个人彼此凝视。",
+          "failureAnalysis": "关键启发：稳定的关系往往需要一个双方都能共同投入的“第三件事物”，它可以是习惯、艺术、游戏或共同目标。"
+        },
+        "en": {
+          "highlight": "Third things are essential to marriages, objects or practices or habits or arts or institutions or games or human beings that provide a site of joint rapture or contentment.",
+          "summary": "The article centers on poet Donald Hall’s view of lasting love and the idea of a “third thing”: a shared object or practice that gives a relationship a site of shared joy and contentment. It is worth reading because this simple metaphor helps non-technical readers see that intimate relationships need a common anchor, not just two people focused only on each other.",
+          "failureAnalysis": "Key takeaway: stable relationships often need a “third thing” that both people can invest in, whether a habit, an art, a game, or a shared goal.",
+          "title": "The Third Thing: Poet Donald Hall on the Secret to Lasting Love"
+        }
+      }
+    },
+    {
+      "id": "ai-feed-188449a4ff764d86b9092fc605a07593",
+      "category": "ai",
+      "title": "Inside the AI Training Data Market — Gabe Greenberg, G2i",
+      "source": "Latent Space",
+      "url": "https://latent.space/p/inside_the_ai_training_data_market_gabe_greenberg_g2i/",
+      "abstractUrl": null,
+      "publishedAt": "2026-11-27T22:19:18.0000000Z",
+      "scoreLabel": "Curated engineering feed",
+      "aiArticleType": "concept_explanation",
+      "evidenceAnchors": [],
+      "evidenceLabel": "No clear evidence",
+      "hasPrimaryAnchor": false,
+      "requiresRiskAnalysis": false,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: No clear evidence",
+      "summary": "G2i 创始人 Gabe Greenberg 在 AI Engineer CODE 活动上向 swyx 解释了前沿实验室如何在“高价买独家数据”与“低价买非独家数据”之间做决策，以及小额试点订单如何逐步扩大规模。它值得一读，因为它把训练数据这门生意背后的定价与授权机制讲清楚了，而不只是停留在“数据很贵”这种模糊说法上。",
+      "failureAnalysis": "训练数据的价格不取决于数据本身，而取决于排他性：同一份数据卖独家还是卖多家，直接决定了价格与折扣。理解这一点，才能判断数据采购的成本结构和供应商的议价空间。",
+      "aiSelectionScore": 100,
+      "highlight": "前沿实验室可以为独家保留的训练数据支付更高价格，也可以接受折扣，换取其他实验室也能买到的数据。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "A frontier lab can pay more for training data it gets to keep exclusive, or take a discount on data another lab can buy too. At AI Engineer CODE, G2i founder Gabe Greenberg tells swyx how labs make that decision, how small pilot orders turn into bigger...",
+      "translations": {
+        "zh": {
+          "title": "AI训练数据市场的定价逻辑：独家数据与共享数据的取舍",
+          "highlight": "前沿实验室可以为独家保留的训练数据支付更高价格，也可以接受折扣，换取其他实验室也能买到的数据。",
+          "summary": "G2i 创始人 Gabe Greenberg 在 AI Engineer CODE 活动上向 swyx 解释了前沿实验室如何在“高价买独家数据”与“低价买非独家数据”之间做决策，以及小额试点订单如何逐步扩大规模。它值得一读，因为它把训练数据这门生意背后的定价与授权机制讲清楚了，而不只是停留在“数据很贵”这种模糊说法上。",
+          "failureAnalysis": "训练数据的价格不取决于数据本身，而取决于排他性：同一份数据卖独家还是卖多家，直接决定了价格与折扣。理解这一点，才能判断数据采购的成本结构和供应商的议价空间。"
+        },
+        "en": {
+          "highlight": "A frontier lab can pay more for training data it gets to keep exclusive, or take a discount on data another lab can buy too.",
+          "summary": "At AI Engineer CODE, G2i founder Gabe Greenberg explains to swyx how frontier labs decide between paying a premium for exclusive training data and accepting a discount on non-exclusive data, and how small pilot orders grow into larger deals. It is worth reading because it makes the pricing and licensing mechanics of the training-data business concrete rather than leaving them at a vague \"data is expensive.\"",
+          "failureAnalysis": "The price of training data is driven less by the data itself than by exclusivity: selling the same data to one lab versus many directly sets the price and the discount. Understanding this is what lets you judge the cost structure of data procurement and the bargaining room of suppliers.",
+          "title": "How AI Training Data Is Priced: Exclusive vs. Shared Deals"
+        }
+      }
+    },
+    {
+      "id": "ai-hn-49981905",
+      "category": "ai",
+      "title": "Claude Code’s suggested message feature: I think the real customer is the model",
+      "source": "Hacker News",
+      "url": "https://www.zohaib.cc/blog/smartest-claude-code-feature",
+      "abstractUrl": null,
+      "publishedAt": "2026-10-06T18:00:34.0000000Z",
+      "scoreLabel": "270 points / 153 comments",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "Case study",
+          "kind": "primary"
+        },
+        {
+          "label": "HN discussion",
+          "kind": "secondary"
+        },
+        {
+          "label": "Expert analysis",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "Case study + HN discussion + Expert analysis",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: Case study + HN discussion + Expert analysis",
+      "summary": "文章聚焦 Claude Code 的 suggested message 功能，并给出一个反直觉判断：这项能力真正服务的对象可能是模型，而不只是写代码的人。它的价值在于把 AI 编程工具的交互设计放到“模型需要什么输入”这一层来审视；HN 上 270 分、153 条评论也说明该观点引发了较多讨论。",
+      "failureAnalysis": "这类“面向模型”的功能可能败在真实需求上：人类用户未必愿意为模型优化额外付出操作或注意力。它还会带来更高的 token/推理成本与延迟，而收益很难用稳定指标验证，模型行为的噪声会让反馈回路放大错误。若只绑定 Claude Code 生态，分发范围也受限；上下文管理、隐私与工程复杂度则是落地约束。",
+      "aiSelectionScore": 576,
+      "highlight": "Claude Code 的“建议消息”功能让我认为，真正的客户其实是模型本身。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "HN candidate with public discussion metrics.",
+      "translations": {
+        "zh": {
+          "title": "Claude Code 的“建议消息”功能：我认为真正的客户是模型",
+          "highlight": "Claude Code 的“建议消息”功能让我认为，真正的客户其实是模型本身。",
+          "summary": "文章聚焦 Claude Code 的 suggested message 功能，并给出一个反直觉判断：这项能力真正服务的对象可能是模型，而不只是写代码的人。它的价值在于把 AI 编程工具的交互设计放到“模型需要什么输入”这一层来审视；HN 上 270 分、153 条评论也说明该观点引发了较多讨论。",
+          "failureAnalysis": "这类“面向模型”的功能可能败在真实需求上：人类用户未必愿意为模型优化额外付出操作或注意力。它还会带来更高的 token/推理成本与延迟，而收益很难用稳定指标验证，模型行为的噪声会让反馈回路放大错误。若只绑定 Claude Code 生态，分发范围也受限；上下文管理、隐私与工程复杂度则是落地约束。"
+        },
+        "en": {
+          "highlight": "Claude Code’s suggested message feature: I think the real customer is the model",
+          "summary": "The piece looks at Claude Code’s suggested message feature and argues that the real customer may be the model rather than the human coder. It is worth reading because it reframes AI coding tool design around what the model needs as input, and the HN thread (270 points, 153 comments) shows strong debate.",
+          "failureAnalysis": "The idea may fail if users do not want to optimize for the model, and model-facing suggestions can add token cost, latency, and noisy feedback loops that are hard to validate. Distribution is also limited if the feature only works inside Claude Code.",
+          "title": "Claude Code’s suggested message feature: I think the real customer is the model"
+        }
+      }
+    },
+    {
+      "id": "ai-github-1354022484",
+      "category": "ai",
+      "title": "coleam00/ai-software-factory",
+      "source": "GitHub Search",
+      "url": "https://github.com/coleam00/ai-software-factory",
+      "abstractUrl": null,
+      "publishedAt": "2026-09-01T20:58:09.0000000Z",
+      "scoreLabel": "GitHub 564 stars",
+      "aiArticleType": "application_innovation",
+      "evidenceAnchors": [
+        {
+          "label": "GitHub",
+          "kind": "primary"
+        },
+        {
+          "label": "Community signal",
+          "kind": "secondary"
+        }
+      ],
+      "evidenceLabel": "GitHub + Community signal",
+      "hasPrimaryAnchor": true,
+      "requiresRiskAnalysis": true,
+      "selectionReason": "AI source passed freshness and evidence-chain gate: GitHub + Community signal",
+      "summary": "该项目展示一个基于 Archon 工作流的“AI 软件工厂”：人负责规划发布和预发布环境测试，系统从 GitHub issue 接收需求，自动构建并输出经独立审查、已合并的 pull request。它值得关注，因为它把 AI 编码从单点助手推进到包含审查与合并环节的交付流水线；但目前信息主要来自仓库描述和 564 星热度，实际能力与适用范围仍需核验。",
+      "failureAnalysis": "这类项目最大的风险是演示流程与真实团队交付之间存在差距：自动生成的 PR 能否稳定通过独立审查、测试与合并，取决于代码库复杂度、测试覆盖和权限治理。若只是把 GitHub issue 到 PR 的链路自动化，企业可能认为价值不足以覆盖接入、维护和模型调用成本；预发布测试也仍需人工兜底。当前仅有仓库描述和星数，缺少公开的失败率、成本、合规与数据安全验证，商业化与采用路径存在不确定性。",
+      "aiSelectionScore": 564,
+      "highlight": "你规划发布，工厂负责构建，你在预发布环境测试；议题进入，经独立审查的合并请求输出，运行在Archon工作流上。",
+      "summarySource": "deepseek",
+      "sourceExcerpt": "GitHub repository with 564 stars and recent public activity. Description: You plan the release, the factory builds it, you test it in staging. GitHub issues in, independently reviewed and merged pull requests out, all on Archon workflows.",
+      "translations": {
+        "zh": {
+          "title": "AI软件工厂：从GitHub议题到经审查合并的PR",
+          "highlight": "你规划发布，工厂负责构建，你在预发布环境测试；议题进入，经独立审查的合并请求输出，运行在Archon工作流上。",
+          "summary": "该项目展示一个基于 Archon 工作流的“AI 软件工厂”：人负责规划发布和预发布环境测试，系统从 GitHub issue 接收需求，自动构建并输出经独立审查、已合并的 pull request。它值得关注，因为它把 AI 编码从单点助手推进到包含审查与合并环节的交付流水线；但目前信息主要来自仓库描述和 564 星热度，实际能力与适用范围仍需核验。",
+          "failureAnalysis": "这类项目最大的风险是演示流程与真实团队交付之间存在差距：自动生成的 PR 能否稳定通过独立审查、测试与合并，取决于代码库复杂度、测试覆盖和权限治理。若只是把 GitHub issue 到 PR 的链路自动化，企业可能认为价值不足以覆盖接入、维护和模型调用成本；预发布测试也仍需人工兜底。当前仅有仓库描述和星数，缺少公开的失败率、成本、合规与数据安全验证，商业化与采用路径存在不确定性。"
+        },
+        "en": {
+          "highlight": "You plan the release, the factory builds it, you test it in staging; GitHub issues go in and independently reviewed, merged pull requests come out on Archon workflows.",
+          "summary": "This project presents an Archon-workflow-based “AI software factory”: humans plan releases and test in staging, while the system takes GitHub issues as input and outputs independently reviewed, merged pull requests. It is worth watching because it moves AI coding from a single-point assistant toward a delivery pipeline that includes review and merge steps; however, the available information comes mainly from the repository description and 564 stars, so its real capabilities and fit still need verification.",
+          "failureAnalysis": "The main risk is the gap between a demo workflow and real team delivery: whether generated PRs consistently pass independent review, tests, and merge depends on codebase complexity, test coverage, and permission governance. With only a repository description and star count, there is little public evidence on failure rates, cost, compliance, or data security, leaving adoption and commercialization uncertain.",
+          "title": "AI Software Factory: From GitHub Issues to Reviewed and Merged Pull Requests"
+        }
+      }
+    }
+  ]
+}
